@@ -575,6 +575,27 @@ class ConfirmStudent extends React.Component {
     const emailType = userRole === 'mentee' ? (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') : (eetStatus === 'uni' || eetStatus === 'job' || eetStatus === 'train' ? userEduName : 'work')
     const isEnabled = this.canBeSubmitted();
 
+    var emailsToBlock = [
+      'brightside.org.uk',
+      'onemillionmentors.org.uk',
+      'mentorloop.com',
+      'creativementornetwork.org',
+      '100mentors.com',
+      'ustrive.com',
+      'mentorcollective.org',
+      'imentor.org',
+      'mentorscout.com',
+      'debut.careers',
+      'joinhandshake.com',
+      'utchub.com',
+      'springpod.co.uk',
+      'careervillage.org',
+      'firsthand.co',
+      'peoplegrove.com',
+      'mykindafuture.com',
+      'connectr.co.uk',
+    ]
+
     return (
       <React.Fragment>
         <div>
