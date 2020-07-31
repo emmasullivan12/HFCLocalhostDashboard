@@ -136,9 +136,10 @@ class Autocomplete extends React.Component {
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions } = this.state;
     const { handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
+    var key = e.key || e.keyCode
 
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       e.preventDefault();
 
       if (filteredSuggestions.length) {
@@ -156,7 +157,7 @@ class Autocomplete extends React.Component {
     }
 
     // User pressed the tab key
-    if (e.keyCode === 9) {
+    if (key === 'Tab' || key === 9) {
       if (isLastChild != undefined && showSuggestions === true) {
         e.preventDefault()
       }
@@ -181,7 +182,7 @@ class Autocomplete extends React.Component {
     }
 
     // User pressed the up arrow
-    else if (e.keyCode === 38) {
+    else if (key === 'ArrowUp' || key === 38) {
       e.preventDefault();
       if (activeSuggestion === 0) {
         const parent = document.getElementById("autocompleter-items");
@@ -195,7 +196,7 @@ class Autocomplete extends React.Component {
     }
 
     // User pressed the down arrow
-    else if (e.keyCode === 40) {
+    else if (key === 'ArrowDown' || key === 40) {
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         const parent = document.getElementById("autocompleter-items");
         parent.scrollTop = 0;

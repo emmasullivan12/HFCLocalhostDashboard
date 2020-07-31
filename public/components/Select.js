@@ -129,6 +129,8 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
+    const {handleDone} = this.props;
+
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
@@ -156,6 +158,9 @@ class SelectBox extends React.Component {
     if (multiple && currentState === true && values.length != 0) {
       if (finMultiOptions) {
         finMultiOptions()
+      }
+      if (handleDone) {
+        handleDone()
       }
     }
 
@@ -301,29 +306,14 @@ class SelectBox extends React.Component {
     });
   }
 
-/*  onKeyUp = e => {
-    console.log("KEYUP TRIGGERED")
-    const { keysPressed } = this.state;
-    console.log("ONKEYUP e.keyCode & e.type: "+e.keyCode+" "+e.type=='keydown')
-    keysPressed[e.keyCode] = e.type == 'keydown';
-  //  console.log("keysPressed[9]: "+keysPressed[9])
-  //  console.log("keysPressed[16]: "+keysPressed[16])
-}*/
-
   onKeyDown = e => {
-//    console.log("KEYdown")
-//    const { isOpen, focusedValue, isFocused, keysPressed } = this.state;
     const { isOpen, focusedValue, isFocused } = this.state;
     const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-
-//    console.log("e.keyCode & e.type: "+e.keyCode+" "+e.type=='keydown')
-//    keysPressed[e.keyCode] = e.type == 'keydown';
-  //  console.log("keysPressed[9]: "+keysPressed[9])
-  //  console.log("keysPressed[16]: "+keysPressed[16])
+    var key = e.key || e.keyCode
 
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       e.preventDefault();
 
       this.setState(prevState => {
@@ -456,7 +446,7 @@ class SelectBox extends React.Component {
     }
 
     // User pressed the tab key
-    else if (e.keyCode === 9) {
+    else if (key === 'Tab' || key === 9) {
       if (isLastChild != undefined && isOpen === true) {
         e.preventDefault()
       }
@@ -493,10 +483,6 @@ class SelectBox extends React.Component {
 
                 if (values.length === (options.length - this.countTitles())) {
 
-                  // checks if shift + tab were pressed, as otherwise ignores shift tab to move backwards
-          //        console.log("e.shiftKey && e.keyCode == 9: "+e.shiftKey && e.keyCode == 9)
-                //  console.log("trigger finMultiOptions?: "+keysPressed[9] && keysPressed[16])
-          //        if (e.shiftKey && e.keyCode == 9) {
                     if (finMultiOptions) {
                       finMultiOptions()
                     }
@@ -555,7 +541,7 @@ class SelectBox extends React.Component {
     }
 
     // User pressed the escape key
-    else if (e.keyCode === 27) {
+    else if (key === 'Escape' || key === 'Esc' || key === 27) {
       if (isOpen) {
 //        e.preventDefault()
         this.setState({
@@ -566,7 +552,7 @@ class SelectBox extends React.Component {
     }
 
     // User pressed the up arrow
-    else if (e.keyCode === 38) {
+    else if (key === 'ArrowUp' || key === 38) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault();
 
@@ -666,7 +652,7 @@ class SelectBox extends React.Component {
     }
 
     // User pressed the down arrow
-    else if (e.keyCode === 40) {
+    else if (key === 'ArrowDown' || key === 40) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault()
         const hasTitles = this.countTitles() > 0

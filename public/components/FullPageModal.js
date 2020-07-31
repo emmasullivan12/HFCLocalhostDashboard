@@ -129,7 +129,12 @@ class FullPageModal extends React.Component {
   toggleScrollLock = () => document.querySelector('html').classList.toggle('u-lock-scroll');
 
   // Close modal using Escape key on keyboard
-  onKeyDown = ({keyCode}) => keyCode === 27 && this.onClose();
+  onKeyDown = e => {
+    var key = e.key || e.keyCode
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.onClose();
+    }
+  }
 
   // Close modal by clicking outside of Modal
 /*  onClickAway = (e) => {

@@ -42,7 +42,7 @@ class AutocompleteTagsMulti extends React.Component {
 
   onBlur = (e) => {
     e.persist()
-    const { suggestions, onBlur, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
+    const { suggestions, onBlur, handleDone, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
     const {userInput} = this.state
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
@@ -114,6 +114,10 @@ class AutocompleteTagsMulti extends React.Component {
   //    const isDeletingOption = e.target.className === "autocompleterTags-search"
   //    this.setState(prevState => {
     //    return {
+      if (handleDone) {
+        handleDone()
+      }
+
       this.setState({
         activeSuggestion: 0,
         filteredSuggestions: [],
@@ -326,9 +330,10 @@ class AutocompleteTagsMulti extends React.Component {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected } = this.state;
     const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
+    var key = e.key || e.keyCode
 
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       e.preventDefault();
       this.setState(prevState => {
         const { activeSuggestion, showSuggestions } = prevState
@@ -396,7 +401,7 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     // User pressed the tab key
-    else if (e.keyCode === 9) {
+    else if (key === 'Tab' || key === 9) {
       if (this.state.showSuggestions === false) {
         return;
       } else {
@@ -448,7 +453,7 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     // User pressed backspace
-    else if (e.keyCode === 8) {
+    else if (key === 'Backspace' || key === 8) {
 
       if (userInput === '') {
 
@@ -470,7 +475,7 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     // User pressed the escape key
-    else if (e.keyCode === 27) {
+    else if (key === 'Escape' || key === 'Esc' || key === 27) {
       if (showSuggestions) {
         this.setState({
           showSuggestions: false,
@@ -480,7 +485,7 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     // User pressed the up arrow
-    else if (e.keyCode === 38) {
+    else if (key === 'ArrowUp' || key === 38) {
       e.preventDefault();
       if (activeSuggestion === 0 || activeSuggestion === -1) {
         const parent = document.getElementById("autocompleter-items-"+name);
@@ -494,7 +499,7 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     // User pressed the down arrow
-    else if (e.keyCode === 40) {
+    else if (key === 'ArrowDown' || key === 40) {
       if (activeSuggestion + 1 === filteredSuggestions.length) {
         const parent = document.getElementById("autocompleter-items-"+name);
         parent.scrollTop = 0;

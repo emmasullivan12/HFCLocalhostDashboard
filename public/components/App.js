@@ -174,8 +174,9 @@ class Dashboard extends Component{
   }
 
   onKeyDown = (e) => {
+    var key = e.key || e.keyCode
     // User pressed the backspace key (to prevent reloading / going back a page particularly in Firefox)
-    if (e.keyCode === 8) {
+    if (key === 'Backspace' || key === 8) {
       var rx = /INPUT|SELECT|TEXTAREA|BUTTON/i;
 
       if (!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly) {

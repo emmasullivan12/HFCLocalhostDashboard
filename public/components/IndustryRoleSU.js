@@ -178,8 +178,8 @@ class IndustryRoleSU extends React.Component {
     this.handleRatingChange = this.handleRatingChange.bind(this);
     this.handleWorkEnvChange = this.handleWorkEnvChange.bind(this);
     this.handleMultiOptions = this.handleMultiOptions.bind(this);
-    this.handleMultiWorkEnv = this.handleMultiWorkEnv.bind(this);
-    this.handleMultiRoles = this.handleMultiRoles.bind(this);
+    this.handleDoneClickWorkEnv = this.handleDoneClickWorkEnv.bind(this);
+    this.handleDoneClickRoles = this.handleDoneClickRoles.bind(this);
     this.handleTabPress = this.handleTabPress.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -228,10 +228,17 @@ class IndustryRoleSU extends React.Component {
     }
   }
 
-  handleMultiRoles() {
+  handleDoneClickRoles() {
     const {rolesFromList, freeTextRoles} = this.state
+    const {userRole} = this.props
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
-      document.getElementById("selectBox-selectWorkEnv").focus()
+      if (userRole === 'mentor') {
+        console.log("moving focus to workEnv")
+        document.getElementById("selectBox-selectWorkEnv").focus()
+      } else {
+        console.log("moving focus to ratings")
+        document.getElementById("ratingsContainer").firstElementChild.focus()
+      }
     } else {
       document.getElementById("autocompleteBox-selectRole").focus()
     }
@@ -277,7 +284,7 @@ class IndustryRoleSU extends React.Component {
     })
   }
 
-  handleMultiWorkEnv() {
+  handleDoneClickWorkEnv() {
     if (this.state.workEnv.length > 0) {
       document.getElementById("Submit-btn-ind").focus()
     } else {
@@ -381,7 +388,8 @@ class IndustryRoleSU extends React.Component {
                       openOnClick
                       showValues
                       showCheckbox
-                      finMultiOptions={userRole === 'mentor' ? this.handleMultiRoles : null}
+                //      finMultiOptions={userRole === 'mentor' ? this.handleMultiRoles : null}
+                      handleDone={this.handleDoneClickRoles}
                       suggestions={roleOptions}
                       name='selectRole'
                       placeholder='Type Role(s):'
@@ -420,14 +428,15 @@ class IndustryRoleSU extends React.Component {
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of work-life reality, how would you describe <strong>your work environment?</strong></label>
                   <SelectBox
                     multiple
-                    finMultiOptions={this.handleMultiWorkEnv}
+                  //  finMultiOptions={this.handleMultiWorkEnv}
+                    handleDone={this.handleDoneClickWorkEnv}
                     options={workEnvOptions}
                     name='selectWorkEnv'
                     placeholder='Select words:'
                     placeholderOnClick="Select as many as you like"
                     handleChange={this.handleWorkEnvChange}
                     handleTabPress={this.handleTabPress}
-                    focusOnLoad
+                  //  focusOnLoad
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   //  showIcon
                   //  iconToShow='iconFA'

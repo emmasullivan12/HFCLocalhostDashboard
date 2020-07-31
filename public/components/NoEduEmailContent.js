@@ -160,10 +160,11 @@ class NoEduEmailContent extends Component {
   handleKeyUp = (e) => {
     e.persist()
     const {emailInput, emailIsValid} = this.state;
+    var key = e.key || e.keyCode
     clearTimeout(this.timerHandle);
 
     // checks use has not pressed backspace
-    if (e.target.value != '' && e.keyCode != 8) {
+    if (e.target.value != '' && (key === 'Backspace' || key != 8)) {
 
       this.timerHandle = setTimeout(() => {
         if (e.target.name === 'progCode') {

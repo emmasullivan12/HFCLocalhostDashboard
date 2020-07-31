@@ -7,10 +7,11 @@ class Checkbox extends Component {
 
   onKeyDown = (e) => {
     const { onChange, id } = this.props;
+    var key = e.key || e.keyCode
   //  const { timesClicked } = this.state;
 
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       e.preventDefault();
       var checkbox = document.getElementById(id);
       if (checkbox.checked) {

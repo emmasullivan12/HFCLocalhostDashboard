@@ -91,7 +91,12 @@ class Modal extends React.Component {
   toggleScrollLock = () => document.querySelector('html').classList.toggle('u-lock-scroll');
 
   // Close modal using Escape key on keyboard
-  onKeyDown = ({keyCode}) => keyCode === 27 && this.onClose();
+  onKeyDown = e => {
+    var key = e.key || e.keyCode
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.onClose();
+    }
+  }
 
   // Ensures if click within modal and end outside of modal does not cloes modal
   onMouseDown = (e) => {

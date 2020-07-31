@@ -82,9 +82,10 @@ class RatingItems extends Component {
 
   onKeyDown = (e) => {
     const { handleRatingChange } = this.props;
+    var key = e.key || e.keyCode
   //  const { timesClicked } = this.state;
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       e.preventDefault();
       e.persist()
       const value = e.currentTarget.value;

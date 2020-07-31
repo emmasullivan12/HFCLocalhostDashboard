@@ -88,9 +88,10 @@ class NoSuggestionsCTAContent extends Component {
   }
 
   onKeyDown = e => {
-
+    var key = e.key || e.keyCode
+    
     // User pressed the enter key
-    if (e.keyCode === 13) {
+    if (key === 'Enter' || key === 13) {
       if (!this.canBeSubmitted()) {
         e.preventDefault ();
         return;

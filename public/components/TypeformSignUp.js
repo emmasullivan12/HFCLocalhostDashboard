@@ -154,7 +154,7 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didCountry', // set to did1stSU when first loaded
+      step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
       eetStatus: '',
@@ -165,7 +165,7 @@ class TypeformSignUp extends Component {
       emailToVerify: 'emma@pladis.com',
       currCo: '',
       currTrainingProvider: '',
-      userRole: 'mentee'
+      userRole: 'mentor'
     }
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);

@@ -85,7 +85,9 @@ class PrAddMessage extends Component {
   }
 
   onEnterPress = (e) => {
-    if(e.keyCode === 13 && e.shiftKey === false) {
+    var key = e.key || e.keyCode
+    
+    if((key === 'Enter' || key === 13) && e.shiftKey === false) {
       e.preventDefault();
       this.handleMessageSubmit();
     } else {
