@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th April 2020
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -86,7 +86,7 @@ class PrAddMessage extends Component {
 
   onEnterPress = (e) => {
     var key = e.key || e.keyCode
-    
+
     if((key === 'Enter' || key === 13) && e.shiftKey === false) {
       e.preventDefault();
       this.handleMessageSubmit();

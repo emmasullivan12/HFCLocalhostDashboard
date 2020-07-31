@@ -1,4 +1,4 @@
-// Dex last merged this code on 3rd july 2020
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 
@@ -89,7 +89,7 @@ class NoSuggestionsCTAContent extends Component {
 
   onKeyDown = e => {
     var key = e.key || e.keyCode
-    
+
     // User pressed the enter key
     if (key === 'Enter' || key === 13) {
       if (!this.canBeSubmitted()) {
