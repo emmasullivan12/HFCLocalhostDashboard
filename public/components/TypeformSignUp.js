@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th july 2020
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -59,7 +59,7 @@ function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, st
   const subheaderUni = 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code';
   const titleUni = step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account';
   const titleWork = step === 'updatingEmail' ? 'Update your work email' : 'Verify your account';
-  const emailType = userRole === 'mentor' ? (eetStatus != 'none' ? userEduName : 'work') : 'student'
+  const emailType2 = userRole === 'mentor' ? (eetStatus != 'none' ? userEduName : 'work') : 'student'
 
   switch (eetStatus) {
     case 'sch':
@@ -80,7 +80,7 @@ function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, st
     case 'train':
     case 'none':
       confirmStudentProps = {
-        subheader: 'Tell us your ' + emailType + ' email address so we can send you a verification code',
+        subheader: 'Tell us your ' + emailType2 + ' email address so we can send you a verification code',
         title: titleWork,
         fullWidth: false,
       }
@@ -90,11 +90,11 @@ function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, st
 
 function MenteeSU6Props(emailToVerify, userRole) {
   let confirmStudentProps = {};
-  const emailType = userRole === 'mentee' ? 'Student' : 'Work'
+  const emailType2 = userRole === 'mentee' ? 'Student' : 'Work'
 
   confirmStudentProps = {
     subheader: 'We\'ve sent a verification code to ' + emailToVerify + '. Please enter it below. Note: code only valid for the next 24 hours.',
-    title: 'Verify your ' + emailType + ' email',
+    title: 'Verify your ' + emailType2 + ' email',
     fullWidth: false,
   }
 
