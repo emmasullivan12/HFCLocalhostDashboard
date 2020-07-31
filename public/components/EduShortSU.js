@@ -33,7 +33,7 @@ class EduShortSU extends React.Component {
       ukUnisList: [],
       uniNameIsValid: '',
       degreeLocal: '',
-      degreeIsValid: '',
+  //    degreeIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
       courseLength: '',
@@ -41,10 +41,10 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
-      coIsValid: '',
+    //  coIsValid: '',
       currRoleLocal: '',
       currTrainingProviderLocal: '',
-      trainProvIsValid: '',
+    //  trainProvIsValid: '',
       currTrainingCourseLocal: '',
       tabPressed: '',
       selectBoxFocused: '',
@@ -144,18 +144,19 @@ class EduShortSU extends React.Component {
 
   handleDegreeMoveNext = () => {
     if (this.state.submitted != true) {
-      this.setState({
+      document.getElementById("selectBox-uniYrGrp").focus()
+    /*  this.setState({
         degreeIsValid: true
-      })
+      })*/
     }
   }
 
   handleJobMoveNext = () => {
     if (this.state.submitted != true) {
-      console.log("about to set coisvalid")
-      this.setState({
+      document.getElementById("currRoleInput").focus()
+  /*    this.setState({
         coIsValid: true
-      })
+      })*/
     }
   }
 
@@ -168,7 +169,7 @@ class EduShortSU extends React.Component {
   handleJobChange = (e) => {
     this.setState({
       currCoLocal: e.target.value,
-      coIsValid: e.target.value === '' ? false : true
+  //    coIsValid: e.target.value === '' ? false : true
     })
   }
 
@@ -178,9 +179,10 @@ class EduShortSU extends React.Component {
 
   handleTrainMoveNext = () => {
     if (this.state.submitted != true) {
-      this.setState({
+      document.getElementById("currTrainingCourseInput").focus()
+    /*  this.setState({
         trainProvIsValid: true
-      })
+      })*/
     }
   }
 
@@ -215,7 +217,7 @@ class EduShortSU extends React.Component {
       ukUnisList: [],
       uniNameIsValid: '',
       degreeLocal: '',
-      degreeIsValid: '',
+    //  degreeIsValid: '',
       schYrGrp: '',
       uniYrGrp: '',
       courseLength: '',
@@ -223,10 +225,10 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
-      coIsValid: '',
+    //  coIsValid: '',
       currRoleLocal: '',
       currTrainingProviderLocal: '',
-      trainProvIsValid: '',
+  //    trainProvIsValid: '',
       currTrainingCourseLocal: '',
       tabPressed: '',
     }, () => {
@@ -291,7 +293,7 @@ class EduShortSU extends React.Component {
         uniYrGrp: '',
         uniGraduYr: '',
         degreeLocal: '',
-        degreeIsValid: '',
+    //    degreeIsValid: '',
       });
     }
     this.setState({
@@ -310,7 +312,7 @@ class EduShortSU extends React.Component {
         uniYrGrp: '',
         uniGraduYr: '',
         degreeLocal: '',
-        degreeIsValid: '',
+      //  degreeIsValid: '',
       });
     }
     this.setState({
@@ -562,7 +564,7 @@ class EduShortSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, degreeIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal } = this.state;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal } = this.state;
     const {userRole} = this.props;
   //  const {eetStatus} = this.props;
 
@@ -578,7 +580,7 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'uni') {
-          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && degreeIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' && userRole != 'mentor' ? courseLength != '': true) && uniGraduYrIsValid) {
+          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' && userRole != 'mentor' ? courseLength != '': true) && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
@@ -626,7 +628,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, degreeIsValid, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, coIsValid, currTrainingProviderLocal, trainProvIsValid, currRoleLocal, currTrainingCourseLocal} = this.state;
+  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, currTrainingProviderLocal, currRoleLocal, currTrainingCourseLocal} = this.state;
   const {userRole} = this.props;
   const { country, eetStatus, tflink, step, currentStep, totalSteps } = this.props;
 
@@ -924,7 +926,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && (
+              {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeLocal != '' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniYrGrp">And which <strong>year group</strong> are you in?</label>
@@ -937,7 +939,7 @@ class EduShortSU extends React.Component {
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
                       handleMouseDown={this.handleMouseDown}
-                      focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed ? true : false}
+                  //    focusOnLoad={uniNameIsValid === true && uniYrGrp === '' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
@@ -947,7 +949,7 @@ class EduShortSU extends React.Component {
                   )}
                 </React.Fragment>
               )}
-              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg' && (
+              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>how long</strong> is your course?</label>
@@ -967,7 +969,7 @@ class EduShortSU extends React.Component {
                   </div>
                 </React.Fragment>
               )}
-              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeIsValid === true && uniYrGrp === 'pg' && (
+              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp === 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>when</strong> do you graduate?</label>
@@ -1007,7 +1009,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {eetStatusLocal === 'job' && currCoLocal != '' && coIsValid === true && (
+              {eetStatusLocal === 'job' && currCoLocal != '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">And what is your current <strong>role?</strong></label>
                   <TextInput
@@ -1022,7 +1024,7 @@ class EduShortSU extends React.Component {
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
                     onBlur={this.onBlur}
-                    focusOnLoad={tabPressed ? false : true}
+                //    focusOnLoad={tabPressed ? false : true}
                     maxLength="50"
                   />
                 </div>
@@ -1047,7 +1049,7 @@ class EduShortSU extends React.Component {
                   />
                 </div>
               )}
-              {eetStatusLocal === 'train' && currTrainingProviderLocal != '' && trainProvIsValid === true && (
+              {eetStatusLocal === 'train' && currTrainingProviderLocal != '' && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currTrainingCourse">And what is your <strong>training course?</strong></label>
                   <TextInput
@@ -1062,7 +1064,7 @@ class EduShortSU extends React.Component {
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
                     onBlur={this.onBlur}
-                    focusOnLoad={tabPressed ? false : true}
+                  //  focusOnLoad={tabPressed ? false : true}
                     maxLength="50"
                   />
                 </div>

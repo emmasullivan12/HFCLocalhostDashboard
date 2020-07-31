@@ -53,9 +53,12 @@ function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, st
   let confirmStudentProps = {};
   console.log("step: "+step)
 
-  const subheaderUni = step === 'updatingEmailError' ? ('It looks like the email you entered isn\'t a valid ' + userEduName + ' email address. Please try again') : ('Tell us your personal ' + userEduName + ' email address so we can send you a verification code');
+/*  const subheaderUni = step === 'updatingEmailError' ? ('It looks like the email you entered isn\'t a valid ' + userEduName + ' email address. Please try again') : ('Tell us your personal ' + userEduName + ' email address so we can send you a verification code');
   const titleUni = step === 'updatingEmailError' ? 'Is your Uni email correct?' : (step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account')
-  const titleWork = step === 'updatingEmailError' ? 'Is your Work email correct?' : (step === 'updatingEmail' ? 'Update your work email' : 'Verify your account')
+  const titleWork = step === 'updatingEmailError' ? 'Is your Work email correct?' : (step === 'updatingEmail' ? 'Update your work email' : 'Verify your account')*/
+  const subheaderUni = 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code';
+  const titleUni = step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account';
+  const titleWork = step === 'updatingEmail' ? 'Update your work email' : 'Verify your account';
   const emailType = userRole === 'mentor' ? (eetStatus != 'none' ? userEduName : 'work') : 'student'
 
   switch (eetStatus) {
@@ -162,7 +165,7 @@ class TypeformSignUp extends Component {
       emailToVerify: 'emma@pladis.com',
       currCo: '',
       currTrainingProvider: '',
-      userRole: 'mentor'
+      userRole: 'mentee'
     }
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
@@ -189,7 +192,8 @@ class TypeformSignUp extends Component {
   getUserEduName() {
     const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, userRole, currCo, currTrainingProvider} = this.state;
 
-    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail' || step === 'updatingEmailError' ) {
+//    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail' || step === 'updatingEmailError' ) {
+    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail') {
       if (eetStatus === 'sch') {
         if (country === 'GBR') {
 
@@ -337,13 +341,13 @@ class TypeformSignUp extends Component {
         this.getUserEduName()
       })
       return;
-    } else if (stepJustDone === 'updatingEmailError') {
+/*    } else if (stepJustDone === 'updatingEmailError') {
       this.setState({
         step: 'updatingEmailError'
       }, () => {
         this.getUserEduName()
       })
-      return;
+      return;*/
     } else if (stepJustDone === 'didEduEmail' && updatingEdu === true) {
       this.setState({
         step: 'updatingEdu', // User wants to go back to update education
@@ -564,7 +568,7 @@ class TypeformSignUp extends Component {
           );*/
         case 'didDiversity':
         case 'updatingEmail':
-        case 'updatingEmailError':
+    //    case 'updatingEmailError':
           return (
             <React.Fragment>
               {this.state.isLoading === true && (

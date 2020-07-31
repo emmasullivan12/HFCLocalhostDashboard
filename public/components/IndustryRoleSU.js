@@ -304,8 +304,9 @@ class IndustryRoleSU extends React.Component {
   handleSubmit(e) {
     const {updateStep, userRole} = this.props;
     this.setState({ isSubmitting: true });
-    const mentorEmailOK = true;
-    const newStep = userRole === 'mentee' ? 'didIndRole' : (mentorEmailOK === true ? 'didIndRoleMentor' : 'updatingEmailError');
+  //  const mentorEmailOK = true;
+  //  const newStep = userRole === 'mentee' ? 'didIndRole' : (mentorEmailOK === true ? 'didIndRoleMentor' : 'updatingEmailError');
+    const newStep = userRole === 'mentee' ? 'didIndRole' : 'didIndRoleMentor';
     updateStep(newStep)
   }
 
