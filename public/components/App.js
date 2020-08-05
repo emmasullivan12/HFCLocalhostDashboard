@@ -268,7 +268,7 @@ class Dashboard extends Component{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
                   ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
                 }[userRole]}
-                <ProtectedRoute path="/latest-advice" roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
+                <Route roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
                 <ProtectedRoute path="/mentee-profile" roleAllowed="mentee" userRole="mentee" component={LgdInUsrProfile}/>,
                 <ProtectedRoute path="/to-do-list" roleAllowed="mentee" userRole="mentee" component={Todo}/>,
                 <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
@@ -334,7 +334,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'did1stSU';
+  const step = 'didEmailVerif';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 

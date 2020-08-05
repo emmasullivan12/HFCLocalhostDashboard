@@ -788,7 +788,6 @@ class SelectBox extends React.Component {
       }
     }
 
-
     if (focusedValue < (options.length - 5)) {
 
       if (showCheckbox != true) {

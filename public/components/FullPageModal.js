@@ -37,7 +37,7 @@ const FullPageModalContent = ({
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
-      <div className={"fullpage-modal-container " + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
+      <div className={"fullpage-modal-container " + usedFor} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           <button type="button" className={"modal-close fullPage " + (backBtn==='arrow' ? 'bkArrow' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
             { backBtn==='bk2Pr' && (

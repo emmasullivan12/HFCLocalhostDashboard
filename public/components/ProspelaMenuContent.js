@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import {
   NavLink
 } from "react-router-dom";
-import FullPageModal from './FullPageModal.js';
+//import FullPageModal from './FullPageModal.js';
 import SettingsContent from './SettingsContent.js';
 import "../css/UserMenuContent.css";
 import "../css/General.css";

@@ -1,15 +1,18 @@
-// Dex last merged this code on 28th Oct 2019 
+// Dex last merged this code on 28th Oct 2019
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
 // import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import TypeformFullPage from './TypeformFullPage.js';
+import FullPageModal from './FullPageModal.js';
+import Form from './Form.js';
 
 // This includes props to be passed to Typeform
 const MenteeFullSignUpProps = {
   triggerText: 'Complete Full Sign Up >>',
-  usedFor: 'menteeFullSignUp'
+  usedFor: 'menteeFullSU',
+  backBtn: 'arrow'
 }
 
 
@@ -27,6 +30,13 @@ class MenteeFullSignUp extends Component {
     const eetStatus = 'sch';
     const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo+'&eetStatus='+eetStatus+'&hasSetSchSubjects='+hasSetSchSubjects+'&hasSetDegree='+hasSetDegree+'&hasSetRolee='+hasSetRole+'&hasSetTrain='+hasSetTrain;
 
+    var questions = [
+      {q: 'First question?', detail: 'A little bit more detail', aType: 'text'},
+      {q: 'Second question?', detail: 'A little bit more detail', aType: 'select'},
+      {q: 'Third question?', aType: 'text'},
+      {q: 'Fourth question?', detail: 'A little bit more detail', aType: 'text'},
+    ]
+
     return (
       <section>
         <div className="contentBox landingCTA">
@@ -37,7 +47,14 @@ class MenteeFullSignUp extends Component {
           <p className="landingCTADesc">
             We need to know a little more about your future ambitions and what help you might need to help determine the best mentor matches for you
           </p>
-          <TypeformFullPage tflink={menteetflink} {...MenteeFullSignUpProps}/>
+          <div>
+            <FullPageModal {...MenteeFullSignUpProps}>
+              <Form
+                questions={questions}
+                usedFor="menteeFullSU"
+              />
+            </FullPageModal>
+          </div>
         </div>
       </section>
     );

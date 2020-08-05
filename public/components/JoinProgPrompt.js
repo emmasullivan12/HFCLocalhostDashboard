@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import Modal from './Modal.js';
@@ -15,6 +15,7 @@ const JoinProgrammeModalProps = {
 
 class JoinProgPrompt extends Component {
   render() {
+    console.log("joinprogprompt")
     const {userRole} = this.props;
     const nonPartnerInst = true; /// check school email (or prog code if signed up with personal email) for school partnership
     return (

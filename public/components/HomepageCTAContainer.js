@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -21,9 +21,16 @@ const JoinProgrammePlusModalProps = {
   changeInitFocus: true
 }
 
+/*  case 'didEmailVerif':
+    case 'didReviewVerif':
+    case 'autoEnroll':
+    case 'joinedProg':
+    case 'didFullSUtf':
+    case 'didSafeG': // only required for under 18s */
+
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'didFullSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'joinedProg'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const is18plus = 1;
     const matchstatus = 'didSafeG';
@@ -50,7 +57,7 @@ class HomepageCTAContainer extends Component {
             </Modal>
           </div>
         </div>
-        {step === 'didEduEmailVerif' || step === 'didReviewVerif' && (
+        {(step === 'didEmailVerif' || step === 'didReviewVerif') && (
           <JoinProgPrompt userRole='mentee'/>
         )}
         {step === 'autoEnroll' && (
