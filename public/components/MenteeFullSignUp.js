@@ -31,10 +31,10 @@ class MenteeFullSignUp extends Component {
     const menteetflink = 'https://prospela.typeform.com/to/bszCn1?fname='+fname+'&uid='+id+'&hasSetMobNo='+hasSetMobNo+'&eetStatus='+eetStatus+'&hasSetSchSubjects='+hasSetSchSubjects+'&hasSetDegree='+hasSetDegree+'&hasSetRolee='+hasSetRole+'&hasSetTrain='+hasSetTrain;
 
     var questions = [
-      {q: 'First question?', detail: 'A little bit more detail', aType: 'text'},
-      {q: 'Second question?', detail: 'A little bit more detail', aType: 'select'},
-      {q: 'Third question?', aType: 'text'},
-      {q: 'Fourth question?', detail: 'A little bit more detail', aType: 'text'},
+      {q: 'First question?', detail: 'A little bit more detail', aType: 'text', req: 1, placeholder: 'placeholder',},
+      {q: 'Second question?', detail: 'A little bit more detail', aType: 'text', req: 1},
+      {q: 'Third question?', aType: 'text', req: 1},
+      {q: 'Fourth question?', detail: 'A little bit more detail', aType: 'text', req: 1},
     ]
 
     return (

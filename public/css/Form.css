@@ -6,14 +6,13 @@
   position: fixed;
   top: 40px!important;
   left: 25%;
+  background-color: white;
 }
 .form-QA {
   height: calc(100vh - 4.5em);
-  background: red;
-  border-bottom: 1px solid black;
 }
 
-.prLogoContainer{
+.prLogoContainer.form{
   position: fixed!important;
   top: 26px!important;
 }
@@ -56,4 +55,24 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+}
+.qNum{
+  color: rgb(159, 158, 231);
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: -1.3rem;
+  margin-right: .5rem;
+}
+.qTitle{
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 2rem;
+  color: rgba(63, 63, 63);
+}
+.qDetail{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(63, 63, 63, 0.7);
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
 }

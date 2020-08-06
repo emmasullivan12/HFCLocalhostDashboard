@@ -4,14 +4,15 @@ import {
   NavLink
 } from "react-router-dom";
 
-import {ChevronDown, ChevronUp} from './GeneralFunctions.js';
+import {ChevronDown, ChevronUp, LoadingSpinner} from './GeneralFunctions.js';
+import TextInput from './TextInput.js';
+import Autocomplete from './Autocomplete.js';
+import SelectBox from './Select.js';
 import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
 import "../css/General.css";
-//import "../css/Article.css";
 import "../css/Emoji.css";
 import "../css/Form.css";
-//import "../css/Profile.css";
 
 class Form extends Component {
   constructor(props) {
@@ -23,10 +24,10 @@ class Form extends Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad } = this.props;
+    const { focusOnLoad, usedFor } = this.props;
 
     if (focusOnLoad) {
-      document.getElementById("formQ-0").focus();
+      document.getElementById("formA-"+usedFor+"0").focus();
     }
   }
 
@@ -38,11 +39,10 @@ class Form extends Component {
       return
     } else {
       const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("formQ-0");
-      const qHeight = firstQ.scrollHeight;
-      console.log("qHeight: "+qHeight)
-      const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-      parent.scrollTop -= (vh - qHeight)
+      const firstQ = document.getElementById("formQ-"+usedFor+"0");
+      const qHeight = firstQ.scrollHeight * (focusedQ - 1)
+
+      parent.scrollTop = qHeight
 
       this.setState(prevState => {
         let { focusedQ } = prevState
@@ -68,12 +68,10 @@ class Form extends Component {
     } else {
 
       const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("formQ-0");
-      const qHeight = firstQ.scrollHeight;
-      console.log("qHeight: "+qHeight)
-      const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-      console.log("vh - top: "+vh - qHeight)
-      parent.scrollTop += (vh - qHeight)
+      const firstQ = document.getElementById("formQ-"+usedFor+"0");
+      const qHeight = firstQ.scrollHeight * (focusedQ + 1)
+
+      parent.scrollTop = qHeight
 
       this.setState(prevState => {
         let { focusedQ } = prevState
@@ -95,8 +93,64 @@ class Form extends Component {
     })
   }
 
+  renderAType(question, required, usedFor) {
+/*    text
+    select
+    selectMulti
+    autocomplete
+    autocompleteMulti
+    rating
+*/
+    // i.e. input box, rating box, select box, etc.
+    const aType = question['aType'];
+
+    switch (aType) {
+      case 'text':
+        return (
+          <TextInput
+            name={usedFor}
+            id={"formA-"+usedFor+"0"}
+            placeholder={question['placeholder']}
+        //    className="form-control-std"
+            required={required}
+            maxLength={question['maxLength']}
+        /*    handleChange={handleChange}
+            handleKeyUp={handleKeyUp}
+            handleTabPress={handleTabPress}
+            handleMouseDown={handleMouseDown}
+            onBlur={onBlur}*/
+          />
+        );
+    /*  case 'select':
+        return (
+          <div type="button" className="picContainer">
+          </div>
+        );
+      case 'selectMulti':
+        return (
+          <div type="button" className="picContainer">
+          </div>
+        );
+      case 'autocomplete':
+        return (
+          <div type="button" className="picContainer">
+          </div>
+        );
+      case 'autocompleteMulti':
+        return (
+          <div type="button" className="picContainer">
+          </div>
+        );
+      case 'rating':
+        return (
+          <div type="button" className="picContainer">
+          </div>
+        );*/
+    }
+  }
+
   renderQuestions() {
-    const {questions} = this.props;
+    const {questions, usedFor} = this.props;
 
     return (
       <React.Fragment>
@@ -104,23 +158,20 @@ class Form extends Component {
           {questions.map((question, i) => {
             const q = question['q'];
 
+            const required = question['req'] === 1;
+
             // i.e. any detail to support the understanding of the question
             const detail = question['detail'] == undefined ? '' :  question['detail'];
 
-            // i.e. input box, rating box, select box, etc.
-            const aType = question['aType'];
-
             return (
-              <section className="form-QA" id={'formQ-'+i} key={q}>
-                <h2>
-                  {q}
+              <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
+                <h2 className={"qTitle " + (required ? "reqAsterisk" : "")}>
+                  <span className="qNum">{i + 1})</span>{q}
                 </h2>
-                <h3>
+                <div className="qDetail">
                   {detail}
-                </h3>
-                <p>
-                  {aType}
-                </p>
+                </div>
+                { this.renderAType(question, required, usedFor) }
               </section>
             )
           })}
@@ -135,7 +186,7 @@ class Form extends Component {
 
     return (
       <React.Fragment>
-        <div className="prLogoContainer">
+        <div className="prLogoContainer form">
           <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
         </div>
         <h1 className="form-header">
