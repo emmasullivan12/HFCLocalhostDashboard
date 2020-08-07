@@ -95,7 +95,7 @@ class Form extends Component {
     }
   }
 
-  handleSubmit(e) {
+  handleSubmit = () => {
     this.setState({
       isSubmitting: true
     })
@@ -257,6 +257,9 @@ class Form extends Component {
     const {focusedQ, isSubmitting, tabPressed} = this.state
     const {questions} = this.props
 
+  //  const isEnabled = this.canBeSubmitted();
+    const isEnabled = true
+
     return (
       <React.Fragment>
         <div className="prLogoContainer form">
@@ -269,7 +272,17 @@ class Form extends Component {
         <div className="row">
           { this.renderQuestions() }
         </div>
-        <div className="formCTAContainer">
+        <div className="formCTAContainer submit">
+          <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-eth">
+            {isSubmitting === true && (
+              <LoadingSpinner />
+            )}
+            {isSubmitting != true && (
+              <span>Next</span>
+            )}
+          </button>
+        </div>
+        <div className="formCTAContainer other">
           <button type="button" disabled={isSubmitting === true ? true : focusedQ === 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>

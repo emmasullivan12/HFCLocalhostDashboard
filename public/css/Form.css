@@ -17,12 +17,18 @@
   position: fixed!important;
   top: 26px!important;
 }
-.formCTAContainer{
-  margin-left: 45%;
-  margin-right: 45%;
+.formCTAContainer.submit{
   position: fixed;
   bottom: 30px;
   min-width: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.formCTAContainer.other{
+  position: fixed;
+  bottom: 30px;
+  min-width: 90px;
+  right: 2rem;
 }
 .qScrollBtn{
   color: #fff;
