@@ -128,9 +128,9 @@ class Form extends Component {
             id={"formA-"+usedFor+i}
             className="form-control-std textInputBox"
         //    onChange={this.handleInput}
-            handleChange={this.handleChange}
+            onChange={this.handleChange}
             onBlur={this.onBlur}
-            focusOnLoad={(i === 0) ? true : false}
+            autoFocus={(i === 0) ? true : false}
             placeholder={question['placeholder']}
             autoComplete="off"
             autoCorrect="off"
@@ -193,8 +193,8 @@ class Form extends Component {
           <div className="autocompleter">
             <AutocompleteTagsMulti
               multiple
-            //  openOnClick
-          //    showValues
+              openOnClick={question['openOnClick']}
+              showValues={question['showValues']}
               showCheckbox={question['showCheckbox']}
         //      handleDone={this.handleDoneClickRoles}
               suggestions={question['options']}

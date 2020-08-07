@@ -58,14 +58,18 @@ class RatingItems extends Component {
       this.setState({
         indexChecked: ''
       }, () => {
-        handleRatingChange("")
+        if(handleRatingChange) {
+          handleRatingChange("")
+        }
         this.checkError()
       })
     } else {
       this.setState({
         indexChecked: value
       }, () => {
-        handleRatingChange(value)
+        if(handleRatingChange) {
+          handleRatingChange(value)
+        }
         this.checkError()
       })
     }
@@ -80,7 +84,6 @@ class RatingItems extends Component {
   }
 
   onKeyDown = (e) => {
-    const { handleRatingChange } = this.props;
     var key = e.key || e.keyCode
   //  const { timesClicked } = this.state;
     // User pressed the enter key
@@ -94,14 +97,18 @@ class RatingItems extends Component {
         this.setState({
           indexChecked: ''
         }, () => {
-          handleRatingChange("")
+          if(handleRatingChange) {
+            handleRatingChange("")
+          }
           this.checkError()
         })
       } else {
         this.setState({
           indexChecked: value
         }, () => {
-          handleRatingChange(value)
+          if(handleRatingChange) {
+            handleRatingChange(value)
+          }
           this.checkError()
         })
       }

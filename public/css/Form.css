@@ -10,6 +10,7 @@
 }
 .form-QA {
   height: calc(100vh - 4.5em);
+  padding-top: 20%;
 }
 
 .prLogoContainer.form{
@@ -24,10 +25,10 @@
   min-width: 90px;
 }
 .qScrollBtn{
-  color: #919191;
+  color: #fff;
   font: inherit;
   font-weight: 600;
-  background: #fff;
+  background: #9f9ee7;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -35,7 +36,7 @@
   -o-border-radius: 50%;
   cursor: pointer;
   outline: none;
-  border: 1px solid #c7c7c7;
+  border: 1px solid #8b8bdc;
   height: 40px;
   min-width: 40px;
   height: 40px;
@@ -50,6 +51,7 @@
 .qScrollBtn:disabled{
   color: #ccc8c8;
   background: #e8e8e8;
+  border: 1px solid #c7c7c7;
 }
 .qScrollBtn:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);

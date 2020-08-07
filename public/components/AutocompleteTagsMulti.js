@@ -69,13 +69,15 @@ class AutocompleteTagsMulti extends React.Component {
           }
         }, () => {
           const {values} = this.state
-          handleChange(values, () => {
-            if (this.state.values.length != 0) {
-              if (finMultiOptions) {
-                finMultiOptions()
+          if (handleChange) {
+            handleChange(values, () => {
+              if (this.state.values.length != 0) {
+                if (finMultiOptions) {
+                  finMultiOptions()
+                }
               }
-            }
-          })
+            })
+          }
           const isValid = required ? values.length > 0 : true;
 
           if(isValid) {
@@ -87,13 +89,15 @@ class AutocompleteTagsMulti extends React.Component {
       } else {
         const values = this.state.values;
 
-        handleChange(values, () => {
-          if (values.length != 0) {
-            if (finMultiOptions) {
-              finMultiOptions()
+        if (handleChange) {
+          handleChange(values, () => {
+            if (values.length != 0) {
+              if (finMultiOptions) {
+                finMultiOptions()
+              }
             }
-          }
-        })
+          })
+        }
 
         const isValid = required ? values.length > 0 : true;
 
@@ -155,10 +159,10 @@ class AutocompleteTagsMulti extends React.Component {
 
   widthCalc = (selectedOption) => {
     const {userInput, values, showSuggestions, numSelected} = this.state
-    const {placeholderOnClick} = this.props
+    const {placeholderOnClick, name} = this.props
 
     let containerwidth;
-    const input = document.getElementById('autocompleteBox-selectRole')
+    const input = document.getElementById("autocompleteBox-"+name)
 
     if (userInput === '') {
       if (placeholderOnClick && values.length === 0 && selectedOption != true) {
@@ -244,7 +248,9 @@ class AutocompleteTagsMulti extends React.Component {
 
       values.splice(index, 1)
 
-      handleChange(values)
+      if (handleChange) {
+        handleChange(values)
+      }
 
       if ([...values].length === 0) {
         const inputBox = document.getElementById("autocompleteBox-"+name)
@@ -312,7 +318,9 @@ class AutocompleteTagsMulti extends React.Component {
         showSuggestions: true,
       }
     }, () => {
-      handleChange(this.state.values)
+      if (handleChange) {
+        handleChange(this.state.values)
+      }
       this.focusOnInput()
       if (this.state.values.length === 0) {
         this.widthCalc()
@@ -431,7 +439,9 @@ class AutocompleteTagsMulti extends React.Component {
               values.push(value)
             }
 
-            handleChange(values)
+            if (handleChange) {
+              handleChange(values)
+            }
 
             if(!required || required && value != null) {
               document.getElementById("autocompleterTags-"+name).classList.remove('error')

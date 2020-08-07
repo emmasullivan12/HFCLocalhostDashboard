@@ -33,7 +33,8 @@ class MenteeFullSignUp extends Component {
 
     var questions = [
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'lifestyle'},
-      {q: 'Outside of work & school, what are some of your interests?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, placeholder: 'Type your answer here...', placeholderOnClick: 'Choose as many as you like:', name: 'hobbies', options: [
+      {q: 'Heres a test question?', detail: 'Blah di blah di blah!', aType: 'text', req: 1, placeholder: 'Type your answer here...', name: 'x'},
+      {q: 'Outside of work & school, what are some of your interests?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: false, openOnClick: true, showValues: true, placeholder: 'Type your answer here...', placeholderOnClick: 'Choose as many as you like:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
         {value: '0', label: 'Football'},
         {value: '1', label: 'Tennis'},
         {value: '2', label: 'Gaming'},
@@ -47,7 +48,7 @@ class MenteeFullSignUp extends Component {
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
-      {q: 'I\'m interested in speaking to and getting mentored by real employees because:', detail: 'Tell us in a few words', aType: 'text', req: 1, placeholder: 'Type your answer here...', name: 'whyJoin'},
+      {q: 'I\'m interested in speaking to and getting mentored by real employees because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'whyJoin'},
       {q: 'How sure are you of what you want to do for your career?', aType: 'rating', req: 1, name: 'certainty', ratingOutOf: 10},
       {q: 'Are you working on any of the following activities, events, documents in the near future?', detail: 'This could be related to a personal or "career" goal. ... and your mentor match might be able to help!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select activities...', placeholderOnClick: 'Choose as many as you like:', name: 'workingOn', valueToShow: 'label', options: [
         {value: '0', label: 'Deciding on a career path'},
@@ -65,7 +66,7 @@ class MenteeFullSignUp extends Component {
       ]},
     //  ... (eetStatus === 'sch' ? ['e'] : [],
       ... (eetStatus === 'sch') ? [
-        {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, placeholder: 'Choose Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
+        {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: false, openOnClick: true, showValues: true, placeholder: 'Choose Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans '},
           {value: '2', label: 'Ancient History '},
@@ -184,7 +185,7 @@ class MenteeFullSignUp extends Component {
           {value: '115', label: 'Welsh '},
           {value: '116', label: 'World Development '},
         ]},
-        {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'erg', valueToShow: 'label', options: [
+        {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'erg', placeholder: 'Select type...', valueToShow: 'label', options: [
           {value: '0', label: 'Top of the class/high grade'},
           {value: '1', label: 'Slightly above middle of the road'},
           {value: '2', label: 'Middle of the road'},
@@ -193,7 +194,7 @@ class MenteeFullSignUp extends Component {
         ]},
       ] : [],
       ... (eetStatus != 'uni') ? [
-        {q: 'Are you planning to go on to Further Education / University?', aType: 'select', req: 1, name: 'planningUni', valueToShow: 'label', options: [
+        {q: 'Are you planning to go on to Further Education / University?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'planningUni', valueToShow: 'label', options: [
           {value: '0', label: 'Yes'},
           {value: '1', label: 'No'},
           {value: '2', label: 'I\'m Undecided'},
