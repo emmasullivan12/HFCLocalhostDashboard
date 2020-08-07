@@ -15,7 +15,6 @@ class RatingItems extends Component {
   componentDidMount(){
     const { focusOnLoad, handleTabPress, name } = this.props;
     if (focusOnLoad) {
-      console.log("loadedRatings setting focus")
       document.getElementById("ratingsContainer").firstElementChild.focus()
     }
     if (handleTabPress) {

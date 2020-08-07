@@ -6,7 +6,10 @@ import {
 
 import {ChevronDown, ChevronUp, LoadingSpinner} from './GeneralFunctions.js';
 import TextInput from './TextInput.js';
-import Autocomplete from './Autocomplete.js';
+import NumberInput from './NumberInput.js';
+import RatingItems from './RatingItems.js';
+//import Autocomplete from './Autocomplete.js';
+import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import SelectBox from './Select.js';
 import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
@@ -20,15 +23,20 @@ class Form extends Component {
     this.state = {
       focusedQ: 0,
       isSubmitting: false,
+      tabPressed: '',
     };
   }
 
-  componentDidMount(){
-    const { focusOnLoad, usedFor } = this.props;
-
-    if (focusOnLoad) {
-      document.getElementById("formA-"+usedFor+"0").focus();
+  onBlur(e) {
+    if(e.target.checkValidity()) {
+      e.target.classList.remove('error');
+    } else {
+      e.target.classList.add('error');
     }
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.id]: e.target.value })
   }
 
   handleScrollUp = () => {
@@ -54,7 +62,7 @@ class Form extends Component {
         }
 
       }, () => {
-        console.log('focusedQ: '+this.state.focusedQ)
+        document.getElementById("formA-"+usedFor+this.state.focusedQ).focus();
       })
     }
   }
@@ -82,7 +90,7 @@ class Form extends Component {
           focusedQ
         }
       }, () => {
-        console.log('focusedQ: '+this.state.focusedQ)
+        document.getElementById("formA-"+usedFor+this.state.focusedQ).focus();
       })
     }
   }
@@ -93,14 +101,8 @@ class Form extends Component {
     })
   }
 
-  renderAType(question, required, usedFor) {
-/*    text
-    select
-    selectMulti
-    autocomplete
-    autocompleteMulti
-    rating
-*/
+  renderAType(question, required, usedFor, i) {
+
     // i.e. input box, rating box, select box, etc.
     const aType = question['aType'];
 
@@ -108,44 +110,115 @@ class Form extends Component {
       case 'text':
         return (
           <TextInput
-            name={usedFor}
-            id={"formA-"+usedFor+"0"}
+            name={question['name']}
+            id={"formA-"+usedFor+i}
             placeholder={question['placeholder']}
-        //    className="form-control-std"
             required={required}
+            minLength={question['minLength']}
             maxLength={question['maxLength']}
-        /*    handleChange={handleChange}
-            handleKeyUp={handleKeyUp}
-            handleTabPress={handleTabPress}
-            handleMouseDown={handleMouseDown}
-            onBlur={onBlur}*/
+            handleChange={this.handleChange}
+            onBlur={this.onBlur}
+            focusOnLoad={(i === 0) ? true : false}
           />
         );
-    /*  case 'select':
+      case 'textLong':
         return (
-          <div type="button" className="picContainer">
-          </div>
+          <textarea
+            name={question['name']}
+            id={"formA-"+usedFor+i}
+            className="form-control-std textInputBox"
+        //    onChange={this.handleInput}
+            handleChange={this.handleChange}
+            onBlur={this.onBlur}
+            focusOnLoad={(i === 0) ? true : false}
+            placeholder={question['placeholder']}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck="off"
+            minLength={question['minLength']}
+            maxLength={question['maxLength']}
+            required={required}
+          />
+        );
+      case 'number':
+        return (
+          <NumberInput
+            name={question['name']}
+            id={"formA-"+usedFor+i}
+            placeholder={question['placeholder']}
+            required={required}
+            min={question['min']}
+            max={question['max']}
+            handleChange={this.handleChange}
+            onBlur={this.onBlur}
+            focusOnLoad={(i === 0) ? true : false}
+          />
+        );
+      case 'select':
+        return (
+          <SelectBox
+            options={question['options']}
+            placeholder={question['placeholder']}
+            name={question['name']}
+            id={"formA-"+usedFor+i}
+        //    handleChange={this.handleSchYrChange}
+            focusOnLoad={i === 0 ? true : false}
+            valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+            required={required}
+          />
         );
       case 'selectMulti':
         return (
-          <div type="button" className="picContainer">
-          </div>
+          <SelectBox
+            multiple
+          //  finMultiOptions={this.handleMultiOptions}
+            options={question['options']}
+            name={question['name']}
+            placeholder={question['placeholder']}
+            placeholderOnClick={question['placeholderOnClick']}
+        //    handleChange={this.handleIndChange}
+            focusOnLoad={(i === 0) ? true : false}
+            valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+            showCheckbox={question['showCheckbox']}
+            required={required}
+          />
         );
-      case 'autocomplete':
-        return (
-          <div type="button" className="picContainer">
-          </div>
-        );
+    //  case 'autocomplete':
+    //    return (
+    //      <div type="button" className="picContainer">
+    //      </div>
+    //    );
       case 'autocompleteMulti':
         return (
-          <div type="button" className="picContainer">
+          <div className="autocompleter">
+            <AutocompleteTagsMulti
+              multiple
+            //  openOnClick
+          //    showValues
+              showCheckbox={question['showCheckbox']}
+        //      handleDone={this.handleDoneClickRoles}
+              suggestions={question['options']}
+              name={question['name']}
+              placeholder={question['placeholder']}
+              placeholderOnClick={question['placeholderOnClick']}
+            //  handleChange={this.handleRoleChange}
+              idValue={question['idValue']}
+              focusOnLoad={(i === 0) ? true : false}
+              valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+              required={required}
+            />
           </div>
         );
       case 'rating':
         return (
-          <div type="button" className="picContainer">
-          </div>
-        );*/
+          <RatingItems
+            ratingOutOf={question['ratingOutOf']}
+        //    handleRatingChange={this.handleRatingChange}
+            name={question['name']}
+            focusOnLoad={(i === 0) ? true : false}
+            required={required}
+          />
+        );
     }
   }
 
@@ -171,7 +244,7 @@ class Form extends Component {
                 <div className="qDetail">
                   {detail}
                 </div>
-                { this.renderAType(question, required, usedFor) }
+                { this.renderAType(question, required, usedFor, i) }
               </section>
             )
           })}
@@ -181,7 +254,7 @@ class Form extends Component {
   }
 
   render() {
-    const {focusedQ, isSubmitting} = this.state
+    const {focusedQ, isSubmitting, tabPressed} = this.state
     const {questions} = this.props
 
     return (

@@ -79,8 +79,14 @@ class FullPageModal extends React.Component {
   }
 
   onOpen() {
+    const {changeInitFocus} = this.props;
     this.setState({ isFPOpen: true }, () => {
-      this.closeButtonFPNode.focus();
+      if (changeInitFocus) {
+        return
+      } else {
+        this.closeButtonFPNode.focus();
+      }
+
     });
     this.toggleScrollLock();
   }

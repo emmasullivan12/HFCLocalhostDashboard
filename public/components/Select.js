@@ -30,7 +30,6 @@ class SelectBox extends React.Component {
 
   componentDidMount(){
     const { focusOnLoad, handleTabPress, name } = this.props;
-
     if (focusOnLoad) {
       document.getElementById("selectBox-"+name).focus();
     }
@@ -65,7 +64,9 @@ class SelectBox extends React.Component {
       //  console.log("allSelected: "+allSelected)
       //  if (allSelected != true) {
     //      console.log("about to handlechange")
-          handleChange(values)
+          if (handleChange) {
+            handleChange(values)
+          }
   //      }
         if (values.length != 0) {
           if (finMultiOptions) {
@@ -186,7 +187,9 @@ class SelectBox extends React.Component {
 
       values.splice(index, 1)
 
-      handleChange(values)
+      if (handleChange) {
+        handleChange(values)
+      }
 
       if ([...values].length === 0) {
         if(!required) {
@@ -223,7 +226,10 @@ class SelectBox extends React.Component {
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
 
     if (!multiple) {
-      handleChange(e.currentTarget.dataset.id);
+      if (handleChange) {
+        handleChange(e.currentTarget.dataset.id);
+      }
+
     }
 
     this.setState(prevState => {
@@ -253,7 +259,9 @@ class SelectBox extends React.Component {
       const allSelected = values.length === (options.length - this.countTitles())
 
   //    if (allSelected != true) {
-        handleChange(values)
+        if (handleChange) {
+          handleChange(values)
+        }
   //    }
 
       if (allSelected === true) {
@@ -354,7 +362,9 @@ class SelectBox extends React.Component {
                   values.splice(index, 1)
                 }
 
-                handleChange(values)
+                if (handleChange) {
+                  handleChange(values)
+                }
 
                 const noMoreOptions = (values.length === (options.length - this.countTitles())) && showCheckbox != true
 
@@ -407,7 +417,10 @@ class SelectBox extends React.Component {
 
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+            if (handleChange) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
 
             if (otherValidityChecks) {
               otherValidityChecks();
@@ -479,7 +492,9 @@ class SelectBox extends React.Component {
             //      values.splice(index, 1)
                 }
 
-                handleChange(values)
+                if (handleChange) {
+                  handleChange(values)
+                }
 
                 if (values.length === (options.length - this.countTitles())) {
 
@@ -526,7 +541,11 @@ class SelectBox extends React.Component {
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
       //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+            if (handleChange) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
+
             if (handleTabPress) {
               handleTabPress(true);
             }
@@ -581,7 +600,9 @@ class SelectBox extends React.Component {
             }
 
             if (!isOpen) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              if (handleChange) {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
 
             if (multiple) {
@@ -617,7 +638,9 @@ class SelectBox extends React.Component {
             const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
             if (!isOpen) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              if (handleChange) {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
 
             if (otherValidityChecks) {
@@ -682,7 +705,9 @@ class SelectBox extends React.Component {
             }
 
             if (!isOpen) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              if (handleChange) {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
 
             if (multiple) {
@@ -734,7 +759,9 @@ class SelectBox extends React.Component {
           }
 
           if (!isOpen) {
-            handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            if (handleChange) {
+              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+            }
           }
 
           if (multiple) {
