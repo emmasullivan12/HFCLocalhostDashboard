@@ -5,8 +5,10 @@ import {
 } from "react-router-dom";
 
 import {ChevronDown, ChevronUp, LoadingSpinner} from './GeneralFunctions.js';
+import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';
+import PhoneInput from './PhoneInput.js';
 import RatingItems from './RatingItems.js';
 //import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
@@ -39,6 +41,17 @@ class Form extends Component {
     this.setState({ [e.target.id]: e.target.value })
   }
 
+  handleotherChange = (values) => {
+    console.log(values)
+//  this.setState({ [e.target.id]: e.target.value })
+  }
+
+  handleNonTextChange = (values, formId) => {
+  //  console.log(values)
+//    console.log(formId)
+    this.setState({ [formId]: values })
+  }
+
   handleScrollUp = () => {
     const { focusedQ } = this.state;
     const { usedFor } = this.props;
@@ -62,7 +75,17 @@ class Form extends Component {
         }
 
       }, () => {
-        document.getElementById("formA-"+usedFor+this.state.focusedQ).focus();
+        const answers = document.getElementsByClassName("formA-"+usedFor)
+        const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
+        const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
+
+        if (elToFocusOn != null) {
+          if (elToFocusOn === 'firstElementChild') {
+           document.getElementById(idToFocusOn).firstElementChild.focus();
+          }
+        } else {
+          document.getElementById(idToFocusOn).focus()
+        }
       })
     }
   }
@@ -90,7 +113,18 @@ class Form extends Component {
           focusedQ
         }
       }, () => {
-        document.getElementById("formA-"+usedFor+this.state.focusedQ).focus();
+        const answers = document.getElementsByClassName("formA-"+usedFor)
+        const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
+        const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
+
+        if (elToFocusOn != null) {
+          if (elToFocusOn === 'firstElementChild') {
+           document.getElementById(idToFocusOn).firstElementChild.focus();
+          }
+        } else {
+          document.getElementById(idToFocusOn).focus()
+        }
+
       })
     }
   }
@@ -109,115 +143,211 @@ class Form extends Component {
     switch (aType) {
       case 'text':
         return (
-          <TextInput
-            name={question['name']}
-            id={"formA-"+usedFor+i}
-            placeholder={question['placeholder']}
-            required={required}
-            minLength={question['minLength']}
-            maxLength={question['maxLength']}
-            handleChange={this.handleChange}
-            onBlur={this.onBlur}
-            focusOnLoad={(i === 0) ? true : false}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"formA-"+usedFor+i}
+          >
+            <TextInput
+              name={question['name']}
+              id={"formA-"+usedFor+i}
+              placeholder={question['placeholder']}
+              required={required}
+              minLength={question['minLength']}
+              maxLength={question['maxLength']}
+              handleChange={this.handleChange}
+              onBlur={this.onBlur}
+              focusOnLoad={(i === 0) ? true : false}
+            />
+          </div>
         );
       case 'textLong':
         return (
-          <textarea
-            name={question['name']}
-            id={"formA-"+usedFor+i}
-            className="form-control-std textInputBox"
-        //    onChange={this.handleInput}
-            onChange={this.handleChange}
-            onBlur={this.onBlur}
-            autoFocus={(i === 0) ? true : false}
-            placeholder={question['placeholder']}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck="off"
-            minLength={question['minLength']}
-            maxLength={question['maxLength']}
-            required={required}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"formA-"+usedFor+i}
+          >
+            <textarea
+              name={question['name']}
+              id={"formA-"+usedFor+i}
+              className="form-control-std textInputBox"
+          //    onChange={this.handleInput}
+              onChange={this.handleChange}
+              onBlur={this.onBlur}
+              autoFocus={(i === 0) ? true : false}
+              placeholder={question['placeholder']}
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              minLength={question['minLength']}
+              maxLength={question['maxLength']}
+              required={required}
+            />
+          </div>
         );
       case 'number':
         return (
-          <NumberInput
-            name={question['name']}
-            id={"formA-"+usedFor+i}
-            placeholder={question['placeholder']}
-            required={required}
-            min={question['min']}
-            max={question['max']}
-            handleChange={this.handleChange}
-            onBlur={this.onBlur}
-            focusOnLoad={(i === 0) ? true : false}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"formA-"+usedFor+i}
+          >
+            <NumberInput
+              name={question['name']}
+              id={"formA-"+usedFor+i}
+              placeholder={question['placeholder']}
+              required={required}
+              min={question['min']}
+              max={question['max']}
+              handleChange={this.handleChange}
+              onBlur={this.onBlur}
+              focusOnLoad={(i === 0) ? true : false}
+            />
+          </div>
+        );
+      case 'tel':
+        return (
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"formA-"+usedFor+i}
+          >
+            <PhoneInput
+              name={question['name']}
+              id={"formA-"+usedFor+i}
+              placeholder={question['placeholder']}
+              required={required}
+              handleChange={this.handleChange}
+              onBlur={this.onBlur}
+              focusOnLoad={(i === 0) ? true : false}
+            />
+          </div>
+        );
+      case 'checkbox':
+        var options = question['options'];
+
+        return (
+          <React.Fragment>
+            <div
+              className={"formA-"+usedFor}
+              data-idforfocus={options[0]['id']}
+            >
+              {options.map((option, i) => {
+
+                return (
+                //  <React.Fragment key={option['id']}>
+                  <div className="notifToggleContainer" key={option['id']}>
+                    <span className="notifToggleTxt">{option['label']}</span>
+                    <Checkbox
+                      labelClassName="switch"
+                  //    label={option['label']}
+                      name={option['name']}
+                      id={option['id']}
+                    //  key={option['id']}
+                      value={option['value']}
+                      required={required}
+                      defaultChecked={option['defaultChecked']}
+                      disabled={option['disabled']}
+                      spanClassName="slider round"
+                      onChange={this.handleChange}
+
+                    />
+                  </div>
+                //  </React.Fragment>
+                )
+
+              })}
+            </div>
+          </React.Fragment>
         );
       case 'select':
         return (
-          <SelectBox
-            options={question['options']}
-            placeholder={question['placeholder']}
-            name={question['name']}
-            id={"formA-"+usedFor+i}
-        //    handleChange={this.handleSchYrChange}
-            focusOnLoad={i === 0 ? true : false}
-            valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
-            required={required}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"selectBox-"+question['name']}
+            data-idforstate={"formA-"+usedFor+i}
+          >
+            <SelectBox
+              multiple={false}
+              options={question['options']}
+              placeholder={question['placeholder']}
+              name={question['name']}
+              handleChange={this.handleNonTextChange}
+              focusOnLoad={i === 0 ? true : false}
+              valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+              required={required}
+            />
+          </div>
         );
       case 'selectMulti':
         return (
-          <SelectBox
-            multiple
-          //  finMultiOptions={this.handleMultiOptions}
-            options={question['options']}
-            name={question['name']}
-            placeholder={question['placeholder']}
-            placeholderOnClick={question['placeholderOnClick']}
-        //    handleChange={this.handleIndChange}
-            focusOnLoad={(i === 0) ? true : false}
-            valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
-            showCheckbox={question['showCheckbox']}
-            required={required}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"selectBox-"+question['name']}
+          >
+            <SelectBox
+              multiple
+            //  finMultiOptions={this.handleMultiOptions}
+              options={question['options']}
+              name={question['name']}
+              placeholder={question['placeholder']}
+              placeholderOnClick={question['placeholderOnClick']}
+            //  handleChange={this.handleNonTextChange}
+              focusOnLoad={(i === 0) ? true : false}
+              valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+              showCheckbox={question['showCheckbox']}
+              isForForm
+              required={required}
+
+            />
+          </div>
         );
-    //  case 'autocomplete':
+    //  case 'autocomplete': Not done yet as not needed so far
     //    return (
     //      <div type="button" className="picContainer">
     //      </div>
     //    );
       case 'autocompleteMulti':
         return (
-          <div className="autocompleter">
-            <AutocompleteTagsMulti
-              multiple
-              openOnClick={question['openOnClick']}
-              showValues={question['showValues']}
-              showCheckbox={question['showCheckbox']}
-        //      handleDone={this.handleDoneClickRoles}
-              suggestions={question['options']}
-              name={question['name']}
-              placeholder={question['placeholder']}
-              placeholderOnClick={question['placeholderOnClick']}
-            //  handleChange={this.handleRoleChange}
-              idValue={question['idValue']}
-              focusOnLoad={(i === 0) ? true : false}
-              valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
-              required={required}
-            />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"autocompleterTags-"+question['name']}
+          >
+            <div className="autocompleter">
+              <AutocompleteTagsMulti
+                multiple
+                openOnClick={question['openOnClick']}
+                showValues={question['showValues']}
+                showCheckbox={question['showCheckbox']}
+          //      handleDone={this.handleDoneClickRoles}
+                suggestions={question['options']}
+                name={question['name']}
+                placeholder={question['placeholder']}
+                placeholderOnClick={question['placeholderOnClick']}
+            //    handleChange={this.handleNonTextChange}
+                idValue={question['idValue']}
+                focusOnLoad={(i === 0) ? true : false}
+                valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+                required={required}
+              />
+            </div>
           </div>
         );
       case 'rating':
         return (
-          <RatingItems
-            ratingOutOf={question['ratingOutOf']}
-        //    handleRatingChange={this.handleRatingChange}
-            name={question['name']}
-            focusOnLoad={(i === 0) ? true : false}
-            required={required}
-          />
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus="ratingsContainer"
+            data-elementforfocus="firstElementChild"
+            data-idforstate={"formA-"+usedFor+i}
+          >
+            <RatingItems
+              ratingOutOf={question['ratingOutOf']}
+              handleRatingChange={this.handleNonTextChange}
+              name={question['name']}
+              usedFor={usedFor}
+              focusOnLoad={(i === 0) ? true : false}
+              isForForm
+              required={required}
+            />
+          </div>
         );
     }
   }

@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class TextInput extends React.Component {
+class PhoneInput extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -20,12 +20,12 @@ class TextInput extends React.Component {
 
   render() {
 //    const { onChange } = this;
-    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, maxLength, handleMouseDown, onKeyDown } = this.props;
+    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, min, max, handleMouseDown, onKeyDown, pattern } = this.props;
 
     return (
       <React.Fragment>
         <input
-          type="text"
+          type="tel"
           name={name}
           id={id}
           placeholder={placeholder}
@@ -39,11 +39,12 @@ class TextInput extends React.Component {
           onKeyDown={onKeyDown}
           onKeyUp={handleKeyUp}
           onMouseDown={handleMouseDown}
-          maxLength={maxLength}
+          pattern={pattern}
         />
+
       </React.Fragment>
     );
   }
 }
 
-export default TextInput;
+export default PhoneInput;

@@ -42,7 +42,6 @@ class NumberInput extends React.Component {
           min={min}
           max={max}
         />
-
       </React.Fragment>
     );
   }

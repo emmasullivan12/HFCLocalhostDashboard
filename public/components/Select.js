@@ -49,7 +49,7 @@ class SelectBox extends React.Component {
   }
 
   onBlur = (e) => {
-    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange } = this.props
+    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange, isForForm } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -65,7 +65,12 @@ class SelectBox extends React.Component {
       //  if (allSelected != true) {
     //      console.log("about to handlechange")
           if (handleChange) {
-            handleChange(values)
+            if (isForForm === true) {
+              const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+              handleChange(values, formId);
+            } else {
+              handleChange(values);
+            }
           }
   //      }
         if (values.length != 0) {
@@ -178,7 +183,7 @@ class SelectBox extends React.Component {
   };
 
   onDeleteOption = (e) => {
-    const {required, otherValidityChecks, name, handleChange} = this.props;
+    const {required, otherValidityChecks, name, handleChange, isForForm} = this.props;
     const {value} = e.currentTarget.dataset
 
     this.setState(prevState => {
@@ -188,7 +193,12 @@ class SelectBox extends React.Component {
       values.splice(index, 1)
 
       if (handleChange) {
-        handleChange(values)
+        if (isForForm === true) {
+          const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+          handleChange(values, formId);
+        } else {
+          handleChange(values);
+        }
       }
 
       if ([...values].length === 0) {
@@ -214,8 +224,7 @@ class SelectBox extends React.Component {
   onClickOption = (e) => {
     e.preventDefault()
     e.stopPropagation()
-    const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions } = this.props;
-  //  const {elementIdFocused} = this.state;
+    const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions, isForForm } = this.props;
 
     if (e.currentTarget.dataset.id.indexOf("title") != -1) {
       return
@@ -225,12 +234,27 @@ class SelectBox extends React.Component {
     const value = e.currentTarget.dataset.text;
     const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
 
+    console.log("gets here")
+    console.log(multiple)
     if (!multiple) {
       if (handleChange) {
-        handleChange(e.currentTarget.dataset.id);
+
+        if (isForForm === true) {
+          const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+
+          console.log(formId)
+          console.log(e.target)
+          console.log(e.currentTarget.closest("section > div"))
+          handleChange(e.currentTarget.dataset.id, formId);
+        } else {
+          handleChange(e.currentTarget.dataset.id);
+        }
+
       }
 
     }
+
+    console.log("shouldnt get here")
 
     this.setState(prevState => {
 
@@ -260,7 +284,12 @@ class SelectBox extends React.Component {
 
   //    if (allSelected != true) {
         if (handleChange) {
-          handleChange(values)
+          if (isForForm === true) {
+            const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+            handleChange(values, formId);
+          } else {
+            handleChange(values);
+          }
         }
   //    }
 
@@ -316,7 +345,7 @@ class SelectBox extends React.Component {
 
   onKeyDown = e => {
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks } = this.props;
+    const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     var key = e.key || e.keyCode
 
@@ -363,7 +392,12 @@ class SelectBox extends React.Component {
                 }
 
                 if (handleChange) {
-                  handleChange(values)
+                  if (isForForm === true) {
+                    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                    handleChange(values, formId);
+                  } else {
+                    handleChange(values);
+                  }
                 }
 
                 const noMoreOptions = (values.length === (options.length - this.countTitles())) && showCheckbox != true
@@ -419,7 +453,13 @@ class SelectBox extends React.Component {
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
 
             if (handleChange) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+
+              if (isForForm === true) {
+                const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+              } else {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
 
             if (otherValidityChecks) {
@@ -493,7 +533,13 @@ class SelectBox extends React.Component {
                 }
 
                 if (handleChange) {
-                  handleChange(values)
+
+                  if (isForForm === true) {
+                    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                    handleChange(values, formId);
+                  } else {
+                    handleChange(values);
+                  }
                 }
 
                 if (values.length === (options.length - this.countTitles())) {
@@ -543,7 +589,12 @@ class SelectBox extends React.Component {
       //      const isValid = this.checkExists(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
 
             if (handleChange) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              if (isForForm === true) {
+                const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+              } else {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
 
             if (handleTabPress) {
@@ -601,7 +652,12 @@ class SelectBox extends React.Component {
 
             if (!isOpen) {
               if (handleChange) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                if (isForForm === true) {
+                  const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                } else {
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                }
               }
             }
 
@@ -639,7 +695,12 @@ class SelectBox extends React.Component {
 
             if (!isOpen) {
               if (handleChange) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                if (isForForm === true) {
+                  const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                } else {
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                }
               }
             }
 
@@ -706,7 +767,12 @@ class SelectBox extends React.Component {
 
             if (!isOpen) {
               if (handleChange) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                if (isForForm === true) {
+                  const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                } else {
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                }
               }
             }
 
@@ -760,7 +826,12 @@ class SelectBox extends React.Component {
 
           if (!isOpen) {
             if (handleChange) {
-              handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              if (isForForm === true) {
+                const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+              } else {
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+              }
             }
           }
 

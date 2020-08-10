@@ -1,5 +1,7 @@
 .formContainer{
-  margin: 0 25% 0 25%;
+  max-width: 500px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .form-header{
