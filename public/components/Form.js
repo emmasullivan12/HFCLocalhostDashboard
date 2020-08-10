@@ -47,8 +47,6 @@ class Form extends Component {
   }
 
   handleNonTextChange = (values, formId) => {
-  //  console.log(values)
-//    console.log(formId)
     this.setState({ [formId]: values })
   }
 
@@ -265,13 +263,13 @@ class Form extends Component {
             data-idforstate={"formA-"+usedFor+i}
           >
             <SelectBox
-              multiple={false}
               options={question['options']}
               placeholder={question['placeholder']}
               name={question['name']}
               handleChange={this.handleNonTextChange}
               focusOnLoad={i === 0 ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+              isForForm
               required={required}
             />
           </div>
@@ -281,6 +279,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={"selectBox-"+question['name']}
+            data-idforstate={"formA-"+usedFor+i}
           >
             <SelectBox
               multiple
@@ -289,13 +288,12 @@ class Form extends Component {
               name={question['name']}
               placeholder={question['placeholder']}
               placeholderOnClick={question['placeholderOnClick']}
-            //  handleChange={this.handleNonTextChange}
+              handleChange={this.handleNonTextChange}
               focusOnLoad={(i === 0) ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
               showCheckbox={question['showCheckbox']}
               isForForm
               required={required}
-
             />
           </div>
         );
@@ -309,6 +307,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={"autocompleterTags-"+question['name']}
+            data-idforstate={"formA-"+usedFor+i}
           >
             <div className="autocompleter">
               <AutocompleteTagsMulti
@@ -325,6 +324,7 @@ class Form extends Component {
                 idValue={question['idValue']}
                 focusOnLoad={(i === 0) ? true : false}
                 valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+                isForForm
                 required={required}
               />
             </div>
