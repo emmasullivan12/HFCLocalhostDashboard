@@ -1,4 +1,4 @@
-// Dex last merged this code on 31st july 2020 
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -233,10 +233,8 @@ class IndustryRoleSU extends React.Component {
     const {userRole} = this.props
     if ((rolesFromList.length != 0 || freeTextRoles.length != 0)) {
       if (userRole === 'mentor') {
-        console.log("moving focus to workEnv")
         document.getElementById("selectBox-selectWorkEnv").focus()
       } else {
-        console.log("moving focus to ratings")
         document.getElementById("ratingsContainer").firstElementChild.focus()
       }
     } else {

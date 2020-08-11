@@ -273,7 +273,6 @@ class AutocompleteTagsMulti extends React.Component {
       const isValid = required ? values.length > 0 : true;
 
       if (handleChange) {
-        handleChange(values)
         if (isForForm === true) {
           handleChange(values, formId, isValid)
         } else {

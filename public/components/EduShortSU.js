@@ -1,4 +1,4 @@
-// Dex last merged this code on 31st july 2020 
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -107,7 +107,6 @@ class EduShortSU extends React.Component {
 
   handleKeyUp = (e) => {
     e.persist();
-    console.log("handleykeyup triggered")
     clearTimeout(this.timerHandle);
 
     this.timerHandle = setTimeout(() => {

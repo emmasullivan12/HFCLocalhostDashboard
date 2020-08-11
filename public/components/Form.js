@@ -63,6 +63,32 @@ class Form extends Component {
     })
   }
 
+//'selectMulti'
+//'autocompleteMulti'
+
+  handleNonTextMultiChange = (values, formId, isValid, callback) => {
+    const {questions, usedFor} = this.props;
+    const formIdSplit = formId.split(usedFor)
+    var getIndex = formIdSplit[1];
+    const getOptions = questions[getIndex]['options'];
+
+    let newArray
+
+    newArray = getOptions
+      .filter(option => values.includes(option.label))
+      .map(value => value.value)
+
+    this.setState({
+      [formId]: newArray,
+      [formId+"isValid"]: isValid
+    }, () => {
+      if (callback) {
+        callback()
+      }
+    })
+
+  }
+
   toggleCheckbox = (e)  => {
     const stateToChange = e.target.id;
     this.setState({
@@ -289,6 +315,7 @@ class Form extends Component {
               name={question['name']}
               id={"formA-"+usedFor+i}
               placeholder={question['placeholder']}
+              pattern={question['pattern']}
               required={required}
               handleChange={this.handleChange}
               onBlur={this.onBlur}
@@ -365,7 +392,7 @@ class Form extends Component {
               name={question['name']}
               placeholder={question['placeholder']}
               placeholderOnClick={question['placeholderOnClick']}
-              handleChange={this.handleNonTextChange}
+              handleChange={this.handleNonTextMultiChange}
               focusOnLoad={(i === 0) ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
               showCheckbox={question['showCheckbox']}
@@ -397,7 +424,7 @@ class Form extends Component {
                 name={question['name']}
                 placeholder={question['placeholder']}
                 placeholderOnClick={question['placeholderOnClick']}
-                handleChange={this.handleNonTextChange}
+                handleChange={this.handleNonTextMultiChange}
                 idValue={question['idValue']}
                 focusOnLoad={(i === 0) ? true : false}
                 valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
@@ -465,7 +492,6 @@ class Form extends Component {
     const {questions} = this.props
 
     const isEnabled = this.canBeSubmitted();
-    console.log(questions.length)
 
     return (
       <React.Fragment>
@@ -485,7 +511,7 @@ class Form extends Component {
               <LoadingSpinner />
             )}
             {isSubmitting != true && (
-              <span>Next</span>
+              <span>Submit</span>
             )}
           </button>
         </div>

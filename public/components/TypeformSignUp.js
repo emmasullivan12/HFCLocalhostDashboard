@@ -1,4 +1,4 @@
-// Dex last merged this code on 31st july 2020 
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -51,7 +51,6 @@ const MenteeSU4Props = {
 
 function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, step, userRole) {
   let confirmStudentProps = {};
-  console.log("step: "+step)
 
 /*  const subheaderUni = step === 'updatingEmailError' ? ('It looks like the email you entered isn\'t a valid ' + userEduName + ' email address. Please try again') : ('Tell us your personal ' + userEduName + ' email address so we can send you a verification code');
   const titleUni = step === 'updatingEmailError' ? 'Is your Uni email correct?' : (step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account')
@@ -205,8 +204,6 @@ class TypeformSignUp extends Component {
                     isLoading: false,
                     userEduName: sch[0].label,
                     isGeneralError: false
-                  }, () => {
-                    console.log("isloading AFTER: "+this.state.isLoading)
                   })
                 }
               })

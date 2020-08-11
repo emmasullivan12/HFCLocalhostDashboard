@@ -24,6 +24,7 @@ class MenteeFullSignUp extends Component {
     const id = '12345';
     const eetStatus = 'job';
     const userRole = 'mentee';
+    const country = 'CAN'
 
     const subjects = ''; // sch Subjects
     const gradeType = '';
@@ -33,7 +34,9 @@ class MenteeFullSignUp extends Component {
     const certainty = '';
     const networkSize = '';
 
-    const phone = '123';
+    const phone = '';
+    const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : null
+    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : '07400 123456'
 
     var questions = [
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'lifestyle'},
@@ -217,15 +220,15 @@ class MenteeFullSignUp extends Component {
         {q: 'Roughly, how many people do you consider yourself to have in your professional network?', detail: 'e.g. people who aren\'t close family or friends and that can support you in business or a career related activity.', aType: 'number', req: 1, min: 0, max: 1000, placeholder: 'Type number...', name: 'networkSize'},
       ] : [],
       ... (phone === '') ? [
-        {q: 'What\'s your mobile number?', aType: 'tel', req: 1, placeholder: '+44 (0)7400 123456', name: 'phone'},
+        {q: 'What\'s your mobile number?', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'phone'},
       ] : [],
-      {q: 'Notification preferences: Messages from your E-Mentor etc.', detail: 'Receive messages from '+ (userRole === 'mentee' ? 'your E-Mentors and other students in your network, including 1:1 careers advice personalised to you' : 'your Mentees and other employees in your groups'), aType: 'checkbox', name: 'memail', options: [
+    /*  {q: 'Notification preferences: Messages from your E-Mentor etc.', detail: 'Receive messages from '+ (userRole === 'mentee' ? 'your E-Mentors and other students in your network, including 1:1 careers advice personalised to you' : 'your Mentees and other employees in your groups'), aType: 'checkbox', name: 'memail', options: [
         {label: 'By Email', id: 'formA-MenteeFullSignUp-memail', name: 'memail'},
         {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-msms', name: 'msms'},
-      ]},
+      ]},*/
       {q: 'Notification preferences: Career Opportunities, Tips & Promotions', detail: 'Receive inspiration, '+ (userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,') + ' promotions, surveys, and product updates from Prospela and our partners', aType: 'checkbox', name: 'memail', options: [
         {label: 'By Email', id: 'formA-MenteeFullSignUp-pemail', name: 'pemail'},
-        {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-psms', name: 'psms'},
+      //  {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-psms', name: 'psms'},
       ]},
     ]
 

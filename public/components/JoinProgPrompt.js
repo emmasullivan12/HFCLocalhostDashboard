@@ -15,7 +15,6 @@ const JoinProgrammeModalProps = {
 
 class JoinProgPrompt extends Component {
   render() {
-    console.log("joinprogprompt")
     const {userRole} = this.props;
     const nonPartnerInst = true; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
