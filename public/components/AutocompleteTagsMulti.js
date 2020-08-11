@@ -42,12 +42,13 @@ class AutocompleteTagsMulti extends React.Component {
 
   onBlur = (e) => {
     e.persist()
-    const { suggestions, onBlur, handleDone, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass } = this.props;
+    const { suggestions, onBlur, handleDone, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass, isForForm } = this.props;
     const {userInput} = this.state
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
     } else {
       const hasMultipleAttributes = this.checkMultipleAttributes();
+      const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
       if (onBlur) {
         onBlur()
@@ -69,16 +70,27 @@ class AutocompleteTagsMulti extends React.Component {
           }
         }, () => {
           const {values} = this.state
-          if (handleChange) {
-            handleChange(values, () => {
-              if (this.state.values.length != 0) {
-                if (finMultiOptions) {
-                  finMultiOptions()
-                }
-              }
-            })
-          }
           const isValid = required ? values.length > 0 : true;
+
+          if (handleChange) {
+            if (isForForm === true) {
+              handleChange(values, formId, isValid, () => {
+                if (this.state.values.length != 0) {
+                  if (finMultiOptions) {
+                    finMultiOptions()
+                  }
+                }
+              })
+            } else {
+              handleChange(values, () => {
+                if (this.state.values.length != 0) {
+                  if (finMultiOptions) {
+                    finMultiOptions()
+                  }
+                }
+              })
+            }
+          }
 
           if(isValid) {
             document.getElementById("autocompleterTags-"+name).classList.remove('error');
@@ -88,18 +100,27 @@ class AutocompleteTagsMulti extends React.Component {
         })
       } else {
         const values = this.state.values;
+        const isValid = required ? values.length > 0 : true;
 
         if (handleChange) {
-          handleChange(values, () => {
-            if (values.length != 0) {
-              if (finMultiOptions) {
-                finMultiOptions()
+          if (isForForm === true) {
+            handleChange(values, formId, isValid, () => {
+              if (values.length != 0) {
+                if (finMultiOptions) {
+                  finMultiOptions()
+                }
               }
-            }
-          })
+            })
+          } else {
+            handleChange(values, () => {
+              if (values.length != 0) {
+                if (finMultiOptions) {
+                  finMultiOptions()
+                }
+              }
+            })
+          }
         }
-
-        const isValid = required ? values.length > 0 : true;
 
         if(isValid) {
           document.getElementById("autocompleterTags-"+name).classList.remove('error');
@@ -239,8 +260,9 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   onDeleteOption = (e) => {
-    const {required, name, handleChange} = this.props;
+    const {required, name, handleChange, isForForm} = this.props;
     const {value} = e.currentTarget.dataset
+    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
     this.setState(prevState => {
       const [...values] = prevState.values
@@ -248,8 +270,15 @@ class AutocompleteTagsMulti extends React.Component {
 
       values.splice(index, 1)
 
+      const isValid = required ? values.length > 0 : true;
+
       if (handleChange) {
         handleChange(values)
+        if (isForForm === true) {
+          handleChange(values, formId, isValid)
+        } else {
+          handleChange(values)
+        }
       }
 
       if ([...values].length === 0) {
@@ -282,8 +311,9 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { suggestions, handleChange, name, valueToShow, required } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required, isForForm } = this.props;
     const value = e.currentTarget.dataset.text;
+    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
     if (this.checkLetters(value) === false) {
       return
@@ -318,8 +348,14 @@ class AutocompleteTagsMulti extends React.Component {
         showSuggestions: true,
       }
     }, () => {
+      const isValid = required ? this.state.values.length > 0 : true;
+
       if (handleChange) {
-        handleChange(this.state.values)
+        if (isForForm === true) {
+          handleChange(this.state.values, formId, isValid)
+        } else {
+          handleChange(this.state.values)
+        }
       }
       this.focusOnInput()
       if (this.state.values.length === 0) {
@@ -336,8 +372,9 @@ class AutocompleteTagsMulti extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected } = this.state;
-    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions} = this.props;
+    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions, isForForm} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
+    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
 
     // User pressed the enter key
@@ -439,8 +476,14 @@ class AutocompleteTagsMulti extends React.Component {
               values.push(value)
             }
 
+            const isValid = required ? values.length > 0 : true;
+
             if (handleChange) {
-              handleChange(values)
+              if (isForForm === true) {
+                handleChange(values, formId, isValid)
+              } else {
+                handleChange(values)
+              }
             }
 
             if(!required || required && value != null) {

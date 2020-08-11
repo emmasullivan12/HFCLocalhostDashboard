@@ -38,16 +38,45 @@ class Form extends Component {
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.id]: e.target.value })
+    this.setState({
+      [e.target.id]: e.target.value,
+    })
+    if (e.target.checkValidity()) {
+      this.setState({
+        [e.target.id+"isValid"]: true
+      })
+    } else {
+      this.setState({
+        [e.target.id+"isValid"]: false
+      })
+    }
   }
 
-  handleotherChange = (values) => {
-    console.log(values)
-//  this.setState({ [e.target.id]: e.target.value })
+  handleNonTextChange = (values, formId, isValid, callback) => {
+    this.setState({
+      [formId]: values,
+      [formId+"isValid"]: isValid
+    }, () => {
+      if (callback) {
+        callback()
+      }
+    })
   }
 
-  handleNonTextChange = (values, formId) => {
-    this.setState({ [formId]: values })
+  toggleCheckbox = (e)  => {
+    const stateToChange = e.target.id;
+    this.setState({
+      [stateToChange]: e.target.checked
+    });
+    if (e.target.checkValidity()) {
+      this.setState({
+        [stateToChange+"isValid"]: true
+      })
+    } else {
+      this.setState({
+        [stateToChange+"isValid"]: false
+      })
+    }
   }
 
   handleScrollUp = () => {
@@ -128,9 +157,58 @@ class Form extends Component {
   }
 
   handleSubmit = () => {
+    this.toggleScrollLock();
     this.setState({
       isSubmitting: true
+    }, () => {
+
+      // Once submitted or if error that user needs addressing
+      if (this.state.isSubmitting === false) {
+        this.toggleScrollLock();
+      }
     })
+  }
+
+  toggleScrollLock = () => {
+    const {usedFor} = this.props
+    document.getElementById('fpModal-'+usedFor).classList.toggle('u-lock-scroll');
+  }
+
+  canBeSubmitted() {
+    const {questions, usedFor} = this.props;
+
+    const statesToCheck = [];
+
+    questions.forEach((question, i) => {
+      const required = question['req'] === 1;
+
+      if (!required) {
+        return
+      } else {
+        const aType = question['aType'];
+        if (aType === 'checkbox') {
+
+          // NEED TO CHECK LENGTH OF OPTIONS WITHIN CHECKBOX QUESTSIONS AND ITERATE HERE
+    /*      statesToCheck.push(
+            "formA-"+usedFor+i+"-"+index
+          );*/
+          return
+
+        } else {
+
+          statesToCheck.push(
+            this.state["formA-"+usedFor+i+"isValid"]
+          );
+        }
+      }
+
+    });
+    if (statesToCheck.includes(false) || statesToCheck.includes(undefined)){
+      return false
+    } else {
+      return true
+    }
+
   }
 
   renderAType(question, required, usedFor, i) {
@@ -227,7 +305,7 @@ class Form extends Component {
               className={"formA-"+usedFor}
               data-idforfocus={options[0]['id']}
             >
-              {options.map((option, i) => {
+              {options.map((option, index) => {
 
                 return (
                 //  <React.Fragment key={option['id']}>
@@ -237,15 +315,14 @@ class Form extends Component {
                       labelClassName="switch"
                   //    label={option['label']}
                       name={option['name']}
-                      id={option['id']}
+                      id={"formA-"+usedFor+i+"-"+index}
                     //  key={option['id']}
-                      value={option['value']}
+                    //  value={option['value']}
                       required={required}
                       defaultChecked={option['defaultChecked']}
                       disabled={option['disabled']}
                       spanClassName="slider round"
-                      onChange={this.handleChange}
-
+                      onChange={this.toggleCheckbox}
                     />
                   </div>
                 //  </React.Fragment>
@@ -320,7 +397,7 @@ class Form extends Component {
                 name={question['name']}
                 placeholder={question['placeholder']}
                 placeholderOnClick={question['placeholderOnClick']}
-            //    handleChange={this.handleNonTextChange}
+                handleChange={this.handleNonTextChange}
                 idValue={question['idValue']}
                 focusOnLoad={(i === 0) ? true : false}
                 valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
@@ -387,8 +464,8 @@ class Form extends Component {
     const {focusedQ, isSubmitting, tabPressed} = this.state
     const {questions} = this.props
 
-  //  const isEnabled = this.canBeSubmitted();
-    const isEnabled = true
+    const isEnabled = this.canBeSubmitted();
+    console.log(questions.length)
 
     return (
       <React.Fragment>

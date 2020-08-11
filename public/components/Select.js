@@ -68,7 +68,8 @@ class SelectBox extends React.Component {
     //      console.log("about to handlechange")
           if (handleChange) {
             if (isForForm === true) {
-              handleChange(values, formId);
+              const isValid = required ? values.length > 0 : true;
+              handleChange(values, formId, isValid);
             } else {
               handleChange(values);
             }
@@ -196,7 +197,8 @@ class SelectBox extends React.Component {
 
       if (handleChange) {
         if (isForForm === true) {
-          handleChange(values, formId);
+          const isValid = required ? values.length > 0 : true;
+          handleChange(values, formId, isValid);
         } else {
           handleChange(values);
         }
@@ -241,7 +243,8 @@ class SelectBox extends React.Component {
       if (handleChange) {
 
         if (isForForm) {
-          handleChange(e.currentTarget.dataset.id, formId);
+          const isValid = required ? value != '' : true;
+          handleChange(e.currentTarget.dataset.id, formId, isValid);
         } else {
           handleChange(e.currentTarget.dataset.id);
         }
@@ -278,7 +281,8 @@ class SelectBox extends React.Component {
   //    if (allSelected != true) {
         if (handleChange) {
           if (isForForm === true) {
-            handleChange(values, formId);
+            const isValid = required ? values.length > 0 : true;
+            handleChange(values, formId, isValid);
           } else {
             handleChange(values);
           }
@@ -387,7 +391,8 @@ class SelectBox extends React.Component {
 
                 if (handleChange) {
                   if (isForForm === true) {
-                    handleChange(values, formId);
+                    const isValid = required ? values.length > 0 : true;
+                    handleChange(values, formId, isValid);
                   } else {
                     handleChange(values);
                   }
@@ -446,9 +451,9 @@ class SelectBox extends React.Component {
             const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : (valueToShow === undefined ? option : option.value)) === value);
 
             if (handleChange) {
-
               if (isForForm === true) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                const isValid = required ? value != '' : true;
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
               } else {
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
@@ -527,7 +532,8 @@ class SelectBox extends React.Component {
                 if (handleChange) {
 
                   if (isForForm === true) {
-                    handleChange(values, formId);
+                    const isValid = required ? values.length > 0 : true;
+                    handleChange(values, formId, isValid);
                   } else {
                     handleChange(values);
                   }
@@ -581,7 +587,8 @@ class SelectBox extends React.Component {
 
             if (handleChange) {
               if (isForForm === true) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                const isValid = required ? value != '' : true;
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
               } else {
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
@@ -643,7 +650,13 @@ class SelectBox extends React.Component {
             if (!isOpen) {
               if (handleChange) {
                 if (isForForm === true) {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                  let isValid;
+                  if (multiple) {
+                    isValid = required ? prevState.values.length > 0 : true;
+                  } else {
+                    isValid = required ? value != '' : true;
+                  }
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
@@ -685,7 +698,13 @@ class SelectBox extends React.Component {
             if (!isOpen) {
               if (handleChange) {
                 if (isForForm === true) {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                  let isValid;
+                  if (multiple) {
+                    isValid = required ? prevState.values.length > 0 : true;
+                  } else {
+                    isValid = required ? value != '' : true;
+                  }
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
@@ -756,7 +775,13 @@ class SelectBox extends React.Component {
             if (!isOpen) {
               if (handleChange) {
                 if (isForForm === true) {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                  let isValid;
+                  if (multiple) {
+                    isValid = required ? prevState.values.length > 0 : true;
+                  } else {
+                    isValid = required ? value != '' : true;
+                  }
+                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
@@ -814,7 +839,13 @@ class SelectBox extends React.Component {
           if (!isOpen) {
             if (handleChange) {
               if (isForForm === true) {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId);
+                let isValid;
+                if (multiple) {
+                  isValid = required ? prevState.values.length > 0 : true;
+                } else {
+                  isValid = required ? value != '' : true;
+                }
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
               } else {
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }

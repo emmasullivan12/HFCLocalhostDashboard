@@ -43,10 +43,12 @@ class RatingItems extends Component {
       for (i = 0; i < list.length; ++i) {
         list[i].classList.remove('error')
       }
+      return true
     } else {
       for (i = 0; i < list.length; ++i) {
         list[i].classList.add('error')
       }
+      return false
     }
   }
 
@@ -62,12 +64,13 @@ class RatingItems extends Component {
       }, () => {
         if(handleRatingChange) {
           if (isForForm === true) {
-            handleRatingChange("", formId)
+            handleRatingChange("", formId, this.checkError())
           } else {
             handleRatingChange("")
+            this.checkError()
           }
         }
-        this.checkError()
+
       })
     } else {
       this.setState({
@@ -75,12 +78,13 @@ class RatingItems extends Component {
       }, () => {
         if(handleRatingChange) {
           if (isForForm === true) {
-            handleRatingChange(value, formId)
+            handleRatingChange(value, formId, this.checkError())
           } else {
             handleRatingChange(value)
+            this.checkError()
           }
         }
-        this.checkError()
+
       })
     }
   }
@@ -110,12 +114,13 @@ class RatingItems extends Component {
         }, () => {
           if(handleRatingChange) {
             if (isForForm === true) {
-              handleRatingChange("", formId)
+              handleRatingChange("", formId, this.checkError())
             } else {
               handleRatingChange("")
+              this.checkError()
             }
           }
-          this.checkError()
+
         })
       } else {
         this.setState({
@@ -123,12 +128,13 @@ class RatingItems extends Component {
         }, () => {
           if(handleRatingChange) {
             if (isForForm === true) {
-              handleRatingChange(value, formId)
+              handleRatingChange(value, formId, this.checkError())
             } else {
               handleRatingChange(value)
+              this.checkError()
             }
           }
-          this.checkError()
+
         })
       }
     }
