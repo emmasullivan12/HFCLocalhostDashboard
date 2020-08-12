@@ -63,13 +63,11 @@ class Form extends Component {
     })
   }
 
-//'selectMulti'
-//'autocompleteMulti'
-
   handleNonTextMultiChange = (values, formId, isValid, callback) => {
     const {questions, usedFor} = this.props;
-    const formIdSplit = formId.split(usedFor)
-    var getIndex = formIdSplit[1];
+
+    const formIdSplit = formId.split("-")
+    var getIndex = formIdSplit[0];
     const getOptions = questions[getIndex]['options'];
 
     let newArray
@@ -90,30 +88,79 @@ class Form extends Component {
   }
 
   toggleCheckbox = (e)  => {
+    const {usedFor, questions} = this.props;
     const stateToChange = e.target.id;
+
     this.setState({
       [stateToChange]: e.target.checked
     });
+
+  /*  const split1 = stateToChange.split(usedFor)
+    const stateToChangeSplit2 = split1[1].split("-")
+    var i = stateToChangeSplit2[0];*/
+    const stateToChangeSplit = stateToChange.split("-")
+    var i = stateToChangeSplit[0];
+    let checkboxesToCheck = [];
+
     if (e.target.checkValidity()) {
       this.setState({
         [stateToChange+"isValid"]: true
+      }, () => {
+
+        // Check that at least 1 of the checkbox options is checked (if this question was required)
+        var options = questions[i]['options'];
+
+        options.forEach((option, index) => {
+          checkboxesToCheck.push(
+            this.state[i+"-"+option['name']+"isValid"]
+          );
+        })
+
+        if (checkboxesToCheck.includes(true)) {
+          this.setState({
+            [i+"-checkboxMaster"+"isValid"]: true
+          })
+        } else {
+          this.setState({
+            [i+"-checkboxMaster"+"isValid"]: false
+          })
+        }
       })
     } else {
       this.setState({
         [stateToChange+"isValid"]: false
+      }, () => {
+        var options = questions[i]['options'];
+
+        options.forEach((option, index) => {
+          checkboxesToCheck.push(
+            this.state[i+"-"+option['name']+"isValid"]
+          );
+        })
+
+        if (checkboxesToCheck.includes(true)) {
+          this.setState({
+            [i+"-checkboxMaster"+"isValid"]: true
+          })
+        } else {
+          this.setState({
+            [i+"-checkboxMaster"+"isValid"]: false
+          })
+        }
       })
     }
   }
 
   handleScrollUp = () => {
     const { focusedQ } = this.state;
-    const { usedFor } = this.props;
+    const { questions, usedFor } = this.props;
 
     if (focusedQ === 0) {
       return
     } else {
       const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("formQ-"+usedFor+"0");
+    //  const firstQ = document.getElementById("formQ-"+usedFor+"0");
+      const firstQ = document.getElementById("0-"+questions[0].name);
       const qHeight = firstQ.scrollHeight * (focusedQ - 1)
 
       parent.scrollTop = qHeight
@@ -152,7 +199,7 @@ class Form extends Component {
     } else {
 
       const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("formQ-"+usedFor+"0");
+      const firstQ = document.getElementById("0-"+questions[0].name);
       const qHeight = firstQ.scrollHeight * (focusedQ + 1)
 
       parent.scrollTop = qHeight
@@ -187,6 +234,32 @@ class Form extends Component {
     this.setState({
       isSubmitting: true
     }, () => {
+      const {questions} = this.props;
+
+      const statesToSave = []
+
+      questions.forEach((question, i) => {
+        const name = question['name'];
+
+        if (question['aType'] === 'checkbox') {
+
+          var options = question['options'];
+
+          options.forEach((option, index) => {
+            const optionName = option['name']
+            statesToSave.push(
+              {[optionName]: this.state[i+"-"+optionName]}
+            );
+          })
+        } else {
+          statesToSave.push(
+            {[name]: this.state[i+"-"+name]}
+          );
+        }
+      });
+
+      console.log(statesToSave)
+      // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
 
       // Once submitted or if error that user needs addressing
       if (this.state.isSubmitting === false) {
@@ -207,28 +280,18 @@ class Form extends Component {
 
     questions.forEach((question, i) => {
       const required = question['req'] === 1;
+      const name = question['name'];
 
       if (!required) {
         return
       } else {
-        const aType = question['aType'];
-        if (aType === 'checkbox') {
-
-          // NEED TO CHECK LENGTH OF OPTIONS WITHIN CHECKBOX QUESTSIONS AND ITERATE HERE
-    /*      statesToCheck.push(
-            "formA-"+usedFor+i+"-"+index
-          );*/
-          return
-
-        } else {
-
-          statesToCheck.push(
-            this.state["formA-"+usedFor+i+"isValid"]
-          );
-        }
+        statesToCheck.push(
+        //  this.state["formA-"+usedFor+i+"isValid"],
+          this.state[i+"-"+name+"isValid"]
+        );
       }
-
     });
+
     if (statesToCheck.includes(false) || statesToCheck.includes(undefined)){
       return false
     } else {
@@ -237,7 +300,7 @@ class Form extends Component {
 
   }
 
-  renderAType(question, required, usedFor, i) {
+  renderAType(question, required, usedFor, i, name) {
 
     // i.e. input box, rating box, select box, etc.
     const aType = question['aType'];
@@ -247,11 +310,11 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"formA-"+usedFor+i}
+            data-idforfocus={i+"-"+name}
           >
             <TextInput
-              name={question['name']}
-              id={"formA-"+usedFor+i}
+              name={name}
+              id={i+"-"+name}
               placeholder={question['placeholder']}
               required={required}
               minLength={question['minLength']}
@@ -266,11 +329,11 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"formA-"+usedFor+i}
+            data-idforfocus={i+"-"+name}
           >
             <textarea
-              name={question['name']}
-              id={"formA-"+usedFor+i}
+              name={name}
+              id={i+"-"+name}
               className="form-control-std textInputBox"
           //    onChange={this.handleInput}
               onChange={this.handleChange}
@@ -290,11 +353,11 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"formA-"+usedFor+i}
+            data-idforfocus={i+"-"+name}
           >
             <NumberInput
-              name={question['name']}
-              id={"formA-"+usedFor+i}
+              name={name}
+              id={i+"-"+name}
               placeholder={question['placeholder']}
               required={required}
               min={question['min']}
@@ -309,11 +372,11 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"formA-"+usedFor+i}
+            data-idforfocus={i+"-"+name}
           >
             <PhoneInput
-              name={question['name']}
-              id={"formA-"+usedFor+i}
+              name={name}
+              id={i+"-"+name}
               placeholder={question['placeholder']}
               pattern={question['pattern']}
               required={required}
@@ -330,29 +393,31 @@ class Form extends Component {
           <React.Fragment>
             <div
               className={"formA-"+usedFor}
-              data-idforfocus={options[0]['id']}
+              data-idforfocus={i+"-"+options[0]['name']}
+          //    data-idforfocus={options[0]['id']}
             >
               {options.map((option, index) => {
 
+                // const checkboxRequired = option['req'] === 1;
+
                 return (
-                //  <React.Fragment key={option['id']}>
-                  <div className="notifToggleContainer" key={option['id']}>
-                    <span className="notifToggleTxt">{option['label']}</span>
-                    <Checkbox
-                      labelClassName="switch"
-                  //    label={option['label']}
-                      name={option['name']}
-                      id={"formA-"+usedFor+i+"-"+index}
-                    //  key={option['id']}
-                    //  value={option['value']}
-                      required={required}
-                      defaultChecked={option['defaultChecked']}
-                      disabled={option['disabled']}
-                      spanClassName="slider round"
-                      onChange={this.toggleCheckbox}
-                    />
-                  </div>
-                //  </React.Fragment>
+                <div className="notifToggleContainer" key={option['id']}>
+                  <span className="notifToggleTxt">{option['label']}</span>
+                  <Checkbox
+                    labelClassName="switch"
+                //    label={option['label']}
+                    name={option['name']}
+                  //  id={"formA-"+usedFor+i+"-"+index}
+                    id={i+"-"+option['name']}
+                  //  key={option['id']}
+                  //  value={option['value']}
+                    required={required}
+                    defaultChecked={option['defaultChecked']}
+                    disabled={option['disabled']}
+                    spanClassName="slider round"
+                    onChange={this.toggleCheckbox}
+                  />
+                </div>
                 )
 
               })}
@@ -363,13 +428,13 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"selectBox-"+question['name']}
-            data-idforstate={"formA-"+usedFor+i}
+            data-idforfocus={"selectBox-"+name}
+            data-idforstate={i+"-"+name}
           >
             <SelectBox
               options={question['options']}
               placeholder={question['placeholder']}
-              name={question['name']}
+              name={name}
               handleChange={this.handleNonTextChange}
               focusOnLoad={i === 0 ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
@@ -382,14 +447,14 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"selectBox-"+question['name']}
-            data-idforstate={"formA-"+usedFor+i}
+            data-idforfocus={"selectBox-"+name}
+            data-idforstate={i+"-"+name}
           >
             <SelectBox
               multiple
             //  finMultiOptions={this.handleMultiOptions}
               options={question['options']}
-              name={question['name']}
+              name={name}
               placeholder={question['placeholder']}
               placeholderOnClick={question['placeholderOnClick']}
               handleChange={this.handleNonTextMultiChange}
@@ -410,8 +475,8 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"autocompleterTags-"+question['name']}
-            data-idforstate={"formA-"+usedFor+i}
+            data-idforfocus={"autocompleterTags-"+name}
+            data-idforstate={i+"-"+name}
           >
             <div className="autocompleter">
               <AutocompleteTagsMulti
@@ -421,7 +486,7 @@ class Form extends Component {
                 showCheckbox={question['showCheckbox']}
           //      handleDone={this.handleDoneClickRoles}
                 suggestions={question['options']}
-                name={question['name']}
+                name={name}
                 placeholder={question['placeholder']}
                 placeholderOnClick={question['placeholderOnClick']}
                 handleChange={this.handleNonTextMultiChange}
@@ -440,12 +505,12 @@ class Form extends Component {
             className={"formA-"+usedFor}
             data-idforfocus="ratingsContainer"
             data-elementforfocus="firstElementChild"
-            data-idforstate={"formA-"+usedFor+i}
+            data-idforstate={i+"-"+name}
           >
             <RatingItems
               ratingOutOf={question['ratingOutOf']}
               handleRatingChange={this.handleNonTextChange}
-              name={question['name']}
+              name={name}
               usedFor={usedFor}
               focusOnLoad={(i === 0) ? true : false}
               isForForm
@@ -467,10 +532,13 @@ class Form extends Component {
 
             const required = question['req'] === 1;
 
+            const name = question['name'];
+
             // i.e. any detail to support the understanding of the question
             const detail = question['detail'] == undefined ? '' :  question['detail'];
 
             return (
+            //  <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
               <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
                 <h2 className={"qTitle " + (required ? "reqAsterisk" : "")}>
                   <span className="qNum">{i + 1})</span>{q}
@@ -478,7 +546,7 @@ class Form extends Component {
                 <div className="qDetail">
                   {detail}
                 </div>
-                { this.renderAType(question, required, usedFor, i) }
+                { this.renderAType(question, required, usedFor, i, name) }
               </section>
             )
           })}

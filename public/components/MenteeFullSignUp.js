@@ -16,7 +16,6 @@ const MenteeFullSignUpProps = {
   changeInitFocus: true
 }
 
-
 // Passes Typeform links to full sign up (mentee) or training (mentors)
 class MenteeFullSignUp extends Component {
   render() {
@@ -40,7 +39,6 @@ class MenteeFullSignUp extends Component {
 
     var questions = [
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'lifestyle'},
-      {q: 'Heres a test question?', detail: 'Blah di blah di blah!', aType: 'text', req: 1, placeholder: 'Type your answer here...', name: 'x'},
       ... (hobbies.length === 0) ? [
         {q: 'Outside of work & school, what are some of your interests?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: false, openOnClick: true, showValues: true, placeholder: 'Type your answer here...', placeholderOnClick: 'Choose as many as you like:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Football'},
@@ -226,9 +224,9 @@ class MenteeFullSignUp extends Component {
         {label: 'By Email', id: 'formA-MenteeFullSignUp-memail', name: 'memail'},
         {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-msms', name: 'msms'},
       ]},*/
-      {q: 'Notification preferences: Career Opportunities, Tips & Promotions', detail: 'Receive inspiration, '+ (userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,') + ' promotions, surveys, and product updates from Prospela and our partners', aType: 'checkbox', name: 'memail', options: [
-        {label: 'By Email', id: 'formA-MenteeFullSignUp-pemail', name: 'pemail'},
-      //  {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-psms', name: 'psms'},
+      {q: 'Notification preferences: Career Opportunities, Tips & Promotions', detail: 'Receive inspiration, '+ (userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,') + ' promotions, surveys, and product updates from Prospela and our partners', aType: 'checkbox', name: 'checkboxMaster', options: [
+        {label: 'By Email', id: 'pemail', name: 'pemail'},
+      //  {label: 'By SMS / Text Message', id: 'psms', name: 'psms'},
       ]},
     ]
 
