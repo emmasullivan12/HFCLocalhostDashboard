@@ -140,7 +140,11 @@ class AutocompleteTagsMulti extends React.Component {
   //    this.setState(prevState => {
     //    return {
       if (handleDone) {
-        handleDone()
+        if (isForForm === true) {
+          handleDone(formId)
+        } else {
+          handleDone()
+        }
       }
 
       this.setState({
@@ -204,7 +208,7 @@ class AutocompleteTagsMulti extends React.Component {
     const userInput = e.currentTarget.value;
 
     this.widthCalc()
-    // set width of input box to size f userInput
+    // set width of input box to size of userInput
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     function filteredSuggestions() {

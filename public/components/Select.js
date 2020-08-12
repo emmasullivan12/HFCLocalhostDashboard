@@ -137,7 +137,7 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
-    const {handleDone} = this.props;
+    const {handleDone, isForForm} = this.props;
 
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
@@ -168,7 +168,12 @@ class SelectBox extends React.Component {
         finMultiOptions()
       }
       if (handleDone) {
-        handleDone()
+        if (isForForm === true) {
+          const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+          handleDone(formId)
+        } else {
+          handleDone()
+        }
       }
     }
 
@@ -635,9 +640,11 @@ class SelectBox extends React.Component {
 
           if ((hasTitles ? focusedValue === 1 : focusedValue === 0) || focusedValue === -1) {
 
-            const parent = document.getElementById("options-"+name);
-            const item = parent.firstElementChild;
-            parent.scrollTop = parent.scrollHeight - (item.offsetHeight * 5)
+            if (isOpen) {
+              const parent = document.getElementById("options-"+name);
+              const item = parent.firstElementChild;
+              parent.scrollTop = parent.scrollHeight - (item.offsetHeight * 5)
+            }
 
             focusedValue = options.length - 1
 
@@ -681,7 +688,10 @@ class SelectBox extends React.Component {
               }
             }
           } else if (focusedValue > 0) {
-            this.handleMoveUp();
+
+            if (isOpen) {
+              this.handleMoveUp();
+            }
 
             if (hasTitles) {
               if (options[focusedValue - 1]["isTitle"] === true) {
@@ -757,8 +767,10 @@ class SelectBox extends React.Component {
           }
 
           if (focusedValue === options.length -1) {
-            const parent = document.getElementById("options-"+name);
-            parent.scrollTop = 0;
+            if (isOpen) {
+              const parent = document.getElementById("options-"+name);
+              parent.scrollTop = 0;
+            }
 
             if (this.countTitles() > 0) {
               focusedValue = 1
@@ -828,7 +840,9 @@ class SelectBox extends React.Component {
             }
           }
 
-          this.handleMoveDown();
+          if (isOpen) {
+           this.handleMoveDown();
+          }
 
           const value = hasMultipleAttributes ? options[focusedValue][valueToShow] : options[focusedValue];
 
@@ -927,6 +941,7 @@ class SelectBox extends React.Component {
     const { focusedValue, values } = this.state;
     const { name, title, options, valueToShow, showCheckbox } = this.props;
     const parent = document.getElementById("options-"+name);
+    console.log(parent)
     const hasTitles = this.countTitles() > 0
 
     let item;

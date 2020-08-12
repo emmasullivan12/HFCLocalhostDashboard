@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Aug 2020 
+// Dex last merged this code on 12th Aug 2020
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
@@ -21,9 +21,9 @@ class MenteeFullSignUp extends Component {
   render() {
     const fname = 'Emma';
     const id = '12345';
-    const eetStatus = 'job';
+    const eetStatus = 'sch';
     const userRole = 'mentee';
-    const country = 'CAN'
+    const country = 'GBR'
 
     const subjects = ''; // sch Subjects
     const gradeType = '';
@@ -40,7 +40,7 @@ class MenteeFullSignUp extends Component {
     var questions = [
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'lifestyle'},
       ... (hobbies.length === 0) ? [
-        {q: 'Outside of work & school, what are some of your interests?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: false, openOnClick: true, showValues: true, placeholder: 'Type your answer here...', placeholderOnClick: 'Choose as many as you like:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+        {q: 'Outside of work & school, what are some of your interests?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose as many as you like:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Football'},
           {value: '1', label: 'Tennis'},
           {value: '2', label: 'Gaming'},
@@ -77,7 +77,7 @@ class MenteeFullSignUp extends Component {
       ]},
       ... (eetStatus === 'sch') ? [
         ... (subjects === '') ? [
-          {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: false, openOnClick: true, showValues: true, placeholder: 'Choose Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
+          {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
           {value: '2', label: 'Ancient History'},

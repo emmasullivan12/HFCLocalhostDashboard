@@ -96,9 +96,6 @@ class Form extends Component {
       [stateToChange]: e.target.checked
     });
 
-  /*  const split1 = stateToChange.split(usedFor)
-    const stateToChangeSplit2 = split1[1].split("-")
-    var i = stateToChangeSplit2[0];*/
     const stateToChangeSplit = stateToChange.split("-")
     var i = stateToChangeSplit[0];
     let checkboxesToCheck = [];
@@ -159,12 +156,19 @@ class Form extends Component {
     if (focusedQ === 0) {
       return
     } else {
-      const parent = document.getElementById("fpModal-"+usedFor);
-    //  const firstQ = document.getElementById("formQ-"+usedFor+"0");
+    /*  const parent = document.getElementById("fpModal-"+usedFor);
       const firstQ = document.getElementById("0-"+questions[0].name);
       const qHeight = firstQ.scrollHeight * (focusedQ - 1)
+      parent.scrollTop = qHeight*/
 
-      parent.scrollTop = qHeight
+
+  /*    if (focusedQ === 1) {
+        parent.scrollTop = 0
+      } else {
+        const firstQ = document.getElementById("0-"+questions[0].name);
+        const qHeight = firstQ.scrollHeight * (focusedQ - 1)
+        parent.scrollTop = qHeight
+      }*/
 
       this.setState(prevState => {
         let { focusedQ } = prevState
@@ -187,10 +191,24 @@ class Form extends Component {
         } else {
           document.getElementById(idToFocusOn).focus()
         }
+
+        console.log("this.state.focusedQ: "+this.state.focusedQ)
+        if (this.state.focusedQ === 0) {
+          console.log("about to set scrolltop to 0")
+          parent.scrollTop = 0
+        } else {
+          const parent = document.getElementById("fpModal-"+usedFor);
+          const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
+          console.log(this.state.focusedQ)
+          console.log(currentQ)
+          console.log("currentQ.offsetTop: "+currentQ.offsetTop)
+          parent.scrollTop = currentQ.offsetTop
+        }
       })
     }
   }
 
+  //handleScrollDown = (formId) => {
   handleScrollDown = () => {
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
@@ -198,33 +216,62 @@ class Form extends Component {
     if (focusedQ === questions.length - 1) {
       return
     } else {
+    /*  console.log("formId")
+      console.log(formId)
+      let i;
 
-      const parent = document.getElementById("fpModal-"+usedFor);
+      if (formId) {
+        const formIdSplit = formId.split("-")
+        i = +formIdSplit[0];
+      }
+*/
+    /*  const parent = document.getElementById("fpModal-"+usedFor);
       const firstQ = document.getElementById("0-"+questions[0].name);
-      const qHeight = firstQ.scrollHeight * (focusedQ + 1)
+      const qHeight = firstQ.scrollHeight * (focusedQ + 1)*/
 
-      parent.scrollTop = qHeight
+    /*  console.log("i: "+i)
+      console.log("focusedQ + 1: "+(focusedQ + 1))
+      console.log("amount of items to scroll (formId ? i + 1 : focusedQ + 1): "+(formId ? i + 1 : focusedQ + 1))
+      const qHeight = firstQ.scrollHeight * (formId ? i + 1 : focusedQ + 1)
+      console.log("firstQ.scrollHeight: "+firstQ.scrollHeight)
+      console.log("qHeight: "+qHeight)*/
+    //  parent.scrollTop = qHeight
+
+    //  document.getElementById("formQ-menteeFullSU2").scrollIntoView()
 
       this.setState(prevState => {
         let { focusedQ } = prevState
 
-        focusedQ++
+      /*  if (formId) {
+          console.log("gets here")
+          focusedQ = i + 1
+        } else {*/
+          focusedQ++
+  //      }
 
         return {
           focusedQ
         }
       }, () => {
+
         const answers = document.getElementsByClassName("formA-"+usedFor)
         const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
         const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
 
-        if (elToFocusOn != null) {
+        if (elToFocusOn != undefined) {
           if (elToFocusOn === 'firstElementChild') {
            document.getElementById(idToFocusOn).firstElementChild.focus();
           }
         } else {
           document.getElementById(idToFocusOn).focus()
         }
+
+        const parent = document.getElementById("fpModal-"+usedFor);
+        const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
+        console.log(this.state.focusedQ)
+        console.log(currentQ)
+        console.log("currentQ.offsetTop: "+currentQ.offsetTop)
+        parent.scrollTop = currentQ.offsetTop
 
       })
     }
@@ -267,6 +314,15 @@ class Form extends Component {
         this.toggleScrollLock();
       }
     })
+  }
+
+  handleDoneClickMulti = (formId) => {
+    if (this.state[formId+"isValid"] === true) {
+      this.handleScrollDown(formId)
+    } else {
+      return
+      //const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
+    }
   }
 
   toggleScrollLock = () => {
@@ -476,7 +532,7 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus={"autocompleterTags-"+name}
+            data-idforfocus={"autocompleteBox-"+name}
             data-idforstate={i+"-"+name}
           >
             <div className="autocompleter">
@@ -485,7 +541,7 @@ class Form extends Component {
                 openOnClick={question['openOnClick']}
                 showValues={question['showValues']}
                 showCheckbox={question['showCheckbox']}
-          //      handleDone={this.handleDoneClickRoles}
+                handleDone={this.handleDoneClickMulti}
                 suggestions={question['options']}
                 name={name}
                 placeholder={question['placeholder']}
