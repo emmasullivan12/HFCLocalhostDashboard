@@ -26,8 +26,29 @@ class Form extends Component {
     this.state = {
       focusedQ: 0,
       isSubmitting: false,
+      firstQEdited: false,
       tabPressed: '',
     };
+  }
+
+  componentDidMount() {
+    const {usedFor} = this.props
+    const observer = this.createObserver()
+
+    // Track all sections that have an `id` applied
+    document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
+      observer.observe(section);
+    });
+
+  }
+
+  componentWillUnmount() {
+    const {usedFor} = this.props
+    const observer = this.createObserver()
+
+    document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
+      observer.unobserve(section);
+    });
   }
 
   onBlur(e) {
@@ -38,22 +59,69 @@ class Form extends Component {
     }
   }
 
+/*  onScroll(e) {
+    const {usedFor} = this.props
+    const parent = document.getElementById("fpModal-"+usedFor)
+    console.log("parent.scrollTop: "+parent.scrollTop)
+  }*/
+
+  createObserver = () => {
+    const {usedFor, questions} = this.props
+
+    let options = {
+      threshold: 0.7
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target
+        const id = el.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
+          this.setState({
+            focusedQ: index
+          })
+        }
+      });
+    }, options);
+
+    return observer
+  }
+
   handleChange = (e) => {
+    const id = e.target.id
+    const i = id.split("-")[0]
+    console.log(i)
+    if (i == 0) {
+      this.setState({
+        firstQEdited: true,
+      })
+    }
+
     this.setState({
-      [e.target.id]: e.target.value,
+      [id]: e.target.value,
     })
     if (e.target.checkValidity()) {
       this.setState({
-        [e.target.id+"isValid"]: true
+        [id+"isValid"]: true
       })
     } else {
       this.setState({
-        [e.target.id+"isValid"]: false
+        [id+"isValid"]: false
       })
     }
   }
 
   handleNonTextChange = (values, formId, isValid, callback) => {
+
+    const i = formId.split("-")[0]
+    console.log(i)
+    if (i == 0) {
+      this.setState({
+        firstQEdited: true,
+      })
+    }
+
     this.setState({
       [formId]: values,
       [formId+"isValid"]: isValid
@@ -69,13 +137,20 @@ class Form extends Component {
 
     const formIdSplit = formId.split("-")
     var getIndex = formIdSplit[0];
+
+    if (getIndex == 0) {
+      this.setState({
+        firstQEdited: true,
+      })
+    }
+
     const getOptions = questions[getIndex]['options'];
 
     const newArray = getOptions
       .filter(option => values.includes(option.label))
 
     const array = newArray.map(value => value.value)
-    console.log(questions[getIndex]['aType'])
+
     if (questions[getIndex]['aType'] === 'autocompleteMulti') {
       const labels = newArray.map(value => value.label)
 
@@ -166,19 +241,6 @@ class Form extends Component {
     if (focusedQ === 0) {
       return
     } else {
-    /*  const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("0-"+questions[0].name);
-      const qHeight = firstQ.scrollHeight * (focusedQ - 1)
-      parent.scrollTop = qHeight*/
-
-
-  /*    if (focusedQ === 1) {
-        parent.scrollTop = 0
-      } else {
-        const firstQ = document.getElementById("0-"+questions[0].name);
-        const qHeight = firstQ.scrollHeight * (focusedQ - 1)
-        parent.scrollTop = qHeight
-      }*/
 
       this.setState(prevState => {
         let { focusedQ } = prevState
@@ -202,23 +264,18 @@ class Form extends Component {
           document.getElementById(idToFocusOn).focus()
         }
 
-        console.log("this.state.focusedQ: "+this.state.focusedQ)
         if (this.state.focusedQ === 0) {
-          console.log("about to set scrolltop to 0")
-          parent.scrollTop = 0
+          return
+          //parent.scrollTop = 0
         } else {
           const parent = document.getElementById("fpModal-"+usedFor);
           const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
-          console.log(this.state.focusedQ)
-          console.log(currentQ)
-          console.log("currentQ.offsetTop: "+currentQ.offsetTop)
           parent.scrollTop = currentQ.offsetTop
         }
       })
     }
   }
 
-  //handleScrollDown = (formId) => {
   handleScrollDown = () => {
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
@@ -278,9 +335,6 @@ class Form extends Component {
 
         const parent = document.getElementById("fpModal-"+usedFor);
         const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
-        console.log(this.state.focusedQ)
-        console.log(currentQ)
-        console.log("currentQ.offsetTop: "+currentQ.offsetTop)
         parent.scrollTop = currentQ.offsetTop
 
       })
@@ -327,8 +381,6 @@ class Form extends Component {
 
       console.log(statesToSave)
       // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
-
-      onSubmit()
 
       // Once submitted or if error that user needs addressing
       if (this.state.isSubmitting === false) {
@@ -389,6 +441,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-index={i}
           >
             <TextInput
               name={name}
@@ -408,6 +461,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-index={i}
           >
             <textarea
               name={name}
@@ -432,6 +486,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-index={i}
           >
             <NumberInput
               name={name}
@@ -451,6 +506,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-index={i}
           >
             <PhoneInput
               name={name}
@@ -472,6 +528,7 @@ class Form extends Component {
             <div
               className={"formA-"+usedFor}
               data-idforfocus={i+"-"+options[0]['name']}
+              data-index={i}
           //    data-idforfocus={options[0]['id']}
             >
               {options.map((option, index) => {
@@ -508,6 +565,7 @@ class Form extends Component {
             className={"formA-"+usedFor}
             data-idforfocus={"selectBox-"+name}
             data-idforstate={i+"-"+name}
+            data-index={i}
           >
             <SelectBox
               options={question['options']}
@@ -527,6 +585,7 @@ class Form extends Component {
             className={"formA-"+usedFor}
             data-idforfocus={"selectBox-"+name}
             data-idforstate={i+"-"+name}
+            data-index={i}
           >
             <SelectBox
               multiple
@@ -555,6 +614,7 @@ class Form extends Component {
             className={"formA-"+usedFor}
             data-idforfocus={"autocompleteBox-"+name}
             data-idforstate={i+"-"+name}
+            data-index={i}
           >
             <div className="autocompleter">
               <AutocompleteTagsMulti
@@ -584,6 +644,7 @@ class Form extends Component {
             data-idforfocus="ratingsContainer"
             data-elementforfocus="firstElementChild"
             data-idforstate={i+"-"+name}
+            data-index={i}
           >
             <RatingItems
               ratingOutOf={question['ratingOutOf']}
@@ -634,7 +695,7 @@ class Form extends Component {
   }
 
   render() {
-    const {focusedQ, isSubmitting, tabPressed} = this.state
+    const {focusedQ, isSubmitting, tabPressed, firstQEdited} = this.state
     const {questions} = this.props
 
     const isEnabled = this.canBeSubmitted();
@@ -662,10 +723,10 @@ class Form extends Component {
           </button>
         </div>
         <div className="formCTAContainer other">
-          <button type="button" disabled={isSubmitting === true ? true : focusedQ === 0} className="qScrollBtn" onClick={this.handleScrollUp}>
+          <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>
-          <button type="button" disabled={isSubmitting === true ? true : focusedQ === (questions.length - 1)} className="qScrollBtn" onClick={this.handleScrollDown}>
+          <button type="button" disabled={isSubmitting === true ? true : (firstQEdited === false ? true : focusedQ == (questions.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
             <ChevronDown />
           </button>
         </div>
