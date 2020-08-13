@@ -19,8 +19,8 @@ const MenteeFullSignUpProps = {
 // Passes Typeform links to full sign up (mentee) or training (mentors)
 class MenteeFullSignUp extends Component {
   render() {
-    const fname = 'Emma';
-    const id = '12345';
+//    const fname = 'Emma';
+  //  const id = '12345';
     const eetStatus = 'sch';
     const userRole = 'mentee';
     const country = 'GBR'

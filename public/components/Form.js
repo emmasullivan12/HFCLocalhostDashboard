@@ -71,14 +71,24 @@ class Form extends Component {
     var getIndex = formIdSplit[0];
     const getOptions = questions[getIndex]['options'];
 
-    let newArray
-
-    newArray = getOptions
+    const newArray = getOptions
       .filter(option => values.includes(option.label))
-      .map(value => value.value)
+
+    const array = newArray.map(value => value.value)
+    console.log(questions[getIndex]['aType'])
+    if (questions[getIndex]['aType'] === 'autocompleteMulti') {
+      const labels = newArray.map(value => value.label)
+
+      const freeTextArray = values
+        .filter(freeText => labels.indexOf(freeText) === -1)
+
+      this.setState({
+        [formId+"freeText"]: freeTextArray
+      })
+    }
 
     this.setState({
-      [formId]: newArray,
+      [formId]: array,
       [formId+"isValid"]: isValid
     }, () => {
       if (callback) {
@@ -278,6 +288,7 @@ class Form extends Component {
   }
 
   handleSubmit = () => {
+    const {onSubmit} = this.props;
     this.toggleScrollLock();
     this.setState({
       isSubmitting: true
@@ -299,6 +310,14 @@ class Form extends Component {
               {[optionName]: this.state[i+"-"+optionName]}
             );
           })
+
+        } else if (question['aType'] === 'autocompleteMulti') {
+
+          statesToSave.push(
+            {[name]: this.state[i+"-"+name]},
+            {[name+'freeText']: this.state[i+"-"+name+'freeText']}
+          );
+
         } else {
           statesToSave.push(
             {[name]: this.state[i+"-"+name]}
@@ -308,6 +327,8 @@ class Form extends Component {
 
       console.log(statesToSave)
       // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
+
+      onSubmit()
 
       // Once submitted or if error that user needs addressing
       if (this.state.isSubmitting === false) {
