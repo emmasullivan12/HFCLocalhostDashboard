@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th Aug 2020
+// Dex last merged this code on 14th Aug 2020
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
@@ -159,7 +159,6 @@ class MenteeFullSignUp extends Component {
           {value: '115', label: 'Weighlifting'},
           {value: '116', label: 'Writing'},
           {value: '117', label: 'Yoga'},
-
         ]},
       ] : [],
       ... (expertise.length === 0) ? [
