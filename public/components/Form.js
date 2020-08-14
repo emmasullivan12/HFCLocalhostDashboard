@@ -27,6 +27,9 @@ class Form extends Component {
       focusedQ: 0,
       isSubmitting: false,
       firstQEdited: false,
+      qViewed: 0,
+      qRequired: "",
+      pct: 0,
       tabPressed: '',
     };
   }
@@ -34,6 +37,13 @@ class Form extends Component {
   componentDidMount() {
     const {usedFor} = this.props
     const observer = this.createObserver()
+
+  /*  const required = questions
+      .filter(q => q['req'] === 1)
+    console.log("required: "+required)
+    this.setState({
+      qRequired: required
+    })*/
 
     // Track all sections that have an `id` applied
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
@@ -65,6 +75,43 @@ class Form extends Component {
     console.log("parent.scrollTop: "+parent.scrollTop)
   }*/
 
+//  updateProgress = (index) => {
+
+  updateProgress = () => {
+    const {questions} = this.props
+    const qLength = questions.length
+    const statesToCheck = [];
+
+    questions.forEach((question, i) => {
+      const required = question['req'] === 1;
+      const name = question['name'];
+
+      if (!required) {
+        return
+      } else {
+        statesToCheck.push(
+        //  this.state["formA-"+usedFor+i+"isValid"],
+          this.state[i+"-"+name+"isValid"]
+        );
+      }
+    });
+
+    const completedQ = statesToCheck
+      .filter(q => q == true)
+
+//    const width = (index / (qLength - 1)) * 100
+  //  const width = (completedQ.length / statesToCheck.length) * 100
+    const width = (completedQ.length / qLength) * 100
+
+    const el = document.getElementById("formProgressBar")
+
+    el.style.width = width + "%";
+
+    this.setState({
+      pct: Math.round(width),
+    })
+  }
+
   createObserver = () => {
     const {usedFor, questions} = this.props
 
@@ -76,10 +123,21 @@ class Form extends Component {
       entries.forEach(entry => {
         const el = entry.target
         const id = el.getAttribute('id');
+        const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
+
         if (entry.intersectionRatio > 0) {
-          const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
-          this.setState({
-            focusedQ: index
+
+      //    this.updateProgress(index)
+
+          this.setState(prevState => {
+            let { qViewed } = prevState
+            const maxQViewed = Math.max(index, qViewed)
+
+            return {
+              focusedQ: index,
+              qViewed: maxQViewed
+            }
+
           })
         }
       });
@@ -91,7 +149,7 @@ class Form extends Component {
   handleChange = (e) => {
     const id = e.target.id
     const i = id.split("-")[0]
-    console.log(i)
+
     if (i == 0) {
       this.setState({
         firstQEdited: true,
@@ -104,10 +162,14 @@ class Form extends Component {
     if (e.target.checkValidity()) {
       this.setState({
         [id+"isValid"]: true
+      }, () => {
+        this.updateProgress()
       })
     } else {
       this.setState({
         [id+"isValid"]: false
+      }, () => {
+        this.updateProgress()
       })
     }
   }
@@ -115,7 +177,7 @@ class Form extends Component {
   handleNonTextChange = (values, formId, isValid, callback) => {
 
     const i = formId.split("-")[0]
-    console.log(i)
+
     if (i == 0) {
       this.setState({
         firstQEdited: true,
@@ -126,6 +188,7 @@ class Form extends Component {
       [formId]: values,
       [formId+"isValid"]: isValid
     }, () => {
+      this.updateProgress()
       if (callback) {
         callback()
       }
@@ -166,6 +229,7 @@ class Form extends Component {
       [formId]: array,
       [formId+"isValid"]: isValid
     }, () => {
+      this.updateProgress()
       if (callback) {
         callback()
       }
@@ -389,9 +453,9 @@ class Form extends Component {
     })
   }
 
-  handleDoneClickMulti = (formId) => {
+  handleDoneClick = (formId) => {
     if (this.state[formId+"isValid"] === true) {
-      this.handleScrollDown(formId)
+      this.handleScrollDown()
     } else {
       return
       //const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
@@ -405,6 +469,7 @@ class Form extends Component {
 
   canBeSubmitted() {
     const {questions, usedFor} = this.props;
+    const {qViewed} = this.state;
 
     const statesToCheck = [];
 
@@ -422,10 +487,12 @@ class Form extends Component {
       }
     });
 
-    if (statesToCheck.includes(false) || statesToCheck.includes(undefined)){
+    if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
       return false
-    } else {
+    } else if (qViewed === (questions.length - 1)) {
       return true
+    } else {
+      return false
     }
 
   }
@@ -572,6 +639,7 @@ class Form extends Component {
               placeholder={question['placeholder']}
               name={name}
               handleChange={this.handleNonTextChange}
+              handleDone={this.handleDoneClick}
               focusOnLoad={i === 0 ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
               isForForm
@@ -595,6 +663,7 @@ class Form extends Component {
               placeholder={question['placeholder']}
               placeholderOnClick={question['placeholderOnClick']}
               handleChange={this.handleNonTextMultiChange}
+              handleDone={this.handleDoneClick}
               focusOnLoad={(i === 0) ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
               showCheckbox={question['showCheckbox']}
@@ -622,7 +691,7 @@ class Form extends Component {
                 openOnClick={question['openOnClick']}
                 showValues={question['showValues']}
                 showCheckbox={question['showCheckbox']}
-                handleDone={this.handleDoneClickMulti}
+                handleDone={this.handleDoneClick}
                 suggestions={question['options']}
                 name={name}
                 placeholder={question['placeholder']}
@@ -651,6 +720,7 @@ class Form extends Component {
               handleRatingChange={this.handleNonTextChange}
               name={name}
               usedFor={usedFor}
+              handleDone={this.handleDoneClick}
               focusOnLoad={(i === 0) ? true : false}
               isForForm
               required={required}
@@ -695,7 +765,7 @@ class Form extends Component {
   }
 
   render() {
-    const {focusedQ, isSubmitting, tabPressed, firstQEdited} = this.state
+    const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct} = this.state
     const {questions} = this.props
 
     const isEnabled = this.canBeSubmitted();
@@ -723,10 +793,14 @@ class Form extends Component {
           </button>
         </div>
         <div className="formCTAContainer other">
+          <div id="formProgressPct">{pct+"% completed"}</div>
+          <div id="formProgress">
+            <div id="formProgressBar"/>
+          </div>
           <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>
-          <button type="button" disabled={isSubmitting === true ? true : (firstQEdited === false ? true : focusedQ == (questions.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
+          <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (questions.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
             <ChevronDown />
           </button>
         </div>

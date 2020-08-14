@@ -55,7 +55,7 @@ class RatingItems extends Component {
   onMouseDown = (e) => {
     e.persist()
     const value = e.currentTarget.dataset.id;
-    const {handleRatingChange, isForForm, usedFor} = this.props;
+    const {handleRatingChange, isForForm, usedFor, handleDone} = this.props;
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
     if (value === this.state.indexChecked) {
@@ -78,7 +78,11 @@ class RatingItems extends Component {
       }, () => {
         if(handleRatingChange) {
           if (isForForm === true) {
-            handleRatingChange(value, formId, this.checkError())
+            handleRatingChange(value, formId, this.checkError(), () => {
+              if (handleDone) {
+                handleDone(formId)
+              }
+            })
           } else {
             handleRatingChange(value)
             this.checkError()
@@ -105,7 +109,7 @@ class RatingItems extends Component {
       e.preventDefault();
       e.persist()
       const value = e.currentTarget.value;
-      const {handleRatingChange, isForForm} = this.props;
+      const {handleRatingChange, isForForm, handleDone} = this.props;
       const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
       if (value === this.state.indexChecked) {
@@ -128,7 +132,11 @@ class RatingItems extends Component {
         }, () => {
           if(handleRatingChange) {
             if (isForForm === true) {
-              handleRatingChange(value, formId, this.checkError())
+              handleRatingChange(value, formId, this.checkError(), () => {
+                if (handleDone) {
+                  handleDone(formId)
+                }
+              })
             } else {
               handleRatingChange(value)
               this.checkError()

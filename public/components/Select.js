@@ -137,12 +137,14 @@ class SelectBox extends React.Component {
   }
 
   onClick = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
     const {handleDone, isForForm} = this.props;
 
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
-    const { handleFocus, multiple, finMultiOptions, options, showCheckbox } = this.props;
+    const { handleFocus, multiple, finMultiOptions, options, showCheckbox, name } = this.props;
     const { values } = this.state;
     const currentState = this.state.isOpen;
 
@@ -168,7 +170,7 @@ class SelectBox extends React.Component {
         finMultiOptions()
       }
       if (handleDone) {
-        if (isForForm === true) {
+        if (isForForm === true && e.currentTarget.id === ("doneTick-"+name)) {
           const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
           handleDone(formId)
         } else {
@@ -233,7 +235,7 @@ class SelectBox extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { options, name, required, multiple, handleChange, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions, isForForm } = this.props;
+    const { options, name, required, multiple, handleChange, handleDone, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions, isForForm } = this.props;
 
     if (e.currentTarget.dataset.id.indexOf("title") != -1) {
       return
@@ -265,6 +267,10 @@ class SelectBox extends React.Component {
       }
 
       if (!multiple) {
+        if (handleDone) {
+          handleDone(formId)
+        }
+
         return {
           values: [ value ],
           focusedValue: index,
@@ -347,7 +353,7 @@ class SelectBox extends React.Component {
   onKeyDown = e => {
     e.persist()
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm } = this.props;
+    const { handleChange, handleDone, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
@@ -458,7 +464,13 @@ class SelectBox extends React.Component {
             if (handleChange) {
               if (isForForm === true) {
                 const isValid = required ? value != '' : true;
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
+
+                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid, () => {
+                  if (handleDone) {
+                    handleDone(formId)
+                  }
+                });
+
               } else {
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
@@ -485,6 +497,7 @@ class SelectBox extends React.Component {
           }
         }
       }, () => {
+
         if (showCheckbox === true) {
           if (finMultiOptions) {
             const allSelected = this.state.values.length === (options.length - this.countTitles())
@@ -941,7 +954,6 @@ class SelectBox extends React.Component {
     const { focusedValue, values } = this.state;
     const { name, title, options, valueToShow, showCheckbox } = this.props;
     const parent = document.getElementById("options-"+name);
-    console.log(parent)
     const hasTitles = this.countTitles() > 0
 
     let item;
