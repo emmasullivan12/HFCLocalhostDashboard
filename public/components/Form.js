@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th Aug 2020
+// Dex last merged this code on 14th Aug 2020
 
 import React, { Component } from "react";
 import {
@@ -413,7 +413,7 @@ class Form extends Component {
     }, () => {
       const {questions} = this.props;
 
-      const statesToSave = []
+      const statesToSave = {}
 
       questions.forEach((question, i) => {
         const name = question['name'];
@@ -424,22 +424,17 @@ class Form extends Component {
 
           options.forEach((option, index) => {
             const optionName = option['name']
-            statesToSave.push(
-              {[optionName]: this.state[i+"-"+optionName]}
-            );
+
+            statesToSave[optionName] = this.state[i+"-"+optionName]
           })
 
         } else if (question['aType'] === 'autocompleteMulti') {
 
-          statesToSave.push(
-            {[name]: this.state[i+"-"+name]},
-            {[name+'freeText']: this.state[i+"-"+name+'freeText']}
-          );
+          statesToSave[name] = this.state[i+"-"+name]
+          statesToSave[name+'freeText'] = this.state[i+"-"+name+'freeText']
 
         } else {
-          statesToSave.push(
-            {[name]: this.state[i+"-"+name]}
-          );
+          statesToSave[name] = this.state[i+"-"+name]
         }
       });
 
