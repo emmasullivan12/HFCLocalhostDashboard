@@ -229,6 +229,9 @@ hr{
   color: #c7c7c7;
   margin: 0.25rem 0 1.5rem;
 }
+.descriptor-br.form{
+  margin-top: -1rem;
+}
 .fullWidth{
   width: 100%;
 }
@@ -369,6 +372,7 @@ hr{
 .textInputBox:focus{
   border: 2px solid #3f3f3f;
 }
+a.Submit-btn,
 .Submit-btn{
   color: #fff;
   font: inherit;
@@ -391,6 +395,9 @@ hr{
   -ms-transition: background .15s ease-out;
   -o-transition: background .15s ease-out;
   transition: background .15s ease-out;
+}
+a.Submit-btn{
+  padding: 0.8rem 0.8rem 1.8rem 0.8rem;
 }
 .Submit-btn.landingCTA.hollow{
   border: 1px solid #351c75;
@@ -495,6 +502,8 @@ hr{
 .uploadPicBtn{
   margin-top: 25px!important;
 }
+a.Submit-btn:hover,
+a.Submit-btn:focus,
 .Submit-btn:hover,
 .Submit-btn:focus {
   background: #06bf9c;
@@ -502,6 +511,9 @@ hr{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+a.Submit-btn:focus{
+  background: #58d2bb;
 }
 .Submit-btn.BlankBtn:hover,
 .Submit-btn.BlankBtn:focus{
@@ -531,6 +543,7 @@ hr{
   -moz-box-shadow: none;
 }
 .Submit-btn.HollowBtn:disabled,
+a.Submit-btn:disabled,
 .Submit-btn:disabled{
   color: #9f9fa0;
   background: #e0e1e2;
@@ -539,6 +552,7 @@ hr{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
+a.Submit-btn:disabled:active,
 .Submit-btn:disabled:active {
   background: none;
 }
@@ -967,9 +981,19 @@ a:active {
 .error-href{
   color: red!important;
 }
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+}
 .link{
   text-decoration: none;
   cursor: pointer;
+}
+.Submit-btn.link{
+  color: #fff;
 }
 .link.map{
   color: #e2dfdf;
@@ -988,7 +1012,15 @@ a:active {
   outline: 0;
   cursor: pointer;
 }
-
+/* Slightly smaller so is not a main CTA */
+.skipCTA{
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+.Submit-btn.skipCTA{
+  margin: auto;
+}
 /* IMAGES */
 .img-circle {
   border-radius: 50%;

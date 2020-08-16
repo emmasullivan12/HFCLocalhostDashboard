@@ -10,7 +10,8 @@
   position: fixed;
   top: 40px!important;
   left: 25%;
-  background-color: white;
+  background-color: #fff;
+  z-index: 100;
 }
 .form-QA {
   height: calc(100vh - 4.5em);

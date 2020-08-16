@@ -19,8 +19,7 @@ class TextInput extends React.Component {
   }
 
   render() {
-//    const { onChange } = this;
-    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, maxLength, handleMouseDown, onKeyDown } = this.props;
+    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, minLength, maxLength, handleMouseDown, onKeyDown } = this.props;
 
     return (
       <React.Fragment>
@@ -39,6 +38,7 @@ class TextInput extends React.Component {
           onKeyDown={onKeyDown}
           onKeyUp={handleKeyUp}
           onMouseDown={handleMouseDown}
+          minLength={minLength}
           maxLength={maxLength}
         />
       </React.Fragment>

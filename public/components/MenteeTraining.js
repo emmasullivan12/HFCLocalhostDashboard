@@ -17,7 +17,8 @@ class MenteeTraining extends Component {
   render() {
     const fname = 'Emma';
     const id = '12345'
-    const nonPartnerSch = true;
+    const is18plus = 1;
+  //  const nonPartnerSch = true;
     const menteetflink = 'https://prospela.typeform.com/to/GqAe1k?fname='+fname+'&uid='+id;
 
     return (
@@ -30,7 +31,14 @@ class MenteeTraining extends Component {
           <p className="landingCTADesc">
             The last step before becoming a <strong>&#34;Certified Prospela Mentee&#34;</strong> is completing our short (and sweet) online training. It will help you feel fully equipped to make the most of your new network, incl. learning how to build a professional relationship online, and more.
           </p>
-          <TypeformFullPage tflink={menteetflink} {...MenteeTrainingProps}/>
+          <a className="button link Submit-btn" href={menteetflink} target="_blank" rel="noopener noreferrer">
+            Complete 5-min Training &gt;&gt;
+          </a>
+          {is18plus == 1 && (
+            <button type="button" className="Submit-btn BlankBtn Grey skipCTA">
+              Skip for now
+            </button>
+          )}
         </div>
       </section>
     );

@@ -516,6 +516,11 @@ class Form extends Component {
               onBlur={this.onBlur}
               focusOnLoad={(i === 0) ? true : false}
             />
+            {question['maxLength'] && (
+              <div className="descriptor-br form">
+               {this.state[i+"-"+name] ? this.state[i+"-"+name].length : 0} / {question['maxLength']}
+              </div>
+            )}
           </div>
         );
       case 'textLong':
@@ -541,6 +546,11 @@ class Form extends Component {
               maxLength={question['maxLength']}
               required={required}
             />
+            {question['maxLength'] && (
+              <div className="descriptor-br form">
+                {this.state[i+"-"+name] ? this.state[i+"-"+name].length : 0} / {question['maxLength']}
+              </div>
+            )}
           </div>
         );
       case 'number':
@@ -686,6 +696,7 @@ class Form extends Component {
                 openOnClick={question['openOnClick']}
                 showValues={question['showValues']}
                 showCheckbox={question['showCheckbox']}
+                maxTextLength={question['maxTextLength']}
                 handleDone={this.handleDoneClick}
                 suggestions={question['options']}
                 name={name}

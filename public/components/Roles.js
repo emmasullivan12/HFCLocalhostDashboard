@@ -518,7 +518,6 @@ const roleOptions = [
   {value: '512', label: 'Youth Worker'},
   {value: '513', label: 'Zookeeper'},
   {value: '514', label: 'Zoologist'},
-
 ];
 
 export default roleOptions;

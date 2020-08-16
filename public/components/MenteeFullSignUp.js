@@ -38,9 +38,9 @@ class MenteeFullSignUp extends Component {
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : '07400 123456'
 
     var questions = [
-      {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'lifestyle'},
+      {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about things like working hours, social life, salary, running your own business, being the boss etc. Note: There are no right or wrong answers here ... Dream as big (or as little) as you like!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'lifestyle'},
       ... (hobbies.length === 0) ? [
-        {q: 'Outside of work & school, what are some of your interests & hobbies?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+        {q: 'Outside of work & school, what are some of your interests & hobbies?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: '3D Printing'},
           {value: '1', label: 'Acting'},
           {value: '2', label: 'AI & Machine Learning'},
@@ -162,7 +162,7 @@ class MenteeFullSignUp extends Component {
         ]},
       ] : [],
       ... (expertise.length === 0) ? [
-        {q: 'What would you say your "key skills" are?', detail: 'To help you think: What do you enjoy doing? Have you helped someone recently? How? What did someone last compliment you on?', aType: 'textLong', req: 1, placeholder: 'Type your key skills here...', name: 'expertise'},
+        {q: 'What would you say your "key skills" are?', detail: 'To help you think: What do you enjoy doing? Have you helped someone recently? How? What did someone last compliment you on?', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
       ] : [],
       {q: 'Tell us how we can help! What type of support are you looking for?', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'supportType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
@@ -170,7 +170,7 @@ class MenteeFullSignUp extends Component {
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
-      {q: 'I\'m interested in speaking to and getting mentored by real employees because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, placeholder: 'Type your answer here...', name: 'whyJoin'},
+      {q: 'I\'m interested in speaking to and getting mentored by real employees because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyJoin'},
       ... (certainty === '') ? [
         {q: 'How sure are you of what you want to do for your career?', aType: 'rating', req: 1, name: 'certainty', ratingOutOf: 10},
       ] : [],
@@ -190,7 +190,7 @@ class MenteeFullSignUp extends Component {
       ]},
       ... (eetStatus === 'sch') ? [
         ... (subjects === '') ? [
-          {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
+          {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: true, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
           {value: '2', label: 'Ancient History'},
@@ -311,7 +311,7 @@ class MenteeFullSignUp extends Component {
         ]},
         ] : [],
         ... (gradeType != '') ? [
-          {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'erg', placeholder: 'Select type...', valueToShow: 'label', options: [
+          {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'gradeType', placeholder: 'Select type...', valueToShow: 'label', options: [
             {value: '0', label: 'Top of the class/high grade'},
             {value: '1', label: 'Slightly above middle of the road'},
             {value: '2', label: 'Middle of the road'},
@@ -331,7 +331,7 @@ class MenteeFullSignUp extends Component {
         {q: 'Roughly, how many people do you consider yourself to have in your professional network?', detail: 'e.g. people who aren\'t close family or friends and that can support you in business or a career related activity.', aType: 'number', req: 1, min: 0, max: 1000, placeholder: 'Type number...', name: 'networkSize'},
       ] : [],
       ... (phone === '') ? [
-        {q: 'What\'s your mobile number?', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'phone'},
+        {q: 'What\'s your mobile number?', detail: 'We need this additional way to contact you in case you change schools, etc.', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
       ] : [],
     /*  {q: 'Notification preferences: Messages from your E-Mentor etc.', detail: 'Receive messages from '+ (userRole === 'mentee' ? 'your E-Mentors and other students in your network, including 1:1 careers advice personalised to you' : 'your Mentees and other employees in your groups'), aType: 'checkbox', name: 'memail', options: [
         {label: 'By Email', id: 'formA-MenteeFullSignUp-memail', name: 'memail'},

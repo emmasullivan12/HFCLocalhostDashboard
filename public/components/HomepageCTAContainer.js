@@ -30,7 +30,7 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'joinedProg'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'didFullSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const is18plus = 1;
     const matchstatus = 'didSafeG';
@@ -66,12 +66,15 @@ class HomepageCTAContainer extends Component {
         {step === 'joinedProg' && (
           <MenteeFullSignUp />
         )}
-        {is18plus != 1 && step === 'didFullSUtf' && (
+        {step === 'didFullSUtf' && (
+          <MenteeTraining />
+        )}
+    {/*    {is18plus != 1 && step === 'didFullSUtf' && (
           <MenteeTraining />
         )}
         {is18plus === 1 && step === 'didFullSUtf' && hasInvite === false && (
           <MentorMatches />
-        )}
+        )}*/}
         {step === 'didSafeG' && hasInvite === false && (
           <MentorMatches />
         )}

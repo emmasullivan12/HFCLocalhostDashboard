@@ -870,7 +870,7 @@ class AutocompleteTagsMulti extends React.Component {
   }
 
   render() {
-    const { placeholder, placeholderOnClick, required, name } = this.props;
+    const { placeholder, placeholderOnClick, required, name, maxTextLength } = this.props;
     const { showSuggestions, userInput, values } = this.state;
     const showClickPlaceholder = showSuggestions === true && placeholderOnClick && values.length === 0
 
@@ -899,6 +899,7 @@ class AutocompleteTagsMulti extends React.Component {
             autoComplete="off"
             autoCorrect="off"
             spellCheck="off"
+            maxLength={maxTextLength}
           />
           <span className="arrow" id="selectArrow">
             { showSuggestions ? <ChevronUp /> : <ChevronDown /> }
