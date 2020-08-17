@@ -1,7 +1,7 @@
 /* Last merged this code on 16th Aug 2020  */
 
 .formContainer{
-  max-width: 500px;
+  max-width: 50%;
   margin-left: 50%;
   transform: translate(-50%, 0);
 }
@@ -12,9 +12,11 @@
   left: 25%;
   background-color: #fff;
   z-index: 100;
+  font-size: 1.2rem
 }
+
 .form-QA {
-  height: calc(100vh - 4.5em);
+  height: calc(100vh - 4em);
   padding-top: 20%;
 }
 
@@ -22,6 +24,7 @@
   position: fixed!important;
   top: 26px!important;
 }
+
 .formCTAContainer.submit{
   position: fixed;
   bottom: 30px;
@@ -29,12 +32,14 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
+
 .formCTAContainer.other{
   position: fixed;
   bottom: 30px;
   min-width: 90px;
   right: 2rem;
 }
+
 .qScrollBtn{
   color: #fff;
   font: inherit;
@@ -90,7 +95,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-
 #formProgressPct{
   color: rgb(128, 128, 128);
   font-family: sans-serif;
@@ -109,7 +113,6 @@
   border-radius: 4px;
   margin-bottom: .5rem;
 }
-
 #formProgressBar {
   width: 1%;
   height: 30px;
@@ -119,3 +122,81 @@
   margin-bottom: .5rem;
   transition: all 0.4s ease 0s;
 }
+
+@media only screen and (max-width: 425px) {
+  .form-header{
+    position: unset;
+    top: unset;
+    margin-top: -73px;
+    margin-left: 30%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .prLogoContainer.form{
+    display: none;
+  }
+
+  .emoji-icon.form{
+    display: none;
+  }
+
+  .formContainer{
+    max-width: 75%;
+    transform: unset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .formCTAContainer.submit{
+    display: block;
+    right: 2rem;
+    left: unset;
+    transform: unset;
+  }
+
+  #Submit-btn-form{
+    min-width: 130px;
+  }
+
+  #Submit-btn-form:disabled{
+    display: none;
+  }
+
+  .qDetail{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .formCTAContainer.other{
+    position: fixed;
+    bottom: 30px;
+    min-width: 90px;
+    right: unset;
+    left: 3rem;
+  }
+}
+@media only screen and (min-width: 395px) and (max-width: 425px) {
+  .formContainer{
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 600px) {
+  .formContainer{
+    max-width: 60%;
+  }
+}
+/*@media only screen and (min-width: 500px) and (max-width: 759px) {
+  .xxx{
+    xx
+  }
+}
+@media only screen and (min-width: 759px) and (max-width: 850px) {
+  .xxx{
+    xx
+  }
+}
+@media only screen and (min-width: 850px) {
+}*/

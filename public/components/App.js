@@ -265,7 +265,7 @@ class Dashboard extends Component{
             <div className="clientWindowContainer col-s-12" onClick={this.closeMenu}>
               <Switch>
                 {{
-                  ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
+                //  ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
                   ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
                 }[userRole]}
                 <Route roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,

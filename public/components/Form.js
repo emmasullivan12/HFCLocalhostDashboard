@@ -69,14 +69,6 @@ class Form extends Component {
     }
   }
 
-/*  onScroll(e) {
-    const {usedFor} = this.props
-    const parent = document.getElementById("fpModal-"+usedFor)
-    console.log("parent.scrollTop: "+parent.scrollTop)
-  }*/
-
-//  updateProgress = (index) => {
-
   updateProgress = () => {
     const {questions} = this.props
     const qLength = questions.length
@@ -85,9 +77,35 @@ class Form extends Component {
     questions.forEach((question, i) => {
       const required = question['req'] === 1;
       const name = question['name'];
+      const aType = question['aType'];
 
       if (!required) {
-        return
+        if(aType === 'checkbox') {
+          let checkboxesToCheck = [];
+
+          var options = question['options'];
+
+          options.forEach((option, index) => {
+            checkboxesToCheck.push(
+              this.state[i+"-"+option['name']] != false && this.state[i+"-"+option['name']] != undefined
+            );
+          })
+
+          if (checkboxesToCheck.includes(true)) {
+            statesToCheck.push(
+              true
+            );
+          } else {
+            statesToCheck.push(
+              false
+            );
+          }
+
+        } else {
+          statesToCheck.push(
+            this.state[i+"-"+name] != '' && this.state[i+"-"+name] != undefined
+          );
+        }
       } else {
         statesToCheck.push(
         //  this.state["formA-"+usedFor+i+"isValid"],
@@ -126,7 +144,7 @@ class Form extends Component {
         const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
 
         if (entry.intersectionRatio > 0) {
-
+          console.log("setting focusedQ as index: "+index)
       //    this.updateProgress(index)
 
           this.setState(prevState => {
@@ -243,6 +261,8 @@ class Form extends Component {
 
     this.setState({
       [stateToChange]: e.target.checked
+    }, () => {
+      this.updateProgress()
     });
 
     const stateToChangeSplit = stateToChange.split("-")
@@ -299,6 +319,7 @@ class Form extends Component {
   }
 
   handleScrollUp = () => {
+    console.log("handlcscrollUP")
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
 
@@ -328,11 +349,12 @@ class Form extends Component {
           document.getElementById(idToFocusOn).focus()
         }
 
-        if (this.state.focusedQ === 0) {
-          return
-          //parent.scrollTop = 0
+        const parent = document.getElementById("fpModal-"+usedFor);
+        if (this.state.focusedQ == 0) {
+          //return
+          console.log("gest here")
+          parent.scrollTop = 0
         } else {
-          const parent = document.getElementById("fpModal-"+usedFor);
           const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
           parent.scrollTop = currentQ.offsetTop
         }
@@ -341,6 +363,7 @@ class Form extends Component {
   }
 
   handleScrollDown = () => {
+    console.log("handlcscrollDOWN")
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
 
@@ -438,7 +461,6 @@ class Form extends Component {
         }
       });
 
-      console.log(statesToSave)
       // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
 
       // Once submitted or if error that user needs addressing
@@ -708,7 +730,7 @@ class Form extends Component {
                 valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
                 isForForm
                 required={required}
-              />
+              />            
             </div>
           </div>
         );
@@ -783,13 +805,13 @@ class Form extends Component {
         </div>
         <h1 className="form-header">
           <br/>
-          <i className="emoji-icon typing-emoji"/> Complete your full sign up
+          <i className="emoji-icon form typing-emoji"/> Complete your full sign up
         </h1>
         <div className="row">
           { this.renderQuestions() }
         </div>
         <div className="formCTAContainer submit">
-          <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-eth">
+          <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-form">
             {isSubmitting === true && (
               <LoadingSpinner />
             )}

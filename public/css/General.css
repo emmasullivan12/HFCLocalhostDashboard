@@ -861,7 +861,7 @@ a.Submit-btn:disabled:active,
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 85%;
+  width: 75%;
   line-height: 2;
 }
 .contactToggleTxt{

@@ -609,6 +609,7 @@ class AutocompleteTagsMulti extends React.Component {
       document.getElementById("autocompleter-doneContainer-"+name).style.top = (containerHeight += 10) + "px";
     }
     if (!required || (required && values.length > 0)) {
+
       if (filteredSuggestions.length === 0 || containerHeight === 40) {
         return
       } else if (filteredSuggestions.length === 1) {
@@ -705,7 +706,7 @@ class AutocompleteTagsMulti extends React.Component {
       )
     }
 
-    if (showCheckbox === true) {
+    if (showCheckbox === true && values.length > 0) {
 
       const allSelected = values.length === (suggestions.length);
 

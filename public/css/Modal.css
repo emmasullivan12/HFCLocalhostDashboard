@@ -643,6 +643,13 @@
 .modal-close.fullPage.bkArrow:hover {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
+@media only screen and (max-width: 425px) {
+  .modal-close.fullPage.bkArrow {
+    font-size: 20px;
+    margin-left: 2rem;
+    top: 25px;
+  }
+}
 .modal-close.fullPage:hover {
   color: #000!important;
 }

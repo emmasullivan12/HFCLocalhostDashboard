@@ -11,6 +11,11 @@
   background-size: 5200% 5200%;
 }
 
+.emoji-icon.form{
+  width: 20px;
+  height: 20px;
+}
+
 .emoji-icon.successBox{
   margin: auto;
   float: unset;
