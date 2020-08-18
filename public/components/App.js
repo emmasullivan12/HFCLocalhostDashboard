@@ -268,11 +268,11 @@ class Dashboard extends Component{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
                   ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
                 }[userRole]}
-                <Route roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
+                <Route path="/latest-advice" roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
                 <ProtectedRoute path="/mentee-profile" roleAllowed="mentee" userRole="mentee" component={LgdInUsrProfile}/>,
                 <ProtectedRoute path="/to-do-list" roleAllowed="mentee" userRole="mentee" component={Todo}/>,
                 <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
-                <ProtectedRoute path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
+                <Route path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <ProtectedChats chats={DUMMY_CHAT_LIST} />
                 <Route component={NotFound}/>
@@ -292,7 +292,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -367,7 +367,8 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'didEmailVerif';
+  const step = 'didShortSUtf';
+  console.log("gets here")
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':

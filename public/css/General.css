@@ -399,6 +399,14 @@ a.Submit-btn,
 a.Submit-btn{
   padding: 0.8rem 0.8rem 1.8rem 0.8rem;
 }
+.Submit-btn.formInterim{
+  min-width: 80px;
+  background: #9f9ee7;
+  border: 1px solid #8b8bdc;
+}
+.Submit-btn.formInterim:hover{
+  background: #8b8bdc;
+}
 .Submit-btn.landingCTA.hollow{
   border: 1px solid #351c75;
   background: #fff;

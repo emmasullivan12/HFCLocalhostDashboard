@@ -71,7 +71,12 @@ class Form extends Component {
 
   updateProgress = () => {
     const {questions} = this.props
-    const qLength = questions.length
+
+    const qOnly = questions
+      .filter(q => q['aType'] != 'interim')
+
+    const qLength = qOnly.length
+    console.log(qLength)
     const statesToCheck = [];
 
     questions.forEach((question, i) => {
@@ -80,7 +85,9 @@ class Form extends Component {
       const aType = question['aType'];
 
       if (!required) {
-        if(aType === 'checkbox') {
+        if(aType === 'interim') {
+          return
+        } else if(aType === 'checkbox') {
           let checkboxesToCheck = [];
 
           var options = question['options'];
@@ -144,8 +151,6 @@ class Form extends Component {
         const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
 
         if (entry.intersectionRatio > 0) {
-          console.log("setting focusedQ as index: "+index)
-      //    this.updateProgress(index)
 
           this.setState(prevState => {
             let { qViewed } = prevState
@@ -319,7 +324,6 @@ class Form extends Component {
   }
 
   handleScrollUp = () => {
-    console.log("handlcscrollUP")
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
 
@@ -351,8 +355,6 @@ class Form extends Component {
 
         const parent = document.getElementById("fpModal-"+usedFor);
         if (this.state.focusedQ == 0) {
-          //return
-          console.log("gest here")
           parent.scrollTop = 0
         } else {
           const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
@@ -363,7 +365,6 @@ class Form extends Component {
   }
 
   handleScrollDown = () => {
-    console.log("handlcscrollDOWN")
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
 
@@ -441,7 +442,9 @@ class Form extends Component {
       questions.forEach((question, i) => {
         const name = question['name'];
 
-        if (question['aType'] === 'checkbox') {
+        if (question['aType'] === 'interim') {
+          return
+        } else if (question['aType'] === 'checkbox') {
 
           var options = question['options'];
 
@@ -520,6 +523,18 @@ class Form extends Component {
     const aType = question['aType'];
 
     switch (aType) {
+      case 'interim':
+        return (
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={i+"-"+name}
+            data-index={i}
+          >
+            <button type="button" className="Submit-btn formInterim" id={i+"-"+name} onClick={this.handleScrollDown}>
+              Next &gt;
+            </button>
+          </div>
+        );
       case 'text':
         return (
           <div
@@ -760,16 +775,19 @@ class Form extends Component {
 
   renderQuestions() {
     const {questions, usedFor} = this.props;
+    var qOnly = 0;
 
     return (
       <React.Fragment>
         <div className="col-6 col-s-12 formContainer">
           {questions.map((question, i) => {
             const q = question['q'];
-
             const required = question['req'] === 1;
-
             const name = question['name'];
+
+            if (name != 'interim') {
+              qOnly++
+            }
 
             // i.e. any detail to support the understanding of the question
             const detail = question['detail'] == undefined ? '' :  question['detail'];
@@ -778,7 +796,10 @@ class Form extends Component {
             //  <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
               <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
                 <h2 className={"qTitle " + (required ? "reqAsterisk" : "")}>
-                  <span className="qNum">{i + 1})</span>{q}
+                  {name != 'interim' && (
+                    <span className="qNum">{qOnly})</span>
+                  )}
+                  {q}
                 </h2>
                 <div className="qDetail">
                   {detail}

@@ -4,6 +4,10 @@
   max-width: 50%;
   margin-left: 50%;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 
 .form-header{
@@ -17,6 +21,8 @@
 
 .form-QA {
   height: calc(100vh - 4em);
+  height: -webkit-calc(100vh - 4em);
+  height: -moz-calc(100vh - 4em);
   padding-top: 20%;
 }
 
@@ -31,6 +37,10 @@
   min-width: 90px;
   left: 50%;
   transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 
 .formCTAContainer.other{
@@ -111,6 +121,10 @@
   background-color: #dedede;
   height: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   margin-bottom: .5rem;
 }
 #formProgressBar {
@@ -119,6 +133,10 @@
   background-color: #a0a0a0;
   height: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   margin-bottom: .5rem;
   transition: all 0.4s ease 0s;
 }
@@ -145,6 +163,10 @@
   .formContainer{
     max-width: 75%;
     transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -155,6 +177,10 @@
     right: 2rem;
     left: unset;
     transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
   }
 
   #Submit-btn-form{

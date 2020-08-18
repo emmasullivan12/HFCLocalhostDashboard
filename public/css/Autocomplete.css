@@ -70,6 +70,9 @@
   min-width: 250px!important;
   transform: scale(0.7) translateX(-50px); /* Edge bug: font-size doesnt work, so use transform instead */
   -ms-transform: scale(0.7) translateX(-50px);
+  -webkit-transform: scale(0.7) translateX(-50px);
+  -moz-transform: scale(0.7) translateX(-50px);
+  -o-transform: scale(0.7) translateX(-50px);
 }
 
 #autocompleteBox.error {
