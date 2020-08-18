@@ -401,7 +401,7 @@ a.Submit-btn{
 }
 .Submit-btn.formInterim{
   min-width: 80px;
-  background: #9f9ee7;
+  background: #9f9ee7!important;
   border: 1px solid #8b8bdc;
 }
 .Submit-btn.formInterim:hover{

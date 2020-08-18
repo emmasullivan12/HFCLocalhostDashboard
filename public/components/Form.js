@@ -11,7 +11,7 @@ import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';
 import PhoneInput from './PhoneInput.js';
 import RatingItems from './RatingItems.js';
-//import Autocomplete from './Autocomplete.js';
+import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import SelectBox from './Select.js';
 import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
@@ -35,15 +35,9 @@ class Form extends Component {
   }
 
   componentDidMount() {
+    this.mounted = true
     const {usedFor} = this.props
     const observer = this.createObserver()
-
-  /*  const required = questions
-      .filter(q => q['req'] === 1)
-    console.log("required: "+required)
-    this.setState({
-      qRequired: required
-    })*/
 
     // Track all sections that have an `id` applied
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
@@ -59,6 +53,7 @@ class Form extends Component {
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
       observer.unobserve(section);
     });
+    this.mounted = false
   }
 
   onBlur(e) {
@@ -76,7 +71,6 @@ class Form extends Component {
       .filter(q => q['aType'] != 'interim')
 
     const qLength = qOnly.length
-    console.log(qLength)
     const statesToCheck = [];
 
     questions.forEach((question, i) => {
@@ -517,6 +511,27 @@ class Form extends Component {
 
   }
 
+  renderComponents(fileToRender, componentUpdatesState, error) {
+
+    console.log("loading unis")
+    import(`./${fileToRender}.js`)
+      .then(component => {
+        if(this.mounted) {
+          this.setState({
+            [componentUpdatesState]: component.default,
+            errorLoadingFile: false
+          })
+        }
+      })
+      .catch(err => {
+        if(this.mounted) {
+          this.setState({
+            errorLoadingFile: true
+          })
+        }
+      })
+  }
+
   renderAType(question, required, usedFor, i, name) {
 
     // i.e. input box, rating box, select box, etc.
@@ -714,11 +729,41 @@ class Form extends Component {
             />
           </div>
         );
-    //  case 'autocomplete': Not done yet as not needed so far
-    //    return (
-    //      <div type="button" className="picContainer">
-    //      </div>
-    //    );
+      case 'autocomplete':
+
+        return (
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={"autocompleteBox-"+name}
+            data-idforstate={i+"-"+name}
+            data-index={i}
+          >
+            <div className="autocompleter">
+              <Autocomplete
+                suggestions={question['componentUpdatesState'] ? question['componentUpdatesState'] : undefined}
+                name={name}
+                placeholder={question['placeholder']}
+                handleChange={this.handleNonTextChange}
+                renderComponents={this.renderComponents}
+                fileToRender={question['fileToRender']}
+                componentUpdatesState={question['componentUpdatesState']}
+                focusOnLoad={(i === 0) ? true : false}
+                idValue={question['idValue']}
+                valueToShow={question['valueToShow']}
+                showDetail={question['showDetail']}
+                detailToShow={question['detailToShow']}
+                noSuggestionsCTAclass={question['noSuggestionsCTAclass']}
+                isForForm
+                required={required}
+              />
+              {this.state.errorLoadingFile === true && (
+                <div className="descriptor prompt error eduForm alignLeft">
+                  Error loading options. Please try reloading the page.
+                </div>
+              )}
+            </div>
+          </div>
+        );
       case 'autocompleteMulti':
         return (
           <div
