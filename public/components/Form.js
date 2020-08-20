@@ -5,7 +5,7 @@ import {
   NavLink
 } from "react-router-dom";
 
-import {ChevronDown, ChevronUp, LoadingSpinner} from './GeneralFunctions.js';
+import {ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
 import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';
@@ -31,7 +31,10 @@ class Form extends Component {
       qRequired: "",
       pct: 0,
       tabPressed: '',
+      [this.props.renderComponentsInitialState]: [], // for anything that loads from another file i.e. list of unis or schools etc
+      [this.props.renderComponentsInitialState2]: [],
     };
+    this.renderComponents = this.renderComponents.bind(this);
   }
 
   componentDidMount() {
@@ -77,14 +80,15 @@ class Form extends Component {
       const required = question['req'] === 1;
       const name = question['name'];
       const aType = question['aType'];
+      if (aType === 'checkbox'){
+        var options = question['options'];
+      }
 
       if (!required) {
         if(aType === 'interim') {
           return
         } else if(aType === 'checkbox') {
           let checkboxesToCheck = [];
-
-          var options = question['options'];
 
           options.forEach((option, index) => {
             checkboxesToCheck.push(
@@ -108,10 +112,31 @@ class Form extends Component {
           );
         }
       } else {
-        statesToCheck.push(
-        //  this.state["formA-"+usedFor+i+"isValid"],
-          this.state[i+"-"+name+"isValid"]
-        );
+        if(aType === 'checkbox') {
+          let checkboxesToCheck = [];
+
+          options.forEach((option, index) => {
+            checkboxesToCheck.push(
+              this.state[i+"-"+option['name']] != false && this.state[i+"-"+option['name']] != undefined
+            );
+          })
+
+          if (checkboxesToCheck.includes(true)) {
+            statesToCheck.push(
+              true
+            );
+          } else {
+            statesToCheck.push(
+              false
+            );
+          }
+        } else {
+
+          statesToCheck.push(
+          //  this.state["formA-"+usedFor+i+"isValid"],
+            this.state[i+"-"+name+"isValid"]
+          );
+        }
       }
     });
 
@@ -317,6 +342,32 @@ class Form extends Component {
     }
   }
 
+  handleYesNoChange = (e) => {
+    const formId = e.target.closest("section > div").dataset.idforstate
+
+    e.target.classList.add('selected');
+    e.target.getElementsByTagName('span')[0].classList.add('selected');
+    for (let sibling of e.target.parentNode.children) {
+        if (sibling !== e.target) {
+          sibling.classList.remove('selected');
+          sibling.getElementsByTagName('span')[0].classList.remove('selected');
+        }
+    }
+
+    this.setState({
+      [formId]: e.target.value,
+      [formId+"isValid"]: true
+    }, () => {
+      this.updateProgress()
+      if (this.state[formId+"isValid"] === true) {
+        this.handleScrollDown()
+      } else {
+        return
+      }
+    });
+
+  }
+
   handleScrollUp = () => {
     const { focusedQ } = this.state;
     const { questions, usedFor } = this.props;
@@ -468,11 +519,11 @@ class Form extends Component {
   }
 
   handleDoneClick = (formId) => {
+
     if (this.state[formId+"isValid"] === true) {
       this.handleScrollDown()
     } else {
       return
-      //const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
     }
   }
 
@@ -513,7 +564,6 @@ class Form extends Component {
 
   renderComponents(fileToRender, componentUpdatesState, error) {
 
-    console.log("loading unis")
     import(`./${fileToRender}.js`)
       .then(component => {
         if(this.mounted) {
@@ -653,23 +703,16 @@ class Form extends Component {
               className={"formA-"+usedFor}
               data-idforfocus={i+"-"+options[0]['name']}
               data-index={i}
-          //    data-idforfocus={options[0]['id']}
             >
               {options.map((option, index) => {
-
-                // const checkboxRequired = option['req'] === 1;
 
                 return (
                 <div className="notifToggleContainer" key={option['id']}>
                   <span className="notifToggleTxt">{option['label']}</span>
                   <Checkbox
                     labelClassName="switch"
-                //    label={option['label']}
                     name={option['name']}
-                  //  id={"formA-"+usedFor+i+"-"+index}
                     id={i+"-"+option['name']}
-                  //  key={option['id']}
-                  //  value={option['value']}
                     required={required}
                     defaultChecked={option['defaultChecked']}
                     disabled={option['disabled']}
@@ -683,6 +726,40 @@ class Form extends Component {
             </div>
           </React.Fragment>
         );
+      case 'yesno':
+        var optionsYN = question['options'];
+
+        return (
+          <div
+            className={"formA-"+usedFor}
+            data-idforfocus={i+"-"+optionsYN[0]['label']}
+            data-idforstate={i+"-"+name}
+            data-index={i}
+          >
+            {optionsYN.map((optionYN, indexYN) => {
+
+              return (
+                <button
+                  className="formA-yesnoBtn"
+                  type="button"
+                  key={optionYN['value']}
+                  value={optionYN['value']}
+                  id={i+"-"+optionYN['label']}
+                  required={required}
+                  onClick={this.handleYesNoChange}
+                >
+                  {optionYN['label']}
+                  <span
+                    className="yesNoTick"
+                  >
+                    <Check />
+                  </span>
+                </button>
+              )
+
+            })}
+          </div>
+        )
       case 'select':
         return (
           <div
@@ -740,10 +817,11 @@ class Form extends Component {
           >
             <div className="autocompleter">
               <Autocomplete
-                suggestions={question['componentUpdatesState'] ? question['componentUpdatesState'] : undefined}
+                suggestions={this.state[question['componentUpdatesState']] ? this.state[question['componentUpdatesState']] : undefined}
                 name={name}
                 placeholder={question['placeholder']}
                 handleChange={this.handleNonTextChange}
+                handleDone={this.handleDoneClick}
                 renderComponents={this.renderComponents}
                 fileToRender={question['fileToRender']}
                 componentUpdatesState={question['componentUpdatesState']}

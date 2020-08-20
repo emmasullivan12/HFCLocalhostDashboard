@@ -594,6 +594,14 @@
   width: 100%;
   text-align: center;
 }
+.modal-subtitle-colour{
+  text-align: center;
+  color: rgba(60,60,202,.87);
+  max-width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 14px;
+}
 .modalDesc{
   padding-left: 2rem;
   padding-right: 2rem;

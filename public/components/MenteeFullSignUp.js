@@ -174,6 +174,12 @@ class MenteeFullSignUp extends Component {
       ... (certainty === '') ? [
         {q: 'How sure are you of what you want to do for your career?', aType: 'rating', req: 1, name: 'certainty', ratingOutOf: 10},
       ] : [],
+      {q: 'Did you want to join any of these particular communities?', detail: 'You might be want to join some of these ... or want to suggest your own (and we\'ll see what we can do)!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list or add your own:', name: 'erg', valueToShow: 'label', options: [
+        {value: '0', label: 'Black, Asian, Minority Ethnic (BAME)'},
+        {value: '1', label: 'People with disabilities'},
+        {value: '2', label: 'LGBTQI+'},
+        {value: '3', label: 'Women in the Workforce'},
+      ]},
       {q: 'Are you working on any of the following activities, events, documents in the near future?', detail: 'This could be related to a personal or "career" goal. ... and your mentor match might be able to help!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select activities...', placeholderOnClick: 'Choose as many as you like:', name: 'workingOn', valueToShow: 'label', options: [
         {value: '0', label: 'Deciding on a career path'},
         {value: '1', label: 'CV/Resume editing'},

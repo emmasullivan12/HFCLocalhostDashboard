@@ -81,7 +81,7 @@ class Autocomplete extends React.Component {
   }
 
   onChange = (e) => {
-    const { suggestions, handleChange, valueToShow, required } = this.props;
+    const { suggestions, handleChange, valueToShow, isForForm, handleDone, required } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -114,12 +114,24 @@ class Autocomplete extends React.Component {
   //    showSuggestions: true,
       userInput: e.currentTarget.value
     });
+
     const isValid = this.checkExists(e.currentTarget.value);
-    handleChange(e.currentTarget.value, isValid);
+    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+    if (isForForm === true) {
+      handleChange(e.currentTarget.value, formId, isValid, () => {
+        if (handleDone) {
+          handleDone(formId)
+        }
+      });
+    } else {
+      handleChange(e.currentTarget.value, isValid);
+    }
+
+
   };
 
   onClick = (e) => {
-    const { suggestions, handleChange, name, valueToShow, required } = this.props;
+    const { suggestions, handleChange, name, valueToShow, isForForm, handleDone, required } = this.props;
 
     this.setState({
       activeSuggestion: 0,
@@ -128,12 +140,22 @@ class Autocomplete extends React.Component {
       userInput: e.currentTarget.dataset.text
     });
     const isValid = this.checkUserInputExists(e.currentTarget.dataset.text);
-    handleChange(e.currentTarget.dataset.id, isValid);
+    const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+
+    if (isForForm === true) {
+      handleChange(e.currentTarget.dataset.id, formId, isValid, () => {
+        if (handleDone) {
+          handleDone(formId)
+        }
+      });
+    } else {
+      handleChange(e.currentTarget.dataset.id, isValid);
+    }
   };
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions } = this.state;
-    const { handleChange, handleTabPress, idValue, name, valueToShow, isLastChild } = this.props;
+    const { handleChange, handleTabPress, idValue, name, valueToShow, isLastChild, isForForm, handleDone } = this.props;
     var key = e.key || e.keyCode
 
     // User pressed the enter key
@@ -148,7 +170,14 @@ class Autocomplete extends React.Component {
           userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
         })
         const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
-        valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+        const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+
+        if (isForForm === true) {
+          valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], formId, isValid, () => {handleDone && handleDone(formId)}) : handleChange(filteredSuggestions[activeSuggestion][idValue], formId, isValid, () => {handleDone && handleDone(formId)});
+        } else {
+          valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+        }
+
       } else {
         return;
       }
@@ -171,7 +200,14 @@ class Autocomplete extends React.Component {
             userInput: isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]
           });
           const isValid = this.checkUserInputExists(isntValueToShow ? filteredSuggestions[activeSuggestion] : filteredSuggestions[activeSuggestion][valueToShow]);
-          valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+          const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+
+          if (isForForm === true) {
+            valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], formId, isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], formId, isValid);
+          } else {
+            valueToShow == undefined ? handleChange(filteredSuggestions[activeSuggestion], isValid) : handleChange(filteredSuggestions[activeSuggestion][idValue], isValid);
+          }
+
           if (handleTabPress) {
             handleTabPress(true);
           }
@@ -280,6 +316,7 @@ class Autocomplete extends React.Component {
                 const suggestionText = valueToShow == undefined ? suggestion : suggestion[valueToShow];
                 const key = valueToShow == undefined ? suggestion : suggestion[idValue];
                 const detail = detailToShow == undefined ? '' : suggestion[detailToShow];
+
                 return (
                   <div
                     className={className}

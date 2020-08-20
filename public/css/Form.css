@@ -105,6 +105,53 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.formA-yesnoBtn{
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  width: 200px;
+  color: rgb(159, 158, 231);
+  background-color: rgba(159, 158, 231, 0.1);
+  box-shadow: rgba(159, 158, 231, 0.6) 0px 0px 0px 1px inset;
+  transition-duration: 0.1s;
+  transition-property: background-color, color, border-color, opacity, box-shadow;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 4px;
+  padding: 4px;
+  padding-left: 15px;
+  outline: 0px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  border: none;
+}
+
+.formA-yesnoBtn:hover{
+  background-color: rgba(159, 158, 231, 0.3);
+}
+
+.formA-yesnoBtn.selected{
+  background-color: rgba(159, 158, 231, 0.3);
+  border: 1px solid rgb(159, 158, 231);
+}
+
+.yesNoTick{
+  right: 0.3rem;
+  top: 0.25rem;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  padding: 8px;
+  cursor: pointer;
+}
+.yesNoTick.selected{
+  display: block;
+}
+
 #formProgressPct{
   color: rgb(128, 128, 128);
   font-family: sans-serif;
