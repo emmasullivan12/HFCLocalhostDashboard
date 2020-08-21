@@ -317,7 +317,7 @@ class MenteeFullSignUp extends Component {
           {value: '116', label: 'World Development'},
         ]},
         ] : [],
-        ... (gradeType != '') ? [
+        ... (gradeType === '') ? [
           {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'gradeType', placeholder: 'Select type...', valueToShow: 'label', options: [
             {value: '0', label: 'Top of the class/high grade'},
             {value: '1', label: 'Slightly above middle of the road'},

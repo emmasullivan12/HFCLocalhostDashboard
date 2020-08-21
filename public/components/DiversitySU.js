@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th June 2020 
+// Dex last merged this code on 29th June 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -141,7 +141,7 @@ class DiversitySU extends React.Component {
     const genders = [
       {value: '0', label: 'Male', iconFA: 'fas fa-male'},
       {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-      {value: '2', label: 'Non-binary', iconFA: 'fas fa-genderless'},
+      {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
       {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
     ];
 

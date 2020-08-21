@@ -13,9 +13,10 @@ const FullPageModalTrigger = ({
   buttonFPRef,
   onOpen,
   text,
-  usedFor
+  usedFor,
+  focusOnLoad
 }) => (
-  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonFPRef}>
+  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={onOpen} ref={buttonFPRef}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -86,7 +87,6 @@ class FullPageModal extends React.Component {
       } else {
         this.closeButtonFPNode.focus();
       }
-
     });
     this.toggleScrollLock();
   }
@@ -151,7 +151,7 @@ class FullPageModal extends React.Component {
     render() {
     const {handleNavScroll} = this;
     const {isFPOpen} = this.state;
-    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role} = this.props;
+    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role, focusOnLoad} = this.props;
     return (
       <React.Fragment>
         <FullPageModalTrigger
@@ -159,6 +159,7 @@ class FullPageModal extends React.Component {
           buttonFPRef={n => this.openButtonFPNode = n}
           text={triggerText}
           usedFor={usedFor}
+          focusOnLoad={focusOnLoad}
         />
         {isFPOpen && (
           <FullPageModalContent

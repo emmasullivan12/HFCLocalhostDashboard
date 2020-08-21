@@ -595,7 +595,7 @@ class Form extends Component {
             data-idforfocus={i+"-"+name}
             data-index={i}
           >
-            <button type="button" className="Submit-btn formInterim" id={i+"-"+name} onClick={this.handleScrollDown}>
+            <button type="button" className="Submit-btn formInterim" id={i+"-"+name} onClick={this.handleScrollDown} autoFocus={(i === 0) ? true : false}>
               Next &gt;
             </button>
           </div>

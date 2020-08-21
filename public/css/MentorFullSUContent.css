@@ -16,7 +16,8 @@
   background-position: center;
 }
 
-.ModalOpenBtn-mentorFullSU{
+.ModalOpenBtn-mentorFullSU,
+.ModalOpenBtn-mentorFullSU-u18{
   width: 120px;
   margin-right: .5rem;
   margin-left: .5rem;

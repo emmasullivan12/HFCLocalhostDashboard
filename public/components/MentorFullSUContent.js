@@ -9,19 +9,22 @@ import "../css/MentorFullSUContent.css";
 
 const MentorU18FullSUProps = {
   triggerText: 'Yes!',
-  usedFor: 'mentorFullSU',
+  focusOnLoad: true,
+  usedFor: 'mentorFullSU-u18',
   backBtn: 'arrow',
-  changeInitFocus: true
+  changeInitFocus: true,
 }
 const MentorOver18FullSUProps = {
   triggerText: 'Not right now',
   usedFor: 'mentorFullSU',
   backBtn: 'arrow',
-  changeInitFocus: true
+  changeInitFocus: true,
 }
 
 class MentorFullSignUp extends Component {
   render() {
+const {onCloseAsPrevModal} = this.props
+    console.log(onCloseAsPrevModal)
     const eetStatus = 'job';
     const userRole = 'mentor';
     const country = 'GBR'
@@ -333,7 +336,7 @@ class MentorFullSignUp extends Component {
       {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
         {value: '0', label: 'Male', iconFA: 'fas fa-male'},
         {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Non-binary', iconFA: 'fas fa-genderless'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
         {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
       ]},
       {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
@@ -351,6 +354,17 @@ class MentorFullSignUp extends Component {
         {q: 'Lastly, what\'s your mobile number?', detail: 'We need this additional way to contact you in case you change company, etc.', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
       ] : [],
     ]
+
+  /*  var conditionalQs = [
+      ... (country === 'GBR') ? [
+        {q: 'Which University did you go to?', relatesTo: 'maxEdu', showIf: ">1", detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your Degree name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+      ] : [],
+      ... (country != 'GBR') ? [
+        {q: 'Which University did you go to?', relatesTo: 'maxEdu', showIf: ">1", detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'uniNameFreeText'},
+      ] : [],
+      {q: 'What Degree did you study?', relatesTo: 'maxEdu', showIf: ">1", detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
+    ]*/
+
     var questionsU18 = [
       {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
@@ -710,14 +724,14 @@ class MentorFullSignUp extends Component {
             By selecting &quot;Yes&quot; you provide us your consent to perform the aforementioned background checks as part of your application.
           </div>
         </div>
-        <FullPageModal {...MentorU18FullSUProps}>
+        <FullPageModal {...MentorU18FullSUProps} closePrevModal={onCloseAsPrevModal}>
           <Form
             questions={questionsU18}
-            usedFor="mentorFullSU"
+            usedFor="mentorFullSU-u18"
             renderComponentsInitialState='ukUnisList'
           />
         </FullPageModal>
-        <FullPageModal {...MentorOver18FullSUProps}>
+        <FullPageModal {...MentorOver18FullSUProps} closePrevModal={onCloseAsPrevModal}>
           <Form
             questions={questions}
             usedFor="mentorFullSU"

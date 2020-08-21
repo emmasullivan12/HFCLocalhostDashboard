@@ -27,6 +27,7 @@ const ModalContent = ({
   onMouseUp,
   onMouseDown,
   onClose,
+//  onCloseAsPrevModal,
   onKeyDown,
   role = 'dialog',
   title
@@ -87,6 +88,11 @@ class Modal extends React.Component {
     this.toggleScrollLock();
   }
 
+/*  onCloseAsPrevModal() {
+    console.log("calling oncloseprevmodal")
+    this.setState({ isOpen: false });
+  }*/
+
   // Prevents user being able to scroll on screen behind Modal
   toggleScrollLock = () => document.querySelector('html').classList.toggle('u-lock-scroll');
 
@@ -107,7 +113,8 @@ class Modal extends React.Component {
 
   // Close modal by clicking outside of Modal
   onMouseUp = (e) => {
-    if (this.modalNode && this.modalNode.contains(this.state.itemClicked)) return;
+  //  if (this.modalNode && this.modalNode.contains(this.state.itemClicked)) return;
+    if (this.state.itemClicked.classList[0] != 'modal-overlay') return;
     this.onClose();
   }
 
@@ -132,6 +139,7 @@ class Modal extends React.Component {
             onMouseDown={this.onMouseDown}
             onMouseUp={this.onMouseUp}
             onClose={this.onClose}
+          //  onCloseAsPrevModal={this.onCloseAsPrevModal}
             onKeyDown={this.onKeyDown}
             role={role}
             title={title}
