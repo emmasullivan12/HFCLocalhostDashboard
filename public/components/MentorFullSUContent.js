@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st Aug 2020
+// Dex last merged this code on 21st Aug 2020 
 
 import React, { Component } from "react";
 import * as typeformEmbed from '@typeform/embed';
@@ -23,8 +23,6 @@ const MentorOver18FullSUProps = {
 
 class MentorFullSignUp extends Component {
   render() {
-const {onCloseAsPrevModal} = this.props
-    console.log(onCloseAsPrevModal)
     const eetStatus = 'job';
     const userRole = 'mentor';
     const country = 'GBR'
@@ -724,14 +722,14 @@ const {onCloseAsPrevModal} = this.props
             By selecting &quot;Yes&quot; you provide us your consent to perform the aforementioned background checks as part of your application.
           </div>
         </div>
-        <FullPageModal {...MentorU18FullSUProps} closePrevModal={onCloseAsPrevModal}>
+        <FullPageModal {...MentorU18FullSUProps}>
           <Form
             questions={questionsU18}
             usedFor="mentorFullSU-u18"
             renderComponentsInitialState='ukUnisList'
           />
         </FullPageModal>
-        <FullPageModal {...MentorOver18FullSUProps} closePrevModal={onCloseAsPrevModal}>
+        <FullPageModal {...MentorOver18FullSUProps}>
           <Form
             questions={questions}
             usedFor="mentorFullSU"
