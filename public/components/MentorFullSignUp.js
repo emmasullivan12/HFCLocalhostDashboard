@@ -9,7 +9,7 @@ import MentorFullSUContent from './MentorFullSUContent.js';
 const MentorFullSUModalProps = {
   ariaLabel: 'Complete Full Sign Up',
   triggerText: 'Complete Full Sign Up >>',
-  usedFor: 'mentorFullSU'
+  usedFor: 'underOrOver18'
 }
 
 class MentorFullSignUp extends Component {

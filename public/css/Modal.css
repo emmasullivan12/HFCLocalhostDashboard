@@ -608,6 +608,10 @@
   color: #676767;
 }
 
+.modalCTAText{
+  color: #676767;
+}
+
 .modal-close {
   position: absolute;
   top: 0;
@@ -673,6 +677,7 @@
 .modal-content {
   padding-top: 1.5em;
   margin-bottom: 1rem;
+  text-align: center
 }
 .fpModal-content{
   padding-top: 1.5em;

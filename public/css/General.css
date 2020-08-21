@@ -123,6 +123,32 @@ hr{
   border-top: 1px solid #3f3f3f;
 }
 
+.div-li-container{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: .5rem;
+}
+.div-li{
+  padding: .5rem .5rem .5rem .5rem;
+  display: inline-block;
+  border-spacing: 11px;
+  width: 100%;
+  text-align: left;
+}
+.divLi.img{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  height: 37.25px;
+  width: 55.75px;
+  display: table-cell;
+}
+.divLi.text{
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .bold{
   font-weight: 600;
 }
@@ -240,6 +266,18 @@ hr{
 }
 .noMarginBlockStart{
   margin-block-start: 0;
+}
+.marginTop{
+  margin-top: 2rem;
+}
+.marginBottom {
+  margin-bottom: 2rem;
+}
+.marginLeft{
+  margin-left: 1rem;
+}
+.marginRight {
+  margin-right: 1rem;
 }
 .paddingBtm{
   padding-bottom: 10px;

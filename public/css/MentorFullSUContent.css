@@ -1,0 +1,21 @@
+.modalDesc.safeguarding{
+  font-size: 0.8rem;
+  color: #b5b4b4;
+}
+
+.divLi.img.uploadSelfieID{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/09/PhotoID.png);
+}
+.divLi.img.tickIcon{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/09/Tick-Icon.png);
+}
+.divLi.img.cvIcon{
+  background-image: url(https://prospela.com/wp-content/uploads/2020/08/CVIcon.png);
+  background-position: center;
+}
+
+.ModalOpenBtn-mentorFullSU{
+  width: 120px;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
