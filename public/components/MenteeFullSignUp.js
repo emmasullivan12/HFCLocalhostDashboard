@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st Aug 2020 
+// Dex last merged this code on 21st Aug 2020
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
@@ -174,7 +174,7 @@ class MenteeFullSignUp extends Component {
       ... (certainty === '') ? [
         {q: 'How sure are you of what you want to do for your career?', aType: 'rating', req: 1, name: 'certainty', ratingOutOf: 10},
       ] : [],
-      {q: 'Did you want to join any of these particular communities?', detail: 'You might be want to join some of these ... or want to suggest your own (and we\'ll see what we can do)!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list or add your own:', name: 'erg', valueToShow: 'label', options: [
+      {q: 'Did you want to join any of these particular communities?', detail: 'You might be want to join one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
         {value: '0', label: 'Black, Asian, Minority Ethnic (BAME)'},
         {value: '1', label: 'People with disabilities'},
         {value: '2', label: 'LGBTQI+'},

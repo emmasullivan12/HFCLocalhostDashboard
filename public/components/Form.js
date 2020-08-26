@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st Aug 2020 
+// Dex last merged this code on 21st Aug 2020
 
 import React, { Component } from "react";
 import {
@@ -29,6 +29,8 @@ class Form extends Component {
       firstQEdited: false,
       qViewed: 0,
       qRequired: "",
+      qVisible: 0,
+      qVisibleArray: [],
       pct: 0,
       tabPressed: '',
       [this.props.renderComponentsInitialState]: [], // for anything that loads from another file i.e. list of unis or schools etc
@@ -39,7 +41,7 @@ class Form extends Component {
 
   componentDidMount() {
     this.mounted = true
-    const {usedFor} = this.props
+    const {usedFor, questions} = this.props
     const observer = this.createObserver()
 
     // Track all sections that have an `id` applied
@@ -47,6 +49,13 @@ class Form extends Component {
       observer.observe(section);
     });
 
+    const hiddenQs = document.getElementById("fpModal-"+usedFor).querySelectorAll('section.hiddenQ')
+
+    this.updateVisibleQs()
+
+    this.setState({
+      qVisible: questions.length - hiddenQs.length,
+    })
   }
 
   componentWillUnmount() {
@@ -68,12 +77,14 @@ class Form extends Component {
   }
 
   updateProgress = () => {
-    const {questions} = this.props
+    const {usedFor, questions} = this.props
 
-    const qOnly = questions
+    const notInterim = questions
       .filter(q => q['aType'] != 'interim')
 
-    const qLength = qOnly.length
+    const hiddenQs = document.getElementById("fpModal-"+usedFor).querySelectorAll('section.hiddenQ')
+
+    const qLength = notInterim.length - hiddenQs.length
     const statesToCheck = [];
 
     questions.forEach((question, i) => {
@@ -189,8 +200,13 @@ class Form extends Component {
   }
 
   handleChange = (e) => {
+    const {questions} = this.props
     const id = e.target.id
     const i = id.split("-")[0]
+
+    const q = questions[i]
+
+    const isConditionalParent = q['conditionalParent'] === 1
 
     if (i == 0) {
       this.setState({
@@ -205,20 +221,38 @@ class Form extends Component {
       this.setState({
         [id+"isValid"]: true
       }, () => {
-        this.updateProgress()
+        if (isConditionalParent) {
+          const condParentName = q['name']
+          this.updateConditional(id, condParentName, () => {
+            this.updateProgress()
+          })
+        } else {
+          this.updateProgress()
+        }
       })
     } else {
       this.setState({
         [id+"isValid"]: false
       }, () => {
-        this.updateProgress()
+        if (isConditionalParent) {
+          const condParentName = q['name']
+          this.updateConditional(id, condParentName, () => {
+            this.updateProgress()
+          })
+        } else {
+          this.updateProgress()
+        }
       })
     }
   }
 
   handleNonTextChange = (values, formId, isValid, callback) => {
+    const {questions} = this.props
 
     const i = formId.split("-")[0]
+    const q = questions[i]
+
+    const isConditionalParent = q['conditionalParent'] === 1
 
     if (i == 0) {
       this.setState({
@@ -230,7 +264,14 @@ class Form extends Component {
       [formId]: values,
       [formId+"isValid"]: isValid
     }, () => {
-      this.updateProgress()
+      if (isConditionalParent) {
+        const condParentName = q['name']
+        this.updateConditional(formId, condParentName, () => {
+          this.updateProgress()
+        })
+      } else {
+        this.updateProgress()
+      }
       if (callback) {
         callback()
       }
@@ -243,20 +284,24 @@ class Form extends Component {
     const formIdSplit = formId.split("-")
     var getIndex = formIdSplit[0];
 
+    const q = questions[getIndex]
+
+    const isConditionalParent = q['conditionalParent'] === 1
+
     if (getIndex == 0) {
       this.setState({
         firstQEdited: true,
       })
     }
 
-    const getOptions = questions[getIndex]['options'];
+    const getOptions = q['options'];
 
     const newArray = getOptions
       .filter(option => values.includes(option.label))
 
     const array = newArray.map(value => value.value)
 
-    if (questions[getIndex]['aType'] === 'autocompleteMulti') {
+    if (q['aType'] === 'autocompleteMulti') {
       const labels = newArray.map(value => value.label)
 
       const freeTextArray = values
@@ -271,7 +316,14 @@ class Form extends Component {
       [formId]: array,
       [formId+"isValid"]: isValid
     }, () => {
-      this.updateProgress()
+      if (isConditionalParent) {
+        const condParentName = q['name']
+        this.updateConditional(formId, condParentName, () => {
+          this.updateProgress()
+        })
+      } else {
+        this.updateProgress()
+      }
       if (callback) {
         callback()
       }
@@ -386,9 +438,28 @@ class Form extends Component {
         }
 
       }, () => {
-        const answers = document.getElementsByClassName("formA-"+usedFor)
+
+        const allAnswers = document.getElementsByClassName("formA-"+usedFor)
+
+        let answers = []
+
+        Array.prototype.forEach.call(allAnswers, function(answer) {
+          const sectionParent = answer.closest("section.form-QA")
+          if (!sectionParent.classList.contains("hiddenQ")) {
+            answers.push(
+              answer
+            );
+          }
+        })
+
         const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
         const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
+        const indexToFocusOn = answers[this.state.focusedQ].dataset.index
+
+        console.log("--- break ---")
+        console.log("idToFocusOn: "+idToFocusOn)
+        console.log("indexToFocusOn: "+indexToFocusOn)
+        console.log("this.state.focusedQ: "+this.state.focusedQ)
 
         if (elToFocusOn != null) {
           if (elToFocusOn === 'firstElementChild') {
@@ -402,7 +473,7 @@ class Form extends Component {
         if (this.state.focusedQ == 0) {
           parent.scrollTop = 0
         } else {
-          const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
+          const currentQ = document.getElementById('formQ-'+usedFor+indexToFocusOn)
           parent.scrollTop = currentQ.offsetTop
         }
       })
@@ -410,64 +481,64 @@ class Form extends Component {
   }
 
   handleScrollDown = () => {
-    const { focusedQ } = this.state;
+    const { focusedQ, qVisible } = this.state;
     const { questions, usedFor } = this.props;
+    console.log("focusedQ prev: "+focusedQ)
 
-    if (focusedQ === questions.length - 1) {
+    if (focusedQ == (questions.length - 1)) {
       return
     } else {
-    /*  console.log("formId")
-      console.log(formId)
-      let i;
-
-      if (formId) {
-        const formIdSplit = formId.split("-")
-        i = +formIdSplit[0];
-      }
-*/
-    /*  const parent = document.getElementById("fpModal-"+usedFor);
-      const firstQ = document.getElementById("0-"+questions[0].name);
-      const qHeight = firstQ.scrollHeight * (focusedQ + 1)*/
-
-    /*  console.log("i: "+i)
-      console.log("focusedQ + 1: "+(focusedQ + 1))
-      console.log("amount of items to scroll (formId ? i + 1 : focusedQ + 1): "+(formId ? i + 1 : focusedQ + 1))
-      const qHeight = firstQ.scrollHeight * (formId ? i + 1 : focusedQ + 1)
-      console.log("firstQ.scrollHeight: "+firstQ.scrollHeight)
-      console.log("qHeight: "+qHeight)*/
-    //  parent.scrollTop = qHeight
-
-    //  document.getElementById("formQ-menteeFullSU2").scrollIntoView()
 
       this.setState(prevState => {
         let { focusedQ } = prevState
 
-      /*  if (formId) {
-          console.log("gets here")
-          focusedQ = i + 1
-        } else {*/
           focusedQ++
-  //      }
 
         return {
           focusedQ
         }
       }, () => {
 
-        const answers = document.getElementsByClassName("formA-"+usedFor)
+        const allAnswers = document.getElementsByClassName("formA-"+usedFor)
+
+        console.log(allAnswers)
+        let answers = []
+
+        Array.prototype.forEach.call(allAnswers, function(answer) {
+          const sectionParent = answer.closest("section.form-QA")
+          if (!sectionParent.classList.contains("hiddenQ")) {
+            answers.push(
+              answer
+            );
+          }
+        })
+        console.log("NEW focusedQ: "+this.state.focusedQ)
+        console.log(answers)
+
         const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
         const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
+        const idForState = answers[this.state.focusedQ].dataset.idforstate
+        console.log(idForState)
+    //    console.log(this.state.allVisibleArray)
+    //    console.log(this.state.allVisibleArray.indexOf(idForState))
+    //    const indexToFocusOn = this.state.allVisibleArray.indexOf(idForState)
+
+        const indexToFocusOn = idForState.split("-")[0]
+
+        console.log("idToFocusOn: "+idToFocusOn)
+        console.log("indexToFocusOn: "+indexToFocusOn)
 
         if (elToFocusOn != undefined) {
           if (elToFocusOn === 'firstElementChild') {
-           document.getElementById(idToFocusOn).firstElementChild.focus();
+            document.getElementById(idToFocusOn).firstElementChild.focus();
           }
         } else {
           document.getElementById(idToFocusOn).focus()
         }
 
         const parent = document.getElementById("fpModal-"+usedFor);
-        const currentQ = document.getElementById('formQ-'+usedFor+this.state.focusedQ)
+        const currentQ = document.getElementById('formQ-'+usedFor+indexToFocusOn)
+
         parent.scrollTop = currentQ.offsetTop
 
       })
@@ -532,6 +603,76 @@ class Form extends Component {
     document.getElementById('fpModal-'+usedFor).classList.toggle('u-lock-scroll');
   }
 
+  updateConditional = (formId, condParentName, callback) => {
+    const {usedFor, questions} = this.props
+    const conditionalChildren = document.getElementById("fpModal-"+usedFor).querySelectorAll('section[data-condon]')
+    const hiddenQs = document.getElementById("fpModal-"+usedFor).querySelectorAll('section.hiddenQ')
+
+    if (this.state[formId+"isValid"] === true) {
+
+      // Track all sections that have an `data-condOn` applied i.e. are conditional on another question
+      conditionalChildren.forEach((section) => {
+
+        // Checks if selected answer is in array of question's "showIf" props
+        if (section.dataset.condon === condParentName && (section.dataset.showif.indexOf(this.state[formId]) != -1)) {
+          section.classList.remove('hiddenQ');
+        } else {
+          section.classList.add('hiddenQ');
+        }
+      });
+
+    } else {
+      conditionalChildren.forEach((section) => {
+        if (section.dataset.condon === condParentName) {
+          section.classList.add('hiddenQ');
+        }
+      });
+
+    }
+
+    this.setState({
+      qVisible: questions.length - hiddenQs.length,
+    }, () => {
+  //    this.updateQNumbers()
+      this.updateVisibleQs()
+      if (callback) {
+        callback()
+      }
+    })
+
+  }
+
+  updateVisibleQs = () => {
+    const {usedFor} = this.props
+    const allQs = document.getElementById("fpModal-"+usedFor).querySelectorAll("section.form-QA")
+    let qVisibleArray = []
+    let allVisibleArray = []
+
+    allQs.forEach((q) => {
+      const childDiv = q.getElementsByClassName('formA-'+usedFor)[0]
+      const qid = childDiv.dataset.idforstate
+      const qName = qid.split("-")[1]
+      if (!q.classList.contains("hiddenQ")) {
+        allVisibleArray.push(
+          qid
+        );
+      }
+      if (!q.classList.contains("hiddenQ") && !childDiv.dataset.idforstate.includes('interim')) {
+        qVisibleArray.push(
+          qName
+        );
+        const indexWithinVisibleArr = qVisibleArray.indexOf(qName)
+
+        document.getElementById(qid+'qNum').innerHTML = (indexWithinVisibleArr + 1) + ")"
+      }
+    })
+
+    this.setState({
+      qVisibleArray: qVisibleArray,
+      allVisibleArray: allVisibleArray
+    });
+  }
+
   canBeSubmitted() {
     const {questions, usedFor} = this.props;
     const {qViewed} = this.state;
@@ -593,6 +734,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-idforstate={i+"-"+name}
             data-index={i}
           >
             <button type="button" className="Submit-btn formInterim" id={i+"-"+name} onClick={this.handleScrollDown} autoFocus={(i === 0) ? true : false}>
@@ -605,6 +747,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-idforstate={i+"-"+name}
             data-index={i}
           >
             <TextInput
@@ -630,6 +773,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-idforstate={i+"-"+name}
             data-index={i}
           >
             <textarea
@@ -660,6 +804,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-idforstate={i+"-"+name}
             data-index={i}
           >
             <NumberInput
@@ -680,6 +825,7 @@ class Form extends Component {
           <div
             className={"formA-"+usedFor}
             data-idforfocus={i+"-"+name}
+            data-idforstate={i+"-"+name}
             data-index={i}
           >
             <PhoneInput
@@ -702,6 +848,7 @@ class Form extends Component {
             <div
               className={"formA-"+usedFor}
               data-idforfocus={i+"-"+options[0]['name']}
+              data-idforstate={i+"-"+name}
               data-index={i}
             >
               {options.map((option, index) => {
@@ -907,8 +1054,11 @@ class Form extends Component {
             const q = question['q'];
             const required = question['req'] === 1;
             const name = question['name'];
+            const condOn = question['conditionalOn']
+            const showIf = question['showIf']
+            const isConditional = condOn != undefined;
 
-            if (name != 'interim') {
+            if (name != 'interim' && !isConditional) {
               qOnly++
             }
 
@@ -917,10 +1067,19 @@ class Form extends Component {
 
             return (
             //  <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
-              <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
+              <section
+                className={"form-QA "+(isConditional ? 'hiddenQ' : '')}
+                id={'formQ-'+usedFor+i}
+                key={q}
+                data-key={name}
+                data-condon={(isConditional ? condOn : undefined)}
+                data-showif={(isConditional ? showIf : undefined)}
+              >
                 <h2 className={"qTitle " + (required ? "reqAsterisk" : "")}>
                   {name != 'interim' && (
-                    <span className="qNum">{qOnly})</span>
+                //    <span className="qNum">{qOnly})</span>
+                //    <span className="qNum" id={i+name+'qNum'}>{this.state[i+name+'currNum']})</span>
+                    <span className="qNum" id={i+"-"+name+'qNum'}>0)</span>
                   )}
                   {q}
                 </h2>

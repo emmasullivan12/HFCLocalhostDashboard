@@ -26,6 +26,10 @@
   padding-top: 20%;
 }
 
+.form-QA.hiddenQ {
+  display: none;
+}
+
 .prLogoContainer.form{
   position: fixed!important;
   top: 26px!important;
