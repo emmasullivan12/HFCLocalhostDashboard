@@ -29,7 +29,7 @@ class Form extends Component {
       firstQEdited: false,
       qViewed: 0,
       qRequired: "",
-      qVisible: 0,
+      numQVisible: 0,
       qVisibleArray: [],
       pct: 0,
       tabPressed: '',
@@ -44,6 +44,8 @@ class Form extends Component {
     const {usedFor, questions} = this.props
     const observer = this.createObserver()
 
+    this.updateVisibleQs()
+
     // Track all sections that have an `id` applied
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
@@ -51,10 +53,8 @@ class Form extends Component {
 
     const hiddenQs = document.getElementById("fpModal-"+usedFor).querySelectorAll('section.hiddenQ')
 
-    this.updateVisibleQs()
-
     this.setState({
-      qVisible: questions.length - hiddenQs.length,
+      numQVisible: questions.length - hiddenQs.length,
     })
   }
 
@@ -142,9 +142,7 @@ class Form extends Component {
             );
           }
         } else {
-
           statesToCheck.push(
-          //  this.state["formA-"+usedFor+i+"isValid"],
             this.state[i+"-"+name+"isValid"]
           );
         }
@@ -178,7 +176,9 @@ class Form extends Component {
       entries.forEach(entry => {
         const el = entry.target
         const id = el.getAttribute('id');
+
         const index = el.getElementsByClassName("formA-"+usedFor)[0].dataset.index
+        const index1 = this.state.allVisibleArray.indexOf(index+"-"+el.dataset.key)
 
         if (entry.intersectionRatio > 0) {
 
@@ -187,7 +187,7 @@ class Form extends Component {
             const maxQViewed = Math.max(index, qViewed)
 
             return {
-              focusedQ: index,
+              focusedQ: index1,
               qViewed: maxQViewed
             }
 
@@ -456,11 +456,6 @@ class Form extends Component {
         const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
         const indexToFocusOn = answers[this.state.focusedQ].dataset.index
 
-        console.log("--- break ---")
-        console.log("idToFocusOn: "+idToFocusOn)
-        console.log("indexToFocusOn: "+indexToFocusOn)
-        console.log("this.state.focusedQ: "+this.state.focusedQ)
-
         if (elToFocusOn != null) {
           if (elToFocusOn === 'firstElementChild') {
            document.getElementById(idToFocusOn).firstElementChild.focus();
@@ -481,11 +476,10 @@ class Form extends Component {
   }
 
   handleScrollDown = () => {
-    const { focusedQ, qVisible } = this.state;
+    const { focusedQ, numQVisible, allVisibleArray } = this.state;
     const { questions, usedFor } = this.props;
-    console.log("focusedQ prev: "+focusedQ)
 
-    if (focusedQ == (questions.length - 1)) {
+    if (focusedQ == (allVisibleArray.length - 1)) {
       return
     } else {
 
@@ -498,10 +492,11 @@ class Form extends Component {
           focusedQ
         }
       }, () => {
+    //    const idToScrollTo1 = this.state.allVisibleArray[this.state.focusedQ]
+    //    const idToScrollTo2 = idToScrollTo1.split("-")[0]
 
         const allAnswers = document.getElementsByClassName("formA-"+usedFor)
 
-        console.log(allAnswers)
         let answers = []
 
         Array.prototype.forEach.call(allAnswers, function(answer) {
@@ -512,21 +507,12 @@ class Form extends Component {
             );
           }
         })
-        console.log("NEW focusedQ: "+this.state.focusedQ)
-        console.log(answers)
 
         const idToFocusOn = answers[this.state.focusedQ].dataset.idforfocus
         const elToFocusOn = answers[this.state.focusedQ].dataset.elementforfocus;
         const idForState = answers[this.state.focusedQ].dataset.idforstate
-        console.log(idForState)
-    //    console.log(this.state.allVisibleArray)
-    //    console.log(this.state.allVisibleArray.indexOf(idForState))
-    //    const indexToFocusOn = this.state.allVisibleArray.indexOf(idForState)
 
         const indexToFocusOn = idForState.split("-")[0]
-
-        console.log("idToFocusOn: "+idToFocusOn)
-        console.log("indexToFocusOn: "+indexToFocusOn)
 
         if (elToFocusOn != undefined) {
           if (elToFocusOn === 'firstElementChild') {
@@ -538,7 +524,6 @@ class Form extends Component {
 
         const parent = document.getElementById("fpModal-"+usedFor);
         const currentQ = document.getElementById('formQ-'+usedFor+indexToFocusOn)
-
         parent.scrollTop = currentQ.offsetTop
 
       })
@@ -631,7 +616,7 @@ class Form extends Component {
     }
 
     this.setState({
-      qVisible: questions.length - hiddenQs.length,
+      numQVisible: questions.length - hiddenQs.length,
     }, () => {
   //    this.updateQNumbers()
       this.updateVisibleQs()
@@ -686,17 +671,56 @@ class Form extends Component {
       if (!required) {
         return
       } else {
-        statesToCheck.push(
-        //  this.state["formA-"+usedFor+i+"isValid"],
-          this.state[i+"-"+name+"isValid"]
-        );
+        const condOn = question['conditionalOn']
+        if (condOn != undefined) {
+
+          console.log(condOn)
+          //const getCondParent = document.getElementById("fpModal-"+usedFor).querySelectorAll('section[data-condon]')[condOn]
+          console.log(document.getElementById("fpModal-"+usedFor))
+          const getCondParent = document.getElementById("fpModal-"+usedFor).querySelectorAll('section[data-condon='+CSS.escape(condOn)+']')
+          console.log(getCondParent)
+          const getCondParentIndex = getCondParent.dataset.index
+          console.log(getCondParentIndex)
+          console.log(getCondParentIndex+"-"+condOn)
+          console.log(this.state[getCondParentIndex+"-"+condOn])
+
+          if (this.state[i+"-"+condOn] != undefined) {
+
+            console.log("question['showIf']: "+question['showIf'])
+            console.log(question['showIf'].indexOf(this.state[getCondParentIndex+"-"+condOn]))
+
+            if (this.state[getCondParentIndex+"-"+condOn+"isValid"] && question['showIf'].indexOf(this.state[getCondParentIndex+"-"+condOn]) != -1) {
+              statesToCheck.push(
+                true
+              );
+            } else {
+              statesToCheck.push(
+                false
+              );
+            }
+          } else {
+            return
+          /*  statesToCheck.push(
+              this.state[i+"-"+name+"isValid"]
+            );*/
+          }
+        } else {
+          statesToCheck.push(
+            this.state[i+"-"+name+"isValid"]
+          );
+        }
       }
     });
 
+  //  console.log(statesToCheck)
+
     if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
       return false
+
+    // Make sure they've seen all questions before Submit button shows
     } else if (qViewed === (questions.length - 1)) {
       return true
+
     } else {
       return false
     }
@@ -1074,6 +1098,7 @@ class Form extends Component {
                 data-key={name}
                 data-condon={(isConditional ? condOn : undefined)}
                 data-showif={(isConditional ? showIf : undefined)}
+                data-index={i}
               >
                 <h2 className={"qTitle " + (required ? "reqAsterisk" : "")}>
                   {name != 'interim' && (
@@ -1096,7 +1121,7 @@ class Form extends Component {
   }
 
   render() {
-    const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct} = this.state
+    const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct, allVisibleArray} = this.state
     const {questions} = this.props
 
     const isEnabled = this.canBeSubmitted();
@@ -1131,7 +1156,7 @@ class Form extends Component {
           <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>
-          <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (questions.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
+          <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (allVisibleArray.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
             <ChevronDown />
           </button>
         </div>

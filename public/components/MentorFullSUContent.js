@@ -59,10 +59,11 @@ class MentorFullSignUp extends Component {
       {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'Type number...', name: 'maxMentees'},
       {q: 'I\'m interested in speaking to and mentoring underserved young people because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyHelp'},
       {q: 'Did you want to focus your efforts on supporting any of these particular communities?', detail: 'You might be particularly passionate about one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
-        {value: '0', label: 'Black, Asian, Minority Ethnic (BAME)'},
-        {value: '1', label: 'People with disabilities'},
-        {value: '2', label: 'LGBTQI+'},
-        {value: '3', label: 'Women in the Workforce'},
+        {value: '1', label: 'Black, Asian, Minority Ethnic (BAME)'},
+        {value: '2', label: 'People with disabilities'},
+        {value: '3', label: 'LGBTQI+'},
+        {value: '4', label: 'Women in the Workforce'},
+        {value: '0', label: 'None'},
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
@@ -201,7 +202,7 @@ class MentorFullSignUp extends Component {
       ]},
       {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
       ... (eetStatus != 'uni') ? [
-        {q: 'What\'s the highest level of education you\'ve achieved?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
+        {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
           {value: '0', label: 'GCSE / Middle School (or equivalent)'},
           {value: '1', label: 'A-Levels / High School (or equivalent)'},
           {value: '2', label: 'Associate Degree'},
@@ -211,12 +212,12 @@ class MentorFullSignUp extends Component {
           {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your Degree name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your Degree name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'uniNameFreeText'},
         ] : [],
-        {q: 'What Degree did you study?', detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
+        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
       ... (subjects === '') ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
@@ -373,10 +374,11 @@ class MentorFullSignUp extends Component {
       {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'Type number...', name: 'maxMentees'},
       {q: 'I\'m interested in speaking to and mentoring underserved young people because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyHelp'},
       {q: 'Did you want to focus your efforts on supporting any of these particular communities?', detail: 'You might be particularly passionate about one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
-        {value: '0', label: 'Black, Asian, Minority Ethnic (BAME)'},
-        {value: '1', label: 'People with disabilities'},
-        {value: '2', label: 'LGBTQI+'},
-        {value: '3', label: 'Women in the Workforce'},
+        {value: '1', label: 'Black, Asian, Minority Ethnic (BAME)'},
+        {value: '2', label: 'People with disabilities'},
+        {value: '3', label: 'LGBTQI+'},
+        {value: '4', label: 'Women in the Workforce'},
+        {value: '0', label: 'None'},
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
