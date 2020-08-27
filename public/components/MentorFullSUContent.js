@@ -205,10 +205,10 @@ class MentorFullSignUp extends Component {
         //  {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
@@ -520,10 +520,10 @@ class MentorFullSignUp extends Component {
     //      {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
@@ -721,6 +721,7 @@ class MentorFullSignUp extends Component {
             questions={questionsU18}
             usedFor="mentorFullSU-u18"
             renderComponentsInitialState='ukUnisList'
+            saveOnSubmit='u18'
           />
         </FullPageModal>
         <FullPageModal {...MentorOver18FullSUProps}>
@@ -728,6 +729,7 @@ class MentorFullSignUp extends Component {
             questions={questions}
             usedFor="mentorFullSU"
             renderComponentsInitialState='ukUnisList'
+            saveOnSubmit='u18'
           />
         </FullPageModal>
       </React.Fragment>

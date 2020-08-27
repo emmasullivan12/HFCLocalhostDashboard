@@ -29,7 +29,6 @@ class Form extends Component {
       firstQEdited: false,
       qViewed: 0,
       qRequired: "",
-      numQVisible: 0,
       qVisibleArray: [],
       pct: 0,
       tabPressed: '',
@@ -41,7 +40,18 @@ class Form extends Component {
 
   componentDidMount() {
     this.mounted = true
-    const {usedFor, questions} = this.props
+    const {usedFor, questions, saveOnSubmit} = this.props
+
+
+    const statesToSave = {}
+
+    // Hels Dex check if user is under18 (if I have added this to end of usedFor when feeding into Form.js as props)
+    if (saveOnSubmit != undefined) {
+      const isSaveOnSubmitValue = usedFor.split("-")[1] === saveOnSubmit
+      statesToSave[saveOnSubmit] = isSaveOnSubmitValue
+    }
+
+    console.log(statesToSave)
     const observer = this.createObserver()
 
     this.updateVisibleQs()
@@ -51,11 +61,6 @@ class Form extends Component {
       observer.observe(section);
     });
 
-    const hiddenQs = document.getElementById("fpModal-"+usedFor).querySelectorAll('section.hiddenQ')
-
-    this.setState({
-      numQVisible: questions.length - hiddenQs.length,
-    })
   }
 
   componentWillUnmount() {
@@ -553,7 +558,7 @@ class Form extends Component {
   }
 
   handleSubmit = () => {
-    const {onSubmit, usedFor} = this.props;
+    const {onSubmit, usedFor, saveOnSubmit} = this.props;
     this.toggleScrollLock();
     this.setState({
       isSubmitting: true
@@ -562,8 +567,13 @@ class Form extends Component {
 
       const statesToSave = {}
 
-      const isU18 = usedFor.split("-")[1] === 'u18'
-      statesToSave['isU18'] = isU18
+      // Hels Dex check if user is under18 (if I have added this to end of usedFor when feeding into Form.js as props)
+      if (saveOnSubmit != undefined) {
+        const isSaveOnSubmitValue = usedFor.split("-")[1] === saveOnSubmit
+        statesToSave[saveOnSubmit] = isSaveOnSubmitValue
+      }
+
+      console.log(statesToSave)
 
       questions.forEach((question, i) => {
         const name = question['name'];
@@ -628,6 +638,14 @@ class Form extends Component {
           section.classList.remove('hiddenQ');
         } else {
           section.classList.add('hiddenQ');
+
+          // Might only work if there is one input element within the Section
+          section.getElementsByClassName("formA-"+usedFor)[0].getElementsByTagName('input')[0].value = '';
+
+          this.setState({
+            [section.dataset.index+"-"+section.dataset.key]: '',
+            [section.dataset.index+"-"+section.dataset.key+"isValid"]: false
+          })
         }
       });
 
@@ -635,20 +653,23 @@ class Form extends Component {
       conditionalChildren.forEach((section) => {
         if (section.dataset.condon === condParentName) {
           section.classList.add('hiddenQ');
+
+          // Might only work if there is one input element within the Section
+          section.getElementsByClassName("formA-"+usedFor)[0].getElementsByTagName('input')[0].value = '';
+
+          this.setState({
+            [section.dataset.index+"-"+section.dataset.key]: '',
+            [section.dataset.index+"-"+section.dataset.key+"isValid"]: false
+          })
         }
       });
 
     }
 
-    this.setState({
-      numQVisible: questions.length - hiddenQs.length,
-    }, () => {
-  //    this.updateQNumbers()
       this.updateVisibleQs()
       if (callback) {
         callback()
       }
-    })
 
   }
 
@@ -724,7 +745,6 @@ class Form extends Component {
               );
             }
           } else {
-            console.log("gets here")
             statesToCheck.push(
               this.state[i+"-"+name+"isValid"]
             );
@@ -736,8 +756,6 @@ class Form extends Component {
         }
       }
     });
-
-    console.log(statesToCheck)
 
     if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
       return false
@@ -867,6 +885,11 @@ class Form extends Component {
               onBlur={this.onBlur}
               focusOnLoad={(i === 0) ? true : false}
             />
+            {question['max'] && (
+              <div className="descriptor-br form">
+                Max: {question['max']}
+              </div>
+            )}
           </div>
         );
       case 'tel':
