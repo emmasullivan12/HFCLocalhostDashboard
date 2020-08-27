@@ -334,11 +334,21 @@ class Form extends Component {
   toggleCheckbox = (e)  => {
     const {usedFor, questions} = this.props;
     const stateToChange = e.target.id;
+    var getIndex = stateToChange.split("-")[0]
+    const q = questions[getIndex]
+    const isConditionalParent = q['conditionalParent'] === 1
 
     this.setState({
       [stateToChange]: e.target.checked
     }, () => {
-      this.updateProgress()
+      if (isConditionalParent) {
+        const condParentName = q['name']
+        this.updateConditional(stateToChange, condParentName, () => {
+          this.updateProgress()
+        })
+      } else {
+        this.updateProgress()
+      }
     });
 
     const stateToChangeSplit = stateToChange.split("-")
@@ -395,7 +405,12 @@ class Form extends Component {
   }
 
   handleYesNoChange = (e) => {
+    const {questions} = this.props
     const formId = e.target.closest("section > div").dataset.idforstate
+
+    var getIndex = formId.split("-")[0]
+    const q = questions[getIndex]
+    const isConditionalParent = q['conditionalParent'] === 1
 
     e.target.classList.add('selected');
     e.target.getElementsByTagName('span')[0].classList.add('selected');
@@ -410,7 +425,14 @@ class Form extends Component {
       [formId]: e.target.value,
       [formId+"isValid"]: true
     }, () => {
-      this.updateProgress()
+      if (isConditionalParent) {
+        const condParentName = q['name']
+        this.updateConditional(formId, condParentName, () => {
+          this.updateProgress()
+        })
+      } else {
+        this.updateProgress()
+      }
       if (this.state[formId+"isValid"] === true) {
         this.handleScrollDown()
       } else {
@@ -531,7 +553,7 @@ class Form extends Component {
   }
 
   handleSubmit = () => {
-    const {onSubmit} = this.props;
+    const {onSubmit, usedFor} = this.props;
     this.toggleScrollLock();
     this.setState({
       isSubmitting: true
@@ -539,6 +561,9 @@ class Form extends Component {
       const {questions} = this.props;
 
       const statesToSave = {}
+
+      const isU18 = usedFor.split("-")[1] === 'u18'
+      statesToSave['isU18'] = isU18
 
       questions.forEach((question, i) => {
         const name = question['name'];
@@ -674,35 +699,35 @@ class Form extends Component {
         const condOn = question['conditionalOn']
         if (condOn != undefined) {
 
-          console.log(condOn)
-          //const getCondParent = document.getElementById("fpModal-"+usedFor).querySelectorAll('section[data-condon]')[condOn]
-          console.log(document.getElementById("fpModal-"+usedFor))
-          const getCondParent = document.getElementById("fpModal-"+usedFor).querySelectorAll('section[data-condon='+CSS.escape(condOn)+']')
-          console.log(getCondParent)
-          const getCondParentIndex = getCondParent.dataset.index
-          console.log(getCondParentIndex)
-          console.log(getCondParentIndex+"-"+condOn)
-          console.log(this.state[getCondParentIndex+"-"+condOn])
+          let getCondParentIndex
 
-          if (this.state[i+"-"+condOn] != undefined) {
+          document.querySelectorAll("section[data-key]").forEach((section) => {
+            if (section.dataset.key === condOn) {
+              getCondParentIndex = section.dataset.index
+            }
+          });
 
-            console.log("question['showIf']: "+question['showIf'])
-            console.log(question['showIf'].indexOf(this.state[getCondParentIndex+"-"+condOn]))
+          const parentState = this.state[getCondParentIndex+"-"+condOn]
 
-            if (this.state[getCondParentIndex+"-"+condOn+"isValid"] && question['showIf'].indexOf(this.state[getCondParentIndex+"-"+condOn]) != -1) {
+          if (parentState != undefined) {
+
+            // If parent Q has been asnwered and answer is the one the child required, then check child Q has been answered too
+            if (this.state[getCondParentIndex+"-"+condOn+"isValid"] && (String(question['showIf']).indexOf(parentState) != -1)) {
+              statesToCheck.push(
+                this.state[i+"-"+name+"isValid"]
+              );
+            } else {
+
+              // If parent Q has been answered, but it's not the answer that the child requires, then set child to true (to allow submit)
               statesToCheck.push(
                 true
               );
-            } else {
-              statesToCheck.push(
-                false
-              );
             }
           } else {
-            return
-          /*  statesToCheck.push(
+            console.log("gets here")
+            statesToCheck.push(
               this.state[i+"-"+name+"isValid"]
-            );*/
+            );
           }
         } else {
           statesToCheck.push(
@@ -712,7 +737,7 @@ class Form extends Component {
       }
     });
 
-  //  console.log(statesToCheck)
+    console.log(statesToCheck)
 
     if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
       return false

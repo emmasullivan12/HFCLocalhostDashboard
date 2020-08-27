@@ -24,13 +24,6 @@ const MentorOver18FullSUProps = {
 }
 
 class MentorFullSignUp extends Component {
-/*  constructor() {
-    super();
-    this.state = {
-      u18: '',
-    };
-  }*/
-
     render() {
     const eetStatus = 'job';
     const userRole = 'mentor';
@@ -63,7 +56,7 @@ class MentorFullSignUp extends Component {
         {value: '2', label: 'People with disabilities'},
         {value: '3', label: 'LGBTQI+'},
         {value: '4', label: 'Women in the Workforce'},
-        {value: '0', label: 'None'},
+        {value: '0', label: 'None right now'},
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
@@ -209,13 +202,13 @@ class MentorFullSignUp extends Component {
           {value: '3', label: 'Bachelors Degree'},
           {value: '4', label: 'Masters Degree'},
           {value: '5', label: 'PhD'},
-          {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
+        //  {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your Degree name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
@@ -378,7 +371,7 @@ class MentorFullSignUp extends Component {
         {value: '2', label: 'People with disabilities'},
         {value: '3', label: 'LGBTQI+'},
         {value: '4', label: 'Women in the Workforce'},
-        {value: '0', label: 'None'},
+        {value: '0', label: 'None right now'},
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
@@ -524,13 +517,13 @@ class MentorFullSignUp extends Component {
           {value: '3', label: 'Bachelors Degree'},
           {value: '4', label: 'Masters Degree'},
           {value: '5', label: 'PhD'},
-          {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
+    //      {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your Degree name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
@@ -685,7 +678,7 @@ class MentorFullSignUp extends Component {
       {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
         {value: '0', label: 'Male', iconFA: 'fas fa-male'},
         {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Non-binary', iconFA: 'fas fa-genderless'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
         {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
       ]},
       {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [

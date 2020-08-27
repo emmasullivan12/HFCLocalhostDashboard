@@ -21,7 +21,6 @@ const PageHeaderProps = {
 
 class MentorHomePage extends Component {
   render(){
-    console.log("loading mentor homepage component")
     return (
       <React.Fragment>
         <PageHeader {...PageHeaderProps} />
