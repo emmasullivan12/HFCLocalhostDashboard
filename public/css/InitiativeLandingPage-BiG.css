@@ -14,10 +14,10 @@
   background-size: contain;
   background-repeat: repeat;
   background-image: url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
-  background-image: linear-gradient(0deg,#06323b,rgba(255,255,255,.95)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
-  background-image:-moz-linear-gradient(0deg,#06323b,rgba(255,255,255,.95)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
-  background-image:-webkit-linear-gradient(90deg,#06323b,rgba(255,255,255,.95)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
-  background-image:-o-linear-gradient(0deg,#06323b,rgba(255,255,255,.95)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
+  background-image: linear-gradient(0deg,#06323b,rgba(255,255,255,.94)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
+  background-image:-moz-linear-gradient(0deg,#06323b,rgba(255,255,255,.94)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
+  background-image:-webkit-linear-gradient(90deg,#06323b,rgba(255,255,255,.94)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
+  background-image:-o-linear-gradient(0deg,#06323b,rgba(255,255,255,.94)),url(https://prospela.com/wp-content/uploads/2020/08/Prospela_bg.png);
 }
 .pwdByNav.is-fixed.big {
   background-color: #06323b!important;
