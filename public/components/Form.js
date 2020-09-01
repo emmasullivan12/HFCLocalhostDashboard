@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st Aug 2020
+// Dex last merged this code on 1st Sept 2020
 
 import React, { Component } from "react";
 import {
@@ -28,7 +28,6 @@ class Form extends Component {
       isSubmitting: false,
       firstQEdited: false,
       qViewed: 0,
-      qRequired: "",
       qVisibleArray: [],
       pct: 0,
       tabPressed: '',
@@ -51,7 +50,6 @@ class Form extends Component {
       statesToSave[saveOnSubmit] = isSaveOnSubmitValue
     }
 
-    console.log(statesToSave)
     const observer = this.createObserver()
 
     this.updateVisibleQs()
