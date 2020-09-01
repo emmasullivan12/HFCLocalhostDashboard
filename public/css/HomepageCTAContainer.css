@@ -161,6 +161,14 @@
   min-height: 80px;
 }
 
+.placeholderPic.uploadCV{
+  background-repeat: no-repeat;
+  background-image: url('https://prospela.com/wp-content/uploads/2020/08/CVIcon.png');
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
 .landingCTATitle{
   color: #4e4ed6;
   font-weight: 600;

@@ -687,6 +687,33 @@ a.Submit-btn:disabled:active,
   background-color: rgb(111, 195, 179);
   color: #fff;
 }
+.fileUploadPlaceholder{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: rgba(159,158,231,.17);
+  padding: .4rem;
+}
+.fileUploadPlaceholder-title{
+  font-size: 20px;
+  line-height: 1.2143;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.fileUploadPlaceholder-subtitle{
+  font-size: 15px!important;
+  line-height: 1.46668;
+  font-weight: 400;
+  color: #848484!important;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.fileUploadDottedLine{
+  border: 2px dotted #c0bfef;
+  height: 100%;
+  padding: 2rem;
+}
 
 /* In-chat Buttons */
 

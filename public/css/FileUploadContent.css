@@ -12,16 +12,16 @@
 	z-index: -1;
 }
 .inputFile + label{
-  max-width: 80%;
+/*  max-width: 80%;*/
   font-size: 1rem;
   font-weight: 400;
   text-overflow: ellipsis;
-  display: inline-block;
+  display: block;
   white-space: nowrap;
   cursor: pointer;
   overflow: hidden;
   padding: 0.625rem 1.25rem;
-  color: #58d2bb;
+  color: #bbbbbb;
   margin-top: 1rem;
 }
 .inputfile:focus + label:hover {
@@ -32,7 +32,7 @@
   height: 1em;
   vertical-align: middle;
   fill: currentColor;
-  margin-top: -0.25em;
+  display: inline-block;
   margin-right: 0.25em;
 }
 .fileNamesContainer{

@@ -13,7 +13,7 @@ import "../css/Login.css";
 
 const U18CameraUploadModalProps = {
   ariaLabel: 'Upload a picture',
-  triggerText: 'Take Selfie with Photo ID',
+  triggerText: 'Take Selfie with Photo ID >>',
   usedFor: 'U18picContainer'
 }
 
