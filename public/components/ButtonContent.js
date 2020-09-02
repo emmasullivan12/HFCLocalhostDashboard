@@ -88,7 +88,7 @@ function ButtonContent(props) {
         </div>
       );
     default:
-      return <div>{text}</div>
+      return <div className="overflow-ellipsis">{text}</div>
   }
 }
 

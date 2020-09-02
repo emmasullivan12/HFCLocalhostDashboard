@@ -187,12 +187,6 @@ class MentorFullSignUp extends Component {
           {value: '117', label: 'Yoga'},
         ]},
       ] : [],
-      {q: 'What type of Mentor do you think you\'ll be?', detail: 'Choose the phrases that resonate with you ;)', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select your style...', placeholderOnClick: 'Choose as many as you like:', name: 'mentorStyle', valueToShow: 'label', options: [
-        {value: '0', label: 'I\'m impatient'},
-        {value: '1', label: 'Im a bitch'},
-        {value: '2', label: 'I hate kids'},
-        {value: '3', label: 'I hate people that are late'},
-      ]},
       {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
       ... (eetStatus != 'uni') ? [
         {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
@@ -352,7 +346,7 @@ class MentorFullSignUp extends Component {
         {value: '8', label: 'Prefer not to say'}
       ]},
       ... (phone === '') ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We need this additional way to contact you in case you change company, etc.', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
       ] : [],
     ]
 
@@ -502,12 +496,6 @@ class MentorFullSignUp extends Component {
           {value: '117', label: 'Yoga'},
         ]},
       ] : [],
-      {q: 'What type of Mentor do you think you\'ll be?', detail: 'Choose the phrases that resonate with you ;)', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select your style...', placeholderOnClick: 'Choose as many as you like:', name: 'mentorStyle', valueToShow: 'label', options: [
-        {value: '0', label: 'I\'m impatient'},
-        {value: '1', label: 'Im a bitch'},
-        {value: '2', label: 'I hate kids'},
-        {value: '3', label: 'I hate people that are late'},
-      ]},
       {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
       ... (eetStatus != 'uni') ? [
         {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
@@ -693,7 +681,7 @@ class MentorFullSignUp extends Component {
         {value: '8', label: 'Prefer not to say'}
       ]},
       ... (phone === '') ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We need this additional way to contact you in case you change company, in an emergency etc.', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 1, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
       ] : [],
     ]
 

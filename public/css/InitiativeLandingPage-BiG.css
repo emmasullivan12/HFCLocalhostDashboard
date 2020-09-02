@@ -67,14 +67,25 @@
 .initiativeBtn-student.big:active{
   background: #00dec8;
 }
-.initiativeBtn-mentor.big{
-  color: #fd53a5;
-  background: transparent;
-  border: 1.5px solid #fd53a5;
+.initiativeBtn-mentor.big.topBtn{
+  color: #e44893;
+  background: rgba(0,0,0,.24);
+  border: 1.5px solid #da498f;
 }
-.initiativeBtn-mentor.big:hover{
+.initiativeBtn-mentor.big.topBtn:hover{
   background-color: rgba(248, 41, 146,.2);
-  color: rgba(226,226,226,.9);
+  color: rgba(226,226,226);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeBtn-mentor.big.bottomBtn{
+  color: #e44893;
+  background: transparent;
+  border: 1.5px solid #da498f;
+}
+.initiativeBtn-mentor.big.bottomBtn:hover{
+  background-color: rgba(248, 41, 146,.2);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
@@ -102,4 +113,10 @@
 }
 #quotes li.quote-box.big:nth-child(3):before {
   color: #ceff51;
+}
+.initiativeHeader.big{
+  color: #06323b;
+}
+.initiativeTextDetail.big{
+  color: rgba(6,50,59,.64);
 }

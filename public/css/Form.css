@@ -265,6 +265,16 @@
     max-width: 60%;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .formContainer{
+    max-width: 40%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .formContainer{
+    max-width: 30%;
+  }
+}
 /*@media only screen and (min-width: 500px) and (max-width: 759px) {
   .xxx{
     xx
