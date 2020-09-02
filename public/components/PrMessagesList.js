@@ -46,7 +46,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is the start of your chat!',
         prAuto: {
           title: 'start'
@@ -58,7 +58,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'mentorAcc',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -67,7 +67,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'mentorRej',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -76,7 +76,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message',
         prAuto: {
           title: 'prompt'
@@ -88,7 +88,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -97,7 +97,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -106,7 +106,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1525209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -115,7 +115,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1535209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -124,7 +124,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1535209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -133,7 +133,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1545209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -142,7 +142,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1545209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -151,7 +151,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -160,7 +160,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -169,7 +169,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'notSent',
         author: 'dexter',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -178,7 +178,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -187,7 +187,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'file',
         author: 'emma-student',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -203,7 +203,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'uploadNotSent',
         author: 'emma-student',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -219,7 +219,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'menteeReq',
         author: 'emma-student',
-        ts: 1565209202,
+        ts: '2020-09-01T13:30:50.667Z',
         text: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
       },
       {
@@ -228,7 +228,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -237,7 +237,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -246,7 +246,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -255,7 +255,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         prAuto: {
           title: 'ending'
         }
@@ -266,7 +266,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         text: 'This is dex message',
         prAuto: {
           title: 'match'
@@ -278,7 +278,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: 1565367993,
+        ts: '2020-03-01T13:30:50.667Z',
         prAuto: {
           title: 'ended'
         }

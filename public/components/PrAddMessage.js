@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
-import { NimblePicker } from 'emoji-mart'
+import { NimblePicker, Emoji } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
 import Modal from './Modal.js';
 import FileUploadContent from './FileUploadContent.js';
@@ -34,10 +34,26 @@ class PrAddMessage extends Component {
     let codesArray = []
     sym.forEach(el => codesArray.push('0x' + el))
     let emojiPic = String.fromCodePoint(...codesArray)
+
     this.setState((prevState) => {
-      return {text: prevState.text + emojiPic};
+      return {
+        text: prevState.text + emojiPic,
+      };
     })
   }
+
+/*  convertTextToEmojis = () => {
+    const {text} = this.state
+
+    var reg = /:([^\s:]+)(?:::(skin-tone-[2-6]))?:/g;
+
+    const newText = text.replace(reg, match => {
+      return <Emoji emoji={match} size={16}/>
+    })
+
+    return newText
+
+  }*/
 
   handleMessageChange = (evt) => {
     this.setState({ text: evt.target.value });
@@ -136,6 +152,7 @@ class PrAddMessage extends Component {
                     title="Pick your emoji…"
                     emoji="point_up"
                     set="emojione"
+                    autoFocus
                   />
                 </div>
               )}
@@ -145,6 +162,7 @@ class PrAddMessage extends Component {
                     className="input-box"
                     id="txtInput-box"
                     form="chatMessageForm"
+                  //  value={this.convertTextToEmojis}
                     value={this.state.text}
                     onChange={this.handleMessageChange}
                     onKeyDown={this.onEnterPress}

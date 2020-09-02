@@ -110,7 +110,7 @@ function Avatar(props) {
 }
 
 function TimeCalc(props) {
-  var ts = new Date(props.time * 1000);
+  var ts = new Date(props.time);
   var hour = ts.getHours();
   var min = ts.getMinutes();
   var ampm = hour >= 12 ? 'pm' : 'am';
@@ -460,8 +460,14 @@ function nthCalc(date) {
   }
 }
 
+1525209202
+
 function DateCalc(props) {
-  var ts = new Date(props.time * 1000);
+//  console.log(props.time)
+//  const newDate = '2020-09-01T13:30:50.667Z'
+//  var ts = new Date(props.time * 1000);
+  var ts = new Date(props.time);
+  console.log(ts)
   var today = new Date();
   var isToday = ts.toDateString() == today.toDateString();
   if (isToday) {
@@ -469,15 +475,15 @@ function DateCalc(props) {
   } else if(ts.toDateString() == new Date((today.setDate(today.getDate()-1))).toDateString()) {
     return "Yesterday"
   } else {
-  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-  var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-  var year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
-  var month = months[ts.getMonth()];
-  var day = days[ts.getDay()];
-  var date = ts.getDate();
-  var nth = nthCalc(date);
-  var time = day + ', ' + month + ' ' + date + nth + year
-  return time;
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    var year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
+    var month = months[ts.getMonth()];
+    var day = days[ts.getDay()];
+    var date = ts.getDate();
+    var nth = nthCalc(date);
+    var time = day + ', ' + month + ' ' + date + nth + year
+    return time;
   }
 }
 

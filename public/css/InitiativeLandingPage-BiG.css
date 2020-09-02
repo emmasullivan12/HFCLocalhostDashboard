@@ -25,21 +25,24 @@
 .initiativeLogosContainer{
   display: inline-block;
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: relative;
 }
 .initiativeLogoContainer.big{
   height: unset;
   width: unset;
   margin-bottom: unset;
-  max-width: 20%;
+  max-width: 15%;
   display: inline-block;
+}
+.initiativeLogoContainer.big.smallLogo{
+  max-width: 8%;
 }
 .initiativeLogoImg.big{
   display: unset;
 }
 .mentee-click-big:before {
-  background-color: #ceff51;
+  background-color: #00dec8;
 }
 .mentor-click-big:before {
   background-color: #fb1f92;
@@ -119,4 +122,21 @@
 }
 .initiativeTextDetail.big{
   color: rgba(6,50,59,.64);
+}
+.menteeIcon.big{
+  height: 60px;
+}
+@media only screen and (max-width: 454px) {
+  .menteeIcon.big {
+      height: 40px;
+  }
+  .initiativeLogoContainer.big {
+    max-width: 45%;
+  }
+  .initiativeLogoContainer.big.smallLogo {
+    max-width: 25%;
+  }
+  .sectionMain {
+    top: 15%;
+  }
 }
