@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -45,7 +45,7 @@ class MessageActions extends Component {
     return (
       <React.Fragment>
         <div className="msgActions-container">
-          <button type="button" className="msgActions-btn tooltip" onMouseDown={this.toggleStarClicked}>
+        {/*  <button type="button" className="msgActions-btn tooltip" onMouseDown={this.toggleStarClicked}>
             {starClicked ? (
               <React.Fragment>
                 <div className="msgAction-icon clicked" id="msgAction-star">
@@ -68,7 +68,7 @@ class MessageActions extends Component {
               <i className="fas fa-share-alt" />
             </div>
             <span className="tooltiptext last groups">Share post</span>
-          </button>
+          </button>*/}
           <button type="button" className="msgActions-btn tooltip moreActions" onMouseDown={this.toggleMoreActions}>
             <div className="msgAction-icon">
               <i className="fas fa-ellipsis-h" />

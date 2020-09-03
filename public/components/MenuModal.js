@@ -73,8 +73,13 @@ class MenuModal extends React.Component {
   }
 
   onOpen() {
+    const {changeInitFocus} = this.props;
     this.setState({ isMenuOpen: true }, () => {
-      this.closeButtonNode.focus();
+      if (changeInitFocus) {
+        return
+      } else {
+        this.closeButtonNode.focus();
+      }
     });
     this.toggleScrollLock();
   }
@@ -105,6 +110,7 @@ class MenuModal extends React.Component {
     }
   }
 */
+
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
     var menuModalOverlay = document.getElementById('menuModalOverlay');

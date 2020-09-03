@@ -39,7 +39,7 @@ class ChatWindow extends Component {
     super(props);
     this.scrollRef = React.createRef();
     this.state = {
-      isFlexContainerOpen: false,
+  //    isFlexContainerOpen: false,
       isLoadingMsgs: false,
       dragover: '',
       /* dragFiles: '', */
@@ -102,8 +102,8 @@ class ChatWindow extends Component {
   }
 
   render() {
-  const {isFlexContainerOpen,isLoadingMsgs} = this.state;
-  const {flexContent} = this.props;
+  const {isLoadingMsgs} = this.state;
+//  const {flexContent} = this.props;
   const {onScroll} = this;
   const isOffline = false;
 
@@ -125,7 +125,7 @@ class ChatWindow extends Component {
                   Chat name
                 </div>
               </div>
-              <div className="more-info-container">
+            {/*  <div className="more-info-container">
                 <button type="button" className="more-info-btn" onClick={this.toggleFlexContainer}>
                   {isFlexContainerOpen===false ? (
                     <span className="more-info-btn-txt">See USERID&#39;s Profile &#62;&#62;</span>
@@ -133,7 +133,7 @@ class ChatWindow extends Component {
                     <span className="more-info-btn-txt">&#60;&#60; Hide USERID&#39;s Profile</span>
                   )}
                 </button>
-              </div>
+              </div>*/}
             </div>
             {isOffline && (
               <div className="chatTopBanners priorityBanner">
@@ -180,11 +180,11 @@ class ChatWindow extends Component {
               <button type="submit">Upload</button>
             </form>
           </div>
-          {isFlexContainerOpen && (
+        {/*  {isFlexContainerOpen && (
             <FlexContainerContent
               content={flexContent}
             />
-          )}
+          )}*/}
         </div>
       </React.Fragment>
     );

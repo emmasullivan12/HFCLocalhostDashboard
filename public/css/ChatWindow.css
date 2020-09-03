@@ -17,7 +17,7 @@
   background: #f2f2f2;
 }
 .chatTopBanners{
-  z-index: 201;
+  z-index: 1001;
   position: absolute;
   top: 60px;
   left: 10px;

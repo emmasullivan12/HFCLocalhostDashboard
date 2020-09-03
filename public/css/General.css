@@ -1130,6 +1130,9 @@ a.button{
   position: relative;
   top: -2.5rem;
 }
+.msg-thumb.noModal img {
+  top: 0;
+}
 .userMenu-thumb.allowAddPic:hover > *,
 .img-circle.allowAddPic:hover > *,
 .img-square.allowAddPic:hover > *,

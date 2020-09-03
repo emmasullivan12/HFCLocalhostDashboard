@@ -5,6 +5,7 @@ import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
 import { NimblePicker, Emoji } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
+import {isURL} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import FileUploadContent from './FileUploadContent.js';
 import CameraUploadContent from './CameraUploadContent.js';
@@ -23,10 +24,14 @@ const CameraUploadModalProps = {
 class PrAddMessage extends Component {
   constructor(props) {
     super(props);
+    this.initialText = "hey there emma@prospela.com"
     this.state = {
+      showText: this.initialText,
       text: '',
       showEmojis: false,
+  //    playMsgAudio: false
     }
+//    audio = new Audio(this.props.url)
   }
 
   handleEmojiClick = (evt) => {
@@ -55,18 +60,93 @@ class PrAddMessage extends Component {
 
   }*/
 
-  handleMessageChange = (evt) => {
-    this.setState({ text: evt.target.value });
+  onKeyUp = (e) => {
+    console.log("ONKEYUP")
+  //  const div = document.getElementById('txtInput-box')
+//    var t = div.textContent || div.innerText;
+
+  /*  div.innerHTML == 'hello'
+    ? t.replace(new RegExp('hello','gi'), )
+    : t;*/
+//    this.state.text.replace(/hello/gi, function (x) {
+  //    return x.toUpperCase();
+  //  });
+
+  //  e.target.value = 'emma@prospela.com'
+  }
+
+/*  checkIsntSharingDeets = () => {
+    const {text} = this.state
+
+  //  var str = text
+    var emailExpression = /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z0-9\u00a1-\uffff][a-z0-9\u00a1-\uffff_-]{0,62})?[a-z0-9\u00a1-\uffff]\.)+(?:[a-z\u00a1-\uffff]{2,}\.?))(?::\d{2,5})?(?:[/?#]\S*)?$/gi;
+    var emailRegExp = new RegExp(emailExpression);
+  //  var phoneExpression =
+  //  var phoneRegExp = new RegExp(phoneExpression);
+
+
+    var str = text.replace(emailRegExp, function(x) {
+      return x.toUpperCase()
+    })
+    console.log(str)
+    alert(str)
+
+  //  if (text.match(emailRegExp)) {
+
+      // hanle you shouldnt be sharing email
+//      return false
+  //  } else if (phoneRegExp.match(text)) {
+      // handle you shouldnt be sharing phone numbers
+  //    return false
+  //  } else {
+//      return true
+//    }
+
+  }
+*/
+  toggleMsgAudio = () => {
+    var audio = new Audio('https://prospela.com/wp-content/uploads/2020/09/Message-Notif1-Short.mp3');
+    audio.play();
+  }
+
+  handleMessageChange = (e) => {
+    let value = e.target.value;
+
+    this.setState({
+      text: value
+    })
+
+    let txt = document.getElementById("myText").textContent;
+    let idx = txt.indexOf(value);
+    if(idx >= 0) {
+      let newText = txt.substring(0, idx) +
+                    '<span class="notAllowedHighlight">' +
+                    txt.substring(idx, idx + value.length) +
+                    '</span>' +
+                    txt.substring(idx + value.length);
+      document.getElementById("myText").innerHTML = newText
+    }
+
+
+  /* const chatIsWithU18 = true;
+    this.setState({
+      text: evt.target.value
+    }, () => {
+      if (chatIsWithU18 === true) {
+        this.checkIsntSharingDeets()
+      }
+      isURL(this.state.text)
+    });*/
     var msgInsights = document.getElementById('msgInsights-bar-right');
 
-    if (evt.target.value.length > 0) {
+    if (e.target.value.length > 0) {
       msgInsights.classList.add("show");
     } else {
       msgInsights.classList.remove("show");
     }
-    evt.target.style.height = '20px';
-    evt.target.style.height = (evt.target.scrollHeight) + 'px';
-    evt.target.style.overflowY = "scroll";
+    e.target.style.height = '20px';
+    e.target.style.height = (e.target.scrollHeight) + 'px';
+    e.target.style.overflowY = "scroll";
   }
 
   convertBoldItalicsLinks = () => {
@@ -105,7 +185,21 @@ class PrAddMessage extends Component {
 
     if((key === 'Enter' || key === 13) && e.shiftKey === false) {
       e.preventDefault();
+      this.toggleMsgAudio()
       this.handleMessageSubmit();
+    } else {
+      return;
+    }
+  }
+
+  closeOnEsc = (e) => {
+    var key = e.key || e.keyCode
+
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.setState({
+        showEmojis: false
+      })
+      this.addMessageNode.focus()
     } else {
       return;
     }
@@ -113,7 +207,7 @@ class PrAddMessage extends Component {
 
   handleMessageSubmit = () => {
     this.convertBoldItalicsLinks();
-    alert('message submitted!');
+  //  alert('message submitted!');
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");
   }
@@ -141,11 +235,11 @@ class PrAddMessage extends Component {
         <div id="new-message" className="chatWindow-footer">
           <div className="footer-container">
             <div className="input-box-container">
-              <button type="button" className="emojiContainer" onClick={this.showEmojis}>
+              <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                 <i className="far fa-smile" />
               </button>
               {showEmojis && (
-                <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)}>
+                <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
                   <NimblePicker
                     onSelect={this.handleEmojiClick}
                     data={data}
@@ -159,19 +253,22 @@ class PrAddMessage extends Component {
               <div className="input-flexContainer">
                 <form className="textInput-container" id="chatMessageForm">
                   <textarea
+                    ref={n => this.addMessageNode = n}
                     className="input-box"
                     id="txtInput-box"
                     form="chatMessageForm"
                   //  value={this.convertTextToEmojis}
-                    value={this.state.text}
+                //    value={this.state.inputValue}
                     onChange={this.handleMessageChange}
                     onKeyDown={this.onEnterPress}
+                    onKeyUp={this.onKeyUp}
                     placeholder="Type message..."
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
                     autoFocus
                   />
+                  <p id="myText">{this.state.showText}</p>
                 </form>
                 <Modal {...FileUploadModalProps}>
                   <FileUploadContent/>

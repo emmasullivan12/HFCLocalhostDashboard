@@ -49,7 +49,8 @@
 .userInitial.uploadPic{
   top: 45%;
 }
-.userInitial.msg-thumb.isntMe{
+.userInitial.msg-thumb.isntMe,
+.userInitial.msg-thumb.noModal{
   top: 0;
 }
 

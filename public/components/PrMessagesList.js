@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import PrMessage from "./PrMessage";
 
 function isNewDay(prevMsg, message) {
-  var prevMsgDate = new Date(prevMsg.ts * 1000);
-  var msgDate = new Date(message.ts * 1000);
+  var prevMsgDate = new Date(prevMsg.ts);
+  var msgDate = new Date(message.ts);
   msgDate.setHours(0);
   msgDate.setMinutes(0);
   msgDate.setSeconds(0);
@@ -169,7 +169,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'notSent',
         author: 'dexter',
-        ts: '2020-09-01T13:30:50.667Z',
+        ts: '2020-09-02T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -178,7 +178,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'emma',
-        ts: '2020-09-01T13:30:50.667Z',
+        ts: '2020-09-02T13:30:50.667Z',
         text: 'This is emmas message'
       },
       {
@@ -187,7 +187,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'file',
         author: 'emma-student',
-        ts: '2020-09-01T13:30:50.667Z',
+        ts: '2020-09-02T13:30:50.667Z',
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -203,7 +203,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'uploadNotSent',
         author: 'emma-student',
-        ts: '2020-09-01T13:30:50.667Z',
+        ts: '2020-09-02T13:30:50.667Z',
         text: 'Emma sent you a picture',
         file: {
           id: '99999',
@@ -219,7 +219,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'menteeReq',
         author: 'emma-student',
-        ts: '2020-09-01T13:30:50.667Z',
+        ts: '2020-09-02T13:30:50.667Z',
         text: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
       },
       {
@@ -228,7 +228,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -237,7 +237,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -246,7 +246,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'std',
         author: 'dexter',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         text: 'This is dex message'
       },
       {
@@ -255,7 +255,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         prAuto: {
           title: 'ending'
         }
@@ -266,7 +266,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         text: 'This is dex message',
         prAuto: {
           title: 'match'
@@ -278,7 +278,7 @@ class PrMessagesList extends Component {
         type: 'message',
         subtype: 'prAuto',
         author: 'prospela',
-        ts: '2020-03-01T13:30:50.667Z',
+        ts: '2020-09-03T13:30:50.667Z',
         prAuto: {
           title: 'ended'
         }
@@ -290,18 +290,18 @@ class PrMessagesList extends Component {
       <React.Fragment>
         <div className="messages-container" >
         {messages.map((message, index) => {
-        const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
-        const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
-        prevMsg = message;
-          return (
-            <PrMessage
-              message={message}
-              key={message.id}
-              showDateHeader={showDateHeader}
-              isAdjacent={isAdjacent}
-            />
-          )
-        })}
+          const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
+          const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
+          prevMsg = message;
+            return (
+              <PrMessage
+                message={message}
+                key={message.id}
+                showDateHeader={showDateHeader}
+                isAdjacent={isAdjacent}
+              />
+            )
+          })}
         </div>
       </React.Fragment>
     );

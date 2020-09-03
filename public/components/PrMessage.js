@@ -57,14 +57,16 @@ function Avatar(props) {
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (
-        <div className={"msg-thumb img-square allowAddPic "+isMe}>
+        <div className={"msg-thumb img-square allowAddPic "+isMe+(isMe==='isMe' ? null : ' noModal')}>
           {isMe==="isMe" ? (
+        //  {isMe==="isMe" && (
             <Modal {...UploadProfPicProps}>
               <UploadProfPicContent isPicSet={isPicSet} profPicSrc={profPicSrc} isMe={isMe}/>
             </Modal>
             )
-          : (
-            senderRole === 'mentee' ? (
+            : null
+          }
+      {  /*    senderRole === 'mentee' ? (
               <FullPageModal {...MenteeProfileMsgBtnModalProps}>
                 <MenteeProfileContent />
               </FullPageModal>
@@ -74,7 +76,7 @@ function Avatar(props) {
                 <MentorProfileContent />
               </FullPageModal>
             )
-          )}
+          )}*/}
           <img
             src={profPicSrc}
             alt={props.senderName}
@@ -84,12 +86,14 @@ function Avatar(props) {
       : (
         <div className={"msg-thumb img-square allowAddPic noPic "+isMe}>
           {isMe==="isMe" ? (
+        //  {isMe==="isMe" ? (
             <Modal {...UploadProfPicProps}>
               <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
             </Modal>
             )
-          : (
-            senderRole === 'mentee' ? (
+            : null
+          }
+    {/*        senderRole === 'mentee' ? (
               <FullPageModal {...MenteeProfileMsgBtnModalProps}>
                 <MenteeProfileContent />
               </FullPageModal>
@@ -99,8 +103,8 @@ function Avatar(props) {
                 <MentorProfileContent />
               </FullPageModal>
             )
-          )}
-          <div className="userInitial msg-thumb">
+          )}*/}
+          <div className={"userInitial msg-thumb "+(isMe==='isMe' ? null : 'noModal')}>
             {userInitial}
           </div>
         </div>
@@ -154,8 +158,8 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-            <MessageActions />
-          </div>
+          {//  <MessageActions />
+        }  </div>
         ):(
           <div className="message-container">
             <Avatar senderID={props.message.uid} senderName={props.message.author}/>
@@ -174,8 +178,8 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-            <MessageActions />
-          </div>
+          {//  <MessageActions />
+        }  </div>
         )
       }
       </div>
@@ -208,8 +212,8 @@ function DisplayFile(props) {
               &#10007; Error sending message. Please try again
             </div>
           </div>
-          <MessageActions />
-        </div>
+      {//    <MessageActions />
+      }  </div>
       </div>
     </React.Fragment>
   );
@@ -460,19 +464,16 @@ function nthCalc(date) {
   }
 }
 
-1525209202
-
 function DateCalc(props) {
-//  console.log(props.time)
-//  const newDate = '2020-09-01T13:30:50.667Z'
-//  var ts = new Date(props.time * 1000);
   var ts = new Date(props.time);
-  console.log(ts)
   var today = new Date();
-  var isToday = ts.toDateString() == today.toDateString();
+  var tsDate = ts.toDateString()
+  var todayDate = today.toDateString();
+  var yestDate = new Date((today.setDate(today.getDate()-1))).toDateString()
+  var isToday = tsDate == todayDate
   if (isToday) {
     return "Today"
-  } else if(ts.toDateString() == new Date((today.setDate(today.getDate()-1))).toDateString()) {
+  } else if(tsDate == yestDate) {
     return "Yesterday"
   } else {
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -488,6 +489,7 @@ function DateCalc(props) {
 }
 
 class PrMessage extends Component {
+
   render() {
   const {message,showDateHeader,isAdjacent} = this.props;
 
@@ -504,7 +506,7 @@ class PrMessage extends Component {
           </div>
         )}
         {showDateHeader && (
-          <div className="block-container" id="dateHeader">
+          <div className="block-container dateHeader">
             <div className="date-separator">
               <hr className="separator__hr" />
               <div className="separator__text">

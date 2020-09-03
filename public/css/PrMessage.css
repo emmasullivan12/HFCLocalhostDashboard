@@ -65,8 +65,12 @@
   padding-top: 12rem;
   margin-top: -12rem;
 }
-
-#dateHeader:hover,
+.block-container.dateHeader{
+  z-index: 1000;
+  position: sticky;
+  top: -15px;
+}
+.block-container.dateHeader:hover,
 #newMsgs:hover{
   background-color: transparent;
 }
@@ -333,7 +337,12 @@
   line-height: 2em;
   padding: 0 1em;
   position: relative;
-  z-index: 5;
+  z-index: 1000;
+  width: 200px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
 }
 .unreadSeparator__text{
   -webkit-border-radius: 10px;

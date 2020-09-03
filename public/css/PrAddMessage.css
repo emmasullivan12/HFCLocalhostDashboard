@@ -195,22 +195,22 @@
   -ms-transition: all 50ms ease-out 0s;
   -o-transition: all 50ms ease-out 0s;
 }
-
+.emojiContainer:focus,
 .emojiContainer:hover {
-  transform: scale(1.05);
+/*  transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  -o-transform: scale(1.05);*/
   color: #f2c744;
 }
 
 .picContainer:hover {
-  transform: scale(1.05);
+/*  transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  -o-transform: scale(1.05);*/
   color: #4daf5b;
 }
 
@@ -219,4 +219,9 @@
   bottom: 66px;
   left: 10px;
   z-index: 3;
+}
+
+.notAllowedHighlight{
+  color: #d81010;
+  background: #ffdfe4;
 }
