@@ -75,7 +75,7 @@
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
 }
-.ModalOpenBtn-addPicBtn.userMenu-thumb{
+.ModalOpenBtn-addPicBtn.userMenuPlus{
   font-size: 20px;
 }
 .ModalOpenBtn-addPicBtn.msg-thumb,
@@ -87,6 +87,9 @@
   top: unset;
   left: unset;
   position: relative;
+}
+.ModalOpenBtn-addPicBtn.msg-thumb{
+  font-size: 20px;
 }
 .ModalOpenBtn-addPicBtn:hover{
   background:rgba(0,0,0,0.2);
@@ -217,7 +220,9 @@
 }
 .ModalOpenBtn-ReportMsg:hover,
 .ModalOpenBtn-menu-mentee-profile:hover,
-.ModalOpenBtn-menu-mentor-profile:hover{
+.ModalOpenBtn-menu-mentor-profile:hover,
+.ModalOpenBtn-menu-mentee-profile:focus,
+.ModalOpenBtn-menu-mentor-profile:focus{
   background-color: #e0f2f0;
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -227,7 +232,9 @@
 }
 .ModalOpenBtn-ReportMsg:hover div,
 .ModalOpenBtn-menu-mentee-profile:hover div,
-.ModalOpenBtn-menu-mentor-profile:hover div {
+.ModalOpenBtn-menu-mentor-profile:hover div,
+.ModalOpenBtn-menu-mentee-profile:focus div,
+.ModalOpenBtn-menu-mentor-profile:focus div {
   color: #1dba86;
 }
 .ModalOpenBtn-joinProg,
@@ -291,8 +298,13 @@
   font-size: 15px;
   font-weight: 400;
 }
-.ModalOpenBtn-settings:hover .settings-Btn-txt{
+.ModalOpenBtn-settings:hover .settings-Btn-txt,
+.ModalOpenBtn-settings:focus .settings-Btn-txt{
   color: #1dba86;
+}
+
+.ModalOpenBtn.ModalOpenBtn-settings:focus .userMenu-list-item {
+  background-color: #e0f2f0;
 }
 
 .ModalOpenBtn-RequestChat {

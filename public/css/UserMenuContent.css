@@ -43,6 +43,9 @@
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
+  background-size: cover;
+  background-position: center center;
+/*  background-image: url(https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000);*/
 }
 .userMenu-thumb.noPic{
   font-size: 20px;
@@ -109,12 +112,18 @@
   cursor: pointer;
 }
 
-.userMenu-list-item:hover{
+.userMenu-list-item:hover,
+.userMenu-link:focus,
+.userMenu-list-item:focus-within,
+.ModalOpenBtn.ModalOpenBtn-settings:focus .userMenu-list-item {
   background-color: #e0f2f0;
 }
 
 .userMenu-list-item:hover .userMenuLabel,
-.userMenu-list-item:hover .settings-Btn-txt {
+.userMenu-list-item:hover .settings-Btn-txt,
+.userMenu-link:focus .userMenuLabel,
+.userMenu-link:focus .settings-Btn-txt,
+.ModalOpenBtn.ModalOpenBtn-settings:focus .settings-Btn-txt {
   color: #1dba86;
 }
 

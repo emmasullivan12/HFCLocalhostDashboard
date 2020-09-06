@@ -57,7 +57,7 @@ function Avatar(props) {
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (
-        <div className={"msg-thumb img-square allowAddPic "+isMe+(isMe==='isMe' ? null : ' noModal')}>
+        <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' noModal')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : null}>
           {isMe==="isMe" ? (
         //  {isMe==="isMe" && (
             <Modal {...UploadProfPicProps}>
@@ -77,10 +77,6 @@ function Avatar(props) {
               </FullPageModal>
             )
           )}*/}
-          <img
-            src={profPicSrc}
-            alt={props.senderName}
-          />
         </div>
         )
       : (

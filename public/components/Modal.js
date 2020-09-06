@@ -10,9 +10,10 @@ const ModalTrigger = ({
   buttonRef,
   onOpen,
   text,
+  triggerHasAutoFocus,
   usedFor
 }) => (
-  <button tabIndex="0" type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef}>
+  <button tabIndex="0" type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -120,13 +121,14 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, mentorName, title, triggerText, usedFor, role} = this.props;
+    const {ariaLabel, children, mentorName, title, triggerText, triggerHasAutoFocus, usedFor, role} = this.props;
     return (
       <React.Fragment>
         <ModalTrigger
           onOpen={this.onOpen}
           buttonRef={n => this.openButtonNode = n}
           text={triggerText}
+          triggerHasAutoFocus={triggerHasAutoFocus}
           usedFor={usedFor}
         />
         {isOpen && (

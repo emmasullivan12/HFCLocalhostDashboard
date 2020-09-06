@@ -26,7 +26,7 @@ class PrAddMessage extends Component {
     super(props);
     this.initialText = "hey there emma@prospela.com"
     this.state = {
-      showText: this.initialText,
+    //  showText: this.initialText,
       text: '',
       showEmojis: false,
   //    playMsgAudio: false
@@ -61,7 +61,6 @@ class PrAddMessage extends Component {
   }*/
 
   onKeyUp = (e) => {
-    console.log("ONKEYUP")
   //  const div = document.getElementById('txtInput-box')
 //    var t = div.textContent || div.innerText;
 
@@ -109,34 +108,79 @@ class PrAddMessage extends Component {
     audio.play();
   }
 
+  handleTextAreaScroll = (e) => {
+    var scrollTop = e.target.scrollTop();
+    document.getElementById('notAllowedHighlightsBackdrop').scrollTop(scrollTop);
+  }
+
   handleMessageChange = (e) => {
     let value = e.target.value;
+    const isUnder18Chat = true;
+    const country = 'GBR'
 
     this.setState({
       text: value
     })
 
-    let txt = document.getElementById("myText").textContent;
-    let idx = txt.indexOf(value);
-    if(idx >= 0) {
-      let newText = txt.substring(0, idx) +
-                    '<span class="notAllowedHighlight">' +
-                    txt.substring(idx, idx + value.length) +
-                    '</span>' +
-                    txt.substring(idx + value.length);
-      document.getElementById("myText").innerHTML = newText
+    function checkEmailPhoneSharing() {
+      var emailExpression = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
+
+      let phoneExpression
+      if(country === 'GBR') {
+        phoneExpression = /(?:0|\+?44)(?:\d\s?){9,10}$/g
+      } else {
+        phoneExpression = /\+?(?:\d\s?){10,12}$/g
+      }
+    /*  function applyHighlights(textValue) {
+        return textValue
+          .replace(/\n$/g, '\n\n')
+          .replace(/hello/g, ('<mark class="notAllowedHighlight">' + textValue + '</mark>'));
+      }
+
+      var highlightedText = applyHighlights(value);
+      document.getElementById("notAllowedHighlights").textContent = highlightedText;*/
+
+    /*  var newText = value.replace(/hello/g, ('<span class="notAllowedHighlight">' + 'hello' + '</span>'))
+      console.log(newText)
+      document.getElementById("notAllowedHighlights").innerHTML = newText*/
+
+    //  let txt = document.getElementById("notAllowedText").textContent;
+    //  var newText = value.replace(/hello/g, ('<span class="notAllowedHighlight">' + 'hello' + '</span>'))
+  //    console.log(newText)
+      let arrEmail = emailExpression.exec(value)
+      let arrPhone = phoneExpression.exec(value)
+      let idx
+      let matchLen
+
+      if (arrEmail != null) {
+        idx = arrEmail.index
+        matchLen = arrEmail[0].length
+      } else if (arrPhone != null) {
+        idx = arrPhone.index
+        matchLen = arrPhone[0].length
+      }
+
+      var notAllowedText = document.getElementById("notAllowedText")
+
+      if(idx >= 0) {
+        const phoneEmailTxt = arrEmail != null ? ' an email address' : ' a phone number'
+        let newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
+                      value.substring(idx, idx + matchLen) +
+                      '</span> is '+
+                      phoneEmailTxt +
+                      ', which you\'ve agreed not to share for safeguarding reasons'
+        notAllowedText.style.display = 'block';
+        notAllowedText.innerHTML = newText
+      } else {
+        notAllowedText.style.display = 'none';
+        notAllowedText.innerHTML = ''
+      }
     }
 
+    if (isUnder18Chat === true) {
+      checkEmailPhoneSharing()
+    }
 
-  /* const chatIsWithU18 = true;
-    this.setState({
-      text: evt.target.value
-    }, () => {
-      if (chatIsWithU18 === true) {
-        this.checkIsntSharingDeets()
-      }
-      isURL(this.state.text)
-    });*/
     var msgInsights = document.getElementById('msgInsights-bar-right');
 
     if (e.target.value.length > 0) {
@@ -235,23 +279,10 @@ class PrAddMessage extends Component {
         <div id="new-message" className="chatWindow-footer">
           <div className="footer-container">
             <div className="input-box-container">
-              <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
-                <i className="far fa-smile" />
-              </button>
-              {showEmojis && (
-                <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
-                  <NimblePicker
-                    onSelect={this.handleEmojiClick}
-                    data={data}
-                    title="Pick your emoji…"
-                    emoji="point_up"
-                    set="emojione"
-                    autoFocus
-                  />
-                </div>
-              )}
+
               <div className="input-flexContainer">
                 <form className="textInput-container" id="chatMessageForm">
+                  <p id="notAllowedText"/>
                   <textarea
                     ref={n => this.addMessageNode = n}
                     className="input-box"
@@ -260,6 +291,7 @@ class PrAddMessage extends Component {
                   //  value={this.convertTextToEmojis}
                 //    value={this.state.inputValue}
                     onChange={this.handleMessageChange}
+                  //  onScroll={this.handleTextAreaScroll}
                     onKeyDown={this.onEnterPress}
                     onKeyUp={this.onKeyUp}
                     placeholder="Type message..."
@@ -268,8 +300,30 @@ class PrAddMessage extends Component {
                     spellCheck="off"
                     autoFocus
                   />
-                  <p id="myText">{this.state.showText}</p>
-                </form>
+          {  /*    <div className="highlight-container">
+                  <div className="highlight-backdrop" id="notAllowedHighlightsBackdrop">
+                      <div className="highlights" id="notAllowedHighlights">
+
+                    </div>
+                  </div>
+*/}
+        {  //      </div>
+}               </form>
+                <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
+                  <i className="far fa-smile" />
+                </button>
+                {showEmojis && (
+                  <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
+                    <NimblePicker
+                      onSelect={this.handleEmojiClick}
+                      data={data}
+                      title="Pick your emoji…"
+                      emoji="point_up"
+                      set="emojione"
+                      autoFocus
+                    />
+                  </div>
+                )}
                 <Modal {...FileUploadModalProps}>
                   <FileUploadContent/>
                 </Modal>

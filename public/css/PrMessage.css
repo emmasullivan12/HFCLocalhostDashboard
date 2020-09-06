@@ -32,6 +32,11 @@
   background-size: cover;
 }
 
+.msg-thumb.hasPic {
+  background-size: cover;
+  background-position: center center;
+}
+
 .msg-thumb.noPic{
   font-size: 20px;
   text-align: center;
@@ -75,10 +80,10 @@
   background-color: transparent;
 }
 
-.sticky {
+/*.sticky {
   position: fixed;
   top: 0;
-}
+}*/
 
 .message-container {
   padding-left: 1.5rem;

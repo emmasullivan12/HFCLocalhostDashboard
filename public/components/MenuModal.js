@@ -114,6 +114,7 @@ class MenuModal extends React.Component {
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
     var menuModalOverlay = document.getElementById('menuModalOverlay');
+    console.log(e.target)
     if ((e.target) == menuModalOverlay) {
       this.onMenuClose();
     } else {

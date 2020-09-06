@@ -123,6 +123,11 @@ hr{
   border-top: 1px solid #3f3f3f;
 }
 
+textarea {
+  margin: 0; /* Firefox adds single pixel of margin to top and bottom of textarea */
+  border-radius: 0; /* iOS adds border-radius to textarea */
+}
+
 .div-li-container{
   margin-top: .5rem;
   margin-bottom: 1rem;
@@ -1110,7 +1115,7 @@ a.button{
   -o-border-radius: .25rem;
 }
 
-.userMenu-thumb img,
+/*.userMenu-thumb img,*/
 .img-circle img,
 .img-square img{
   width: 100%;
@@ -1122,7 +1127,7 @@ a.button{
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
 }
-.userMenu-thumb img{
+/*.userMenu-thumb img{
   position: absolute;
   margin-left: -46px;
 }
@@ -1132,13 +1137,9 @@ a.button{
 }
 .msg-thumb.noModal img {
   top: 0;
-}
-.userMenu-thumb.allowAddPic:hover > *,
-.img-circle.allowAddPic:hover > *,
-.img-square.allowAddPic:hover > *,
-.userMenu-thumb.allowAddPic:focus > *,
-.img-circle.allowAddPic:focus > *,
-.img-square.allowAddPic:focus > *{
+}*/
+.allowAddPic:hover > *,
+.allowAddPic:focus > *{
   opacity: 0.4;
 }
 
@@ -1149,12 +1150,8 @@ a.button{
   opacity: 1;
 }
 
-.userMenu-thumb.allowAddPic:hover .ModalOpenBtn-addPicBtn,
-.img-circle.allowAddPic:hover .ModalOpenBtn-addPicBtn,
-.img-square.allowAddPic:hover .ModalOpenBtn-addPicBtn,
-.userMenu-thumb.allowAddPic:focus .ModalOpenBtn-addPicBtn,
-.img-circle.allowAddPic:focus .ModalOpenBtn-addPicBtn,
-.img-square.allowAddPic:focus .ModalOpenBtn-addPicBtn{
+.allowAddPic:hover .ModalOpenBtn-addPicBtn,
+.allowAddPic:focus .ModalOpenBtn-addPicBtn{
   opacity: 1;
 }
 

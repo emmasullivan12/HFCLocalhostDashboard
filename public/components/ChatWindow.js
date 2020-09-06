@@ -60,6 +60,10 @@ class ChatWindow extends Component {
   scrollToBottom = () => {
     var div = document.getElementById("drop-zone");
     div.scrollTop = div.scrollHeight;
+    console.log(div.scrollTop)
+    console.log(div.scrollHeight)
+    console.log(div.offsetHeight)
+    console.log(div.scrollHeight - div.offsetHeight)
   }
 
   onScroll = () => {

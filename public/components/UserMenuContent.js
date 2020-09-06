@@ -39,7 +39,8 @@ const MentorProfileModalProps = {
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Profile Picture',
   triggerText: 'Add/Edit Profile pic',
-  usedFor: 'addPicBtn userMenu-thumb'
+  usedFor: 'addPicBtn userMenuPlus',
+  triggerHasAutoFocus: true
 }
 
 class UserMenuContent extends Component {
@@ -69,14 +70,10 @@ class UserMenuContent extends Component {
             <h2 className="userMenu-header">
               <div className="userMenu-thumb-container">
                 {isPicSet ? (
-                  <div className="userMenu-thumb allowAddPic">
+                  <div className="userMenu-thumb allowAddPic" style={isPicSet ? {backgroundImage:"url(" + user.profPicSrc + ")"} : null}>
                     <Modal {...UploadProfPicProps}>
                       <UploadProfPicContent isPicSet={isPicSet} profPicSrc={user.profPicSrc} isMe='isMe' />
                     </Modal>
-                    <img
-                      src={user.profPicSrc}
-                      alt="User profile pic"
-                    />
                   </div>
                   )
                 : (

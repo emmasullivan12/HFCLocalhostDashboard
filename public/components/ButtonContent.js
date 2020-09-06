@@ -43,7 +43,7 @@ function ButtonContent(props) {
       )
     case 'joinProgSmlHome':
     case 'addPicBtn':
-    case 'addPicBtn userMenu-thumb':
+    case 'addPicBtn userMenuPlus':
     case 'addPicBtn msg-thumb':
       return (
         <i className="fas fa-plus" />

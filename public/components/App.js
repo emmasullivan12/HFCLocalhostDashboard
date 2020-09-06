@@ -238,7 +238,7 @@ class Dashboard extends Component{
                 <span id="close-modal" className="u-hide-visually">Close</span>
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
-              <MenuModal>
+              <MenuModal changeInitFocus>
                 <UserMenuContent userRole={userRole}/>
               </MenuModal>
               <div className="c-scrollbar">

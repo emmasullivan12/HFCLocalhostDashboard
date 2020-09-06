@@ -74,8 +74,8 @@
   resize: none;
   -moz-resize: none;
   outline: none;
-  padding-left: 30px;
-  padding-right: 70px;
+  padding-left: 0;
+  padding-right: 97px;
   padding-bottom: 0px;
   padding-top: 4px;
   font-size: 16px;
@@ -94,7 +94,6 @@
 .input-box:focus{
   color: #3f3f3f;
 }
-
 .input-box::placeholder{
   color: #a3a1a1;
   opacity: 1; /* Firefox */
@@ -114,6 +113,53 @@
 .input-box::-ms-input-placeholder{
   color: #a3a1a1;
 }
+#notAllowedText{
+  display: none;
+  color: #b71049;
+  font-size: .8rem;
+}
+#txtInput-box{
+  background-color: transparent;
+}
+/*
+mark {
+  color: transparent;
+  background-color: #d4e9ab;
+}
+.highlight-container{
+
+}
+.highlight-backdrop {
+  overflow: auto;
+}
+.highlights {
+  color: transparent;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  /* To make exactly the same as Textarea input box */
+/*  border: none;
+  resize: none;
+  -moz-resize: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 70px;
+  padding-bottom: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  display: inline-block;
+  width: 100%;
+  line-height: 22px;
+  height: 25px;
+  max-height: -webkit-calc(60vh - 100px);
+  max-height: -moz-calc(60vh - 100px);
+  max-height: calc(60vh - 100px);
+  overflow-y: hidden;
+  vertical-align: middle;
+}
+*/
+
 
 .msgInsights-bar{
   margin-left: 10px;
@@ -182,8 +228,8 @@
   opacity: 0.95;
   padding: 0;
   top: auto;
-  left: 1.5rem;
   bottom: 28px;
+  right: 91px;
   position: absolute;
   cursor: pointer;
   background: none;
@@ -217,7 +263,7 @@
 .emojiPickerContainer{
   position: absolute;
   bottom: 66px;
-  left: 10px;
+  right: 1.25rem;
   z-index: 3;
 }
 
