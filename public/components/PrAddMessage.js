@@ -13,12 +13,14 @@ import CameraUploadContent from './CameraUploadContent.js';
 // This includes props and title to be passed to FileUploadModal
 const FileUploadModalProps = {
   ariaLabel: 'Upload a file',
-  usedFor: 'attachmentContainer'
+  usedFor: 'attachmentContainer',
+  changeInitFocus: true
 }
 
 const CameraUploadModalProps = {
   ariaLabel: 'Upload a picture',
-  usedFor: 'picContainer'
+  usedFor: 'picContainer',
+  changeInitFocus: true
 }
 
 class PrAddMessage extends Component {

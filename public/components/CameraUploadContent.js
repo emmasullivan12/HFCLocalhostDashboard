@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 import Camera from './Camera.js';
@@ -21,15 +21,16 @@ class CameraUploadContent extends Component {
             <input
               type="text"
               name="cameraUploadName"
-              className="textInputBox inputTitle"
+              className="form-control-std"
               placeholder="Type picture name..."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              autoFocus
             />
             <textarea
               name="cameraUploadDescription"
-              className="textInputBox"
+              className="form-control-std textInputBox"
               form="uploadPhotoForm"
               placeholder="Type your message..."
               autoComplete="off"

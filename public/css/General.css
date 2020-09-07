@@ -1151,7 +1151,8 @@ a.button{
 }
 
 .allowAddPic:hover .ModalOpenBtn-addPicBtn,
-.allowAddPic:focus .ModalOpenBtn-addPicBtn{
+.allowAddPic:focus .ModalOpenBtn-addPicBtn,
+.ModalOpenBtn-addPicBtn:focus{
   opacity: 1;
 }
 

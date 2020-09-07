@@ -91,7 +91,8 @@
 .ModalOpenBtn-addPicBtn.msg-thumb{
   font-size: 20px;
 }
-.ModalOpenBtn-addPicBtn:hover{
+.ModalOpenBtn-addPicBtn:hover,
+.ModalOpenBtn-addPicBtn:focus{
   background:rgba(0,0,0,0.2);
   color: #fff;
 }

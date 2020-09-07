@@ -67,7 +67,7 @@ class PassMenteeContent extends Component {
           </div>
           <form className="pass-form" id="passMenteeForm">
             <Checkbox
-              labelClassName="checkbox-container"
+              labelClassName="checkbox-container textLeft"
               label="Their career aspirations are not relevant to my role"
               name="Role"
               className="SubmitMatch-input"
@@ -77,7 +77,7 @@ class PassMenteeContent extends Component {
               required={false}
             />
             <Checkbox
-              labelClassName="checkbox-container"
+              labelClassName="checkbox-container textLeft"
               label="They are not interested in my industry"
               name="Industry"
               className="SubmitMatch-input"
@@ -87,7 +87,7 @@ class PassMenteeContent extends Component {
               required={false}
             />
             <Checkbox
-              labelClassName="checkbox-container"
+              labelClassName="checkbox-container textLeft"
               label="Not enough relatable personal interests"
               name="Interests"
               className="SubmitMatch-input"
@@ -97,7 +97,7 @@ class PassMenteeContent extends Component {
               required={false}
             />
             <Checkbox
-              labelClassName="checkbox-container"
+              labelClassName="checkbox-container textLeft"
               label="I dont know enough about the skills</strong> they want to develop"
               name="Skills"
               className="SubmitMatch-input"
@@ -107,7 +107,7 @@ class PassMenteeContent extends Component {
               required={false}
             />
             <Checkbox
-              labelClassName="checkbox-container"
+              labelClassName="checkbox-container textLeft"
               label="Im too busy to take on another mentee"
               name="Busy"
               className="SubmitMatch-input"
