@@ -1,11 +1,10 @@
-// Dex last merged this code on 31st july 2020
+// Dex last merged this code on 7th sept 2020
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
-import { NimblePicker, Emoji } from 'emoji-mart'
+import { NimblePicker } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
-import {isURL} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import FileUploadContent from './FileUploadContent.js';
 import CameraUploadContent from './CameraUploadContent.js';
@@ -62,7 +61,7 @@ class PrAddMessage extends Component {
 
   }*/
 
-  onKeyUp = (e) => {
+/*  onKeyUp = (e) => {
   //  const div = document.getElementById('txtInput-box')
 //    var t = div.textContent || div.innerText;
 
@@ -74,7 +73,7 @@ class PrAddMessage extends Component {
   //  });
 
   //  e.target.value = 'emma@prospela.com'
-  }
+//}
 
 /*  checkIsntSharingDeets = () => {
     const {text} = this.state
@@ -105,15 +104,15 @@ class PrAddMessage extends Component {
 
   }
 */
-  toggleMsgAudio = () => {
+/*  toggleMsgAudio = () => {
     var audio = new Audio('https://prospela.com/wp-content/uploads/2020/09/Message-Notif1-Short.mp3');
     audio.play();
-  }
+  }*/
 
-  handleTextAreaScroll = (e) => {
+/*  handleTextAreaScroll = (e) => {
     var scrollTop = e.target.scrollTop();
     document.getElementById('notAllowedHighlightsBackdrop').scrollTop(scrollTop);
-  }
+  }*/
 
   handleMessageChange = (e) => {
     let value = e.target.value;
@@ -185,7 +184,7 @@ class PrAddMessage extends Component {
 
     var msgInsights = document.getElementById('msgInsights-bar-right');
 
-    if (e.target.value.length > 0) {
+    if (value.length > 0) {
       msgInsights.classList.add("show");
     } else {
       msgInsights.classList.remove("show");
@@ -231,7 +230,7 @@ class PrAddMessage extends Component {
 
     if((key === 'Enter' || key === 13) && e.shiftKey === false) {
       e.preventDefault();
-      this.toggleMsgAudio()
+  //    this.toggleMsgAudio()
       this.handleMessageSubmit();
     } else {
       return;
@@ -273,8 +272,7 @@ class PrAddMessage extends Component {
   }
 
   render() {
-    const {showEmojis} = this.state;
-    const {text} = this.state.text;
+    const {showEmojis, text} = this.state;
 
     return (
       <React.Fragment>
