@@ -126,12 +126,12 @@ class PrAddMessage extends Component {
     function checkEmailPhoneSharing() {
       var emailExpression = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
 
-      let phoneExpression
-      if(country === 'GBR') {
+      let phoneExpression = /\+?(?:\d\s?\D?){9,12}$/g
+    /*  if(country === 'GBR') {
         phoneExpression = /(?:0|\+?44)(?:\d\s?){9,10}$/g
       } else {
         phoneExpression = /\+?(?:\d\s?){10,12}$/g
-      }
+      }*/
     /*  function applyHighlights(textValue) {
         return textValue
           .replace(/\n$/g, '\n\n')
@@ -192,6 +192,11 @@ class PrAddMessage extends Component {
     e.target.style.height = '20px';
     e.target.style.height = (e.target.scrollHeight) + 'px';
     e.target.style.overflowY = "scroll";
+    if (e.target.style.height > "26px") {
+      document.getElementById("prAddMessageCount").style.display = 'block'
+    } else {
+      document.getElementById("prAddMessageCount").style.display = 'none'
+    }
   }
 
   convertBoldItalicsLinks = () => {
@@ -218,7 +223,8 @@ class PrAddMessage extends Component {
     {txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm) != null && (
       txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm).forEach(function(match) {
         var url = match.substring(0, match.length);
-        txt = txt.replace(match, "<a rel={'external'} target=\"_blank\" href={http://" + url + "}>" + url + "</a>");
+        var includesHttp = url.includes('http')
+        txt = txt.replace(match, includesHttp ? ("<a rel='external' target='_blank' href=" + url + ">" + url + "</a>") : ("<a rel='external' target='_blank' href='//" + url + "'>" + url + "</a>"));
       })
     )}
 
@@ -255,6 +261,12 @@ class PrAddMessage extends Component {
   //  alert('message submitted!');
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");
+
+    // Set input box text back to ''
+    this.addMessageNode.value = ''
+    this.setState({
+      text: ''
+    })
   }
 
   showEmojis = (e) => {
@@ -288,6 +300,7 @@ class PrAddMessage extends Component {
                     className="input-box"
                     id="txtInput-box"
                     form="chatMessageForm"
+                    value={this.state.text}
                   //  value={this.convertTextToEmojis}
                 //    value={this.state.inputValue}
                     onChange={this.handleMessageChange}
@@ -298,6 +311,7 @@ class PrAddMessage extends Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
+                    maxLength="2000"
                     autoFocus
                   />
           {  /*    <div className="highlight-container">
@@ -309,6 +323,11 @@ class PrAddMessage extends Component {
 */}
         {  //      </div>
 }               </form>
+                {this.state.text.length >0 && (
+                  <div className="descriptor-br prAddMessage" id="prAddMessageCount">
+                    {this.state.text.length} / 2000
+                  </div>
+                )}
                 <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                   <i className="far fa-smile" />
                 </button>

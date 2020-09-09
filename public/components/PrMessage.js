@@ -7,7 +7,7 @@ import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE} from './GeneralFunctions.js';
+import {isIE, convertMarkup} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
@@ -48,16 +48,19 @@ const UploadProfPicProps = {
 
 function Avatar(props) {
   const profPicSrc = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000" // looks up profpic URL of UID
-//  const isPicSet = profPicSrc != ''; // check if author who sent message has avatar pic set
-  const isPicSet = false;
+  const profPicSrcNotMe = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
   const userInitial = props.senderName.charAt(0).toUpperCase();
   const myID = '12345';
   const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
-  const senderRole = 'mentor'; // will need to check senderUID for role (when opening profile)
+  const checkMe = false
+  const checkOtherPerson = true
+  //  const isPicSet = profPicSrc != ''; // check if author who sent message has avatar pic set
+  const isPicSet = isMe === 'isMe' ? checkMe : checkOtherPerson
+//  const senderRole = 'mentor'; // will need to check senderUID for role (when opening profile)
   return (
     <div className="msg-thumb-container">
       {isPicSet ? (
-        <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' noModal')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : null}>
+        <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"}}>
           {isMe==="isMe" ? (
         //  {isMe==="isMe" && (
             <Modal {...UploadProfPicProps}>
@@ -130,57 +133,62 @@ function toggleMoreActionsBlur(e) {
 
 //onFocusOut={toggleMoreActionsBlur}
 
-function StdMessage(props) {
-  return (
-    <React.Fragment>
-      <div className="block-container" onBlur={toggleMoreActionsBlur} >
-      {
-        props.isAdjacent === true
-        ? (
-          <div className="message-container adjacent">
-            <div className="messageGutter">
-              <div className="msg-sent-time adjacent">
-                <TimeCalc time={props.message.ts} />
+class StdMessage extends Component {
+
+  componentDidMount() {
+    const {message} = this.props
+    convertMarkup(message.text, 'msgContent-'+message.id)
+  }
+
+  render() {
+    const {isAdjacent, message} = this.props
+    return (
+      <React.Fragment>
+        <div className="block-container" onBlur={toggleMoreActionsBlur} >
+        {
+          isAdjacent === true
+          ? (
+            <div className="message-container adjacent">
+              <div className="messageGutter">
+                <div className="msg-sent-time adjacent">
+                  <TimeCalc time={message.ts} />
+                </div>
               </div>
-            </div>
-            <div className="message-content-box">
-              <div className="message-content">
-                {props.message.text}
+              <div className="message-content-box">
+                <div className="message-content" id={'msgContent-'+message.id} />
+                <div className="msgStatus read">
+                  &#10003; Seen
+                </div>
+                <div className="msgStatus error">
+                  &#10007; Error sending message. Please try again
+                </div>
               </div>
-              <div className="msgStatus read">
-                &#10003; Seen
+            {//  <MessageActions />
+          }  </div>
+          ):(
+            <div className="message-container">
+              <Avatar senderID={message.uid} senderName={message.author}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName msgAuthor={message.author} senderUID={message.uid}/>
+                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                </div>
+                <div className="message-content" id={'msgContent-'+message.id} />
+                <div className="msgStatus read">
+                  &#10003; Seen
+                </div>
+                <div className="msgStatus error">
+                  &#10007; Error sending message. Please try again
+                </div>
               </div>
-              <div className="msgStatus error">
-                &#10007; Error sending message. Please try again
-              </div>
-            </div>
-          {//  <MessageActions />
-        }  </div>
-        ):(
-          <div className="message-container">
-            <Avatar senderID={props.message.uid} senderName={props.message.author}/>
-            <div className="message-content-box">
-              <div className="sent-msg-info">
-                <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
-                <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
-              </div>
-              <div className="message-content">
-                {props.message.text}
-              </div>
-              <div className="msgStatus read">
-                &#10003; Seen
-              </div>
-              <div className="msgStatus error">
-                &#10007; Error sending message. Please try again
-              </div>
-            </div>
-          {//  <MessageActions />
-        }  </div>
-        )
-      }
-      </div>
-    </React.Fragment>
-  );
+            {//  <MessageActions />
+          }  </div>
+          )
+        }
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 function DisplayFile(props) {
@@ -198,6 +206,9 @@ function DisplayFile(props) {
               <div className="extra-content-container">
                 <DisplayMsgFile
                   file={props.message.file}
+                  isLastPic={props.isLastPic}
+                  handleLastPic={props.handleLastPic}
+                  msgId={props.message.id}
                 />
               </div>
             </div>
@@ -215,28 +226,35 @@ function DisplayFile(props) {
   );
 }
 
-function MessageNotSent(props) {
-  return (
-    <React.Fragment>
-      <div className="block-container">
-        <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} />
-          <div className="message-content-box">
-            <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
-              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
-            </div>
-            <div className="message-content">
-              {props.message.text}
-            </div>
-            <div className="msgStatus error">
-              &#10007; Error sending message. Please check your connection and try again
+class MessageNotSent extends Component {
+
+  componentDidMount() {
+    const {message} = this.props
+    convertMarkup(message.text, 'msgContent-'+message.id)
+  }
+
+  render() {
+    const {isAdjacent, message} = this.props
+    return (
+      <React.Fragment>
+        <div className="block-container">
+          <div className="message-container">
+            <Avatar senderID={message.uid} senderName={message.author} />
+            <div className="message-content-box">
+              <div className="sent-msg-info">
+                <UserName msgAuthor={message.author} senderUID={message.uid}/>
+                <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+              </div>
+              <div className="message-content" id={'msgContent-'+message.id} />
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please check your connection and try again
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
+  }
 }
 
 function UploadNotSent(props) {
@@ -255,6 +273,8 @@ function UploadNotSent(props) {
                 <DisplayMsgFile
                   file={props.message.file}
                   error="error"
+                  handleLastPic={props.handleLastPic}
+                  msgId={props.message.id}
                 />
               </div>
               <div className="msgStatus error">
@@ -268,42 +288,49 @@ function UploadNotSent(props) {
   );
 }
 
-function MenteeReq(props) {
-  return (
-    <React.Fragment>
-      <div className="prauto-msg-container">
-        <div className="msg-title-container">
-            <div className="title-emoji-container">
-              <i className="emoji-icon tada-emoji" />
-            </div>
-            <div className="message-content-box msgTitle">
-              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
-            </div>
-        </div>
-        <div className="message-extras-container">
-          <div className="message-extras-border" />
-          <div className="msg-extras">
-            <div className="message-container noPaddingL noPaddingR noPaddingT">
-              <Avatar senderID={props.message.uid} senderName={props.message.author}/>
-              <div className="message-content-box">
-                <div className="sent-msg-info">
-                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
-                  <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
-                </div>
-                <div className="message-content">
-                  {props.message.text}
+class MenteeReq extends Component {
+
+  componentDidMount() {
+    const {message} = this.props
+    convertMarkup(message.text, 'msgContent-'+message.id)
+  }
+
+  render() {
+    const {isAdjacent, message} = this.props
+    return (
+      <React.Fragment>
+        <div className="prauto-msg-container">
+          <div className="msg-title-container">
+              <div className="title-emoji-container">
+                <i className="emoji-icon tada-emoji" />
+              </div>
+              <div className="message-content-box msgTitle">
+                <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
+              </div>
+          </div>
+          <div className="message-extras-container">
+            <div className="message-extras-border" />
+            <div className="msg-extras">
+              <div className="message-container noPaddingL noPaddingR noPaddingT">
+                <Avatar senderID={message.uid} senderName={message.author}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <UserName msgAuthor={message.author} senderUID={message.uid}/>
+                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                  </div>
+                  <div className="message-content" id={'msgContent-'+message.id} />
                 </div>
               </div>
+              <FullPageModal {...MenteeProfilePrautoModalProps}>
+                <MenteeProfileContent />
+              </FullPageModal>
             </div>
-            <FullPageModal {...MenteeProfilePrautoModalProps}>
-              <MenteeProfileContent />
-            </FullPageModal>
           </div>
+          <AcceptCTA />
         </div>
-        <AcceptCTA />
-      </div>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
+  }
 }
 
 function MentorReply(props) {
@@ -487,7 +514,7 @@ function DateCalc(props) {
 class PrMessage extends Component {
 
   render() {
-  const {message,showDateHeader,isAdjacent} = this.props;
+  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic} = this.props;
 
     return (
       <React.Fragment>
@@ -511,25 +538,26 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message} isAdjacent={isAdjacent}/>
+        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic}/>
       </React.Fragment>
     )
   }
 }
 
 class PrMessageContents extends Component {
+
   render() {
     switch (this.props.message.subtype) {
       case "std":
         return <StdMessage message={this.props.message} isAdjacent={this.props.isAdjacent}/>
       case "file":
-        return <DisplayFile message={this.props.message} />
+        return <DisplayFile message={this.props.message} isLastPic={this.props.isLastPic} handleLastPic={this.props.handleLastPic}/>
       case "prAuto":
         return <PrAuto message={this.props.message} />
       case 'notSent':
         return <MessageNotSent message={this.props.message}/>
       case 'uploadNotSent':
-        return <UploadNotSent message={this.props.message} />
+        return <UploadNotSent message={this.props.message} handleLastPic={this.props.handleLastPic} />
       case "menteeReq":
         return <MenteeReq message={this.props.message} />
       case "mentorAcc":

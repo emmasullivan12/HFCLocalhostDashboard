@@ -23,6 +23,12 @@ class FileUploadContent extends Component {
     this.setState({ [evt.target.name]: evt.target.value });
   }
 
+  handleSubmit = () => {
+    const {onClose} = this.props
+    console.log(onClose)
+    onClose()
+  }
+
   handleDragEnter(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -42,7 +48,7 @@ class FileUploadContent extends Component {
     this.setState({dragover: 'dragover'});
   }
 
-   handleFileDrop(e) {
+  handleFileDrop(e) {
     e.stopPropagation();
     e.preventDefault();
     this.setState({dragover: ''});
@@ -51,7 +57,7 @@ class FileUploadContent extends Component {
   render() {
     const { fileUploadDescription } = this.state;
     const selectedFiles = true;
-    const isEnabled = false;
+    const isEnabled = true;
     return (
       <React.Fragment>
         <div className="modal-title">
@@ -103,8 +109,12 @@ class FileUploadContent extends Component {
             autoComplete="off"
             autoCorrect="off"
             spellCheck="off"
+            maxLength="2000"
             autoFocus
           />
+          <div className="descriptor-br form">
+            {this.state.fileUploadDescription.length} / 2000 characters
+          </div>
           { selectedFiles && (
             <div className="fileNamesContainer">
               <div className="fileNamesHeader">
@@ -124,7 +134,7 @@ class FileUploadContent extends Component {
               </div>
             </div>
           )}
-          <button type="submit" disabled={!isEnabled} className="Submit-btn">
+          <button type="submit" disabled={!isEnabled} onClick={this.handleSubmit} className="Submit-btn">
             Upload
           </button>
         </form>

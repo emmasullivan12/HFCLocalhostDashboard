@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -24,6 +24,7 @@ class ChatListItem extends Component {
   render() {
     const chat = this.props.chat;
     const isOnline = false;
+    const unread = false
 
     return(
       <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link">
@@ -31,7 +32,7 @@ class ChatListItem extends Component {
           <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
         </div>
         <div className="chatItemFlexContainer">
-          <span className="chatMenuLink overflow-ellipsis">{chat.mentor}</span>
+          <span className={"chatMenuLink overflow-ellipsis"+(unread ? ' unread' : null)}>{chat.mentor}</span>
           <span className="notificationNum">xx</span>
         </div>
       </NavLink>

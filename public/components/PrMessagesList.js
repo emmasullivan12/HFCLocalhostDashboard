@@ -220,7 +220,7 @@ class PrMessagesList extends Component {
         subtype: 'menteeReq',
         author: 'emma-student',
         ts: '2020-09-02T13:30:50.667Z',
-        text: 'Hi Im Emma studying Business, Maths and English. I’m interested in learning more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
+        text: 'Hi Im Emma *studying Business*, Maths and English. I’m _interested in learning_ more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
       },
       {
         id: '100007',
@@ -235,10 +235,10 @@ class PrMessagesList extends Component {
         id: '100008',
         uid: '12345',
         type: 'message',
-        subtype: 'std',
+        subtype: 'notSent',
         author: 'dexter',
         ts: '2020-09-03T13:30:50.667Z',
-        text: 'This is dex message'
+        text: 'This is dex message *bold* _italics_'
       },
       {
         id: '100009',
@@ -274,6 +274,22 @@ class PrMessagesList extends Component {
       },
       {
         id: '100012',
+        uid: '23456',
+        type: 'message',
+        subtype: 'uploadNotSent',
+        author: 'emma-student',
+        ts: '2020-09-04T13:30:50.667Z',
+        text: 'Emma sent you a picture',
+        file: {
+          id: '99989',
+          name: 'Image uploaded from iOS',
+          title: 'Here is a *pic* of my _office_ at lunchtime!',
+          uid: '23456',
+          imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
+        }
+      },
+      {
+        id: '100013',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',
@@ -282,26 +298,31 @@ class PrMessagesList extends Component {
         prAuto: {
           title: 'ended'
         }
-      }
+      },
     ];
+    const {handleLastPic} = this.props
     var prevMsg = {};
 
     return (
       <React.Fragment>
         <div className="messages-container" >
-        {messages.map((message, index) => {
-          const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
-          const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
-          prevMsg = message;
-            return (
-              <PrMessage
-                message={message}
-                key={message.id}
-                showDateHeader={showDateHeader}
-                isAdjacent={isAdjacent}
-              />
-            )
-          })}
+          {messages.map((message, index) => {
+            const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
+            const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
+            const isLastPic = message.id == 100013 ? true : false
+
+            prevMsg = message;
+              return (
+                <PrMessage
+                  message={message}
+                  key={message.id}
+                  showDateHeader={showDateHeader}
+                  isAdjacent={isAdjacent}
+                  isLastPic={isLastPic}
+                  handleLastPic={handleLastPic}
+                />
+              )
+            })}
         </div>
       </React.Fragment>
     );

@@ -28,12 +28,29 @@
   height: 70px;
   position: relative;
 }
+.initiativeLogosContainer.top{
+  height: 110px;
+}
 .initiativeLogoContainer.big{
   height: unset;
   width: unset;
   margin-bottom: unset;
   max-width: 15%;
   display: inline-block;
+  max-height: 100px;
+}
+.initiativeLogoContainer.big.top{
+  vertical-align: middle;
+}
+.initiativeLogoContainer.big.initiativeHeader{
+  max-width: unset;
+  font-size: 1.5rem;
+  top: 50%;
+  margin-left: .7rem;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  transform: translate(0,-50%);
 }
 .initiativeLogoContainer.big.smallLogo{
   max-width: 8%;

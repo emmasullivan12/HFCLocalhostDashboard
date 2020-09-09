@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import {convertMarkup} from './GeneralFunctions.js';
 import "../css/DisplayMsgFile.css";
 import "../css/General.css";
 
@@ -15,6 +16,11 @@ class DisplayMsgFile extends Component {
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
   }
 
+  componentDidMount() {
+    const {file, msgId} = this.props
+    convertMarkup(file.title, 'fileTitle-'+msgId)
+  }
+
   toggleFlexContainer() {
     const currentState = this.state.isFlexContainerOpen;
     this.setState({ isFlexContainerOpen: !currentState });
@@ -22,14 +28,12 @@ class DisplayMsgFile extends Component {
 
   render() {
   const {isFlexContainerOpen} = this.state;
-  const {file, error} = this.props;
+  const {file, error, isLastPic, handleLastPic, msgId} = this.props;
 
     return (
       <React.Fragment>
         <div className="display-file-container">
-          <div className="file-name">
-            {file.title}
-          </div>
+          <div className="file-name" id={'fileTitle-'+msgId} />
           <button type="button" onClick={this.toggleFlexContainer} className="file-title-container button-unstyled">
             <span className="file-title">
               {file.name}
@@ -46,6 +50,7 @@ class DisplayMsgFile extends Component {
                     className="msg-img"
                     src={file.imgurl}
                     alt={file.name}
+                    onLoad={isLastPic ? () => handleLastPic() : null}
                   />
                   {error && (
                     <div className="msg-img-overlay" />

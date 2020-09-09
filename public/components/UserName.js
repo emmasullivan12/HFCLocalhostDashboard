@@ -35,10 +35,14 @@ class UserName extends Component {
 
     return (
       <React.Fragment>
-        {isMe === 'isMe' ? (
+        <span className="sender-name">{msgAuthor}</span>
+      {/*  {isMe === 'isMe' ? (
           <span className="sender-name">{msgAuthor}</span>
           )
-        : senderRole === 'mentee' ? (
+          : null
+        }
+*/}
+  {  /*      : senderRole === 'mentee' ? (
             <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={msgAuthor}>
               <MenteeProfileContent />
             </FullPageModal>
@@ -48,8 +52,7 @@ class UserName extends Component {
               <MentorProfileContent />
             </FullPageModal>
           )
-        }
-      </React.Fragment>
+*/}   </React.Fragment>
     );
   }
 }

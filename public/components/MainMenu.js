@@ -35,7 +35,7 @@ class MainMenu extends Component {
     if(userRole === 'mentor') {
       return (
           <div className="mainMenu">
-            <NavLink exact to="/" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Dashboard</NavLink>
+            <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Dashboard</NavLink>
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>
@@ -44,7 +44,7 @@ class MainMenu extends Component {
       } else {
       return (
         <div className="mainMenu">
-          <NavLink exact to="/" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Latest Advice</NavLink>
+          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis">Get Started</NavLink>
           <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>

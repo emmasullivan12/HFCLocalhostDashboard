@@ -93,7 +93,7 @@ class U18FileUploadContent extends Component {
     return (
       <React.Fragment>
         <div className="capture">
-          <div id="drop-zone" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
+          <div onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
             <div className="modal-subtitle">
               Upload CV or LinkedIn URL
             </div>

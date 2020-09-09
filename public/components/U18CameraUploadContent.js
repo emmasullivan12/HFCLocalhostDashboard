@@ -7,11 +7,23 @@ import '../css/General.css';
 import '../css/CameraUploadContent.css';
 
 class U18CameraUploadContent extends Component {
-
+  constructor(props) {
+  super(props);
+    this.state = {
+      pictureTaken: false
+    }
+  }
 // Add to takePicture function: photo.style.display = 'block';
 
-  render() {
-    const isEnabled = false;
+canBeSubmitted() {
+  const {pictureTaken} = this.state
+  if (pictureTaken === true) {
+    return true
+  } else return false
+}
+
+render() {
+  const isEnabled = this.canBeSubmitted();
     return (
       <React.Fragment>
         <div className="capture">

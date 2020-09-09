@@ -53,17 +53,9 @@ class ChatWindow extends Component {
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
   }
 
-  componentDidMount() {
-    this.scrollToBottom();
-  }
-
   scrollToBottom = () => {
     var div = document.getElementById("drop-zone");
     div.scrollTop = div.scrollHeight;
-    console.log(div.scrollTop)
-    console.log(div.scrollHeight)
-    console.log(div.offsetHeight)
-    console.log(div.scrollHeight - div.offsetHeight)
   }
 
   onScroll = () => {
@@ -73,6 +65,10 @@ class ChatWindow extends Component {
       this.setState({isLoadingMsgs: true});
     }
   };
+
+  handleLastPic = () => {
+    this.scrollToBottom();
+  }
 
   // FILE DROP ACTIVITY
   handleDragEnter(e) {
@@ -158,7 +154,7 @@ class ChatWindow extends Component {
               </div>
             )}
             <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-              <PrMessagesList/>
+              <PrMessagesList handleLastPic={this.handleLastPic}/>
             </div>
             <PrAddMessage />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >

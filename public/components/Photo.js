@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import '../css/Photo.css';
 
 const Photo = (props) => (
-  <div className={"photoOutput "+props.isProfPic} style={props.isPicSet ? {backgroundImage:"url(" + props.profPicSrc + ")"} : null}>
+  <div className={"photoOutput "+props.isProfPic} id="profPic" style={props.isPicSet ? {backgroundImage:"url(" + props.profPicSrc + ")"} : null}>
     {props.isProfPic !='isProfPic' ? (
       <img id="photo" alt="Take snapshot" />
       )

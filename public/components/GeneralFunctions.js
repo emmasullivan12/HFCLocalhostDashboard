@@ -27,6 +27,45 @@ function isURL(url) {
   return regExp.test(url);
 }
 
+function convertMarkup(textToConvert, msgId) {
+  var txt = textToConvert
+
+  //bold
+  {txt.match(/\*([\w\s\d]+)?\*/g) != null && (
+    txt.match(/\*([\w\s\d]+)?\*/g).forEach(function(match) {
+      var str = match.substring(1, match.length - 1);
+      txt = txt.replace(match, "<b>" + str + "</b>");
+    })
+  )}
+
+  //italics
+  {txt.match(/_([\w\s\d]+)?_/g) != null && (
+    txt.match(/_([\w\s\d]+)?_/g).forEach(function(match) {
+      var str = match.substring(1, match.length - 1);
+      txt = txt.replace(match, "<i>" + str + "</i>");
+    })
+  )}
+
+  //linebreaks
+/*  {txt.match(/\\n/g) != null && (
+    txt.match(/\\n/g).forEach(function(match) {
+      var str = match.substring(1, match.length - 1);
+      txt = txt.replace(match, str + "<br/>");
+    })
+  )}*/
+
+  //links
+  {txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm) != null && (
+    txt.match(/(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$])/igm).forEach(function(match) {
+      var url = match.substring(0, match.length);
+      txt = txt.replace(match, "<a rel={'external'} target=\"_blank\" href={http://" + url + "}>" + url + "</a>");
+    })
+  )}
+
+  var div = document.getElementById(msgId)
+  div.innerHTML = txt;
+}
+
 const ChevronDown = () => (
   <svg viewBox="0 0 10 7" id="chevronDown">
     <path d="M2.08578644,6.5 C1.69526215,6.89052429 1.69526215,7.52368927 2.08578644,7.91421356 C2.47631073,8.30473785 3.10947571,8.30473785 3.5,7.91421356 L8.20710678,3.20710678 L3.5,-1.5 C3.10947571,-1.89052429 2.47631073,-1.89052429 2.08578644,-1.5 C1.69526215,-1.10947571 1.69526215,-0.476310729 2.08578644,-0.0857864376 L5.37867966,3.20710678 L2.08578644,6.5 Z" transform="translate(5.000000, 3.207107) rotate(90.000000) translate(-5.000000, -3.207107) " />
@@ -79,4 +118,4 @@ const LoadingSpinner = () => (
   </div>
 )
 
-export {isIE, isEdge, isURL, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
+export {isIE, isEdge, isURL, convertMarkup, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
