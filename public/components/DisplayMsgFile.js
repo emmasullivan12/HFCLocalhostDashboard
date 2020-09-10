@@ -29,6 +29,16 @@ class DisplayMsgFile extends Component {
   render() {
   const {isFlexContainerOpen} = this.state;
   const {file, error, isLastPic, handleLastPic, msgId} = this.props;
+  let fileType = 'other'
+/*  if (file.fileType === 'image/png' || file.fileType === 'image/jpeg' || file.fileType === 'image/bmp') {
+    fileType = 'img'
+  } else if (file.fileType === 'application/pdf') {
+    fileType = 'pdf'
+  } else if (file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+    fileType = 'xls'
+  } else if (file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+    fileType = 'word'
+  } else fileType = 'other'*/
 
     return (
       <React.Fragment>
@@ -45,13 +55,39 @@ class DisplayMsgFile extends Component {
           {isFlexContainerOpen && (
             <div className="msg-img-container">
               <div className="msg-img-content">
-                <a href='www.prospela.com' target="_blank" rel="noopener noreferrer">
-                  <img
-                    className="msg-img"
-                    src={file.imgurl}
-                    alt={file.name}
-                    onLoad={isLastPic ? () => handleLastPic() : null}
-                  />
+                <a className={error ? "disabled" : null} href={error ? '' : 'www.prospela.com'} target="_blank" rel="noopener noreferrer">
+                  {fileType === 'img' && (
+                    <img
+                      className="msg-img"
+                      src={file.imgurl}
+                      alt={file.name}
+                      onLoad={isLastPic ? () => handleLastPic() : null}
+                    />
+                  )}
+                  {fileType === 'pdf' && (
+                    <div>
+                      <i className="far fa-file-pdf" />
+                      <span className="fileName-text">{file.name}</span>
+                    </div>
+                  )}
+                  {fileType === 'xls' && (
+                    <div>
+                      <i className="far fa-file-excel" />
+                      <span className="fileName-text">{file.name}</span>
+                    </div>
+                  )}
+                  {fileType === 'word' && (
+                    <div>
+                      <i className="far fa-file-word" />
+                      <span className="fileName-text">{file.name}</span>
+                    </div>
+                  )}
+                  {fileType === 'other' && (
+                    <div>
+                      <i className="far fa-file-alt" />
+                      <span className="fileName-text">{file.name}</span>
+                    </div>
+                  )}
                   {error && (
                     <div className="msg-img-overlay" />
                   )}

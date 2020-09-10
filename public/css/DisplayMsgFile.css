@@ -24,6 +24,10 @@
   font-size: 12px;
 }
 
+.fileName-text{
+  margin-left: .3rem;
+}
+
 .msg-img-container{
   max-width: 100%;
 }

@@ -323,11 +323,9 @@ class PrAddMessage extends Component {
 */}
         {  //      </div>
 }               </form>
-                {this.state.text.length >0 && (
-                  <div className="descriptor-br prAddMessage" id="prAddMessageCount">
-                    {this.state.text.length} / 2000
-                  </div>
-                )}
+                <div className="descriptor-br prAddMessage" id="prAddMessageCount">
+                  {this.state.text.length} / 2000
+                </div>
                 <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                   <i className="far fa-smile" />
                 </button>

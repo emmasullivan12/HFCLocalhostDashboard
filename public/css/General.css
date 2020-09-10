@@ -1060,6 +1060,9 @@ a:hover {
 a:active {
   color: #8f8fe5;
 }
+a.disabled{
+  pointer-events: none;
+}
 .legal-href{
   color: #cacaca!important;
 }

@@ -283,7 +283,7 @@ class PrMessagesList extends Component {
         file: {
           id: '99989',
           name: 'Image uploaded from iOS',
-          title: 'Here is a *pic* of my _office_ at lunchtime!',
+          title: 'Here <b>is a</b> *pic* of my _office_ at lunchtime!',
           uid: '23456',
           imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
         }
@@ -300,6 +300,7 @@ class PrMessagesList extends Component {
         }
       },
     ];
+
     const {handleLastPic} = this.props
     var prevMsg = {};
 
