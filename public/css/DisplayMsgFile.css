@@ -19,6 +19,15 @@
   display: -webkit-flex;
   display: flex;
 }
+.fileIcon-container.pdf i {
+  color: #FA0F00;
+}
+.fileIcon-container.word i {
+  color: #2b579a;
+}
+.fileIcon-container.xls i {
+  color: #008000;
+}
 
 .file-title{
   font-size: 12px;

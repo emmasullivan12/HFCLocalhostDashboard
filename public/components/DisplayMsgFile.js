@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import {convertMarkup} from './GeneralFunctions.js';
+import TextParser from './TextParser.js';
 import "../css/DisplayMsgFile.css";
 import "../css/General.css";
 
@@ -16,11 +16,6 @@ class DisplayMsgFile extends Component {
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
   }
 
-  componentDidMount() {
-    const {file, msgId} = this.props
-    convertMarkup(file.title, 'fileTitle-'+msgId)
-  }
-
   toggleFlexContainer() {
     const currentState = this.state.isFlexContainerOpen;
     this.setState({ isFlexContainerOpen: !currentState });
@@ -29,8 +24,8 @@ class DisplayMsgFile extends Component {
   render() {
   const {isFlexContainerOpen} = this.state;
   const {file, error, isLastPic, handleLastPic, msgId} = this.props;
-  let fileType = 'other'
-/*  if (file.fileType === 'image/png' || file.fileType === 'image/jpeg' || file.fileType === 'image/bmp') {
+  let fileType
+  if (file.fileType === 'image/png' || file.fileType === 'image/jpeg' || file.fileType === 'image/bmp') {
     fileType = 'img'
   } else if (file.fileType === 'application/pdf') {
     fileType = 'pdf'
@@ -38,12 +33,14 @@ class DisplayMsgFile extends Component {
     fileType = 'xls'
   } else if (file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
     fileType = 'word'
-  } else fileType = 'other'*/
+  } else fileType = 'other'
 
     return (
       <React.Fragment>
         <div className="display-file-container">
-          <div className="file-name" id={'fileTitle-'+msgId} />
+          <div className="file-name">
+            <TextParser text={file.title}/>
+          </div>
           <button type="button" onClick={this.toggleFlexContainer} className="file-title-container button-unstyled">
             <span className="file-title">
               {file.name}
@@ -65,19 +62,19 @@ class DisplayMsgFile extends Component {
                     />
                   )}
                   {fileType === 'pdf' && (
-                    <div>
+                    <div className="fileIcon-container pdf">
                       <i className="far fa-file-pdf" />
                       <span className="fileName-text">{file.name}</span>
                     </div>
                   )}
                   {fileType === 'xls' && (
-                    <div>
+                    <div className="fileIcon-container xls">
                       <i className="far fa-file-excel" />
                       <span className="fileName-text">{file.name}</span>
                     </div>
                   )}
                   {fileType === 'word' && (
-                    <div>
+                    <div className="fileIcon-container word">
                       <i className="far fa-file-word" />
                       <span className="fileName-text">{file.name}</span>
                     </div>

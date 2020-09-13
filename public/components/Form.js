@@ -5,7 +5,7 @@ import {
   NavLink
 } from "react-router-dom";
 
-import {ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
+import {escapeHTML, ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
 import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';
@@ -679,7 +679,7 @@ class Form extends Component {
 
     allQs.forEach((q) => {
       const childDiv = q.getElementsByClassName('formA-'+usedFor)[0]
-      const qid = childDiv.dataset.idforstate
+      const qid = escapeHTML(childDiv.dataset.idforstate)
       const qName = qid.split("-")[1]
       if (!q.classList.contains("hiddenQ")) {
         allVisibleArray.push(

@@ -7,13 +7,14 @@ import "../css/Modal.css";
 
 // ModalTrigger is the button that will open the Modal
 const ModalTrigger = ({
+  ariaLabel,
   buttonRef,
   onOpen,
   text,
   triggerHasAutoFocus,
   usedFor
 }) => (
-  <button tabIndex="0" type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
+  <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -127,6 +128,7 @@ class Modal extends React.Component {
     return (
       <React.Fragment>
         <ModalTrigger
+          ariaLabel={ariaLabel}
           onOpen={this.onOpen}
           buttonRef={n => this.openButtonNode = n}
           text={triggerText}

@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -15,7 +15,7 @@ class MenuNav extends Component {
   openMenu() {
   //  document.getElementById("clientMenu").style.width = "220px";
     document.getElementById("clientMenu").style.left = "0";
-    document.getElementById("clientMenu").style.zIndex = "202";
+    document.getElementById("clientMenu").style.zIndex = "2000";
   //  this.closeMenuRef.focus();
   }
 

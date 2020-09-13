@@ -98,7 +98,7 @@ class PassMenteeContent extends Component {
             />
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="I dont know enough about the skills</strong> they want to develop"
+              label="I dont know enough about the skills they want to develop"
               name="Skills"
               className="SubmitMatch-input"
               value="1"

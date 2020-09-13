@@ -264,7 +264,18 @@ mark {
   position: absolute;
   bottom: 66px;
   right: 1.25rem;
-  z-index: 3;
+  z-index: 100;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+}
+
+@media only screen and (max-width: 387px) {
+  .emojiPickerContainer{
+    right: calc((100vw - 346px)/2);
+    right: -webkit-calc((100vw - 346px)/2);
+    right: -moz-calc((100vw - 346px)/2);
+  }
 }
 
 .notAllowedHighlight{

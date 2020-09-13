@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -10,7 +10,7 @@ class PageHeader extends Component {
     return (
       <div className="page-header">
         <MenuNav />
-        <div className="page-detail-container">
+        <div className="page-detail-container overflow-ellipsis">
           <div className="page-title overflow-ellipsis">
             {title}
           </div>

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -30,10 +30,10 @@ const JoinProgrammePlusModalProps = {
 // This shows the content within an individual row in the ChatMenu
 class GroupListItem extends Component {
   render() {
-    const group = this.props.group;
+    const {group, closeMenu} = this.props;
 
     return(
-      <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link">
+      <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
         <div className="chatItemFlexContainer">
           <span className="chatMenuLink overflow-ellipsis">{group.name}</span>
           <span className="notificationNum">xx</span>
@@ -46,7 +46,7 @@ class GroupListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class GroupsMenu extends Component {
   render() {
-    const {userRole} = this.props;
+    const {userRole, closeMenu} = this.props;
     const groups = [];
 
     this.props.groups.forEach((group) => {
@@ -55,6 +55,7 @@ class GroupsMenu extends Component {
           group={group}
           key={group.groupID}
           navlink={`/community/${group.name}`}
+          closeMenu={closeMenu}
         />
       );
     });

@@ -77,7 +77,7 @@ class PrMessagesList extends Component {
         subtype: 'prAuto',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message',
+        text: 'This is *emmas* message',
         prAuto: {
           title: 'prompt'
         }
@@ -89,7 +89,7 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message'
+        text: 'This <b>is</b> <script> *emmas* _message_</script> *https://www.prospela.com*'
       },
       {
         id: '99994',
@@ -194,6 +194,7 @@ class PrMessagesList extends Component {
           name: 'Image uploaded from iOS',
           title: 'Here is a pic of my office at lunchtime!',
           uid: '23456',
+          fileType: 'image/jpeg',
           imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
         }
       },

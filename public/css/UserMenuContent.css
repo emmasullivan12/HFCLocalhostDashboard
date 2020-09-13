@@ -191,6 +191,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  display: inline-block;
 }
 
 .userMenu-settings{

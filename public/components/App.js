@@ -244,11 +244,11 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole}/>
+                    <MainMenu userRole={userRole} closeMenu={this.closeMenu}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages'/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' closeMenu={this.closeMenu}/>
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST}/>
+                    <GroupsMenu groups={DUMMY_GROUP_LIST} closeMenu={this.closeMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">

@@ -7,13 +7,14 @@ import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE, convertMarkup} from './GeneralFunctions.js';
+import {isIE} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserName from './UserName.js';
+import TextParser from './TextParser.js';
 
 import "../css/Emoji.css";
 import "../css/General.css";
@@ -133,62 +134,57 @@ function toggleMoreActionsBlur(e) {
 
 //onFocusOut={toggleMoreActionsBlur}
 
-class StdMessage extends Component {
-
-  componentDidMount() {
-    const {message} = this.props
-    convertMarkup(message.text, 'msgContent-'+message.id)
-  }
-
-  render() {
-    const {isAdjacent, message} = this.props
-    return (
-      <React.Fragment>
-        <div className="block-container" onBlur={toggleMoreActionsBlur} >
-        {
-          isAdjacent === true
-          ? (
-            <div className="message-container adjacent">
-              <div className="messageGutter">
-                <div className="msg-sent-time adjacent">
-                  <TimeCalc time={message.ts} />
-                </div>
+function StdMessage(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container" onBlur={toggleMoreActionsBlur} >
+      {
+        props.isAdjacent === true
+        ? (
+          <div className="message-container adjacent">
+            <div className="messageGutter">
+              <div className="msg-sent-time adjacent">
+                <TimeCalc time={props.message.ts} />
               </div>
-              <div className="message-content-box">
-                <div className="message-content" id={'msgContent-'+message.id} />
-                <div className="msgStatus read">
-                  &#10003; Seen
-                </div>
-                <div className="msgStatus error">
-                  &#10007; Error sending message. Please try again
-                </div>
+            </div>
+            <div className="message-content-box">
+              <div className="message-content">
+                <TextParser text={props.message.text} />
               </div>
-            {//  <MessageActions />
-          }  </div>
-          ):(
-            <div className="message-container">
-              <Avatar senderID={message.uid} senderName={message.author}/>
-              <div className="message-content-box">
-                <div className="sent-msg-info">
-                  <UserName msgAuthor={message.author} senderUID={message.uid}/>
-                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
-                </div>
-                <div className="message-content" id={'msgContent-'+message.id} />
-                <div className="msgStatus read">
-                  &#10003; Seen
-                </div>
-                <div className="msgStatus error">
-                  &#10007; Error sending message. Please try again
-                </div>
+              <div className="msgStatus read">
+                &#10003; Seen
               </div>
-            {//  <MessageActions />
-          }  </div>
-          )
-        }
-        </div>
-      </React.Fragment>
-    );
-  }
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please try again
+              </div>
+            </div>
+          {//  <MessageActions />
+        }  </div>
+        ):(
+          <div className="message-container">
+            <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+            <div className="message-content-box">
+              <div className="sent-msg-info">
+                <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
+                <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+              </div>
+              <div className="message-content">
+                <TextParser text={props.message.text}/>
+              </div>
+              <div className="msgStatus read">
+                &#10003; Seen
+              </div>
+              <div className="msgStatus error">
+                &#10007; Error sending message. Please try again
+              </div>
+            </div>
+          {//  <MessageActions />
+        }  </div>
+        )
+      }
+      </div>
+    </React.Fragment>
+  );
 }
 
 function DisplayFile(props) {
@@ -226,35 +222,28 @@ function DisplayFile(props) {
   );
 }
 
-class MessageNotSent extends Component {
-
-  componentDidMount() {
-    const {message} = this.props
-    convertMarkup(message.text, 'msgContent-'+message.id)
-  }
-
-  render() {
-    const {isAdjacent, message} = this.props
-    return (
-      <React.Fragment>
-        <div className="block-container">
-          <div className="message-container">
-            <Avatar senderID={message.uid} senderName={message.author} />
-            <div className="message-content-box">
-              <div className="sent-msg-info">
-                <UserName msgAuthor={message.author} senderUID={message.uid}/>
-                <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
-              </div>
-              <div className="message-content" id={'msgContent-'+message.id} />
-              <div className="msgStatus error">
-                &#10007; Error sending message. Please check your connection and try again
-              </div>
+function MessageNotSent(props) {
+  return (
+    <React.Fragment>
+      <div className="block-container">
+        <div className="message-container">
+          <Avatar senderID={props.message.uid} senderName={props.message.author} />
+          <div className="message-content-box">
+            <div className="sent-msg-info">
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
+              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+            </div>
+            <div className="message-content">
+              <TextParser text={props.message.text} />
+            </div>
+            <div className="msgStatus error">
+              &#10007; Error sending message. Please check your connection and try again
             </div>
           </div>
         </div>
-      </React.Fragment>
-    );
-  }
+      </div>
+    </React.Fragment>
+  );
 }
 
 function UploadNotSent(props) {
@@ -288,49 +277,42 @@ function UploadNotSent(props) {
   );
 }
 
-class MenteeReq extends Component {
-
-  componentDidMount() {
-    const {message} = this.props
-    convertMarkup(message.text, 'msgContent-'+message.id)
-  }
-
-  render() {
-    const {isAdjacent, message} = this.props
-    return (
-      <React.Fragment>
-        <div className="prauto-msg-container">
-          <div className="msg-title-container">
-              <div className="title-emoji-container">
-                <i className="emoji-icon tada-emoji" />
-              </div>
-              <div className="message-content-box msgTitle">
-                <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
-              </div>
-          </div>
-          <div className="message-extras-container">
-            <div className="message-extras-border" />
-            <div className="msg-extras">
-              <div className="message-container noPaddingL noPaddingR noPaddingT">
-                <Avatar senderID={message.uid} senderName={message.author}/>
-                <div className="message-content-box">
-                  <div className="sent-msg-info">
-                    <UserName msgAuthor={message.author} senderUID={message.uid}/>
-                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
-                  </div>
-                  <div className="message-content" id={'msgContent-'+message.id} />
+function MenteeReq(props) {
+  return (
+    <React.Fragment>
+      <div className="prauto-msg-container">
+        <div className="msg-title-container">
+            <div className="title-emoji-container">
+              <i className="emoji-icon tada-emoji" />
+            </div>
+            <div className="message-content-box msgTitle">
+              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
+            </div>
+        </div>
+        <div className="message-extras-container">
+          <div className="message-extras-border" />
+          <div className="msg-extras">
+            <div className="message-container noPaddingL noPaddingR noPaddingT">
+              <Avatar senderID={props.message.uid} senderName={props.message.author}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
+                  <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+                </div>
+                <div className="message-content">
+                  <TextParser text={props.message.text} />
                 </div>
               </div>
-              <FullPageModal {...MenteeProfilePrautoModalProps}>
-                <MenteeProfileContent />
-              </FullPageModal>
             </div>
+            <FullPageModal {...MenteeProfilePrautoModalProps}>
+              <MenteeProfileContent />
+            </FullPageModal>
           </div>
-          <AcceptCTA />
         </div>
-      </React.Fragment>
-    );
-  }
+        <AcceptCTA />
+      </div>
+    </React.Fragment>
+  );
 }
 
 function MentorReply(props) {
@@ -410,7 +392,7 @@ function PrAuto(props) {
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">
-                    {props.message.text}
+                    <TextParser text={props.message.text}/>
                   </div>
                 </div>
               </div>
