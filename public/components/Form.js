@@ -571,8 +571,6 @@ class Form extends Component {
         statesToSave[saveOnSubmit] = isSaveOnSubmitValue
       }
 
-      console.log(statesToSave)
-
       questions.forEach((question, i) => {
         const name = question['name'];
 

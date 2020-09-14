@@ -7,12 +7,13 @@ import "../css/General.css";
 class ChatEndAudioContent extends Component {
 
   render() {
+    const {mentorName} = this.props
     const audioDone = false;
     const isEnabled = false;
     return (
       <React.Fragment>
         <div className="modal-title">
-          Send a quick Thank You to <span className="request-mentor-name">{this.props.mentorName}</span>
+          Send a quick Thank You to <span className="request-mentor-name">{mentorName}</span>
         </div>
         <form>
           {audioDone ? (

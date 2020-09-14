@@ -326,6 +326,7 @@ class Autocomplete extends React.Component {
                     data-id={key}
                     data-text={suggestionText}
                     data-target={dataTarget}
+                    role="button"
                   >
                     {suggestionText}
                     {showDetail===true && (

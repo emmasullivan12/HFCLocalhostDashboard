@@ -297,6 +297,8 @@ class PrAddMessage extends Component {
                   <i className="far fa-smile" />
                 </button>
                 {showEmojis && (
+                  /* The <div> element is just used as a container for EmojiPicker */
+                  /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
                   <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
                     <NimblePicker
                       onSelect={this.handleEmojiClick}

@@ -48,11 +48,12 @@ const UploadProfPicProps = {
 }
 
 function Avatar(props) {
+  const {senderName, senderID} = props
   const profPicSrc = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000" // looks up profpic URL of UID
   const profPicSrcNotMe = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
-  const userInitial = props.senderName.charAt(0).toUpperCase();
+  const userInitial = senderName.charAt(0).toUpperCase();
   const myID = '12345';
-  const isMe = (props.senderID === myID) ? 'isMe' : 'isntMe';
+  const isMe = (senderID === myID) ? 'isMe' : 'isntMe';
   const checkMe = false
   const checkOtherPerson = true
   //  const isPicSet = profPicSrc != ''; // check if author who sent message has avatar pic set

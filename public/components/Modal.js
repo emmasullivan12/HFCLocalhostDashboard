@@ -31,11 +31,10 @@ const ModalContent = ({
   onClose,
 //  onCloseAsPrevModal,
   onKeyDown,
-  role = 'dialog',
   title
 }) => {
   return ReactDOM.createPortal(
-    <aside className="modal-overlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+    <aside className="modal-overlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
       <div className="modal-container" ref={modalRef}>
         <div className="modal-header">
           <div className="modal-title">
@@ -66,7 +65,7 @@ class Modal extends React.Component {
     this.onOpen = this.onOpen.bind(this);
     this.onClose = this.onClose.bind(this);
   }
-  
+
   onOpen(e) {
     const {changeInitFocus} = this.props;
     this.setState({ isOpen: true }, () => {

@@ -1084,6 +1084,8 @@ class SelectBox extends React.Component {
       return values.map((value, index) => {
 
         return (
+          /* The <span> element is just used as a container to stopPropagation */
+          /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
           <span
             key={value}
             onClick={this.stopPropagation}
@@ -1096,6 +1098,7 @@ class SelectBox extends React.Component {
               data-value={value}
               onClick={this.onDeleteOption}
               className="delete"
+              role="button"
             >
               <X />
             </span>
@@ -1202,6 +1205,7 @@ class SelectBox extends React.Component {
           //      onFocus={this.onHoverOption} // placeholder as was erroring without this
           //      onMouseOver={this.onHoverOption}
                 onClick={this.onClickOption}
+                role="button"
               //  onFocus={this.onFocus}
               //  onMouseOver={this.onHoverOption}
 
@@ -1238,6 +1242,7 @@ class SelectBox extends React.Component {
           {multiple && (!required || (required && values.length > 0)) && (
             <div
               onClick={this.onClick}
+              role="button"
             //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
               className="doneTickSq-btn"
               id={"doneTick-"+name}
@@ -1272,6 +1277,7 @@ class SelectBox extends React.Component {
           onMouseDown={handleMouseDown}
           required={required}
           onClick={this.onClick}
+          role="button"
         >
           <div className="selectContainer " id="selectContainer">
             { this.renderValues() }

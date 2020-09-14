@@ -25,7 +25,6 @@ class FileUploadContent extends Component {
 
   handleSubmit = () => {
     const {onClose} = this.props
-    console.log(onClose)
     onClose()
   }
 

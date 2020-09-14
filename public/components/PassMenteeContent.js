@@ -11,8 +11,8 @@ class PassMenteeContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      PassReasonMessage: '',
-      PassedOnMentee: false,
+      passReasonMessage: '',
+      passedOnMentee: false,
       messageFromServer: ''
     };
     this.updateClassname = this.updateClassname.bind(this);
@@ -40,7 +40,7 @@ class PassMenteeContent extends Component {
   }
 
   updateClassname() {
-    this.setState({ PassedOnMentee: true });
+    this.setState({ passedOnMentee: true });
     this.setState({ messageFromServer: 'Pass sent server says' });
   }
 
@@ -53,7 +53,7 @@ class PassMenteeContent extends Component {
   }
 
   render() {
-    const { PassReasonMessage, PassedOnMentee, messageFromServer } = this.state;
+    const { passReasonMessage, passedOnMentee, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
 //    const { onSubmit } = this.props;
     if(messageFromServer === '') {
@@ -123,7 +123,7 @@ class PassMenteeContent extends Component {
               name="PassReasonMessage"
               className="form-control-std"
               form="passMenteeForm"
-              value={this.state.PassReasonMessage}
+              value={passReasonMessage}
               onChange={this.handleInput}
               placeholder="Tell us why this isn't a great match for you..."
               autoComplete="off"
@@ -133,7 +133,7 @@ class PassMenteeContent extends Component {
               required
             />
             <div className="descriptor-br form">
-              {this.state.PassReasonMessage.length} / 250
+              {passReasonMessage.length} / 250
             </div>
             <div className="pass-btn-container">
               <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>

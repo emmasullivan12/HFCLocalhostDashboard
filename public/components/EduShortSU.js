@@ -727,7 +727,7 @@ class EduShortSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off" id="form-EduShortSU">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="eetStatus">Are you currently in <strong>Education, Employment or Training?</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-eetStatus">Are you currently in <strong>Education, Employment or Training?</strong></label>
                 <SelectBox
                   options={optionsToUse}
                   placeholder="Select one:"
@@ -742,7 +742,7 @@ class EduShortSU extends React.Component {
               </div>
               {country === 'GBR' && eetStatusLocal === 'sch' && schNameFreeTextLocal === '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="schName">What&#39;s the name of your <strong>School / College?</strong></label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-schName">What&#39;s the name of your <strong>School / College?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukSchsList ? ukSchsList : undefined}
@@ -830,7 +830,7 @@ class EduShortSU extends React.Component {
               )}
               {country === 'GBR' && eetStatusLocal === 'uni' && uniNameFreeTextLocal === '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="uniName">What&#39;s the name of your <strong>University?</strong></label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-uniName">What&#39;s the name of your <strong>University?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukUnisList ? ukUnisList : undefined}
@@ -923,7 +923,7 @@ class EduShortSU extends React.Component {
               {(eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeLocal != '' && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniYrGrp">And which <strong>year group</strong> are you in?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-uniYrGrp">And which <strong>year group</strong> are you in?</label>
                     <SelectBox
                       options={uniYrs}
                       name='uniYrGrp'
@@ -946,7 +946,7 @@ class EduShortSU extends React.Component {
               {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>how long</strong> is your course?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-uniLength">And <strong>how long</strong> is your course?</label>
                     <SelectBox
                       options={uniLength}
                       name='uniLength'
@@ -966,7 +966,7 @@ class EduShortSU extends React.Component {
               {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp === 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="uniLength">And <strong>when</strong> do you graduate?</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-uniLength">And <strong>when</strong> do you graduate?</label>
                     <SelectBox
                       options={pgGradYrs()}
                       name='pgGraduYr'

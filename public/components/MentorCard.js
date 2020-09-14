@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import "../css/MentorCard.css";
@@ -53,7 +53,7 @@ class MentorCardContent extends Component {
 
   render() {
     const {handleClick} = this;
-    const mentor = this.props.mentor;
+    const {mentor} = this.props
     const {isOverflow} = this.state;
 
     return(
@@ -151,8 +151,9 @@ class MentorCardContent extends Component {
 class MentorCard extends Component {
   render() {
     const cards = [];
+    const {mentors} = this.props
 
-    this.props.mentors.forEach((mentor) => {
+    mentors.forEach((mentor) => {
       cards.push(
         <MentorCardContent
           mentor={mentor}

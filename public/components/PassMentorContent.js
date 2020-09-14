@@ -10,8 +10,8 @@ class PassMentorContent extends Component {
   constructor() {
     super();
     this.state = {
-      PassReasonMessage: '',
-      PassedOnMentor: false,
+      passReasonMessage: '',
+      passedOnMentor: false,
       messageFromServer: ''
     };
     this.updateClassname = this.updateClassname.bind(this);
@@ -48,7 +48,7 @@ class PassMentorContent extends Component {
 
   // This updates the CSS if Student clicks to Pass on Mentor
   updateClassname() {
-    this.setState({ PassedOnMentor: true });
+    this.setState({ passedOnMentor: true });
     alert('You passed on this mentor!');
   }
 
@@ -61,7 +61,7 @@ class PassMentorContent extends Component {
   }
 
   render() {
-    const { PassReasonMessage, PassedOnMentor, messageFromServer } = this.state;
+    const { passReasonMessage, passedOnMentor, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -120,7 +120,7 @@ class PassMentorContent extends Component {
               name="PassReasonMessage"
               className="form-control-std"
               form="passMentorForm"
-              value={this.state.PassReasonMessage}
+              value={passReasonMessage}
               onChange={this.handleInput}
               placeholder="Tell us why this isn't a great match for you..."
               autoComplete="off"
@@ -130,7 +130,7 @@ class PassMentorContent extends Component {
               required
             />
             <div className="descriptor-br form">
-              {this.state.PassReasonMessage.length} / 250
+              {passReasonMessage.length} / 250
             </div>
             <div className="pass-btn-container">
               <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>

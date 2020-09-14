@@ -189,7 +189,7 @@ class CountryShortSU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off">
               <div className="form-group" id="userCountry">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="country">What <strong>country</strong> are you studying / working in?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-country">What <strong>country</strong> are you studying / working in?</label>
                 <div className="autocompleter">
                   <Autocomplete
                     suggestions={countries}
@@ -210,7 +210,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>State?</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>State?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={states}
@@ -229,7 +229,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'CAN' && (
                 <div className="form-group" id="userProvince">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>Province?</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>Province?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={provinces}
@@ -248,7 +248,7 @@ class CountryShortSU extends React.Component {
               )}
               {countryLocal === 'GBR' && (
                 <div className="form-group" id="userUKCounty">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="stateprovince">Which <strong>County?</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>County?</strong></label>
                   <div className="autocompleter">
                     <Autocomplete
                       suggestions={ukCounties}

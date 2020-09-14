@@ -25,8 +25,16 @@ class MessageActions extends Component {
     this.closeMoreActions = this.closeMoreActions.bind(this);
   }
 
+  onKeyDown = (e) => {
+    var key = e.key || e.keyCode
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.closeMoreActions();
+    }
+  }
+
   toggleStarClicked(e) {
-    const currentState = this.state.starClicked;
+    const {starClicked} = this.state
+    const currentState = starClicked;
     this.setState({ starClicked: !currentState });
   }
 
@@ -75,7 +83,7 @@ class MessageActions extends Component {
             </div>
             <span className="tooltiptext last groups">More actions</span>
           </button>
-          <div className="moreActionsContainer" ref={el => (this.moreActions = el)} onClick={this.closeMoreActions}>
+          <div className="moreActionsContainer" ref={el => (this.moreActions = el)} role="button" tabIndex={0} onKeyDown={this.onKeyDown} onClick={this.closeMoreActions}>
             <div className="moreActions-scrollArea">
               <ul className="moreActionsList">
                 <li className="moreActionsListItem" >

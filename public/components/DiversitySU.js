@@ -169,7 +169,7 @@ class DiversitySU extends React.Component {
           <div className='embedded-typeform'>
             <form autoComplete="off" id="form-DiversityShortSU">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">Are / were any of the following <strong>applicable to you?</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-selectHur">Are / were any of the following <strong>applicable to you?</strong></label>
                 <SelectBox
                   multiple
                   finMultiOptions={this.handleMultiOptions}
@@ -190,7 +190,7 @@ class DiversitySU extends React.Component {
               {(hurdles.length > 0 || editingHurdles != '') && (
                 <React.Fragment>
                   <div className="form-group">
-                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectHur">What type of <strong>{(country === 'GBR' ? "Secondary School" : "High School")}</strong>{(eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
+                    <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-selectHur">What type of <strong>{(country === 'GBR' ? "Secondary School" : "High School")}</strong>{(eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                     <SelectBox
                       options={country === 'GBR' ? uKschAttendedList : schAttendedList}
                       name='selectSchType'
@@ -208,7 +208,7 @@ class DiversitySU extends React.Component {
               )}
               {schType != '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectGender">What&#39;s your <strong>gender</strong>?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-selectGender">What&#39;s your <strong>gender</strong>?</label>
                   <SelectBox
                     options={genders}
                     name='selectGender'
@@ -225,7 +225,7 @@ class DiversitySU extends React.Component {
               )}
               {gender != '' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectEth">How do you identify your <strong>ethnicity</strong>?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-selectEth">How do you identify your <strong>ethnicity</strong>?</label>
                   <SelectBox
                     options={ethnicities}
                     name='selectEth'

@@ -21,28 +21,29 @@
   "rules": {
     "import/extensions": 0,
     "import/prefer-default-export": 0,
-    "jsx-a11y/anchor-has-content": 0,
-    "jsx-a11y/anchor-is-valid": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-has-content": 0, // Seems okay to remove
+    "jsx-a11y/anchor-is-valid": 0, // Doesn't like dynamic href links in <a> tags
+    "jsx-a11y/no-static-element-interactions": 0, // Seems okay to remove
+    "jsx-a11y/interactive-supports-focus": 0, // Will need to test Autocomplete/AutocompleteTagsMulti etc before adding TabIndex={0} to all of these as might mess up tabbing between questions etc
+    "jsx-a11y/click-events-have-key-events": 0, // Will need to test Autocomplete/AutocompleteTagsMulti etc before adding TabIndex={0} to all of these as might mess up tabbing between questions etc
     "jsx-a11y/no-noninteractive-element-interactions": 0,
-    "jsx-a11y/no-noninteractive-tabindex": 0,
-    "jsx-a11y/label-has-associated-control": 0,
-    "jsx-a11y/label-has-for": 0,
-    "jsx-a11y/no-autofocus": 0,
-    "jsx-a11y/tabindex-no-positive": 0,
-    "no-mixed-spaces-and-tabs": 0,
-    "no-unused-vars": 0,
-    "no-console": 0,
-    "no-control-regex": 0,
-    "react/destructuring-assignment": 0,
+    "jsx-a11y/no-noninteractive-tabindex": 0, // Seems okay to remove
+    "jsx-a11y/label-has-associated-control": 0, // Need this on as it doesn't like when I've nested id's in another React Component in htmlFor (even though it works)
+    "jsx-a11y/label-has-for": 0, // Need this - it's the same as "label-has-associated-control" and is deprecated but still required for same reasons above
+    "jsx-a11y/no-autofocus": 0, // Need this on as I use autoFocus in modals to focus on Text boxes etc
+    "jsx-a11y/tabindex-no-positive": 0, // Seems okay to remove
+    "no-mixed-spaces-and-tabs": 0, // Seems okay to remove
+    "no-unused-vars": 0, // Need this on
+    "no-console": 0, // Seems okay to remove (checks for console.logs etc)
+    "no-control-regex": 0, // Need this on for URL Regex in PrAddMessage.js
+    "react/destructuring-assignment": 0, // Could do inline instead - Need this on as sometimes set this.state dynamically i.e. this.state[id+"hello"]
     "react/prop-types": 0,
     "react/forbid-prop-types": 0,
     "react/jsx-closing-tag-location": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-indent": 0, // Disabling various rules here and below
     "react/jsx-tag-spacing": 0,
-    "react/prefer-stateless-function": 0,
+    "react/prefer-stateless-function": 0, // Could do inline instead
     "react/jsx-one-expression-per-line": 0,
     "react/no-multi-comp": 0,
   },

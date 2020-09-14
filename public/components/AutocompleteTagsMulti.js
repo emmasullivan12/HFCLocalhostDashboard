@@ -684,12 +684,14 @@ class AutocompleteTagsMulti extends React.Component {
             //    onClick={this.stopPropagation}
                 onClick={this.onClickValue}
                 className="multiple value"
+                role="button"
                 id={value}
               >
                 {value}
                 <span
                   data-value={value}
                   onMouseDown={this.onDeleteOption}
+                  role="button"
                   className="delete"
                 >
                   <X />
@@ -790,6 +792,7 @@ class AutocompleteTagsMulti extends React.Component {
                   data-id={key}
                   data-text={suggestionText}
                   data-target={dataTarget}
+                  role="button"
                 >
                   {(showCheckbox === true) && (
                       <span className="checkbox">
@@ -813,6 +816,7 @@ class AutocompleteTagsMulti extends React.Component {
             {!required || (required && values.length > 0) && (
               <div
                 onClick={this.focusOnInput}
+                role="button"
               //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
                 className="doneTickSq-btn"
                 id={"doneTick-"+name}
@@ -858,6 +862,7 @@ class AutocompleteTagsMulti extends React.Component {
             className={className}
             key={key}
             onClick={onClickOption}
+            role="button"
             onMouseDown={onMouseDown}
             data-id={key}
             data-text={suggestionText}
@@ -881,6 +886,7 @@ class AutocompleteTagsMulti extends React.Component {
           className="form-control-std role autocompleterTags"
           id={"autocompleterTags-"+name}
           onClick={this.focusOnInput}
+          role="button"
         >
           <div className="tagsContainer " id="selectContainer">
             { this.renderValues() }

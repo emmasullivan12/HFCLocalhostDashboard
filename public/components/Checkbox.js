@@ -29,6 +29,8 @@ class Checkbox extends Component {
 
     return (
       <React.Fragment>
+        {/* The control is wrapped in a <label> tag */}
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label id={labelId ? labelId : ""} className={labelClassName}>
           <TextParser text={label} />
           <input

@@ -183,6 +183,10 @@ class Dashboard extends Component{
         e.preventDefault()
       }
     }
+
+    if (key === 'Enter' || key === 13) {
+      this.closeMenu()
+    }
   }
 
   calculateScrollerHeight() {
@@ -231,6 +235,8 @@ class Dashboard extends Component{
     const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>
+      {/* The <div> element is just used to prevent reloading / going back a page i.e. Firefox bug  */}
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         <div className="clientUI" onKeyDown={this.onKeyDown}>
           <div className="clientContainer">
             <div className="clientMenuContainer" id="clientMenu">
@@ -262,7 +268,7 @@ class Dashboard extends Component{
                 </div>
               </div>
             </div>
-            <div className="clientWindowContainer col-s-12" onClick={this.closeMenu}>
+            <div className="clientWindowContainer col-s-12" role="button" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
                 {{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
@@ -368,7 +374,6 @@ function MenteeSteps({userRole}) {
 
 function MentorSteps({userRole}) {
   const step = 'didShortSUtf';
-  console.log("gets here")
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':

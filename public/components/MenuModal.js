@@ -44,10 +44,9 @@ const MenuContent = ({
   onClickAway,
   onMenuClose,
   onKeyDown,
-  role = 'dialog'
 }) => {
   return ReactDOM.createPortal(
-    <aside className="menuModal-overlay" id="menuModalOverlay" role={role} aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
+    <aside className="menuModal-overlay" id="menuModalOverlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onClick={onClickAway}>
       <div className="menuModal-container" ref={menuRef}>
         <button type="button" className="menuModal-close" aria-labelledby="Close Modal" onClick={onMenuClose} ref={menuButtonRef}>
           <span id="close-modal" className="u-hide-visually">Close</span>
@@ -114,7 +113,6 @@ class MenuModal extends React.Component {
   // Close modal by clicking outside of Modal
   onClickAway = (e) => {
     var menuModalOverlay = document.getElementById('menuModalOverlay');
-    console.log(e.target)
     if ((e.target) == menuModalOverlay) {
       this.onMenuClose();
     } else {

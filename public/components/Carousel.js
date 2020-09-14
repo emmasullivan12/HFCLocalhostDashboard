@@ -46,20 +46,22 @@ class Carousel extends Component {
   }
 
   handleCardLeft = () => {
-    const currentState = this.state.offset;
+    const {offset} = this.state
+    const currentState = offset;
     if (currentState === 0) {
       return;
     } else {
       const carousel = document.querySelector("[data-target='carousel']");
       this.setState({ atEnd: false });
       this.setState({ offset: currentState + this.cardWidth() + this.cardMarginRight() }, () => {
-        carousel.style.transform = `translateX(${this.state.offset}px)`;
+        carousel.style.transform = `translateX(${currentState}px)`;
       });
     }
   }
 
   handleCardRight = () => {
-    const currentState = this.state.offset;
+    const {offset} = this.state
+    const currentState = offset;
     const carousel = document.querySelector("[data-target='carousel']");
     const cardCount = carousel.querySelectorAll("[data-target='card']").length;
     const maxX = -((cardCount / this.cardsShown()) * this.carouselWidth() +
@@ -69,7 +71,7 @@ class Carousel extends Component {
       this.setState({ atEnd: true });
     } else {
       this.setState({ offset: currentState - this.cardWidth() - this.cardMarginRight() }, () => {
-        carousel.style.transform = `translateX(${this.state.offset}px)`;
+        carousel.style.transform = `translateX(${currentState}px)`;
       });
     }
   }

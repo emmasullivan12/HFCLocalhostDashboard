@@ -17,7 +17,8 @@ class DisplayMsgFile extends Component {
   }
 
   toggleFlexContainer() {
-    const currentState = this.state.isFlexContainerOpen;
+    const {isFlexContainerOpen} = this.state
+    const currentState = isFlexContainerOpen;
     this.setState({ isFlexContainerOpen: !currentState });
   }
 

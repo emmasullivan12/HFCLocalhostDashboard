@@ -49,7 +49,7 @@ class AcceptMenteeContent extends Component {
               name="acceptMenteeMessage"
               className="form-control-std acceptMentee"
               form="acceptMenteeForm"
-              value={this.state.acceptMenteeMessage}
+              value={acceptMenteeMessage}
               onChange={this.handleInput}
               placeholder="Type your message..."
               autoComplete="off"
@@ -61,7 +61,7 @@ class AcceptMenteeContent extends Component {
               required
             />
             <div className="descriptor-br form">
-              {this.state.acceptMenteeMessage.length} / 500 (Min 50 characters)
+              {acceptMenteeMessage.length} / 500 (Min 50 characters)
             </div>
             <div className="need-ideas-container">
               <div className="ideas-icon-container">
