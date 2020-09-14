@@ -36,7 +36,7 @@ class TextParser extends Component {
       paragraphs = paragraphs.map((text)=> {
         const key = x++
         return (
-          <p className="" key={key}>
+          <p className="textParser-container" key={key}>
             { applyFormatting(text) }
           </p>
         )

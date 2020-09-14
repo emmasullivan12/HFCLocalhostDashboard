@@ -134,6 +134,12 @@ textarea {
   margin-left: 1rem;
   margin-right: .5rem;
 }
+@media only screen and (max-width: 425px) {
+  .div-li-container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .div-li{
   padding: .5rem .5rem .5rem .5rem;
   display: inline-block;
@@ -744,6 +750,10 @@ a.Submit-btn:disabled:active,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.textParser-container {
+  margin: 0;
 }
 
 .checkbox-container-login{

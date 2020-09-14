@@ -75,7 +75,7 @@ class PassMentorContent extends Component {
           <form className="pass-form" id="passMentorForm">
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="Doesn't have a role I'd like to explore"
+              label="Doesn't have a *role* I'd like to explore"
               name="Role"
               className="SubmitMatch-input"
               value="1"
@@ -85,7 +85,7 @@ class PassMentorContent extends Component {
             />
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="Isn't in an industry I'm interested in"
+              label="Isn't in an *industry* I'm interested in"
               name="Industry"
               className="SubmitMatch-input"
               value="1"
@@ -95,7 +95,7 @@ class PassMentorContent extends Component {
             />
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="Limited similar personal interests to me"
+              label="Limited similar *personal interests* to me"
               name="Interests"
               className="SubmitMatch-input"
               value="1"
@@ -105,7 +105,7 @@ class PassMentorContent extends Component {
             />
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="Doesn't have any of the skills I want to develop"
+              label="Doesn't have any of the *skills* I want to develop"
               name="Skills"
               className="SubmitMatch-input"
               value="1"

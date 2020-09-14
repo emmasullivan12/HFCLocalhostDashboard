@@ -22,3 +22,10 @@
   margin-right: .5rem;
   margin-left: .5rem;
 }
+@media only screen and (max-width: 425px) {
+  .ModalOpenBtn-mentorFullSU,
+  .ModalOpenBtn-mentorFullSU-u18{
+    width: 110px;
+    padding: .5em 1em;
+  }
+}

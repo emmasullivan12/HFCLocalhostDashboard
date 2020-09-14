@@ -10,7 +10,7 @@ import "../css/MentorFullSUContent.css";
 const MentorU18FullSUProps = {
   ariaLabel: 'Speak to Under 18s | Complete your Full Sign Up',
   triggerText: 'Yes!',
-  focusOnLoad: true,
+//  focusOnLoad: true,
   usedFor: 'mentorFullSU-u18',
   backBtn: 'arrow',
   changeInitFocus: true,

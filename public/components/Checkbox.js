@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import TextParser from './TextParser.js';
 
 class Checkbox extends Component {
 
@@ -28,7 +29,8 @@ class Checkbox extends Component {
 
     return (
       <React.Fragment>
-        <label id={labelId ? labelId : ""} className={labelClassName}>{label}
+        <label id={labelId ? labelId : ""} className={labelClassName}>
+          <TextParser text={label} />
           <input
             type="checkbox"
             name={name ? name : ""}

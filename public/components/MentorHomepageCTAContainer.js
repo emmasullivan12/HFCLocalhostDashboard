@@ -25,7 +25,7 @@ const JoinProgrammePlusModalProps = {
 class MentorHomepageCTAContainer extends Component {
   render() {
     const step = 'didShortSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
-    const hasInvite = true;
+    const hasInvite = false;
     const groups = [];
 
     this.props.groups.forEach((group) => {

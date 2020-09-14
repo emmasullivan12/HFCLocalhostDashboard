@@ -620,6 +620,12 @@
   padding-right: 2rem;
   color: #676767;
 }
+@media only screen and (max-width: 425px) {
+  .modalDesc{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .modalCTAText{
   color: #676767;
