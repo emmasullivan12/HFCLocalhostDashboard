@@ -32,7 +32,9 @@ class Checkbox extends Component {
         {/* The control is wrapped in a <label> tag */}
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label id={labelId ? labelId : ""} className={labelClassName}>
-          <TextParser text={label} />
+          {label && (
+            <TextParser text={label} />
+          )}
           <input
             type="checkbox"
             name={name ? name : ""}
