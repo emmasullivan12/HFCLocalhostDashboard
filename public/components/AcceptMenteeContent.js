@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import "../css/RequestChatContent.css";
@@ -14,12 +14,8 @@ class AcceptMenteeContent extends Component {
     };
   }
 
-  componentDidMount(){
-    document.getElementsByTagName("textarea")[0].focus();
-  }
-
   handleInput = (evt) => {
-    evt.target.style.height = (evt.target.scrollHeight) + 'px';
+  //  evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.value });
   }
 
@@ -51,7 +47,7 @@ class AcceptMenteeContent extends Component {
           <form id="acceptMenteeForm">
             <textarea
               name="acceptMenteeMessage"
-              className="textInputBox"
+              className="form-control-std acceptMentee"
               form="acceptMenteeForm"
               value={this.state.acceptMenteeMessage}
               onChange={this.handleInput}
@@ -59,10 +55,13 @@ class AcceptMenteeContent extends Component {
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              minLength="50"
+              maxLength="500"
+              autoFocus
               required
             />
-            <div className="descriptor-br">
-              (Minimum 50 characters)
+            <div className="descriptor-br form">
+              {this.state.acceptMenteeMessage.length} / 500 (Min 50 characters)
             </div>
             <div className="need-ideas-container">
               <div className="ideas-icon-container">
@@ -71,7 +70,7 @@ class AcceptMenteeContent extends Component {
               <div className="ideas-Title">
                 Need ideas for what to say?
               </div>
-              <ul className="ideas-list">
+              <ul className="ideas-list textLeft">
                 <li className="ideas-list-item">
                   <div className="emoji-icon wave-emoji" />
                   <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re working on, your hobbies)</div>

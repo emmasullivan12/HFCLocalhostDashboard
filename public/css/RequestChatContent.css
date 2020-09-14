@@ -44,6 +44,12 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+@media only screen and (max-width: 425px) {
+  .ideas-list{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .ideas-list-item{
   margin-bottom: 15px;
@@ -52,6 +58,9 @@
 .idea-item-text{
   color: #3f3f3f;
   font-size: 15px;
+}
+.form-control-std.acceptMentee{
+  height: 104px;
 }
 
 .showDMPic{

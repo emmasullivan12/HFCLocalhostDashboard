@@ -19,7 +19,7 @@ class PassMenteeContent extends Component {
   }
 
   handleInput = (e) => {
-    e.target.style.height = (e.target.scrollHeight) + 'px';
+//    e.target.style.height = (e.target.scrollHeight) + 'px';
     this.setState({ [e.target.name]: e.target.value });
   }
 
@@ -121,7 +121,7 @@ class PassMenteeContent extends Component {
             </div>
             <textarea
               name="PassReasonMessage"
-              className="textInputBox passTxtBox"
+              className="form-control-std"
               form="passMenteeForm"
               value={this.state.PassReasonMessage}
               onChange={this.handleInput}
@@ -129,8 +129,12 @@ class PassMenteeContent extends Component {
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              maxLength="250"
               required
             />
+            <div className="descriptor-br form">
+              {this.state.PassReasonMessage.length} / 250
+            </div>
             <div className="pass-btn-container">
               <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>
                 Pass

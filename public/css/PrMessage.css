@@ -104,6 +104,12 @@
   height:auto;
   position: relative;
 }
+@media only screen and (max-width: 425px) {
+  .message-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .message-container.adjacent{
   margin-top: -10px;
   padding-left: 0;
@@ -220,6 +226,7 @@
 .msgStatus{
   font-size: 0.8rem;
   text-align: right;
+  margin-top: .25rem;
 }
 
 .msgStatus.read{
