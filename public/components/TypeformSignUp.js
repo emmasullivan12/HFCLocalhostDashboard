@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 //import { connect } from "react-redux";
-import * as typeformEmbed from '@typeform/embed';
+//import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import "../css/SignUp.css";
 import ConfirmStudent from './ConfirmStudent.js';
@@ -13,7 +13,7 @@ import IndustryRoleSU from './IndustryRoleSU.js';
 import DiversitySU from './DiversitySU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
-import TypeformEmbedded from './TypeformEmbedded.js';
+//import TypeformEmbedded from './TypeformEmbedded.js';
 import VerifyEmail from './VerifyEmail.js';
 import {lookupUKSchUnis} from './UserDetail.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
@@ -107,7 +107,7 @@ const MenteeSU7Props = {
 }
 
 // This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
-const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeSteps}) => (
+/*const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeSteps}) => (
   <div>
     <ProgressCircles
       totalSteps={totalMenteeSteps}
@@ -119,7 +119,7 @@ const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeStep
       />
     </div>
   </div>
-)
+)*/
 
 const MentorCountryShortSUProps = {
   subheader: 'Tell us where you\'re based',
@@ -127,7 +127,7 @@ const MentorCountryShortSUProps = {
   fullWidth: false
 }
 
-const MentorTypeformSignUpProps = {
+/*const MentorTypeformSignUpProps = {
   subheader: 'This will take about 10 mins & greatly help us match you to students based on your skills, interests, interests and personality … which makes for more successful mentoring!',
   title: 'Set up your profile',
   fullWidth: true
@@ -145,7 +145,7 @@ const MentorTypeformSignUpContent = ({tflink, step, currentStep, totalMentorStep
       />
     </div>
   </div>
-)
+)*/
 
 class TypeformSignUp extends Component {
   constructor () {

@@ -20,11 +20,11 @@ class JoinProgPrompt extends Component {
     return (
       <section>
         <div className="landingCTABtnContainer">
-          {nonPartnerInst && (
+        {/*  {nonPartnerInst && (
             <button type="button" className="Submit-btn landingCTA hollow">
               Invite {userRole === 'mentee' ? 'a teacher' : 'your company\'s CSR Lead'}
             </button>
-          )}
+          )}*/}
           <Modal {...JoinProgrammeModalProps}>
             <JoinProgrammeModalContent userRole={userRole}/>
           </Modal>

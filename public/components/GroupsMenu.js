@@ -33,12 +33,15 @@ class GroupListItem extends Component {
     const {group, closeMenu} = this.props;
 
     return(
-      <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
+      <div activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
+    {/*  <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
         <div className="chatItemFlexContainer">
           <span className="chatMenuLink overflow-ellipsis">{group.name}</span>
-          <span className="notificationNum">xx</span>
+    {/*      <span className="notificationNum">xx</span> */}
+          <span className="notificationNum announcement">COMING SOON!</span>
         </div>
-      </NavLink>
+      {/*    </NavLink>*/}
+      </div>
     )
   }
 }
@@ -54,7 +57,7 @@ class GroupsMenu extends Component {
         <GroupListItem
           group={group}
           key={group.groupID}
-          navlink={`/community/${group.name}`}
+    //      navlink={`/community/${group.name}`}
           closeMenu={closeMenu}
         />
       );
@@ -64,7 +67,7 @@ class GroupsMenu extends Component {
       <React.Fragment>
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">
-            My Memberships
+            My Groups
             <div className="menuCTAContainer">
               <Modal {...JoinProgrammePlusModalProps}>
                 <JoinProgrammeModalContent />

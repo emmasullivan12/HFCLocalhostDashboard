@@ -1,7 +1,6 @@
 // Dex last merged this code on 7th Sept 2020
 
 import React, { Component } from "react";
-import * as typeformEmbed from '@typeform/embed';
 
 import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';

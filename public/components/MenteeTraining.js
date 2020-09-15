@@ -2,15 +2,8 @@
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
-import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
-import TypeformFullPage from './TypeformFullPage.js';
 
-// This includes props to be passed to Typeform
-const MenteeTrainingProps = {
-  triggerText: 'Complete 5-min Training >>',
-  usedFor: 'menteeTrain'
-}
 
 // Passes Typeform links to full sign up (mentee) or training (mentors)
 class MenteeTraining extends Component {

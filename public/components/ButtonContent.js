@@ -27,7 +27,7 @@ function ButtonContent(props) {
       );
     case 'joinProgLrg':
       return (
-        <div>Join a live Programme +</div>
+        <div>+ Join a live Programme</div>
       )
     case 'joinProg':
       return (

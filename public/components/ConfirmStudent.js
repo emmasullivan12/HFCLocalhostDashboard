@@ -1,4 +1,4 @@
-// Dex last merged this code on 31st july 2020 
+// Dex last merged this code on 31st july 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -6,7 +6,6 @@ import "../css/Login.css";
 import "../css/General.css";
 
 import ProgressCircles from './ProgressCircles.js';
-import TypeformEmbedded from './TypeformEmbedded.js';
 //import Autocomplete from './Autocomplete.js';
 import Checkbox from './Checkbox.js';
 import NoEduEmail from './NoEduEmail.js';

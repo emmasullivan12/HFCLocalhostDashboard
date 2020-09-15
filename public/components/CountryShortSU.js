@@ -5,7 +5,6 @@ import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
 
-import TypeformEmbedded from './TypeformEmbedded.js';
 import Autocomplete from './Autocomplete.js';
 import ProgressCircles from './ProgressCircles.js';
 import TextInput from './TextInput.js';

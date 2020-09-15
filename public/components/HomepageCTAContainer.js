@@ -30,7 +30,7 @@ const JoinProgrammePlusModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
-    const step = 'joinedProg'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'didFullSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const is18plus = 1;
     const matchstatus = 'didSafeG';
@@ -41,7 +41,7 @@ class HomepageCTAContainer extends Component {
         <GroupCircle
           group={group}
           key={group.groupID}
-          navlink={`/community/${group.name}`}
+    //      navlink={`/community/${group.name}`}
         />
       );
     });
@@ -49,7 +49,7 @@ class HomepageCTAContainer extends Component {
     return (
       <div className="landingCTA-container">
         <div className="membershipsContainer">
-          <div className="memberships-title">My Memberships</div>
+          <div className="memberships-title">My Groups</div>
           <div className="groupsContainer">
             {groups}
             <Modal {...JoinProgrammePlusModalProps}>

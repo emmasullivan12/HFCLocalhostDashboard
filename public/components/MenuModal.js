@@ -24,14 +24,14 @@ const MenuTrigger = ({
         fname
       </div>
     </div>
-    <div className="userBadgesContainer">
+{/*    <div className="userBadgesContainer">
       <div className="trophyContainer">
         <i className="fa fa-trophy" />
       </div>
       <div className="badgeName">
         Beginner
       </div>
-    </div>
+    </div>*/}
   </button>
 );
 

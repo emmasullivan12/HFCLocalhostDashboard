@@ -1,7 +1,6 @@
-// Dex last merged this code on 21st Aug 2020 
+// Dex last merged this code on 21st Aug 2020
 
 import React, { Component } from "react";
-import * as typeformEmbed from '@typeform/embed';
 
 import Modal from './Modal.js';
 import MentorFullSUContent from './MentorFullSUContent.js';

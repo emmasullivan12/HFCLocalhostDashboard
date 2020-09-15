@@ -90,7 +90,7 @@ class UserMenuContent extends Component {
               <span className="userMenu-name overflow-ellipsis">{user.fname} {user.lname}</span>
               <span className="userMenu-preferred-name overflow-ellipsis">{user.fname}</span>
             </h2>
-            <ul className="userMenu-list">
+{/*            <ul className="userMenu-list">
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/profile/set-status" className="userMenu-link" >
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
@@ -123,9 +123,9 @@ class UserMenuContent extends Component {
                   <span className="userMenuLabel overflow-ellipsis">Invite Codes</span>
                 </NavLink>
               </li>
-            </ul>
+            </ul>*/}
           </section>
-          {userRole === 'mentee' && (
+      {/*    {userRole === 'mentee' && (
             <section className="userMenu-eduInst">
               <h2 className="userMenu-header">
                 <div className="userMenu-eduInstThumb" />
@@ -156,7 +156,7 @@ class UserMenuContent extends Component {
                 </li>
               </ul>
             </section>
-          )}
+          )}*/}
           <section className="userMenu-settings">
             <ul className="userMenu-list">
               <li className="userMenu-list-item">
@@ -166,11 +166,11 @@ class UserMenuContent extends Component {
                   </FullPageModal>
                 </span>
               </li>
-              <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
+      {/*        <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/help-and-feedback" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Help & Feedback</span>
                 </NavLink>
-              </li>
+              </li> */}
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <NavLink to="/logout" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Sign out</span>

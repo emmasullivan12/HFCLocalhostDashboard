@@ -3,8 +3,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import * as typeformEmbed from '@typeform/embed';
-import TypeformEmbedded from './TypeformEmbedded.js';
 import Modal from './Modal.js';
 import U18FileUploadContent from './U18FileUploadContent.js';
 

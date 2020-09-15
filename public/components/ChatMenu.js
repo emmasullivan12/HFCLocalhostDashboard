@@ -69,13 +69,13 @@ class ChatMenu extends Component {
             )}
           </div>
           {chats}
-          {userRole != 'prospela' && (
+        {/*  {userRole != 'prospela' && (
             <React.Fragment>
               <div className="chatMenuItem">
                 <NavLink to="/prospelahomepage" className="chatMenuLink overflow-ellipsis" onClick={closeMenu}>Prospela Homepage</NavLink>
               </div>
             </React.Fragment>
-          )}
+          )}*/}
         </div>
       </React.Fragment>
     );

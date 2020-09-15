@@ -36,20 +36,20 @@ class MainMenu extends Component {
       return (
           <div className="mainMenu">
             <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink>
-            <FullPageModal {...MentorProfileModalProps}>
+    {/*        <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
-            </FullPageModal>
+            </FullPageModal>*/}
           </div>
         );
       } else {
       return (
         <div className="mainMenu">
           <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>
-          <FullPageModal {...MenteeProfileModalProps}>
+      {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>
           <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
-          <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink>
+          <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink> */}
         </div>
       );
     }

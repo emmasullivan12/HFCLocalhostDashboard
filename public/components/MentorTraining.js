@@ -2,16 +2,6 @@
 
 import React, { Component } from "react";
 
-import * as typeformEmbed from '@typeform/embed';
-
-import TypeformFullPage from './TypeformFullPage.js';
-
-
-const MentorTrainingProps = {
-  triggerText: 'Complete 5-min Training >>',
-  usedFor: 'mentorTrain'
-}
-
 // Passes Typeform links to full sign up (mentee) or training (mentors)
 class MentorTraining extends Component {
   render() {
@@ -29,7 +19,9 @@ class MentorTraining extends Component {
           <p className="landingCTADesc">
             Our short (and sweet) online training is mandatory before we introduce you to students and will help you feel fully equipped in supporting students across the Prospela network!
           </p>
-          <TypeformFullPage tflink={mentorTrainingLink} {...MentorTrainingProps}/>
+          <a className="button link Submit-btn" href={mentorTrainingLink} target="_blank" rel="noopener noreferrer">
+            Complete 5-min Training &gt;&gt;
+          </a>
         </div>
       </section>
     );
