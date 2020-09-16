@@ -8,17 +8,36 @@ class TextParser extends Component {
           parsed, parsedURL, parsedTwice, regex, paragraphs;
 
       regex = {
-        paragraph: /(\r\n|\r|\n)/g,
-        formatting: /(_.*?_)|(\*.*?\*)/g,
+        paragraph: /(\r\n|\r|\n)(?!-|>)/g,
+        formatting: /(_.*?_)|(\*.*?\*)|(\n-.*?)|(\n>.*?)/g,
         links: /((?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$]))/igm,
       }
 
       let applyFormatting = (text) => {
         return text.split(regex.formatting).filter(n => n).map((str) => {
-          let parsedTwice = str[0] == '_' // Checks for _italics
+          console.log(str)
+          let parsedTwice = str[0] == '_' // Checks for _italics_
             ? (<em>{applyFormatting(str.substr(1, str.length - 2))}</em>)
-            : str[0] == '*' // Checks for *bold
+            : str[0] == '*' // Checks for *bold*
             ? (<b>{applyFormatting(str.substr(1, str.length - 2))}</b>)
+            : str.substring(0,2) == '\n-' // Checks for \n- bullets
+            ? (
+              <React.Fragment>
+                <br/>
+                <span>
+                  &#9679; {applyFormatting(str.substr(2, str.length))}
+                </span>
+              </React.Fragment>
+            )
+      /*      : str.substring(0,2) == '\n>' // Checks for \n> blockquote
+            ? (
+              <React.Fragment>
+                <br/>
+                <span className="blockquote">
+                  {applyFormatting(str.substr(2, str.length))}
+                </span>
+              </React.Fragment>
+            )*/
             : str.split(regex.links).map((str) => { // Checks for URLs
               let parsedURL = regex.links.test(str)
                 ? (<a rel='external noopener noreferrer' target="_blank" href={(str.includes("http://") || str.includes("https://")) ? str : ("https://" + str)}>{str}</a>)
@@ -32,14 +51,21 @@ class TextParser extends Component {
 
       var x = 0
       // Checks for \n line breaks
-      paragraphs = text.split(regex.paragraph) || []
+      paragraphs = text.split(regex.paragraph)
+      console.log(paragraphs)
       paragraphs = paragraphs.map((text)=> {
         const key = x++
-        return (
-          <p className="textParser-container" key={key}>
-            { applyFormatting(text) }
-          </p>
-        )
+        if (text == '\n') {
+          return <br />
+        } else if (text === '') {
+          return
+        } else {
+          return (
+            <p className="textParser-container" key={key}>
+              { applyFormatting(text) }
+            </p>
+          )
+        }
       })
 
       return (

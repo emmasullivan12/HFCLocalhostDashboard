@@ -26,7 +26,7 @@ function shouldShowDateHeader(prevMsg, message) {
 }
 
 function checkIsAdjacent(prevMsg, message) {
-  if (prevMsg.uid != message.uid) {
+  if (prevMsg.uid != message.uid || message.subtype === 'welcome') {
     return false;
   } else {
     return true;
@@ -89,16 +89,16 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This <b>is</b> <script> *emmas* _message_</script> *https://www.prospela.com*'
+        text: 'This <b>is</b>\n><script> *emmas* _message_\n></script> \n*https://www.prospela.com*'
       },
       {
         id: '99994',
-        uid: '23456',
+        uid: '12345',
         type: 'message',
-        subtype: 'std',
-        author: 'emma',
+        subtype: 'welcome',
+        author: 'dexter',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message'
+        text: ''
       },
       {
         id: '99995',

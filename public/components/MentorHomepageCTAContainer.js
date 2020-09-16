@@ -7,6 +7,7 @@ import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import MentorFullSignUp from './MentorFullSignUp.js';
+import MentorMatches from './MentorMatches';
 import MentorU18Picture from './MentorU18Picture.js';
 import MentorU18Doc from './MentorU18Doc.js';
 import MentorTraining from './MentorTraining.js';
@@ -62,11 +63,14 @@ class MentorHomepageCTAContainer extends Component {
         {step === 'didFullSUtf' && (
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}
-        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===true && (
+    {/*    {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===true && (
           <AutoEnrollPrompt /> // to do
         )}
         {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===false && (
           <JoinProgPrompt userRole='mentor' /> // to do
+        )}*/}
+        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && (
+          <MentorMatches /> // to do
         )}
       </div>
     );
