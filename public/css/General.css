@@ -756,6 +756,11 @@ a.Submit-btn:disabled:active,
   margin: 0;
 }
 
+.highlight-titleText{
+  background-color: #e9e9ff;
+  color: #4e4ed6;
+}
+
 .checkbox-container-login{
   display: block;
   position: relative;

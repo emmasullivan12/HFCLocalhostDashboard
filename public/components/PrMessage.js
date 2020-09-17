@@ -136,22 +136,23 @@ function toggleMoreActionsBlur(e) {
 //onFocusOut={toggleMoreActionsBlur}
 
 function WelcomeMessage(props) {
-  const mentorText = '*Welcome to the family, @fname!*\nSomewhere in London, you\'ve made a bunch of Prospela employees really happy because you\'ve just signed up with us. 🕺🏾💃🏻🤙\n_We don\'t take it for granted._🙏\nIt means we can literally now reach out to a couple more disadvantaged young people and help them get their foot in the door to industries that were previously "out-of-reach".\nYou\'ve just made a dream career that little bit more accessible for somebody! 🎉\n\n*So, what now?*\n🔗 Our employee of the month, Penny 👩🏼‍🔧, will get busy matching you with a mentee based on what you\'ve told us about your career to date, skills & interests\n💬 When your mentee accepts, they\'ll send you a message (you\'ll receive an email too) and we\'ll create a private channel for you which will appear over there <<👀 in your "Direct Messages"\n📋 We\'ll also send you some info on their current career aspirations, skills & interests to help you kick off the convo!\n\n*Coming soon*\n-We\'ll be launching a new “hello-mentors” channel: a place where you can talk with the rest of our mentor community 😎, the Prospela team and where we will post the latest updates. So keep your eyes peeled!\n\n*Questions, thoughts, feedback?*\nWe\'re all ears.\nSimply shoot us a DM in this "Prospela Bot" chat and one of the team will stop doing their happy dance and get back to you 😃\n_How did you find the sign up process so far?_'
+  const fname = 'Dexter'
+  const mentorText = '~*You\'re amazing, @' + fname + '!*~\nBy completing the full sign up, you\'ve just made a dream career that little bit more accessible for somebody! 🎉\n\n*So, what now?*\n🔗 Our employee of the month, Penny 👩🏼‍🔧, will get busy matching you with a mentee based on what you\'ve told us about your career to date, skills & interests\n💬 When your mentee accepts, they\'ll send you a message (you\'ll receive an email too) and we\'ll create a private channel for you which will appear over there <<👀 in your "Direct Messages"\n📋 We\'ll also send you some info on their current career aspirations, skills & interests to help you kick off the convo!\n\n*Coming soon*\n-We\'ll be launching a new “hello-mentors” channel: a place where you can talk with the rest of our mentor community 😎, the Prospela team and where we will post the latest updates. So keep your eyes peeled!\n\n*Questions, thoughts, feedback?*\nWe\'re all ears.\nSimply shoot us a DM in this "Prospela Bot" chat and one of the team will get back to you asap 😃\n_How did you find the sign up process so far?_'
 
-  const menteeText = 'xx'
+  const menteeText = '~*Nice job, @' + fname + '!*~\nBy completing the full sign up, you\'ve just made your dream career that little bit more accessible! 🎉\n\n*So, what now?*\n🔗 Our employee of the month, Penny 👩🏼‍🔧, will get busy matching you with an employee mentor based on what you\'ve told us about your preferred industry/role\n📋 We\'ll also send you some info on their skills & interests to help you kick off the convo and send them your first message!\n💬 When your E-Mentor accepts, they\'ll reply to your message (you\'ll receive an email too) and we\'ll create a private channel for you which will appear over there <<👀 in your "Direct Messages"\n\n*Coming soon*\n-We\'ll be launching a new “hello-mentees” channel: a place where you can talk with other mentees 😎, the Prospela team and where we will post the latest updates. So keep your eyes peeled!\n\n*Questions, thoughts, feedback?*\nWe\'re all ears.\nSimply shoot us a DM in this "Prospela Bot" chat and one of the team will get back to you asap 😃\n_How did you find the sign up process so far?_'
 
   const text = props.userRole === 'mentor' ? mentorText : menteeText
 
   return (
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
-        <div className="message-container adjacent">
-          <div className="messageGutter">
-            <div className="msg-sent-time adjacent">
-              <TimeCalc time={props.message.ts} />
-            </div>
-          </div>
+        <div className="message-container">
+          <Avatar senderID={props.message.uid} senderName={props.message.author}/>
           <div className="message-content-box">
+            <div className="sent-msg-info">
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid}/>
+              <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+            </div>
             <div className="message-content">
               <TextParser text={text} />
             </div>

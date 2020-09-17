@@ -9,7 +9,7 @@ class TextParser extends Component {
 
       regex = {
         paragraph: /(\r\n|\r|\n)(?!-|>)/g,
-        formatting: /(_.*?_)|(\*.*?\*)|(\n-.*?)|(\n>.*?)/g,
+        formatting: /(_.*?_)|(\*.*?\*)|(\n-.*?)|(\n>.*?)|(~.*?~)/g,
         links: /((?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$]))/igm,
       }
 
@@ -29,6 +29,8 @@ class TextParser extends Component {
                 </span>
               </React.Fragment>
             )
+            : str[0] == '~' // Checks for ~highlight~
+            ? (<span className="highlight-titleText">{applyFormatting(str.substr(1, str.length - 2))}</span>)
       /*      : str.substring(0,2) == '\n>' // Checks for \n> blockquote
             ? (
               <React.Fragment>
