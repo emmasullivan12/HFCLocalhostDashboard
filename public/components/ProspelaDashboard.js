@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2019 
+// Dex last merged this code on 4th June 2019
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -15,6 +15,7 @@ import {
 /*import store from "../store/configureStore";
 import { usersFetchData } from "../actions/Users";*/
 
+import cdn from './CDN.js';
 import ChatMenu from "./ChatMenu";
 import MenuModal from "./MenuModal";
 import Modal from "./Modal";
@@ -168,7 +169,14 @@ class ProspelaDashboard extends Component{
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
-                        <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />
+                      {/*  <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" /> */}
+                        <img
+                          className="prLogoImg"
+                          alt="Prospela Logo"
+                          srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                          sizes="(max-width: 1440px) 69px, 69px"
+                          src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                        />
                       </div>
                     </div>
                   </div>

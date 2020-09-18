@@ -4,6 +4,7 @@ import {
   NavLink
 } from "react-router-dom";
 
+import cdn from './CDN.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
@@ -31,7 +32,7 @@ class MenteeProfileContent extends Component {
     const mentee = {
       uid: '23456',
       fname: 'Dexter',
-      profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
+      profPicSrc: "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg",
       is18plus: 1,
       city: 'London',
       country: 'GBR',
@@ -201,7 +202,14 @@ class MenteeProfileContent extends Component {
             </div>
             <div className="col-6 col-s-12 content-col profile">
               <div className="prLogoContainer profile">
-                <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" />
+              {/*    <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" /> */}
+                  <img
+                    className="prLogoImg"
+                    alt="Prospela Logo"
+                    srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                    sizes="(max-width: 1440px) 69px, 69px"
+                    src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                  />
               </div>
               <div className="article-body profile">
                 <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">

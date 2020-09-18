@@ -169,7 +169,7 @@
   height: -webkit-calc(100vh - 53px - 74px);
   height: -moz-calc(100vh - 53px - 74px);
   height: calc(100vh - 53px - 74px);
-  background-image: url(https://prospela.com/wp-content/uploads/2019/03/Chat-Background.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
   background-size: 130px;
 }
 
@@ -259,7 +259,7 @@
   -moz-animation-name: fileUpload;
   -ms-animation-name: fileUpload;
   -o-animation-name: fileUpload;
-  background-image: url(https://prospela.com/wp-content/uploads/2019/07/File-Upload.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload.png);
   background-repeat: no-repeat;
   background-size: contain;
 }

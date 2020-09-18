@@ -12,7 +12,7 @@ class MentorUsrProfile extends Component {
         <div className="mtch-avatar-container">
           <img
             className="mtch-thumb img-circle"
-            src="https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+            src="https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
             alt={mentor.mentorName}
           />
         </div>

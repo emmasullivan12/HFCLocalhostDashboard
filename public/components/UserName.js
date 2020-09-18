@@ -31,11 +31,13 @@ class UserName extends Component {
     const {msgAuthor, senderUID} = this.props;
     const senderRole = 'mentor';
     const myUid = '12345';
+    const prospelaID = '55555';
+    const isProspela = senderUID === prospelaID
     const isMe = senderUID === myUid ? 'isMe' : 'isntMe';
 
     return (
       <React.Fragment>
-        <span className="sender-name">{msgAuthor}</span>
+        <span className={"sender-name " + (isProspela ? ' isProspela' : null)}>{msgAuthor}</span>
       {/*  {isMe === 'isMe' ? (
           <span className="sender-name">{msgAuthor}</span>
           )

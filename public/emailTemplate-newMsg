@@ -222,7 +222,7 @@
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="padding: 30px 40px 30px 40px; text-align: center;">
-                                    <img src="https://prospela.com/wp-content/uploads/2019/07/Powered-by-Prospela-Vertical_Logo_White.png" width="96" height="40" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <img src="https://files-and-media.ams3.digitaloceanspaces.com/images/Powered-by-Prospela-Vertical_Logo_White.png" width="96" height="40" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                                 </td>
                             </tr>
                         </table>
@@ -239,7 +239,7 @@
                               <table width="500" align="left">
                                 <tr>
                                   <td width="50">
-                                    <img src="https://prospela.com/wp-content/uploads/2020/09/Prospela_Favicon_NotificationvLatest.png" width="50" height="50" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+                                    <img src="https://files-and-media.ams3.digitaloceanspaces.com/images/Prospela_Favicon_NotificationvLatest.png" width="50" height="50" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
                                   </td>
                                   <td width="450">
                                           <p style="font-family: 'Roboto', sans-serif; font-size: 20px; line-height:20px; color:#222222; font-weight:normal; padding: 20px 10px 0 10px; margin:0;" class="body-text"><%= author %> sent you a new message</p>

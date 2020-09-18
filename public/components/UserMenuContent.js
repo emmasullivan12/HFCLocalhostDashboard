@@ -51,7 +51,7 @@ class UserMenuContent extends Component {
       uid: '23456',
       fname: 'Dexter',
       lname: 'Boyce',
-      profPicSrc: "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000",
+      profPicSrc: "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg",
       schName: '',
       schNameFreeText: '',
       uniName: '',

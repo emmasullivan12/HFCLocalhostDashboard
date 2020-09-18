@@ -49,6 +49,9 @@
   background-color: rgb(53,28,117);
   background-color: rgba(53,28,117,.5);
 }
+.msg-thumb.noPic.isntMe.isProspela{
+  background-color: #4e4ed6;
+}
 
 .block-container {
   display:block;
@@ -155,6 +158,10 @@
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   font-size: 15px;
+}
+
+.sender-name.isProspela {
+  color: #4e4ed6;
 }
 
 .messageGutter{

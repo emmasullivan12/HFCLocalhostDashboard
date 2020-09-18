@@ -134,7 +134,7 @@ h2{
   display: table;
   width: 220px;
   height: 100%;
-  background-image: url("https://prospela.com/wp-content/uploads/2019/03/Dashboard-Background.jpg");
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Dashboard-Background.jpg);
   background-size: cover;
   background-color: #3f3f3f;
   visibility: visible;
@@ -147,7 +147,7 @@ h2{
   height: 100%;
   top: 0;
   z-index: 100;
-  background-image: url("https://prospela.com/wp-content/uploads/2019/03/Dashboard-Background.jpg");
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Dashboard-Background.jpg);
   background-size: cover;
   background-color: #3f3f3f;
 }

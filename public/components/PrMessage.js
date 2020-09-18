@@ -49,13 +49,15 @@ const UploadProfPicProps = {
 
 function Avatar(props) {
   const {senderName, senderID} = props
-  const profPicSrc = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000" // looks up profpic URL of UID
-  const profPicSrcNotMe = "https://img.huffingtonpost.com/asset/5b7fdeab1900001d035028dc.jpeg?cache=sixpwrbb1s&ops=1910_1000"
+  const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
+  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   const userInitial = senderName.charAt(0).toUpperCase();
   const myID = '12345';
-  const isMe = (senderID === myID) ? 'isMe' : 'isntMe';
+  const prospelaID = '55555'
+  const isProspela = (senderID === prospelaID)
+  const isMe = (senderID === myID) ? 'isMe ' : 'isntMe ';
   const checkMe = false
-  const checkOtherPerson = true
+  const checkOtherPerson = false
   //  const isPicSet = profPicSrc != ''; // check if author who sent message has avatar pic set
   const isPicSet = isMe === 'isMe' ? checkMe : checkOtherPerson
 //  const senderRole = 'mentor'; // will need to check senderUID for role (when opening profile)
@@ -85,7 +87,7 @@ function Avatar(props) {
         </div>
         )
       : (
-        <div className={"msg-thumb img-square allowAddPic noPic "+isMe}>
+        <div className={"msg-thumb img-square allowAddPic noPic " + isMe + (isProspela === true ? 'isProspela' : null)}>
           {isMe==="isMe" ? (
         //  {isMe==="isMe" ? (
             <Modal {...UploadProfPicProps}>

@@ -96,26 +96,26 @@
 }
 .placeholderPic.mentorMatches{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/MentorMatches.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches.png);
   background-size: contain;
   background-position: center;
 }
 .placeholderPic.openEnvelope{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Invite-Icon.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon.png);
   background-size: contain;
   background-position: center;
 }
 .placeholderPic.cross{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Cross-Icon.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon.png);
   background-size: contain;
   background-position: center;
   min-height: 50px;
 }
 .placeholderPic.tick{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/Tick-Icon.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon.png);
   background-size: contain;
   background-position: center;
   min-height: 50px;
@@ -123,7 +123,7 @@
 
 .placeholderPic.completeFullSU{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteFullSignUp.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteFullSignUp.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -131,7 +131,7 @@
 
 .placeholderPic.completeFullSUMentor{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteFullSignUpMentor.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteFullSignUpMentor.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -139,7 +139,7 @@
 
 .placeholderPic.completeMenteeTrain{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteMenteeTraining.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteMenteeTraining.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -147,7 +147,7 @@
 
 .placeholderPic.completeMentorTrain{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/CompleteMentorTraining.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteMentorTraining.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -155,7 +155,7 @@
 
 .placeholderPic.uploadSelfieID{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2019/09/PhotoID.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -163,7 +163,7 @@
 
 .placeholderPic.uploadCV{
   background-repeat: no-repeat;
-  background-image: url('https://prospela.com/wp-content/uploads/2020/08/CVIcon.png');
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -204,5 +204,5 @@
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   background-size: cover;
-  background-image: url(https://prospela.com/wp-content/uploads/2019/09/Memberships.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships.png);
 }

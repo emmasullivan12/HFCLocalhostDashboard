@@ -94,10 +94,10 @@ class PrMessagesList extends Component {
       },
       {
         id: '99994',
-        uid: '12345',
+        uid: '55555',
         type: 'message',
         subtype: 'welcome',
-        author: 'dexter',
+        author: 'prospela',
         ts: '2020-09-01T13:30:50.667Z',
         text: ''
       },
