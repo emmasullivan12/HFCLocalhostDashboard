@@ -128,6 +128,16 @@ textarea {
   border-radius: 0; /* iOS adds border-radius to textarea */
 }
 
+/* Remove blue background when press button on mobile */
+input,
+textarea,
+button,
+select,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .div-li-container{
   margin-top: .5rem;
   margin-bottom: 1rem;
@@ -731,6 +741,14 @@ a.Submit-btn:disabled:active,
   border: 2px dotted #c0bfef;
   height: 100%;
   padding: 2rem;
+}
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* In-chat Buttons */

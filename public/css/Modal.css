@@ -12,6 +12,7 @@
   -o-border-radius: .5rem;
   cursor: pointer;
   outline: none;
+  user-select: none;
   transition: background .15s ease-out;
   -webkit-transition: background .15s ease-out;
   -moz-transition: background .15s ease-out;
