@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component } from "react";
 import {
@@ -28,11 +28,9 @@ const MentorProfileUsrNameModalProps = {
 
 class UserName extends Component {
   render() {
-    const {msgAuthor, senderUID, subtype} = this.props;
+    const {msgAuthor, senderUID, subtype, isProspela} = this.props;
     const senderRole = 'mentor';
     const myUid = '12345';
-    const prospelaID = '55555';
-    const isProspela = (subtype === 'welcome' || subtype === 'prAuto' || senderUID === prospelaID)
     const isMe = senderUID === myUid ? 'isMe' : 'isntMe';
 
     return (

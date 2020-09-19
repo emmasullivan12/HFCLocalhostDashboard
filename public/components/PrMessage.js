@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component } from "react";
 
@@ -48,7 +48,7 @@ const UploadProfPicProps = {
 }
 
 function Avatar(props) {
-  const {senderName, senderID, subtype} = props
+  const {senderName, senderID, subtype, isProspela} = props
   const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
 //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   const profPicSrcNotMe = ''
@@ -56,8 +56,6 @@ function Avatar(props) {
   const userInitial = senderName.charAt(0).toUpperCase();
   const myID = '12345';
   const isMe = (senderID === myID) ? 'isMe' : 'isntMe';
-  const prospelaID = '55555'
-  const isProspela = (subtype === 'welcome' || subtype === 'prAuto' || senderID === prospelaID)
   const checkMe = profPicSrc != null && profPicSrc != ''
   const checkOtherPerson = isProspela ? (profPicSrcProspela != null && profPicSrcProspela != '') : (profPicSrcNotMe != null && profPicSrcNotMe != '')
   const isPicSet = (subtype === 'welcome' || subtype === 'prAuto') ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
@@ -150,10 +148,10 @@ function WelcomeMessage(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -194,10 +192,10 @@ function StdMessage(props) {
         }  </div>
         ):(
           <div className="message-container">
-            <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+            <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+                <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
                 <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
@@ -224,10 +222,10 @@ function DisplayFile(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur}>
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -259,10 +257,10 @@ function MessageNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -283,10 +281,10 @@ function UploadNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -325,10 +323,10 @@ function MenteeReq(props) {
           <div className="message-extras-border" />
           <div className="msg-extras">
             <div className="message-container noPaddingL noPaddingR noPaddingT">
-              <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+              <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
                   <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                 </div>
                 <div className="message-content">
@@ -417,10 +415,10 @@ function PrAuto(props) {
             <div className="message-extras-border" />
             <div className="msg-extras">
               <div className="message-container noPaddingL noPaddingR noPaddingT">
-                <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype}/>
+                <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype}/>
+                    <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">
@@ -528,7 +526,7 @@ function DateCalc(props) {
 class PrMessage extends Component {
 
   render() {
-  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic} = this.props;
+  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspela} = this.props;
 
     return (
       <React.Fragment>
@@ -552,7 +550,7 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic}/>
+        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspela={isProspela}/>
       </React.Fragment>
     )
   }
@@ -561,27 +559,28 @@ class PrMessage extends Component {
 class PrMessageContents extends Component {
 
   render() {
+    const {isProspela, message, isAdjacent, isLastPic, handleLastPic} = this.props
     const userRole = 'mentor'
     switch (this.props.message.subtype) {
       case "welcome":
-        return <WelcomeMessage message={this.props.message} userRole={userRole}/>
+        return <WelcomeMessage message={message} userRole={userRole} isProspela={isProspela}/>
       case "std":
-        return <StdMessage message={this.props.message} isAdjacent={this.props.isAdjacent}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspela={isProspela}/>
       case "file":
-        return <DisplayFile message={this.props.message} isLastPic={this.props.isLastPic} handleLastPic={this.props.handleLastPic}/>
+        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspela={isProspela}/>
       case "prAuto":
-        return <PrAuto message={this.props.message} />
+        return <PrAuto message={message} isProspela={isProspela}/>
       case 'notSent':
-        return <MessageNotSent message={this.props.message}/>
+        return <MessageNotSent message={message} isProspela={isProspela}/>
       case 'uploadNotSent':
-        return <UploadNotSent message={this.props.message} handleLastPic={this.props.handleLastPic} />
+        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspela={isProspela}/>
       case "menteeReq":
-        return <MenteeReq message={this.props.message} />
+        return <MenteeReq message={message} isProspela={isProspela}/>
       case "mentorAcc":
       case "mentorRej":
-        return <MentorReply message={this.props.message} />
+        return <MentorReply message={message} isProspela={isProspela}/>
       default:
-        return <MenteeReq message={this.props.message} />
+        return <MenteeReq message={message} isProspela={isProspela}/>
     }
   }
 }
