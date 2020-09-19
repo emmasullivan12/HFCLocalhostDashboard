@@ -43,10 +43,10 @@ class PrMessagesList extends Component {
     const messages = [
       {
         id: '99989',
-        uid: '11111',
+        uid: '55555',
         type: 'message',
         subtype: 'prAuto',
-        author: 'emma',
+        author: 'prospela',
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This is the start of your chat!',
         prAuto: {
@@ -90,7 +90,7 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This <b>is</b>~<script> *emmas* _message_~\n></script> \nhttps://www.prospela.com*'
+        text: 'This <b>is</b>~<script> *emmas* _message_~\n></script> \nhttps://www.prospela.com'
       },
       {
         id: '99994',
@@ -103,10 +103,10 @@ class PrMessagesList extends Component {
       },
       {
         id: '99995',
-        uid: '23456',
+        uid: '55555',
         type: 'message',
         subtype: 'std',
-        author: 'emma',
+        author: 'prospela',
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
@@ -124,7 +124,7 @@ class PrMessagesList extends Component {
         uid: '12345',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'prospela',
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This is dex message'
       },
@@ -311,7 +311,7 @@ class PrMessagesList extends Component {
         <div className="messages-container" >
           {messages.map((message, index) => {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
-            const isAdjacent = (index===0 || showDateHeader===true ? false : checkIsAdjacent(prevMsg, message));
+            const isAdjacent = ((index===0 || showDateHeader===true || message.uid == '55555') ? false : checkIsAdjacent(prevMsg, message));
             const isLastPic = message.id == 100013 ? true : false
 
             prevMsg = message;

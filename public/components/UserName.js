@@ -28,11 +28,11 @@ const MentorProfileUsrNameModalProps = {
 
 class UserName extends Component {
   render() {
-    const {msgAuthor, senderUID} = this.props;
+    const {msgAuthor, senderUID, subtype} = this.props;
     const senderRole = 'mentor';
     const myUid = '12345';
     const prospelaID = '55555';
-    const isProspela = senderUID === prospelaID
+    const isProspela = (subtype === 'welcome' || subtype === 'prAuto' || senderUID === prospelaID)
     const isMe = senderUID === myUid ? 'isMe' : 'isntMe';
 
     return (

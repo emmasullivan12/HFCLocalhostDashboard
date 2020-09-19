@@ -15,7 +15,6 @@ class TextParser extends Component {
 
       let applyFormatting = (text) => {
         return text.split(regex.formatting).filter(n => n).map((str) => {
-          console.log(str)
           let parsedTwice = str[0] == '_' // Checks for _italics_
             ? (<em>{applyFormatting(str.substr(1, str.length - 2))}</em>)
             : str[0] == '*' // Checks for *bold*
