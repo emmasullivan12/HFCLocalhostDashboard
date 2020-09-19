@@ -33,7 +33,7 @@ class GroupListItem extends Component {
     const {group, closeMenu} = this.props;
 
     return(
-      <div activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
+      <div activeclassname="is-active" className="chatMenuItem link" onClick={closeMenu}>
     {/*  <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
         <div className="chatItemFlexContainer">
           <span className="chatMenuLink overflow-ellipsis">{group.name}</span>

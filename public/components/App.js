@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -274,9 +274,9 @@ class Dashboard extends Component{
                         <img
                           className="prLogoImg"
                           alt="Prospela Logo"
-                          srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                          srcSet={cdn+"/images/Prospela-Logo.png 213w, "+cdn+"/images/Prospela-Logo.png 314w, "+cdn+"/images/Prospela-Logo.png 640w"}
                           sizes="(max-width: 1440px) 69px, 69px"
-                          src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                          src={cdn+"/images/Prospela-Logo.png"}
                         />
                       </div>
                     </div>
@@ -317,7 +317,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'prospela' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

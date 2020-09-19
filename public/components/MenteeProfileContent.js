@@ -203,13 +203,13 @@ class MenteeProfileContent extends Component {
             <div className="col-6 col-s-12 content-col profile">
               <div className="prLogoContainer profile">
               {/*    <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" /> */}
-                  <img
-                    className="prLogoImg"
-                    alt="Prospela Logo"
-                    srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
-                    sizes="(max-width: 1440px) 69px, 69px"
-                    src={cdn+"/images/Prospela-New-Logo_Colour.png"}
-                  />
+                <img
+                  className="prLogoImg"
+                  alt="Prospela Logo"
+                  srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                  sizes="(max-width: 1440px) 69px, 69px"
+                  src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                />
               </div>
               <div className="article-body profile">
                 <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
