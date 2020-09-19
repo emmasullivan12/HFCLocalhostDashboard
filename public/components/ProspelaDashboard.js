@@ -62,6 +62,7 @@ class ProspelaDashboard extends Component{
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   componentDidMount() {
@@ -115,6 +116,22 @@ class ProspelaDashboard extends Component{
     }
   }
 
+  onKeyDown = (e) => {
+    var key = e.key || e.keyCode
+    // User pressed the backspace key (to prevent reloading / going back a page particularly in Firefox)
+    if (key === 'Backspace' || key === 8) {
+      var rx = /INPUT|SELECT|TEXTAREA|BUTTON/i;
+
+      if (!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly) {
+        e.preventDefault()
+      }
+    }
+
+    if (key === 'Enter' || key === 13) {
+      this.closeMenu()
+    }
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -145,15 +162,31 @@ class ProspelaDashboard extends Component{
     }
   }
 
+  closeMenu(e) {
+    const clientMenu = document.getElementById("clientMenu");
+    const clientMenuBtn = document.getElementById("nav-mainMenu");
+
+    if (window.innerWidth < 760 && clientMenu.style.left != "-220px" && !clientMenuBtn.contains(e.target)) {
+      clientMenu.style.left = "-220px";
+      clientMenu.style.zIndex = "0";
+    }
+  }
+
   render(){
     const userRole = this.props.userRole;
     const {moveScroller, startDrag} = this;
     return(
       <BrowserRouter>
-        <div className="clientUI">
+        <div className="clientUI" onKeyDown={this.onKeyDown}>
           <div className="clientContainer">
-            <div className="clientMenuContainer">
-              <MenuModal>{MenuModalContent}</MenuModal>
+            <div className="clientMenuContainer" id="clientMenu">
+            <button type="button" className="close-menu" aria-labelledby="Close Modal" onClick={this.closeMenu}>
+              <span id="close-modal" className="u-hide-visually">Close</span>
+              <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+            </button>
+              <MenuModal>
+                {MenuModalContent}
+              </MenuModal>
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
@@ -163,9 +196,9 @@ class ProspelaDashboard extends Component{
                     <Modal {...SendNotifModalProps}>
                       <SendNotifModalContent />
                     </Modal>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs'/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor'/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor'/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' closeMenu={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' closeMenu={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' closeMenu={this.closeMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -173,9 +206,9 @@ class ProspelaDashboard extends Component{
                         <img
                           className="prLogoImg"
                           alt="Prospela Logo"
-                          srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                          srcSet={cdn+"/images/Prospela-Logo.png 213w, "+cdn+"/images/Prospela-Logo.png 314w, "+cdn+"/images/Prospela-Logo.png 640w"}
                           sizes="(max-width: 1440px) 69px, 69px"
-                          src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                          src={cdn+"/images/Prospela-Logo.png"}
                         />
                       </div>
                     </div>
@@ -187,7 +220,7 @@ class ProspelaDashboard extends Component{
                 </div>
               </div>
             </div>
-            <div className="clientWindowContainer">
+            <div className="clientWindowContainer col-s-12" role="button" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
                 <Redirect exact from="/" to="/prospelaBotHomepage" />,
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
