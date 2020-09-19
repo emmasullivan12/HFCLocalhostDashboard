@@ -96,26 +96,26 @@
 }
 .placeholderPic.mentorMatches{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches_125.png);
   background-size: contain;
   background-position: center;
 }
 .placeholderPic.openEnvelope{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon_60.png);
   background-size: contain;
   background-position: center;
 }
 .placeholderPic.cross{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon_50.png);
   background-size: contain;
   background-position: center;
   min-height: 50px;
 }
 .placeholderPic.tick{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon_50.png);
   background-size: contain;
   background-position: center;
   min-height: 50px;
@@ -155,15 +155,46 @@
 
 .placeholderPic.uploadSelfieID{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID_110.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
 }
+@media screen and (min-width: 758px) {
+  .placeholderPic.uploadSelfieID{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
+  }
+  .placeholderPic.mentorMatches{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches_224.png);
+  }
+  .showProgsPic{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships.png);
+  }
+  .placeholderPic.openEnvelope{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon_100.png);
+  }
+  .placeholderPic.uploadCV{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
+  }
+  .placeholderPic.cross{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon.png);
+  }
+  .placeholderPic.tick{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .placeholderPic.mentorMatches{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches.png);
+  }
+  .placeholderPic.openEnvelope{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon.png);
+  }
+}
 
 .placeholderPic.uploadCV{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon_60.png);
   background-size: contain;
   background-position: center;
   min-height: 80px;
@@ -204,5 +235,5 @@
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   background-size: cover;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships_125.png);
 }

@@ -6,16 +6,26 @@
 }
 
 .divLi.img.uploadSelfieID{
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID_110.png);
 }
 .divLi.img.tickIcon{
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon_50.png);
 }
 .divLi.img.cvIcon{
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon_60.png);
   background-position: center;
 }
-
+@media screen and (min-width: 758px) {
+  .divLi.img.uploadSelfieID{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
+  }
+  .divLi.img.cvIcon{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
+  }
+  .divLi.img.tickIcon{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Tick%20Icon.png);
+  }
+}
 .ModalOpenBtn-mentorFullSU,
 .ModalOpenBtn-mentorFullSU-u18{
   width: 120px;

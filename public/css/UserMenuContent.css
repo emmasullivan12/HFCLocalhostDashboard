@@ -164,7 +164,7 @@
 }
 
 .userMenu-eduInstThumb{
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Lock%20Icon.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Lock%20Icon_40.png);
   float: left;
   margin-right: 10px;
   width: 26px;
@@ -178,6 +178,16 @@
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
+}
+@media screen and (min-width: 758px) {
+  .userMenu-eduInstThumb{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Lock%20Icon_100.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .userMenu-eduInstThumb{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Lock%20Icon.png);
+  }
 }
 
 .userMenu-eduInstDetail{

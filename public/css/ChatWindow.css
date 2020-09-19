@@ -169,7 +169,7 @@
   height: -webkit-calc(100vh - 53px - 74px);
   height: -moz-calc(100vh - 53px - 74px);
   height: calc(100vh - 53px - 74px);
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
   background-size: 130px;
 }
 
@@ -259,9 +259,22 @@
   -moz-animation-name: fileUpload;
   -ms-animation-name: fileUpload;
   -o-animation-name: fileUpload;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload_150.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (min-width: 758px) {
+  .dragover-pane-overlay-picFile{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload_350.png);
+  }
+  .messages-panel{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dragover-pane-overlay-picFile{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload.png);
+  }
 }
 
 @-webkit-keyframes FileUpload

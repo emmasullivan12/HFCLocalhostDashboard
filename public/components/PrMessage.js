@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component } from "react";
 
@@ -52,7 +52,7 @@ function Avatar(props) {
   const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
 //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   const profPicSrcNotMe = ''
-  const profPicSrcProspela = "https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo.jpg"
+  const profPicSrcProspela = "https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg"
   const userInitial = senderName.charAt(0).toUpperCase();
   const myID = '12345';
   const isMe = (senderID === myID) ? 'isMe' : 'isntMe';

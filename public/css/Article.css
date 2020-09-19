@@ -151,7 +151,12 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: rgba(53,28,117,.08);
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
+}
+@media screen and (min-width: 758px) {
+  .article-page .article-header{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
+  }
 }
 .article-page .article-title{
   padding-left: 20px;
