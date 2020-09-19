@@ -1,5 +1,5 @@
 
-// Dex last merged this code on 29th June 2020
+// Dex last merged this code on 19th sept 2020
 
 // IMAGES TO ALWAYS BE SAVED IN /IMAGES (WHICH IS RELATIVE TO CSS FILES IN SIBLING FOLDER AS IM USING A RELATIVE FILE PATH IN MY CSS I.E. '.../IMAGES/IMAGE.PNG')
 

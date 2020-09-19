@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th Sept 2019
+// Dex last merged this code on 19th Sept 2019
 
 import React, { Component } from "react";
 
@@ -54,7 +54,6 @@ class TextParser extends Component {
       var x = 0
       // Checks for \n line breaks
       paragraphs = text.split(regex.paragraph)
-      console.log(paragraphs)
       paragraphs = paragraphs.map((text)=> {
         const key = x++
         if (text == '\n') {
