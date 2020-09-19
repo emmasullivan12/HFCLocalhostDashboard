@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020
+// Dex last merged this code on 19th sept 2020 
 
 import React, { Component } from "react";
 import PrMessage from "./PrMessage";
@@ -27,7 +27,6 @@ function shouldShowDateHeader(prevMsg, message) {
 
 function checkIsAdjacent(prevMsg, message) {
   if (prevMsg.uid != message.uid || message.subtype === 'welcome') {
-    console.log("Gets here")
     return false;
   } else {
     return true;
@@ -311,7 +310,9 @@ class PrMessagesList extends Component {
         <div className="messages-container" >
           {messages.map((message, index) => {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
-            const isAdjacent = ((index===0 || showDateHeader===true || message.uid == '55555') ? false : checkIsAdjacent(prevMsg, message));
+            const prospelaID = '55555'
+            const isProspela = (message.subtype === 'welcome' || message.subtype === 'prAuto' || message.uid === prospelaID)
+            const isAdjacent = ((index===0 || showDateHeader===true || isProspela) ? false : checkIsAdjacent(prevMsg, message));
             const isLastPic = message.id == 100013 ? true : false
 
             prevMsg = message;

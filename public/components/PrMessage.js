@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020
+// Dex last merged this code on 19th sept 2020 
 
 import React, { Component } from "react";
 
@@ -559,6 +559,7 @@ class PrMessage extends Component {
 }
 
 class PrMessageContents extends Component {
+
   render() {
     const userRole = 'mentor'
     switch (this.props.message.subtype) {
