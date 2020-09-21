@@ -20,9 +20,9 @@
 }
 
 .form-QA {
-  height: calc(100vh - 4em);
-  height: -webkit-calc(100vh - 4em);
-  height: -moz-calc(100vh - 4em);
+  height: calc(100vh - 4em); /* fallback - is set with javascript as mobile doenst like vh */
+  height: -webkit-calc(100vh - 4em); /* fallback - is set with javascript as mobile doenst like vh */
+  height: -moz-calc(100vh - 4em); /* fallback - is set with javascript as mobile doenst like vh */
   padding-top: 20%;
 }
 
@@ -88,6 +88,11 @@
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
+@media only screen and (max-device-width : 454px) {
+  .qScrollBtn{
+    display: none;
+  }
+}
 .qNum{
   color: rgb(159, 158, 231);
   font-size: 16px;
@@ -101,12 +106,19 @@
   margin-top: 2rem;
   color: rgba(63, 63, 63);
 }
-.qDetail{
+.qDetail,
+.qDetail.small{
   font-size: 16px;
   line-height: 24px;
   color: rgba(63, 63, 63, 0.7);
   margin-bottom: 1rem;
   -webkit-font-smoothing: antialiased;
+}
+@media only screen and (max-device-width : 454px) {
+  .qDetail.small{
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .formA-yesnoBtn{

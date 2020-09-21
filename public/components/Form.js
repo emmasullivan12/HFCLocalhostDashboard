@@ -53,7 +53,26 @@ class Form extends Component {
 
     const observer = this.createObserver()
 
+    // Set initial height & width state (need to detect whether changes are mobile soft keyboard)
+  /*  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+    const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    this.setState({
+      viewport_w_int: w,
+      viewport_h_int: h,
+    }, () => {
+      console.log("INITIAL W: "+w)
+      console.log("INITIAL H: "+h)
+    })*/
+
+    //Set initial height of Qs
+//    this.setQHeight()
+
+    // Sets Q numbers & height on newly loaded Qs
     this.updateVisibleQs()
+
+    // Calc size of component based on window height on resized window (so that is mobile compatible as vh doesnt work)
+    window.addEventListener('orientationchange', this.setQHeight);
+  //  window.addEventListener('resize', this.trackHeight);
 
     // Track all sections that have an `id` applied
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
@@ -65,6 +84,8 @@ class Form extends Component {
   componentWillUnmount() {
     const {usedFor} = this.props
     const observer = this.createObserver()
+
+    window.removeEventListener('orientationchange', this.setQHeight);
 
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
       observer.unobserve(section);
@@ -670,11 +691,97 @@ class Form extends Component {
 
   }
 
+  setQHeight = () => {
+    console.log("gets called")
+    const allQ = document.querySelectorAll("section.form-QA")
+    const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    const calc = "calc(" + h + "px - 4em)"
+    allQ.forEach((q) => {
+      if (q.classList.contains("hiddenQ")) {
+        return
+      } else {
+        console.log(h)
+        q.style.height = calc
+      }
+    })
+  }
+
+/*
+  trackHeight = () => {
+    var isSoftKeyBoard = false
+
+    const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+    const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+
+    this.setState(prevState => ({
+      viewport_w_int: w,
+      viewport_h_int: h,
+      viewport_w_prev_int: prevState.viewport_w_int,
+      viewport_h_prev_int: prevState.viewport_h_int,
+      viewport_w_diff_int: w - prevState.viewport_w_int,
+      viewport_h_diff_int: h - prevState.viewport_h_int
+    }), () => {
+      const {viewport_w_int, viewport_h_int, viewport_w_prev_int, viewport_h_prev_int, viewport_w_diff_int, viewport_h_diff_int} = this.state
+      console.log("PREVIOUS h: "+viewport_h_prev_int)
+      console.log("h: "+viewport_h_int)
+      console.log("h DIFF: "+viewport_h_diff_int)
+      const viewport_w_diff_abs_int = Math.abs(viewport_w_diff_int);
+      const viewport_h_diff_abs_int = Math.abs(viewport_h_diff_int);
+
+      //get the percentage changes in viewport width and height
+      const viewport_w_diff_pc_int = (viewport_w_diff_abs_int / viewport_w_prev_int) * 100;
+      const viewport_h_diff_pc_int = (viewport_h_diff_abs_int / viewport_h_prev_int) * 100;
+      console.log("diff w: "+ viewport_w_diff_pc_int)
+      console.log("diff h: "+ viewport_h_diff_pc_int)
+      const isMobile = w <= 600 && h <= 800
+      // If is not on mobile or is on mobile and ISNT soft keyboard resizing event
+      if (isMobile) {
+        if (viewport_w_diff_pc_int < 1) {
+          switch (true) {
+            case (viewport_h_diff_pc_int > 35 && viewport_h_diff_int < 0):
+              //soft keyboard is opening
+              console.log("gets here 1")
+              isSoftKeyBoard = true;
+              break;
+
+            case (viewport_h_diff_pc_int > 35 && viewport_h_diff_int > 0):
+              //Soft keyboard closing - start
+              console.log("gets here 2")
+              isSoftKeyBoard = true;
+              break;
+
+            case (viewport_h_diff_pc_int > 12 && viewport_h_diff_pc_int <= 35 && viewport_h_diff_int > 0):
+              //Soft keyboard closing - end
+              console.log("gets here 3")
+              isSoftKeyBoard = true;
+              break;
+
+            case (viewport_h_diff_pc_int == 0):
+              //No movement - possible Soft keyboard action
+              console.log("gets here 4")
+              isSoftKeyBoard = true;
+              break;
+          }
+        }
+      }
+      console.log("isSoftKeyBoard: "+isSoftKeyBoard)
+
+      if (!isSoftKeyBoard) {
+        this.setQHeight(h)
+      }
+    })
+
+  }*/
+
   updateVisibleQs = () => {
     const {usedFor} = this.props
+
     const allQs = document.getElementById("fpModal-"+usedFor).querySelectorAll("section.form-QA")
     let qVisibleArray = []
     let allVisibleArray = []
+
+    // Calc size of component based on window height (so that is mobile compatible as vh doesnt work)
+    this.setQHeight()
 
     allQs.forEach((q) => {
       const childDiv = q.getElementsByClassName('formA-'+usedFor)[0]
@@ -1131,8 +1238,21 @@ class Form extends Component {
               qOnly++
             }
 
+            let detail
+            let detailClassName
             // i.e. any detail to support the understanding of the question
-            const detail = question['detail'] == undefined ? '' :  question['detail'];
+            if (question['detail'] == undefined) {
+              if (question['detailSmall'] == undefined) {
+                detail = ''
+                detailClassName = 'qDetail'
+              } else {
+                detail = question['detailSmall']
+                detailClassName = 'qDetail small'
+              }
+            } else {
+              detail = question['detail'];
+              detailClassName = 'qDetail'
+            }
 
             return (
             //  <section className="form-QA" id={'formQ-'+usedFor+i} key={q}>
@@ -1153,7 +1273,7 @@ class Form extends Component {
                   )}
                   {q}
                 </h2>
-                <div className="qDetail">
+                <div className={detailClassName}>
                   {detail}
                 </div>
                 { this.renderAType(question, required, usedFor, i, name) }

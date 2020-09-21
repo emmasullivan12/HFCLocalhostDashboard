@@ -168,7 +168,7 @@
   float: left;
   padding-right: 8px;
   text-align: right;
-  width: 5.6rem;
+  width: 4.8rem;
 }
 
 @media only screen and (min-width: 400px) {
@@ -185,10 +185,32 @@
 
 @media only screen and (min-width: 550px) {
   .messageGutter{
+    width: 5.1rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .messageGutter{
+    width: 5.0rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .messageGutter{
     width: 4.9rem;
   }
 }
 
+@media only screen and (min-width: 850px) {
+  .messageGutter{
+    width: 4.8rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .messageGutter{
+    width: 4.75rem;
+  }
+}
 @media only screen and (min-width: 1250px) {
   .messageGutter{
     width: 4.7rem;

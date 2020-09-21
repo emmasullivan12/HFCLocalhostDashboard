@@ -166,9 +166,9 @@
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   outline:0;
-  height: -webkit-calc(100vh - 53px - 74px);
-  height: -moz-calc(100vh - 53px - 74px);
-  height: calc(100vh - 53px - 74px);
+  height: -webkit-calc(100% - 53px - 74px);
+  height: -moz-calc(100% - 53px - 74px);
+  height: calc(100% - 53px - 74px);
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
   background-size: 130px;
 }

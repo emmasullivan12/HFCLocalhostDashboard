@@ -59,7 +59,7 @@ class MentorFullSignUp extends Component {
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
-        {q: 'To help us match you with suitable students, what would you say your "key skills" are?', detail: 'To help you think: C++/Python etc, 2D/3D Animation, Financial Modelling, Presenting, Strategy, Project Mgt, Leadership, Entrepreneurship etc.', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
       ] : [],
       ... (learning === '') ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
@@ -368,7 +368,7 @@ class MentorFullSignUp extends Component {
       ]},
       {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
       ... (expertise === '') ? [
-        {q: 'To help us match you with suitable students, what would you say your "key skills" are?', detail: 'To help you think: C++/Python etc, 2D/3D Animation, Financial Modelling, Presenting, Strategy, Project Mgt, Leadership, Entrepreneurship etc.', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
       ] : [],
       ... (learning === '') ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
@@ -638,7 +638,7 @@ class MentorFullSignUp extends Component {
       {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (https://prospela.com/privacy-policy/).", aType: 'interim', name: 'interim'},
       ... (country === 'GBR') ? [
         {q: 'We ask E-Mentor applicants to self-disclose any history of convictions.', detail: 'We try to collect relevant information from mentor applicants to maintain a safe environment for our disadvantaged young people. Note: Answering "yes" to the any of the following does not immediately disqualify you from using Prospela. We might be in touch to discuss further.', aType: 'interim', name: 'interim'},
-        {q: 'Do you have any convictions, cautions, reprimands or final warnings that are not "protected" as defined by the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (as amended in 2013)?', detail: 'Guidance: The amendments to the Exceptions Order 1975 (2013) provide that certain spent convictions and cautions are \'protected\' and are not subject to disclosure to employers, and cannot be taken into account. Guidance and criteria on the filtering of these cautions and convictions can be found on the Disclosure and Barring Service website.', aType: 'yesno', req: 1, name: 'ukConv', options: [
+        {q: 'Do you have any convictions, cautions, reprimands or final warnings that are not "protected" as defined by the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (as amended in 2013)?', detailSmall: 'Guidance: The amendments to the Exceptions Order 1975 (2013) provide that certain spent convictions and cautions are \'protected\' and are not subject to disclosure to employers, and cannot be taken into account. Guidance and criteria on the filtering of these cautions and convictions can be found on the Disclosure and Barring Service website.', aType: 'yesno', req: 1, name: 'ukConv', options: [
           {value: '0', label: 'Yes'},
           {value: '1', label: 'No'},
         ]},

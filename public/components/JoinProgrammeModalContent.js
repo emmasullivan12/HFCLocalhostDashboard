@@ -72,7 +72,7 @@ class JoinProgrammeModalContent extends Component {
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <p className="modalDesc alignCenter">
-            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they&#39;ve sent you an invite email):' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
+            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
           <form className="leftRightPad">
             <input
@@ -113,7 +113,7 @@ class JoinProgrammeModalContent extends Component {
               </button>
             </div>
           </form>
-          {nonPartnerInst && userRole === 'mentee' && (
+  {/*        {nonPartnerInst && userRole === 'mentee' && (
             <div className="neutralText alignCenter">
               Don&#39;t have a code? Click to get your school to pay ;)
             </div>
@@ -122,7 +122,7 @@ class JoinProgrammeModalContent extends Component {
             <div className="neutralText alignCenter">
               Don&#39;t have a code? Click to invite your company&#39;s Social Impact Lead
             </div>
-          )}
+          )}*/}
         </React.Fragment>
       );
     } else {
