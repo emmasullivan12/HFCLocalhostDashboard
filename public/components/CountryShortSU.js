@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th sept 2020
+// Dex last merged this code on 22nd sept 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -204,7 +204,7 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'BLZ') && (
+              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN') && (
                 <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re currently only in the UK, USA & Canada! </div>
               )}
               {countryLocal === 'USA' && (
