@@ -39,6 +39,7 @@
   position: fixed;
   bottom: 30px;
   min-width: 90px;
+  max-width: 90px;
   left: 50%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -88,11 +89,11 @@
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
-@media only screen and (max-device-width : 454px) {
+/*@media only screen and (max-device-width : 454px) {
   .qScrollBtn{
     display: none;
   }
-}
+}*/
 .qNum{
   color: rgb(159, 158, 231);
   font-size: 16px;
@@ -167,7 +168,10 @@
 .yesNoTick.selected{
   display: block;
 }
-
+#Submit-btn-form{
+  margin-bottom: .5rem;
+  min-width: 90px;
+}
 #formProgressPct{
   color: rgb(128, 128, 128);
   font-family: sans-serif;
@@ -246,13 +250,13 @@
     -o-transform: unset;
   }
 
-  #Submit-btn-form{
-    min-width: 130px;
+  /*#Submit-btn-form{
+    min-width: 90px;
   }
 
   #Submit-btn-form:disabled{
     display: none;
-  }
+  }*/
 
   .qDetail{
     font-size: 14px;
@@ -261,10 +265,14 @@
 
   .formCTAContainer.other{
     position: fixed;
-    bottom: 30px;
+    top: 30px;
+    bottom: unset;
     min-width: 90px;
     right: unset;
-    left: 3rem;
+    right: 3rem;
+  }
+  .formCTAContainer.other.hidden{
+    display: none;
   }
 }
 @media only screen and (min-width: 395px) and (max-width: 425px) {

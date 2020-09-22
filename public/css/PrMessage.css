@@ -168,9 +168,9 @@
   float: left;
   padding-right: 8px;
   text-align: right;
-  width: 4.8rem;
+  width: 4.7rem;
 }
-
+/*
 @media only screen and (min-width: 400px) {
   .messageGutter{
     width: 5.5rem;
@@ -182,7 +182,7 @@
     width: 5.2rem;
   }
 }
-
+*/
 @media only screen and (min-width: 550px) {
   .messageGutter{
     width: 5.1rem;

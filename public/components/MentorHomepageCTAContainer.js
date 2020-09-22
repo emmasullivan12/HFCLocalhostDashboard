@@ -43,7 +43,7 @@ class MentorHomepageCTAContainer extends Component {
       // <div className={className}>
       <div className="landingCTA-container">
         <div className="membershipsContainer">
-          <div className="memberships-title">My Memberships</div>
+          <div className="memberships-title">My Groups</div>
           <div className="groupsContainer">
             {groups}
             <Modal {...JoinProgrammePlusModalProps}>

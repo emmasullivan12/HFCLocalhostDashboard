@@ -54,25 +54,22 @@ class Form extends Component {
     const observer = this.createObserver()
 
     // Set initial height & width state (need to detect whether changes are mobile soft keyboard)
-  /*  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+    const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
     const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
     this.setState({
       viewport_w_int: w,
       viewport_h_int: h,
-    }, () => {
-      console.log("INITIAL W: "+w)
-      console.log("INITIAL H: "+h)
-    })*/
+    })
 
     //Set initial height of Qs
-//    this.setQHeight()
+    this.setQHeight()
 
     // Sets Q numbers & height on newly loaded Qs
     this.updateVisibleQs()
 
     // Calc size of component based on window height on resized window (so that is mobile compatible as vh doesnt work)
-    window.addEventListener('orientationchange', this.setQHeight);
-  //  window.addEventListener('resize', this.trackHeight);
+  //  window.addEventListener('orientationchange', this.setQHeight);
+    window.addEventListener('resize', this.trackHeight);
 
     // Track all sections that have an `id` applied
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
@@ -85,7 +82,8 @@ class Form extends Component {
     const {usedFor} = this.props
     const observer = this.createObserver()
 
-    window.removeEventListener('orientationchange', this.setQHeight);
+  //  window.removeEventListener('orientationchange', this.setQHeight);
+    window.removeEventListener('resize', this.trackHeight);
 
     document.getElementById("fpModal-"+usedFor).querySelectorAll('section[id]').forEach((section) => {
       observer.unobserve(section);
@@ -692,7 +690,6 @@ class Form extends Component {
   }
 
   setQHeight = () => {
-    console.log("gets called")
     const allQ = document.querySelectorAll("section.form-QA")
     const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
     const calc = "calc(" + h + "px - 4em)"
@@ -700,13 +697,11 @@ class Form extends Component {
       if (q.classList.contains("hiddenQ")) {
         return
       } else {
-        console.log(h)
         q.style.height = calc
       }
     })
   }
 
-/*
   trackHeight = () => {
     var isSoftKeyBoard = false
 
@@ -722,56 +717,47 @@ class Form extends Component {
       viewport_h_diff_int: h - prevState.viewport_h_int
     }), () => {
       const {viewport_w_int, viewport_h_int, viewport_w_prev_int, viewport_h_prev_int, viewport_w_diff_int, viewport_h_diff_int} = this.state
-      console.log("PREVIOUS h: "+viewport_h_prev_int)
-      console.log("h: "+viewport_h_int)
-      console.log("h DIFF: "+viewport_h_diff_int)
       const viewport_w_diff_abs_int = Math.abs(viewport_w_diff_int);
       const viewport_h_diff_abs_int = Math.abs(viewport_h_diff_int);
 
       //get the percentage changes in viewport width and height
       const viewport_w_diff_pc_int = (viewport_w_diff_abs_int / viewport_w_prev_int) * 100;
       const viewport_h_diff_pc_int = (viewport_h_diff_abs_int / viewport_h_prev_int) * 100;
-      console.log("diff w: "+ viewport_w_diff_pc_int)
-      console.log("diff h: "+ viewport_h_diff_pc_int)
+
       const isMobile = w <= 600 && h <= 800
       // If is not on mobile or is on mobile and ISNT soft keyboard resizing event
       if (isMobile) {
         if (viewport_w_diff_pc_int < 1) {
           switch (true) {
-            case (viewport_h_diff_pc_int > 35 && viewport_h_diff_int < 0):
+            case (viewport_h_diff_pc_int > 9 && viewport_h_diff_int < 0):
               //soft keyboard is opening
-              console.log("gets here 1")
               isSoftKeyBoard = true;
               break;
 
-            case (viewport_h_diff_pc_int > 35 && viewport_h_diff_int > 0):
+            case (viewport_h_diff_pc_int > 9 && viewport_h_diff_int > 0):
               //Soft keyboard closing - start
-              console.log("gets here 2")
               isSoftKeyBoard = true;
               break;
 
-            case (viewport_h_diff_pc_int > 12 && viewport_h_diff_pc_int <= 35 && viewport_h_diff_int > 0):
+            case (viewport_h_diff_pc_int > 9 && viewport_h_diff_pc_int <= 35 && viewport_h_diff_int > 0):
               //Soft keyboard closing - end
-              console.log("gets here 3")
               isSoftKeyBoard = true;
               break;
 
             case (viewport_h_diff_pc_int == 0):
               //No movement - possible Soft keyboard action
-              console.log("gets here 4")
               isSoftKeyBoard = true;
               break;
           }
         }
       }
-      console.log("isSoftKeyBoard: "+isSoftKeyBoard)
 
       if (!isSoftKeyBoard) {
         this.setQHeight(h)
       }
     })
 
-  }*/
+  }
 
   updateVisibleQs = () => {
     const {usedFor} = this.props
@@ -781,7 +767,7 @@ class Form extends Component {
     let allVisibleArray = []
 
     // Calc size of component based on window height (so that is mobile compatible as vh doesnt work)
-    this.setQHeight()
+  //  this.setQHeight()
 
     allQs.forEach((q) => {
       const childDiv = q.getElementsByClassName('formA-'+usedFor)[0]
@@ -1319,18 +1305,18 @@ class Form extends Component {
               <span>Submit</span>
             )}
           </button>
-        </div>
-        <div className="formCTAContainer other">
-          <div id="formProgressPct">{pct+"% completed"}</div>
-          <div id="formProgress">
-            <div id="formProgressBar"/>
-          </div>
           <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>
           <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (allVisibleArray.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
             <ChevronDown />
           </button>
+        </div>
+        <div className={"formCTAContainer other "+ (focusedQ === 0 ? 'hidden' : null)}>
+          <div id="formProgressPct">{pct+"% completed"}</div>
+          <div id="formProgress">
+            <div id="formProgressBar"/>
+          </div>
         </div>
       </React.Fragment>
     );

@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component } from "react";
 import PrMessage from "./PrMessage";
@@ -18,7 +18,7 @@ function isNewDay(prevMsg, message) {
 
 function shouldShowDateHeader(prevMsg, message) {
 //  var showDateHeader;
-  if (isNewDay(prevMsg,message)) {
+  if (isNewDay(prevMsg,message) && message.mid != 1) {
     return true;
   } else {
     return false;
