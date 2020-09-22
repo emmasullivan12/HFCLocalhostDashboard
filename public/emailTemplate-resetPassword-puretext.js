@@ -1,3 +1,4 @@
+// Merged on 22nd Sept 2020
 const ejs = require("ejs");
 
 const user = {uid: '22222'}
