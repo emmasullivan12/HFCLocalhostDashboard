@@ -276,6 +276,9 @@ header, nav, article, section, aside, footer {
   font-size: .75rem;
   margin-bottom: 0.15rem;
 }
+.sponsoredByText.white{
+  color: #fff;
+}
 .initiativeLogoContainer{
   height: 60px;
   width: 120px;

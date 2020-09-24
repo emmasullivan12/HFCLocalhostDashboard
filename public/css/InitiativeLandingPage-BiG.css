@@ -29,7 +29,7 @@
   position: relative;
 }
 .initiativeLogosContainer.top{
-  height: 110px;
+  height: 90px;
 }
 .initiativeLogoContainer.big{
   height: unset;
@@ -44,9 +44,9 @@
 }
 .initiativeLogoContainer.big.initiativeHeader{
   max-width: unset;
-  font-size: 2rem;
-  top: 50%;
-  margin-left: .7rem;
+  font-size: 2.75rem;
+  top: 40%;
+  margin-left: 0;
   height: 100%;
   position: relative;
   margin-top: 0;
@@ -137,11 +137,14 @@
 .initiativeTopHeader.big{
   color: #111;
 }
+.initiativeHeader.bottom.big{
+  color: #06323b;
+}
 .initiativeHeader.big{
-  max-width: 45vw;
+  max-width: 85vw;
 }
 .initiativeSubHeader.big{
-  max-width: 55vw;
+  max-width: 85vw;
 }
 .initiativeTextDetail.big{
   color: rgba(6,50,59,.64);
@@ -162,10 +165,61 @@
   .initiativeLogoContainer.big.initiativeHeader{
     font-size: 1.5rem;
     margin-left: 0;
-    top: 60%;
+    top: 70%;
     max-width: 0;
   }
   .sectionMain {
     top: 15%;
+  }
+}
+@media only screen and (max-width: 697px) {
+  .initiativeSubHeader.big{
+    font-size: .9rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1040px) {
+  .initiativeHeader.big{
+    max-width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1267px) {
+  .initiativeHeader.big{
+    max-width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 1267px) {
+  .initiativeHeader.big{
+    max-width: 45vw;
+  }
+}
+@media only screen and (min-width: 763px) and (max-width: 1050px) {
+  .initiativeLogoContainer.big.initiativeHeader {
+    top: 60%;
+    margin-left: .7rem;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .initiativeLogoContainer.big.initiativeHeader {
+    top: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1115px) {
+  .initiativeSubHeader.big{
+    max-width: 75vw;
+  }
+}
+@media only screen and (min-width: 1115px) and (max-width: 1491px) {
+  .initiativeSubHeader.big{
+    max-width: 65vw;
+  }
+}
+@media only screen and (min-width: 1491px) {
+  .initiativeSubHeader.big{
+    max-width: 55vw;
   }
 }
