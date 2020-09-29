@@ -114,16 +114,16 @@ class EduShortSU extends React.Component {
         this.handleSchChange(e)
       } else if (e.target.id === 'uniNameTextBox') {
         this.handleUniChange(e)
-      } else if (e.target.id === 'degreeInput') {
-        this.handleDegreeMoveNext()
-      } else if (e.target.id === 'currCoInput') {
-        this.handleJobMoveNext()
-      } else if (e.target.id === 'currRoleInput') {
-        this.handleRoleMoveNext()
-      } else if (e.target.id === 'currTrainingProviderInput') {
-        this.handleTrainMoveNext()
-      } else if (e.target.id === 'currTrainingCourseInput') {
-        this.handleTrainCourseMoveNext()
+  //    } else if (e.target.id === 'degreeInput') {
+  //      this.handleDegreeMoveNext()
+  //    } else if (e.target.id === 'currCoInput') {
+  //      this.handleJobMoveNext()
+  //    } else if (e.target.id === 'currRoleInput') {
+  //      this.handleRoleMoveNext()
+  //    } else if (e.target.id === 'currTrainingProviderInput') {
+  //      this.handleTrainMoveNext()
+  //    } else if (e.target.id === 'currTrainingCourseInput') {
+  //      this.handleTrainCourseMoveNext()
       }
       this.timerHandle = 0;
     }, 800);
@@ -136,29 +136,29 @@ class EduShortSU extends React.Component {
     })
   }
 
-  handleDegreeMoveNext = () => {
+/*  handleDegreeMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("selectBox-uniYrGrp").focus()
     /*  this.setState({
         degreeIsValid: true
-      })*/
+      })
     }
-  }
+  }*/
 
-  handleJobMoveNext = () => {
+/*  handleJobMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("currRoleInput").focus()
   /*    this.setState({
         coIsValid: true
-      })*/
+      })
     }
-  }
+  }*/
 
-  handleRoleMoveNext = () => {
+/*  handleRoleMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("Submit-btn-Edu").focus()
     }
-  }
+  }*/
 
   handleJobChange = (e) => {
     this.setState({
@@ -171,20 +171,20 @@ class EduShortSU extends React.Component {
     this.setState({ currRoleLocal: e.target.value })
   }
 
-  handleTrainMoveNext = () => {
+/*  handleTrainMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("currTrainingCourseInput").focus()
     /*  this.setState({
         trainProvIsValid: true
-      })*/
+      })
     }
-  }
+  }*/
 
-  handleTrainCourseMoveNext = () => {
+/*  handleTrainCourseMoveNext = () => {
     if (this.state.submitted != true) {
       document.getElementById("Submit-btn-Edu").focus()
     }
-  }
+  }*/
 
   handleTrainChange = (e) => {
     this.setState({ currTrainingProviderLocal: e.target.value })
@@ -910,7 +910,7 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleDegreeChange}
-                    handleKeyUp={this.handleKeyUp}
+                  //  handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
@@ -993,7 +993,7 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleJobChange}
-                    handleKeyUp={this.handleKeyUp}
+                //    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
@@ -1013,7 +1013,7 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleRoleChange}
-                    handleKeyUp={this.handleKeyUp}
+                //    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
@@ -1033,7 +1033,7 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleTrainChange}
-                    handleKeyUp={this.handleKeyUp}
+                //    handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}
@@ -1053,7 +1053,7 @@ class EduShortSU extends React.Component {
                     className="form-control-std"
                     required
                     handleChange={this.handleTrainCourseChange}
-                    handleKeyUp={this.handleKeyUp}
+                  //  handleKeyUp={this.handleKeyUp}
                     handleTabPress={this.handleTabPress}
                     handleMouseDown={this.handleMouseDown}
                     onKeyDown={this.handleMouseDown}

@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd Sept 2020 
+// Dex last merged this code on 22nd Sept 2020
 
 import React, { Component } from "react";
 import {
@@ -1297,14 +1297,16 @@ class Form extends Component {
           { this.renderQuestions() }
         </div>
         <div className="formCTAContainer submit">
-          <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-form">
-            {isSubmitting === true && (
-              <LoadingSpinner />
-            )}
-            {isSubmitting != true && (
-              <span>Submit</span>
-            )}
-          </button>
+          {isEnabled && (
+            <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-form">
+              {isSubmitting === true && (
+                <LoadingSpinner />
+              )}
+              {isSubmitting != true && (
+                <span>Submit</span>
+              )}
+            </button>
+          )}
           <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>

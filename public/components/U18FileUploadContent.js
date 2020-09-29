@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import "../css/FileUploadContent.css";
 import '../css/General.css';
-import {LoadingSpinner, isURL} from './GeneralFunctions.js';
+import {LoadingSpinner, Check, isURL} from './GeneralFunctions.js';
 
 class U18FileUploadContent extends Component {
 
@@ -152,7 +152,12 @@ class U18FileUploadContent extends Component {
               </div>
               <div className="fileNamesContainer">
                 <div className="fileNamesHeader">
-                  No. Files Uploaded: {uploadedFile.length}
+                  <span
+                    className="tickFilesUploaded"
+                  >
+                    <Check />
+                  </span>
+                  Files Uploaded: {uploadedFile.length}
                 </div>
                 <div className="fileNames">
                   {uploadedFile[0].name}

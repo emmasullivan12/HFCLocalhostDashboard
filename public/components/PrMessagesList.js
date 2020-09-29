@@ -104,7 +104,7 @@ class PrMessagesList extends Component {
         id: '99995',
         uid: '55555',
         type: 'message',
-        subtype: 'std',
+        subtype: 'finTraining',
         author: 'prospela',
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'

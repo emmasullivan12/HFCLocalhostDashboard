@@ -27,7 +27,7 @@ class NoSuggestionsCTAContent extends Component {
     }
   }
 
-  handleKeyUp = (e) => {
+/*  handleKeyUp = (e) => {
     e.persist();
 
     clearTimeout(this.timerHandle);
@@ -36,14 +36,14 @@ class NoSuggestionsCTAContent extends Component {
       this.handleMoveNext()
       this.timerHandle = 0;
     }, 800);
-  }
+  }*/
 
-  handleMoveNext = () => {
+/*  handleMoveNext = () => {
     const { eetStatusLocal } = this.props;
     if (this.canBeSubmitted() === true) {
       document.getElementById("Submit-btn-addEdu").focus()
     }
-  }
+  }*/
 
   handleChange = (e) => {
     const { eetStatusLocal } = this.props;
@@ -138,7 +138,7 @@ class NoSuggestionsCTAContent extends Component {
           //    onChange={this.handleChange}
               onKeyDown={this.onKeyDown}
               onChange={this.handleChange}
-              onKeyUp={this.handleKeyUp}
+          //    onKeyUp={this.handleKeyUp}
               placeholder={country === 'GBR' ? "School or College" : "High School"}
               autoComplete="off"
               autoCorrect="off"

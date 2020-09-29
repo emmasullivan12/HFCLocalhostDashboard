@@ -46,16 +46,27 @@ class ChatMenu extends Component {
     const {userRole, chatGroup, closeMenu} = this.props;
     const chats = [];
 
-    this.props.chats.forEach((chat) => {
+    if (this.props.chats.length == 0) {
       chats.push(
-        <ChatListItem
-          chat={chat}
-          key={chat.chatID}
-          navlink={`/messages/${chat.chatID}`}
-          closeMenu={closeMenu}
-        />
+        <div className="chatMenuPlaceholder overflow-ellipsis">
+          <div className="presenceContainer placeholder">
+            <i className="fas fa-circle" />
+          </div>
+          Your DMs will appear here...
+        </div>
       );
-    });
+    } else {
+      this.props.chats.forEach((chat) => {
+        chats.push(
+          <ChatListItem
+            chat={chat}
+            key={chat.chatID}
+            navlink={`/messages/${chat.chatID}`}
+            closeMenu={closeMenu}
+          />
+        );
+      });
+    }
 
     return (
       <React.Fragment>

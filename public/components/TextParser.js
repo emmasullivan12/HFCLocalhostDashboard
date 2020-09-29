@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th Sept 2019 
+// Dex last merged this code on 19th Sept 2019
 
 import React, { Component } from "react";
 
@@ -15,9 +15,9 @@ class TextParser extends Component {
 
       let applyFormatting = (text) => {
         return text.split(regex.formatting).filter(n => n).map((str) => {
-          let parsedTwice = str[0] == '_' // Checks for _italics_
+          let parsedTwice = str[0] == '_' && str[str.length - 1] == '_'// Checks for _italics_
             ? (<em>{applyFormatting(str.substr(1, str.length - 2))}</em>)
-            : str[0] == '*' // Checks for *bold*
+            : str[0] == '*' && str[str.length - 1] == '*'// Checks for *bold*
             ? (<b>{applyFormatting(str.substr(1, str.length - 2))}</b>)
             : str.substring(0,2) == '\n-' // Checks for \n- bullets
             ? (
@@ -28,7 +28,7 @@ class TextParser extends Component {
                 </span>
               </React.Fragment>
             )
-            : str[0] == '~' // Checks for ~highlight~
+            : str[0] == '~' && str[str.length - 1] == '~'// Checks for ~highlight~
             ? (<span className="highlight-titleText">{applyFormatting(str.substr(1, str.length - 2))}</span>)
       /*      : str.substring(0,2) == '\n>' // Checks for \n> blockquote
             ? (

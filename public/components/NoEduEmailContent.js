@@ -74,11 +74,11 @@ class NoEduEmailContent extends Component {
     })
   }
 
-  handleCodeMoveNext = (e) => {
+/*  handleCodeMoveNext = (e) => {
     if (e.target.value.length >= 6 && e.target.value.length < 50) {
       document.getElementById("currentSituInput").focus();
     }
-  }
+  }*/
 
   handleSituChange = (e) => {
     this.setState({
@@ -86,7 +86,7 @@ class NoEduEmailContent extends Component {
     })
   }
 
-  handleSituMoveNext = (e) => {
+/*  handleSituMoveNext = (e) => {
     const {eetStatus} = this.props;
     if (e.target.value.length >= 25) {
       if (eetStatus != 'none') {
@@ -95,7 +95,7 @@ class NoEduEmailContent extends Component {
         document.getElementById("profProfileURL").focus();
       }
     }
-  }
+  }*/
 
   handleURLChange = (e) => {
     this.setState({
@@ -105,9 +105,9 @@ class NoEduEmailContent extends Component {
     })
   }
 
-  handleURLMoveNext = (e) => {
+/*  handleURLMoveNext = (e) => {
     document.getElementById("Submit-btn-noEduEmail").focus();
-  }
+  }*/
 
   handleEmailChange = (e) => {
     this.setState({
@@ -117,9 +117,9 @@ class NoEduEmailContent extends Component {
     })
   }
 
-  handleEmailMoveNext = (e) => {
+/*  handleEmailMoveNext = (e) => {
     document.getElementById("profProfileURL").focus();
-  }
+  }*/
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (e) => {
@@ -157,7 +157,7 @@ class NoEduEmailContent extends Component {
     }
   }
 
-  handleKeyUp = (e) => {
+/*  handleKeyUp = (e) => {
     e.persist()
     const {emailInput, emailIsValid} = this.state;
     var key = e.key || e.keyCode
@@ -167,20 +167,20 @@ class NoEduEmailContent extends Component {
     if (e.target.value != '' && (key === 'Backspace' || key != 8)) {
 
       this.timerHandle = setTimeout(() => {
-        if (e.target.name === 'progCode') {
-          this.handleCodeMoveNext(e)
-        } else if (e.target.name === 'currentSitu') {
-          this.handleSituMoveNext(e)
-        } else if (e.target.name === 'emailInput') {
-          this.handleEmailMoveNext(e)
-        } else if (e.target.name === 'profProfileURL') {
-          this.handleURLMoveNext(e)
+      //  if (e.target.name === 'progCode') {
+      //    this.handleCodeMoveNext(e)
+      //  } else if (e.target.name === 'currentSitu') {
+      //    this.handleSituMoveNext(e)
+      //  } else if (e.target.name === 'emailInput') {
+      //    this.handleEmailMoveNext(e)
+      //  } else if (e.target.name === 'profProfileURL') {
+      //    this.handleURLMoveNext(e)
         }
         this.timerHandle = 0;
       }, 800);
 
     }
-  }
+  }*/
 
   checkEmail() {
     const {emailInput} = this.state;
@@ -296,7 +296,7 @@ class NoEduEmailContent extends Component {
             Tell us about your situation
           </div>
           <form className="noEduEmail-form" id="noEduEmailForm">
-            <label htmlFor="profProfileURL" className="descriptor alignLeft">
+            <label htmlFor="progverifcode" className="descriptor alignLeft">
               Have a <strong>programme code?</strong> Enter it here:
             </label>
             <input
@@ -305,7 +305,7 @@ class NoEduEmailContent extends Component {
               className="form-control-std verifyForm"
               onBlur={this.onBlur}
               onChange={this.handleCodeChange}
-              onKeyUp={this.handleKeyUp}
+          //    onKeyUp={this.handleKeyUp}
               onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
               placeholder="_ _ _ _ _ _"
@@ -325,7 +325,7 @@ class NoEduEmailContent extends Component {
               id="currentSituInput"
               onBlur={this.onBlur}
               onChange={this.handleSituChange}
-              onKeyUp={this.handleKeyUp}
+            //  onKeyUp={this.handleKeyUp}
               onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
               placeholder="Help us assess your eligibility to join..."
@@ -360,7 +360,7 @@ class NoEduEmailContent extends Component {
                   id="profEmail"
                   onBlur={this.onBlur}
                   onChange={this.handleEmailChange}
-                  onKeyUp={this.handleKeyUp}
+              //    onKeyUp={this.handleKeyUp}
                   onKeyDown={this.handleKeyDown}
                   onMouseDown={this.handleMouseDown}
                   className="form-control-std verifyForm"
@@ -390,7 +390,7 @@ class NoEduEmailContent extends Component {
               id="profProfileURL"
               onBlur={this.onBlur}
               onChange={this.handleURLChange}
-              onKeyUp={this.handleKeyUp}
+          //    onKeyUp={this.handleKeyUp}
               onMouseDown={this.handleMouseDown}
               className="form-control-std verifyForm"
               placeholder="https://...."

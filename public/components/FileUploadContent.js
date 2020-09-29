@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import {Check} from './GeneralFunctions.js';
 import "../css/General.css";
 import "../css/FileUploadContent.css";
 
@@ -117,7 +118,12 @@ class FileUploadContent extends Component {
           { selectedFiles && (
             <div className="fileNamesContainer">
               <div className="fileNamesHeader">
-                No. Files Uploaded: 4
+                <span
+                  className="tickFilesUploaded"
+                >
+                  <Check />
+                </span>
+                Files Uploaded: 4
               </div>
               <div className="fileNames">
                 File name.xls

@@ -42,3 +42,9 @@
   font-weight: 700;
   margin-bottom: .5rem;
 }
+.tickFilesUploaded{
+  font-size: 14px;
+  color: #38bb38;
+  margin-right: .5rem;
+  display: inline-block;
+}

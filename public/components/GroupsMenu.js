@@ -52,16 +52,27 @@ class GroupsMenu extends Component {
     const {userRole, closeMenu} = this.props;
     const groups = [];
 
-    this.props.groups.forEach((group) => {
+    if (this.props.groups.length == 0) {
       groups.push(
-        <GroupListItem
-          group={group}
-          key={group.groupID}
-    //      navlink={`/community/${group.name}`}
-          closeMenu={closeMenu}
-        />
+        <div className="chatMenuPlaceholder overflow-ellipsis">
+          <div className="presenceContainer placeholder">
+            <i className="fas fa-circle" />
+          </div>
+          Your Groups will appear here...
+        </div>
       );
-    });
+    } else {
+      this.props.groups.forEach((group) => {
+        groups.push(
+          <GroupListItem
+            group={group}
+            key={group.groupID}
+      //      navlink={`/community/${group.name}`}
+            closeMenu={closeMenu}
+          />
+        );
+      });
+    }
 
     return (
       <React.Fragment>

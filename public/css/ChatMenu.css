@@ -15,6 +15,14 @@
   -moz-flex-direction: row;
 }
 
+.chatMenuPlaceholder{
+  height: 30px;
+  text-decoration: none;
+  padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+  font-size: 12px;
+  color: rgba(206, 206, 206, .84);
+}
+
 .chatMenuItem {
   height: 30px;
   text-decoration: none;
@@ -77,6 +85,9 @@
   font-size: 13px;
   opacity: 0.95;
   left: 0;
+}
+.presenceContainer.placeholder{
+  color: rgb(0, 255, 183, .50);
 }
 
 .notificationNum{
