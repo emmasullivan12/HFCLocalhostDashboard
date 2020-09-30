@@ -172,6 +172,8 @@ h2{
 
 .clientWindowContainer{
   position: absolute;
+  user-select: text;
+  -webkit-user-select: text;
 /*  display: -ms-flexbox;
   display: -webkit-flex;
 */  display: inline-block;
