@@ -388,6 +388,9 @@
   box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
   -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .unreadSeparator__text{
   -webkit-border-radius: 10px;

@@ -19,7 +19,7 @@ const SettingsModalProps = {
   ariaLabel: 'Popup to manage your preferences and settings',
   triggerText: 'Preferences & Settings',
   usedFor: 'settings',
-  backBtn: 'bk2Pr'
+  backBtn: 'arrow'
 }
 
 const MenteeProfileModalProps = {

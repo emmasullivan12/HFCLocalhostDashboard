@@ -120,7 +120,7 @@ class CountryShortSU extends React.Component {
     })
   }
 
-  canBeSubmitted(countries, states, provinces, ukCounties, ieCounties) {
+  canBeSubmitted(countries, states, provinces, ozStates, nzlRegions, ukCounties, ieCounties) {
     const {countryLocal, stateProv, city} = this.state;
 
     var isCountryOK = countries.map((el) => el.value).indexOf(countryLocal) != -1;
@@ -151,6 +151,22 @@ class CountryShortSU extends React.Component {
             return false;
           }
 
+        } else if (countryLocal === 'AUS') {
+          var isOzStatesOK = ozStates.map((el) => el.value).indexOf(stateProv) != -1;
+          if (stateProv != '' && isProvOK) {
+            return true;
+          } else {
+            return false;
+          }
+
+        } else if (countryLocal === 'NZL') {
+          var isNzlRegionsOK = nzlRegions.map((el) => el.value).indexOf(stateProv) != -1;
+          if (stateProv != '' && isProvOK) {
+            return true;
+          } else {
+            return false;
+          }
+
         } else {
           return false;
         }
@@ -170,6 +186,12 @@ class CountryShortSU extends React.Component {
   ]
   var provinces = [
     {value: 'AB', label: 'Alberta'},{value: 'BC', label: 'British Columbia'},{value: 'MB', label: 'Manitoba'},{value: 'NB', label: 'New Brunswick'},{value: 'NL', label: 'Newfoundland & Labrador'},{value: 'NS', label: 'Nova Scotia'},{value: 'ON', label: 'Ontario'},{value: 'PE', label: 'Prince Edward Island'},{value: 'QC', label: 'Quebec'},{value: 'SK', label: 'Saskatchewan'},{value: 'NT', label: 'Northwest Territories'},{value: 'NU', label: 'Nunavut'},{value: 'YT', label: 'Yukon'}
+  ]
+  var ozStates = [
+    {value: 'NSW', label: 'New South Wales'},{value: 'QLD', label: 'Queensland'},{value: 'SAU', label: 'South Australia'},{value: 'TAS', label: 'Tasmania'},{value: 'VIC', label: 'Victoria'},{value: 'WAU', label: 'Western Australia'},{value: 'ACT', label: 'Australian Capital Territory'},{value: 'JBT', label: 'Jervis Bay Territory'},{value: 'NTE', label: 'Northern Territory'}
+  ]
+  var nzlRegions = [
+    {value: 'NOR', label: 'Northland'},{value: 'Auc', label: 'Auckland'},{value: 'Wai', label: 'Waikato'},{value: 'BOP', label: 'Bay of Plenty'},{value: 'GIS', label: 'Gisborne'},{value: 'HAW', label: 'Hawke\'s Bay'},{value: 'TAR', label: 'Taranaki'},{value: 'MAN', label: 'Manawatu-Whanganui'},{value: 'WEL', label: 'Wellington'},{value: 'TAS', label: 'Tasman'},{value: 'NEL', label: 'Nelson'},{value: 'MAR', label: 'Marlborough'},{value: 'WES', label: 'West Coast'},{value: 'CAN', label: 'Canterbury'},{value: 'OTA', label: 'Otago'},{value: 'SOU', label: 'Southland'},
   ]
   var ukCounties = [
     {value: 'Avon', label: 'Avon'},{value: 'Bedf', label: 'Bedfordshire'},{value: 'Berk', label: 'Berkshire'},{value: 'Buck', label: 'Buckinghamshire'},{value: 'Camb', label: 'Cambridgeshire'},{value: 'Ches', label: 'Cheshire'},{value: 'Clev', label: 'Cleveland'},{value: 'Corn', label: 'Cornwall'},{value: 'Cumb', label: 'Cumbria'},{value: 'Derb', label: 'Derbyshire'},{value: 'Devo', label: 'Devon'},{value: 'Dors', label: 'Dorset'},{value: 'Durh', label: 'Durham'},{value: 'ERYr', label: 'East Riding of Yorkshire'},{value: 'Suss', label: 'East Sussex'},{value: 'Esse', label: 'Essex'},{value: 'Glou', label: 'Gloucestershire'},{value: 'Manc', label: 'Greater Manchester'},{value: 'Hamp', label: 'Hampshire'},{value: 'Hert', label: 'Hertfordshire'},{value: 'Here', label: 'Herefordshire'},{value: 'IOW', label: 'Isle of Wight'},{value: 'Kent', label: 'Kent'},{value: 'Lanc', label: 'Lancashire'},{value: 'Leic', label: 'Leicestershire'},{value: 'Linc', label: 'Lincolnshire'},{value: 'LdBD', label: 'London - Barking and Dagenham'},{value: 'LdBa', label: 'London - Barnet'},{value: 'LdBe', label: 'London - Bexley'},{value: 'LdBr', label: 'London - Brent'},{value: 'LdBro', label: 'London - Bromley'},{value: 'LdCa', label: 'London - Camden'},{value: 'LdCL', label: 'London - City of London'},{value: 'LdCr', label: 'London - Croydon'},{value: 'LdEa', label: 'London - Ealing'},{value: 'LdEn', label: 'London - Enfield'},{value: 'LdGr', label: 'London - Greenwich'},{value: 'LdHa', label: 'London - Hackney'},{value: 'LdHF', label: 'London - Hammersmith and Fulham'},{value: 'LdHry', label: 'London - Haringey'},{value: 'LdHar', label: 'London - Harrow'},{value: 'LdHav', label: 'London - Havering'},{value: 'LdHi', label: 'London - Hillingdon'},{value: 'LdHo', label: 'London - Hounslow'},{value: 'LdIs', label: 'London - Islington'},{value: 'LdKC', label: 'London - Kensington and Chelsea'},{value: 'LdKT', label: 'London - Kingston upon Thames'},{value: 'LdLa', label: 'London - Lambeth'},{value: 'LdLe', label: 'London - Lewisham'},{value: 'LdMe', label: 'London - Merton'},{value: 'LdNe', label: 'London - Newham'},{value: 'LdRe', label: 'London - Redbridge'},{value: 'LdRT', label: 'London - Richmond upon Thames'},{value: 'LdSo', label: 'London - Southwark'},{value: 'LdSu', label: 'London - Sutton'},{value: 'LdTH', label: 'London - Tower Hamlets'},{value: 'LdWF', label: 'London - Waltham Forest'},{value: 'LdWa', label: 'London - Wandsworth'},{value: 'LdWe', label: 'London - Westminster'},{value: 'Mers', label: 'Merseyside'},{value: 'Norf', label: 'Norfolk'},{value: 'Nyor', label: 'North Yorkshire'},{value: 'Ntha', label: 'Northamptonshire'},{value: 'Nthu', label: 'Northumberland'},{value: 'Nott', label: 'Nottinghamshire'},{value: 'Oxfo', label: 'Oxfordshire'},{value: 'Rutl', label: 'Rutland'},{value: 'Shro', label: 'Shropshire'},{value: 'Some', label: 'Somerset'},{value: 'Syor', label: 'South Yorkshire'},{value: 'Staf', label: 'Staffordshire'},{value: 'Suff', label: 'Suffolk'},{value: 'Surr', label: 'Surrey'},{value: 'Tyne', label: 'Tyne and Wear'},{value: 'Warw', label: 'Warwickshire'},{value: 'Wmid', label: 'West Midlands'},{value: 'Wsus', label: 'West Sussex'},{value: 'Wyor', label: 'West Yorkshire'},{value: 'Wilt', label: 'Wiltshire'},{value: 'Worc', label: 'Worcestershire'},{value: 'Angl', label: 'Anglesey'},{value: 'Blae', label: 'Blaenau Gwent'},{value: 'Brec', label: 'Breconshire'},{value: 'Brid', label: 'Bridgend'},{value: 'Caer', label: 'Caernarvonshire'},{value: 'Cphi', label: 'Caerphilly'},{value: 'Card', label: 'Cardiff'},{value: 'Cdgn', label: 'Cardiganshire'},{value: 'Carm', label: 'Carmarthenshire'},{value: 'Conw', label: 'Conwy'},{value: 'Denb', label: 'Denbighshire'},{value: 'Flin', label: 'Flintshire'},{value: 'Glam', label: 'Glamorgan'},{value: 'Neat', label: 'Neath Port Talbot'},{value: 'Meri', label: 'Merionethshire'},{value: 'Mert', label: 'Merthyr Tydfil'},{value: 'Monm', label: 'Monmouthshire'},{value: 'Mont', label: 'Montgomeryshire'},{value: 'Newp', label: 'Newport'},{value: 'Pemb', label: 'Pembrokeshire'},{value: 'Radn', label: 'Radnorshire'},{value: 'Sgla', label: 'South Glamorgan'},{value: 'Torf', label: 'Torfaen'},{value: 'Swan', label: 'Swansea'},{value: 'Wrex', label: 'Wrexham'},{value: 'Aber', label: 'Aberdeen City'},{value: 'Abds', label: 'Aberdeenshire'},{value: 'Angu', label: 'Angus'},{value: 'Argy', label: 'Argyll and Bute'},{value: 'Berw', label: 'Berwickshire'},{value: 'Edin', label: 'City of Edinburgh'},{value: 'Clac', label: 'Clackmannanshire'},{value: 'Dumf', label: 'Dumfries and Galloway'},{value: 'Dund', label: 'Dundee City'},{value: 'Eayr', label: 'East Ayrshire'},{value: 'Edun', label: 'East Dunbartonshire'},{value: 'Elot', label: 'East Lothian'},{value: 'Eren', label: 'East Renfrewshire'},{value: 'Eile', label: 'Eilean Siar'},{value: 'Falk', label: 'Falkirk'},{value: 'Fife', label: 'Fife'},{value: 'Glas', label: 'Glasgow City'},{value: 'High', label: 'Highland'},{value: 'Inve', label: 'Inverclyde'},{value: 'Midl', label: 'Midlothian'},{value: 'Mora', label: 'Moray'},{value: 'Nayr', label: 'North Ayrshire'},{value: 'Nlan', label: 'North Lanarkshire'},{value: 'Orkn', label: 'Orkney Islands'},{value: 'Pert', label: 'Perth and Kinross'},{value: 'Renf', label: 'Renfrewshire'},{value: 'Shet', label: 'Shetland Islands'},{value: 'Sayr', label: 'South Ayrshire'},{value: 'Slan', label: 'South Lanarkshire'},{value: 'Stir', label: 'Stirling'},{value: 'Wdun', label: 'West Dunbartonshire'},{value: 'Wlot', label: 'West Lothian'},{value: 'Antr', label: 'Antrim'},{value: 'Arma', label: 'Armagh'},{value: 'cDow', label: 'County Down'},{value: 'Ferm', label: 'Fermanagh'},{value: 'CoDe', label: 'City of Derry'},{value: 'Lond', label: 'Londonderry'},{value: 'cTyr', label: 'County Tyrone'}
@@ -204,8 +226,8 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN') && (
-                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re currently only in the UK, USA & Canada! </div>
+              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'AUS' && countryLocal != 'NZL') && (
+                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re currently only in the UK, USA, Canada, Oz & NZL! </div>
               )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
@@ -264,7 +286,45 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN')) && (
+              {countryLocal === 'AUS' && (
+                <div className="form-group" id="userUKCounty">
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>State / Territory?</strong></label>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={ozStates}
+                      name='stateprovince'
+                      placeholder='State / Territory'
+                      handleTabPress={this.handleTabPress}
+                      handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
+                      focusOnLoad={tabPressed ? false : true}
+                      idValue='value'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
+                  </div>
+                </div>
+              )}
+              {countryLocal === 'NZL' && (
+                <div className="form-group" id="userUKCounty">
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>Region?</strong></label>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={nzlRegions}
+                      name='stateprovince'
+                      placeholder='County'
+                      handleTabPress={this.handleTabPress}
+                      handleChange={this.handleStateChange}
+                      handleMouseDown={this.handleMouseDown}
+                      focusOnLoad={tabPressed ? false : true}
+                      idValue='value'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
+                  </div>
+                </div>
+              )}
+              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN' || countryLocal === 'AUS' || countryLocal === 'NZL') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'AUS' && countryLocal != 'NZL')) && (
                 <div className="form-group" id="userCity">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">Which <strong>{countryLocal != 'GBR' ? 'City?' : 'Town/City?'}</strong></label>
                   <TextInput

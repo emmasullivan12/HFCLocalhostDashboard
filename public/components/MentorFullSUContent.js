@@ -48,7 +48,7 @@ class MentorFullSignUp extends Component {
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
-      {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'Type number...', name: 'maxMentees'},
+      {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'e.g. 1, 2, ... 10', name: 'maxMentees'},
       {q: 'I\'m interested in speaking to and mentoring underserved young people because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyHelp'},
       {q: 'Did you want to focus your efforts on supporting any of these particular communities?', detail: 'You might be particularly passionate about one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
         {value: '1', label: 'Black, Asian, Minority Ethnic (BAME)'},
@@ -356,7 +356,7 @@ class MentorFullSignUp extends Component {
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
-      {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'Type number...', name: 'maxMentees'},
+      {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'e.g. 1, 2, ... 10', name: 'maxMentees'},
       {q: 'I\'m interested in speaking to and mentoring underserved young people because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyHelp'},
       {q: 'Did you want to focus your efforts on supporting any of these particular communities?', detail: 'You might be particularly passionate about one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
         {value: '1', label: 'Black, Asian, Minority Ethnic (BAME)'},

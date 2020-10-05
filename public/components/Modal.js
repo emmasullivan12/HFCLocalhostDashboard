@@ -102,6 +102,7 @@ class Modal extends React.Component {
   // Close modal using Escape key on keyboard
   onKeyDown = e => {
     var key = e.key || e.keyCode
+
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.onClose();
     }

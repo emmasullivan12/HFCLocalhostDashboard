@@ -640,6 +640,13 @@ class EduShortSU extends React.Component {
     {value: 'train', label: 'I\'m in Training'},
     {value: 'none', label: 'None'}
   ];
+  const eetStatusMenteeAusNzlOptions = [
+    {value: 'sch', label: 'I\'m at High School'},
+    {value: 'uni', label: 'I\'m at University'},
+    {value: 'job', label: 'I\'m in full-time employment'},
+    {value: 'train', label: 'I\'m in Training'},
+    {value: 'none', label: 'None'}
+  ];
   const eetStatusMentorUKOptions = [
     {value: 'uni', label: 'I\'m at University'},
     {value: 'job', label: 'I\'m in full-time employment'},
@@ -660,6 +667,15 @@ class EduShortSU extends React.Component {
     {value: 'yr12', label: 'Year 12 (Sixth Form Yr 1)'},
     {value: 'yr13', label: 'Year 13 (Sixth Form Yr 2)'},
     {value: 'finSch', label: 'Finished School / Sixth Form / College'}
+  ]
+  const ozSchYrs = [
+    {value: 'yr8', label: 'Year 7'},
+    {value: 'yr9', label: 'Year 8'},
+    {value: 'yr10', label: 'Year 9'},
+    {value: 'yr11', label: 'Year 10'},
+    {value: 'yr12', label: 'Year 11'},
+    {value: 'yr13', label: 'Year 12'},
+    {value: 'finSch', label: 'Finished School / High School'}
   ]
   const nonUKSchYrs = [
     {value: 'yr8', label: '7th Grade'},
@@ -715,7 +731,7 @@ class EduShortSU extends React.Component {
   }
 
   const isEnabled = this.canBeSubmitted();
-  const optionsToUse = country === 'GBR' ? (userRole === 'mentee' ? eetStatusMenteeUKOptions : eetStatusMentorUKOptions) : (userRole === 'mentee' ? eetStatusMenteeNonUKOptions : eetStatusMentorNonUKOptions);
+  const optionsToUse = country === 'GBR' ? (userRole === 'mentee' ? eetStatusMenteeUKOptions : eetStatusMentorUKOptions) : (userRole === 'mentee' ? ((country === 'AUS' || country === 'NZL') ? eetStatusMenteeAusNzlOptions : eetStatusMenteeNonUKOptions) : eetStatusMentorNonUKOptions);
 
     return (
       <React.Fragment>
@@ -815,7 +831,7 @@ class EduShortSU extends React.Component {
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="schYrGrp">And which <strong>{country === 'GBR' ? 'year group' : 'grade / year group'}</strong> are you in?</label>
                   <SelectBox
-                    options={country === 'GBR' ? ukSchYrs : nonUKSchYrs}
+                    options={(country === 'GBR' || country === 'NZL') ? ukSchYrs : (country === 'AUS' ? ozSchYrs : nonUKSchYrs)}
                     placeholder="Select Year Group:"
                     name='schYrGrp'
                     id='schYrGrp'

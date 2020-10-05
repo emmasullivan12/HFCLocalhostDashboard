@@ -131,7 +131,7 @@ class DiversitySU extends React.Component {
     ];
 
     const schAttendedList = [
-      {value: '0', label: 'Public school/state-funded (selective)', detail: ''},
+      {value: '0', label: 'Public or state-run/funded school', detail: ''},
       {value: '1', label: 'Private or fee-paying school ', detail: 'with scholarship'},
       {value: '2', label: 'Private or fee-paying school', detail: 'no scholarship'},
       {value: '3', label: 'Home-schooled', detail: ''},
@@ -192,7 +192,7 @@ class DiversitySU extends React.Component {
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-selectHur">What type of <strong>{(country === 'GBR' ? "Secondary School" : "High School")}</strong>{(eetStatus === "sch" ? " do you attend?" : " did you attend?")}</label>
                     <SelectBox
-                      options={country === 'GBR' ? uKschAttendedList : schAttendedList}
+                      options={(country === 'GBR' || country === 'AUS' || country === 'NZL')? uKschAttendedList : schAttendedList}
                       name='selectSchType'
                       placeholder={'Select ' + (country === 'GBR' ? 'school' : 'high-school') + ' type:'}
                       handleChange={this.handleSchTypeChange}
