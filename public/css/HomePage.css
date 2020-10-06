@@ -77,3 +77,12 @@
   -moz-flex-direction: column;
   outline:0;
 }
+
+.isNotif-navMenu {
+  background-color: #e22e48;
+  width: .5rem;
+  height: .5rem;
+  position: relative;
+  bottom: 15px;
+  left: 12px;
+}

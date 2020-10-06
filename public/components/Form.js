@@ -1307,10 +1307,10 @@ class Form extends Component {
               )}
             </button>
           )}
-          <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn" onClick={this.handleScrollUp}>
+          <button type="button" disabled={isSubmitting === true ? true : focusedQ == 0} className="qScrollBtn left" onClick={this.handleScrollUp}>
             <ChevronUp />
           </button>
-          <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (allVisibleArray.length - 1))} className="qScrollBtn" onClick={this.handleScrollDown}>
+          <button type="button" disabled={isSubmitting === true ? true : ((firstQEdited === false && focusedQ == 0) ? true : focusedQ == (allVisibleArray.length - 1))} className="qScrollBtn right" onClick={this.handleScrollDown}>
             <ChevronDown />
           </button>
         </div>

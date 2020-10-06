@@ -20,6 +20,8 @@ class MenuNav extends Component {
   }
 
   render() {
+    const isNotif = 1
+
     return (
       <React.Fragment>
         <button type="button" id="nav-mainMenu" className="viewMenu button-unstyled" aria-label="View Menu" onClick={this.openMenu}>
@@ -27,6 +29,9 @@ class MenuNav extends Component {
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="rgba(0, 0, 0, .88)"/>
           </svg>
+          {isNotif === 1 && (
+            <div className="isNotif-navMenu img-circle"/>
+          )}
         </button>
       </React.Fragment>
     )

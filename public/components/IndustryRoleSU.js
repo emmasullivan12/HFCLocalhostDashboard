@@ -390,8 +390,8 @@ class IndustryRoleSU extends React.Component {
                       handleDone={this.handleDoneClickRoles}
                       suggestions={roleOptions}
                       name='selectRole'
-                      placeholder='Type Role(s):'
-                      placeholderOnClick="Type Role(s): Not sure? Select 'don't know'"
+                      placeholder='Type Role(s)...'
+                      placeholderOnClick="Type Role(s)..."
                       handleChange={this.handleRoleChange}
                       onFocus={this.onRoleFocus}
                       handleTabPress={this.handleTabPress}

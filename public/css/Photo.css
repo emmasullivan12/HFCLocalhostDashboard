@@ -5,6 +5,17 @@
   margin: 10px 0;
   display: none;
 }
+.photoOutput.photoShareContainer{
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: block;
+  height: 8rem;
+}
+.photoShare{
+  height: 100%;
+}
 
 .photoOutput.isProfPic{
   margin: auto;

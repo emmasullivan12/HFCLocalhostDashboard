@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import Camera from './Camera.js';
-import Photo from './Photo.js';
+import Photo from './PhotoShare.js';
 import '../css/General.css';
 import '../css/CameraUploadContent.css';
 

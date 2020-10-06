@@ -363,8 +363,13 @@ div {
   left: -25px;
 }
 .tooltiptext.groups {
-  width: 120px;
+  width: auto;
+  white-space: nowrap;
   font-weight: 600;
+  left: 0;
+  margin-left: unset;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .tooltip .tooltiptext.profile {
   left: -46%;
@@ -382,6 +387,10 @@ div {
 .tooltip .tooltiptext.last::after {
   left: unset;
   right: 13px;
+}
+.tooltip .tooltiptext.groups::after {
+  left: 0;
+  margin-left: 8px;
 }
 .tooltip:hover .tooltiptext{
   visibility: visible;

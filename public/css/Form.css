@@ -79,10 +79,29 @@
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   margin-right: 5px;
 }
+.qScrollBtn.left:disabled::after,
+.qScrollBtn.right:disabled::after{
+  content: "";
+}
+.qScrollBtn::after{
+  position: absolute;
+  color: #cecece;
+  font-weight: 400;
+  font-size: 12px;
+  top: 100%;
+  margin-left: -18px;
+}
+.qScrollBtn.left::after{
+  content: "Prev";
+}
+.qScrollBtn.right::after{
+  content: "Next";
+}
 .qScrollBtn:disabled{
   color: #ccc8c8;
   background: #e8e8e8;
   border: 1px solid #c7c7c7;
+  cursor: default;
 }
 .qScrollBtn:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
