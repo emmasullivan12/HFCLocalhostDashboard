@@ -49,7 +49,9 @@
           <div>
             <h1>Get Started</h1>
             <div class="header-descriptor">or <a href="https://test.prospela.com/login">login to your Prospela account</a></div>
-            <div class="header-descriptor greenText">You're invited to join the Prospela beta platform!</div>
+            <div class="header-descriptor" id="progLogoContainer">
+              <img id="progInvite-logo" alt="Initiative logo"/>
+            </div>
           </div>
           <form method="POST" action="/signup">
             <div className="buttonContainer">
@@ -72,8 +74,8 @@
             <div class="form-group" id="emailContainer">
               <div>
                 <div class="alignLeft descriptor" id="emailText">Work (or Uni) Email</div>
-                <div class="tooltip alignRight descriptor no-href" id="workEmailTooltip">Why do I need to provide this?
-                  <span class="tooltiptext">This helps us maintain a safeguarded environment</span>
+                <div class="tooltip alignRight descriptor no-href" id="workEmailTooltip">Why?
+                  <span class="tooltiptext">A verifiable work or uni email helps us maintain a safeguarded environment</span>
                 </div>
               </div>
               <input type="email" name="email" id="email" class="form-control-std prompt" autocomplete="on" required>

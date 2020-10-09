@@ -8,6 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 
+import cdn from './CDN.js';
 import Modal from './Modal.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
@@ -30,11 +31,15 @@ const JoinProgrammePlusModalProps = {
 // This shows the content within an individual row in the ChatMenu
 class GroupListItem extends Component {
   render() {
-    const {group, closeMenu} = this.props;
+    const {group, closeMenu, groupAvatarURL} = this.props;
+    var progLogoURL = cdn + groupAvatarURL
 
     return(
       <div activeclassname="is-active" className="chatMenuItem link" onClick={closeMenu}>
     {/*  <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
+        <div className="groupsAvatarContainer">
+          <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
+        </div>
         <div className="chatItemFlexContainer">
           <span className="chatMenuLink overflow-ellipsis">{group.name}</span>
     {/*      <span className="notificationNum">xx</span> */}
@@ -69,6 +74,7 @@ class GroupsMenu extends Component {
             key={group.groupID}
       //      navlink={`/community/${group.name}`}
             closeMenu={closeMenu}
+            groupAvatarURL={group.groupAvatarURL}
           />
         );
       });

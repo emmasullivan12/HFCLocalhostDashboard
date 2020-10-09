@@ -37,7 +37,7 @@ class JoinProgPrompt extends Component {
           <p className="landingCTADesc">
             It looks like you aren&#39;t part of any live programmes yet. {userRole === 'mentee' ? 'Get a programme code or invite link from your teacher or Prospela Partner to get access to personalised mentoring' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
-          {nonPartnerInst && userRole === 'mentee' && (
+        {/*  {nonPartnerInst && userRole === 'mentee' && (
             <div className="neutralText alignCenter">
               Don&#39;t have a code? Click to get your school to pay ;)
             </div>
@@ -46,7 +46,7 @@ class JoinProgPrompt extends Component {
             <div className="neutralText alignCenter">
               Don&#39;t have a code? Click to invite your company&#39;s Social Impact Lead
             </div>
-          )}
+          )} */}
         </div>
       </section>
     );

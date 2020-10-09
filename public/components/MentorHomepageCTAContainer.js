@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd Sept 2020 
+// Dex last merged this code on 22nd Sept 2020
 
 import React, { Component } from "react";
 
@@ -25,9 +25,10 @@ const JoinProgrammePlusModalProps = {
 
 class MentorHomepageCTAContainer extends Component {
   render() {
-    const step = 'didShortSUtf'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'fullSUTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const groups = [];
+    const source = 'villiers'
 
     this.props.groups.forEach((group) => {
       groups.push(
@@ -51,6 +52,12 @@ class MentorHomepageCTAContainer extends Component {
             </Modal>
           </div>
         </div>
+        {(step === 'didEduEmailVerif' || step === 'didReviewVerif') && (
+          <JoinProgPrompt userRole='mentor' /> // to do
+        )}
+        {step === 'autoEnroll' && (
+          <AutoEnrollPrompt userRole='mentor' source={source}/>
+        )}
         {step === 'didShortSUtf' && (
           <MentorFullSignUp />
         )}
@@ -63,12 +70,6 @@ class MentorHomepageCTAContainer extends Component {
         {step === 'didFullSUtf' && (
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}
-    {/*    {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===true && (
-          <AutoEnrollPrompt /> // to do
-        )}
-        {(step === 'fullSUTrain' || step === 'fullSUidTrain') && hasInvite===false && (
-          <JoinProgPrompt userRole='mentor' /> // to do
-        )}*/}
         {(step === 'fullSUTrain' || step === 'fullSUidTrain') && (
           <MentorMatches /> // to do
         )}

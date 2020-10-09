@@ -77,6 +77,8 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.qScrollBtn.left{
   margin-right: 5px;
 }
 .qScrollBtn.left:disabled::after,
@@ -134,11 +136,9 @@
   margin-bottom: 1rem;
   -webkit-font-smoothing: antialiased;
 }
-@media only screen and (max-device-width : 454px) {
-  .qDetail.small{
-    font-size: 10px;
-    line-height: 14px;
-  }
+.qDetail.small{
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .formA-yesnoBtn{

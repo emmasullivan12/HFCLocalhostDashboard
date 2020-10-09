@@ -14,12 +14,17 @@ const AutoEnrollModalProps = {
 
 class AutoEnrollPrompt extends Component {
   render() {
-    const autoEnrollProgName = 'Villiers';
+    const autoEnrollProgName = 'BAME in Games';
+    const {source} = this.props
+    var progLogoURL = 'https://files-and-media.ams3.digitaloceanspaces.com/progImages/' + source + '.png'
     const nonPartnerSch = false; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>
         <div className="contentBox landingCTA">
           <div className="placeholderPic openEnvelope"/>
+          <div className="groupsAvatarContainer">
+            <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
+          </div>
           <h2 className="landingCTATitle">
             You&#39;ve been invited to join the {autoEnrollProgName} programme
           </h2>

@@ -22,6 +22,7 @@ class MenteeFullSignUp extends Component {
     const userRole = 'mentee';
     const country = 'GBR'
     const fname = 'emma'
+    const userIs18 = false
 
     const subjects = ''; // sch Subjects
     const gradeType = '';
@@ -344,6 +345,9 @@ class MenteeFullSignUp extends Component {
         {label: 'By Email', id: 'formA-MenteeFullSignUp-memail', name: 'memail'},
         {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-msms', name: 'msms'},
       ]},*/
+      ... (userIs18 != true) ? [
+        {q: 'Do you have parental permission?', detail: 'By continuing, you confirm you have parental permission to take part in mentoring programmes on Prospela', aType: 'interim', name: 'interim'},
+      ] : [],
       {q: 'Set your notification preferences: Career Opportunities & Tips', detail: 'Receive inspiration, '+ (userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,') + ' promotions, surveys, and product updates from Prospela and our partners', aType: 'checkbox', name: 'checkboxMaster', options: [
         {label: 'By Email', id: 'pemail', name: 'pemail'},
       //  {label: 'By SMS / Text Message', id: 'psms', name: 'psms'},

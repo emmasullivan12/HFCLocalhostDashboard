@@ -7,7 +7,7 @@ class MentorMatches extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      matchstatus: 1
+      matchstatus: 7
     }
     this.requestNewMatches = this.requestNewMatches.bind(this);
   }
@@ -103,7 +103,19 @@ class MentorMatches extends Component {
           </section>
         );
       case 7:
-        return; // Chat active, but not eligible for multiple mentors
+        return (
+          <section>
+            <div className="contentBox landingCTA">
+              <div className="placeholderPic yayHands"/>
+              <h2 className="landingCTATitle">
+                You&#39;re all set!
+              </h2>
+              <p className="landingCTADesc">
+                We hope you&#39;re having a great chat. New programmes and content launching soon...
+              </p>
+            </div>
+          </section>
+        ); // Chat active, but not eligible for multiple mentors
       case 8:
         return (
           <section>

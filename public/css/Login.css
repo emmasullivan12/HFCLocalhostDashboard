@@ -237,6 +237,7 @@ input[type=text]:disabled{
 .loginContainer{
   padding: 60px 85px;
   max-width: 518px;
+  width: 100%;
   display: inline-block;
 }
 
@@ -474,6 +475,14 @@ svg:not(:root) {
   text-align: left;
   font-family: Lato;
 }
+.header-descriptor#progLogoContainer{
+  height: 50px;
+}
+.header-descriptor#progLogoContainer img {
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
 
 .descriptor.dob{
   float: left;
@@ -679,7 +688,7 @@ svg:not(:root) {
 }
 
 .crl{
-  margin-right: 2%;
+  margin-right: .5rem;
   font-size: .75rem;
 }
 

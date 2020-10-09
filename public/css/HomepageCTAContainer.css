@@ -94,6 +94,16 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.placeholderPic.yayHands{
+  width: 50px;
+  height: 50px;
+  min-height: 50px;
+  display: inline-block;
+  background-image: url(https://unpkg.com/emoji-datasource-emojione@4.0.4/img/emojione/sheets-256/64.png);
+  background-size: 5200% 5200%;
+  background-position: 64.7059% 23.5294%;
+  background-repeat: no-repeat;
+}
 .placeholderPic.mentorMatches{
   background-repeat: no-repeat;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches_125.png);

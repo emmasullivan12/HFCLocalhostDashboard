@@ -24,18 +24,21 @@ const MentorOver18FullSUProps = {
 
 class MentorFullSignUp extends Component {
   render() {
+    const userRole = 'mentor';
     const country = 'GBR'
+
     const expertise = '';
     const learning = '';
     const hobbies = [];
+    const maxEdu = '';
     const eetStatus = 'job';
     const subjects = '';
 
     const phone = '';
-    const mobNumPattern = country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : '02[0-9]{1,2}[0-9]{6,8}'
-    const mobNumPlaceholder = country === 'AUS' ? '0420 123456' : '022 1234 5678'
+    const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
+    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
 
-    var ozNzlQuestions = [
+    var questionsO18 = [
       {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
@@ -192,7 +195,12 @@ class MentorFullSignUp extends Component {
           {value: '5', label: 'PhD'},
         //  {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
-        {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+        ... (country === 'GBR') ? [
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+        ] : [],
+        ... (country != 'GBR') ? [
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+        ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
       ... (subjects === '') ? [
@@ -338,6 +346,340 @@ class MentorFullSignUp extends Component {
       ] : [],
     ]
 
+    var questionsU18 = [
+      {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
+      {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
+        {value: '0', label: 'Longer-term mentorship (1 month+)'},
+        {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
+        {value: '2', label: 'Both'},
+        {value: '3', label: 'I\'m not sure yet / just browsing...'}
+      ]},
+      {q: 'How many mentees would you be happy to mentor?', detail: 'Some people like to focus on just the 1, whereas other E-Mentors take on up to 10 with ease! You decide.', aType: 'number', req: 1, min: 0, max: 10, placeholder: 'e.g. 1, 2, ... 10', name: 'maxMentees'},
+      {q: 'I\'m interested in speaking to and mentoring underserved young people because:', detail: 'Tell us in a few words', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'whyHelp'},
+      {q: 'Did you want to focus your efforts on supporting any of these particular communities?', detail: 'You might be particularly passionate about one or some of these', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select communities...', placeholderOnClick: 'Choose from our list:', name: 'erg', valueToShow: 'label', options: [
+        {value: '1', label: 'Black, Asian, Minority Ethnic (BAME)'},
+        {value: '2', label: 'People with disabilities'},
+        {value: '3', label: 'LGBTQI+'},
+        {value: '4', label: 'Women in the Workforce'},
+        {value: '0', label: 'None right now'},
+      ]},
+      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+      ... (expertise === '') ? [
+        {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+      ] : [],
+      ... (learning === '') ? [
+        {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+      ] : [],
+      ... (hobbies.length === 0) ? [
+        {q: 'Outside of work, what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your job role requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+          {value: '0', label: '3D Printing'},
+          {value: '1', label: 'Acting'},
+          {value: '2', label: 'AI & Machine Learning'},
+          {value: '3', label: 'Animals & Wildlife'},
+          {value: '4', label: 'Animation & Illustration'},
+          {value: '5', label: 'Architecture'},
+          {value: '6', label: 'Art / Painting'},
+          {value: '7', label: 'Astronomy'},
+          {value: '8', label: 'Badminton'},
+          {value: '9', label: 'Baking'},
+          {value: '10', label: 'Baseball'},
+          {value: '11', label: 'Basketball'},
+          {value: '12', label: 'Beauty & Wellness'},
+          {value: '13', label: 'Blogging'},
+          {value: '14', label: 'Boardgames / Tabletop games'},
+          {value: '15', label: 'Bouldering / Rock climbing'},
+          {value: '16', label: 'Boxing'},
+          {value: '17', label: 'Camping'},
+          {value: '18', label: 'Cars & bikes'},
+          {value: '19', label: 'Cinema'},
+          {value: '20', label: 'Coding / Programming'},
+          {value: '21', label: 'Coffee'},
+          {value: '22', label: 'Comedy'},
+          {value: '23', label: 'Comics & Anime'},
+          {value: '24', label: 'Community service / Volunteering'},
+          {value: '25', label: 'Computer Hardware & Electronics'},
+          {value: '26', label: 'Cooking & Food'},
+          {value: '27', label: 'Crafts, Sewing & Knitting'},
+          {value: '28', label: 'Cricket'},
+          {value: '29', label: 'Crossfit'},
+          {value: '30', label: 'Cycling'},
+          {value: '31', label: 'Dance'},
+          {value: '32', label: 'DIY & Woodwork'},
+          {value: '33', label: 'DJ-ing'},
+          {value: '34', label: 'Documentaries'},
+          {value: '35', label: 'Dogs'},
+          {value: '36', label: 'Drones / Robotics'},
+          {value: '37', label: 'Dungeons & Dragons'},
+          {value: '38', label: 'Environmentalism'},
+          {value: '39', label: 'E-Sports'},
+          {value: '40', label: 'Fashion'},
+          {value: '41', label: 'Festivals'},
+          {value: '42', label: 'Film / TV'},
+          {value: '43', label: 'Financial Trading / Investments'},
+          {value: '44', label: 'Fishing'},
+          {value: '45', label: 'Football'},
+          {value: '46', label: 'Formula One (F1)'},
+          {value: '47', label: 'Gadgets & Tech'},
+          {value: '48', label: 'Game development'},
+          {value: '49', label: 'Gardening & Plants'},
+          {value: '50', label: 'Golf'},
+          {value: '51', label: 'Guitar'},
+          {value: '52', label: 'Gym / Fitness'},
+          {value: '53', label: 'History'},
+          {value: '54', label: 'Hockey'},
+          {value: '55', label: 'Horse-riding'},
+          {value: '56', label: 'Interior Design'},
+          {value: '57', label: 'Japanese culture'},
+          {value: '58', label: 'Kickboxing'},
+          {value: '59', label: 'Learning foreign languages'},
+          {value: '60', label: 'Listening to music'},
+          {value: '61', label: 'Live Music & Concerts'},
+          {value: '62', label: 'Martial Arts'},
+          {value: '63', label: 'Meditation'},
+          {value: '64', label: 'Memes'},
+          {value: '65', label: 'Nature'},
+          {value: '66', label: 'Nutrition'},
+          {value: '67', label: 'Online courses / MOOCs'},
+          {value: '68', label: 'Parenting / Kids'},
+          {value: '69', label: 'Part-time work'},
+          {value: '70', label: 'Personal Development & Self-improvement'},
+          {value: '71', label: 'Photography'},
+          {value: '72', label: 'Piano'},
+          {value: '73', label: 'Planning & running events'},
+          {value: '74', label: 'Playing in a band'},
+          {value: '75', label: 'Playing the drums'},
+          {value: '76', label: 'Podcasts'},
+          {value: '77', label: 'Poetry'},
+          {value: '78', label: 'Poker'},
+          {value: '79', label: 'Politics'},
+          {value: '80', label: 'Psychology'},
+          {value: '81', label: 'Reading / Books'},
+          {value: '82', label: 'Religion / prayer'},
+          {value: '83', label: 'Rowing'},
+          {value: '84', label: 'Rugby'},
+          {value: '85', label: 'Running'},
+          {value: '86', label: 'Sci Fi'},
+          {value: '87', label: 'Science'},
+          {value: '88', label: 'Screenwriting'},
+          {value: '89', label: 'Sculpting'},
+          {value: '90', label: 'Shopping'},
+          {value: '91', label: 'Singing'},
+          {value: '92', label: 'Skateboarding'},
+          {value: '93', label: 'Skiing / Snowboarding'},
+          {value: '94', label: 'Social justice initiatives'},
+          {value: '95', label: 'Socialising'},
+          {value: '96', label: 'Squash'},
+          {value: '97', label: 'Startups'},
+          {value: '98', label: 'Surfing'},
+          {value: '99', label: 'Swimming'},
+          {value: '100', label: 'Table Tennis'},
+          {value: '101', label: 'Tattoos'},
+          {value: '102', label: 'Tennis'},
+          {value: '103', label: 'Theatre'},
+          {value: '104', label: 'Travel'},
+          {value: '105', label: 'Triathlons'},
+          {value: '106', label: 'Ukelele'},
+          {value: '107', label: 'Veganism & Plant based diets'},
+          {value: '108', label: 'Video Editing / Youtube'},
+          {value: '109', label: 'Video games'},
+          {value: '110', label: 'Visiting Museums & Galleries'},
+          {value: '111', label: 'Volleyball'},
+          {value: '112', label: 'Walking / Hiking'},
+          {value: '113', label: 'Watching sport'},
+          {value: '114', label: 'Web design'},
+          {value: '115', label: 'Weighlifting'},
+          {value: '116', label: 'Writing'},
+          {value: '117', label: 'Yoga'},
+        ]},
+      ] : [],
+      {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
+      ... (eetStatus != 'uni') ? [
+        {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
+          {value: '0', label: 'GCSE / Middle School (or equivalent)'},
+          {value: '1', label: 'A-Levels / High School (or equivalent)'},
+          {value: '2', label: 'Associate Degree'},
+          {value: '3', label: 'Bachelors Degree'},
+          {value: '4', label: 'Masters Degree'},
+          {value: '5', label: 'PhD'},
+    //      {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
+        ]},
+        ... (country === 'GBR') ? [
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+        ] : [],
+        ... (country != 'GBR') ? [
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+        ] : [],
+        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
+      ] : [],
+      ... (subjects === '') ? [
+        {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
+          {value: '0', label: 'Accounting'},
+          {value: '1', label: 'Afrikaans'},
+          {value: '2', label: 'Ancient History'},
+          {value: '3', label: 'Anthropology'},
+          {value: '4', label: 'Applied Science'},
+          {value: '5', label: 'Arabic'},
+          {value: '6', label: 'Archaeology'},
+          {value: '7', label: 'Architecture'},
+          {value: '8', label: 'Art and Design'},
+          {value: '9', label: 'Anatomy'},
+          {value: '10', label: 'Bengali'},
+          {value: '11', label: 'Biblical Hebrew'},
+          {value: '12', label: 'Biology'},
+          {value: '13', label: 'Business Studies'},
+          {value: '14', label: 'Chemistry'},
+          {value: '15', label: 'Citizenship Studies'},
+          {value: '16', label: 'Classical Civilisation'},
+          {value: '17', label: 'Classical Greek'},
+          {value: '18', label: 'Classical Studies'},
+          {value: '19', label: 'Communication and Culture'},
+          {value: '20', label: 'Computer Science'},
+          {value: '21', label: 'Computing'},
+          {value: '22', label: 'Criminology'},
+          {value: '23', label: 'Critical Thinking'},
+          {value: '24', label: 'Dance'},
+          {value: '25', label: 'Design and Technology'},
+          {value: '26', label: 'Design and Textiles'},
+          {value: '27', label: 'Digital Media and Design'},
+          {value: '28', label: 'Digital Technology'},
+          {value: '29', label: 'Divinity'},
+          {value: '30', label: 'Drama'},
+          {value: '31', label: 'Drama and Theatre'},
+          {value: '32', label: 'Dutch'},
+          {value: '33', label: 'Economics'},
+          {value: '34', label: 'Electronics'},
+          {value: '35', label: 'Engineering'},
+          {value: '36', label: 'English Language'},
+          {value: '37', label: 'English Language and Literature'},
+          {value: '38', label: 'English Literature'},
+          {value: '39', label: 'Environmental Science'},
+          {value: '40', label: 'Environmental Studies'},
+          {value: '41', label: 'Environmental Technology'},
+          {value: '42', label: 'Fashion and Textiles'},
+          {value: '43', label: 'Film Studies'},
+          {value: '44', label: 'Food Studies'},
+          {value: '45', label: 'Food Technology'},
+          {value: '46', label: 'French'},
+          {value: '47', label: 'Further Mathematics'},
+          {value: '48', label: 'General Studies'},
+          {value: '49', label: 'Geography'},
+          {value: '50', label: 'Geology'},
+          {value: '51', label: 'German'},
+          {value: '52', label: 'Global Development'},
+          {value: '53', label: 'Global Perspectives and Research'},
+          {value: '54', label: 'Government and Politics'},
+          {value: '55', label: 'Greek'},
+          {value: '56', label: 'Gujarati'},
+          {value: '57', label: 'Health and Social Care'},
+          {value: '58', label: 'Hindi'},
+          {value: '59', label: 'Hinduism'},
+          {value: '60', label: 'History'},
+          {value: '61', label: 'History of Art'},
+          {value: '62', label: 'Home Economics'},
+          {value: '63', label: 'Human Biology'},
+          {value: '64', label: 'Humanities'},
+          {value: '65', label: 'Information Technology / ICT'},
+          {value: '66', label: 'Irish'},
+          {value: '67', label: 'Islamic Studies'},
+          {value: '68', label: 'Italian'},
+          {value: '69', label: 'Japanese'},
+          {value: '70', label: 'Journalism'},
+          {value: '71', label: 'Latin'},
+          {value: '72', label: 'Law'},
+          {value: '73', label: 'Leisure Studies'},
+          {value: '74', label: 'Life and Health Sciences'},
+          {value: '75', label: 'Marine Science'},
+          {value: '76', label: 'Mathematics'},
+          {value: '77', label: 'Media Studies'},
+          {value: '78', label: 'Modern Hebrew'},
+          {value: '79', label: 'Moving Image Arts'},
+          {value: '80', label: 'Music'},
+          {value: '81', label: 'Music Technology'},
+          {value: '82', label: 'Nutrition and Food Science'},
+          {value: '83', label: 'Punjabi'},
+          {value: '84', label: 'Performance Studies'},
+          {value: '85', label: 'Performing Arts'},
+          {value: '86', label: 'Persian'},
+          {value: '87', label: 'Philosophy'},
+          {value: '88', label: 'Photography'},
+          {value: '89', label: 'Physical Education'},
+          {value: '90', label: 'Physics'},
+          {value: '91', label: 'Polish'},
+          {value: '92', label: 'Politics'},
+          {value: '93', label: 'Portuguese'},
+          {value: '94', label: 'Product Design'},
+          {value: '95', label: 'Psychology'},
+          {value: '96', label: 'Pure Mathematics'},
+          {value: '97', label: 'Quantitative Methods'},
+          {value: '98', label: 'Religious Studies'},
+          {value: '99', label: 'Russian'},
+          {value: '100', label: 'Science in Society'},
+          {value: '101', label: 'Sociology'},
+          {value: '102', label: 'Software Systems Development'},
+          {value: '103', label: 'Spanish'},
+          {value: '104', label: 'Sports Science'},
+          {value: '105', label: 'Statistics'},
+          {value: '106', label: 'Systems and Control Technology'},
+          {value: '107', label: 'Telugu'},
+          {value: '108', label: 'Tamil'},
+          {value: '109', label: 'Technology and Design'},
+          {value: '110', label: 'Thinking Skills'},
+          {value: '111', label: 'Travel and Tourism'},
+          {value: '112', label: 'Turkish'},
+          {value: '113', label: 'Urdu'},
+          {value: '114', label: 'Welsh'},
+          {value: '115', label: 'World Development'},
+      ]},
+      ] : [],
+      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (https://prospela.com/privacy-policy/).", aType: 'interim', name: 'interim'},
+      ... (country === 'GBR') ? [
+        {q: 'We ask E-Mentor applicants to self-disclose any history of convictions.', detail: 'We try to collect relevant information from mentor applicants to maintain a safe environment for our disadvantaged young people. Note: Answering "yes" to the any of the following does not immediately disqualify you from using Prospela. We might be in touch to discuss further.', aType: 'interim', name: 'interim'},
+        {q: 'Do you have any convictions, cautions, reprimands or final warnings that are not "protected" as defined by the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (as amended in 2013)?', detailSmall: 'Guidance: The amendments to the Exceptions Order 1975 (2013) provide that certain spent convictions and cautions are \'protected\' and are not subject to disclosure to employers, and cannot be taken into account. Guidance and criteria on the filtering of these cautions and convictions can be found on the Disclosure and Barring Service website.', aType: 'yesno', req: 1, name: 'ukConv', options: [
+          {value: '0', label: 'Yes'},
+          {value: '1', label: 'No'},
+        ]},
+      ] : [],
+      ... (country != 'GBR') ? [
+        {q: 'We ask E-Mentor applicants to self-disclose any history of convictions.', detail: 'We try to collect relevant information from mentor applicants to maintain a safe environment for our disadvantaged young people. Note: Answering "yes" to the any of the following does not immediately disqualify you from using Prospela. We might be in touch to discuss further.', aType: 'interim', name: 'interim'},
+        {q: 'Have you ever been convicted or pled no contest to a felony?', detail: 'Defined as a crime punishable by 1 year or more in jail, even if the individual was sentenced to a lesser time.', aType: 'yesno', req: 1, name: 'usConv1', options: [
+          {value: '0', label: 'Yes'},
+          {value: '1', label: 'No'},
+        ]},
+        {q: 'Have you ever been convicted or pled no contest to a misdemeanor?', aType: 'yesno', req: 1, name: 'usConv2', options: [
+          {value: '0', label: 'Yes'},
+          {value: '1', label: 'No'},
+        ]},
+        {q: 'Have you ever been arrested for a crime against a minor?', aType: 'yesno', req: 1, name: 'usConv3', options: [
+          {value: '0', label: 'Yes'},
+          {value: '1', label: 'No'},
+        ]},
+        {q: 'Have you ever been terminated or otherwise disciplined, placed on probation, or warned not to continue engaging in certain conduct while volunteering with any agency (whether or not youth were involved?', aType: 'yesno', req: 1, name: 'usConv4', options: [
+          {value: '0', label: 'Yes'},
+          {value: '1', label: 'No'},
+        ]},
+      ] : [],
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
+        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
+      ]},
+      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '0', label: 'Asian'},
+        {value: '1', label: 'Arab'},
+        {value: '2', label: 'Black / African / Caribbean'},
+        {value: '3', label: 'Hispanic / Latinx'},
+        {value: '4', label: 'Indian / Pakistani'},
+        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '6', label: 'White'},
+        {value: '7', label: 'Other'},
+        {value: '8', label: 'Prefer not to say'}
+      ]},
+      ... (phone === '') ? [
+        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+      ] : [],
+    ]
+
     return (
       <section>
         <div className="contentBox landingCTA">
@@ -346,18 +688,21 @@ class MentorFullSignUp extends Component {
             Complete your full sign up
           </h2>
           <p className="landingCTADesc">
-            We need to know a few more quick details, including whether you want to support under-18 students
+            {'We need to know a few more quick details, including ' + ((country != 'AUS' && country != 'NZL') ? 'whether you want to support under-18 students' : 'how you\'d like to mentor')}
           </p>
           <div>
             {country != 'AUS' && country != 'NZL' && (
               <Modal {...MentorFullSUModalProps}>
-                <MentorFullSUContent />
+                <MentorFullSUContent
+                  questionsO18={questionsO18}
+                  questionsU18={questionsU18}
+                />
               </Modal>
             )}
             {(country === 'AUS' || country === 'NZL') && (
               <FullPageModal {...MentorOver18FullSUProps}>
                 <Form
-                  questions={ozNzlQuestions}
+                  questions={questionsO18}
                   usedFor="mentorFullSUAusNzl"
                   saveOnSubmit='u18'
                 />

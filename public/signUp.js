@@ -3,6 +3,9 @@
 
 var formControlStd = document.getElementsByClassName("form-control-std");
 
+var progLogoContainer = document.getElementById("progLogoContainer");
+var progInviteLogo = document.getElementById("progInvite-logo");
+
 var tncCheckbox = document.getElementById("tncCheckbox");
 var tncStyle = document.getElementById("tncStyle");
 var tncText = document.getElementById("tncText");
@@ -52,6 +55,25 @@ var upCharReq = document.getElementById("upCharReq");
 var lowCharReq = document.getElementById("lowCharReq");
 var specCharReq = document.getElementById("specCharReq");
 var numCharReq = document.getElementById("numCharReq");
+
+progLogoContainer.style.display = 'none';
+
+// Check for source in URL
+const string = window.location.href;
+var isSource = string.includes("source")
+let getSource
+let getProgName
+let source
+let query
+
+if(isSource) {
+  query = string.split("?source=")
+  getSource = query[1]
+//  source = encodeURIComponent(getSource);
+  var progLogoURL = 'https://files-and-media.ams3.digitaloceanspaces.com/progImages/' + getSource + '.png'
+  progLogoContainer.style.display = 'block';
+  progInviteLogo.src = progLogoURL
+}
 
 // hide on intiial page load
 names.style.display = 'none';
