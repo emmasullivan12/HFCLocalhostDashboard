@@ -1,4 +1,4 @@
-// Merged on 29th Sept 2020
+// Merged on 12th oct 2020
 const ejs = require("ejs");
 
 const fname = 'Dexter'

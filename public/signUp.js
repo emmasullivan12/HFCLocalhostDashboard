@@ -1,4 +1,4 @@
-/* merged this code on 31st july 2020 */
+/* merged this code on 12th oct 2020 */
 //import { personalEmails } from './PersonalEmails.js';
 
 var formControlStd = document.getElementsByClassName("form-control-std");

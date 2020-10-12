@@ -35,7 +35,7 @@ class HomepageCTAContainer extends Component {
     const is18plus = 1;
     const matchstatus = 'didSafeG';
     const groups = [];
-    const source = 'villiers'
+    const source = 'villiers' // i.e. from URL ?source=villiers
 
     this.props.groups.forEach((group) => {
       groups.push(
@@ -62,7 +62,7 @@ class HomepageCTAContainer extends Component {
           <JoinProgPrompt userRole='mentee'/>
         )}
         {step === 'autoEnroll' && (
-          <AutoEnrollPrompt />
+          <AutoEnrollPrompt source={source}/>
         )}
         {step === 'joinedProg' && (
           <MenteeFullSignUp />

@@ -1,10 +1,10 @@
-// Merged on 29th Sept 2020
+// Merged on 12th oct 2020
 const ejs = require("ejs");
 
 const fname = 'Dexter'
 const email = 'dexter@hotmail.com'
 
-ejs.renderFile(__dirname + "/emailTemplate-welcomeMentee.ejs", {fname: fname}, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-reviewingMentor.ejs", {fname: fname}, function (err, data) {
   if (err) {
     console.log(err);
   } else {
