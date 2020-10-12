@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd sept 2020
+// Dex last merged this code on 12th oct 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -434,11 +434,11 @@ const DUMMY_CHAT_LIST = [
 ];
 
 const DUMMY_GROUP_LIST = [
-  {groupID: '10000', name: 'Villiers High School', status: 'active', groupAvatarURL: '/progImages/villiers-avatar-20.png'},
-  {groupID: '10000', name: 'Into Games', status: 'active', groupAvatarURL: '/progImages/intogames-avatar-20.png'},
-  {groupID: '10000', name: 'ACCESS:VFX', status: 'active', groupAvatarURL: '/progImages/access-vfx-avatar-20.png'},
-  {groupID: '10000', name: 'BAME in Games', status: 'active', groupAvatarURL: '/progImages/big-avatar-20.png'},
-  {groupID: '10000', name: 'Animated Women', status: 'active', groupAvatarURL: '/progImages/awuk-avatar-20.png'},
+  {groupID: '10000', name: 'Villiers High School', status: 'active', groupAvatarURL: '/villiers-avatar-20.png'},
+  {groupID: '10000', name: 'Into Games', status: 'active', groupAvatarURL: '/intogames-avatar-20.png'},
+  {groupID: '10000', name: 'ACCESS:VFX', status: 'active', groupAvatarURL: '/access-vfx-avatar-20.png'},
+  {groupID: '10000', name: 'BAME in Games', status: 'active', groupAvatarURL: '/big-avatar-20.png'},
+  {groupID: '10000', name: 'Animated Women', status: 'active', groupAvatarURL: '/awuk-avatar-20.png'},
 ];
 
 /* App.propTypes = {

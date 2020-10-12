@@ -1,4 +1,4 @@
-// Dex last merged this code on 6th oct 2020
+// Dex last merged this code on 12th oct 2020
 
 import React, { Component } from "react";
 
@@ -34,7 +34,6 @@ class MentorFullSignUp extends Component {
     const eetStatus = 'job';
     const subjects = '';
 
-    const phone = '';
     const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
 
@@ -341,9 +340,7 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'}
       ]},
-      ... (phone === '') ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
-      ] : [],
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
 
     var questionsU18 = [
@@ -675,9 +672,7 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'}
       ]},
-      ... (phone === '') ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
-      ] : [],
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
 
     return (

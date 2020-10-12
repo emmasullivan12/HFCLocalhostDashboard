@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd sept 2020
+// Dex last merged this code on 12TH OCT 2020
 
 import React, { Component } from "react";
 

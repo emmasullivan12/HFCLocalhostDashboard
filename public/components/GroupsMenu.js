@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th sept 2020
+// Dex last merged this code on 12th oct 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -32,10 +32,10 @@ const JoinProgrammePlusModalProps = {
 class GroupListItem extends Component {
   render() {
     const {group, closeMenu, groupAvatarURL} = this.props;
-    var progLogoURL = cdn + groupAvatarURL
+    var progLogoURL = cdn + '/progImages/' + groupAvatarURL
 
     return(
-      <div activeclassname="is-active" className="chatMenuItem link" onClick={closeMenu}>
+      <div activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
     {/*  <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
         <div className="groupsAvatarContainer">
           <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
