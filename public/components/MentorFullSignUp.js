@@ -330,15 +330,18 @@ class MentorFullSignUp extends Component {
         {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
       ]},
       {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '9', label: 'Aboriginal Australian'},
         {value: '0', label: 'Asian'},
         {value: '1', label: 'Arab'},
         {value: '2', label: 'Black / African / Caribbean'},
         {value: '3', label: 'Hispanic / Latinx'},
         {value: '4', label: 'Indian / Pakistani'},
         {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '10', label: 'Maori'},
+        {value: '11', label: 'Pacific Islander'},
         {value: '6', label: 'White'},
         {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'}
+        {value: '8', label: 'Prefer not to say'},
       ]},
       {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
@@ -662,15 +665,18 @@ class MentorFullSignUp extends Component {
         {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
       ]},
       {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '9', label: 'Aboriginal Australian'},
         {value: '0', label: 'Asian'},
         {value: '1', label: 'Arab'},
         {value: '2', label: 'Black / African / Caribbean'},
         {value: '3', label: 'Hispanic / Latinx'},
         {value: '4', label: 'Indian / Pakistani'},
         {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '10', label: 'Maori'},
+        {value: '11', label: 'Pacific Islander'},
         {value: '6', label: 'White'},
         {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'}
+        {value: '8', label: 'Prefer not to say'},
       ]},
       {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]

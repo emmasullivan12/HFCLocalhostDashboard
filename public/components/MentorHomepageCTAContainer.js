@@ -28,14 +28,14 @@ class MentorHomepageCTAContainer extends Component {
     const step = 'fullSUTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const groups = [];
-    const source = 'villiers'
+    const source = 'vhs'
 
     this.props.groups.forEach((group) => {
       groups.push(
         <GroupCircle
           group={group}
-          key={group.groupID}
-          navlink={`/community/${group.name}`}
+          key={group.gid}
+          navlink={`/community/${group.groupname}`}
         />
       );
     });

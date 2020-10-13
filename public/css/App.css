@@ -215,7 +215,7 @@ h2{
 #loading-welcome{
   display: table-cell;
   vertical-align: middle;
-  background-image: url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatName.png"), url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatActions.png");
+  background-image: url("https:\/\/files-and-media.ams3.digitaloceanspaces.com\/images\/LoadingTextChatName.png"), url("https:\/\/files-and-media.ams3.digitaloceanspaces.com\/images\/LoadingTextChatActions.png");
   background-position: 21px 16px, right 235px top 16px;
   background-repeat: no-repeat;
   background-size: 200px 29px, 225px 13px;
@@ -224,7 +224,7 @@ h2{
 #loadingSU-welcome{
   display: table-cell;
   vertical-align: middle;
-  background-image: url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatName.png"), url("https:\/\/prospela.com\/wp-content\/uploads\/2019\/07\/LoadingTextChatActions.png");
+  background-image: url("https:\/\/files-and-media.ams3.digitaloceanspaces.com\/images\/LoadingTextChatName.png"), url("https:\/\/files-and-media.ams3.digitaloceanspaces.com\/images\/LoadingTextChatActions.png");
   background-position: 21px 16px, right 15px top 16px;
   background-repeat: no-repeat;
   background-size: 200px 29px, 225px 13px;

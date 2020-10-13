@@ -15,11 +15,11 @@ import {
 class GroupCircle extends Component {
   render() {
     const {group} = this.props;
-    var string = group.name;
+    var string = group.groupname;
     return (
       <button type="button" className="groupBtn tooltip">
         <span>{string.charAt(0)}</span>
-        <span className="tooltiptext groups">{group.name}</span>
+        <span className="tooltiptext groups">{group.groupname}</span>
       </button>
     );
   }

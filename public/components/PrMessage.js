@@ -396,7 +396,7 @@ function MentorReply(props) {
           <div className="message-extras-border" />
           <div className="msg-extras">
             {subtype === "mentorAcc" ? (
-              <a href="/messages/chatID" className="link msg-extras-ctaTxt">
+              <a href="/messages/chatid" className="link msg-extras-ctaTxt">
                 Click to see their reply &#62;&#62;
               </a>
               )
@@ -454,7 +454,7 @@ function PrAuto(props) {
                   </div>
                 </div>
               </div>
-              <a href="/messages/chatID" className="link msg-extras-ctaTxt">
+              <a href="/messages/chatid" className="link msg-extras-ctaTxt">
                 Take me to chat &#62;&#62;
               </a>
             </div>

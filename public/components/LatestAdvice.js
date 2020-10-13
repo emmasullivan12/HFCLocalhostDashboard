@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th Dec 2019 
+// Dex last merged this code on 12th Dec 2019
 
 import React, { Component } from "react";
 
@@ -7,11 +7,11 @@ import PageHeader from './PageHeader.js';
 import "../css/HomePage.css";
 
 const DUMMY_GROUP_LIST = [
-  {groupID: '10000', name: 'Villiers', status: 'active'},
-  {groupID: '10001', name: 'AVFX', status: 'active'},
-  {groupID: '10002', name: 'EY', status: 'active'},
-  {groupID: '10003', name: 'GE', status: 'active'},
-  {groupID: '10004', name: 'Pladis', status: 'active'},
+  {gid: '20000', groupname: 'Villiers', status: 'active'},
+  {gid: '20001', groupname: 'AVFX', status: 'active'},
+  {gid: '20002', groupname: 'EY', status: 'active'},
+  {gid: '20003', groupname: 'GE', status: 'active'},
+  {gid: '20004', groupname: 'Pladis', status: 'active'},
 ];
 
 const PageHeaderProps = {

@@ -274,7 +274,8 @@ class TypeformSignUp extends Component {
         })
       } else {
         this.setState({
-          isLoading: false
+          isLoading: false,
+          userEduName: 'student'
         })
       }
     }

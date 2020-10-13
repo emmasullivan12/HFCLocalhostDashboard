@@ -146,15 +146,18 @@ class DiversitySU extends React.Component {
     ];
 
     const ethnicities = [
+      {value: '9', label: 'Aboriginal Australian'},
       {value: '0', label: 'Asian'},
       {value: '1', label: 'Arab'},
       {value: '2', label: 'Black / African / Caribbean'},
       {value: '3', label: 'Hispanic / Latinx'},
       {value: '4', label: 'Indian / Pakistani'},
       {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+      {value: '10', label: 'Maori'},
+      {value: '11', label: 'Pacific Islander'},
       {value: '6', label: 'White'},
       {value: '7', label: 'Other'},
-      {value: '8', label: 'Prefer not to say'}
+      {value: '8', label: 'Prefer not to say'},
     ];
 
     const isEnabled = this.canBeSubmitted();

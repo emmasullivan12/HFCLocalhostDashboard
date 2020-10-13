@@ -8,9 +8,9 @@ import "../css/HomePage.css";
 import "../css/General.css";
 
 const DUMMY_GROUP_LIST = [
-  {groupID: '10001', name: 'AVFX', status: 'active'},
-  {groupID: '10002', name: 'EY', status: 'active'},
-  {groupID: '10004', name: 'Pladis', status: 'active'},
+  {gid: '20001', groupname: 'AVFX', status: 'active'},
+  {gid: '20002', groupname: 'EY', status: 'active'},
+  {gid: '20004', groupname: 'Pladis', status: 'active'},
 ];
 
 const PageHeaderProps = {

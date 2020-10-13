@@ -571,7 +571,7 @@ class ConfirmStudent extends React.Component {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
     const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep, userRole } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid, isSubmitting } = this.state;
-    const emailType = userRole === 'mentee' ? (eetStatus === 'sch' || eetStatus === 'uni' ? userEduName : 'student') : (eetStatus === 'uni' || eetStatus === 'job' || eetStatus === 'train' ? userEduName : 'work')
+    const emailType = userRole === 'mentee' ? ((eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student') : ((eetStatus === 'uni' || eetStatus === 'job' || eetStatus === 'train') ? userEduName : 'work')
     const isEnabled = this.canBeSubmitted();
 
     var emailsToBlock = [

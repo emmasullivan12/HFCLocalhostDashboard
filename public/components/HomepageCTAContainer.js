@@ -35,14 +35,14 @@ class HomepageCTAContainer extends Component {
     const is18plus = 1;
     const matchstatus = 'didSafeG';
     const groups = [];
-    const source = 'villiers' // i.e. from URL ?source=villiers
+    const source = 'vhs' // i.e. from URL ?source=villiers
 
     this.props.groups.forEach((group) => {
       groups.push(
         <GroupCircle
           group={group}
-          key={group.groupID}
-    //      navlink={`/community/${group.name}`}
+          key={group.gid}
+    //      navlink={`/community/${group.groupname}`}
         />
       );
     });

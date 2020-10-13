@@ -1283,10 +1283,17 @@ a.button{
   float: left;
   margin-left: 0;
   margin-right: 6px;
+  border-radius: 4px;
+  margin-top: -2px;
+  text-align: center;
+  color: #fff;
+}
+.groupsAvatarContainer.noImg{
+  padding-top: 3px;
+  background-color: #4e4ed6;
 }
 .groupsAvatarContainer img{
   border-radius: 4px;
-  margin-top: -2px;
 }
 
 .reqAsterisk:after{

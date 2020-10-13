@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -237,9 +237,9 @@ class ProspelaDashboard extends Component{
 
 // Dummy chat list data (this will eventually come from Postgres)
 const DUMMY_CHAT_LIST = [
-  {chatID: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
-  {chatID: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
-  {chatID: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
+  {chatid: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
 ];
 
 export default ProspelaDashboard;

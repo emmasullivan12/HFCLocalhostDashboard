@@ -29,8 +29,8 @@ class ProtectedChats extends Component {
       chats.push(
         <ChatListItem
           chat={chat}
-          key={chat.chatID}
-          navlink={`/messages/${chat.chatID}`}
+          key={chat.chatid}
+          navlink={`/messages/${chat.chatid}`}
         />
       );
     });

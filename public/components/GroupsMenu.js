@@ -14,12 +14,12 @@ import AddChatModalContent from './AddChatModalContent.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import "../css/Modal.css";
 
-const JoinProgrammeModalProps = {
+/*const JoinProgrammeModalProps = {
   ariaLabel: 'Join a live Programme',
   triggerText: 'Join a Programme',
   usedFor: 'joinProg',
   changeInitFocus: true
-}
+}*/
 
 const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live Programme',
@@ -30,18 +30,33 @@ const JoinProgrammePlusModalProps = {
 
 // This shows the content within an individual row in the ChatMenu
 class GroupListItem extends Component {
+
   render() {
-    const {group, closeMenu, groupAvatarURL} = this.props;
-    var progLogoURL = cdn + '/progImages/' + groupAvatarURL
+    const {group, closeMenu, navlink, updateActiveMenu, menuItemActive} = this.props;
+    const groupAvatarURL = group.groupavatarurl
+    const isGroupAvatarURL = groupAvatarURL != null
+
+    let progLogo
+    let groupInitial
+
+    if (isGroupAvatarURL) {
+      progLogo = cdn + '/progImages/' + groupAvatarURL
+    } else {
+      groupInitial = group.groupname.charAt(0).toUpperCase();
+    }
 
     return(
-      <div activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
-    {/*  <NavLink to={this.props.navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
-        <div className="groupsAvatarContainer">
-          <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
+      <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={closeMenu}>
+  {/*     <div className="chatMenuItem link" onClick={closeMenu}> */}
+    {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
+        <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? null : "noImg")}>
+          {isGroupAvatarURL === true ?
+            <img className="logoImg" alt="Initiative Logo" src={progLogo}/>
+          : groupInitial
+          }
         </div>
         <div className="chatItemFlexContainer">
-          <span className="chatMenuLink overflow-ellipsis">{group.name}</span>
+          <span className="chatMenuLink overflow-ellipsis">{group.groupname}</span>
     {/*      <span className="notificationNum">xx</span> */}
           <span className="notificationNum announcement">COMING SOON!</span>
         </div>
@@ -54,7 +69,7 @@ class GroupListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class GroupsMenu extends Component {
   render() {
-    const {userRole, closeMenu} = this.props;
+    const {userRole, closeMenu, updateActiveMenu, menuItemActive} = this.props;
     const groups = [];
 
     if (this.props.groups.length == 0) {
@@ -71,10 +86,11 @@ class GroupsMenu extends Component {
         groups.push(
           <GroupListItem
             group={group}
-            key={group.groupID}
-      //      navlink={`/community/${group.name}`}
+            key={group.gid}
+      //      navlink={`/community/${group.groupname}`}
             closeMenu={closeMenu}
-            groupAvatarURL={group.groupAvatarURL}
+            updateActiveMenu={updateActiveMenu}
+            menuItemActive={menuItemActive}
           />
         );
       });
@@ -92,11 +108,11 @@ class GroupsMenu extends Component {
             </div>
           </div>
           {groups}
-          {this.props.groups.length === 0 && (
+        {/*  {this.props.groups.length === 0 && (
             <Modal {...JoinProgrammeModalProps}>
               <JoinProgrammeModalContent />
             </Modal>
-          )}
+          )} */}
         </div>
       </React.Fragment>
     );

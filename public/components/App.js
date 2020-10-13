@@ -126,12 +126,14 @@ class Dashboard extends Component{
     this.state = {
       scrollerBeingDragged: false,
       normalizedPosition: 0,
-      contentPosition: 0
+      contentPosition: 0,
+      menuItemActive: 'dashboard' //Homepage for any user
     }
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.updateActiveMenu = this.updateActiveMenu.bind(this);
   }
 
   componentDidMount() {
@@ -201,6 +203,14 @@ class Dashboard extends Component{
     }
   }
 
+  updateActiveMenu(e) {
+    const menuItemClicked = e.currentTarget.id
+
+    this.setState({
+      menuItemActive: menuItemClicked
+    })
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -245,6 +255,8 @@ class Dashboard extends Component{
     const userRole = this.props.userRole;
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
+    const {menuItemActive} = this.state
+    console.log("menuItemActive IN app: "+menuItemActive)
     return(
       <BrowserRouter>
       {/* The <div> element is just used to prevent reloading / going back a page i.e. Firefox bug  */}
@@ -262,15 +274,15 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole} closeMenu={this.closeMenu}/>
+                    <MainMenu userRole={userRole} closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' closeMenu={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST} closeMenu={this.closeMenu}/>
+                    <GroupsMenu groups={DUMMY_GROUP_LIST} closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
-{/*}<img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />*/}
+{/*<img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />*/}
                         <img
                           className="prLogoImg"
                           alt="Prospela Logo"
@@ -428,17 +440,17 @@ function MentorSteps({userRole}) {
 
 // Dummy chat list data (this will eventually come from Postgres)
 const DUMMY_CHAT_LIST = [
-  {chatID: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
-  {chatID: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
-  {chatID: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
+  {chatid: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
 ];
 
 const DUMMY_GROUP_LIST = [
-  {groupID: '10000', name: 'Villiers High School', status: 'active', groupAvatarURL: '/villiers-avatar-20.png'},
-  {groupID: '10000', name: 'Into Games', status: 'active', groupAvatarURL: '/intogames-avatar-20.png'},
-  {groupID: '10000', name: 'ACCESS:VFX', status: 'active', groupAvatarURL: '/access-vfx-avatar-20.png'},
-  {groupID: '10000', name: 'BAME in Games', status: 'active', groupAvatarURL: '/big-avatar-20.png'},
-  {groupID: '10000', name: 'Animated Women', status: 'active', groupAvatarURL: '/awuk-avatar-20.png'},
+  {gid: '20000', groupname: 'Villiers High School', status: 'active', groupavatarurl: 'vhs-avatar-20.png'},
+  {gid: '20001', groupname: 'Into Games', status: 'active', groupavatarurl: 'intogames-avatar-20.png'},
+  {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: 'avfx-avatar-20.png'},
+  {gid: '20003', groupname: 'BAME in Games', status: 'active'},
+  {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: 'aw-avatar-20.png'},
 ];
 
 /* App.propTypes = {
