@@ -32,7 +32,7 @@ const JoinProgrammePlusModalProps = {
 class GroupListItem extends Component {
 
   render() {
-    const {group, closeMenu, navlink, updateActiveMenu, menuItemActive} = this.props;
+    const {group, navlink, updateActiveMenu, menuItemActive} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
 
@@ -46,7 +46,7 @@ class GroupListItem extends Component {
     }
 
     return(
-      <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={closeMenu}>
+      <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
   {/*     <div className="chatMenuItem link" onClick={closeMenu}> */}
     {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
         <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? null : "noImg")}>
@@ -69,7 +69,7 @@ class GroupListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class GroupsMenu extends Component {
   render() {
-    const {userRole, closeMenu, updateActiveMenu, menuItemActive} = this.props;
+    const {userRole, updateActiveMenu, menuItemActive} = this.props;
     const groups = [];
 
     if (this.props.groups.length == 0) {
@@ -88,7 +88,6 @@ class GroupsMenu extends Component {
             group={group}
             key={group.gid}
       //      navlink={`/community/${group.groupname}`}
-            closeMenu={closeMenu}
             updateActiveMenu={updateActiveMenu}
             menuItemActive={menuItemActive}
           />

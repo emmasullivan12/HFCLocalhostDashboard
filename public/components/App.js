@@ -208,6 +208,8 @@ class Dashboard extends Component{
 
     this.setState({
       menuItemActive: menuItemClicked
+    }, () => {
+      this.closeMenu()
     })
   }
 
@@ -256,7 +258,7 @@ class Dashboard extends Component{
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const {menuItemActive} = this.state
-    console.log("menuItemActive IN app: "+menuItemActive)
+
     return(
       <BrowserRouter>
       {/* The <div> element is just used to prevent reloading / going back a page i.e. Firefox bug  */}
@@ -274,11 +276,11 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole} closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <MainMenu userRole={userRole} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST} closeMenu={this.closeMenu} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <GroupsMenu groups={DUMMY_GROUP_LIST} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">

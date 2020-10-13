@@ -57,12 +57,14 @@ class ProspelaDashboard extends Component{
     this.state = {
       scrollerBeingDragged: false,
       normalizedPosition: 0,
-      contentPosition: 0
+      contentPosition: 0,
+      menuItemActive: 'dashboard'
     }
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.updateActiveMenu = this.updateActiveMenu.bind(this);
   }
 
   componentDidMount() {
@@ -132,6 +134,16 @@ class ProspelaDashboard extends Component{
     }
   }
 
+  updateActiveMenu(e) {
+    const menuItemClicked = e.currentTarget.id
+
+    this.setState({
+      menuItemActive: menuItemClicked
+    }, () => {
+      this.closeMenu()
+    })
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -175,6 +187,7 @@ class ProspelaDashboard extends Component{
   render(){
     const userRole = this.props.userRole;
     const {moveScroller, startDrag} = this;
+    const {menuItemActive} = this.state
     return(
       <BrowserRouter>
         <div className="clientUI" onKeyDown={this.onKeyDown}>
@@ -196,9 +209,9 @@ class ProspelaDashboard extends Component{
                     <Modal {...SendNotifModalProps}>
                       <SendNotifModalContent />
                     </Modal>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' closeMenu={this.closeMenu}/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' closeMenu={this.closeMenu}/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' closeMenu={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">

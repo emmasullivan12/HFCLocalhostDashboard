@@ -31,7 +31,7 @@ const MentorProfileModalProps = {
 class MainMenu extends Component {
 
   render() {
-  const {userRole, closeMenu, updateActiveMenu, menuItemActive} = this.props;
+  const {userRole, updateActiveMenu, menuItemActive} = this.props;
   console.log("menuItemActive IN MAINMENU: "+menuItemActive)
 
     if(userRole === 'mentor' || userRole === 'pr') {
