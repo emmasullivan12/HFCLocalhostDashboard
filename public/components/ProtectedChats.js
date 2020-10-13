@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th May 2019
+// Dex last merged this code on 13th oct 2020
 
 import React, { Component } from "react";
 import {
@@ -12,10 +12,10 @@ import "../css/ProtectedChats.css";
 // This shows the content within an individual row in the ChatMenu
 class ChatListItem extends Component {
   render() {
-    const chat = this.props.chat;
+    const {chat, navlink} = this.props;
 
     return(
-      <ProtectedRoute path={this.props.navlink} roleAllowed="mentor" userRole="mentor" component={ProspelaBot} />
+      <ProtectedRoute path={navlink} roleAllowed="mentor" userRole="mentor" component={ProspelaBot} />
     );
   }
 }
