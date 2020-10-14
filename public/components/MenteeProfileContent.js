@@ -1,8 +1,5 @@
-// Dex last merged this code on 19th sept 2020 
+// Dex last merged this code on 19th sept 2020
 import React, { Component } from "react";
-import {
-  NavLink
-} from "react-router-dom";
 
 import cdn from './CDN.js';
 import Modal from './Modal.js';

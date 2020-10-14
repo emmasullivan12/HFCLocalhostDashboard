@@ -1,9 +1,9 @@
-// Dex last merged this code on 13th oct 2020 
+// Dex last merged this code on 13th oct 2020
 
 import React, { Component } from "react";
 import {
   Route,
-  NavLink
+  Link
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
@@ -32,13 +32,12 @@ class MainMenu extends Component {
 
   render() {
   const {userRole, updateActiveMenu, menuItemActive} = this.props;
-  console.log("menuItemActive IN MAINMENU: "+menuItemActive)
 
     if(userRole === 'mentor' || userRole === 'pr') {
       return (
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
-            <NavLink exact to="/mentor-homepage" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Dashboard</NavLink>
+            <Link exact to="/mentor-homepage" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Dashboard</Link>
     {/*        <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>*/}
@@ -47,7 +46,7 @@ class MainMenu extends Component {
     } else {
       return (
         <div className="mainMenu">
-          <NavLink exact to="/latest-advice" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Get Started</NavLink>
+          <Link exact to="/latest-advice" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Get Started</Link>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
       {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />

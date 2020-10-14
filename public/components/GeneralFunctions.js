@@ -35,6 +35,7 @@ function whichBrowser() {
           default: return "other";
       }
   })(window.navigator.userAgent.toLowerCase());
+  console.log("browser: "+ browser)
   return browser
 }
 
@@ -117,4 +118,4 @@ const LoadingSpinner = () => (
   </div>
 )
 
-export {isIE, isEdge, isURL, escapeHTML, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
+export {isIE, isEdge, isURL, escapeHTML, whichBrowser, ChevronDown, ChevronUp, X, Check, LoadingSpinner};

@@ -1,7 +1,6 @@
 // Dex last merged this code on 27th june 2020
 
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import Camera from './Camera.js';
 import Photo from './Photo.js';
 

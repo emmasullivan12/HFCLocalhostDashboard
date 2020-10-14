@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th oct 2020 
+// Dex last merged this code on 13th oct 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -7,7 +7,6 @@ import "../css/App.css";
 import "../css/General.css";
 import {
   Route,
-  NavLink,
   BrowserRouter,
   Redirect,
   Switch
@@ -135,12 +134,12 @@ class ProspelaDashboard extends Component{
   }
 
   updateActiveMenu(e) {
+    e.persist()
+    this.closeMenu(e)
     const menuItemClicked = e.currentTarget.id
 
     this.setState({
       menuItemActive: menuItemClicked
-    }, () => {
-      this.closeMenu()
     })
   }
 

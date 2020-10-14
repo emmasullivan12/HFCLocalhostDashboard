@@ -76,6 +76,7 @@ class FullPageModal extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleNavScroll)
+    window.history.forward();
   }
 
   onOpen() {

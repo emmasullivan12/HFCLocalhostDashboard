@@ -23,7 +23,7 @@ class AutoEnrollPrompt extends Component {
       <section>
         <div className="contentBox landingCTA">
           <div className="placeholderPic openEnvelope"/>
-          <div className="groupsAvatarContainer">
+          <div className="logoContainer">
             <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
           </div>
           <h2 className="landingCTATitle">

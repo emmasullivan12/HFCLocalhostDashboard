@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 import {
   Route,
-  NavLink
 } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import ProspelaBot from "./ProspelaBot";

@@ -1,7 +1,6 @@
 // Dex last merged this code on 30th sept 2020
 
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import {Check} from './GeneralFunctions.js';
 import "../css/General.css";
 import "../css/FileUploadContent.css";

@@ -473,7 +473,7 @@ a.Submit-btn,
   transition: background .15s ease-out;
 }
 a.Submit-btn{
-  padding: 0.8rem 0.8rem 1.8rem 0.8rem;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 .Submit-btn.formInterim{
   min-width: 80px;
@@ -1146,11 +1146,11 @@ a.button{
 /* Slightly smaller so is not a main CTA */
 .skipCTA{
   display: block;
-  margin-top: 1rem;
   font-size: 0.7rem;
 }
 .Submit-btn.skipCTA{
   margin: auto;
+  margin-top: 1rem;
 }
 /* IMAGES */
 .img-circle {

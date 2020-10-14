@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import {
-  NavLink
+  Link
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
@@ -172,9 +172,9 @@ class UserMenuContent extends Component {
                 </NavLink>
               </li> */}
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/logout" className="userMenu-link">
+                <Link to="/logout" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Sign out</span>
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </section>

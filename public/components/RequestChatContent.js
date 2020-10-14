@@ -1,7 +1,6 @@
 // Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "../css/RequestChatContent.css";
 import "../css/Emoji.css";
 import "../css/General.css";

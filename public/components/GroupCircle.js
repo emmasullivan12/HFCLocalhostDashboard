@@ -3,11 +3,6 @@
 import React, { Component } from "react";
 import "../css/General.css";
 import "../css/GroupCircle.css";
-import {
-  Route,
-  NavLink
-} from "react-router-dom";
-
 
 
 // This is main menu (top left) on dashboard.

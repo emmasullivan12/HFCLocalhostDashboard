@@ -75,7 +75,8 @@ class MenuModal extends React.Component {
     const {changeInitFocus} = this.props;
     this.setState({ isMenuOpen: true }, () => {
       if (changeInitFocus) {
-        return
+        const top = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+        document.getElementsByClassName("menuModal-container")[0].scrollTop = top
       } else {
         this.closeButtonNode.focus();
       }

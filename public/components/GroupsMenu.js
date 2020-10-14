@@ -1,11 +1,11 @@
-// Dex last merged this code on 13th oct 2020 
+// Dex last merged this code on 13th oct 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
 import "../css/General.css";
 import {
   Route,
-  NavLink
+  Link
 } from "react-router-dom";
 
 import cdn from './CDN.js';
@@ -49,7 +49,7 @@ class GroupListItem extends Component {
       <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
   {/*     <div className="chatMenuItem link" onClick={closeMenu}> */}
     {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
-        <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? null : "noImg")}>
+        <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
           {isGroupAvatarURL === true ?
             <img className="logoImg" alt="Initiative Logo" src={progLogo}/>
           : groupInitial

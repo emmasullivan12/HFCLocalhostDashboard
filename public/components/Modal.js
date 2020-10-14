@@ -66,8 +66,13 @@ class Modal extends React.Component {
     this.onClose = this.onClose.bind(this);
   }
 
+  componentWillUnmount() {
+    window.history.forward();
+  }
+
   onOpen(e) {
     const {changeInitFocus} = this.props;
+    console.log(this.modalNode)
     this.setState({ isOpen: true }, () => {
     //  var content = document.getElementById("modal-content")
 
@@ -75,6 +80,8 @@ class Modal extends React.Component {
       // be given to that instead of close button
     //  if (content.getElementsByTagName("input").length != 0) {
       if (changeInitFocus) {
+        const top = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+        document.getElementsByClassName("modal-container")[0].scrollTop = top
         return
       } else {
         this.closeButtonNode.focus();

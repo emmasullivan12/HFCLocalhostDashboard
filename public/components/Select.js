@@ -923,14 +923,14 @@ class SelectBox extends React.Component {
     } else {
       item = parent.firstElementChild;
 
-      // i.e. 5 = 6th box
-      if (focusedValue < (options.length - 5)) {
+      // i.e. 4 = 5th box
+      if (focusedValue < (options.length - 4)) {
         parent.scrollTop -= item.offsetHeight
         return
       }
     }
 
-    if (focusedValue < (options.length - 5)) {
+    if (focusedValue < (options.length - 4)) {
 
       if (showCheckbox != true) {
         if (values.indexOf(options[focusedValue - 1][valueToShow]) != -1) {
@@ -965,14 +965,14 @@ class SelectBox extends React.Component {
     } else {
       item = parent.firstElementChild;
 
-      // i.e. 5 = 6th box
-      if (focusedValue >= 5) {
+      // i.e. 4 = 5th box
+      if (focusedValue >= 4) {
         parent.scrollTop += item.offsetHeight
         return
       }
     }
 
-    if (focusedValue >= 5) {
+    if (focusedValue >= 4) {
 
       if (showCheckbox != true) {
         if (values.indexOf(options[focusedValue + 1][valueToShow]) != -1) {

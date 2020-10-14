@@ -48,6 +48,17 @@
   -o-transform: translate(-50%, 0);
 }
 
+.formCTAContainer.submit.safari{
+  position: -webkit-sticky;
+  position: sticky;
+}
+.formCTAContainer.other.safari{
+  position: -webkit-sticky;
+  position: sticky;
+  max-width: 90px;
+  left: 85%;
+}
+
 .formCTAContainer.other{
   position: fixed;
   bottom: 30px;
@@ -292,6 +303,17 @@
   }
   .formCTAContainer.other.hidden{
     display: none;
+  }
+  .formCTAContainer.submit.safari{
+    left: 70%;
+    right: unset;
+    bottom: 10px;
+  }
+  .formCTAContainer.other.safari{
+    max-width: 90px;
+    left: 70%;
+    top: unset;
+    bottom: 103%;
   }
 }
 @media only screen and (min-width: 395px) and (max-width: 425px) {

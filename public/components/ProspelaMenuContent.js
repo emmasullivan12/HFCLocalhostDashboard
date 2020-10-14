@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import {
-  NavLink
+  Link
 } from "react-router-dom";
 //import FullPageModal from './FullPageModal.js';
 import SettingsContent from './SettingsContent.js';
@@ -32,23 +32,23 @@ class ProspelaMenuContent extends Component {
             </h2>
             <ul className="userMenu-list">
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/profile/set-status" className="userMenu-link" >
+                <Link to="/profile/set-status" className="userMenu-link" >
                   <span className="userMenuLabel overflow-ellipsis">Edit status...</span>
-                </NavLink>
+                </Link>
               </li>
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/profile" className="userMenu-link">
+                <Link to="/profile" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Profile</span>
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </section>
           <section className="userMenu-settings">
             <ul className="userMenu-list">
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
-                <NavLink to="/logout" className="userMenu-link">
+                <Link to="/logout" className="userMenu-link">
                   <span className="userMenuLabel overflow-ellipsis">Sign out</span>
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </section>

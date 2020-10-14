@@ -1,11 +1,8 @@
 // Dex last merged this code on 12th oct 2020
 
 import React, { Component } from "react";
-import {
-  NavLink
-} from "react-router-dom";
 
-import {escapeHTML, ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
+import {escapeHTML, whichBrowser, ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
 import cdn from './CDN.js';
 import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
@@ -32,6 +29,7 @@ class Form extends Component {
       qVisibleArray: [],
       pct: 0,
       tabPressed: '',
+      browser: '',
       [this.props.renderComponentsInitialState]: [], // for anything that loads from another file i.e. list of unis or schools etc
       [this.props.renderComponentsInitialState2]: [],
     };
@@ -42,6 +40,9 @@ class Form extends Component {
     this.mounted = true
     const {usedFor, questions, saveOnSubmit} = this.props
 
+    this.setState({
+      browser: whichBrowser()
+    })
 
     const statesToSave = {}
 
@@ -1272,8 +1273,10 @@ class Form extends Component {
   }
 
   render() {
-    const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct, allVisibleArray} = this.state
+    const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct, allVisibleArray, browser} = this.state
     const {questions} = this.props
+
+    const isSafari = browser === 'safari'
 
     const isEnabled = this.canBeSubmitted();
 
@@ -1296,7 +1299,7 @@ class Form extends Component {
         <div className="row">
           { this.renderQuestions() }
         </div>
-        <div className="formCTAContainer submit">
+        <div className={"formCTAContainer submit" + (isSafari ? ' safari' : "")}>
           {isEnabled && (
             <button type="button" disabled={isSubmitting === true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-form">
               {isSubmitting === true && (
@@ -1314,7 +1317,7 @@ class Form extends Component {
             <ChevronDown />
           </button>
         </div>
-        <div className={"formCTAContainer other "+ (focusedQ === 0 ? 'hidden' : null)}>
+        <div className={"formCTAContainer other"+ (focusedQ === 0 ? ' hidden' : '') + (isSafari ? ' safari' : "")}>
           <div id="formProgressPct">{pct+"% completed"}</div>
           <div id="formProgress">
             <div id="formProgressBar"/>

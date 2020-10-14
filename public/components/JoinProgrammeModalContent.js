@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd Sept 2020 
+// Dex last merged this code on 22nd Sept 2020
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
@@ -19,6 +19,7 @@ class JoinProgrammeModalContent extends Component {
 
   componentDidMount(){
     document.getElementsByTagName("input")[0].focus();
+  //  document.getElementsByClassName("modal-container")[0].scrollTop = 0
   }
 
   handleInput = (evt) => {

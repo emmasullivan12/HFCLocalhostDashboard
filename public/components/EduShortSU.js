@@ -131,9 +131,20 @@ class EduShortSU extends React.Component {
   }
 
   handleDegreeChange = (e) => {
-    this.setState({
-      degreeLocal: e.target.value,
-    })
+    const userInput = e.target.value
+    if (userInput === '') {
+      this.setState({
+        degreeLocal: userInput,
+        uniYrGrp: '',
+        courseLength: '',
+        uniGraduYr: '',
+        uniGraduYrIsValid: '',
+      })
+    } else {
+      this.setState({
+        degreeLocal: userInput,
+      })
+    }
   }
 
 /*  handleDegreeMoveNext = () => {
@@ -574,7 +585,7 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'uni') {
-          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && (uniYrGrp != 'pg' && userRole != 'mentor' ? courseLength != '': true) && uniGraduYrIsValid) {
+          if (form.checkValidity() && (uniNameUpdated === true || uniNameFreeTextUpdated === true) && uniNameIsValid && uniYrGrp != '' && ((uniYrGrp != 'pg' && userRole != 'mentor') ? courseLength != '': true) && uniGraduYrIsValid) {
             return true;
           } else {
             return false;
@@ -959,7 +970,7 @@ class EduShortSU extends React.Component {
                   )}
                 </React.Fragment>
               )}
-              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && uniYrGrp != '' && uniYrGrp != 'pg' && (
+              {userRole === 'mentee' && (eetStatus === 'uni' || eetStatusLocal === 'uni') && uniNameIsValid === true && degreeLocal != '' && uniYrGrp != '' && uniYrGrp != 'pg' && (
                 <React.Fragment>
                   <div className="form-group">
                     <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-uniLength">And <strong>how long</strong> is your course?</label>
@@ -972,7 +983,7 @@ class EduShortSU extends React.Component {
                       handleFocus={this.handleFocus}
                       otherValidityChecks={this.otherValidityChecks}
                       handleMouseDown={this.handleMouseDown}
-                      focusOnLoad={uniNameIsValid === true && uniYrGrp != '' && !tabPressed ? true : false}
+                      focusOnLoad={uniNameIsValid === true && degreeLocal != '' && uniYrGrp != '' && !tabPressed ? true : false}
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                       required
                     />
