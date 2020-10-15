@@ -9,7 +9,7 @@ svg {
 .select {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  cursor: pointer!important;
 }
 .selectContainer{
   line-height: 14px;

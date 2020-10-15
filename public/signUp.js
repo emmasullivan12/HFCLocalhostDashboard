@@ -272,7 +272,18 @@ email.addEventListener('focus', function(event) {
   }
 },true);
 
-email.addEventListener('input', function(e) {
+email.addEventListener('keyup', function(e) {
+  console.log("keyup")
+  clearTimeout(this.timerHandle);
+
+  this.timerHandle = setTimeout(() => {
+    emailCheck(e)
+    this.timerHandle = 0;
+  }, 800);
+})
+
+function emailCheck(e) {
+  console.log(e)
   if (email.checkValidity()) {
     if (emailText.innerHTML === 'Personal Email' && e.target.value.length > 0) {
       email.classList.remove('error');
@@ -305,7 +316,7 @@ email.addEventListener('input', function(e) {
   } else {
     email.classList.add('error');
   }
-});
+}
 
 email.addEventListener('blur', function(e) {
   if (email.checkValidity()) {

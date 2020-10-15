@@ -21,37 +21,62 @@ spinnerWrapper.style.display = 'none';
   }
 });*/
 
+function emailCheck() {
+ console.log("here")
+ console.log(email.checkValidity())
+ if (email.checkValidity()) {
+   console.log("removing error")
+   email.classList.remove('error');
+ } else {
+   console.log("adding error")
+   email.classList.add('error');
+ }
+}
+
 loginbtn.addEventListener('click', function() {
   loginbtn.disabled = true;
   loginbtnText.style.display = 'none';
   spinnerWrapper.style.display = 'inline-block';
 }, false)
 
+email.addEventListener('keyup', function(e) {
+  clearTimeout(this.timerHandle);
+
+  this.timerHandle = setTimeout(() => {
+    emailCheck()
+    this.timerHandle = 0;
+  }, 800);
+})
+
+password.addEventListener('invalid', function(event) {
+  password.classList.add('error');
+}, false);
+
 // check validity of inputs when submit & onBlur i.e. after clicing away
 for(let input of formControl) {
-  input.addEventListener('invalid', function(event) {
+  /*input.addEventListener('invalid', function(event) {
     input.classList.add('error');
-  }, false);
+  }, false);*/
 
   input.addEventListener('blur', function(event) {
     if(input.checkValidity()) {
       input.classList.remove('error');
     }
- });
+  });
 
- input.addEventListener('input', function(event) {
+ /*input.addEventListener('input', function(event) {
    if(input.checkValidity()){
      input.classList.remove('error');
    }
- });
+ });*/
 
-  input.addEventListener('input', function(event) {
-    if(email.checkValidity() && password.value.length > 0){
-      loginbtn.disabled = false;
-    }else{
-      loginbtn.disabled = true;
-    }
-  });
+ input.addEventListener('input', function(event) {
+   if(email.checkValidity() && password.value.length > 0){
+     loginbtn.disabled = false;
+   }else{
+     loginbtn.disabled = true;
+   }
+ });
 
   /* Check validity onblur (i.e. click away)
   input.addEventListener('blur', (event) => {

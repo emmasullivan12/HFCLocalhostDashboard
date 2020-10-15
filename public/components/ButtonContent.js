@@ -12,7 +12,7 @@ function ButtonContent(props) {
     case 'picContainer':
       return (
         <div type="button" className="picContainer">
-          <i className="far fa-image" />
+          <i className="fas fa-camera" />
         </div>
       );
     case 'attachmentContainer':

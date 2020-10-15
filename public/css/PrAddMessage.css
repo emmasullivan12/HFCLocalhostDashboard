@@ -229,7 +229,7 @@ mark {
   padding: 0;
   top: auto;
   bottom: 28px;
-  right: 91px;
+  right: 125px;
   position: absolute;
   cursor: pointer;
   background: none;
@@ -241,6 +241,11 @@ mark {
   -ms-transition: all 50ms ease-out 0s;
   -o-transition: all 50ms ease-out 0s;
 }
+
+.emojiContainer .showOnHover{
+  display: none;
+}
+
 .emojiContainer:focus,
 .emojiContainer:hover {
 /*  transform: scale(1.05);
@@ -251,13 +256,46 @@ mark {
   color: #f2c744;
 }
 
+.emojiContainer:hover .showOnHover{
+  display: block;
+  background: black;
+  width: 19px;
+  border-radius: 50%;
+}
+
+.emojiContainer:hover .hideOnHover{
+  display: none;
+}
+
+.sendMsgContainer{
+  right: 20px;
+  color: #d8d8d8;
+  border-radius: 10%;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 7px;
+  line-height: 33px;
+}
+.sendMsgContainer:disabled {
+  cursor: text;
+}
+
+.sendMsgContainer.isTyping{
+  background: #02d89c;
+  color: #fff;
+}
+
+.sendMsgContainer.isTyping:hover{
+  background: #00c18b;
+}
+
 .picContainer:hover {
 /*  transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);*/
-  color: #4daf5b;
+  color: #4e4ed6;
 }
 
 .emojiPickerContainer{

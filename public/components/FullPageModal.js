@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import ButtonContent from './ButtonContent.js';
-import {isIE, isEdge} from './GeneralFunctions.js';
+import {isIE, isEdge, whichBrowser} from './GeneralFunctions.js';
 
 import "../css/Modal.css";
 
@@ -28,6 +28,7 @@ const FullPageModalContent = ({
   buttonFPRef,
   content,
   handleNavScroll,
+  isSafari,
   mentorName,
   modalFPRef,
   onClose,
@@ -39,7 +40,7 @@ const FullPageModalContent = ({
     <aside className="modal-overlay" role="dialog" aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
       <div className={"fullpage-modal-container " + usedFor} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
-          <button type="button" className={"modal-close fullPage " + (backBtn==='arrow' ? 'bkArrow' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
+          <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
             { backBtn==='bk2Pr' && (
               <span id="close-modal">&#60;&#60; Back to Prospela</span>
             )}
@@ -152,6 +153,9 @@ class FullPageModal extends React.Component {
     const {handleNavScroll} = this;
     const {isFPOpen} = this.state;
     const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role, focusOnLoad} = this.props;
+
+    const isSafari = whichBrowser() === 'safari'
+
     return (
       <React.Fragment>
         <FullPageModalTrigger
@@ -168,6 +172,7 @@ class FullPageModal extends React.Component {
             buttonFPRef={n => this.closeButtonFPNode = n}
             content={children}
             handleNavScroll={this.handleNavScroll}
+            isSafari={isSafari}
             mentorName={mentorName}
             modalFPRef={this.modalFPRef}
             onClose={this.onClose}

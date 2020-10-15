@@ -437,7 +437,9 @@
   background: none;
 }
 
-.ModalOpenBtn-attachmentContainer {
+.ModalOpenBtn-attachmentContainer,
+.ModalOpenBtn-picContainer,
+.sendMsgContainer {
   margin-left: 10px;
   margin-right: 10px;
   width: 30px;
@@ -449,7 +451,6 @@
   opacity: 0.95;
   padding: 0;
   top: auto;
-  right: 54px;
   bottom: 28px;
   position: absolute;
   cursor: pointer;
@@ -467,29 +468,12 @@
   background: none!important;
 }
 
+.ModalOpenBtn-attachmentContainer {
+  right: 88px;
+}
+
 .ModalOpenBtn-picContainer {
-  margin-left: 10px;
-  width: 30px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #3f3f3f;
-  font-size: 20px;
-  opacity: 0.95;
-  padding: 0;
-  top: auto;
-  right: 5px;
-  bottom: 0px;
-  position: absolute;
-  cursor: pointer;
-  background: none;
-  border: 0;
-  outline: none!important;
-  box-shadow: none!important;
-  -webkit-box-shadow: none!important;
-  -moz-box-shadow: none!important;
-  display: inline-block;
-  font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
+  right: 54px;
 }
 
 .ModalOpenBtn-picContainer:hover{
@@ -672,6 +656,10 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.modal-close.fullPage.bkArrow.safari {
+  position: -webkit-sticky;
+  position: sticky;
 }
 .modal-close.fullPage.bkArrow:hover {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);

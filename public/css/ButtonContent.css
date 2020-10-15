@@ -1,6 +1,7 @@
 /* Dex last merged this code on 7th sept 2020 */
 
-.attachmentContainer {
+.attachmentContainer,
+.picContainer {
   width: 30px;
   height: 40px;
   line-height: 40px;
@@ -27,10 +28,10 @@
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);*/
-  color: #8e8e8e;
+  color: #000000;
 }
 
-.picContainer {
+/*.picContainer {
   margin-right: 5px;
   margin-left: 10px;
   width: 30px;
@@ -55,7 +56,7 @@
   -moz-transition: all 50ms ease-out 0s;
   -ms-transition: all 50ms ease-out 0s;
   -o-transition: all 50ms ease-out 0s;
-}
+}*/
 .addContainer{
   border-radius: 50%;
   -webkit-border-radius: 50%;

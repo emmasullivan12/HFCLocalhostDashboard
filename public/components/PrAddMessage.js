@@ -225,7 +225,6 @@ class PrAddMessage extends Component {
   }
 
   handleMessageSubmit = () => {
-  //  alert('message submitted!');
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");
 
@@ -235,6 +234,16 @@ class PrAddMessage extends Component {
       text: ''
     })
   }
+
+/*  showSmiley = (e) => {
+    console.log(e.target)
+    console.log(e.target.firstChild)
+    e.target.firstChild.classList.replace("far fa-smile","fas fa-laugh")
+  }
+
+  hideSmiley = (e) => {
+    e.target.firstChild.classList.replace("fas fa-laugh","far fa-smile")
+  }*/
 
   showEmojis = (e) => {
     this.setState({
@@ -267,7 +276,7 @@ class PrAddMessage extends Component {
                     className="input-box"
                     id="txtInput-box"
                     form="chatMessageForm"
-                    value={this.state.text}
+                    value={text}
                   //  value={this.convertTextToEmojis}
                 //    value={this.state.inputValue}
                     onChange={this.handleMessageChange}
@@ -291,10 +300,11 @@ class PrAddMessage extends Component {
         {  //      </div>
 }               </form>
                 <div className="descriptor-br prAddMessage" id="prAddMessageCount">
-                  {this.state.text.length} / 2000
+                  {text.length} / 2000
                 </div>
                 <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
-                  <i className="far fa-smile" />
+                  <i className="hideOnHover far fa-smile" />
+                  <i className="showOnHover fas fa-laugh" />
                 </button>
                 {showEmojis && (
                   /* The <div> element is just used as a container for EmojiPicker */
@@ -316,6 +326,9 @@ class PrAddMessage extends Component {
                 <Modal {...CameraUploadModalProps}>
                   <CameraUploadContent/>
                 </Modal>
+                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + (text.length > 0 ? ' isTyping' : "")} onClick={this.handleMessageSubmit}>
+                  <i className="fas fa-paper-plane" />
+                </button>
               </div>
             </div>
             <div className="msgInsights-bar">
