@@ -1,9 +1,8 @@
-// Dex last merged this code on 13th Oct 2020
+// Dex last merged this code on 15th Oct 2020
 
 import React, { Component } from "react";
 import "../css/General.css";
 import "../css/GroupCircle.css";
-
 
 // This is main menu (top left) on dashboard.
 // Depending on whether user is Mentor or Student, will display different Main Menu
