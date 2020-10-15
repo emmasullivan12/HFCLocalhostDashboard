@@ -1,4 +1,4 @@
-/* merged this code on 29th june 2020 */
+/* merged this code on 15th oct 2020 */
 
 var password = document.getElementById("password");
 var email = document.getElementById("email");
@@ -22,13 +22,9 @@ spinnerWrapper.style.display = 'none';
 });*/
 
 function emailCheck() {
- console.log("here")
- console.log(email.checkValidity())
  if (email.checkValidity()) {
-   console.log("removing error")
    email.classList.remove('error');
  } else {
-   console.log("adding error")
    email.classList.add('error');
  }
 }

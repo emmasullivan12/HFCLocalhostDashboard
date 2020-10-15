@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th sept 2020
+// Dex last merged this code on 15th oct 2020
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -234,16 +234,6 @@ class PrAddMessage extends Component {
       text: ''
     })
   }
-
-/*  showSmiley = (e) => {
-    console.log(e.target)
-    console.log(e.target.firstChild)
-    e.target.firstChild.classList.replace("far fa-smile","fas fa-laugh")
-  }
-
-  hideSmiley = (e) => {
-    e.target.firstChild.classList.replace("fas fa-laugh","far fa-smile")
-  }*/
 
   showEmojis = (e) => {
     this.setState({
