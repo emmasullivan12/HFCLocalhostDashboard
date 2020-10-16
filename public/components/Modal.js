@@ -66,13 +66,25 @@ class Modal extends React.Component {
     this.onClose = this.onClose.bind(this);
   }
 
+  componentDidMount() {
+  //  window.addEventListener("popstate", this.onPopState);
+    window.addEventListener("popstate", function(e) {
+      console.log("onpopstate called")
+      console.log(e)
+      console.log("e.state.modal: "+e.state.modal)
+      if (e.state.modal === 'open') {
+        this.onClose()
+      }
+    });
+  }
+
   componentWillUnmount() {
-    window.history.forward();
+    console.log("will unmount")
+//    window.history.forward();
   }
 
   onOpen(e) {
     const {changeInitFocus} = this.props;
-    console.log(this.modalNode)
     this.setState({ isOpen: true }, () => {
     //  var content = document.getElementById("modal-content")
 
@@ -82,12 +94,14 @@ class Modal extends React.Component {
       if (changeInitFocus) {
         const top = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
         document.getElementsByClassName("modal-container")[0].scrollTop = top
-        return
       } else {
         this.closeButtonNode.focus();
       }
     });
     this.toggleScrollLock();
+    console.log(window.history)
+    history.pushState({ modal: 'open'}, '')
+    console.log(window.history)
   }
 
   onClose() {
@@ -97,6 +111,15 @@ class Modal extends React.Component {
     }
     this.toggleScrollLock();
   }
+
+/*  onPopState(e) {
+    console.log("onpopstate called")
+    console.log(e)
+    console.log("e.state.modal: "+e.state.modal)
+    if (e.state.modal === 'open') {
+      this.onClose()
+    }
+  }*/
 
 /*  onCloseAsPrevModal() {
     console.log("calling oncloseprevmodal")

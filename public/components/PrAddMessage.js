@@ -224,7 +224,7 @@ class PrAddMessage extends Component {
     }
   }
 
-  handleMessageSubmit = () => {
+  handleSubmit = () => {
     var msgInsights = document.getElementById('msgInsights-bar-right');
     msgInsights.classList.remove("show");
 
@@ -316,7 +316,7 @@ class PrAddMessage extends Component {
                 <Modal {...CameraUploadModalProps}>
                   <CameraUploadContent/>
                 </Modal>
-                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + (text.length > 0 ? ' isTyping' : "")} onClick={this.handleMessageSubmit}>
+                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + (text.length > 0 ? ' isTyping' : "")} onClick={this.handleSubmit}>
                   <i className="fas fa-paper-plane" />
                 </button>
               </div>

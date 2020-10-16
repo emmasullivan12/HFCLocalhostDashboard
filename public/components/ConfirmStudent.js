@@ -593,6 +593,9 @@ class ConfirmStudent extends React.Component {
       'peoplegrove.com',
       'mykindafuture.com',
       'connectr.co.uk',
+      'futurefrontiers.org.uk',
+      'mentorspaces.com',
+      'thewhether.com',
     ]
 
     return (

@@ -25,7 +25,7 @@ class MentorU18Doc extends Component {
         <div className="contentBox landingCTA">
           <div className="placeholderPic uploadCV"/>
           <h2 className="landingCTATitle">
-            Upload your CV/Resume or share your LinkedIn profile
+            Upload your CV/Resume or LinkedIn URL
           </h2>
           <p className="landingCTADesc">
             To support your Mentor application, please upload a copy of your CV/Resume or your LinkedIn profile URL. We&#39;re so grateful that you&#39;d like to support under-18s!

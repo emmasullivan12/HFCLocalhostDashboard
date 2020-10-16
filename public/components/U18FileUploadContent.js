@@ -80,7 +80,7 @@ class U18FileUploadContent extends Component {
 
   canBeSubmitted() {
     const {urlInputIsValid, uploadedFile} = this.state
-    if (urlInputIsValid === true || uploadedFile.length > 0) {
+    if ((urlInputIsValid === true && uploadedFile.length == 0) || (uploadedFile.length > 0 && !urlInputIsValid)) {
       return true
     } else {
       return false
@@ -88,7 +88,7 @@ class U18FileUploadContent extends Component {
   }
 
   render() {
-    const { uploadedFile, url, generalErrorMessage, isGeneralError, isSubmitting } = this.state;
+    const { uploadedFile, url, generalErrorMessage, isGeneralError, isSubmitting, urlInputIsValid } = this.state;
     const isEnabled = this.canBeSubmitted()
     return (
       <React.Fragment>
@@ -116,6 +116,9 @@ class U18FileUploadContent extends Component {
                 maxLength="150"
                 autoFocus
               />
+              <div className="orText">
+                OR
+              </div>
               <div className="fileUploadPlaceholder">
                 <div className="fileUploadDottedLine">
                   <div className="fileUploadPlaceholder-title">Drag and drop CV here</div>
@@ -135,6 +138,9 @@ class U18FileUploadContent extends Component {
                     </svg>
                     <span>or Browse Files...</span>
                   </label>
+                  <div className="fileTypeAllowed">
+                    Word or PDF only
+                  </div>
                   <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
                     <div className="animate">
                       <div className='topbottom'/>
@@ -150,6 +156,11 @@ class U18FileUploadContent extends Component {
                   </div>
                 </div>
               </div>
+              {urlInputIsValid === true && uploadedFile.length > 0 && (
+                <div className="redText">
+                  We only need either your CV/Resume OR LinkedIn URL, not both =)
+                </div>
+              )}
               <div className="fileNamesContainer">
                 <div className="fileNamesHeader">
                   <span

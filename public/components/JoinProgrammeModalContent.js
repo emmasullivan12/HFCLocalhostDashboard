@@ -138,7 +138,7 @@ class JoinProgrammeModalContent extends Component {
               You&#39;re now a member of {progName}.
             </div>
             <p className="landingCTADesc">
-              You can access all of your memberships within &#39;My Memberships&#39;
+              You can access all of your memberships within &#39;My Groups&#39;
             </p>
             <div className="showProgsPic"/>
           </div>
