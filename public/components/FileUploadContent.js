@@ -108,7 +108,7 @@ class FileUploadContent extends Component {
             autoComplete="off"
             autoCorrect="off"
             spellCheck="off"
-            maxLength="2000"
+            maxLength="5000"
             autoFocus
           />
           <div className="descriptor-br form">

@@ -25,9 +25,11 @@ class MenteeFullSignUp extends Component {
     const userIs18 = false
 
     const subjects = ''; // sch Subjects
+    const subjectsFreeText = '';
     const gradeType = '';
 
     const hobbies = [];
+    const hobbiesFreeText = [];
     const expertise = '';
     const certainty = '';
     const networkSize = '';
@@ -38,7 +40,7 @@ class MenteeFullSignUp extends Component {
     var questions = [
       {q: 'So, ' + fname + ', you\'ve previously told us about the industry & role(s) that interest you, but what about the things you\'re truly passionate about?', detail: 'Your answers to the following questions will help us find you a mentor match that you\'re likely to click with', aType: 'interim', name: 'interim'},
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about working hours, social life, salary, being your own boss etc. Note: There are no right or wrong answers here!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'lifestyle'},
-      ... (hobbies.length === 0) ? [
+      ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
         {q: 'Outside of work & school, what are some of your interests & hobbies?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: '3D Printing'},
           {value: '1', label: 'Acting'},
@@ -197,7 +199,7 @@ class MenteeFullSignUp extends Component {
       ]},
       {q: 'Nearly there! We have a few quick questions about your current situation', aType: 'interim', name: 'interim'},
       ... (eetStatus === 'sch') ? [
-        ... (subjects === '') ? [
+        ... (subjects === '' && subjectsFreeText === '') ? [
           {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
             {value: '0', label: 'Accounting'},
             {value: '1', label: 'Afrikaans'},

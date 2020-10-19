@@ -10,10 +10,15 @@ class CameraUploadContent extends Component {
   constructor(props) {
   super(props);
     this.state = {
-      pictureTaken: false
+      pictureTaken: false,
+      cameraUploadDescription: '',
     }
   }
 // Add to takePicture function: photo.style.display = 'block';
+
+  handleDescriptionChange = (evt) => {
+    this.setState({ [evt.target.name]: evt.target.value });
+  }
 
   canBeSubmitted() {
     const {pictureTaken} = this.state
@@ -30,25 +35,21 @@ class CameraUploadContent extends Component {
           <Camera />
           <form className="uploadPhotoForm" id="uploadPhotoForm">
             <Photo />
-            <input
-              type="text"
-              name="cameraUploadName"
-              className="form-control-std"
-              placeholder="Type picture name..."
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck="off"
-              autoFocus
-            />
             <textarea
               name="cameraUploadDescription"
               className="form-control-std textInputBox"
               form="uploadPhotoForm"
               placeholder="Type your message..."
+              value={this.state.cameraUploadDescription}
+              onChange={this.handleDescriptionChange}
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              maxLength="5000"
             />
+            <div className="descriptor-br form">
+              {this.state.cameraUploadDescription.length} / 5000 characters
+            </div>
             <button type="submit" disabled={!isEnabled} className="Submit-btn uploadPicBtn" id="saveButton">Upload photo</button>
           </form>
         </div>

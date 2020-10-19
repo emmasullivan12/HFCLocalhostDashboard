@@ -113,7 +113,7 @@ class U18FileUploadContent extends Component {
                 autoComplete="off"
                 autoCorrect="off"
                 spellCheck="off"
-                maxLength="150"
+                maxLength="200"
                 autoFocus
               />
               <div className="orText">

@@ -290,7 +290,7 @@ class PrAddMessage extends Component {
         {  //      </div>
 }               </form>
                 <div className="descriptor-br prAddMessage" id="prAddMessageCount">
-                  {text.length} / 2000
+                  {text.length} / 5000
                 </div>
                 <button type="button" className="emojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                   <i className="hideOnHover far fa-smile" />

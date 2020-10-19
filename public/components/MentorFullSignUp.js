@@ -30,9 +30,11 @@ class MentorFullSignUp extends Component {
     const expertise = '';
     const learning = '';
     const hobbies = [];
+    const hobbiesFreeText = [];
     const maxEdu = '';
     const eetStatus = 'job';
     const subjects = '';
+    const subjectsFreeText = '';
 
     const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
@@ -61,7 +63,7 @@ class MentorFullSignUp extends Component {
       ... (learning === '') ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
       ] : [],
-      ... (hobbies.length === 0) ? [
+      ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
         {q: 'Outside of work, what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your job role requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: '3D Printing'},
           {value: '1', label: 'Acting'},
@@ -195,14 +197,14 @@ class MentorFullSignUp extends Component {
         //  {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
-        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
+        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
-      ... (subjects === '') ? [
+      ... (subjects === '' && subjectsFreeText === '') ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
@@ -370,7 +372,7 @@ class MentorFullSignUp extends Component {
       ... (learning === '') ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
       ] : [],
-      ... (hobbies.length === 0) ? [
+      ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
         {q: 'Outside of work, what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your job role requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: '3D Printing'},
           {value: '1', label: 'Acting'},
@@ -504,14 +506,14 @@ class MentorFullSignUp extends Component {
     //      {value: '6', label: 'Professional Qualification (e.g. CPA / ACA / IMechE)'},
         ]},
         ... (country === 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniName', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
         ] : [],
         ... (country != 'GBR') ? [
-          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
+          {q: 'Which University did you go to?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'Sometimes students prefer to speak with an alumni from their own institution to help visualise where they can get to', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your University name...', name: 'uniNameFreeText'},
         ] : [],
-        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
+        {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
-      ... (subjects === '') ? [
+      ... (subjects === '' && subjectsFreeText === '') ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
@@ -686,10 +688,10 @@ class MentorFullSignUp extends Component {
         <div className="contentBox landingCTA">
           <div className="placeholderPic completeFullSUMentor"/>
           <h2 className="landingCTATitle">
-            Complete your full sign up
+            Complete your full mentor profile / application
           </h2>
           <p className="landingCTADesc">
-            {'We need to know a few more quick details, including ' + ((country != 'AUS' && country != 'NZL') ? 'whether you want to support under-18 students' : 'how you\'d like to mentor')}
+            {'We need to know a few more quick details, including your current situation and ' + ((country != 'AUS' && country != 'NZL') ? 'whether you want to support under-18 students' : 'how you\'d like to mentor')}
           </p>
           <div>
             {country != 'AUS' && country != 'NZL' && (

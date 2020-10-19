@@ -511,6 +511,156 @@ class ConfirmStudent extends React.Component {
         });
       }
 
+    } else if (country === 'AUS') {
+      if (eetStatus === 'uni') {
+        const length = userInput.length - 7; /// 7 is length of ".edu.au" string
+        const isValid = userInput.indexOf(".edu.au") === length;
+
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+            }, () => {
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
+            })
+          }
+        });
+
+      } else if (eetStatus === 'sch') {
+        // saying email is valid as don't know format of sch emails, but Prospela to approve before get access
+        this.setState({
+          eduEmailIsValid: true,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          this.setState({
+            requestReview: true,
+          }, () => {
+            if (this.state.submitted != true) {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            }
+          })
+        });
+      } else {
+
+        const isValid = (userInput.indexOf(".edu.au") === userInput.length - 7);
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+            }, () => {
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
+            })
+          }
+        });
+      }
+    } else if (country === 'NZL') {
+      if (eetStatus === 'uni') {
+        const length = userInput.length - 6; /// 6 is length of ".ac.nz" string
+        const isValid = userInput.indexOf(".ac.nz") === length;
+
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+            }, () => {
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
+            })
+          }
+        });
+
+      } else if (eetStatus === 'sch') {
+        // saying email is valid as don't know format of sch emails, but Prospela to approve before get access
+        this.setState({
+          eduEmailIsValid: true,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          this.setState({
+            requestReview: true,
+          }, () => {
+            if (this.state.submitted != true) {
+              document.getElementById("Submit-btn-eduEmail").focus()
+            }
+          })
+        });
+      } else {
+
+        const isValid = (userInput.indexOf(".ac.nz") === userInput.length - 6);
+        this.setState({
+          eduEmailIsValid: isValid,
+          isPersonalEmail: false,
+          containsDotAndAt: true,
+          hasTextBeforeAt: true,
+          hasTextAfterAt: true,
+          endsWithSymbol: false,
+          isHtmlValid: true,
+        }, () => {
+          if (eduEmailIsValid === false && (document.getElementById("requestReview") != undefined && document.getElementById("requestReview").checked)) {
+            this.setState({
+              requestReview: true,
+            })
+          } else {
+            this.setState({
+              requestReview: false,
+            }, () => {
+              if (this.state.submitted != true) {
+                document.getElementById("Submit-btn-eduEmail").focus()
+              }
+            })
+          }
+        });
+      }
     } else {
       //don't do a check (as dont know format for every country) just get them to verify
       //and then come to prospela for approval before going to dashboard

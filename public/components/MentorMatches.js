@@ -7,7 +7,7 @@ class MentorMatches extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      matchstatus: 7
+      matchstatus: 1
     }
     this.requestNewMatches = this.requestNewMatches.bind(this);
   }
@@ -32,7 +32,7 @@ class MentorMatches extends Component {
                 Your matches are on their way!
               </h2>
               <p className="landingCTADesc">
-                Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. We&#39;ll notify you as soon as possible, so make sure your notification settings are switched on.
+                Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
               </p>
             </div>
           </section>
