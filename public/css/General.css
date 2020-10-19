@@ -1,4 +1,4 @@
-/* Dex last merged this code on 15th oct 2020  */
+/* Dex last merged this code on 19th oct 2020  */
 
 /* General CSS styles to add to any individual element anywhere in the app */
 
@@ -1292,7 +1292,7 @@ a.button{
   margin-right: 0;
   position: absolute;
   margin-top: 2px;
-  color: #9f9ee7;
+  color: #bfbeff;
 }
 .menuItemIconContainer.chat{
   margin-top: 0;
