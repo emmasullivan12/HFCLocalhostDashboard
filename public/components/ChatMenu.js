@@ -76,6 +76,9 @@ class ChatMenu extends Component {
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">
             {chatGroup}
+            <span className="menuItemIconContainer chat">
+              <i className="fas fa-comment-dots" />
+            </span>
             {chatGroup === 'Prospela DMs' && (
               <Modal {...AddChatModalProps}>
                 <AddChatModalContent />

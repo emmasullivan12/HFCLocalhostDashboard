@@ -100,6 +100,9 @@ class GroupsMenu extends Component {
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">
             My Groups
+            <span className="menuItemIconContainer">
+              <i className="fas fa-plug" />
+            </span>
             <div className="menuCTAContainer">
               <Modal {...JoinProgrammePlusModalProps}>
                 <JoinProgrammeModalContent />

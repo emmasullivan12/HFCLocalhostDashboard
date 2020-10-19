@@ -1273,7 +1273,8 @@ a.button{
   margin: auto;
   display: block;
 }
-.groupsAvatarContainer{
+.groupsAvatarContainer,
+.menuItemIconContainer{
   height: 20px;
   width: 20px;
   float: left;
@@ -1283,6 +1284,18 @@ a.button{
   margin-top: -2px;
   text-align: center;
   color: #fff;
+}
+.menuItemIconContainer{
+  margin-top: 2px;
+  float: unset;
+  margin-left: 6px;
+  margin-right: 0;
+  position: absolute;
+  margin-top: 2px;
+  color: #9f9ee7;
+}
+.menuItemIconContainer.chat{
+  margin-top: 0;
 }
 .groupsAvatarContainer.noImg{
   padding-top: 3px;

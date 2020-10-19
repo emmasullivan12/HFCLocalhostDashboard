@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th oct 2020 
+// Dex last merged this code on 15th oct 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -153,14 +153,14 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didEdu', // set to did1stSU when first loaded
+      step: 'didDiversity', // set to did1stSU when first loaded
       userEduName: '',
-      country: 'GBR',
-      eetStatus: 'sch',
-      schName: '56',
+      country: 'AUS',
+      eetStatus: 'uni',
+      schName: '',
       schNameFreeText: '',
       uniName: '',
-      uniNameFreeText: '',
+      uniNameFreeText: 'aus school',
       emailToVerify: 'emma@pladis.com',
       currCo: '',
       currTrainingProvider: '',
