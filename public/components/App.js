@@ -127,14 +127,14 @@ class Dashboard extends Component{
       scrollerBeingDragged: false,
       normalizedPosition: 0,
       contentPosition: 0,
-      menuItemActive: '',
+  //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
     }
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
-    this.updateActiveMenu = this.updateActiveMenu.bind(this);
+  //  this.updateActiveMenu = this.updateActiveMenu.bind(this);
   }
 
   componentDidMount() {
@@ -204,15 +204,15 @@ class Dashboard extends Component{
     }
   }
 
-  updateActiveMenu(e) {
-    e.persist()
-    this.closeMenu(e)
+//  updateActiveMenu(e) {
+//    e.persist()
+//    this.closeMenu(e)
 /*    const menuItemClicked = e.currentTarget.id
 
     this.setState({
       menuItemActive: menuItemClicked
     })*/
-  }
+//  }
 
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
@@ -258,7 +258,6 @@ class Dashboard extends Component{
     const userRole = this.props.userRole;
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
-    const {menuItemActive} = this.state
 
     return(
       <BrowserRouter>
@@ -277,11 +276,11 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <MainMenu userRole={userRole} onClick={this.closeMenu}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.closeMenu} />
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST} menuItemActive={menuItemActive} updateActiveMenu={this.updateActiveMenu}/>
+                    <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.closeMenu}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">

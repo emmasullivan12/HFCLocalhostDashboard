@@ -23,13 +23,13 @@ const AddChatModalProps = {
 class ChatListItem extends Component {
 
   render() {
-    const {chat, navlink, updateActiveMenu, menuItemActive} = this.props;
+    const {chat, navlink, onClick} = this.props;
     const isOnline = false;
     const unread = false
     // <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
 
     return(
-      <NavLink to={navlink} id={chat.chatid} activeClassName="is-active" className={"chatMenuItem link" + (menuItemActive === chat.chatid ? ' is-active' : "")} onClick={updateActiveMenu}>
+      <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}>
         <div className="presenceContainer">
           <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
         </div>
@@ -45,7 +45,7 @@ class ChatListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class ChatMenu extends Component {
   render() {
-    const {userRole, chatGroup, updateActiveMenu, menuItemActive} = this.props;
+    const {userRole, chatGroup, onClick} = this.props;
     const chats = [];
 
     if (this.props.chats.length == 0) {
@@ -64,8 +64,7 @@ class ChatMenu extends Component {
             chat={chat}
             key={chat.chatid}
             navlink={`/messages/${chat.chatid}`}
-            updateActiveMenu={updateActiveMenu}
-            menuItemActive={menuItemActive}
+            onClick={onClick}
           />
         );
       });

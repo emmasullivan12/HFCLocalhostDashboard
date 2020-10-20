@@ -31,13 +31,13 @@ const MentorProfileModalProps = {
 class MainMenu extends Component {
 
   render() {
-  const {userRole, updateActiveMenu, menuItemActive} = this.props;
+  const {userRole, onClick} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
       return (
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
-            <NavLink exact to="/mentor-homepage" activeClassName="is-active" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Dashboard</NavLink>
+            <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Dashboard</NavLink>
     {/*        <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>*/}
@@ -46,7 +46,7 @@ class MainMenu extends Component {
     } else {
       return (
         <div className="mainMenu">
-          <NavLink exact to="/latest-advice" activeClassName="is-active" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Get Started</NavLink>
+          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Get Started</NavLink>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
       {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
