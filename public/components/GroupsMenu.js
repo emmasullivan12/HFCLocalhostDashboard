@@ -46,7 +46,8 @@ class GroupListItem extends Component {
     }
 
     return(
-      <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}>
+      <div className="chatMenuItem link" onClick={onClick}>
+    {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}> */}
     {/*  <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
        <div className="chatMenuItem link" onClick={closeMenu}> */}
         <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
@@ -61,7 +62,7 @@ class GroupListItem extends Component {
           <span className="notificationNum announcement">COMING SOON!</span>
         </div>
       {/*    </NavLink>*/}
-      </NavLink>
+      </div>
     )
   }
 }
