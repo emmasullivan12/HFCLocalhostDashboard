@@ -326,7 +326,7 @@ class PrAddMessage extends Component {
                 Dexter is Typing...
               </div>
               <div className="msgInsights-bar-right" id="msgInsights-bar-right">
-                <b>*bold*</b> <i>_italics_</i>
+                <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
               </div>
             </div>
           </div>

@@ -358,7 +358,7 @@ class MenteeFullSignUp extends Component {
         <div className="contentBox landingCTA">
           <div className="placeholderPic completeFullSU"/>
           <h2 className="landingCTATitle">
-            Complete your full sign up
+            Complete your mentee profile / full application
           </h2>
           <p className="landingCTADesc">
             We need to know a little more about your future ambitions and what help you might need to help determine the best mentor matches for you

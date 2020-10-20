@@ -32,7 +32,7 @@ class JoinProgPrompt extends Component {
         <div className="contentBox landingCTA">
           <div className="placeholderPic mentorMatches"/>
           <h2 className="landingCTATitle">
-            Join a live programme{userRole === 'mentee' ? ' to see your mentor matches!' : '!'}
+            Join a live group{userRole === 'mentee' ? ' to see your mentor matches!' : '!'}
           </h2>
           <p className="landingCTADesc">
             It looks like you aren&#39;t part of any live programmes yet. {userRole === 'mentee' ? 'Get a programme code or invite link from your teacher or Prospela Partner to get access to personalised mentoring' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}

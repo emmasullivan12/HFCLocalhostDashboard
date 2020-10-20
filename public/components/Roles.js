@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 
 const roleOptions = [
-  {value: '0', label: 'Don\'t Know'},
+  {value: '0', label: 'Don\'t Know / None'},
   {value: '1', label: '2D Animator'},
   {value: '2', label: '3D Animator'},
   {value: '3', label: 'Academic Librarian'},

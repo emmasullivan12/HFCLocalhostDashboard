@@ -132,7 +132,7 @@ const workEnvOptions = [
   {value: '1', label: 'laid-back'},
   {value: '2', label: 'nurturing'},
   {value: '3', label: 'always learning'},
-  {value: '4', label: 'collborative'},
+  {value: '4', label: 'collaborative'},
   {value: '5', label: 'diverse'},
   {value: '6', label: 'forward-thinking'},
   {value: '7', label: 'modern'},
@@ -335,7 +335,7 @@ class IndustryRoleSU extends React.Component {
   render() {
     const {errorLoadingRoles, rolesFromList, freeTextRoles, tabPressed, industries, editingInd, editingRole, editingWorkEnv, knowNextSteps, isSubmitting} = this.state;
     const {userRole} = this.props;
-    const { step, currentStep, totalSteps } = this.props;
+    const { step, currentStep, totalSteps, eetStatus } = this.props;
 
     const isEnabled = this.canBeSubmitted();
 
@@ -353,7 +353,7 @@ class IndustryRoleSU extends React.Component {
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
                 )}
                 {userRole === 'mentor' && (
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> do you have experience in?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> do you have experience in / can talk about?</label>
                 )}
                 <SelectBox
                   multiple
@@ -423,7 +423,7 @@ class IndustryRoleSU extends React.Component {
               )}
               {userRole === 'mentor' && ((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of work-life reality, how would you describe <strong>your work environment?</strong></label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of {eetStatus === 'uni' ? 'uni' : 'work'}-life reality, how would you describe <strong>your {eetStatus === 'uni' ? 'uni' : 'work'} environment?</strong></label>
                   <SelectBox
                     multiple
                   //  finMultiOptions={this.handleMultiWorkEnv}

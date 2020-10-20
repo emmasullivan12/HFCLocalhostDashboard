@@ -455,7 +455,7 @@ function checkDOB() {
      dDOB.classList.add('error');
      mDOB.classList.add('error');
      yDOB.classList.add('error');
-     dobPrompt.innerHTML = userType === 'mentee' ? 'You must be 13 or older to use Prospela' : 'You must be 18 or older to use Prospela'
+     dobPrompt.innerHTML = userType === 'mentee' ? 'You must be 13 or older to use Prospela' : 'You must be 18 or older to mentor with Prospela'
      dobPrompt.style.visibility = 'visible';
    }
   } else {
