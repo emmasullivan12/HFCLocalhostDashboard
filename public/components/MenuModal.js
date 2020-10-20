@@ -71,6 +71,17 @@ class MenuModal extends React.Component {
     this.onMenuClose = this.onMenuClose.bind(this);
   }
 
+  componentDidMount() {
+
+    // Closes modal if user presses browser back button
+    let self = this
+    window.addEventListener("popstate", this.onPopState.bind(event, self))
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('popstate', this.onPopState)
+  }
+
   onOpen() {
     const {changeInitFocus} = this.props;
     this.setState({ isMenuOpen: true }, () => {
@@ -82,12 +93,27 @@ class MenuModal extends React.Component {
       }
     });
     this.toggleScrollLock();
+
+    // Need to call it twice because e.state onpopstate refers to the
+    // second last state that was pushed. i.e. the latest history state
+    // is popped out (taken away from the stack)
+    history.pushState({ menuModal: 'open'}, '')
+    history.pushState({ menuModal: 'open'}, '')
   }
 
   onMenuClose() {
     this.setState({ isMenuOpen: false });
     this.openButtonNode.focus();
     this.toggleScrollLock();
+  }
+
+  onPopState = (e, self) => {
+    console.log(e)
+    console.log(self)
+    if (self.state.menuModal === 'open') {
+      console.log("here")
+      e.onMenuClose()
+    }
   }
 
   // Prevents user being able to scroll on screen behind Modal

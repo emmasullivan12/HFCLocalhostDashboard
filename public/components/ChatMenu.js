@@ -5,7 +5,7 @@ import "../css/ChatMenu.css";
 import "../css/General.css";
 import {
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 
 import Modal from './Modal.js';
@@ -29,7 +29,7 @@ class ChatListItem extends Component {
     // <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
 
     return(
-      <Link to={navlink} id={chat.chatid} className={"chatMenuItem link" + (menuItemActive === chat.chatid ? ' is-active' : "")} onClick={updateActiveMenu}>
+      <NavLink to={navlink} id={chat.chatid} activeClassName="is-active" className={"chatMenuItem link" + (menuItemActive === chat.chatid ? ' is-active' : "")} onClick={updateActiveMenu}>
         <div className="presenceContainer">
           <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
         </div>
@@ -37,7 +37,7 @@ class ChatListItem extends Component {
           <span className={"chatMenuLink overflow-ellipsis"+(unread ? ' unread' : null)}>{chat.mentor}</span>
           <span className="notificationNum">xx</span>
         </div>
-      </Link>
+      </NavLink>
     )
   }
 }

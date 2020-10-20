@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import {
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
@@ -37,7 +37,7 @@ class MainMenu extends Component {
       return (
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
-            <Link exact to="/mentor-homepage" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Dashboard</Link>
+            <NavLink exact to="/mentor-homepage" activeClassName="is-active" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Dashboard</NavLink>
     {/*        <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>*/}
@@ -46,7 +46,7 @@ class MainMenu extends Component {
     } else {
       return (
         <div className="mainMenu">
-          <Link exact to="/latest-advice" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Get Started</Link>
+          <NavLink exact to="/latest-advice" activeClassName="is-active" id="dashboard" className={"mainMenuItem overflow-ellipsis" + ((menuItemActive === 'dashboard') ? ' is-active' : "")} onClick={updateActiveMenu}>Get Started</NavLink>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
       {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />

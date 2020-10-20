@@ -73,12 +73,15 @@ class FullPageModal extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleNavScroll)
+
+    // Closes modal if user presses browser back button
+    let self = this
+    window.addEventListener("popstate", this.onPopState.bind(event, self))
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleNavScroll)
-    console.log("will unmount")
-//    window.history.forward();
+    window.removeEventListener('popstate', this.onPopState)
   }
 
   onOpen() {
@@ -91,12 +94,27 @@ class FullPageModal extends React.Component {
       }
     });
     this.toggleScrollLock();
+
+    // Need to call it twice because e.state onpopstate refers to the
+    // second last state that was pushed. i.e. the latest history state
+    // is popped out (taken away from the stack)
+    history.pushState({ fullPageModal: 'open'}, '')
+    history.pushState({ fullPageModal: 'open'}, '')
   }
 
   onClose() {
     this.setState({ isFPOpen: false });
     this.openButtonFPNode.focus()
     this.toggleScrollLock();
+  }
+
+  onPopState = (e, self) => {
+    console.log(e)
+    console.log(self)
+    if (self.state.fullPageModal === 'open') {
+      console.log("heer")
+      e.onClose()
+    }
   }
 
   handleNavScroll = () => {

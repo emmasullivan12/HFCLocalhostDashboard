@@ -5,7 +5,7 @@ import "../css/ChatMenu.css";
 import "../css/General.css";
 import {
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 
 import cdn from './CDN.js';
@@ -46,9 +46,9 @@ class GroupListItem extends Component {
     }
 
     return(
-      <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
-  {/*     <div className="chatMenuItem link" onClick={closeMenu}> */}
-    {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}> */}
+      <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={updateActiveMenu}>
+    {/*  <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
+       <div className="chatMenuItem link" onClick={closeMenu}> */}
         <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
           {isGroupAvatarURL === true ?
             <img className="logoImg" alt="Initiative Logo" src={progLogo}/>
@@ -61,7 +61,7 @@ class GroupListItem extends Component {
           <span className="notificationNum announcement">COMING SOON!</span>
         </div>
       {/*    </NavLink>*/}
-      </div>
+      </NavLink>
     )
   }
 }
@@ -87,7 +87,7 @@ class GroupsMenu extends Component {
           <GroupListItem
             group={group}
             key={group.gid}
-      //      navlink={`/community/${group.groupname}`}
+            navlink={`/community/${group.groupname}`}
             updateActiveMenu={updateActiveMenu}
             menuItemActive={menuItemActive}
           />

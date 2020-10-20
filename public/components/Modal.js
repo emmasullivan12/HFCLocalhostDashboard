@@ -67,30 +67,27 @@ class Modal extends React.Component {
   }
 
   componentDidMount() {
-  //  window.addEventListener("popstate", this.onPopState);
-    window.addEventListener("popstate", function(e) {
-      console.log("onpopstate called")
-      console.log(e)
-      console.log("e.state.modal: "+e.state.modal)
+
+    // Closes modal if user presses browser back button
+    let self = this
+    window.addEventListener("popstate", this.onPopState.bind(event, self))
+  /*  window.addEventListener("popstate", function onPopState(e) {
       if (e.state.modal === 'open') {
-        this.onClose()
+        self.onClose()
       }
-    });
+    })*/
   }
 
   componentWillUnmount() {
-    console.log("will unmount")
-//    window.history.forward();
+    window.removeEventListener('popstate', this.onPopState)
   }
 
   onOpen(e) {
     const {changeInitFocus} = this.props;
     this.setState({ isOpen: true }, () => {
-    //  var content = document.getElementById("modal-content")
 
       // if there is an input within modal content then allow focus to
       // be given to that instead of close button
-    //  if (content.getElementsByTagName("input").length != 0) {
       if (changeInitFocus) {
         const top = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
         document.getElementsByClassName("modal-container")[0].scrollTop = top
@@ -99,9 +96,12 @@ class Modal extends React.Component {
       }
     });
     this.toggleScrollLock();
-    console.log(window.history)
+
+    // Need to call it twice because e.state onpopstate refers to the
+    // second last state that was pushed. i.e. the latest history state
+    // is popped out (taken away from the stack)
     history.pushState({ modal: 'open'}, '')
-    console.log(window.history)
+    history.pushState({ modal: 'open'}, '')
   }
 
   onClose() {
@@ -112,25 +112,17 @@ class Modal extends React.Component {
     this.toggleScrollLock();
   }
 
-/*  onPopState(e) {
-    console.log("onpopstate called")
-    console.log(e)
-    console.log("e.state.modal: "+e.state.modal)
-    if (e.state.modal === 'open') {
-      this.onClose()
+  onPopState = (e, self) => {
+    if (self.state.modal === 'open') {
+      e.onClose()
     }
-  }*/
-
-/*  onCloseAsPrevModal() {
-    console.log("calling oncloseprevmodal")
-    this.setState({ isOpen: false });
-  }*/
+  }
 
   // Prevents user being able to scroll on screen behind Modal
   toggleScrollLock = () => document.querySelector('html').classList.toggle('u-lock-scroll');
 
   // Close modal using Escape key on keyboard
-  onKeyDown = e => {
+  onKeyDown = (e) => {
     var key = e.key || e.keyCode
 
     if (key === 'Escape' || key === 'Esc' || key === 27) {

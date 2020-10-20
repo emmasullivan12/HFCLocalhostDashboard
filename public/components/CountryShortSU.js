@@ -153,7 +153,7 @@ class CountryShortSU extends React.Component {
 
         } else if (countryLocal === 'AUS') {
           var isOzStatesOK = ozStates.map((el) => el.value).indexOf(stateProv) != -1;
-          if (stateProv != '' && isProvOK) {
+          if (stateProv != '' && isOzStatesOK) {
             return true;
           } else {
             return false;
@@ -161,7 +161,7 @@ class CountryShortSU extends React.Component {
 
         } else if (countryLocal === 'NZL') {
           var isNzlRegionsOK = nzlRegions.map((el) => el.value).indexOf(stateProv) != -1;
-          if (stateProv != '' && isProvOK) {
+          if (stateProv != '' && isNzlRegionsOK) {
             return true;
           } else {
             return false;

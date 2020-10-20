@@ -7,7 +7,7 @@ import "../css/App.css";
 import "../css/General.css";
 import {
   Route,
-  Link,
+  NavLink,
   BrowserRouter,
   Redirect,
   Switch
@@ -127,7 +127,8 @@ class Dashboard extends Component{
       scrollerBeingDragged: false,
       normalizedPosition: 0,
       contentPosition: 0,
-      menuItemActive: 'dashboard' //Homepage for any user
+      menuItemActive: '',
+  //    menuItemActive: 'dashboard' //Homepage for any user
     }
     this.scrollBarRef = React.createRef();
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
@@ -206,11 +207,11 @@ class Dashboard extends Component{
   updateActiveMenu(e) {
     e.persist()
     this.closeMenu(e)
-    const menuItemClicked = e.currentTarget.id
+/*    const menuItemClicked = e.currentTarget.id
 
     this.setState({
       menuItemActive: menuItemClicked
-    })
+    })*/
   }
 
   calculateScrollerHeight() {
