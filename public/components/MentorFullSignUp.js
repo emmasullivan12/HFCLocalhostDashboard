@@ -331,8 +331,8 @@ class MentorFullSignUp extends Component {
           {value: '115', label: 'World Development'},
       ]},
       ] : [],
-      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (https://prospela.com/privacy-policy/).", aType: 'interim', name: 'interim'},
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
         {value: '0', label: 'Male', iconFA: 'fas fa-male'},
         {value: '1', label: 'Female', iconFA: 'fas fa-female'},
         {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
@@ -640,7 +640,7 @@ class MentorFullSignUp extends Component {
           {value: '115', label: 'World Development'},
       ]},
       ] : [],
-      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (https://prospela.com/privacy-policy/).", aType: 'interim', name: 'interim'},
+      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
       ... (country === 'GBR') ? [
         {q: 'We ask E-Mentor applicants to self-disclose any history of convictions.', detail: 'We try to collect relevant information from mentor applicants to maintain a safe environment for our disadvantaged young people. Note: Answering "yes" to the any of the following does not immediately disqualify you from using Prospela. We might be in touch to discuss further.', aType: 'interim', name: 'interim'},
         {q: 'Do you have any convictions, cautions, reprimands or final warnings that are not "protected" as defined by the Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 (as amended in 2013)?', detailSmall: 'Guidance: The amendments to the Exceptions Order 1975 (2013) provide that certain spent convictions and cautions are \'protected\' and are not subject to disclosure to employers, and cannot be taken into account. Guidance and criteria on the filtering of these cautions and convictions can be found on the Disclosure and Barring Service website.', aType: 'yesno', req: 1, name: 'ukConv', options: [
@@ -667,7 +667,7 @@ class MentorFullSignUp extends Component {
           {value: '1', label: 'No'},
         ]},
       ] : [],
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
         {value: '0', label: 'Male', iconFA: 'fas fa-male'},
         {value: '1', label: 'Female', iconFA: 'fas fa-female'},
         {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},

@@ -423,7 +423,7 @@ class IndustryRoleSU extends React.Component {
               )}
               {userRole === 'mentor' && ((rolesFromList.length != 0 || freeTextRoles.length != 0) || editingRole != '') && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of {eetStatus === 'uni' ? 'uni' : 'work'}-life reality, how would you describe <strong>your {eetStatus === 'uni' ? 'uni' : 'work'} environment?</strong></label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectWorkEnv">To give students a sense of {eetStatus === 'uni' ? 'uni' : 'work'}-life reality, how would you describe <strong>your {eetStatus === 'uni' ? 'uni course & environment?' : 'work environment?'}</strong></label>
                   <SelectBox
                     multiple
                   //  finMultiOptions={this.handleMultiWorkEnv}
