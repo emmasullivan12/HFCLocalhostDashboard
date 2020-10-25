@@ -1,10 +1,10 @@
-// Dex last merged this code on 10th Aug 2019
+// Dex last merged this code on 25th oct 2020
 
 import React, { Component } from "react";
 import MentorUsrProfile from './MentorUsrProfile.js';
 import MenteeUsrProfile from './MenteeUsrProfile.js';
 
-class MtchdUsrProfile extends Component {
+class GroupFlexContent extends Component {
   render() {
   const match = {DUMMY_MATCH_DATA};
   const userRole = 'mentee';
@@ -36,4 +36,4 @@ const DUMMY_MATCH_DATA = {
   prospela_match_comments: "Hi soandso, Theresa is a great match for you because of XYZ. They've also had experience working with and give presentations regularly to senior clients!"
 }
 
-export default MtchdUsrProfile;
+export default GroupFlexContent;
