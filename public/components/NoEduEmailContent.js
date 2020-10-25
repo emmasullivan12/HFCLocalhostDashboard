@@ -297,7 +297,7 @@ class NoEduEmailContent extends Component {
           </div>
           <form className="noEduEmail-form" id="noEduEmailForm">
             <label htmlFor="progverifcode" className="descriptor alignLeft">
-              Have a <strong>programme code?</strong> Enter it here:
+              Have a <strong>Group code?</strong> Enter it here:
             </label>
             <input
               type="password"

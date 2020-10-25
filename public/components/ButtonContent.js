@@ -23,12 +23,12 @@ function ButtonContent(props) {
       );
     case 'joinProgLrg':
       return (
-        <div>+ Join a live Programme</div>
+        <div>+ Join a live Group</div>
       )
     case 'joinProg':
       return (
         <div className="chatMenuItem menuCTA">
-          <span className="menuCTA">+ Join a Programme...</span>
+          <span className="menuCTA">+ Join a Group...</span>
         </div>
       )
     case 'joinProgSml':

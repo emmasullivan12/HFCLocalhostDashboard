@@ -111,7 +111,7 @@ class MentorMatches extends Component {
                 You&#39;re all set!
               </h2>
               <p className="landingCTADesc">
-                We hope you&#39;re having a great chat. New programmes and content launching soon...
+                We hope you&#39;re having a great chat. New Groups and content launching soon...
               </p>
             </div>
           </section>

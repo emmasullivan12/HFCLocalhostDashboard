@@ -17,8 +17,8 @@ import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
 
 const JoinProgrammePlusModalProps = {
-  ariaLabel: 'Join a live Programme',
-  triggerText: 'Join a Programme',
+  ariaLabel: 'Join a live Group',
+  triggerText: 'Join a Group',
   usedFor: 'joinProgSmlHome',
   changeInitFocus: true
 }

@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th oct 2020 
+// Dex last merged this code on 20th oct 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -15,29 +15,44 @@ import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import "../css/Modal.css";
 
 /*const JoinProgrammeModalProps = {
-  ariaLabel: 'Join a live Programme',
-  triggerText: 'Join a Programme',
+  ariaLabel: 'Join a live Group',
+  triggerText: 'Join a Group',
   usedFor: 'joinProg',
   changeInitFocus: true
 }*/
 
 const JoinProgrammePlusModalProps = {
-  ariaLabel: 'Join a live Programme',
-  triggerText: 'Join a Programme',
+  ariaLabel: 'Join a live Group',
+  triggerText: 'Join a Group',
   usedFor: 'joinProgSml',
   changeInitFocus: true
 }
 
 // This shows the content within an individual row in the ChatMenu
 class GroupListItem extends Component {
+  constructor () {
+    super();
+    this.state = {
+      showChannels: true,
+    }
+  }
+
+  toggleGroupChannels = (e) => {
+    this.setState(prevState => ({
+      showChannels: !prevState.showChannels
+    }));
+  }
 
   render() {
-    const {group, navlink, onClick} = this.props;
+    const {showChannels} = this.state;
+    const {group, onClick} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
 
+    let navlink
     let progLogo
     let groupInitial
+    const channels = []
 
     if (isGroupAvatarURL) {
       progLogo = cdn + '/progImages/' + groupAvatarURL
@@ -45,23 +60,47 @@ class GroupListItem extends Component {
       groupInitial = group.groupname.charAt(0).toUpperCase();
     }
 
+    this.props.channels.forEach((channel) => {
+      navlink = `/community/${group.gid}/${channel.chatid}`
+
+      channels.push(
+        <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link group" onClick={onClick}>
+          <div className="presenceContainer group">
+            #
+          </div>
+          <div className="chatItemFlexContainer">
+            <span className="chatMenuLink overflow-ellipsis">{channel.name}</span>
+            <span className="notificationNum">1</span>
+          </div>
+        </NavLink>
+      );
+    });
+
     return(
-      <div className="chatMenuItem link" onClick={onClick}>
-    {/*  <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}> */}
-    {/*  <div id={group.gid} className={"chatMenuItem link" + (menuItemActive === group.gid ? ' is-active' : "")} onClick={updateActiveMenu}>
-       <div className="chatMenuItem link" onClick={closeMenu}> */}
-        <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
-          {isGroupAvatarURL === true ?
-            <img className="logoImg" alt="Initiative Logo" src={progLogo}/>
-          : groupInitial
-          }
+      <div className="groupMenuItemContainer">
+        <div className="groupMenuItem">
+          <div className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
+            {isGroupAvatarURL === true ?
+              <img className="logoImg" alt="Initiative Logo" src={progLogo}/>
+            : groupInitial
+            }
+          </div>
+          <div className="chatItemFlexContainer">
+            <span className="chatMenuLink overflow-ellipsis">{group.groupname}</span>
+        {/*    <span className="notificationNum announcement">COMING SOON!</span> */}
+            <span className="menuNavCTA" onClick={this.toggleGroupChannels}>
+              {showChannels == true ?
+                'Hide'
+              : 'Show'
+              }
+            </span>
+          </div>
         </div>
-        <div className="chatItemFlexContainer">
-          <span className="chatMenuLink overflow-ellipsis">{group.groupname}</span>
-    {/*      <span className="notificationNum">xx</span> */}
-          <span className="notificationNum announcement">COMING SOON!</span>
-        </div>
-      {/*    </NavLink>*/}
+        {showChannels == true && (
+          <div>
+            {channels}
+          </div>
+        )}
       </div>
     )
   }
@@ -88,7 +127,7 @@ class GroupsMenu extends Component {
           <GroupListItem
             group={group}
             key={group.gid}
-            navlink={`/community/${group.groupname}`}
+            channels={group.channels}
             onClick={onClick}
           />
         );
@@ -110,11 +149,6 @@ class GroupsMenu extends Component {
             </div>
           </div>
           {groups}
-        {/*  {this.props.groups.length === 0 && (
-            <Modal {...JoinProgrammeModalProps}>
-              <JoinProgrammeModalContent />
-            </Modal>
-          )} */}
         </div>
       </React.Fragment>
     );

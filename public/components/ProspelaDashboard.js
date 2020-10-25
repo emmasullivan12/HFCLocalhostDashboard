@@ -23,8 +23,6 @@ import ProspelaBot from "./ProspelaBot";
 import SendNotifModalContent from './SendNotifModalContent.js';
 import SubmitMatchContent from './SubmitMatchContent.js';
 import ProspelaMenuContent from "./ProspelaMenuContent";
-import ProtectedChats from "./ProtectedChats";
-import ProtectedRoute from "./ProtectedRoute";
 
 const MenuModalContent = (
   <ProspelaMenuContent />
@@ -224,7 +222,8 @@ class ProspelaDashboard extends Component{
               <Switch>
                 <Redirect exact from="/" to="/prospelaBotHomepage" />,
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
-                <ProtectedChats chats={DUMMY_CHAT_LIST} />
+                <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
+                <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route component={NotFound}/>
               </Switch>
             </div>

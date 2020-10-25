@@ -32,7 +32,7 @@ class JoinProgrammeModalContent extends Component {
       evt.preventDefault ();
       return;
     }
-    this.setState({ messageFromServer: 'Programme code sent' });
+    this.setState({ messageFromServer: 'Group code sent' });
     this.setState({ progName: 'AVFX' }); //NEED TO UPDATE WITH ACTUALLY PROGRAMME NAME
   }
 
@@ -69,11 +69,11 @@ class JoinProgrammeModalContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <span className="emoji-icon sparkle-emoji titleLeft" />
-            <span>Join a live Programme</span>
+            <span>Join a live Group</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <p className="modalDesc alignCenter">
-            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
+            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
           <form className="leftRightPad">
             <input
@@ -93,13 +93,13 @@ class JoinProgrammeModalContent extends Component {
             />
             {isError && (
               <div className="redText">
-                Sorry, that programme doesn&#39;t exist. Make sure you have the correct code.
+                Sorry, that group doesn&#39;t exist. Make sure you have the correct code.
               </div>
             )}
             <Checkbox
               labelId="tncText"
               labelClassName="checkbox-container-login"
-              label={"I agree to share my Prospela profile with the programme admin for the purposes of " + (userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people')}
+              label={"I agree to share my Prospela profile with the group admin for the purposes of " + (userRole === 'mentee' ? 'providing me career advice & support' : 'providing effective career advice & support to young people')}
               id="tncCheckbox"
               name="tanp"
               value="1"
@@ -110,7 +110,7 @@ class JoinProgrammeModalContent extends Component {
             />
             <div className="request-btn-container">
               <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
-                Join Programme
+                Join Group
               </button>
             </div>
           </form>

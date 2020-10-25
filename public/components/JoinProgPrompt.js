@@ -7,8 +7,8 @@ import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import "../css/General.css";
 
 const JoinProgrammeModalProps = {
-  ariaLabel: 'Join a live Programme',
-  triggerText: 'Join a Programme',
+  ariaLabel: 'Join a live Group',
+  triggerText: 'Join a Group',
   usedFor: 'joinProgLrg',
   changeInitFocus: true
 }
@@ -35,7 +35,7 @@ class JoinProgPrompt extends Component {
             Join a live group{userRole === 'mentee' ? ' to see your mentor matches!' : '!'}
           </h2>
           <p className="landingCTADesc">
-            It looks like you aren&#39;t part of any live programmes yet. {userRole === 'mentee' ? 'Get a programme code or invite link from your teacher or Prospela Partner to get access to personalised mentoring' : 'Get a programme code or invite link from your Employer to increase your company\'s collective impact'}
+            It looks like you aren&#39;t part of any live groups yet. {userRole === 'mentee' ? 'Get a group code or invite link from your teacher or Prospela Partner to get access to personalised mentoring' : 'Get a group code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
         {/*  {nonPartnerInst && userRole === 'mentee' && (
             <div className="neutralText alignCenter">

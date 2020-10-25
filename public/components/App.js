@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th oct 2020 
+// Dex last merged this code on 20th oct 2020
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -27,8 +27,6 @@ import MenuModal from "./MenuModal";
 import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
 import ProspelaDashboard from "./ProspelaDashboard";
-import ProtectedChats from "./ProtectedChats";
-import ProtectedRoute from "./ProtectedRoute";
 import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
@@ -307,13 +305,14 @@ class Dashboard extends Component{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
                   ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
                 }[userRole]}
-                <Route path="/latest-advice" roleAllowed="mentee" userRole="mentee" component={LatestAdvice}/>,
-                <ProtectedRoute path="/mentee-profile" roleAllowed="mentee" userRole="mentee" component={LgdInUsrProfile}/>,
-                <ProtectedRoute path="/to-do-list" roleAllowed="mentee" userRole="mentee" component={Todo}/>,
-                <ProtectedRoute path="/teams" roleAllowed="mentor" userRole="mentor" component={Teams}/>
+                <Route path="/latest-advice" component={LatestAdvice}/>,
+                <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
+                <Route path="/to-do-list" component={Todo}/>,
+                <Route path="/teams" component={Teams}/>
                 <Route path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
-                <ProtectedChats chats={DUMMY_CHAT_LIST} />
+                <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
+                <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route component={NotFound}/>
               </Switch>
             </div>
@@ -331,7 +330,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -391,7 +390,7 @@ function MenteeSteps({userRole}) {
           return (
             <BrowserRouter>
               <Switch>
-                <ProtectedRoute roleAllowed="mentee" userRole="mentee" step={step} component={TypeformSignUp} />
+                <Route component={TypeformSignUp} />
               </Switch>
             </BrowserRouter>
           );
@@ -448,11 +447,11 @@ const DUMMY_CHAT_LIST = [
 ];
 
 const DUMMY_GROUP_LIST = [
-  {gid: '20000', groupname: 'Villiers High School', status: 'active', groupavatarurl: 'vhs-avatar-20.png'},
-  {gid: '20001', groupname: 'Into Games', status: 'active', groupavatarurl: 'intogames-avatar-20.png'},
-  {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: 'avfx-avatar-20.png'},
-  {gid: '20003', groupname: 'BAME in Games', status: 'active'},
-  {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: 'aw-avatar-20.png'},
+  {gid: '20000', groupname: 'Villiers High School', status: 'active', groupavatarurl: 'vhs-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
+  {gid: '20001', groupname: 'Into Games', status: 'active', groupavatarurl: 'intogames-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
+  {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: 'avfx-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
+  {gid: '20003', groupname: 'BAME in Games', status: 'active', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
+  {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: 'aw-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
 ];
 
 /* App.propTypes = {

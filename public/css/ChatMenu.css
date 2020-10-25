@@ -23,17 +23,45 @@
   color: rgba(206, 206, 206, .84);
 }
 
+.menuNavCTA{
+  color: #969696;
+  font-size: 12px;
+  width: 32px;
+  line-height: 18px;
+  margin-left: 4px;
+  margin-right: -12px;
+  position: absolute;
+  right: 66px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.groupMenuItemContainer{
+  text-decoration: none;
+  display: block;
+}
+.groupMenuItemContainer:hover .menuNavCTA{
+  visibility: visible;
+}
+.groupMenuItem{
+  height: 30px;
+  padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+}
+.chatMenuItem.group{
+  padding-left: 2.2rem;
+}
+.chatMenuItem.group:last-of-type{
+  margin-bottom: .7rem;
+}
 .chatMenuItem {
   height: 30px;
   text-decoration: none;
   display: block;
   padding: 0.5rem 1.7rem 0.5rem 1.7rem;
 }
-
 .chatMenuItem:hover{
   background-color: #111111;
 }
-
 .chatMenuItem.menuCTA:hover,
 .chatMenuItem.menuCTA:focus{
   background: none;
@@ -66,14 +94,14 @@
 .chatMenuLink {
   color: rgba(255,255,255,.835);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 15px;
 }
 .chatMenuLink.unread {
   color: #fff;
   font-weight: 600;
 }
-
+.presenceContainer.group,
 .presenceContainer{
   float: left;
   margin-left: 0;
@@ -85,6 +113,9 @@
   font-size: 13px;
   opacity: 0.95;
   left: 0;
+}
+.presenceContainer.group{
+  color: #aab5b2;
 }
 .presenceContainer.placeholder{
   color: rgb(0, 255, 183, .50);

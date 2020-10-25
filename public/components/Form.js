@@ -578,7 +578,6 @@ class Form extends Component {
 
   handleSubmit = () => {
     const {onSubmit, usedFor, saveOnSubmit} = this.props;
-    this.toggleScrollLock();
     this.setState({
       isSubmitting: true
     }, () => {
@@ -619,10 +618,6 @@ class Form extends Component {
 
       // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
 
-      // Once submitted or if error that user needs addressing
-      if (this.state.isSubmitting === false) {
-        this.toggleScrollLock();
-      }
     })
   }
 

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
@@ -31,7 +31,7 @@ class AutoEnrollProgModalContent extends Component {
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
-    this.setState({ messageFromServer: 'Programme code sent' });
+    this.setState({ messageFromServer: 'Group code sent' });
   }
 
   render() {
@@ -44,14 +44,14 @@ class AutoEnrollProgModalContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <span className="emoji-icon sparkle-emoji titleLeft" />
-            <span>Join the {autoEnrollProgName} Programme</span>
+            <span>Join the {autoEnrollProgName} Group</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <form className="leftRightPad">
             <Checkbox
               labelId="tncText"
               labelClassName="checkbox-container-login"
-              label="I agree to share my Prospela profile with the programme admin for the purposes of providing me career advice & support"
+              label="I agree to share my Prospela profile with the Group admin for the purposes of providing me career advice & support"
               id="tncCheckbox"
               name="tanp"
               value="1"
@@ -62,7 +62,7 @@ class AutoEnrollProgModalContent extends Component {
             />
             <div className="request-btn-container">
               <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
-                Join Programme
+                Join Group
               </button>
             </div>
           </form>

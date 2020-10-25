@@ -345,7 +345,7 @@ class MenteeFullSignUp extends Component {
         {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-msms', name: 'msms'},
       ]},*/
       ... (userIs18 != true) ? [
-        {q: 'Do you have parental permission?', detail: 'By continuing, you confirm you have parental permission to take part in mentoring programmes on Prospela', aType: 'interim', name: 'interim'},
+        {q: 'Do you have parental permission?', detail: 'By continuing, you confirm you have parental permission to take part in mentoring groups on Prospela', aType: 'interim', name: 'interim'},
       ] : [],
       {q: 'Set your notification preferences: Career Opportunities & Tips', detail: 'Receive inspiration, '+ (userRole === 'mentee' ? 'career opportunities,' : 'ongoing support,') + ' promotions, surveys, and product updates from Prospela and our partners', aType: 'checkbox', name: 'checkboxMaster', options: [
         {label: 'By Email', id: 'pemail', name: 'pemail'},

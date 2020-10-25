@@ -8,7 +8,7 @@ import AutoEnrollProgModalContent from './AutoEnrollProgModalContent.js';
 import "../css/General.css";
 
 const AutoEnrollModalProps = {
-  ariaLabel: 'Join programme from invite',
+  ariaLabel: 'Join Group from invite',
   triggerText: 'Join',
   usedFor: 'joinProgAuto',
 }
@@ -27,7 +27,7 @@ class AutoEnrollPrompt extends Component {
             <img className="logoImg" alt="Initiative Logo" src={progLogoURL}/>
           </div>
           <h2 className="landingCTATitle">
-            You&#39;ve been invited to join the {autoEnrollProgName} programme
+            You&#39;ve been invited to join the {autoEnrollProgName} Group
           </h2>
           <p className="landingCTADesc">
             Click below to get access
