@@ -38,6 +38,10 @@ class PrMessagesList extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    console.log("mounted")
+  }
+
   render() {
     const messages = [
       {

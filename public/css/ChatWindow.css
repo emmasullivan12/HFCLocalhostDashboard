@@ -113,8 +113,9 @@
   color:#3f3f3f;
   font-weight:600;
   margin:0;
-  display:block;
   font-size:1rem;
+  display: inline-block;
+  margin-right: 4px;
 }
 
 .more-info-container{

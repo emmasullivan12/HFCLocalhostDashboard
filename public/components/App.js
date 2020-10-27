@@ -448,7 +448,7 @@ const DUMMY_CHAT_LIST = [
 
 const DUMMY_GROUP_LIST = [
   {gid: '20000', groupname: 'Villiers High School', status: 'active', groupavatarurl: 'vhs-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
-  {gid: '20001', groupname: 'Into Games', status: 'active', groupavatarurl: 'intogames-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
+  {gid: '20001', groupname: 'Into Games', status: 'active', groupavatarurl: 'intogames-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'leaderboard', chatid: '13347'},{name: 'social', chatid: '22347'},{name: 'other', chatid: '12347'}]},
   {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: 'avfx-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
   {gid: '20003', groupname: 'BAME in Games', status: 'active', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},
   {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: 'aw-avatar-20.png', channels: [{name: 'hello-mentors', chatid: '12345'},{name: 'resources', chatid: '12346'},{name: 'other', chatid: '12347'}]},

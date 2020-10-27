@@ -7,6 +7,7 @@ import PrAddMessage from "./PrAddMessage";
 import MenuNav from './MenuNav.js';
 import Modal from "./Modal";
 import FileUploadContent from "./FileUploadContent";
+import VerifiedBadge from "./VerifiedBadge";
 import "../css/ChatWindow.css";
 import "../css/General.css";
 
@@ -106,6 +107,7 @@ class ChatWindow extends Component {
   const {flexContent, isGroup} = this.props;
   const {onScroll} = this;
   const isOffline = false;
+  const isVerifiedGroup = true
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -121,9 +123,12 @@ class ChatWindow extends Component {
             <div className="chat-header">
               <MenuNav />
               <div className="chat-detail-container">
-                <div className="chat-title overflow-ellipsis">
+                <div className="chat-title">
                   Chat name
                 </div>
+                {isVerifiedGroup && (
+                  <VerifiedBadge />
+                )}
               </div>
               {isGroup && (
                 <div className="more-info-container">

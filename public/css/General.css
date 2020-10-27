@@ -1350,6 +1350,14 @@ a.button{
   font-size: 20px;
   opacity: 0.89;
 }
+.verifiedBadgeContainer{
+  display: inline-block!important;
+  /* vertical-align: middle;*/
+  margin-left: 5px;
+}
+#icon-verified-badge{
+  overflow: visible;
+}
 
 /* MODALS */
 /* Hides the text within the close button (we don't need to see it, */

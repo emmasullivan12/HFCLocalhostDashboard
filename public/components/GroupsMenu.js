@@ -37,6 +37,14 @@ class GroupListItem extends Component {
     }
   }
 
+  componentDidMount() {
+    const {group} = this.props;
+    // Set height of channelsContainer for click animation to work properly
+    const numChannels = this.props.channels.length
+    const channelContainerHeight = (numChannels * 25) + 12 /* 25px oer chatMenuItem + 12px margin on last item */
+    document.getElementById(group.groupname + "-channels").style.height = channelContainerHeight + "px"
+  }
+
   toggleGroupChannels = (e) => {
     this.setState(prevState => ({
       showChannels: !prevState.showChannels
@@ -52,6 +60,7 @@ class GroupListItem extends Component {
     let navlink
     let progLogo
     let groupInitial
+
     const channels = []
 
     if (isGroupAvatarURL) {
@@ -63,14 +72,34 @@ class GroupListItem extends Component {
     this.props.channels.forEach((channel) => {
       navlink = `/community/${group.gid}/${channel.chatid}`
 
+      let icon
+
+      switch(channel.name) {
+        case "hello-mentors":
+        case "hello-mentees":
+          icon = <i className="fas fa-home" />
+          break;
+        case "resources":
+          icon = <i className="fas fa-folder-open" />
+          break;
+        case "leaderboard":
+          icon = <i className="fas fa-crown" />
+          break;
+        case "social":
+          icon = <i className="fas fa-coffee" />
+          break;
+        default:
+          icon = <i className="fas fa-hashtag" />
+      }
+
       channels.push(
         <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link group" onClick={onClick}>
           <div className="presenceContainer group">
-            #
+            {icon}
           </div>
           <div className="chatItemFlexContainer">
-            <span className="chatMenuLink overflow-ellipsis">{channel.name}</span>
-            <span className="notificationNum">1</span>
+            <span className="chatMenuLink channel overflow-ellipsis">{channel.name}</span>
+            <span className="notificationNum channel">1</span>
           </div>
         </NavLink>
       );
@@ -96,11 +125,11 @@ class GroupListItem extends Component {
             </span>
           </div>
         </div>
-        {showChannels == true && (
-          <div>
+        <div className="channelsContainer">
+          <div className={"showChannels" + (showChannels == true ? '' : ' hidden')} id={group.groupname + "-channels"}>
             {channels}
           </div>
-        )}
+        </div>
       </div>
     )
   }
