@@ -10,6 +10,7 @@ import {
 
 import cdn from './CDN.js';
 import Modal from './Modal.js';
+import {getIcon} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import "../css/Modal.css";
@@ -70,27 +71,9 @@ class GroupListItem extends Component {
     }
 
     this.props.channels.forEach((channel) => {
-      navlink = `/community/${group.gid}/${channel.chatid}`
+      navlink = `/community/${group.gid}/${channel.chlid}`
 
-      let icon
-
-      switch(channel.name) {
-        case "hello-mentors":
-        case "hello-mentees":
-          icon = <i className="fas fa-home" />
-          break;
-        case "resources":
-          icon = <i className="fas fa-folder-open" />
-          break;
-        case "leaderboard":
-          icon = <i className="fas fa-crown" />
-          break;
-        case "social":
-          icon = <i className="fas fa-coffee" />
-          break;
-        default:
-          icon = <i className="fas fa-hashtag" />
-      }
+      const icon = getIcon(channel.type)
 
       channels.push(
         <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link group" onClick={onClick}>

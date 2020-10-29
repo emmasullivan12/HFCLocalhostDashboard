@@ -9,10 +9,25 @@ import "../css/ProspelaBot.css";
 class ProspelaBot extends Component {
   render() {
     const {isGroup} = this.props
+    const groupName = 'Access:VFX'
+    const channelName = 'mentor-general'
+    const channelType = 'general' // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
+    const channelAbout = 'A great place to chit chat with other E-Mentors'
 
     return (
       <React.Fragment>
-        <ChatWindow flexContent={isGroup ? GroupFlexContent : MtchdUsrProfile} className="chatWindowContainer" isGroup={isGroup}/>
+        <ChatWindow
+          groupName={groupName}
+          channelName={channelName}
+          channelType={channelType}
+          channelAbout={channelAbout}
+          flexContent={isGroup ?
+            <GroupFlexContent />
+          : <MtchdUsrProfile />
+          }
+          className="chatWindowContainer"
+          isGroup={isGroup}
+        />
       </React.Fragment>
     );
   }

@@ -7,7 +7,7 @@ import AudioCTA from './AudioCTA.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE} from './GeneralFunctions.js';
+import {isIE, DateCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
@@ -514,40 +514,6 @@ function PrAuto(props) {
           <FeedbkCTA />
         </div>
       );
-  }
-}
-
-function nthCalc(date) {
-  if (date > 3 && date < 21) return 'th';
-  switch (date % 10) {
-    case 1:  return "st";
-    case 2:  return "nd";
-    case 3:  return "rd";
-    default: return "th";
-  }
-}
-
-function DateCalc(props) {
-  var ts = new Date(props.time);
-  var today = new Date();
-  var tsDate = ts.toDateString()
-  var todayDate = today.toDateString();
-  var yestDate = new Date((today.setDate(today.getDate()-1))).toDateString()
-  var isToday = tsDate == todayDate
-  if (isToday) {
-    return "Today"
-  } else if(tsDate == yestDate) {
-    return "Yesterday"
-  } else {
-    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-    var year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
-    var month = months[ts.getMonth()];
-    var day = days[ts.getDay()];
-    var date = ts.getDate();
-    var nth = nthCalc(date);
-    var time = day + ', ' + month + ' ' + date + nth + year
-    return time;
   }
 }
 

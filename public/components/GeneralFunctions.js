@@ -21,6 +21,24 @@ function isEdge() {
   }
 }
 
+function getIcon(channelType) {
+  switch(channelType) {
+    case "general":
+      return <i className="fas fa-home" />
+    case "intros":
+      return <i className="fas fa-hand-sparkles" />
+    case "resources":
+      return <i className="fas fa-folder-open" />
+    case "leaderboard":
+      return <i className="fas fa-crown" />
+    case "social":
+      return <i className="fas fa-coffee" />
+    default:
+      return <i className="fas fa-hashtag" />
+  }
+}
+
+
 // Disallows EdgeHTML / Edge Legacy
 function whichBrowser() {
   var browser = (function (agent) {
@@ -49,10 +67,63 @@ function isMobile() {
   return regExp.test(ua.substr(0, 4));
 }*/
 
+function checkMobile() {
+  const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+  const h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+  const isMobile = w <= 600 && h <= 800
+  return isMobile
+}
+
 function isURL(url) {
   var expression = /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z0-9\u00a1-\uffff][a-z0-9\u00a1-\uffff_-]{0,62})?[a-z0-9\u00a1-\uffff]\.)+(?:[a-z\u00a1-\uffff]{2,}\.?))(?::\d{2,5})?(?:[/?#]\S*)?$/i;
   var regExp = new RegExp(expression);
   return regExp.test(url);
+}
+
+function nthCalc(date) {
+  if (date > 3 && date < 21) return 'th';
+  switch (date % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+
+function DateCalc(props) {
+  var ts = new Date(props.time);
+  var today = new Date();
+  var tsDate = ts.toDateString()
+  var todayDate = today.toDateString();
+
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var month = months[ts.getMonth()];
+  var date = ts.getDate();
+  let time
+  let year
+
+  // Show format May 2, 2020 i.e. Don't show things like "today" "yesterday" etc
+  if (props.showPureDate == true) {
+    year = ts.getFullYear()
+    time = month + ' ' + date + ", " + year
+    return time;
+  } else {
+    var yestDate = new Date((today.setDate(today.getDate()-1))).toDateString()
+    var isToday = tsDate == todayDate
+    if (isToday) {
+      return "Today"
+    } else if(tsDate == yestDate) {
+      return "Yesterday"
+    } else {
+      var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+      var day = days[ts.getDay()];
+      var nth = nthCalc(date);
+      year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
+      time = day + ', ' + month + ' ' + date + nth + year
+      return time;
+    }
+  }
+
 }
 
 const ChevronDown = () => (
@@ -117,4 +188,4 @@ const LoadingSpinner = () => (
   </div>
 )
 
-export {isIE, isEdge, isURL, escapeHTML, whichBrowser, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, whichBrowser, checkMobile, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner};

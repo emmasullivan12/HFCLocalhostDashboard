@@ -105,10 +105,6 @@
   background: #f2f2f2;
 }
 
-.chat-detail-container{
-  margin-right: 10px;
-}
-
 .chat-title {
   color:#3f3f3f;
   font-weight:600;
@@ -118,9 +114,56 @@
   margin-right: 4px;
 }
 
+.channel-title {
+  margin-left: 10px;
+  color: #525252;
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 4px;
+}
+.channel-title.mobile{
+  margin-left: 16px;
+  font-size: inherit;
+  display: inline-block;
+  margin-right: 4px;
+  color: inherit;
+}
+.chat-title-icon{
+  color: #a19c99;
+  font-size: 11px;
+  display: inline-block!important;
+  margin-left: 2px;
+  margin-right: 6px;
+  margin-top: 4px;
+  position: absolute;
+  opacity: 0.95;
+}
+.chat-title-icon.mobile{
+  font-size: 10px;
+  margin-top: 1px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.chat-detail{
+  color: #a5a09d;
+  font-size: .75rem;
+  margin-top: 2px;
+}
+
 .more-info-container{
   position: absolute;
   right: 16px;
+  margin-left: 10px;
+}
+.chatInfoContainer{
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  color: #adacac;
+  cursor: pointer;
+}
+.chatInfoContainer:hover{
+  color: #3f3f3f;
 }
 
 .flex-container-overlay{
@@ -172,6 +215,11 @@
   height: calc(100% - 53px - 74px);
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
   background-size: 130px;
+}
+
+.flex-container-content{
+  padding: 12px 12px 0 12px;
+  background: #f2f2f2;
 }
 
 .dragover-pane-overlay{
@@ -370,7 +418,7 @@
   word-wrap: break-word;
 }
 
-.more-info-btn{
+/*.more-info-btn{
   padding: 0 10px;
   margin: 2px 8px 2px 0;
   vertical-align: middle;
@@ -403,7 +451,7 @@
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);;
   background: #8d8cce;
-}
+}*/
 
 /* DRAGOVER ANIMATION */
 @-webkit-keyframes move-top

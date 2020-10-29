@@ -1,0 +1,23 @@
+.group-about-container{
+  border-radius: 4px;
+  padding: 12px;
+  background: #e8e8e8;
+}
+
+.groupName-flexContainer{
+  display: block;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.group-detail-item{
+  margin-bottom: 10px;
+  color: #3f3f3f;
+}
+.group-detail-item.link{
+  display: block;
+}
+
+.chat-title.flexContainer{
+  padding-top: 22px;
+}

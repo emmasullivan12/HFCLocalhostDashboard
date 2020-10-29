@@ -174,7 +174,7 @@ div {
   font-weight: 600;
 }
 .noBold{
-  font-weight: 400;
+  font-weight: 400!important;
 }
 .greenText{
   color: #14bd14;
@@ -1285,6 +1285,10 @@ a.button{
   text-align: center;
   color: #fff;
 }
+.groupsAvatarContainer.flexContainer{
+  height: 40px;
+  width: 40px;
+}
 .menuItemIconContainer{
   margin-top: 2px;
   float: unset;
@@ -1353,7 +1357,6 @@ a.button{
 .verifiedBadgeContainer{
   display: inline-block!important;
   /* vertical-align: middle;*/
-  margin-left: 5px;
 }
 #icon-verified-badge{
   overflow: visible;

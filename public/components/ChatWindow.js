@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+
+import {getIcon, checkMobile} from './GeneralFunctions.js';
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
 import MenuNav from './MenuNav.js';
@@ -40,7 +42,7 @@ class ChatWindow extends Component {
     super(props);
     this.scrollRef = React.createRef();
     this.state = {
-      isFlexContainerOpen: false,
+      isFlexContainerOpen: this.props.isGroup ? true : false,
       isLoadingMsgs: false,
       dragover: '',
       /* dragFiles: '', */
@@ -104,10 +106,15 @@ class ChatWindow extends Component {
 
   render() {
   const {isLoadingMsgs, isFlexContainerOpen} = this.state;
-  const {flexContent, isGroup} = this.props;
+  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   const isVerifiedGroup = true
+  const icon = getIcon(channelType)
+  const isMobile = checkMobile()
+  const about = channelAbout ? channelAbout : ''
+
+  console.log(flexContent)
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -122,33 +129,44 @@ class ChatWindow extends Component {
           <div className="chat-content-container">
             <div className="chat-header">
               <MenuNav />
-              <div className="chat-detail-container">
-                <div className="chat-title">
-                  Chat name
+              <div className="page-detail-container overflow-ellipsis">
+                <div className="chat-title-container overflow-ellipsis">
+                  <span className="chat-title">
+                    {groupName}
+                  </span>
+                  {isVerifiedGroup && (
+                    <VerifiedBadge />
+                  )}
+                  {!isMobile && (
+                    <React.Fragment>
+                      <span className="channel-title noBold">
+                        - {channelName}
+                      </span>
+                      <span className="chat-title-icon">
+                        {icon}
+                      </span>
+                    </React.Fragment>
+                  )}
                 </div>
-                {isVerifiedGroup && (
-                  <VerifiedBadge />
-                )}
+                <div className="chat-detail overflow-ellipsis">
+                  {isMobile && (
+                    <React.Fragment>
+                      <span className="chat-title-icon mobile">
+                        {icon}
+                      </span>
+                      <span className="channel-title mobile bold">
+                        {channelName}
+                      </span>
+                    </React.Fragment>
+                  )}
+                  {isMobile ? '- ' : ''}{about}
+                </div>
               </div>
               {isGroup && (
                 <div className="more-info-container">
-                  <button type="button" className="more-info-btn" onClick={this.toggleFlexContainer}>
-                    {isFlexContainerOpen===false ? (
-                      <span className="more-info-btn-txt">
-                        {!isGroup ?
-                          'See USERID\'s Profile >>'
-                        : 'Im a group'
-                        }
-                      </span>
-                    ) : (
-                      <span className="more-info-btn-txt">
-                        {!isGroup ?
-                          '<< Hide USERID\'s Profile'
-                        : 'Im a group'
-                        }
-                      </span>
-                    )}
-                  </button>
+                  <div className="chatInfoContainer" onClick={this.toggleFlexContainer}>
+                    <i className="fas fa-info-circle"/>
+                  </div>
                 </div>
               )}
             </div>
@@ -197,10 +215,13 @@ class ChatWindow extends Component {
               <button type="submit">Upload</button>
             </form>
           </div>
-          {isFlexContainerOpen && (
+          {isFlexContainerOpen && !isMobile && (
             <FlexContainerContent
               content={flexContent}
             />
+          )}
+          {isFlexContainerOpen && isMobile && (
+            alert("Mobile flex container modal to go here")
           )}
         </div>
       </React.Fragment>
