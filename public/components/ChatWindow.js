@@ -16,10 +16,11 @@ import "../css/General.css";
 
 // FlexContainerContent provides all of the Content within FlexContainer
 const FlexContainerContent = ({
-  content
+  content,
+  isGroup
 }) => {
   return (
-    <div className="flex-container-overlay">
+    <div className={"flex-container-overlay" + (isGroup == true ? ' group' : '')}>
       <div className="flex-container-container">
         <div className="flex-container-content">
           {content}
@@ -113,8 +114,6 @@ class ChatWindow extends Component {
   const icon = getIcon(channelType)
   const isMobile = checkMobile()
   const about = channelAbout ? channelAbout : ''
-
-  console.log(flexContent)
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -218,6 +217,7 @@ class ChatWindow extends Component {
           {isFlexContainerOpen && !isMobile && (
             <FlexContainerContent
               content={flexContent}
+              isGroup={isGroup}
             />
           )}
           {isFlexContainerOpen && isMobile && (

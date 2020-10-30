@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import AcceptCTA from './AcceptCTA.js';
 import AudioCTA from './AudioCTA.js';
+import Avatar from './Avatar.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
@@ -12,7 +13,6 @@ import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
-import UploadProfPicContent from './UploadProfPicContent.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
 
@@ -41,79 +41,7 @@ const MentorProfileMsgBtnModalProps = {
   backBtn: 'arrow'
 }
 
-const UploadProfPicProps = {
-  ariaLabel: 'Add or Edit Profile Picture',
-  triggerText: 'Add/Edit Profile pic',
-  usedFor: 'addPicBtn msg-thumb'
-}
 
-function Avatar(props) {
-  const {senderName, senderID, subtype, isProspela} = props
-  const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
-//  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
-  const profPicSrcNotMe = ''
-  const profPicSrcProspela = "https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg"
-  const userInitial = senderName.charAt(0).toUpperCase();
-  const myID = '12345';
-  const isMe = (senderID === myID) ? 'isMe' : 'isntMe';
-  const checkMe = profPicSrc != null && profPicSrc != ''
-  const checkOtherPerson = isProspela ? (profPicSrcProspela != null && profPicSrcProspela != '') : (profPicSrcNotMe != null && profPicSrcNotMe != '')
-  const isPicSet = (subtype === 'welcome' || subtype === 'prAuto') ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
-//  const senderRole = 'mentor'; // will need to check senderUID for role (when opening profile)
-  return (
-    <div className="msg-thumb-container">
-      {isPicSet ? (
-        <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : (isProspela ? {backgroundImage:"url(" + profPicSrcProspela + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"})}>
-          {isMe==="isMe" ? (
-        //  {isMe==="isMe" && (
-            <Modal {...UploadProfPicProps}>
-              <UploadProfPicContent isPicSet={isPicSet} profPicSrc={profPicSrc} isMe={isMe}/>
-            </Modal>
-            )
-            : null
-          }
-      {  /*    senderRole === 'mentee' ? (
-              <FullPageModal {...MenteeProfileMsgBtnModalProps}>
-                <MenteeProfileContent />
-              </FullPageModal>
-              )
-            : (
-              <FullPageModal {...MentorProfileMsgBtnModalProps}>
-                <MentorProfileContent />
-              </FullPageModal>
-            )
-          )}*/}
-        </div>
-        )
-      : (
-        <div className={"msg-thumb img-square allowAddPic noPic " + isMe + " " + (isProspela === true ? 'isProspela' : null)}>
-          {isMe==="isMe" ? (
-        //  {isMe==="isMe" ? (
-            <Modal {...UploadProfPicProps}>
-              <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
-            </Modal>
-            )
-            : null
-          }
-    {/*        senderRole === 'mentee' ? (
-              <FullPageModal {...MenteeProfileMsgBtnModalProps}>
-                <MenteeProfileContent />
-              </FullPageModal>
-              )
-            : (
-              <FullPageModal {...MentorProfileMsgBtnModalProps}>
-                <MentorProfileContent />
-              </FullPageModal>
-            )
-          )}*/}
-          <div className={"userInitial msg-thumb "+(isMe==='isMe' ? null : 'noModal')}>
-            {userInitial}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
 
 function TimeCalc(props) {
   var ts = new Date(props.time);
@@ -148,10 +76,10 @@ function WelcomeMessage(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -176,10 +104,10 @@ function FinishedSUMessage(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -220,10 +148,10 @@ function StdMessage(props) {
         }  </div>
         ):(
           <div className="message-container">
-            <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+            <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+                <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
                 <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
@@ -250,10 +178,10 @@ function DisplayFile(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur}>
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -285,10 +213,10 @@ function MessageNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -309,10 +237,10 @@ function UploadNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -351,10 +279,10 @@ function MenteeReq(props) {
           <div className="message-extras-border" />
           <div className="msg-extras">
             <div className="message-container noPaddingL noPaddingR noPaddingT">
-              <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+                  <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
                   <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                 </div>
                 <div className="message-content">
@@ -443,10 +371,10 @@ function PrAuto(props) {
             <div className="message-extras-border" />
             <div className="msg-extras">
               <div className="message-container noPaddingL noPaddingR noPaddingT">
-                <Avatar senderID={props.message.uid} senderName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+                <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName msgAuthor={props.message.author} senderUID={props.message.uid} subtype={props.message.subtype} isProspela={props.isProspela}/>
+                    <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">

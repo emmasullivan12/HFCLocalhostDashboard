@@ -8,6 +8,10 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
 }
+.msg-thumb-container.isGroupFlex{
+  display: inline-block;
+  width: 2rem;
+}
 
 .title-emoji-container {
   margin-left: 0;
@@ -30,6 +34,10 @@
   Height:2.5rem;
   Border-style:none;
   background-size: cover;
+}
+.msg-thumb.isGroupFlex{
+  width: 2rem;
+  height: 2rem;
 }
 
 .msg-thumb.hasPic {

@@ -1288,6 +1288,7 @@ a.button{
 .groupsAvatarContainer.flexContainer{
   height: 40px;
   width: 40px;
+  border: 1px solid #606094;
 }
 .menuItemIconContainer{
   margin-top: 2px;

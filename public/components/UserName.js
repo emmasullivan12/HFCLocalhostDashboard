@@ -25,27 +25,27 @@ const MentorProfileUsrNameModalProps = {
 
 class UserName extends Component {
   render() {
-    const {msgAuthor, senderUID, subtype, isProspela} = this.props;
+    const {userName, userUID, isProspela, showOnline} = this.props;
     const senderRole = 'mentor';
     const myUid = '12345';
-    const isMe = senderUID === myUid ? 'isMe' : 'isntMe';
+    const isMe = userUID === myUid ? 'isMe' : 'isntMe';
 
     return (
       <React.Fragment>
-        <span className={"sender-name " + (isProspela ? ' isProspela' : null)}>{msgAuthor}</span>
+        <span className={"sender-name" + (isProspela ? ' isProspela' : '') + (showOnline == true ? ' showOnline' : '')}>{userName}</span>
       {/*  {isMe === 'isMe' ? (
-          <span className="sender-name">{msgAuthor}</span>
+          <span className="sender-name">{userName}</span>
           )
           : null
         }
 */}
   {  /*      : senderRole === 'mentee' ? (
-            <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={msgAuthor}>
+            <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={userName}>
               <MenteeProfileContent />
             </FullPageModal>
             )
           : (
-            <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={msgAuthor}>
+            <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={userName}>
               <MentorProfileContent />
             </FullPageModal>
           )

@@ -3,19 +3,53 @@
 import React, { Component } from "react";
 
 import cdn from './CDN.js';
+import Avatar from './Avatar.js';
 import {DateCalc} from './GeneralFunctions.js';
+import UserBadge from './UserBadge.js';
+import UserName from './UserName.js';
 import VerifiedBadge from "./VerifiedBadge";
 
 class GroupAbout extends Component {
+
   render() {
-    const {group} = this.props;
+    const {group, groupUsers} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
+    const prospelaID = '12345'
+    const prospelaName = 'Prospela'
+
     let progLogo
     let groupInitial
+    const founders = []
+    const pms = []
 
-    console.log(group)
-    console.log(group.groupname)
+    if (group.founder.length != 0) {
+      const foundersList = groupUsers.users.usersList
+        .filter(user => user['founder'] === 1)
+
+      foundersList.forEach((founder) => {
+        founders.push(
+          <div className="userItem-FlexContainer">
+            <Avatar userID={founder.uid} userName={founder.fname} isProspela={false} isGroupFlex />
+            <UserName userUID={founder.uid} userName={founder.fname} isProspela={false} />
+          </div>
+        );
+      })
+    }
+
+    if (group.pm.length != 0) {
+      const pmList = groupUsers.users.usersList
+        .filter(user => user['pm'] === 1)
+
+      pmList.forEach((pm) => {
+        pms.push(
+          <div className="userItem-FlexContainer">
+            <Avatar userID={pm.uid} userName={pm.fname} isProspela={false} isGroupFlex />
+            <UserName userUID={pm.uid} userName={pm.fname} isProspela={false} />
+          </div>
+        );
+      })
+    }
 
     if (isGroupAvatarURL) {
       progLogo = cdn + '/progImages/' + groupAvatarURL
@@ -45,13 +79,13 @@ class GroupAbout extends Component {
               {group.about}
             </div>
           )}
-          <div className="group-detail-item">
+          <div className="group-detail-item bright">
             <span className="presenceContainer group">
               <i className="fas fa-user-friends" />
             </span>
-            {group.memberCount} members
+            {groupUsers.users.count} members
           </div>
-          <div className="group-detail-item">
+          <div className="group-detail-item bright">
             <span className="presenceContainer group">
               <i className="fas fa-birthday-cake" />
             </span>
@@ -67,6 +101,28 @@ class GroupAbout extends Component {
               {group.twitter}
             </a>
           )}
+        </div>
+        <div>
+          <div className="groupFlexContent-title">
+            {'Founder' + (group.founder.length > 1 ? 's' : '')}
+          </div>
+          {founders}
+        </div>
+
+        <div>
+          <div className="groupFlexContent-title">
+            Admin
+          </div>
+          {group.pm.length > 0 && (
+            <React.Fragment>
+              {pms}
+            </React.Fragment>
+          )}
+          <div className="userItem-FlexContainer">
+            <Avatar userID={prospelaID} userName={prospelaName} isProspela isGroupFlex showOnline/>
+            <UserName userUID={prospelaID} userName={prospelaName} isProspela showOnline/>
+            <UserBadge isProspela />
+          </div>
         </div>
       </div>
     );

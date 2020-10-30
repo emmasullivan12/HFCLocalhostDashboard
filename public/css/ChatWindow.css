@@ -181,6 +181,9 @@
   width: 24rem;
   border-left: 1px solid rgba(0, 0, 0, .1);
 }
+.flex-container-overlay.group{
+  background-color: #f2f2f2;
+}
 
 .chat-content-container{
   overflow:hidden;
@@ -219,7 +222,6 @@
 
 .flex-container-content{
   padding: 12px 12px 0 12px;
-  background: #f2f2f2;
 }
 
 .dragover-pane-overlay{

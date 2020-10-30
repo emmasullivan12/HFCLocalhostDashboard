@@ -9,20 +9,43 @@ import "../css/ProspelaBot.css";
 class ProspelaBot extends Component {
   render() {
     const {isGroup} = this.props
-    const groupName = 'Access:VFX'
-    const channelName = 'mentor-general'
-    const channelType = 'general' // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
-    const channelAbout = 'A great place to chit chat with other E-Mentors'
+    const group = {
+      groupname: "Access:VFX",
+      about: "this is about text here about avfx and what our mission is! I will explain a bit more about what we do and why, but similar length to a twitter bio",
+      datecreated: '2020-09-01T13:30:50.667Z',
+      founder: ["123456"],
+      pm: ["223457"],
+      website: 'https://www.access-vfx.com',
+      twitter: '@accessvfx',
+      isVerifiedGroup: '1',
+      groupavatarurl: 'avfx-avatar-20.png',
+      channels: [
+        {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345',}
+      ]
+    }
+    const groupUsers = {
+      users: {
+        count: 104,
+        usersList: [
+          {uid: '123456', fname: 'simon', profilePic: '', founder: 1},
+          {uid: '223457', fname: 'emma', profilePic: '', pm: 1},
+        ]
+      }
+    }
 
     return (
       <React.Fragment>
         <ChatWindow
-          groupName={groupName}
-          channelName={channelName}
-          channelType={channelType}
-          channelAbout={channelAbout}
-          flexContent={isGroup ?
-            <GroupFlexContent />
+          groupName={group.groupname}
+          channelName={group.channels[0].name} // Cant use foreach here ...Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
+          channelType={group.channels[0].type} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
+          channelAbout={group.channels[0].about} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
+          flexContent={isGroup ? (
+            <GroupFlexContent
+              group={group}
+              groupUsers={groupUsers}
+            />
+          )
           : <MtchdUsrProfile />
           }
           className="chatWindowContainer"
