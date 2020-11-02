@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th sept 2020
+// Dex last merged this code on 2nd nov 2020
 
 import React, { Component } from "react";
 import PrMessage from "./PrMessage";
@@ -36,10 +36,6 @@ function checkIsAdjacent(prevMsg, message) {
 class PrMessagesList extends Component {
   constructor (props) {
     super(props);
-  }
-
-  componentDidMount() {
-    console.log("mounted")
   }
 
   render() {
