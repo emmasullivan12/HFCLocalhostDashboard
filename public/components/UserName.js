@@ -1,15 +1,15 @@
-// Dex last merged this code on 2nd nov 2020
+// Dex last merged this code on 3rd nov 2020
 
 import React, { Component } from "react";
-import MenteeProfileContent from './MenteeProfileContent.js';
-import MentorProfileContent from './MentorProfileContent.js';
+//import MenteeProfileContent from './MenteeProfileContent.js';
+//import MentorProfileContent from './MentorProfileContent.js';
 import FullPageModal from './FullPageModal.js';
 
 import "../css/General.css";
-import "../css/Modal.css";
+//import "../css/Modal.css";
 
 
-const MenteeProfileUsrNameModalProps = {
+/*const MenteeProfileUsrNameModalProps = {
   ariaLabel: 'View Mentee Profile',
 //  triggerText: 'View Mentee Profile',
   usedFor: 'mentee-usrName-profile',
@@ -22,7 +22,7 @@ const MentorProfileUsrNameModalProps = {
   usedFor: 'mentor-usrName-profile',
   backBtn: 'arrow'
 }
-
+*/
 class UserName extends Component {
   render() {
     const {fname, lname, userUID, isProspelaAuto, showOnline} = this.props;
@@ -31,7 +31,7 @@ class UserName extends Component {
     const fnameLocal = isProspelaAuto ? 'Prospela' : fname
     const lnameLocal = isProspelaAuto ? '' : lname
     const name = (isProspelaAuto || isPrTeam) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + ' ' + lnameLocal))
-    const senderRole = 'mentor';
+    //const senderRole = 'mentor';
     const myUid = '12345';
     const isMe = userUID === myUid ? 'isMe' : 'isntMe';
 
