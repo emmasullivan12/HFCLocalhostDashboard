@@ -311,8 +311,8 @@ class PrMessagesList extends Component {
           {messages.map((message, index) => {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
             const prospelaID = '55555'
-            const isProspela = (message.subtype === 'welcome' || message.subtype === 'prAuto' || message.uid === prospelaID)
-            const isAdjacent = ((index===0 || showDateHeader===true || isProspela) ? false : checkIsAdjacent(prevMsg, message));
+            const isProspelaAuto = (message.subtype === 'welcome' || message.subtype === 'prAuto' || message.subtype === 'finTraining' || message.uid === prospelaID)
+            const isAdjacent = ((index===0 || showDateHeader===true) ? false : checkIsAdjacent(prevMsg, message));
             const isLastPic = message.id == 100013 ? true : false
 
             prevMsg = message;
@@ -324,7 +324,7 @@ class PrMessagesList extends Component {
                   isAdjacent={isAdjacent}
                   isLastPic={isLastPic}
                   handleLastPic={handleLastPic}
-                  isProspela={isProspela}
+                  isProspelaAuto={isProspelaAuto}
                 />
               )
             })}

@@ -76,10 +76,10 @@ function WelcomeMessage(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -104,10 +104,10 @@ function FinishedSUMessage(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -148,10 +148,10 @@ function StdMessage(props) {
         }  </div>
         ):(
           <div className="message-container">
-            <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+            <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+                <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
                 <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
@@ -178,10 +178,10 @@ function DisplayFile(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur}>
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -213,10 +213,10 @@ function MessageNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -237,10 +237,10 @@ function UploadNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -279,10 +279,10 @@ function MenteeReq(props) {
           <div className="message-extras-border" />
           <div className="msg-extras">
             <div className="message-container noPaddingL noPaddingR noPaddingT">
-              <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+              <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+                  <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
                   <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                 </div>
                 <div className="message-content">
@@ -371,10 +371,10 @@ function PrAuto(props) {
             <div className="message-extras-border" />
             <div className="msg-extras">
               <div className="message-container noPaddingL noPaddingR noPaddingT">
-                <Avatar userID={props.message.uid} userName={props.message.author} subtype={props.message.subtype} isProspela={props.isProspela}/>
+                <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName userName={props.message.author} userUID={props.message.uid} isProspela={props.isProspela}/>
+                    <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">
@@ -448,7 +448,7 @@ function PrAuto(props) {
 class PrMessage extends Component {
 
   render() {
-  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspela} = this.props;
+  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto} = this.props;
 
     return (
       <React.Fragment>
@@ -472,7 +472,7 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspela={isProspela}/>
+        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
       </React.Fragment>
     )
   }
@@ -481,30 +481,30 @@ class PrMessage extends Component {
 class PrMessageContents extends Component {
 
   render() {
-    const {isProspela, message, isAdjacent, isLastPic, handleLastPic} = this.props
+    const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic} = this.props
     const userRole = 'mentor'
-    switch (this.props.message.subtype) {
+    switch (message.subtype) {
       case "welcome":
-        return <WelcomeMessage message={message} userRole={userRole} isProspela={isProspela}/>
+        return <WelcomeMessage message={message} userRole={userRole} isProspelaAuto/>
       case "finTraining":
-        return <FinishedSUMessage message={message} userRole={userRole} isProspela={isProspela}/>
+        return <FinishedSUMessage message={message} userRole={userRole} isProspelaAuto/>
       case "std":
-        return <StdMessage message={message} isAdjacent={isAdjacent} isProspela={isProspela}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto}/>
       case "file":
-        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspela={isProspela}/>
+        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
       case "prAuto":
-        return <PrAuto message={message} isProspela={isProspela}/>
+        return <PrAuto message={message} isProspelaAuto/>
       case 'notSent':
-        return <MessageNotSent message={message} isProspela={isProspela}/>
+        return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto}/>
       case 'uploadNotSent':
-        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspela={isProspela}/>
+        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
       case "menteeReq":
-        return <MenteeReq message={message} isProspela={isProspela}/>
+        return <MenteeReq message={message} isProspelaAuto={isProspelaAuto}/>
       case "mentorAcc":
       case "mentorRej":
-        return <MentorReply message={message} isProspela={isProspela}/>
+        return <MentorReply message={message} isProspelaAuto={isProspelaAuto}/>
       default:
-        return <MenteeReq message={message} isProspela={isProspela}/>
+        return <MenteeReq message={message} isProspelaAuto={isProspelaAuto}/>
     }
   }
 }

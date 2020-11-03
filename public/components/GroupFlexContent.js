@@ -16,10 +16,10 @@ class GroupFlexContent extends Component {
           group={group}
           groupUsers={groupUsers}
         />
-        {/*<GroupUsers
+        <GroupUsers
           group={group}
           groupUsers={groupUsers}
-        />*/}
+        />
       </React.Fragment>
     );
   }

@@ -26,13 +26,12 @@ function getIcon(channelType) {
     case "general":
       return <i className="fas fa-home" />
     case "intros":
-      return <i className="fas fa-hand-sparkles" />
+      return <i className="fas fa-coffee" />
+      /*return <i className="fas fa-hand-sparkles" /> */
     case "resources":
       return <i className="fas fa-folder-open" />
     case "leaderboard":
       return <i className="fas fa-crown" />
-    case "social":
-      return <i className="fas fa-coffee" />
     default:
       return <i className="fas fa-hashtag" />
   }

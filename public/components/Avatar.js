@@ -16,17 +16,17 @@ const UploadProfPicProps = {
 class Avatar extends Component {
 
   render() {
-    const {userName, userID, subtype, isProspela, isGroupFlex, showOnline} = this.props
+    const {userName, userID, isProspelaAuto, isGroupFlex, showOnline} = this.props
     const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
   //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
     const profPicSrcNotMe = ''
-    const profPicSrcProspela = "https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg"
-    const userInitial = userName.charAt(0).toUpperCase();
+  /*  const profPicSrcProspela = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg' */
+    const userInitial = isProspelaAuto ? 'P' : userName.charAt(0).toUpperCase();
     const myID = '99999';
     const isMe = (userID === myID) ? 'isMe' : 'isntMe';
     const checkMe = profPicSrc != null && profPicSrc != ''
-    const checkOtherPerson = isProspela ? (profPicSrcProspela != null && profPicSrcProspela != '') : (profPicSrcNotMe != null && profPicSrcNotMe != '')
-    const isPicSet = ((subtype && (subtype === 'welcome' || subtype === 'prAuto' || subtype === 'finTraining')) || isGroupFlex === true) ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
+    const checkOtherPerson = (profPicSrcNotMe != null && profPicSrcNotMe != '')
+    const isPicSet = (isProspelaAuto == true || isGroupFlex === true) ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
 
     let isOnline
 
@@ -43,7 +43,7 @@ class Avatar extends Component {
       <React.Fragment>
         <div className={"msg-thumb-container" + (isGroupFlex == true ? ' isGroupFlex' : '')}>
           {isPicSet ? (
-            <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : (isProspela ? {backgroundImage:"url(" + profPicSrcProspela + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"})}>
+            <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"}}>
               {isMe==="isMe" ? (
             //  {isMe==="isMe" && (
                 <Modal {...UploadProfPicProps}>
@@ -66,7 +66,7 @@ class Avatar extends Component {
             </div>
             )
           : (
-            <div className={"msg-thumb img-square allowAddPic noPic " + isMe + " " + (isProspela === true ? 'isProspela' : null) + (isGroupFlex == true ? ' isGroupFlex' : '')}>
+            <div className={"msg-thumb img-square allowAddPic noPic " + isMe + " " + (isProspelaAuto === true ? 'isProspela' : null) + (isGroupFlex == true ? ' isGroupFlex' : '')}>
               {isMe==="isMe" ? (
             //  {isMe==="isMe" ? (
                 <Modal {...UploadProfPicProps}>

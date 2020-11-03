@@ -2,8 +2,26 @@
 
 import React, { Component } from "react";
 
-import cdn from './CDN.js';
-import UserList from './UserList.js';
+import Avatar from './Avatar.js';
+import UserBadge from './UserBadge.js';
+import UserName from './UserName.js';
+
+class UserListItem extends Component {
+  render() {
+    const {user} = this.props;
+    const isOnline = false;
+
+    return(
+      <div className="userItem-FlexContainer">
+        <Avatar userID={user.uid} userName={user.fname} isGroupFlex showOnline/>
+        <UserName fname={user.fname} lname={user.lname} userUID={user.uid} />
+        {user.userRole === 'pr' && (
+          <UserBadge badgeType='isPrTeam' />
+        )}
+      </div>
+    )
+  }
+}
 
 class GroupUsers extends Component {
 
@@ -30,27 +48,44 @@ class GroupUsers extends Component {
     }
   }*/
   render() {
-    const {group} = this.props;
+    const {group, groupUsers} = this.props;
+
+    const userList = groupUsers.users.userList
+    const allowed = ["pr", "mentee"];
+    const users = [];
+
+    if (userList.length == 0) {
+      users.push(
+        <div className="chatMenuPlaceholder overflow-ellipsis">
+          <div className="presenceContainer placeholder">
+            <i className="fas fa-circle" />
+          </div>
+          Users in this group will appear here...
+        </div>
+      );
+    } else {
+      const userListFiltered = userList
+        .filter(user => allowed.indexOf(user['userRole']) != -1)
+
+      userListFiltered.forEach((user) => {
+        users.push(
+          <UserListItem
+            key={user.uid}
+            user={user}
+          />
+        );
+      })
+    }
 
     return (
-      <div className="group-about-container">
+      <div className="group-users-container">
         <div className="groupName-flexContainer">
-
-          {group.pm && (
-            <React.Fragment>
-              <div>
-                Admin
-              </div>
-              <UserList
-                userGroup='pm'
-                userList={
-                  {userid: group.pm},
-                  {userid: 'pr'},
-                  {userid: 'penny-pr'}
-                }
-              />
-            </React.Fragment>
-          )}
+          <div className="groupFlexContent-title">
+            Channel Users - {groupUsers.users.count}
+          </div>
+          <div className="chatMenu">
+            {users}
+          </div>
         </div>
       </div>
     );

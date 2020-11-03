@@ -6,6 +6,10 @@
   /*background: #504f4f;*/
 }
 
+.group-users-container{
+  padding: 0 15px 15px 15px;
+}
+
 .groupName-flexContainer{
   display: block;
   height: 40px;

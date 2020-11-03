@@ -6,20 +6,40 @@ import "../css/UserBadge.css";
 
 class UserBadge extends Component {
   render() {
-    const {isProspela} = this.props;
+    const {badgeType} = this.props;
 
-    return (
-      <React.Fragment>
-      {isProspela && (
-        <div className="badge isProspela">
-          <div className="tickIconContainer badge">
-            <i className="fas fa-check" />
+    switch (badgeType) {
+      case 'isPrBot':
+        return (
+          <div className="badge isPrBot">
+            <div className="tickIconContainer badge">
+              <i className="fas fa-check" />
+            </div>
+            Bot
           </div>
-          Prospela team
-        </div>
-      )}
-      </React.Fragment>
-    );
+        );
+      case 'isPrTeam':
+        return (
+          <div className="badge isPrTeam">
+            <div className="tickIconContainer badge">
+              <i className="fas fa-check" />
+            </div>
+            Prospela
+          </div>
+        );
+      case 'founder':
+        return (
+          <div className="badge founder">
+            Founder
+          </div>
+        );
+      case 'pm':
+        return (
+          <div className="badge pm">
+            Admin
+          </div>
+        );
+    }
   }
 }
 

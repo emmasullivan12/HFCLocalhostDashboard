@@ -15,8 +15,6 @@ class GroupAbout extends Component {
     const {group, groupUsers} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
-    const prospelaID = '12345'
-    const prospelaName = 'Prospela'
 
     let progLogo
     let groupInitial
@@ -29,9 +27,10 @@ class GroupAbout extends Component {
 
       foundersList.forEach((founder) => {
         founders.push(
-          <div className="userItem-FlexContainer">
-            <Avatar userID={founder.uid} userName={founder.fname} isProspela={false} isGroupFlex />
-            <UserName userUID={founder.uid} userName={founder.fname} isProspela={false} />
+          <div className="userItem-FlexContainer" key={founder.uid}>
+            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex />
+            <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname}/>
+            <UserBadge badgeType='founder' />
           </div>
         );
       })
@@ -43,9 +42,10 @@ class GroupAbout extends Component {
 
       pmList.forEach((pm) => {
         pms.push(
-          <div className="userItem-FlexContainer">
-            <Avatar userID={pm.uid} userName={pm.fname} isProspela={false} isGroupFlex />
-            <UserName userUID={pm.uid} userName={pm.fname} isProspela={false} />
+          <div className="userItem-FlexContainer" key={pm.uid}>
+            <Avatar userID={pm.uid} userName={pm.fname} isGroupFlex />
+            <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
+            <UserBadge badgeType='pm' />
           </div>
         );
       })
@@ -119,9 +119,9 @@ class GroupAbout extends Component {
             </React.Fragment>
           )}
           <div className="userItem-FlexContainer">
-            <Avatar userID={prospelaID} userName={prospelaName} isProspela isGroupFlex showOnline/>
-            <UserName userUID={prospelaID} userName={prospelaName} isProspela showOnline/>
-            <UserBadge isProspela />
+            <Avatar isProspelaAuto isGroupFlex showOnline/>
+            <UserName isProspelaAuto showOnline/>
+            <UserBadge badgeType='isPrBot' />
           </div>
         </div>
       </div>
