@@ -28,6 +28,8 @@ function getIcon(channelType) {
     case "intros":
       return <i className="fas fa-coffee" />
       /*return <i className="fas fa-hand-sparkles" /> */
+    case "accouncements":
+      return <i className="fas fa-bullhorn" />
     case "resources":
       return <i className="fas fa-folder-open" />
     case "leaderboard":

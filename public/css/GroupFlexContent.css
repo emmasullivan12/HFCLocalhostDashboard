@@ -55,6 +55,9 @@
   margin-bottom: 10px;
   position: relative;
 }
+.userItem-FlexContainer:last-of-type{
+  margin-bottom: 2rem;
+}
 
 .presenceIndicator{
   width: 15px;
@@ -65,9 +68,20 @@
   display: inline-block;
   position: absolute;
   margin-left: 24px;
-  bottom: -4px;
+  bottom: -2px;
+  z-index: 1;
 }
 
 .sender-name.showOnline{
   display: inline-block;
+}
+
+.showMore{
+  margin-bottom: 2rem;
+  width: 100%;
+  cursor: pointer;
+  margin-top: .25rem;
+  height: 30px;
+  font-weight: bold;
+  color: #3f3f3f;
 }

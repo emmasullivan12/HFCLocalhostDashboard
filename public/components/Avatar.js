@@ -7,16 +7,10 @@ import Modal from './Modal.js';
 
 import "../css/General.css";
 
-const UploadProfPicProps = {
-  ariaLabel: 'Add or Edit Profile Picture',
-  triggerText: 'Add/Edit Profile pic',
-  usedFor: 'addPicBtn msg-thumb'
-}
-
 class Avatar extends Component {
 
   render() {
-    const {userName, userID, isProspelaAuto, isGroupFlex, showOnline} = this.props
+    const {userName, userID, isProspelaAuto, isGroupFlex, showOnline, smallIdle} = this.props
     const profPicSrc = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg" // looks up profpic URL of UID
   //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
     const profPicSrcNotMe = ''
@@ -26,7 +20,7 @@ class Avatar extends Component {
     const isMe = (userID === myID) ? 'isMe' : 'isntMe';
     const checkMe = profPicSrc != null && profPicSrc != ''
     const checkOtherPerson = (profPicSrcNotMe != null && profPicSrcNotMe != '')
-    const isPicSet = (isProspelaAuto == true || isGroupFlex === true) ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
+    const isPicSet = isProspelaAuto == true ? false : (isMe === 'isMe' ? checkMe : checkOtherPerson)
 
     let isOnline
 
@@ -41,12 +35,12 @@ class Avatar extends Component {
 
     return (
       <React.Fragment>
-        <div className={"msg-thumb-container" + (isGroupFlex == true ? ' isGroupFlex' : '')}>
+        <div className={"msg-thumb-container" + (isGroupFlex == true ? ' isGroupFlex' : '') + (smallIdle == true ? ' smallIdle' : '')}>
           {isPicSet ? (
-            <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"}}>
+            <div className={"msg-thumb img-square allowAddPic " + isMe + (isMe==='isMe' ? ' hasPic' : ' hasPic noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')} style={(isPicSet && isMe==='isMe') ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcNotMe + ")"}}>
               {isMe==="isMe" ? (
             //  {isMe==="isMe" && (
-                <Modal {...UploadProfPicProps}>
+                <Modal ariaLabel='Add or Edit Profile Picture' triggerText='Add/Edit Profile pic' usedFor={'addPicBtn msg-thumb'+ (isGroupFlex === true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
                   <UploadProfPicContent isPicSet={isPicSet} profPicSrc={profPicSrc} isMe={isMe}/>
                 </Modal>
                 )
@@ -66,10 +60,10 @@ class Avatar extends Component {
             </div>
             )
           : (
-            <div className={"msg-thumb img-square allowAddPic noPic " + isMe + " " + (isProspelaAuto === true ? 'isProspela' : null) + (isGroupFlex == true ? ' isGroupFlex' : '')}>
+            <div className={"msg-thumb img-square allowAddPic noPic " + isMe + (isProspelaAuto === true ? ' isProspela' : '') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
               {isMe==="isMe" ? (
             //  {isMe==="isMe" ? (
-                <Modal {...UploadProfPicProps}>
+                <Modal ariaLabel='Add or Edit Profile Picture' triggerText='Add/Edit Profile pic' usedFor={'addPicBtn msg-thumb'+ (isGroupFlex === true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
                   <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
                 </Modal>
                 )
@@ -86,7 +80,7 @@ class Avatar extends Component {
                   </FullPageModal>
                 )
               )}*/}
-              <div className={"userInitial msg-thumb " + (isMe==='isMe' ? null : 'noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')}>
+              <div className={"userInitial msg-thumb " + (isMe==='isMe' ? 'isMe' : 'noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
                 {userInitial}
               </div>
             </div>

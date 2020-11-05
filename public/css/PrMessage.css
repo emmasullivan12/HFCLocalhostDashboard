@@ -10,7 +10,14 @@
 }
 .msg-thumb-container.isGroupFlex{
   display: inline-block;
-  width: 2rem;
+  width: 31px;
+  height: 31px;
+  margin-right: 4px;
+}
+
+.msg-thumb-container.smallIdle{
+  width: 1rem;
+  padding-right: 6px;
 }
 
 .title-emoji-container {
@@ -36,8 +43,13 @@
   background-size: cover;
 }
 .msg-thumb.isGroupFlex{
-  width: 2rem;
-  height: 2rem;
+  width: 31px;
+  height: 31px;
+  display: inline-grid;
+}
+.msg-thumb.smallIdle{
+  width: 1rem!important;
+  height: 1rem!important;
 }
 
 .msg-thumb.hasPic {
@@ -166,6 +178,17 @@
 
 .sender-name.isProspela {
   color: #4e4ed6;
+}
+.sender-name.isFounder {
+  color: #8f8fe5;
+}
+.sender-name.isPM {
+  color: #1fbfa1;
+}
+
+.sender-name.smallIdle{
+  font-size: 12px;
+  font-weight: unset;
 }
 
 .messageGutter{

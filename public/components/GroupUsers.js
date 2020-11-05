@@ -8,15 +8,24 @@ import UserName from './UserName.js';
 
 class UserListItem extends Component {
   render() {
-    const {user} = this.props;
-    const isOnline = false;
+    const {user, founders, pms} = this.props;
+    const isProspelaTeam = user.pr && user.pr == 1
+    const isFounder = founders.includes(user.uid)
+    const isPM = pms.includes(user.uid)
+  //  const usersBadges = ['isPrTeam', 'founder', 'topuser', '500 messages'] // And cycle through UserBade for each and prioritize so Founder shows first etc
 
     return(
       <div className="userItem-FlexContainer">
         <Avatar userID={user.uid} userName={user.fname} isGroupFlex showOnline/>
-        <UserName fname={user.fname} lname={user.lname} userUID={user.uid} />
-        {user.userRole === 'pr' && (
+        <UserName fname={user.fname} lname={user.lname} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} userUID={user.uid} />
+        {isProspelaTeam && (
           <UserBadge badgeType='isPrTeam' />
+        )}
+        {isFounder && (
+          <UserBadge badgeType='founder' />
+        )}
+        {isPM && (
+          <UserBadge badgeType='pm' />
         )}
       </div>
     )
@@ -24,7 +33,18 @@ class UserListItem extends Component {
 }
 
 class GroupUsers extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      showOnly20Users: true,
+    }
+  }
 
+  showAllUsers = () => {
+    this.setState({
+      showOnly20Users: false
+    })
+  }
   /*const group = {
     groupname: "Access:VFX",
     about: "this is about text here about avfx and what our mission is!",
@@ -36,22 +56,23 @@ class GroupUsers extends Component {
     isVerifiedGroup: '1',
     groupavatarurl: 'avfx-avatar-20.png',
     channels: [
-      {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345',}
+      {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345', allowed: ["pr", "mentor"]}
     ]
   }
   const groupUsers = {
     users: {
       count: 104,
       usersList: [
-        {uid: '12345', fname: 'simon', profilePic: '', founder: 1}
+        {uid: '12345', fname: 'simon', profilePic: '', founder: 1, mentor: 1, mentee: 1}
       ]
     }
   }*/
   render() {
     const {group, groupUsers} = this.props;
+    const {showOnly20Users} = this.state;
 
-    const userList = groupUsers.users.userList
-    const allowed = ["pr", "mentee"];
+    const userList = showOnly20Users ? groupUsers.users.usersList.slice(0,20) : groupUsers.users.usersList;
+    const channelAllowed = ["pr", "mentor"];
     const users = [];
 
     if (userList.length == 0) {
@@ -64,14 +85,13 @@ class GroupUsers extends Component {
         </div>
       );
     } else {
-      const userListFiltered = userList
-        .filter(user => allowed.indexOf(user['userRole']) != -1)
-
-      userListFiltered.forEach((user) => {
+      userList.forEach((user) => {
         users.push(
           <UserListItem
             key={user.uid}
             user={user}
+            founders={group.founder}
+            pms={group.pm}
           />
         );
       })
@@ -86,6 +106,11 @@ class GroupUsers extends Component {
           <div className="chatMenu">
             {users}
           </div>
+          {showOnly20Users && (
+            <button className="showMore" type="button" onClick={this.showAllUsers}>
+              Show all {groupUsers.users.count} users
+            </button>
+          )}
         </div>
       </div>
     );

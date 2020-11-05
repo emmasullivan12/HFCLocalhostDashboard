@@ -15,6 +15,7 @@ class GroupAbout extends Component {
     const {group, groupUsers} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
+    const userRole = 'mentee'
 
     let progLogo
     let groupInitial
@@ -27,28 +28,30 @@ class GroupAbout extends Component {
 
       foundersList.forEach((founder) => {
         founders.push(
-          <div className="userItem-FlexContainer" key={founder.uid}>
-            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex />
-            <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname}/>
+          <div className="group-detail-item bright" key={founder.uid}>
+            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle />
+            <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname} smallIdle/>
             <UserBadge badgeType='founder' />
           </div>
         );
       })
     }
 
-    if (group.pm.length != 0) {
-      const pmList = groupUsers.users.usersList
-        .filter(user => user['pm'] === 1)
+    if (userRole != 'mentee') {
+      if (group.pm.length != 0) {
+        const pmList = groupUsers.users.usersList
+          .filter(user => user['pm'] === 1)
 
-      pmList.forEach((pm) => {
-        pms.push(
-          <div className="userItem-FlexContainer" key={pm.uid}>
-            <Avatar userID={pm.uid} userName={pm.fname} isGroupFlex />
-            <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
-            <UserBadge badgeType='pm' />
-          </div>
-        );
-      })
+        pmList.forEach((pm) => {
+          pms.push(
+            <div className="userItem-FlexContainer" key={pm.uid}>
+              <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex />
+              <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
+              <UserBadge badgeType='pm' />
+            </div>
+          );
+        })
+      }
     }
 
     if (isGroupAvatarURL) {
@@ -91,6 +94,7 @@ class GroupAbout extends Component {
             </span>
             since <DateCalc time={group.datecreated} showPureDate />
           </div>
+          {founders}
           {group.website && (
             <a className="group-detail-item link" href={group.website} target="_blank" rel="noopener noreferrer">
               {group.website}
@@ -104,16 +108,9 @@ class GroupAbout extends Component {
         </div>
         <div>
           <div className="groupFlexContent-title">
-            {'Founder' + (group.founder.length > 1 ? 's' : '')}
-          </div>
-          {founders}
-        </div>
-
-        <div>
-          <div className="groupFlexContent-title">
             Admin
           </div>
-          {group.pm.length > 0 && (
+          {group.pm.length > 0 && userRole != 'mentee' && (
             <React.Fragment>
               {pms}
             </React.Fragment>

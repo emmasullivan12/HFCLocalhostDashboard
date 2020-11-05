@@ -92,6 +92,18 @@
 .ModalOpenBtn-addPicBtn.msg-thumb{
   font-size: 20px;
 }
+.ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex{
+  width: 2rem;
+  height: 2rem;
+}
+.ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex i{
+  margin-top: 7px;
+}
+.ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex.smallIdle i{
+  margin-top: 2px;
+  font-size: 11px;
+}
+
 .ModalOpenBtn-addPicBtn:hover,
 .ModalOpenBtn-addPicBtn:focus{
   background:rgba(0,0,0,0.2);

@@ -310,8 +310,8 @@ class PrMessagesList extends Component {
         <div className="messages-container" >
           {messages.map((message, index) => {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
-            const prospelaID = '55555'
-            const isProspelaAuto = (message.subtype === 'welcome' || message.subtype === 'prAuto' || message.subtype === 'finTraining' || message.uid === prospelaID)
+            const prospelaBotID = '8d91cd17-5858-4a52-acd8-5ebb8bc24199'
+            const isProspelaAuto = message.uid === prospelaBotID
             const isAdjacent = ((index===0 || showDateHeader===true) ? false : checkIsAdjacent(prevMsg, message));
             const isLastPic = message.id == 100013 ? true : false
 

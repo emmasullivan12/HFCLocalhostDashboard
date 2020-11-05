@@ -25,19 +25,19 @@ const MentorProfileUsrNameModalProps = {
 */
 class UserName extends Component {
   render() {
-    const {fname, lname, userUID, isProspelaAuto, showOnline} = this.props;
+    const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle} = this.props;
     const userRole = 'mentor'
-    const isPrTeam = false
-    const fnameLocal = isProspelaAuto ? 'Prospela' : fname
-    const lnameLocal = isProspelaAuto ? '' : lname
-    const name = (isProspelaAuto || isPrTeam) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + ' ' + lnameLocal))
-    //const senderRole = 'mentor';
     const myUid = '12345';
+
+    const fnameLocal = isProspelaAuto ? 'Prospela' : fname
+    const lnameLocal = isProspelaAuto ? '' : (lname ? lname : '')
+    const name = (isProspelaAuto || isProspelaTeam == true) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + (lnameLocal ? (' ' + lnameLocal) : '')))
+    //const senderRole = 'mentor';
     const isMe = userUID === myUid ? 'isMe' : 'isntMe';
 
     return (
       <React.Fragment>
-        <span className={"sender-name" + ((isProspelaAuto || isPrTeam) ? ' isProspela' : '') + (showOnline == true ? ' showOnline' : '')}>
+        <span className={"sender-name" + ((isProspelaAuto || isProspelaTeam == true) ? ' isProspela' : '') + (isFounder == true ? ' isFounder' : '') + (isPM == true ? ' isPM' : '') + (showOnline == true ? ' showOnline' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
           {name}
         </span>
       {/*  {isMe === 'isMe' ? (
