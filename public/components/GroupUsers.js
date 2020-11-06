@@ -72,7 +72,6 @@ class GroupUsers extends Component {
     const {showOnly20Users} = this.state;
 
     const userList = showOnly20Users ? groupUsers.users.usersList.slice(0,20) : groupUsers.users.usersList;
-    const channelAllowed = ["pr", "mentor"];
     const users = [];
 
     if (userList.length == 0) {

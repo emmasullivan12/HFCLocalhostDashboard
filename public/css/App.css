@@ -99,7 +99,7 @@ h2{
   -ms-transition: .5s;
   -o-transition: .5s;
 }
-
+.close-flex-container,
 .close-menu{
   position: absolute;
   top: 16px;
@@ -123,6 +123,14 @@ h2{
   stroke: rgba(255,255,255,.8);
   stroke-linecap: round;
   stroke-width: 3;
+}
+.menu-close-icon.flexContainer{
+  stroke: rgba(173,172,172,.55);
+}
+.close-flex-container:hover .menu-close-icon.flexContainer,
+.close-flex-container:focus .menu-close-icon.flexContainer{
+  stroke: #adacac;
+  stroke-width: 4;
 }
 .close-menu:hover .menu-close-icon,
 .close-menu:focus .menu-close-icon{

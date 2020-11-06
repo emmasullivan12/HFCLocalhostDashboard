@@ -111,21 +111,21 @@ class PrMessagesList extends Component {
       },
       {
         id: '99996',
-        uid: '12345',
+        uid: '223458',
         type: 'message',
         subtype: 'std',
-        author: 'dexter',
+        author: 'emma-prospela',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is dex message'
+        text: 'This is emma-prospela message'
       },
       {
         id: '99997',
-        uid: '12345',
+        uid: '223457',
         type: 'message',
         subtype: 'std',
-        author: 'prospela',
+        author: 'emmaMoonraker',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is dex message'
+        text: 'This is moonraker message'
       },
       {
         id: '99998',
@@ -183,10 +183,10 @@ class PrMessagesList extends Component {
       },
       {
         id: '100004',
-        uid: '23456',
+        uid: '223456',
         type: 'message',
         subtype: 'file',
-        author: 'emma-student',
+        author: 'simon',
         ts: '2020-09-02T13:30:50.667Z',
         text: 'Emma sent you a picture',
         file: {
@@ -302,8 +302,11 @@ class PrMessagesList extends Component {
       },
     ];
 
-    const {handleLastPic} = this.props
+    const {handleLastPic, founders, pms} = this.props
+
     var prevMsg = {};
+
+    const prTeam = ['223458', '223459', '223460']
 
     return (
       <React.Fragment>
@@ -312,6 +315,11 @@ class PrMessagesList extends Component {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
             const prospelaBotID = '8d91cd17-5858-4a52-acd8-5ebb8bc24199'
             const isProspelaAuto = message.uid === prospelaBotID
+
+            const isProspelaTeam = prTeam && prTeam.includes(message.uid)
+
+            const isFounder = founders && founders.includes(message.uid)
+            const isPM = pms && pms.includes(message.uid)
             const isAdjacent = ((index===0 || showDateHeader===true) ? false : checkIsAdjacent(prevMsg, message));
             const isLastPic = message.id == 100013 ? true : false
 
@@ -325,6 +333,9 @@ class PrMessagesList extends Component {
                   isLastPic={isLastPic}
                   handleLastPic={handleLastPic}
                   isProspelaAuto={isProspelaAuto}
+                  isProspelaTeam={isProspelaTeam}
+                  isFounder={isFounder}
+                  isPM={isPM}
                 />
               )
             })}

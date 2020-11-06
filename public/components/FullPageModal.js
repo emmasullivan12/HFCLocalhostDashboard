@@ -23,11 +23,13 @@ const FullPageModalTrigger = ({
 
 // ModalContent provides all of the Content within Modal
 const FullPageModalContent = ({
+  animation,
   ariaLabel,
   backBtn,
   buttonFPRef,
   content,
   handleNavScroll,
+  isDevice,
   isSafari,
   mentorName,
   modalFPRef,
@@ -38,7 +40,7 @@ const FullPageModalContent = ({
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role="dialog" aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
-      <div className={"fullpage-modal-container " + usedFor} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
+      <div className={"fullpage-modal-container " + usedFor + animation + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
             { backBtn==='bk2Pr' && (
@@ -49,7 +51,7 @@ const FullPageModalContent = ({
             )}
           </button>
         </div>
-        <div className="fpModal-content">
+        <div className={"fpModal-content"  + (isDevice ? ' isDevice' : '')}>
           {content}
         </div>
       </div>
@@ -171,8 +173,7 @@ class FullPageModal extends React.Component {
     render() {
     const {handleNavScroll} = this;
     const {isFPOpen} = this.state;
-    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role, focusOnLoad} = this.props;
-
+    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role, focusOnLoad, animation, isDevice} = this.props;
     const isSafari = whichBrowser() === 'safari'
 
     return (
@@ -186,11 +187,13 @@ class FullPageModal extends React.Component {
         />
         {isFPOpen && (
           <FullPageModalContent
+            animation={animation}
             ariaLabel={ariaLabel}
             backBtn={backBtn}
             buttonFPRef={n => this.closeButtonFPNode = n}
             content={children}
             handleNavScroll={this.handleNavScroll}
+            isDevice={isDevice}
             isSafari={isSafari}
             mentorName={mentorName}
             modalFPRef={this.modalFPRef}

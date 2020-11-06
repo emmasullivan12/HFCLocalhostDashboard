@@ -3,25 +3,39 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import {getIcon, checkMobile} from './GeneralFunctions.js';
+import {getIcon, checkDevice, X} from './GeneralFunctions.js';
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
 import MenuNav from './MenuNav.js';
+import FullPageModal from './FullPageModal.js';
 import Modal from "./Modal";
 import FileUploadContent from "./FileUploadContent";
 import VerifiedBadge from "./VerifiedBadge";
 import "../css/ChatWindow.css";
 import "../css/General.css";
 
+const FlexContainerProps = {
+  usedFor: 'openFlexContainer',
+  backBtn: 'arrow',
+  animation: ' slideUp'
+}
 
 // FlexContainerContent provides all of the Content within FlexContainer
 const FlexContainerContent = ({
   content,
-  isGroup
+  isGroup,
+  isDevice,
+  toggleFlexContainer
 }) => {
   return (
-    <div className={"flex-container-overlay" + (isGroup == true ? ' group' : '')}>
+    <div className={"flex-container-overlay" + (isGroup == true ? ' group' : '') + (isDevice == true ? ' isDevice' : '')}>
       <div className="flex-container-container">
+        {isGroup && !isDevice && (
+          <button type="button" className="close-flex-container" aria-labelledby="Close Flex Container" onClick={toggleFlexContainer}>
+            <span id="close-modal" className="u-hide-visually">Close</span>
+            <svg className="menu-close-icon flexContainer" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+          </button>
+        )}
         <div className="flex-container-content">
           {content}
         </div>
@@ -43,6 +57,7 @@ class ChatWindow extends Component {
     super(props);
     this.scrollRef = React.createRef();
     this.state = {
+      isDevice: checkDevice(),
       isFlexContainerOpen: this.props.isGroup ? true : false,
       isLoadingMsgs: false,
       dragover: '',
@@ -55,6 +70,32 @@ class ChatWindow extends Component {
     this.onScroll = this.onScroll.bind(this);
     this.scrollToBottom = this.scrollToBottom.bind(this);
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDevice);
+  }
+
+  componentDidUpdate(prevProps) {
+    const {isGroup} = this.props;
+    if (isGroup !== prevProps.isGroup) {
+      if (isGroup) {
+        this.openFlexContainer()
+      } else {
+        this.closeFlexContainer()
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDevice);
+  }
+
+  updateDevice = () => {
+    console.log("triggered")
+    this.setState({
+      isDevice: checkDevice(),
+    })
   }
 
   scrollToBottom = () => {
@@ -105,14 +146,21 @@ class ChatWindow extends Component {
     this.setState({ isFlexContainerOpen: !currentState });
   }
 
+  openFlexContainer() {
+    this.setState({ isFlexContainerOpen: open });
+  }
+
+  closeFlexContainer() {
+    this.setState({ isFlexContainerOpen: false });
+  }
+
   render() {
-  const {isLoadingMsgs, isFlexContainerOpen} = this.state;
-  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout} = this.props;
+  const {isLoadingMsgs, isFlexContainerOpen, isDevice} = this.state;
+  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, founders, pms} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   const isVerifiedGroup = true
   const icon = getIcon(channelType)
-  const isMobile = checkMobile()
   const about = channelAbout ? channelAbout : ''
 
   /*        {dragFiles != '' && (
@@ -136,7 +184,7 @@ class ChatWindow extends Component {
                   {isVerifiedGroup && (
                     <VerifiedBadge />
                   )}
-                  {!isMobile && (
+                  {!isDevice && (
                     <React.Fragment>
                       <span className="channel-title noBold">
                         - {channelName}
@@ -148,7 +196,7 @@ class ChatWindow extends Component {
                   )}
                 </div>
                 <div className="chat-detail overflow-ellipsis">
-                  {isMobile && (
+                  {isDevice && (
                     <React.Fragment>
                       <span className="chat-title-icon mobile">
                         {icon}
@@ -158,15 +206,24 @@ class ChatWindow extends Component {
                       </span>
                     </React.Fragment>
                   )}
-                  {isMobile ? '- ' : ''}{about}
+                  {isDevice ? '- ' : ''}{about}
                 </div>
               </div>
-              {isGroup && (
+              {isGroup && !isDevice && (
                 <div className="more-info-container">
                   <div className="chatInfoContainer" onClick={this.toggleFlexContainer}>
                     <i className="fas fa-info-circle"/>
                   </div>
                 </div>
+              )}
+              {isGroup && isDevice && (
+                <FullPageModal {...FlexContainerProps} isDevice={isDevice}>
+                  <FlexContainerContent
+                    content={flexContent}
+                    isGroup={isGroup}
+                    isDevice={isDevice}
+                  />
+                </FullPageModal>
               )}
             </div>
             {isOffline && (
@@ -188,7 +245,7 @@ class ChatWindow extends Component {
               </div>
             )}
             <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-              <PrMessagesList handleLastPic={this.handleLastPic}/>
+              <PrMessagesList handleLastPic={this.handleLastPic} isGroup={isGroup} founders={founders} pms={pms}/>
             </div>
             <PrAddMessage />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
@@ -214,14 +271,12 @@ class ChatWindow extends Component {
               <button type="submit">Upload</button>
             </form>
           </div>
-          {isFlexContainerOpen && !isMobile && (
+          {isFlexContainerOpen && !isDevice && (
             <FlexContainerContent
               content={flexContent}
               isGroup={isGroup}
+              toggleFlexContainer={this.toggleFlexContainer}
             />
-          )}
-          {isFlexContainerOpen && isMobile && (
-            alert("Mobile flex container modal to go here")
           )}
         </div>
       </React.Fragment>

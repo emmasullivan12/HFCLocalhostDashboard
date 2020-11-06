@@ -13,6 +13,7 @@ import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
+import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
 
@@ -80,6 +81,7 @@ function WelcomeMessage(props) {
           <div className="message-content-box">
             <div className="sent-msg-info">
               <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserBadge badgeType='isPrBot' />
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -108,6 +110,7 @@ function FinishedSUMessage(props) {
           <div className="message-content-box">
             <div className="sent-msg-info">
               <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserBadge badgeType='isPrBot' />
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -151,7 +154,16 @@ function StdMessage(props) {
             <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+                <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+                {props.isProspelaTeam && (
+                  <UserBadge badgeType='isPrTeam' />
+                )}
+                {props.isFounder && (
+                  <UserBadge badgeType='founder' />
+                )}
+                {props.isPM && (
+                  <UserBadge badgeType='pm' />
+                )}
                 <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
@@ -181,7 +193,16 @@ function DisplayFile(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              {props.isProspelaTeam && (
+                <UserBadge badgeType='isPrTeam' />
+              )}
+              {props.isFounder && (
+                <UserBadge badgeType='founder' />
+              )}
+              {props.isPM && (
+                <UserBadge badgeType='pm' />
+              )}
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -216,7 +237,16 @@ function MessageNotSent(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              {props.isProspelaTeam && (
+                <UserBadge badgeType='isPrTeam' />
+              )}
+              {props.isFounder && (
+                <UserBadge badgeType='founder' />
+              )}
+              {props.isPM && (
+                <UserBadge badgeType='pm' />
+              )}
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -240,7 +270,16 @@ function UploadNotSent(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              {props.isProspelaTeam && (
+                <UserBadge badgeType='isPrTeam' />
+              )}
+              {props.isFounder && (
+                <UserBadge badgeType='founder' />
+              )}
+              {props.isPM && (
+                <UserBadge badgeType='pm' />
+              )}
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
             <div className="message-content">
@@ -375,6 +414,7 @@ function PrAuto(props) {
                 <div className="message-content-box">
                   <div className="sent-msg-info">
                     <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+                    <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
                   <div className="message-content">
@@ -448,7 +488,7 @@ function PrAuto(props) {
 class PrMessage extends Component {
 
   render() {
-  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto} = this.props;
+  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto, isFounder, isPM, isProspelaTeam} = this.props;
 
     return (
       <React.Fragment>
@@ -472,7 +512,16 @@ class PrMessage extends Component {
             </div>
           </div>
         )}
-        <PrMessageContents message={message} isAdjacent={isAdjacent} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
+        <PrMessageContents
+          message={message}
+          isAdjacent={isAdjacent}
+          isLastPic={isLastPic}
+          handleLastPic={handleLastPic}
+          isProspelaAuto={isProspelaAuto}
+          isProspelaTeam={isProspelaTeam}
+          isFounder={isFounder}
+          isPM={isPM}
+        />
       </React.Fragment>
     )
   }
@@ -481,7 +530,7 @@ class PrMessage extends Component {
 class PrMessageContents extends Component {
 
   render() {
-    const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic} = this.props
+    const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic, isFounder, isPM, isProspelaTeam} = this.props
     const userRole = 'mentor'
     switch (message.subtype) {
       case "welcome":
@@ -489,15 +538,15 @@ class PrMessageContents extends Component {
       case "finTraining":
         return <FinishedSUMessage message={message} userRole={userRole} isProspelaAuto/>
       case "std":
-        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "file":
-        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
+        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "prAuto":
         return <PrAuto message={message} isProspelaAuto/>
       case 'notSent':
-        return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto}/>
+        return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case 'uploadNotSent':
-        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto}/>
+        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "menteeReq":
         return <MenteeReq message={message} isProspelaAuto={isProspelaAuto}/>
       case "mentorAcc":

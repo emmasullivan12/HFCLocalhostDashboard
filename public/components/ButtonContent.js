@@ -21,22 +21,28 @@ function ButtonContent(props) {
           <i className="fas fa-paperclip" />
         </div>
       );
+    case 'openFlexContainer':
+      return (
+        <div className="chatInfoContainer">
+          <i className="fas fa-info-circle"/>
+        </div>
+      );
     case 'joinProgLrg':
       return (
         <div>+ Join a live Group</div>
-      )
+      );
     case 'joinProg':
       return (
         <div className="chatMenuItem menuCTA">
           <span className="menuCTA">+ Join a Group...</span>
         </div>
-      )
+      );
     case 'joinProgSml':
       return (
         <div className="addContainer">
           <i className="fas fa-plus" />
         </div>
-      )
+      );
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':
@@ -45,17 +51,17 @@ function ButtonContent(props) {
     case 'addPicBtn msg-thumb isGroupFlex smallIdle':
       return (
         <i className="fas fa-plus" />
-      )
+      );
     case 'mentor-msgBtn-profile':
     case 'mentee-msgBtn-profile':
       return (
         <i className="fas fa-user" />
-      )
+      );
     case 'mentor-usrName-profile':
     case 'mentee-usrName-profile':
       return (
         <span className="sender-name">{text}</span>
-      )
+      );
     case 'settings':
       return (
         <div className="settings-Btn-txt">

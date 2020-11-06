@@ -8,6 +8,7 @@
 
 .group-users-container{
   padding: 0 15px 15px 15px;
+  margin-top: -2rem;
 }
 
 .groupName-flexContainer{
@@ -84,4 +85,28 @@
   height: 30px;
   font-weight: bold;
   color: #3f3f3f;
+}
+
+.ModalOpenBtn-openFlexContainer{
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: 0;
+  outline: none!important;
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  position: absolute;
+  right: 16px;
+  margin-left: 10px;
+}
+.ModalOpenBtn-openFlexContainer:hover{
+  background: none;
+}
+.fullpage-modal-container.isDevice{
+  padding-top: 2rem;
+}
+.fullpage-modal-container.openFlexContainer{
+  background-color: #f2f2f2;
 }

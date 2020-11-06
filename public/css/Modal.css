@@ -559,6 +559,23 @@
   z-index: 0;
 }
 
+.fullpage-modal-container.slideUp{
+  animation: .5s slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 12%;
+    height: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
 /* SCREEN SIZING ADJUSTMENTS */
 @media screen and (min-width: 500px) {
   .modal-container {
@@ -702,6 +719,9 @@
 }
 .fpModal-content{
   padding-top: 1.5em;
+}
+.fpModal-content.isDevice{
+  padding-top: 0;
 }
 .success-container{
   width: 60%;

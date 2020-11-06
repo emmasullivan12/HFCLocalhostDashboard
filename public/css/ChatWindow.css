@@ -185,6 +185,11 @@
   background-color: #f2f2f2;
 }
 
+.flex-container-overlay.isDevice{
+  width: 100%;
+  overflow-y: unset;
+}
+
 .chat-content-container{
   overflow:hidden;
   display: flex;

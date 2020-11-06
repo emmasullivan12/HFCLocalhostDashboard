@@ -57,7 +57,7 @@ class ProspelaBot extends Component {
           {uid: '223482', fname: 'mentor', lname: 'user', profilePic: '', mentor: 1},
           {uid: '223483', fname: 'mentor', lname: 'user', profilePic: '', mentor: 1},
           {uid: '223484', fname: 'mentor', lname: 'user', profilePic: '', mentor: 1},
-          {uid: '223462', fname: 'mentee', lname: 'user', profilePic: '', mentee: 1},
+          {uid: '223455', fname: 'mentee', lname: 'user', profilePic: '', mentee: 1},
         ]
       }
     }
@@ -75,10 +75,13 @@ class ProspelaBot extends Component {
               groupUsers={groupUsers}
             />
           )
-          : <MtchdUsrProfile />
+          //: <MtchdUsrProfile />
+          : null
           }
           className="chatWindowContainer"
           isGroup={isGroup}
+          founders={group.founder} // add group[0] when merge code
+          pms={group.pm} // add group[0] when merge code
         />
       </React.Fragment>
     );
