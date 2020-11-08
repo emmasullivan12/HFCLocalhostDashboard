@@ -23,6 +23,12 @@
   left: 10px;
   right: 14px;
 }
+.chatTopBanners.small{
+  top: 55px;
+  left: 50%;
+  transform: translateX(-52%);
+  right: unset;
+}
 .priorityBanner{
   z-index: 202;
 }

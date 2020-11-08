@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import Avatar from './Avatar.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 class UserListItem extends Component {
   render() {
@@ -37,12 +38,14 @@ class GroupUsers extends Component {
     super(props);
     this.state = {
       showOnly20Users: true,
+      isLoading: false,
     }
   }
 
   showAllUsers = () => {
     this.setState({
-      showOnly20Users: false
+      showOnly20Users: false,
+      isLoading: true,
     })
   }
   /*const group = {
@@ -69,7 +72,7 @@ class GroupUsers extends Component {
   }*/
   render() {
     const {group, groupUsers} = this.props;
-    const {showOnly20Users} = this.state;
+    const {showOnly20Users, isLoading} = this.state;
 
     const userList = showOnly20Users ? groupUsers.users.usersList.slice(0,20) : groupUsers.users.usersList;
     const users = [];
@@ -106,8 +109,13 @@ class GroupUsers extends Component {
             {users}
           </div>
           {showOnly20Users && (
-            <button className="showMore" type="button" onClick={this.showAllUsers}>
-              Show all {groupUsers.users.count} users
+            <button className="showMore" type="button" onClick={this.showAllUsers} disabled={isLoading === true ? true : false}>
+              {isLoading === true && (
+                <LoadingSpinner />
+              )}
+              {isLoading != true && (
+                <span>Show all {groupUsers.users.count} users</span>
+              )}
             </button>
           )}
         </div>

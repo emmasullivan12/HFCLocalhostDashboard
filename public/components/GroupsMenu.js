@@ -55,7 +55,7 @@ class GroupListItem extends Component {
   render() {
     const {showChannels} = this.state;
     const {group, onClick} = this.props;
-    const groupAvatarURL = group.groupavatarurl
+    const groupAvatarURL = group.groupavatarurl_20
     const isGroupAvatarURL = groupAvatarURL != null
 
     let navlink

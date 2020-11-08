@@ -13,7 +13,7 @@ class GroupAbout extends Component {
 
   render() {
     const {group, groupUsers} = this.props;
-    const groupAvatarURL = group.groupavatarurl
+    const groupAvatarURL = group.groupavatarurl_40 //40 px wide image
     const isGroupAvatarURL = groupAvatarURL != null
     const userRole = 'mentee'
 

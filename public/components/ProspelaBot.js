@@ -18,11 +18,14 @@ class ProspelaBot extends Component {
       website: 'https://www.access-vfx.com',
       twitter: '@accessvfx',
       isVerifiedGroup: '1',
-      groupavatarurl: 'avfx-avatar-20.png',
+      groupavatarurl: 'avfx-avatar.png',
+      groupavatarurl_20: 'avfx-avatar-20.png',
+      groupavatarurl_40: 'avfx-avatar-40.png',
       channels: [
         {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345',}
       ]
     }
+
     const groupUsers = {
       users: {
         count: 104,

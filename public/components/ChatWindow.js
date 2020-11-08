@@ -61,6 +61,7 @@ class ChatWindow extends Component {
       isFlexContainerOpen: this.props.isGroup ? true : false,
       isLoadingMsgs: false,
       dragover: '',
+      newMsgBannerSeen: false,
       /* dragFiles: '', */
     }
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
@@ -73,7 +74,16 @@ class ChatWindow extends Component {
   }
 
   componentDidMount() {
+    const newMsgsBanner = document.getElementById('newMsgs')
+    const hasUnreads = true
+
     window.addEventListener("resize", this.updateDevice);
+
+    if (hasUnreads) {
+      const observer = this.createObserver()
+      observer.observe(newMsgsBanner);
+    }
+
   }
 
   componentDidUpdate(prevProps) {
@@ -88,11 +98,34 @@ class ChatWindow extends Component {
   }
 
   componentWillUnmount() {
+
     window.removeEventListener("resize", this.updateDevice);
   }
 
+  createObserver = () => {
+    let options = {
+      threshold: 0.7
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+
+        if (entry.intersectionRatio > 0) {
+          this.setState({
+            newMsgBannerSeen: true,
+          }, () => {
+            const newMsgsBanner = document.getElementById('newMsgs')
+            observer.unobserve(newMsgsBanner);
+          })
+        }
+
+      });
+    }, options);
+
+    return observer
+  }
+
   updateDevice = () => {
-    console.log("triggered")
     this.setState({
       isDevice: checkDevice(),
     })
@@ -114,6 +147,10 @@ class ChatWindow extends Component {
   handleLastPic = () => {
     this.scrollToBottom();
   }
+
+  /*goToNewMsgs = () => {
+    alert("go to start of new messages")
+  }*/
 
   // FILE DROP ACTIVITY
   handleDragEnter(e) {
@@ -155,13 +192,15 @@ class ChatWindow extends Component {
   }
 
   render() {
-  const {isLoadingMsgs, isFlexContainerOpen, isDevice} = this.state;
+  const {isLoadingMsgs, isFlexContainerOpen, isDevice, newMsgBannerSeen} = this.state;
   const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, founders, pms} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   const isVerifiedGroup = true
   const icon = getIcon(channelType)
-  const about = channelAbout ? channelAbout : ''
+  const hasUnreads = true
+  const isPBotChat = true //this.props.chatsList.pbotchat
+  const about = isGroup ? (channelAbout ? channelAbout : '') : (isPBotChat ? 'Your 1:1 chat with the Prospela team: ask questions, tell us your thoughts/feedback/suggestions. We\'re all ears!' : '')
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>
@@ -195,19 +234,26 @@ class ChatWindow extends Component {
                     </React.Fragment>
                   )}
                 </div>
-                <div className="chat-detail overflow-ellipsis">
-                  {isDevice && (
-                    <React.Fragment>
-                      <span className="chat-title-icon mobile">
-                        {icon}
-                      </span>
-                      <span className="channel-title mobile bold">
-                        {channelName}
-                      </span>
-                    </React.Fragment>
-                  )}
-                  {isDevice ? '- ' : ''}{about}
-                </div>
+                {!isPBotChat && (
+                  <div className="chat-detail overflow-ellipsis">
+                    {isDevice && (
+                      <React.Fragment>
+                        <span className="chat-title-icon mobile">
+                          {icon}
+                        </span>
+                        <span className="channel-title mobile bold">
+                          {channelName}
+                        </span>
+                      </React.Fragment>
+                    )}
+                    {isDevice ? '- ' : ''}{about}
+                  </div>
+                )}
+                {isPBotChat && (
+                  <div className="chat-detail overflow-ellipsis">
+                    {about}
+                  </div>
+                )}
               </div>
               {isGroup && !isDevice && (
                 <div className="more-info-container">
@@ -241,6 +287,15 @@ class ChatWindow extends Component {
                   <div className="bannerMsg">
                     Loading messages...
                   </div>
+                </div>
+              </div>
+            )}
+            {hasUnreads && newMsgBannerSeen === false && (
+            //  <div className="chatTopBanners small" onClick={this.goToNewMsgs}>
+              <div className="chatTopBanners small">
+                <div className="separator__text go2NewMsgs">
+                  <i className="fas fa-arrow-up" />
+                  <span>More new messages</span>
                 </div>
               </div>
             )}

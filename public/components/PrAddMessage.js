@@ -116,8 +116,9 @@ class PrAddMessage extends Component {
 
   handleMessageChange = (e) => {
     let value = e.target.value;
-    const isUnder18Chat = true;
+  //  const isUnder18Chat = true;
     const country = 'GBR'
+    const userRole = 'mentor'
 
     this.setState({
       text: value
@@ -169,7 +170,7 @@ class PrAddMessage extends Component {
                       value.substring(idx, idx + matchLen) +
                       '</span> is '+
                       phoneEmailTxt +
-                      ', which you\'ve agreed not to share for safeguarding reasons'
+                      ', which you\'ve agreed not to share for safeguarding reasons if your mentee is under 18'
         notAllowedText.style.display = 'block';
         notAllowedText.innerHTML = newText
       } else {
@@ -178,7 +179,8 @@ class PrAddMessage extends Component {
       }
     }
 
-    if (isUnder18Chat === true) {
+    //  if (isUnder18Chat === true) {
+    if (userRole === 'mentor') {
       checkEmailPhoneSharing()
     }
 

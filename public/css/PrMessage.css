@@ -100,8 +100,15 @@
   top: -15px;
 }
 .block-container.dateHeader:hover,
-#newMsgs:hover{
+#newMsgs:hover,
+.block-container.go2NewMsgs:hover{
   background-color: transparent;
+}
+.block-container.go2NewMsgs{
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 101;
+  top: -15px;
 }
 
 .message-container {
@@ -373,6 +380,15 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.separator__text.go2NewMsgs {
+  background-color: #58d2bb;
+  color: #fff;
+  border: 1px solid #55b3a1;
+  cursor: pointer;
+}
+.separator__text.go2NewMsgs i{
+  padding-right: 8px;
 }
 .unreadSeparator__text{
   -webkit-border-radius: 10px;
