@@ -1,9 +1,9 @@
 /* Dex last merged this code on 5th nov 2020  */
 
 .msg-thumb-container {
-  width: 2.5rem;
+  width: 40px;
   height:100%;
-  padding-right: 8px;
+  padding-right: 10px;
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -36,9 +36,9 @@
 }
 
 .msg-thumb {
-  Width:2.5rem;
-  Margin-right:.75rem;
-  Height:2.5rem;
+  Width:40px;
+  Margin-right:10px;
+  Height:40px;
   Border-style:none;
   background-size: cover;
 }
@@ -105,8 +105,8 @@
 }
 
 .message-container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 6px;
   padding-bottom: 6px;
   font-size: 15px;
@@ -123,15 +123,14 @@
   height:auto;
   position: relative;
 }
-@media only screen and (max-width: 425px) {
+/*@media only screen and (max-width: 425px) {
   .message-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
+}*/
 .message-container.adjacent{
   margin-top: -10px;
-  padding-left: 0;
 }
 .message-container.adjacent:hover .msg-sent-time.adjacent{
   opacity: 1;
@@ -192,57 +191,12 @@
 }
 
 .messageGutter{
-  float: left;
-  padding-right: 8px;
+  margin-right: 10px;
+  margin-left: -10px;
   text-align: right;
-  width: 4.7rem;
-}
-/*
-@media only screen and (min-width: 400px) {
-  .messageGutter{
-    width: 5.5rem;
-  }
+  width: 50px;
 }
 
-@media only screen and (min-width: 450px) {
-  .messageGutter{
-    width: 5.2rem;
-  }
-}
-*/
-@media only screen and (min-width: 550px) {
-  .messageGutter{
-    width: 5.1rem;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  .messageGutter{
-    width: 5.0rem;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .messageGutter{
-    width: 4.9rem;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .messageGutter{
-    width: 4.8rem;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .messageGutter{
-    width: 4.75rem;
-  }
-}
-@media only screen and (min-width: 1250px) {
-  .messageGutter{
-    width: 4.7rem;
-  }
-}
 .msg-sent-time {
   font-size: .75rem;
   color: #b8c2cc;
@@ -254,7 +208,8 @@
 .msg-sent-time.adjacent{
   opacity: 0;
   line-height: 1.3;
-  margin: 8px 0 -4px;
+  margin-top: 8px;
+  width: 50px;
   transition: opacity .15s ease-in-out;
   -webkit-transition: opacity .15s ease-in-out;
   -moz-transition: opacity .15s ease-in-out;
