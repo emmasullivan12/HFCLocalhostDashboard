@@ -1,7 +1,7 @@
 // Dex last merged this code on 25th oct 2020
 
 import React, { Component } from "react";
-import cdn from './CDN.js';
+import {cdn, groupImgFolder} from './CDN.js';
 import Modal from './Modal.js';
 import AutoEnrollProgModalContent from './AutoEnrollProgModalContent.js';
 
@@ -17,7 +17,7 @@ class AutoEnrollPrompt extends Component {
   render() {
     const autoEnrollProgName = 'BAME in Games';
     const {source} = this.props
-    var progLogoURL = cdn + '/progImages/' + source + '.png'
+    var progLogoURL = cdn + '/' + groupImgFolder + source + '.png'
     const nonPartnerSch = false; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>

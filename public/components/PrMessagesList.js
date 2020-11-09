@@ -195,7 +195,7 @@ class PrMessagesList extends Component {
           title: 'Here is a pic of my office at lunchtime!',
           uid: '23456',
           fileType: 'image/jpeg',
-          imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
+          imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png-270'
         }
       },
       {
@@ -225,7 +225,7 @@ class PrMessagesList extends Component {
       },
       {
         id: '100007',
-        uid: '12345',
+        uid: '99999',
         type: 'message',
         subtype: 'std',
         author: 'dexter',
@@ -234,7 +234,7 @@ class PrMessagesList extends Component {
       },
       {
         id: '100008',
-        uid: '12345',
+        uid: '99999',
         type: 'message',
         subtype: 'notSent',
         author: 'dexter',
@@ -243,7 +243,7 @@ class PrMessagesList extends Component {
       },
       {
         id: '100009',
-        uid: '12345',
+        uid: '99999',
         type: 'message',
         subtype: 'std',
         author: 'dexter',

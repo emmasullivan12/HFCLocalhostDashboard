@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-import cdn from './CDN.js';
+import {cdn, groupImgFolder} from './CDN.js';
 import Avatar from './Avatar.js';
 import {DateCalc} from './GeneralFunctions.js';
 import UserBadge from './UserBadge.js';
@@ -55,7 +55,7 @@ class GroupAbout extends Component {
     }
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/progImages/' + groupAvatarURL
+      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL
     } else {
       groupInitial = group.groupname.charAt(0).toUpperCase();
     }
@@ -136,5 +136,5 @@ pm: "234567",
 website: 'https://www.access-vfx.com',
 twitter: '@accessvfx',
 isVerifiedGroup: '1',
-groupavatarurl: 'avfx-avatar-20.png'
+groupavatarurl: '/avfx-avatar-20.png'
 */

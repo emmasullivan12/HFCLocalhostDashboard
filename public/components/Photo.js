@@ -5,6 +5,13 @@ import ReactDOM from "react-dom";
 
 import '../css/Photo.css';
 
+// **Overview**
+  // **Props**
+    // - profPicSrc
+      //   type: cdn + userAvatarsFolder + /path/to/img + size
+      //   Is already adjusted before being passed in. Only relates to user prof pics i.e. is within userAvatarsFolder
+
+
 const Photo = (props) => (
   <div className={"photoOutput "+props.isProfPic} id="profPic" style={props.isPicSet ? {backgroundImage:"url(" + props.profPicSrc + ")"} : null}>
     {props.isProfPic !='isProfPic' ? (

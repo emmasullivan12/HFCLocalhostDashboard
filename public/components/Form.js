@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 
 import {escapeHTML, whichBrowser, ChevronDown, ChevronUp, LoadingSpinner, Check} from './GeneralFunctions.js';
-import cdn from './CDN.js';
+import {cdn} from './CDN.js';
 import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';

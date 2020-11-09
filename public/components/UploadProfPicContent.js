@@ -1,12 +1,20 @@
 // Dex last merged this code on 15th oct 2020
 
 import React, { Component } from "react";
+import {usercdn, userAvatarsFolder} from './CDN.js';
 import Camera from './Camera.js';
 import Photo from './Photo.js';
 
 import "../css/General.css";
 import "../css/FileUploadContent.css";
 import '../css/CameraUploadContent.css';
+
+// **Overview**
+  // **Props**
+    // - profPicSrc
+      //   type: /path/to/img (without the cdn URL at beginning)
+      //   path to any existing profile pictures (if user is changing pic). Is adjusted within this component to add CDN URL etc
+
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class UploadProfPicContent extends Component {
@@ -23,9 +31,20 @@ class UploadProfPicContent extends Component {
 
   render() {
     const { fileUploadDescription } = this.state;
-    const {profPicSrc, isPicSet, userInitial, isMe} = this.props;
+    const {profPicSrc, isPicSet, userInitial, isMe, picSizeToShow} = this.props;
     const selectedFiles = true;
     const isEnabled = false;
+    let profPicURL
+
+    // Create the URL
+    function createProfPicURL(string) {
+      return usercdn.concat('/',userAvatarsFolder,string,'.png','-',picSizeToShow);
+    }
+
+    // Remove the .png and any '-o/-20/-40' from the filename
+    const pic = profPicSrc.split('.png-')[0];
+    profPicURL = createProfPicURL(pic)
+
     return (
       <React.Fragment>
         <div className="modal-title">
@@ -51,7 +70,7 @@ class UploadProfPicContent extends Component {
               </svg>
               <span>or Choose a file...</span>
             </label>
-            <Photo isProfPic='isProfPic' isPicSet={isPicSet} profPicSrc={profPicSrc} userInitial={userInitial} isMe={isMe}/>
+            <Photo isProfPic='isProfPic' isPicSet={isPicSet} profPicSrc={profPicURL} userInitial={userInitial} isMe={isMe}/>
             <button type="submit" disabled={!isEnabled} className="Submit-btn uploadPicBtn" id="saveButton">Upload photo</button>
           </div>
         </form>

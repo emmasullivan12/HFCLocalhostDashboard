@@ -12,63 +12,88 @@
 }
 .groupsContainer{
   margin-bottom: .5rem;
+  position: relative;
 }
-.groupsContainer button:nth-of-type(5n+0){
+.groupsContainer a.noAvatar button{
+  top: -9px
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: rgb(78,78,214,.13);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.groupsContainer a button:hover .overlay,
+.groupsContainer a button:focus .overlay{
+  opacity: 1;
+}
+.groupsContainer a.noAvatar:nth-of-type(5n+0) button{
   border: 1px solid rgba(173,129,5,.3);
   color: #fff;
   background-color: rgba(238,176,0,.5);
 }
-.groupsContainer button:nth-of-type(5n+1){
+.groupsContainer a.noAvatar:nth-of-type(5n+1) button{
   border: 1px solid rgba(102,102,152,.3);
   color: #fff;
   background-color: rgba(153,153,231,.5);
 }
-.groupsContainer button:nth-of-type(5n+2) {
+.groupsContainer a.noAvatar:nth-of-type(5n+2) button {
   border: 1px solid rgba(63,150,134,.3);
   color: #fff;
   background-color: rgba(88,210,187,.5);
 }
-.groupsContainer button:nth-of-type(5n+3) {
+.groupsContainer a.noAvatar:nth-of-type(5n+3) button {
   border: 1px solid rgba(189,41,62,.3);
   color: #fff;
   background-color: rgba(251,108,129,.5);
 }
-.groupsContainer button:nth-of-type(5n+4) {
+.groupsContainer a.noAvatar:nth-of-type(5n+4) button {
   border: 1px solid rgba(84,152,162,.3);
   color: #fff;
   background-color: rgba(101,200,216,.5);
 }
-.groupsContainer button:nth-of-type(5n+0):hover,
-.groupsContainer button:nth-of-type(5n+0):focus{
+.groupsContainer a.noAvatar:nth-of-type(5n+0) button:hover,
+.groupsContainer a.noAvatar:nth-of-type(5n+0) button:focus{
   background-color: rgba(238,176,0,.9);
 }
-.groupsContainer button:nth-of-type(5n+1):hover,
-.groupsContainer button:nth-of-type(5n+1):focus{
+.groupsContainer a.noAvatar:nth-of-type(5n+1) button:hover,
+.groupsContainer a.noAvatar:nth-of-type(5n+1) button:focus{
   background-color: rgba(153,153,231,.9);
 }
-.groupsContainer button:nth-of-type(5n+2):hover,
-.groupsContainer button:nth-of-type(5n+2):focus {
+.groupsContainer a.noAvatar:nth-of-type(5n+2) button:hover,
+.groupsContainer a.noAvatar:nth-of-type(5n+2) button:focus {
   background-color: rgba(88,210,187,.9);
 }
-.groupsContainer button:nth-of-type(5n+3):hover,
-.groupsContainer button:nth-of-type(5n+3):focus {
+.groupsContainer a.noAvatar:nth-of-type(5n+3) button:hover,
+.groupsContainer a.noAvatar:nth-of-type(5n+3) button:focus {
   background-color: rgba(251,108,129,.9);
 }
-.groupsContainer button:nth-of-type(5n+4):hover,
-.groupsContainer button:nth-of-type(5n+4):focus {
+.groupsContainer a.noAvatar:nth-of-type(5n+4) button:hover,
+.groupsContainer a.noAvatar:nth-of-type(5n+4) button:focus {
   background-color: rgba(101,200,216,.9);
 }
 
-.groupsContainer button:nth-last-of-type(1){
+/*.groupsContainer a:nth-last-of-type(1) button{
   color: #919191;
   background: rgba(0,0,0,.07);
-  border: 1px solid #e4e2e2;
+  border: 1px solid #dcdcdc;
 }
 
-.groupsContainer button:nth-last-of-type(1):hover,
-.groupsContainer button:nth-last-of-type(1):focus {
+.groupsContainer a:nth-last-of-type(1) button:hover,
+.groupsContainer a:nth-last-of-type(1) button:focus {
   background-color: rgba(212,212,212,.2095);
-}
+}*/
 
 .landingCTABtnContainer{
   text-align: right;

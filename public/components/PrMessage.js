@@ -151,7 +151,7 @@ function StdMessage(props) {
         }  </div>
         ):(
           <div className="message-container">
-            <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
+            <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
                 <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>

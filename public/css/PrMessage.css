@@ -16,8 +16,9 @@
 }
 
 .msg-thumb-container.smallIdle{
-  width: 1rem;
-  padding-right: 6px;
+  width: 15px;
+  padding-right: 2px;
+  height: 15px;
 }
 
 .title-emoji-container {
@@ -48,8 +49,10 @@
   display: inline-grid;
 }
 .msg-thumb.smallIdle{
-  width: 1rem!important;
-  height: 1rem!important;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 1px;
 }
 
 .msg-thumb.hasPic {
@@ -193,7 +196,7 @@
 }
 
 .sender-name.smallIdle{
-  font-size: 12px;
+  font-size: 13px;
   font-weight: unset;
 }
 

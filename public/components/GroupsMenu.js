@@ -8,7 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 
-import cdn from './CDN.js';
+import {cdn, groupImgFolder} from './CDN.js';
 import Modal from './Modal.js';
 import {getIcon} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
@@ -65,7 +65,7 @@ class GroupListItem extends Component {
     const channels = []
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/progImages/' + groupAvatarURL
+      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL
     } else {
       groupInitial = group.groupname.charAt(0).toUpperCase();
     }

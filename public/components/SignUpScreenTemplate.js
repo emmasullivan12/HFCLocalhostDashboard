@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import cdn from './CDN.js';
+import {cdn} from './CDN.js';
 import "../css/SignUpScreenTemplate.css";
 
 // Typeform Sign Up pages template for use with both mentors / student

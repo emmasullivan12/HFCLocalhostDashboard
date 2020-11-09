@@ -74,16 +74,8 @@ class ChatWindow extends Component {
   }
 
   componentDidMount() {
-    const newMsgsBanner = document.getElementById('newMsgs')
-    const hasUnreads = true
-
     window.addEventListener("resize", this.updateDevice);
-
-    if (hasUnreads) {
-      const observer = this.createObserver()
-      observer.observe(newMsgsBanner);
-    }
-
+    this.handleUnreads();
   }
 
   componentDidUpdate(prevProps) {
@@ -95,11 +87,22 @@ class ChatWindow extends Component {
         this.closeFlexContainer()
       }
     }
+    this.handleUnreads();
   }
 
   componentWillUnmount() {
 
     window.removeEventListener("resize", this.updateDevice);
+  }
+
+  handleUnreads = () => {
+    const hasUnreads = true
+
+    if (hasUnreads) {
+      const newMsgsBanner = document.getElementById('newMsgs')
+      const observer = this.createObserver()
+      observer.observe(newMsgsBanner);
+    }
   }
 
   createObserver = () => {
@@ -213,7 +216,7 @@ class ChatWindow extends Component {
       <React.Fragment>
         <div className="chat-container">
           <div className="chat-content-container">
-            <div className="chat-header">
+            <div className="page-header chat">
               <MenuNav />
               <div className="page-detail-container overflow-ellipsis">
                 <div className="chat-title-container overflow-ellipsis">

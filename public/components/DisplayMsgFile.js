@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import {usercdn, userImgsFolder} from './CDN.js';
 import TextParser from './TextParser.js';
 import "../css/DisplayMsgFile.css";
 import "../css/General.css";
@@ -57,7 +58,7 @@ class DisplayMsgFile extends Component {
                   {fileType === 'img' && (
                     <img
                       className="msg-img"
-                      src={file.imgurl}
+                      src={usercdn + '/' + userImgsFolder + file.imgurl}
                       alt={file.name}
                       onLoad={isLastPic ? () => handleLastPic() : null}
                     />

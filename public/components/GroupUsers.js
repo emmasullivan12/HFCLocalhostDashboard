@@ -48,6 +48,7 @@ class GroupUsers extends Component {
       isLoading: true,
     })
   }
+
   /*const group = {
     groupname: "Access:VFX",
     about: "this is about text here about avfx and what our mission is!",
@@ -57,7 +58,7 @@ class GroupUsers extends Component {
     website: 'https://www.access-vfx.com',
     twitter: '@accessvfx',
     isVerifiedGroup: '1',
-    groupavatarurl: 'avfx-avatar-20.png',
+    groupavatarurl: '/avfx-avatar-20.png',
     channels: [
       {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345', allowed: ["pr", "mentor"]}
     ]
@@ -72,7 +73,7 @@ class GroupUsers extends Component {
   }*/
   render() {
     const {group, groupUsers} = this.props;
-    const {showOnly20Users, isLoading} = this.state;
+    const {showOnly20Users, isLoading, finishedLoadingAllUsers} = this.state;
 
     const userList = showOnly20Users ? groupUsers.users.usersList.slice(0,20) : groupUsers.users.usersList;
     const users = [];
@@ -87,7 +88,7 @@ class GroupUsers extends Component {
         </div>
       );
     } else {
-      userList.forEach((user) => {
+      userList.forEach((user, index, array) => {
         users.push(
           <UserListItem
             key={user.uid}
@@ -108,7 +109,7 @@ class GroupUsers extends Component {
           <div className="chatMenu">
             {users}
           </div>
-          {showOnly20Users && (
+          {(showOnly20Users || (!showOnly20Users && (users.length != userList.length))) && (
             <button className="showMore" type="button" onClick={this.showAllUsers} disabled={isLoading === true ? true : false}>
               {isLoading === true && (
                 <LoadingSpinner />

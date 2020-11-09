@@ -35,6 +35,9 @@
   -moz-box-sizing: inherit;
   background: #fff;
 }
+.page-header .chat {
+  background: #f2f2f2;
+}
 
 .viewMenu{
   margin-right: 1rem!important;

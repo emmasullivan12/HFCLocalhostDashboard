@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-import cdn from './CDN.js';
+import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
@@ -70,7 +70,7 @@ class MentorProfileContent extends Component {
     const mentor = {
       uid: '12345',
       fname: 'Emma',
-      profPicSrc: "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg",
+      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
       city: 'LA',
       country: 'USA',
       timeZone: 'Europe/London',
@@ -184,11 +184,11 @@ class MentorProfileContent extends Component {
                   <div className={"profile-thumb img-circle allowAddPic "+isMe}>
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} isMe={isMe} />
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} isMe={isMe} picSizeToShow={270}/>
                       </Modal>
                     )}
                     <img
-                      src={mentor.profPicSrc}
+                      src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'.png-360')}
                       alt="User profile pic"
                     />
                   </div>

@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import {
   Link
 } from "react-router-dom";
+
+import {usercdn, userAvatarsFolder} from './CDN.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
@@ -51,7 +53,7 @@ class UserMenuContent extends Component {
       uid: '23456',
       fname: 'Dexter',
       lname: 'Boyce',
-      profPicSrc: "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg",
+      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
       schName: '',
       schNameFreeText: '',
       uniName: '',
@@ -60,6 +62,9 @@ class UserMenuContent extends Component {
       eetStatus: 1,
     };
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
+
+    const profPicSrc1 = user.profPicSrc.split('.png-')[0];
+    const imgURL = usercdn.concat('/',userAvatarsFolder,profPicSrc1,'.png-80')
 //    const isPicSet = false;
     const userInitial = user.fname.charAt(0).toUpperCase();
     const eduInstName = eduName(user.schName, user.schNameFreeText, user.uniName, user.uniNameFreeText, user.eetStatus);
@@ -70,9 +75,9 @@ class UserMenuContent extends Component {
             <h2 className="userMenu-header">
               <div className="userMenu-thumb-container">
                 {isPicSet ? (
-                  <div className="userMenu-thumb allowAddPic" style={isPicSet ? {backgroundImage:"url(" + user.profPicSrc + ")"} : null}>
+                  <div className="userMenu-thumb allowAddPic" style={isPicSet ? {backgroundImage:"url(" + imgURL + ")"} : null}>
                     <Modal {...UploadProfPicProps}>
-                      <UploadProfPicContent isPicSet={isPicSet} profPicSrc={user.profPicSrc} isMe='isMe' />
+                      <UploadProfPicContent isPicSet={isPicSet} profPicSrc={user.profPicSrc} isMe='isMe' picSizeToShow={270} />
                     </Modal>
                   </div>
                   )

@@ -14,7 +14,7 @@ import {
 /*import store from "../store/configureStore";
 import { usersFetchData } from "../actions/Users";*/
 
-import cdn from './CDN.js';
+import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
 import MenuModal from "./MenuModal";
 import Modal from "./Modal";

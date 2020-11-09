@@ -31,11 +31,15 @@ class MentorHomepageCTAContainer extends Component {
     const source = 'vhs'
 
     this.props.groups.forEach((group) => {
+
+      const generalChannel = group.channels
+        .filter(channel => channel.type == 'general')
+
       groups.push(
         <GroupCircle
           group={group}
           key={group.gid}
-          navlink={`/community/${group.groupname}`}
+          navlink={`/community/${group.gid}/${generalChannel.chlid}`}
         />
       );
     });

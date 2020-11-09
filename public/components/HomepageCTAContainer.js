@@ -38,11 +38,15 @@ class HomepageCTAContainer extends Component {
     const source = 'vhs' // i.e. from URL ?source=villiers
 
     this.props.groups.forEach((group) => {
+
+      const generalChannel = group.channels
+        .filter(channel => channel.type == 'general')
+
       groups.push(
         <GroupCircle
           group={group}
           key={group.gid}
-    //      navlink={`/community/${group.groupname}`}
+          navlink={`/community/${group.gid}/${generalChannel[0].chlid}`}
         />
       );
     });

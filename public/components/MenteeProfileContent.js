@@ -1,7 +1,7 @@
 // Dex last merged this code on 15th oct 2020
 import React, { Component } from "react";
 
-import cdn from './CDN.js';
+import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
@@ -29,7 +29,7 @@ class MenteeProfileContent extends Component {
     const mentee = {
       uid: '23456',
       fname: 'Dexter',
-      profPicSrc: "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg",
+      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
       is18plus: 1,
       city: 'London',
       country: 'GBR',
@@ -150,11 +150,11 @@ class MenteeProfileContent extends Component {
                   <div className="profile-thumb img-circle allowAddPic">
                     {isMe === 'isMe' && (
                       <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentee.profPicSrc} isMe={isMe}/>
+                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentee.profPicSrc} isMe={isMe} picSizeToShow={270}/>
                       </Modal>
                     )}
                     <img
-                      src={mentee.profPicSrc}
+                      src={usercdn.concat('/',userAvatarsFolder,mentee.profPicSrc,'.png-360')}
                       alt="User profile pic"
                     />
                   </div>
