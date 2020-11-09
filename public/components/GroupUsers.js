@@ -1,4 +1,4 @@
-// Dex last merged this code on 8th nov 2020
+// Dex last merged this code on 9th nov 2020
 
 import React, { Component } from "react";
 
@@ -73,7 +73,7 @@ class GroupUsers extends Component {
   }*/
   render() {
     const {group, groupUsers} = this.props;
-    const {showOnly20Users, isLoading, finishedLoadingAllUsers} = this.state;
+    const {showOnly20Users, isLoading} = this.state;
 
     const userList = showOnly20Users ? groupUsers.users.usersList.slice(0,20) : groupUsers.users.usersList;
     const users = [];
@@ -88,7 +88,7 @@ class GroupUsers extends Component {
         </div>
       );
     } else {
-      userList.forEach((user, index, array) => {
+      userList.forEach((user) => {
         users.push(
           <UserListItem
             key={user.uid}
