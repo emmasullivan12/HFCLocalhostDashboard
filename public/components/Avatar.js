@@ -7,14 +7,17 @@ import {usercdn, userAvatarsFolder} from './CDN.js';
 import Modal from './Modal.js';
 
 import "../css/General.css";
+import "../css/Avatar.css";
 
 // **Overview**
   // **Props**
     // - userName
+      //   required
       //   type: string
       //   is the fname of a user e.g. message.author if in chat or user.fname if in group users list
 
     // - userID
+      //   required
       //   type: uuid
 
     // - isProspelaAuto
@@ -43,7 +46,8 @@ class Avatar extends Component {
   render() {
     const users = {
       uid: '99999',
-      profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+      profilepic: '',
+    //  profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
     //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
     //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
     //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
@@ -56,6 +60,7 @@ class Avatar extends Component {
     let profPicSrcNotMe
     let isOnline
     let userInitial
+    let lastIndex
 
     const myProfPic = users.profilepic;
     const otherUserProfPic = users.profilepic;
@@ -67,12 +72,13 @@ class Avatar extends Component {
     const picSizeToShow = picSize ? picSize : 'o';
 
     function createProfPicURL(string) {
-      return usercdn.concat('/',userAvatarsFolder,string,'.png','-',picSizeToShow);
+      return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
     }
 
     if (checkMe == true) {
       // Remove the .png and any '-o/-20/-40' from the filename
-      const myProfPic1 = myProfPic.split('.png-')[0];
+      lastIndex = myProfPic.lastIndexOf('-')
+      const myProfPic1 = myProfPic.substring(0,lastIndex);
 
       // Create the URL
       profPicSrc = createProfPicURL(myProfPic1)
@@ -80,7 +86,8 @@ class Avatar extends Component {
 
     if (checkOtherPerson == true) {
       // Remove the .png and any '-o/-20/-40' from the filename
-      const otherUserProfPic1 = otherUserProfPic.split('.png-')[0];
+      lastIndex = otherUserProfPic.lastIndexOf('-')
+      const otherUserProfPic1 = otherUserProfPic.substring(0,lastIndex);
 
       // Create the URL
       profPicSrcNotMe = createProfPicURL(otherUserProfPic1)

@@ -54,7 +54,8 @@
   top: 0;
 }
 .userInitial.msg-thumb.isGroupFlex{
-  padding-top: 8px;
+  padding-top: 7px;
+  margin-left: -1px;
 }
 .userInitial.msg-thumb.isMe.isGroupFlex{
   top: -32px;

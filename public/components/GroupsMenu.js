@@ -10,9 +10,9 @@ import {
 
 import {cdn, groupImgFolder} from './CDN.js';
 import Modal from './Modal.js';
-import {getIcon} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
+import {getIcon, getUnreadIndicator} from './GeneralFunctions.js';
 import "../css/Modal.css";
 
 /*const JoinProgrammeModalProps = {
@@ -57,6 +57,7 @@ class GroupListItem extends Component {
     const {group, onClick} = this.props;
     const groupAvatarURL = group.groupavatarurl_20
     const isGroupAvatarURL = groupAvatarURL != null
+    const unreadCount = 10;
 
     let navlink
     let progLogo
@@ -82,7 +83,9 @@ class GroupListItem extends Component {
           </div>
           <div className="chatItemFlexContainer">
             <span className="chatMenuLink channel overflow-ellipsis">{channel.name}</span>
-            <span className="notificationNum channel">1</span>
+            {unreadCount != 0 && (
+              getUnreadIndicator(unreadCount, true)
+            )}
           </div>
         </NavLink>
       );

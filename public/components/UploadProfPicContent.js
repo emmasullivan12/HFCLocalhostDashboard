@@ -35,14 +35,16 @@ class UploadProfPicContent extends Component {
     const selectedFiles = true;
     const isEnabled = false;
     let profPicURL
+    let lastIndex
 
     // Create the URL
     function createProfPicURL(string) {
-      return usercdn.concat('/',userAvatarsFolder,string,'.png','-',picSizeToShow);
+      return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
     }
 
     // Remove the .png and any '-o/-20/-40' from the filename
-    const pic = profPicSrc.split('.png-')[0];
+    lastIndex = profPicSrc.lastIndexOf('-')
+    const pic = profPicSrc.substring(0,lastIndex);
     profPicURL = createProfPicURL(pic)
 
     return (

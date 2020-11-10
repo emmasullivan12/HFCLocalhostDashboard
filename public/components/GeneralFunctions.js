@@ -39,6 +39,41 @@ function getIcon(channelType) {
   }
 }
 
+function getChannelAbout(channelType, allowed) {
+  let mentorOnly
+  let menteeOnly
+
+  if (allowed.indexOf('mentor') != -1 && allowed.indexOf('mentee') == -1) {
+    mentorOnly = true
+  }
+  if (allowed.indexOf('mentee') != -1 && allowed.indexOf('mentor') == -1) {
+    menteeOnly = true
+  }
+
+  switch(true) {
+    case (channelType == "general" && menteeOnly == true):
+      return 'A great place to chit chat with other Mentees'
+    case (channelType == "general" && mentorOnly == true):
+      return 'A great place to chit chat with other E-Mentors'
+    case (channelType == "general" && !menteeOnly && !mentorOnly):
+      return 'A great place to chit chat with other group members'
+    case (channelType == "intros" && menteeOnly == true):
+      return 'Share a few words about yourself to your fellow Mentees'
+    case (channelType == "intros" && mentorOnly == true):
+      return 'Share a few words about yourself to your fellow E-Mentors'
+    case (channelType == "intros" && !menteeOnly && !mentorOnly):
+      return 'Share a few words about yourself to your fellow group members'
+    case (channelType == "accouncements"):
+      return 'Share and keep up to date with important group announcements.'
+    case (channelType == "resources"):
+      return 'A place to explore resources and docs shared within this group'
+    case (channelType == "leaderboard"):
+      return 'See how you fare versus your peers'
+    default:
+      return 'A great place to chit chat with other group members'
+  }
+}
+
 
 // Disallows EdgeHTML / Edge Legacy
 function whichBrowser() {
@@ -134,6 +169,29 @@ function DateCalc(props) {
 
 }
 
+function getUnreadIndicator(unreadCount, isGroupChannel) {
+  let text
+
+  switch(true) {
+    case (unreadCount == null):
+      text = 'New';
+      break;
+    case (unreadCount > 9 && unreadCount != null):
+      text = '9+'
+      break;
+    case (unreadCount > 0 && unreadCount <= 9 && unreadCount != null):
+      text = {unreadCount}
+      break;
+    default:
+      text = {unreadCount}
+      break;
+  }
+
+  return (
+    <span className={"notificationNum"+(isGroupChannel ? ' channel' : '')}>{text}</span>
+  )
+}
+
 const ChevronDown = () => (
   <svg viewBox="0 0 10 7" id="chevronDown">
     <path d="M2.08578644,6.5 C1.69526215,6.89052429 1.69526215,7.52368927 2.08578644,7.91421356 C2.47631073,8.30473785 3.10947571,8.30473785 3.5,7.91421356 L8.20710678,3.20710678 L3.5,-1.5 C3.10947571,-1.89052429 2.47631073,-1.89052429 2.08578644,-1.5 C1.69526215,-1.10947571 1.69526215,-0.476310729 2.08578644,-0.0857864376 L5.37867966,3.20710678 L2.08578644,6.5 Z" transform="translate(5.000000, 3.207107) rotate(90.000000) translate(-5.000000, -3.207107) " />
@@ -196,4 +254,4 @@ const LoadingSpinner = () => (
   </div>
 )
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner};

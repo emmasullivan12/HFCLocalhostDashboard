@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import {getIcon, checkDevice, X} from './GeneralFunctions.js';
+import {getIcon, getChannelAbout, checkDevice, X} from './GeneralFunctions.js';
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
 import MenuNav from './MenuNav.js';
@@ -196,14 +196,23 @@ class ChatWindow extends Component {
 
   render() {
   const {isLoadingMsgs, isFlexContainerOpen, isDevice, newMsgBannerSeen} = this.state;
-  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, founders, pms} = this.props;
+  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, channelAllowed, founders, pms} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   const isVerifiedGroup = true
   const icon = getIcon(channelType)
   const hasUnreads = true
   const isPBotChat = true //this.props.chatsList.pbotchat
-  const about = isGroup ? (channelAbout ? channelAbout : '') : (isPBotChat ? 'Your 1:1 chat with the Prospela team: ask questions, tell us your thoughts/feedback/suggestions. We\'re all ears!' : '')
+  const about = isGroup ? (
+    channelAbout ?
+      channelAbout
+    : getChannelAbout(channelType, channelAllowed)
+    )
+    : (
+      isPBotChat ?
+        'Your 1:1 chat with the Prospela team: ask questions, tell us your thoughts/feedback/suggestions. We\'re all ears!'
+      : ''
+    )
 
   /*        {dragFiles != '' && (
               <Modal {...FileDropModalProps}>

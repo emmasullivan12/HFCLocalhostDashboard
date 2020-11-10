@@ -22,8 +22,8 @@ class ProspelaBot extends Component {
       groupavatarurl_20: '/avfx-avatar-20.png',
       groupavatarurl_40: '/avfx-avatar-40.png',
       channels: [
-        {name: 'mentor-general', type: 'general', about: 'A great place to chit chat with other E-Mentors', chlid: '12345'},
-        {name: 'docs', type: 'resources', about: 'A great place to chit chat with other E-Mentors', chlid: '12346'}
+        {name: 'mentor-general', type: 'general', about: '', chlid: '12345', allowed: ['pr', 'mentor', 'mentee']},
+        {name: 'docs', type: 'resources', about: '', chlid: '12346', allowed: ['pr', 'mentor', 'mentee']}
       ]
     }
 
@@ -73,6 +73,7 @@ class ProspelaBot extends Component {
           channelName={group.channels[0].name} // Cant use foreach here ...Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
           channelType={group.channels[0].type} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
           channelAbout={group.channels[0].about} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
+          channelAllowed={group.channels[0].allowed}
           flexContent={isGroup ? (
             <GroupFlexContent
               group={group}

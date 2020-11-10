@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th oct 2020 
+// Dex last merged this code on 20th oct 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Modal from './Modal.js';
+import {getUnreadIndicator} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
 import "../css/Modal.css";
 
@@ -26,6 +27,7 @@ class ChatListItem extends Component {
     const {chat, navlink, onClick} = this.props;
     const isOnline = false;
     const unread = false
+    const unreadCount = null
     // <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
 
     return(
@@ -35,7 +37,7 @@ class ChatListItem extends Component {
         </div>
         <div className="chatItemFlexContainer">
           <span className={"chatMenuLink overflow-ellipsis"+(unread ? ' unread' : null)}>{chat.mentor}</span>
-          <span className="notificationNum">xx</span>
+          {getUnreadIndicator(unreadCount, false)}
         </div>
       </NavLink>
     )

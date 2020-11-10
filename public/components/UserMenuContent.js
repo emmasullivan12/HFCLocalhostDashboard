@@ -62,9 +62,12 @@ class UserMenuContent extends Component {
       eetStatus: 1,
     };
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
+    let lastIndex
 
-    const profPicSrc1 = user.profPicSrc.split('.png-')[0];
-    const imgURL = usercdn.concat('/',userAvatarsFolder,profPicSrc1,'.png-80')
+    lastIndex = user.profPicSrc.lastIndexOf('-');
+    const profPicSrc1 = user.profPicSrc.substring(0,lastIndex);
+    const imgURL = usercdn.concat('/',userAvatarsFolder,profPicSrc1,'-80');
+
 //    const isPicSet = false;
     const userInitial = user.fname.charAt(0).toUpperCase();
     const eduInstName = eduName(user.schName, user.schNameFreeText, user.uniName, user.uniNameFreeText, user.eetStatus);

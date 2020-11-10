@@ -1,0 +1,26 @@
+.userItem-FlexContainer:nth-of-type(5n+0) .msg-thumb.noPic.isntMe {
+  border: 1px solid rgba(173,129,5,.3);
+  color: #fff;
+  background-color: rgba(238,176,0,.5);
+}
+.userItem-FlexContainer:nth-of-type(5n+1) .msg-thumb.noPic.isntMe {
+  border: 1px solid rgba(102,102,152,.3);
+  color: #fff;
+  background-color: rgba(153,153,231,.5);
+}
+.userItem-FlexContainer:nth-of-type(5n+2) .msg-thumb.noPic.isntMe {
+  border: 1px solid rgba(63,150,134,.3);
+  color: #fff;
+  background-color: rgba(88,210,187,.5);
+}
+.userItem-FlexContainer:nth-of-type(5n+3) .msg-thumb.noPic.isntMe {
+  border: 1px solid rgba(189,41,62,.3);
+  color: #fff;
+  background-color: rgba(251,108,129,.5);
+}
+.userItem-FlexContainer:nth-of-type(5n+4) .msg-thumb.noPic.isntMe {
+  border: 1px solid rgba(84,152,162,.3);
+  color: #fff;
+  background-color: rgba(101,200,216,.5);
+}
+/* background-color: rgb(53,28,117); */

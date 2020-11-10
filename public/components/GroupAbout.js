@@ -29,7 +29,7 @@ class GroupAbout extends Component {
       foundersList.forEach((founder) => {
         founders.push(
           <div className="group-detail-item bright" key={founder.uid}>
-            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle />
+            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle picSize={80}/>
             <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname} smallIdle/>
             <UserBadge badgeType='founder' />
           </div>
@@ -45,7 +45,7 @@ class GroupAbout extends Component {
         pmList.forEach((pm) => {
           pms.push(
             <div className="userItem-FlexContainer" key={pm.uid}>
-              <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex />
+              <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex picSize={80}/>
               <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
               <UserBadge badgeType='pm' />
             </div>
