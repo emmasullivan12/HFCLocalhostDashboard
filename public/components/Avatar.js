@@ -60,7 +60,6 @@ class Avatar extends Component {
     let profPicSrcNotMe
     let isOnline
     let userInitial
-    let lastIndex
 
     const myProfPic = users.profilepic;
     const otherUserProfPic = users.profilepic;

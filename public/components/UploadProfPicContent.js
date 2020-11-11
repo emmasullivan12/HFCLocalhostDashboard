@@ -35,7 +35,6 @@ class UploadProfPicContent extends Component {
     const selectedFiles = true;
     const isEnabled = false;
     let profPicURL
-    let lastIndex
 
     // Create the URL
     function createProfPicURL(string) {

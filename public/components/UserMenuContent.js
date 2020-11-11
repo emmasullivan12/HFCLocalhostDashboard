@@ -62,7 +62,6 @@ class UserMenuContent extends Component {
       eetStatus: 1,
     };
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
-    let lastIndex
 
     const imgURL = usercdn.concat('/',userAvatarsFolder,user.profPicSrc,'-80');
 
