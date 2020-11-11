@@ -55,7 +55,7 @@ class GroupListItem extends Component {
   render() {
     const {showChannels} = this.state;
     const {group, onClick} = this.props;
-    const groupAvatarURL = group.groupavatarurl_20
+    const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
     const unreadCount = 10;
 
@@ -66,7 +66,7 @@ class GroupListItem extends Component {
     const channels = []
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL
+      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL + '-20'
     } else {
       groupInitial = group.groupname.charAt(0).toUpperCase();
     }

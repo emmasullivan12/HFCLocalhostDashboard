@@ -76,21 +76,13 @@ class Avatar extends Component {
     }
 
     if (checkMe == true) {
-      // Remove the .png and any '-o/-20/-40' from the filename
-      lastIndex = myProfPic.lastIndexOf('-')
-      const myProfPic1 = myProfPic.substring(0,lastIndex);
-
       // Create the URL
-      profPicSrc = createProfPicURL(myProfPic1)
+      profPicSrc = createProfPicURL(myProfPic)
     }
 
     if (checkOtherPerson == true) {
-      // Remove the .png and any '-o/-20/-40' from the filename
-      lastIndex = otherUserProfPic.lastIndexOf('-')
-      const otherUserProfPic1 = otherUserProfPic.substring(0,lastIndex);
-
       // Create the URL
-      profPicSrcNotMe = createProfPicURL(otherUserProfPic1)
+      profPicSrcNotMe = createProfPicURL(otherUserProfPic)
     }
 
     if (!isPicSet) {

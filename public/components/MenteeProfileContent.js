@@ -29,7 +29,7 @@ class MenteeProfileContent extends Component {
     const mentee = {
       uid: '23456',
       fname: 'Dexter',
-      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       is18plus: 1,
       city: 'London',
       country: 'GBR',

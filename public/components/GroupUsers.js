@@ -17,7 +17,7 @@ class UserListItem extends Component {
 
     return(
       <div className="userItem-FlexContainer">
-        <Avatar userID={user.uid} userName={user.fname} isGroupFlex showOnline picSize={80}/>
+        <Avatar userID={user.uid} userName={user.fname} isGroupFlex showOnline picSize={40}/>
         <UserName fname={user.fname} lname={user.lname} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} userUID={user.uid} />
         {isProspelaTeam && (
           <UserBadge badgeType='isPrTeam' />

@@ -42,10 +42,7 @@ class UploadProfPicContent extends Component {
       return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
     }
 
-    // Remove the .png and any '-o/-20/-40' from the filename
-    lastIndex = profPicSrc.lastIndexOf('-')
-    const pic = profPicSrc.substring(0,lastIndex);
-    profPicURL = createProfPicURL(pic)
+    profPicURL = createProfPicURL(profPicSrc)
 
     return (
       <React.Fragment>

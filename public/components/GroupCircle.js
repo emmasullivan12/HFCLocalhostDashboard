@@ -13,7 +13,7 @@ import "../css/GroupCircle.css";
 class GroupCircle extends Component {
   render() {
     const {group, navlink} = this.props;
-    const groupAvatarURL = group.groupavatarurl_40
+    const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
     var string = group.groupname;
 
@@ -21,7 +21,7 @@ class GroupCircle extends Component {
     let groupInitial
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL
+      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL + '-40' //40px wide image
     } else {
       groupInitial = string.charAt(0).toUpperCase();
     }
@@ -38,7 +38,7 @@ class GroupCircle extends Component {
                 <span className="overlay"/>
               </React.Fragment>
               )
-            : <span>{groupInitial}</span>
+            : <span className="initial">{groupInitial}</span>
             }
           <span className="tooltiptext groups">{string}</span>
         </button>

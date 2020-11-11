@@ -13,7 +13,7 @@ class GroupAbout extends Component {
 
   render() {
     const {group, groupUsers} = this.props;
-    const groupAvatarURL = group.groupavatarurl_40 //40 px wide image
+    const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
     const userRole = 'mentee'
 
@@ -29,7 +29,7 @@ class GroupAbout extends Component {
       foundersList.forEach((founder) => {
         founders.push(
           <div className="group-detail-item bright" key={founder.uid}>
-            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle picSize={80}/>
+            <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle picSize={40}/>
             <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname} smallIdle/>
             <UserBadge badgeType='founder' />
           </div>
@@ -45,7 +45,7 @@ class GroupAbout extends Component {
         pmList.forEach((pm) => {
           pms.push(
             <div className="userItem-FlexContainer" key={pm.uid}>
-              <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex picSize={80}/>
+              <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex picSize={40}/>
               <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
               <UserBadge badgeType='pm' />
             </div>
@@ -55,7 +55,7 @@ class GroupAbout extends Component {
     }
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL
+      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL + '-40' //40 px wide image
     } else {
       groupInitial = group.groupname.charAt(0).toUpperCase();
     }

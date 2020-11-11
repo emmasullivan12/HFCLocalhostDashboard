@@ -58,7 +58,7 @@ class DisplayMsgFile extends Component {
                   {fileType === 'img' && (
                     <img
                       className="msg-img"
-                      src={usercdn + '/' + userImgsFolder + file.imgurl}
+                      src={usercdn + '/' + userImgsFolder + file.imgurl + '-270'} // 270px width size
                       alt={file.name}
                       onLoad={isLastPic ? () => handleLastPic() : null}
                     />

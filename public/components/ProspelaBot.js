@@ -19,8 +19,6 @@ class ProspelaBot extends Component {
       twitter: '@accessvfx',
       isVerifiedGroup: '1',
       groupavatarurl: '/avfx-avatar.png',
-      groupavatarurl_20: '/avfx-avatar-20.png',
-      groupavatarurl_40: '/avfx-avatar-40.png',
       channels: [
         {name: 'mentor-general', type: 'general', about: '', chlid: '12345', allowed: ['pr', 'mentor', 'mentee']},
         {name: 'docs', type: 'resources', about: '', chlid: '12346', allowed: ['pr', 'mentor', 'mentee']}

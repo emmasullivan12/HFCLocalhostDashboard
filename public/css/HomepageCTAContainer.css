@@ -14,8 +14,10 @@
   margin-bottom: .5rem;
   position: relative;
 }
-.groupsContainer a.noAvatar button{
-  top: -9px
+.groupsContainer a.noAvatar button .initial{
+  top: 6px;
+  position: absolute;
+  left: 9px;
 }
 .overlay{
   position: absolute;
@@ -34,6 +36,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .groupsContainer a button:hover .overlay,
 .groupsContainer a button:focus .overlay{
   opacity: 1;

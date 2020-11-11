@@ -59,6 +59,7 @@
 }
 .userInitial.msg-thumb.isMe.isGroupFlex{
   top: -32px;
+  margin-top: 2px;
 }
 .userInitial.msg-thumb.isMe.isGroupFlex.smallIdle{
   top: -17px;

@@ -53,7 +53,7 @@ class UserMenuContent extends Component {
       uid: '23456',
       fname: 'Dexter',
       lname: 'Boyce',
-      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+      profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       schName: '',
       schNameFreeText: '',
       uniName: '',
@@ -64,9 +64,7 @@ class UserMenuContent extends Component {
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set
     let lastIndex
 
-    lastIndex = user.profPicSrc.lastIndexOf('-');
-    const profPicSrc1 = user.profPicSrc.substring(0,lastIndex);
-    const imgURL = usercdn.concat('/',userAvatarsFolder,profPicSrc1,'-80');
+    const imgURL = usercdn.concat('/',userAvatarsFolder,user.profPicSrc,'-80');
 
 //    const isPicSet = false;
     const userInitial = user.fname.charAt(0).toUpperCase();

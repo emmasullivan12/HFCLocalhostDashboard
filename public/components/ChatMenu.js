@@ -37,7 +37,9 @@ class ChatListItem extends Component {
         </div>
         <div className="chatItemFlexContainer">
           <span className={"chatMenuLink overflow-ellipsis"+(unread ? ' unread' : null)}>{chat.mentor}</span>
-          {getUnreadIndicator(unreadCount, false)}
+          {unreadCount != 0 && (
+            getUnreadIndicator(unreadCount, false)
+          )}
         </div>
       </NavLink>
     )

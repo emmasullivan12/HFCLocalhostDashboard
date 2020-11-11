@@ -30,7 +30,7 @@ render() {
           <Camera  />
           <canvas id="canvas" hidden />
           <form className="upload#PhotoForm" id="idPicUploadForm" >
-            <Photo  />
+            <Photo />
             <input
               type="file"
               accept="image/png, image/jpeg, image/bmp"
