@@ -1,4 +1,4 @@
-/* Dex last merged this code on 9th nov 2020  */
+/* Dex last merged this code on 12th nov 2020  */
 
 .group-about-container{
   /*border-radius: 4px;*/
@@ -67,7 +67,7 @@
   color: #03eba9;
   font-size: 13px;
   opacity: 0.95;
-  display: inline-block;
+/*  display: inline-block;*/
   position: absolute;
   margin-left: 24px;
   bottom: -2px;

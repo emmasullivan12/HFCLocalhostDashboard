@@ -1,4 +1,4 @@
-/* Dex last merged this code on 12th oct 2020 */
+/* Dex last merged this code on 12th oct 2020  */
 
 .photoOutput{
   text-align: center;
@@ -29,6 +29,11 @@
   -o-border-radius: 50%;
   background-size: cover;
   background-position: center center;
+  visibility: visible;
+}
+
+.photoOutput.isProfPic.hasSelectedFiles{
+  visibility: hidden;
 }
 
 .photoOutput.isProfPic img{

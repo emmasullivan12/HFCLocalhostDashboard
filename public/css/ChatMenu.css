@@ -1,4 +1,4 @@
-/* Dex last merged this code on 11th nov 2020 */
+/* Dex last merged this code on 12th nov 2020 */
 
 .chatMenu-header{
   color: rgba(255,255,255,.835);
@@ -33,7 +33,6 @@
   position: absolute;
   right: 66px;
   text-align: center;
-  visibility: hidden;
   cursor: pointer;
 }
 
@@ -41,8 +40,15 @@
   text-decoration: none;
   display: block;
 }
-.groupMenuItemContainer:hover .menuNavCTA{
-  visibility: visible;
+/* Only if user has ability to hover i.e. not on mobile then hide the menuNav */
+/* Without this, was making iOS user have to click twice on GroupListItem to go to navlink */
+@media (hover) {
+  .menuNavCTA{
+    visibility: hidden;
+  }
+  .groupMenuItemContainer:hover .menuNavCTA{
+    visibility: visible;
+  }
 }
 .channelsContainer{
   position: relative;
