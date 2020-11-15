@@ -302,7 +302,7 @@ class PrMessagesList extends Component {
       },
     ];
 
-    const {handleLastPic, founders, pms} = this.props
+    const {handleLastPic, founders, pms, scrollToNewMessage} = this.props
 
     var prevMsg = {};
 

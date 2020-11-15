@@ -62,6 +62,8 @@ class ChatWindow extends Component {
       isLoadingMsgs: false,
       dragover: '',
       newMsgBannerSeen: false,
+      newMsgsBelow: true,
+      newMsgsAbove: true,
       /* dragFiles: '', */
     }
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
@@ -70,6 +72,9 @@ class ChatWindow extends Component {
     this.handleDragLeave = this.handleDragLeave.bind(this);
     this.onScroll = this.onScroll.bind(this);
     this.scrollToBottom = this.scrollToBottom.bind(this);
+    this.showNewMsgsNotif = this.showNewMsgsNotif.bind(this);
+    this.hideNewMsgsNotif = this.hideNewMsgsNotif.bind(this);
+    this.scrollToNewMessage = this.scrollToNewMessage.bind(this);
     /* this.handleFileDrop = this.handleFileDrop.bind(this);*/
   }
 
@@ -91,7 +96,6 @@ class ChatWindow extends Component {
   }
 
   componentWillUnmount() {
-
     window.removeEventListener("resize", this.updateDevice);
   }
 
@@ -116,6 +120,8 @@ class ChatWindow extends Component {
         if (entry.intersectionRatio > 0) {
           this.setState({
             newMsgBannerSeen: true,
+            newMsgsBelow: false,
+            newMsgsAbove: false,
           }, () => {
             const newMsgsBanner = document.getElementById('newMsgs')
             observer.unobserve(newMsgsBanner);
@@ -139,6 +145,10 @@ class ChatWindow extends Component {
     div.scrollTop = div.scrollHeight;
   }
 
+  scrollToNewMessage = () => {
+    document.getElementById('newMsgs').scrollIntoView({behavior:"smooth"});  //do this before update unreadstatus as need to calculate the id of new message etc before it's updated to nill - will need to put this below in a function...
+  }
+
   onScroll = () => {
     const { scrollRef } = this;
     const scrollTop = this.scrollRef.current.scrollTop;
@@ -149,6 +159,13 @@ class ChatWindow extends Component {
 
   handleLastPic = () => {
     this.scrollToBottom();
+  }
+
+  handleMoveDown = (e) => {
+    if (e.target.tagName != 'svg' && e.target.tagName != 'path') {
+      this.scrollToNewMessage();
+      this.hideNewMsgsNotif('below');
+    }
   }
 
   /*goToNewMsgs = () => {
@@ -186,6 +203,16 @@ class ChatWindow extends Component {
     this.setState({ isFlexContainerOpen: !currentState });
   }
 
+  hideNewMsgsNotif(aboveOrBelow) {
+    const newMsgLocation = aboveOrBelow === 'below' ? 'newMsgsBelow' : (aboveOrBelow === 'above' ? 'newMsgsAbove' : '')
+    this.setState({ [newMsgLocation]: false })
+  }
+
+  showNewMsgsNotif(aboveOrBelow) {
+    const newMsgLocation = aboveOrBelow === 'below' ? 'newMsgsBelow' : (aboveOrBelow === 'above' ? 'newMsgsAbove' : '')
+    this.setState({ [newMsgLocation]: true })
+  }
+
   openFlexContainer() {
     this.setState({ isFlexContainerOpen: open });
   }
@@ -195,13 +222,12 @@ class ChatWindow extends Component {
   }
 
   render() {
-  const {isLoadingMsgs, isFlexContainerOpen, isDevice, newMsgBannerSeen} = this.state;
+  const {isLoadingMsgs, isFlexContainerOpen, isDevice, newMsgBannerSeen, newMsgsBelow, newMsgsAbove} = this.state;
   const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, channelAllowed, founders, pms} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   const isVerifiedGroup = true
   const icon = getIcon(channelType)
-  const hasUnreads = true
   const isPBotChat = true //this.props.chatsList.pbotchat
   const about = isGroup ? (
     channelAbout ?
@@ -302,17 +328,41 @@ class ChatWindow extends Component {
                 </div>
               </div>
             )}
-            {hasUnreads && newMsgBannerSeen === false && (
+            {newMsgsAbove == true && newMsgBannerSeen === false && (
             //  <div className="chatTopBanners small" onClick={this.goToNewMsgs}>
               <div className="chatTopBanners small">
                 <div className="separator__text go2NewMsgs">
                   <i className="fas fa-arrow-up" />
                   <span>More new messages</span>
+                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={() => this.hideNewMsgsNotif('above')}>
+                    <span id="close-modal" className="u-hide-visually">Close</span>
+                    <svg className="menu-close-icon chatAlert" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+                  </button>
+                </div>
+              </div>
+            )}
+            {newMsgsBelow == true && (
+              <div className="chatTopBanners small bottom" onClick={this.handleMoveDown}>
+                <div className="separator__text go2NewMsgs">
+                  <i className="fas fa-arrow-down" />
+                  <span>Jump to new messages</span>
+                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={() => this.hideNewMsgsNotif('below')}>
+                    <span id="close-modal" className="u-hide-visually">Close</span>
+                    <svg className="menu-close-icon chatAlert" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+                  </button>
                 </div>
               </div>
             )}
             <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-              <PrMessagesList handleLastPic={this.handleLastPic} isGroup={isGroup} founders={founders} pms={pms}/>
+              <PrMessagesList
+                handleLastPic={this.handleLastPic}
+                isGroup={isGroup}
+                founders={founders}
+                pms={pms}
+                showNewMsgsNotif={this.showNewMsgsNotif}
+                scrollToNewMessage={this.scrollToNewMessage}
+                newMsgBannerSeen={newMsgBannerSeen}
+              />
             </div>
             <PrAddMessage />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >

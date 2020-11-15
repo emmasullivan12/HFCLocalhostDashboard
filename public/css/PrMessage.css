@@ -1,4 +1,4 @@
-/* Dex last merged this code on 11th nov 2020 */
+/* Dex last merged this code on 12th nov 2020 */
 
 .msg-thumb-container {
   width: 40px;
@@ -385,10 +385,11 @@
   overflow: hidden;
 }
 .separator__text.go2NewMsgs {
-  background-color: #58d2bb;
+  background-color: #e22e48;
   color: #fff;
-  border: 1px solid #55b3a1;
+  border: 1px solid #a92639;
   cursor: pointer;
+  width: 210px;
 }
 .separator__text.go2NewMsgs i{
   padding-right: 8px;

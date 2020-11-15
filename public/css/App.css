@@ -1,4 +1,4 @@
-/* Dex last merged this code on 6th nov 2020  */
+/* Dex last merged this code on 12th nov 2020  */
 
 #root {
   height: 100%;
@@ -100,6 +100,7 @@ h2{
   -o-transition: .5s;
 }
 .close-flex-container,
+.close-chatAlert-container,
 .close-menu{
   position: absolute;
   top: 16px;
@@ -116,6 +117,17 @@ h2{
   cursor: pointer;
   z-index: 1;
 }
+.close-chatAlert-container{
+  color: #ffffff61;
+  display: inline-block;
+  top: -6px;
+  right: 0;
+}
+.close-chatAlert-container:hover .menu-close-icon.chatAlert,
+.close-chatAlert-container:focus .menu-close-icon.chatAlert{
+  stroke-width: 4;
+}
+
 .menu-close-icon {
   width: 25px;
   height: 25px;
@@ -123,6 +135,10 @@ h2{
   stroke: rgba(255,255,255,.8);
   stroke-linecap: round;
   stroke-width: 3;
+}
+.menu-close-icon.chatAlert{
+  stroke: #ffffff;
+  width: 15px;
 }
 .menu-close-icon.flexContainer{
   stroke: rgba(173,172,172,.55);
