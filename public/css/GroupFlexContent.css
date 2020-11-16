@@ -72,6 +72,12 @@
   margin-left: 24px;
   bottom: -2px;
   z-index: 1;
+  background: #f2f2f2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .sender-name.showOnline{

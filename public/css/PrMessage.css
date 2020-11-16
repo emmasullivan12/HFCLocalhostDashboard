@@ -73,7 +73,7 @@
   background-color: rgba(53,28,117,.5);
 }
 .msg-thumb.noPic.isntMe.isProspela{
-  background-color: #4e4ed6;
+  background-color: #4e4ed6!important;
 }
 
 .block-container {
@@ -186,7 +186,7 @@
 }
 
 .sender-name.isProspela {
-  color: #4e4ed6;
+  color: #4e4ed6!important;
 }
 .sender-name.isFounder {
   color: #8f8fe5;

@@ -28,7 +28,7 @@ function getIcon(channelType) {
     case "intros":
       return <i className="fas fa-coffee" />
       /*return <i className="fas fa-hand-sparkles" /> */
-    case "accouncements":
+    case "announcements":
       return <i className="fas fa-bullhorn" />
     case "resources":
       return <i className="fas fa-folder-open" />
@@ -63,7 +63,7 @@ function getChannelAbout(channelType, allowed) {
       return 'Share a few words about yourself to your fellow E-Mentors'
     case (channelType == "intros" && !menteeOnly && !mentorOnly):
       return 'Share a few words about yourself to your fellow group members'
-    case (channelType == "accouncements"):
+    case (channelType == "announcements"):
       return 'Share and keep up to date with important group announcements.'
     case (channelType == "resources"):
       return 'A place to explore resources and docs shared within this group'
