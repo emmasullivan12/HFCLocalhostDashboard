@@ -195,7 +195,7 @@ class PrMessagesList extends Component {
           title: 'Here is a pic of my office at lunchtime!',
           uid: '23456',
           fileType: 'image/jpeg',
-          imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png-270'
+          imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'
         }
       },
       {
@@ -211,6 +211,7 @@ class PrMessagesList extends Component {
           name: 'Image uploaded from iOS',
           title: 'Here is a pic of my office at lunchtime!',
           uid: '23456',
+          fileType: 'image/jpeg',
           imgurl: 'https://prospela.com/wp-content/uploads/2019/02/Harj-1.jpeg'
         }
       },

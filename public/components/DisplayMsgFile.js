@@ -54,7 +54,7 @@ class DisplayMsgFile extends Component {
           {isFlexContainerOpen && (
             <div className="msg-img-container">
               <div className="msg-img-content">
-                <a className={error ? "disabled" : null} href={error ? '' : 'www.prospela.com'} target="_blank" rel="noopener noreferrer">
+                <a className={error ? "disabled" : null} href='' target="_blank" rel="noopener noreferrer">
                   {fileType === 'img' && (
                     <img
                       className="msg-img"

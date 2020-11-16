@@ -42,14 +42,22 @@ const FullPageModalContent = ({
     <aside className="modal-overlay" role="dialog" aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
       <div className={"fullpage-modal-container " + usedFor + animation + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
-          <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
-            { backBtn==='bk2Pr' && (
+          { backBtn==='bk2Pr' && (
+            <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
               <span id="close-modal">&#60;&#60; Back to Prospela</span>
-            )}
-            { backBtn==='arrow' && (
+            </button>
+          )}
+          { backBtn==='arrow' && (
+            <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
               <span id="close-modal"><i className="fas fa-arrow-left"/></span>
-            )}
-          </button>
+            </button>
+          )}
+          { backBtn=== 'x' && (
+            <button type="button" className="close-flex-container" aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
+              <span id="close-modal" className="u-hide-visually">Close</span>
+              <svg className="menu-close-icon flexContainer" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+            </button>
+          )}
         </div>
         <div className={"fpModal-content"  + (isDevice ? ' isDevice' : '')}>
           {content}

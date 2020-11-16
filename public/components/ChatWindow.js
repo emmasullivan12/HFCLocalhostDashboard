@@ -16,7 +16,7 @@ import "../css/General.css";
 
 const FlexContainerProps = {
   usedFor: 'openFlexContainer',
-  backBtn: 'arrow',
+  backBtn: 'x',
   animation: ' slideUp'
 }
 
@@ -120,7 +120,7 @@ class ChatWindow extends Component {
         if (entry.intersectionRatio > 0) {
           this.setState({
             newMsgBannerSeen: true,
-            newMsgsBelow: false,
+        //    newMsgsBelow: false,
             newMsgsAbove: false,
           }, () => {
             const newMsgsBanner = document.getElementById('newMsgs')
@@ -164,7 +164,7 @@ class ChatWindow extends Component {
   handleMoveDown = (e) => {
     if (e.target.tagName != 'svg' && e.target.tagName != 'path') {
       this.scrollToNewMessage();
-      this.hideNewMsgsNotif('below');
+      this.hideNewMsgsNotif('below', e);
     }
   }
 
@@ -203,7 +203,10 @@ class ChatWindow extends Component {
     this.setState({ isFlexContainerOpen: !currentState });
   }
 
-  hideNewMsgsNotif(aboveOrBelow) {
+  hideNewMsgsNotif(aboveOrBelow, e) {
+    if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
+      console.log("x clicked")
+    }
     const newMsgLocation = aboveOrBelow === 'below' ? 'newMsgsBelow' : (aboveOrBelow === 'above' ? 'newMsgsAbove' : '')
     this.setState({ [newMsgLocation]: false })
   }
@@ -331,10 +334,10 @@ class ChatWindow extends Component {
             {newMsgsAbove == true && newMsgBannerSeen === false && (
             //  <div className="chatTopBanners small" onClick={this.goToNewMsgs}>
               <div className="chatTopBanners small">
-                <div className="separator__text go2NewMsgs">
+                <div className="separator__text go2NewMsgs textCursor">
                   <i className="fas fa-arrow-up" />
                   <span>More new messages</span>
-                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={() => this.hideNewMsgsNotif('above')}>
+                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={(e) => this.hideNewMsgsNotif('above', e)}>
                     <span id="close-modal" className="u-hide-visually">Close</span>
                     <svg className="menu-close-icon chatAlert" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
                   </button>
@@ -345,8 +348,8 @@ class ChatWindow extends Component {
               <div className="chatTopBanners small bottom" onClick={this.handleMoveDown}>
                 <div className="separator__text go2NewMsgs">
                   <i className="fas fa-arrow-down" />
-                  <span>Jump to new messages</span>
-                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={() => this.hideNewMsgsNotif('below')}>
+                  <span>More new messages</span>
+                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={(e) => this.hideNewMsgsNotif('below', e)}>
                     <span id="close-modal" className="u-hide-visually">Close</span>
                     <svg className="menu-close-icon chatAlert" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
                   </button>

@@ -210,6 +210,9 @@ div {
 .inheritFontSize{
   font-size: inherit;
 }
+.textCursor{
+  cursor: text!important;
+}
 
 /* POSITIONING */
 .dispBlock{

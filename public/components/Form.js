@@ -215,7 +215,7 @@ class Form extends Component {
               qViewed: maxQViewed
             }
 
-          })
+          })        
         }
       });
     }, options);
