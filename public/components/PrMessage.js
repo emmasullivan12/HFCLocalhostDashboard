@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th nov 2020 
+// Dex last merged this code on 11th nov 2020
 
 import React, { Component } from "react";
 
@@ -93,6 +93,9 @@ function WelcomeMessage(props) {
     </React.Fragment>
   )
 }
+
+// In Group prospelabot welcome message for demos
+// const text = '~*Welcome, new joiners!*~\n*Next steps*\n💬 Feel free to user this general channel to chit chat with your fellow E-Mentors, the Prospela team & your group\'s amazing founding team!\n📋 Check back here for the latest tips, resources & announcements to help you get the most out of your mentoring experience.\n\n*Questions, thoughts, something to shout about?* Shout about it in this general channel or DM the Prospela team via ProspelaBot 😎'
 
 function FinishedSUMessage(props) {
   const fname = 'Dexter'
@@ -391,6 +394,16 @@ function PrAuto(props) {
           <div className="msg-title-container">
               <div className="message-content-box msgTitle alignCenter">
                 <span className="prAutoMsgTitle">This is the start of your chat!</span>
+              </div>
+          </div>
+        </div>
+      );
+    case 'groupStart':
+      return (
+        <div className="prauto-start-msg-container">
+          <div className="msg-title-container">
+              <div className="message-content-box msgTitle alignCenter">
+                <span className="prAutoMsgTitle">This is the start of your group chat!</span>
               </div>
           </div>
         </div>

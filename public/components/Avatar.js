@@ -12,7 +12,7 @@ import "../css/Avatar.css";
 // **Overview**
   // **Props**
     // - userName
-      //   required
+      //   required (unless is ProspelaBot)
       //   type: string
       //   is the fname of a user e.g. message.author if in chat or user.fname if in group users list
 

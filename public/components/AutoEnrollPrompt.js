@@ -17,7 +17,7 @@ class AutoEnrollPrompt extends Component {
   render() {
     const autoEnrollProgName = 'BAME in Games';
     const {source} = this.props
-    var progLogoURL = cdn + '/' + groupImgFolder + source + '.png'
+    var progLogoURL = cdn + '/' + groupImgFolder + '/' + source + '.png'
     const nonPartnerSch = false; /// check school email (or prog code if signed up with personal email) for school partnership
     return (
       <section>
