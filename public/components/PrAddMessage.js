@@ -119,6 +119,7 @@ class PrAddMessage extends Component {
   //  const isUnder18Chat = true;
     const country = 'GBR'
     const userRole = 'mentor'
+    const isGroup = this.props.isGroup;
 
     this.setState({
       text: value
@@ -166,11 +167,20 @@ class PrAddMessage extends Component {
 
       if(idx >= 0) {
         const phoneEmailTxt = arrEmail != null ? ' an email address' : ' a phone number'
-        let newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
-                      value.substring(idx, idx + matchLen) +
-                      '</span> is '+
-                      phoneEmailTxt +
-                      ', which you\'ve agreed not to share for safeguarding reasons if your mentee is under 18'
+        let newText
+        if (isGroup) {
+          newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
+                    value.substring(idx, idx + matchLen) +
+                    '</span> is '+
+                    phoneEmailTxt +
+                    ', which we discourage you from sharing, particularly in this public channel'
+        } else {
+          newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
+                    value.substring(idx, idx + matchLen) +
+                    '</span> is '+
+                    phoneEmailTxt +
+                    ', which you\'ve agreed not to share for safeguarding reasons if your mentee is under 18'
+        }
         notAllowedText.style.display = 'block';
         notAllowedText.innerHTML = newText
       } else {
@@ -198,6 +208,11 @@ class PrAddMessage extends Component {
       document.getElementById("prAddMessageCount").style.display = 'block'
     } else {
       document.getElementById("prAddMessageCount").style.display = 'none'
+    }
+    const newMsgsBelowBtn = document.getElementById('newMsgsBelowBtn')
+    if (newMsgsBelowBtn) {
+      const addMessage = document.getElementById('new-message')
+      newMsgsBelowBtn.style.setProperty("bottom", (addMessage.offsetHeight + 5) + "px", "important")
     }
   }
 

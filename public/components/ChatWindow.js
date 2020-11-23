@@ -84,7 +84,7 @@ class ChatWindow extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const {isGroup} = this.props;
+    const {isGroup, chatid} = this.props;
     if (isGroup !== prevProps.isGroup) {
       if (isGroup) {
         this.openFlexContainer()
@@ -93,6 +93,11 @@ class ChatWindow extends Component {
       }
     }
     this.handleUnreads();
+
+    // If URL has changed i.e. moved channel then set this.state.text back to ''
+    if (chatid !== prevProps.chatid) {
+      document.getElementById("txtInput-box").input = ''
+    }
   }
 
   componentWillUnmount() {
@@ -213,7 +218,13 @@ class ChatWindow extends Component {
 
   showNewMsgsNotif(aboveOrBelow) {
     const newMsgLocation = aboveOrBelow === 'below' ? 'newMsgsBelow' : (aboveOrBelow === 'above' ? 'newMsgsAbove' : '')
-    this.setState({ [newMsgLocation]: true })
+    this.setState({ [newMsgLocation]: true }, () => {
+      if (aboveOrBelow === 'below') {
+        const newMsgsBelowBtn = document.getElementById('newMsgsBelowBtn')
+        const addMessage = document.getElementById('new-message')
+        newMsgsBelowBtn.style.setProperty("bottom", (addMessage.offsetHeight + 5) + "px", "important")
+      }
+    })
   }
 
   openFlexContainer() {
@@ -345,7 +356,7 @@ class ChatWindow extends Component {
               </div>
             )}
             {newMsgsBelow == true && (
-              <div className="chatTopBanners small bottom" onClick={this.handleMoveDown}>
+              <div className="chatTopBanners small bottom" id="newMsgsBelowBtn" onClick={this.handleMoveDown}>
                 <div className="separator__text go2NewMsgs">
                   <i className="fas fa-arrow-down" />
                   <span>More new messages</span>
@@ -367,7 +378,7 @@ class ChatWindow extends Component {
                 newMsgBannerSeen={newMsgBannerSeen}
               />
             </div>
-            <PrAddMessage />
+            <PrAddMessage isGroup={isGroup}/>
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
               <div className="animate">
                 <div className='topbottom'/>
