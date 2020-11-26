@@ -5,7 +5,7 @@ import React, { Component } from "react";
 class TextParser extends Component {
   render() {
     let text = this.props.text,
-        parsed, parsedURL, parsedTwice, regex, paragraphs;
+        parsed, regex, paragraphs;
 
     regex = {
       paragraph: /(\r\n|\r|\n)(?!-|>)/g,
@@ -14,6 +14,7 @@ class TextParser extends Component {
     }
 
     let applyFormatting = (text) => {
+    /* eslint-disable no-shadow */
       return text.split(regex.formatting).filter(n => n).map((str) => {
         let parsedTwice = str[0] == '_' && str[str.length - 1] == '_'// Checks for _italics_
           ? (<em>{applyFormatting(str.substr(1, str.length - 2))}</em>)
@@ -50,7 +51,7 @@ class TextParser extends Component {
 
     };
 
-    var x = 0
+    let x = 0
     // Checks for \n line breaks
     paragraphs = text.split(regex.paragraph)
     paragraphs = paragraphs.map((text)=> {

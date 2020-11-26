@@ -114,12 +114,22 @@ class PrAddMessage extends Component {
     document.getElementById('notAllowedHighlightsBackdrop').scrollTop(scrollTop);
   }*/
 
+  resetPrAddMessage = () => {
+    let value = "";
+    this.messageChange(value)
+  }
+
   handleMessageChange = (e) => {
     let value = e.target.value;
+    this.messageChange(value)
+  }
+
+  messageChange = (value) => {
   //  const isUnder18Chat = true;
     const country = 'GBR'
     const userRole = 'mentor'
     const isGroup = this.props.isGroup;
+    const addmsgbox = document.getElementById("txtInput-box")
 
     this.setState({
       text: value
@@ -201,10 +211,10 @@ class PrAddMessage extends Component {
     } else {
       msgInsights.classList.remove("show");
     }
-    e.target.style.height = '20px';
-    e.target.style.height = (e.target.scrollHeight) + 'px';
-    e.target.style.overflowY = "scroll";
-    if (e.target.style.height > "26px") {
+    addmsgbox.style.height = '20px';
+    addmsgbox.style.height = (addmsgbox.scrollHeight) + 'px';
+    addmsgbox.style.overflowY = "scroll";
+    if (addmsgbox.style.height > "26px") {
       document.getElementById("prAddMessageCount").style.display = 'block'
     } else {
       document.getElementById("prAddMessageCount").style.display = 'none'

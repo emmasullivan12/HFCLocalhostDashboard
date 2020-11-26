@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th nov 2020 
+// Dex last merged this code on 11th nov 2020
 
 import React, { Component } from "react";
 import ChatWindow from './ChatWindow.js';
@@ -24,7 +24,6 @@ class ProspelaBot extends Component {
         {name: 'docs', type: 'resources', about: '', chlid: '12346', allowed: ['pr', 'mentor', 'mentee']}
       ]
     }
-
     const groupUsers = {
       users: {
         count: 104,
@@ -64,9 +63,20 @@ class ProspelaBot extends Component {
       }
     }
 
+    const pathName = window.location.pathname
+    const pathArray = pathName.split('/');
+    let chatid;
+
+    if(pathArray.length > 3 && pathArray[pathArray.length-4] == 'community'){ // i.e. it's a group
+      chatid = pathArray[pathArray.length-1];
+    } else {
+      chatid = pathArray[pathArray.length-1];
+    }
+
     return (
       <React.Fragment>
         <ChatWindow
+          chatid={chatid}
           groupName={group.groupname}
           channelName={group.channels[0].name} // Cant use foreach here ...Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
           channelType={group.channels[0].type} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different

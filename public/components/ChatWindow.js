@@ -56,6 +56,7 @@ class ChatWindow extends Component {
   constructor (props) {
     super(props);
     this.scrollRef = React.createRef();
+    this.childRef = React.createRef();
     this.state = {
       isDevice: checkDevice(),
       isFlexContainerOpen: this.props.isGroup ? true : false,
@@ -95,8 +96,9 @@ class ChatWindow extends Component {
     this.handleUnreads();
 
     // If URL has changed i.e. moved channel then set this.state.text back to ''
-    if (chatid !== prevProps.chatid) {
-      document.getElementById("txtInput-box").input = ''
+    if (chatid != prevProps.chatid) {      
+      // Calls function in PrAddMessage to reset text
+      this.childRef.current.resetPrAddMessage();
     }
   }
 
@@ -116,7 +118,7 @@ class ChatWindow extends Component {
 
   createObserver = () => {
     let options = {
-      threshold: 0.7
+      threshold: 1
     }
 
     const observer = new IntersectionObserver(entries => {
@@ -228,7 +230,7 @@ class ChatWindow extends Component {
   }
 
   openFlexContainer() {
-    this.setState({ isFlexContainerOpen: open });
+    this.setState({ isFlexContainerOpen: true });
   }
 
   closeFlexContainer() {
@@ -378,7 +380,10 @@ class ChatWindow extends Component {
                 newMsgBannerSeen={newMsgBannerSeen}
               />
             </div>
-            <PrAddMessage isGroup={isGroup}/>
+            <PrAddMessage
+              isGroup={isGroup}
+              ref={this.childRef}
+            />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
               <div className="animate">
                 <div className='topbottom'/>
