@@ -1,4 +1,4 @@
-// Dex last merged this code on 23rd nov 2020
+// Dex last merged this code on 26th nov 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -96,7 +96,7 @@ class ChatWindow extends Component {
     this.handleUnreads();
 
     // If URL has changed i.e. moved channel then set this.state.text back to ''
-    if (chatid != prevProps.chatid) {      
+    if (chatid != prevProps.chatid) {
       // Calls function in PrAddMessage to reset text
       this.childRef.current.resetPrAddMessage();
     }
