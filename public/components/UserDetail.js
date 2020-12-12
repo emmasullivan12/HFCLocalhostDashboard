@@ -98,13 +98,23 @@ function setUniGraduYr(currYr, courseLength) {
   let uniGraduYr;
   if(currYr === 'pg') {
     uniGraduYr = courseLength + year
+  } else if (currYr === 'rcGrad'){
+    uniGraduYr = year
   } else {
     uniGraduYr = (courseLength - currYr) + year
   }
-  if (month <= 7) {
-    return uniGraduYr;
+  if (currYr === 'rcGrad'){
+    if (month <= 7) {
+      return uniGraduYr - 1;
+    } else {
+      return uniGraduYr;
+    }
   } else {
-    return uniGraduYr + 1;
+    if (month <= 7) {
+      return uniGraduYr;
+    } else {
+      return uniGraduYr + 1;
+    }
   }
 }
 

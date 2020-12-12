@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -52,7 +52,7 @@ const ukUnis = [
   {value: '46', label: 'Norwich University of the Arts', location: 'Norwich, Norfolk, UK'},
   {value: '47', label: 'Oxford Brookes University', location: 'Oxford, Oxfordshire, UK'},
   {value: '48', label: 'Plymouth College of Art', location: 'Plymouth, Devon, UK'},
-  {value: '49', label: 'Queen Mary and Westfield College', location: 'London, UK'},
+  {value: '49', label: 'Queen Mary, University of London', location: 'London, UK'},
   {value: '50', label: 'Ravensbourne', location: 'London, UK'},
   {value: '51', label: 'Roehampton University', location: 'London, UK'},
   {value: '52', label: 'Rose Bruford College', location: 'Sidcup, Kent, UK'},
@@ -170,6 +170,10 @@ const ukUnis = [
   {value: '162', label: 'Pearson College London', location: 'London, UK' }, //new uni
   {value: '163', label: 'Escape Studios', location: 'London, UK' }, //new uni
   {value: '164', label: 'Access Creative College', location: 'Manchester, UK' },
+  {value: '165', label: 'Screen and Film School', location: 'Brighton, UK' },
+  {value: '166', label: 'National Film & Television School', location: 'Beaconsfield, UK' },
+  {value: '167', label: 'Screenology', location: 'Bristol, UK' },
+  {value: '168', label: 'UCEN Manchester', location: 'Manchester, UK' },
 ];
 
 export default ukUnis;

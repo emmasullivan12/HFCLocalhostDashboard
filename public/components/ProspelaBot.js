@@ -67,6 +67,7 @@ class ProspelaBot extends Component {
     const pathArray = pathName.split('/');
     let chatid;
 
+    // grab chatid from URL
     if(pathArray.length > 3 && pathArray[pathArray.length-4] == 'community'){ // i.e. it's a group
       chatid = pathArray[pathArray.length-1];
     } else {

@@ -99,6 +99,18 @@ class ChatWindow extends Component {
     if (chatid != prevProps.chatid) {
       // Calls function in PrAddMessage to reset text
       this.childRef.current.resetPrAddMessage();
+
+      // Hide any new message red buttons
+      if (this.state.newMsgsBelow == true) {
+        console.log("Hiding newmsgsbelow btn")
+        this.hideNewMsgsNotif('below')
+      }
+
+      if (this.state.newMsgsAbove == true) {
+        console.log("Hiding newmsgsabove btn")
+        this.hideNewMsgsNotif('above')
+      }
+
     }
   }
 
@@ -121,6 +133,8 @@ class ChatWindow extends Component {
       threshold: 1
     }
 
+    const {chatid} = this.props;
+    const prevchatid = 99999;
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
 
@@ -133,6 +147,12 @@ class ChatWindow extends Component {
             const newMsgsBanner = document.getElementById('newMsgs')
             observer.unobserve(newMsgsBanner);
           })
+        }
+
+        // unobserve "new msg" red line if switch window to different chat
+        if (chatid != prevchatid) {
+          const newMsgsBanner = document.getElementById('newMsgs')
+          observer.unobserve(newMsgsBanner);
         }
 
       });
@@ -211,8 +231,10 @@ class ChatWindow extends Component {
   }
 
   hideNewMsgsNotif(aboveOrBelow, e) {
-    if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
-      console.log("x clicked")
+    if (e != null) {
+      if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
+        console.log("x clicked")
+      }
     }
     const newMsgLocation = aboveOrBelow === 'below' ? 'newMsgsBelow' : (aboveOrBelow === 'above' ? 'newMsgsAbove' : '')
     this.setState({ [newMsgLocation]: false })

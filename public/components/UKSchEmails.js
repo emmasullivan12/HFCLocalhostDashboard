@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 4th June 2020
 
 import React, { Component } from "react";
 
@@ -7637,7 +7637,11 @@ const ukSchEmails = [
   //added later
   {value: '7630', emailFormat: ''}, //new sch in Scotland
   {value: '7631', emailFormat: 'accesscreative', dm: 'ac'}, //new college
-
+  {value: '7632', emailFormat: 'clarendon', dm: 'ac'},
+  {value: '7633', emailFormat: 'gbmc', dm: 'ac'},
+  {value: '7634', emailFormat: 'confetti', dm: 'ac'},
+  {value: '7635', emailFormat: ''},
+  {value: '7636', emailFormat: ''},
 ];
 
 export default ukSchEmails;

@@ -2515,7 +2515,7 @@ const ukSchs = [
   {value: '2509', label: 'South Cheshire College', location: 'Crewe, Cheshire, UK' },
   {value: '2510', label: 'Mid-Cheshire College of Further Education', location: 'Northwich, Cheshire, UK' },
   {value: '2511', label: 'Macclesfield College', location: 'Macclesfield, Cheshire, UK' },
-  {value: '2512', label: 'Riverside College Halton', location: 'Widnes, Cheshire, UK' },
+  {value: '2512', label: 'Riverside & Cronton College', location: 'Widnes, Cheshire, UK' },
   {value: '2513', label: 'Reaseheath College', location: 'Nantwich, Cheshire, UK' },
   {value: '2514', label: 'Priestley College', location: 'Warrington, Cheshire, UK' },
   {value: '2515', label: 'Sir John Deane\'s College', location: 'Northwich, Cheshire, UK' },
@@ -7637,6 +7637,11 @@ const ukSchs = [
 //added later
   {value: '7630', label: 'Bertha Park High School', location: 'Perth, UK' }, //new sch in Scotland
   {value: '7631', label: 'Access Creative College', location: 'Manchester, UK' }, //new college
+  {value: '7632', label: 'Clarendon Sixth Form College', location: 'Manchester, UK' },
+  {value: '7633', label: 'Greater Brighton Metropolitan College', location: 'Brighton, East Sussex, UK' },
+  {value: '7634', label: 'Confetti Institute of Creative Technologies', location: 'Nottingham, UK' },
+  {value: '7635', label: 'Interhigh Online School', location: 'Online (UK-based)' },
+  {value: '7636', label: 'Home-schooled', location: 'Home-based' },
 ]
 
 export default ukSchs;
