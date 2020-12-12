@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 12th dec 2020
 
 import React, { Component } from "react";
 
@@ -170,6 +170,10 @@ const ukUniEmails = [
   {value: '162', emailFormat: 'pearsoncollegelondon'},
   {value: '163', emailFormat: 'escapestudios.com'},
   {value: '164', emailFormat: 'accesscreative'},
+  {value: '165', emailFormat: 'screenfilmschool'},
+  {value: '166', emailFormat: 'nfts'},
+  {value: '167', emailFormat: 'screenology'},
+  {value: '168', emailFormat: 'ucenmanchester'},
 ];
 
 export default ukUniEmails;

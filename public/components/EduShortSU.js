@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th oct 2020
+// Dex last merged this code on 12th dec 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -377,12 +377,18 @@ class EduShortSU extends React.Component {
 
     const uniYrGrp = this.state.uniYrGrp;
 
-    if (uniYrGrp != '') {
+    if (uniYrGrp != '' && uniYrGrp != 'rcGrad') {
       const isValid = (userInput >= uniYrGrp) ? true : false;
       this.setState({
         uniGraduYr: setUniGraduYr(uniYrGrp, userInput),
         uniGraduYrIsValid: isValid
       });
+    } else if (uniYrGrp === 'rcGrad') {
+      const isValid = userInput != '' ? true : false;
+      this.setState({
+        uniGraduYr: setUniGraduYr(uniYrGrp, userInput),
+        uniGraduYrIsValid: isValid
+      })
     }
   }
 

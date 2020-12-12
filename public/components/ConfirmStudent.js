@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th oct 2020
+// Dex last merged this code on 12th dec 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -141,7 +141,7 @@ class ConfirmStudent extends React.Component {
 
   handleKeyUp = (e) => {
 
-    clearTimeout(this.timerHandle);
+  clearTimeout(this.timerHandle);
 
     this.timerHandle = setTimeout(() => {
       this.checkEduEmail()
@@ -325,7 +325,7 @@ class ConfirmStudent extends React.Component {
         if (uniName != '' && emailFormat != "") {
 
           // This University does not have .ac.uk format
-          if (uniName === '69' || uniName === '163') {
+          if (uniName === '69' || uniName === '163' || uniName === '166' || uniName === '167') {
             const isValid = freeEmail === emailFormat;
             this.setState({
               eduEmailIsValid: isValid,
