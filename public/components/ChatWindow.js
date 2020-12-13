@@ -65,8 +65,10 @@ class ChatWindow extends Component {
       newMsgBannerSeen: false,
       newMsgsBelow: true,
       newMsgsAbove: true,
+      observerIsOn: false,
       /* dragFiles: '', */
     }
+    this.observer;
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
@@ -119,12 +121,16 @@ class ChatWindow extends Component {
   }
 
   handleUnreads = () => {
+    const {observerIsOn} = this.state;
     const hasUnreads = true
 
     if (hasUnreads) {
       const newMsgsBanner = document.getElementById('newMsgs')
-      const observer = this.createObserver()
-      observer.observe(newMsgsBanner);
+      //this.observer.disconnect() // This is in live server
+      if (!observerIsOn) {
+        this.observer = this.createObserver()
+        this.observer.observe(newMsgsBanner);
+      }
     }
   }
 
@@ -152,12 +158,18 @@ class ChatWindow extends Component {
         // unobserve "new msg" red line if switch window to different chat
         if (chatid != prevchatid) {
           const newMsgsBanner = document.getElementById('newMsgs')
-          observer.unobserve(newMsgsBanner);
+          this.observer.unobserve(newMsgsBanner);
+          this.setState({
+            observerIsOn: false,
+          })
         }
 
       });
     }, options);
 
+    this.setState({
+      observerIsOn: true,
+    })
     return observer
   }
 
@@ -404,6 +416,7 @@ class ChatWindow extends Component {
             </div>
             <PrAddMessage
               isGroup={isGroup}
+              isOffline={isOffline}
               ref={this.childRef}
             />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >

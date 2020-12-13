@@ -54,7 +54,11 @@
   height: auto;
 }
 
-.input-box-container:hover{
+.input-box-container.offline{
+  background: #f2f2f2;
+}
+
+.input-box-container:not(.offline):hover{
   border-color: #c6c6c6;
 }
 
@@ -276,6 +280,9 @@ mark {
   width: 30px;
   margin-bottom: 7px;
   line-height: 33px;
+}
+.sendMsgContainer.isOffline{
+  cursor: text;
 }
 .sendMsgContainer:disabled {
   cursor: text;

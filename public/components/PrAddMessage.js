@@ -278,13 +278,13 @@ class PrAddMessage extends Component {
 
   render() {
     const {showEmojis, text} = this.state;
+    const {isOffline} = this.props;
 
     return (
       <React.Fragment>
         <div id="new-message" className="chatWindow-footer">
           <div className="footer-container">
-            <div className="input-box-container">
-
+            <div className={"input-box-container"+ (isOffline ? " offline" : "")}>
               <div className="input-flexContainer">
                 <form className="textInput-container" id="chatMessageForm">
                   <p id="notAllowedText"/>
@@ -300,11 +300,12 @@ class PrAddMessage extends Component {
                   //  onScroll={this.handleTextAreaScroll}
                     onKeyDown={this.onEnterPress}
                     onKeyUp={this.onKeyUp}
-                    placeholder="Type message..."
+                    placeholder={isOffline ? "You're offline..." : "Type message..."}
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
                     maxLength="2000"
+                    disabled={isOffline}
                     autoFocus
                   />
           {  /*    <div className="highlight-container">
@@ -343,7 +344,7 @@ class PrAddMessage extends Component {
                 <Modal {...CameraUploadModalProps}>
                   <CameraUploadContent/>
                 </Modal>
-                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + (text.length > 0 ? ' isTyping' : "")} onClick={this.handleSubmit}>
+                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + ((!isOffline && text.length > 0) ? ' isTyping' : "") + (isOffline ? ' isOffline' : '')} onClick={isOffline ? '' : this.handleSubmit}>
                   <i className="fas fa-paper-plane" />
                 </button>
               </div>
