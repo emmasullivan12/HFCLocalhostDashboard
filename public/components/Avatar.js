@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th nov 2020
+// Dex last merged this code on 14th dec 2020
 
 import React, { Component } from "react";
 
@@ -46,7 +46,7 @@ class Avatar extends Component {
   render() {
     const users = {
       uid: '99999',
-      profilepic: '/2020/12/8/b2466221-ef6a-4c47-82c2-59e46ffe9bf3_88315b1d-7ca1-49db-8e7b-c1c516f9514d.jpeg',
+      profilepic: '',
     //  profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
     //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
     //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
@@ -61,7 +61,7 @@ class Avatar extends Component {
     let isOnline
     let userInitial
 
-    const myProfPic = '';
+    const myProfPic = users.profilepic;
     const otherUserProfPic = users.profilepic;
     const checkMe = myProfPic != null && myProfPic != ''
     const checkOtherPerson = (otherUserProfPic != null && otherUserProfPic != '')
