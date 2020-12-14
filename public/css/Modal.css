@@ -99,6 +99,11 @@
 .ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex i{
   margin-top: 7px;
 }
+.ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex.smallIdle{
+  width: 15px;
+  height: 15px;
+  margin-bottom: -3px;
+}
 .ModalOpenBtn-addPicBtn.msg-thumb.isGroupFlex.smallIdle i{
   margin-top: 2px;
   font-size: 11px;

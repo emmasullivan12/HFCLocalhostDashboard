@@ -56,6 +56,7 @@
 .userItem-FlexContainer{
   margin-bottom: 10px;
   position: relative;
+  height: 33px;
 }
 .userItem-FlexContainer:last-of-type{
   margin-bottom: 2rem;
