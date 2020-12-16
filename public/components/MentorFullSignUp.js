@@ -33,8 +33,8 @@ class MentorFullSignUp extends Component {
     const hobbiesFreeText = [];
     const maxEdu = '';
     const eetStatus = 'job';
-    const subjects = '';
-    const subjectsFreeText = '';
+    const subjects = [];
+    const subjectsFreeText = [];
     const uniName = null
     const uniNameFreeText = null
   //  const uniName = 'profiles.uniname'
@@ -218,7 +218,7 @@ class MentorFullSignUp extends Component {
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
         ] : [],
       ] : [],
-      ... (subjects === '' && subjectsFreeText === '') ? [
+      ... (subjects.length === 0 && subjectsFreeText.length === 0) ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
@@ -535,7 +535,7 @@ class MentorFullSignUp extends Component {
         ] : [],
         {q: 'What Degree did you study?', conditionalOn: 'maxEdu', showIf: [2,3,4,5,6], detail: 'e.g. BSc(Hons) Business Administration, etc.', aType: 'text', req: 1, maxLength: 75, placeholder: 'Type your Degree name...', name: 'degree'},
       ] : [],
-      ... (subjects === '' && subjectsFreeText === '') ? [
+      ... (subjects.length === 0 && subjectsFreeText.length === 0) ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           {value: '0', label: 'Accounting'},
           {value: '1', label: 'Afrikaans'},
