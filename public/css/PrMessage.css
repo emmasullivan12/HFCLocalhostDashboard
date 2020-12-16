@@ -97,7 +97,7 @@
   margin-top: -12rem;*/
 }
 .block-container.dateHeader{
-  z-index: 100;
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: -15px;

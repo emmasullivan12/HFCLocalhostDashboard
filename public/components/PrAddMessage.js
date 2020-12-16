@@ -5,6 +5,7 @@ import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
 import { NimblePicker } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
+import {checkMobile} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import FileUploadContent from './FileUploadContent.js';
 import CameraUploadContent from './CameraUploadContent.js';
@@ -30,10 +31,37 @@ class PrAddMessage extends Component {
     //  showText: this.initialText,
       text: '',
       showEmojis: false,
+      isMobile: checkMobile(),
   //    playMsgAudio: false
     }
 //    audio = new Audio(this.props.url)
   }
+
+  componentDidMount() {
+    const addmsgbox = document.getElementById("txtInput-box");
+    const addmsgboxMaxHeight = window.getComputedStyle(addmsgbox).maxHeight;
+    this.setState({
+      addmsgboxMaxHeight: addmsgboxMaxHeight,
+    })
+  }
+
+  /*handleResize = (e) => {
+    console.log("resize event")
+    const addmsgbox = document.getElementById("txtInput-box");
+    console.log("height: " + addmsgbox.style.height)
+    if (addmsgbox.scrollHeight < addmsgbox.style.height) {
+      console.log("needs resizing")
+//      addmsgbox.style.height = 'auto'
+      addmsgbox.style.height = addmsgbox.scrollHeight
+      console.log("height AFTER: " + addmsgbox.style.height)
+    }
+
+    // Resize
+    console.log("clientheight: "+addmsgbox.clientHeight)
+    console.log("offsetheight: "+addmsgbox.offsetHeight)
+    console.log("scrollheight: "+addmsgbox.scrollHeight)
+
+  }*/
 
   handleEmojiClick = (evt) => {
     let sym = evt.unified.split('-')
@@ -129,7 +157,7 @@ class PrAddMessage extends Component {
     const country = 'GBR'
     const userRole = 'mentor'
     const isGroup = this.props.isGroup;
-    const addmsgbox = document.getElementById("txtInput-box")
+    const addmsgbox = document.getElementById("txtInput-box");
 
     this.setState({
       text: value
@@ -204,21 +232,29 @@ class PrAddMessage extends Component {
       checkEmailPhoneSharing()
     }
 
+    // Show the bold/italics/highlight key
     var msgInsights = document.getElementById('msgInsights-bar-right');
-
     if (value.length > 0) {
       msgInsights.classList.add("show");
     } else {
       msgInsights.classList.remove("show");
+      document.getElementById("prAddMessageCount").style.display = 'none'
     }
+
     addmsgbox.style.height = '20px';
     addmsgbox.style.height = (addmsgbox.scrollHeight) + 'px';
-    addmsgbox.style.overflowY = "scroll";
-    if (addmsgbox.style.height > "26px") {
+    if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
+      addmsgbox.style.overflowY = "scroll";
+    }
+
+    // Show the chraacter counter if goes over 1 line
+    if (addmsgbox.scrollHeight > 26) {
       document.getElementById("prAddMessageCount").style.display = 'block'
     } else {
       document.getElementById("prAddMessageCount").style.display = 'none'
     }
+
+    // Position the red "newmsgsbelowbtn" to always be 5px above the PrAddMessage container
     const newMsgsBelowBtn = document.getElementById('newMsgsBelowBtn')
     if (newMsgsBelowBtn) {
       const addMessage = document.getElementById('new-message')
@@ -232,7 +268,7 @@ class PrAddMessage extends Component {
     if((key === 'Enter' || key === 13) && e.shiftKey === false) {
       e.preventDefault();
   //    this.toggleMsgAudio()
-      this.handleMessageSubmit();
+      this.handleSubmit();
     } else {
       return;
     }
@@ -259,6 +295,24 @@ class PrAddMessage extends Component {
     this.addMessageNode.value = ''
     this.setState({
       text: ''
+    }, () => {
+      // Hide the bold/italics/highlight key
+      var msgInsights = document.getElementById('msgInsights-bar-right');
+      msgInsights.classList.remove("show");
+
+      // Hide the character counter
+      document.getElementById("prAddMessageCount").style.display = 'none';
+
+      // Resize message input box to one line height
+      const addmsgbox = document.getElementById("txtInput-box")
+      addmsgbox.style.height = '26px';
+
+      // Position the red "newmsgsbelowbtn" to always be 5px above the PrAddMessage container
+      const newMsgsBelowBtn = document.getElementById('newMsgsBelowBtn')
+      if (newMsgsBelowBtn) {
+        const addMessage = document.getElementById('new-message')
+        newMsgsBelowBtn.style.setProperty("bottom", (addMessage.offsetHeight + 5) + "px", "important")
+      }
     })
   }
 
@@ -304,7 +358,7 @@ class PrAddMessage extends Component {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="off"
-                    maxLength="2000"
+                    maxLength="5000"
                     disabled={isOffline}
                     autoFocus
                   />
@@ -354,6 +408,9 @@ class PrAddMessage extends Component {
                 Dexter is Typing...
               </div>
               <div className="msgInsights-bar-right" id="msgInsights-bar-right">
+                {this.state.isMobile != true && (
+                  <span>↑ Shift + ⤶ Enter for new line </span>
+                )}
                 <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
               </div>
             </div>
