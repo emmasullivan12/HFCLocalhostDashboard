@@ -174,7 +174,7 @@
             }
 
             /* What it does: Adjust typography on small screens to improve readability */
-            .email-container p {
+            .email-container p:not(.ignore-font-change) {
                 font-size: 17px !important;
                 line-height: 22px !important;
             }
@@ -284,12 +284,17 @@
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #3a3a3a;">
                             <tr>
                                 <td style="padding: 20px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #a7a7a7; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">This email was sent to you from talktous@prospela.com</p>
+                                    <p  class="ignore-font-change" style="margin: 0;">This email was sent to you from talktous@prospela.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #a7a7a7; text-align: center; font-weight:normal;">
+                                    <a href="https://app.prospela.com" class="ignore-font-change" style="margin: 0; color: #a7a7a7; text-decoration: none;">Unsubscribe</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #a7a7a7; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">Copyright &copy; 2020 <b>Prospela</b> | All Rights Reserved.</p>
+                                    <p class="ignore-font-change" style="margin: 0;">Copyright &copy; 2020 <b class="ignore-font-change" >Prospela</b> | All Rights Reserved.</p>
                                 </td>
                             </tr>
 
