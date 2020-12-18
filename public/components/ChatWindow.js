@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th dec 2020 
+// Dex last merged this code on 13th dec 2020
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -380,7 +380,7 @@ class ChatWindow extends Component {
             )}
             {newMsgsAbove == true && newMsgBannerSeen === false && (
             //  <div className="chatTopBanners small" onClick={this.goToNewMsgs}>
-              <div className="chatTopBanners small">
+              <div className="chatTopBanners small" id="newMsgsAboveBtn" >
                 <div className="separator__text go2NewMsgs textCursor">
                   <i className="fas fa-arrow-up" />
                   <span>More new messages</span>

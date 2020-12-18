@@ -15,7 +15,7 @@ class TextParser extends Component {
 
     let applyFormatting = (text) => {
     /* eslint-disable no-shadow */
-      return text.split(regex.formatting).filter(n => n).map((str) => {
+      return text.split(regex.formatting).filter(n => n).map((str, i) => {
         let parsedTwice = str[0] == '_' && str[str.length - 1] == '_'// Checks for _italics_
           ? (<em>{applyFormatting(str.substr(1, str.length - 2))}</em>)
           : str[0] == '*' && str[str.length - 1] == '*'// Checks for *bold*
@@ -56,10 +56,8 @@ class TextParser extends Component {
     paragraphs = text.split(regex.paragraph)
     paragraphs = paragraphs.map((text)=> {
       const key = x++
-      if (text == '\n') {
+      if (text == '') {
         return <br />
-      } else if (text === '') {
-        return
       } else {
         return (
           <p className="textParser-container" key={key}>

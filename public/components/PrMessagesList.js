@@ -40,7 +40,7 @@ class PrMessagesList extends Component {
 
   render() {
     const messages = [
-      {
+    /*  {
         id: '99989',
         uid: '55555',
         type: 'message',
@@ -90,7 +90,7 @@ class PrMessagesList extends Component {
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This <b>is</b>~<script> *emmas* _message_~\n></script> \nhttps://www.prospela.com'
-      },
+      },*/
       {
         id: '99994',
         uid: '55555',
@@ -109,7 +109,7 @@ class PrMessagesList extends Component {
         ts: '2020-09-01T13:30:50.667Z',
         text: 'This is emmas message'
       },
-      {
+    /*  {
         id: '99996',
         uid: '223458',
         type: 'message',
@@ -180,7 +180,7 @@ class PrMessagesList extends Component {
         author: 'emma',
         ts: '2020-09-02T13:30:50.667Z',
         text: 'This is emmas message'
-      },
+      },*/
       {
         id: '100004',
         uid: '223456',
@@ -197,7 +197,7 @@ class PrMessagesList extends Component {
           fileType: 'image/jpeg',
           imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'
         }
-      },
+      },/*
       {
         id: '100005',
         uid: '23456',
@@ -300,7 +300,7 @@ class PrMessagesList extends Component {
         prAuto: {
           title: 'ended'
         }
-      },
+      },*/
     ];
 
     const {handleLastPic, founders, pms, scrollToNewMessage} = this.props
