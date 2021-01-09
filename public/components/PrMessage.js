@@ -6,6 +6,7 @@ import AcceptCTA from './AcceptCTA.js';
 import AudioCTA from './AudioCTA.js';
 import Avatar from './Avatar.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
+import EmojiReactions from './EmojiReactions.js';
 import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import {isIE, DateCalc} from './GeneralFunctions.js';
@@ -57,8 +58,12 @@ function TimeCalc(props) {
 }
 
 function toggleMoreActionsBlur(e) {
+  // Element receiving focus/click/hover which is making message blur
   const newTargetElement = isIE() ? document.activeElement : e.relatedTarget;
+
+  // If clicking off "more actions" modal
   if(e.target.className === 'msgActions-btn tooltip moreActions' && (newTargetElement == null || newTargetElement.className != 'ModalOpenBtn ModalOpenBtn-ReportMsg')) {
+    // hide the "more actions" modal
     e.target.nextSibling.classList.remove('active');
   }
 }
@@ -127,6 +132,7 @@ function FinishedSUMessage(props) {
 }
 
 function StdMessage(props) {
+  const showReactions = (props.message.reactions != null && props.message.reactions.length > 0) ? true : false
   return (
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur} >
@@ -143,6 +149,9 @@ function StdMessage(props) {
               <div className="message-content">
                 <TextParser text={props.message.text} />
               </div>
+              {showReactions && (
+                <EmojiReactions reactions={props.message.reactions}/>
+              )}
               <div className="msgStatus read">
                 &#10003; Seen
               </div>
@@ -150,8 +159,8 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-          {//  <MessageActions />
-        }  </div>
+            <MessageActions />
+          </div>
         ):(
           <div className="message-container">
             <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
@@ -172,6 +181,9 @@ function StdMessage(props) {
               <div className="message-content">
                 <TextParser text={props.message.text}/>
               </div>
+              {showReactions && (
+                <EmojiReactions reactions={props.message.reactions}/>
+              )}
               <div className="msgStatus read">
                 &#10003; Seen
               </div>
@@ -179,8 +191,8 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-          {//  <MessageActions />
-        }  </div>
+            <MessageActions />
+          </div>
         )
       }
       </div>
@@ -189,6 +201,7 @@ function StdMessage(props) {
 }
 
 function DisplayFile(props) {
+  const showReactions = (props.message.reactions && props.message.reactions.length > 0) ? true : false
   return (
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur}>
@@ -218,6 +231,9 @@ function DisplayFile(props) {
                 />
               </div>
             </div>
+            {showReactions && (
+              <EmojiReactions reactions={props.message.reactions}/>
+            )}
             <div className="msgStatus read">
               &#10003; Seen
             </div>
@@ -225,8 +241,8 @@ function DisplayFile(props) {
               &#10007; Error sending message. Please try again
             </div>
           </div>
-      {//    <MessageActions />
-      }  </div>
+          <MessageActions />
+        </div>
       </div>
     </React.Fragment>
   );

@@ -316,11 +316,31 @@ mark {
   -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
 }
 
-@media only screen and (max-width: 387px) {
+.emojiPickerContainer.messageActions{
+  position: absolute;
+  top: 36px;
+  right: 0;
+  bottom: unset;
+}
+
+@media only screen and (max-width: 500px) {
   .emojiPickerContainer{
     right: calc((100vw - 346px)/2);
     right: -webkit-calc((100vw - 346px)/2);
     right: -moz-calc((100vw - 346px)/2);
+  }
+  .emojiPickerContainer.messageActions{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: 0;
+    right: unset;
+    height: auto;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
   }
 }
 

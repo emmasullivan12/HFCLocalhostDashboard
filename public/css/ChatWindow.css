@@ -211,6 +211,7 @@
   height: calc(100% - 53px - 74px);
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
   background-size: 130px;
+  padding-bottom: 10px;
 }
 
 .flex-container-content{

@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th nov 2020 
+// Dex last merged this code on 11th nov 2020
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -30,13 +30,16 @@ class ChatListItem extends Component {
     const unreadCount = null
     // <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
 
+    const mentorFName = chat.mentor;
+    const menteeFName = chat.mentee;
+
     return(
       <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}>
         <div className="presenceContainer">
           <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
         </div>
         <div className="chatItemFlexContainer">
-          <span className={"chatMenuLink overflow-ellipsis"+(unread ? ' unread' : null)}>{chat.mentor}</span>
+          <span className={"chatMenuLink overflow-ellipsis "+(unread ? 'unread' : null)}>{mentorFName[0].toLowerCase() + mentorFName.substring(1)}-and-{menteeFName[0].toLowerCase() + menteeFName.substring(1)}</span>
           {unreadCount != 0 && (
             getUnreadIndicator(unreadCount, false)
           )}

@@ -45,6 +45,10 @@ class PrAddMessage extends Component {
     })
   }
 
+  componentWillUnmount() {
+    document.removeEventListener('click', this.closeMenu)
+  }
+
   /*handleResize = (e) => {
     console.log("resize event")
     const addmsgbox = document.getElementById("txtInput-box");

@@ -2,6 +2,8 @@
 
 import React, { Component } from "react";
 
+import { NimblePicker } from 'emoji-mart'
+import data from 'emoji-mart/data/emojione.json'
 import Modal from './Modal.js';
 import ReportModalContent from './ReportModalContent.js';
 import "../css/MessageActions.css";
@@ -18,7 +20,8 @@ class MessageActions extends Component {
     super();
     this.state = {
       starClicked: false,
-      showMoreActions: false
+      showMoreActions: false,
+      showEmojis: false,
     }
     this.toggleStarClicked = this.toggleStarClicked.bind(this);
     this.toggleMoreActions = this.toggleMoreActions.bind(this);
@@ -29,6 +32,50 @@ class MessageActions extends Component {
     var key = e.key || e.keyCode
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.closeMoreActions();
+    }
+  }
+
+  handleEmojiClick = (evt) => {
+  /*  let sym = evt.unified.split('-')
+    let codesArray = []
+    sym.forEach(el => codesArray.push('0x' + el))
+    let emojiPic = String.fromCodePoint(...codesArray)
+
+    this.setState((prevState) => {
+      return {
+        text: prevState.text + emojiPic,
+      };
+    })*/
+    alert('emoji clicked')
+    this.setState({
+      showEmojis: false
+    })
+  }
+
+  showEmojis = (e) => {
+    this.setState({
+      showEmojis: true
+    }, () => document.addEventListener('click', this.closeMenu))
+  }
+
+  closeMenu = (e) => {
+    if (this.emojiPicker !== null && !this.emojiPicker.contains(e.target)) {
+      this.setState({
+        showEmojis: false
+      }, () => document.removeEventListener('click', this.closeMenu))
+    }
+  }
+
+  closeOnEsc = (e) => {
+    var key = e.key || e.keyCode
+
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.setState({
+        showEmojis: false
+      })
+      this.addMessageNode.focus()
+    } else {
+      return;
     }
   }
 
@@ -49,7 +96,7 @@ class MessageActions extends Component {
   }
 
   render() {
-    const {starClicked,showMoreActions} = this.state;
+    const {starClicked, showMoreActions, showEmojis} = this.state;
     return (
       <React.Fragment>
         <div className="msgActions-container">
@@ -77,7 +124,32 @@ class MessageActions extends Component {
             </div>
             <span className="tooltiptext last groups">Share post</span>
           </button>*/}
-          <button type="button" className="msgActions-btn tooltip moreActions" onMouseDown={this.toggleMoreActions}>
+          <button type="button" className="msgActions-btn tooltip addReaction" onClick={this.showEmojis} onKeyDown={this.showEmojis} ref={n => this.addMessageNode = n}>
+            <div className="msgAction-icon addReaction-icon">
+              <i className="hideOnHover far fa-smile" />
+              <i className="showOnHover fas fa-laugh" />
+            </div>
+            <svg width="5px" height="5px" viewBox="0 0 10 10" className="plusSign addEmoji-msgActions">
+              <line className="" x1="0" x2="10" y1="5" y2="5" />
+              <line className="" x1="5" x2="5" y1="0" y2="10" />
+            </svg>
+            <span className="tooltiptext last messageActions">Add reaction</span>
+          </button>
+          {showEmojis && (
+            /* The <div> element is just used as a container for EmojiPicker */
+            /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
+            <div className="emojiPickerContainer messageActions" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
+              <NimblePicker
+                onSelect={this.handleEmojiClick}
+                data={data}
+                title="Pick your emoji…"
+                emoji="point_up"
+                set="emojione"
+                autoFocus
+              />
+            </div>
+          )}
+          {/*<button type="button" className="msgActions-btn tooltip moreActions" onMouseDown={this.toggleMoreActions}>
             <div className="msgAction-icon">
               <i className="fas fa-ellipsis-h" />
             </div>
@@ -95,7 +167,7 @@ class MessageActions extends Component {
                 </li>
               </ul>
             </div>
-          </div>
+          </div>*/}
         </div>
       </React.Fragment>
     );

@@ -176,6 +176,9 @@ div {
 .noBold{
   font-weight: 400!important;
 }
+.whiteFadedText{
+  color: rgb(255,255,255,0.63)!important;
+}
 .greenText{
   color: #14bd14;
   font-size: 13px;
@@ -241,6 +244,9 @@ div {
 }
 .leftRightPad{
   padding: 0 2rem 0 2rem;
+}
+.absolute{
+  position: absolute;
 }
 .button-unstyled {
   background: none;
@@ -375,6 +381,20 @@ div {
   padding-left: 10px;
   padding-right: 10px;
 }
+.tooltiptext.emojiReactions,
+.tooltiptext.messageActions {
+  left: 50%;
+  min-width: 120px;
+  width: auto;
+  line-height: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tooltiptext.messageActions{
+  right: 0;
+}
 .tooltip .tooltiptext.profile {
   left: -46%;
 }
@@ -388,9 +408,14 @@ div {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-.tooltip .tooltiptext.last::after {
+.tooltip .tooltiptext.groups.last::after {
   left: unset;
   right: 13px;
+}
+.tooltip .tooltiptext.messageActions.last::after {
+  right: 0;
+  margin-right: 9px;
+  left: unset;
 }
 .tooltip .tooltiptext.groups::after {
   left: 0;
@@ -1267,6 +1292,10 @@ a.button{
 
 
 /* ICONS */
+.emoji-mart-emoji{
+  cursor: pointer;
+  outline: none;
+}
 .logoContainer{
   height: 40px;
   margin-bottom: 1.5rem;
@@ -1312,6 +1341,11 @@ a.button{
   border-radius: 4px;
 }
 
+.plusSign{
+  stroke: #ababab;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
 .reqAsterisk:after{
   content: " *";
   margin-left: .1em;

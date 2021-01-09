@@ -89,7 +89,7 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: '~This <b>is</b>~ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~<script> *emmas* _message_~\n></script> \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah'
+        text: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~<script> *emmas* _message_~\n></script> \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah'
       },
       {
         id: '99994',
@@ -134,7 +134,25 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message'
+        text: 'This is emmas message',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457'
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458'
+            ],
+            count: 2
+          }
+        ]
       },
       {
         id: '99999',
@@ -300,6 +318,33 @@ class PrMessagesList extends Component {
         prAuto: {
           title: 'ended'
         }
+      },
+      {
+        id: '100014',
+        uid: '223458',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma-prospela',
+        ts: '2020-09-03T14:30:50.667Z',
+        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?'
+      },
+      {
+        id: '100015',
+        uid: '223458',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma-prospela',
+        ts: '2020-09-03T15:30:50.667Z',
+        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?'
+      },
+      {
+        id: '100016',
+        uid: '223458',
+        type: 'message',
+        subtype: 'std',
+        author: 'emma-prospela',
+        ts: '2020-09-03T16:30:50.667Z',
+        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?'
       },
     ];
 

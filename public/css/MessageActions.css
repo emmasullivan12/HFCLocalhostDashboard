@@ -1,14 +1,61 @@
 /* Dex last merged this code on 7th sept 2020 */
+.addReaction,
+.emojiReaction{
+  display: inline-block;
+  background: #f2f2f2;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  border: .0625rem solid #f2f2f2;
+  height: 25px;
+  margin-top: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.emojiReaction{
+  width: 50px;
+}
+
+.addReaction{
+  width: 38px;
+}
+
+.addReaction:hover,
+.emojiReaction:hover{
+  border-color: #c7c7c7;
+  background-color: #fff;
+}
+
+.emojiReaction.userClicked{
+  border-color: #4e4ed6;
+  background-color: #f2f2fb;
+}
+
+.emojiReaction.userClicked:hover{
+  border-color: #4e4ed6;
+  background-color: #ebebfb;
+}
 
 .msgActions-container{
   display: none;
+  position: absolute;
+  top: -10px;
+  right: 20px;
   background: #fff;
   border: .0625rem solid #f2f2f2;
   -webkit-border-radius: .375em;
- -moz-border-radius: .375em;
- -ms-border-radius: .375em;
- -o-border-radius: .375em;
+  -moz-border-radius: .375em;
+  -ms-border-radius: .375em;
+  -o-border-radius: .375em;
   border-radius: .375em;
+  height: 28px;
+}
+
+.msgActions-container,
+.emojiReaction{
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   -ms-transition: all 50ms ease-in;
@@ -18,12 +65,15 @@
   -moz-transition-property: border-color,box-shadow;
   -o-transition-property: border-color,box-shadow;
   transition-property: border-color,box-shadow;
-  position: absolute;
-  top: -10px;
-  right: 20px;
   z-index: 1;
-  height: 28px;
-/*  width: 106px;*/
+}
+
+.emojiReaction:first-of-type{
+  margin-left: 0;
+}
+
+.emojiReaction:last-of-type{
+
 }
 
 .msgActions-container .msgActions-btn:first-of-type{
@@ -37,11 +87,21 @@
   border-bottom-right-radius: .375em;
 }
 
+.emojiReaction-btn{
+  padding: 1px 7px;
+  color: #ababab;
+}
+.emojiReaction-btn.userClicked{
+  color: #4e4ed6;
+}
 .msgActions-btn{
+  border-right: 1px solid #f2f2f2;
   padding: 3px 7px;
   color: #3f3f3f;
+}
+.msgActions-btn,
+.emojiReaction-btn{
   border: none;
-  border-right: 1px solid #f2f2f2;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   -ms-transition: all 50ms ease-in;
@@ -69,6 +129,25 @@
   background: rgba(248,248,248);
 }
 
+.reactionCount{
+  padding: 0 1px 0 3px;
+  display: inline-block;
+}
+.emojiIconTooltip-Container{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+.addReaction-icon,
 .msgAction-icon{
   position: relative;
   display: -webkit-inline-flex;
@@ -82,17 +161,79 @@
   -moz-justify-content: center;
   justify-content: center;
 }
+.emojiReaction-icon{
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.addReaction:hover,
+.addReaction-icon:hover,
 .msgAction-icon:hover{
   color: #4e4ed6;
 }
+.addReaction-icon:before,
 .msgAction-icon:before{
   display: inline-block;
-  font-family: Slack v2;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
 }
+
+.addReaction:focus .addReaction-icon,
+.addReaction:hover .addReaction-icon {
+  color: #f2c744;
+}
+
+.addReaction .showOnHover{
+  display: none;
+}
+
+.addReaction:hover .showOnHover{
+  display: block;
+  background: black;
+  width: 13px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.addReaction:hover .hideOnHover{
+  display: none;
+}
+
+.plusSign.addEmoji-bar,
+.plusSign.addEmoji-msgActions{
+  position: absolute;
+  margin-top: -18px;
+  right: 5px;
+  font-size: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.plusSign.addEmoji-bar{
+  border: #f2f2f2 solid 1px;
+  background: #f2f2f2;
+}
+.plusSign.addEmoji-msgActions{
+  border: #fff solid 1px;
+  background: #fff;
+}
+.addReaction:hover .plusSign.addEmoji-bar{
+  border: #fff solid 1px;
+  background: #fff;
+}
+
 #msgAction-star.clicked{
   color: #ffd004;
 }

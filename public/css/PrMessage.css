@@ -140,13 +140,13 @@
   }
 }*/
 .message-container.adjacent{
-  margin-top: -10px;
+  margin-top: -5px;
 }
 .message-container.adjacent:hover .msg-sent-time.adjacent{
   opacity: 1;
 }
 .message-content-box {
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
   text-align: left;
 }

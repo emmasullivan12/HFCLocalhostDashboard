@@ -441,9 +441,9 @@ function MentorSteps({userRole}) {
 
 // Dummy chat list data (this will eventually come from Postgres)
 const DUMMY_CHAT_LIST = [
-  {chatid: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
-  {chatid: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
-  {chatid: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10000', studentId: '12345', mentor: 'Dexter', mentee: 'Mentee', matchedTimestamp: '20181219', status: 'Prospela'},
+  {chatid: '10001', studentId: '12345', mentor: 'David', mentee: 'Mentee', matchedTimestamp: '20181219', status: 'ended'},
+  {chatid: '10002', studentId: '12345', mentor: 'Emily', mentee: 'Mentee', matchedTimestamp: '20181219', status: 'ended'},
 ];
 
 const DUMMY_GROUP_LIST = [
