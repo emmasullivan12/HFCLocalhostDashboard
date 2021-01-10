@@ -36,33 +36,78 @@ class MessageActions extends Component {
   }
 
   handleEmojiClick = (evt) => {
-  /*  let sym = evt.unified.split('-')
-    let codesArray = []
-    sym.forEach(el => codesArray.push('0x' + el))
-    let emojiPic = String.fromCodePoint(...codesArray)
+    const {msgID} = this.props;
+    alert(evt.colons + ' clicked');
+    /* If ({evt.colons} doesnt exist in message.reactions list for {msgID}) {
+         add new reaction to {msgID} i.e. (reaction.name = {evt.colons}, reaction.users = {myUID}, reaction.count = 1)
+       } else if (I {myUID} am already on the list of reaction.users for {msgID}) {
+           if (reaction.count = 1) {
+             delete reaction from list entirely for {msgID}
+           } else {
+             remove {myUID} from reaction.users and decrease count by 1 for {msgID}
+           }
+       } else {
+         add {myUID} to reaction.users list and increase count by 1 for {msgID}
+       }
+    */
 
-    this.setState((prevState) => {
-      return {
-        text: prevState.text + emojiPic,
-      };
-    })*/
-    alert('emoji clicked')
     this.setState({
       showEmojis: false
+    }, () => {
+      this.toggleMsgHover();
+      document.removeEventListener('mousedown', this.closeMenu);
     })
   }
 
-  showEmojis = (e) => {
+  toggleEmojis = (e) => {
+    e.persist();
+    const {showEmojis} = this.state
+    const currentState = showEmojis;
     this.setState({
-      showEmojis: true
-    }, () => document.addEventListener('click', this.closeMenu))
+      showEmojis: !currentState
+    }, () => {
+      if (this.state.showEmojis === true) {
+        this.toggleMsgHover(e);
+        document.addEventListener('mousedown', this.closeMenu);
+
+        // Check if message is positioned too near the bottom of screen (i.e. won't fit the EmojiPicker box)
+        const dropZone = document.getElementById('drop-zone');
+        const elOffsetTop = e.target.closest('.block-container').offsetTop;
+        const parentOffsetTop = dropZone.offsetTop;
+        const parentClientHeight = dropZone.clientHeight;
+        const parentScrollTop = dropZone.scrollTop;
+        const parentOffsetHeight = dropZone.offsetHeight;
+        const emojiPickerHeight = 423; // 423px
+        const nearBottomOfDiv = (parentOffsetHeight - parentScrollTop) < emojiPickerHeight;
+        const spaceAbove = elOffsetTop - parentScrollTop;
+        const spaceBelow = (parentClientHeight + parentScrollTop) - elOffsetTop;
+        const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+
+        // If not on mobile (where diff formatting applies)
+        if (screenWidth > 500) {
+          // SORT VERTICAL POSITIONING
+          // If not enough space below & (if not near the very scroll bottom of the div) has space above
+          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
+            // Make EmojiPicker appear above button just clicked but taking as much space below as poss
+            document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (emojiPickerHeight - spaceBelow) + "px"
+          }
+        }
+      } else {
+        this.toggleMsgHover(e);
+        document.removeEventListener('mousedown', this.closeMenu);
+      }
+    })
+
   }
 
   closeMenu = (e) => {
-    if (this.emojiPicker !== null && !this.emojiPicker.contains(e.target)) {
+    if (this.emojiPicker !== null && !this.emojiPicker.contains(e.target) && (!this.emojiPicker.closest('.addReaction-container').contains(e.target))) {
+      this.toggleMsgHover();
       this.setState({
         showEmojis: false
-      }, () => document.removeEventListener('click', this.closeMenu))
+      }, () => {
+        document.removeEventListener('mousedown', this.closeMenu);
+      })
     }
   }
 
@@ -70,12 +115,28 @@ class MessageActions extends Component {
     var key = e.key || e.keyCode
 
     if (key === 'Escape' || key === 'Esc' || key === 27) {
+      e.persist();
       this.setState({
         showEmojis: false
       })
+      this.toggleMsgHover(e);
+      document.removeEventListener('mousedown', this.closeMenu);
       this.addMessageNode.focus()
     } else {
       return;
+    }
+  }
+
+  // Prevents user being able to scroll on screen behind Modal
+  /*toggleScrollLock = () => document.getElementById('drop-zone').classList.toggle('u-lock-scroll');*/
+
+  // Maintains hover formatting on message emojipicker relates to
+  toggleMsgHover = (e) => {
+    if (e) {
+      e.target.closest('.block-container').classList.toggle('keepHover');
+    // If relates to remove event listener i.e. where can't use e.persist()
+    } else {
+      document.querySelector('.block-container.keepHover').classList.toggle('keepHover');
     }
   }
 
@@ -97,6 +158,7 @@ class MessageActions extends Component {
 
   render() {
     const {starClicked, showMoreActions, showEmojis} = this.state;
+
     return (
       <React.Fragment>
         <div className="msgActions-container">
@@ -124,31 +186,33 @@ class MessageActions extends Component {
             </div>
             <span className="tooltiptext last groups">Share post</span>
           </button>*/}
-          <button type="button" className="msgActions-btn tooltip addReaction" onClick={this.showEmojis} onKeyDown={this.showEmojis} ref={n => this.addMessageNode = n}>
-            <div className="msgAction-icon addReaction-icon">
-              <i className="hideOnHover far fa-smile" />
-              <i className="showOnHover fas fa-laugh" />
-            </div>
-            <svg width="5px" height="5px" viewBox="0 0 10 10" className="plusSign addEmoji-msgActions">
-              <line className="" x1="0" x2="10" y1="5" y2="5" />
-              <line className="" x1="5" x2="5" y1="0" y2="10" />
-            </svg>
-            <span className="tooltiptext last messageActions">Add reaction</span>
-          </button>
-          {showEmojis && (
-            /* The <div> element is just used as a container for EmojiPicker */
-            /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
-            <div className="emojiPickerContainer messageActions" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
-              <NimblePicker
-                onSelect={this.handleEmojiClick}
-                data={data}
-                title="Pick your emoji…"
-                emoji="point_up"
-                set="emojione"
-                autoFocus
-              />
-            </div>
-          )}
+          <div className="addReaction-container">
+            <button type="button" className="msgActions-btn tooltip addReaction" onClick={this.toggleEmojis} onKeyDown={this.toggleEmojis} ref={n => this.addMessageNode = n}>
+              <div className="msgAction-icon addReaction-icon">
+                <i className="hideOnHover far fa-smile" />
+                <i className="showOnHover fas fa-laugh" />
+              </div>
+              <svg width="5px" height="5px" viewBox="0 0 10 10" className="plusSign addEmoji-msgActions">
+                <line className="" x1="0" x2="10" y1="5" y2="5" />
+                <line className="" x1="5" x2="5" y1="0" y2="10" />
+              </svg>
+              <span className="tooltiptext last messageActions">Add reaction</span>
+            </button>
+            {showEmojis && (
+              /* The <div> element is just used as a container for EmojiPicker */
+              /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
+              <div className="emojiPickerContainer messageActions" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
+                <NimblePicker
+                  onSelect={this.handleEmojiClick}
+                  data={data}
+                  title="Pick your emoji…"
+                  emoji="point_up"
+                  set="emojione"
+                  autoFocus
+                />
+              </div>
+            )}
+          </div>
           {/*<button type="button" className="msgActions-btn tooltip moreActions" onMouseDown={this.toggleMoreActions}>
             <div className="msgAction-icon">
               <i className="fas fa-ellipsis-h" />

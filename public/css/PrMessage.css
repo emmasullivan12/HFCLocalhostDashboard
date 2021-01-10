@@ -80,10 +80,10 @@
   display:block;
 }
 
+.block-container.keepHover,
 .block-container:hover {
   background-color: rgba(242, 242, 242,.5);
 }
-
 .block-container:hover .msgActions-container{
   display:block;
 }

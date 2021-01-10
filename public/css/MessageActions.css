@@ -11,8 +11,7 @@
   border: .0625rem solid #f2f2f2;
   height: 25px;
   margin-top: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 6px;
 }
 
 .emojiReaction{
@@ -65,7 +64,7 @@
   -moz-transition-property: border-color,box-shadow;
   -o-transition-property: border-color,box-shadow;
   transition-property: border-color,box-shadow;
-  z-index: 1;
+  z-index: 2;
 }
 
 .emojiReaction:first-of-type{

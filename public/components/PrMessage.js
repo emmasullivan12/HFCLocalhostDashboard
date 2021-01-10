@@ -150,7 +150,7 @@ function StdMessage(props) {
                 <TextParser text={props.message.text} />
               </div>
               {showReactions && (
-                <EmojiReactions reactions={props.message.reactions}/>
+                <EmojiReactions msgID={props.message.id} reactions={props.message.reactions}/>
               )}
               <div className="msgStatus read">
                 &#10003; Seen
@@ -159,7 +159,7 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-            <MessageActions />
+            <MessageActions msgID={props.message.id}/>
           </div>
         ):(
           <div className="message-container">
@@ -182,7 +182,7 @@ function StdMessage(props) {
                 <TextParser text={props.message.text}/>
               </div>
               {showReactions && (
-                <EmojiReactions reactions={props.message.reactions}/>
+                <EmojiReactions msgID={props.message.id} reactions={props.message.reactions}/>
               )}
               <div className="msgStatus read">
                 &#10003; Seen
@@ -191,7 +191,7 @@ function StdMessage(props) {
                 &#10007; Error sending message. Please try again
               </div>
             </div>
-            <MessageActions />
+            <MessageActions msgID={props.message.id}/>
           </div>
         )
       }
@@ -232,7 +232,7 @@ function DisplayFile(props) {
               </div>
             </div>
             {showReactions && (
-              <EmojiReactions reactions={props.message.reactions}/>
+              <EmojiReactions msgID={props.message.id} reactions={props.message.reactions}/>
             )}
             <div className="msgStatus read">
               &#10003; Seen
@@ -241,7 +241,7 @@ function DisplayFile(props) {
               &#10007; Error sending message. Please try again
             </div>
           </div>
-          <MessageActions />
+          <MessageActions msgID={props.message.id}/>
         </div>
       </div>
     </React.Fragment>

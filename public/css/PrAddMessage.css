@@ -322,6 +322,12 @@ mark {
   right: 0;
   bottom: unset;
 }
+.emojiPickerContainer.msgReactions{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  bottom: unset;
+}
 
 @media only screen and (max-width: 500px) {
   .emojiPickerContainer{
@@ -329,6 +335,7 @@ mark {
     right: -webkit-calc((100vw - 346px)/2);
     right: -moz-calc((100vw - 346px)/2);
   }
+  .emojiPickerContainer.msgReactions,
   .emojiPickerContainer.messageActions{
     position: fixed;
     left: 50%;
