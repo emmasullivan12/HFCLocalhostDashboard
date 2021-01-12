@@ -73,41 +73,38 @@ class MessageActions extends Component {
         // Check if message is positioned too near the bottom of screen (i.e. won't fit the EmojiPicker box)
         const dropZone = document.getElementById('drop-zone');
         const elOffsetTop = e.target.closest('.block-container').offsetTop;
+      //  const elScrollTop = e.target.closest('.block-container').scrollTop;
         const parentOffsetTop = dropZone.offsetTop;
         const parentClientHeight = dropZone.clientHeight;
         const parentScrollTop = dropZone.scrollTop;
+        const parentScrollHeight = dropZone.scrollHeight;
         const parentOffsetHeight = dropZone.offsetHeight;
         const emojiPickerHeight = 423; // 423px
-        const nearBottomOfDiv = (parentOffsetHeight - parentScrollTop) < emojiPickerHeight;
-        console.log("space left within div:"+(parentOffsetHeight - parentScrollTop))
-        console.log("parentOffsetHeight:"+parentOffsetHeight)
-        console.log("parentScrollTop:"+parentScrollTop)
+        const nearBottomOfDiv = (parentScrollHeight - elOffsetTop - parentOffsetTop) < emojiPickerHeight;
+      //  console.log("space left within div:"+(parentScrollHeight - elOffsetTop - parentOffsetTop))
         const spaceAbove = elOffsetTop - parentScrollTop;
-    //    console.log("parentScrollTop: "+parentScrollTop)
-  //      console.log("parentClientHeight: "+parentClientHeight)
-    //    console.log("parentOffsetHeight: "+parentOffsetHeight)
-      //  console.log("elOffsetTop: "+elOffsetTop)
         const spaceBelow = (parentClientHeight + parentScrollTop) - elOffsetTop;
-        console.log("spaceBelow: "+spaceBelow)
+      //  console.log("spaceAbove: "+spaceAbove)
+      //  console.log("spaceBelow: "+spaceBelow)
         const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
 
         // If not on mobile (where diff formatting applies)
         if (screenWidth > 500) {
           // SORT VERTICAL POSITIONING
           // If not enough space below & (if not near the very scroll bottom of the div) has space above
-          console.log("spaceBelow < emojiPickerHeight: "+(spaceBelow < emojiPickerHeight))
-          console.log("nearBottomOfDiv: "+nearBottomOfDiv)
-          console.log("spaceAbove >= emojiPickerHeight: "+(spaceAbove >= emojiPickerHeight))
-//          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
-          if ((spaceBelow < emojiPickerHeight)) {
-            // If near top of the window, still show it below and force extra scroll at bottom
+      //   console.log("nearBottomOfDiv: "+nearBottomOfDiv)
+          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
+
+        /*  if ((spaceBelow < emojiPickerHeight)) {
+             If near top of the window, still show it below and force extra scroll at bottom
             if (spaceAbove < emojiPickerHeight) {
-              // Make EmojiPicker appear above button just clicked but taking as much space above as poss
+               Make EmojiPicker appear above button just clicked but taking as much space above as poss
               document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (spaceAbove - 10) + "px"
-            } else {
+            } else {*/
+
               // Make EmojiPicker appear above button just clicked but taking as much space below as poss
               document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (emojiPickerHeight - spaceBelow) + "px"
-            }
+          //  }
           }
         }
       } else {
