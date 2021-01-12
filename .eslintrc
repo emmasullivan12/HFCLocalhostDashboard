@@ -36,6 +36,7 @@
     "no-unused-vars": 0, // Need this on
     "no-console": 0, // Seems okay to remove (checks for console.logs etc)
     "no-control-regex": 0, // Need this on for URL Regex in PrAddMessage.js
+    "no-cond-assign": 0,
     "react/destructuring-assignment": 0, // Could do inline instead - Need this on as sometimes set this.state dynamically i.e. this.state[id+"hello"]
     "react/prop-types": 0,
     "react/forbid-prop-types": 0,

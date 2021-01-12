@@ -77,7 +77,7 @@ class PrMessagesList extends Component {
         subtype: 'prAuto',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is *emmas* message',
+        text: 'This is *emmas* message :smiley:s',
         prAuto: {
           title: 'prompt'
         }

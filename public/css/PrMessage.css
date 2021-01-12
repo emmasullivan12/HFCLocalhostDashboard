@@ -162,6 +162,10 @@
   font-size: 30px;
 }
 
+.msgText-link{
+  word-break: break-word;
+}
+
 .msg-extras-btns{
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;

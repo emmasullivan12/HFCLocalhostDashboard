@@ -73,17 +73,32 @@ class PrAddMessage extends Component {
     const el = document.getElementById('txtInput-box');
     const end = el.selectionEnd;
 
-    // Conver emoji unicode to emoji string
-    let sym = evt.unified.split('-')
-    let codesArray = []
-    sym.forEach(el => codesArray.push('0x' + el))
-    let emojiPic = String.fromCodePoint(...codesArray)
+    let emojiPic = evt.native
+
+    // Convert emoji unicode to emoji string
+  //  let sym = evt.unified.split('-')
+  //  let codesArray = []
+  //  sym.forEach(el => codesArray.push('0x' + el))
+//    let emojiPic = String.fromCodePoint(...codesArray)
 
     // Max of existing cursor position and 'end' which takes into account emojiPic.length
     const posToUse = Math.max(cursorPos, end)
 
     this.setState((prevState) => {
-      const string = prevState.text
+      const string = prevState.text;
+
+  /*    let match
+      while (match = colonsRegex.exec(string2)) {
+        console.log(match)
+        let colons = match[2]
+        let offset = match.index + match[1].length
+        let length = colons.length
+
+        console.log(colons)
+        console.log(offset)
+        console.log(length)
+      }*/
+
       return {
         text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
       };

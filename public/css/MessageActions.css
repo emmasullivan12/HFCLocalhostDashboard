@@ -71,7 +71,7 @@
   -moz-transition-property: border-color,box-shadow;
   -o-transition-property: border-color,box-shadow;
   transition-property: border-color,box-shadow;
-  z-index: 2;
+  /*z-index: 2;*/
 }
 
 .emojiReaction:first-of-type{

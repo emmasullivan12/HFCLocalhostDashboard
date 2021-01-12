@@ -79,17 +79,35 @@ class MessageActions extends Component {
         const parentOffsetHeight = dropZone.offsetHeight;
         const emojiPickerHeight = 423; // 423px
         const nearBottomOfDiv = (parentOffsetHeight - parentScrollTop) < emojiPickerHeight;
+        console.log("space left within div:"+(parentOffsetHeight - parentScrollTop))
+        console.log("parentOffsetHeight:"+parentOffsetHeight)
+        console.log("parentScrollTop:"+parentScrollTop)
         const spaceAbove = elOffsetTop - parentScrollTop;
+    //    console.log("parentScrollTop: "+parentScrollTop)
+  //      console.log("parentClientHeight: "+parentClientHeight)
+    //    console.log("parentOffsetHeight: "+parentOffsetHeight)
+      //  console.log("elOffsetTop: "+elOffsetTop)
         const spaceBelow = (parentClientHeight + parentScrollTop) - elOffsetTop;
+        console.log("spaceBelow: "+spaceBelow)
         const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
 
         // If not on mobile (where diff formatting applies)
         if (screenWidth > 500) {
           // SORT VERTICAL POSITIONING
           // If not enough space below & (if not near the very scroll bottom of the div) has space above
-          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
-            // Make EmojiPicker appear above button just clicked but taking as much space below as poss
-            document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (emojiPickerHeight - spaceBelow) + "px"
+          console.log("spaceBelow < emojiPickerHeight: "+(spaceBelow < emojiPickerHeight))
+          console.log("nearBottomOfDiv: "+nearBottomOfDiv)
+          console.log("spaceAbove >= emojiPickerHeight: "+(spaceAbove >= emojiPickerHeight))
+//          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
+          if ((spaceBelow < emojiPickerHeight)) {
+            // If near top of the window, still show it below and force extra scroll at bottom
+            if (spaceAbove < emojiPickerHeight) {
+              // Make EmojiPicker appear above button just clicked but taking as much space above as poss
+              document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (spaceAbove - 10) + "px"
+            } else {
+              // Make EmojiPicker appear above button just clicked but taking as much space below as poss
+              document.querySelector('.emojiPickerContainer.messageActions').style.top = "-" + (emojiPickerHeight - spaceBelow) + "px"
+            }
           }
         }
       } else {

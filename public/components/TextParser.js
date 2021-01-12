@@ -1,11 +1,35 @@
 // Dex last merged this code on 18th dec 2020
 
 import React, { Component } from "react";
+import { Emoji } from 'emoji-mart'
+
+
 
 class TextParser extends Component {
+/*  formatEmojis = (string) => {
+
+    let colonsRegex = /(^|\s)(:[a-zA-Z0-9-_+]+:(:skin-tone-[2-6]:)?)/g
+    const parsedString = string.replace(colonsRegex, function(match) {
+      const newEmoji = <Emoji emoji={match} size={16} />
+      console.log(newEmoji)
+      return newEmoji
+    })
+    return parsedString
+        //Emoji stuff
+        const newString = string.substring(0, posToUse) + emojiColons + string.substring(posToUse, string.length);
+        const string2 = 'Hello, how are you? 23 :thumbsup:';
+        let colonsRegex = /(^|\s)(:[a-zA-Z0-9-_+]+:(:skin-tone-[2-6]:)?)/g
+        const parsedString = string2.replace(colonsRegex, function(match) {
+          const newEmoji = <Emoji emoji={match} size={16} />
+          return newEmoji
+        })
+
+  }*/
+
   render() {
-    let text = this.props.text,
-        parsed, regex, paragraphs;
+    //let text = this.formatEmojis(this.props.text);
+    let text = this.props.text;
+    let parsed, regex, paragraphs;
 
     regex = {
       paragraph: /(\r\n|\r|\n)(?!-|>)/g,
@@ -46,7 +70,7 @@ class TextParser extends Component {
           )*/
           : str.split(regex.links).map((str) => { // Checks for URLs
             let parsedURL = regex.links.test(str)
-              ? (<a rel='external noopener noreferrer' target="_blank" href={(str.includes("http://") || str.includes("https://")) ? str : ("https://" + str)}>{str}</a>)
+              ? (<a className="msgText-link" rel='external noopener noreferrer' target="_blank" href={(str.includes("http://") || str.includes("https://")) ? str : ("https://" + str)}>{str}</a>)
               : str
             return parsedURL
           });
