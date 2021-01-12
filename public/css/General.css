@@ -390,6 +390,7 @@ div {
   font-weight: 600;
   padding-left: 10px;
   padding-right: 10px;
+  z-index: 2;
 }
 
 .tooltiptext.messageActions{
@@ -408,6 +409,7 @@ div {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+.tooltip .tooltiptext.last::after,
 .tooltip .tooltiptext.groups.last::after {
   left: unset;
   right: 13px;

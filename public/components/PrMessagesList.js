@@ -172,7 +172,36 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is dex message'
+        text: 'This is dex message',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+          {
+            name: ":heart_eyes:",
+            users: [
+              '23456',
+              '223458',
+              '223459',
+              '223460'
+            ],
+            count: 4
+          },
+        ]
       },
       {
         id: '100000',
@@ -190,7 +219,36 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message'
+        text: 'This is emmas message',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+          {
+            name: ":heart_eyes:",
+            users: [
+              '23456',
+              '223458',
+              '223459',
+              '223460'
+            ],
+            count: 4
+          },
+        ]
       },
       {
         id: '100002',
@@ -208,7 +266,36 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma',
         ts: '2020-09-02T13:30:50.667Z',
-        text: 'This is emmas message'
+        text: 'This is emmas message',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+          {
+            name: ":heart_eyes:",
+            users: [
+              '23456',
+              '223458',
+              '223459',
+              '223460'
+            ],
+            count: 4
+          },
+        ]
       },
       {
         id: '100004',
@@ -260,7 +347,36 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'dexter',
         ts: '2020-09-03T13:30:50.667Z',
-        text: 'This is dex message'
+        text: 'This is dex message',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+          {
+            name: ":heart_eyes:",
+            users: [
+              '23456',
+              '223458',
+              '223459',
+              '223460'
+            ],
+            count: 4
+          },
+        ]
       },
       {
         id: '100008',

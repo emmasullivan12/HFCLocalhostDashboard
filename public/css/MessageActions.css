@@ -1,4 +1,11 @@
 /* Dex last merged this code on 7th sept 2020 */
+
+.emojiReactions-container{
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
 .addReaction,
 .emojiReaction{
   display: inline-block;

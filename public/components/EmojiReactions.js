@@ -186,7 +186,7 @@ class EmojiReactions extends Component {
       <React.Fragment>
         <div className="emojiReactions-container">
           {reactionsArray}
-          <div className="addReaction absolute">
+          <div className="addReaction">
             <button type="button" className="emojiReaction-btn tooltip" onClick={this.toggleEmojis} onKeyDown={this.toggleEmojis} ref={n => this.addReactionNode = n}>
               <div className="addReaction-icon">
                 <i className="hideOnHover far fa-smile" />
@@ -196,7 +196,7 @@ class EmojiReactions extends Component {
                 <line className="" x1="0" x2="10" y1="5" y2="5" />
                 <line className="" x1="5" x2="5" y1="0" y2="10" />
               </svg>
-              <span className="tooltiptext emojiReactions">
+              <span className="tooltiptext last emojiReactions">
                 <span>Add reaction...</span>
               </span>
             </button>

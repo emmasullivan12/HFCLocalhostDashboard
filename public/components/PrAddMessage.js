@@ -32,6 +32,7 @@ class PrAddMessage extends Component {
       text: '',
       showEmojis: false,
       isMobile: checkMobile(),
+      cursorPos: '', // cursor position to enter emoji within string
   //    playMsgAudio: false
     }
 //    audio = new Audio(this.props.url)
@@ -68,15 +69,26 @@ class PrAddMessage extends Component {
   }*/
 
   handleEmojiClick = (evt) => {
+    const {cursorPos} = this.state;
+    const el = document.getElementById('txtInput-box');
+    const end = el.selectionEnd;
+
+    // Conver emoji unicode to emoji string
     let sym = evt.unified.split('-')
     let codesArray = []
     sym.forEach(el => codesArray.push('0x' + el))
     let emojiPic = String.fromCodePoint(...codesArray)
 
+    // Max of existing cursor position and 'end' which takes into account emojiPic.length
+    const posToUse = Math.max(cursorPos, end)
+
     this.setState((prevState) => {
+      const string = prevState.text
       return {
-        text: prevState.text + emojiPic,
+        text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
       };
+    }, () => {
+      el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji
     })
   }
 
@@ -321,8 +333,13 @@ class PrAddMessage extends Component {
   }
 
   showEmojis = (e) => {
+    // Set cursor position of textarea at moment Emoji box was opened
+    const el = document.getElementById('txtInput-box')
+    const cursorPos = el.selectionStart
+
     this.setState({
-      showEmojis: true
+      showEmojis: true,
+      cursorPos: cursorPos,
     }, () => document.addEventListener('click', this.closeMenu))
   }
 
