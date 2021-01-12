@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th sept 2020
+// Dex last merged this code on 12th jan 2021
 
 import React, { Component } from "react";
 import { Emoji, NimblePicker } from 'emoji-mart'
@@ -161,7 +161,7 @@ class EmojiReactions extends Component {
       const userClicked = reaction.users.includes(myUID);
       const emojiCount = reaction.count
       return (
-        <div className={"emojiReaction"  + (userClicked ? ' userClicked' : '')} key={index}>
+        <div className={"emojiReaction" + (userClicked ? ' userClicked' : '')} key={index}>
           <div className={"emojiReaction-btn tooltip" + (userClicked ? ' userClicked' : '')} onClick={() => this.handleReactionClick(userClicked, reaction.name)} onKeyDown={() => this.handleReactionClick(userClicked, reaction.name)}>
             <div className="emojiReaction-icon">
               <Emoji emoji={reaction.name} size={17}/>
