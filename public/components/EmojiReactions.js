@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th jan 2021
+// Dex last merged this code on 13th jan 2021
 
 import React, { Component } from "react";
 import { Emoji, NimblePicker } from 'emoji-mart'
@@ -26,9 +26,7 @@ class EmojiReactions extends Component {
         // Check if message is positioned too near the bottom of screen (i.e. won't fit the EmojiPicker box)
         const dropZone = document.getElementById('drop-zone');
         const el = e.target.closest('.block-container');
-      //  const reactionsBarHeight = e.target.closest('.emojiReactions-container').scrollHeight;
         const elOffsetTop = el.offsetTop;
-    //    const btnOffsetTop = e.target.offsetTop // position of addemojireactionbtn from top of it's parent i.e. el
         const parentOffsetTop = dropZone.offsetTop; // position from top of it's parent
         const parentClientHeight = dropZone.clientHeight; // Visible part of DropZone
         const parentScrollTop = dropZone.scrollTop; // How much have scrolled down
@@ -42,6 +40,7 @@ class EmojiReactions extends Component {
         const spaceToRight = (e.target.closest('.message-container').offsetWidth - e.target.closest('.addReaction').offsetLeft);
         const spaceToLeft = e.target.closest('.addReaction').offsetLeft;
         const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+
         // If not on mobile (where diff formatting applies)
         if (screenWidth > 500) {
           const addMsgReaction = document.querySelector('.emojiPickerContainer.msgReactions')

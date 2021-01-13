@@ -1,4 +1,4 @@
-// Dex last merged this code on 12th jan 2021
+// Dex last merged this code on 13th jan 2021
 
 import React, { Component } from "react";
 
@@ -78,7 +78,6 @@ class MessageActions extends Component {
         const parentClientHeight = dropZone.clientHeight;
         const parentScrollTop = dropZone.scrollTop;
         const parentScrollHeight = dropZone.scrollHeight;
-      //  const parentOffsetHeight = dropZone.offsetHeight;
         const emojiPickerHeight = 423; // 423px
         const nearBottomOfDiv = (parentScrollHeight - elOffsetTop - parentOffsetTop) < emojiPickerHeight;
         const spaceAbove = (elOffsetTop - parentScrollTop);
