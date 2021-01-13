@@ -412,7 +412,7 @@
   font-weight: 400;
   color: #616061;
   max-width: 100%;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
 /*.more-info-btn{

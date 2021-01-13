@@ -775,7 +775,7 @@ a.Submit-btn:disabled:active,
   font-weight: 400;
   color: #848484!important;
   max-width: 100%;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 .fileUploadDottedLine{
   border: 2px dotted #c0bfef;
@@ -812,6 +812,7 @@ a.Submit-btn:disabled:active,
 
 .textParser-container {
   margin: 0;
+  word-break: break-word;
 }
 
 .highlight-titleText{

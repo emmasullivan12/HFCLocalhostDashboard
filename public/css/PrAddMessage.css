@@ -140,7 +140,7 @@ mark {
 .highlights {
   color: transparent;
   white-space: pre-wrap;
-  word-wrap: break-word;
+  word-break: break-word;
 
   /* To make exactly the same as Textarea input box */
 /*  border: none;
@@ -340,7 +340,7 @@ mark {
     position: fixed;
     left: 50%;
     top: 50%;
-    bottom: 0;
+  /*  bottom: 0;*/
     right: unset;
     height: auto;
     transform: translate(-50%, -50%);

@@ -26,37 +26,44 @@ class EmojiReactions extends Component {
         // Check if message is positioned too near the bottom of screen (i.e. won't fit the EmojiPicker box)
         const dropZone = document.getElementById('drop-zone');
         const el = e.target.closest('.block-container');
+      //  const reactionsBarHeight = e.target.closest('.emojiReactions-container').scrollHeight;
         const elOffsetTop = el.offsetTop;
-        const parentOffsetTop = dropZone.offsetTop;
-        const parentClientHeight = dropZone.clientHeight;
-        const parentScrollTop = dropZone.scrollTop;
-        const parentOffsetHeight = dropZone.offsetHeight;
+    //    const btnOffsetTop = e.target.offsetTop // position of addemojireactionbtn from top of it's parent i.e. el
+        const parentOffsetTop = dropZone.offsetTop; // position from top of it's parent
+        const parentClientHeight = dropZone.clientHeight; // Visible part of DropZone
+        const parentScrollTop = dropZone.scrollTop; // How much have scrolled down
+        const parentScrollHeight = dropZone.scrollHeight; // Entire height of DropZone (even bits of screen)
         const emojiPickerHeight = 423; // 423px
         const emojiPickerWidth = 346; // 346px
-        const nearBottomOfDiv = (parentOffsetHeight - parentScrollTop) < emojiPickerHeight;
-        const spaceAbove = elOffsetTop - parentScrollTop;
-        const spaceBelow = (parentClientHeight + parentScrollTop) - elOffsetTop;
+        const blockHeightLessReactions = el.scrollHeight - e.target.scrollHeight;
+        const spaceBelow = parentScrollHeight - elOffsetTop - blockHeightLessReactions;
+        const spaceAbove = parentClientHeight - spaceBelow;
+        const nearBottomOfDiv = spaceBelow < emojiPickerHeight;
         const spaceToRight = (e.target.closest('.message-container').offsetWidth - e.target.closest('.addReaction').offsetLeft);
         const spaceToLeft = e.target.closest('.addReaction').offsetLeft;
         const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
-      //  const onSmallWidthScreen = ;
-
         // If not on mobile (where diff formatting applies)
         if (screenWidth > 500) {
           const addMsgReaction = document.querySelector('.emojiPickerContainer.msgReactions')
+
           // SORT VERTICAL POSITIONING
-          // If not enough space below & (if not near the very scroll bottom of the div) has space above
-          if ((spaceBelow < emojiPickerHeight) && (!nearBottomOfDiv ? (spaceAbove >= emojiPickerHeight) : true)) {
+          // If near bottom of div, there is no space to show below so show above
+          if (nearBottomOfDiv == true) {
+            addMsgReaction.style.top = "-" + (emojiPickerHeight + 10) + "px"
+
+          // If elsewhere in div, if not enough space below check enough space above (otherwise will just show it below and user has to scroll a little)
+          } else if ((spaceBelow < emojiPickerHeight) && (spaceAbove >= emojiPickerHeight)) {
             // Make EmojiPicker appear above button just clicked but taking as much space below as poss
-            addMsgReaction.style.top = "-" + ((emojiPickerHeight - spaceBelow) + el.offsetHeight) + "px"
+            //addMsgReaction.style.top = "-" + ((emojiPickerHeight - spaceBelow) + btnOffsetTop) + "px"
+            //addMsgReaction.style.top = "-" + ((emojiPickerHeight - spaceBelow) - (el.offsetHeight - reactionsBarHeight)) + "px"
+            addMsgReaction.style.top = "-" + ((emojiPickerHeight - spaceBelow)) + "px"
           }
 
           // SORT HORIZONTAL POSITIONING
           // If not enough space to the right
           if ((spaceToRight < emojiPickerWidth)) {
-            // Make EmojiPicker appear to left of button just clicked but taking as much space left as poss
-            // minus 36px (width of addReaction button)
-            addMsgReaction.style.left = "-" + ((emojiPickerWidth - spaceToRight - 36)) + "px"
+            // Make EmojiPicker appear to left of button just clicked but taking as much space left as poss + 15px margin
+            addMsgReaction.style.left = "-" + ((emojiPickerWidth - spaceToRight + 15)) + "px"
           }
 
         }

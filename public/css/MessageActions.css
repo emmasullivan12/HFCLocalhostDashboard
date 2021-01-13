@@ -27,6 +27,7 @@
 
 .addReaction{
   width: 38px;
+  position: relative;
 }
 
 .addReaction:hover,

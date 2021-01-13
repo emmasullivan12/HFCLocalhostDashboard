@@ -84,6 +84,7 @@
 .block-container:hover {
   background-color: rgba(242, 242, 242,.5);
 }
+.block-container.keepHover .msgActions-container,
 .block-container:hover .msgActions-container{
   display:block;
 }
@@ -242,7 +243,7 @@
   -moz-box-sizing: inherit;
   display: inline-block;
   width: 100%;
-  word-wrap: break-word;
+  word-break: break-word;
   font-size: 15px;
   letter-spacing: 0.275px;
 }

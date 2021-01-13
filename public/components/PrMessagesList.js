@@ -453,7 +453,26 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma-prospela',
         ts: '2020-09-03T14:30:50.667Z',
-        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?'
+        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+        ]
       },
       {
         id: '100015',
@@ -462,7 +481,26 @@ class PrMessagesList extends Component {
         subtype: 'std',
         author: 'emma-prospela',
         ts: '2020-09-03T15:30:50.667Z',
-        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?'
+        text: 'This is emma-prospela message. How is it going? Just trying to make this a super long message so I can try and see how its line spacing looks and improve on it. What do you think?',
+        reactions: [
+          {
+            name: ":santa::skin-tone-3:",
+            users: [
+              '23456',
+              '223457',
+            ],
+            count: 2
+          },
+          {
+            name: ":smiley:",
+            users: [
+              '23456',
+              '223458',
+              '223459'
+            ],
+            count: 3
+          },
+        ]
       },
       {
         id: '100016',

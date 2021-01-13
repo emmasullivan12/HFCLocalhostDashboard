@@ -103,7 +103,10 @@ class PrAddMessage extends Component {
         text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
       };
     }, () => {
+      console.log("start: "+cursorPos)
+      console.log("el.selectionEndBEFORE: "+el.selectionEnd)
       el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji
+      console.log("el.selectionEndAFTER: "+el.selectionEnd)
     })
   }
 
