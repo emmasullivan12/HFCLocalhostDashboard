@@ -74,6 +74,47 @@ function getChannelAbout(channelType, allowed) {
   }
 }
 
+function changeTitle(hasUnreads) {
+  if (hasUnreads) {
+    var title = document.title;
+    var newTitle = '(!) ' + title;
+    document.title = newTitle;
+  } else {
+    document.title = 'Prospela Dashboard'
+  }
+}
+
+function showNotifFavicon(numUnreads) {
+  // Favicon if user has notification
+  var iconNew = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Prospela_Favicon_Notification.png';
+
+  // Replace favicon for microsoft
+  document.getElementById('favicon-ms').content = iconNew;
+
+  // Replace all other favicons
+  var favicons = document.querySelectorAll('.favicon');
+  for (let i = 0; i < favicons.length; ++i) {
+    favicons[i].href = iconNew;
+  }
+
+  changeTitle(true);
+}
+
+function hideNotifFavicon() {
+  // Favicon if user doesnt have notification
+  var iconOrig = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Prospela_Favicon.png';
+
+  // Replace favicon for microsoft
+  document.getElementById('favicon-ms').content = iconOrig;
+
+  // Replace all other favicons
+  var favicons = document.querySelectorAll('.favicon');
+  for (let i = 0; i < favicons.length; ++i) {
+    favicons[i].href = iconOrig;
+  }
+
+  changeTitle(false);
+}
 
 // Disallows EdgeHTML / Edge Legacy
 function whichBrowser() {
@@ -254,4 +295,4 @@ const LoadingSpinner = () => (
   </div>
 )
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner};

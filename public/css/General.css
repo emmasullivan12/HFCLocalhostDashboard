@@ -91,6 +91,147 @@ Extra large devices (large laptops and desktops, 1200px and up)
   }
 }
 
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  .messages-panel{
+    background-color: #3f3f3f!important;
+  /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
+  }
+  .message-content{
+    color: #b9b9b9!important;
+  }
+  .page-header {
+    border-bottom: 1px solid #6d6d6d!important;
+    background: #272727!important;
+  }
+  .chat-title {
+    color: #d9d9d9!important;
+  }
+  .channel-title {
+    color: #d9d9d9!important;
+  }
+  .msg-thumb.noPic.isntMe {
+    background-color: rgb(156, 134, 212)!important;
+    background-color: rgb(156 134 212 / 50%)!important;
+  }
+  .msg-thumb.noPic.isMe {
+    background-color: #9e90c3!important;
+  }
+  .file-title-container{
+    color: #b9b9b9!important;
+  }
+  .msg-img-overlay {
+    background: #3f3f3f!important;
+  }
+  .down-arrow-img-icon{
+    color: #b9b9b9!important;
+  }
+  .block-container:hover {
+    background-color: rgb(121 121 121 / 50%)!important;
+  }
+  .block-container.keepHover {
+    background-color: rgb(121 121 121 / 50%)!important;
+  }
+  .sender-name{
+    color: #b9b9b9!important;
+  }
+  .sender-name.isProspela{
+    color: #7676ff!important;
+  }
+  .prAutoMsgTitle {
+    color: #8c8cea!important;
+  }
+  .prauto-msg-container {
+    background-color: rgb(101 101 101 / 41%)!important;
+  }
+  .separator__text {
+    background: #4f4f4f!important;
+    color: #b9b9b9!important;
+  }
+  .separator__text.go2NewMsgs {
+    background-color: #e22e48!important;
+    color: #fff!important;
+  }
+  .addReaction {
+    background: #696969!important;
+    border: .0625rem solid #929292!important;
+  }
+  .emojiReaction {
+    background: #696969!important;
+    border: .0625rem solid #929292!important;
+  }
+  .chatWindow-footer {
+    background-color: #3f3f3f!important;
+  }
+  .input-box-container {
+    border: 1px solid #6d6d6d!important;
+  }
+  .emojiContainer{
+    color: #797979!important;
+  }
+  .attachmentContainer {
+    color: #797979!important;
+  }
+  .picContainer {
+    color: #797979!important;
+  }
+  .msgInsights-bar-left {
+    color: #797979!important;
+  }
+  .msgInsights-bar-right {
+    color: #797979!important;
+  }
+  .input-box{
+    color: #b9b9b9!important;
+  }
+  .tooltip .tooltiptext {
+    background-color: #b9b9b9!important;
+    color: #3f3f3f!important;
+  }
+  .tooltip .tooltiptext::after {
+    border-color: #b9b9b9 transparent transparent transparent!important;
+  }
+  .emojiReaction.userClicked {
+    background-color: #9292d6!important;
+    border-color: #4e4ed6!important;
+  }
+  .msgActions-container {
+    background: #949191!important;
+    border: .0625rem solid #616161!important;
+  }
+  .plusSign {
+    stroke: #d6d6d6!important;
+  }
+  .plusSign.addEmoji-msgActions {
+    border: #696969 solid 1px!important;
+    background: #696969!important;
+  }
+  .whiteFadedText {
+    color: rgb(72 72 72 / 63%)!important;
+  }
+  a.Submit-btn {
+    color: #fff!important;
+    background: #76c1b3!important;
+  }
+  .Submit-btn {
+    color: #fff!important;
+    background: #76c1b3!important;
+  }
+  .flex-container-overlay.group {
+    background-color: #272727;
+  }
+  .group-detail-item.bright {
+    color: #797979;
+  }
+  .presenceIndicator {
+    background: #272727;
+  }
+ /*@media screen and (min-width: 758px) {
+   #drop-zone{
+     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark.png)!important;
+   }
+ }*/
+}
 
 /* FONT */
 html{

@@ -103,10 +103,8 @@ class PrAddMessage extends Component {
         text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
       };
     }, () => {
-      console.log("start: "+cursorPos)
-      console.log("el.selectionEndBEFORE: "+el.selectionEnd)
-      el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji
-      console.log("el.selectionEndAFTER: "+el.selectionEnd)
+      el.selectionStart = end + emojiPic.length; // Moves cursor after newly inserted emoji (start pos)
+      el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji (end pos)
     })
   }
 
@@ -178,7 +176,7 @@ class PrAddMessage extends Component {
 
   resetPrAddMessage = () => {
     let value = "";
-    this.messageChange(value)
+    this.messageChange(value, true)
   }
 
   handleMessageChange = (e) => {
@@ -186,12 +184,14 @@ class PrAddMessage extends Component {
     this.messageChange(value)
   }
 
-  messageChange = (value) => {
+  messageChange = (value, hardReset) => {
   //  const isUnder18Chat = true;
     const country = 'GBR'
     const userRole = 'mentor'
     const isGroup = this.props.isGroup;
-    const addmsgbox = document.getElementById("txtInput-box");
+    const addmsgbox = this.addMessageNode;
+    var msgInsights = document.getElementById('msgInsights-bar-right');
+    var msgCount = document.getElementById("prAddMessageCount");
 
     this.setState({
       text: value
@@ -261,31 +261,40 @@ class PrAddMessage extends Component {
       }
     }
 
-    //  if (isUnder18Chat === true) {
-    if (userRole === 'mentor') {
-      checkEmailPhoneSharing()
-    }
+    if (hardReset != true) {
+      //  if (isUnder18Chat === true) {
+      if (userRole === 'mentor') {
+        checkEmailPhoneSharing()
+      }
 
-    // Show the bold/italics/highlight key
-    var msgInsights = document.getElementById('msgInsights-bar-right');
-    if (value.length > 0) {
-      msgInsights.classList.add("show");
+      // Show the bold/italics/highlight key
+      if (value.length > 0) {
+        msgInsights.classList.add("show");
+      } else {
+        msgInsights.classList.remove("show");
+        msgCount.style.display = 'none';
+      }
+
+      // Expand height of box & add scroll if needed
+      addmsgbox.style.height = '20px';
+      addmsgbox.style.height = (addmsgbox.scrollHeight) + 'px';
+      if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
+        addmsgbox.style.overflowY = "scroll";
+      }
+
+      // Show the chraacter counter if goes over 1 line
+      if (addmsgbox.scrollHeight > 26) {
+        document.getElementById("prAddMessageCount").style.display = 'block'
+      } else {
+        document.getElementById("prAddMessageCount").style.display = 'none'
+      }
+
     } else {
+      // Reset inbox box back to normal
+      addmsgbox.style.height = '25px';
       msgInsights.classList.remove("show");
-      document.getElementById("prAddMessageCount").style.display = 'none'
-    }
-
-    addmsgbox.style.height = '20px';
-    addmsgbox.style.height = (addmsgbox.scrollHeight) + 'px';
-    if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
-      addmsgbox.style.overflowY = "scroll";
-    }
-
-    // Show the chraacter counter if goes over 1 line
-    if (addmsgbox.scrollHeight > 26) {
-      document.getElementById("prAddMessageCount").style.display = 'block'
-    } else {
-      document.getElementById("prAddMessageCount").style.display = 'none'
+      msgCount.style.display = 'none';
+      addmsgbox.focus()
     }
 
     // Position the red "newmsgsbelowbtn" to always be 5px above the PrAddMessage container

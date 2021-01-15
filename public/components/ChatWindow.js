@@ -104,12 +104,10 @@ class ChatWindow extends Component {
 
       // Hide any new message red buttons
       if (this.state.newMsgsBelow == true) {
-        console.log("Hiding newmsgsbelow btn")
         this.hideNewMsgsNotif('below')
       }
 
       if (this.state.newMsgsAbove == true) {
-        console.log("Hiding newmsgsabove btn")
         this.hideNewMsgsNotif('above')
       }
 

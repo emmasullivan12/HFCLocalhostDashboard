@@ -20,7 +20,7 @@ import ChatMenu from "./ChatMenu";
 import GroupsMenu from "./GroupsMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
-import {LoadingSpinner} from './GeneralFunctions.js';
+import {LoadingSpinner, showNotifFavicon, hideNotifFavicon} from './GeneralFunctions.js';
 import MainMenu from "./MainMenu";
 import MentorHomePage from './MentorHomePage.js';
 import MenuModal from "./MenuModal";
@@ -202,6 +202,9 @@ class Dashboard extends Component{
     }
   }
 
+  onMouseDown = () => {
+    showNotifFavicon()
+  }
 //  updateActiveMenu(e) {
 //    e.persist()
 //    this.closeMenu(e)
@@ -274,7 +277,7 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole} onClick={this.closeMenu}/>
+                    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/>
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.closeMenu} />
                     <div className="menuBreak"/>

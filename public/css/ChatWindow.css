@@ -210,7 +210,8 @@
   height: -webkit-calc(100% - 53px - 74px);
   height: -moz-calc(100% - 53px - 74px);
   height: calc(100% - 53px - 74px);
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);
+  /*background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background_150.png);*/
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png);
   background-size: 130px;
   padding-bottom: 10px;
 }
@@ -314,7 +315,8 @@
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/File%20Upload_350.png);
   }
   .messages-panel{
-    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);
+  /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat%20Background.png);*/
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark.png);
   }
 }
 @media screen and (min-width: 1200px) {
