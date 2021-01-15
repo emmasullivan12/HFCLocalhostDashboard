@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th oct 2020
+// Dex last merged this code on 15th jan 2021
 
 import React, { Component } from "react";
 import {
@@ -31,7 +31,7 @@ const MentorProfileModalProps = {
 class MainMenu extends Component {
 
   render() {
-  const {userRole, onClick, onMouseDown} = this.props;
+  const {userRole, onClick} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
       return (
@@ -46,7 +46,7 @@ class MainMenu extends Component {
     } else {
       return (
         <div className="mainMenu">
-          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onMouseDown={onMouseDown} onClick={onClick}>Get Started</NavLink>
+          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Get Started</NavLink>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
       {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />

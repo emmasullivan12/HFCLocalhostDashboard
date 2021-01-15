@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th jan 2021
+// Dex last merged this code on 15th jan 2021
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -284,9 +284,9 @@ class PrAddMessage extends Component {
 
       // Show the chraacter counter if goes over 1 line
       if (addmsgbox.scrollHeight > 26) {
-        document.getElementById("prAddMessageCount").style.display = 'block'
+        msgCount.style.display = 'block'
       } else {
-        document.getElementById("prAddMessageCount").style.display = 'none'
+        msgCount.style.display = 'none'
       }
 
     } else {
@@ -294,7 +294,7 @@ class PrAddMessage extends Component {
       addmsgbox.style.height = '25px';
       msgInsights.classList.remove("show");
       msgCount.style.display = 'none';
-      addmsgbox.focus()
+      addmsgbox.focus();
     }
 
     // Position the red "newmsgsbelowbtn" to always be 5px above the PrAddMessage container
