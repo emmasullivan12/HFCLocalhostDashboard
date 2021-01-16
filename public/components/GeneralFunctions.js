@@ -74,10 +74,10 @@ function getChannelAbout(channelType, allowed) {
   }
 }
 
-function changeTitle(hasUnreads) {
-  if (hasUnreads) {
+function changeTitle(numUnreads) {
+  if (numUnreads > 0) {
     var title = document.title;
-    var newTitle = '(!) ' + title;
+    var newTitle = '(' + numUnreads + ') ' + title;
     document.title = newTitle;
   } else {
     document.title = 'Prospela Dashboard'
@@ -97,7 +97,7 @@ function showNotifFavicon(numUnreads) {
     favicons[i].href = iconNew;
   }
 
-  changeTitle(true);
+  changeTitle(numUnreads);
 }
 
 function hideNotifFavicon() {
@@ -113,7 +113,7 @@ function hideNotifFavicon() {
     favicons[i].href = iconOrig;
   }
 
-  changeTitle(false);
+  changeTitle(0);
 }
 
 // Disallows EdgeHTML / Edge Legacy

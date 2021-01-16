@@ -4,6 +4,7 @@ import React, { Component } from "react";
 //import MenteeProfileContent from './MenteeProfileContent.js';
 //import MentorProfileContent from './MentorProfileContent.js';
 import FullPageModal from './FullPageModal.js';
+import {usercdn, userAvatarsFolder} from './CDN.js';
 
 import "../css/General.css";
 //import "../css/Modal.css";
@@ -35,11 +36,31 @@ class UserName extends Component {
     //const senderRole = 'mentor';
     const isMe = userUID === myUid ? 'isMe' : 'isntMe';
 
+    const users = {
+      uid: '99999',
+    //  profilepic: '',
+      profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+    //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
+    //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
+    //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
+    };
+    const isPicSet = users.profilepic != '';
+    function createProfPicURL(string) {
+    //  let picSizeToShow = 40;
+    //  return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
+      return usercdn.concat('/',userAvatarsFolder,string);
+    }
+    const profPicSrc = createProfPicURL(users.profilepic);
     return (
       <React.Fragment>
-        <span className={"sender-name" + ((isProspelaAuto || isProspelaTeam == true) ? ' isProspela' : '') + (isFounder == true ? ' isFounder' : '') + (isPM == true ? ' isPM' : '') + (showOnline == true ? ' showOnline' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
+        <div className={"sender-name tooltip" + ((isProspelaAuto || isProspelaTeam == true) ? ' isProspela' : '') + (isFounder == true ? ' isFounder' : '') + (isPM == true ? ' isPM' : '') + (showOnline == true ? ' showOnline' : '')  + (smallIdle == true ? ' smallIdle' : '')} >
           {name}
-        </span>
+          <div className="tooltiptext">
+            <div className="msg-thumb img-square" style={{backgroundImage:"url(" + profPicSrc + ")"}}/>
+            {fnameLocal} {lnameLocal}
+            <div>userrole & company</div>
+          </div>
+        </div>
       {/*  {isMe === 'isMe' ? (
           <span className="sender-name">{userName}</span>
           )

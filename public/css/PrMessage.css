@@ -97,16 +97,65 @@
 /*  padding-top: 12rem;
   margin-top: -12rem;*/
 }
-.block-container.dateHeader{
-  z-index: 1;
+:root {
+  /*--default-padding: 8px;*/
+  --header-height: 39px;
+  --sticky-pos: 8px;
+}
+.stickyDateHeader {
   position: -webkit-sticky;
   position: sticky;
-  top: -15px;
+
+  /*padding: 0 var(--default-padding); WORKED WITH THIS ON */
+}
+.sticky_sentinel {
+  /*background: yellow;*/
+  position: absolute;
+  left: 0;
+  right: 0; /* needs dimensions */
+  visibility: hidden;
+}
+.sticky_sentinel--top {
+  /* Adjust the height and top values based on your on your sticky top position.
+  e.g. make the height bigger and adjust the top so observeHeaders()'s
+  IntersectionObserver fires as soon as the bottom of the sentinel crosses the
+  top of the intersection container. */
+  height: 10px; /* 15px */
+  /*background-color: yellow;*/
+  margin-top: 10px; /* top: -17px */
+}
+.sticky_sentinel--bottom {
+  /* Height should match the top of the header when it's at the bottom of the
+  intersection container. */
+  height: calc(var(--header-height) + 8px); /* Same as StickyDateHeaders top WORKED WITH DIDNT INCLUDE THE 8PX*/
+  background-color: red;
+/*  bottom: 0;*/
+}
+.sticky_sentinel.sticky_sentinel--bottom:first-of-type{
+  display: none;
+}
+.block-container.dateHeader{
+  z-index: 1;
+  top: -8px; /* Sentinels adjust based on this position. WORKED WITH THIS OFF */
+  height: var(--header-height);
+  /*top: -26px;*/
+  /*top: -8px;*/
 }
 .block-container.dateHeader:hover,
 #newMsgs:hover,
 .block-container.go2NewMsgs:hover{
   background-color: transparent;
+}
+.block-container.dateHeader.isPinned{
+  /*background-color: blue;*/
+}
+.block-container.dateHeader.isPinned hr{
+  visibility: hidden
+}
+.block-container.dateHeader.shadow .separator__text {
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
 }
 .block-container.go2NewMsgs{
   position: -webkit-sticky;
@@ -190,6 +239,8 @@
   font-size: 15px;
   vertical-align: bottom;
   line-height: 15px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .sender-name.isProspela {
@@ -342,7 +393,8 @@
 
 .date-separator{
   height: 2em;
-  margin: 1rem 0 0;
+  margin: 0;
+  padding-top: 10px;
   position: relative;
   text-align: center;
   z-index: 0;
@@ -385,9 +437,9 @@
   z-index: 1000;
   width: 200px;
   border: 1px solid #cccccc;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+/*  box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
-  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.03);*/
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

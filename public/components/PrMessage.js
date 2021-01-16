@@ -519,6 +519,7 @@ class PrMessage extends Component {
   render() {
   const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto, isFounder, isPM, isProspelaTeam} = this.props;
 
+  /*border-color: red;*/
     return (
       <React.Fragment>
         {message.id==='100004' && (
@@ -532,14 +533,18 @@ class PrMessage extends Component {
           </div>
         )}
         {showDateHeader && (
-          <div className="block-container dateHeader">
-            <div className="date-separator">
-              <hr className="separator__hr" />
-              <div className="separator__text">
-                <span><DateCalc time={message.ts} /></span>
+          <React.Fragment>
+            <div className="sticky_sentinel sticky_sentinel--bottom"/>
+            <div className="sticky_sentinel sticky_sentinel--top"/>
+            <div className="block-container dateHeader stickyDateHeader">
+              <div className="date-separator">
+                <hr className="separator__hr" />
+                <div className="separator__text">
+                  <span><DateCalc time={message.ts} /></span>
+                </div>
               </div>
             </div>
-          </div>
+          </React.Fragment>
         )}
         <PrMessageContents
           message={message}

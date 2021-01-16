@@ -66,6 +66,7 @@ class ChatWindow extends Component {
       newMsgsBelow: true,
       newMsgsAbove: true,
       observerIsOn: false,
+      prevIndexOfLatest: '',
       /* dragFiles: '', */
     }
     this.observer;
@@ -84,6 +85,56 @@ class ChatWindow extends Component {
   componentDidMount() {
     window.addEventListener("resize", this.updateDevice);
     this.handleUnreads();
+  //  this.formatDateHeaders();
+
+    // Turn on IntersectionObservers for dateheaders
+    const container = document.getElementById('drop-zone');
+    this.notifyWhenStickyHeadersChange(container);
+
+    document.addEventListener('sticky-change', e => {
+      const {prevIndexOfLatest} = this.state;
+
+      // Update sticking header title.
+      const [header, stuck] = [e.detail.target, e.detail.stuck];
+      const parentNode = header.parentNode;
+      var dateHeaders = parentNode.getElementsByClassName('dateHeader')
+
+        // Add "isPinned" status to latest dateheader
+        header.classList.toggle('isPinned', stuck);
+        header.classList.add('shadow');
+
+        // Find index of current header within array of all dateHeaders
+        const indexOfLatest = Array.prototype.indexOf.call(dateHeaders, header);
+        const userScrollingDown = prevIndexOfLatest != '' && (indexOfLatest >= prevIndexOfLatest)
+
+        // Remove all dateHeader "isPinned" and "shadow" status except current and previous (as otherwise previous was disappearing too soon)
+        Array.prototype.forEach.call(dateHeaders, (dateHeader, index) => {
+
+        //  const indexOfLatestDateHeader = (dateHeader == header) ? index : 0
+        //  if ((index < indexOfLatestDateHeader - 1))  {
+          if (userScrollingDown) {
+
+            // Remove shadow of earlier headers
+            if (index < (indexOfLatest - 1)) {
+              dateHeader.classList.remove('shadow');
+            }
+
+          // If scrollup, Add shadow of earlier headers
+          } else if (index == (indexOfLatest - 1) || (index == indexOfLatest)) {
+            dateHeader.classList.add('shadow');
+          // If scrollup, Remove shadow of headers below
+          } else if (index > (indexOfLatest + 1)) {
+            dateHeader.classList.remove('shadow');
+          }
+
+        });
+
+        this.setState({
+          prevIndexOfLatest: indexOfLatest
+        });
+
+    //  }
+    });
   }
 
   componentDidUpdate(prevProps) {
@@ -116,6 +167,9 @@ class ChatWindow extends Component {
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDevice);
+
+    // Unobserve all headerObserver elements
+    this.headerObserver.disconnect();
   }
 
   handleUnreads = () => {
@@ -126,13 +180,13 @@ class ChatWindow extends Component {
       const newMsgsBanner = document.getElementById('newMsgs')
       //this.observer.disconnect() // This is in live server
       if (!observerIsOn) {
-        this.observer = this.createObserver()
+        this.observer = this.createNewMsgBannerObserver()
         this.observer.observe(newMsgsBanner);
       }
     }
   }
 
-  createObserver = () => {
+  createNewMsgBannerObserver = () => {
     let options = {
       threshold: 1
     }
@@ -171,6 +225,124 @@ class ChatWindow extends Component {
     return observer
   }
 
+  /**
+   * Notifies when elements that have the class `sticky` begin to stick or not.
+   * Note: these should be children of the `container` element.
+   */
+  notifyWhenStickyHeadersChange = (container) => {
+    this.observeHeaders(container);
+  //  this.observeFooters(container);
+  }
+
+  /**
+   * Dispatches a `sticky-event` custom event on the element.
+   * @param {boolean} stuck
+   * @param {!Element} target Target element of event.
+   */
+  fire = (stuck, target) => {
+    const evt = new CustomEvent('sticky-change', {detail: {stuck, target}});
+    document.dispatchEvent(evt);
+  }
+
+  /**
+   * Sets up an intersection observer to notify when elements with the class
+   * `.sticky_sentinel--top` become visible/invisible at the top of the container.
+   */
+  observeHeaders = (container) => {
+    let options = {
+      threshold: 1,
+      root: container
+    }
+
+    const headerObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const targetInfo = entry.boundingClientRect;
+        const stickyTarget = entry.target.nextElementSibling; // Sentinel top must always be directly next to the dateheader
+        const rootBoundsInfo = entry.rootBounds;
+
+        if (targetInfo.bottom < rootBoundsInfo.top) {
+          this.fire(true, stickyTarget);
+        }
+
+        if ((targetInfo.bottom >= rootBoundsInfo.top) && (targetInfo.bottom < rootBoundsInfo.bottom)) {
+          this.fire(false, stickyTarget);
+        }
+      });
+    }, options);
+
+    // Add the bottom sentinels to each section and attach an observer.
+    const sentinels = document.querySelectorAll(".sticky_sentinel--top");
+    sentinels.forEach(el => headerObserver.observe(el));
+  }
+
+  /**
+   * Sets up an intersection observer to notify when elements with the class
+   * `.sticky_sentinel--bottom` become visible/invisible at the botton of the
+   * container.
+   */
+/*  observeFooters = (container) => {
+    let options = {
+      // rootMargin: '16px',
+      // Get callback slightly before element is 100% visible/invisible.
+      threshold: 1,
+      root: container
+    }
+    const footerObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const targetInfo = entry.boundingClientRect;
+      /*  var span = document.getElementsByClassName('button')[4], // one of the "button" spans
+          div = span.parentNode, // get the span's parent div
+          ele,  // variable to hold the element we are looking for
+          temp; // temp var for the loop
+
+        while ((div = div.previousSibling) !== null) {  // Loop through all the previous divs
+            temp = div.firstChild;  // get the div's children
+            if (temp && temp.className === 'elementToGet') { // does it's 1st child have the class?
+                ele = temp;  // we found it!
+                break;
+            }
+        }
+*/
+  /*      let parentNode = entry.target.parentNode;
+        let temp, ele
+        while ((parentNode = parentNode.previousSibling) !== null) {
+          temp = parentNode.firstChild;
+          if (temp && temp.classList.contains('dateHeader')) {
+            ele = temp;
+            break;
+          }
+        }
+        //const stickyTarget = entry.target.nextElementSibling.nextElementSibling;
+        const stickyTarget = ele;
+        console.log(stickyTarget)
+        const rootBoundsInfo = entry.rootBounds;
+        const ratio = entry.intersectionRatio;
+
+        if (targetInfo.bottom > rootBoundsInfo.top && ratio === 1) {
+          this.fire(true, stickyTarget);
+        }
+
+        if (targetInfo.top < rootBoundsInfo.top && targetInfo.bottom < rootBoundsInfo.bottom) {
+              console.log("offscreen")
+          this.fire(false, stickyTarget);
+        }
+      });
+    }, options);
+
+    // Add the bottom sentinels to each section and attach an observer.
+    const sentinels = document.querySelectorAll("sticky_sentinel--bottom");
+    sentinels.forEach(el => footerObserver.observe(el));
+  }
+*/
+/*  formatDateHeaders = () => {
+    const dateHeaders = document.querySelectorAll(".block-container.dateHeader")
+    const container = document.getElementById("drop-zone");
+
+    let options = {
+      threshold: 0,
+      root: container
+    }
+*/
   updateDevice = () => {
     this.setState({
       isDevice: checkDevice(),
@@ -188,10 +360,11 @@ class ChatWindow extends Component {
 
   onScroll = () => {
     const { scrollRef } = this;
-    const scrollTop = this.scrollRef.current.scrollTop;
-    if (scrollTop < 250) {
+  //  const scrollTop = this.scrollRef.current.scrollTop;
+    /*if (scrollTop < 250) {
       this.setState({isLoadingMsgs: true});
-    }
+    }*/
+
   };
 
   handleLastPic = () => {

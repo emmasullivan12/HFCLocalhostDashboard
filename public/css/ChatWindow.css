@@ -200,7 +200,7 @@
 }
 
 .messages-panel{
-  padding-top: 1rem;
+  /*padding-top: 20px;*/
   overflow-y:auto;
   position:relative;
   box-sizing: inherit;
