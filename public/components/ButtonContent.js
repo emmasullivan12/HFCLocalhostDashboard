@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import {X, Check} from "./GeneralFunctions.js";
 import "../css/ButtonContent.css";
 
 function ButtonContent(props) {
@@ -91,6 +92,14 @@ function ButtonContent(props) {
           See Full Profile...
         </div>
       );
+    case 'signupToReview-accept':
+      return (
+        <Check />
+      )
+    case 'signupToReview-reject':
+      return (
+        <X />
+      )
     default:
       return <div className="overflow-ellipsis">{text}</div>
   }

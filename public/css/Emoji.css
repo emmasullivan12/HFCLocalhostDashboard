@@ -16,6 +16,11 @@
   height: 20px;
 }
 
+.emoji-icon.sml{
+  width: 15px;
+  height: 15px;
+}
+
 .emoji-icon.successBox{
   margin: auto;
   float: unset;

@@ -458,6 +458,18 @@ div {
 .marginRight {
   margin-right: 1rem;
 }
+.noMarginL{
+  margin-left: 0!important;
+}
+.noMarginR{
+  margin-right: 0!important;
+}
+.noMarginT{
+  margin-top: 0!important;
+}
+.noMarginB{
+  margin-bottom: 0!important;
+}
 .paddingBtm{
   padding-bottom: 10px;
 }
@@ -472,6 +484,9 @@ div {
 }
 .noPaddingB{
   padding-bottom: 0!important;
+}
+.alignVrtl-middle{
+  vertical-align: middle;
 }
 .overflow-ellipsis{
   white-space: nowrap;

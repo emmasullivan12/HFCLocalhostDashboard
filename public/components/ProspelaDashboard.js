@@ -9,6 +9,7 @@ import {
   Route,
   BrowserRouter,
   Redirect,
+  NavLink,
   Switch
 } from "react-router-dom";
 /*import store from "../store/configureStore";
@@ -20,8 +21,10 @@ import MenuModal from "./MenuModal";
 import Modal from "./Modal";
 import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
+import ReviewSignups from "./ReviewSignups";
 import SendNotifModalContent from './SendNotifModalContent.js';
 import SubmitMatchContent from './SubmitMatchContent.js';
+import PrDashboard from "./PrDashboard.js";
 import ProspelaMenuContent from "./ProspelaMenuContent";
 
 const MenuModalContent = (
@@ -60,7 +63,6 @@ class ProspelaDashboard extends Component{
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
-    this.updateActiveMenu = this.updateActiveMenu.bind(this);
   }
 
   componentDidMount() {
@@ -194,9 +196,13 @@ class ProspelaDashboard extends Component{
                     <Modal {...SendNotifModalProps}>
                       <SendNotifModalContent />
                     </Modal>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' onClick={this.closeMenu}/>
+                    <div className="mainMenu">
+                      <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
+                      <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Review Signups</NavLink>
+                    </div>
+              {/*}      <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' onClick={this.closeMenu}/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' onClick={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' onClick={this.closeMenu}/>*/}
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -220,10 +226,12 @@ class ProspelaDashboard extends Component{
             </div>
             <div className="clientWindowContainer col-s-12" role="button" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
-                <Redirect exact from="/" to="/prospelaBotHomepage" />,
+                <Redirect exact from="/" to="/prospela-dashboard" />,
+                <Route path="/prospela-dashboard" component={PrDashboard}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
+                <Route path="/review-signups" component={ReviewSignups}/>
                 <Route component={NotFound}/>
               </Switch>
             </div>
