@@ -43,13 +43,22 @@ class UserToReview extends React.Component {
     const pText = evt.target.previousSibling.innerHTML;
     this.setState({
       source: pText,
+      editingSource: false,
     })
     this.updateSourceBtn.focus();
   }
 
   render() {
-   const {signup} = this.props;
+   const {signup, grabSchOrUni, ukSchsListLoaded, ukUnisListLoaded, allowAccept} = this.props;
    const {editingSource, source} = this.state;
+   let eduName;
+
+   if (ukSchsListLoaded && signup.eetstatus == 'sch') {
+     eduName = " " + (signup.schname != '' ? (grabSchOrUni('sch', signup.schname)) : signup.schnamefreetext)
+   } else if (ukUnisListLoaded && signup.eetstatus == 'uni') {
+     eduName = " " + (signup.uniname != '' ? (grabSchOrUni('uni', signup.uniname)) : signup.uninamefreetext)
+   }
+
     return (
       <React.Fragment>
         <div className="userToReview-card">
@@ -60,21 +69,29 @@ class UserToReview extends React.Component {
               <span><i> ({signup.activerole})</i></span>
               <span className="redText">  {signup.reviewreason}</span>
             </div>
-            <Modal {...AcceptSignUpModalProps}>
-              <AcceptSignUpContent />
-            </Modal>
+            {allowAccept == true && (
+              <Modal {...AcceptSignUpModalProps}>
+                <AcceptSignUpContent
+                  signup={signup}
+                  source={this.state.source}
+                />
+              </Modal>
+            )}
             <Modal {...RejectSignUpModalProps}>
-              <RejectSignUpContent />
+              <RejectSignUpContent
+                signup={signup}
+                source={this.state.source}
+              />
             </Modal>
           </div>
           <div className="userToReview-detail">
             <div>
-              <b>eetStatus: </b>{signup.eetstatus}
+              <b>{signup.eetstatus}</b>
               <span>
-                {signup.eetStatus == 'sch' ? (signup.schname != '' ? signup.schname : signup.schnamefreetext) : ''}
-                {signup.eetStatus == 'uni' ? (signup.uniname != '' ? signup.uniname : signup.uninamefreetext) : ''}
-                {signup.eetStatus == 'job' ? (signup.currrole + '@' + signup.currco) : ''}
-                {signup.eetStatus == 'train' ? (signup.currtraining + '@' + signup.currtrainingprovider) : ''}
+                {signup.eetstatus == 'sch' ? eduName : ''}
+                {signup.eetstatus == 'uni' ? eduName : ''}
+                {signup.eetstatus == 'job' ? (' ' + signup.currrole + ' @ ' + signup.currco) : ''}
+                {signup.eetstatus == 'train' ? (' ' + signup.currtraining + ' @ ' + signup.currtrainingprovider) : ''}
               </span>
             </div>
           </div>
@@ -87,39 +104,53 @@ class UserToReview extends React.Component {
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
               <i className="fas fa-link" />
-              <span> {signup.profprofileurl}</span>
+              <span>{"  " + signup.profprofileurl}</span>
             </div>
           </div>
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
-              <i className="fas fa-door-open" />
-              <p name="source" contentEditable="true" ref={n => this.editableSource = n} className={"editableText-userToReview noMarginBlockEnd noMarginBlockStart " + (signup.source != '' ? "greenText" : '')} value={source}> {signup.source}</p>
+              <span className={signup.source == '' ? 'redText' : ''}><i className="fas fa-door-open" /></span>
+              <p name="source" contentEditable="true" ref={n => this.editableSource = n} className={"editableText-userToReview noMarginBlockEnd noMarginBlockStart " + (signup.source != '' ? "greenText" : 'redText')} value={source}> {signup.source != '' ? signup.source : 'null'}</p>
               {editingSource == true && (
-                <button type="button" onClick={this.saveNewSource}>Update</button>
+                <button type="button" className="button-unstyled userToReview-updateSourceBtn" onClick={this.saveNewSource}>Update</button>
               )}
-              <button type="button" ref={n => this.updateSourceBtn = n} onClick={this.updateSource}><i className="fas fa-pencil-alt"/></button>
+              {signup.source == '' && editingSource == false && (
+                <button type="button" className="button-unstyled" ref={n => this.updateSourceBtn = n} onClick={this.updateSource}><i className="fas fa-pencil-alt"/></button>
+              )}
             </div>
           </div>
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
-              {signup.email != '' && (
-                <span>Email: {signup.email}</span>
+              {signup.email != null && (
+                <span className={signup.emailverif == 1 ? "greenText" : ''}>EMAIL: <i>{signup.email}</i> </span>
               )}
               {signup.emailverif == 1 && (
-                <Check />
+                <span className="greenText verifiedBadgeContainer"><Check /></span>
               )}
-              {signup.eduemail != '' && (
-                <span>Eduemail: {signup.eduemail}</span>
+              {signup.eduemail != null && (
+                <span className={signup.eduemailverif == 1 ? "greenText" : ''}>EDUEMAIL:<i> {signup.eduemail} </i></span>
               )}
               {signup.eduemailverif == 1 && (
-                <Check />
+                <span className="greenText verifiedBadgeContainer"><Check /></span>
               )}
-              {signup.profemail != '' && (
-                <span>Profemail: {signup.profemail}</span>
+              {signup.profemail != null && (
+                <span className={signup.profemailverif == 1 ? "greenText" : ''}>PROFEMAIL: <i>{signup.profemail} </i></span>
               )}
               {signup.profemailverif == 1 && (
-                <Check />
+                <span className="greenText verifiedBadgeContainer"><Check /></span>
               )}
+            </div>
+          </div>
+          <div className="userToReview-detail">
+            <div className="userToReview-subDetail">
+              CURRENT SITUATION
+              <div>{signup.currsitu}</div>
+            </div>
+          </div>
+          <div className="userToReview-detail">
+            <div className="userToReview-subDetail">
+              HAS PROGCODE?
+              <span>{signup.progcode != '' ? (" " + signup.progcode) : ' no'}</span>
             </div>
           </div>
         </div>

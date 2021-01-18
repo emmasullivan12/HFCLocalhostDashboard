@@ -10,9 +10,64 @@ import "../css/ReviewSignups.css";
 class ReviewSignups extends React.Component {
   constructor(props) {
     super(props);
+    this.state= {
+      ukSchsList: '',
+      ukUnisList: '',
+      ukSchsListLoaded: false,
+      ukUnisListLoaded: false,
+    }
+  }
+
+  componentDidMount() {
+    this.mounted = true
+    this.renderComponents('UKSchs','ukSchsList') // grab schools
+    this.renderComponents('UKUnis','ukUnisList') // grab unis
+  }
+
+  componentWillUnmount() {
+    this.mounted = false;
+  }
+
+  renderComponents = (fileToRender, componentUpdatesState, error) => {
+    import(`./${fileToRender}.js`)
+      .then(component => {
+        if(this.mounted) {
+          this.setState({
+            [componentUpdatesState]: component.default,
+            [componentUpdatesState+'Loaded']: true,
+          })
+        }
+      })
+      .catch(err => {
+        if(this.mounted) {
+          console.log("error loading edu")
+        }
+      })
+  }
+
+  grabSchOrUni = (schOrUni, schUniNum) => {
+    const {ukSchsList, ukUnisList, ukSchsListLoaded, ukUnisListLoaded} = this.state;
+
+    if (schOrUni == 'sch') {
+      const sch = ukSchsList && ukSchsList.filter(sch => {
+        return sch.value == schUniNum;
+      })
+      const schName = sch[0].label;
+      return schName;
+
+    } else if (schOrUni == 'uni') {
+      let uni;
+      uni = ukUnisList && ukUnisList.filter(uni => {
+        return uni.value == schUniNum;
+      })
+      const uniName = uni[0].label;
+      return uniName;
+    }
   }
 
   render() {
+    const {ukSchsListLoaded, ukUnisListLoaded} = this.state;
+
     const signups = [
       {
         uid: '1af91b81-e8b6-44ba-ac16-c4142be48293',
@@ -27,7 +82,7 @@ class ReviewSignups extends React.Component {
         menteesustep: 'joinedProg',
         reviewreason: 'no edu email',
         currsitu: 'dfgdfgdfgdfgdfgdfgdfgdfgdfg',
-        profprofileurl: '',
+        profprofileurl: 'https://www.linkedin.com/samgrivens',
         progcode: '',
         lastupdated: '2021-01-06T16:54:25.084Z',
         fname: 'Sam',
@@ -38,7 +93,7 @@ class ReviewSignups extends React.Component {
         eetstatus: 'sch',
         rolesexp: null,
         rolesexpfreetext: null,
-        schname: '0',
+        schname: '10',
         schnamefreetext: '',
         uniname: '',
         uninamefreetext: '',
@@ -73,8 +128,8 @@ class ReviewSignups extends React.Component {
         rolesexpfreetext: null,
         schname: '',
         schnamefreetext: '',
-        uniname: '',
-        uninamefreetext: 'Freetext Uni',
+        uniname: '75',
+        uninamefreetext: '',
         currco: '',
         currrole: '',
         currtrainingprovider: '',
@@ -181,14 +236,15 @@ class ReviewSignups extends React.Component {
             </div>
             <div className="page-container">
               <div className="toBeReviewed-container">
-                <div className="paddingBtm">
-                  To be reviewed
-                </div>
                 {signupsHasVerif.map((signup, index) => {
                   return (
                     <UserToReview
                       signup={signup}
                       key={signup.uid}
+                      grabSchOrUni={this.grabSchOrUni}
+                      ukSchsListLoaded={ukSchsListLoaded}
+                      ukUnisListLoaded={ukUnisListLoaded}
+                      allowAccept
                     />
                   )
                 })}
@@ -203,6 +259,9 @@ class ReviewSignups extends React.Component {
                     <UserToReview
                       signup={signup}
                       key={signup.uid}
+                      ukSchsListLoaded={ukSchsListLoaded}
+                      ukUnisListLoaded={ukUnisListLoaded}
+                      allowAccept={false}
                     />
                   )
                 })}

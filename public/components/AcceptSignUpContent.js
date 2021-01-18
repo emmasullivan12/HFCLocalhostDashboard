@@ -7,7 +7,8 @@ class AcceptSignUpContent extends Component {
     super(props);
     this.state = {
       verifiedType: null,
-      messageFromServer: ''
+      messageFromServer: '',
+      acceptUserNotes: ''
     };
   }
 
@@ -17,8 +18,11 @@ class AcceptSignUpContent extends Component {
   }
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
-  handleSubmit = (evt) => {
-    if (evt.target.name == "fullAccept") {
+  handleSubmit = (e) => {
+    const {acceptUserNotes} = this.state;
+    const {signup, source} = this.props;
+
+    if (e.target.name == "fullAccept") {
       this.setState({
         verifiedType: 1
       })
@@ -27,14 +31,28 @@ class AcceptSignUpContent extends Component {
         verifiedType: 2
       })
     }
+
     const submission = {
-      verifiedType: this.state.verifiedType
+      verifiedType: this.state.verifiedType,
+      uid: signup.uid,
+      acceptRejectNotes: acceptUserNotes,
+      source: source, // take this as will include any updates we might have made
     }
+
     this.setState({ messageFromServer: 'Accepted signup server says' });
   }
 
+  canBeSubmitted() {
+    const {source} = this.props;
+    return (
+      source != ''
+    );
+  }
+
   render() {
-    const { messageFromServer } = this.state;
+    const { messageFromServer, acceptUserNotes } = this.state;
+    const { signup, source } = this.props;
+    const isEnabled = this.canBeSubmitted();
 
     if(messageFromServer == '') {
       return (
@@ -49,26 +67,45 @@ class AcceptSignUpContent extends Component {
               </div>
               <ul className="ideas-list textLeft">
                 <li className="ideas-list-item">
-                  <div className="idea-item-text"><strong>Item One</strong> blah blah blah blah </div>
+                  <div className="idea-item-text"><strong>Edu Name (if free text)</strong> matches email domain</div>
                 </li>
                 <li className="ideas-list-item">
-                  <div className="idea-item-text"><strong>Item Two</strong> doo bi doo bi doo bi doo</div>
+                  <div className="idea-item-text"><strong>LinkedIn profile</strong> matches current situation & institution/verified email domains</div>
                 </li>
                 <li className="ideas-list-item">
-                  <div className="idea-item-text"><strong>Item Three</strong> ding a ling a ling a ling</div>
+                  <div className="idea-item-text"><strong>Valid source and/or progcode</strong> Is the progcode valid?</div>
                 </li>
               </ul>
             </div>
-            <div className="need-ideas-container">
-              <div className="ideas-icon-container">
-                <i className="far fa-lightbulb" />
-              </div>
+            <textarea
+              name="acceptUserSignUp"
+              className="form-control-std"
+              form="acceptUserSignUp"
+              value={acceptUserNotes}
+              onChange={this.handleInput}
+              placeholder="Type accept reason (not shared with user)..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              maxLength="500"
+              autoFocus
+            />
+            <div>
+              <b>Full Accept:</b> Will allow user access to the insitution they signed up with (i.e. Villiers High School)
             </div>
+            <div>
+              <b>Soft Accept:</b> Will not give user access to institution (i.e. we cannot verify they are from there)
+            </div>
+            <br />
+            {!isEnabled && (
+              <div className="redText">You havent set a source you twat!</div>
+            )}
+            <br />
             <div className="request-btn-container">
-              <button type="submit" name="fullAccept" className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="button" name="fullAccept" className="Submit-btn" onClick={this.handleSubmit}>
                 Full Accept
               </button>
-              <button type="submit" name="softAccept" className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="button" name="softAccept" className="Submit-btn" onClick={this.handleSubmit}>
                 Soft Accept
               </button>
             </div>

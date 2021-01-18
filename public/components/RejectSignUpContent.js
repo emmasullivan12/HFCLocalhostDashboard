@@ -6,8 +6,8 @@ class RejectSignUpContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      verifiedType: null,
-      messageFromServer: ''
+      messageFromServer: '',
+      rejectUserReason: ''
     };
   }
 
@@ -17,24 +17,31 @@ class RejectSignUpContent extends Component {
   }
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
-  handleSubmit = (evt) => {
-    if (evt.target.name == "fullAccept") {
-      this.setState({
-        verifiedType: 1
-      })
-    } else {
-      this.setState({
-        verifiedType: 2
-      })
-    }
+  handleSubmit = (e) => {
+    const {rejectUserReason} = this.state;
+    const {signup, source} = this.props;
+
+    // Can't remember what our process is for rejecting users i.e. adding them to a certain list.
+    // Do we want diff types of rejection i.e. "we need more info" and "hard reject dont bother asking for more"
     const submission = {
-      verifiedType: this.state.verifiedType
+      uid: signup.uid,
+      acceptRejectNotes: rejectUserReason,
+      source: source
     }
-    this.setState({ messageFromServer: 'Accepted signup server says' });
+    this.setState({ messageFromServer: 'Rejected signup server says' });
+  }
+
+  canBeSubmitted() {
+    const {source} = this.props;
+    return (
+      source != ''
+    );
   }
 
   render() {
-    const { messageFromServer } = this.state;
+    const { messageFromServer, rejectUserReason } = this.state;
+    const { signup, source } = this.props;
+    const isEnabled = this.canBeSubmitted();
 
     if(messageFromServer == '') {
       return (
@@ -42,18 +49,27 @@ class RejectSignUpContent extends Component {
           <div className="modal-title">
             Are you sure you want to REJECT
           </div>
-          <form id="acceptSignUpForm">
-            <div className="need-ideas-container">
-              <div className="ideas-icon-container">
-                <i className="far fa-lightbulb" />
-              </div>
-            </div>
+          <form id="rejectUserForm">
+            <textarea
+              name="rejectUserSignUp"
+              className="form-control-std"
+              form="rejectUserSignUp"
+              value={rejectUserReason}
+              onChange={this.handleInput}
+              placeholder="Type rejection reason (not shared with user)..."
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="off"
+              maxLength="500"
+              autoFocus
+            />
+            {!isEnabled && (
+              <div className="redText">You havent set a source you twat!</div>
+            )}
+            <br />
             <div className="request-btn-container">
-              <button type="submit" name="fullAccept" className="Submit-btn" onSubmit={this.handleSubmit}>
-                Full Accept
-              </button>
-              <button type="submit" name="softAccept" className="Submit-btn" onSubmit={this.handleSubmit}>
-                Soft Accept
+              <button type="button" name="fullAccept" className="Submit-btn" onClick={this.handleSubmit}>
+                Reject Sign up
               </button>
             </div>
           </form>
@@ -64,7 +80,7 @@ class RejectSignUpContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <div className="emoji-icon tada-emoji successBox" />
-            Signup Accepted
+            That was mean! Signup REJECTED
           </div>
           <div className="success-container">
             <div className="ideas-Title">

@@ -36,7 +36,7 @@
 .userToReview-card{
   border: 1.5px dashed #dcdcdc;
   margin-bottom: 10px;
-  height: 200px;
+  min-height: 250px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -58,9 +58,14 @@
 .userToReview-subDetail{
   margin-top: 5px;
   color: grey;
+  font-size: 13px!important;
 }
 .editableText-userToReview{
   display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.userToReview-updateSourceBtn{
   padding-left: 5px;
   padding-right: 5px;
 }
