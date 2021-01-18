@@ -175,7 +175,8 @@ function nthCalc(date) {
 }
 
 function DateCalc(props) {
-  var ts = new Date(props.time);
+  const timestamp = props.time ? props.time : props
+  var ts = new Date(timestamp);
   var today = new Date();
   var tsDate = ts.toDateString()
   var todayDate = today.toDateString();

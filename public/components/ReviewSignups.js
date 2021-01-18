@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 
 import MenuNav from "./MenuNav.js";
 import UserToReview from "./UserToReview.js";
+import {DateCalc} from "./GeneralFunctions";
 import "../css/ReviewSignups.css";
 
 class ReviewSignups extends React.Component {
@@ -117,7 +118,7 @@ class ReviewSignups extends React.Component {
         currsitu: 'dfgdfgdfgdfgdfgdfgdfgdfgdfg',
         profprofileurl: '',
         progcode: '',
-        lastupdated: '2021-01-06T16:54:25.084Z',
+        lastupdated: '2021-01-07T16:54:25.084Z',
         fname: 'Bob',
         lname: 'Thebuilder',
         country: 'BZE',
@@ -150,7 +151,7 @@ class ReviewSignups extends React.Component {
         currsitu: 'dfgdfgdfgdfgdfgdfgdfgdfgdfg',
         profprofileurl: '',
         progcode: '',
-        lastupdated: '2021-01-06T16:54:25.084Z',
+        lastupdated: '2021-01-02T16:54:25.084Z',
         fname: 'Dave',
         lname: 'Jones',
         country: 'CAN',
@@ -183,7 +184,7 @@ class ReviewSignups extends React.Component {
         currsitu: 'dfgdfgdfgdfgdfgdfgdfgdfgdfg',
         profprofileurl: '',
         progcode: '',
-        lastupdated: '2021-01-06T16:54:25.084Z',
+        lastupdated: '2021-01-03T19:54:25.084Z',
         fname: 'Dwayne',
         lname: 'Johnson',
         country: 'USA',
@@ -216,6 +217,13 @@ class ReviewSignups extends React.Component {
         return true
       } else return false
     })
+    const sortedArray = signupsHasVerif.sort((a,b) => {
+      const iso8601format_b = b.lastupdated;
+      const iso8601format_a = a.lastupdated;
+      const newb = new Date(iso8601format_b)
+      const newa = new Date(iso8601format_a)
+      return newa - newb
+    })
 
     return (
       <React.Fragment>
@@ -237,9 +245,16 @@ class ReviewSignups extends React.Component {
             <div className="page-container">
               <div className="toBeReviewed-container">
                 {signupsHasVerif.map((signup, index) => {
+            /*      const date = new Date(signup.lastupdated); //convert date format
+                  var day = date.getDate();
+                  var year = date.getFullYear();
+                  var month = date.getMonth()+1;
+                  const formattedDate = day+"/"+month+"/"+year;*/
+                  const formattedDate = DateCalc(signup.lastupdated)
                   return (
                     <UserToReview
                       signup={signup}
+                      lastupdated={formattedDate}
                       key={signup.uid}
                       grabSchOrUni={this.grabSchOrUni}
                       ukSchsListLoaded={ukSchsListLoaded}

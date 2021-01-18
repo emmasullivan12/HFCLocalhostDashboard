@@ -49,7 +49,7 @@ class UserToReview extends React.Component {
   }
 
   render() {
-   const {signup, grabSchOrUni, ukSchsListLoaded, ukUnisListLoaded, allowAccept} = this.props;
+   const {signup, grabSchOrUni, ukSchsListLoaded, ukUnisListLoaded, allowAccept, lastupdated} = this.props;
    const {editingSource, source} = this.state;
    let eduName;
 
@@ -69,6 +69,7 @@ class UserToReview extends React.Component {
               <span><i> ({signup.activerole})</i></span>
               <span className="redText">  {signup.reviewreason}</span>
             </div>
+            <div className="userToReview-date"><i>Since {lastupdated} </i></div>
             {allowAccept == true && (
               <Modal {...AcceptSignUpModalProps}>
                 <AcceptSignUpContent
@@ -109,7 +110,7 @@ class UserToReview extends React.Component {
           </div>
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
-              <span className={signup.source == '' ? 'redText' : ''}><i className="fas fa-door-open" /></span>
+              <span className={signup.source == '' ? 'redText' : 'greenText'}><i className="fas fa-door-open" /></span>
               <p name="source" contentEditable="true" ref={n => this.editableSource = n} className={"editableText-userToReview noMarginBlockEnd noMarginBlockStart " + (signup.source != '' ? "greenText" : 'redText')} value={source}> {signup.source != '' ? signup.source : 'null'}</p>
               {editingSource == true && (
                 <button type="button" className="button-unstyled userToReview-updateSourceBtn" onClick={this.saveNewSource}>Update</button>
