@@ -1,5 +1,4 @@
-// Dex last merged this code on 6th nov 2020
-
+// Dex last merged this code on 18th jan 2021 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import {X, Check} from "./GeneralFunctions.js";
