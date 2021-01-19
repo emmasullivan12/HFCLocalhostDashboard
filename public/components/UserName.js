@@ -35,25 +35,6 @@ class UserName extends Component {
     const fnameLocal = isProspelaAuto ? 'Prospela' : fname
     const lnameLocal = isProspelaAuto ? '' : (lname ? lname : '')
     const name = (isProspelaAuto || isProspelaTeam == true) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + (lnameLocal ? (' ' + lnameLocal) : '')))
-
-    const users = {
-    //  profilepic: '',
-    //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
-        profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
-    //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
-    //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
-    //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
-    };
-    const isPicSet = users.profilepic != '';
-
-    function createProfPicURL(string, picSizeToShow) {
-    //  let picSizeToShow = 40;
-    //  return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
-      return usercdn.concat('/',userAvatarsFolder,string);
-    }
-
-    const profPicSrc = createProfPicURL(users.profilepic, 'o');
-    const profPicSrcLarger = createProfPicURL(users.profilepic, '40');
     const user = [
       {
         activerole: 'mentee',
@@ -72,9 +53,37 @@ class UserName extends Component {
         currtrainingprovider: 'Apprenticeship',
         currtraining: 'Company B',
         uniYrGrp: '',
-        country: 'GBR'
+        country: 'GBR',
+        profilepic: '',
+      //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
+      //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+      //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
+      //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
+      //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
       }
     ]
+
+    const isPicSet = user.profilepic != null && user.profilepic != '';
+    let profPicSrc;
+    let profPicSrcLarger;
+    let userInitial;
+
+    if (isPicSet == true) {
+      if (eetstatus == 'sch') {
+        profPicSrc = createProfPicURL(user.profilepic, 'o');
+      } else {
+        profPicSrcLarger = createProfPicURL(user.profilepic, '40');
+      }
+    } else {
+      userInitial = fname && fname.charAt(0).toUpperCase();
+    }
+
+    function createProfPicURL(string, picSizeToShow) {
+    //  let picSizeToShow = 40;
+    //  return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
+      return usercdn.concat('/',userAvatarsFolder,string);
+    }
+
     const eetstatus = user[0].eetstatus;
     const isOnline = true;
     let uniName;
@@ -91,7 +100,14 @@ class UserName extends Component {
           {name}
           {!isProspelaAuto && (
             <div className="tooltiptext user">
-              <div className="userDetail-img img-square" style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
+              {isPicSet == true ? (
+                <div className="userDetail-img img-square" style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
+                )
+              : (
+                <div className="userDetail-img img-square noPic">
+                  {userInitial}
+                </div>
+              )}
               <div className="userDetail-txt">
                 <div className="presenceContainer userDetail">
                   <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />

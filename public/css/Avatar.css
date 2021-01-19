@@ -54,6 +54,13 @@
   -ms-border-bottom-right-radius: unset;
   -o-border-bottom-right-radius: unset;
 }
+.userDetail-img.noPic{
+  text-align: center;
+  color: #fff;
+  background-color: #9a8dba;
+  padding-top: 40px;
+  font-size: 40px;
+}
 .userDetail-txt{
   display: inline-block;
   top: 0;
