@@ -46,7 +46,7 @@ class MainMenu extends Component {
     } else {
       return (
         <div className="mainMenu">
-          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Get Started</NavLink>
+          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
       {/*    <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />

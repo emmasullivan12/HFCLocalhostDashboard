@@ -75,12 +75,27 @@ function getChannelAbout(channelType, allowed) {
 }
 
 function changeTitle(numUnreads) {
+  var original = document.title;
+  var timeout;
+  var newTitle = '(' + numUnreads + ') ' + (numUnreads > 1 ? 'New Messages!' : 'New Message!');
+
+  function flashTitle() {
+    document.title = (document.title == original) ? newTitle : original;
+    timeout = setTimeout(flashTitle, 1200);
+  }
+
+  function cancelFlashTitle(timeout) {
+    clearTimeout(timeout);
+    document.title = original;
+  }
+
   if (numUnreads > 0) {
-    var title = document.title;
-    var newTitle = '(' + numUnreads + ') ' + title;
-    document.title = newTitle;
+    cancelFlashTitle(timeout);
+    flashTitle();
+
+//    document.title = newTitle;
   } else {
-    document.title = 'Prospela Dashboard'
+    document.title = original;
   }
 }
 
