@@ -333,7 +333,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'prospela' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

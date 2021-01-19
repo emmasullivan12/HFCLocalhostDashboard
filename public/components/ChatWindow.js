@@ -66,10 +66,11 @@ class ChatWindow extends Component {
       newMsgsBelow: true,
       newMsgsAbove: true,
       observerIsOn: false,
-      prevIndexOfLatest: '',
+    //  prevIndexOfLatest: '',
       /* dragFiles: '', */
     }
     this.observer;
+//    this.headerObserver;
     this.toggleFlexContainer = this.toggleFlexContainer.bind(this);
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
@@ -88,10 +89,10 @@ class ChatWindow extends Component {
   //  this.formatDateHeaders();
 
     // Turn on IntersectionObservers for dateheaders
-    const container = document.getElementById('drop-zone');
-    this.notifyWhenStickyHeadersChange(container);
+  //  const container = document.getElementById('drop-zone');
+  //  this.headerObserver = this.observeHeaders(container);
 
-    document.addEventListener('sticky-change', e => {
+  /*  document.addEventListener('sticky-change', e => {
       const {prevIndexOfLatest} = this.state;
 
       // Update sticking header title.
@@ -99,42 +100,42 @@ class ChatWindow extends Component {
       const parentNode = header.parentNode;
       var dateHeaders = parentNode.getElementsByClassName('dateHeader')
 
-        // Add "isPinned" status to latest dateheader
-        header.classList.toggle('isPinned', stuck);
-        header.classList.add('shadow');
+      // Add "isPinned" status to latest dateheader
+      header.classList.toggle('isPinned', stuck);
+      header.classList.add('shadow');
 
-        // Find index of current header within array of all dateHeaders
-        const indexOfLatest = Array.prototype.indexOf.call(dateHeaders, header);
-        const userScrollingDown = prevIndexOfLatest != '' && (indexOfLatest >= prevIndexOfLatest)
+      // Find index of current header within array of all dateHeaders
+      const indexOfLatest = Array.prototype.indexOf.call(dateHeaders, header);
+      const userScrollingDown = prevIndexOfLatest != '' && (indexOfLatest >= prevIndexOfLatest)
 
-        // Remove all dateHeader "isPinned" and "shadow" status except current and previous (as otherwise previous was disappearing too soon)
-        Array.prototype.forEach.call(dateHeaders, (dateHeader, index) => {
+      // Remove all dateHeader "isPinned" and "shadow" status except current and previous (as otherwise previous was disappearing too soon)
+      Array.prototype.forEach.call(dateHeaders, (dateHeader, index) => {
 
-        //  const indexOfLatestDateHeader = (dateHeader == header) ? index : 0
-        //  if ((index < indexOfLatestDateHeader - 1))  {
-          if (userScrollingDown) {
+      //  const indexOfLatestDateHeader = (dateHeader == header) ? index : 0
+      //  if ((index < indexOfLatestDateHeader - 1))  {
+        if (userScrollingDown) {
 
-            // Remove shadow of earlier headers
-            if (index < (indexOfLatest - 1)) {
-              dateHeader.classList.remove('shadow');
-            }
-
-          // If scrollup, Add shadow of earlier headers
-          } else if (index == (indexOfLatest - 1) || (index == indexOfLatest)) {
-            dateHeader.classList.add('shadow');
-          // If scrollup, Remove shadow of headers below
-          } else if (index > (indexOfLatest + 1)) {
+          // Remove shadow of earlier headers
+          if (index < (indexOfLatest - 1)) {
             dateHeader.classList.remove('shadow');
           }
 
-        });
+        // If scrollup, Add shadow of earlier headers
+        } else if (index == (indexOfLatest - 1) || (index == indexOfLatest)) {
+          dateHeader.classList.add('shadow');
+        // If scrollup, Remove shadow of headers below
+        } else if (index > (indexOfLatest + 1)) {
+          dateHeader.classList.remove('shadow');
+        }
 
-        this.setState({
-          prevIndexOfLatest: indexOfLatest
-        });
+      });
+
+      this.setState({
+        prevIndexOfLatest: indexOfLatest
+      });
 
     //  }
-    });
+  });*/
   }
 
   componentDidUpdate(prevProps) {
@@ -169,7 +170,9 @@ class ChatWindow extends Component {
     window.removeEventListener("resize", this.updateDevice);
 
     // Unobserve all headerObserver elements
-    this.headerObserver.disconnect();
+/*    if (this.headerObserver) {
+      this.headerObserver.disconnect();
+    }*/
   }
 
   handleUnreads = () => {
@@ -229,26 +232,26 @@ class ChatWindow extends Component {
    * Notifies when elements that have the class `sticky` begin to stick or not.
    * Note: these should be children of the `container` element.
    */
-  notifyWhenStickyHeadersChange = (container) => {
-    this.observeHeaders(container);
+  //notifyWhenStickyHeadersChange = (container) => {
+    //this.observeHeaders(container);
   //  this.observeFooters(container);
-  }
+  //}
 
   /**
    * Dispatches a `sticky-event` custom event on the element.
    * @param {boolean} stuck
    * @param {!Element} target Target element of event.
    */
-  fire = (stuck, target) => {
+/*  fire = (stuck, target) => {
     const evt = new CustomEvent('sticky-change', {detail: {stuck, target}});
     document.dispatchEvent(evt);
-  }
+  }*/
 
   /**
    * Sets up an intersection observer to notify when elements with the class
    * `.sticky_sentinel--top` become visible/invisible at the top of the container.
    */
-  observeHeaders = (container) => {
+/*  observeHeaders = (container) => {
     let options = {
       threshold: 1,
       root: container
@@ -272,8 +275,9 @@ class ChatWindow extends Component {
 
     // Add the bottom sentinels to each section and attach an observer.
     const sentinels = document.querySelectorAll(".sticky_sentinel--top");
+    console.log("connecting observer")
     sentinels.forEach(el => headerObserver.observe(el));
-  }
+  }*/
 
   /**
    * Sets up an intersection observer to notify when elements with the class
