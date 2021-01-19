@@ -86,7 +86,7 @@ class ChatWindow extends Component {
   }
 
   componentDidMount() {
-    this.mounted = true;
+  //  this.mounted = true;
     window.addEventListener("resize", this.updateDevice);
     this.handleUnreads();
 
@@ -172,7 +172,7 @@ class ChatWindow extends Component {
   }
 
   componentWillUnmount() {
-    this.mounted = false;
+  //  this.mounted = false;
     window.removeEventListener("resize", this.updateDevice);
 
     // Unobserve all headerObserver elements

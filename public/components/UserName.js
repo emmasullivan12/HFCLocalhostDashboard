@@ -1,9 +1,9 @@
-// Dex last merged this code on 5th nov 2020
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component } from "react";
 //import MenteeProfileContent from './MenteeProfileContent.js';
 //import MentorProfileContent from './MentorProfileContent.js';
-import FullPageModal from './FullPageModal.js';
+//import FullPageModal from './FullPageModal.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
 import {userFlagEmoji} from './UserDetail.js';
 
@@ -35,11 +35,8 @@ class UserName extends Component {
     const fnameLocal = isProspelaAuto ? 'Prospela' : fname
     const lnameLocal = isProspelaAuto ? '' : (lname ? lname : '')
     const name = (isProspelaAuto || isProspelaTeam == true) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + (lnameLocal ? (' ' + lnameLocal) : '')))
-    //const senderRole = 'mentor';
-    const isMe = userUID === myUid ? 'isMe' : 'isntMe';
 
     const users = {
-      uid: '99999',
     //  profilepic: '',
     //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
         profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
