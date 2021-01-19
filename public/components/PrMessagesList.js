@@ -621,6 +621,8 @@ class PrMessagesList extends Component {
                   isProspelaTeam={isProspelaTeam}
                   isFounder={isFounder}
                   isPM={isPM}
+                //  grabSchOrUni={grabSchOrUni}
+                //  ukUnisListLoaded={ukUnisListLoaded}
                 />
               )
             })}

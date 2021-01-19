@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th jan 2021
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -66,6 +66,8 @@ class ChatWindow extends Component {
       newMsgsBelow: true,
       newMsgsAbove: true,
       observerIsOn: false,
+  //    ukUnisList: '',
+  //    ukUnisListLoaded: false,
     //  prevIndexOfLatest: '',
       /* dragFiles: '', */
     }
@@ -84,8 +86,11 @@ class ChatWindow extends Component {
   }
 
   componentDidMount() {
+    this.mounted = true;
     window.addEventListener("resize", this.updateDevice);
     this.handleUnreads();
+
+//    this.renderComponents('UKUnis','ukUnisList') // grab unis
   //  this.formatDateHeaders();
 
     // Turn on IntersectionObservers for dateheaders
@@ -167,6 +172,7 @@ class ChatWindow extends Component {
   }
 
   componentWillUnmount() {
+    this.mounted = false;
     window.removeEventListener("resize", this.updateDevice);
 
     // Unobserve all headerObserver elements
@@ -174,6 +180,44 @@ class ChatWindow extends Component {
       this.headerObserver.disconnect();
     }*/
   }
+
+  /*renderComponents = (fileToRender, componentUpdatesState, error) => {
+    import(`./${fileToRender}.js`)
+      .then(component => {
+        if(this.mounted) {
+          console.log("gets here")
+          this.setState({
+            [componentUpdatesState]: component.default,
+            [componentUpdatesState+'Loaded']: true,
+          }, () => {
+            console.log("UNI LIST LOADED!!!!!!!!!!")
+            console.log(this.state.ukUnisList)
+          })
+        }
+      })
+      .catch(err => {
+        if(this.mounted) {
+          console.log("error loading edu")
+          console.log(err)
+        }
+      })
+  }*/
+
+/*  grabSchOrUni = (schOrUni, schUniNum) => {
+    const {ukUnisList, ukUnisListLoaded} = this.state;
+    console.log("schUniNum: "+schUniNum)
+
+    // Removed sch so doesnt show user school if eetstatus is school
+
+    if (schOrUni == 'uni') {
+      let uni;
+      uni = ukUnisList && ukUnisList.filter(uni => {
+        return uni.value == schUniNum;
+      })
+      const uniName = uni[0].label;
+      return uniName;
+    }
+  }*/
 
   handleUnreads = () => {
     const {observerIsOn} = this.state;
@@ -587,6 +631,8 @@ class ChatWindow extends Component {
                 showNewMsgsNotif={this.showNewMsgsNotif}
                 scrollToNewMessage={this.scrollToNewMessage}
                 newMsgBannerSeen={newMsgBannerSeen}
+              //  grabSchOrUni={this.grabSchOrUni}
+              //  ukUnisListLoaded={ukUnisListLoaded}
               />
             </div>
             <PrAddMessage

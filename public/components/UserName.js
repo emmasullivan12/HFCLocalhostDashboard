@@ -5,6 +5,7 @@ import React, { Component } from "react";
 //import MentorProfileContent from './MentorProfileContent.js';
 import FullPageModal from './FullPageModal.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
+import {userFlagEmoji} from './UserDetail.js';
 
 import "../css/General.css";
 //import "../css/Modal.css";
@@ -27,9 +28,10 @@ const MentorProfileUsrNameModalProps = {
 class UserName extends Component {
   render() {
     const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle} = this.props;
+  /*  console.log(grabSchOrUni)
+    console.log(ukUnisListLoaded)*/
     const userRole = 'mentor'
     const myUid = '12345';
-
     const fnameLocal = isProspelaAuto ? 'Prospela' : fname
     const lnameLocal = isProspelaAuto ? '' : (lname ? lname : '')
     const name = (isProspelaAuto || isProspelaTeam == true) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + (lnameLocal ? (' ' + lnameLocal) : '')))
@@ -39,27 +41,78 @@ class UserName extends Component {
     const users = {
       uid: '99999',
     //  profilepic: '',
-      profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+    //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
+        profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
     //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
     //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
     //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
     };
     const isPicSet = users.profilepic != '';
-    function createProfPicURL(string) {
+
+    function createProfPicURL(string, picSizeToShow) {
     //  let picSizeToShow = 40;
     //  return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
       return usercdn.concat('/',userAvatarsFolder,string);
     }
-    const profPicSrc = createProfPicURL(users.profilepic);
+
+    const profPicSrc = createProfPicURL(users.profilepic, 'o');
+    const profPicSrcLarger = createProfPicURL(users.profilepic, '40');
+    const user = [
+      {
+        activerole: 'mentee',
+        fname: 'Sam',
+        lname: 'Grivens',
+        eetstatus: 'uni',
+        rolesexp: null,
+        rolesexpfreetext: null,
+        schname: '10',
+        schnamefreetext: '',
+        uniname: '',
+        uninamefreetext: 'Bath University',
+        degree: '',
+        currco: 'Pladis',
+        currrole: 'Finance Manager',
+        currtrainingprovider: 'Apprenticeship',
+        currtraining: 'Company B',
+        uniYrGrp: '',
+        country: 'GBR'
+      }
+    ]
+    const eetstatus = user[0].eetstatus;
+    const isOnline = true;
+    let uniName;
+    if (user[0].eetstatus == 'uni') {
+      uniName = (user[0].uniname != '' ? user[0].uniname : user[0].uninamefreetext)
+    }
+  /*  if (ukUnisListLoaded && user[0].eetstatus == 'uni') {
+      uniName = (user[0].uniname != '' ? (grabSchOrUni('uni', user[0].uniname)) : user[0].uninamefreetext)
+    }*/
+
     return (
       <React.Fragment>
-        <div className={"sender-name tooltip" + ((isProspelaAuto || isProspelaTeam == true) ? ' isProspela' : '') + (isFounder == true ? ' isFounder' : '') + (isPM == true ? ' isPM' : '') + (showOnline == true ? ' showOnline' : '')  + (smallIdle == true ? ' smallIdle' : '')} >
+        <div className={"sender-name" + (!isProspelaAuto ? ' tooltip' : '') + ((isProspelaAuto || isProspelaTeam == true) ? ' isProspela' : '') + (isFounder == true ? ' isFounder' : '') + (isPM == true ? ' isPM' : '') + (showOnline == true ? ' showOnline' : '')  + (smallIdle == true ? ' smallIdle' : '')} >
           {name}
-          <div className="tooltiptext">
-            <div className="msg-thumb img-square" style={{backgroundImage:"url(" + profPicSrc + ")"}}/>
-            {fnameLocal} {lnameLocal}
-            <div>userrole & company</div>
-          </div>
+          {!isProspelaAuto && (
+            <div className="tooltiptext user">
+              <div className="userDetail-img img-square" style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
+              <div className="userDetail-txt">
+                <div className="presenceContainer userDetail">
+                  <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
+                </div>
+                <div className="userDetail-name">{name}</div>
+                  <div className="userDetail-inst">
+                    {eetstatus == 'sch' ? 'Student' : ''}
+                    {eetstatus == 'uni' ? (user[0].degree + ' @ ' + uniName) : ''}
+                    {eetstatus == 'job' ? (user[0].currrole + ' @ ' + user[0].currco) : ''}
+                    {eetstatus == 'train' ? (user[0].currtraining + ' @ ' + user[0].currtrainingprovider) : ''}
+                    {eetstatus == 'none' ? 'Looking for opportunities' : ''}
+                  </div>
+                <div className="userDetail-flag">
+                  <span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji(user[0].country)}/></span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       {/*  {isMe === 'isMe' ? (
           <span className="sender-name">{userName}</span>

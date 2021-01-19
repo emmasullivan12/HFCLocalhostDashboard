@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th jan 2021
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component } from "react";
 
@@ -534,8 +534,8 @@ class PrMessage extends Component {
         )}
         {showDateHeader && (
           <React.Fragment>
-            <div className="sticky_sentinel sticky_sentinel--bottom"/>
-            <div className="sticky_sentinel sticky_sentinel--top"/>
+        {/*    <div className="sticky_sentinel sticky_sentinel--bottom"/>
+            <div className="sticky_sentinel sticky_sentinel--top"/> */}
             <div className="block-container dateHeader stickyDateHeader">
               <div className="date-separator">
                 <hr className="separator__hr" />
@@ -555,6 +555,8 @@ class PrMessage extends Component {
           isProspelaTeam={isProspelaTeam}
           isFounder={isFounder}
           isPM={isPM}
+        //  grabSchOrUni={grabSchOrUni}
+        //  ukUnisListLoaded={ukUnisListLoaded}
         />
       </React.Fragment>
     )

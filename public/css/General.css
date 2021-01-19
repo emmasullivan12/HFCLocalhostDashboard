@@ -525,6 +525,17 @@ div {
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+.tooltip .tooltiptext.user {
+  bottom: 140%;
+  left: -20px;
+  margin-left: unset;
+}
+.tooltip .tooltiptext.user:after {
+  left: 10%;
+  margin-left: unset;
+  border-width: 8px;
+  border-color: #4e4ed6 transparent transparent transparent;
+}
 .tooltip .tooltiptext.last {
   left: -25px;
 }
@@ -548,7 +559,21 @@ div {
   padding-right: 10px;
   z-index: 2;
 }
-
+.tooltiptext.user{
+/*  border: 2px solid #4e4ed6;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.13);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.13);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.13);*/
+  box-shadow: 0 1px 7px 1.2px rgba(78,78,214,.22);
+  -webkit-box-shadow: 0 1px 7px 1.2px rgba(78,78,214,.22);
+  -moz-box-shadow: 0 1px 7px 1.2px rgba(78,78,214,.22);
+  border: 3px solid #4e4ed6!important;
+  width: 280px;
+  height: 110px;
+  text-align: unset;
+  padding: 0;
+  background-color: #2b2b2b;
+}
 .tooltiptext.messageActions{
   right: 0;
 }
