@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th jan 2021 
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component } from "react";
 //import MenteeProfileContent from './MenteeProfileContent.js';
@@ -77,7 +77,7 @@ class UserName extends Component {
 
     if (isPicSet == true) {
       if (eetstatus == 'sch') {
-        profPicSrc = createProfPicURL(user[0].profilepic, '20');
+        profPicSrc = createProfPicURL(user[0].profilepic, '40');
       } else {
         profPicSrcLarger = createProfPicURL(user[0].profilepic, '80');
       }
