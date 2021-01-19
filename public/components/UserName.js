@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th jan 2021 
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component } from "react";
 //import MenteeProfileContent from './MenteeProfileContent.js';
@@ -40,7 +40,7 @@ class UserName extends Component {
         activerole: 'mentee',
         fname: 'Sam',
         lname: 'Grivens',
-        eetstatus: 'uni',
+        eetstatus: 'sch',
         rolesexp: null,
         rolesexpfreetext: null,
         schname: '10',
@@ -54,34 +54,35 @@ class UserName extends Component {
         currtraining: 'Company B',
         uniYrGrp: '',
         country: 'GBR',
-        profilepic: '',
+      //  profilepic: '',
       //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
-      //    profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
+          profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
       //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
       //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
       //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
+      // https://media-uploads.prospela.com/userAvatars/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png
       }
     ]
 
-    const isPicSet = user.profilepic != null && user.profilepic != '';
+    const isPicSet = user[0].profilepic != null && user[0].profilepic != '';
     let profPicSrc;
     let profPicSrcLarger;
     let userInitial;
-
-    if (isPicSet == true) {
-      if (eetstatus == 'sch') {
-        profPicSrc = createProfPicURL(user.profilepic, 'o');
-      } else {
-        profPicSrcLarger = createProfPicURL(user.profilepic, '40');
-      }
-    } else {
-      userInitial = fname && fname.charAt(0).toUpperCase();
-    }
 
     function createProfPicURL(string, picSizeToShow) {
     //  let picSizeToShow = 40;
     //  return usercdn.concat('/',userAvatarsFolder,string,'-',picSizeToShow);
       return usercdn.concat('/',userAvatarsFolder,string);
+    }
+
+    if (isPicSet == true) {
+      if (eetstatus == 'sch') {
+        profPicSrc = createProfPicURL(user[0].profilepic, '20');
+      } else {
+        profPicSrcLarger = createProfPicURL(user[0].profilepic, 'o');
+      }
+    } else {
+      userInitial = fname && fname.charAt(0).toUpperCase();
     }
 
     const eetstatus = user[0].eetstatus;
@@ -101,7 +102,7 @@ class UserName extends Component {
           {!isProspelaAuto && (
             <div className="tooltiptext user">
               {isPicSet == true ? (
-                <div className="userDetail-img img-square" style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
+                <div className={"userDetail-img img-square" + (eetstatus == 'sch' ? ' showSml': '')} style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
                 )
               : (
                 <div className="userDetail-img img-square noPic">

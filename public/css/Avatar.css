@@ -54,6 +54,13 @@
   -ms-border-bottom-right-radius: unset;
   -o-border-bottom-right-radius: unset;
 }
+.userDetail-img.showSml{
+  border-top: 30px solid;
+  border-bottom: 30px solid;
+  border-right: 25px solid;
+  border-left: 25px solid;
+  border-color: #9a8dba;
+}
 .userDetail-img.noPic{
   text-align: center;
   color: #fff;
