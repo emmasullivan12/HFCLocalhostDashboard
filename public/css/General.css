@@ -93,6 +93,15 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
+  #mainMenu-burger {
+    fill: #f2f2f2!important;
+  }
+  .page-title{
+    color: #dedede!important;
+  }
+  .page-detail{
+    color: #bfbfbf!important;
+  }
   .messages-panel{
     background-color: #3f3f3f!important;
   /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
@@ -166,6 +175,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .input-box-container {
     border: 1px solid #6d6d6d!important;
   }
+  .input-box-container:focus-within {
+    box-shadow: 0 0 0 1.2px #8e8efd!important;
+    -webkit-box-shadow: 0 0 0 1.2px #8e8efd!important;
+    -moz-box-shadow: 0 0 0 1.2px #4e4ed6!important;
+    border: 3px solid rgb(122,80,199,.72)!important;
+  }
   .emojiContainer{
     color: #797979!important;
   }
@@ -199,6 +214,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
     background: #949191!important;
     border: .0625rem solid #616161!important;
   }
+  .msgActions-btn {
+    color: #929292!important;
+  }
   .plusSign {
     stroke: #d6d6d6!important;
   }
@@ -209,6 +227,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .whiteFadedText {
     color: rgb(72 72 72 / 63%)!important;
   }
+  .userDetail-inst{
+    color: #717171!important;
+  }
   a.Submit-btn {
     color: #fff!important;
     background: #76c1b3!important;
@@ -218,13 +239,13 @@ Extra large devices (large laptops and desktops, 1200px and up)
     background: #76c1b3!important;
   }
   .flex-container-overlay.group {
-    background-color: #272727;
+    background-color: #272727!important;
   }
   .group-detail-item.bright {
-    color: #797979;
+    color: #797979!important;
   }
   .presenceIndicator {
-    background: #272727;
+    background: #272727!important;
   }
  /*@media screen and (min-width: 758px) {
    #drop-zone{

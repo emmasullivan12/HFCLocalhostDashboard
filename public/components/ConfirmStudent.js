@@ -140,8 +140,7 @@ class ConfirmStudent extends React.Component {
   }
 
   handleKeyUp = (e) => {
-
-  clearTimeout(this.timerHandle);
+    clearTimeout(this.timerHandle);
 
     this.timerHandle = setTimeout(() => {
       this.checkEduEmail()

@@ -75,7 +75,7 @@ function getChannelAbout(channelType, allowed) {
 }
 
 function changeTitle(numUnreads) {
-  var original = document.title;
+  var original = 'Prospela Dashboard';
   var timeout;
   var newTitle = '(' + numUnreads + ') ' + (numUnreads > 1 ? 'New Messages!' : 'New Message!');
 
@@ -93,9 +93,8 @@ function changeTitle(numUnreads) {
     cancelFlashTitle(timeout);
     flashTitle();
 
-//    document.title = newTitle;
   } else {
-    document.title = original;
+    cancelFlashTitle(timeout);
   }
 }
 

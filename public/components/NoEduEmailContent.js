@@ -328,7 +328,7 @@ class NoEduEmailContent extends Component {
             //  onKeyUp={this.handleKeyUp}
               onKeyDown={this.handleKeyDown}
               onMouseDown={this.handleMouseDown}
-              placeholder="Help us assess your eligibility to join..."
+              placeholder="Include the programme you want to join e.g. Access:VFX, Animated Women, etc. Help us assess your eligibility to join..."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"

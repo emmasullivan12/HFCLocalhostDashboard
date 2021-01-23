@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th jan 2021 
+// Dex last merged this code on 19th jan 2021
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -205,6 +205,7 @@ class Dashboard extends Component{
   onMouseDown = () => {
     showNotifFavicon(2)
   }
+
 //  updateActiveMenu(e) {
 //    e.persist()
 //    this.closeMenu(e)
@@ -279,7 +280,7 @@ class Dashboard extends Component{
                   <div className="menuContainer">
                     <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.closeMenu} />
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.closeMenu}/>
                     <div className="menuBreak"/>
                     <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.closeMenu}/>
                     <div className="menuBreak"/>

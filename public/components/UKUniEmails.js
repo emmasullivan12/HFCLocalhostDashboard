@@ -158,7 +158,7 @@ const ukUniEmails = [
   {value: '152', emailFormat: 'uhi'},
   {value: '153', emailFormat: 'uws'},
   {value: '154', emailFormat: 'cardiff'},
-  {value: '155', emailFormat: 'southwales'},
+  {value: '155', emailFormat: 'students.southwales'},
   {value: '156', emailFormat: 'swansea'},
   {value: '157', emailFormat: 'cardiffmet'},
   {value: '158', emailFormat: 'bangor'},
