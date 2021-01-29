@@ -206,7 +206,7 @@ class ConfirmStudent extends React.Component {
         hasTextBeforeAt: false,
         requestReview: false
       });
-    } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.indexOf("@") + 1)) === false) {
+/*    } else if (/^[a-zA-Z()]+$/.test(userInput.charAt(userInput.indexOf("@") + 1)) === false) {
       this.setState({
         eduEmailIsValid: false,
         isPersonalEmail: false,
@@ -224,7 +224,7 @@ class ConfirmStudent extends React.Component {
         hasTextAfterAt: true,
         endsWithSymbol: true,
         requestReview: false
-      });
+      });*/
     } else if (emailFormInput.checkValidity() != true) {
       this.setState({
         eduEmailIsValid: false,

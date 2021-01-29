@@ -186,6 +186,9 @@
   right: 66px;
   text-align: center;
 }
+.notificationNum.hasTooltip{
+  margin-right: -81px;
+}
 .notificationNum.channel {
   right: 24px;
 }

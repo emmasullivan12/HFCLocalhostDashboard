@@ -225,7 +225,7 @@ function DateCalc(props) {
 
 }
 
-function getUnreadIndicator(unreadCount, isGroupChannel) {
+function getUnreadIndicator(unreadCount, isGroupChannel, hasTooltip) {
   let text
 
   switch(true) {
@@ -244,7 +244,7 @@ function getUnreadIndicator(unreadCount, isGroupChannel) {
   }
 
   return (
-    <span className={"notificationNum"+(isGroupChannel ? ' channel' : '')}>{text}</span>
+    <span className={"notificationNum" + (hasTooltip == true ? ' hasTooltip' : '') + (isGroupChannel == true ? ' channel' : '')}>{text}</span>
   )
 }
 

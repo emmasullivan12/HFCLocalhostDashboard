@@ -52,6 +52,14 @@ class UserToReview extends React.Component {
    const {signup, grabSchOrUni, ukSchsListLoaded, ukUnisListLoaded, allowAccept, lastupdated} = this.props;
    const {editingSource, source} = this.state;
    let eduName;
+   let age;
+
+   const birthdayts = signup.birthday
+   var ts = new Date(birthdayts);
+   var today = new Date();
+   age = today.getFullYear() - ts.getFullYear()
+
+   //age = + "age"
 
    if (ukSchsListLoaded && signup.eetstatus == 'sch') {
      eduName = " " + (signup.schname != '' ? (grabSchOrUni('sch', signup.schname)) : signup.schnamefreetext)
@@ -67,6 +75,7 @@ class UserToReview extends React.Component {
             <div>
               <b>{signup.fname} {signup.lname}</b>
               <span><i> ({signup.activerole})</i></span>
+              <span><i> - {age} years old </i></span>
               <span className="redText">  {signup.reviewreason}</span>
             </div>
             <div className="userToReview-date"><i>Since {lastupdated} </i></div>

@@ -560,14 +560,17 @@ div {
 .tooltip .tooltiptext.last {
   left: -25px;
 }
+.tooltiptext.chats,
 .tooltiptext.groups {
   width: auto;
-  white-space: nowrap;
-  font-weight: 600;
   left: 0;
   margin-left: unset;
   padding-left: 10px;
   padding-right: 10px;
+}
+.tooltiptext.groups {
+  white-space: nowrap;
+  font-weight: 600;
 }
 .tooltiptext.emojiReactions,
 .tooltiptext.messageActions {
@@ -621,6 +624,7 @@ div {
   margin-right: 9px;
   left: unset;
 }
+.tooltip .tooltiptext.chats::after,
 .tooltip .tooltiptext.groups::after {
   left: 0;
   margin-left: 9px;

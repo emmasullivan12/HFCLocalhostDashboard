@@ -208,7 +208,7 @@ class NoEduEmailContent extends Component {
         containsDotAndAt: true,
         hasTextBeforeAt: false
       });
-    } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.indexOf("@") + 1)) === false) {
+  /*  } else if (/^[a-zA-Z()]+$/.test(emailInput.charAt(emailInput.indexOf("@") + 1)) === false) {
       this.setState({
         emailIsValid: false,
         isPersonalEmail: false,
@@ -224,7 +224,7 @@ class NoEduEmailContent extends Component {
         hasTextBeforeAt: true,
         hasTextAfterAt: true,
         endsWithSymbol: true
-      });
+      });*/
     } else if (emailFormInput.checkValidity() != true) {
       this.setState({
         emailIsValid: false,

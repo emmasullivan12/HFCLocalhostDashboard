@@ -22,26 +22,52 @@ const AddChatModalProps = {
 
 // This shows the content within an individual row in the ChatMenu
 class ChatListItem extends Component {
+  constructor(props) {
+    super(props);
+    this.state= {
+      isOverflowing: false,
+      chatname: '',
+    }
+  }
 
-  render() {
-    const {chat, navlink, onClick} = this.props;
-    const isOnline = false;
-    const unread = false
-    const unreadCount = null
-    // <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={closeMenu}>
-
+  componentDidMount() {
+    const {chat} = this.props;
     const mentorFName = chat.mentor;
     const menteeFName = chat.mentee;
+    this.setState({
+      chatname: mentorFName[0].toLowerCase() + mentorFName.substring(1) + '-and-' + menteeFName[0].toLowerCase() + menteeFName.substring(1),
+    }, () => {
+      const element = this.chatItem;
+      const isOverflowing = element.offsetWidth < element.scrollWidth
+      this.setState({
+        isOverflowing: isOverflowing
+      })
+    })
+  }
+
+  render() {
+    const {navlink, onClick} = this.props;
+    const {chatname, isOverflowing} = this.state;
+    const isOnline = false;
+    const unread = false;
+    const unreadCount = null;
 
     return(
       <NavLink to={navlink} activeClassName="is-active" className="chatMenuItem link" onClick={onClick}>
         <div className="presenceContainer">
           <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
         </div>
-        <div className="chatItemFlexContainer">
-          <span className={"chatMenuLink overflow-ellipsis "+(unread ? 'unread' : null)}>{mentorFName[0].toLowerCase() + mentorFName.substring(1)}-and-{menteeFName[0].toLowerCase() + menteeFName.substring(1)}</span>
+        <div className={"chatItemFlexContainer" + (isOverflowing ? " tooltip" : "")}>
+          <div ref={n => this.chatItem = n} className={"chatMenuLink overflow-ellipsis "+(unread ? 'unread' : null)}>
+            {chatname}
+          </div>
+          {isOverflowing && (
+            <span className="tooltiptext chats">
+              {chatname}
+            </span>
+          )}
           {unreadCount != 0 && (
-            getUnreadIndicator(unreadCount, false)
+            getUnreadIndicator(unreadCount, false, isOverflowing)
           )}
         </div>
       </NavLink>
