@@ -33,7 +33,8 @@ class TextParser extends Component {
 
     regex = {
       paragraph: /(\r\n|\r|\n)(?!-|>)/g,
-      formatting: /(_.*?_)|(\*.*?\*)|(\n-.*?)|(\n>.*?)|(~.*?~)/g,
+    //  formatting: /(_.*?_)|(\*.*?\*)|(\n-.*?)|(\n>.*?)|(~.*?~)/g, // ORIGINAL
+      formatting: /((\b)_[^_ ].*?_(?=\n| |\.|~|\*))|(\*[^* ].*?\*(?=\n| |\.|~|_))|(\n-.*?)|(\n>.*?)|(~[^~ ].*?~(?=\n| |\.|\*|_))/g, // Should not include "_" or " " directly after first match, and last match should either be a new line or " "
 //      formatting: /((?<=[\n ]|^)_(?!_)[^\n ]{1,}?_(?!\w))|(\*(?!\*)[^\n ]{1,}?\*)|(\n-.*?)|(\n>.*?)|((?<=[\n ]|^)~(?![~ ]).{1,}?~(?!\w))/g, // But not working on Safari and Firefox as positive lookbehind doesnt work (tried ?: instead but needs fiddling with)
       links: /((?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[A-Z0-9+&@#/%=~_|$]))/igm,
     }
