@@ -653,7 +653,7 @@ class ChatWindow extends Component {
                 <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
               </div>
             </div>
-            <form onSubmit={this.handleFileSelect} encType="multipart/form-data">
+            <form id="chatWindow-fileUpload" onSubmit={this.handleFileSelect} encType="multipart/form-data">
               <input
                 type="file"
                 name="selectedFiles"

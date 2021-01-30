@@ -33,6 +33,7 @@ class PrAddMessage extends Component {
       showEmojis: false,
       isMobile: checkMobile(),
       cursorPos: '', // cursor position to enter emoji within string
+    //  prAddMsgHeight: 26,
   //    playMsgAudio: false
     }
 //    audio = new Audio(this.props.url)
@@ -192,6 +193,7 @@ class PrAddMessage extends Component {
     const addmsgbox = this.addMessageNode;
     var msgInsights = document.getElementById('msgInsights-bar-right');
     var msgCount = document.getElementById("prAddMessageCount");
+    var dropZone = document.getElementById("drop-zone");
 
     this.setState({
       text: value
@@ -277,7 +279,25 @@ class PrAddMessage extends Component {
 
       // Expand height of box & add scroll if needed
       addmsgbox.style.height = '20px';
-      addmsgbox.style.height = (addmsgbox.scrollHeight) + 'px';
+      addmsgbox.style.height = addmsgbox.scrollHeight + 'px';
+
+  /*    console.log("addmsgbox.style.height: "+addmsgbox.style.height)
+      const currHeight = dropZone.offsetHeight;
+      console.log("currheight: "+currHeight)
+      console.log("new height: "+ (currHeight - (addmsgbox.scrollHeight - 26)))
+      // taller than original height
+      if (addmsgbox.scrollHeight > 26) {
+        console.log("here")
+        if (addmsgbox.scrollHeight > this.state.prAddMsgHeight) {
+          console.log("here changing height")
+          dropZone.style.height = (currHeight - (addmsgbox.offsetHeight - 26)) + 'px' // Minus the 20px original height
+        }
+      }
+
+      this.setState({
+        prAddMsgHeight: addmsgbox.offsetHeight
+      })*/
+
       if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
         addmsgbox.style.overflowY = "scroll";
       }
@@ -291,7 +311,7 @@ class PrAddMessage extends Component {
 
     } else {
       // Reset inbox box back to normal
-      addmsgbox.style.height = '25px';
+      addmsgbox.style.height = '26px';
       msgInsights.classList.remove("show");
       msgCount.style.display = 'none';
       addmsgbox.focus();

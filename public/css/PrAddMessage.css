@@ -1,14 +1,14 @@
 /* Dex last merged this code on 13th jan 2021 */
 
 .chatWindow-footer{
-  flex-shrink: 0;
+/*  flex-shrink: 0;
   -webkit-flex-shrink: 0;
   -moz-flex-shrink: 0;
-  position: absolute;
+  position: absolute;*/
   bottom: 0;
   background-color: #fff;
   width: 100%;
-  min-height: 74px;
+/*  min-height: 74px;*/
   z-index: 2;
 }
 

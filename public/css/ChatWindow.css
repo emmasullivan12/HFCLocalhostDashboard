@@ -180,6 +180,11 @@
   overflow-y: unset;
 }
 
+#chatWindow-fileUpload{
+  visibility: hidden;
+  position: absolute;
+}
+
 .chat-content-container{
   overflow:hidden;
   display: flex;
@@ -214,6 +219,9 @@
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png);
   background-size: 130px;
   padding-bottom: 10px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
 }
 
 .flex-container-content{
