@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th jan 2021
+// Dex last merged this code on 30th jan 2021
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -193,7 +193,6 @@ class PrAddMessage extends Component {
     const addmsgbox = this.addMessageNode;
     var msgInsights = document.getElementById('msgInsights-bar-right');
     var msgCount = document.getElementById("prAddMessageCount");
-    var dropZone = document.getElementById("drop-zone");
 
     this.setState({
       text: value
