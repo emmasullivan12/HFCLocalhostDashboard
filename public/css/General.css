@@ -386,6 +386,9 @@ div {
 .alignCenter{
   text-align: center!important;
 }
+.alignL{
+  text-align: left!important;
+}
 .alignLeft{
   float:left!important;
 }

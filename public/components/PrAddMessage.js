@@ -298,7 +298,7 @@ class PrAddMessage extends Component {
       })*/
 
       if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
-        addmsgbox.style.overflowY = "scroll";
+        addmsgbox.style.overflowY = "auto";
       }
 
       // Show the chraacter counter if goes over 1 line

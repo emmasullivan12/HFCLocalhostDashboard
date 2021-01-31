@@ -155,7 +155,19 @@ h2{
 }
 .clientMenuContainer{
   position: absolute;
-  display: table;
+  /*display: table;*/
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+
   width: 220px;
   height: 100%;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Dashboard-Background_150.jpg);
@@ -503,9 +515,13 @@ svg:not(:root) {
 .c-scrollbar{
   position: relative;
   overflow: hidden;
-  height: -webkit-calc(100vh - 81px - 35px);
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+/*  height: -webkit-calc(100vh - 81px - 35px);
   height: -moz-calc(100vh - 81px - 35px);
-  height: calc(100vh - 81px - 35px);
+  height: calc(100vh - 81px - 35px);*/
 }
 .c-scrollbar__hider{
   overflow-y: scroll;
@@ -522,6 +538,8 @@ svg:not(:root) {
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
+
+  width: 271px;
 }
 
 .c-scrollbar__track{
