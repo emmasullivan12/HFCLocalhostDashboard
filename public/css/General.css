@@ -363,6 +363,9 @@ div {
   color: #c7c7c7!important;
   font-size: 12px!important;
 }
+.greyText{
+  color: #bdbdbd;
+}
 .redText{
   color: #da0b0b;
   font-size: 13px;
@@ -382,6 +385,9 @@ div {
 /* POSITIONING */
 .dispBlock{
   display: block;
+}
+.dispInlineBlock{
+  display: inline-block;
 }
 .alignCenter{
   text-align: center!important;

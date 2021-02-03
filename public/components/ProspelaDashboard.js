@@ -17,6 +17,10 @@ import { usersFetchData } from "../actions/Users";*/
 
 import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
+import MatchMenu from "./MatchMenu";
+import MatchesToDo from "./MatchesToDo";
+import MatchesInProg from "./MatchesInProg";
+import MatchesCompleted from "./MatchesCompleted";
 import MenuModal from "./MenuModal";
 import Modal from "./Modal";
 import NotFound from "./NotFound";
@@ -196,6 +200,7 @@ class ProspelaDashboard extends Component{
                     <Modal {...SendNotifModalProps}>
                       <SendNotifModalContent />
                     </Modal>
+                    <div className="menuBreak"/>
                     <div className="mainMenu">
                       <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
                       <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Review Signups</NavLink>
@@ -203,6 +208,11 @@ class ProspelaDashboard extends Component{
               {/*}      <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' onClick={this.closeMenu}/>*/}
+                    <div className="menuBreak"/>
+                    <MatchMenu
+                      matchTabs={DUMMY_MATCHTAB_LIST}
+                      onClick={this.closeMenu}
+                    />
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -232,6 +242,9 @@ class ProspelaDashboard extends Component{
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route path="/review-signups" component={ReviewSignups}/>
+                <Route path="/matches/to-be-matched" component={MatchesToDo}/>
+                <Route path="/matches/in-progress" component={MatchesInProg}/>
+                <Route path="/matches/completed" component={MatchesCompleted}/>
                 <Route component={NotFound}/>
               </Switch>
             </div>
@@ -247,6 +260,12 @@ const DUMMY_CHAT_LIST = [
   {chatid: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
   {chatid: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
   {chatid: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
+];
+
+const DUMMY_MATCHTAB_LIST = [
+  {tabName: 'To be matched', navlink: '/matches/to-be-matched'},
+  {tabName: 'In progress', navlink: '/matches/in-progress'},
+  {tabName: 'Completed', navlink: '/matches/completed'},
 ];
 
 export default ProspelaDashboard;

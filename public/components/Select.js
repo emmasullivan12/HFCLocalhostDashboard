@@ -1152,8 +1152,8 @@ class SelectBox extends React.Component {
           {options.map((option, index) => {
             const hasMultipleAttributes = this.checkMultipleAttributes();
             const value = hasMultipleAttributes === true ? option[valueToShow] : option;
-            const detail = detailToShow == undefined ? '' :  option[detailToShow];
-            const icon = iconToShow == undefined ? '' :  option[iconToShow];
+            const detail = detailToShow == undefined ? '' : option[detailToShow];
+            const icon = iconToShow == undefined ? '' : option[iconToShow];
             const isSectionTitle = option["isTitle"] === true;
             const selected = values.includes(value)
 

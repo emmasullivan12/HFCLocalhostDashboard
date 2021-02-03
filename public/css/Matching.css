@@ -1,0 +1,186 @@
+.tabWindow{
+  padding: 10px 20px 10px 20px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.searchBar{
+  width: 320px;
+}
+
+.filterSection{
+  padding-right: 20px;
+  margin-bottom: 10px;
+  line-height: 13px;
+}
+.checkboxText.filters {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-right: 12px;
+  margin-top: 1.5px;
+}
+.filterSelectBox{
+  width: 250px;
+}
+.filterSelectBox #selectBox-selectStatus{
+  margin-bottom: 0;
+  padding: 5px 5px;
+}
+.filterSelectBox #selectBox-selectStatus #selectArrow {
+  top: 1px;
+}
+.toBeMatched-container{
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #fff;
+  color: #bdbdbd;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.table-container{
+  overflow-x: auto;
+}
+#tobeMatched-table{
+  width: 100%;
+}
+#tobeMatched-table tbody {
+  font-size: 14px;
+}
+#tobeMatched-table th {
+  color: #3f3f3f;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+th.userToMatch-match{
+  width: 80px;
+}
+th.userToMatch-name{
+  min-width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.userToMatch-changeStatus{
+  margin-top: -5px;
+}
+.userToMatch-changeStatus .select{
+  padding: 2px 2px;
+  width: 170px;
+  margin-bottom: 0;
+}
+.userToMatch-changeStatus .select .select-placeholder,
+.userToMatch-changeStatus .select .selectContainer .value {
+  font-size: 14px;
+}
+.userToMatch-changeStatus.H .select{
+  background-color: #ffd1d1;
+  border: 1px solid #f9b3b1;
+}
+.userToMatch-changeStatus.M .select{
+  background-color: #fbe9cf;
+  border: 1px solid #fdcc81;
+}
+.userToMatch-changeStatus.L .select{
+  background-color: #feffd0;
+  border: 1px solid #e7ea97;
+}
+.userToMatch-changeStatus.H .select .select-placeholder,
+.userToMatch-changeStatus.H .select .selectContainer .value,
+.userToMatch-changeStatus.H .select .arrow{
+  color: #e03766;
+}
+.userToMatch-changeStatus.M .select .select-placeholder,
+.userToMatch-changeStatus.M .select .selectContainer .value,
+.userToMatch-changeStatus.M .select .arrow{
+  color: #d8a42a;
+}
+.userToMatch-changeStatus.L .select .select-placeholder,
+.userToMatch-changeStatus.L .select .selectContainer .value,
+.userToMatch-changeStatus.L .select .arrow{
+  color: #d0d428;
+}
+.userToMatch-changeStatus.H .select.form-control-std:focus{
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+}
+.userToMatch-changeStatus.M .select.form-control-std:focus{
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+}
+.userToMatch-changeStatus.L .select.form-control-std:focus{
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+}
+
+.userToMatch-changeStatus .select .arrow {
+  top: 0;
+}
+.userToMatch-changeStatus .select .option {
+  font-size: 14px;
+}
+th.userToMatch-roles{
+  min-width: 190px;
+}
+th.userToMatch-activerole{
+  min-width: 90px;
+}
+th.userToMatch-chats{
+  min-width: 70px;
+}
+th.userToMatch-dateSignedup{
+  min-width: 140px;
+}
+.userToMatch-dateSignedupText{
+  font-size: 14px;
+}
+th.userToMatch-safeguarding{
+  min-width: 115px;
+}
+.userToMatch-sgStatus{
+  font-size: 12px;
+}
+#toBeMatched-table th.userToMatch-notes{
+  width: 100px;
+}
+
+#tobeMatched-table td {
+  padding-bottom: 12px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+#tobeMatched-table td.alignCenter {
+  padding-right: 0;
+}
+#toBeMatched-table td:hover{
+  background-color: #f6f6ff;
+}
+.ModalOpenBtn.ModalOpenBtn-matchingUsers{
+  padding: 7px 15px;
+  margin-top: -5px;
+}
+.rolebadge-mentee{
+  border: 1px solid #78becd;
+  border-radius: 10%;
+  background-color: #5ce8ff38;
+  color: #78beca;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.rolebadge-mentor{
+  border: 1px solid #7c7cfd;
+  border-radius: 10%;
+  background-color: #dcdcf9;
+  color: #7c7cfd;
+  margin-left: 5px;
+  margin-right: 5px;
+}
