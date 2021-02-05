@@ -194,7 +194,7 @@ class UserToMatch extends Component {
               </div>
             </td>
             <td className="alignCenter">{user.role == 'mentor' ? (user.no_mentees + ' / ' + user.maxmentees) : (user.no_mentors)}</td>
-            <td className="userToMatch-dateSignedupText"><i><DateCalc time={user.datesignedup} showPureDate /></i></td> {/* user DateCalc from generalfunctions */}
+            <td className="userToMatch-dateSignedupText"><i><DateCalc time={user.gdprdivts} showPureDate /></i></td> {/* user DateCalc from generalfunctions */}
             <td className={classNameSafeguarding}>
               {user.role == 'mentor' && wantsU18 == true && prApproved == true && (
                 <Check />

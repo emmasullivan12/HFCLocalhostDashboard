@@ -49,10 +49,10 @@ class MatchesToDo extends React.Component {
     const rolesArr = roleOptions
       .filter(role => roles.includes(role.value))
 
-    rolesArr.map((x) => {
+    rolesArr.forEach((x) => {
       rolesFullText.push(x.label)
     })
-    rolesfreetext.map((y) => {
+    rolesfreetext.forEach((y) => {
       rolesFullText.push(y)
     })
 
@@ -170,19 +170,16 @@ class MatchesToDo extends React.Component {
   render() {
     const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow } = this.state;
     var users = [
-      {uuid: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
+      {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
     const selected = true;
     const toBeMatched = [];
 
     const usersToMatch = [
-      {uuid: 'uuid123', fname: 'Adam', lname: 'Ant', status: 1, group: 'avfx', role: 'mentee', no_mentors: 0, datesignedup: '2021-01-03T19:54:25.084Z', notesonuser: 'wants Houdini', roles: ['12', '98'], rolesfreetext: ['role3', 'role4'], birthday: '1995-01-01T00:00:00.000Z', matchstatus: 1},
-      {uuid: 'uuid124', fname: 'Busy', lname: 'Bee', status: 2, group: 'avfx', role: 'mentee', no_mentors: 1, datesignedup: '2020-12-03T19:54:25.084Z', notesonuser: '', roles: ['12', '98'], rolesfreetext: [], birthday: '2005-01-01T00:00:00.000Z', matchstatus: 4},
-      {uuid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', status: 2, group: 'intogames', role: 'mentor', no_mentees: 2, maxmentees: 5, datesignedup: '2020-11-07T19:54:25.084Z', notesonuser: 'Really passionate about being Animator only.', rolesexp: ['14', '101'], rolesexpfreetext: ['roley', 'rollie'], matchstatus: 4, mentorsustep: 'didFullSUIDtf'},
+      {uuid: 'uuid123', fname: 'Adam', lname: 'Ant', group: 'avfx', role: 'mentee', no_mentors: 0, gdprdivts: '2021-01-03T19:54:25.084Z', notesonuser: 'wants Houdini', roles: ['12', '98'], rolesfreetext: ['role3', 'role4'], birthday: '1995-01-01T00:00:00.000Z', matchstatus: 1},
+      {uuid: 'uuid124', fname: 'Busy', lname: 'Bee', group: 'avfx', role: 'mentee', no_mentors: 1, gdprdivts: '2020-12-03T19:54:25.084Z', notesonuser: '', roles: ['12', '98'], rolesfreetext: [], birthday: '2005-01-01T00:00:00.000Z', matchstatus: 4},
+      {uuid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', group: 'intogames', role: 'mentor', no_mentees: 2, maxmentees: 5, gdprdivts: '2020-11-07T19:54:25.084Z', notesonuser: 'Really passionate about being Animator only.', rolesexp: ['14', '101'], rolesexpfreetext: ['roley', 'rollie'], matchstatus: 4, mentorsustep: 'didFullSUIDtf'},
     ];
-
-//if wantsunder18 = mentorsustep == didFullSUIDtf || didIDTrain
-//if mentor >> (if wantsu18 >> hasprospelacheckedidstatus) (if doesntwantu18 >> "over 18 only")
 
     if (usersToMatch.length == 0) {
       toBeMatched.push(
@@ -218,7 +215,7 @@ class MatchesToDo extends React.Component {
             <div className="autocompleter">
               <Autocomplete
                 suggestions={users}
-                name='country'
+                name='allUsersList'
                 placeholder='Search all Prospela users by name'
               //  handleTabPress={this.handleTabPress}
                 handleChange={this.handleUserSearch}
