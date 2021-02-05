@@ -24,8 +24,57 @@ class UserToMatch extends Component {
     super(props);
     this.state = {
       matchStatus: this.props.user.matchstatus,
+      editingNotes: false,
+      notes: this.props.user.notesonuser,
     }
   }
+
+  setCaret = () => {
+    var el = this.editableNotes;
+    var range = document.createRange()
+    var sel = window.getSelection()
+    range.setStart(el.lastChild, el.lastChild.length)
+    range.collapse(true)
+    sel.removeAllRanges()
+    sel.addRange(range)
+  }
+
+  updateNotes = () => {
+    this.editableNotes.contentEditable = 'true'
+    this.setState({
+      editingNotes: true
+    })
+
+    this.editableNotes.focus();
+    this.setCaret();
+  }
+
+  saveNewNotes = (evt) => {
+    const pText = this.editableNotes.innerHTML;
+//    const pText = evt.target.previousSibling.innerHTML;
+    this.setState({
+      notes: pText,
+      editingNotes: false,
+    }, () => {
+      this.updateNotesBtn.focus();
+      this.editableNotes.contentEditable = 'false'
+    })
+  }
+
+  showEditBtn =() => {
+    const {editingNotes} = this.state;
+    if (editingNotes == false) {
+      this.updateNotesBtn.style.visibility = 'visible'
+    }
+  }
+
+  hideEditBtn =() => {
+    const {editingNotes} = this.state;
+    if (editingNotes == false) {
+      this.updateNotesBtn.style.visibility = 'hidden'
+    }
+  }
+
   handleMatchStatusChange = (userInput) => {
     this.setState({
       matchStatus: userInput
@@ -38,8 +87,7 @@ class UserToMatch extends Component {
 
     const status = matchStatusOptions
       .filter(status => status['value'] == matchStatus)
-    console.log(status)
-    console.log(status[0].label)
+
     return status[0].label
   }
 
@@ -54,11 +102,10 @@ class UserToMatch extends Component {
   }
 
   render() {
-    const {user, isFirstItem, matchStatusOptions} = this.props;
-    const {matchStatus} = this.state;
+    const {user, isFirstItem, matchStatusOptions, convertRole} = this.props;
+    const {matchStatus, editingNotes, notes} = this.state;
 
-    const mentorroles = user.rolesexp + user.rolesexpfreetext;
-    const menteeroles = user.roles + user.rolesfreetext;
+    const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
     const priority = this.getPriority();
     const matchStatusName = this.getMatchStatus();
     let classNameSafeguarding = "userToMatch-sgStatus";
@@ -72,15 +119,15 @@ class UserToMatch extends Component {
       var ts = new Date(birthdayts);
       var today = new Date();
       let age;
+
       age = today.getFullYear() - ts.getFullYear()
-      console.log("age: "+age)
       isU18 = age < 18;
 
       if (isU18 == true) {
-        safeguardingText = '[AGE IN RED]'
+        safeguardingText = age + " years (U18)"
         classNameSafeguarding += " redText";
       } else {
-        safeguardingText = '[AGE IN GREY]'
+        safeguardingText =  age + " years"
         classNameSafeguarding += " greyText";
       }
     } else {
@@ -88,10 +135,10 @@ class UserToMatch extends Component {
       if (wantsU18 == true) {
         prApproved = true
         if (prApproved == true) {
-          safeguardingText = <Check /> + 'ID Checked'
+          safeguardingText = ' ID Checked'
           classNameSafeguarding += " greenText";
         } else {
-          safeguardingText = <X /> + 'Needs ID Check'
+          safeguardingText = ' Needs ID Check'
           classNameSafeguarding += " redText";
         }
       } else {
@@ -114,7 +161,7 @@ class UserToMatch extends Component {
               <th className="userToMatch-chats alignCenter">Chats</th>
               <th className="userToMatch-dateSignedup">Signed up</th>
               <th className="userToMatch-safeguarding">Safeguarding</th>
-              <th className="userToMatch-notes">Notes</th>
+              <th colSpan="2" className="userToMatch-notes">Notes</th>
             </tr>
           </thead>
         )}
@@ -133,13 +180,13 @@ class UserToMatch extends Component {
                   options={matchStatusOptions}
                   name='selectStatus'
                   placeholder={matchStatusName}
-                  placeholderOnClick="Select status to show:"
+                  placeholderOnClick="Change status:"
                   handleChange={this.handleMatchStatusChange}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                 />
               </div>
             </td>
-            <td>{user.role == 'mentor' ? mentorroles : menteeroles}</td>
+            <td>{userroles}</td>
             <td className="alignCenter">{user.group}</td>
             <td className="alignCenter">
               <div className={"rolebadge-"+user.role}>
@@ -148,8 +195,26 @@ class UserToMatch extends Component {
             </td>
             <td className="alignCenter">{user.role == 'mentor' ? (user.no_mentees + ' / ' + user.maxmentees) : (user.no_mentors)}</td>
             <td className="userToMatch-dateSignedupText"><i><DateCalc time={user.datesignedup} showPureDate /></i></td> {/* user DateCalc from generalfunctions */}
-            <td className={classNameSafeguarding}>{safeguardingText}</td>
-            <td>{user.notesonuser}</td>
+            <td className={classNameSafeguarding}>
+              {user.role == 'mentor' && wantsU18 == true && prApproved == true && (
+                <Check />
+              )}
+              {user.role == 'mentor' && wantsU18 == true && prApproved == false && (
+                <X />
+              )}
+              {safeguardingText}
+            </td>
+            <td onMouseOver={this.showEditBtn} onMouseLeave={this.hideEditBtn} onFocus={this.showEditBtn}>
+              <p contentEditable="false" ref={n => this.editableNotes = n} className={"editableText-userNotes noMarginBlockEnd noMarginBlockStart" + (editingNotes == true ? ' editing' : '')} value={notes}>{user.notesonuser != '' ? user.notesonuser : ''}</p>
+            </td>
+            <td className="userToMatch-editingNotes" onMouseOver={this.showEditBtn} onMouseLeave={this.hideEditBtn} onFocus={this.showEditBtn}>
+              {editingNotes == true && (
+                <button type="button" className="button-unstyled userToMatch-updateNotesBtn greenText" onClick={this.saveNewNotes}>Update</button>
+              )}
+              {editingNotes == false && (
+                <button type="button" className="button-unstyled userToMatch-editNotesBtn" ref={n => this.updateNotesBtn = n} onClick={this.updateNotes}><i className="fas fa-pencil-alt"/></button>
+              )}
+            </td>
           </tr>
         </tbody>
       </React.Fragment>

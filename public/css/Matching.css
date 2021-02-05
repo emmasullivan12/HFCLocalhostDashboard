@@ -66,6 +66,9 @@ th.userToMatch-name{
   text-overflow: ellipsis;
   overflow: hidden;
 }
+th.userToMatch-safeguarding{
+  width: 120px;
+}
 .userToMatch-changeStatus{
   margin-top: -5px;
 }
@@ -128,7 +131,7 @@ th.userToMatch-name{
   font-size: 14px;
 }
 th.userToMatch-roles{
-  min-width: 190px;
+  min-width: 170px;
 }
 th.userToMatch-activerole{
   min-width: 90px;
@@ -148,8 +151,30 @@ th.userToMatch-safeguarding{
 .userToMatch-sgStatus{
   font-size: 12px;
 }
-#toBeMatched-table th.userToMatch-notes{
-  width: 100px;
+.userToMatch-sgStatus svg{
+  display: inline-block;
+}
+th.userToMatch-notes{
+  min-width: 180px;
+}
+.editableText-userNotes{
+  display: inline-block;
+  padding-right: 5px;
+}
+.editableText-userNotes.editing{
+  outline: none;
+  border: 1px solid #4e4ed6;
+  -webkit-box-shadow: 0px 0px 5px #4e4ed6;
+  box-shadow: 0px 0px 5px #4e4ed6;
+}
+.userToMatch-updateNotesBtn{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4e4ed6;
+  font-weight: 600;
+}
+.userToMatch-editNotesBtn{
+  visibility: hidden;
 }
 
 #tobeMatched-table td {
@@ -157,13 +182,16 @@ th.userToMatch-safeguarding{
   padding-right: 10px;
   vertical-align: top;
 }
-
 #tobeMatched-table td.alignCenter {
   padding-right: 0;
 }
 #toBeMatched-table td:hover{
   background-color: #f6f6ff;
 }
+td.userToMatch-editingNotes{
+  width: 55px;
+}
+
 .ModalOpenBtn.ModalOpenBtn-matchingUsers{
   padding: 7px 15px;
   margin-top: -5px;

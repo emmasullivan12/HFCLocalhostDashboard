@@ -19,7 +19,7 @@ class SelectBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: [],
+      values: this.props.defaultChecked ? this.props.defaultChecked : [],
   //    keysPressed: [],
       focusedValue: -1,
       isFocused: false,

@@ -36,7 +36,7 @@ class MatchMenu extends Component {
           <div className="chatMenu-header overflow-ellipsis">
             Matches
             <span className="menuItemIconContainer chat">
-              <i className="fas fa-comment-dots" />
+              <i className="fas fa-link" />
             </span>
           </div>
           <div className="channelsContainer">
