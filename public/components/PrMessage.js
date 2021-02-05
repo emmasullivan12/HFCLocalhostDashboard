@@ -1,5 +1,4 @@
-// Dex last merged this code on 30th jan 2021
-
+// Dex last merged this code on 5th feb 2021
 import React, { Component } from "react";
 
 import AcceptCTA from './AcceptCTA.js';
