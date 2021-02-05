@@ -84,8 +84,7 @@ class Autocomplete extends React.Component {
     const { suggestions, handleChange, valueToShow, isForForm, handleDone, required } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    console.log("hasMultipleAttributes: "+hasMultipleAttributes)
-
+    
     function filteredSuggestions() {
 
       let filteredSuggestions;
@@ -278,8 +277,6 @@ class Autocomplete extends React.Component {
 
   checkMultipleAttributes() {
     const { suggestions } = this.props;
-    console.log(suggestions[0])
-    console.log(suggestions[0].value)
 
     if (suggestions[0] === undefined) {
       return false
