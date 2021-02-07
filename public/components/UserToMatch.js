@@ -1,4 +1,4 @@
-// Dex last merged this code on 5th feb 2021 
+// Dex last merged this code on 5th feb 2021
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -10,12 +10,22 @@ import {
 
 import {DateCalc, X, Check} from "./GeneralFunctions";
 import FullPageModal from './FullPageModal.js';
+import Modal from './Modal.js';
 import SelectBox from './Select.js';
+import SetUnavailabilityContent from './SetUnavailabilityContent.js';
 
 const MatchingUsersProps = {
   triggerText: 'Match',
   usedFor: 'matchingUsers',
   backBtn: 'arrow',
+}
+
+const SetUnavailableProps = {
+  ariaLabel: 'Set Unavailability',
+  triggerText: 'Set Unavailability',
+  usedFor: 'settingUnavailability',
+  hideTrigger: true,
+  changeInitFocus: true
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -26,14 +36,19 @@ class UserToMatch extends Component {
       matchStatus: this.props.user.matchstatus,
       editingNotes: false,
       notes: this.props.user.notesonuser,
+      showUnavailableModal: false,
     }
+  }
+
+  componentDidUpdate() {
+
   }
 
   setCaret = () => {
     var el = this.editableNotes;
     var range = document.createRange()
     var sel = window.getSelection()
-    range.setStart(el.lastChild, el.lastChild.length)
+    range.setStart(el.lastChild, el.lastChild != null ? el.lastChild.length : 0)
     range.collapse(true)
     sel.removeAllRanges()
     sel.addRange(range)
@@ -46,7 +61,10 @@ class UserToMatch extends Component {
     })
 
     this.editableNotes.focus();
-    this.setCaret();
+    if (this.state.notes != '') {
+      this.setCaret();
+    }
+
   }
 
   saveNewNotes = (evt) => {
@@ -77,7 +95,14 @@ class UserToMatch extends Component {
 
   handleMatchStatusChange = (userInput) => {
     this.setState({
-      matchStatus: userInput
+      matchStatus: userInput,
+      showUnavailableModal: userInput == '9' ? true : false // if selects user status as "unavailable" i.e. #9
+    });
+  }
+
+  closeAvailabilityModal = () => {
+    this.setState({
+      showUnavailableModal: false
     });
   }
 
@@ -103,7 +128,7 @@ class UserToMatch extends Component {
 
   render() {
     const {user, isFirstItem, matchStatusOptions, convertRole} = this.props;
-    const {matchStatus, editingNotes, notes} = this.state;
+    const {matchStatus, editingNotes, notes, showUnavailableModal} = this.state;
 
     const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
     const priority = this.getPriority();
@@ -217,6 +242,13 @@ class UserToMatch extends Component {
             </td>
           </tr>
         </tbody>
+        {showUnavailableModal == true && (
+          <Modal {...SetUnavailableProps} handleLocalStateOnClose={this.closeAvailabilityModal}>
+            <SetUnavailabilityContent
+              name={user.fname + ' ' + user.lname}
+            />
+          </Modal>
+        )}
       </React.Fragment>
     )
   }

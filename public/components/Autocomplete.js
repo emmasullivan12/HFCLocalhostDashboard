@@ -2,9 +2,38 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-//import '../css/Camera.css';
-//import '../css/General.css';
 import '../css/Autocomplete.css';
+
+/* PROPS [unfinished] */
+  // showCTA1
+  // BOOLEAN
+  // (optional)
+  // Show a button for a CTA for this row
+
+  // showCTA2
+  // BOOLEAN
+  // (optional)
+  // Show a second button for a CTA for this row
+
+  // cta1Text
+  // STRING
+  // (optional - required if showCTA1 is true)
+  // Text to show on CTA1 button
+
+  // cta2Text
+  // STRING
+  // (optional - required if showCTA2 is true)
+  // Text to show on CTA2 button
+
+  // cta1ClickHandler
+  // FUNCTION
+  // (optional - required if showCTA1 is true)
+  // click handler for CTA1 button
+
+  // cta2ClickHandler
+  // FUNCTION
+  // (optional - required if showCTA2 is true)
+  // click handler for CTA2 button
 
 class Autocomplete extends React.Component {
   static defaultProperty={
@@ -84,7 +113,7 @@ class Autocomplete extends React.Component {
     const { suggestions, handleChange, valueToShow, isForForm, handleDone, required } = this.props;
     const userInput = e.currentTarget.value;
     const hasMultipleAttributes = this.checkMultipleAttributes();
-    
+
     function filteredSuggestions() {
 
       let filteredSuggestions;
@@ -290,8 +319,8 @@ class Autocomplete extends React.Component {
   }
 
   render() {
-    const { onChange, onClick, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, valueToShow, handleMouseDown, children } = this.props;
+    const { onChange, onClick, onMouseDown, onKeyDown, onFocus, onBlur } = this;
+    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, showCTA1, showCTA2, cta1Text, cta2Text, cta1ClickHandler, cta2ClickHandler, suggestions, valueToShow, handleMouseDown, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -334,6 +363,18 @@ class Autocomplete extends React.Component {
                         {detail}
                       </div>
                     )}
+                    {showCTA1===true && (
+                      <div>
+                        <button type="button" className="Submit-btn autocompleteCTA one" onClick={cta1ClickHandler} data-id={key}>
+                          {cta1Text}
+                        </button>
+                        {showCTA2===true && (
+                          <button type="button" className="Submit-btn autocompleteCTA two" onClick={cta2ClickHandler} data-id={key}>
+                            {cta2Text}
+                          </button>
+                        )}
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -359,11 +400,11 @@ class Autocomplete extends React.Component {
           id={"autocompleteBox-"+name}
           placeholder={placeholder}
           onChange={onChange}
-          onFocus={this.onFocus}
+          onFocus={onFocus}
           onKeyDown={onKeyDown}
           onMouseDown={handleMouseDown}
           value={userInput}
-          onBlur={this.onBlur}
+          onBlur={onBlur}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="off"

@@ -67,15 +67,16 @@ class Modal extends React.Component {
   }
 
   componentDidMount() {
+    const {hideTrigger} = this.props;
 
     // Closes modal if user presses browser back button
     let self = this
     window.addEventListener("popstate", this.onPopState.bind(event, self))
-  /*  window.addEventListener("popstate", function onPopState(e) {
-      if (e.state.modal === 'open') {
-        self.onClose()
-      }
-    })*/
+
+    // If want to open Modal automatically when called
+    if (hideTrigger == true) {
+      this.onOpen();
+    }
   }
 
   componentWillUnmount() {
@@ -105,10 +106,18 @@ class Modal extends React.Component {
   }
 
   onClose() {
+    const {handleLocalStateOnClose} = this.props;
+
     this.setState({ isOpen: false });
+
     if (this.openButtonNode != undefined) {
       this.openButtonNode.focus()
     }
+    
+    if (handleLocalStateOnClose) {
+      handleLocalStateOnClose();
+    }
+
     this.toggleScrollLock();
   }
 
@@ -146,17 +155,20 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, mentorName, title, triggerText, triggerHasAutoFocus, usedFor, role} = this.props;
+    const {ariaLabel, children, mentorName, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger} = this.props;
+
     return (
       <React.Fragment>
-        <ModalTrigger
-          ariaLabel={ariaLabel}
-          onOpen={this.onOpen}
-          buttonRef={n => this.openButtonNode = n}
-          text={triggerText}
-          triggerHasAutoFocus={triggerHasAutoFocus}
-          usedFor={usedFor}
-        />
+        {hideTrigger != true && (
+          <ModalTrigger
+            ariaLabel={ariaLabel}
+            onOpen={this.onOpen}
+            buttonRef={n => this.openButtonNode = n}
+            text={triggerText}
+            triggerHasAutoFocus={triggerHasAutoFocus}
+            usedFor={usedFor}
+          />
+        )}
         {isOpen && (
           <ModalContent
             ariaLabel={ariaLabel}

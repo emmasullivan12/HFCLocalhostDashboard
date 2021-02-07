@@ -5,22 +5,67 @@ import ReactDOM from "react-dom";
 
 import Autocomplete from './Autocomplete.js';
 import {Check} from './GeneralFunctions.js';
+import Modal from './Modal.js';
 import roleOptions from './Roles.js';
 import SelectBox from './Select.js';
+import UpdateUserStatusContent from './UpdateUserStatusContent.js';
 import UserToMatch from './UserToMatch.js';
 
 import "../css/Matching.css";
 
-const matchStatusOptions = [
+const StartMatchProps = {
+  ariaLabel: 'Match user',
+  triggerText: 'Match user',
+  usedFor: 'matchingUser',
+  hideTrigger: true,
+  changeInitFocus: true
+}
+
+const UpdateStatusProps = {
+  ariaLabel: 'Update user Status',
+  triggerText: 'Update user Status',
+  usedFor: 'updateUserStatus',
+  hideTrigger: true,
+  changeInitFocus: true
+}
+
+// We can filter by these in the "To be matched" tab (We would have already filtered out matched, non-responsive etc)
+const matchStatusOptionsToFilter = [
   {value: '2', label: 'VIP', priority: 'H'},
   {value: '3', label: 'Vocal', priority: 'H'},
   {value: '4', label: 'Has no match', priority: 'H'},
   {value: '5', label: 'Only has bad match', priority: 'H'},
   {value: '6', label: 'Wants another', priority: 'M'},
-  {value: '7', label: 'Matched', priority: 'L'},
+//  {value: '7', label: 'Matched', priority: 'L'},
+  {value: '1', label: 'Willing to wait', priority: 'L'},
+//  {value: '8', label: 'Not relevant', priority: 'L'},
+//  {value: '9', label: 'Unavailable', priority: 'L'},
+];
+
+// We can set user status as these
+const matchStatusOptionsToSet = [
+  {value: '2', label: 'VIP', priority: 'H'},
+  {value: '3', label: 'Vocal', priority: 'H'},
+  {value: '4', label: 'Has no match', priority: 'H'},
+  {value: '5', label: 'Only has bad match', priority: 'H'},
+  {value: '6', label: 'Wants another', priority: 'M'},
+//  {value: '7', label: 'Matched', priority: 'L'},
   {value: '1', label: 'Willing to wait', priority: 'L'},
   {value: '8', label: 'Not relevant', priority: 'L'},
-  {value: '9', label: 'Non-responsive', priority: 'L'},
+  {value: '9', label: 'Unavailable', priority: 'L'},
+];
+
+// We can set user status as these
+const matchStatusOptionsToSetNoUnavail = [
+  {value: '2', label: 'VIP', priority: 'H'},
+  {value: '3', label: 'Vocal', priority: 'H'},
+  {value: '4', label: 'Has no match', priority: 'H'},
+  {value: '5', label: 'Only has bad match', priority: 'H'},
+  {value: '6', label: 'Wants another', priority: 'M'},
+//  {value: '7', label: 'Matched', priority: 'L'},
+  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '8', label: 'Not relevant', priority: 'L'},
+  {value: '9', label: 'Unavailable', priority: 'L'},
 ];
 
 class MatchesToDo extends React.Component {
@@ -28,12 +73,16 @@ class MatchesToDo extends React.Component {
     super(props);
     this.state = {
       userToSearchFor: '',
-      roles: ['Mentee', 'E-Mentor'],
+      roles: ['mentee', 'mentor'],
       groups: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
-      status: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Matched', 'Willing to wait', 'Not relevant', 'Non-responsive'],
-      rolesToShow: ['Mentee', 'E-Mentor'],
+      status: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Willing to wait'],
+      rolesToShow: ['mentee', 'mentor'],
       groupsToShow: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
-      statusToShow: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Matched', 'Willing to wait', 'Not relevant', 'Non-responsive'],
+      statusToShow: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Willing to wait'],
+      showUpdateStatusModal: false,
+      showStartMatchModal: false,
+      userToUpdate: '',
+      userToMatch: ''
     }
   }
 
@@ -45,9 +94,10 @@ class MatchesToDo extends React.Component {
 
   convertRole = (roles, rolesfreetext) => {
     let rolesFullText = [];
+    const stringifyRoles = JSON.stringify(roles);
 
     const rolesArr = roleOptions
-      .filter(role => roles.includes(role.value))
+      .filter(role => stringifyRoles.includes(role.value))
 
     rolesArr.forEach((x) => {
       rolesFullText.push(x.label)
@@ -113,14 +163,37 @@ class MatchesToDo extends React.Component {
     })
   }
 
-  /*getMatchStatus = (matchStatus) => {
-    const {matchStatusOptions} = this.props;
+  refreshUsers = () => {
+    // Dex to use
+  }
 
-    const status = matchStatusOptions
-      .filter(status => status['value'] == matchStatus)
+  launchUpdateStatusModal = (e) => {
+    this.setState({
+      showUpdateStatusModal: true,
+      userToUpdate: e.target.dataset.id
+    });
+  }
 
-    return status[0].label
-  }*/
+  closeUpdateStatusModal = () => {
+    this.setState({
+      showUpdateStatusModal: false,
+      userToUpdate: ''
+    });
+  }
+
+  launchStartMatchModal = (e) => {
+    this.setState({
+      showStartMatchModal: true,
+    //  userToMatch: e.target.dataset.id
+    });
+  }
+
+  closeStartMatchModal = () => {
+    this.setState({
+      showStartMatchModal: false,
+      userToMatch: ''
+    });
+  }
 
   renderOptions(options, usedFor) {
     const { rolesToShow, groupsToShow } = this.state;
@@ -168,7 +241,7 @@ class MatchesToDo extends React.Component {
   }
 
   render() {
-    const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow } = this.state;
+    const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow, showStartMatchModal, showUpdateStatusModal, userToUpdate, userToMatch } = this.state;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -181,27 +254,14 @@ class MatchesToDo extends React.Component {
       {uuid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', group: 'intogames', role: 'mentor', no_mentees: 2, maxmentees: 5, gdprdivts: '2020-11-07T19:54:25.084Z', notesonuser: 'Really passionate about being Animator only.', rolesexp: ['14', '101'], rolesexpfreetext: ['roley', 'rollie'], matchstatus: 4, mentorsustep: 'didFullSUIDtf'},
     ];
 
-    if (usersToMatch.length == 0) {
-      toBeMatched.push(
-        <div>Woohoo! Everyones matched!</div>
-      );
-    } else {
-
-    /*  const filteredUsers = usersToMatch
-        .filter(user => {
-          rolesToShow.includes(user.role) &&
-          groupsToShow.includes(user.group) &&
-          statusToShow.includes(this.getMatchStatus(user.matchstatus))
-        })
-        */
-
+    if (usersToMatch.length > 0) {
       usersToMatch.forEach((user, index) => {
         toBeMatched.push(
           <UserToMatch
             user={user}
             key={user.uuid}
             isFirstItem={index == 0}
-            matchStatusOptions={matchStatusOptions}
+            matchStatusOptions={matchStatusOptionsToSet}
             convertRole={this.convertRole}
           />
         );
@@ -221,10 +281,16 @@ class MatchesToDo extends React.Component {
                 handleChange={this.handleUserSearch}
               //  handleMouseDown={this.handleMouseDown}
                 focusOnLoad
-                idValue='uuid'
+                idValue='value'
                 valueToShow='name' // This is the attribute of the array/object to be displayed to user
                 showDetail
                 detailToShow='role'
+                showCTA1
+                cta1ClickHandler={this.launchUpdateStatusModal}
+                cta1Text="Edit Status"
+                showCTA2
+                cta2ClickHandler={this.launchStartMatchModal}
+                cta2Text="Match"
               />
             </div>
           </div>
@@ -244,7 +310,7 @@ class MatchesToDo extends React.Component {
                 <SelectBox
                   multiple
               //    handleDone={this.handleDoneClickWorkEnv}
-                  options={matchStatusOptions}
+                  options={matchStatusOptionsToFilter}
                   name='selectStatus'
                   placeholder='Select status to show:'
                   placeholderOnClick="Select as many as you like"
@@ -261,18 +327,39 @@ class MatchesToDo extends React.Component {
               </div>
             </div>
           </div>
+          <button type="button" onClick={this.refreshUsers} className="Submit-btn refreshTobeMatched">
+            <i className="fas fa-sync-alt" />  Refresh List
+          </button>
           <div className="toBeMatched-container">
             <div className="exclamation-icon-container grey">
               <i className="fas fa-exclamation-circle" />
               <span> Needs matching</span>
             </div>
             <div className="table-container">
-              <table id="tobeMatched-table">
-                {toBeMatched}
-              </table>
+              {usersToMatch.length == 0 && (
+                <div>Woohoo! Everyones matched!</div>
+              )}
+              {usersToMatch.length > 0 && (
+                <table id="tobeMatched-table">
+                  {toBeMatched}
+                </table>
+              )}
             </div>
           </div>
         </div>
+    {/*    {showStartMatchModal == true && (
+          <Modal {...StartMatchProps} handleLocalStateOnClose={this.closeStartMatchModal}>
+            <StartMatchContent name={user.fname + ' ' + user.lname} />
+          </Modal>
+        )}*/}
+        {showUpdateStatusModal == true && (
+          <Modal {...UpdateStatusProps} handleLocalStateOnClose={this.closeUpdateStatusModal}>
+            <UpdateUserStatusContent
+              userToUpdate={userToUpdate}
+              matchStatusOptions={matchStatusOptionsToSetNoUnavail}
+            />
+          </Modal>
+        )}
       </React.Fragment>
     );
   }

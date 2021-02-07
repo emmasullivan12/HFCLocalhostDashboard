@@ -115,6 +115,7 @@
   cursor: pointer;
   background-color: #fff;
   border-bottom: 1px solid #d4d4d4;
+  position: relative;
 }
 .autocompleter-item.lastItem,
 .autocompleter-active.lastItem {
@@ -198,4 +199,20 @@
   color: #adadad;
   margin-top: -1.2rem;
   margin-bottom: 1rem;
+}
+
+.Submit-btn.autocompleteCTA{
+  min-width: 50px;
+  position: absolute;
+  top: 10px;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px;
+}
+.Submit-btn.autocompleteCTA.one{
+  right: 10px;
+}
+.Submit-btn.autocompleteCTA.two{
+  right: 80px;
+  margin-right: 5px;
 }
