@@ -3,7 +3,14 @@
 import React, { Component } from "react";
 
 import Checkbox from './Checkbox.js';
+import FullPageModal from './FullPageModal.js';
 import SelectBox from './Select.js';
+
+const MatchingUsersProps = {
+  triggerText: 'Match',
+  usedFor: 'matchingUsers-fromModal',
+  backBtn: 'arrow',
+}
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class UpdateUserStatusContent extends Component {
@@ -41,14 +48,11 @@ class UpdateUserStatusContent extends Component {
   }
 
   handleMatchStatusChange = (userInput, e) => {
-    console.log("userInput: "+userInput)
-    console.log(e)
-/*    const group = e.target.dataset.group
-    const role = e.target.dataset.role
-    const stateToSet = group+role
+    const group = e.target.dataset.extrainfo1
+    const role = e.target.dataset.extrainfo2
     this.setState({
-      [stateToSet]: userInput,
-    });*/
+      [group + "-" + role + '-matchStatus']: userInput,
+    });
   }
 
   getMatchStatus = (matchStatus) => {
@@ -98,31 +102,36 @@ class UpdateUserStatusContent extends Component {
     ]
     var statusPerGroup = [];
     var userGroupsStatus = [
-      {role: 'mentor', group: 'avfx', matchstatus: 4},
+      {role: 'mentor', group: 'avfx', matchstatus: 4},{role: 'mentor', group: 'intogames', matchstatus: 6},
     ]
 
     if (userGroupsStatus.length > 0) {
       userGroupsStatus.forEach((group) => {
 
-        const matchStatusName = this.getMatchStatus(group.matchstatus);
-        const priority = this.getPriority(group.matchstatus);
+        let matchStatusName = this.getMatchStatus(group.matchstatus);
+        let priority = this.getPriority(group.matchstatus);
 
         statusPerGroup.push(
-          <React.Fragment>
-            <div><strong>{group.group}</strong> - <i>{group.role}</i></div>
-            <div className={"userToMatch-changeStatus " + priority}>
+          <div className="setStatusContainer-modal">
+            <div className="userGroupRole-modal"><strong>{group.group}</strong> - <i>{group.role}</i></div>
+            <div className={"userToMatch-changeStatus modal " + priority}>
               <SelectBox
                 options={matchStatusOptions}
                 name='selectStatus'
                 placeholder={matchStatusName}
                 placeholderOnClick="Change status:"
                 handleChange={this.handleMatchStatusChange}
-                data-group={group.group}
-                data-role={group.role}
+                bringBackE // Brings back "e" event to be used in handleChange function
+                dataExtraInfo1={group.group} // added to dataset-extraInfo1 and can be accessed within handlechange
+                dataExtraInfo2={group.role}// added to dataset-extraInfo2 and can be accessed within handlechange
                 valueToShow='label' // This is the attribute of the array/object to be displayed to user
               />
             </div>
-          </React.Fragment>
+            <FullPageModal {...MatchingUsersProps}>
+              {/*<MatchingContent />*/}
+              <div>matching users goes here</div>
+            </FullPageModal>
+          </div>
         );
       });
     }
@@ -173,7 +182,9 @@ class UpdateUserStatusContent extends Component {
                 </div>
               </React.Fragment>
             )}
-            {statusPerGroup}
+            <div className="statusContainer-modal">
+              {statusPerGroup}
+            </div>
             <div className="request-btn-container">
               <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
                 Update Status

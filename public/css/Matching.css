@@ -75,12 +75,18 @@ th.userToMatch-name{
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  cursor: pointer;
 }
 th.userToMatch-safeguarding{
   width: 120px;
 }
 .userToMatch-changeStatus{
   margin-top: -5px;
+}
+.userToMatch-changeStatus.modal{
+  display: inline-block;
+  position: absolute;
+  right: 80px;
 }
 .userToMatch-changeStatus .select{
   padding: 2px 2px;
@@ -202,9 +208,15 @@ td.userToMatch-editingNotes{
   width: 55px;
 }
 
-.ModalOpenBtn.ModalOpenBtn-matchingUsers{
+.ModalOpenBtn.ModalOpenBtn-matchingUsers,
+.ModalOpenBtn.ModalOpenBtn-matchingUsers-fromModal{
   padding: 7px 15px;
   margin-top: -5px;
+}
+.ModalOpenBtn.ModalOpenBtn-matchingUsers-fromModal{
+  right: 0;
+  display: inline-block;
+  position: absolute;
 }
 .rolebadge-mentee{
   border: 1px solid #78becd;
@@ -221,4 +233,23 @@ td.userToMatch-editingNotes{
   color: #7c7cfd;
   margin-left: 5px;
   margin-right: 5px;
+}
+.statusContainer-modal{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  position: relative;
+  margin-right: 1rem;
+}
+.setStatusContainer-modal{
+  margin-bottom: 20px;
+}
+.setStatusContainer-modal:first-of-type{
+  margin-top: 20px;
+}
+.setStatusContainer-modal:last-of-type{
+  margin-bottom: 40px;
+}
+.userGroupRole-modal{
+  display: inline-block;
 }

@@ -194,6 +194,7 @@
   background-color: #351c75!important;
   color: #ffffff;
   cursor: pointer;
+  position: relative;
 }
 .no-suggestions{
   color: #adadad;

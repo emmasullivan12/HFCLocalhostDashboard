@@ -192,7 +192,7 @@ class SelectBox extends React.Component {
   };
 
   onDeleteOption = (e) => {
-    const {required, otherValidityChecks, name, handleChange, isForForm} = this.props;
+    const {required, otherValidityChecks, name, handleChange, isForForm, bringBackE} = this.props;
     const {value} = e.currentTarget.dataset
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
@@ -207,7 +207,7 @@ class SelectBox extends React.Component {
           const isValid = required ? values.length > 0 : true;
           handleChange(values, formId, isValid);
         } else {
-          handleChange(values);
+          bringBackE == true ? handleChange(values, e): handleChange(values);
         }
       }
 
@@ -235,7 +235,7 @@ class SelectBox extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { options, name, required, multiple, handleChange, handleDone, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions, isForForm } = this.props;
+    const { options, name, required, multiple, handleChange, handleDone, valueToShow, showCheckbox, otherValidityChecks, finMultiOptions, isForForm, bringBackE } = this.props;
 
     if (e.currentTarget.dataset.id.indexOf("title") != -1) {
       return
@@ -253,7 +253,7 @@ class SelectBox extends React.Component {
           const isValid = required ? value != '' : true;
           handleChange(e.currentTarget.dataset.id, formId, isValid);
         } else {
-          handleChange(e.currentTarget.dataset.id);
+          bringBackE == true ? handleChange(e.currentTarget.dataset.id, e) : handleChange(e.currentTarget.dataset.id);
         }
 
       }
@@ -295,7 +295,7 @@ class SelectBox extends React.Component {
             const isValid = required ? values.length > 0 : true;
             handleChange(values, formId, isValid);
           } else {
-            handleChange(values);
+            bringBackE == true ? handleChange(values, e): handleChange(values);
           }
         }
   //    }
@@ -353,7 +353,7 @@ class SelectBox extends React.Component {
   onKeyDown = e => {
     e.persist()
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleDone, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm } = this.props;
+    const { handleChange, handleDone, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm, bringBackE } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
@@ -405,7 +405,7 @@ class SelectBox extends React.Component {
                     const isValid = required ? values.length > 0 : true;
                     handleChange(values, formId, isValid);
                   } else {
-                    handleChange(values);
+                    bringBackE == true ? handleChange(values, e): handleChange(values);
                   }
                 }
 
@@ -472,7 +472,7 @@ class SelectBox extends React.Component {
                 });
 
               } else {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
             }
 
@@ -553,7 +553,7 @@ class SelectBox extends React.Component {
                     const isValid = required ? values.length > 0 : true;
                     handleChange(values, formId, isValid);
                   } else {
-                    handleChange(values);
+                    bringBackE == true ? handleChange(values, e): handleChange(values);
                   }
                 }
 
@@ -608,7 +608,7 @@ class SelectBox extends React.Component {
                 const isValid = required ? value != '' : true;
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
               } else {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
             }
 
@@ -678,7 +678,7 @@ class SelectBox extends React.Component {
                   }
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                  bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
               }
             }
@@ -729,7 +729,7 @@ class SelectBox extends React.Component {
                   }
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                  bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
               }
             }
@@ -808,7 +808,7 @@ class SelectBox extends React.Component {
                   }
                   handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
                 } else {
-                  handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                  bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
                 }
               }
             }
@@ -874,7 +874,7 @@ class SelectBox extends React.Component {
                 }
                 handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue], formId, isValid);
               } else {
-                handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
+                bringBackE == true ? handleChange((hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]), e) : handleChange(hasMultipleAttributes ? options[focusedValue].value : options[focusedValue]);
               }
             }
           }
@@ -1134,7 +1134,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required } = this.props
+    const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required, dataExtraInfo1, dataExtraInfo2 } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -1200,6 +1200,8 @@ class SelectBox extends React.Component {
               <div
                 key={value}
                 data-id={hasMultipleAttributes === true ? (isSectionTitle ? ('title-'+ value) : option.value) : option}
+                data-extrainfo1={dataExtraInfo1 ? dataExtraInfo1 : null}
+                data-extrainfo2={dataExtraInfo2 ? dataExtraInfo2 : null}
                 data-text={value}
                 className={className}
           //      onFocus={this.onHoverOption} // placeholder as was erroring without this

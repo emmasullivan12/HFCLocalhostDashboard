@@ -65,7 +65,7 @@ const matchStatusOptionsToSetNoUnavail = [
 //  {value: '7', label: 'Matched', priority: 'L'},
   {value: '1', label: 'Willing to wait', priority: 'L'},
   {value: '8', label: 'Not relevant', priority: 'L'},
-  {value: '9', label: 'Unavailable', priority: 'L'},
+//  {value: '9', label: 'Unavailable', priority: 'L'},
 ];
 
 class MatchesToDo extends React.Component {
@@ -80,9 +80,9 @@ class MatchesToDo extends React.Component {
       groupsToShow: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
       statusToShow: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Willing to wait'],
       showUpdateStatusModal: false,
-      showStartMatchModal: false,
+    //  showStartMatchModal: false,
       userToUpdate: '',
-      userToMatch: ''
+    //  userToMatch: ''
     }
   }
 
@@ -181,7 +181,7 @@ class MatchesToDo extends React.Component {
     });
   }
 
-  launchStartMatchModal = (e) => {
+/*  launchStartMatchModal = (e) => {
     this.setState({
       showStartMatchModal: true,
     //  userToMatch: e.target.dataset.id
@@ -193,7 +193,7 @@ class MatchesToDo extends React.Component {
       showStartMatchModal: false,
       userToMatch: ''
     });
-  }
+  }*/
 
   renderOptions(options, usedFor) {
     const { rolesToShow, groupsToShow } = this.state;
@@ -287,10 +287,10 @@ class MatchesToDo extends React.Component {
                 detailToShow='role'
                 showCTA1
                 cta1ClickHandler={this.launchUpdateStatusModal}
-                cta1Text="Edit Status"
-                showCTA2
-                cta2ClickHandler={this.launchStartMatchModal}
-                cta2Text="Match"
+                cta1Text="Update"
+              //  showCTA2
+              //  cta2ClickHandler={this.launchStartMatchModal}
+              //  cta2Text="Match"
               />
             </div>
           </div>
