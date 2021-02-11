@@ -1,4 +1,5 @@
 // Dex last merged this code on 8th feb 2021
+/* eslint-disable no-lonely-if, no-use-before-define, no-unused-expressions, no-shadow */
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -81,7 +82,7 @@ class SelectBox extends React.Component {
           }
         }
 
-        if(!required || required && values[0] != null) {
+        if(!required || (required && values[0] != null)) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
@@ -97,7 +98,7 @@ class SelectBox extends React.Component {
         }
       } else {
         if (values.length === 0) {
-          if(!required || required && value != null) {
+          if(!required || (required && value != null)) {
             document.getElementById("selectBox-"+name).classList.remove('error')
             if (otherValidityChecks) {
               otherValidityChecks()
@@ -118,7 +119,7 @@ class SelectBox extends React.Component {
           focusedValue = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
         }
 
-        if(!required || required && value != null) {
+        if(!required || (required && value != null)) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
@@ -302,7 +303,7 @@ class SelectBox extends React.Component {
 
       if (allSelected === true) {
       /*  */
-        if(!required || required && value != null) {
+        if(!required || (required && value != null)) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
@@ -317,7 +318,7 @@ class SelectBox extends React.Component {
         }
 
       } else {
-        if(!required || required && value != null) {
+        if(!required || (required && value != null)) {
           document.getElementById("selectBox-"+name).classList.remove('error')
           if (otherValidityChecks) {
             otherValidityChecks()
@@ -415,7 +416,7 @@ class SelectBox extends React.Component {
                   if (finMultiOptions) {
                     finMultiOptions()
                   }
-                  if(!required || required && value != null) {
+                  if(!required || (required && value != null)) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
                       otherValidityChecks()
@@ -430,7 +431,7 @@ class SelectBox extends React.Component {
                   }
                 }
 
-                if(!required || required && value != null) {
+                if(!required || (required && value != null)) {
                   document.getElementById("selectBox-"+name).classList.remove('error')
                   if (otherValidityChecks) {
                     otherValidityChecks()
@@ -511,10 +512,8 @@ class SelectBox extends React.Component {
         } else return
       })
 
-    }
-
     // User pressed the tab key
-    else if (key === 'Tab' || key === 9) {
+    } else if (key === 'Tab' || key === 9) {
       if (isLastChild != undefined && isOpen === true) {
         e.preventDefault()
       }
@@ -564,7 +563,7 @@ class SelectBox extends React.Component {
                     }
           //        }
 
-                  if(!required || required && value != null) {
+                  if(!required || (required && value != null)) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
                       otherValidityChecks()
@@ -578,7 +577,7 @@ class SelectBox extends React.Component {
                     isOpen: false
                   }
                 } else {
-                  if(!required || required && value != null) {
+                  if(!required || (required && value != null)) {
                     document.getElementById("selectBox-"+name).classList.remove('error')
                     if (otherValidityChecks) {
                       otherValidityChecks()
@@ -623,10 +622,9 @@ class SelectBox extends React.Component {
           }
         }
       })
-    }
 
     // User pressed the escape key
-    else if (key === 'Escape' || key === 'Esc' || key === 27) {
+    } else if (key === 'Escape' || key === 'Esc' || key === 27) {
       if (isOpen) {
 //        e.preventDefault()
         this.setState({
@@ -634,10 +632,9 @@ class SelectBox extends React.Component {
 //          focusedValue: -1,
         })
       }
-    }
 
     // User pressed the up arrow
-    else if (key === 'ArrowUp' || key === 38) {
+    } else if (key === 'ArrowUp' || key === 38) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault();
 
@@ -763,10 +760,9 @@ class SelectBox extends React.Component {
       } else {
         e.preventDefault();
       }
-    }
 
     // User pressed the down arrow
-    else if (key === 'ArrowDown' || key === 40) {
+    } else if (key === 'ArrowDown' || key === 40) {
       if (isOpen || (isFocused === true && focusedValue != -1)) {
         e.preventDefault()
         const hasTitles = this.countTitles() > 0

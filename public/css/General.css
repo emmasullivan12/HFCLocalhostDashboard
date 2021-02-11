@@ -366,6 +366,9 @@ div {
 .greyText{
   color: #bdbdbd;
 }
+.lightGreyText{
+  color: lightgrey;
+}
 .redText{
   color: #da0b0b;
   font-size: 13px;
@@ -518,11 +521,17 @@ div {
 .alignVrtl-middle{
   vertical-align: middle;
 }
+.displayFlex{
+  display: flex!important;
+}
 .overflow-ellipsis{
   white-space: nowrap;
   display: block!important;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.normalLineheight{
+  line-height: normal!important;
 }
 .tooltip{
   position: relative;

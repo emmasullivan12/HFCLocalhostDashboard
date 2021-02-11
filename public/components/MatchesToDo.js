@@ -167,7 +167,7 @@ class MatchesToDo extends React.Component {
     // Dex to use
   }
 
-  launchUpdateStatusModal = (e) => {
+  launchUpdateStatusModal = (e, suggestion) => {
     this.setState({
       showUpdateStatusModal: true,
       userToUpdate: e.target.dataset.id
@@ -357,6 +357,7 @@ class MatchesToDo extends React.Component {
             <UpdateUserStatusContent
               userToUpdate={userToUpdate}
               matchStatusOptions={matchStatusOptionsToSetNoUnavail}
+              convertRole={this.convertRole}
             />
           </Modal>
         )}

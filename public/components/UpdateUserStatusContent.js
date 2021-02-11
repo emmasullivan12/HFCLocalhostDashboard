@@ -59,7 +59,7 @@ class UpdateUserStatusContent extends Component {
     const {matchStatusOptions} = this.props;
 
     const status = matchStatusOptions
-      .filter(status => status['value'] == matchStatus)
+      .filter(s => s['value'] == matchStatus)
 
     return status[0].label
   }
@@ -68,7 +68,7 @@ class UpdateUserStatusContent extends Component {
     const {matchStatusOptions} = this.props;
 
     const status = matchStatusOptions
-      .filter(status => status['value'] == matchStatus)
+      .filter(st => st['value'] == matchStatus)
 
     return status[0].priority
   }
@@ -95,7 +95,7 @@ class UpdateUserStatusContent extends Component {
 
   render() {
     const { isUnavailable, isCompleteDud, messageFromServer } = this.state;
-    const {matchStatusOptions} = this.props;
+    const {matchStatusOptions, convertRole} = this.props;
     const isEnabled = this.canBeSubmitted();
     var reminderLengthList = [
       {value: 7, label: 'in 1 week'},{value: 14, label: 'in 2 weeks'},{value: 30, label: 'in 1 Month'},{value: 60, label: 'in 2 Months'},{value: 90, label: 'in 3 Months'},{value: 182, label: 'in 6 Months'},{value: 365, label: 'in 1 Years'}
@@ -128,7 +128,11 @@ class UpdateUserStatusContent extends Component {
               />
             </div>
             <FullPageModal {...MatchingUsersProps}>
-              {/*<MatchingContent />*/}
+              {/*<MatchingContent
+                  matchStatusOptions={matchStatusOptions}
+                  matchStatus={matchStatus}
+                  convertRole={this.convertRole}
+                />*/}
               <div>matching users goes here</div>
             </FullPageModal>
           </div>

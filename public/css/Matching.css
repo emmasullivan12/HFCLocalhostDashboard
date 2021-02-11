@@ -5,9 +5,24 @@
   height: 100%;
   background-color: #f2f2f2;
 }
-
+.loadingPotentialMatches{
+  text-align: center;
+  padding-top: 25px;
+}
 .searchBar{
   width: 320px;
+}
+.searchBar.searchByText,
+.searchBar.searchByName{
+  position: absolute;
+  right: 30px;
+  width: 400px;
+}
+.searchBar.searchByText{
+  top: 0;
+}
+.searchBar.searchByName{
+  top: -45px;
 }
 
 .filterSection{
@@ -38,6 +53,22 @@
   margin-right: 20px;
   min-width: 140px;
   height: 35px;
+}
+.Submit-btn.importPotentialMatches{
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+  height: 35px;
+}
+.form-control-std.searchUserByText{
+  width: 290px;
+  margin-right: 0;
+  height: 35px;
+  font-size: 14px;
+}
+#autocompleteBox-searchByNamePotentialMatch {
+  height: 35px;
+  font-size: 14px;
 }
 .toBeMatched-container{
   border: 1px solid #b7b7b7;
@@ -82,6 +113,11 @@ th.userToMatch-safeguarding{
 }
 .userToMatch-changeStatus{
   margin-top: -5px;
+}
+.userToMatch-changeStatus.matchUser{
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
 .userToMatch-changeStatus.modal{
   display: inline-block;
@@ -252,4 +288,80 @@ td.userToMatch-editingNotes{
 }
 .userGroupRole-modal{
   display: inline-block;
+}
+.fullpage-modal-container.matchingUsers{
+  background-color: #f2f2f2;
+}
+.userToMatch-card{
+  margin-top: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  min-height: 250px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  color: #3f3f3f;
+  position: relative;
+}
+.userToMatch-card .user-card-header {
+  background-color: #9f9ee7;
+  height: 15px;
+}
+.userToMatch-card.notes{
+  border: 1.5px dashed #dcdcdc;
+  margin-bottom: 10px;
+  background-color: unset;
+  min-height: unset;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+  color: #3f3f3f;
+}
+.userToMatch-seeMore{
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: lightgrey;
+}
+.userToMatch-safeguardingText{
+  font-size: 14px;
+  margin-left: 10px;
+}
+.userToReview-detail.main.matchUser{
+  padding-bottom: unset;
+}
+.userToReview-detail.small{
+  font-size: 14px;
+  color: grey;
+}
+.matchUser-header{
+  font-size: 14px;
+  color: grey;
+}
+.Submit-btn.messageUser{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #d0d0d0;
+  color: #d0d0d0;
+  min-width: 100px;
+  font-size: 14px;
+  height: 30px;
+}
+.historyItemNote{
+  display: inline-block;
+  padding-left: 20px;
 }

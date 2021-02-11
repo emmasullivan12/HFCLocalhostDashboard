@@ -111,7 +111,7 @@ class Autocomplete extends React.Component {
 
   onChange = (e) => {
     const { suggestions, handleChange, valueToShow, isForForm, handleDone, required } = this.props;
-    const userInput = e.currentTarget.value;
+    const userInput = e.currentTarget ? e.currentTarget.value : e;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
     function filteredSuggestions() {
@@ -141,21 +141,20 @@ class Autocomplete extends React.Component {
       filteredSuggestions: filteredSuggestions(),
       showSuggestions: userInput != "" ? true : false,
   //    showSuggestions: true,
-      userInput: e.currentTarget.value
+      userInput: userInput
     });
 
-    const isValid = this.checkExists(e.currentTarget.value);
+    const isValid = this.checkExists(userInput);
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     if (isForForm === true) {
-      handleChange(e.currentTarget.value, formId, isValid, () => {
+      handleChange(userInput, formId, isValid, () => {
         if (handleDone) {
           handleDone(formId)
         }
       });
     } else {
-      handleChange(e.currentTarget.value, isValid);
+      handleChange(userInput, isValid);
     }
-
 
   };
 
@@ -365,7 +364,7 @@ class Autocomplete extends React.Component {
                     )}
                     {showCTA1===true && (
                       <div>
-                        <button type="button" className="Submit-btn autocompleteCTA one" onClick={cta1ClickHandler} data-id={key}>
+                        <button type="button" className="Submit-btn autocompleteCTA one" onClick={(e) => cta1ClickHandler(e, suggestion)} data-id={key}>
                           {cta1Text}
                         </button>
                         {showCTA2===true && (

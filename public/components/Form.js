@@ -913,6 +913,7 @@ class Form extends Component {
               handleChange={this.handleChange}
               onBlur={this.onBlur}
               focusOnLoad={(i === 0) ? true : false}
+              className="form-control-std"
             />
             {question['maxLength'] && (
               <div className="descriptor-br form">

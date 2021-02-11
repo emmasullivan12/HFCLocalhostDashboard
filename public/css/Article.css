@@ -69,10 +69,18 @@
 .article-page .article-container .article-extras.profile {
   padding-top: 5.5rem;
 }
+.article-page .article-container .article-extras.matchUser,
+.article-page .article-container .content-col.matchUser {
+  padding-top: 50px;
+}
 @media screen and (min-width: 759px) {
   .article-page .article-container .article-extras.profile {
     padding-left: 3rem;
     padding-right: 1rem;
+  }
+  .article-page .article-container .article-extras.matchUser {
+    padding-left: 50px;
+    padding-right: 30px;
   }
 }
 .article-page .article-container .category-list .section-list,
@@ -249,7 +257,7 @@
 .article-page .article-extras p {
   margin-bottom: 12px;
   margin-top: 0;
-  font-size: 15px;
+  /*font-size: 15px;*/
   line-height: 20px;
 }
 .article-page .article-body p:first-child {

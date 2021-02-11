@@ -40,7 +40,7 @@ const FullPageModalContent = ({
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role="dialog" aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
-      <div className={"fullpage-modal-container " + usedFor + animation + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
+      <div className={"fullpage-modal-container " + usedFor + (animation ? animation : '') + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           { backBtn==='bk2Pr' && (
             <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
@@ -58,6 +58,7 @@ const FullPageModalContent = ({
               <svg className="menu-close-icon flexContainer" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
             </button>
           )}
+          <div className="modalTitle">{title ? title : ''}</div>
         </div>
         <div className={"fpModal-content"  + (isDevice ? ' isDevice' : '')}>
           {content}
@@ -119,10 +120,7 @@ class FullPageModal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    console.log(e)
-    console.log(self)
     if (self.state.fullPageModal === 'open') {
-      console.log("heer")
       e.onClose()
     }
   }

@@ -772,3 +772,10 @@
   width: 60%;
   margin: auto;
 }
+.modal-header .modalTitle{
+  margin-left: 7rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+  margin-top: -10px;
+}

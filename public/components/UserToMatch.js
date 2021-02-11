@@ -10,6 +10,7 @@ import {
 
 import {DateCalc, X, Check} from "./GeneralFunctions";
 import FullPageModal from './FullPageModal.js';
+import MatchingContent from './MatchingContent.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import SetUnavailabilityContent from './SetUnavailabilityContent.js';
@@ -18,6 +19,7 @@ const MatchingUsersProps = {
   triggerText: 'Match',
   usedFor: 'matchingUsers',
   backBtn: 'arrow',
+  title: 'Match User'
 }
 
 const SetUnavailableProps = {
@@ -83,7 +85,7 @@ class UserToMatch extends Component {
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
         // Each time a switch is done, increase this count by 1:
-        switchcount ++;
+        switchcount++;
       } else {
         /* If no switching has been done AND the direction is "asc",
         set the direction to "desc" and run the while loop again. */
@@ -115,7 +117,6 @@ class UserToMatch extends Component {
     if (this.state.notes != '') {
       this.setCaret();
     }
-
   }
 
   saveNewNotes = (evt) => {
@@ -184,6 +185,7 @@ class UserToMatch extends Component {
     const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
     const priority = this.getPriority();
     const matchStatusName = this.getMatchStatus();
+    const name = user.fname + " " + user.lname;
     let classNameSafeguarding = "userToMatch-sgStatus";
     let safeguardingText;
     let wantsU18;
@@ -245,11 +247,17 @@ class UserToMatch extends Component {
           <tr>
             <td>
               <FullPageModal {...MatchingUsersProps}>
-                {/*<MatchingContent />*/}
-                <div>matching users goes here</div>
+                <MatchingContent
+                  matchStatusOptions={matchStatusOptions}
+                  matchStatus={matchStatus}
+                  convertRole={convertRole}
+                  userName={name}
+                  userToMatchNotes={notes}
+                  birthdayts={user.birthday}
+                />
               </FullPageModal>
             </td>
-            <td>{user.fname} {user.lname}</td>
+            <td>{name}</td>
             <td>
               <div className={"userToMatch-changeStatus " + priority}>
                 <SelectBox
@@ -296,7 +304,7 @@ class UserToMatch extends Component {
         {showUnavailableModal == true && (
           <Modal {...SetUnavailableProps} handleLocalStateOnClose={this.closeAvailabilityModal}>
             <SetUnavailabilityContent
-              name={user.fname + ' ' + user.lname}
+              name={name}
             />
           </Modal>
         )}
