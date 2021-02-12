@@ -29,6 +29,19 @@ const UpdateStatusProps = {
   changeInitFocus: true
 }
 
+// For viewing potential matches status (will not be able to select from these)
+const matchStatusOptionsAll = [
+  {value: '2', label: 'VIP', priority: 'H'},
+  {value: '3', label: 'Vocal', priority: 'H'},
+  {value: '4', label: 'Has no match', priority: 'H'},
+  {value: '5', label: 'Only has bad match', priority: 'H'},
+  {value: '6', label: 'Wants another', priority: 'M'},
+  {value: '7', label: 'Matched', priority: 'L'},
+  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '8', label: 'Not relevant', priority: 'L'},
+  {value: '9', label: 'Unavailable', priority: 'L'},
+];
+
 // We can filter by these in the "To be matched" tab (We would have already filtered out matched, non-responsive etc)
 const matchStatusOptionsToFilter = [
   {value: '2', label: 'VIP', priority: 'H'},
@@ -262,6 +275,7 @@ class MatchesToDo extends React.Component {
             key={user.uuid}
             isFirstItem={index == 0}
             matchStatusOptions={matchStatusOptionsToSet}
+            matchStatusOptionsAll={matchStatusOptionsAll}
             convertRole={this.convertRole}
           />
         );

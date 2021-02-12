@@ -331,7 +331,9 @@ div {
   display: table-cell;
   vertical-align: middle;
 }
-
+.smallFont{
+  font-size: 14px;
+}
 .bold{
   font-weight: 600;
 }
@@ -377,6 +379,9 @@ div {
   background: #fff0f0!important;
   border: 1px solid #e0a7a7!important;
   color: #da0b0b!important;
+}
+.orangeText{
+  color: orange;
 }
 .inheritFontSize{
   font-size: inherit;

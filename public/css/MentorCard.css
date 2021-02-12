@@ -120,6 +120,20 @@
   background-color: rgba(78,78,214,.79);
 }
 
+/* For strong / med / weak / offlimits matches */
+.userToMatch-card .user-card-header.strong{
+  background-color: #58d2bb;
+}
+.userToMatch-card .user-card-header.medium{
+  background-color: #ffc36c;
+}
+.userToMatch-card .user-card-header.weak{
+  background-color: #dadada;
+}
+.userToMatch-card .user-card-header.outsideGroup{
+  background-color: #e03867;
+}
+
 .match-time-left{
   text-align: right;
   padding-top: 35px;

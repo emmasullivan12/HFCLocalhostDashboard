@@ -327,7 +327,7 @@ class Autocomplete extends React.Component {
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
-          <div className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+          <div className={"autocompleter-items" + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
               {filteredSuggestions.map((suggestion, index) => {
                 let className;
                 let dataTarget;
@@ -364,11 +364,11 @@ class Autocomplete extends React.Component {
                     )}
                     {showCTA1===true && (
                       <div>
-                        <button type="button" className="Submit-btn autocompleteCTA one" onClick={(e) => cta1ClickHandler(e, suggestion)} data-id={key}>
+                        <button type="button" className={"Submit-btn autocompleteCTA one" + (showDetail===true ? '' : ' noDetail')} onClick={(e) => cta1ClickHandler(e, suggestion)} data-id={key}>
                           {cta1Text}
                         </button>
                         {showCTA2===true && (
-                          <button type="button" className="Submit-btn autocompleteCTA two" onClick={cta2ClickHandler} data-id={key}>
+                          <button type="button" className={"Submit-btn autocompleteCTA two" + (showDetail===true ? '' : ' noDetail')} onClick={cta2ClickHandler} data-id={key}>
                             {cta2Text}
                           </button>
                         )}

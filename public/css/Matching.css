@@ -23,6 +23,7 @@
 }
 .searchBar.searchByName{
   top: -45px;
+  line-height: normal;
 }
 
 .filterSection{
@@ -327,6 +328,9 @@ td.userToMatch-editingNotes{
   -moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
   color: #3f3f3f;
 }
+.userToMatch-card.notes.isPotentialMatch{
+  margin-top: -10px;
+}
 .userToMatch-seeMore{
   cursor: pointer;
   font-size: 14px;
@@ -338,6 +342,15 @@ td.userToMatch-editingNotes{
 .userToMatch-safeguardingText{
   font-size: 14px;
   margin-left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+.userToMatch-safeguardingText.isPotentialMatch{
+  top: 70px;
+}
+.userToMatch-safeguardingText svg {
+  display: inline-block;
 }
 .userToReview-detail.main.matchUser{
   padding-bottom: unset;
@@ -361,7 +374,21 @@ td.userToMatch-editingNotes{
   font-size: 14px;
   height: 30px;
 }
+.Submit-btn.sendMatch{
+  position: absolute;
+  right: 10px;
+  min-width: 100px;
+  height: 30px;
+  font-size: 14px;
+  z-index: 1;
+}
 .historyItemNote{
   display: inline-block;
   padding-left: 20px;
+}
+.potentialMatchStatus{
+  top: 11px;
+  right: 10px;
+  position: absolute;
+  font-size: 13px;
 }

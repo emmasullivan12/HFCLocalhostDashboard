@@ -179,7 +179,7 @@ class UserToMatch extends Component {
   }
 
   render() {
-    const {user, isFirstItem, matchStatusOptions, convertRole} = this.props;
+    const {user, isFirstItem, matchStatusOptions, matchStatusOptionsAll, convertRole} = this.props;
     const {matchStatus, editingNotes, notes, showUnavailableModal} = this.state;
 
     const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
@@ -249,6 +249,7 @@ class UserToMatch extends Component {
               <FullPageModal {...MatchingUsersProps}>
                 <MatchingContent
                   matchStatusOptions={matchStatusOptions}
+                  matchStatusOptionsAll={matchStatusOptionsAll}
                   matchStatus={matchStatus}
                   convertRole={convertRole}
                   userName={name}

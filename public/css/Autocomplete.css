@@ -210,6 +210,10 @@
   font-size: 12px;
   padding: 5px;
 }
+.Submit-btn.noDetail.autocompleteCTA {
+  top: 6px;
+  height: 25px;
+}
 .Submit-btn.autocompleteCTA.one{
   right: 10px;
 }
