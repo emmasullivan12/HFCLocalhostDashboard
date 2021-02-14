@@ -9,7 +9,7 @@ import SetUnavailabilityContent from './SetUnavailabilityContent.js';
 import TextInput from './TextInput.js';
 import MatchUserCard from './MatchUserCard.js';
 
-import {userFlagEmoji, eduName,} from './UserDetail.js';
+import {userFlagEmoji} from './UserDetail.js';
 import {LoadingSpinner} from "./GeneralFunctions";
 
 const SetUnavailableProps = {
@@ -34,19 +34,21 @@ const potentialMatches = [
     eetstatus: 'job',
     avail: 1,
     group: 'avfx',
-    activementors: 2,
-    activementees: 2,
+    no_mentors: 2,
+    no_mentees: 2,
     maxmentees: 5,
+    pendingmatches: 0,
     mentorsustep: 'didFullSUIDtf',
     lastActiveDate: '1556389526',
     matchstatus: 2,
+    isavailable: {status: 1},
     profprofileurl: 'https://www.linkedin.com/profile',
     uni: 0,
     degree: 'BSc (Hons) Business Administration',
-    schName: '',
-    schNameFreeText: '', // If their school wasn't on the list
-    uniName: '75',
-    uniNameFreeText: '', // If their school wasn't on the list
+    schname: '',
+    schnamefreetext: '', // If their school wasn't on the list
+    uniname: '75',
+    uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
     currco: 'Pladis',
@@ -78,19 +80,21 @@ const potentialMatches = [
     eetstatus: 'job',
     avail: 1,
     group: 'avfx',
-    activementors: 1,
-    activementees: 2,
+    no_mentors: 1,
+    no_mentees: 2,
     maxmentees: 5,
+    pendingmatches: 1,
     mentorsustep: 'didFullSUIDtf',
     lastActiveDate: '1556389526',
     matchstatus: 7,
+    isavailable: {status: 0},
     profprofileurl: '',
     uni: 0,
     degree: 'BSc (Hons) Business Administration',
-    schName: '',
-    schNameFreeText: '', // If their school wasn't on the list
-    uniName: '75',
-    uniNameFreeText: '', // If their school wasn't on the list
+    schname: '',
+    schnamefreetext: '', // If their school wasn't on the list
+    uniname: '75',
+    uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
     currco: 'Pladis',
@@ -123,18 +127,20 @@ const potentialMatches = [
     eetstatus: 'job',
     avail: 1,
     group: 'avfx',
-    activementors: 1,
-    activementees: 2,
+    no_mentors: 1,
+    no_mentees: 2,
     maxmentees: 5,
+    pendingmatches: 3,
     lastActiveDate: '1556389526',
     matchstatus: 8,
+    isavailable: {status: 1},
     profprofileurl: '',
     uni: 0,
     degree: 'BSc (Hons) Business Administration',
-    schName: '',
-    schNameFreeText: '', // If their school wasn't on the list
-    uniName: '75',
-    uniNameFreeText: '', // If their school wasn't on the list
+    schname: '',
+    schnamefreetext: '', // If their school wasn't on the list
+    uniname: '75',
+    uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
     currco: 'Pladis',
@@ -190,7 +196,7 @@ class MatchingContent extends Component {
 
   renderMatchesList = () => {
     if (potentialMatches.length > 0) {
-      const {matchStatusOptionsAll, convertRole} = this.props;
+      const {matchStatusOptionsAll, convertRole, grabSchOrUni} = this.props;
 
       return (
         <div>
@@ -202,6 +208,7 @@ class MatchingContent extends Component {
                 isPotentialMatch
                 matchStatusOptionsAll={matchStatusOptionsAll}
                 convertRole={convertRole}
+                grabSchOrUni={grabSchOrUni}
               />
             )
           })}
@@ -212,7 +219,7 @@ class MatchingContent extends Component {
 
   render() {
     const {userToSearchFor, showUnavailableModal, isLoading} = this.state;
-    const {matchStatusOptions, convertRole, userName, birthdayts} = this.props;
+    const {matchStatusOptions, convertRole, userName, birthdayts, grabSchOrUni} = this.props;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -228,19 +235,21 @@ class MatchingContent extends Component {
       eetstatus: 'uni',
       avail: 1,
       group: 'avfx',
-      activementors: 1,
-      activementees: 2,
+      no_mentors: 1,
+      no_mentees: 2,
       maxmentees: 5,
+      pendingmatches: 2,
       lastActiveDate: '1556389526',
       mentorsustep: 'didFullSUIDtf',
       matchstatus: 4,
+      isavailable: {status: 1},
       profprofileurl: '',
       uni: 0,
       degree: 'BSc (Hons) Business Administration',
-      schName: '',
-      schNameFreeText: '', // If their school wasn't on the list
-      uniName: '75',
-      uniNameFreeText: '', // If their school wasn't on the list
+      schname: '',
+      schnamefreetext: '', // If their school wasn't on the list
+      uniname: '75',
+      uninamefreetext: '', // If their school wasn't on the list
       subjects: 'Business, Art, English Literature & Language',
       currrole: 'Head of Marketing',
       currco: 'Pladis',
@@ -273,6 +282,7 @@ class MatchingContent extends Component {
                 matchStatusOptions={matchStatusOptions}
                 handleMatchStatusChange={this.handleMatchStatusChange}
                 convertRole={convertRole}
+                grabSchOrUni={grabSchOrUni}
               />
             </div>
             <div className="searchBar searchByText">
@@ -283,7 +293,7 @@ class MatchingContent extends Component {
                   className="form-control-std searchUserByText"
                 />
                 <button type="button" className="Submit-btn importPotentialMatches" onClick={this.importUsersFromSearch}>
-                  Import
+                  + Import
                 </button>
               </div>
             </div>
@@ -301,7 +311,7 @@ class MatchingContent extends Component {
               //    detailToShow='role'
                   showCTA1
               //  cta1ClickHandler={this.launchUpdateStatusModal}
-                  cta1Text="Update"
+                  cta1Text="Import"
                 />
               </div>
             </div>

@@ -18,10 +18,10 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  user-select: none;
+/*  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none;*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;

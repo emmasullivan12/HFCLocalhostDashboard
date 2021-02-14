@@ -4,12 +4,14 @@ import React, { Component } from "react";
 
 import Checkbox from './Checkbox.js';
 import FullPageModal from './FullPageModal.js';
+import MatchingContent from './MatchingContent.js';
 import SelectBox from './Select.js';
 
 const MatchingUsersProps = {
   triggerText: 'Match',
   usedFor: 'matchingUsers-fromModal',
   backBtn: 'arrow',
+  title: 'Match User'
 }
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
@@ -95,7 +97,7 @@ class UpdateUserStatusContent extends Component {
 
   render() {
     const { isUnavailable, isCompleteDud, messageFromServer } = this.state;
-    const {matchStatusOptions, convertRole} = this.props;
+    const {matchStatusOptions, convertRole, grabSchOrUni, matchStatusOptionsAll} = this.props;
     const isEnabled = this.canBeSubmitted();
     var reminderLengthList = [
       {value: 7, label: 'in 1 week'},{value: 14, label: 'in 2 weeks'},{value: 30, label: 'in 1 Month'},{value: 60, label: 'in 2 Months'},{value: 90, label: 'in 3 Months'},{value: 182, label: 'in 6 Months'},{value: 365, label: 'in 1 Years'}
@@ -104,6 +106,50 @@ class UpdateUserStatusContent extends Component {
     var userGroupsStatus = [
       {role: 'mentor', group: 'avfx', matchstatus: 4},{role: 'mentor', group: 'intogames', matchstatus: 6},
     ]
+    const user = {
+      uid: '12345',
+      fname: 'Emma',
+      lname: 'Sullivan',
+      role: 'mentor',
+      city: 'LA',
+      country: 'USA',
+      timeZone: 'Europe/London',
+      birthday: '2010-01-01T00:00:00.000Z',
+      eetstatus: 'uni',
+      avail: 1,
+      group: 'avfx',
+      no_mentors: 1,
+      no_mentees: 2,
+      maxmentees: 5,
+      lastActiveDate: '1556389526',
+      mentorsustep: 'didFullSUIDtf',
+      matchstatus: 4,
+      profprofileurl: '',
+      uni: 0,
+      degree: 'BSc (Hons) Business Administration',
+      schname: '',
+      schnamefreetext: '', // If their school wasn't on the list
+      uniname: '75',
+      uninamefreetext: '', // If their school wasn't on the list
+      subjects: 'Business, Art, English Literature & Language',
+      currrole: 'Head of Marketing',
+      currco: 'Pladis',
+      currind: '#food&beverage',
+      notes: 'Really good at Houdini. Wants to only help working class kids',
+      expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
+      learning: 'leadership, negotiations, excel, programming, python, mySQL',
+      hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+      certainty: 7,
+      roles: ['12', '98'],
+      rolesfreetext: ['role3', 'role4'],
+      rolesexp: ['12', '98'],
+      rolesexpfreetext: ['role3', 'role4'],
+      lifestyle: 'I want to work a 9-5pm job and have no responsibilities and earn £1m a month',
+      whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
+      whyJoin: 'I need help getting into Animation and want advice on my reel and how to craft my CV and cover letter. Please help!',
+      helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
+      roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    }
 
     if (userGroupsStatus.length > 0) {
       userGroupsStatus.forEach((group) => {
@@ -128,12 +174,16 @@ class UpdateUserStatusContent extends Component {
               />
             </div>
             <FullPageModal {...MatchingUsersProps}>
-              {/*<MatchingContent
-                  matchStatusOptions={matchStatusOptions}
-                  matchStatus={matchStatus}
-                  convertRole={this.convertRole}
-                />*/}
-              <div>matching users goes here</div>
+              <MatchingContent
+                matchStatusOptions={matchStatusOptions}
+                matchStatusOptionsAll={matchStatusOptionsAll}
+                matchStatus={user.matchstatus}
+                convertRole={convertRole}
+                userName={(user.fname + " " + user.lname)}
+                userToMatchNotes={user.notes}
+                birthdayts={user.birthday}
+                grabSchOrUni={grabSchOrUni}
+              />
             </FullPageModal>
           </div>
         );

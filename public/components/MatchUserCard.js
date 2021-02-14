@@ -7,9 +7,9 @@ import AcceptSignUpContent from "./AcceptSignUpContent.js";
 import Modal from "./Modal.js";
 import RejectSignUpContent from "./RejectSignUpContent.js";
 import SelectBox from './Select.js';
-import UserHistoryItem from './UserHistoryItem.js';
+//import UserHistoryItem from './UserHistoryItem.js';
 import {Check, X} from './GeneralFunctions.js';
-import {userFlagEmoji, eduName} from './UserDetail.js';
+import {userFlagEmoji} from './UserDetail.js';
 
 /*const AcceptSignUpModalProps = {
   ariaLabel: 'Popup to accept signup',
@@ -34,6 +34,7 @@ class MatchUserCard extends React.Component {
       notes: this.props.user.notes,
       matchStatus: this.props.user.matchstatus,
       showNotes: false,
+      reservedMatch: false,
     }
   }
 
@@ -48,6 +49,13 @@ class MatchUserCard extends React.Component {
     const currentState = this.state.showNotes;
     this.setState({
       showNotes: !currentState,
+    })
+  }
+
+  toggleReserveMatch = () => {
+    const currentState = this.state.reservedMatch;
+    this.setState({
+      reservedMatch: !currentState,
     })
   }
 
@@ -129,8 +137,8 @@ class MatchUserCard extends React.Component {
   }
 
   render() {
-   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole} = this.props;
-   const {showDetail, matchStatus, editingNotes, notes, showNotes} = this.state;
+   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, grabSchOrUni} = this.props;
+   const {showDetail, matchStatus, editingNotes, notes, showNotes, reservedMatch} = this.state;
    const name = user.fname + " " + user.lname;
    let classNameSafeguarding = 'userToMatch-safeguardingText' + (isPotentialMatch ? ' isPotentialMatch' : '');
    let priorityClassName = 'potentialMatchStatus';
@@ -139,7 +147,9 @@ class MatchUserCard extends React.Component {
    let prApproved;
    let isU18;
    let eduInstName;
-   let matchType = user.matchType ? user.matchType : ''; // strong, medium, weak, outsideGroup
+   let matchType = user.matchType ? user.matchType : ''; // strong, medium, weak
+   let outsideGroup = false;
+   let isavailable = user.isavailable.status == 1
 
    if (user.role == 'mentee') {
      var ts = new Date(user.birthday);
@@ -173,14 +183,11 @@ class MatchUserCard extends React.Component {
      }
    }
 
-   if (user.eetstatus == 'sch' || user.eetstatus == 'uni') {
-     eduInstName = " " + eduName(user.schName, user.schNameFreeText, user.uniName, user.uniNameFreeText, user.eetStatus);
+   if (user.eetstatus == 'sch') {
+     eduInstName = " " + (user.schname != '' ? (grabSchOrUni('sch', user.schname)) : user.schnamefreetext)
+   } else if (user.eetstatus == 'uni') {
+     eduInstName = " " + (user.uniname != '' ? (grabSchOrUni('uni', user.uniname)) : user.uninamefreetext)
    }
-   /*if (ukSchsListLoaded && signup.eetstatus == 'sch') {
-     eduName = " " + (signup.schname != '' ? (grabSchOrUni('sch', signup.schname)) : signup.schnamefreetext)
-   } else if (ukUnisListLoaded && signup.eetstatus == 'uni') {
-     eduName = " " + (signup.uniname != '' ? (grabSchOrUni('uni', signup.uniname)) : signup.uninamefreetext)
-   }*/
 
    const priority = this.getPriority();
    const priorityText = priority == 'H' ? 'High priority: ': (priority == 'M' ? 'Med priority: ' : 'Low priority: ')
@@ -188,10 +195,11 @@ class MatchUserCard extends React.Component {
    const showMatchStatus = this.getMatchStatus(matchStatus);
    const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
 
-   let historyItems = []
+/*   let historyItems = []
 
    var userHistory = [
      {date: '2021-01-03T19:54:25.084Z', type: 'signedUp'},
+     {date: '2021-01-04T15:54:25.084Z', type: 'unavail', reminderToChase: '2021-07-04T15:54:25.084Z'},
      {date: '2021-01-04T19:54:25.084Z', type: 'accMatch', accMatchName: 'David Amor'},
      {date: '2021-01-01T19:54:25.084Z', type: 'rejMatch', rejMatchName: 'Mat Fraser', rejReason: 'He is out of my league. #HWPO'},
    ]
@@ -205,21 +213,29 @@ class MatchUserCard extends React.Component {
          />
        );
      });
-   }
+   }*/
 
     return (
       <React.Fragment>
         <div className="userToMatch-card">
-          <div className={"user-card-header noMarginB " + matchType} />
+          {isavailable == false && (
+            <div className="unavailableOverlay" >
+               <div className="unavailableOverlay-text">UNAVAILABLE</div>
+            </div>
+          )}
+          <div className={"user-card-header noMarginB " + (isavailable == false ? 'unavailable' : (outsideGroup == true ? 'outsideGroup' : matchType))} />
           <div className="userToReview-detail main matchUser">
             <div>
               <b>{userName ? userName : name}</b>
               <span><i> ({user.role})</i></span>
               {user.role == "mentee" && isPotentialMatch == true && (
-                <span className="greyText smallFont"><i> {user.activementors} {user.activementors == 1 ? 'match' : 'matches'}</i></span>
+                <span className="greyText smallFont"><i> {user.no_mentors} {user.no_mentors == 1 ? 'match ' : 'matches '}</i></span>
               )}
               {user.role == "mentor" && isPotentialMatch == true && (
-                <span className="greyText smallFont"><i> {user.activementees} / {user.maxmentees} matches</i></span>
+                <span className="greyText smallFont"><i> {user.no_mentees} / {user.maxmentees} matches </i></span>
+              )}
+              {user.pendingmatches > 0 && (
+                <span className="greyText smallFont"><i> + {user.pendingmatches + ' pending' + (isPotentialMatch == true ? '' : ' matches')}</i></span>
               )}
               <span className={classNameSafeguarding}>
                 {user.role == 'mentor' && wantsU18 == true && prApproved == true && (
@@ -248,7 +264,7 @@ class MatchUserCard extends React.Component {
                 <div className={priorityClassName}>
                   <strong>{priorityText}</strong> {showMatchStatus}
                 </div>
-                <button type="button" className="Submit-btn sendMatch">Send Match</button>
+                <button type="button" className="Submit-btn sendMatch">Send Match to Mentee</button>
               </React.Fragment>
             )}
           </div>
@@ -280,7 +296,7 @@ class MatchUserCard extends React.Component {
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
               <span><i className="fas fa-door-open" /></span>
-              <p className="editableText-userToReview noMarginBlockEnd noMarginBlockStart"> {user.group != '' ? user.group : 'null'}</p>
+              <p className="editableText-userToReview noMarginBlockEnd noMarginBlockStart"> {user.group != '' ? user.group : 'null'} {outsideGroup == true && (<span className="redText"> &#60;&#60; Diff Group!</span>)}</p>
             </div>
           </div>
           {user.role == 'mentee' && (
@@ -337,11 +353,20 @@ class MatchUserCard extends React.Component {
           <div className="userToMatch-seeMore" onClick={this.toggleShowMore}>
             {showDetail == true ? '<< Less' : 'More >>'}
           </div>
+          {isPotentialMatch == true && (
+            <button type="button" className={"Submit-btn messageUser reserveUser tooltip" + (reservedMatch ? ' reserved' : '')} onClick={this.toggleReserveMatch}>
+              <i className="fas fa-bookmark"/>
+              <span className="tooltiptext">
+                {reservedMatch == true ? 'Reserved: potential match': 'Save as potential match'}
+              </span>
+            </button>
+          )}
           <button type="button" className="Submit-btn messageUser">
             Message
           </button>
         </div>
-        {((userHistory.length > 0 || user.notes != null) && showNotes == false && isPotentialMatch) && (
+      {/*  {((userHistory.length > 0 || user.notes != null) && showNotes == false && isPotentialMatch) && ( */}
+        {showNotes == false && isPotentialMatch && (
           <div className="userToMatch-seeMore" onClick={this.toggleShowNotes}>
             {showNotes == true ? '<< Hide Notes' : 'See Notes >>'}
           </div>
@@ -367,12 +392,12 @@ class MatchUserCard extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="userToReview-detail">
+        {/*     <div className="userToReview-detail">
               <div className="userToReview-subDetail">
                 HISTORY
                 {historyItems}
               </div>
-            </div>
+            </div> */}
           </div>
         )}
       </React.Fragment>

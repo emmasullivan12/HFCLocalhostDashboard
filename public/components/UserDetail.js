@@ -15,6 +15,7 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
         return uniDetail;
       })
       .catch(err => {
+        console.log(err)
         if (callback) {
           callback()
         }

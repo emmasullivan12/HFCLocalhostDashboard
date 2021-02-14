@@ -336,7 +336,7 @@ td.userToMatch-editingNotes{
   font-size: 14px;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   color: lightgrey;
 }
 .userToMatch-safeguardingText{
@@ -347,7 +347,7 @@ td.userToMatch-editingNotes{
   top: 40px;
 }
 .userToMatch-safeguardingText.isPotentialMatch{
-  top: 70px;
+  top: 42px;
 }
 .userToMatch-safeguardingText svg {
   display: inline-block;
@@ -374,21 +374,34 @@ td.userToMatch-editingNotes{
   font-size: 14px;
   height: 30px;
 }
+.Submit-btn.messageUser.reserveUser{
+  right: 120px;
+  min-width: 30px;
+  border: none;
+}
+.Submit-btn.messageUser.reserveUser .tooltiptext{
+   margin-left: -90px;
+ }
+.Submit-btn.messageUser.reserveUser.reserved{
+  background-color: #6d6767;
+  color: #f2f2f2;
+}
 .Submit-btn.sendMatch{
   position: absolute;
+  top: 11px;
   right: 10px;
-  min-width: 100px;
+  min-width: 160px;
   height: 30px;
   font-size: 14px;
-  z-index: 1;
+  z-index: 3;
 }
 .historyItemNote{
   display: inline-block;
   padding-left: 20px;
 }
 .potentialMatchStatus{
-  top: 11px;
+/*  top: 11px;
   right: 10px;
-  position: absolute;
+  position: absolute;*/
   font-size: 13px;
 }

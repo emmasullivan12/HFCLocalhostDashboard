@@ -26,10 +26,10 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  user-select: none;
+/*  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none;*/
 
   /* For Firefox */
   scrollbar-color: rgba(63,63,63,.45) #fff;

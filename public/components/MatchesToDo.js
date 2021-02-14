@@ -37,7 +37,7 @@ const matchStatusOptionsAll = [
   {value: '5', label: 'Only has bad match', priority: 'H'},
   {value: '6', label: 'Wants another', priority: 'M'},
   {value: '7', label: 'Matched', priority: 'L'},
-  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '1', label: 'No match available', priority: 'L'},
   {value: '8', label: 'Not relevant', priority: 'L'},
   {value: '9', label: 'Unavailable', priority: 'L'},
 ];
@@ -50,7 +50,7 @@ const matchStatusOptionsToFilter = [
   {value: '5', label: 'Only has bad match', priority: 'H'},
   {value: '6', label: 'Wants another', priority: 'M'},
 //  {value: '7', label: 'Matched', priority: 'L'},
-  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '1', label: 'No match available', priority: 'L'},
 //  {value: '8', label: 'Not relevant', priority: 'L'},
 //  {value: '9', label: 'Unavailable', priority: 'L'},
 ];
@@ -63,7 +63,7 @@ const matchStatusOptionsToSet = [
   {value: '5', label: 'Only has bad match', priority: 'H'},
   {value: '6', label: 'Wants another', priority: 'M'},
 //  {value: '7', label: 'Matched', priority: 'L'},
-  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '1', label: 'No match available', priority: 'L'},
   {value: '8', label: 'Not relevant', priority: 'L'},
   {value: '9', label: 'Unavailable', priority: 'L'},
 ];
@@ -76,7 +76,7 @@ const matchStatusOptionsToSetNoUnavail = [
   {value: '5', label: 'Only has bad match', priority: 'H'},
   {value: '6', label: 'Wants another', priority: 'M'},
 //  {value: '7', label: 'Matched', priority: 'L'},
-  {value: '1', label: 'Willing to wait', priority: 'L'},
+  {value: '1', label: 'No match available', priority: 'L'},
   {value: '8', label: 'Not relevant', priority: 'L'},
 //  {value: '9', label: 'Unavailable', priority: 'L'},
 ];
@@ -88,15 +88,37 @@ class MatchesToDo extends React.Component {
       userToSearchFor: '',
       roles: ['mentee', 'mentor'],
       groups: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
-      status: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Willing to wait'],
+      status: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'No match available'],
       rolesToShow: ['mentee', 'mentor'],
       groupsToShow: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
-      statusToShow: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'Willing to wait'],
+      statusToShow: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'No match available'],
       showUpdateStatusModal: false,
     //  showStartMatchModal: false,
       userToUpdate: '',
     //  userToMatch: ''
+      ukSchsList: '',
+      ukUnisList: '',
     }
+  }
+
+  grabSchOrUni = (schOrUni, schUniNum) => {
+    const {ukSchsList, ukUnisList} = this.state;
+    return 'Fake School or Uni'
+    /*if (schOrUni == 'sch') {
+      const sch = ukSchsList && ukSchsList.filter(sch => {
+        return sch.value == schUniNum;
+      })
+      const schName = sch[0].label;
+      return schName;
+
+    } else if (schOrUni == 'uni') {
+      let uni;
+      uni = ukUnisList && ukUnisList.filter(uni => {
+        return uni.value == schUniNum;
+      })
+      const uniName = uni[0].label;
+      return uniName;
+    }*/
   }
 
   handleUserSearch = (userInput) => {
@@ -254,7 +276,7 @@ class MatchesToDo extends React.Component {
   }
 
   render() {
-    const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow, showStartMatchModal, showUpdateStatusModal, userToUpdate, userToMatch } = this.state;
+    const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow, showStartMatchModal, showUpdateStatusModal, userToUpdate, userToMatch} = this.state;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -277,6 +299,7 @@ class MatchesToDo extends React.Component {
             matchStatusOptions={matchStatusOptionsToSet}
             matchStatusOptionsAll={matchStatusOptionsAll}
             convertRole={this.convertRole}
+            grabSchOrUni={this.grabSchOrUni}
           />
         );
       });
@@ -372,6 +395,8 @@ class MatchesToDo extends React.Component {
               userToUpdate={userToUpdate}
               matchStatusOptions={matchStatusOptionsToSetNoUnavail}
               convertRole={this.convertRole}
+              grabSchOrUni={this.grabSchOrUni}
+              matchStatusOptionsAll={matchStatusOptionsAll}
             />
           </Modal>
         )}
@@ -379,5 +404,12 @@ class MatchesToDo extends React.Component {
     );
   }
 }
-
+/*
+const mapStateToProps = (state) => {
+  return {
+    ukSchsList: state.ukSchsList,
+    ukUnisList: state.ukUnisList
+  };
+};
+*/
 export default MatchesToDo;
