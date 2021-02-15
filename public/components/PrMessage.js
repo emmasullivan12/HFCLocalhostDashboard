@@ -13,6 +13,7 @@ import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
+import PrModAuto from './PrModAutoMsgs.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
@@ -578,6 +579,8 @@ class PrMessageContents extends Component {
         return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "prAuto":
         return <PrAuto message={message} isProspelaAuto/>
+      case "prModAuto":
+        return <PrModAuto message={message} isProspelaTeam={isProspelaTeam} />
       case 'notSent':
         return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case 'uploadNotSent':

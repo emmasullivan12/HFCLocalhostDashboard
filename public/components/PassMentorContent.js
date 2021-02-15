@@ -11,10 +11,8 @@ class PassMentorContent extends Component {
     super();
     this.state = {
       passReasonMessage: '',
-      passedOnMentor: false,
       messageFromServer: ''
     };
-    this.updateClassname = this.updateClassname.bind(this);
   }
 
   handleInput = (e) => {
@@ -46,22 +44,16 @@ class PassMentorContent extends Component {
     this.setState({ messageFromServer: 'Pass sent server says' });
   }
 
-  // This updates the CSS if Student clicks to Pass on Mentor
-  updateClassname() {
-    this.setState({ passedOnMentor: true });
-    alert('You passed on this mentor!');
-  }
-
   // This ensures user cannot press Enter on keyboard to submit without completing form first
   canBeSubmitted() {
-    const {PassReasonMessage} = this.state;
+    const {passReasonMessage} = this.state;
     return (
-      PassReasonMessage.length > 0
+      passReasonMessage.length > 0
     );
   }
 
   render() {
-    const { passReasonMessage, passedOnMentor, messageFromServer } = this.state;
+    const { passReasonMessage, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -83,7 +75,7 @@ class PassMentorContent extends Component {
               onChange={this.handleMessageChange}
               required={false}
             />
-            <Checkbox
+          {/*}  <Checkbox
               labelClassName="checkbox-container textLeft"
               label="Isn't in an *industry* I'm interested in"
               name="Industry"
@@ -92,7 +84,7 @@ class PassMentorContent extends Component {
               spanClassName="checkmark"
               onChange={this.handleMessageChange}
               required={false}
-            />
+            />*/}
             <Checkbox
               labelClassName="checkbox-container textLeft"
               label="Limited similar *personal interests* to me"
@@ -113,11 +105,21 @@ class PassMentorContent extends Component {
               onChange={this.handleMessageChange}
               required={false}
             />
+            <Checkbox
+              labelClassName="checkbox-container textLeft"
+              label="Other"
+              name="Other"
+              className="SubmitMatch-input"
+              value="1"
+              spanClassName="checkmark"
+              onChange={this.handleMessageChange}
+              required={false}
+            />
             <div className="descriptor bold passDescriptor">
               Please comment:
             </div>
             <textarea
-              name="PassReasonMessage"
+              name="passReasonMessage"
               className="form-control-std"
               form="passMentorForm"
               value={passReasonMessage}
@@ -133,7 +135,7 @@ class PassMentorContent extends Component {
               {passReasonMessage.length} / 250
             </div>
             <div className="pass-btn-container">
-              <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>
+              <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
                 Pass
               </button>
             </div>
@@ -151,7 +153,7 @@ class PassMentorContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              Thanks for letting us know why this wasn&#39;t such a great match for you. It will help us do better next time.
+              Thanks for letting us know why this wasn&#39;t such a great match for you. We&#39;ll try to do better next time!
             </div>
           </div>
         </React.Fragment>

@@ -82,12 +82,24 @@
   display: inline-block;
   font-size: 15px;
 }
+.userDetail-name.sentMatch{
+  color: #fff;
+  font-weight: 700;
+}
 .userDetail-inst{
   /*float: left;*/
   color: #b1b1b1;
   font-weight: 200;
   line-height: 18px;
   margin-top: 3px;
+}
+.userDetail-inst.sentMatch{
+  font-size: .8rem;
+  float: left;
+}
+.userDetail-inst.sentMatch .roleText {
+  color: #9797f9;
+  font-weight: 600;
 }
 .userDetail-flag{
   position: absolute;

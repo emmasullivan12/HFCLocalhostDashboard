@@ -84,7 +84,8 @@
   height: 30px;
   min-width: 160px;
   text-decoration: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  /*padding: 0.5rem 1rem 0.5rem 1rem;*/
+  padding: 5px;
 }
 
 .RequestChatIcon{

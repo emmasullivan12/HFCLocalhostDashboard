@@ -194,7 +194,7 @@ class MatchingContent extends Component {
     });
   }
 
-  renderMatchesList = () => {
+  renderMatchesList = (userToMatchName) => {
     if (potentialMatches.length > 0) {
       const {matchStatusOptionsAll, convertRole, grabSchOrUni} = this.props;
 
@@ -205,6 +205,7 @@ class MatchingContent extends Component {
               <MatchUserCard
                 user={user}
                 key={user.uuid}
+                userToMatchName={userToMatchName}
                 isPotentialMatch
                 matchStatusOptionsAll={matchStatusOptionsAll}
                 convertRole={convertRole}
@@ -327,7 +328,7 @@ class MatchingContent extends Component {
                   </div>
                 )}
                 {isLoading == false && (
-                  this.renderMatchesList()
+                  this.renderMatchesList(userToMatch.fname)
                 )}
               </div>
             </div>

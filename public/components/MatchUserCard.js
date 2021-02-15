@@ -7,6 +7,7 @@ import AcceptSignUpContent from "./AcceptSignUpContent.js";
 import Modal from "./Modal.js";
 import RejectSignUpContent from "./RejectSignUpContent.js";
 import SelectBox from './Select.js';
+import SendMatchToMentee from './SendMatchToMentee.js';
 //import UserHistoryItem from './UserHistoryItem.js';
 import {Check, X} from './GeneralFunctions.js';
 import {userFlagEmoji} from './UserDetail.js';
@@ -24,6 +25,13 @@ const RejectSignUpModalProps = {
   usedFor: 'signupToReview-reject',
   changeInitFocus: true
 }*/
+
+const SendMatchProps = {
+  ariaLabel: 'Send Match to Mentee',
+  triggerText: 'Send Match to Mentee',
+  usedFor: 'sendMatch',
+  changeInitFocus: true
+}
 
 class MatchUserCard extends React.Component {
   constructor (props) {
@@ -137,7 +145,7 @@ class MatchUserCard extends React.Component {
   }
 
   render() {
-   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, grabSchOrUni} = this.props;
+   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, grabSchOrUni, userToMatchName} = this.props;
    const {showDetail, matchStatus, editingNotes, notes, showNotes, reservedMatch} = this.state;
    const name = user.fname + " " + user.lname;
    let classNameSafeguarding = 'userToMatch-safeguardingText' + (isPotentialMatch ? ' isPotentialMatch' : '');
@@ -217,7 +225,7 @@ class MatchUserCard extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="userToMatch-card">
+        <div className={"userToMatch-card" + (isavailable == false ? ' unavailable' : '')}>
           {isavailable == false && (
             <div className="unavailableOverlay" >
                <div className="unavailableOverlay-text">UNAVAILABLE</div>
@@ -264,7 +272,13 @@ class MatchUserCard extends React.Component {
                 <div className={priorityClassName}>
                   <strong>{priorityText}</strong> {showMatchStatus}
                 </div>
-                <button type="button" className="Submit-btn sendMatch">Send Match to Mentee</button>
+            {/*}    <button type="button" className="Submit-btn sendMatch">Send Match to Mentee</button>*/}
+                <Modal {...SendMatchProps} >
+                  <SendMatchToMentee
+                    mentorName={user.role == 'mentor' ? user.fname : userToMatchName} // If userToMatch is a mentee & potential matches are mentors
+                    menteeName={user.role == 'mentee' ? user.fname : userToMatchName}
+                  />
+                </Modal>
               </React.Fragment>
             )}
           </div>

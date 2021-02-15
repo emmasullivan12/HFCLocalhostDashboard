@@ -409,6 +409,18 @@ class PrMessagesList extends Component {
       },
       {
         id: '100011',
+        uid: '223458',
+        type: 'message',
+        subtype: 'prModAuto',
+        author: 'penny-prospela',
+        ts: '2020-09-03T13:30:50.667Z',
+        prModAuto: {
+          type: 'sendMatch',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100012',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',
@@ -420,7 +432,7 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '100012',
+        id: '100013',
         uid: '23456',
         type: 'message',
         subtype: 'uploadNotSent',
@@ -436,7 +448,7 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '100013',
+        id: '100014',
         uid: '12345',
         type: 'message',
         subtype: 'prAuto',
@@ -447,7 +459,7 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '100014',
+        id: '100015',
         uid: '223458',
         type: 'message',
         subtype: 'std',
@@ -475,7 +487,7 @@ class PrMessagesList extends Component {
         ]
       },
       {
-        id: '100015',
+        id: '100016',
         uid: '223458',
         type: 'message',
         subtype: 'std',
@@ -503,7 +515,7 @@ class PrMessagesList extends Component {
         ]
       },
       {
-        id: '100016',
+        id: '100017',
         uid: '223458',
         type: 'message',
         subtype: 'std',

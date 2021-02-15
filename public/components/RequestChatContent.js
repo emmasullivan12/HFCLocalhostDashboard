@@ -16,7 +16,7 @@ class RequestChatContent extends Component {
   }
 
   componentDidMount(){
-    document.getElementsByTagName("textarea")[0].focus();
+    document.getElementById("menteeReqMentorMsg").focus();
   }
 
   handleInput = (evt) => {
@@ -52,43 +52,44 @@ class RequestChatContent extends Component {
           <form id="reqMentorForm">
             <textarea
               name="requestChatMessage"
-              className="textInputBox"
+              className="form-control-std textInputBox"
+              id="menteeReqMentorMsg"
               form="reqMentorForm"
-              value={this.state.requestChatMessage}
+              value={requestChatMessage}
               onChange={this.handleInput}
-              placeholder="Type your message..."
+              placeholder="Type your 'hello' message..."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
               required
             />
-            <div className="descriptor-br">
-              (Minimum 50 characters)
+            <div className="descriptor-br form">
+              {requestChatMessage.length} / 1000 (Min 50 characters)
             </div>
             <div className="need-ideas-container">
               <div className="ideas-icon-container">
                 <i className="far fa-lightbulb" />
               </div>
               <div className="ideas-Title">
-                Need ideas for what to say?
+                Need ideas for what to say? How about:
               </div>
               <ul className="ideas-list">
                 <li className="ideas-list-item">
                   <div className="emoji-icon wave-emoji" />
-                  <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re studying, your hobbies)</div>
+                  <div className="idea-item-text textLeft"><strong>Introduce yourself!</strong> (your name, current situation, hobbies you enjoy)</div>
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon heart-emoji" />
-                  <div className="idea-item-text"><strong>Your career preferences</strong> (what role, industries interest you)</div>
+                  <div className="idea-item-text textLeft"><strong>Your career preferences</strong> (why you&#39;re passionate about certain roles or industries interest you)</div>
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon sunglasses-emoji" />
-                  <div className="idea-item-text"><strong>Why this mentor</strong> (what would you like them to help you with)</div>
+                  <div className="idea-item-text textLeft"><strong>Why have a mentor</strong> (what guidance or insights you&#39;r hoping they can help you with)</div>
                 </li>
               </ul>
             </div>
             <div className="request-btn-container">
-              <button type="button" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
                 Request
               </button>
             </div>
@@ -106,7 +107,7 @@ class RequestChatContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              You&#39;ll hear from us soon. For now, sit back, and if they accept you&#39;ll be able to chat to your E-Mentor soon from your Direct Messages.
+              You&#39;ll hear from us asap when your mentor replies. For now, sit back, and if they accept you&#39;ll be able to chat to them soon from your Direct Messages.
             </div>
             <div className="emoji-icon ok-emoji successBox" />
             <div className="showDMPic"/>
