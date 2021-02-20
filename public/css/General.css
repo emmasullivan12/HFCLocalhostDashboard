@@ -371,6 +371,9 @@ div {
 .lightGreyText{
   color: lightgrey;
 }
+.lightPurpleText{
+  color: #c6c6fd;
+}
 .redText{
   color: #da0b0b;
   font-size: 13px;

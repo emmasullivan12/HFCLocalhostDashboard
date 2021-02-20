@@ -83,7 +83,7 @@
   font-size: 15px;
 }
 .userDetail-name.sentMatch{
-  color: #fff;
+  color: #9797f9;
   font-weight: 700;
 }
 .userDetail-inst{
@@ -95,10 +95,10 @@
 }
 .userDetail-inst.sentMatch{
   font-size: .8rem;
-  float: left;
+/*  float: left;*/
 }
 .userDetail-inst.sentMatch .roleText {
-  color: #9797f9;
+  color: #fff;
   font-weight: 600;
 }
 .userDetail-flag{

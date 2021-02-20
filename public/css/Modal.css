@@ -257,16 +257,28 @@
   color: #1dba86;
 }
 .ModalOpenBtn-joinProg,
-.ModalOpenBtn-joinProgSml{
+.ModalOpenBtn-joinProgSml,
+.ModalOpenBtn-addPrDM{
   background: none;
   font-weight: 400;
   padding: 0;
 }
-.ModalOpenBtn-joinProgSml{
+.ModalOpenBtn-joinProgSml,
+.ModalOpenBtn-addPrDM{
   height: 16px;
 }
+.ModalOpenBtn-addPrDM{
+  margin-top: -13px;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+.chatMenu-header .ModalOpenBtn-addPrDM{
+  visibility: visible;
+}
 .ModalOpenBtn-joinProg:hover,
-.ModalOpenBtn-joinProgSml:hover{
+.ModalOpenBtn-joinProgSml:hover,
+.ModalOpenBtn-addPrDM:hover{
   background: none;
 }
 .ModalOpenBtn-joinProgSmlHome{
@@ -328,25 +340,6 @@
 }
 .menuCTAContainer{
   display: inline-block;
-}
-
-.ModalOpenBtn-addPrDM{
-  margin-left: 49px;
-  background: rgba(242,242,242,.55);
-  border: 1px solid #3f3f3f;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  width: 30px;
-  padding: .5em;
-  color: #3f3f3f;
-  font-size: 12px;
-}
-.ModalOpenBtn-addPrDM:hover{
-  background: rgba(242,242,242.85);
-  color: #3f3f3f;
 }
 
 .ModalOpenBtn-settings{

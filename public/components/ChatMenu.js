@@ -11,12 +11,13 @@ import {
 import Modal from './Modal.js';
 import {getUnreadIndicator} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
+import SendNotifModalContent from './SendNotifModalContent.js';
 import "../css/Modal.css";
 
 const AddChatModalProps = {
   ariaLabel: 'Start a new DM with a specific user',
   triggerText: 'Start a DM',
-  usedFor: 'addPrDM',
+  usedFor: 'addPrDMRAHHHHHH',
   changeInitFocus: true
 }
 
@@ -78,10 +79,10 @@ class ChatListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class ChatMenu extends Component {
   render() {
-    const {userRole, chatGroup, onClick} = this.props;
+    const {userRole, chatGroup, isProspelaTeam, onClick} = this.props;
     const chats = [];
 
-    if (this.props.chats.length == 0) {
+  /*  if (this.props.chats.length == 0) {
       chats.push(
         <div className="chatMenuPlaceholder overflow-ellipsis">
           <div className="presenceContainer placeholder">
@@ -101,7 +102,7 @@ class ChatMenu extends Component {
           />
         );
       });
-    }
+    }*/
 
     return (
       <React.Fragment>
@@ -111,10 +112,12 @@ class ChatMenu extends Component {
             <span className="menuItemIconContainer chat">
               <i className="fas fa-comment-dots" />
             </span>
-            {chatGroup === 'Prospela DMs' && (
-              <Modal {...AddChatModalProps}>
-                <AddChatModalContent />
-              </Modal>
+            {isProspelaTeam == true && (
+              <div className="menuCTAContainer">
+                <Modal {...AddChatModalProps}>
+                  <AddChatModalContent />
+                </Modal>
+              </div>
             )}
           </div>
           {chats}

@@ -97,7 +97,7 @@ class UpdateUserStatusContent extends Component {
 
   render() {
     const { isUnavailable, isCompleteDud, messageFromServer } = this.state;
-    const {matchStatusOptions, convertRole, grabSchOrUni, matchStatusOptionsAll} = this.props;
+    const {matchStatusOptions, convertRole, convertHobbies, grabSchOrUni, matchStatusOptionsAll} = this.props;
     const isEnabled = this.canBeSubmitted();
     var reminderLengthList = [
       {value: 7, label: 'in 1 week'},{value: 14, label: 'in 2 weeks'},{value: 30, label: 'in 1 Month'},{value: 60, label: 'in 2 Months'},{value: 90, label: 'in 3 Months'},{value: 182, label: 'in 6 Months'},{value: 365, label: 'in 1 Years'}
@@ -179,6 +179,7 @@ class UpdateUserStatusContent extends Component {
                 matchStatusOptionsAll={matchStatusOptionsAll}
                 matchStatus={user.matchstatus}
                 convertRole={convertRole}
+                convertHobbies={convertHobbies}
                 userName={(user.fname + " " + user.lname)}
                 userToMatchNotes={user.notes}
                 birthdayts={user.birthday}

@@ -205,7 +205,9 @@ class ProspelaDashboard extends Component{
                       <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
                       <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Review Signups</NavLink>
                     </div>
-              {/*}      <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' onClick={this.closeMenu}/>
+                    <ChatMenu isProspelaTeam chatGroup='Mentee DMs' onClick={this.closeMenu}/>
+                    <ChatMenu isProspelaTeam chatGroup='E-Mentor DMs' onClick={this.closeMenu}/>
+                  {/*  <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='Prospela DMs' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' onClick={this.closeMenu}/>*/}
                     <div className="menuBreak"/>

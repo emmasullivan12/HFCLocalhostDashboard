@@ -26,11 +26,14 @@ class RequestChatContent extends Component {
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    const {matchid} = this.props;
+
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
     }
-    this.setState({ messageFromServer: 'Request sent server says' });
+
+    this.setState({ messageFromServer: 'Request sent for matchid: ' + matchid + ' server says' });
   }
 
   canBeSubmitted() {
@@ -61,6 +64,8 @@ class RequestChatContent extends Component {
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
+              minLength="50"
+              maxLength="1000"
               required
             />
             <div className="descriptor-br form">
@@ -84,7 +89,11 @@ class RequestChatContent extends Component {
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon sunglasses-emoji" />
-                  <div className="idea-item-text textLeft"><strong>Why have a mentor</strong> (what guidance or insights you&#39;r hoping they can help you with)</div>
+                  <div className="idea-item-text textLeft"><strong>Why you&#39;re excited</strong> (what guidance or insights you&#39;r hoping a mentor can help you with)</div>
+                </li>
+                <li className="ideas-list-item">
+                  <div className="emoji-icon questionMark-emoji" />
+                  <div className="idea-item-text"><strong>Ask them a question</strong> (Keep up the conversation flow!)</div>
                 </li>
               </ul>
             </div>

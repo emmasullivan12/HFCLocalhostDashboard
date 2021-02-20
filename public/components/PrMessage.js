@@ -1,7 +1,7 @@
 // Dex last merged this code on 5th feb 2021
 import React, { Component } from "react";
 
-import AcceptCTA from './AcceptCTA.js';
+//import AcceptCTA from './AcceptCTA.js';
 import AudioCTA from './AudioCTA.js';
 import Avatar from './Avatar.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
@@ -10,6 +10,7 @@ import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import {isIE, DateCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
+import UserRej from './UserRej.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
@@ -321,45 +322,7 @@ function UploadNotSent(props) {
   );
 }
 
-function MenteeReq(props) {
-  return (
-    <React.Fragment>
-      <div className="prauto-msg-container">
-        <div className="msg-title-container">
-            <div className="title-emoji-container">
-              <i className="emoji-icon tada-emoji" />
-            </div>
-            <div className="message-content-box msgTitle">
-              <span className="prAutoMsgTitle">&#91;NEW CHAT REQUEST&#93; You have a message from Dexter, a mentee who would really appreciate your mentorship!</span>
-            </div>
-        </div>
-        <div className="message-extras-container">
-          <div className="message-extras-border" />
-          <div className="msg-extras">
-            <div className="message-container noPaddingL noPaddingR noPaddingT">
-              <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
-              <div className="message-content-box">
-                <div className="sent-msg-info">
-                  <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
-                  <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
-                </div>
-                <div className="message-content">
-                  <TextParser text={props.message.text} />
-                </div>
-              </div>
-            </div>
-            <FullPageModal {...MenteeProfilePrautoModalProps}>
-              <MenteeProfileContent />
-            </FullPageModal>
-          </div>
-        </div>
-        <AcceptCTA />
-      </div>
-    </React.Fragment>
-  );
-}
-
-function MentorReply(props) {
+/*function MentorReply(props) {
   const subtype = props.message.subtype;
   return (
     <React.Fragment>
@@ -399,7 +362,7 @@ function MentorReply(props) {
       </div>
     </React.Fragment>
   );
-}
+}*/
 
 function PrAuto(props) {
   const actioned = false;
@@ -458,7 +421,7 @@ function PrAuto(props) {
           </div>
         </div>
       );
-    case 'match':
+/*    case 'match':
      return (
        <div className="prauto-msg-container">
          <div className="msg-title-container">
@@ -481,7 +444,7 @@ function PrAuto(props) {
            )}
           </div>
        </div>
-     );
+     );*/
     case 'ending':
       return (
         <div className="prauto-msg-container">
@@ -579,19 +542,22 @@ class PrMessageContents extends Component {
         return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "prAuto":
         return <PrAuto message={message} isProspelaAuto/>
+
+      // These include auto messages to mentee with match profile, to mentor with mentee request message, and to mentee if mentor rejected/accepted
       case "prModAuto":
         return <PrModAuto message={message} isProspelaTeam={isProspelaTeam} />
       case 'notSent':
         return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case 'uploadNotSent':
         return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
-      case "menteeReq":
-        return <MenteeReq message={message} isProspelaAuto={isProspelaAuto}/>
-      case "mentorAcc":
+
+      // These appear in 1:1 chat with Relationship Manager only (i.e. users cant see each others feedback)
+      case "menteeRej":
       case "mentorRej":
-        return <MentorReply message={message} isProspelaAuto={isProspelaAuto}/>
+        return <UserRej message={message}/>
+
       default:
-        return <MenteeReq message={message} isProspelaAuto={isProspelaAuto}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
     }
   }
 }

@@ -145,6 +145,35 @@
   right: 16px;
   margin-left: 10px;
 }
+.relMgr-container{
+  position: absolute;
+  height: 52px;
+  padding-top: 7px;
+  right: 16px;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.relMgr-container .title{
+  color: #555555;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  width: 190px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.relMgr-container .tooltiptext.user{
+  top: 22px;
+  left: -120px;
+  z-index: 2;
+}
+.relMgr-container .tooltiptext.user:after{
+  transform: rotate(180deg);
+  top: -18px;
+  left: 47%;
+}
+
 .chatInfoContainer{
   height: 20px;
   width: 20px;

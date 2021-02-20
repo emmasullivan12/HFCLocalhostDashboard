@@ -136,7 +136,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(242,242,242,0.61);
+  background-color: rgba(242,242,242,0.21);
   z-index: 2;
 }
 .unavailableOverlay-text{

@@ -384,6 +384,7 @@
   -moz-flex-shrink: 0;
   width: 6px;
   background-color: #4e4ed6;
+  margin-right: 10px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -480,8 +481,8 @@
 .messageCTA .negativeReply {
   margin-top: 10px;
 }
-.messageCTA .positiveReply svg,
-.messageCTA .negativeReply svg {
+.positiveReply svg,
+.negativeReply svg {
   display: inline-block;
 }
 .messageCTABtns{
@@ -500,6 +501,18 @@
   display: unset;
   width: 60px;
 }
+.potentialMatch-menteeIntroMsg{
+  padding-top: 15px;
+  padding-bottom: 6px;
+  text-align: left;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.potentialMatch-menteeIntroMsg .highlight-titleText{
+  margin-bottom: 7px;
+  display: inline-block;
+}
 .potentialMatch-profileCard{
   box-shadow: 0 1px 7px 1.2px rgba(78,78,214,.22);
   -webkit-box-shadow: 0 1px 7px 1.2px rgba(78,78,214,.22);
@@ -517,6 +530,18 @@
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
-.potentialMatch-profileCard .userDetail-text{
+.potentialMatch-profileCard .userDetail-txt{
   height: 104px;
+}
+.userDetail-profileCard{
+  font-size: .8rem;
+  color: #b1b1b1;
+  margin: 10px;
+}
+.userDetail-scrollSection{
+  overflow-y: scroll;
+  height: 220px;
+}
+.userDetail-scrollSection::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.41);
 }

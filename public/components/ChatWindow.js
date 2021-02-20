@@ -4,12 +4,15 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import {getIcon, getChannelAbout, checkDevice, X} from './GeneralFunctions.js';
+import Avatar from './Avatar.js';
 import PrMessagesList from "./PrMessagesList";
 import PrAddMessage from "./PrAddMessage";
 import MenuNav from './MenuNav.js';
 import FullPageModal from './FullPageModal.js';
 import Modal from "./Modal";
 import FileUploadContent from "./FileUploadContent";
+import UserBadge from './UserBadge.js';
+import UserName from './UserName.js';
 import VerifiedBadge from "./VerifiedBadge";
 import "../css/ChatWindow.css";
 import "../css/General.css";
@@ -515,6 +518,15 @@ class ChatWindow extends Component {
               </Modal>
             )}
   */
+    const isGroooop = false;
+    const prRelMgr = '1'
+    const prRelMgrList = [
+      {value: '1', uid: '12345', fname: 'Penny', lname: 'Gee'},
+      {value: '2', uid: '12346', fname: 'Dexter', lname: 'Boyce'},
+      {value: '3', uid: '12347', fname: 'Emma', lname: 'Sullivan'},
+    ]
+    const relMgrToShow = prRelMgrList
+      .filter(prMod => prRelMgr.includes(prMod.value))
 
     return (
       <React.Fragment>
@@ -562,14 +574,24 @@ class ChatWindow extends Component {
                   </div>
                 )}
               </div>
-              {isGroup && !isDevice && (
+              {isGroup != true && !isDevice && (
+                <div className="relMgr-container">
+                  <div className="title">Your Relationship Manager</div>
+                  <div className="group-detail-item bright">
+                    <Avatar userID={relMgrToShow[0].uid} userName={relMgrToShow[0].fname} isGroupFlex smallIdle picSize={40}/>
+                    <UserName userUID={relMgrToShow[0].uid} fname={relMgrToShow[0].fname} lname={relMgrToShow[0].lname} smallIdle/>
+                    <UserBadge badgeType='isPrTeam' />
+                  </div>
+                </div>
+              )}
+              {isGroup == true && !isDevice && (
                 <div className="more-info-container">
                   <div className="chatInfoContainer" onClick={this.toggleFlexContainer}>
                     <i className="fas fa-info-circle"/>
                   </div>
                 </div>
               )}
-              {isGroup && isDevice && (
+              {isGroup == true && isDevice && (
                 <FullPageModal {...FlexContainerProps} isDevice={isDevice}>
                   <FlexContainerContent
                     content={flexContent}

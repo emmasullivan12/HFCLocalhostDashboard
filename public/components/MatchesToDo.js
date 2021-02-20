@@ -6,9 +6,9 @@ import ReactDOM from "react-dom";
 import Autocomplete from './Autocomplete.js';
 import {Check} from './GeneralFunctions.js';
 import Modal from './Modal.js';
-import roleOptions from './Roles.js';
 import SelectBox from './Select.js';
 import UpdateUserStatusContent from './UpdateUserStatusContent.js';
+import {convertRole, convertHobbies} from './UserDetail.js';
 import UserToMatch from './UserToMatch.js';
 
 import "../css/Matching.css";
@@ -125,23 +125,6 @@ class MatchesToDo extends React.Component {
     this.setState({
       userToSearchFor: userInput,
     })
-  }
-
-  convertRole = (roles, rolesfreetext) => {
-    let rolesFullText = [];
-    const stringifyRoles = JSON.stringify(roles);
-
-    const rolesArr = roleOptions
-      .filter(role => stringifyRoles.includes(role.value))
-
-    rolesArr.forEach((x) => {
-      rolesFullText.push(x.label)
-    })
-    rolesfreetext.forEach((y) => {
-      rolesFullText.push(y)
-    })
-
-    return rolesFullText.join(", ")
   }
 
   onClickRoles = (e) => {
@@ -296,9 +279,10 @@ class MatchesToDo extends React.Component {
             user={user}
             key={user.uuid}
             isFirstItem={index == 0}
-            matchStatusOptions={matchStatusOptionsToSet}
+            matchStatusOptions={matchStatusOptionsToSetNoUnavail}
             matchStatusOptionsAll={matchStatusOptionsAll}
-            convertRole={this.convertRole}
+            convertRole={convertRole}
+            convertHobbies={convertHobbies}
             grabSchOrUni={this.grabSchOrUni}
           />
         );
@@ -394,7 +378,8 @@ class MatchesToDo extends React.Component {
             <UpdateUserStatusContent
               userToUpdate={userToUpdate}
               matchStatusOptions={matchStatusOptionsToSetNoUnavail}
-              convertRole={this.convertRole}
+              convertRole={convertRole}
+              convertHobbies={convertHobbies}
               grabSchOrUni={this.grabSchOrUni}
               matchStatusOptionsAll={matchStatusOptionsAll}
             />

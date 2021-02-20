@@ -55,7 +55,8 @@ const potentialMatches = [
     currind: '#food&beverage',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
     learning: 'leadership, negotiations, excel, programming, python, mySQL',
-    hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+    hobbies: ['12', '98'],
+    hobbiesfreetext: ['hobby3', 'hobby4'],
     certainty: 7,
     roles: ['12', '98'],
     rolesfreetext: ['role3', 'role4'],
@@ -102,7 +103,8 @@ const potentialMatches = [
     notes: 'Wants to only help avfx mentees',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
     learning: 'leadership, negotiations, excel, programming, python, mySQL',
-    hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+    hobbies: ['12', '98'],
+    hobbiesfreetext: ['hobby3', 'hobby4'],
     certainty: 7,
     roles: ['12', '98'],
     rolesfreetext: ['role3', 'role4'],
@@ -147,7 +149,8 @@ const potentialMatches = [
     currind: '#food&beverage',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
     learning: 'leadership, negotiations, excel, programming, python, mySQL',
-    hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+    hobbies: ['12', '98'],
+    hobbiesfreetext: ['hobby3', 'hobby4'],
     certainty: 7,
     roles: ['12', '98'],
     rolesfreetext: ['role3', 'role4'],
@@ -196,7 +199,7 @@ class MatchingContent extends Component {
 
   renderMatchesList = (userToMatchName) => {
     if (potentialMatches.length > 0) {
-      const {matchStatusOptionsAll, convertRole, grabSchOrUni} = this.props;
+      const {matchStatusOptionsAll, convertRole, convertHobbies, grabSchOrUni} = this.props;
 
       return (
         <div>
@@ -209,6 +212,7 @@ class MatchingContent extends Component {
                 isPotentialMatch
                 matchStatusOptionsAll={matchStatusOptionsAll}
                 convertRole={convertRole}
+                convertHobbies={convertHobbies}
                 grabSchOrUni={grabSchOrUni}
               />
             )
@@ -220,7 +224,7 @@ class MatchingContent extends Component {
 
   render() {
     const {userToSearchFor, showUnavailableModal, isLoading} = this.state;
-    const {matchStatusOptions, convertRole, userName, birthdayts, grabSchOrUni} = this.props;
+    const {matchStatusOptions, convertRole, convertHobbies, userName, birthdayts, grabSchOrUni} = this.props;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -258,7 +262,8 @@ class MatchingContent extends Component {
       notes: 'Really good at Houdini. Wants to only help working class kids',
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       learning: 'leadership, negotiations, excel, programming, python, mySQL',
-      hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+      hobbies: ['12', '98'],
+      hobbiesfreetext: ['hobby3', 'hobby4'],
       certainty: 7,
       roles: ['12', '98'],
       rolesfreetext: ['role3', 'role4'],
@@ -283,6 +288,7 @@ class MatchingContent extends Component {
                 matchStatusOptions={matchStatusOptions}
                 handleMatchStatusChange={this.handleMatchStatusChange}
                 convertRole={convertRole}
+                convertHobbies={convertHobbies}
                 grabSchOrUni={grabSchOrUni}
               />
             </div>

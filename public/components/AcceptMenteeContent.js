@@ -14,6 +14,10 @@ class AcceptMenteeContent extends Component {
     };
   }
 
+  componentDidMount(){
+    document.getElementById("acceptMenteeMessage").focus();
+  }
+
   handleInput = (evt) => {
   //  evt.target.style.height = (evt.target.scrollHeight) + 'px';
     this.setState({ [evt.target.name]: evt.target.value });
@@ -21,11 +25,13 @@ class AcceptMenteeContent extends Component {
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    const {matchid} = this.props;
+
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
     }
-    this.setState({ messageFromServer: 'Pass sent server says' });
+    this.setState({ messageFromServer: 'Response sent for matchid: ' + matchid + ' server says' });
   }
 
   canBeSubmitted() {
@@ -42,38 +48,38 @@ class AcceptMenteeContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            Accept chat request
+            Accept Mentee & Reply
           </div>
           <form id="acceptMenteeForm">
             <textarea
               name="acceptMenteeMessage"
               className="form-control-std acceptMentee"
               form="acceptMenteeForm"
+              id="acceptMenteeMessage"
               value={acceptMenteeMessage}
               onChange={this.handleInput}
-              placeholder="Type your message..."
+              placeholder="Type your 'hello' message..."
               autoComplete="off"
               autoCorrect="off"
               spellCheck="off"
               minLength="50"
-              maxLength="500"
-              autoFocus
+              maxLength="1000"
               required
             />
             <div className="descriptor-br form">
-              {acceptMenteeMessage.length} / 500 (Min 50 characters)
+              {acceptMenteeMessage.length} / 1000 (Min 50 characters)
             </div>
             <div className="need-ideas-container">
               <div className="ideas-icon-container">
                 <i className="far fa-lightbulb" />
               </div>
               <div className="ideas-Title">
-                Need ideas for what to say?
+                Need ideas for what to say? How about:
               </div>
               <ul className="ideas-list textLeft">
                 <li className="ideas-list-item">
                   <div className="emoji-icon wave-emoji" />
-                  <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re working on, your hobbies)</div>
+                  <div className="idea-item-text"><strong>Introduce yourself</strong> (your name, what you’re working on, hobbies you enjoy)</div>
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon heart-emoji" />
@@ -81,7 +87,11 @@ class AcceptMenteeContent extends Component {
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon sunglasses-emoji" />
-                  <div className="idea-item-text"><strong>Why this mentee</strong> (what you think you can help them with)</div>
+                  <div className="idea-item-text"><strong>Why you&#39;re excited</strong> (your motivation for being a mentor, what you think you can help them with)</div>
+                </li>
+                <li className="ideas-list-item">
+                  <div className="emoji-icon questionMark-emoji" />
+                  <div className="idea-item-text"><strong>Ask them a question</strong> (Keep up the conversation flow!)</div>
                 </li>
               </ul>
             </div>

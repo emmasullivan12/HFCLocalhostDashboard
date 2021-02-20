@@ -1,6 +1,8 @@
 // Dex last merged this code on 14th feb 2021
 
 import React, { Component } from "react";
+import hobbiesOptions from './Hobbies.js';
+import roleOptions from './Roles.js';
 
 function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   if (eetStatus === 'uni') {
@@ -40,6 +42,42 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
 
   }
 }
+
+function convertRole (roles, rolesfreetext) {
+  let rolesFullText = [];
+
+  const rolesArr = roleOptions
+    .filter(role => roles.includes(parseInt(role.value,10)))
+
+  rolesArr.forEach((x) => {
+    rolesFullText.push(x.label)
+  })
+  rolesfreetext.forEach((y) => {
+    rolesFullText.push(y)
+  })
+
+  return rolesFullText.join(", ")
+}
+
+
+function convertHobbies(hobbies, hobbiesfreetext) {
+  let hobbiesFullText = [];
+//  const stringifyHobbies = JSON.stringify(hobbies);
+
+  const hobbiesArr = hobbiesOptions
+    .filter(hobby => hobbies.includes(parseInt(hobby.value,10)))
+//    .filter(hobby => stringifyHobbies.includes(hobby.value))
+
+  hobbiesArr.forEach((x) => {
+    hobbiesFullText.push(x.label)
+  })
+  hobbiesfreetext.forEach((y) => {
+    hobbiesFullText.push(y)
+  })
+
+  return hobbiesFullText.join(", ")
+}
+
 
 function setSchGraduYr(currYrGrp) {
   var d = new Date();
@@ -259,4 +297,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, convertHobbies, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

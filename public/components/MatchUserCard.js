@@ -145,7 +145,7 @@ class MatchUserCard extends React.Component {
   }
 
   render() {
-   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, grabSchOrUni, userToMatchName} = this.props;
+   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, convertHobbies, grabSchOrUni, userToMatchName} = this.props;
    const {showDetail, matchStatus, editingNotes, notes, showNotes, reservedMatch} = this.state;
    const name = user.fname + " " + user.lname;
    let classNameSafeguarding = 'userToMatch-safeguardingText' + (isPotentialMatch ? ' isPotentialMatch' : '');
@@ -343,7 +343,7 @@ class MatchUserCard extends React.Component {
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
               <strong>HOBBIES</strong>
-              <div className="normalLineheight">{user.hobbies}</div>
+              <div className="normalLineheight">{convertHobbies(user.hobbies, user.hobbiesfreetext)}</div>
             </div>
           </div>
           { showDetail == true && (

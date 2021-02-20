@@ -72,7 +72,7 @@ class JoinProgrammeModalContent extends Component {
             <span>Join a live Group</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
-          <p className="modalDesc noPaddingL alignL noMarginBlockEnd paddingBtm noPaddingR reqAsterisk">
+          <p className="modalDesc alignL noMarginBlockEnd paddingBtm noPaddingR reqAsterisk">
             {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your Employer to increase your company\'s collective impact'}
           </p>
           <form className="leftRightPad">

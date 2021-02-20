@@ -319,7 +319,7 @@ class Autocomplete extends React.Component {
 
   render() {
     const { onChange, onClick, onMouseDown, onKeyDown, onFocus, onBlur } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, showCTA1, showCTA2, cta1Text, cta2Text, cta1ClickHandler, cta2ClickHandler, suggestions, valueToShow, handleMouseDown, children } = this.props;
+    const { pushContentDownOnOpen, name, detailToShow, placeholder, handleChange, idValue, required, showDetail, showCTA1, showCTA2, cta1Text, cta2Text, cta1ClickHandler, cta2ClickHandler, suggestions, valueToShow, handleMouseDown, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput } = this.state;
     const hasMultipleAttributes = this.checkMultipleAttributes();
 
@@ -327,7 +327,7 @@ class Autocomplete extends React.Component {
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
         suggestionsListComponent = (
-          <div className={"autocompleter-items" + (showDetail===true ? ' showDetail' : ' noDetail')} id="autocompleter-items">
+          <div className={"autocompleter-items" + (showDetail===true ? ' showDetail' : ' noDetail') + (pushContentDownOnOpen == true ? ' pushContentDownOnOpen': '')} id="autocompleter-items">
               {filteredSuggestions.map((suggestion, index) => {
                 let className;
                 let dataTarget;

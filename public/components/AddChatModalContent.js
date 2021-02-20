@@ -1,83 +1,61 @@
-// Dex last merged this code on 4th June 2020 
+// Dex last merged this code on 15th oct 2020
 
 import React, { Component } from "react";
+import Autocomplete from './Autocomplete.js';
 
-// Content for Passing on Mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class AddChatModalContent extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      FirstPrMessage: '',
-      UserID: ''
-    }
+      userToDM: '',
+    };
   }
 
-  componentDidMount(){
-    document.getElementsByTagName("input")[0].focus();
+  handleUserSearch = () => {
+    // Dex to use
   }
 
-  handleInput = (evt) => {
-    evt.target.style.height = (evt.target.scrollHeight) + 'px';
-    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
+  launchDM = (e, suggestion) => {
+    this.setState({
+      userToDM: e.target.dataset.id
+    }, () => {
+      console.log("launch chat with: "+this.state.userToDM)
+    });
   }
-
-  handleMessageChange = (evt) => {
-    this.setState({ [evt.target.name]: evt.target.type === 'number' ? parseInt(evt.target.value) : evt.target.value });
-  }
-
-  // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
-//  handleSubmit = (evt) => {
-//    if (!this.canBeSubmitted()) {
-//      evt.preventDefault ();
-//      return;
-//    }
-//    alert('Chat added to your list');
-//  }
-
-  // This ensures user cannot press Enter on keyboard to submit without completing form first
-  //canBeSubmitted() {
-  //  const { MatchReasonMessage, MenteeID, MentorID } = this.state;
-  //  return (
-  //    MatchReasonMessage.length > 0 && MenteeID.length > 0 && MentorID.length > 0
-  //  );
-//  }
 
   render() {
-  //  const isEnabled = this.canBeSubmitted();
+
+    var users = [
+      {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
+    ]
+
     return (
       <React.Fragment>
         <div className="modal-title">
-          Start a new Direct Message chat
+          Start a DM
         </div>
-        <form id="newDMForm">
-          <div>User ID</div>
-          <input
-            type="text"
-            name="UserID"
-            className="textInputBox small"
-            placeholder="Enter UserID to send a message to..."
-            value={this.state.UserID}
-            onChange={this.handleMessageChange}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck="off"
+        <div className="autocompleter">
+          <Autocomplete
+            suggestions={users}
+            name='allUsersToDM'
+            placeholder='Search all Prospela users by name'
+          //  handleTabPress={this.handleTabPress}
+            handleChange={this.handleUserSearch}
+          //  handleMouseDown={this.handleMouseDown}
+            focusOnLoad
+            idValue='value'
+            valueToShow='name' // This is the attribute of the array/object to be displayed to user
+            showDetail
+            detailToShow='role'
+            showCTA1
+            cta1ClickHandler={this.launchDM}
+            cta1Text="Message"
+            pushContentDownOnOpen // i.e. onOpen it expands the height of a modal rather than adding scrollbar
+          //  showCTA2
+          //  cta2ClickHandler={this.launchStartMatchModal}
+          //  cta2Text="Match"
           />
-          <textarea
-            name="FirstPrMessage"
-            className="textInputBox"
-            form="newDMForm"
-            value={this.state.FirstPrMessage}
-            onChange={this.handleInput}
-            placeholder="Send message to user..."
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck="off"
-            required
-          />
-          <button type="submit" className="Submit-btn">
-            Send Message
-          </button>
-        </form>
+        </div>
       </React.Fragment>
     );
   }

@@ -12,10 +12,8 @@ class PassMenteeContent extends Component {
     super(props);
     this.state = {
       passReasonMessage: '',
-      passedOnMentee: false,
       messageFromServer: ''
     };
-    this.updateClassname = this.updateClassname.bind(this);
   }
 
   handleInput = (e) => {
@@ -39,21 +37,27 @@ class PassMenteeContent extends Component {
     }
   }
 
-  updateClassname() {
-    this.setState({ passedOnMentee: true });
-    this.setState({ messageFromServer: 'Pass sent server says' });
+  handleSubmit = (evt) => {
+    const {matchid} = this.props;
+
+    if (!this.canBeSubmitted()) {
+      evt.preventDefault ();
+      return;
+    }
+
+    this.setState({ messageFromServer: 'Passed on matchid: ' + matchid + ' server says' });
   }
 
   // This ensures user cannot press Enter on keyboard to submit without completing form first
   canBeSubmitted() {
-    const {PassReasonMessage} = this.state;
+    const {passReasonMessage} = this.state;
     return (
-      PassReasonMessage.length > 0
+      passReasonMessage.length > 0
     );
   }
 
   render() {
-    const { passReasonMessage, passedOnMentee, messageFromServer } = this.state;
+    const { passReasonMessage, messageFromServer } = this.state;
     const isEnabled = this.canBeSubmitted();
 //    const { onSubmit } = this.props;
     if(messageFromServer === '') {
@@ -76,19 +80,19 @@ class PassMenteeContent extends Component {
               onChange={this.handleMessageChange}
               required={false}
             />
-            <Checkbox
+          {/*}  <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="They are not interested in my *industry*"
+              label="They are not interested in my *industry* "
               name="Industry"
               className="SubmitMatch-input"
               value="1"
               spanClassName="checkmark"
               onChange={this.handleMessageChange}
               required={false}
-            />
+            />*/}
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="Not enough relatable *personal interests*"
+              label="Not enough relatable *personal interests* "
               name="Interests"
               className="SubmitMatch-input"
               value="1"
@@ -98,7 +102,7 @@ class PassMenteeContent extends Component {
             />
             <Checkbox
               labelClassName="checkbox-container textLeft"
-              label="I dont know enough about the *skills* they want to develop"
+              label="The *skills* they want to develop don't match mine"
               name="Skills"
               className="SubmitMatch-input"
               value="1"
@@ -120,7 +124,7 @@ class PassMenteeContent extends Component {
               How could we better match you?
             </div>
             <textarea
-              name="PassReasonMessage"
+              name="passReasonMessage"
               className="form-control-std"
               form="passMenteeForm"
               value={passReasonMessage}
@@ -136,7 +140,7 @@ class PassMenteeContent extends Component {
               {passReasonMessage.length} / 250
             </div>
             <div className="pass-btn-container">
-              <button type="submit" disabled={!isEnabled} className="Submit-btn" onClick={this.updateClassname}>
+              <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
                 Pass
                 </button>
             </div>
@@ -154,7 +158,7 @@ class PassMenteeContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              Thanks for letting us know why this wasn&#39;t such a great match for you. It will help us do better next time.
+              Thanks for letting us know why this wasn&#39;t such a great match for you. We&#39;ll try to do better next time!
             </div>
           </div>
         </React.Fragment>

@@ -37,11 +37,14 @@ class PassMentorContent extends Component {
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    const {matchid} = this.props;
+
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
     }
-    this.setState({ messageFromServer: 'Pass sent server says' });
+    
+    this.setState({ messageFromServer: 'Passed on matchid: ' + matchid + ' server says' });
   }
 
   // This ensures user cannot press Enter on keyboard to submit without completing form first

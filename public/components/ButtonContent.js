@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th jan 2021 
+// Dex last merged this code on 18th jan 2021
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import {X, Check} from "./GeneralFunctions.js";
@@ -38,6 +38,7 @@ function ButtonContent(props) {
         </div>
       );
     case 'joinProgSml':
+    case 'addPrDM':
       return (
         <div className="addContainer">
           <i className="fas fa-plus" />
@@ -68,12 +69,12 @@ function ButtonContent(props) {
           {text}
         </div>
       );
-    case 'addPrDM':
+  /*  case 'addPrDM':
       return (
         <div>
           &#10010;
         </div>
-      );
+      );*/
     case 'RequestChat':
       return (
         <div type="button" className="RequestChatBtnContainer">

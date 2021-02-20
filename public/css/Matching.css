@@ -290,7 +290,8 @@ td.userToMatch-editingNotes{
 .userGroupRole-modal{
   display: inline-block;
 }
-.fullpage-modal-container.matchingUsers{
+.fullpage-modal-container.matchingUsers,
+.fullpage-modal-container.matchingUsers-fromModal{
   background-color: #f2f2f2;
 }
 .userToMatch-card{

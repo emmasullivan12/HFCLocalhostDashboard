@@ -94,6 +94,11 @@
   scrollbar-color: rgba(63,63,63,.45) #fff;
   scrollbar-width: thin;
 }
+.autocompleter-items.pushContentDownOnOpen{
+  position: relative;
+  margin-top: -25px;
+  z-index: 10000; /* i.e. higher than Modal.js's z-index) */
+}
 .autocompleter-items.showDetail{
   max-height: calc(5 * 50px);
   -webkit-max-height: calc(5 * 50px);

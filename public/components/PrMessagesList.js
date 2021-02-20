@@ -332,13 +332,40 @@ class PrMessagesList extends Component {
         }
       },
       {
-        id: '100006',
-        uid: '23456',
+        id: '100211',
+        uid: '223458',
         type: 'message',
-        subtype: 'menteeReq',
-        author: 'emma-student',
-        ts: '2020-09-02T13:30:50.667Z',
-        text: 'Hi Im Emma *studying Business*, Maths and English. I’m _interested in learning_ more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
+        subtype: 'prModAuto',
+        author: 'penny-prospela',
+        ts: '2020-09-03T13:30:50.667Z',
+        prModAuto: {
+          type: 'sendMenteeReq',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100511',
+        uid: '223458',
+        type: 'message',
+        subtype: 'prModAuto',
+        author: 'penny-prospela',
+        ts: '2020-09-03T13:30:50.667Z',
+        prModAuto: {
+          type: 'tellMenteeMentorRej',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100611',
+        uid: '223458',
+        type: 'message',
+        subtype: 'prModAuto',
+        author: 'penny-prospela',
+        ts: '2020-09-03T13:30:50.667Z',
+        prModAuto: {
+          type: 'tellMenteeMentorAcc',
+          matchid: '12345',
+        }
       },
       {
         id: '100007',
@@ -420,6 +447,28 @@ class PrMessagesList extends Component {
         }
       },
       {
+        id: '100111',
+        uid: '223458',
+        type: 'message',
+        subtype: 'menteeRej',
+        author: 'menteesNAME',
+        ts: '2020-09-03T13:30:50.667Z',
+        menteeRej: {
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100411',
+        uid: '223459',
+        type: 'message',
+        subtype: 'mentorRej',
+        author: 'mentorsNAME',
+        ts: '2020-09-03T13:30:50.667Z',
+        menteeRej: {
+          matchid: '12345',
+        }
+      },
+      /*{
         id: '100012',
         uid: '12345',
         type: 'message',
@@ -430,7 +479,7 @@ class PrMessagesList extends Component {
         prAuto: {
           title: 'match'
         }
-      },
+      },*/
       {
         id: '100013',
         uid: '23456',
