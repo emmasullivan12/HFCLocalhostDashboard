@@ -1,4 +1,4 @@
-// Dex last merged this code on 29th jan 2021
+// Dex last merged this code on 26th feb 2021
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -11,7 +11,6 @@ import {
 import Modal from './Modal.js';
 import {getUnreadIndicator} from './GeneralFunctions.js';
 import AddChatModalContent from './AddChatModalContent.js';
-import SendNotifModalContent from './SendNotifModalContent.js';
 import "../css/Modal.css";
 
 const AddChatModalProps = {

@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th oct 2020
+// Dex last merged this code on 26th feb 2021
 
 import React, { Component } from "react";
 import "../css/RequestChatContent.css";

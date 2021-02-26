@@ -1,4 +1,5 @@
-// Dex last merged this code on 5th feb 2021
+// Dex last merged this code on 26th feb 2021
+
 import React, { Component } from "react";
 
 //import AcceptCTA from './AcceptCTA.js';
@@ -554,7 +555,7 @@ class PrMessageContents extends Component {
       // These appear in 1:1 chat with Relationship Manager only (i.e. users cant see each others feedback)
       case "menteeRej":
       case "mentorRej":
-        return <UserRej message={message}/>
+        return <UserRej message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
 
       default:
         return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>

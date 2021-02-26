@@ -1,4 +1,4 @@
-// Dex last merged this code on 30th jan 2021
+// Dex last merged this code on 26th feb 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -518,7 +518,7 @@ class ChatWindow extends Component {
               </Modal>
             )}
   */
-    const isGroooop = false;
+  //  const isGroooop = false;
     const prRelMgr = '1'
     const prRelMgrList = [
       {value: '1', uid: '12345', fname: 'Penny', lname: 'Gee'},
