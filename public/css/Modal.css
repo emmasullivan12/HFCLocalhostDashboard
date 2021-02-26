@@ -267,14 +267,8 @@
 .ModalOpenBtn-addPrDM{
   height: 16px;
 }
-.ModalOpenBtn-addPrDM{
-  margin-top: -13px;
-  position: absolute;
-  right: 0;
-  visibility: hidden;
-}
-.chatMenu-header .ModalOpenBtn-addPrDM{
-  visibility: visible;
+.ModalOpenBtn-addPrDM .addContainer{
+  margin-top: -1.3rem;
 }
 .ModalOpenBtn-joinProg:hover,
 .ModalOpenBtn-joinProgSml:hover,

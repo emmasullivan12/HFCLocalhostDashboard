@@ -17,7 +17,7 @@ import "../css/Modal.css";
 const AddChatModalProps = {
   ariaLabel: 'Start a new DM with a specific user',
   triggerText: 'Start a DM',
-  usedFor: 'addPrDMRAHHHHHH',
+  usedFor: 'addPrDM',
   changeInitFocus: true
 }
 
