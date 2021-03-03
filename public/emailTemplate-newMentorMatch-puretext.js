@@ -1,4 +1,4 @@
-// Merged on 12th oct 2020
+// Merged on 3rd march 2021
 const ejs = require("ejs");
 
 const email = 'dexter@hotmail.com'
