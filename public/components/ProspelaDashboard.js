@@ -16,6 +16,7 @@ import {
 import { usersFetchData } from "../actions/Users";*/
 
 import {cdn} from './CDN.js';
+import BackgroundCheck from "./BackgroundChecks";
 import ChatMenu from "./ChatMenu";
 import MatchMenu from "./MatchMenu";
 import MatchesToDo from "./MatchesToDo";
@@ -204,6 +205,7 @@ class ProspelaDashboard extends Component{
                     <div className="mainMenu">
                       <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
                       <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Review Signups</NavLink>
+                      <NavLink exact to="/background-checks" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Check ID</NavLink>
                     </div>
                     <ChatMenu isProspelaTeam chatGroup='Mentee DMs' onClick={this.closeMenu}/>
                     <ChatMenu isProspelaTeam chatGroup='E-Mentor DMs' onClick={this.closeMenu}/>
@@ -244,6 +246,7 @@ class ProspelaDashboard extends Component{
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route path="/review-signups" component={ReviewSignups}/>
+                <Route path="/background-checks" component={BackgroundCheck}/>
                 <Route path="/matches/to-be-matched" component={MatchesToDo}/>
                 <Route path="/matches/in-progress" component={MatchesInProg}/>
                 <Route path="/matches/completed" component={MatchesCompleted}/>

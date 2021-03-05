@@ -1088,6 +1088,10 @@ a.Submit-btn:disabled:active,
   width: 25px;
   background-color: rgba(78,78,214,.11);
 }
+.checkmark.disabled{
+  background-color: #f2f2f2;
+  pointer-events: none;
+}
 @media only screen and (min-width: 321px) and (max-width: 425px) {
   .checkbox-container{
     padding-left: 2.7rem;
@@ -1108,8 +1112,8 @@ a.Submit-btn:disabled:active,
 .initiativeCheckmark {
   background-color: rgba(247,247,247,.64)!important;
 }
-.checkbox-container-login:hover input ~ .checkmark,
-.checkbox-container:hover input ~ .checkmark,
+.checkbox-container-login:hover input ~ .checkmark:not(.disabled),
+.checkbox-container:hover input ~ .checkmark:not(.disabled),
 .checkbox-container-login input:focus ~ .checkmark,
 .checkbox-container input:focus ~ .checkmark {
   background-color: rgba(78,78,214,.29);

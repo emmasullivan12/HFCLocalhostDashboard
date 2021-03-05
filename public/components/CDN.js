@@ -9,5 +9,6 @@ const usercdn = 'https://media-uploads.prospela.com'
 const groupImgFolder = 'progImages' // All images related to groups e.g. avatar, thumbnail etc
 const userAvatarsFolder = 'userAvatars' // All user profile pics
 const userImgsFolder = 'userImgUploads' // All images uploaded by users
+const userIDSelfiesFolder = 'userIDs' // All user ID Selfies
 
-export {cdn, usercdn, groupImgFolder, userAvatarsFolder, userImgsFolder};
+export {cdn, usercdn, groupImgFolder, userAvatarsFolder, userImgsFolder, userIDSelfiesFolder};

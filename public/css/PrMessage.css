@@ -539,7 +539,7 @@
   margin: 10px;
 }
 .userDetail-scrollSection{
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 220px;
 }
 .userDetail-scrollSection::-webkit-scrollbar-thumb {

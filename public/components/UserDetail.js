@@ -43,11 +43,12 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   }
 }
 
-function convertRole (roles, rolesfreetext) {
+function convertRole(roles, rolesfreetext) {
   let rolesFullText = [];
 
   const rolesArr = roleOptions
-    .filter(role => roles.includes(parseInt(role.value,10)))
+  //  .filter(role => roles.includes(parseInt(role.value,10)))
+    .filter(role => roles.includes(role.value))
 
   rolesArr.forEach((x) => {
     rolesFullText.push(x.label)

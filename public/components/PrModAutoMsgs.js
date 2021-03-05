@@ -12,7 +12,7 @@ import UserName from './UserName.js';
 import TextParser from './TextParser.js';
 import {X, Check} from './GeneralFunctions.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
-import {userFlagEmoji, convertHobbies} from './UserDetail.js';
+import {userFlagEmoji, convertHobbies, convertRole} from './UserDetail.js';
 
 function TimeCalc(props) {
   var ts = new Date(props.time);
@@ -108,6 +108,8 @@ class PrModAuto extends Component {
         schname: '',
         schnamefreetext: '', // If their school wasn't on the list
         uniname: '75',
+        roles: ['12', '98'],
+        rolesfreetext: ['role3', 'role4'],
         hobbies: ['1', '4', '67', '111'],
         hobbiesfreetext: ['Beer', 'Pubs', 'Bad jokes'],
         expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
@@ -152,8 +154,8 @@ class PrModAuto extends Component {
         hobbies: ['1', '4', '67', '111'],
         hobbiesfreetext: ['Beer', 'Pubs', 'Bad jokes'],
         certainty: 7,
-        roles: ['12', '98'],
-        rolesfreetext: ['role3', 'role4'],
+        roles: [],
+        rolesfreetext: [],
         rolesexp: ['12', '98'],
         rolesexpfreetext: ['role3', 'role4'],
         lifestyle: 'I want to work a 9-5pm job and have no responsibilities and earn £1m a month',
@@ -299,6 +301,10 @@ class PrModAuto extends Component {
                         <div>{userProfileToShow.expertise}</div>
                       </div>
                       <div className="userDetail-profileCard">
+                        <div className="lightPurpleText"><strong>Roles I can talk about:</strong></div>
+                        <div>{ convertRole(userProfileToShow.rolesexp, userProfileToShow.rolesexpfreetext) }</div>
+                      </div>
+                      <div className="userDetail-profileCard">
                         <div className="lightPurpleText"><strong>Careers evolve over time. I&#39;m learning:</strong></div>
                         <div>{userProfileToShow.learning}</div>
                       </div>
@@ -404,6 +410,10 @@ class PrModAuto extends Component {
                         <div>{userProfileToShow.learning}</div>
                       </div>
                       */}
+                      <div className="userDetail-profileCard">
+                        <div className="lightPurpleText"><strong>Roles I&#39;m interested in:</strong></div>
+                        <div>{ convertRole(userProfileToShow.roles, userProfileToShow.rolesfreetext) }</div>
+                      </div>
                       <div className="userDetail-profileCard">
                         <div className="lightPurpleText"><strong>Outside {(eetstatus == 'uni' || eetstatus == 'sch') ? 'the classroom': 'of work'} I love:</strong></div>
                         <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>

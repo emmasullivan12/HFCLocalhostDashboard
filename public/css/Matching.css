@@ -257,7 +257,11 @@ td.userToMatch-editingNotes{
 }
 .rolebadge-mentee{
   border: 1px solid #78becd;
-  border-radius: 10%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   background-color: #5ce8ff38;
   color: #78beca;
   margin-left: 5px;
@@ -265,7 +269,11 @@ td.userToMatch-editingNotes{
 }
 .rolebadge-mentor{
   border: 1px solid #7c7cfd;
-  border-radius: 10%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   background-color: #dcdcf9;
   color: #7c7cfd;
   margin-left: 5px;

@@ -1,0 +1,35 @@
+.checklistBox{
+  border: 1px dotted;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.background-checklist{
+  margin: 0;
+}
+.userToMatch-location{
+  min-width: 100px;
+}
+.userToMatch-linkedin{
+  min-width: 90px;
+}
+.userToMatch-cv{
+  min-width: 80px;
+  text-align: center!important;
+}
+.userToMatch-selfie{
+  min-width: 80px;
+}
+.selfie-container{
+  font-size: 25px;
+  padding-left: 30%;
+}
+.Submit-btn.backgroundCheck{
+  min-width: 100px;
+}
+.chatIcon-button{
+  font-size: 35px;
+}
+.chatIcon-button:hover{
+  color: grey;
+}
