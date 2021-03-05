@@ -1,16 +1,9 @@
-// Dex last merged this code on 26th feb 2021
+// Dex last merged this code on 5th mar 2021
 
 import React, { Component } from "react";
 
 import {usercdn, userIDSelfiesFolder} from './CDN.js';
 import Checkbox from './Checkbox.js';
-
-const MatchingUsersProps = {
-  triggerText: 'Match',
-  usedFor: 'matchingUsers',
-  backBtn: 'arrow',
-  title: 'Match User'
-}
 
 // This shows the content within an individual row in the ChatMenu
 class UserToCheck extends Component {

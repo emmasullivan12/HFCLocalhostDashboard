@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th feb 2021
+// Dex last merged this code on 5th mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -13,14 +13,6 @@ import UserToCheck from './UserToBackgroundCheck.js';
 
 import "../css/Matching.css";
 import "../css/BackgroundChecks.css";
-
-const StartMatchProps = {
-  ariaLabel: 'Match user',
-  triggerText: 'Match user',
-  usedFor: 'matchingUser',
-  hideTrigger: true,
-  changeInitFocus: true
-}
 
 class BackgroundCheck extends React.Component {
   constructor(props) {
