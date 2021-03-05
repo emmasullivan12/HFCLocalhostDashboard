@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const email = 'dexter@hotmail.com'
 const mentorsGroup = 'Access:VFX'
 
-ejs.renderFile(__dirname + "/emailTemplate-newMentorMatch.ejs", {mentorsGroup: mentorsGroup}, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-newMentorMatchNoPwd.ejs", {mentorsGroup: mentorsGroup}, function (err, data) {
   if (err) {
     console.log(err);
   } else {

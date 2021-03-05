@@ -341,6 +341,56 @@ class PrModAuto extends Component {
           </div>
         );
 
+      // 1st Reminder to mentee that we've sent a potential Mentor to them for approval
+      case 'sendMatch-chaser1':
+
+        text = 'Hey, @' + userToMatch[0].fname + ', \n\nJust wondering if you caught my message above about your Mentor match, ' + potentialMatch[0].fname + '? \n\nLet me know what you think!'
+
+        return (
+          <div className="block-container">
+            <div className="message-container">
+              <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  {isProspelaTeam && (
+                    <UserBadge badgeType='isPrTeam' />
+                  )}
+                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                </div>
+                <div className="message-content">
+                  <TextParser text={text}/>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      // 2nd Reminder to mentee that we've sent a potential Mentor to them for approval
+      case 'sendMatch-chaser2':
+
+        text = 'Hi again, @' + userToMatch[0].fname + '! 👋 \n\nWere you happy with the Mentor match I sent you? Thought I\'d try one last time to chase you before they get released for somebody else. Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
+
+        return (
+          <div className="block-container">
+            <div className="message-container">
+              <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  {isProspelaTeam && (
+                    <UserBadge badgeType='isPrTeam' />
+                  )}
+                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                </div>
+                <div className="message-content">
+                  <TextParser text={text}/>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
       // Sending mentee's intro message and profile to mentor for approval
       case 'sendMenteeReq':
 
@@ -452,6 +502,56 @@ class PrModAuto extends Component {
                   {userRej == true && (
                     <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
                   )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      // 1st Reminder to Mentor that we've sent a potential Mentee to them for approval
+      case 'sendMenteeReq-chaser1':
+
+        text = 'Hey, @' + mentorFname + ', \n\nJust wondering if you caught my message above about your Mentee match, ' + userToMatch[0].fname + '? \n\nLet me know what you think!'
+
+        return (
+          <div className="block-container">
+            <div className="message-container">
+              <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  {isProspelaTeam && (
+                    <UserBadge badgeType='isPrTeam' />
+                  )}
+                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                </div>
+                <div className="message-content">
+                  <TextParser text={text}/>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      // 2nd Reminder to mentor that we've sent a potential Mentee to them for approval
+      case 'sendMenteeReq-chaser2':
+
+        text = 'Hi again, @' + mentorFname + '! 👋 \n\nWere you happy with the Mentee match I sent through to you? Thought I\'d try one last time to chase you before they get released and we try to find them somebody else as their Mentor. Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
+
+        return (
+          <div className="block-container">
+            <div className="message-container">
+              <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+              <div className="message-content-box">
+                <div className="sent-msg-info">
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  {isProspelaTeam && (
+                    <UserBadge badgeType='isPrTeam' />
+                  )}
+                  <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                </div>
+                <div className="message-content">
+                  <TextParser text={text}/>
                 </div>
               </div>
             </div>

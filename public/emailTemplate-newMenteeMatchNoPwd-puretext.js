@@ -4,7 +4,7 @@ const ejs = require("ejs");
 
 const email = 'dexter@hotmail.com'
 
-ejs.renderFile(__dirname + "/emailTemplate-newMenteeMatch.ejs", function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-newMenteeMatchNoPwd.ejs", function (err, data) {
   if (err) {
     console.log(err);
   } else {
