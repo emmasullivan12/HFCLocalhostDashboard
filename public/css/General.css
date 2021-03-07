@@ -403,6 +403,9 @@ div {
 .alignCenter{
   text-align: center!important;
 }
+.alignCenter svg{
+  display: inline-block;
+}
 .alignL{
   text-align: left!important;
 }

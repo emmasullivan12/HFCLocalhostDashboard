@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import hobbiesOptions from './Hobbies.js';
 import roleOptions from './Roles.js';
+import groupsList from "./Groups.js";
 
 function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   if (eetStatus === 'uni') {
@@ -60,6 +61,22 @@ function convertRole(roles, rolesfreetext) {
   return rolesFullText.join(", ")
 }
 
+function getGroupName(gid, getLongOrShortName) {
+
+  const groupArr = groupsList
+  //  .filter(role => roles.includes(parseInt(role.value,10)))
+    .filter(group => group.value == gid)
+
+  // If want short "source" version i.e. avfx
+  if (getLongOrShortName == 'short') {
+    return groupArr[0].source
+
+  // otherwise bring back full version i.e. Access:VFX
+  } else {
+    return groupArr[0].label
+  }
+
+}
 
 function convertHobbies(hobbies, hobbiesfreetext) {
   let hobbiesFullText = [];
@@ -298,4 +315,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, convertHobbies, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, convertHobbies, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

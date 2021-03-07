@@ -87,17 +87,21 @@
 .table-container{
   overflow-x: auto;
 }
-#tobeMatched-table{
+#tobeMatched-table,
+#pendingMatches-table{
   width: 100%;
 }
-#tobeMatched-table tbody {
+#tobeMatched-table tbody,
+#pendingMatches-table tbody {
   font-size: 14px;
 }
-#tobeMatched-table th {
+#tobeMatched-table th,
+#pendingMatches-table th {
   color: #3f3f3f;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
+  vertical-align: top;
 }
 th.userToMatch-match{
   width: 80px;
@@ -111,6 +115,9 @@ th.userToMatch-name{
 }
 th.userToMatch-safeguarding{
   width: 120px;
+}
+th.userToMatch-dates{
+  min-width: 100px;
 }
 .userToMatch-changeStatus{
   margin-top: -5px;
@@ -230,12 +237,14 @@ th.userToMatch-notes{
   visibility: hidden;
 }
 
-#tobeMatched-table td {
+#tobeMatched-table td,
+#pendingMatches-table td {
   padding-bottom: 12px;
   padding-right: 10px;
   vertical-align: top;
 }
-#tobeMatched-table td.alignCenter {
+#tobeMatched-table td.alignCenter,
+#pendingMatches-table td.alignCenter {
   padding-right: 0;
 }
 #toBeMatched-table td:hover{

@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const user = {uid: '22222'}
 const email = 'dexter@hotmail.com'
 const tokenValue = '123456'
-const link = 'https://test.prospela.com/login/resetpassword/uid/?uid='+encodeURIComponent(user.uid)
+const link = 'https://test.prospela.com/login/forgotpassword/uid/?uid='+encodeURIComponent(user.uid)
 
 ejs.renderFile(__dirname + "/emailTemplate-resetPassword.ejs", {link: link, tokenValue: tokenValue}, function (err, data) {
   if (err) {

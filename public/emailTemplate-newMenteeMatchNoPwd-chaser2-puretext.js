@@ -12,7 +12,7 @@ ejs.renderFile(__dirname + "/emailTemplate-newMenteeMatchNoPwd-chaser2.ejs", {me
       from:  'Prospela',
       to: email,
       subject: '[LAST CALL] Don\'t lose your Mentee match on Prospela!',
-      text: '📢 Last chance! Accept your new mentoring match on Prospela!\n\nOne of our team sent you a DM (and your Mentee\'s profile and "hello" message) which you need to accept to start chatting (or kindly decline so that we can match them with someone else).\n\nSet your password to see your Match at \'https://app.prospela.com/login/resetpassword\'\n\nFrom, The Team @ Prospela',
+      text: '📢 Last chance! Accept your new mentoring match on Prospela!\n\nOne of our team sent you a DM (and your Mentee\'s profile and "hello" message) which you need to accept to start chatting (or kindly decline so that we can match them with someone else).\n\nSet your password to see your Match at \'https://app.prospela.com/login/forgotpassword\'\n\nFrom, The Team @ Prospela',
       html: data
     }
   }
