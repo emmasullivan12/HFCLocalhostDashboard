@@ -77,6 +77,9 @@ class BackgroundCheck extends React.Component {
     return (
       <React.Fragment>
         <div className="tabWindow">
+          <div className="title-blankPage">
+            <span role="img" aria-label="warningEmoji">⚠️🚨</span> <strong>Users to Background Check</strong> <span role="img" aria-label="warningEmoji">🚨⚠️</span> 
+          </div>
           <div className="checklistBox greyText">
             <div className="paddingBtm">CHECKLIST</div>
             <ul className="background-checklist">

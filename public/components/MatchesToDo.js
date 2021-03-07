@@ -292,7 +292,10 @@ class MatchesToDo extends React.Component {
     return (
       <React.Fragment>
         <div className="tabWindow">
-          <div className="searchBar">
+          <div className="title-blankPage">
+            <span role="img" aria-label="linkEmoji">🔗</span> <strong>Users to be Matched</strong> <span role="img" aria-label="linkEmoji">🔗</span>
+          </div>
+          <div className="searchBar generalSearchByName">
             <div className="autocompleter">
               <Autocomplete
                 suggestions={users}

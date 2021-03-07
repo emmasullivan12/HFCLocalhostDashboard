@@ -234,7 +234,7 @@ class ReviewSignups extends React.Component {
               <div className="page-detail-container overflow-ellipsis">
                 <div className="chat-title-container overflow-ellipsis">
                   <span className="chat-title">
-                    Review Signups
+                    Approve Signups
                   </span>
                 </div>
                 <div className="chat-detail overflow-ellipsis">

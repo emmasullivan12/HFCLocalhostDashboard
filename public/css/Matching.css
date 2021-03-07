@@ -12,6 +12,10 @@
 .searchBar{
   width: 320px;
 }
+.searchBar.generalSearchByName{
+  position: absolute;
+  right: 20px;
+}
 .searchBar.searchByText,
 .searchBar.searchByName{
   position: absolute;
@@ -118,6 +122,9 @@ th.userToMatch-safeguarding{
 }
 th.userToMatch-dates{
   min-width: 100px;
+}
+th.userToMatch-userResponse{
+  min-width: 200px;
 }
 .userToMatch-changeStatus{
   margin-top: -5px;

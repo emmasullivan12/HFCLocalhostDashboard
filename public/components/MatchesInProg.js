@@ -1,4 +1,4 @@
-// Dex last merged this code on 5th feb 2021
+// Dex last merged this code on 7th mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -43,6 +43,9 @@ class MatchesInProg extends React.Component {
     return (
       <React.Fragment>
         <div className="tabWindow">
+          <div className="title-blankPage">
+            <span role="img" aria-label="clockEmoji">⏱️</span> <strong>Matches In Progress...</strong> <span role="img" aria-label="clockEmoji">⏱️</span>
+          </div>
           <div className="toBeMatched-container">
             <div className="exclamation-icon-container grey">
               <i className="fas fa-user-clock" />

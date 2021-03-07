@@ -18,13 +18,13 @@ import { usersFetchData } from "../actions/Users";*/
 import {cdn} from './CDN.js';
 import BackgroundCheck from "./BackgroundChecks";
 import ChatMenu from "./ChatMenu";
-import MatchMenu from "./MatchMenu";
 import MatchesToDo from "./MatchesToDo";
 import MatchesInProg from "./MatchesInProg";
 import MatchesCompleted from "./MatchesCompleted";
 import MenuModal from "./MenuModal";
 import Modal from "./Modal";
 import NotFound from "./NotFound";
+import NullMatches from "./NullMatches";
 import ProspelaBot from "./ProspelaBot";
 import ReviewSignups from "./ReviewSignups";
 import SendNotifModalContent from './SendNotifModalContent.js';
@@ -204,8 +204,8 @@ class ProspelaDashboard extends Component{
                     <div className="menuBreak"/>
                     <div className="mainMenu">
                       <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
-                      <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Review Signups</NavLink>
-                      <NavLink exact to="/background-checks" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Check ID</NavLink>
+                      <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Approve Signups</NavLink>
+                      <NavLink exact to="/background-checks" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Background Checks</NavLink>
                     </div>
                     <ChatMenu isProspelaTeam chatGroup='Mentee DMs' onClick={this.closeMenu}/>
                     <ChatMenu isProspelaTeam chatGroup='E-Mentor DMs' onClick={this.closeMenu}/>
@@ -213,10 +213,45 @@ class ProspelaDashboard extends Component{
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='U18 Chats to Monitor' onClick={this.closeMenu}/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} userRole={userRole} chatGroup='18+ Chats to Monitor' onClick={this.closeMenu}/>*/}
                     <div className="menuBreak"/>
-                    <MatchMenu
-                      matchTabs={DUMMY_MATCHTAB_LIST}
-                      onClick={this.closeMenu}
-                    />
+                    <div className="chatMenu">
+                      <div className="chatMenu-header overflow-ellipsis">
+                        Matches
+                        <span className="menuItemIconContainer chat">
+                          <i className="fas fa-link" />
+                        </span>
+                      </div>
+                      <div className="channelsContainer">
+                        <NavLink to="/matches/to-be-matched" activeClassName="is-active" className="chatMenuItem link group" onClick={this.closeMenu}>
+                          <div className="chatItemFlexContainer">
+                            <div className="chatMenuLink overflow-ellipsis">
+                              To be matched <span role="img" aria-label="linkEmoji">🔗</span>
+                            </div>
+                          </div>
+                        </NavLink>
+                        <NavLink to="/matches/in-progress" activeClassName="is-active" className="chatMenuItem link group" onClick={this.closeMenu}>
+                          <div className="chatItemFlexContainer">
+                            <div className="chatMenuLink overflow-ellipsis">
+                              In Progress <span role="img" aria-label="clockEmoji">⏱️</span>
+                            </div>
+                          </div>
+                        </NavLink>
+                        <NavLink to="/matches/null-rejected" activeClassName="is-active" className="chatMenuItem link group" onClick={this.closeMenu}>
+                          <div className="chatItemFlexContainer">
+                            <div className="chatMenuLink overflow-ellipsis">
+                              Null & Rejected <span role="img" aria-label="clockEmoji">❌</span>
+                            </div>
+                          </div>
+                        </NavLink>
+                        <NavLink to="/matches/completed" activeClassName="is-active" className="chatMenuItem link group" onClick={this.closeMenu}>
+                          <div className="chatItemFlexContainer">
+                            <div className="chatMenuLink overflow-ellipsis">
+                              Completed
+                            </div>
+                          </div>
+                        </NavLink>
+                      </div>
+                    </div>
+
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -249,6 +284,7 @@ class ProspelaDashboard extends Component{
                 <Route path="/background-checks" component={BackgroundCheck}/>
                 <Route path="/matches/to-be-matched" component={MatchesToDo}/>
                 <Route path="/matches/in-progress" component={MatchesInProg}/>
+                <Route path="/matches/null-rejected" component={NullMatches}/>
                 <Route path="/matches/completed" component={MatchesCompleted}/>
                 <Route component={NotFound}/>
               </Switch>
@@ -265,12 +301,6 @@ const DUMMY_CHAT_LIST = [
   {chatid: '10000', studentId: '12345', mentor: 'Dexter', matchedTimestamp: '20181219', status: 'Prospela'},
   {chatid: '10001', studentId: '12345', mentor: 'David', matchedTimestamp: '20181219', status: 'ended'},
   {chatid: '10002', studentId: '12345', mentor: 'Emily', matchedTimestamp: '20181219', status: 'ended'},
-];
-
-const DUMMY_MATCHTAB_LIST = [
-  {tabName: 'To be matched', navlink: '/matches/to-be-matched'},
-  {tabName: 'In progress', navlink: '/matches/in-progress'},
-  {tabName: 'Completed', navlink: '/matches/completed'},
 ];
 
 export default ProspelaDashboard;
