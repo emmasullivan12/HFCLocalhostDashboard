@@ -141,6 +141,13 @@ class UserToCheck extends Component {
     const hasNoConvictions = user.ukConv != 1 && user.usConv1 != 1 && user.usConv2 != 1 && user.usConv3 != 1 && user.usConv4 != 1;
     let classNameSafeguarding = "userToMatch-sgStatus";
     let safeguardingText;
+    let eduName;
+
+    if (user.eetstatus == 'sch') {
+      eduName = " " + (user.schname != '' ? (grabSchOrUni('sch', user.schname)) : user.schnamefreetext)
+    } else if (user.eetstatus == 'uni') {
+      eduName = " " + (user.uniname != '' ? (grabSchOrUni('uni', user.uniname)) : user.uninamefreetext)
+    }
 
     if (user.country == 'GBR') {
       if (user.ukConv == 1) {
@@ -185,8 +192,8 @@ class UserToCheck extends Component {
             <td>{name}</td>
             <td>{user.state}, {user.country}</td>
             <td>
-          {/*//    {user.eetstatus == 'sch' ? ('Student @ ' + eduName) : ''}
-          //    {user.eetstatus == 'uni' ? ('Student @ ' + eduName) : ''}*/}
+              {user.eetstatus == 'sch' ? ('Student @ ' + eduName) : ''}
+              {user.eetstatus == 'uni' ? ('Student @ ' + eduName) : ''}
               {user.eetstatus == 'job' ? (user.currrole + ' @ ' + user.currco) : ''}
               {user.eetstatus == 'train' ? (user.currtraining + ' @ ' + user.currtrainingprovider) : ''}
               {user.eetstatus == 'none' ? 'NEET' : ''}
