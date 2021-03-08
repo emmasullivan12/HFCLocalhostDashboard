@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2021
+// Dex last merged this code on 8th mar 2021
 
 import React, { Component } from "react";
 import {getGroupName} from "./UserDetail.js";
@@ -151,7 +151,7 @@ class NullMatch extends Component {
                   <div className="redText">
                     {(match.role_relevance != '' && match.no_similar_interests != '' && match.skills_relevance != '' && match.other != '') && (
                       <span>
-                        They told us: {match.role_relevance != '' ? ' Role not relevant,' : ''}{match.no_similar_interests != '' ? ' Mentor had no similar interests,' : ''}{match.skills_relevance != '' ? ' Mentor had no relevant skills,' : ''}                        
+                        They told us: {match.role_relevance != '' ? ' Role not relevant,' : ''}{match.no_similar_interests != '' ? ' Mentor had no similar interests,' : ''}{match.skills_relevance != '' ? ' Mentor had no relevant skills,' : ''}
                       </span>
                     )}
                      - <i><DateCalc time={match.mentee_replied_date} showPureDate /></i>

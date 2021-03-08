@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2021
+// Dex last merged this code on 8th mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -78,7 +78,7 @@ class BackgroundCheck extends React.Component {
       <React.Fragment>
         <div className="tabWindow">
           <div className="title-blankPage">
-            <span role="img" aria-label="warningEmoji">⚠️🚨</span> <strong>Users to Background Check</strong> <span role="img" aria-label="warningEmoji">🚨⚠️</span> 
+            <span role="img" aria-label="warningEmoji">⚠️🚨</span> <strong>Users to Background Check</strong> <span role="img" aria-label="warningEmoji">🚨⚠️</span>
           </div>
           <div className="checklistBox greyText">
             <div className="paddingBtm">CHECKLIST</div>
