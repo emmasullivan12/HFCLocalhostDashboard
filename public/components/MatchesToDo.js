@@ -315,6 +315,7 @@ class MatchesToDo extends React.Component {
               //  showCTA2
               //  cta2ClickHandler={this.launchStartMatchModal}
               //  cta2Text="Match"
+                grabSuggestionsAfterTyping
               />
             </div>
           </div>
@@ -357,7 +358,7 @@ class MatchesToDo extends React.Component {
           <div className="toBeMatched-container">
             <div className="exclamation-icon-container grey">
               <i className="fas fa-exclamation-circle" />
-              <span> Needs matching</span>
+              <span> Needs matching (sorted by priority)</span>
             </div>
             <div className="table-container">
               {usersToMatch.length == 0 && (

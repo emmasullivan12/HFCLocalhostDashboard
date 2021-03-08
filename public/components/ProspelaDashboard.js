@@ -216,9 +216,9 @@ class ProspelaDashboard extends Component{
                     <div className="chatMenu">
                       <div className="chatMenu-header overflow-ellipsis">
                         Matches
-                        <span className="menuItemIconContainer chat">
+                      {/*}  <span className="menuItemIconContainer chat">
                           <i className="fas fa-link" />
-                        </span>
+                        </span>*/}
                       </div>
                       <div className="channelsContainer">
                         <NavLink to="/matches/to-be-matched" activeClassName="is-active" className="chatMenuItem link group" onClick={this.closeMenu}>

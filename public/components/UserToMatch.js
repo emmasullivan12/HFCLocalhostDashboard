@@ -42,7 +42,7 @@ class UserToMatch extends Component {
     }
   }
 
-  sortTable = (n) => {
+  sortTable = (n, sortType) => {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("tobeMatched-table");
     switching = true;
@@ -66,16 +66,26 @@ class UserToMatch extends Component {
         /* Check if the two rows should switch place,
         based on the direction, asc or desc: */
         if (dir == "asc") {
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-            // If so, mark as a switch and break the loop:
-            shouldSwitch = true;
-            break;
+          if (sortType == 'byDate') {
+            console.log(x.innerHTML)
+            console.log(y.innerHTML)
+          } else {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
           }
         } else if (dir == "desc") {
-          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-            // If so, mark as a switch and break the loop:
-            shouldSwitch = true;
-            break;
+          if (sortType == 'byDate') {
+            console.log(x.innerHTML)
+            console.log(y.innerHTML)
+          } else {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
           }
         }
       }
@@ -231,13 +241,13 @@ class UserToMatch extends Component {
           <thead>
             <tr>
               <th className="userToMatch-match">Match</th>
-              <th className="userToMatch-name" onClick={() => this.sortTable(1)}>Name <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name" onClick={() => this.sortTable(1, 'alphabetically')}>Name <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-status">Status</th>
               <th className="userToMatch-roles">Role(s)</th>
-              <th className="userToMatch-group alignCenter" onClick={() => this.sortTable(4)}>Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-group alignCenter" onClick={() => this.sortTable(4, 'alphabetically')}>Group <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-activerole alignCenter">Active role</th>
               <th className="userToMatch-chats alignCenter">Chats</th>
-              <th className="userToMatch-dateSignedup">Signed up</th>
+              <th className="userToMatch-dateSignedup" onClick={() => this.sortTable(7, 'byDate')}>Signed up</th>
               <th className="userToMatch-safeguarding">Safeguarding</th>
               <th colSpan="2" className="userToMatch-notes">Notes</th>
             </tr>

@@ -50,7 +50,7 @@ class AddChatModalContent extends Component {
             showCTA1
             cta1ClickHandler={this.launchDM}
             cta1Text="Message"
-            pushContentDownOnOpen // i.e. onOpen it expands the height of a modal rather than adding scrollbar
+            pushContentDownOnOpen // i.e. onOpen it expands the height of a modal rather than adding scrollbar to the modal
           //  showCTA2
           //  cta2ClickHandler={this.launchStartMatchModal}
           //  cta2Text="Match"

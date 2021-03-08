@@ -319,6 +319,7 @@ class MatchingContent extends Component {
                   showCTA1
               //  cta1ClickHandler={this.launchUpdateStatusModal}
                   cta1Text="Import"
+                  grabSuggestionsAfterTyping
                 />
               </div>
             </div>

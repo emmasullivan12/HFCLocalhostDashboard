@@ -144,7 +144,19 @@ class NullMatch extends Component {
             </td>
             <td>
               {match.status_of_match == '4' ? (
-                <div className="redText">{match.mentee_pass_comments} - <i><DateCalc time={match.mentee_replied_date} showPureDate /></i></div>
+                <React.Fragment>
+                  <div className="redText">
+                    <strong>{match.mentee_pass_comments}</strong>
+                  </div>
+                  <div className="redText">
+                    {(match.role_relevance != '' && match.no_similar_interests != '' && match.skills_relevance != '' && match.other != '') && (
+                      <span>
+                        They told us: {match.role_relevance != '' ? ' Role not relevant,' : ''}{match.no_similar_interests != '' ? ' Mentor had no similar interests,' : ''}{match.skills_relevance != '' ? ' Mentor had no relevant skills,' : ''}                        
+                      </span>
+                    )}
+                     - <i><DateCalc time={match.mentee_replied_date} showPureDate /></i>
+                  </div>
+                </React.Fragment>
               )
               : (match.status_of_match == '2') ? (
                 <div className="greyText"><i>Timed out - <DateCalc time={match.mentee_to_reply_by} showPureDate /></i></div>
@@ -196,10 +208,22 @@ class NullMatch extends Component {
               )}
             </td>
             <td>
-              {match.status_of_match == '7' && (
-                <div className="redText">{match.mentor_pass_comments} - <i><DateCalc time={match.mentor_replied_date} showPureDate /></i></div>
-              )}
-              {match.status_of_match == '5' ? (
+              {match.status_of_match == '7' ? (
+                <React.Fragment>
+                  <div className="redText">
+                    <strong>{match.mentor_pass_comments}</strong>
+                  </div>
+                  <div className="redText">
+                    {(match.role_relevance != '' && match.no_similar_interests != '' && match.skills_relevance != '' && match.busy != '' && match.other != '') && (
+                      <span>
+                        They told us: {match.role_relevance != '' ? 'Role not relevant, ' : ''}{match.no_similar_interests != '' ? 'Mentee had no similar interests, ' : ''}{match.skills_relevance != '' ? ' Mentee had no relevant skills, ' : ''}{match.busy != '' ? 'I\'m too busy right now ' : ''}
+                      </span>
+                    )}
+                    - <i><DateCalc time={match.mentor_replied_date} showPureDate /></i>
+                  </div>
+                </React.Fragment>
+              )
+              : (match.status_of_match == '5') ? (
                 <div className="greyText"><i>Timed out - <DateCalc time={match.mentor_reply_by} showPureDate /></i></div>
               )
               : (
