@@ -108,10 +108,7 @@ class MenuModal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    console.log(e)
-    console.log(self)
     if (self.state.menuModal === 'open') {
-      console.log("here")
       e.onMenuClose()
     }
   }

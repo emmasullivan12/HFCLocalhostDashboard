@@ -93,7 +93,7 @@ class RequestChatContent extends Component {
                 </li>
                 <li className="ideas-list-item">
                   <div className="emoji-icon questionMark-emoji" />
-                  <div className="idea-item-text"><strong>Ask them a question</strong> (Keep up the conversation flow!)</div>
+                  <div className="idea-item-text textLeft"><strong>Ask them a question</strong> (Keep up the conversation flow!)</div>
                 </li>
               </ul>
             </div>

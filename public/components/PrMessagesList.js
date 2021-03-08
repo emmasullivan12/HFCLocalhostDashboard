@@ -62,15 +62,6 @@ class PrMessagesList extends Component {
         text: 'This is emmas message'
       },
       {
-        id: '99991',
-        uid: '11111',
-        type: 'message',
-        subtype: 'mentorRej',
-        author: 'emma',
-        ts: '2020-09-01T13:30:50.667Z',
-        text: 'This is emmas message'
-      },
-      {
         id: '99992',
         uid: '23456',
         type: 'message',
@@ -443,28 +434,6 @@ class PrMessagesList extends Component {
         ts: '2020-09-03T13:30:50.667Z',
         prModAuto: {
           type: 'sendMatch',
-          matchid: '12345',
-        }
-      },
-      {
-        id: '100111',
-        uid: '223458',
-        type: 'message',
-        subtype: 'menteeRej',
-        author: 'menteesNAME',
-        ts: '2020-09-03T13:30:50.667Z',
-        menteeRej: {
-          matchid: '12345',
-        }
-      },
-      {
-        id: '100411',
-        uid: '223459',
-        type: 'message',
-        subtype: 'mentorRej',
-        author: 'mentorsNAME',
-        ts: '2020-09-03T13:30:50.667Z',
-        menteeRej: {
           matchid: '12345',
         }
       },

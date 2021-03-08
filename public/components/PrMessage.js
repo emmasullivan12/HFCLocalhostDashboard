@@ -11,7 +11,6 @@ import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import {isIE, DateCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
-import UserRej from './UserRej.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
 import Modal from './Modal.js';
@@ -552,11 +551,10 @@ class PrMessageContents extends Component {
       case 'uploadNotSent':
         return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
 
-      // These appear in 1:1 chat with Relationship Manager only (i.e. users cant see each others feedback)
-      case "menteeRej":
+  /*    case "menteeRej":
       case "mentorRej":
         return <UserRej message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
-
+*/
       default:
         return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
     }

@@ -1,0 +1,12 @@
+.modal-container.alertBox{
+  top: 10%;
+  padding: 10px;
+}
+.modal-container.alertBox.success{
+  background-color: #def9de;
+  color: green;
+}
+.modal-container.alertBox.failure{
+  background-color: #ffe2e2;
+  color: red;
+}

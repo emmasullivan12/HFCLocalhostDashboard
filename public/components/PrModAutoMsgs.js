@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
 import AcceptMenteeContent from './AcceptMenteeContent.js';
+import AddNotesOnUserContent from './AddNotesOnUserContent.js';
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMenteeContent from './PassMenteeContent.js';
@@ -55,6 +56,13 @@ const PassMenteeModalProps = {
   changeInitFocus: true
 }
 
+const AddNotesProps = {
+  ariaLabel: 'Add notes on user',
+  triggerText: 'Add Notes on User',
+  usedFor: 'addNotesBtn',
+  changeInitFocus: true
+}
+
 class PrModAuto extends Component {
 
   render() {
@@ -68,7 +76,7 @@ class PrModAuto extends Component {
         menteeuid: '123',
         mentoruid: '234',
         matchedby: 'pennyid',
-        status_of_match: '3', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
+        status_of_match: '1', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
         chasers: {
           type: 1, dateSent: '' // to be completed
         },
@@ -79,11 +87,11 @@ class PrModAuto extends Component {
         mentor_reply_by: '',
         mentor_replied_date: '',
         match_comments: 'Guy has really good Houdini skills - exactly what you wanted!',
-        mentee_pass_comments: '',
-        mentor_pass_comments: '',
+        mentee_pass_comments: 'no thansk i want houdini',
+        mentor_pass_comments: 'are you crazy? this person is crap',
       }
     ]
-    const mentorFname = '[MENTOR FNAME]'
+    const mentorFname = '[ MENTOR FNAME ]'
     const userToMatch = [
       {
         uid: '12343',
@@ -166,6 +174,7 @@ class PrModAuto extends Component {
       }
     ]
     const today = new Date();
+    const userRole = 'mentor' // Logged in user viewing message
     let userNotYetResponded;
     let userTimedOut;
     let userAcc;
@@ -330,10 +339,25 @@ class PrModAuto extends Component {
                     </div>
                   )}
                   {userAcc == true && (
-                    <div className="positiveReply greenText"><Check /> I&#39;ve Accepted: Request sent to mentor!</div>
+                    <div className="positiveReply greenText"><Check /> I&#39;ve Accepted: Request sent to mentor! We&#39;ll let you know as soon as they respond.</div>
                   )}
                   {userRej == true && (
-                    <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
+                    <React.Fragment>
+                      <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
+                      <div className="redText">Pass reason: <i>{matchDetail[0].mentee_pass_comments}</i></div>
+                      {userRole == 'pr' ? (
+                        <div className="messageCTA">
+                          <div className="messageCTABtns">
+                            <Modal {...AddNotesProps}>
+                              <AddNotesOnUserContent userName={userToMatch[0].fname} />
+                            </Modal>
+                          </div>
+                        </div>
+                      )
+                      : (
+                        <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find someone better for you based on your feedback! </strong><span role="img" aria-label="smileEmoji">😊</span></div>
+                      )}
+                    </React.Fragment>
                   )}
                 </div>
               </div>
@@ -497,10 +521,25 @@ class PrModAuto extends Component {
                     </div>
                   )}
                   {userAcc == true && (
-                    <div className="positiveReply greenText"><Check /> I&#39;ve Accepted: Conversation started!</div>
+                    <div className="positiveReply greenText"><Check /> I&#39;ve Accepted: Conversation started! You&#39;ll find your new chat in your Direct Messages (over there <span role="img" aria-label="eyes-emoji">👀</span>)</div>
                   )}
                   {userRej == true && (
-                    <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
+                    <React.Fragment>
+                      <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
+                      <div className="redText">Pass reason: <i>{matchDetail[0].mentor_pass_comments}</i></div>
+                      {userRole == 'pr' ? (
+                        <div className="messageCTA">
+                          <div className="messageCTABtns">
+                            <Modal {...AddNotesProps}>
+                              <AddNotesOnUserContent userName={mentorFname} />
+                            </Modal>
+                          </div>
+                        </div>
+                      )
+                      : (
+                        <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find a better match (or update your availability) based on your feedback </strong><span role="img" aria-label="smileEmoji">😊</span></div>
+                      )}
+                    </React.Fragment>
                   )}
                 </div>
               </div>

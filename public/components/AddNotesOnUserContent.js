@@ -9,7 +9,7 @@ class AddNotesOnUserContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      notesOnUser: this.props.notesOnUser,
+      notesOnUser: 'these are existing notes',
       messageFromServer: '',
     };
   }
@@ -18,6 +18,7 @@ class AddNotesOnUserContent extends Component {
     const el = document.getElementById("updateNotesInputBox")
     el.focus();
     this.setCaret(el, el.value.length);
+    // NEED TO GRAB NOTESONUSER (ONLY IF PROSPELA. USER SHOULDNT HAVE ACCESS)
   }
 
   setCaret = (el, caretPos) => {
@@ -37,7 +38,7 @@ class AddNotesOnUserContent extends Component {
 
   // This will handle Student Passing on Mentor i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
-    const {uid} = this.props;
+    const {userName} = this.props;
     const {notesOnUser} = this.state;
 
     if (!this.canBeSubmitted()) {
@@ -45,7 +46,7 @@ class AddNotesOnUserContent extends Component {
       return;
     }
 
-    this.setState({ messageFromServer: 'Notes updated for user: ' + uid + ' server says' });
+    this.setState({ messageFromServer: 'Notes updated for user: ' + userName + ' server says' });
   }
 
   render() {
@@ -55,7 +56,7 @@ class AddNotesOnUserContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            Update notes on <span className="request-mentor-name">{this.props.username}</span>
+            Update notes on <span className="request-mentor-name">{this.props.userName}</span>
           </div>
           <form id="updateUserNotesForm">
             <textarea

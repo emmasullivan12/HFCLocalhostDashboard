@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 
+import AlertBox from './AlertBox.js';
 import Autocomplete from './Autocomplete.js';
 import Modal from './Modal.js';
 import SetUnavailabilityContent from './SetUnavailabilityContent.js';
@@ -275,6 +276,12 @@ class MatchingContent extends Component {
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
       roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
+    const importUsersComplete = false;
+    const importUsersSuccess = 'success';
+    const usersSuccessAlertMessage = importUsersSuccess == 'success' ? 'Success! Message goes here' : 'Oops! Noone imported'
+    const importUserComplete = false;
+    const importUserSuccess = 'success';
+    const userSuccessAlertMessage = importUsersSuccess == 'success' ? 'Success! Message goes here' : 'Oops! Noone imported'
 
     return (
       <React.Fragment>
@@ -292,7 +299,7 @@ class MatchingContent extends Component {
                 grabSchOrUni={grabSchOrUni}
               />
             </div>
-            <div className="searchBar searchByText">
+            <div className="searchBar searchByText alertBox">
               <div>
                 <TextInput
                   name="searchUserByText"
@@ -303,6 +310,11 @@ class MatchingContent extends Component {
                   + Import
                 </button>
               </div>
+              {importUsersComplete == true && (
+                <AlertBox successOrFailure={importUsersSuccess}>
+                  <div>{usersSuccessAlertMessage}</div>
+                </AlertBox>
+              )}
             </div>
             <div className="searchBar searchByName">
               <div className="autocompleter">
@@ -322,6 +334,11 @@ class MatchingContent extends Component {
                   grabSuggestionsAfterTyping
                 />
               </div>
+              {importUserComplete == true && (
+                <AlertBox successOrFailure={importUserSuccess}>
+                  <div>{userSuccessAlertMessage}</div>
+                </AlertBox>
+              )}
             </div>
             <div className="col-7 col-s-12 content-col profile matchUser">
               <div className="article-body profile">

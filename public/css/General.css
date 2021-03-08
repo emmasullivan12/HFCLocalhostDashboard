@@ -392,6 +392,9 @@ div {
 .orangeText{
   color: orange;
 }
+.purpleText{
+  color: #4e4ed6;
+}
 .inheritFontSize{
   font-size: inherit;
 }

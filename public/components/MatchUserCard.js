@@ -158,20 +158,19 @@ class MatchUserCard extends React.Component {
    let matchType = user.matchType ? user.matchType : ''; // strong, medium, weak
    let outsideGroup = false;
    let isavailable = user.isavailable.status == 1
+   var ts = new Date(user.birthday);
+   var today = new Date();
+   const age = today.getFullYear() - ts.getFullYear()
 
    if (user.role == 'mentee') {
-     var ts = new Date(user.birthday);
-     var today = new Date();
-     let age;
 
-     age = today.getFullYear() - ts.getFullYear()
      isU18 = age < 18;
 
      if (isU18 == true) {
-       safeguardingText = age + " years (U18)"
+       safeguardingText = age + " years old (U18)"
        classNameSafeguarding += " redText";
      } else {
-       safeguardingText =  age + " years"
+       safeguardingText =  age + " years old"
        classNameSafeguarding += " greyText";
      }
    } else {
@@ -179,14 +178,14 @@ class MatchUserCard extends React.Component {
      if (wantsU18 == true) {
        prApproved = true
        if (prApproved == true) {
-         safeguardingText = ' ID Checked'
+         safeguardingText = age + " years old & ID Checked"
          classNameSafeguarding += " greenText";
        } else {
-         safeguardingText = ' Needs ID Check'
+         safeguardingText = age + " years old & Needs ID Check"
          classNameSafeguarding += " redText";
        }
      } else {
-       safeguardingText = 'Over 18s only'
+       safeguardingText = age + " years old & Over 18s only"
        classNameSafeguarding += " greyText";
      }
    }
@@ -367,14 +366,14 @@ class MatchUserCard extends React.Component {
           <div className="userToMatch-seeMore" onClick={this.toggleShowMore}>
             {showDetail == true ? '<< Less' : 'More >>'}
           </div>
-          {isPotentialMatch == true && (
+      {/*    {isPotentialMatch == true && (
             <button type="button" className={"Submit-btn messageUser reserveUser tooltip" + (reservedMatch ? ' reserved' : '')} onClick={this.toggleReserveMatch}>
               <i className="fas fa-bookmark"/>
               <span className="tooltiptext">
                 {reservedMatch == true ? 'Reserved: potential match': 'Save as potential match'}
               </span>
             </button>
-          )}
+          )}*/}
           <button type="button" className="Submit-btn messageUser">
             Message
           </button>
