@@ -178,14 +178,26 @@ class MatchUserCard extends React.Component {
      if (wantsU18 == true) {
        prApproved = true
        if (prApproved == true) {
-         safeguardingText = age + " years old & ID Checked"
+         if (user.birthday != '') {
+           safeguardingText = age + " years old & ID Checked"
+         } else {
+           safeguardingText = "ID Checked"
+         }
          classNameSafeguarding += " greenText";
        } else {
-         safeguardingText = age + " years old & Needs ID Check"
+         if (user.birthday != '') {
+           safeguardingText = age + " years old & Needs ID Check"
+         } else {
+           safeguardingText = "Needs ID Check"
+         }
          classNameSafeguarding += " redText";
        }
      } else {
-       safeguardingText = age + " years old & Over 18s only"
+       if (user.birthday != '') {
+         safeguardingText = age + " years old & Over 18s only"
+       } else {
+         safeguardingText = "Over 18s only"
+       }
        classNameSafeguarding += " greyText";
      }
    }

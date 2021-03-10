@@ -137,6 +137,18 @@ class ProspelaDashboard extends Component{
     }
   }
 
+  showScroll = () => {
+    var scrollTrack = document.querySelector('.c-scrollbar__track');
+console.log("showing")
+    scrollTrack.style.opacity = 1
+  }
+
+  hideScroll = () => {
+    var scrollTrack = document.querySelector('.c-scrollbar__track');
+console.log("hiding")
+    scrollTrack.style.opacity = 0
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -193,7 +205,7 @@ class ProspelaDashboard extends Component{
                 {MenuModalContent}
               </MenuModal>
               <div className="c-scrollbar">
-                <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
+                <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
                     <Modal {...SubmitMatchModalProps}>
                       <SubmitMatchContent />
@@ -268,7 +280,7 @@ class ProspelaDashboard extends Component{
                   </div>
                 </div>
               {/*  <div className="scroller"/>*/}
-                <div className="c-scrollbar__track">
+                <div className="c-scrollbar__track" onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="c-scrollbar__bar"/>
                 </div>
               </div>

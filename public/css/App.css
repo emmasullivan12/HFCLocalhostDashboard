@@ -79,6 +79,10 @@ h2{
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
   height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .clientContainer {
@@ -551,6 +555,7 @@ svg:not(:root) {
   background-color: transparent;
   visibility: hidden;
   opacity: 0;
+  /*opacity: 1;*/
 }
 
 .c-scrollbar__track:before {
@@ -581,12 +586,12 @@ svg:not(:root) {
   will-change: transform;
 }
 
-.c-scrollbar__hider:hover ~ .c-scrollbar__track{
+/*.c-scrollbar__hider:hover ~ .c-scrollbar__track{
   opacity: 1;
 }
 .c-scrollbar__track:hover{
   opacity: 1;
-}
+}*/
 ::-webkit-scrollbar {
   width: 8px;
 }

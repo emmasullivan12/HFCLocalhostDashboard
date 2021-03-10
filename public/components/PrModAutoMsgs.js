@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
 import AcceptMenteeContent from './AcceptMenteeContent.js';
-import AddNotesOnUserContent from './AddNotesOnUserContent.js';
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMenteeContent from './PassMenteeContent.js';
@@ -345,7 +344,7 @@ class PrModAuto extends Component {
                     <React.Fragment>
                       <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
                       <div className="redText">Pass reason: <i>{matchDetail[0].mentee_pass_comments}</i></div>
-                      {userRole == 'pr' ? (
+                    {/*}  {userRole == 'pr' ? (
                         <div className="messageCTA">
                           <div className="messageCTABtns">
                             <Modal {...AddNotesProps}>
@@ -354,9 +353,8 @@ class PrModAuto extends Component {
                           </div>
                         </div>
                       )
-                      : (
+                      : (*/}
                         <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find someone better for you based on your feedback! </strong><span role="img" aria-label="smileEmoji">😊</span></div>
-                      )}
                     </React.Fragment>
                   )}
                 </div>
@@ -527,7 +525,7 @@ class PrModAuto extends Component {
                     <React.Fragment>
                       <div className="negativeReply redText"><X /> Sorry, I Rejected</div>
                       <div className="redText">Pass reason: <i>{matchDetail[0].mentor_pass_comments}</i></div>
-                      {userRole == 'pr' ? (
+                {/*     {userRole == 'pr' ? (
                         <div className="messageCTA">
                           <div className="messageCTABtns">
                             <Modal {...AddNotesProps}>
@@ -536,9 +534,8 @@ class PrModAuto extends Component {
                           </div>
                         </div>
                       )
-                      : (
+                      : (*/}
                         <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find a better match (or update your availability) based on your feedback </strong><span role="img" aria-label="smileEmoji">😊</span></div>
-                      )}
                     </React.Fragment>
                   )}
                 </div>

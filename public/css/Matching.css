@@ -23,6 +23,7 @@
 .searchBar.generalSearchByName {
   position: absolute;
   right: 20px;
+  top: 130px;
 }
 .searchBar.searchByText{
   top: 0;
@@ -364,7 +365,7 @@ td.userToMatch-editingNotes{
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: lightgrey;
+  color: darkgrey;
 }
 .userToMatch-safeguardingText{
   font-size: 14px;

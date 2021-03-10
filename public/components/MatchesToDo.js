@@ -131,6 +131,7 @@ class MatchesToDo extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
+
     const { roles } = this.state;
     const value = e.currentTarget.dataset.text;
 
@@ -220,6 +221,8 @@ class MatchesToDo extends React.Component {
       <React.Fragment>
         <div className="dispInlineBlock">
           {options.map((option, index) => {
+            console.log("option: "+option)
+            console.log(rolesToShow.includes(option))
             const selected = usedFor == 'role' ? rolesToShow.includes(option) : (usedFor == 'group' ? groupsToShow.includes(option) : '');
 
             let className = "dispInlineBlock"
@@ -273,7 +276,11 @@ class MatchesToDo extends React.Component {
     ];
 
     if (usersToMatch.length > 0) {
-      usersToMatch.forEach((user, index) => {
+      const filteredUsersToMatch = usersToMatch
+        .filter(user => rolesToShow.indexOf(user.role) != -1)
+        .filter(user => groupsToShow.indexOf(user.group) != -1)
+
+      filteredUsersToMatch.forEach((user, index) => {
         toBeMatched.push(
           <UserToMatch
             user={user}

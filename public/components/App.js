@@ -215,6 +215,17 @@ class Dashboard extends Component{
       menuItemActive: menuItemClicked
     })*/
 //  }
+  showScroll = () => {
+    var scrollTrack = document.querySelector('.c-scrollbar__track');
+console.log("showing")
+    scrollTrack.style.opacity = 1
+  }
+
+  hideScroll = () => {
+    var scrollTrack = document.querySelector('.c-scrollbar__track');
+console.log("hiding")
+    scrollTrack.style.opacity = 0
+  }
 
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
@@ -224,6 +235,7 @@ class Dashboard extends Component{
   }
 
   createScroller() {
+    console.log("resize triggered")
     var scrollContainer = document.querySelector('.c-scrollbar');
     var scrollTrack = document.querySelector('.c-scrollbar__track');
     var scroller = document.querySelector('.c-scrollbar__bar');
@@ -276,7 +288,7 @@ class Dashboard extends Component{
                 <UserMenuContent userRole={userRole}/>
               </MenuModal>
               <div className="c-scrollbar">
-                <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller}>
+                <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
                     <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/>
                     <div className="menuBreak"/>
@@ -298,7 +310,7 @@ class Dashboard extends Component{
                     </div>
                   </div>
                 </div>
-                <div className="c-scrollbar__track">
+                <div className="c-scrollbar__track" id="scrollBar" onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="c-scrollbar__bar"/>
                 </div>
               </div>
