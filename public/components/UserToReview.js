@@ -48,6 +48,10 @@ class UserToReview extends React.Component {
     this.updateSourceBtn.focus();
   }
 
+  onKeyDown = (e) => {
+    e.stopPropagation();
+  }
+
   render() {
    const {signup, grabSchOrUni, ukSchsListLoaded, ukUnisListLoaded, allowAccept, lastupdated} = this.props;
    const {editingSource, source} = this.state;
@@ -120,7 +124,7 @@ class UserToReview extends React.Component {
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
               <span className={signup.source == '' ? 'redText' : 'greenText'}><i className="fas fa-door-open" /></span>
-              <p name="source" contentEditable="true" ref={n => this.editableSource = n} className={"editableText-userToReview noMarginBlockEnd noMarginBlockStart " + (signup.source != '' ? "greenText" : 'redText')} value={source}> {signup.source != '' ? signup.source : 'null'}</p>
+              <p name="source" contentEditable="true" ref={n => this.editableSource = n} className={"editableText-userToReview noMarginBlockEnd noMarginBlockStart " + (signup.source != '' ? "greenText" : 'redText')} onKeyDown={this.onKeyDown} value={source}> {signup.source != '' ? signup.source : 'null'}</p>
               {editingSource == true && (
                 <button type="button" className="button-unstyled userToReview-updateSourceBtn" onClick={this.saveNewSource}>Update</button>
               )}

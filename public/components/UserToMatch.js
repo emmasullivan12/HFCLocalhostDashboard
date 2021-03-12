@@ -8,7 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 
-import {DateCalc, X, Check} from "./GeneralFunctions";
+import {LoadingSpinner, DateCalc, X, Check} from "./GeneralFunctions";
 import FullPageModal from './FullPageModal.js';
 import MatchingContent from './MatchingContent.js';
 import Modal from './Modal.js';
@@ -39,10 +39,14 @@ class UserToMatch extends Component {
       editingNotes: false,
       notes: this.props.user.notesonuser,
       showUnavailableModal: false,
+      isSortingTable: false,
     }
   }
 
   sortTable = (n, sortType) => {
+    this.setState({
+      isSortingTable: true
+    })
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("tobeMatched-table");
     switching = true;
@@ -105,6 +109,9 @@ class UserToMatch extends Component {
         }
       }
     }
+    this.setState({
+      isSortingTable: false
+    })
   }
 
   setCaret = () => {
@@ -188,9 +195,13 @@ class UserToMatch extends Component {
     return status[0].priority
   }
 
+  onKeyDown = (e) => {
+    e.stopPropagation();
+  }
+
   render() {
     const {user, isFirstItem, matchStatusOptions, matchStatusOptionsAll, convertRole, convertHobbies, grabSchOrUni} = this.props;
-    const {matchStatus, editingNotes, notes, showUnavailableModal} = this.state;
+    const {matchStatus, editingNotes, notes, showUnavailableModal, isSortingTable} = this.state;
 
     const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
     const priority = this.getPriority();
@@ -253,6 +264,11 @@ class UserToMatch extends Component {
             </tr>
           </thead>
         )}
+        {isSortingTable == true && (
+          <div className="spinner-container">
+            <LoadingSpinner />
+          </div>
+        )}
         <tbody>
           <tr>
             <td>
@@ -302,7 +318,7 @@ class UserToMatch extends Component {
               {safeguardingText}
             </td>
             <td onMouseOver={this.showEditBtn} onMouseLeave={this.hideEditBtn} onFocus={this.showEditBtn}>
-              <p contentEditable="false" ref={n => this.editableNotes = n} className={"editableText-userNotes noMarginBlockEnd noMarginBlockStart" + (editingNotes == true ? ' editing' : '')} value={notes}>{user.notesonuser != '' ? user.notesonuser : ''}</p>
+              <p contentEditable="false" ref={n => this.editableNotes = n} className={"editableText-userNotes noMarginBlockEnd noMarginBlockStart" + (editingNotes == true ? ' editing' : '')} onKeyDown={this.onKeyDown} value={notes}>{user.notesonuser != '' ? user.notesonuser : ''}</p>
             </td>
             <td className="userToMatch-editingNotes" onMouseOver={this.showEditBtn} onMouseLeave={this.hideEditBtn} onFocus={this.showEditBtn}>
               {editingNotes == true && (

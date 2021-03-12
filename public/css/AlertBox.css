@@ -1,13 +1,87 @@
 
-.modal-container.alertBox{
-  top: 10%;
+.alertBox{
+  position: relative;
+  width: 100%;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  box-shadow: 0 0 10px 10px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 0 10px 10px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 0 10px 10px rgba(0, 0, 0,.1);
+  overflow-y: auto;
+  cursor: default;
+  z-index: 10;
+  top: -15px;
+  text-align: center;
+  height: auto;
   padding: 10px;
+  outline: none
 }
-.modal-container.alertBox.success{
+.alertBox.fadesOut{
+  -webkit-animation: fadeOut 2s forwards;
+  -moz-animation: fadeOut 2s forwards;
+  -o-animation: fadeOut 2s forwards;
+  animation: fadeOut 2s forwards;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  -o-animation-delay:2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.alertBox.success{
   background-color: #def9de;
   color: green;
+  border: 1px solid #83b883;
 }
-.modal-container.alertBox.failure{
+.alertBox.failure{
   background-color: #ffe2e2;
   color: red;
+  border: 1px solid #efb1b1;
+}
+.alertBox-content{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.alertBox-close{
+  background: none;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  padding: .5em;
+  line-height: 1;
+  border: 0;
+  box-shadow: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  outline: none;
+  cursor: pointer;
+}
+.modal-close-icon.failure{
+  stroke: red;
+}
+.modal-close-icon.success{
+  stroke: green;
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@-moz-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@-o-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }

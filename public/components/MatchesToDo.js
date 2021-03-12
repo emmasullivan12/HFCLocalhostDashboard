@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Autocomplete from './Autocomplete.js';
-import {Check} from './GeneralFunctions.js';
+import {LoadingSpinner, Check} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import UpdateUserStatusContent from './UpdateUserStatusContent.js';
@@ -26,7 +26,8 @@ const UpdateStatusProps = {
   triggerText: 'Update user Status',
   usedFor: 'updateUserStatus',
   hideTrigger: true,
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing
 }
 
 // For viewing potential matches status (will not be able to select from these)
@@ -86,6 +87,7 @@ class MatchesToDo extends React.Component {
     super(props);
     this.state = {
       userToSearchFor: '',
+      isFilteringTable: false,
       roles: ['mentee', 'mentor'],
       groups: ['avfx', 'intogames', 'aw', 'big', 'vhs'],
       status: ['VIP', 'Vocal', 'Has no match', 'Only has bad match', 'Wants another', 'No match available'],
@@ -128,6 +130,9 @@ class MatchesToDo extends React.Component {
   }
 
   onClickRoles = (e) => {
+    this.setState({
+      isFilteringTable: true
+    })
     e.preventDefault()
     e.stopPropagation()
     e.persist()
@@ -146,12 +151,15 @@ class MatchesToDo extends React.Component {
       }
 
       return {
-        rolesToShow: rolesToShow,
+        rolesToShow: rolesToShow
       }
     });
   }
 
   onClickGroups = (e) => {
+    this.setState({
+      isFilteringTable: true
+    })
     e.preventDefault()
     e.stopPropagation()
     e.persist()
@@ -169,12 +177,15 @@ class MatchesToDo extends React.Component {
       }
 
       return {
-        groupsToShow: groupsToShow,
+        groupsToShow: groupsToShow
       }
     });
   }
 
   onClickStatus = (userInput) => {
+    this.setState({
+      isFilteringTable: true
+    })
     const { statusToShow } = this.state;
 
     this.setState({
@@ -221,8 +232,6 @@ class MatchesToDo extends React.Component {
       <React.Fragment>
         <div className="dispInlineBlock">
           {options.map((option, index) => {
-            console.log("option: "+option)
-            console.log(rolesToShow.includes(option))
             const selected = usedFor == 'role' ? rolesToShow.includes(option) : (usedFor == 'group' ? groupsToShow.includes(option) : '');
 
             let className = "dispInlineBlock"
@@ -262,7 +271,7 @@ class MatchesToDo extends React.Component {
   }
 
   render() {
-    const { userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow, showStartMatchModal, showUpdateStatusModal, userToUpdate, userToMatch} = this.state;
+    const { isFilteringTable, userToSearchFor, roles, groups, status, rolesToShow, groupsToShow, statusToShow, showStartMatchModal, showUpdateStatusModal, userToUpdate, userToMatch} = this.state;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -270,7 +279,7 @@ class MatchesToDo extends React.Component {
     const toBeMatched = [];
 
     const usersToMatch = [
-      {uuid: 'uuid123', fname: 'Adam', lname: 'Ant', group: 'avfx', role: 'mentee', no_mentors: 0, gdprdivts: '2021-01-03T19:54:25.084Z', notesonuser: 'wants Houdini', roles: ['12', '98'], rolesfreetext: ['role3', 'role4'], birthday: '1995-01-01T00:00:00.000Z', matchstatus: 1},
+      {uuid: 'uuid123', fname: 'Adam', lname: 'Ant', group: 'avfx', role: 'mentee', no_mentors: 0, gdprdivts: '2021-01-03T19:54:25.084Z', notesonuser: 'wants Houdini', roles: ['12', '98'], rolesfreetext: ['role3', 'role4'], birthday: '1995-01-01T00:00:00.000Z', matchstatus: 4},
       {uuid: 'uuid124', fname: 'Busy', lname: 'Bee', group: 'avfx', role: 'mentee', no_mentors: 1, gdprdivts: '2020-12-03T19:54:25.084Z', notesonuser: '', roles: ['12', '98'], rolesfreetext: [], birthday: '2005-01-01T00:00:00.000Z', matchstatus: 4},
       {uuid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', group: 'intogames', role: 'mentor', no_mentees: 2, maxmentees: 5, gdprdivts: '2020-11-07T19:54:25.084Z', notesonuser: 'Really passionate about being Animator only.', rolesexp: ['14', '101'], rolesexpfreetext: ['roley', 'rollie'], matchstatus: 4, mentorsustep: 'didFullSUIDtf'},
     ];
@@ -279,6 +288,7 @@ class MatchesToDo extends React.Component {
       const filteredUsersToMatch = usersToMatch
         .filter(user => rolesToShow.indexOf(user.role) != -1)
         .filter(user => groupsToShow.indexOf(user.group) != -1)
+    //    .filter(user => statusToShow.indexOf(user.matchstatus) != -1)
 
       filteredUsersToMatch.forEach((user, index) => {
         toBeMatched.push(
@@ -293,6 +303,8 @@ class MatchesToDo extends React.Component {
             grabSchOrUni={this.grabSchOrUni}
           />
         );
+      }, () => {
+        console.log("turn isFilteringTable back to false here in test server")
       });
     }
 
@@ -373,6 +385,11 @@ class MatchesToDo extends React.Component {
               )}
               {usersToMatch.length > 0 && (
                 <table id="tobeMatched-table">
+                  {isFilteringTable == true && (
+                    <div className="spinner-container">
+                      <LoadingSpinner />
+                    </div>
+                  )}
                   {toBeMatched}
                 </table>
               )}

@@ -97,6 +97,8 @@
 #tobeMatched-table,
 #pendingMatches-table{
   width: 100%;
+  position: relative;
+  border-spacing: 0 15px;
 }
 #tobeMatched-table tbody,
 #pendingMatches-table tbody {
@@ -109,6 +111,8 @@
   padding-bottom: 12px;
   text-align: left;
   vertical-align: top;
+  border-bottom: 1pt solid black;
+  background-color: #f1f1ff;
 }
 th.userToMatch-match{
   width: 80px;
@@ -136,6 +140,10 @@ th.userToMatch-userResponse{
   position: absolute;
   right: 10px;
   top: 15px;
+}
+.userToMatch-changeStatus.isPotentialMatch{
+  padding-top: 7px;
+  padding-bottom: 5px;
 }
 .userToMatch-changeStatus.modal{
   display: inline-block;

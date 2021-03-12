@@ -41,7 +41,7 @@ const potentialMatches = [
     pendingmatches: 0,
     mentorsustep: 'didFullSUIDtf',
     lastActiveDate: '1556389526',
-    matchstatus: 2,
+    matchstatus: 7,
     isavailable: {status: 1},
     profprofileurl: 'https://www.linkedin.com/profile',
     uni: 0,
@@ -88,7 +88,7 @@ const potentialMatches = [
     pendingmatches: 1,
     mentorsustep: 'didFullSUIDtf',
     lastActiveDate: '1556389526',
-    matchstatus: 7,
+    matchstatus: 4,
     isavailable: {status: 0},
     profprofileurl: '',
     uni: 0,
@@ -200,7 +200,7 @@ class MatchingContent extends Component {
 
   renderMatchesList = (userToMatchName) => {
     if (potentialMatches.length > 0) {
-      const {matchStatusOptionsAll, convertRole, convertHobbies, grabSchOrUni} = this.props;
+      const {matchStatusOptionsAll, matchStatusOptions, convertRole, convertHobbies, grabSchOrUni} = this.props;
 
       return (
         <div>
@@ -211,6 +211,7 @@ class MatchingContent extends Component {
                 key={user.uuid}
                 userToMatchName={userToMatchName}
                 isPotentialMatch
+                matchStatusOptions={matchStatusOptions}
                 matchStatusOptionsAll={matchStatusOptionsAll}
                 convertRole={convertRole}
                 convertHobbies={convertHobbies}
@@ -225,7 +226,7 @@ class MatchingContent extends Component {
 
   render() {
     const {userToSearchFor, showUnavailableModal, isLoading} = this.state;
-    const {matchStatusOptions, convertRole, convertHobbies, userName, birthdayts, grabSchOrUni} = this.props;
+    const {matchStatusOptions, matchStatusOptionsAll, convertRole, convertHobbies, userName, birthdayts, grabSchOrUni} = this.props;
     var users = [
       {value: 'uuid123', name: 'Adam Ant', role: 'mentee'},{value: 'uuid124', name: 'Busy Bee', role: 'mentor'},{value: 'uuid125', name: 'Charlie Adams', role: 'mentee'},{value: 'uuid126', name: 'Derek David', role: 'mentor'},{value: 'uuid127', name: 'Emma Elephant', role: 'mentee'}
     ]
@@ -247,7 +248,7 @@ class MatchingContent extends Component {
       pendingmatches: 2,
       lastActiveDate: '1556389526',
       mentorsustep: 'didFullSUIDtf',
-      matchstatus: 4,
+      matchstatus: 7,
       isavailable: {status: 1},
       profprofileurl: '',
       uni: 0,
@@ -276,7 +277,7 @@ class MatchingContent extends Component {
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
       roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
-    const importUsersComplete = false;
+    const importUsersComplete = true;
     const importUsersSuccess = 'success';
     const usersSuccessAlertMessage = importUsersSuccess == 'success' ? 'Success! Message goes here' : 'Oops! Noone imported'
     const importUserComplete = false;
@@ -294,12 +295,13 @@ class MatchingContent extends Component {
                 userName={userName}
                 matchStatusOptions={matchStatusOptions}
                 handleMatchStatusChange={this.handleMatchStatusChange}
+                matchStatusOptionsAll={matchStatusOptionsAll}
                 convertRole={convertRole}
                 convertHobbies={convertHobbies}
                 grabSchOrUni={grabSchOrUni}
               />
             </div>
-            <div className="searchBar searchByText alertBox">
+            <div className="searchBar searchByText">
               <div>
                 <TextInput
                   name="searchUserByText"
@@ -311,7 +313,7 @@ class MatchingContent extends Component {
                 </button>
               </div>
               {importUsersComplete == true && (
-                <AlertBox successOrFailure={importUsersSuccess}>
+                <AlertBox successOrFailure={importUsersSuccess} fadesOut={importUsersSuccess == 'success' ? true : false}>
                   <div>{usersSuccessAlertMessage}</div>
                 </AlertBox>
               )}
@@ -335,7 +337,7 @@ class MatchingContent extends Component {
                 />
               </div>
               {importUserComplete == true && (
-                <AlertBox successOrFailure={importUserSuccess}>
+                <AlertBox successOrFailure={importUserSuccess} fadesOut={importUserSuccess == 'success' ? true : false}>
                   <div>{userSuccessAlertMessage}</div>
                 </AlertBox>
               )}

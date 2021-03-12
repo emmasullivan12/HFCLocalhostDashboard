@@ -7,7 +7,6 @@ import Autocomplete from './Autocomplete.js';
 import {Check} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
-import UpdateUserStatusContent from './UpdateUserStatusContent.js';
 import {convertRole, convertHobbies} from './UserDetail.js';
 import UserToCheck from './UserToBackgroundCheck.js';
 

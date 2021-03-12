@@ -139,13 +139,11 @@ class ProspelaDashboard extends Component{
 
   showScroll = () => {
     var scrollTrack = document.querySelector('.c-scrollbar__track');
-console.log("showing")
     scrollTrack.style.opacity = 1
   }
 
   hideScroll = () => {
     var scrollTrack = document.querySelector('.c-scrollbar__track');
-console.log("hiding")
     scrollTrack.style.opacity = 0
   }
 

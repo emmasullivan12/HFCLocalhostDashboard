@@ -31,7 +31,6 @@ const FullPageModalContent = ({
   handleNavScroll,
   isDevice,
   isSafari,
-  mentorName,
   modalFPRef,
   onClose,
   onKeyDown,
@@ -179,7 +178,7 @@ class FullPageModal extends React.Component {
     render() {
     const {handleNavScroll} = this;
     const {isFPOpen} = this.state;
-    const {ariaLabel, backBtn, children, mentorName, title, triggerText, usedFor, role, focusOnLoad, animation, isDevice} = this.props;
+    const {ariaLabel, backBtn, children, title, triggerText, usedFor, role, focusOnLoad, animation, isDevice} = this.props;
     const isSafari = whichBrowser() === 'safari'
 
     return (
@@ -201,7 +200,6 @@ class FullPageModal extends React.Component {
             handleNavScroll={this.handleNavScroll}
             isDevice={isDevice}
             isSafari={isSafari}
-            mentorName={mentorName}
             modalFPRef={this.modalFPRef}
             onClose={this.onClose}
             onKeyDown={this.onKeyDown}

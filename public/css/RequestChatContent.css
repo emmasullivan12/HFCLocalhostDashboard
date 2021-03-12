@@ -19,6 +19,9 @@
   -moz-justify-content: center;
   margin-bottom: 1rem;
 }
+.request-btn-container.updateUserStatus{
+  margin-bottom: 4rem;
+}
 .need-ideas-container{
   margin-top: 20px;
   margin-bottom: 30px;

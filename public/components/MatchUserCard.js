@@ -69,7 +69,8 @@ class MatchUserCard extends React.Component {
 
   getMatchStatus = (matchStatus) => {
     const {matchStatusOptionsAll, user, matchStatusOptions, isPotentialMatch} = this.props;
-    const matchStatusOptionsToUse = isPotentialMatch ? matchStatusOptionsAll : matchStatusOptions
+  //  const matchStatusOptionsToUse = isPotentialMatch ? matchStatusOptionsAll : matchStatusOptions
+    const matchStatusOptionsToUse = matchStatusOptionsAll
 
     const status = matchStatusOptionsToUse
       .filter(status => status['value'] == matchStatus)
@@ -79,7 +80,8 @@ class MatchUserCard extends React.Component {
 
   getPriority = () => {
     const {matchStatusOptionsAll, user, matchStatusOptions, isPotentialMatch} = this.props;
-    const matchStatusOptionsToUse = isPotentialMatch ? matchStatusOptionsAll : matchStatusOptions
+    //const matchStatusOptionsToUse = isPotentialMatch ? matchStatusOptionsAll : matchStatusOptions
+    const matchStatusOptionsToUse = matchStatusOptionsAll
     const matchStatus = user.matchstatus;
 
     const status = matchStatusOptionsToUse
@@ -142,6 +144,10 @@ class MatchUserCard extends React.Component {
     }, () => {
       this.props.handleMatchStatusChange(userInput)
     });
+  }
+
+  onKeyDown = (e) => {
+    e.stopPropagation();
   }
 
   render() {
@@ -265,8 +271,8 @@ class MatchUserCard extends React.Component {
                 )}
                 {safeguardingText}
               </span>
-              {isPotentialMatch != true && (
-                <div className={"userToMatch-changeStatus matchUser " + priority}>
+            {/*  {isPotentialMatch != true && ( */}
+                <div className={"userToMatch-changeStatus " + (isPotentialMatch == true ? 'isPotentialMatch ' : "matchUser ") + priority}>
                   <SelectBox
                     options={matchStatusOptions}
                     name='selectStatus'
@@ -276,14 +282,14 @@ class MatchUserCard extends React.Component {
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   />
                 </div>
-              )}
+            {/*  )}*/}
             </div>
             {isPotentialMatch == true && (
               <React.Fragment>
-                <div className={priorityClassName}>
+            {/*}    <div className={priorityClassName}>
                   <strong>{priorityText}</strong> {showMatchStatus}
                 </div>
-            {/*}    <button type="button" className="Submit-btn sendMatch">Send Match to Mentee</button>*/}
+                <button type="button" className="Submit-btn sendMatch">Send Match to Mentee</button>*/}
                 <Modal {...SendMatchProps} >
                   <SendMatchToMentee
                     mentorName={user.role == 'mentor' ? user.fname : userToMatchName} // If userToMatch is a mentee & potential matches are mentors
@@ -407,7 +413,7 @@ class MatchUserCard extends React.Component {
               <div className="userToReview-subDetail">
                 NOTES
                 <div className="normalLineheight" onMouseOver={this.showEditBtn} onMouseLeave={this.hideEditBtn} onFocus={this.showEditBtn}>
-                  <p contentEditable="false" ref={n => this.editableNotes = n} className={"editableText-userNotes noMarginBlockEnd noMarginBlockStart" + (editingNotes == true ? ' editing' : '')} value={notes}>{user.notes!= '' ? user.notes : ''}</p>
+                  <p contentEditable="false" ref={n => this.editableNotes = n} className={"editableText-userNotes noMarginBlockEnd noMarginBlockStart" + (editingNotes == true ? ' editing' : '')} value={notes} onKeyDown={this.onKeyDown}>{user.notes!= '' ? user.notes : ''}</p>
                   {editingNotes == true && (
                     <button type="button" className="button-unstyled userToMatch-updateNotesBtn greenText" onClick={this.saveNewNotes}>Update</button>
                   )}

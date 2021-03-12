@@ -10,7 +10,7 @@ import PassMentorContent from './PassMentorContent.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
-import {X, Check} from './GeneralFunctions.js';
+import {LoadingSpinner, X, Check} from './GeneralFunctions.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
 import {userFlagEmoji, convertHobbies, convertRole} from './UserDetail.js';
 
@@ -244,6 +244,8 @@ class PrModAuto extends Component {
       uniName = (userProfileToShow.uniname != '' ? grabSchOrUni('uni', userProfileToShow.uniname) : userProfileToShow.uninamefreetext)
     }
 
+    const isLoading = true;
+
     switch (message.prModAuto.type) {
       // Sending a potential Mentor to mentee for approval
       case 'sendMatch':
@@ -304,22 +306,29 @@ class PrModAuto extends Component {
                         </div>
                     </div>
                     <div className="userDetail-scrollSection">
-                      <div className="userDetail-profileCard">
-                        <div className="lightPurpleText"><strong>I&#39;m pretty good at:</strong></div>
-                        <div>{userProfileToShow.expertise}</div>
-                      </div>
-                      <div className="userDetail-profileCard">
-                        <div className="lightPurpleText"><strong>Roles I can talk about:</strong></div>
-                        <div>{ convertRole(userProfileToShow.rolesexp, userProfileToShow.rolesexpfreetext) }</div>
-                      </div>
-                      <div className="userDetail-profileCard">
-                        <div className="lightPurpleText"><strong>Careers evolve over time. I&#39;m learning:</strong></div>
-                        <div>{userProfileToShow.learning}</div>
-                      </div>
-                      <div className="userDetail-profileCard">
-                        <div className="lightPurpleText"><strong>Outside of work I love:</strong></div>
-                        <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
-                      </div>
+                      {isLoading === true ? (
+                        <LoadingSpinner />
+                        )
+                      : (
+                        <React.Fragment>
+                          <div className="userDetail-profileCard">
+                            <div className="lightPurpleText"><strong>I&#39;m pretty good at:</strong></div>
+                            <div>{userProfileToShow.expertise}</div>
+                          </div>
+                          <div className="userDetail-profileCard">
+                            <div className="lightPurpleText"><strong>Roles I can talk about:</strong></div>
+                            <div>{ convertRole(userProfileToShow.rolesexp, userProfileToShow.rolesexpfreetext) }</div>
+                          </div>
+                          <div className="userDetail-profileCard">
+                            <div className="lightPurpleText"><strong>Careers evolve over time. I&#39;m learning:</strong></div>
+                            <div>{userProfileToShow.learning}</div>
+                          </div>
+                          <div className="userDetail-profileCard">
+                            <div className="lightPurpleText"><strong>Outside of work I love:</strong></div>
+                            <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
+                          </div>
+                        </React.Fragment>
+                      )}
                     </div>
                   </div>
                   {userNotYetResponded == true && (

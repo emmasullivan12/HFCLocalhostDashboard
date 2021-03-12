@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import Checkbox from './Checkbox.js';
 import FullPageModal from './FullPageModal.js';
+import {LoadingSpinner} from "./GeneralFunctions.js";
 import MatchingContent from './MatchingContent.js';
 import SelectBox from './Select.js';
 
@@ -24,6 +25,7 @@ class UpdateUserStatusContent extends Component {
       isCompleteDud: '',
       reminderLengthDays: '',
       messageFromServer: '',
+      isSubmitting: false
     };
   }
 
@@ -84,7 +86,13 @@ class UpdateUserStatusContent extends Component {
       return;
     }
 
+    this.setState({
+      isSubmitting: true
+    })
     this.setState({ messageFromServer: 'Set new user status' });
+    this.setState({
+      isSubmitting: false
+    })
   }
 
   canBeSubmitted() {
@@ -96,7 +104,7 @@ class UpdateUserStatusContent extends Component {
   }
 
   render() {
-    const { isUnavailable, isCompleteDud, messageFromServer } = this.state;
+    const { isUnavailable, isCompleteDud, messageFromServer, isSubmitting } = this.state;
     const {matchStatusOptions, convertRole, convertHobbies, grabSchOrUni, matchStatusOptionsAll} = this.props;
     const isEnabled = this.canBeSubmitted();
     var reminderLengthList = [
@@ -104,7 +112,7 @@ class UpdateUserStatusContent extends Component {
     ]
     var statusPerGroup = [];
     var userGroupsStatus = [
-      {role: 'mentor', group: 'avfx', matchstatus: 4},{role: 'mentor', group: 'intogames', matchstatus: 6},
+      {role: 'mentor', group: 'avfx', matchstatus: 1},{role: 'mentor', group: 'intogames', matchstatus: 6},
     ]
     const user = {
       uid: '12345',
@@ -189,27 +197,32 @@ class UpdateUserStatusContent extends Component {
           </div>
         );
       });
+    } else {
+      <div>Not a member of any groups...</div>
     }
 
     if(messageFromServer == '') {
       return (
         <React.Fragment>
           <div className="modal-title">
-            Update user status for <span className="request-mentor-name">{this.props.fname} {this.props.lname}</span>
+            Update details for <span className="request-mentor-name">{this.props.fname} {this.props.lname}</span>
           </div>
           <form>
-            <div className="notifToggleContainer">
-              <span className="notifToggleTxt">Mark as Unavailable?</span>
-              <Checkbox
-                labelClassName="switch"
-                id="set-as-unavailable"
-                spanClassName="slider round"
-                onChange={this.handleSetToUnavailable}
-                defaultChecked={false}
-              />
+            <div className="modal-section">
+              <div className="modal-sectionTitle">Set user availability:</div>
+              <div className="notifToggleContainer">
+                <span className="notifToggleTxt">Mark as Unavailable?</span>
+                <Checkbox
+                  labelClassName="switch"
+                  id="set-as-unavailable"
+                  spanClassName="slider round"
+                  onChange={this.handleSetToUnavailable}
+                  defaultChecked={false}
+                />
+              </div>
             </div>
             {isUnavailable == true && (
-              <div className="form-group">
+              <div className="modal-section">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-isDud">Mark this person as a <strong>complete dud?</strong></label>
                 <SelectBox
                   options={[{value: 1, label: "Yes"},{value: 0, label: "No"}]}
@@ -222,9 +235,9 @@ class UpdateUserStatusContent extends Component {
                 />
               </div>
             )}
-            {isCompleteDud == '0' && (
+            {isCompleteDud == '0' && isUnavailable == true && (
               <React.Fragment>
-                <div className="form-group">
+                <div className="modal-section">
                   <label className="descriptor alignLeft" htmlFor="selectBox-selectReminderDate"><strong>Remind me</strong> to chase them: (leave blank if not)</label>
                   <SelectBox
                     options={reminderLengthList}
@@ -237,13 +250,19 @@ class UpdateUserStatusContent extends Component {
                 </div>
               </React.Fragment>
             )}
-            <div className="statusContainer-modal">
-              {statusPerGroup}
-            </div>
-            <div className="request-btn-container">
+            <div className="request-btn-container updateUserStatus">
               <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
-                Update Status
+                {isSubmitting === true && (
+                  <LoadingSpinner />
+                )}
+                {isSubmitting != true && (
+                  <span>Update Status</span>
+                )}
               </button>
+            </div>
+            <div className="statusContainer-modal">
+              <div className="modal-sectionTitle">Groups user belongs to:</div>
+              {statusPerGroup}
             </div>
           </form>
         </React.Fragment>
