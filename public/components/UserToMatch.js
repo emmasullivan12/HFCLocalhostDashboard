@@ -65,27 +65,96 @@ class UserToMatch extends Component {
         shouldSwitch = false;
         /* Get the two elements you want to compare,
         one from current row and one from the next: */
-        x = rows[i].getElementsByTagName("TD")[n];
-        y = rows[i + 1].getElementsByTagName("TD")[n];
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
         /* Check if the two rows should switch place,
         based on the direction, asc or desc: */
         if (dir == "asc") {
-          if (sortType == 'byDate') {
-            console.log(x.innerHTML)
-            console.log(y.innerHTML)
-          } else {
+          if (sortType == 'byStatus') {
+            // grab last letter of classname which is H/M/L priority
+            const xStatus = x.getElementsByClassName("userToMatch-changeStatus")[0].className
+            const yStatus = y.getElementsByClassName("userToMatch-changeStatus")[0].className
+            const xPriority = xStatus.substr(xStatus.length - 1)
+            const yPriority = yStatus.substr(yStatus.length - 1)
+
+            if ((xPriority == 'H' && (yPriority == 'M' || yPriority == 'L')) || (xPriority == 'M' && yPriority == 'L')) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+
+          } else if (sortType == "alphabetically"){
             if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
               // If so, mark as a switch and break the loop:
               shouldSwitch = true;
               break;
             }
+          } else if (sortType == 'date') {
+            // convert to Date format and compare
+            const xString = x.getElementsByTagName("i")[0].innerHTML
+            const yString = y.getElementsByTagName("i")[0].innerHTML
+            const xDate = new Date(xString)
+            const yDate = new Date(yString)
+
+            if (xDate > yDate) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (sortType == 'role') {
+            // grab last letter of classname which is H/M/L priority
+            console.log(x.getElementsByClassName("rolebadge"))
+            const xRole = x.getElementsByClassName("rolebadge")[0].innerHTML
+            const yRole = y.getElementsByClassName("rolebadge")[0].innerHTML
+
+            if (xRole == 'mentee' && yRole == 'mentor') {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
           }
+          // by date
+        //  .sort(function(a, b){
+        // var dateA=new Date(a.retiredate), dateB=new Date(b.retiredate)
+        // return dateA-dateB //sort by date ascending
+        // })
         } else if (dir == "desc") {
-          if (sortType == 'byDate') {
-            console.log(x.innerHTML)
-            console.log(y.innerHTML)
-          } else {
+          if (sortType == 'byStatus') {
+            // grab last letter of classname which is H/M/L priority
+            const xStatus = x.getElementsByClassName("userToMatch-changeStatus")[0].className
+            const yStatus = y.getElementsByClassName("userToMatch-changeStatus")[0].className
+            const xPriority = xStatus.substr(xStatus.length - 1)
+            const yPriority = yStatus.substr(yStatus.length - 1)
+
+            if ((xPriority == 'L' && (yPriority == 'M' || yPriority == 'H')) || (xPriority == 'M' && yPriority == 'H')) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (sortType == 'alphabetically'){
             if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (sortType == 'date') {
+            // convert to Date format and compare
+            const xString = x.getElementsByTagName("i")[0].innerHTML
+            const yString = y.getElementsByTagName("i")[0].innerHTML
+            const xDate = new Date(xString)
+            const yDate = new Date(yString)
+
+            if (xDate < yDate) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (sortType == 'role') {
+            // grab last letter of classname which is H/M/L priority
+            const xRole = x.getElementsByClassName("rolebadge")[0].innerHTML
+            const yRole = y.getElementsByClassName("rolebadge")[0].innerHTML
+
+            if (xRole == 'mentor' && yRole == 'mentee') {
               // If so, mark as a switch and break the loop:
               shouldSwitch = true;
               break;
@@ -253,12 +322,12 @@ class UserToMatch extends Component {
             <tr>
               <th className="userToMatch-match">Match</th>
               <th className="userToMatch-name" onClick={() => this.sortTable(1, 'alphabetically')}>Name <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-status">Status</th>
-              <th className="userToMatch-roles">Role(s)</th>
+              <th className="userToMatch-status" onClick={() => this.sortTable(2, 'byStatus')}>Status <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-roles" onClick={() => this.sortTable(3, 'alphabetically')}>Role(s) <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-group alignCenter" onClick={() => this.sortTable(4, 'alphabetically')}>Group <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-activerole alignCenter">Active role</th>
+              <th className="userToMatch-activerole alignCenter" onClick={() => this.sortTable(5, 'role')}>Active role <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-chats alignCenter">Chats</th>
-              <th className="userToMatch-dateSignedup" onClick={() => this.sortTable(7, 'byDate')}>Signed up</th>
+              <th className="userToMatch-dateSignedup" onClick={() => this.sortTable(7, 'date')}>Signed up <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-safeguarding">Safeguarding</th>
               <th colSpan="2" className="userToMatch-notes">Notes</th>
             </tr>
@@ -302,7 +371,7 @@ class UserToMatch extends Component {
             <td>{userroles}</td>
             <td className="alignCenter">{user.group}</td>
             <td className="alignCenter">
-              <div className={"rolebadge-"+user.role}>
+              <div className={"rolebadge rolebadge-"+user.role}>
                 {user.role}
               </div>
             </td>
