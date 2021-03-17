@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th mar 2021
+// Dex last merged this code on 17th mar 2021
 import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
@@ -316,7 +316,7 @@ class PrModAuto extends Component {
                             <div>{userProfileToShow.expertise}</div>
                           </div>
                           <div className="userDetail-profileCard">
-                            <div className="lightPurpleText"><strong>Roles I can talk about:</strong></div>
+                            <div className="lightPurpleText"><strong>Examples of Roles I can talk about:</strong></div>
                             <div>{ convertRole(userProfileToShow.rolesexp, userProfileToShow.rolesexpfreetext) }</div>
                           </div>
                           <div className="userDetail-profileCard">
