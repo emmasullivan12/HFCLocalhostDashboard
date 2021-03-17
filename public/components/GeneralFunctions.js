@@ -214,7 +214,7 @@ function DateCalc(props) {
     } else if(tsDate == yestDate) {
       return "Yesterday"
     } else {
-      var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
       var day = days[ts.getDay()];
       var nth = nthCalc(date);
       year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
