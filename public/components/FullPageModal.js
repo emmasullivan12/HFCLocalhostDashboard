@@ -1,4 +1,4 @@
-// Dex last merged this code on 14th mar 2021
+// Dex last merged this code on 21st mar 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -114,7 +114,7 @@ class FullPageModal extends React.Component {
 
   onClose() {
     const {handleLocalStateOnClose} = this.props;
-    
+
     this.setState({ isFPOpen: false });
     this.openButtonFPNode.focus()
 
