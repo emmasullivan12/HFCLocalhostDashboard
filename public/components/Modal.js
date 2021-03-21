@@ -31,11 +31,12 @@ const ModalContent = ({
 //  onCloseAsPrevModal,
   onKeyDown,
   removeOverflowY,
-  title
+  title,
+  usedFor
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "")} ref={modalRef}>
+      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "")} ref={modalRef} id={'modal-' + usedFor}>
         <div className="modal-header">
           <div className="modal-title">
             {title}
@@ -183,6 +184,7 @@ class Modal extends React.Component {
             role={role}
             removeOverflowY={removeOverflowY}
             title={title}
+            usedFor={usedFor}
           />
         )}
       </React.Fragment>
