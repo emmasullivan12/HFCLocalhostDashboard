@@ -375,7 +375,7 @@ class PrModAuto extends Component {
       // 1st Reminder to mentee that we've sent a potential Mentor to them for approval
       case 'sendMatch-chaser1':
 
-        text = 'Hey, @' + userToMatch[0].fname + ', \n\nJust wondering if you caught my message above about your Mentor match, ' + potentialMatch[0].fname + '? \n\nLet me know what you think!'
+        text = 'Hey, @' + userToMatch[0].fname + ', \n\nJust wondering if you had forgotten to respond above about your Mentor match, ' + potentialMatch[0].fname + '? \n\nLet me know what you think!'
 
         return (
           <div className="block-container">
@@ -556,7 +556,7 @@ class PrModAuto extends Component {
       // 1st Reminder to Mentor that we've sent a potential Mentee to them for approval
       case 'sendMenteeReq-chaser1':
 
-        text = 'Hey, @' + mentorFname + ', \n\nJust wondering if you caught my message above about your Mentee match, ' + userToMatch[0].fname + '? \n\nLet me know what you think!'
+        text = 'Hey, @' + mentorFname + ', \n\nJust wondering if you had forgotten to respond above about your Mentee match, ' + userToMatch[0].fname + '? \n\nLet me know what you think!'
 
         return (
           <div className="block-container">

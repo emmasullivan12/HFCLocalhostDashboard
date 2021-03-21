@@ -19,6 +19,9 @@ class SendMatchToMentee extends Component {
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
     this.setState({ messageFromServer: 'Match sent' });
+
+    // Close Full page "Match User" modal
+    document.getElementById("fpModal-matchingUsers").parentElement.remove();
   }
 
   render() {
@@ -53,7 +56,7 @@ class SendMatchToMentee extends Component {
               {sendMatchMessage.length} / 1000 (Min 50 characters)
             </div>
             <div className="request-btn-container">
-              <button type="button" className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="button" className="Submit-btn" onClick={this.handleSubmit}>
                 Send Match
               </button>
             </div>

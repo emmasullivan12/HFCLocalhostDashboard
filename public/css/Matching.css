@@ -91,6 +91,9 @@
   font-size: 15px;
   margin-bottom: 15px;
 }
+.matchUser-header .exclamation-icon-container{
+  margin-left: 5px;
+}
 .table-container{
   overflow-x: auto;
 }
@@ -99,6 +102,7 @@
   width: 100%;
   position: relative;
   border-spacing: 0 15px;
+  color: #969696;
 }
 #tobeMatched-table tbody,
 #pendingMatches-table tbody {
@@ -390,6 +394,7 @@ td.userToMatch-editingNotes{
 }
 .userToReview-detail.main.matchUser{
   padding-bottom: unset;
+  z-index: 3; /* So appears over "unavailable" overlay */
 }
 .userToReview-detail.small{
   font-size: 14px;

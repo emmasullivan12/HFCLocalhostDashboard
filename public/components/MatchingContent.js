@@ -344,7 +344,18 @@ class MatchingContent extends Component {
             </div>
             <div className="col-7 col-s-12 content-col profile matchUser">
               <div className="article-body profile">
-                <div className="matchUser-header">POTENTIAL MATCHES <span className="lightGreyText">{potentialMatches.length}</span></div>
+                <div className="matchUser-header">POTENTIAL MATCHES
+                  <div className="exclamation-icon-container grey tooltip"> <i className="fas fa-question-circle" />
+                    <div className="tooltiptext below">
+                      <strong>Sorted by:</strong>
+                      <ul>
+                        <li className="alignL">Same <strong>role</strong> as Match</li>
+                        <li className="alignL">Same <strong>group</strong> as Match</li>
+                        <li className="alignL"><strong>Match status</strong> Priority</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
                 {isLoading == true && (
                   <div className="loadingPotentialMatches">
                     <p>

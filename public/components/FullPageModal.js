@@ -113,8 +113,15 @@ class FullPageModal extends React.Component {
   }
 
   onClose() {
+    const {handleLocalStateOnClose} = this.props;
+    
     this.setState({ isFPOpen: false });
     this.openButtonFPNode.focus()
+
+    if (handleLocalStateOnClose) {
+      handleLocalStateOnClose();
+    }
+
     this.toggleScrollLock();
   }
 

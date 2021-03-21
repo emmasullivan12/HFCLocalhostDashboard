@@ -9,6 +9,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 0;
+  height: 100%;
 }
 @media screen and (min-width: 759px) {
   .article-page.profile{
@@ -32,6 +33,7 @@
   max-width: 660px;
   font-size: 17.1px;
   line-height: 26px;
+  height: 100%;
 }
 .article-page .article-container.profile{
   padding: 0;
@@ -72,6 +74,13 @@
 .article-page .article-container .article-extras.matchUser,
 .article-page .article-container .content-col.matchUser {
   padding-top: 50px;
+}
+/* Add separate scroll for left hand side of Match User full pager */
+@media screen and (min-width: 425px) {
+  .article-page .article-container .article-extras.matchUser{
+    overflow-y: scroll;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 759px) {
   .article-page .article-container .article-extras.profile {

@@ -769,6 +769,7 @@
 }
 .fpModal-content{
   padding-top: 1.5em;
+  height: 100%;
 }
 .fpModal-content.isDevice{
   padding-top: 0;

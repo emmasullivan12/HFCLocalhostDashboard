@@ -220,6 +220,7 @@ class MatchUserCard extends React.Component {
    const showMatchStatus = this.getMatchStatus(matchStatus);
    const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
 
+   const werePrevMatched = true
 /*   let historyItems = []
 
    var userHistory = [
@@ -330,6 +331,12 @@ class MatchUserCard extends React.Component {
               <p className="editableText-userToReview noMarginBlockEnd noMarginBlockStart"> {user.group != '' ? user.group : 'null'} {outsideGroup == true && (<span className="redText"> &#60;&#60; Diff Group!</span>)}</p>
             </div>
           </div>
+          {isPotentialMatch && werePrevMatched == true && (
+            <div className="userToReview-detail redText alignCenter">
+              <strong>WARNING: WAS PREVIOUSLY MATCHED WITH THIS USER. </strong>
+              <div>See notes below for detail</div>
+            </div>
+          )}
           {user.role == 'mentee' && (
             <div className="userToReview-detail">
               <div className="userToReview-subDetail">
