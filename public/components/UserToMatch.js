@@ -27,7 +27,8 @@ const SetUnavailableProps = {
   triggerText: 'Set Unavailability',
   usedFor: 'settingUnavailability',
   hideTrigger: true,
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -244,20 +245,20 @@ class UserToMatch extends Component {
   }
 
   getMatchStatus = () => {
-    const {matchStatusOptions} = this.props;
+    const {matchStatusOptionsAll} = this.props;
     const {matchStatus} = this.state;
 
-    const status = matchStatusOptions
+    const status = matchStatusOptionsAll
       .filter(status => status['value'] == matchStatus)
 
     return status[0].label
   }
 
   getPriority = () => {
-    const {matchStatusOptions} = this.props;
+    const {matchStatusOptionsAll} = this.props;
     const {matchStatus} = this.state;
 
-    const status = matchStatusOptions
+    const status = matchStatusOptionsAll
       .filter(status => status['value'] == matchStatus)
 
     return status[0].priority
@@ -362,7 +363,7 @@ class UserToMatch extends Component {
             <td>
               <div className={"userToMatch-changeStatus " + priority}>
                 <SelectBox
-                  options={matchStatusOptions}
+                  options={matchStatusOptionsAll}
                   name='selectStatus'
                   placeholder={matchStatusName}
                   placeholderOnClick="Change status:"

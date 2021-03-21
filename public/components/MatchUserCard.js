@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st mar 2021 
+// Dex last merged this code on 21st mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -161,8 +161,7 @@ class MatchUserCard extends React.Component {
     e.stopPropagation();
   }
 
-  getMatchStatus = (matchStatus) => {
-
+  getStatusOfMatch = (matchStatus) => {
     const status = statusOfMatch
       .filter(status => status['value'] == matchStatus)
 
@@ -170,7 +169,7 @@ class MatchUserCard extends React.Component {
   }
 
   render() {
-   const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, convertHobbies, grabSchOrUni, userToMatchName} = this.props;
+   const {user, userName, isPotentialMatch, matchStatusOptions, matchStatusOptionsAll, handleMatchStatusChange, convertRole, convertHobbies, grabSchOrUni, userToMatchName} = this.props;
    const {showDetail, matchStatus, editingNotes, notes, showNotes, reservedMatch} = this.state;
    const name = user.fname + " " + user.lname;
    let classNameSafeguarding = 'userToMatch-safeguardingText' + (isPotentialMatch ? ' isPotentialMatch' : '');
@@ -247,7 +246,7 @@ class MatchUserCard extends React.Component {
 
    const werePrevMatched = true
    const prevMatchStatus = 7
-   const prevMatchStatusToShow = this.getMatchStatus(prevMatchStatus)
+   const prevMatchStatusToShow = this.getStatusOfMatch(prevMatchStatus)
 
 /*   let historyItems = []
 
@@ -303,7 +302,7 @@ class MatchUserCard extends React.Component {
             {/*  {isPotentialMatch != true && ( */}
                 <div className={"userToMatch-changeStatus " + (isPotentialMatch == true ? 'isPotentialMatch ' : "matchUser ") + priority}>
                   <SelectBox
-                    options={matchStatusOptions}
+                    options={matchStatusOptionsAll}
                     name='selectStatus'
                     placeholder={showMatchStatus}
                     placeholderOnClick="Change status:"

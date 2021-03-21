@@ -18,7 +18,8 @@ const SetUnavailableProps = {
   triggerText: 'Set Unavailability',
   usedFor: 'settingUnavailability',
   hideTrigger: true,
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing
 }
 
 const potentialMatches = [
@@ -213,6 +214,7 @@ class MatchingContent extends Component {
                 isPotentialMatch
                 matchStatusOptions={matchStatusOptions}
                 matchStatusOptionsAll={matchStatusOptionsAll}
+                handleMatchStatusChange={this.handleMatchStatusChange}
                 convertRole={convertRole}
                 convertHobbies={convertHobbies}
                 grabSchOrUni={grabSchOrUni}
