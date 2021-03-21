@@ -267,6 +267,10 @@ class UserToMatch extends Component {
     e.stopPropagation();
   }
 
+  handleClickName = () => {
+    console.log("Dex to set up DM with user")
+  }
+
   render() {
     const {user, isFirstItem, matchStatusOptions, matchStatusOptionsAll, convertRole, convertHobbies, grabSchOrUni} = this.props;
     const {matchStatus, editingNotes, notes, showUnavailableModal, isSortingTable} = this.state;
@@ -354,7 +358,7 @@ class UserToMatch extends Component {
                 />
               </FullPageModal>
             </td>
-            <td>{name}</td>
+            <td><a className="link" onClick={this.handleClickName}>{name}</a></td>
             <td>
               <div className={"userToMatch-changeStatus " + priority}>
                 <SelectBox
