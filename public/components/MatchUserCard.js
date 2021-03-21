@@ -33,6 +33,17 @@ const SendMatchProps = {
   changeInitFocus: true
 }
 
+// We can set user status as these
+const statusOfMatch = [
+  {value: '1', label: 'Profile Sent'},
+  {value: '2', label: 'Mentee timed out'},
+  {value: '3', label: 'Mentee Accepted'},
+  {value: '4', label: 'Mentee Rejected'},
+  {value: '5', label: 'Mentor timed out'},
+  {value: '6', label: 'Mentor Accepted'},
+  {value: '7', label: 'Mentor Rejected'},
+];
+
 class MatchUserCard extends React.Component {
   constructor (props) {
     super(props);
@@ -150,6 +161,14 @@ class MatchUserCard extends React.Component {
     e.stopPropagation();
   }
 
+  getMatchStatus = (matchStatus) => {
+
+    const status = statusOfMatch
+      .filter(status => status['value'] == matchStatus)
+
+    return status[0].label
+  }
+
   render() {
    const {user, userName, isPotentialMatch, matchStatusOptions, handleMatchStatusChange, convertRole, convertHobbies, grabSchOrUni, userToMatchName} = this.props;
    const {showDetail, matchStatus, editingNotes, notes, showNotes, reservedMatch} = this.state;
@@ -167,6 +186,10 @@ class MatchUserCard extends React.Component {
    var ts = new Date(user.birthday);
    var today = new Date();
    const age = today.getFullYear() - ts.getFullYear()
+   const match = {
+    mentee_pass_comments: 'They arent the right mentor for me soz',
+    mentor_pass_comments: 'Nope. Wrong mentee for me soweee'
+  }
 
    if (user.role == 'mentee') {
 
@@ -221,6 +244,9 @@ class MatchUserCard extends React.Component {
    const userroles = user.role == 'mentor' ? convertRole(user.rolesexp, user.rolesexpfreetext) : convertRole(user.roles, user.rolesfreetext)
 
    const werePrevMatched = true
+   const prevMatchStatus = 7
+   const prevMatchStatusToShow = this.getMatchStatus(prevMatchStatus)
+
 /*   let historyItems = []
 
    var userHistory = [
@@ -334,7 +360,14 @@ class MatchUserCard extends React.Component {
           {isPotentialMatch && werePrevMatched == true && (
             <div className="userToReview-detail redText alignCenter">
               <strong>WARNING: WAS PREVIOUSLY MATCHED WITH THIS USER. </strong>
-              <div>See notes below for detail</div>
+              <div>What happened: {prevMatchStatusToShow}</div>
+              {prevMatchStatus == 4 && (
+                <div>Why: {match.mentee_pass_comments}</div>
+              )}
+              {prevMatchStatus == 7 && (
+                <div>Why: {match.mentor_pass_comments}</div>
+              )}
+
             </div>
           )}
           {user.role == 'mentee' && (
