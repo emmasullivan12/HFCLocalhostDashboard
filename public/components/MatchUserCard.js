@@ -187,8 +187,10 @@ class MatchUserCard extends React.Component {
    var today = new Date();
    const age = today.getFullYear() - ts.getFullYear()
    const match = {
-    mentee_pass_comments: 'They arent the right mentor for me soz',
-    mentor_pass_comments: 'Nope. Wrong mentee for me soweee'
+    prevMatched: {
+      mentee_pass_comments: 'They arent the right mentor for me soz',
+      mentor_pass_comments: 'Nope. Wrong mentee for me soweee'
+    }
   }
 
    if (user.role == 'mentee') {
@@ -362,10 +364,10 @@ class MatchUserCard extends React.Component {
               <strong>WARNING: WAS PREVIOUSLY MATCHED WITH THIS USER. </strong>
               <div>What happened: {prevMatchStatusToShow}</div>
               {prevMatchStatus == 4 && (
-                <div>Why: {match.mentee_pass_comments}</div>
+                <div>Why: {match.prevMatched.mentee_pass_comments}</div>
               )}
               {prevMatchStatus == 7 && (
-                <div>Why: {match.mentor_pass_comments}</div>
+                <div>Why: {match.prevMatched.mentor_pass_comments}</div>
               )}
 
             </div>
