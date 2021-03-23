@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st mar 2021 
+// Dex last merged this code on 21st mar 2021
 
 import React, { Component } from "react";
 
@@ -27,6 +27,7 @@ const potentialMatches = [
     uid: '12343',
     fname: 'Emmalina',
     lname: 'Sullivanos',
+    gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '1995-01-01T00:00:00.000Z',
     matchType: 'strong',
     role: 'mentor',
@@ -68,12 +69,19 @@ const potentialMatches = [
     whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     whyJoin: 'I need help getting into Animation and want advice on my reel and how to craft my CV and cover letter. Please help!',
     helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees',
+    matches: [
+      {matchid: '123', status_of_match: 1, date_matched: '2021-02-04T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '124', status_of_match: 2, date_matched: '2021-02-03T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '125', status_of_match: 3, date_matched: '2021-02-02T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '126', status_of_match: 4, date_matched: '2021-02-01T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: 'Soz. not the mentor for me', mentor_pass_comments: ''},
+    ]
   },
   {
     uid: '12346',
     fname: 'Emily',
     lname: 'Sullivany',
+    gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '2005-11-01T00:00:00.000Z',
     matchType: 'medium',
     role: 'mentor',
@@ -90,7 +98,7 @@ const potentialMatches = [
     mentorsustep: 'didFullSUIDtf',
     lastActiveDate: '1556389526',
     matchstatus: 4,
-    isavailable: {status: 0},
+    isavailable: {status: 0, by: "PennyUID", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1},
     profprofileurl: '',
     uni: 0,
     degree: 'BSc (Hons) Business Administration',
@@ -116,12 +124,19 @@ const potentialMatches = [
     whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     whyJoin: 'I need help getting into Animation and want advice on my reel and how to craft my CV and cover letter. Please help!',
     helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees',
+    matches: [
+      {matchid: '123', status_of_match: 4, date_matched: '2021-02-01T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: 'Soz. not the mentor for me', mentor_pass_comments: ''},
+      {matchid: '124', status_of_match: 5, date_matched: '2021-02-03T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '125', status_of_match: 6, date_matched: '2021-02-05T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '126', status_of_match: 7, date_matched: '2021-02-02T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: 'Soz. not the mentee for me'},
+    ]
   },
   {
     uid: '12347',
     fname: 'Emmi',
     lname: 'Sullibano',
+    gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '1995-12-06T00:00:00.000Z',
     matchType: 'weak',
     role: 'mentor',
@@ -162,7 +177,13 @@ const potentialMatches = [
     whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     whyJoin: 'I need help getting into Animation and want advice on my reel and how to craft my CV and cover letter. Please help!',
     helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees',
+    matches: [
+      {matchid: '123', status_of_match: 1, date_matched: '2021-02-14T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+      {matchid: '124', status_of_match: 7, date_matched: '2021-02-24T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: 'Soz. not the mentee for me'},
+      {matchid: '125', status_of_match: 4, date_matched: '2021-05-04T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: 'Soz. not the mentor for me', mentor_pass_comments: ''},
+      {matchid: '126', status_of_match: 2, date_matched: '2021-03-24T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+    ]
   }
 ];
 
@@ -250,8 +271,9 @@ class MatchingContent extends Component {
       pendingmatches: 2,
       lastActiveDate: '1556389526',
       mentorsustep: 'didFullSUIDtf',
+      gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
       matchstatus: 7,
-      isavailable: {status: 1},
+      isavailable: {status: 0, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1},
       profprofileurl: '',
       uni: 0,
       degree: 'BSc (Hons) Business Administration',
@@ -277,7 +299,13 @@ class MatchingContent extends Component {
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
       whyJoin: 'I need help getting into Animation and want advice on my reel and how to craft my CV and cover letter. Please help!',
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-      roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+      roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees',
+      matches: [
+        {matchid: '123', status_of_match: 1, date_matched: '2021-02-01T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+        {matchid: '124', status_of_match: 2, date_matched: '2021-02-02T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+        {matchid: '125', status_of_match: 3, date_matched: '2021-02-03T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: '', mentor_pass_comments: ''},
+        {matchid: '126', status_of_match: 4, date_matched: '2021-04-04T14:46:14.209Z', mentee_replied_date: '', mentor_replied_date: '', mentee_pass_comments: 'Soz. not the mentor for me', mentor_pass_comments: ''},
+      ]
     }
     const importUsersComplete = true;
     const importUsersSuccess = 'success';

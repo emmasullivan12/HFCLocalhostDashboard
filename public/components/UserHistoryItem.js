@@ -25,25 +25,32 @@ class UserHistoryItem extends Component {
             <div className="historyItemNote normalLineheight greyText">Signed up to Prospela</div>
           </div>
         );
-      case 'accMatch':
+      case 'matchStatus':
+        return (
+          <div className="displayFlex normalLineheight paddingBtm">
+            <div>{formatDate(itemDate)}</div>
+            <div className="historyItemNote normalLineheight greyText">{historyItem.text}</div>
+          </div>
+        );
+    /*  case 'menteeAcc':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
             <div className="historyItemNote normalLineheight greyText"><strong>Accepted match</strong> with {historyItem.accMatchName}</div>
           </div>
         );
-      case 'rejMatch':
+      case 'mentorRej':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
             <div className="historyItemNote normalLineheight greyText"><strong>Rejected match</strong> with {historyItem.rejMatchName} because: <i>{historyItem.rejReason}</i></div>
           </div>
-        );
+        );*/
       case 'unavail':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
-            <div className="historyItemNote normalLineheight greyText"><strong>Set us Unresponsive</strong> <i>[Reminder to chase set for: {formatDate(reminderDate)}]</i></div>
+            <div className="historyItemNote normalLineheight greyText"><strong>Set us Unresponsive</strong> by <u>{historyItem.setBy}</u> <i>[Reminder to chase set for: {formatDate(reminderDate)}]</i></div>
           </div>
         );
     }

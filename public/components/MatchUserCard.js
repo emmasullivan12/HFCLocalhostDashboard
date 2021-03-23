@@ -1,4 +1,4 @@
-// Dex last merged this code on 21st mar 2021 
+// Dex last merged this code on 21st mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -8,7 +8,7 @@ import Modal from "./Modal.js";
 import RejectSignUpContent from "./RejectSignUpContent.js";
 import SelectBox from './Select.js';
 import SendMatchToMentee from './SendMatchToMentee.js';
-//import UserHistoryItem from './UserHistoryItem.js';
+import UserHistory from './UserHistory.js';
 import {Check, X} from './GeneralFunctions.js';
 import {userFlagEmoji} from './UserDetail.js';
 
@@ -248,26 +248,6 @@ class MatchUserCard extends React.Component {
    const prevMatchStatus = 7
    const prevMatchStatusToShow = this.getStatusOfMatch(prevMatchStatus)
 
-/*   let historyItems = []
-
-   var userHistory = [
-     {date: '2021-01-03T19:54:25.084Z', type: 'signedUp'},
-     {date: '2021-01-04T15:54:25.084Z', type: 'unavail', reminderToChase: '2021-07-04T15:54:25.084Z'},
-     {date: '2021-01-04T19:54:25.084Z', type: 'accMatch', accMatchName: 'David Amor'},
-     {date: '2021-01-01T19:54:25.084Z', type: 'rejMatch', rejMatchName: 'Mat Fraser', rejReason: 'He is out of my league. #HWPO'},
-   ]
-
-   if (userHistory.length > 0) {
-     userHistory.forEach((item) => {
-       historyItems.push(
-         <UserHistoryItem
-           historyItem={item}
-           key={item.date}
-         />
-       );
-     });
-   }*/
-
     return (
       <React.Fragment>
         <div className={"userToMatch-card" + (isavailable == false ? ' unavailable' : '')}>
@@ -464,12 +444,17 @@ class MatchUserCard extends React.Component {
                 </div>
               </div>
             </div>
-        {/*     <div className="userToReview-detail">
+            <div className="userToReview-detail">
               <div className="userToReview-subDetail">
                 HISTORY
-                {historyItems}
+                <UserHistory
+                  userRole={user.role}
+                  isavailable={user.isavailable}
+                  signedUpDate={user.gdprdivts}
+                  usersMatches={user.matches}
+                />
               </div>
-            </div> */}
+            </div>
           </div>
         )}
       </React.Fragment>
