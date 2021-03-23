@@ -132,6 +132,7 @@ th.userToMatch-safeguarding{
   width: 120px;
 }
 th.userToMatch-dates{
+  width: 100px;
   min-width: 100px;
 }
 th.userToMatch-userResponse{
@@ -248,6 +249,10 @@ th.userToMatch-notes{
   border: 1px solid #4e4ed6;
   -webkit-box-shadow: 0px 0px 5px #4e4ed6;
   box-shadow: 0px 0px 5px #4e4ed6;
+  padding: 5px 5px 5px 10px;
+  cursor: text;
+  color: #3f3f3f;
+  font-size: 14px;
 }
 .userToMatch-updateNotesBtn{
   padding-left: 5px;

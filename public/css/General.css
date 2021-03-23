@@ -299,6 +299,15 @@ a,
 div {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
+table th.hasSort{
+  cursor: pointer;
+}
+table th .description{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
 .title-blankPage{
   font-size: 20px;
   margin-top: 20px;
@@ -608,14 +617,16 @@ div {
   left: -25px;
 }
 .tooltiptext.chats,
-.tooltiptext.groups {
+.tooltiptext.groups,
+.tooltiptext.compact {
   width: auto;
   left: 0;
   margin-left: unset;
   padding-left: 10px;
   padding-right: 10px;
 }
-.tooltiptext.groups {
+.tooltiptext.groups,
+.tooltiptext.compact {
   white-space: nowrap;
   font-weight: 600;
 }
@@ -662,7 +673,8 @@ div {
   border-color: #555 transparent transparent transparent;
 }
 .tooltip .tooltiptext.last::after,
-.tooltip .tooltiptext.groups.last::after {
+.tooltip .tooltiptext.groups.last::after,
+.tooltip .tooltiptext.compact.last::after {
   left: unset;
   right: 13px;
 }
@@ -672,7 +684,8 @@ div {
   left: unset;
 }
 .tooltip .tooltiptext.chats::after,
-.tooltip .tooltiptext.groups::after {
+.tooltip .tooltiptext.groups::after,
+.tooltip .tooltiptext.compact::after {
   left: 0;
   margin-left: 9px;
 }

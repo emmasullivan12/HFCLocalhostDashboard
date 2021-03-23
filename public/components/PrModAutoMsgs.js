@@ -65,6 +65,15 @@ const AddNotesProps = {
 
 class PrModAuto extends Component {
 
+  resendMatch = (toWhichUser, matchid) => {
+    if (toWhichUser == 'mentee') {
+      // resend to mentee
+    } else if (toWhichUser == 'mentor') {
+      // resend to mentor
+    }
+    alert("resent to "+toWhichUser)
+  }
+
   render() {
     const {message, isProspelaAuto, isProspelaTeam} = this.props;
 
@@ -80,15 +89,19 @@ class PrModAuto extends Component {
         chasers: {
           type: 1, dateSent: '' // to be completed
         },
-        date_matched: '1995-01-01T00:00:00.000Z',
+        date_matched: '2021-03-21T00:00:00.000Z',
         mentee_to_reply_by: '1995-01-04T00:00:00.000Z',
-        mentee_replied_date: '1995-01-03T00:00:00.000Z',
+        mentee_replied_date: '2021-03-22T00:00:00.000Z',
         mentee_request_message: 'Hi Im Emma *studying Business*, Maths and English. I’m _interested in learning_ more about marketing and hear more about your work at Pladis. I think the company looks very interesting. I also like tennis!',
         mentor_reply_by: '',
         mentor_replied_date: '',
         match_comments: 'Guy has really good Houdini skills - exactly what you wanted!',
         mentee_pass_comments: 'no thansk i want houdini',
         mentor_pass_comments: 'are you crazy? this person is crap',
+        chaser_status: {
+          menteeResent: '2021-03-22T12:00:05.000Z',
+          mentorResent: '2021-03-25T00:00:00.000Z'
+        }
       }
     ]
     const mentorFname = '[ MENTOR FNAME ]'
@@ -185,6 +198,9 @@ class PrModAuto extends Component {
     let userInitial;
     let userProfileToShow;
     let uniName;
+    let sentDate;
+    let timeoutDate;
+    let timerText;
 
     function grabSchOrUni (schOrUni, schUniNum) {
       //const {ukSchsList, ukUnisList} = this.state;
@@ -257,6 +273,68 @@ class PrModAuto extends Component {
         userAcc = matchDetail[0].status_of_match == 3 || matchDetail[0].status_of_match > 4
         userRej = matchDetail[0].status_of_match == 4
 
+        var todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()))
+
+        if (matchDetail[0].status_of_match != 2) { // timed out
+
+          var tmoDate = new Date((today.setDate(today.getDate()-1))).toDateString();
+          var x;
+
+          // If is a resend
+          if (matchDetail[0].chaser_status.menteeResent != null) {
+            sentDate = new Date(matchDetail[0].chaser_status.menteeResent);
+            timeoutDate = new Date()
+            timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24)))
+          } else {
+            sentDate = new Date(matchDetail[0].date_matched);
+            timeoutDate = new Date()
+            timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24)))
+          }
+
+          console.log("timeoutDate: "+timeoutDate)
+          var dateDiff = (timeoutDate.getTime() - todayUTC.getTime())/(1000*60*60*24)
+          console.log(dateDiff)
+
+          // Calculate time left
+          if (dateDiff < 1) { // is today
+            // calculate hours left
+            if (dateDiff <= (1/24)) {// less than 1 hour left {
+              timerText = '< 1 hour left to reply'
+            } else {
+              x = Math.Round(dateDiff*24)
+              timerText = x + ' hours left to reply'
+            }
+
+          } else { // is in future
+            // figure out days left
+            x = Math.ceil(dateDiff)
+            timerText = x + ' days left to reply'
+          }
+
+        } else {
+          timerText = 'Timed out'
+        }
+
+
+/*  } else {
+    var yestDate = new Date((today.setDate(today.getDate()-1))).toDateString()
+    var isToday = tsDate == todayDate
+    if (isToday) {
+      return "Today"
+    } else if(tsDate == yestDate) {
+      return "Yesterday"
+    } else {
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var day = days[ts.getDay()];
+      var nth = nthCalc(date);
+      year = ((ts.getFullYear()===new Date().getFullYear()) ? '' : ' '+ts.getFullYear());
+      time = day + ', ' + month + ' ' + date + nth + year
+      return time;
+    }
+  }*/
+
+
+
         return (
           <div className="block-container">
             <div className="message-container">
@@ -285,26 +363,26 @@ class PrModAuto extends Component {
                     )}
                     <div className="userDetail-txt">
                       <div className="userDetail-name sentMatch">{userProfileToShow.fname}</div>
-                        <div className="userDetail-inst sentMatch">
-                          {eetstatus == 'sch' && (
-                            <div><span className="roleText">Student</span></div>
-                          )}
-                          {eetstatus == 'uni' && (
-                            <div><span className="roleText">{userProfileToShow.degree}</span><div>@ {uniName}</div></div>
-                          )}
-                          {eetstatus == 'job' && (
-                            <div><span className="roleText">{userProfileToShow.currrole}</span><div>@ {userProfileToShow.currco}</div></div>
-                          )}
-                          {eetstatus == 'train' && (
-                            <div><span className="roleText">{userProfileToShow.currtraining}</span><div>@ {userProfileToShow.currtrainingprovider}</div></div>
-                          )}
-                          {eetstatus == 'none' && (
-                            <div><span className="roleText">Looking for opportunities</span></div>
-                          )}
-                        </div>
-                        <div className="userDetail-flag">
-                          <span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji(userProfileToShow.country)}/></span>
-                        </div>
+                      <div className="userDetail-inst sentMatch">
+                        {eetstatus == 'sch' && (
+                          <div><span className="roleText">Student</span></div>
+                        )}
+                        {eetstatus == 'uni' && (
+                          <div><span className="roleText">{userProfileToShow.degree}</span><div>@ {uniName}</div></div>
+                        )}
+                        {eetstatus == 'job' && (
+                          <div><span className="roleText">{userProfileToShow.currrole}</span><div>@ {userProfileToShow.currco}</div></div>
+                        )}
+                        {eetstatus == 'train' && (
+                          <div><span className="roleText">{userProfileToShow.currtraining}</span><div>@ {userProfileToShow.currtrainingprovider}</div></div>
+                        )}
+                        {eetstatus == 'none' && (
+                          <div><span className="roleText">Looking for opportunities</span></div>
+                        )}
+                      </div>
+                      <div className="userDetail-flag">
+                        <span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji(userProfileToShow.country)}/></span>
+                      </div>
                     </div>
                     <div className="userDetail-scrollSection">
                       {isLoading === true ? (
@@ -333,14 +411,17 @@ class PrModAuto extends Component {
                     </div>
                   </div>
                   {userNotYetResponded == true && (
-                    <div className="messageCTABtns">
-                      <Modal {...RequestChatModalProps}>
-                        <RequestChatContent mentorName={userProfileToShow.fname} matchid={matchid}/>
-                      </Modal>
-                      <Modal {...PassModalProps}>
-                        <PassMentorContent matchid={matchid}/>
-                      </Modal>
-                    </div>
+                    <React.Fragment>
+                      <div className="messageCTABtns">
+                        <Modal {...RequestChatModalProps}>
+                          <RequestChatContent mentorName={userProfileToShow.fname} matchid={matchid}/>
+                        </Modal>
+                        <Modal {...PassModalProps}>
+                          <PassMentorContent matchid={matchid}/>
+                        </Modal>
+                      </div>
+                      <div className="timeoutText"><strong>{timerText}</strong></div>
+                    </React.Fragment>
                   )}
                   {userTimedOut == true && (
                     <div className="negativeReply redText">
@@ -366,6 +447,13 @@ class PrModAuto extends Component {
                       : (*/}
                         <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find someone better for you based on your feedback! </strong><span role="img" aria-label="smileEmoji">😊</span></div>
                     </React.Fragment>
+                  )}
+                  {(userTimedOut == true || userRej == true) && ( // && userRole == 'pr' &&
+                    <div className="messageCTABtns">
+                      <button type="button" className="ModalOpenBtn" onClick={() => this.resendMatch('mentee', matchid)}>
+                        Resend Match to Mentee
+                      </button>
+                    </div>
                   )}
                 </div>
               </div>
@@ -547,6 +635,13 @@ class PrModAuto extends Component {
                       : (*/}
                         <div className="negativeReply purpleText"><strong>Thanks! I&#39;ll try to find a better match (or update your availability) based on your feedback </strong><span role="img" aria-label="smileEmoji">😊</span></div>
                     </React.Fragment>
+                  )}
+                  {(userTimedOut == true || userRej == true) && ( // && userRole == 'pr' &&
+                    <div className="messageCTABtns">
+                      <button type="button" className="ModalOpenBtn" onClick={() => this.resendMatch('mentor', matchid)}>
+                        Resend Match to Mentor
+                      </button>
+                    </div>
                   )}
                 </div>
               </div>

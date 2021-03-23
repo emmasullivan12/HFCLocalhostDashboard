@@ -1,66 +1,11 @@
-// Dex last merged this code on 8th mar 2021 
+// Dex last merged this code on 8th mar 2021
 
 import React, { Component } from "react";
 import {getGroupName} from "./UserDetail.js";
-import {DateCalc, X, Check} from "./GeneralFunctions";
+import {sortTable, DateCalc, X, Check} from "./GeneralFunctions";
 
 // This shows the content within an individual row in the ChatMenu
 class PendingMatch extends Component {
-
-  sortTable = (n) => {
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("pendingMatches-table");
-    switching = true;
-    // Set the sorting direction to ascending:
-    dir = "asc";
-    /* Make a loop that will continue until
-    no switching has been done: */
-    while (switching) {
-      // Start by saying: no switching is done:
-      switching = false;
-      rows = table.rows;
-      /* Loop through all table rows (except the
-      first, which contains table headers): */
-      for (i = 1; i < (rows.length - 1); i++) {
-        // Start by saying there should be no switching:
-        shouldSwitch = false;
-        /* Get the two elements you want to compare,
-        one from current row and one from the next: */
-        x = rows[i].getElementsByTagName("TD")[n];
-        y = rows[i + 1].getElementsByTagName("TD")[n];
-        /* Check if the two rows should switch place,
-        based on the direction, asc or desc: */
-        if (dir == "asc") {
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-            // If so, mark as a switch and break the loop:
-            shouldSwitch = true;
-            break;
-          }
-        } else if (dir == "desc") {
-          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-            // If so, mark as a switch and break the loop:
-            shouldSwitch = true;
-            break;
-          }
-        }
-      }
-      if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark that a switch has been done: */
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-        // Each time a switch is done, increase this count by 1:
-        switchcount++;
-      } else {
-        /* If no switching has been done AND the direction is "asc",
-        set the direction to "desc" and run the while loop again. */
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
-    }
-  }
 
   render() {
     const {match, isFirstItem} = this.props;
@@ -77,22 +22,24 @@ class PendingMatch extends Component {
         {isFirstItem && (
           <thead>
             <tr>
-              <th className="userToMatch-name" onClick={() => this.sortTable(0)}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-group alignCenter">Mentee Group</th>
-              <th className="userToMatch-name" onClick={() => this.sortTable(1)}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-group alignCenter">E-Mentor Group</th>
-              <th className="userToMatch-dates alignCenter">Sent Profile to Mentee</th>
-              <th className="userToMatch-dates alignCenter">Mentee Chaser 1</th>
-              <th className="userToMatch-dates alignCenter">Mentee Chaser 2</th>
-              <th className="userToMatch-dates alignCenter">Mentee Response</th>
-              <th className="userToMatch-dates alignCenter">E-Mentor Chaser 1</th>
-              <th className="userToMatch-dates alignCenter">E-Mentor Chaser 2</th>
+              <th className="userToMatch-name hasSort" onClick={() => sortTable(0, 'date', 'pendingMatches-table')}>Date Matched <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => sortTable(1, 'alphabetically', 'pendingMatches-table')}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name alignCenter hasSort" onClick={() => sortTable(2, 'alphabetically', 'pendingMatches-table')}>Mentee Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => sortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name alignCenter hasSort" onClick={() => sortTable(4, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-dates alignCenter">Sent Profile to Mentee<div className="greyText description">T</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(6, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(7, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(8, 'byCheck', 'pendingMatches-table')}>Mentee Response <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(9, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(10, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
               <th className="userToMatch-dates alignCenter">E-Mentor Response</th>
             </tr>
           </thead>
         )}
         <tbody>
           <tr>
+            <td><i><DateCalc time={match.date_matched} showPureDate /></i></td>
             <td>{menteename}</td>
             <td className="alignCenter">{menteegroup}</td>
             <td>{mentorname}</td>
@@ -107,7 +54,6 @@ class PendingMatch extends Component {
                 <div className="positiveReply greenText">
                   <Check />
                   <span className="greyText"><i><DateCalc time={match.menteechaser1} showPureDate /></i></span>
-
                 </div>
               )
               : (

@@ -477,6 +477,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.timeoutText{
+  color: #58d2bb;
+  margin-top: 10px;
+  font-size: 13px;
+}
 .messageCTA .positiveReply,
 .messageCTA .negativeReply {
   margin-top: 10px;

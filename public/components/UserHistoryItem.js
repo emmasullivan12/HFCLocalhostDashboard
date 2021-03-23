@@ -13,7 +13,7 @@ class UserHistoryItem extends Component {
       var day = date.getDate();
       var month = date.getMonth() + 1;
       var year = date.getFullYear();
-      var dateToShow = day + '/' + month + '/' + year
+      var dateToShow = day + ' / ' + month + ' / ' + year
       return dateToShow
     }
 
