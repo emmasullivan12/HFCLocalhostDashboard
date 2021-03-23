@@ -463,7 +463,9 @@ function sortTable(n, sortType, tableId, callback) {
       }
     }
   }
-
+  if (callback) {
+    callback()
+  }
 }
 
 

@@ -1,4 +1,4 @@
-// Dex last merged this code on 23rd mar 2021 
+// Dex last merged this code on 23rd mar 2021
 
 import React, { Component } from "react";
 
@@ -22,14 +22,14 @@ class UserHistoryItem extends Component {
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
-            <div className="historyItemNote normalLineheight greyText">Signed up to Prospela</div>
+            <div className="historyItemNote normalLineheight">Signed up to Prospela</div>
           </div>
         );
       case 'matchStatus':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
-            <div className="historyItemNote normalLineheight greyText">{historyItem.text}</div>
+            <div className="historyItemNote normalLineheight">{historyItem.text}</div>
           </div>
         );
     /*  case 'menteeAcc':
@@ -50,7 +50,7 @@ class UserHistoryItem extends Component {
         return (
           <div className="displayFlex normalLineheight paddingBtm">
             <div>{formatDate(itemDate)}</div>
-            <div className="historyItemNote normalLineheight greyText"><strong>Set us Unresponsive</strong> by <u>{historyItem.setBy}</u> <i>[Reminder to chase set for: {formatDate(reminderDate)}]</i></div>
+            <div className="historyItemNote normalLineheight"><strong>Set us Unresponsive</strong> {reminderDate != '' && (<i>[Reminder to chase set for: {formatDate(reminderDate)}]</i>)}</div>
           </div>
         );
     }

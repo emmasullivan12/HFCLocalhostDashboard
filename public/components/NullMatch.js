@@ -121,7 +121,7 @@ class NullMatch extends Component {
               : (match.status_of_match == '2') ? (
                 <a className="link greyText tooltip" onMouseLeave={() => this.handleBlur('mentee', match.matchid)} onClick={() => this.copyEmail('mentee', match.matchid)}>
                   <i>Timed out - <DateCalc time={match.mentee_to_reply_by} showPureDate /></i>
-                  <div className="tooltiptext" id={"tooltip-"+match.matchid+'-mentee'}>
+                  <div className="tooltiptext compact" id={"tooltip-"+match.matchid+'-mentee'}>
                     Copy Email
                   </div>
                 </a>
@@ -191,7 +191,7 @@ class NullMatch extends Component {
               : (match.status_of_match == '5') ? (
                 <a className="link greyText tooltip" onMouseLeave={() => this.handleBlur('mentor', match.matchid)} onClick={() => this.copyEmail('mentor', match.matchid)}>
                   <i>Timed out - <DateCalc time={match.mentor_reply_by} showPureDate /></i>
-                  <div className="tooltiptext" id={"tooltip-"+match.matchid+'-mentor'}>
+                  <div className="tooltiptext compact" id={"tooltip-"+match.matchid+'-mentor'}>
                     Copy Email
                   </div>
                 </a>
