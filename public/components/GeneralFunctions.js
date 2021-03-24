@@ -1,4 +1,4 @@
-// Dex last merged this code on 23rd mar 2021
+// Dex last merged this code on 24th mar 2021
 
 import React, { Component } from "react";
 
@@ -458,8 +458,6 @@ function sortTable(n, sortType, tableId, callback) {
           const xTimeout = x.getElementsByClassName("timeout")[0]
           const yTimeout = y.getElementsByClassName("timeout")[0]
 
-          //if ((xTick && (yTick == undefined))) {
-        //  if ((yTick && (xCross || xTimeout)) || (yTimeout && xCross) || (yCross && (xCross == undefined && xTimeout == undefined && xTick == undefined))) {
           if (((yCross == undefined && yTimeout == undefined && yTick == undefined) && xCross) || (xTimeout && (yCross || (yTimeout == undefined && yTick == undefined))) || (xTick && (yCross || yTimeout || ((yCross == undefined && yTimeout == undefined && yTick == undefined))))) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
