@@ -482,6 +482,9 @@
   margin-top: 10px;
   font-size: 13px;
 }
+.timeoutText.timedOut{
+  color: red;
+}
 .messageCTA .positiveReply,
 .messageCTA .negativeReply {
   margin-top: 10px;

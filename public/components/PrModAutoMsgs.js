@@ -71,7 +71,6 @@ class PrModAuto extends Component {
     } else if (toWhichUser == 'mentor') {
       // resend to mentor
     }
-    alert("resent to "+toWhichUser)
   }
 
   render() {
@@ -85,7 +84,7 @@ class PrModAuto extends Component {
         menteeuid: '123',
         mentoruid: '234',
         matchedby: 'pennyid',
-        status_of_match: '1', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
+        status_of_match: '3', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
         chasers: {
           type: 1, dateSent: '' // to be completed
         },
@@ -99,8 +98,8 @@ class PrModAuto extends Component {
         mentee_pass_comments: 'no thansk i want houdini',
         mentor_pass_comments: 'are you crazy? this person is crap',
         chaser_status: {
-          menteeResent: '2021-03-22T12:00:05.000Z',
-          mentorResent: '2021-03-25T00:00:00.000Z'
+          menteeResent: '2021-03-17T13:07:05.000Z',
+          mentorResent: '2021-03-23T00:00:00.000Z'
         }
       }
     ]
@@ -186,7 +185,6 @@ class PrModAuto extends Component {
         roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
       }
     ]
-    const today = new Date();
     const userRole = 'mentor' // Logged in user viewing message
     let userNotYetResponded;
     let userTimedOut;
@@ -201,6 +199,10 @@ class PrModAuto extends Component {
     let sentDate;
     let timeoutDate;
     let timerText;
+    let dateDiff;
+
+    var today = new Date();
+    var x;
 
     function grabSchOrUni (schOrUni, schUniNum) {
       //const {ukSchsList, ukUnisList} = this.state;
@@ -250,7 +252,7 @@ class PrModAuto extends Component {
         // Show only small pixelated picture
         profPicSrc = createProfPicURL(userProfileToShow.profilepic, '40');
       } else {
-        profPicSrcLarger = createProfPicURL(userProfileToShow.profilepic, '80');
+        profPicSrcLarger = createProfPicURL(userProfileToShow.profilepic, '270');
       }
     } else {
       userInitial = userProfileToShow.fname && userProfileToShow.fname.charAt(0).toUpperCase();
@@ -273,40 +275,35 @@ class PrModAuto extends Component {
         userAcc = matchDetail[0].status_of_match == 3 || matchDetail[0].status_of_match > 4
         userRej = matchDetail[0].status_of_match == 4
 
-        var todayUTC = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()))
-
-        if (matchDetail[0].status_of_match != 2) { // timed out
-
-          var tmoDate = new Date((today.setDate(today.getDate()-1))).toDateString();
-          var x;
+        if (matchDetail[0].status_of_match != 2) { // not a timed out match
 
           // If is a resend
           if (matchDetail[0].chaser_status.menteeResent != null) {
             sentDate = new Date(matchDetail[0].chaser_status.menteeResent);
             timeoutDate = new Date()
-            timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24)))
+            timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24))) // plus 7 days from resent
           } else {
             sentDate = new Date(matchDetail[0].date_matched);
             timeoutDate = new Date()
-            timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24)))
+            timeoutDate.setTime(sentDate.getTime() + (9*(1000*60*60*24))) // plus 9 days from initial send
           }
 
-          console.log("timeoutDate: "+timeoutDate)
-          var dateDiff = (timeoutDate.getTime() - todayUTC.getTime())/(1000*60*60*24)
-          console.log(dateDiff)
+          dateDiff = (timeoutDate.getTime() - today.getTime())/(1000*60*60*24)
 
           // Calculate time left
           if (dateDiff < 1) { // is today
+
             // calculate hours left
-            if (dateDiff <= (1/24)) {// less than 1 hour left {
+            if (dateDiff < 0) { // if in the past
+              timerText = 'Timed out'
+            } else if (dateDiff <= (1/24)) { // if less than 1 hour left
               timerText = '< 1 hour left to reply'
             } else {
-              x = Math.Round(dateDiff*24)
+              x = Math.round(dateDiff*24)
               timerText = x + ' hours left to reply'
             }
 
           } else { // is in future
-            // figure out days left
             x = Math.ceil(dateDiff)
             timerText = x + ' days left to reply'
           }
@@ -420,7 +417,7 @@ class PrModAuto extends Component {
                           <PassMentorContent matchid={matchid}/>
                         </Modal>
                       </div>
-                      <div className="timeoutText"><strong>{timerText}</strong></div>
+                      <div className={"timeoutText" + (timerText == 'Timed out' ? ' timedOut' : '')}><strong>{timerText}</strong></div>
                     </React.Fragment>
                   )}
                   {userTimedOut == true && (
@@ -464,7 +461,7 @@ class PrModAuto extends Component {
       // 1st Reminder to mentee that we've sent a potential Mentor to them for approval
       case 'sendMatch-chaser1':
 
-        text = 'Hey, @' + userToMatch[0].fname + ', \n\nJust wondering if you had forgotten to respond above about your Mentor match, ' + potentialMatch[0].fname + '? \n\nLet me know what you think!'
+        text = 'Hey, @' + userToMatch[0].fname + ', \n\nJust wondering if you had forgotten to respond above about your Mentor match, ' + potentialMatch[0].fname + '? The match will time out automatically in 6 days. \n\nLet me know what you think!'
 
         return (
           <div className="block-container">
@@ -489,7 +486,7 @@ class PrModAuto extends Component {
       // 2nd Reminder to mentee that we've sent a potential Mentor to them for approval
       case 'sendMatch-chaser2':
 
-        text = 'Hi again, @' + userToMatch[0].fname + '! 👋 \n\nWere you happy with the Mentor match I sent you? Thought I\'d try one last time to chase you before they get released for somebody else. Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
+        text = 'Hi again, @' + userToMatch[0].fname + '! 👋 \n\nWere you happy with the Mentor match I sent you? Thought I\'d try one last time to chase you before they get released for somebody else (2 days left!). Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
 
         return (
           <div className="block-container">
@@ -519,6 +516,43 @@ class PrModAuto extends Component {
         userTimedOut = matchDetail[0].status_of_match == 5
         userAcc = matchDetail[0].status_of_match == 6
         userRej = matchDetail[0].status_of_match == 7
+
+          if (matchDetail[0].status_of_match != 5) { // not a timed out match
+
+            // If is a resend
+            if (matchDetail[0].chaser_status.mentorResent != null) {
+              sentDate = new Date(matchDetail[0].chaser_status.mentorResent);
+              timeoutDate = new Date()
+              timeoutDate.setTime(sentDate.getTime() + (7*(1000*60*60*24))) // plus 7 days from resent
+            } else {
+              sentDate = new Date(matchDetail[0].mentee_replied_date);
+              timeoutDate = new Date()
+              timeoutDate.setTime(sentDate.getTime() + (9*(1000*60*60*24))) // plus 9 days from initial send
+            }
+
+            dateDiff = (timeoutDate.getTime() - today.getTime())/(1000*60*60*24)
+
+            // Calculate time left
+            if (dateDiff < 1) { // is today
+
+              // calculate hours left
+              if (dateDiff < 0) { // if in the past
+                timerText = 'Timed out'
+              } else if (dateDiff <= (1/24)) { // if less than 1 hour left
+                timerText = '< 1 hour left to reply'
+              } else {
+                x = Math.round(dateDiff*24)
+                timerText = x + ' hours left to reply'
+              }
+
+            } else { // is in future
+              x = Math.ceil(dateDiff)
+              timerText = x + ' days left to reply'
+            }
+
+          } else {
+            timerText = 'Timed out'
+          }
 
         return (
           <div className="block-container">
@@ -609,6 +643,7 @@ class PrModAuto extends Component {
                       <Modal {...PassMenteeModalProps}>
                         <PassMenteeContent matchid={matchid}/>
                       </Modal>
+                      <div className={"timeoutText" + (timerText == 'Timed out' ? ' timedOut' : '')}><strong>{timerText}</strong></div>
                     </div>
                   )}
                   {userTimedOut == true && (
@@ -652,7 +687,7 @@ class PrModAuto extends Component {
       // 1st Reminder to Mentor that we've sent a potential Mentee to them for approval
       case 'sendMenteeReq-chaser1':
 
-        text = 'Hey, @' + mentorFname + ', \n\nJust wondering if you had forgotten to respond above about your Mentee match, ' + userToMatch[0].fname + '? \n\nLet me know what you think!'
+        text = 'Hey, @' + mentorFname + ', \n\nJust wondering if you had forgotten to respond above about your Mentee match, ' + userToMatch[0].fname + '? The match will time out automatically in 6 days.\n\nLet me know what you think!'
 
         return (
           <div className="block-container">
@@ -677,7 +712,7 @@ class PrModAuto extends Component {
       // 2nd Reminder to mentor that we've sent a potential Mentee to them for approval
       case 'sendMenteeReq-chaser2':
 
-        text = 'Hi again, @' + mentorFname + '! 👋 \n\nWere you happy with the Mentee match I sent through to you? Thought I\'d try one last time to chase you before they get released and we try to find them somebody else as their Mentor. Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
+        text = 'Hi again, @' + mentorFname + '! 👋 \n\nWere you happy with the Mentee match I sent through to you? Thought I\'d try one last time to chase you before they get released (2 days left!) and we try to find them somebody else as their Mentor. Hopefully you catch this message! \n\nAny questions or reservations, just let me know =)'
 
         return (
           <div className="block-container">

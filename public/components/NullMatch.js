@@ -1,11 +1,31 @@
 // Dex last merged this code on 23rd mar 2021
 
 import React, { Component } from "react";
+
+import Checkbox from './Checkbox.js';
 import {getGroupName} from "./UserDetail.js";
-import {sortTable, DateCalc, X, Check} from "./GeneralFunctions";
+import {sortTable, LoadingSpinner, DateCalc, X, Check} from "./GeneralFunctions";
 
 // This shows the content within an individual row in the ChatMenu
 class NullMatch extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      emailChased: false,
+      isSortingTable: false,
+    }
+  }
+
+  handleSortTable = (n, sortType, tableId) => {
+    this.setState({
+      isSortingTable: true
+    })
+    sortTable(n, sortType, tableId, () => {
+      this.setState({
+        isSortingTable: false
+      })
+    })
+  }
 
   copyEmail = (role, matchid) => {
     const email = role == 'mentee' ? 'mentee@gmail.com' : 'mentor@gmail.com'
@@ -18,12 +38,27 @@ class NullMatch extends Component {
   }
 
   handleBlur = (role, matchid) => {
-    console.log("tooltip-"+matchid+"-"+role)
     document.getElementById("tooltip-"+matchid+"-"+role).innerHTML = "Copy Email";
+  }
+
+  toggleCheckbox = (e) => {
+    const currentState = this.state[e.target.name];
+
+    if (currentState === false) {
+      this.setState({
+        [e.target.name]: true,
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: false
+      });
+    }
   }
 
   render() {
     const {match, isFirstItem} = this.props;
+    const {isSortingTable} = this.state;
 
     const menteename = "Billy Bob";
     const mentorname = "Dilly Dally";
@@ -37,22 +72,30 @@ class NullMatch extends Component {
         {isFirstItem && (
           <thead>
             <tr>
-              <th className="userToMatch-name hasSort" onClick={() => sortTable(0, 'alphabetically', 'pendingMatches-table')}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-group alignCenter hasSort" onClick={() => sortTable(1, 'alphabetically', 'pendingMatches-table')}>Mentee Group <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-name hasSort" onClick={() => sortTable(2, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-group alignCenter hasSort" onClick={() => sortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(0, 'date', 'pendingMatches-table')}>Date Matched <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(1, 'alphabetically', 'pendingMatches-table')}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(2, 'alphabetically', 'pendingMatches-table')}>Mentee Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(4, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-dates alignCenter">Sent Profile to Mentee</th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(5, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(6, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th colSpan="2" className="userToMatch-userResponse hasSort" onClick={() => sortTable(7, 'byCheck', 'pendingMatches-table')}>Mentee Response <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(8, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(9, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th colSpan="2" className="userToMatch-userResponse hasSort" onClick={() => sortTable(10, 'byCheck', 'pendingMatches-table')}>E-Mentor Response <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(6, 'byIcon', 'pendingMatches-table')}>Mentee Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(7, 'byIcon', 'pendingMatches-table')}>Mentee Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th colSpan="2" className="userToMatch-userResponse hasSort" onClick={() => this.handleSortTable(8, 'byIcon', 'pendingMatches-table')}>Mentee Response <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(10, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(11, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th colSpan="2" className="userToMatch-userResponse hasSort" onClick={() => this.handleSortTable(12, 'byIcon', 'pendingMatches-table')}>E-Mentor Response <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(14, 'checked', 'pendingMatches-table')}>Emailed <span className="greyText"><i className="fas fa-sort"/></span></th>
             </tr>
           </thead>
         )}
+        {isSortingTable == true && (
+          <div className="spinner-container">
+            <LoadingSpinner />
+          </div>
+        )}
         <tbody>
           <tr>
+            <td><i><DateCalc time={match.date_matched} showPureDate /></i></td>
             <td>{menteename}</td>
             <td className="alignCenter">{menteegroup}</td>
             <td>{mentorname}</td>
@@ -92,8 +135,8 @@ class NullMatch extends Component {
                 </div>
               )
               : (match.status_of_match == '2') ? (
-                <div className="greyText">
-                  <span role="img" aria-label="clockEmoji">⏱️</span>
+                <div className="greyText timeout">
+                  <span role="img" aria-label="clockEmoji" className="timeout">⏱️</span>
                 </div>
               )
               : (
@@ -159,7 +202,7 @@ class NullMatch extends Component {
                 </div>
               )
               : (match.status_of_match == '5') ? (
-                <div className="greyText">
+                <div className="greyText timeout">
                   <span role="img" aria-label="clockEmoji">⏱️</span>
                 </div>
               )
@@ -199,6 +242,20 @@ class NullMatch extends Component {
               : (
                 <div className="greyText">-</div>
               )}
+            </td>
+            <td>
+              <Checkbox
+          //      labelId="tncText"
+                className='checkbox'
+                labelClassName="checkbox-container"
+          //      label="I agree to share my Prospela profile with the Group admin for the purposes of providing me career advice & support"
+                id="emailChased-Checkbox"
+                name="emailChased"
+                value="1"
+                onChange={this.toggleCheckbox}
+                spanClassName="checkmark left"
+                spanId="checkedEmailChaser"
+              />
             </td>
           </tr>
         </tbody>

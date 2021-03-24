@@ -11,8 +11,8 @@ ejs.renderFile(__dirname + "/emailTemplate-newMenteeMatch-chaser2.ejs", {mentors
     var mailOptions = {
       from:  'Prospela',
       to: email,
-      subject: '[LAST CALL] Don\'t lose your Mentee match on Prospela!',
-      text: '📢 Last chance! Accept your new mentoring match on Prospela!\n\nOne of our team sent you a DM (and your Mentee\'s profile and "hello" message) which you need to accept to start chatting (or kindly decline so that we can match them with someone else).\n\nSee your Match at \'https://app.prospela.com\'\n\nFrom, The Team @ Prospela',
+      subject: '[LAST CALL] Don\'t lose your Mentee match on Prospela',
+      text: '📢 Last chance! Accept your new mentoring match on Prospela!\n\nOne of our team sent you a DM (and your Mentee\'s profile and "hello" message) which you need to accept to start chatting (or kindly decline so that we can match them with someone else).\n\nSee your Match at \'https://app.prospela.com\' (2 days left)\n\nFrom, The Team @ Prospela',
       html: data
     }
   }

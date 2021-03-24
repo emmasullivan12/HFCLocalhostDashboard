@@ -2,13 +2,31 @@
 
 import React, { Component } from "react";
 import {getGroupName} from "./UserDetail.js";
-import {sortTable, DateCalc, X, Check} from "./GeneralFunctions";
+import {LoadingSpinner, sortTable, DateCalc, X, Check} from "./GeneralFunctions";
 
 // This shows the content within an individual row in the ChatMenu
 class PendingMatch extends Component {
+  constructor () {
+    super();
+    this.state = {
+      isSortingTable: false,
+    }
+  }
+
+  handleSortTable = (n, sortType, tableId) => {
+    this.setState({
+      isSortingTable: true
+    })
+    sortTable(n, sortType, tableId, () => {
+      this.setState({
+        isSortingTable: false
+      })
+    })
+  }
 
   render() {
     const {match, isFirstItem} = this.props;
+    const {isSortingTable} = this.state;
 
     const menteename = "Billy Bob";
     const mentorname = "Dilly Dally";
@@ -22,20 +40,25 @@ class PendingMatch extends Component {
         {isFirstItem && (
           <thead>
             <tr>
-              <th className="userToMatch-name hasSort" onClick={() => sortTable(0, 'date', 'pendingMatches-table')}>Date Matched <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-name hasSort" onClick={() => sortTable(1, 'alphabetically', 'pendingMatches-table')}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-name alignCenter hasSort" onClick={() => sortTable(2, 'alphabetically', 'pendingMatches-table')}>Mentee Group <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-name hasSort" onClick={() => sortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-name alignCenter hasSort" onClick={() => sortTable(4, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(0, 'date', 'pendingMatches-table')}>Date Matched <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(1, 'alphabetically', 'pendingMatches-table')}>Mentee <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name alignCenter hasSort" onClick={() => this.handleSortTable(2, 'alphabetically', 'pendingMatches-table')}>Mentee Group <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name alignCenter hasSort" onClick={() => this.handleSortTable(4, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-dates alignCenter">Sent Profile to Mentee<div className="greyText description">T</div></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(6, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(7, 'byCheck', 'pendingMatches-table')}>Mentee Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(8, 'byCheck', 'pendingMatches-table')}>Mentee Response <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T</div></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(9, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
-              <th className="userToMatch-dates alignCenter hasSort" onClick={() => sortTable(10, 'byCheck', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(6, 'byIcon', 'pendingMatches-table')}>Mentee Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(7, 'byIcon', 'pendingMatches-table')}>Mentee Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(8, 'byIcon', 'pendingMatches-table')}>Mentee Response <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(9, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 3 days</div></th>
+              <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(10, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span><div className="greyText description">T + 7 days</div></th>
               <th className="userToMatch-dates alignCenter">E-Mentor Response</th>
             </tr>
           </thead>
+        )}
+        {isSortingTable == true && (
+          <div className="spinner-container">
+            <LoadingSpinner />
+          </div>
         )}
         <tbody>
           <tr>

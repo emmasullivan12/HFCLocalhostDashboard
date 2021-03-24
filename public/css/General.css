@@ -1636,7 +1636,7 @@ a.button{
 }
 
 .spinner-container{
-  font-size: 30px;
+  font-size: 50px;
   color: #8f8fe5;
   -webkit-justify-content: center;
   justify-content: center;
@@ -1646,7 +1646,7 @@ a.button{
   top: 0;
   left: 0;
   padding-top: 40px;
-  background-color: rgba(159,158,231,.31);
+  background-color: rgba(195,190,241,.18);
 }
 
 .down-arrow-img-icon{

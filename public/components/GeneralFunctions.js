@@ -261,7 +261,7 @@ const ChevronUp = () => (
 )
 
 const X = () => (
-  <svg viewBox="0 0 16 16">
+  <svg viewBox="0 0 16 16" className="cross">
     <path d="M2 .594l-1.406 1.406.688.719 5.281 5.281-5.281 5.281-.688.719 1.406 1.406.719-.688 5.281-5.281 5.281 5.281.719.688 1.406-1.406-.688-.719-5.281-5.281 5.281-5.281.688-.719-1.406-1.406-.719.688-5.281 5.281-5.281-5.281-.719-.688z" />
   </svg>
 )
@@ -377,12 +377,27 @@ function sortTable(n, sortType, tableId, callback) {
             shouldSwitch = true;
             break;
           }
-        } else if (sortType == 'byCheck') {
+        } else if (sortType == 'byIcon') {
           // grab last letter of classname which is H/M/L priority
-          const xCheck = x.getElementsByClassName("tick")[0]
-          const yCheck = y.getElementsByClassName("tick")[0]
+          const xTick = x.getElementsByClassName("tick")[0]
+          const yTick = y.getElementsByClassName("tick")[0]
+          const xCross = x.getElementsByClassName("cross")[0]
+          const yCross = y.getElementsByClassName("cross")[0]
+          const xTimeout = x.getElementsByClassName("timeout")[0]
+          const yTimeout = y.getElementsByClassName("timeout")[0]
 
-          if ((yCheck && (xCheck == undefined))) {
+          if ((yTick && (xCross || xTimeout || ((xCross == undefined && xTimeout == undefined && xTick == undefined)))) || (yTimeout && (xCross || (xTimeout == undefined && xTick == undefined))) || (yCross && (xCross == undefined && xTimeout == undefined && xTick == undefined))) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (sortType == 'checked') {
+          // grab last letter of classname which is H/M/L priority
+
+          const xCheck = x.getElementsByClassName("checkbox")[0]
+          const yCheck = y.getElementsByClassName("checkbox")[0]
+
+          if (yCheck.checked && !xCheck.checked) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
             break;
@@ -434,12 +449,28 @@ function sortTable(n, sortType, tableId, callback) {
             shouldSwitch = true;
             break;
           }
-        } else if (sortType == 'byCheck') {
+        } else if (sortType == 'byIcon') {
           // grab last letter of classname which is H/M/L priority
-          const xCheck = x.getElementsByClassName("tick")[0]
-          const yCheck = y.getElementsByClassName("tick")[0]
+          const xTick = x.getElementsByClassName("tick")[0]
+          const yTick = y.getElementsByClassName("tick")[0]
+          const xCross = x.getElementsByClassName("cross")[0]
+          const yCross = y.getElementsByClassName("cross")[0]
+          const xTimeout = x.getElementsByClassName("timeout")[0]
+          const yTimeout = y.getElementsByClassName("timeout")[0]
 
-          if ((xCheck && (yCheck == undefined))) {
+          //if ((xTick && (yTick == undefined))) {
+        //  if ((yTick && (xCross || xTimeout)) || (yTimeout && xCross) || (yCross && (xCross == undefined && xTimeout == undefined && xTick == undefined))) {
+          if (((yCross == undefined && yTimeout == undefined && yTick == undefined) && xCross) || (xTimeout && (yCross || (yTimeout == undefined && yTick == undefined))) || (xTick && (yCross || yTimeout || ((yCross == undefined && yTimeout == undefined && yTick == undefined))))) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (sortType == 'checked') {
+          // grab last letter of classname which is H/M/L priority
+          const xCheck = x.getElementsByClassName("checkbox")[0]
+          const yCheck = y.getElementsByClassName("checkbox")[0]
+
+          if (!yCheck.checked && xCheck.checked) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
             break;
@@ -467,6 +498,5 @@ function sortTable(n, sortType, tableId, callback) {
     callback()
   }
 }
-
 
 export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner, sortTable};
