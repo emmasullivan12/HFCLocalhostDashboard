@@ -398,6 +398,16 @@ table th .description{
   border: 1px solid #e0a7a7!important;
   color: #da0b0b!important;
 }
+.white{
+  color: #fff;
+  text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;
+}
+.black{
+  color: black;
+}
+.brown{
+  color: rosybrown;
+}
 .orangeText{
   color: orange;
 }
@@ -960,7 +970,7 @@ a.Submit-btn:disabled:active,
   width: 100px;
   color: #3baf99;
   font-weight: 600;
-  background: #d9f9f3;
+  background: #fff; /* #d9f9f3; */
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
   cursor: pointer;
@@ -1012,7 +1022,7 @@ a.Submit-btn:disabled:active,
 .btn-left:focus,
 .btn-right:hover,
 .btn-right:focus{
-  background-color: #e9f9f6;
+  background-color: #d2fff7;
   color: #39a28e;
   border-style: solid;
 }

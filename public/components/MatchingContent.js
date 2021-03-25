@@ -30,6 +30,8 @@ const potentialMatches = [
     gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '1995-01-01T00:00:00.000Z',
     matchType: 'strong',
+    gender: 3,
+    ethnicity: 2,
     role: 'mentor',
     city: 'London',
     country: 'GBR',
@@ -84,6 +86,8 @@ const potentialMatches = [
     gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '2005-11-01T00:00:00.000Z',
     matchType: 'medium',
+    gender: 2,
+    ethnicity: 8,
     role: 'mentor',
     city: 'LA',
     country: 'USA',
@@ -139,6 +143,8 @@ const potentialMatches = [
     gdprdivts: '2021-02-04T14:46:14.209Z', // signed up date
     birthday: '1995-12-06T00:00:00.000Z',
     matchType: 'weak',
+    gender: 1,
+    ethnicity: 4,
     role: 'mentor',
     city: 'LA',
     country: 'USA',
@@ -265,6 +271,8 @@ class MatchingContent extends Component {
       eetstatus: 'uni',
       avail: 1,
       group: 'avfx',
+      gender: 0,
+      ethnicity: 6,
       no_mentors: 1,
       no_mentees: 2,
       maxmentees: 5,

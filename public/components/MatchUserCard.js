@@ -247,6 +247,41 @@ class MatchUserCard extends React.Component {
    const werePrevMatched = true
    const prevMatchStatus = 7
    const prevMatchStatusToShow = this.getStatusOfMatch(prevMatchStatus)
+   const gender = user.gender
+   let ethnicity
+   let ethnicityClassName
+
+   if (user.ethnicity != 8) {
+     if (user.ethnicity == 6) {
+       ethnicity = 'white'
+       ethnicityClassName = 'white'
+     } else if (user.ethnicity == 2) {
+       ethnicity = 'black'
+       ethnicityClassName = 'black'
+     } else {
+       ethnicityClassName = 'brown'
+
+       if (user.ethnicity == 0) {
+         ethnicity = 'Asian'
+       } else if (user.ethnicity == 1) {
+         ethnicity = 'Arab'
+       } else if (user.ethnicity == 3) {
+         ethnicity = 'Hispanic / Latinx'
+       } else if (user.ethnicity == 4) {
+         ethnicity = 'Indian / Pakistani'
+       } else if (user.ethnicity == 5) {
+         ethnicity = 'Mixed / Multiple Ethnic'
+       } else if (user.ethnicity == 7) {
+         ethnicity = 'Other'
+       } else if (user.ethnicity == 9) {
+         ethnicity = 'Aboriginal'
+       } else if (user.ethnicity == 10) {
+         ethnicity = 'Maori'
+       } else if (user.ethnicity == 11) {
+         ethnicity = 'Pacific Islander'
+       }
+     }
+   }
 
     return (
       <React.Fragment>
@@ -259,6 +294,17 @@ class MatchUserCard extends React.Component {
           <div className={"user-card-header noMarginB " + (isavailable == false ? 'unavailable' : (outsideGroup == true ? 'outsideGroup' : matchType))} />
           <div className="userToReview-detail main matchUser">
             <div>
+              <span className="marginRight">
+                {user.gender == 0 && (
+                  <i className="fas fa-male"/>
+                )}
+                {user.gender == 2 && (
+                  <i className="fas fa-female"/>
+                )}
+                {user.gender == 3 && (
+                  <i className="fas fa-transgender"/>
+                )}
+              </span>
               <b>{userName ? userName : name}</b>
               <span><i> ({user.role})</i></span>
               {user.role == "mentee" && isPotentialMatch == true && (
@@ -321,7 +367,7 @@ class MatchUserCard extends React.Component {
           <div className="userToReview-detail">
             <div className="userToReview-subDetail">
               <i className={"emoji-icon sml " + userFlagEmoji(user.country)}/>
-              <div className="normalLineheight"> {user.city}, {user.country}</div>
+              <div className="normalLineheight"> {user.city}, {user.country} {user.ethnicity != 8 && (<span className={ethnicityClassName}><strong>{"(ethnicity: " + ethnicity + ")"}</strong></span> )}</div>
             </div>
           </div>
           {user.role == 'mentor' && user.profprofileurl != '' && (

@@ -60,6 +60,8 @@ class NullMatch extends Component {
     const {match, isFirstItem} = this.props;
     const {isSortingTable} = this.state;
 
+    const disabled = true
+
     const menteename = "Billy Bob";
     const mentorname = "Dilly Dally";
     const menteegroup = getGroupName(match.menteegroups[0], 'short')
@@ -253,7 +255,7 @@ class NullMatch extends Component {
                 name="emailChased"
                 value="1"
                 onChange={this.toggleCheckbox}
-                spanClassName="checkmark left"
+                spanClassName={"checkmark left" + (disabled ? ' disabled' : '')}
                 spanId="checkedEmailChaser"
               />
             </td>

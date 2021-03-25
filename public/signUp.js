@@ -141,6 +141,7 @@ menteebtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
+  getStartedbtnText.innerHTML = 'Get Started as a Mentee';
   getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'none';
   emailText.innerHTML = 'Personal Email';
@@ -214,7 +215,7 @@ mentorbtn.addEventListener('click', function(event) {
   pwdContainer.style.display = 'block';
   tncText.style.display = 'block';
   getStartedbtn.style.display = 'block';
-  getStartedbtn.innerHTML = 'Get Started'
+  getStartedbtnText.innerHTML = 'Get Started as an E-Mentor';
   getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'block';
   emailText.innerHTML = 'Work (or Uni) Email';
