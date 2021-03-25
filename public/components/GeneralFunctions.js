@@ -195,7 +195,7 @@ function DateCalc(props) {
   var tsDate = ts.toDateString()
   var todayDate = today.toDateString();
 
-  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
   var month = months[ts.getMonth()];
   var date = ts.getDate();
   let time

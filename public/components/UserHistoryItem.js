@@ -21,14 +21,14 @@ class UserHistoryItem extends Component {
       case 'signedUp':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
-            <div>{formatDate(itemDate)}</div>
+            <div className="userHistory-date">{formatDate(itemDate)}</div>
             <div className="historyItemNote normalLineheight">Signed up to Prospela</div>
           </div>
         );
       case 'matchStatus':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
-            <div>{formatDate(itemDate)}</div>
+            <div className="userHistory-date">{formatDate(itemDate)}</div>
             <div className="historyItemNote normalLineheight">{historyItem.text}</div>
           </div>
         );
@@ -49,7 +49,7 @@ class UserHistoryItem extends Component {
       case 'unavail':
         return (
           <div className="displayFlex normalLineheight paddingBtm">
-            <div>{formatDate(itemDate)}</div>
+            <div className="userHistory-date">{formatDate(itemDate)}</div>
             <div className="historyItemNote normalLineheight"><strong>Set us Unresponsive</strong> {reminderDate != '' && (<i>[Reminder to chase set for: {formatDate(reminderDate)}]</i>)}</div>
           </div>
         );

@@ -464,3 +464,9 @@ td.userToMatch-editingNotes{
   position: absolute;*/
   font-size: 13px;
 }
+.userHistory-date{
+  min-width: 82px;
+}
+.dateEmailed{
+  margin-left: -55px;
+}

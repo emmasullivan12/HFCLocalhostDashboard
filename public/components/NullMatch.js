@@ -66,7 +66,7 @@ class NullMatch extends Component {
     const mentorname = "Dilly Dally";
     const menteegroup = getGroupName(match.menteegroups[0], 'short')
     const mentorgroup = getGroupName(match.mentorgroups[0], 'short')
-
+    const dateEmailed = '2021-02-04T14:46:14.209Z'
 // Matchstatus: 1=profile sent, 2=mentee timed out, 3=mentee accepted, 4=menteerejected, 5=mentor timed out, 6=mentor accepted, 7=mentor rejected
 
     return(
@@ -86,7 +86,7 @@ class NullMatch extends Component {
               <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(10, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 1 <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-dates alignCenter hasSort" onClick={() => this.handleSortTable(11, 'byIcon', 'pendingMatches-table')}>E-Mentor Chaser 2 <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th colSpan="2" className="userToMatch-userResponse hasSort" onClick={() => this.handleSortTable(12, 'byIcon', 'pendingMatches-table')}>E-Mentor Response <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(14, 'checked', 'pendingMatches-table')}>Emailed <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th colSpan="2" className="userToMatch-group hasSort" onClick={() => this.handleSortTable(14, 'checked', 'pendingMatches-table')}>Emailed <span className="greyText"><i className="fas fa-sort"/></span></th>
             </tr>
           </thead>
         )}
@@ -257,7 +257,11 @@ class NullMatch extends Component {
                 onChange={this.toggleCheckbox}
                 spanClassName={"checkmark left" + (disabled ? ' disabled' : '')}
                 spanId="checkedEmailChaser"
+                disabled={disabled}
               />
+            </td>
+            <td>
+              <i className="greyText dateEmailed"><DateCalc time={dateEmailed} showPureDate /></i>
             </td>
           </tr>
         </tbody>

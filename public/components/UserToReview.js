@@ -7,7 +7,7 @@ import AcceptSignUpContent from "./AcceptSignUpContent.js";
 import Modal from "./Modal.js";
 import RejectSignUpContent from "./RejectSignUpContent.js";
 import {Check} from './GeneralFunctions.js';
-import {userFlagEmoji} from './UserDetail.js';
+import {userFlagEmoji, convertRole} from './UserDetail.js';
 
 const AcceptSignUpModalProps = {
   ariaLabel: 'Popup to accept signup',
@@ -57,6 +57,8 @@ class UserToReview extends React.Component {
    const {editingSource, source} = this.state;
    let eduName;
    let age;
+
+   const userroles = signup.activerole == 'mentor' ? convertRole(signup.rolesexp, signup.rolesexpfreetext) : convertRole(signup.roles, signup.rolesfreetext)
 
    const birthdayts = signup.birthday
    var ts = new Date(birthdayts);
@@ -159,6 +161,18 @@ class UserToReview extends React.Component {
             <div className="userToReview-subDetail">
               CURRENT SITUATION
               <div>{signup.currsitu}</div>
+            </div>
+          </div>
+          <div className="userToReview-detail">
+            <div className="userToReview-subDetail">
+              {signup.activerole == 'mentor' ? 'ROLE(S)' : 'WANTS ROLE(S)'}
+              <div>{userroles}</div>
+            </div>
+          </div>
+          <div className="userToReview-detail">
+            <div className="userToReview-subDetail">
+              {signup.activerole == 'mentor' ? 'WHY HELP?' : 'WHY JOIN?'}
+              <div className="normalLineheight">{signup.activerole == 'mentor' ?  signup.whyHelp : signup.whyJoin}</div>
             </div>
           </div>
           <div className="userToReview-detail">

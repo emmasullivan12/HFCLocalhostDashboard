@@ -92,8 +92,10 @@ class ReviewSignups extends React.Component {
         birthday: '1995-01-01T00:00:00.000Z',
         source: 'intogames',
         eetstatus: 'sch',
-        rolesexp: null,
-        rolesexpfreetext: null,
+        rolesexp: ['1','2'],
+        rolesexpfreetext: ['role3', 'role4'],
+        roles: ['1','2'],
+        rolesfreetext: ['role3', 'role4'],
         schname: '10',
         schnamefreetext: '',
         uniname: '',
@@ -102,6 +104,8 @@ class ReviewSignups extends React.Component {
         currrole: '',
         currtrainingprovider: '',
         currtraining: '',
+        whyHelp: 'To help mentees',
+        whyJoin: 'To get a mentor'
       },
       {
         uid: '2af91b81-e8b6-44ba-ac16-c4142be48293',
@@ -125,8 +129,10 @@ class ReviewSignups extends React.Component {
         birthday: '1995-01-01T00:00:00.000Z',
         source: '',
         eetstatus: 'uni',
-        rolesexp: null,
-        rolesexpfreetext: null,
+        rolesexp: ['1','2'],
+        rolesexpfreetext: ['role3', 'role4'],
+        roles: ['1','2'],
+        rolesfreetext: ['role3', 'role4'],
         schname: '',
         schnamefreetext: '',
         uniname: '75',
@@ -135,6 +141,8 @@ class ReviewSignups extends React.Component {
         currrole: '',
         currtrainingprovider: '',
         currtraining: '',
+        whyHelp: 'To help mentees',
+        whyJoin: 'To get a mentor'
       },
       {
         uid: '3af91b81-e8b6-44ba-ac16-c4142be48293',
@@ -158,8 +166,10 @@ class ReviewSignups extends React.Component {
         birthday: '1995-01-01T00:00:00.000Z',
         source: 'avfx',
         eetstatus: 'job',
-        rolesexp: null,
-        rolesexpfreetext: null,
+        rolesexp: ['1','2'],
+        rolesexpfreetext: ['role3', 'role4'],
+        roles: ['1','2'],
+        rolesfreetext: ['role3', 'role4'],
         schname: '',
         schnamefreetext: '',
         uniname: '',
@@ -168,6 +178,8 @@ class ReviewSignups extends React.Component {
         currrole: 'Amazing Role',
         currtrainingprovider: '',
         currtraining: '',
+        whyHelp: 'To help mentees',
+        whyJoin: 'To get a mentor'
       },
       {
         uid: '4af91b81-e8b6-44ba-ac16-c4142be48293',
@@ -191,8 +203,10 @@ class ReviewSignups extends React.Component {
         birthday: '1995-01-01T00:00:00.000Z',
         source: 'aw',
         eetstatus: 'train',
-        rolesexp: null,
-        rolesexpfreetext: null,
+        rolesexp: ['1','2'],
+        rolesexpfreetext: ['role3', 'role4'],
+        roles: ['1','2'],
+        rolesfreetext: ['role3', 'role4'],
         schname: '',
         schnamefreetext: '',
         uniname: '',
@@ -201,6 +215,8 @@ class ReviewSignups extends React.Component {
         currrole: '',
         currtrainingprovider: 'Training Company',
         currtraining: 'Sick Training',
+        whyHelp: 'To help mentees',
+        whyJoin: 'To get a mentor'
       }
     ]
     let signupsNoVerif, signupsHasVerif;

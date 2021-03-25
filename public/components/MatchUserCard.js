@@ -247,6 +247,11 @@ class MatchUserCard extends React.Component {
    const werePrevMatched = true
    const prevMatchStatus = 7
    const prevMatchStatusToShow = this.getStatusOfMatch(prevMatchStatus)
+   const role_relevance = 0
+   const no_similar_interests = 1
+   const skills_relevance = 1
+   const busy = 0
+
    const gender = user.gender
    let ethnicity
    let ethnicityClassName
@@ -387,12 +392,39 @@ class MatchUserCard extends React.Component {
           {isPotentialMatch && werePrevMatched == true && (
             <div className="userToReview-detail redText alignCenter">
               <strong>WARNING: WAS PREVIOUSLY MATCHED WITH THIS USER. </strong>
-              <div>What happened: {prevMatchStatusToShow}</div>
+              <div><strong>What happened:</strong> {prevMatchStatusToShow}</div>
               {prevMatchStatus == 4 && (
-                <div>Why: {match.prevMatched.mentee_pass_comments}</div>
+                <div>
+                  <strong>Why:</strong>
+                  {role_relevance == 1 && (
+                    " Role not relevant,"
+                  )}
+                  {no_similar_interests == 1 && (
+                    " No similar interests,"
+                  )}
+                  {skills_relevance == 1 && (
+                    " No skills mentee wanted to learn,"
+                  )}
+                  <i>{' Mentee said: "' + match.prevMatched.mentee_pass_comments  + '"'}</i>
+                </div>
               )}
               {prevMatchStatus == 7 && (
-                <div>Why: {match.prevMatched.mentor_pass_comments}</div>
+                <div>
+                  <strong>Why:</strong>
+                  {role_relevance == 1 && (
+                    " Mentee career interests not relevant to mentor role,"
+                  )}
+                  {no_similar_interests == 1 && (
+                    " No similar interests,"
+                  )}
+                  {skills_relevance == 1 && (
+                    " Wants to learn skills mentor doesn't have,"
+                  )}
+                  {busy == 1 && (
+                    " Was too busy to take on new mentee,"
+                  )}
+                  <i>{' Mentor said: "' + match.prevMatched.mentor_pass_comments  + '"'}</i>
+                </div>
               )}
 
             </div>
