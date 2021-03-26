@@ -48,6 +48,7 @@
     "react/jsx-one-expression-per-line": 0,
     "react/no-array-index-key": 0,
     "react/no-multi-comp": 0,
+    "react/no-did-update-set-state": 0, // Need this so can set state in componentDidUpdate
   },
   "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"]
 }

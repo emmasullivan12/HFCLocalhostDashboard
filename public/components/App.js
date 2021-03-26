@@ -233,7 +233,6 @@ class Dashboard extends Component{
   }
 
   createScroller() {
-    console.log("resize triggered")
     var scrollContainer = document.querySelector('.c-scrollbar');
     var scrollTrack = document.querySelector('.c-scrollbar__track');
     var scroller = document.querySelector('.c-scrollbar__bar');
@@ -344,7 +343,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'prospela' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

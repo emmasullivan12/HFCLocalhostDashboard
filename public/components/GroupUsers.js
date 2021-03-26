@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th nov 2020 
+// Dex last merged this code on 11th nov 2020
 
 import React, { Component } from "react";
 
@@ -39,6 +39,17 @@ class GroupUsers extends Component {
     this.state = {
       showOnly20Users: true,
       isLoading: false,
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    console.log(this.props.group)
+    console.log(prevProps.group)
+    if(prevProps.group.gid != this.props.group.gid) {
+      this.setState({
+        showOnly20Users: true,
+        isLoading: false,
+      })
     }
   }
 

@@ -35,6 +35,7 @@ class GroupListItem extends Component {
     super();
     this.state = {
       showChannels: true,
+      isOverflowing: false,
     }
   }
 
@@ -44,6 +45,13 @@ class GroupListItem extends Component {
     const numChannels = this.props.channels.length
     const channelContainerHeight = (numChannels * 25) + 12 /* 25px oer chatMenuItem + 12px margin on last item */
     document.getElementById(group.groupname + "-channels").style.height = channelContainerHeight + "px"
+
+    const element = this.groupItem;
+    const isOverflowing = element.offsetWidth < element.scrollWidth
+    this.setState({
+      isOverflowing: isOverflowing
+    })
+
   }
 
   toggleGroupChannels = (e) => {
@@ -53,7 +61,7 @@ class GroupListItem extends Component {
   }
 
   render() {
-    const {showChannels} = this.state;
+    const {showChannels, isOverflowing} = this.state;
     const {group, onClick} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
@@ -100,8 +108,14 @@ class GroupListItem extends Component {
             : groupInitial
             }
           </div>
-          <div className="chatItemFlexContainer">
-            <span className="chatMenuLink overflow-ellipsis">{group.groupname}</span>
+          <div className={"chatItemFlexContainer" + (isOverflowing ? " tooltip" : "")}>
+            <span ref={n => this.groupItem = n} className="chatMenuLink overflow-ellipsis">{group.groupname}</span>
+            {isOverflowing && (
+              <span className="tooltiptext chats">
+                {group.groupname}
+              </span>
+            )}
+
         {/*    <span className="notificationNum announcement">COMING SOON!</span> */}
             <span className="menuNavCTA" onClick={this.toggleGroupChannels}>
               {showChannels == true ?
