@@ -77,8 +77,29 @@ class ChatListItem extends Component {
 
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class ChatMenu extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      showAddChatModal: true,
+    }
+  }
+
+  closeAddChatModal = () => {
+    this.setState({
+      showAddChatModal: false
+    });
+  }
+
+  resetAddChatModal = () => {
+    console.log("resetting")
+    this.setState({
+      showAddChatModal: true
+    });
+  }
+
   render() {
     const {userRole, chatGroup, isProspelaTeam, onClick} = this.props;
+    const {showAddChatModal} = this.state;
     const chats = [];
 
   /*  if (this.props.chats.length == 0) {
@@ -111,10 +132,12 @@ class ChatMenu extends Component {
             <span className="menuItemIconContainer chat">
               <i className="fas fa-comment-dots" />
             </span>
-            {isProspelaTeam == true && (
+            {isProspelaTeam == true && showAddChatModal == true && (
               <div className="menuCTAContainer">
-                <Modal {...AddChatModalProps}>
-                  <AddChatModalContent />
+                <Modal {...AddChatModalProps} manualCloseModalNotTrigger handleLocalStateOnClose={this.resetAddChatModal}>
+                  <AddChatModalContent
+                    closeModal={this.closeAddChatModal}
+                  />
                 </Modal>
               </div>
             )}

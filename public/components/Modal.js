@@ -81,7 +81,13 @@ class Modal extends React.Component {
   }
 
   componentWillUnmount() {
+    console.log("componentWillUnmount")
     window.removeEventListener('popstate', this.onPopState)
+    if (this.props.manualCloseModalNotTrigger) {
+      if (this.state.isOpen == true) {
+        this.onClose()
+      }
+    }
   }
 
   onOpen(e) {
@@ -114,7 +120,7 @@ class Modal extends React.Component {
     if (this.openButtonNode != undefined) {
       this.openButtonNode.focus()
     }
-
+console.log("onclose")
     if (handleLocalStateOnClose) {
       handleLocalStateOnClose();
     }

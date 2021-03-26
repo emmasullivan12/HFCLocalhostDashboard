@@ -20,9 +20,10 @@ class AddChatModalContent extends Component {
       userToDM: e.target.dataset.id
     }, () => {
       console.log("launch chat with: "+this.state.userToDM)
+      this.props.closeModal()
 
       // Close Full page "Match User" modal
-      document.getElementById("modal-addPrDM").parentElement.remove();
+  //    document.getElementById("modal-addPrDM").parentElement.remove();
     });
   }
 
