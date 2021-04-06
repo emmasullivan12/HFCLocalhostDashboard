@@ -398,6 +398,12 @@ table th .description{
   border: 1px solid #e0a7a7!important;
   color: #da0b0b!important;
 }
+.blueText{
+  color: #00B0F0;
+}
+.purpleText{
+  color: #4E4ED6;
+}
 .white{
   color: #fff;
   text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;

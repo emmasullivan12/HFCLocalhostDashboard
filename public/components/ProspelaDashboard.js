@@ -18,6 +18,7 @@ import { usersFetchData } from "../actions/Users";*/
 import {cdn} from './CDN.js';
 import BackgroundCheck from "./BackgroundChecks";
 import ChatMenu from "./ChatMenu";
+import GroupDashboard from "./GroupDashboard";
 import MatchesToDo from "./MatchesToDo";
 import MatchesInProg from "./MatchesInProg";
 import MatchesCompleted from "./MatchesCompleted";
@@ -216,6 +217,7 @@ class ProspelaDashboard extends Component{
                       <NavLink exact to="/prospela-dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Dashboard</NavLink>
                       <NavLink exact to="/review-signups" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Approve Signups</NavLink>
                       <NavLink exact to="/background-checks" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Background Checks</NavLink>
+                      <NavLink exact to="/group/dashboard" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={this.closeMenu}>Group Dashboard</NavLink>
                     </div>
                     <ChatMenu isProspelaTeam chatGroup='Mentee DMs' onClick={this.closeMenu}/>
                     <ChatMenu isProspelaTeam chatGroup='E-Mentor DMs' onClick={this.closeMenu}/>
@@ -290,6 +292,7 @@ class ProspelaDashboard extends Component{
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
+                <Route path="/group/dashboard" component={GroupDashboard}/>
                 <Route path="/review-signups" component={ReviewSignups}/>
                 <Route path="/background-checks" component={BackgroundCheck}/>
                 <Route path="/matches/to-be-matched" component={MatchesToDo}/>
