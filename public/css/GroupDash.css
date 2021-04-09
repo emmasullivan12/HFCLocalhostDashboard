@@ -51,13 +51,28 @@
   height: 100%;
 }
 .dash-row{
-  height: 200px;
-  margin-top: 15px;
+  height: 240px;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
 }
+.dash-row.tall{
+  min-height: 300px;
+}
+.stackedBar-container{
+  height: 170px;
+}
+.flexBox-Chart{
+  display: flex;
+  flex-direction: column;
+}
 .dash-row .mainBox{
   flex: 50%;
+  margin-right: 15px;
+  min-width: 0; /* required for allowing chart.js charts to be properly responsive */
+  position: relative;
+}
+.whiteBox{
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -66,16 +81,7 @@
   box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
-  margin-right: 15px;
   background-color: #fff;
-  min-width: 0; /* required for allowing chart.js charts to be properly responsive */
-  position: relative;
-}
-.mainBox.transparent{
-  background-color: transparent;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
 }
 .dash-row .mainBox:nth-child(n+1):last-child {
   margin-right: 0px;
@@ -85,18 +91,10 @@
   flex-direction: row;
 }
 .dash-row .miniBox{
-  width: 105px;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
-  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  width: 125px;
   margin-right: 15px;
   color: #fff;
-  padding: 12px;
+  padding: 20px;
   padding-top: 10%;
 }
 .dash-row .miniBox:last-of-type{
@@ -111,6 +109,10 @@
 .dash-row .miniBox.third{
   background-color: #F97BAB; /* pink */
 }
+.dash-boxTitle{
+  padding: 20px 20px 10px 20px;
+  font-size: 13px;
+}
 .mainBox-headerText{
   position: absolute;
   padding: 25px 10px 15px 35px;
@@ -118,7 +120,8 @@
 }
 .mainBox-headerText .blueText,
 .mainBox-headerText .purpleText{
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 12px;
 }
 .mainBox-headerText .blueText{
   margin-top: 10px;
@@ -143,9 +146,10 @@
   line-height: 14px;
   margin-top: 7px;
 }
-@media (max-width: 459px) {
+@media (max-width: 859px) {
   .dash-row {
     flex-direction: column;
+    height: 100%;
   }
   .dash-row .mainBox{
     margin-right: 0;
@@ -153,6 +157,10 @@
   }
   .dash-row .miniBox{
     width: 33%;
+    margin-right: 10px;
+  }
+  .dash-row .col-6{
+    width: 100%;
   }
 }
 .percentageChg{

@@ -48,7 +48,7 @@ componentDidMount() {
           pointHoverRadius: 3,
           borderColor: dataset1Colour,
           borderWidth: 3,
-          order: 1,
+          order: 2,
           fill: 1, /* fill with background colour up to dataset 1 */
         },
         {
@@ -61,7 +61,8 @@ componentDidMount() {
           pointHoverRadius: 3,
           borderColor: dataset2Colour,
           borderWidth: 3,
-          order: 2,
+          order: 1,
+          fill: 'origin'
         }
       ]
     },
@@ -90,8 +91,6 @@ componentDidMount() {
           callbacks: {
             title: (item) => {
               var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
-              console.log(item[0])
-              console.log(item[0].label)
               var date = new Date(item[0].label)
               var month = months[date.getMonth()];
               var year = date.getFullYear();
@@ -108,16 +107,17 @@ componentDidMount() {
         padding: {
           top: 25,
           left: 35,
-          right: 15,
+          right: 25,
           bottom: 10
         }
       },
       scales: {
         x: {
           type: 'time',
-          //distribution: 'series',
+          distribution: 'timeseries',
           time: {
-            unit: 'month'
+            unit: 'month',
+            tooltipFormat: 'MMM yyyy',
           },
           grid: {
           //  display: false,
@@ -138,6 +138,7 @@ componentDidMount() {
           },
         },
         y: {
+          stacked: true,
           grid: {
             display: false,
             drawBorder: false

@@ -1,7 +1,8 @@
 // Dex last merged this code on 10th August 2019
 
 import React, { Component } from "react";
-import {Chart} from 'chart.js';
+import Chart from 'chart.js/auto';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import '../css/Charts.css';
 
 class BarChart extends Component {
@@ -11,91 +12,201 @@ class BarChart extends Component {
   }
 
 componentDidMount() {
-  const {dataset1, dataset1Title, dataset1Colour, dataset1Fill, dataset1gradientColour1, dataset1gradientColour2, dataset1gradientColour3, dataset2gradientColour1, dataset2gradientColour2, dataset2gradientColour3, dataset2, dataset2Title, dataset2Colour, dataset2Fill, showLegend} = this.props;
+  const {showDataLabelsOnBar, showTitle, titleText, showTooltip, showHorizontal, stacked, barLabelFont, datasetToShowBarLabel, barLabelToShow, dataset1, dataset1Title, dataset1Colour, dataset1Fill, dateset1HoverFill, dataset2, dataset2Title, dataset2Colour, dataset2Fill, dateset2HoverFill, dataset3, dataset3Title, dataset3Colour, dataset3Fill, dateset3HoverFill, dataset4, dataset4Title, dataset4Colour, dataset4Fill, dateset4HoverFill, dataset5, dataset5Title, dataset5Colour, dataset5Fill, dateset5HoverFill, showLegend} = this.props;
   const ctx = this.barChartRef.current;
+
+  var datasetsArr = [{
+    label: dataset1Title,
+    data: dataset1.map(d => d.value),
+    backgroundColor: dataset1Fill,
+    hoverBackgroundColor: dateset1HoverFill,
+    borderColor: dataset1Colour,
+    borderWidth: 1,
+    borderRadius: stacked ? 0 : 5
+  }]
+
+  if (dataset2) {
+    datasetsArr.push({
+      label: dataset2Title,
+      data: dataset2.map(d => d.value),
+      backgroundColor: dataset2Fill,
+      hoverBackgroundColor: dateset2HoverFill,
+      borderColor: dataset2Colour,
+      borderWidth: 1,
+      borderRadius: stacked ? 0 : 5
+    })
+    if (dataset3) {
+      datasetsArr.push({
+        label: dataset3Title,
+        data: dataset3.map(d => d.value),
+        backgroundColor: dataset3Fill,
+        hoverBackgroundColor: dateset3HoverFill,
+        borderColor: dataset3Colour,
+        borderWidth: 1,
+        borderRadius: stacked ? 0 : 5
+      })
+      if (dataset4) {
+        datasetsArr.push({
+          label: dataset4Title,
+          data: dataset4.map(d => d.value),
+          backgroundColor: dataset4Fill,
+          hoverBackgroundColor: dateset4HoverFill,
+          borderColor: dataset4Colour,
+          borderWidth: 1,
+          borderRadius: stacked ? 0 : 5
+        })
+        if (dataset5) {
+          datasetsArr.push({
+            label: dataset5Title,
+            data: dataset5.map(d => d.value),
+            backgroundColor: dataset5Fill,
+            hoverBackgroundColor: dateset5HoverFill,
+            borderColor: dataset5Colour,
+            borderWidth: 1,
+            borderRadius: stacked ? 0 : 5
+          })
+        }
+      }
+    }
+  }
 
   this.myChart = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: dataset1.map(d => d.label),
-      datasets: [
-        {
-          label: dataset1Title,
-          data: dataset1.map(d => d.value),
-          backgroundColor: dataset1Fill,
-          borderColor: dataset1Colour,
-          borderWidth: 1,
-          borderRadius: 5
-        },
-        {
-          label: dataset2Title,
-          data: dataset2.map(d => d.value),
-          backgroundColor: dataset2Fill,
-          borderColor: dataset2Colour,
-          borderWidth: 1,
-          borderRadius: 5
-        }
-      ]
+      datasets: datasetsArr
     },
+    plugins: [ChartDataLabels], // Register the plugin to this chart only
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      indexAxis: showHorizontal == true ? 'y' : 'x',
       animation: {
         easing: 'easeInOutQuad',
-        duration: 520
+        duration: 520,
+        onComplete: () => {
+
+          ctx.getContext('2d').textAlign = 'center';
+          ctx.getContext('2d').textBaseline = 'bottom';
+          if (barLabelFont) {
+            ctx.getContext('2d').font = barLabelFont;
+          }
+
+          this.myChart.config.data.datasets.forEach((dataset, i) => {
+            var meta = this.myChart.getDatasetMeta(i);
+            ctx.getContext('2d').fillStyle = dataset.borderColor;
+
+            if (datasetToShowBarLabel == 'all' || dataset.label == datasetToShowBarLabel) {
+              meta.data.forEach((bar, index) => {
+                var data = barLabelToShow == 'data' ? dataset.data[index] : barLabelToShow;
+                ctx.getContext('2d').fillText(data, bar.x, bar.y - 5);
+              });
+            }
+          });
+        }
       },
-      legend: {
-        display: showLegend,
+      interaction: {
+        mode: 'point'
+      },
+      plugins: {
+        title: {
+          display: showTitle,
+          text: titleText
+        },
+        legend: {
+          display: showLegend,
+          position: 'bottom',
+          labels: {
+            boxWidth: 10,
+            boxHeight: 10,
+            font: {
+              size: 10,
+            }
+          }
+        },
+        datalabels: {
+          display: showDataLabelsOnBar == true,
+          color: (context) => {
+            return context.dataset.borderColor;
+          },
+          formatter: (value, context) => {
+            return Math.round(value * 100) + '%' // Show percentage
+          },
+
+          align: 'center',
+          anchor: 'center'
+        },
+        tooltip: showTooltip == false ? false : {
+          displayColors: false,
+          titleFont: {
+            size: 14,
+          },
+          bodyFont: {
+            size: 12,
+          },
+          xPadding: 10,
+          yPadding: 10,
+          callbacks: {
+            title: (item) => {
+              return `${item[0].label}`
+            },
+            labelTextColor: (item) => {
+              if (item.dataset.label == 'Mentees') {
+                return "#95e3ff"; // light blue
+              }
+              if (item.dataset.label == 'E-Mentors') {
+                return "#b0b0ff"; // light purple
+              }
+              return item.dataset.borderColor;
+            },
+            label: (item) => {
+              var dataLabel = item.dataset.label
+              return `${item.formattedValue + " " + dataLabel}`
+            }
+          }
+        }
       },
       layout: {
         padding: {
-          top: 25,
-          left: 25,
-          right: 25,
-          bottom: 10
+          top: 35,
+          left: 35,
+          right: 35,
+          bottom: 20
         }
       },
       scales: {
-        x: [{
+        x: {
           categoryPercentage: 0.6,
           ticks: {
-            fontSize: 10,
-            maxRotation: 0, // to keep horizontal
+            display: showHorizontal == true ? false : true, // Hide x axes if is horizontal bar
+            font: {
+              size: 8,
+            },
+            padding: 2,
+            autoSkip: false,
+//            autoSkipPadding: 1,
+            maxRotation: 90, // to keep horizontal
             minRotation: 0, // to keep horizontal
           },
-          gridLines: {
+          grid: {
             display: false,
-          //  drawBorder: false,
-          }
-        }],
-        y: [{
+            drawBorder: showHorizontal == true ? false : true, // Hide x axes if is horiztonal bar
+          },
+          stacked: stacked
+        },
+        y: {
           beginAtZero: true,
           ticks: {
             display: false,
             min: 0
           },
-          gridLines: {
+          grid: {
             display: false,
-          //  drawBorder: false
-          }
-        }]
-      },
-      tooltips: {
-        displayColors: false,
-        titleFontSize: 14,
-        bodyFontSize: 12,
-        xPadding: 10,
-        yPadding: 10,
-        callbacks: {
-          title: (tooltipItem) => {
-            return `${tooltipItem[0].label}`
+            drawBorder: false,
           },
-          label: (tooltipItem, data) => {
-            var dataLabel = data.datasets[tooltipItem.datasetIndex].label
-            return `${tooltipItem.value + " " + dataLabel}`
-          }
+          stacked: stacked
         }
-      }
+      },
     }
   });
 }
@@ -104,7 +215,8 @@ componentDidUpdate() {
   const {dataset1, dataset2} = this.props;
 
   // On re-render, mutate the data arrays and then update the chart
-  this.myChart.data.labels = dataset1.map(d => d.time);
+  // if doesnt work see https://www.chartjs.org/docs/latest/developers/updates.html
+  this.myChart.data.labels = dataset1.map(d => d.label);
   this.myChart.data.datasets[0].data = dataset1.map(d => d.value);
   this.myChart.data.datasets[1].data = dataset2.map(d => d.value);
   this.myChart.update();

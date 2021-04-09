@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import {cdn} from './CDN.js';
 import BarChart from './BarChart.js';
 import {DateCalc} from './GeneralFunctions.js';
+import DoughnutChart from './DoughnutChart.js';
 import LineChart from './LineChart.js';
 
 class GroupDashOverview extends Component {
@@ -154,12 +155,222 @@ class GroupDashOverview extends Component {
           "label": 'Director',
           "value": 3
         },
-      ]
+      ],
+      mentorsTopRolesDemand: [
+        {
+          "label": '2D Animator',
+          "value": 100
+        },
+        {
+          "label": 'Character Animator',
+          "value": 76
+        },
+        {
+          "label": 'Compositor',
+          "value": 66
+        },
+        {
+          "label": '3D Animator',
+          "value": 51
+        },
+        {
+          "label": 'Director',
+          "value": 35
+        },
+      ],
+      mentorsTopRolesSupply: [
+        {
+          "label": '2D Animator',
+          "value": 10
+        },
+        {
+          "label": 'Character Animator',
+          "value": 7
+        },
+        {
+          "label": 'Compositor',
+          "value": 23
+        },
+        {
+          "label": '3D Animator',
+          "value": 10
+        },
+        {
+          "label": 'Director',
+          "value": 3
+        },
+      ],
+      menteeRoleSplit1: [
+        {
+          "label": '2D',
+          "value": .3
+        }
+      ],
+      menteeRoleSplit2: [
+        {
+          "label": '3D',
+          "value": .3
+        }
+      ],
+      menteeRoleSplit3: [
+        {
+          "label": 'Art / Animation',
+          "value": .2
+        }
+      ],
+      menteeRoleSplit4: [
+        {
+          "label": 'Technical',
+          "value": .15
+        }
+      ],
+      menteeRoleSplit5: [
+        {
+          "label": 'Other',
+          "value": .05
+        },
+      ],
+      menteeGender: [
+        {
+          "label": 'Male',
+          "value": .4
+        },
+        {
+          "label": 'Female',
+          "value": .35
+        },
+        {
+          "label": 'Other',
+          "value": .05
+        },
+        {
+          "label": 'Prefer not to say',
+          "value": .2
+        },
+      ],
+      mentorGender: [
+        {
+          "label": 'Male',
+          "value": .4
+        },
+        {
+          "label": 'Female',
+          "value": .35
+        },
+        {
+          "label": 'Other',
+          "value": .05
+        },
+        {
+          "label": 'Prefer not to say',
+          "value": .2
+        },
+      ],
+      menteeEthnicity: [
+        {
+          "label": 'Aboriginal Australian',
+          "value": .025
+        },
+        {
+          "label": 'Asian',
+          "value": .2
+        },
+        {
+          "label": 'Arab',
+          "value": .025
+        },
+        {
+          "label": 'Black / African / Caribbean',
+          "value": .1
+        },
+        {
+          "label": 'Hispanic / Latinx',
+          "value": .1
+        },
+        {
+          "label": 'Indian / Pakistani',
+          "value": .1
+        },
+        {
+          "label": 'Mixed / Multiple Ethnic Groups',
+          "value": .025
+        },
+        {
+          "label": 'Maori',
+          "value": .025
+        },
+        {
+          "label": 'Pacific Islander',
+          "value": 0.1
+        },
+        {
+          "label": 'White',
+          "value": .2
+        },
+        {
+          "label": 'Other',
+          "value": .05
+        },
+        {
+          "label": 'Prefer not to say',
+          "value": .05
+        },
+      ],
+      mentorEthnicity: [
+        {
+          "label": 'Aboriginal Australian',
+          "value": .025
+        },
+        {
+          "label": 'Asian',
+          "value": .2
+        },
+        {
+          "label": 'Arab',
+          "value": .025
+        },
+        {
+          "label": 'Black / African / Caribbean',
+          "value": .1
+        },
+        {
+          "label": 'Hispanic / Latinx',
+          "value": .1
+        },
+        {
+          "label": 'Indian / Pakistani',
+          "value": .1
+        },
+        {
+          "label": 'Mixed / Multiple Ethnic Groups',
+          "value": .025
+        },
+        {
+          "label": 'Maori',
+          "value": .025
+        },
+        {
+          "label": 'Pacific Islander',
+          "value": 0.1
+        },
+        {
+          "label": 'White',
+          "value": .2
+        },
+        {
+          "label": 'Other',
+          "value": .05
+        },
+        {
+          "label": 'Prefer not to say',
+          "value": .05
+        },
+      ],
     }
   }
 
   render() {
-    const {menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply} = this.state;
+    const {menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, menteeRoleSplit, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -239,7 +450,7 @@ class GroupDashOverview extends Component {
           </div>
         </div>
         <div className="dash-row">
-          <div className="mainBox">
+          <div className="mainBox whiteBox">
             <div className="mainBox-headerText">
               <div><strong>Your Members</strong></div>
               <div className="mainBox-numLarge">{totalMembers}</div>
@@ -267,8 +478,8 @@ class GroupDashOverview extends Component {
             />
           </div>
           <div className="miniBox-container">
-            <div className="miniBox first">
-              <span className="miniBox-emoji" role="img" aria-label="clockEmoji">🔗</span>
+            <div className="miniBox first whiteBox">
+              <span className="miniBox-emoji" role="img" aria-label="linkEmoji">🔗</span>
               <div className="miniBox-title"><strong>Matched</strong></div>
               <div className="miniBox-text"><i>Mentees</i></div>
               <div className="miniBox-numLarge">
@@ -281,7 +492,7 @@ class GroupDashOverview extends Component {
               </div>
               <span className={"percentageChg"+(matchedPcChgMentors >= 0 ? ' positive' : ' negative')}>{(matchedPcChgMentors >= 0 ? '+' : '') + ((matchedPcChgMentors * 100).toFixed(1)) + "%"}</span>
             </div>
-            <div className="miniBox second">
+            <div className="miniBox second whiteBox">
               <span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span>
               <div className="miniBox-title"><strong>In Progress</strong></div>
               <div className="miniBox-text"><i>Mentees</i></div>
@@ -289,8 +500,8 @@ class GroupDashOverview extends Component {
               <div className="miniBox-text"><i>Mentors</i></div>
               <div className="miniBox-numLarge"><strong>{numPendingMentors}</strong></div>
             </div>
-            <div className="miniBox third">
-              <span className="miniBox-emoji" role="img" aria-label="clockEmoji">❌</span>
+            <div className="miniBox third whiteBox">
+              <span className="miniBox-emoji" role="img" aria-label="crossEmoji">❌</span>
               <div className="miniBox-title"><strong>No Match</strong></div>
               <div className="miniBox-text"><i>Mentees</i></div>
               <div className="miniBox-numLarge"><strong>{numNoMatchMentees}</strong></div>
@@ -299,36 +510,141 @@ class GroupDashOverview extends Component {
             </div>
           </div>
         </div>
-        <div className="dash-row">
-          <div className="col-6">
-            <div>
-              <strong><span className="blueText">Mentees</span> waiting for a match:</strong>
-              <i>Most in-demand roles vs. Supply</i>
+        <div className="dash-row tall">
+          <div className="col-6 flexBox-Chart">
+            <div className="dash-boxTitle">
+              <strong><span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Most in-demand roles by Mentees:</strong>
+              <div><i><span className="blueText"><strong>Mentees</strong></span> waiting for a match vs. Supply</i></div>
             </div>
             <BarChart
               dataset1={menteesTopRolesDemand}
               dataset1Title="Mentees"
               dataset1Colour="#00B0F0"
               dataset1Fill="rgba(0,176,240,.2)"
-              //dataset1gradientColour1="0,176,240,1"
-              //dataset1gradientColour2="255,255,255,1"
-              //dataset1gradientColour3="255,255,255,1"
+              dataset1HoverFill="rgba(0,176,240,.95)"
               dataset2={menteesTopRolesSupply}
               dataset2Title="E-Mentors"
-              dataset2Colour="#d0d0d0"
+              dataset2Colour="#bdbdbd"
               dataset2Fill="#d0d0d0"
-              //dataset2gradientColour1="78,78,214,1"
-              //dataset2gradientColour2="255,255,255,1"
-              //dataset2gradientColour3="255,255,255,1"
+              dataset2HoverFill="#7f7f7f"
               showLegend={false}
+              showTitle={false}
+              showTooltip
+              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
             />
           </div>
-          <div className="col-6">
-            <div>
-              <strong><span className="purpleText">E-Mentors</span> waiting for a match:</strong>
-              <i>Most supplied roles vs. Demand</i>
+          <div className="col-6 flexBox-Chart">
+            <div className="dash-boxTitle">
+              <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> Most supplied roles by E-Mentors:</strong>
+              <div><i><span className="purpleText"><strong>E-Mentors</strong></span> waiting for a match vs. Demand</i></div>
             </div>
-            BAR CHART HERE
+            <BarChart
+              dataset1={mentorsTopRolesDemand}
+              dataset1Title="E-Mentors"
+              dataset1Colour="#4E4ED6"
+              dataset1Fill="rgba(78,78,214,.2)"
+              dataset1HoverFill="rgba(78,78,214,.9)"
+              dataset2={mentorsTopRolesSupply}
+              dataset2Title="Mentees"
+              dataset2Colour="#bdbdbd"
+              dataset2Fill="#d0d0d0"
+              dataset2HoverFill="#7f7f7f"
+              showLegend={false}
+              showTitle={false}
+              showTooltip
+              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
+            />
+          </div>
+        </div>
+        <div className="dash-row">
+          <div className="col-6 mainBox whiteBox">
+            <div className="dash-boxTitle absolute">
+              <strong><span className="blueText">Mentees</span></strong>
+              <div><i>% split</i></div>
+            </div>
+            <div className="stackedBar-container">
+              <BarChart
+                dataset1={menteeRoleSplit1}
+                dataset1Title={menteeRoleSplit1[0].label}
+                dataset1Colour="#4E4ED6"
+                dataset1Fill="rgba(78,78,214,.3)"
+                dataset1HoverFill="rgba(78,78,214,1)"
+                dataset2={menteeRoleSplit2}
+                dataset2Title={menteeRoleSplit2[0].label}
+                dataset2Colour="#15CD94"
+                dataset2Fill="rgba(21,205,148,.3)"
+                dataset2HoverFill="rgba(21,205,148,1)"
+                dataset3={menteeRoleSplit3}
+                dataset3Title={menteeRoleSplit3[0].label}
+                dataset3Colour="#F97BAB"
+                dataset3Fill="rgba(249,123,171,.3)"
+                dataset3HoverFill="rgba(249,123,171,1)"
+                dataset4={menteeRoleSplit4}
+                dataset4Title={menteeRoleSplit4[0].label}
+                dataset4Colour="#00B0F0"
+                dataset4Fill="rgba(0,176,240,.3)"
+                dataset4HoverFill="rgba(0,176,240,1)"
+                dataset5={menteeRoleSplit5}
+                dataset5Title={menteeRoleSplit5[0].label}
+                dataset5Colour="#fce100"
+                dataset5Fill="rgba(252,225,0,.3)"
+                dataset5HoverFill="rgba(252,225,0,1)"
+                showHorizontal
+                showLegend
+                showTitle
+                titleText="by Role type 💼"
+                showTooltip={false}
+                stacked
+                showDataLabelsOnBar
+//                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+//                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+              />
+            </div>
+            <div>
+              <div className="col-6">
+                <DoughnutChart
+                  dataset1={menteeGender}
+                  dataset1Title={menteeGender[0].label}
+                  data1Colour="rgb(249,123,171,1)"
+                  data2Colour="rgb(249,123,171,.8)"
+                  data3Colour="rgb(249,123,171,.6)"
+                  data4Colour="rgb(249,123,171,.4)"
+                  showLegend={false}
+                  showTitle
+                  titleText='by Gender 🧑‍🤝‍🧑'
+                  showDataLabelsOnBar
+                //  showTooltip={false}
+                />
+              </div>
+              <div className="col-6">
+                <DoughnutChart
+                  dataset1={menteeEthnicity}
+                  dataset1Title={menteeEthnicity[0].label}
+                  data1Colour="rgb(249,123,171,1)"
+                  data2Colour="rgb(249,123,171,.8)"
+                  data3Colour="rgb(249,123,171,.6)"
+                  data4Colour="rgb(249,123,171,.4)"
+                  showLegend={false}
+                  showTitle
+                  titleText='by Ethnicity 🌍'
+                  showDataLabelsOnBar
+                //  showTooltip={false}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-6 mainBox whiteBox">
+            <div className="dash-boxTitle">
+              <strong><span className="purpleText">E-Mentors</span></strong>
+              <div><i>% split</i></div>
+            </div>
+            STACKED BAR HERE
+            PIE CHART HERE
+            SECOND PIE CHART HERE
           </div>
         </div>
       </div>
