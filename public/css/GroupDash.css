@@ -59,8 +59,14 @@
 .dash-row.tall{
   min-height: 300px;
 }
+.dash-row.fullHeight{
+  height: 100%;
+}
 .stackedBar-container{
   height: 170px;
+}
+.stackedBar-container.small{
+  height: 100px;
 }
 .flexBox-Chart{
   display: flex;

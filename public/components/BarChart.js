@@ -12,7 +12,7 @@ class BarChart extends Component {
   }
 
 componentDidMount() {
-  const {showDataLabelsOnBar, showTitle, titleText, showTooltip, showHorizontal, stacked, barLabelFont, datasetToShowBarLabel, barLabelToShow, dataset1, dataset1Title, dataset1Colour, dataset1Fill, dateset1HoverFill, dataset2, dataset2Title, dataset2Colour, dataset2Fill, dateset2HoverFill, dataset3, dataset3Title, dataset3Colour, dataset3Fill, dateset3HoverFill, dataset4, dataset4Title, dataset4Colour, dataset4Fill, dateset4HoverFill, dataset5, dataset5Title, dataset5Colour, dataset5Fill, dateset5HoverFill, showLegend} = this.props;
+  const {showTitleAndPercentLabels, showDataLabelsOnBar, showTitle, titleText, showTooltip, showHorizontal, stacked, barLabelFont, datasetToShowBarLabel, barLabelToShow, dataset1, dataset1Title, dataset1Colour, dataset1Fill, dateset1HoverFill, dataset2, dataset2Title, dataset2Colour, dataset2Fill, dateset2HoverFill, dataset3, dataset3Title, dataset3Colour, dataset3Fill, dateset3HoverFill, dataset4, dataset4Title, dataset4Colour, dataset4Fill, dateset4HoverFill, dataset5, dataset5Title, dataset5Colour, dataset5Fill, dateset5HoverFill, showLegend} = this.props;
   const ctx = this.barChartRef.current;
 
   var datasetsArr = [{
@@ -86,23 +86,49 @@ componentDidMount() {
         duration: 520,
         onComplete: () => {
 
-          ctx.getContext('2d').textAlign = 'center';
           ctx.getContext('2d').textBaseline = 'bottom';
           if (barLabelFont) {
             ctx.getContext('2d').font = barLabelFont;
           }
 
-          this.myChart.config.data.datasets.forEach((dataset, i) => {
-            var meta = this.myChart.getDatasetMeta(i);
-            ctx.getContext('2d').fillStyle = dataset.borderColor;
+          if (showTitleAndPercentLabels == true) {
 
-            if (datasetToShowBarLabel == 'all' || dataset.label == datasetToShowBarLabel) {
-              meta.data.forEach((bar, index) => {
-                var data = barLabelToShow == 'data' ? dataset.data[index] : barLabelToShow;
-                ctx.getContext('2d').fillText(data, bar.x, bar.y - 5);
-              });
-            }
-          });
+            var datasets = this.myChart.config.data.datasets
+            console.log(this.myChart)
+
+            // add left hand label
+            var title = datasets[0].label
+            ctx.getContext('2d').textAlign = 'left';
+            var meta1 = this.myChart.getDatasetMeta(0);
+            meta1.data.forEach((bar, index) => {
+              ctx.getContext('2d').fillText(title, bar.base, bar.y - 15);
+            });
+
+            // add right hand label
+            var percentage = Math.round(datasets[0].data[0] * 100) + "%"
+            ctx.getContext('2d').textAlign = 'right';
+            var meta2 = this.myChart.getDatasetMeta(0);
+            console.log(meta2)
+            meta2.data.forEach((bar, index) => {
+              ctx.getContext('2d').fillText(percentage, bar.x, bar.y - 15);
+            });
+
+          } else {
+            ctx.getContext('2d').textAlign = 'center';
+
+            this.myChart.config.data.datasets.forEach((dataset, i) => {
+              var meta = this.myChart.getDatasetMeta(i);
+              ctx.getContext('2d').fillStyle = dataset.borderColor;
+
+              if (datasetToShowBarLabel == 'all' || dataset.label == datasetToShowBarLabel) {
+                meta.data.forEach((bar, index) => {
+                  var data = barLabelToShow == 'data' ? dataset.data[index] : barLabelToShow;
+                  ctx.getContext('2d').fillText(data, bar.x, bar.y - 5);
+                });
+              }
+            });
+          }
+
         }
       },
       interaction: {
@@ -130,9 +156,9 @@ componentDidMount() {
             return context.dataset.borderColor;
           },
           formatter: (value, context) => {
+            console.log(context)
             return Math.round(value * 100) + '%' // Show percentage
           },
-
           align: 'center',
           anchor: 'center'
         },
@@ -151,17 +177,18 @@ componentDidMount() {
               return `${item[0].label}`
             },
             labelTextColor: (item) => {
-              if (item.dataset.label == 'Mentees') {
+              if (item.dataset.borderColor == "#00B0F0") { // blue which is ineligible on dark background
                 return "#95e3ff"; // light blue
               }
-              if (item.dataset.label == 'E-Mentors') {
-                return "#b0b0ff"; // light purple
+              if (item.dataset.borderColor == "#4E4ED6") { // purple which is ineligible on dark background
+                return "#b0b0ff"; // show light purple
               }
               return item.dataset.borderColor;
             },
             label: (item) => {
               var dataLabel = item.dataset.label
-              return `${item.formattedValue + " " + dataLabel}`
+              var labelToShow = stacked == true ? (Math.round(item.formattedValue * 100) + "%") : (item.formattedValue + " " + dataLabel)
+              return `${labelToShow}`
             }
           }
         }
@@ -180,7 +207,7 @@ componentDidMount() {
           ticks: {
             display: showHorizontal == true ? false : true, // Hide x axes if is horizontal bar
             font: {
-              size: 8,
+              size: 10,
             },
             padding: 2,
             autoSkip: false,

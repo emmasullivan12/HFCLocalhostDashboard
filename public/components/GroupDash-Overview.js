@@ -112,7 +112,7 @@ class GroupDashOverview extends Component {
           "value": 667
         },
       ],
-      menteesTopRolesDemand: [
+      menteesTopRolesDemand: [ // Only for unmatched mentees
         {
           "label": '2D Animator',
           "value": 100
@@ -134,7 +134,7 @@ class GroupDashOverview extends Component {
           "value": 35
         },
       ],
-      menteesTopRolesSupply: [
+      menteesTopRolesSupply: [ // Only for unmatched E-Mentors
         {
           "label": '2D Animator',
           "value": 10
@@ -156,7 +156,7 @@ class GroupDashOverview extends Component {
           "value": 3
         },
       ],
-      mentorsTopRolesDemand: [
+      mentorsTopRolesDemand: [ // Only for unmatched E-Mentors
         {
           "label": '2D Animator',
           "value": 100
@@ -178,7 +178,7 @@ class GroupDashOverview extends Component {
           "value": 35
         },
       ],
-      mentorsTopRolesSupply: [
+      mentorsTopRolesSupply: [ // Only for unmatched mentees
         {
           "label": '2D Animator',
           "value": 10
@@ -200,7 +200,7 @@ class GroupDashOverview extends Component {
           "value": 3
         },
       ],
-      menteeRoleSplit1: [
+      menteeRoleSplit1: [ // must be in same order as mentorRoleSplits
         {
           "label": '2D',
           "value": .3
@@ -230,6 +230,36 @@ class GroupDashOverview extends Component {
           "value": .05
         },
       ],
+      mentorRoleSplit1: [ // must be in same order as mentorRoleSplits
+        {
+          "label": '2D',
+          "value": .3
+        }
+      ],
+      mentorRoleSplit2: [
+        {
+          "label": '3D',
+          "value": .3
+        }
+      ],
+      mentorRoleSplit3: [
+        {
+          "label": 'Art / Animation',
+          "value": .2
+        }
+      ],
+      mentorRoleSplit4: [
+        {
+          "label": 'Technical',
+          "value": .15
+        }
+      ],
+      mentorRoleSplit5: [
+        {
+          "label": 'Other',
+          "value": .05
+        },
+      ],
       menteeGender: [
         {
           "label": 'Male',
@@ -248,7 +278,7 @@ class GroupDashOverview extends Component {
           "value": .2
         },
       ],
-      mentorGender: [
+      mentorGender: [ // must be in same order as menteeGender
         {
           "label": 'Male',
           "value": .4
@@ -316,7 +346,7 @@ class GroupDashOverview extends Component {
           "value": .05
         },
       ],
-      mentorEthnicity: [
+      mentorEthnicity: [ // must be in same order as menteeEthnicity
         {
           "label": 'Aboriginal Australian',
           "value": .025
@@ -366,11 +396,162 @@ class GroupDashOverview extends Component {
           "value": .05
         },
       ],
+      menteesByAge: [
+        {
+          "label": '13-15 years',
+          "value": 10
+        },
+        {
+          "label": '16-18 years',
+          "value": 30
+        },
+        {
+          "label": '19-25 years',
+          "value": 76
+        },
+        {
+          "label": '26-30 years',
+          "value": 50
+        },
+        {
+          "label": '31-40 years',
+          "value": 20
+        },
+        {
+          "label": '41-50 years',
+          "value": 15
+        },
+        {
+          "label": '51-65 years',
+          "value": 5
+        },
+        {
+          "label": '65+ years',
+          "value": 1
+        },
+      ],
+      mentorsByAge: [
+        {
+          "label": '13-15 years',
+          "value": 0
+        },
+        {
+          "label": '16-18 years',
+          "value": 0
+        },
+        {
+          "label": '19-25 years',
+          "value": 40
+        },
+        {
+          "label": '26-30 years',
+          "value": 45
+        },
+        {
+          "label": '31-40 years',
+          "value": 60
+        },
+        {
+          "label": '41-50 years',
+          "value": 30
+        },
+        {
+          "label": '51-65 years',
+          "value": 20
+        },
+        {
+          "label": '65+ years',
+          "value": 5
+        },
+      ],
+      menteeTopRoles: [ // All mentees
+        {
+          "label": '2D Animator',
+          "value": .25
+        },
+        {
+          "label": 'Character Animator',
+          "value": .21
+        },
+        {
+          "label": 'Compositor',
+          "value": .17
+        },
+        {
+          "label": '3D Animator',
+          "value": .05
+        },
+        {
+          "label": 'Director',
+          "value": .02
+        },
+      ],
+      mentorTopRoles: [ // All mentees
+        {
+          "label": '2D Animator',
+          "value": .25
+        },
+        {
+          "label": 'Character Animator',
+          "value": .11
+        },
+        {
+          "label": 'Compositor',
+          "value": .07
+        },
+        {
+          "label": '3D Animator',
+          "value": .05
+        },
+        {
+          "label": 'Director',
+          "value": .02
+        },
+      ],
     }
   }
 
+  renderStackedBars = (data, mainColour) => {
+    var topRoleValue = data[0].value
+
+    return (
+      <div>
+        {data.map((role, index) => {
+          return (
+            <div className="stackedBar-container small" key={index}>
+              <BarChart
+                dataset1={[{"label": role.label, "value": role.value}]}
+                dataset1Title={role.label}
+                dataset1Colour="#4E4ED6"
+                dataset1Fill="rgba(78,78,214,.3)"
+                dataset1HoverFill="rgba(78,78,214,1)"
+
+                dataset2={[{"label": 'Rest', "value": (topRoleValue - role.value)}]}
+                dataset2Title="Rest"
+                dataset2Colour="#bdbdbd" // grey
+                dataset2Fill="#d0d0d0" // grey
+                dataset2HoverFill="#7f7f7f" // grey
+
+                showHorizontal
+                showLegend={false}
+                showTitle={false}
+                titleText="by Role type 💼"
+                showTooltip={false}
+                stacked
+                showTitleAndPercentLabels
+        //        showDataLabelsOnBar
+        //        datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+        //        barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+              />
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
   render() {
-    const {menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, menteeRoleSplit, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
+    const {menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -513,8 +694,8 @@ class GroupDashOverview extends Component {
         <div className="dash-row tall">
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">
-              <strong><span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Most in-demand roles by Mentees:</strong>
-              <div><i><span className="blueText"><strong>Mentees</strong></span> waiting for a match vs. Supply</i></div>
+              <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> <span className="blueText"><strong>Mentees</strong></span> waiting for a match</strong>
+              <div><i>Sorted by most in-demand roles vs. Supply</i></div>
             </div>
             <BarChart
               dataset1={menteesTopRolesDemand}
@@ -537,8 +718,8 @@ class GroupDashOverview extends Component {
           </div>
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">
-              <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> Most supplied roles by E-Mentors:</strong>
-              <div><i><span className="purpleText"><strong>E-Mentors</strong></span> waiting for a match vs. Demand</i></div>
+              <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> <span className="purpleText"><strong>E-Mentors</strong></span> waiting for a match</strong>
+              <div><i>Sorted by most supplied roles vs. Demand</i></div>
             </div>
             <BarChart
               dataset1={mentorsTopRolesDemand}
@@ -560,7 +741,7 @@ class GroupDashOverview extends Component {
             />
           </div>
         </div>
-        <div className="dash-row">
+        <div className="dash-row fullHeight">
           <div className="col-6 mainBox whiteBox">
             <div className="dash-boxTitle absolute">
               <strong><span className="blueText">Mentees</span></strong>
@@ -597,7 +778,7 @@ class GroupDashOverview extends Component {
                 showLegend
                 showTitle
                 titleText="by Role type 💼"
-                showTooltip={false}
+                showTooltip
                 stacked
                 showDataLabelsOnBar
 //                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
@@ -605,46 +786,161 @@ class GroupDashOverview extends Component {
               />
             </div>
             <div>
-              <div className="col-6">
-                <DoughnutChart
-                  dataset1={menteeGender}
-                  dataset1Title={menteeGender[0].label}
-                  data1Colour="rgb(249,123,171,1)"
-                  data2Colour="rgb(249,123,171,.8)"
-                  data3Colour="rgb(249,123,171,.6)"
-                  data4Colour="rgb(249,123,171,.4)"
-                  showLegend={false}
-                  showTitle
-                  titleText='by Gender 🧑‍🤝‍🧑'
-                  showDataLabelsOnBar
-                //  showTooltip={false}
-                />
-              </div>
-              <div className="col-6">
-                <DoughnutChart
-                  dataset1={menteeEthnicity}
-                  dataset1Title={menteeEthnicity[0].label}
-                  data1Colour="rgb(249,123,171,1)"
-                  data2Colour="rgb(249,123,171,.8)"
-                  data3Colour="rgb(249,123,171,.6)"
-                  data4Colour="rgb(249,123,171,.4)"
-                  showLegend={false}
-                  showTitle
-                  titleText='by Ethnicity 🌍'
-                  showDataLabelsOnBar
-                //  showTooltip={false}
-                />
-              </div>
+              <DoughnutChart
+                dataset1={menteeGender}
+                dataset1Title={menteeGender[0].label}
+                data1Colour="rgb(249,123,171,1)"
+                data2Colour="rgb(249,123,171,.8)"
+                data3Colour="rgb(249,123,171,.6)"
+                data4Colour="rgb(249,123,171,.4)"
+                showLegend
+                showTitle
+                titleText='by Gender 🧑‍🤝‍🧑'
+                showDataLabelsOnSegment
+              //  showTooltip={false}
+              />
+            </div>
+            <div>
+              <DoughnutChart
+                dataset1={menteeEthnicity}
+                dataset1Title={menteeEthnicity[0].label}
+                data1Colour="rgb(78,78,214,1)"
+                data2Colour="rgb(78,78,214,.8)"
+                data3Colour="rgb(78,78,214,.6)"
+                data4Colour="rgb(78,78,214,.4)"
+                data5Colour="rgb(21,205,148,1)"
+                data6Colour="rgb(21,205,148,.8)"
+                data7Colour="rgb(21,205,148,.6)"
+                data8Colour="rgb(21,205,148,.4)"
+                data9Colour="rgb(252,225,0,1)"
+                data10Colour="rgb(252,225,0,.8)"
+                data11Colour="rgb(252,225,0,.6)"
+                data12Colour="rgb(252,225,0,.4)"
+                showLegend
+                showTitle
+                titleText='by Ethnicity 🌍'
+                showDataLabelsOnSegment
+              //  showTooltip={false}
+              />
             </div>
           </div>
           <div className="col-6 mainBox whiteBox">
-            <div className="dash-boxTitle">
+            <div className="dash-boxTitle absolute">
               <strong><span className="purpleText">E-Mentors</span></strong>
               <div><i>% split</i></div>
             </div>
-            STACKED BAR HERE
-            PIE CHART HERE
-            SECOND PIE CHART HERE
+            <div className="stackedBar-container">
+              <BarChart
+                dataset1={mentorRoleSplit1}
+                dataset1Title={mentorRoleSplit1[0].label}
+                dataset1Colour="#4E4ED6"
+                dataset1Fill="rgba(78,78,214,.3)"
+                dataset1HoverFill="rgba(78,78,214,1)"
+                dataset2={mentorRoleSplit2}
+                dataset2Title={mentorRoleSplit2[0].label}
+                dataset2Colour="#15CD94"
+                dataset2Fill="rgba(21,205,148,.3)"
+                dataset2HoverFill="rgba(21,205,148,1)"
+                dataset3={mentorRoleSplit3}
+                dataset3Title={mentorRoleSplit3[0].label}
+                dataset3Colour="#F97BAB"
+                dataset3Fill="rgba(249,123,171,.3)"
+                dataset3HoverFill="rgba(249,123,171,1)"
+                dataset4={mentorRoleSplit4}
+                dataset4Title={mentorRoleSplit4[0].label}
+                dataset4Colour="#00B0F0"
+                dataset4Fill="rgba(0,176,240,.3)"
+                dataset4HoverFill="rgba(0,176,240,1)"
+                dataset5={mentorRoleSplit5}
+                dataset5Title={mentorRoleSplit5[0].label}
+                dataset5Colour="#fce100"
+                dataset5Fill="rgba(252,225,0,.3)"
+                dataset5HoverFill="rgba(252,225,0,1)"
+                showHorizontal
+                showLegend
+                showTitle
+                titleText="by Role type 💼"
+                showTooltip
+                stacked
+                showDataLabelsOnBar
+              />
+            </div>
+            <div>
+              <DoughnutChart
+                dataset1={mentorGender}
+                dataset1Title={mentorGender[0].label}
+                data1Colour="rgb(249,123,171,1)"
+                data2Colour="rgb(249,123,171,.8)"
+                data3Colour="rgb(249,123,171,.6)"
+                data4Colour="rgb(249,123,171,.4)"
+                showLegend
+                showTitle
+                titleText='by Gender 🧑‍🤝‍🧑'
+                showDataLabelsOnSegment
+              />
+            </div>
+            <div>
+              <DoughnutChart
+                dataset1={mentorEthnicity}
+                dataset1Title={mentorEthnicity[0].label}
+                data1Colour="rgb(78,78,214,1)"
+                data2Colour="rgb(78,78,214,.8)"
+                data3Colour="rgb(78,78,214,.6)"
+                data4Colour="rgb(78,78,214,.4)"
+                data5Colour="rgb(21,205,148,1)"
+                data6Colour="rgb(21,205,148,.8)"
+                data7Colour="rgb(21,205,148,.6)"
+                data8Colour="rgb(21,205,148,.4)"
+                data9Colour="rgb(252,225,0,1)"
+                data10Colour="rgb(252,225,0,.8)"
+                data11Colour="rgb(252,225,0,.6)"
+                data12Colour="rgb(252,225,0,.4)"
+                showLegend
+                showTitle
+                titleText='by Ethnicity 🌍'
+                showDataLabelsOnSegment
+              />
+            </div>
+          </div>
+        </div>
+        <div className="dash-row tall">
+          <div className="col-6 flexBox-Chart">
+            <div className="dash-boxTitle">
+              <strong><span className="miniBox-emoji" role="img" aria-label="calendarEmoji">📅</span> Split by Age:</strong>
+              <div><i><span className="blueText"><strong>Mentees</strong></span> and <span className="purpleText"><strong>E-Mentors</strong></span></i></div>
+            </div>
+            <BarChart
+              dataset1={menteesByAge}
+              dataset1Title="Mentees"
+              dataset1Colour="#00B0F0"
+              dataset1Fill="rgba(0,176,240,.2)"
+              dataset1HoverFill="rgba(0,176,240,.95)"
+              dataset2={mentorsByAge}
+              dataset2Title="E-Mentors"
+              dataset2Colour="#4E4ED6"
+              dataset2Fill="rgba(78,78,214,.2)"
+              dataset2HoverFill="rgba(78,78,214,.9)"
+              showLegend={false}
+              showTitle={false}
+              showTooltip
+              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
+            />
+          </div>
+          <div className="mainBox whiteBox">
+            <div className="dash-boxTitle">
+              <span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Top Roles <span className="blueText"><strong>Mentees</strong></span> want
+              <hr className="lightLineBreak"/>
+            </div>
+            { this.renderStackedBars(menteeTopRoles) }
+          </div>
+          <div className="mainBox whiteBox">
+            <div className="dash-boxTitle">
+              <span className="miniBox-emoji" role="img" aria-label="briefcaseEmoji">💼</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Roles
+              <hr className="lightLineBreak"/>
+            </div>
+            { this.renderStackedBars(mentorTopRoles) }
           </div>
         </div>
       </div>
