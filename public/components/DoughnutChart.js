@@ -1,4 +1,4 @@
-// Dex last merged this code on 10th August 2019
+// Dex last merged this code on 14th apr 2021
 
 import React, { Component } from "react";
 import Chart from 'chart.js/auto';
