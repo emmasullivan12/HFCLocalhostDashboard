@@ -81,11 +81,13 @@ componentDidMount() {
       responsive: true,
       maintainAspectRatio: false,
       indexAxis: showHorizontal == true ? 'y' : 'x',
+      hover: {
+        mode: null // not perfect but helps prevent flickering due to animation onComplete
+      },
       animation: {
         easing: 'easeInOutQuad',
         duration: 520,
         onComplete: () => {
-
           ctx.getContext('2d').textBaseline = 'bottom';
           if (barLabelFont) {
             ctx.getContext('2d').font = barLabelFont;
@@ -94,24 +96,27 @@ componentDidMount() {
           if (showTitleAndPercentLabels == true) {
 
             var datasets = this.myChart.config.data.datasets
-            console.log(this.myChart)
 
             // add left hand label
-            var title = datasets[0].label
-            ctx.getContext('2d').textAlign = 'left';
-            var meta1 = this.myChart.getDatasetMeta(0);
-            meta1.data.forEach((bar, index) => {
-              ctx.getContext('2d').fillText(title, bar.base, bar.y - 15);
-            });
+              var title = datasets[0].label
+              var meta1 = this.myChart.getDatasetMeta(0);
+
+              ctx.getContext('2d').textAlign = 'left';
+
+              meta1.data.forEach((bar, index) => {
+                ctx.getContext('2d').fillText(title, bar.base, bar.y - 10);
+              });
 
             // add right hand label
-            var percentage = Math.round(datasets[0].data[0] * 100) + "%"
-            ctx.getContext('2d').textAlign = 'right';
-            var meta2 = this.myChart.getDatasetMeta(0);
-            console.log(meta2)
-            meta2.data.forEach((bar, index) => {
-              ctx.getContext('2d').fillText(percentage, bar.x, bar.y - 15);
-            });
+              var percentage = Math.round(datasets[0].data[0] * 100) + "%"
+              var meta2 = this.myChart.getDatasetMeta(0);
+
+              ctx.getContext('2d').textAlign = 'right';
+
+              meta2.data.forEach((bar1, index) => {
+            //    at 860px to 1144px wide the padding increases for some reason, making text slightly offset
+                ctx.getContext('2d').fillText(percentage, this.myChart.chartArea.right, bar1.y - 10);
+              });
 
           } else {
             ctx.getContext('2d').textAlign = 'center';
@@ -156,7 +161,6 @@ componentDidMount() {
             return context.dataset.borderColor;
           },
           formatter: (value, context) => {
-            console.log(context)
             return Math.round(value * 100) + '%' // Show percentage
           },
           align: 'center',

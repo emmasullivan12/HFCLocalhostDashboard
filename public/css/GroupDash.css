@@ -62,11 +62,16 @@
 .dash-row.fullHeight{
   height: 100%;
 }
+.stackedBar-outerContainer{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
 .stackedBar-container{
   height: 170px;
 }
 .stackedBar-container.small{
-  height: 100px;
+  height: 75px; /* 100px */
+  margin-top: -30px;
 }
 .flexBox-Chart{
   display: flex;
@@ -183,4 +188,25 @@
 .percentageChg.negative {
   color: #FF3300;
   background-color: #FFE1E1;
+}
+.dash-row .bottomCTA{
+  margin: auto;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+.choropleth-outerContainer{
+/*  width: 100%;
+  height: auto;*/
+  margin-top: 20px;
+}
+.dash-boxTitle.mapCountry{
+  z-index: 1;
+  right: 0;
+/*  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);*/
+  color: #3f3f3f;
 }

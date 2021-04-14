@@ -5,8 +5,11 @@ import React, { Component } from "react";
 import {cdn} from './CDN.js';
 import BarChart from './BarChart.js';
 import {DateCalc} from './GeneralFunctions.js';
+import ChoroplethMap from './ChoroplethMap.js';
 import DoughnutChart from './DoughnutChart.js';
 import LineChart from './LineChart.js';
+import {userFlagEmoji} from './UserDetail.js';
+//import WordCloud from './WordCloud.js';
 
 class GroupDashOverview extends Component {
   constructor(props) {
@@ -508,6 +511,63 @@ class GroupDashOverview extends Component {
           "value": .02
         },
       ],
+      menteeTopEdu: [ // All mentees
+        {
+          "label": 'University of Bath',
+          "value": .25
+        },
+        {
+          "label": 'Escape Studios (Pearson)',
+          "value": .21
+        },
+        {
+          "label": 'Villiers High School',
+          "value": .17
+        },
+        {
+          "label": 'Bournemouth University',
+          "value": .05
+        },
+        {
+          "label": 'Berkhamsted',
+          "value": .02
+        },
+      ],
+      mentorTopCos: [ // All mentors
+        {
+          "label": 'Framestore',
+          "value": .25
+        },
+        {
+          "label": 'DNEG',
+          "value": .21
+        },
+        {
+          "label": 'ILM',
+          "value": .17
+        },
+        {
+          "label": 'Atari',
+          "value": .05
+        },
+        {
+          "label": 'Jellyfish',
+          "value": .02
+        },
+      ],
+      heardAboutFrom: [
+        { key: 'word', value: 10 },
+        { key: 'words', value: 8 },
+        { key: 'sprite', value: 7 },
+        { key: 'placed', value: 5 },
+        { key: 'layout', value: 4 },
+        { key: 'algorithm', value: 4 },
+        { key: 'area', value: 4 },
+        { key: 'without', value: 3 },
+        { key: 'step', value: 1 },
+        { key: 'bounding', value: 1 },
+        { key: 'retrieve', value: 1 },
+      ],
     }
   }
 
@@ -515,33 +575,26 @@ class GroupDashOverview extends Component {
     var topRoleValue = data[0].value
 
     return (
-      <div>
+      <div className="stackedBar-outerContainer">
         {data.map((role, index) => {
           return (
             <div className="stackedBar-container small" key={index}>
               <BarChart
                 dataset1={[{"label": role.label, "value": role.value}]}
                 dataset1Title={role.label}
-                dataset1Colour="#4E4ED6"
-                dataset1Fill="rgba(78,78,214,.3)"
-                dataset1HoverFill="rgba(78,78,214,1)"
-
+                dataset1Colour={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
+                dataset1Fill={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
                 dataset2={[{"label": 'Rest', "value": (topRoleValue - role.value)}]}
                 dataset2Title="Rest"
                 dataset2Colour="#bdbdbd" // grey
                 dataset2Fill="#d0d0d0" // grey
-                dataset2HoverFill="#7f7f7f" // grey
-
                 showHorizontal
                 showLegend={false}
                 showTitle={false}
-                titleText="by Role type 💼"
                 showTooltip={false}
                 stacked
                 showTitleAndPercentLabels
-        //        showDataLabelsOnBar
-        //        datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
-        //        barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+                barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif'
               />
             </div>
           )
@@ -551,7 +604,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
+    const {heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -559,6 +612,7 @@ class GroupDashOverview extends Component {
       newSignUps: 62,
       matched: 1067,
       datecreated: '2020-01-01T14:46:14.209Z',
+      countries: ['gbr', 'usa', 'can', 'nzl', 'aus'],
       members: [
         {membersince: '2021-02-04T14:46:14.209Z', matchstatus: '4'},
         {membersince: '2021-02-04T14:46:14.209Z', matchstatus: '4'},
@@ -578,6 +632,323 @@ class GroupDashOverview extends Component {
       {matchid: '123'},
       {matchid: '123'},
       {matchid: '123'},
+    ]
+    const canDataMentees = [
+      ["AB", 5],
+      ["SK", 15],
+    ]
+    const canDataMentors = [
+      ["AB", 5],
+      ["SK", 15],
+    ]
+    const usaDataMentees = [
+      ["AZ", 5],
+      ["CO", 5],
+      ["DE", 32],
+      ["FL", 29],
+      ["GA", 32],
+      ["HI", 32],
+      ["ID", 32],
+      ["IL", 32],
+      ["IN", 11],
+      ["IA", 11],
+      ["KS", 32],
+      ["KY", 32],
+      ["LA", 32],
+      ["MD", 32],
+      ["ME", 32],
+      ["MA", 32],
+      ["MN", 32],
+      ["MI", 32],
+      ["MS", 32],
+      ["MO", 13],
+      ["MT", 32],
+      ["NC", 32],
+      ["NE", 32],
+      ["NV", 0],
+      ["NH", 32],
+      ["NJ", 32],
+      ["NY", 32],
+      ["ND", 32],
+      ["NM", 0],
+      ["OH", 32],
+      ["OK", 32],
+      ["OR", 0],
+      ["PA", 32],
+      ["RI", 32],
+      ["SC", 32],
+      ["SD", 32],
+      ["TN", 32],
+      ["TX", 0],
+      ["UT", 32],
+      ["WI", 32],
+      ["VA", 32],
+      ["VT", 32],
+      ["WA", 32],
+      ["WV", 32],
+      ["WY", 32],
+      ["CA", 0],
+      ["CT", 32],
+      ["AK", 32],
+      ["AR", 32],
+      ["AL", 0],
+    ]
+    const usaDataMentors = [
+      ["AZ", 5],
+      ["CO", 5],
+      ["DE", 32],
+      ["FL", 29],
+      ["GA", 32],
+      ["HI", 32],
+      ["ID", 32],
+      ["IL", 32],
+      ["IN", 11],
+      ["IA", 11],
+      ["KS", 32],
+      ["KY", 32],
+      ["LA", 32],
+      ["MD", 32],
+      ["ME", 32],
+      ["MA", 32],
+      ["MN", 32],
+      ["MI", 32],
+      ["MS", 32],
+      ["MO", 13],
+      ["MT", 32],
+      ["NC", 32],
+      ["NE", 32],
+      ["NV", 0],
+      ["NH", 32],
+      ["NJ", 32],
+      ["NY", 32],
+      ["ND", 32],
+      ["NM", 0],
+      ["OH", 32],
+      ["OK", 32],
+      ["OR", 0],
+      ["PA", 32],
+      ["RI", 32],
+      ["SC", 32],
+      ["SD", 32],
+      ["TN", 32],
+      ["TX", 0],
+      ["UT", 32],
+      ["WI", 32],
+      ["VA", 32],
+      ["VT", 32],
+      ["WA", 32],
+      ["WV", 32],
+      ["WY", 32],
+      ["CA", 0],
+      ["CT", 32],
+      ["AK", 32],
+      ["AR", 32],
+      ["AL", 0],
+    ]
+    const usaDataOLD = {
+      "AZ": {
+          "fillKey": "Republican",
+          "electoralVotes": 5
+      },
+      "CO": {
+          "fillKey": "Light Democrat",
+          "electoralVotes": 5
+      },
+      "DE": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "FL": {
+          "fillKey": "UNDECIDED",
+          "electoralVotes": 29
+      },
+      "GA": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "HI": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "ID": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "IL": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "IN": {
+          "fillKey": "Republican",
+          "electoralVotes": 11
+      },
+      "IA": {
+          "fillKey": "Light Democrat",
+          "electoralVotes": 11
+      },
+      "KS": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "KY": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "LA": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "MD": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "ME": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "MA": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "MN": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "MI": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "MS": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "MO": {
+          "fillKey": "Republican",
+          "electoralVotes": 13
+      },
+      "MT": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "NC": {
+          "fillKey": "Light Republican",
+          "electoralVotes": 32
+      },
+      "NE": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "NV": {
+          "fillKey": "Heavy Democrat",
+          "electoralVotes": 32
+      },
+      "NH": {
+          "fillKey": "Light Democrat",
+          "electoralVotes": 32
+      },
+      "NJ": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "NY": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "ND": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "NM": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "OH": {
+          "fillKey": "UNDECIDED",
+          "electoralVotes": 32
+      },
+      "OK": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "OR": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "PA": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "RI": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "SC": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "SD": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "TN": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "TX": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "UT": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "WI": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "VA": {
+          "fillKey": "Light Democrat",
+          "electoralVotes": 32
+      },
+      "VT": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "WA": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "WV": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "WY": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "CA": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "CT": {
+          "fillKey": "Democrat",
+          "electoralVotes": 32
+      },
+      "AK": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "AR": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      },
+      "AL": {
+          "fillKey": "Republican",
+          "electoralVotes": 32
+      }
+    }
+    const gbrData = [
+      ["BU", 75], ["CM", 43], ["CO", 50], ["DS", 88], ["ES", 150],
     ]
 
 /*
@@ -903,7 +1274,7 @@ class GroupDashOverview extends Component {
             </div>
           </div>
         </div>
-        <div className="dash-row tall">
+        <div className="dash-row fullHeight">
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">
               <strong><span className="miniBox-emoji" role="img" aria-label="calendarEmoji">📅</span> Split by Age:</strong>
@@ -933,14 +1304,109 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Top Roles <span className="blueText"><strong>Mentees</strong></span> want
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(menteeTopRoles) }
+            { this.renderStackedBars(menteeTopRoles, "yellow") }
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="briefcaseEmoji">💼</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Roles
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(mentorTopRoles) }
+            { this.renderStackedBars(mentorTopRoles, "black") }
+          </div>
+        </div>
+        <div className="dash-row fullHeight">
+          <div className="col-6 mainBox">
+            <div className="dash-boxTitle absolute">
+              <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="blueText">Mentee</span> Footprint</strong>
+            </div>
+            {group[0].countries.includes('usa') && (
+              <div className="choropleth-outerContainer">
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
+                <ChoroplethMap
+                  country="usa"
+                  data={usaDataMentees}
+                  name='USAMapMentees'
+                  countLabel="Mentees"
+                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+            {group[0].countries.includes('can') && (
+              <div className="choropleth-outerContainer">
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
+                <ChoroplethMap
+                //  country="gbr"
+                //  data={gbrData}
+                  country="canada"
+                  data={canDataMentees}
+                  name='CanadaMapMentees'
+                  countLabel="Mentees"
+                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+          </div>
+          <div className="col-6 mainBox">
+            <div className="dash-boxTitle absolute">
+              <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="purpleText">E-Mentor</span> Footprint</strong>
+            </div>
+            {group[0].countries.includes('usa') && (
+              <div className="choropleth-outerContainer">
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
+                <ChoroplethMap
+                  country="usa"
+                  data={usaDataMentors}
+                  name='USAMapMentors'
+                  countLabel="E-Mentors"
+                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+            {group[0].countries.includes('can') && (
+              <div className="choropleth-outerContainer">
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
+                <ChoroplethMap
+                  country="canada"
+                  data={canDataMentors}
+                  name='CanadaMapMentors'
+                  countLabel="E-Mentors"
+                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="dash-row fullHeight">
+          <div className="mainBox whiteBox">
+            <div className="dash-boxTitle">
+              <span className="miniBox-emoji" role="img" aria-label="schoolEmoji">🏫</span> Top <span className="blueText"><strong>Mentee</strong></span> School / Unis
+              <hr className="lightLineBreak"/>
+            </div>
+            { this.renderStackedBars(menteeTopEdu, "yellow") }
+          </div>
+          <div className="mainBox whiteBox">
+            <div className="dash-boxTitle">
+              <span className="miniBox-emoji" role="img" aria-label="officeEmoji">🏢</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Companies
+              <hr className="lightLineBreak"/>
+            </div>
+            { this.renderStackedBars(mentorTopCos, "black") }
+          </div>
+          <div className="col-6 flexBox-Chart">
+            <div className="dash-boxTitle">
+              <strong><span className="miniBox-emoji" role="img" aria-label="heartArrowEmoji">💘</span> How Users heard about you:</strong>
+            </div>
+          {/*  <WordCloud
+              words={heardAboutFrom}
+            />*/}
+          </div>
+        </div>
+        <div className="dash-row fullHeight">
+          <div className="bottomCTA">
+            <span className="miniBox-emoji" role="img" aria-label="waveEmoji">👋</span> <span className="purpleText"><strong>Have a nice day!</strong></span>
           </div>
         </div>
       </div>
