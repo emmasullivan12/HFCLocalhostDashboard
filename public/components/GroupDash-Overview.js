@@ -745,7 +745,10 @@ class GroupDashOverview extends Component {
       ["AR", 32],
       ["AL", 0],
     ]
-    const gbrData = [
+    const gbrDataMentees = [
+      ["BU", 75], ["CM", 43], ["CO", 50], ["DS", 88], ["ES", 150],
+    ]
+    const gbrDataMentors = [
       ["BU", 75], ["CM", 43], ["CO", 50], ["DS", 88], ["ES", 150],
     ]
 
@@ -1106,6 +1109,19 @@ class GroupDashOverview extends Component {
             <div className="dash-boxTitle absolute">
               <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="blueText">Mentee</span> Footprint</strong>
             </div>
+            {group[0].countries.includes('gbr') && (
+              <div className={"choropleth-outerContainer "+'gbr'}>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
+                <ChoroplethMap
+                  country="gbr"
+                  data={gbrDataMentees}
+                  name='UKMapMentees'
+                  countLabel="Mentees"
+                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
             {group[0].countries.includes('usa') && (
               <div className="choropleth-outerContainer">
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
@@ -1139,6 +1155,19 @@ class GroupDashOverview extends Component {
             <div className="dash-boxTitle absolute">
               <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="purpleText">E-Mentor</span> Footprint</strong>
             </div>
+            {group[0].countries.includes('gbr') && (
+              <div className={"choropleth-outerContainer "+'gbr'}>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
+                <ChoroplethMap
+                  country="gbr"
+                  data={gbrDataMentors}
+                  name='UKMapMentors'
+                  countLabel="E-Mentors"
+                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
             {group[0].countries.includes('usa') && (
               <div className="choropleth-outerContainer">
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>

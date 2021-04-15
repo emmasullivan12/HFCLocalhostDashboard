@@ -112,7 +112,7 @@ componentDidMount() {
               borderWidth: 2,
               borderRadius: 4,*/
               font: {
-                size: 10,
+                size: 12,
               },
               padding: 4,
               formatter: (value, context) => {
