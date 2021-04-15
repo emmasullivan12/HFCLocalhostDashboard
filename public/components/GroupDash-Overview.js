@@ -1110,7 +1110,7 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="blueText">Mentee</span> Footprint</strong>
             </div>
             {group[0].countries.includes('gbr') && (
-              <div className={"choropleth-outerContainer "+'gbr'}>
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
                 <ChoroplethMap
                   country="gbr"
@@ -1123,7 +1123,7 @@ class GroupDashOverview extends Component {
               </div>
             )}
             {group[0].countries.includes('usa') && (
-              <div className="choropleth-outerContainer">
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
                 <ChoroplethMap
                   country="usa"
@@ -1136,7 +1136,7 @@ class GroupDashOverview extends Component {
               </div>
             )}
             {group[0].countries.includes('can') && (
-              <div className="choropleth-outerContainer">
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
                 <ChoroplethMap
                 //  country="gbr"
@@ -1156,7 +1156,7 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="locationPinEmoji">📌</span> <strong><span className="purpleText">E-Mentor</span> Footprint</strong>
             </div>
             {group[0].countries.includes('gbr') && (
-              <div className={"choropleth-outerContainer "+'gbr'}>
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
                 <ChoroplethMap
                   country="gbr"
@@ -1169,7 +1169,7 @@ class GroupDashOverview extends Component {
               </div>
             )}
             {group[0].countries.includes('usa') && (
-              <div className="choropleth-outerContainer">
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
                 <ChoroplethMap
                   country="usa"
@@ -1182,7 +1182,7 @@ class GroupDashOverview extends Component {
               </div>
             )}
             {group[0].countries.includes('can') && (
-              <div className="choropleth-outerContainer">
+              <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
                 <ChoroplethMap
                   country="canada"

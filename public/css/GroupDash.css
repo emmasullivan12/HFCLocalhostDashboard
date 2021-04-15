@@ -195,11 +195,6 @@
   margin-bottom: 45px;
   margin-top: 20px;
 }
-.choropleth-outerContainer{
-/*  width: 100%;
-  height: auto;*/
-  margin-top: 20px;
-}
 .dash-boxTitle.mapCountry{
   z-index: 1;
   right: 0;
