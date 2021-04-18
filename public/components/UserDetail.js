@@ -255,10 +255,10 @@ function userFlagEmoji(userCountry) {
       return 'USAFlag-emoji';
     case 'CAN':
       return 'CANFlag-emoji';
-  /*  case 'NZL':
+    case 'NZL':
       return 'NZLFlag-emoji';
     case 'AUS':
-      return 'AUSFlag-emoji';*/
+      return 'AUSFlag-emoji';
     default:
       return 'globe-emoji';
   }

@@ -33,6 +33,11 @@
   color: #58d2bb;
 }
 
+.AUSFlag-emoji{
+  background-position: 0% 86.2745%;
+  width: 24px;
+  height: 24px;
+}
 .CANFlag-emoji{
   background-position: 1.96078% 33.3333%;
   width: 24px;
@@ -73,6 +78,11 @@
 }
 .link-emoji{
   background-position: 52.9412% 49.0196%;
+}
+.NZLFlag-emoji{
+  background-position: 5.88235% 100%;
+  width: 24px;
+  height: 24px;
 }
 .ok-emoji{
   background-position: 27.451% 84.3137%;

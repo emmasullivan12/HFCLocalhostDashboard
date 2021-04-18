@@ -81,7 +81,7 @@ class ChoroplethMap extends Component {
       //  'Light Republican': '#EAA9A8',
         defaultFill: '#f5f5f5'
       },
-      setProjection: country == 'usa' ? null : (element) => {
+      setProjection: country == 'usa' ? null : (element, options) => {
         let lat, long, projection
         if (country == 'gbr') {
           lat = -3.4360 // 3.4360° W
@@ -89,6 +89,12 @@ class ChoroplethMap extends Component {
         } else if (country == 'canada') {
           lat = -106.3468 // 106.3468° W
           long = 56.1304 // 68.1304 or 56.1304° N
+        } else if (country == 'aus') {
+          lat = 133.7751 // 133.7751° E
+          long = -25.2744 // 25.2744° S
+        } else if (country == 'nzl') {
+          lat = 174.8860 // 174.8860° E
+          long = -40.9006 // 40.9006° S
         }
         if (country == 'gbr') {
           projection = d3.geo.albers()
@@ -97,7 +103,6 @@ class ChoroplethMap extends Component {
             .parallels([50,60])
             .scale(1800)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
-
         } else {
           projection = d3.geo.mercator()
             .center([lat, long]) // always in [East Latitude, North Longitude]

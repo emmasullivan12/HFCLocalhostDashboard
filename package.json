@@ -35,7 +35,6 @@
     "body-parser": "^1.18.3",
     "chart.js": "^3.0.2",
     "chartjs-adapter-date-fns": "^1.1.0-beta.1",
-    "chartjs-chart-wordcloud": "^3.0.0",
     "chartjs-plugin-datalabels": "^2.0.0-beta.1",
     "css-loader": "^1.0.1",
     "d3": "^3.5.17",
@@ -45,9 +44,10 @@
     "emoji-mart": "^2.10.0",
     "express": "^4.16.4",
     "nodemon": "^1.18.7",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-router-dom": "^4.3.1",
+    "react-wordcloud": "^1.2.7",
     "style-loader": "^0.23.1",
     "topojson": "^1.6.27"
   }

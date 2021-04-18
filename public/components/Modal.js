@@ -81,7 +81,6 @@ class Modal extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("componentWillUnmount")
     window.removeEventListener('popstate', this.onPopState)
     if (this.props.manualCloseModalNotTrigger) {
       if (this.state.isOpen == true) {

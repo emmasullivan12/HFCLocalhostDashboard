@@ -181,7 +181,7 @@ componentDidUpdate() {
   // On re-render, mutate the data arrays and then update the chart
   this.myChart.data.labels = dataset1.map(d => d.time);
   this.myChart.data.datasets[0].data = dataset1.map(d => d.value);
-  this.myChart.data.datasets[1].data = dataset2.map(d => d.value);
+  //this.myChart.data.datasets[1].data = dataset2.map(d => d.value);
   this.myChart.update();
 }
 

@@ -9,7 +9,7 @@ import ChoroplethMap from './ChoroplethMap.js';
 import DoughnutChart from './DoughnutChart.js';
 import LineChart from './LineChart.js';
 import {userFlagEmoji} from './UserDetail.js';
-//import WordCloud from './WordCloud.js';
+import WordCloud from './WordCloud.js';
 
 class GroupDashOverview extends Component {
   constructor(props) {
@@ -555,7 +555,7 @@ class GroupDashOverview extends Component {
           "value": .02
         },
       ],
-      heardAboutFrom: [
+    /*  heardAboutFrom: [
         { key: 'word', value: 10 },
         { key: 'words', value: 8 },
         { key: 'sprite', value: 7 },
@@ -567,6 +567,30 @@ class GroupDashOverview extends Component {
         { key: 'step', value: 1 },
         { key: 'bounding', value: 1 },
         { key: 'retrieve', value: 1 },
+      ],*/
+      heardAboutFrom: [
+        { text: 'word', value: 10 },
+        { text: 'words', value: 8 },
+        { text: 'sprite', value: 7 },
+        { text: 'placed', value: 5 },
+        { text: 'layout', value: 4 },
+        { text: 'algorithm', value: 4 },
+        { text: 'area', value: 4 },
+        { text: 'without', value: 3 },
+        { text: 'step', value: 1 },
+        { text: 'bounding', value: 1 },
+        { text: 'retrieve', value: 1 },
+        { text: 'word', value: 10 },
+        { text: 'words', value: 8 },
+        { text: 'sprite', value: 7 },
+        { text: 'placed', value: 5 },
+        { text: 'layout', value: 4 },
+        { text: 'algorithm', value: 4 },
+        { text: 'area', value: 4 },
+        { text: 'without', value: 3 },
+        { text: 'step', value: 1 },
+        { text: 'bounding', value: 1 },
+        { text: 'retrieve', value: 1 },
       ],
     }
   }
@@ -636,10 +660,32 @@ class GroupDashOverview extends Component {
     const canDataMentees = [
       ["AB", 5],
       ["SK", 15],
+      ["MB", 0],
+      ["BC", 0],
+      ["NU", 0],
+      ["NT", 0],
+      ["YT", 0],
+      ["ON", 5],
+      ["QC", 0],
+      ["NB", 30],
+      ["NS", 0],
+      ["NF", 10],
+      ["PE", 0],
     ]
     const canDataMentors = [
       ["AB", 5],
       ["SK", 15],
+      ["MB", 0],
+      ["BC", 0],
+      ["NU", 0],
+      ["NT", 0],
+      ["YT", 0],
+      ["ON", 5],
+      ["QC", 0],
+      ["NB", 30],
+      ["NS", 0],
+      ["NF", 10],
+      ["PE", 0],
     ]
     const usaDataMentees = [
       ["AZ", 5],
@@ -745,11 +791,53 @@ class GroupDashOverview extends Component {
       ["AR", 32],
       ["AL", 0],
     ]
-    const gbrDataMentees = [
-      ["BU", 75], ["CM", 43], ["CO", 50], ["DS", 88], ["ES", 150],
+    const gbrDataMentees = [ // PO = our labels 'brec' + 'Mont + 'Radn' and GD = our labels 'caer' + 'Meri'
+      ["AB", 100],["AG", 95],["AM", 90],["AN", 85],["AR", 80],["AS", 70],["AY", 65],["BA", 60],["BB", 55],["BD", 50],["BE", 40],["BF", 35],["BG", 30],["BH", 25],["BJ", 20],["BK", 15],["BL", 15],["BM", 20],["BN", 30],["BO", 35],["BS", 40],["BU", 45],["BW", 50],["BY", 55],["BZ", 60],["CA", 65],["CC", 70],["CE", 0],["CF", 5],["CH", 10],["CI", 15],["CK", 0],["CL", 5],["CM", 10],["CN", 15],["CO", 20],["CP", 25],["CR", 30],["CS", 35],["CU", 40],["CW", 45],["CY", 50],["DA", 55],["DB", 60],["DE", 65],["DG", 70],["DH", 75],["DI", 80],["DN", 85],["DEVO", 90],["DS", 100],["DU", 105],["DW", 110],["EA", 115],["EB", 120],["ED", 125],["EF", 135],["EG", 145],["EL", 150],["ER", 155],["SUSS", 160],["EX", 165],["EY", 170],["FE", 175],["FI", 180],["FK", 185],["FL", 190],["GC", 195],["GD", 200],["GG", 205],["GR", 210],["HA", 215],["HD", 220],["HE", 225],["HF", 230],["HI", 235],["HK", 240],["HL", 245],["HP", 250],["HR", 255],["HT", 260],["HU", 265],["HV", 270],["HY", 275],["IC", 280],["IT", 285],["IW", 295],["KC", 300],["KE", 305],["KH", 310],["KT", 315],["LA", 320],["LB", 330],["LC", 335],["LD", 340],["LI", 345],["LM", 350],["LR", 355],["LS", 0],["LT", 5],["LU", 10],["LW", 15],["MB", 20],["ME", 25],["MF", 30],["MK", 35],["ML", 40],["MM", 45],["MN", 52],["MO", 100],["MS", 110],["MT", 130],["MW", 135],["MY", 140],["NA", 145],["NB", 150],["ND", 155],["NE", 165],["NF", 170],["NG", 175],["NH", 180],["NL", 185],["NM", 190],["NN", 195],["NO", 200],["NP", 205],["NS", 210],["NT", 215],["NW", 220],["NY", 225],["OM", 230],["OX", 235],["PB", 240],["PE", 245],["PK", 0],["PO", 5],["PS", 10],["RB", 15],["RC", 20],["RF", 25],["RL", 30],["RT", 35],["RU", 40],["SA", 45],["SB", 50],["SF", 55],["SJ", 60],["SL", 65],["SM", 70],["SN", 75],["SO", 80],["SP", 85],["SQ", 90],["SR", 95],["SS", 100],["ST", 105],["SU", 110],["SW", 115],["SY", 120],["TB", 140],["TF", 145],["TH", 150],["TK", 155],["TR", 160],["TW", 165],["VG", 190],["WC", 195],["WD", 200],["WE", 205],["WF", 210],["WH", 215],["WI", 220],["WL", 225],["WM", 230],["WR", 265],["WS", 270],["WT", 275],["WW", 285],["WX", 290],["WY", 295],["XB", 320],["YK", 325],["ZG", 330],["ZH", 335],["ZT", 340],
     ]
-    const gbrDataMentors = [
-      ["BU", 75], ["CM", 43], ["CO", 50], ["DS", 88], ["ES", 150],
+    const gbrDataMentors = [ // PO = our labels 'brec' + 'Mont + 'Radn' and GD = our labels 'caer' + 'Meri'
+      ["AB", 100],["AG", 95],["AM", 90],["AN", 85],["AR", 80],["AS", 70],["AY", 65],["BA", 60],["BB", 55],["BD", 50],["BE", 40],["BF", 35],["BG", 30],["BH", 25],["BJ", 20],["BK", 15],["BL", 15],["BM", 20],["BN", 30],["BO", 35],["BS", 40],["BU", 45],["BW", 50],["BY", 55],["BZ", 60],["CA", 65],["CC", 70],["CE", 0],["CF", 5],["CH", 10],["CI", 15],["CK", 0],["CL", 5],["CM", 10],["CN", 15],["CO", 20],["CP", 25],["CR", 30],["CS", 35],["CU", 40],["CW", 45],["CY", 50],["DA", 55],["DB", 60],["DE", 65],["DG", 70],["DH", 75],["DI", 80],["DN", 85],["Devo", 90],["DS", 100],["DU", 105],["DW", 110],["EA", 115],["EB", 120],["ED", 125],["EF", 135],["EG", 145],["EL", 150],["ER", 155],["SUSS", 160],["EX", 165],["EY", 170],["FE", 175],["FI", 180],["FK", 185],["FL", 190],["GC", 195],["GD", 200],["GG", 205],["GR", 210],["HA", 215],["HD", 220],["HE", 225],["HF", 230],["HI", 235],["HK", 240],["HL", 245],["HP", 250],["HR", 255],["HT", 260],["HU", 265],["HV", 270],["HY", 275],["IC", 280],["IT", 285],["IW", 295],["KC", 300],["KE", 305],["KH", 310],["KT", 315],["LA", 320],["LB", 330],["LC", 335],["LD", 340],["LI", 345],["LM", 350],["LR", 355],["LS", 0],["LT", 5],["LU", 10],["LW", 15],["MB", 20],["ME", 25],["MF", 30],["MK", 35],["ML", 40],["MM", 45],["MN", 52],["MO", 100],["MS", 110],["MT", 130],["MW", 135],["MY", 140],["NA", 145],["NB", 150],["ND", 155],["NE", 165],["NF", 170],["NG", 175],["NH", 180],["NL", 185],["NM", 190],["NN", 195],["NO", 200],["NP", 205],["NS", 210],["NT", 215],["NW", 220],["NY", 225],["OM", 230],["OX", 235],["PB", 240],["PE", 245],["PK", 0],["PO", 5],["PS", 10],["RB", 15],["RC", 20],["RF", 25],["RL", 30],["RT", 35],["RU", 40],["SA", 45],["SB", 50],["SF", 55],["SJ", 60],["SL", 65],["SM", 70],["SN", 75],["SO", 80],["SP", 85],["SQ", 90],["SR", 95],["SS", 100],["ST", 105],["SU", 110],["SW", 115],["SY", 120],["TB", 140],["TF", 145],["TH", 150],["TK", 155],["TR", 160],["TW", 165],["VG", 190],["WC", 195],["WD", 200],["WE", 205],["WF", 210],["WH", 215],["WI", 220],["WL", 225],["WM", 230],["WR", 265],["WS", 270],["WT", 275],["WW", 285],["WX", 290],["WY", 295],["XB", 320],["YK", 325],["ZG", 330],["ZH", 335],["ZT", 340],
+    ]
+    const ausDataMentees = [
+      ["NSW", 10],["QLD", 5],["SAU", 23],["TAS", 7],["VIC", 0],["WAU", 9],["ACT", 31],["JBT", 1],["NTE", 3]
+    ]
+    const ausDataMentors = [
+      ["NSW", 10],["QLD", 5],["SAU", 23],["TAS", 7],["VIC", 0],["WAU", 9],["ACT", 31],["JBT", 1],["NTE", 3]
+    ]
+    const nzlDataMentees = [
+      ["NOR", 100],
+      ["Auc", 5],
+      ["Wai", 2],
+      ["BOP", 56],
+      ["GIS", 5],
+      ["HAW", ],
+      ["TAR", 0],
+      ["MAN", 1],
+      ["WEL", 11],
+      ["TAS", 22],
+      ["NEL", 2],
+      ["MAR", 23],
+      ["WES", 43],
+      ["CAN", 45],
+      ["OTA", 14],
+      ["SOU", 3],
+    ]
+    const nzlDataMentors = [
+      ["NOR", 100],
+      ["Auc", 5],
+      ["Wai", 2],
+      ["BOP", 56],
+      ["GIS", 5],
+      ["HAW", ],
+      ["TAR", 0],
+      ["MAN", 1],
+      ["WEL", 11],
+      ["TAS", 22],
+      ["NEL", 2],
+      ["MAR", 23],
+      ["WES", 43],
+      ["CAN", 45],
+      ["OTA", 14],
+      ["SOU", 3],
     ]
 
     const totalMembers = group[0].members.length
@@ -1150,6 +1238,36 @@ class GroupDashOverview extends Component {
                 />
               </div>
             )}
+            {group[0].countries.includes('aus') && (
+              <div>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('AUS')}/></span> Australia</div>
+                <ChoroplethMap
+                //  country="gbr"
+                //  data={gbrData}
+                  country="aus"
+                  data={ausDataMentees}
+                  name='AustraliaMapMentees'
+                  countLabel="Mentees"
+                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+            {group[0].countries.includes('nzl') && (
+              <div>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('NZL')}/></span> New Zealand</div>
+                <ChoroplethMap
+                //  country="gbr"
+                //  data={gbrData}
+                  country="nzl"
+                  data={nzlDataMentees}
+                  name='NZLMapMentees'
+                  countLabel="Mentees"
+                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
           </div>
           <div className="col-6 mainBox">
             <div className="dash-boxTitle absolute">
@@ -1194,6 +1312,34 @@ class GroupDashOverview extends Component {
                 />
               </div>
             )}
+            {group[0].countries.includes('aus') && (
+              <div>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('AUS')}/></span> Australia</div>
+                <ChoroplethMap
+                  country="aus"
+                  data={ausDataMentors}
+                  name='AustraliaMapMentors'
+                  countLabel="E-Mentors"
+                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
+            {group[0].countries.includes('nzl') && (
+              <div>
+                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('NZL')}/></span> New Zealand</div>
+                <ChoroplethMap
+                //  country="gbr"
+                //  data={gbrData}
+                  country="nzl"
+                  data={nzlDataMentors}
+                  name='NZLMapMentors'
+                  countLabel="E-Mentors"
+                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                />
+              </div>
+            )}
           </div>
         </div>
         <div className="dash-row fullHeight">
@@ -1215,9 +1361,9 @@ class GroupDashOverview extends Component {
             <div className="dash-boxTitle">
               <strong><span className="miniBox-emoji" role="img" aria-label="heartArrowEmoji">💘</span> How Users heard about you:</strong>
             </div>
-          {/*  <WordCloud
+            <WordCloud
               words={heardAboutFrom}
-            />*/}
+            />
           </div>
         </div>
         <div className="dash-row fullHeight">

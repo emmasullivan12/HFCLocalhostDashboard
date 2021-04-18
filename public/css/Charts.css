@@ -24,8 +24,9 @@
   right: 30px;
 }
 .choroplethMap.gbr{
-  padding-top: 5px;
+  padding-top: 15px;
   right: 20px;
+  top: -10px;
   padding-bottom: 85%!important;
 }
 .choroplethMap svg{
@@ -46,4 +47,8 @@
   -moz-box-shadow: 1px 1px 1px #9999;
   font-size: 12px;
   border: 1px solid #9999;
+}
+.wordcloud-container svg {
+  height: 100%;
+  width: 100%;
 }
