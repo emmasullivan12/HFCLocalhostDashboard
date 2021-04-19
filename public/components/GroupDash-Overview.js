@@ -633,10 +633,9 @@ class GroupDashOverview extends Component {
     var arrToSearch = role == 'mentee' ? ourGBRDataMentees : (role == 'mentor' ? ourGBRDataMentors : null)
 
     arrToSearch.map((arr, i) => {
-      console.log(arr)
-      console.log(arr[0])
       if (arr[0] == countyCode) {
-        return i
+        console.log(arr[0] + ": " + arr[1])
+        return arr[1]
       }
     })
   }
@@ -814,9 +813,14 @@ class GroupDashOverview extends Component {
     const radnMentees = this.findCounty('Radn', 'mentee')
     const caerMentees = this.findCounty('Caer', 'mentee')
     const meriMentees = this.findCounty('Meri', 'mentee')
+    console.log("check adding: "+brecMentees + montMentees)
+    const poDataMentees = (brecMentees && montMentees && radnMentees) && (brecMentees + montMentees + radnMentees)
+    const gdDataMentees = (caerMentees && meriMentees) && (caerMentees + meriMentees)
+    console.log("poDataMentees: "+poDataMentees)
+    console.log("gdDataMentees: "+ gdDataMentees)
     const gbrDataMentees = [
-      ["PO", ourGBRDataMentees[brecMentees] + ourGBRDataMentees[montMentees] + ourGBRDataMentees[radnMentees]],
-      ["GD", ourGBRDataMentees[caerMentees] + ourGBRDataMentees[meriMentees]],
+      ["PO", poDataMentees],
+      ["GD", gdDataMentees],
       ["Avon", 0],
       ["Bedf", 5],
       ["Berk", 10],
@@ -970,9 +974,11 @@ class GroupDashOverview extends Component {
     const radnMentors = this.findCounty('Radn', 'mentor')
     const caerMentors = this.findCounty('Caer', 'mentor')
     const meriMentors = this.findCounty('Meri', 'mentor')
+    const poDataMentors = (brecMentors && montMentors && radnMentors) && (brecMentors + montMentors + radnMentors)
+    const gdDataMentors = (caerMentors && meriMentors) && (caerMentors + meriMentors)
     const gbrDataMentors = [
-      ["PO", ourGBRDataMentors[brecMentors][1] + ourGBRDataMentors[montMentors][1] + ourGBRDataMentors[radnMentors][1]],
-      ["GD", ourGBRDataMentors[caerMentors][1] + ourGBRDataMentors[meriMentors][1]],
+      ["PO", poDataMentors],
+      ["GD", gdDataMentors],
       ["Avon", 0],
       ["Bedf", 5],
       ["Berk", 10],
@@ -1131,7 +1137,7 @@ class GroupDashOverview extends Component {
       ["Wai", 2],
       ["BOP", 56],
       ["GIS", 5],
-      ["HAW", ],
+      ["HAW", 0],
       ["TAR", 0],
       ["MAN", 1],
       ["WEL", 11],
@@ -1149,7 +1155,7 @@ class GroupDashOverview extends Component {
       ["Wai", 2],
       ["BOP", 56],
       ["GIS", 5],
-      ["HAW", ],
+      ["HAW", 0],
       ["TAR", 0],
       ["MAN", 1],
       ["WEL", 11],
@@ -1521,7 +1527,7 @@ class GroupDashOverview extends Component {
             </div>
             {group[0].countries.includes('gbr') && (
               <div>
-                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
+                <div className="dash-boxTitle absolute mapCountry GBR"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
                 <ChoroplethMap
                   country="gbr"
                   data={gbrDataMentees}
@@ -1597,7 +1603,7 @@ class GroupDashOverview extends Component {
             </div>
             {group[0].countries.includes('gbr') && (
               <div>
-                <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
+                <div className="dash-boxTitle absolute mapCountry GBR"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
                 <ChoroplethMap
                   country="gbr"
                   data={gbrDataMentors}

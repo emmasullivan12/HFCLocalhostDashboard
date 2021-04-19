@@ -197,12 +197,15 @@
 }
 .dash-boxTitle.mapCountry{
   z-index: 1;
-  right: 0;
-/*  left: 50%;
+/*  right: 0;*/
+  left: 50%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);*/
+  -o-transform: translate(-50%, 0);
   color: #3f3f3f;
+}
+.dash-boxTitle.mapCountry.GBR{
+  padding-top: 40px;
 }
