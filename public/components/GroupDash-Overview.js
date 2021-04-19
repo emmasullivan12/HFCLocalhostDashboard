@@ -1,10 +1,10 @@
-// Dex last merged this code on 19th apr 2021 
+// Dex last merged this code on 19th apr 2021
 
 import React, { Component } from "react";
 
 import {cdn} from './CDN.js';
 import BarChart from './BarChart.js';
-import {DateCalc} from './GeneralFunctions.js';
+import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
 import ChoroplethMap from './ChoroplethMap.js';
 import DoughnutChart from './DoughnutChart.js';
 import LineChart from './LineChart.js';
@@ -592,38 +592,67 @@ class GroupDashOverview extends Component {
         ["Radn", 0],
         ["Caer", 5],
         ["Meri", 10]
-      ]
+      ],
+      totalMembersLineChartLoaded: false,
+      menteesWaitingBarChartLoaded: false,
+      mentorsWaitingBarChartLoaded: false,
+      menteesStackedBarChartLoaded: false,
+      menteesGenderChartLoaded: false,
+      menteesEthChartLoaded: false,
+      mentorsStackedBarChartLoaded: false,
+      mentorsGenderChartLoaded: false,
+      mentorsEthChartLoaded: false,
+      userAgeBarChartLoaded: false,
+      menteeTopRolesStackedBarsLoaded: false,
+      mentorTopRolesStackedBarsLoaded: false,
+      menteeGBRMapLoaded: false,
+      menteeUSAMapLoaded: false,
+      menteeCANMapLoaded: false,
+      menteeAUSMapLoaded: false,
+      menteeNZLMapLoaded: false,
+      mentorGBRMapLoaded: false,
+      mentorUSAMapLoaded: false,
+      mentorCANMapLoaded: false,
+      mentorAUSMapLoaded: false,
+      mentorNZLMapLoaded: false,
+      menteeTopEduStackedBarsLoaded: false,
+      mentorTopCosStackedBarsLoaded: false,
+      wordCloudLoaded: false,
     }
   }
 
-  renderStackedBars = (data, mainColour) => {
+  renderStackedBars = (data, mainColour, name) => {
     var topRoleValue = data[0].value
 
     return (
       <div className="stackedBar-outerContainer">
-        {data.map((role, index) => {
-          return (
-            <div className="stackedBar-container small" key={index}>
-              <BarChart
-                dataset1={[{"label": role.label, "value": role.value}]}
-                dataset1Title={role.label}
-                dataset1Colour={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
-                dataset1Fill={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
-                dataset2={[{"label": 'Rest', "value": (topRoleValue - role.value)}]}
-                dataset2Title="Rest"
-                dataset2Colour="#bdbdbd" // grey
-                dataset2Fill="#d0d0d0" // grey
-                showHorizontal
-                showLegend={false}
-                showTitle={false}
-                showTooltip={false}
-                stacked
-                showTitleAndPercentLabels
-                barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif'
-              />
-            </div>
-          )
-        })}
+        {this.state[name+'StackedBarsLoaded'] == false ? (
+          <LoadingSpinner />
+        ) : (
+          data.map((role, index) => {
+            return (
+              <div className="stackedBar-container small" key={index}>
+                <BarChart
+                  dataset1={[{"label": role.label, "value": role.value}]}
+                  dataset1Title={role.label}
+                  dataset1Colour={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
+                  dataset1Fill={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
+                  dataset2={[{"label": 'Rest', "value": (topRoleValue - role.value)}]}
+                  dataset2Title="Rest"
+                  dataset2Colour="#bdbdbd" // grey
+                  dataset2Fill="#d0d0d0" // grey
+                  showHorizontal
+                  showLegend={false}
+                  showTitle={false}
+                  showTooltip={false}
+                  stacked
+                  showTitleAndPercentLabels
+                  barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif'
+                />
+              </div>
+            )
+          })
+        )}
       </div>
     )
   }
@@ -641,7 +670,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
+    const {ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -813,11 +842,8 @@ class GroupDashOverview extends Component {
     const radnMentees = this.findCounty('Radn', 'mentee')
     const caerMentees = this.findCounty('Caer', 'mentee')
     const meriMentees = this.findCounty('Meri', 'mentee')
-    console.log("check adding: "+brecMentees + montMentees)
     const poDataMentees = (brecMentees && montMentees && radnMentees) && (brecMentees + montMentees + radnMentees)
     const gdDataMentees = (caerMentees && meriMentees) && (caerMentees + meriMentees)
-    console.log("poDataMentees: "+poDataMentees)
-    console.log("gdDataMentees: "+ gdDataMentees)
     const gbrDataMentees = [
       ["PO", poDataMentees],
       ["GD", gdDataMentees],
@@ -1209,31 +1235,37 @@ class GroupDashOverview extends Component {
         </div>
         <div className="dash-row">
           <div className="mainBox whiteBox">
-            <div className="mainBox-headerText">
-              <div><strong>Your Members</strong></div>
-              <div className="mainBox-numLarge">{totalMembers}</div>
-              <span className={"percentageChg"+(totalMembersPcChg >= 0 ? ' positive' : ' negative')}>{(totalMembersPcChg >= 0 ? '+' : '') + ((totalMembersPcChg * 100).toFixed(1)) + "%"}</span>
-              <div className="blueText">Mentees</div>
-              <div className="purpleText">E-Mentors</div>
-            </div>
-            <div className="chartDesc-text">Since launch</div>
-            <LineChart
-              dataset1={menteesData}
-              dataset1Title="Mentees"
-              dataset1Colour="#00B0F0"
-              dataset1Fill='gradient'
-              dataset1gradientColour1="0,176,240,1"
-              dataset1gradientColour2="255,255,255,1"
-              dataset1gradientColour3="255,255,255,1"
-              dataset2={mentorsData}
-              dataset2Title="E-Mentors"
-              dataset2Colour="#4E4ED6"
-              dataset2Fill='gradient'
-              dataset2gradientColour1="78,78,214,1"
-              dataset2gradientColour2="255,255,255,1"
-              dataset2gradientColour3="255,255,255,1"
-              showLegend={false}
-            />
+            {totalMembersLineChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <React.Fragment>
+                <div className="mainBox-headerText">
+                  <div><strong>Your Members</strong></div>
+                  <div className="mainBox-numLarge">{totalMembers}</div>
+                  <span className={"percentageChg"+(totalMembersPcChg >= 0 ? ' positive' : ' negative')}>{(totalMembersPcChg >= 0 ? '+' : '') + ((totalMembersPcChg * 100).toFixed(1)) + "%"}</span>
+                  <div className="blueText">Mentees</div>
+                  <div className="purpleText">E-Mentors</div>
+                </div>
+                <div className="chartDesc-text">Since launch</div>
+                <LineChart
+                  dataset1={menteesData}
+                  dataset1Title="Mentees"
+                  dataset1Colour="#00B0F0"
+                  dataset1Fill='gradient'
+                  dataset1gradientColour1="0,176,240,1"
+                  dataset1gradientColour2="255,255,255,1"
+                  dataset1gradientColour3="255,255,255,1"
+                  dataset2={mentorsData}
+                  dataset2Title="E-Mentors"
+                  dataset2Colour="#4E4ED6"
+                  dataset2Fill='gradient'
+                  dataset2gradientColour1="78,78,214,1"
+                  dataset2gradientColour2="255,255,255,1"
+                  dataset2gradientColour3="255,255,255,1"
+                  showLegend={false}
+                />
+              </React.Fragment>
+            )}
           </div>
           <div className="miniBox-container">
             <div className="miniBox first whiteBox">
@@ -1274,48 +1306,56 @@ class GroupDashOverview extends Component {
               <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> <span className="blueText"><strong>Mentees</strong></span> waiting for a match</strong>
               <div><i>Sorted by most in-demand roles vs. Supply</i></div>
             </div>
-            <BarChart
-              dataset1={menteesTopRolesDemand}
-              dataset1Title="Mentees"
-              dataset1Colour="#00B0F0"
-              dataset1Fill="rgba(0,176,240,.2)"
-              dataset1HoverFill="rgba(0,176,240,.95)"
-              dataset2={menteesTopRolesSupply}
-              dataset2Title="E-Mentors"
-              dataset2Colour="#bdbdbd"
-              dataset2Fill="#d0d0d0"
-              dataset2HoverFill="#7f7f7f"
-              showLegend={false}
-              showTitle={false}
-              showTooltip
-              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
-              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
-              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
-            />
+            {menteesWaitingBarChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <BarChart
+                dataset1={menteesTopRolesDemand}
+                dataset1Title="Mentees"
+                dataset1Colour="#00B0F0"
+                dataset1Fill="rgba(0,176,240,.2)"
+                dataset1HoverFill="rgba(0,176,240,.95)"
+                dataset2={menteesTopRolesSupply}
+                dataset2Title="E-Mentors"
+                dataset2Colour="#bdbdbd"
+                dataset2Fill="#d0d0d0"
+                dataset2HoverFill="#7f7f7f"
+                showLegend={false}
+                showTitle={false}
+                showTooltip
+                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+                barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
+              />
+            )}
           </div>
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">
               <strong><span className="miniBox-emoji" role="img" aria-label="clockEmoji">⏱️</span> <span className="purpleText"><strong>E-Mentors</strong></span> waiting for a match</strong>
               <div><i>Sorted by most supplied roles vs. Demand</i></div>
             </div>
-            <BarChart
-              dataset1={mentorsTopRolesDemand}
-              dataset1Title="E-Mentors"
-              dataset1Colour="#4E4ED6"
-              dataset1Fill="rgba(78,78,214,.2)"
-              dataset1HoverFill="rgba(78,78,214,.9)"
-              dataset2={mentorsTopRolesSupply}
-              dataset2Title="Mentees"
-              dataset2Colour="#bdbdbd"
-              dataset2Fill="#d0d0d0"
-              dataset2HoverFill="#7f7f7f"
-              showLegend={false}
-              showTitle={false}
-              showTooltip
-              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
-              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
-              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
-            />
+            {mentorsWaitingBarChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <BarChart
+                dataset1={mentorsTopRolesDemand}
+                dataset1Title="E-Mentors"
+                dataset1Colour="#4E4ED6"
+                dataset1Fill="rgba(78,78,214,.2)"
+                dataset1HoverFill="rgba(78,78,214,.9)"
+                dataset2={mentorsTopRolesSupply}
+                dataset2Title="Mentees"
+                dataset2Colour="#bdbdbd"
+                dataset2Fill="#d0d0d0"
+                dataset2HoverFill="#7f7f7f"
+                showLegend={false}
+                showTitle={false}
+                showTooltip
+                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+                barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
+              />
+            )}
           </div>
         </div>
         <div className="dash-row fullHeight">
@@ -1324,160 +1364,184 @@ class GroupDashOverview extends Component {
               <strong><span className="blueText">Mentees</span></strong>
               <div><i>% split</i></div>
             </div>
-            <div className="stackedBar-container">
-              <BarChart
-                dataset1={menteeRoleSplit1}
-                dataset1Title={menteeRoleSplit1[0].label}
-                dataset1Colour="#4E4ED6"
-                dataset1Fill="rgba(78,78,214,.3)"
-                dataset1HoverFill="rgba(78,78,214,1)"
-                dataset2={menteeRoleSplit2}
-                dataset2Title={menteeRoleSplit2[0].label}
-                dataset2Colour="#15CD94"
-                dataset2Fill="rgba(21,205,148,.3)"
-                dataset2HoverFill="rgba(21,205,148,1)"
-                dataset3={menteeRoleSplit3}
-                dataset3Title={menteeRoleSplit3[0].label}
-                dataset3Colour="#F97BAB"
-                dataset3Fill="rgba(249,123,171,.3)"
-                dataset3HoverFill="rgba(249,123,171,1)"
-                dataset4={menteeRoleSplit4}
-                dataset4Title={menteeRoleSplit4[0].label}
-                dataset4Colour="#00B0F0"
-                dataset4Fill="rgba(0,176,240,.3)"
-                dataset4HoverFill="rgba(0,176,240,1)"
-                dataset5={menteeRoleSplit5}
-                dataset5Title={menteeRoleSplit5[0].label}
-                dataset5Colour="#fce100"
-                dataset5Fill="rgba(252,225,0,.3)"
-                dataset5HoverFill="rgba(252,225,0,1)"
-                showHorizontal
-                showLegend
-                showTitle
-                titleText="by Role type 💼"
-                showTooltip
-                stacked
-                showDataLabelsOnBar
-//                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
-//                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
-              />
-            </div>
-            <div>
-              <DoughnutChart
-                dataset1={menteeGender}
-                dataset1Title={menteeGender[0].label}
-                data1Colour="rgb(249,123,171,1)"
-                data2Colour="rgb(249,123,171,.8)"
-                data3Colour="rgb(249,123,171,.6)"
-                data4Colour="rgb(249,123,171,.4)"
-                showLegend
-                showTitle
-                titleText='by Gender 🧑‍🤝‍🧑'
-                showDataLabelsOnSegment
-              //  showTooltip={false}
-              />
-            </div>
-            <div>
-              <DoughnutChart
-                dataset1={menteeEthnicity}
-                dataset1Title={menteeEthnicity[0].label}
-                data1Colour="rgb(78,78,214,1)"
-                data2Colour="rgb(78,78,214,.8)"
-                data3Colour="rgb(78,78,214,.6)"
-                data4Colour="rgb(78,78,214,.4)"
-                data5Colour="rgb(21,205,148,1)"
-                data6Colour="rgb(21,205,148,.8)"
-                data7Colour="rgb(21,205,148,.6)"
-                data8Colour="rgb(21,205,148,.4)"
-                data9Colour="rgb(252,225,0,1)"
-                data10Colour="rgb(252,225,0,.8)"
-                data11Colour="rgb(252,225,0,.6)"
-                data12Colour="rgb(252,225,0,.4)"
-                showLegend
-                showTitle
-                titleText='by Ethnicity 🌍'
-                showDataLabelsOnSegment
-              //  showTooltip={false}
-              />
-            </div>
+            {menteesStackedBarChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div className="stackedBar-container">
+                <BarChart
+                  dataset1={menteeRoleSplit1}
+                  dataset1Title={menteeRoleSplit1[0].label}
+                  dataset1Colour="#4E4ED6"
+                  dataset1Fill="rgba(78,78,214,.3)"
+                  dataset1HoverFill="rgba(78,78,214,1)"
+                  dataset2={menteeRoleSplit2}
+                  dataset2Title={menteeRoleSplit2[0].label}
+                  dataset2Colour="#15CD94"
+                  dataset2Fill="rgba(21,205,148,.3)"
+                  dataset2HoverFill="rgba(21,205,148,1)"
+                  dataset3={menteeRoleSplit3}
+                  dataset3Title={menteeRoleSplit3[0].label}
+                  dataset3Colour="#F97BAB"
+                  dataset3Fill="rgba(249,123,171,.3)"
+                  dataset3HoverFill="rgba(249,123,171,1)"
+                  dataset4={menteeRoleSplit4}
+                  dataset4Title={menteeRoleSplit4[0].label}
+                  dataset4Colour="#00B0F0"
+                  dataset4Fill="rgba(0,176,240,.3)"
+                  dataset4HoverFill="rgba(0,176,240,1)"
+                  dataset5={menteeRoleSplit5}
+                  dataset5Title={menteeRoleSplit5[0].label}
+                  dataset5Colour="#fce100"
+                  dataset5Fill="rgba(252,225,0,.3)"
+                  dataset5HoverFill="rgba(252,225,0,1)"
+                  showHorizontal
+                  showLegend
+                  showTitle
+                  titleText="by Role type 💼"
+                  showTooltip
+                  stacked
+                  showDataLabelsOnBar
+  //                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+  //                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+                />
+              </div>
+            )}
+            {menteesGenderChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div>
+                <DoughnutChart
+                  dataset1={menteeGender}
+                  dataset1Title={menteeGender[0].label}
+                  data1Colour="rgb(249,123,171,1)"
+                  data2Colour="rgb(249,123,171,.8)"
+                  data3Colour="rgb(249,123,171,.6)"
+                  data4Colour="rgb(249,123,171,.4)"
+                  showLegend
+                  showTitle
+                  titleText='by Gender 🧑‍🤝‍🧑'
+                  showDataLabelsOnSegment
+                //  showTooltip={false}
+                />
+              </div>
+            )}
+            {menteesEthChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div>
+                <DoughnutChart
+                  dataset1={menteeEthnicity}
+                  dataset1Title={menteeEthnicity[0].label}
+                  data1Colour="rgb(78,78,214,1)"
+                  data2Colour="rgb(78,78,214,.8)"
+                  data3Colour="rgb(78,78,214,.6)"
+                  data4Colour="rgb(78,78,214,.4)"
+                  data5Colour="rgb(21,205,148,1)"
+                  data6Colour="rgb(21,205,148,.8)"
+                  data7Colour="rgb(21,205,148,.6)"
+                  data8Colour="rgb(21,205,148,.4)"
+                  data9Colour="rgb(252,225,0,1)"
+                  data10Colour="rgb(252,225,0,.8)"
+                  data11Colour="rgb(252,225,0,.6)"
+                  data12Colour="rgb(252,225,0,.4)"
+                  showLegend
+                  showTitle
+                  titleText='by Ethnicity 🌍'
+                  showDataLabelsOnSegment
+                //  showTooltip={false}
+                />
+              </div>
+            )}
           </div>
           <div className="col-6 mainBox whiteBox">
             <div className="dash-boxTitle absolute">
               <strong><span className="purpleText">E-Mentors</span></strong>
               <div><i>% split</i></div>
             </div>
-            <div className="stackedBar-container">
-              <BarChart
-                dataset1={mentorRoleSplit1}
-                dataset1Title={mentorRoleSplit1[0].label}
-                dataset1Colour="#4E4ED6"
-                dataset1Fill="rgba(78,78,214,.3)"
-                dataset1HoverFill="rgba(78,78,214,1)"
-                dataset2={mentorRoleSplit2}
-                dataset2Title={mentorRoleSplit2[0].label}
-                dataset2Colour="#15CD94"
-                dataset2Fill="rgba(21,205,148,.3)"
-                dataset2HoverFill="rgba(21,205,148,1)"
-                dataset3={mentorRoleSplit3}
-                dataset3Title={mentorRoleSplit3[0].label}
-                dataset3Colour="#F97BAB"
-                dataset3Fill="rgba(249,123,171,.3)"
-                dataset3HoverFill="rgba(249,123,171,1)"
-                dataset4={mentorRoleSplit4}
-                dataset4Title={mentorRoleSplit4[0].label}
-                dataset4Colour="#00B0F0"
-                dataset4Fill="rgba(0,176,240,.3)"
-                dataset4HoverFill="rgba(0,176,240,1)"
-                dataset5={mentorRoleSplit5}
-                dataset5Title={mentorRoleSplit5[0].label}
-                dataset5Colour="#fce100"
-                dataset5Fill="rgba(252,225,0,.3)"
-                dataset5HoverFill="rgba(252,225,0,1)"
-                showHorizontal
-                showLegend
-                showTitle
-                titleText="by Role type 💼"
-                showTooltip
-                stacked
-                showDataLabelsOnBar
-              />
-            </div>
-            <div>
-              <DoughnutChart
-                dataset1={mentorGender}
-                dataset1Title={mentorGender[0].label}
-                data1Colour="rgb(249,123,171,1)"
-                data2Colour="rgb(249,123,171,.8)"
-                data3Colour="rgb(249,123,171,.6)"
-                data4Colour="rgb(249,123,171,.4)"
-                showLegend
-                showTitle
-                titleText='by Gender 🧑‍🤝‍🧑'
-                showDataLabelsOnSegment
-              />
-            </div>
-            <div>
-              <DoughnutChart
-                dataset1={mentorEthnicity}
-                dataset1Title={mentorEthnicity[0].label}
-                data1Colour="rgb(78,78,214,1)"
-                data2Colour="rgb(78,78,214,.8)"
-                data3Colour="rgb(78,78,214,.6)"
-                data4Colour="rgb(78,78,214,.4)"
-                data5Colour="rgb(21,205,148,1)"
-                data6Colour="rgb(21,205,148,.8)"
-                data7Colour="rgb(21,205,148,.6)"
-                data8Colour="rgb(21,205,148,.4)"
-                data9Colour="rgb(252,225,0,1)"
-                data10Colour="rgb(252,225,0,.8)"
-                data11Colour="rgb(252,225,0,.6)"
-                data12Colour="rgb(252,225,0,.4)"
-                showLegend
-                showTitle
-                titleText='by Ethnicity 🌍'
-                showDataLabelsOnSegment
-              />
-            </div>
+            {mentorsStackedBarChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div className="stackedBar-container">
+                <BarChart
+                  dataset1={mentorRoleSplit1}
+                  dataset1Title={mentorRoleSplit1[0].label}
+                  dataset1Colour="#4E4ED6"
+                  dataset1Fill="rgba(78,78,214,.3)"
+                  dataset1HoverFill="rgba(78,78,214,1)"
+                  dataset2={mentorRoleSplit2}
+                  dataset2Title={mentorRoleSplit2[0].label}
+                  dataset2Colour="#15CD94"
+                  dataset2Fill="rgba(21,205,148,.3)"
+                  dataset2HoverFill="rgba(21,205,148,1)"
+                  dataset3={mentorRoleSplit3}
+                  dataset3Title={mentorRoleSplit3[0].label}
+                  dataset3Colour="#F97BAB"
+                  dataset3Fill="rgba(249,123,171,.3)"
+                  dataset3HoverFill="rgba(249,123,171,1)"
+                  dataset4={mentorRoleSplit4}
+                  dataset4Title={mentorRoleSplit4[0].label}
+                  dataset4Colour="#00B0F0"
+                  dataset4Fill="rgba(0,176,240,.3)"
+                  dataset4HoverFill="rgba(0,176,240,1)"
+                  dataset5={mentorRoleSplit5}
+                  dataset5Title={mentorRoleSplit5[0].label}
+                  dataset5Colour="#fce100"
+                  dataset5Fill="rgba(252,225,0,.3)"
+                  dataset5HoverFill="rgba(252,225,0,1)"
+                  showHorizontal
+                  showLegend
+                  showTitle
+                  titleText="by Role type 💼"
+                  showTooltip
+                  stacked
+                  showDataLabelsOnBar
+                />
+              </div>
+            )}
+            {mentorsGenderChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div>
+                <DoughnutChart
+                  dataset1={mentorGender}
+                  dataset1Title={mentorGender[0].label}
+                  data1Colour="rgb(249,123,171,1)"
+                  data2Colour="rgb(249,123,171,.8)"
+                  data3Colour="rgb(249,123,171,.6)"
+                  data4Colour="rgb(249,123,171,.4)"
+                  showLegend
+                  showTitle
+                  titleText='by Gender 🧑‍🤝‍🧑'
+                  showDataLabelsOnSegment
+                />
+              </div>
+            )}
+            {mentorsEthChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <div>
+                <DoughnutChart
+                  dataset1={mentorEthnicity}
+                  dataset1Title={mentorEthnicity[0].label}
+                  data1Colour="rgb(78,78,214,1)"
+                  data2Colour="rgb(78,78,214,.8)"
+                  data3Colour="rgb(78,78,214,.6)"
+                  data4Colour="rgb(78,78,214,.4)"
+                  data5Colour="rgb(21,205,148,1)"
+                  data6Colour="rgb(21,205,148,.8)"
+                  data7Colour="rgb(21,205,148,.6)"
+                  data8Colour="rgb(21,205,148,.4)"
+                  data9Colour="rgb(252,225,0,1)"
+                  data10Colour="rgb(252,225,0,.8)"
+                  data11Colour="rgb(252,225,0,.6)"
+                  data12Colour="rgb(252,225,0,.4)"
+                  showLegend
+                  showTitle
+                  titleText='by Ethnicity 🌍'
+                  showDataLabelsOnSegment
+                />
+              </div>
+            )}
           </div>
         </div>
         <div className="dash-row fullHeight">
@@ -1486,38 +1550,42 @@ class GroupDashOverview extends Component {
               <strong><span className="miniBox-emoji" role="img" aria-label="calendarEmoji">📅</span> Split by Age:</strong>
               <div><i><span className="blueText"><strong>Mentees</strong></span> and <span className="purpleText"><strong>E-Mentors</strong></span></i></div>
             </div>
-            <BarChart
-              dataset1={menteesByAge}
-              dataset1Title="Mentees"
-              dataset1Colour="#00B0F0"
-              dataset1Fill="rgba(0,176,240,.2)"
-              dataset1HoverFill="rgba(0,176,240,.95)"
-              dataset2={mentorsByAge}
-              dataset2Title="E-Mentors"
-              dataset2Colour="#4E4ED6"
-              dataset2Fill="rgba(78,78,214,.2)"
-              dataset2HoverFill="rgba(78,78,214,.9)"
-              showLegend={false}
-              showTitle={false}
-              showTooltip
-              datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
-              barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
-              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
-            />
+            {userAgeBarChartLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <BarChart
+                dataset1={menteesByAge}
+                dataset1Title="Mentees"
+                dataset1Colour="#00B0F0"
+                dataset1Fill="rgba(0,176,240,.2)"
+                dataset1HoverFill="rgba(0,176,240,.95)"
+                dataset2={mentorsByAge}
+                dataset2Title="E-Mentors"
+                dataset2Colour="#4E4ED6"
+                dataset2Fill="rgba(78,78,214,.2)"
+                dataset2HoverFill="rgba(78,78,214,.9)"
+                showLegend={false}
+                showTitle={false}
+                showTooltip
+                datasetToShowBarLabel="all" // "all" or e.g. "Mentees" or "E-Mentors"
+                barLabelToShow='data' // "data" i.e. take the value or 'text string' or '🔥' (html emoji)
+                barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif' // useful to make emojis bigger
+              />
+            )}
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Top Roles <span className="blueText"><strong>Mentees</strong></span> want
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(menteeTopRoles, "yellow") }
+            { this.renderStackedBars(menteeTopRoles, "yellow", 'menteeTopRoles') }
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="briefcaseEmoji">💼</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Roles
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(mentorTopRoles, "black") }
+            { this.renderStackedBars(mentorTopRoles, "black", 'mentorTopRoles') }
           </div>
         </div>
         <div className="dash-row fullHeight">
@@ -1528,72 +1596,92 @@ class GroupDashOverview extends Component {
             {group[0].countries.includes('gbr') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry GBR"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
-                <ChoroplethMap
-                  country="gbr"
-                  data={gbrDataMentees}
-                  name='UKMapMentees'
-                  countLabel="Mentees"
-                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {menteeGBRMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="gbr"
+                    data={gbrDataMentees}
+                    name='UKMapMentees'
+                    countLabel="Mentees"
+                    colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('usa') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
-                <ChoroplethMap
-                  country="usa"
-                  data={usaDataMentees}
-                  name='USAMapMentees'
-                  countLabel="Mentees"
-                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {menteeUSAMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="usa"
+                    data={usaDataMentees}
+                    name='USAMapMentees'
+                    countLabel="Mentees"
+                    colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('can') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
-                <ChoroplethMap
-                //  country="gbr"
-                //  data={gbrData}
-                  country="canada"
-                  data={canDataMentees}
-                  name='CanadaMapMentees'
-                  countLabel="Mentees"
-                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {menteeCANMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                  //  country="gbr"
+                  //  data={gbrData}
+                    country="canada"
+                    data={canDataMentees}
+                    name='CanadaMapMentees'
+                    countLabel="Mentees"
+                    colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('aus') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('AUS')}/></span> Australia</div>
-                <ChoroplethMap
-                //  country="gbr"
-                //  data={gbrData}
-                  country="aus"
-                  data={ausDataMentees}
-                  name='AustraliaMapMentees'
-                  countLabel="Mentees"
-                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {menteeAUSMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                  //  country="gbr"
+                  //  data={gbrData}
+                    country="aus"
+                    data={ausDataMentees}
+                    name='AustraliaMapMentees'
+                    countLabel="Mentees"
+                    colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('nzl') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('NZL')}/></span> New Zealand</div>
-                <ChoroplethMap
-                //  country="gbr"
-                //  data={gbrData}
-                  country="nzl"
-                  data={nzlDataMentees}
-                  name='NZLMapMentees'
-                  countLabel="Mentees"
-                  colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {menteeNZLMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                  //  country="gbr"
+                  //  data={gbrData}
+                    country="nzl"
+                    data={nzlDataMentees}
+                    name='NZLMapMentees'
+                    countLabel="Mentees"
+                    colourScheme="#00B0F0" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#95d9f3" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
           </div>
@@ -1604,68 +1692,88 @@ class GroupDashOverview extends Component {
             {group[0].countries.includes('gbr') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry GBR"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('GBR')}/></span> UK</div>
-                <ChoroplethMap
-                  country="gbr"
-                  data={gbrDataMentors}
-                  name='UKMapMentors'
-                  countLabel="E-Mentors"
-                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {mentorGBRMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="gbr"
+                    data={gbrDataMentors}
+                    name='UKMapMentors'
+                    countLabel="E-Mentors"
+                    colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('usa') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('USA')}/></span> United States</div>
-                <ChoroplethMap
-                  country="usa"
-                  data={usaDataMentors}
-                  name='USAMapMentors'
-                  countLabel="E-Mentors"
-                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {mentorUSAMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="usa"
+                    data={usaDataMentors}
+                    name='USAMapMentors'
+                    countLabel="E-Mentors"
+                    colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('can') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('CAN')}/></span> Canada</div>
-                <ChoroplethMap
-                  country="canada"
-                  data={canDataMentors}
-                  name='CanadaMapMentors'
-                  countLabel="E-Mentors"
-                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {mentorCANMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="canada"
+                    data={canDataMentors}
+                    name='CanadaMapMentors'
+                    countLabel="E-Mentors"
+                    colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('aus') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('AUS')}/></span> Australia</div>
-                <ChoroplethMap
-                  country="aus"
-                  data={ausDataMentors}
-                  name='AustraliaMapMentors'
-                  countLabel="E-Mentors"
-                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {mentorAUSMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                    country="aus"
+                    data={ausDataMentors}
+                    name='AustraliaMapMentors'
+                    countLabel="E-Mentors"
+                    colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
             {group[0].countries.includes('nzl') && (
               <div>
                 <div className="dash-boxTitle absolute mapCountry"><span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji('NZL')}/></span> New Zealand</div>
-                <ChoroplethMap
-                //  country="gbr"
-                //  data={gbrData}
-                  country="nzl"
-                  data={nzlDataMentors}
-                  name='NZLMapMentors'
-                  countLabel="E-Mentors"
-                  colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
-                  hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
-                />
+                {mentorNZLMapLoaded == false ? (
+                  <LoadingSpinner />
+                ) : (
+                  <ChoroplethMap
+                  //  country="gbr"
+                  //  data={gbrData}
+                    country="nzl"
+                    data={nzlDataMentors}
+                    name='NZLMapMentors'
+                    countLabel="E-Mentors"
+                    colourScheme="#4E4ED6" // "#4E4ED6" is purple and "#00B0F0" is blue
+                    hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
+                  />
+                )}
               </div>
             )}
           </div>
@@ -1676,22 +1784,26 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="schoolEmoji">🏫</span> Top <span className="blueText"><strong>Mentee</strong></span> School / Unis
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(menteeTopEdu, "yellow") }
+            { this.renderStackedBars(menteeTopEdu, "yellow", 'menteeTopEdu') }
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="officeEmoji">🏢</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Companies
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(mentorTopCos, "black") }
+            { this.renderStackedBars(mentorTopCos, "black", 'mentorTopCos') }
           </div>
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">
               <strong><span className="miniBox-emoji" role="img" aria-label="heartArrowEmoji">💘</span> How Users heard about you:</strong>
             </div>
-            <WordCloud
-              words={heardAboutFrom}
-            />
+            {wordCloudLoaded == false ? (
+              <LoadingSpinner />
+            ) : (
+              <WordCloud
+                words={heardAboutFrom}
+              />
+            )}
           </div>
         </div>
         <div className="dash-row fullHeight">

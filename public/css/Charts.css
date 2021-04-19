@@ -29,9 +29,6 @@
   top: -10px;
   padding-bottom: 85%!important;
 }
-.choroplethMap.nzl{
-  left: 25px;
-}
 .choroplethMap svg{
   width: 100%;
   height: 100%;

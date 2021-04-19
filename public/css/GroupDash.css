@@ -84,6 +84,11 @@
   min-width: 0; /* required for allowing chart.js charts to be properly responsive */
   position: relative;
 }
+.mainBox .SpinnerWrapper,
+.flexBox-Chart .SpinnerWrapper{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .whiteBox{
   border-radius: 12px;
   -webkit-border-radius: 12px;
