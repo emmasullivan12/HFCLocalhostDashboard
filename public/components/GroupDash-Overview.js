@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th apr 2021
+// Dex last merged this code on 19th apr 2021
 
 import React, { Component } from "react";
 
@@ -642,7 +642,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {ourGBRDataMentees, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
+    const {ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -971,8 +971,8 @@ class GroupDashOverview extends Component {
     const caerMentors = this.findCounty('Caer', 'mentor')
     const meriMentors = this.findCounty('Meri', 'mentor')
     const gbrDataMentors = [
-      ["PO", ourGBRDataMentees[brecMentors][1] + ourGBRDataMentees[montMentors][1] + ourGBRDataMentees[radnMentors][1]],
-      ["GD", ourGBRDataMentees[caerMentors][1] + ourGBRDataMentees[meriMentors][1]],
+      ["PO", ourGBRDataMentors[brecMentors][1] + ourGBRDataMentors[montMentors][1] + ourGBRDataMentors[radnMentors][1]],
+      ["GD", ourGBRDataMentors[caerMentors][1] + ourGBRDataMentors[meriMentors][1]],
       ["Avon", 0],
       ["Bedf", 5],
       ["Berk", 10],
