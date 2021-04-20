@@ -3,6 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import MenuNav from './MenuNav.js';
 import GroupDashOverview from "./GroupDash-Overview";
 import GroupDashMembers from "./GroupDash-Members";
 import GroupDashPayment from "./GroupDash-Payment";
@@ -46,7 +47,8 @@ class GroupDashboard extends React.Component {
       <React.Fragment>
         <div className="tabWindow">
           <div className="title-blankPage">
-            <strong>Dashboard</strong>
+            <MenuNav />
+            <div><strong>Dashboard</strong></div>
           </div>
           <div className="groupdash-menuBar">
             <button type="button" name="overview" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>

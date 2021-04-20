@@ -618,7 +618,7 @@ class GroupDashOverview extends Component {
       mentorNZLMapLoaded: false,
       menteeTopEduStackedBarsLoaded: false,
       mentorTopCosStackedBarsLoaded: false,
-      wordCloudLoaded: false,
+      wordCloudLoaded: true,
       isGeneralError: false,
       generalErrorMessage: 'Shit went wrong bro! Looks like it was all your fault too'
     }
