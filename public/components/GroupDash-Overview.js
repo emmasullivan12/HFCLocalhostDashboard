@@ -1,8 +1,9 @@
-// Dex last merged this code on 19th apr 2021 
+// Dex last merged this code on 19th apr 2021
 
 import React, { Component } from "react";
 
 import {cdn} from './CDN.js';
+import AlertBox from './AlertBox.js';
 import BarChart from './BarChart.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
 import ChoroplethMap from './ChoroplethMap.js';
@@ -618,6 +619,8 @@ class GroupDashOverview extends Component {
       menteeTopEduStackedBarsLoaded: false,
       mentorTopCosStackedBarsLoaded: false,
       wordCloudLoaded: false,
+      isGeneralError: false,
+      generalErrorMessage: 'Shit went wrong bro! Looks like it was all your fault too'
     }
   }
 
@@ -670,7 +673,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
+    const {isGeneralError, generalErrorMessage, ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -1207,6 +1210,11 @@ class GroupDashOverview extends Component {
 
     return (
       <div>
+        {(isGeneralError == true || generalErrorMessage != '') && (
+          <AlertBox successOrFailure='failure' fadesOut={false}>
+            <div>{generalErrorMessage != '' ? generalErrorMessage : 'Hmm, Something went wrong. Please refresh the page and try again'}</div>
+          </AlertBox>
+        )}
         <div className="dash-welcomeContainer">
           <div className="col-7">
             <div className="dash-welcomeHeader"><strong>Welcome back, {adminUser.fname}!</strong></div>
