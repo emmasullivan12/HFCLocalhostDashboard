@@ -238,6 +238,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     color: #fff!important;
     background: #76c1b3!important;
   }
+  .fullpage-modal-container.openFlexContainer,
   .flex-container-overlay.group {
     background-color: #272727!important;
   }
