@@ -15,6 +15,18 @@ class ChoroplethMap extends Component {
   }
 
   componentDidMount(){
+    this.drawMap();
+  }
+
+  componentDidUpdate() {
+    this.drawMap();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeMap);
+  }
+
+  drawMap = () => {
     const {name, country, data, countLabel, colourScheme, hoverBorderColour} = this.props;
 
     //var Datamap = require('datamaps/dist/datamaps.' + (country == 'usa' ? country : 'none') + '.min.js');
@@ -114,11 +126,6 @@ class ChoroplethMap extends Component {
       }
     });
     this.map = map;
-
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resizeMap);
   }
 
   resizeMap = () => {
