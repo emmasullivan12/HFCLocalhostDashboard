@@ -164,7 +164,7 @@ function StdMessage(props) {
           </div>
         ):(
           <div className="message-container">
-            <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
+            <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
                 <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
@@ -207,7 +207,7 @@ function DisplayFile(props) {
     <React.Fragment>
       <div className="block-container" onBlur={toggleMoreActionsBlur}>
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
               <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
@@ -254,7 +254,7 @@ function MessageNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
               <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
@@ -287,7 +287,7 @@ function UploadNotSent(props) {
     <React.Fragment>
       <div className="block-container">
         <div className="message-container">
-          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
+          <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
               <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
@@ -402,7 +402,7 @@ function PrAuto(props) {
             <div className="message-extras-border" />
             <div className="msg-extras">
               <div className="message-container noPaddingL noPaddingR noPaddingT">
-                <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={40}/>
+                <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
                     <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>

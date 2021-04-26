@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th apr 2021 
+// Dex last merged this code on 20th apr 2021
 
 import React, { Component } from "react";
 
@@ -664,9 +664,8 @@ class GroupDashOverview extends Component {
     const {ourGBRDataMentees, ourGBRDataMentors} = this.state
     var arrToSearch = role == 'mentee' ? ourGBRDataMentees : (role == 'mentor' ? ourGBRDataMentors : null)
 
-    arrToSearch.map((arr, i) => {
+    arrToSearch.map((arr) => {
       if (arr[0] == countyCode) {
-        console.log(arr[0] + ": " + arr[1])
         return arr[1]
       }
     })

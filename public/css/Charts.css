@@ -48,7 +48,17 @@
   font-size: 12px;
   border: 1px solid #9999;
 }
+.wordcloud-container{
+  height: 300px;
+}
 .wordcloud-container svg {
   height: 100%;
   width: 100%;
+}
+.tippy-box{
+  background-color: #3f3f3f;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
 }

@@ -215,3 +215,9 @@
 .dash-boxTitle.mapCountry.GBR{
   padding-top: 40px;
 }
+.noUsersToDisplay{
+  text-align: center;
+  margin-top: 20px;
+  color: darkgrey;
+  font-size: 14px;
+}

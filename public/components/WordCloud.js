@@ -33,9 +33,12 @@ render() {
     spiral: "archimedean",
     transitionDuration: 1000
   };
+  const callbacks = {
+    getWordTooltip: word => `${word.value} [${word.value > 1 ? "people" : "person"}] heard about you via "${word.text}".`
+  };
     return (
       <div className="wordcloud-container">
-        <ReactWordcloud words={words} options={options}/>
+        <ReactWordcloud words={words} options={options} callbacks={callbacks} />
       </div>
     );
   }
