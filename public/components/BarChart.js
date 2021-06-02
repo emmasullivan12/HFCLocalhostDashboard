@@ -12,7 +12,7 @@ class BarChart extends Component {
   }
 
 componentDidMount() {
-  const {showTitleAndPercentLabels, showDataLabelsOnBar, showTitle, titleText, showTooltip, showHorizontal, stacked, barLabelFont, datasetToShowBarLabel, barLabelToShow, dataset1, dataset1Title, dataset1Colour, dataset1Fill, dateset1HoverFill, dataset2, dataset2Title, dataset2Colour, dataset2Fill, dateset2HoverFill, dataset3, dataset3Title, dataset3Colour, dataset3Fill, dateset3HoverFill, dataset4, dataset4Title, dataset4Colour, dataset4Fill, dateset4HoverFill, dataset5, dataset5Title, dataset5Colour, dataset5Fill, dateset5HoverFill, showLegend} = this.props;
+  const {showTitleAndPercentLabels, showDataLabelsOnBar, showTitle, titleText, showTooltip, showHorizontal, stacked, barLabelFont, datasetToShowBarLabel, barLabelToShow, dataset1, dataset1Title, dataset1Colour, dataset1Fill, dateset1HoverFill, dataset2, dataset2Title, dataset2Colour, dataset2Fill, dateset2HoverFill, dataset3, dataset3Title, dataset3Colour, dataset3Fill, dateset3HoverFill, dataset4, dataset4Title, dataset4Colour, dataset4Fill, dateset4HoverFill, dataset5, dataset5Title, dataset5Colour, dataset5Fill, dateset5HoverFill, dataset6, dataset6Title, dataset6Colour, dataset6Fill, dateset6HoverFill, dataset7, dataset7Title, dataset7Colour, dataset7Fill, dateset7HoverFill, showLegend} = this.props;
   const ctx = this.barChartRef.current;
 
   var datasetsArr = [{
@@ -65,6 +65,28 @@ componentDidMount() {
             borderWidth: 1,
             borderRadius: stacked ? 0 : 5
           })
+          if (dataset6) {
+            datasetsArr.push({
+              label: dataset6Title,
+              data: dataset6.map(d => d.value),
+              backgroundColor: dataset6Fill,
+              hoverBackgroundColor: dateset6HoverFill,
+              borderColor: dataset6Colour,
+              borderWidth: 1,
+              borderRadius: stacked ? 0 : 5
+            })
+            if (dataset7) {
+              datasetsArr.push({
+                label: dataset7Title,
+                data: dataset7.map(d => d.value),
+                backgroundColor: dataset7Fill,
+                hoverBackgroundColor: dateset7HoverFill,
+                borderColor: dataset7Colour,
+                borderWidth: 1,
+                borderRadius: stacked ? 0 : 5
+              })
+            }
+          }
         }
       }
     }

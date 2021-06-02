@@ -74,7 +74,7 @@ class UserToCheck extends Component {
         if (approveCrimRecord == true) {
           return true
         } else return false
-      }
+      } else return true
     } else return false
   }
 

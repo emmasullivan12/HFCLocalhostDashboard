@@ -103,7 +103,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
     color: #bfbfbf!important;
   }
   .messages-panel{
-    background-color: #3f3f3f!important;
+    background-color: #272727!important;
+    background-image: none!important;
   /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
   }
   .message-content{
@@ -136,10 +137,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
     color: #b9b9b9!important;
   }
   .block-container:hover {
-    background-color: rgb(121 121 121 / 50%)!important;
+    background-color: rgb(121 121 121 / 27%)!important;
   }
   .block-container.keepHover {
-    background-color: rgb(121 121 121 / 50%)!important;
+    background-color: rgb(121 121 121 / 27%)!important;
   }
   .sender-name{
     color: #b9b9b9!important;
@@ -170,7 +171,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     border: .0625rem solid #929292!important;
   }
   .chatWindow-footer {
-    background-color: #3f3f3f!important;
+    background-color: #272727!important;
   }
   .input-box-container {
     border: 1px solid #6d6d6d!important;

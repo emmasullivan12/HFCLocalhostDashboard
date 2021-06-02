@@ -19,6 +19,7 @@ class ChoroplethMap extends Component {
   }
 
   componentDidUpdate() {
+    console.log("didupdate")
     this.drawMap();
   }
 

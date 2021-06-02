@@ -422,9 +422,9 @@ class PrAddMessage extends Component {
                     onKeyDown={this.onEnterPress}
                     onKeyUp={this.onKeyUp}
                     placeholder={isOffline ? "You're offline..." : "Type message..."}
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck="off"
+                    autoComplete="on"
+                    autoCorrect="on"
+                    spellCheck="true"
                     maxLength="5000"
                     disabled={isOffline}
                     autoFocus

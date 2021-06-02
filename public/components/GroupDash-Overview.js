@@ -219,18 +219,30 @@ class GroupDashOverview extends Component {
       menteeRoleSplit3: [
         {
           "label": 'Art / Animation',
-          "value": .2
+          "value": .15
         }
       ],
       menteeRoleSplit4: [
         {
-          "label": 'Technical',
-          "value": .15
+          "label": 'Production',
+          "value": .1
         }
       ],
       menteeRoleSplit5: [
         {
-          "label": 'Other',
+          "label": 'Technical',
+          "value": .05
+        },
+      ],
+      menteeRoleSplit6: [
+        {
+          "label": 'Business / Other',
+          "value": .05
+        },
+      ],
+      menteeRoleSplit7: [
+        {
+          "label": 'Undecided',
           "value": .05
         },
       ],
@@ -249,18 +261,30 @@ class GroupDashOverview extends Component {
       mentorRoleSplit3: [
         {
           "label": 'Art / Animation',
-          "value": .2
+          "value": .15
         }
       ],
       mentorRoleSplit4: [
         {
-          "label": 'Technical',
-          "value": .15
+          "label": 'Production',
+          "value": .1
         }
       ],
       mentorRoleSplit5: [
         {
-          "label": 'Other',
+          "label": 'Technical',
+          "value": .05
+        },
+      ],
+      mentorRoleSplit6: [
+        {
+          "label": 'Business / Other',
+          "value": .05
+        },
+      ],
+      mentorRoleSplit7: [
+        {
+          "label": 'Undecided',
           "value": .05
         },
       ],
@@ -594,30 +618,30 @@ class GroupDashOverview extends Component {
         ["Caer", 5],
         ["Meri", 10]
       ],
-      totalMembersLineChartLoaded: false,
-      menteesWaitingBarChartLoaded: false,
-      mentorsWaitingBarChartLoaded: false,
-      menteesStackedBarChartLoaded: false,
-      menteesGenderChartLoaded: false,
-      menteesEthChartLoaded: false,
-      mentorsStackedBarChartLoaded: false,
-      mentorsGenderChartLoaded: false,
-      mentorsEthChartLoaded: false,
-      userAgeBarChartLoaded: false,
-      menteeTopRolesStackedBarsLoaded: false,
-      mentorTopRolesStackedBarsLoaded: false,
-      menteeGBRMapLoaded: false,
-      menteeUSAMapLoaded: false,
-      menteeCANMapLoaded: false,
-      menteeAUSMapLoaded: false,
-      menteeNZLMapLoaded: false,
-      mentorGBRMapLoaded: false,
-      mentorUSAMapLoaded: false,
-      mentorCANMapLoaded: false,
-      mentorAUSMapLoaded: false,
-      mentorNZLMapLoaded: false,
-      menteeTopEduStackedBarsLoaded: false,
-      mentorTopCosStackedBarsLoaded: false,
+      totalMembersLineChartLoaded: true,
+      menteesWaitingBarChartLoaded: true,
+      mentorsWaitingBarChartLoaded: true,
+      menteesStackedBarChartLoaded: true,
+      menteesGenderChartLoaded: true,
+      menteesEthChartLoaded: true,
+      mentorsStackedBarChartLoaded: true,
+      mentorsGenderChartLoaded: true,
+      mentorsEthChartLoaded: true,
+      userAgeBarChartLoaded: true,
+      menteeTopRolesStackedBarsLoaded: true,
+      mentorTopRolesStackedBarsLoaded: true,
+      menteeGBRMapLoaded: true,
+      menteeUSAMapLoaded: true,
+      menteeCANMapLoaded: true,
+      menteeAUSMapLoaded: true,
+      menteeNZLMapLoaded: true,
+      mentorGBRMapLoaded: true,
+      mentorUSAMapLoaded: true,
+      mentorCANMapLoaded: true,
+      mentorAUSMapLoaded: true,
+      mentorNZLMapLoaded: true,
+      menteeTopEduStackedBarsLoaded: true,
+      mentorTopCosStackedBarsLoaded: true,
       wordCloudLoaded: true,
       isGeneralError: false,
       generalErrorMessage: 'Shit went wrong bro! Looks like it was all your fault too'
@@ -672,7 +696,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {isGeneralError, generalErrorMessage, ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
+    const {isGeneralError, generalErrorMessage, ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, menteeRoleSplit6, menteeRoleSplit7, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, mentorRoleSplit6, mentorRoleSplit7, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -1378,29 +1402,39 @@ class GroupDashOverview extends Component {
                 <BarChart
                   dataset1={menteeRoleSplit1}
                   dataset1Title={menteeRoleSplit1[0].label}
-                  dataset1Colour="#4E4ED6"
+                  dataset1Colour="#4E4ED6" // purple
                   dataset1Fill="rgba(78,78,214,.3)"
                   dataset1HoverFill="rgba(78,78,214,1)"
                   dataset2={menteeRoleSplit2}
                   dataset2Title={menteeRoleSplit2[0].label}
-                  dataset2Colour="#15CD94"
-                  dataset2Fill="rgba(21,205,148,.3)"
-                  dataset2HoverFill="rgba(21,205,148,1)"
+                  dataset2Colour="#ffc107" // orange
+                  dataset2Fill="rgba(255,193,7,.3)"
+                  dataset2HoverFill="rgba255,193,7,0,1)"
                   dataset3={menteeRoleSplit3}
                   dataset3Title={menteeRoleSplit3[0].label}
-                  dataset3Colour="#F97BAB"
-                  dataset3Fill="rgba(249,123,171,.3)"
-                  dataset3HoverFill="rgba(249,123,171,1)"
+                  dataset3Colour="#15CD94" // green
+                  dataset3Fill="rgba(21,205,148,.3)"
+                  dataset3HoverFill="rgba(21,205,148,1)"
                   dataset4={menteeRoleSplit4}
                   dataset4Title={menteeRoleSplit4[0].label}
-                  dataset4Colour="#00B0F0"
-                  dataset4Fill="rgba(0,176,240,.3)"
-                  dataset4HoverFill="rgba(0,176,240,1)"
+                  dataset4Colour="#fce100" // yellow
+                  dataset4Fill="rgba(252,225,0,.3)"
+                  dataset4HoverFill="rgba(252,225,0,1)"
                   dataset5={menteeRoleSplit5}
                   dataset5Title={menteeRoleSplit5[0].label}
-                  dataset5Colour="#fce100"
-                  dataset5Fill="rgba(252,225,0,.3)"
-                  dataset5HoverFill="rgba(252,225,0,1)"
+                  dataset5Colour="#00B0F0" // blue
+                  dataset5Fill="rgba(0,176,240,.3)"
+                  dataset5HoverFill="rgba(0,176,240,1)"
+                  dataset6={menteeRoleSplit6}
+                  dataset6Title={menteeRoleSplit6[0].label}
+                  dataset6Colour="#F97BAB" // pink
+                  dataset6Fill="rgba(249,123,171,.3)"
+                  dataset6HoverFill="rgba(249,123,171,1)"
+                  dataset7={menteeRoleSplit7}
+                  dataset7Title={menteeRoleSplit7[0].label}
+                  dataset7Colour="#9e9e9e" // grey
+                  dataset7Fill="rgba(158,158,158,.3)"
+                  dateset7HoverFill="rgba(158,158,158,0,1)"
                   showHorizontal
                   showLegend
                   showTitle
@@ -1472,29 +1506,41 @@ class GroupDashOverview extends Component {
                 <BarChart
                   dataset1={mentorRoleSplit1}
                   dataset1Title={mentorRoleSplit1[0].label}
-                  dataset1Colour="#4E4ED6"
+                  dataset1Colour="#4E4ED6" // purple
                   dataset1Fill="rgba(78,78,214,.3)"
                   dataset1HoverFill="rgba(78,78,214,1)"
                   dataset2={mentorRoleSplit2}
                   dataset2Title={mentorRoleSplit2[0].label}
-                  dataset2Colour="#15CD94"
-                  dataset2Fill="rgba(21,205,148,.3)"
-                  dataset2HoverFill="rgba(21,205,148,1)"
+                  dataset2Colour="#ffc107" // orange
+                  dataset2Fill="rgba(255,193,7,.3)"
+                  dataset2HoverFill="rgba255,193,7,0,1)"
                   dataset3={mentorRoleSplit3}
                   dataset3Title={mentorRoleSplit3[0].label}
-                  dataset3Colour="#F97BAB"
-                  dataset3Fill="rgba(249,123,171,.3)"
-                  dataset3HoverFill="rgba(249,123,171,1)"
+                  dataset3Colour="#15CD94" // green
+                  dataset3Fill="rgba(21,205,148,.3)"
+                  dataset3HoverFill="rgba(21,205,148,1)"
                   dataset4={mentorRoleSplit4}
                   dataset4Title={mentorRoleSplit4[0].label}
-                  dataset4Colour="#00B0F0"
-                  dataset4Fill="rgba(0,176,240,.3)"
-                  dataset4HoverFill="rgba(0,176,240,1)"
+                  dataset4Colour="#fce100" // yellow
+                  dataset4Fill="rgba(252,225,0,.3)"
+                  dataset4HoverFill="rgba(252,225,0,1)"
                   dataset5={mentorRoleSplit5}
                   dataset5Title={mentorRoleSplit5[0].label}
-                  dataset5Colour="#fce100"
-                  dataset5Fill="rgba(252,225,0,.3)"
-                  dataset5HoverFill="rgba(252,225,0,1)"
+                  dataset5Colour="#00B0F0" // blue
+                  dataset5Fill="rgba(0,176,240,.3)"
+                  dataset5HoverFill="rgba(0,176,240,1)"
+                  dataset6={mentorRoleSplit6}
+                  dataset6Title={mentorRoleSplit6[0].label}
+                  dataset6Colour="#F97BAB" // pink
+                  dataset6Fill="rgba(249,123,171,.3)"
+                  dataset6HoverFill="rgba(249,123,171,1)"
+                  dataset7={mentorRoleSplit7}
+                  dataset7Title={mentorRoleSplit7[0].label}
+                  dataset7Colour="#9e9e9e" // grey
+                  dataset7Fill="rgba(158,158,158,.3)"
+                  dateset7HoverFill="rgba(158,158,158,0,1)"
+
+
                   showHorizontal
                   showLegend
                   showTitle
