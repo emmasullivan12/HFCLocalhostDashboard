@@ -498,6 +498,15 @@ class ChatWindow extends Component {
   const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, channelAllowed, founders, pms} = this.props;
   const {onScroll} = this;
   const isOffline = false;
+  let feedbackDone;
+  const feedbackDoneMentee = true
+  const feedbackDoneMentor = false
+  const userRole = 'mentee';
+  if (userRole == 'mentee') {
+    feedbackDone = feedbackDoneMentee
+  } else if (userRole == 'mentor') {
+    feedbackDone = feedbackDoneMentor
+  }
   const isVerifiedGroup = true
   const icon = getIcon(channelType)
   const isPBotChat = true //this.props.chatsList.pbotchat
@@ -610,6 +619,15 @@ class ChatWindow extends Component {
                 </div>
               </div>
             )}
+            {!feedbackDone && (
+              <div className="chatTopBanners priorityBanner">
+                <div className="banner offlineBanner">
+                  <div className="bannerMsg">
+                    You haven&#39;t completed your chat feedback yet. Click the button in your most recent message!
+                  </div>
+                </div>
+              </div>
+            )}
             {isLoadingMsgs && (
               <div className="chatTopBanners">
                 <div className="banner loadingMsgsBanner">
@@ -660,6 +678,7 @@ class ChatWindow extends Component {
             <PrAddMessage
               isGroup={isGroup}
               isOffline={isOffline}
+              incompleteFeedback={!feedbackDone}
               ref={this.childRef}
             />
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >

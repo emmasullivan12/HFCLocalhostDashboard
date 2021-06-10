@@ -615,6 +615,15 @@ class PrMessagesList extends Component {
           },
         ]
       },
+      {
+        id: '100018',
+        uid: '55555',
+        type: 'message',
+        subtype: 'chatFeedbackReq',
+        author: 'prospela',
+        ts: '2020-09-04T13:30:50.667Z',
+        text: '',
+      },
     ];
 
     const {handleLastPic, founders, pms, scrollToNewMessage} = this.props

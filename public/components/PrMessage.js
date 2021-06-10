@@ -5,11 +5,13 @@ import React, { Component } from "react";
 //import AcceptCTA from './AcceptCTA.js';
 import AudioCTA from './AudioCTA.js';
 import Avatar from './Avatar.js';
+import ChatFeedbackReq from './ChatFeedbackReq.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import EmojiReactions from './EmojiReactions.js';
 import FeedbkCTA from './FeedbkCTA.js';
+import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE, DateCalc} from './GeneralFunctions.js';
+import {isIE, DateCalc, Check} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
@@ -18,6 +20,7 @@ import PrModAuto from './PrModAutoMsgs.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
+
 
 import "../css/Emoji.css";
 import "../css/General.css";
@@ -43,8 +46,6 @@ const MentorProfileMsgBtnModalProps = {
   usedFor: 'mentor-msgBtn-profile',
   backBtn: 'arrow'
 }
-
-
 
 function TimeCalc(props) {
   var ts = new Date(props.time);
@@ -530,12 +531,14 @@ class PrMessageContents extends Component {
 
   render() {
     const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic, isFounder, isPM, isProspelaTeam} = this.props
-    const userRole = 'mentor'
+    const userRole = 'mentee'
     switch (message.subtype) {
       case "welcome":
         return <WelcomeMessage message={message} userRole={userRole} isProspelaAuto/>
       case "finTraining":
         return <FinishedSUMessage message={message} userRole={userRole} isProspelaAuto/>
+      case "chatFeedbackReq":
+        return <ChatFeedbackReq message={message} userRole={userRole} isProspelaAuto/>
       case "std":
         return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
       case "file":

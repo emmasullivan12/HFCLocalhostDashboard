@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th mar 2021 
+// Dex last merged this code on 26th mar 2021
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -343,7 +343,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'prospela' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

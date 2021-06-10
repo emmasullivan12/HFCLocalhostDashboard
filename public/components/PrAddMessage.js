@@ -399,13 +399,13 @@ class PrAddMessage extends Component {
 
   render() {
     const {showEmojis, text} = this.state;
-    const {isOffline} = this.props;
+    const {isOffline, incompleteFeedback} = this.props;
 
     return (
       <React.Fragment>
         <div id="new-message" className="chatWindow-footer">
           <div className="footer-container">
-            <div className={"input-box-container"+ (isOffline ? " offline" : "")}>
+            <div className={"input-box-container"+ ((isOffline || incompleteFeedback) ? " offline" : "")}>
               <div className="input-flexContainer">
                 <form className="textInput-container" id="chatMessageForm">
                   <p id="notAllowedText"/>
@@ -421,12 +421,12 @@ class PrAddMessage extends Component {
                   //  onScroll={this.handleTextAreaScroll}
                     onKeyDown={this.onEnterPress}
                     onKeyUp={this.onKeyUp}
-                    placeholder={isOffline ? "You're offline..." : "Type message..."}
+                    placeholder={isOffline ? "You're offline..." : (incompleteFeedback ? "Please complete your chat feedback..." : "Type message...")}
                     autoComplete="on"
                     autoCorrect="on"
                     spellCheck="true"
                     maxLength="5000"
-                    disabled={isOffline}
+                    disabled={isOffline || incompleteFeedback}
                     autoFocus
                   />
           {  /*    <div className="highlight-container">
@@ -465,7 +465,7 @@ class PrAddMessage extends Component {
                 <Modal {...CameraUploadModalProps}>
                   <CameraUploadContent/>
                 </Modal>
-                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + ((!isOffline && text.length > 0) ? ' isTyping' : "") + (isOffline ? ' isOffline' : '')} onClick={isOffline ? '' : this.handleSubmit}>
+                <button type="button" disabled={text.length === 0} className={"sendMsgContainer" + ((!isOffline && !incompleteFeedback && text.length > 0) ? ' isTyping' : "") + ((isOffline || incompleteFeedback) ? ' isOffline' : '')} onClick={((isOffline || incompleteFeedback) ? null : this.handleSubmit)}>
                   <i className="fas fa-paper-plane" />
                 </button>
               </div>

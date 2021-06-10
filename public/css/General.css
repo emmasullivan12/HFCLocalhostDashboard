@@ -353,7 +353,7 @@ table th .description{
   vertical-align: middle;
 }
 .smallFont{
-  font-size: 14px;
+  font-size: 14px!important;
 }
 .bold{
   font-weight: 600;

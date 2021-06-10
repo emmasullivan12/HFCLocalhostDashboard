@@ -100,7 +100,9 @@ class PrModAuto extends Component {
         chaser_status: {
           menteeResent: '2021-03-17T13:07:05.000Z',
           mentorResent: '2021-03-23T00:00:00.000Z'
-        }
+        },
+        feedbackDoneMentee: false,
+        feedbackDoneMentor: true,
       }
     ]
     const mentorFname = '[ MENTOR FNAME ]'
@@ -186,6 +188,7 @@ class PrModAuto extends Component {
       }
     ]
     const userRole = 'mentor' // Logged in user viewing message
+    const uid = '123' // Logged in user viewing message
     let userNotYetResponded;
     let userTimedOut;
     let userAcc;
@@ -200,6 +203,10 @@ class PrModAuto extends Component {
     let timeoutDate;
     let timerText;
     let dateDiff;
+    let feedbackDone;
+    let feedbackBtnToShow;
+    let menteeTxt;
+    let mentorTxt;
 
     var today = new Date();
     var x;
@@ -269,7 +276,7 @@ class PrModAuto extends Component {
       // Sending a potential Mentor to mentee for approval
       case 'sendMatch':
 
-        text = 'Hi, @' + userToMatch[0].fname + '! 👋 \n\n~*🎉 NEW E-MENTOR MATCH*~ \n\nI\'ve shared a profile of ' + potentialMatch[0].fname + ' with you below, who I think could be a *great match for you...* ' + (matchDetail[0].match_comments != '' ? ('\n\n '+ matchDetail[0].match_comments) : '') + '\n\nIf you\'re happy, simply click *Accept* to get chatting :) \n\n _If you\'re unsure, feel free to ask me any questions before responding - I\'ll be your Relationship Manager, and I\'d be happy to help!_ '
+        text = 'Hi @' + userToMatch[0].fname + '! 👋 \n\n~*🎉 NEW E-MENTOR MATCH*~ \n\nI\'ve shared a profile of ' + potentialMatch[0].fname + ' with you below, who I think could be a *great match for you...* ' + (matchDetail[0].match_comments != '' ? ('\n\n '+ matchDetail[0].match_comments) : '') + '\n\nIf you\'re happy, simply click *Accept* to get chatting :) \n\n _If you\'re unsure, feel free to ask me any questions before responding - I\'ll be your Relationship Manager, and I\'d be happy to help!_ '
         userNotYetResponded = matchDetail[0].status_of_match == 1
         userTimedOut = matchDetail[0].status_of_match == 2
         userAcc = matchDetail[0].status_of_match == 3 || matchDetail[0].status_of_match > 4
@@ -329,8 +336,6 @@ class PrModAuto extends Component {
       return time;
     }
   }*/
-
-
 
         return (
           <div className="block-container">
@@ -511,7 +516,7 @@ class PrModAuto extends Component {
       // Sending mentee's intro message and profile to mentor for approval
       case 'sendMenteeReq':
 
-        text = 'Hi, @' + mentorFname + '! 👋 \n\n~*🎉 NEW MENTEE MATCH*~ \n\nI have a mentee (' + userToMatch[0].fname + ') who is *excited to be matched with you.* They wanted to say a few words to introduce themselves and I\'ve also shared a little bit about them below. \n\nIf you\'re happy, simply click *Accept* to get chatting :) \n\n _If you\'re unsure, feel free to ask me any questions before responding - I\'ll be your Relationship Manager and I\'d be happy to help!_ '
+        text = 'Hi @' + mentorFname + '! 👋 \n\n~*🎉 NEW MENTEE MATCH*~ \n\nI have a mentee (' + userToMatch[0].fname + ') who is *excited to be matched with you.* They wanted to say a few words to introduce themselves and I\'ve also shared a little bit about them below. \n\nIf you\'re happy, simply click *Accept* to get chatting :) \n\n _If you\'re unsure, feel free to ask me any questions before responding - I\'ll be your Relationship Manager and I\'d be happy to help!_ '
         userNotYetResponded = matchDetail[0].status_of_match == 3
         userTimedOut = matchDetail[0].status_of_match == 5
         userAcc = matchDetail[0].status_of_match == 6
