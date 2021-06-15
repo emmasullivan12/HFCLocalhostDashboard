@@ -1107,6 +1107,8 @@ class Form extends Component {
               focusOnLoad={(i === 0) ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
               showCheckbox={question['showCheckbox']}
+              showIcon={question['showIcon']}
+              iconToShow={question['iconToShow']}
               isForForm
               required={required}
             />

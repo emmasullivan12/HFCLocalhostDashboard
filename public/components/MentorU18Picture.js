@@ -27,7 +27,7 @@ class MentorU18Picture extends Component {
             Upload a selfie with your Photo ID
           </h2>
           <p className="landingCTADesc">
-            To verify your identify, please upload a clear photo of yourself with your valid government-issued photo ID (e.g. Passport, Drivers Licence). We&#39;re so grateful that you&#39;d like to support under-18s!
+            To verify your identify, please upload a clear photo of yourself <strong>holding</strong> your valid government-issued photo ID (e.g. Passport, Drivers Licence). NOTE: Your photo ID must be legible otherwise your selfie will be rejected. We&#39;re so grateful that you&#39;d like to support under-18s!
           </p>
           <Modal {...U18CameraUploadModalProps}>
             <U18CameraUploadContent/>
