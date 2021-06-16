@@ -38,9 +38,9 @@ class MainMenu extends Component {
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
             <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Dashboard</NavLink>
-    {/*        <FullPageModal {...MentorProfileModalProps}>
+            <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
-            </FullPageModal>*/}
+            </FullPageModal>
           </div>
         );
     } else {
@@ -48,10 +48,10 @@ class MainMenu extends Component {
         <div className="mainMenu">
           <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
-      {/*    <FullPageModal {...MenteeProfileModalProps}>
+          <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>
-          <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
+        {/*}  <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
           <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink> */}
         </div>
       );

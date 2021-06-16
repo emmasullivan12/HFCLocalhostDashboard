@@ -623,6 +623,49 @@ class PrMessagesList extends Component {
         author: 'prospela',
         ts: '2020-09-04T13:30:50.667Z',
         text: '',
+        chatFeedbackReq: {
+          type: 'initialReq',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100019',
+        uid: '55555',
+        type: 'message',
+        subtype: 'chatFeedbackReq',
+        author: 'prospela',
+        ts: '2020-09-04T13:30:50.667Z',
+        text: '',
+        chatFeedbackReq: {
+          type: 'chaser',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100020',
+        uid: '55555',
+        type: 'message',
+        subtype: 'chatFeedbackReq',
+        author: 'prospela',
+        ts: '2020-09-04T13:30:50.667Z',
+        text: '',
+        chatFeedbackReq: {
+          type: 'otherCompleted',
+          matchid: '12345',
+        }
+      },
+      {
+        id: '100021',
+        uid: '55555',
+        type: 'message',
+        subtype: 'chatFeedbackReq',
+        author: 'prospela',
+        ts: '2020-09-04T13:30:50.667Z',
+        text: '',
+        chatFeedbackReq: {
+          type: 'bothCompleted',
+          matchid: '12345',
+        }
       },
     ];
 

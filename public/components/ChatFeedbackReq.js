@@ -7,11 +7,17 @@ import {Check} from './GeneralFunctions.js';
 import FeedbackSuccessContent from './FeedbackSuccessModalContent.js'
 import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
+import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
 
+const ManageFeedbackProps = {
+  ariaLabel: 'View & manage your chat feedback',
+  triggerText: 'View the full Feedback',
+  usedFor: 'manageFeedback',
+}
 const MenteeFeedbackProps = {
   ariaLabel: 'Complete your chat feedback',
   triggerText: 'Complete Feedback',
@@ -68,65 +74,57 @@ class ChatFeedbackReq extends Component {
 
     const menteeName = 'Emma'
     const mentorName = 'Dexter'
-    const feedbackDoneMentee = false
+    const feedbackDoneMentee = true
     const feedbackDoneMentor = false
+    const chaserType = message.chatFeedbackReq.type
+    const feedbackFromMentee = 'Thank you so much for being an amazing mentor! I really liked when you said XYZ it was so inspiring!'
+    const feedbackFromMentor = 'You are so passionate about this topic and a great communicator. It has been a pleasure being your mentor and wish you all the best! Im sure we will stay in touch'
     let text;
+    let menteeTxt;
+    let mentorTxt;
     let feedbackBtnToShow;
     let feedbackDone;
 
-    const menteeTxt = 'Hi @' + menteeName + '! \n\n~*📢 IT\'S CHAT FEEDBACK TIME! 📝*~ \n\n You\'ve had some time to kick off your conversation. Now, take a minute to *reflect* on the experience so far, *share some feedback* and *how you\'d like to engage* with ' + mentorName + ' going forward. \n\n You\'ll have space to leave private feedback, just for ' + mentorName + ', and other requests to help you get the most out of your match.\n\n _You\'ll be able to continue chatting afterwards and we won\'t share any of your responses until after ' + mentorName + ' leaves their feedback too._ '
-    const mentorTxt = 'Hi @' + mentorName + '! \n\n~*📢 IT\'S CHAT FEEDBACK TIME! 📝*~ \n\n You\'ve had some time to kick off your conversation. Now, take a minute to *reflect* on the experience so far, *share some feedback* and *how you\'d like to engage* with ' + menteeName + ' going forward. \n\n You\'ll have space to leave private feedback, just for ' + menteeName + ', and public comments if you\'d like to help give them a leg up with a positive reference.\n\n _You\'ll be able to continue chatting afterwards and we won\'t share any of your responses until after ' + menteeName + ' leaves their feedback too._ '
-
-    if (userRole == 'mentee') {
-      feedbackBtnToShow = 'mentee'
-      text = menteeTxt
-      feedbackDone = feedbackDoneMentee
-    } else if (userRole == 'mentor') {
-      feedbackBtnToShow = 'mentor'
-      text = mentorTxt
-      feedbackDone = feedbackDoneMentor
-    }
-
     var questionsMentee = [
       {q: 'How satisfied are you with how your relationship is progressing with ' + mentorName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod")', aType: 'rating', req: 1, name: 'overallSatisMentee', ratingOutOf: 10},
-      {q: 'Help ' + mentorName + ' learn how they came across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve.', aType: 'interim', name: 'interim'},
-      {q: 'To what extent do they help you focus, prioritise and set a clear vision for your future:', detail: 'e.g. they help you with decision making and visualising what your success might look like', aType: 'yesno', req: 1, name: 'mentorCompFuture', options: [
+      {q: 'Help ' + mentorName + ' learn how they come across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve.', aType: 'interim', name: 'interim'},
+      {q: 'Do they help you focus, prioritise and set a clear vision for your future:', detail: 'e.g. they help you with decision making and visualising what your success might look like', aType: 'yesno', req: 1, name: 'mentorCompFuture', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'To what extent do they share their own experiences and best practice from other role models:', detail: 'e.g. they explain how they approach similar challenges / experiences, or analyse how others achieve great performance', aType: 'yesno', req: 1, name: 'mentorRoleModel', options: [
+      {q: 'Do they share their own experiences and best practice from other role models:', detail: 'e.g. they explain how they approach similar challenges / experiences, or analyse how others achieve great performance', aType: 'yesno', req: 1, name: 'mentorRoleModel', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'To what extent do they encourage you to push yourself and insist on high effort from you:', detail: 'e.g. they set high expectations, challenge you, and show belief that you can achieve more, go further or work harder', aType: 'yesno', req: 1, name: 'mentorHighPerf', options: [
+      {q: 'Do they encourage you to push yourself and insist on high effort from you:', detail: 'e.g. do they set high expectations, challenge you, and show belief that you can achieve more, go further or work harder', aType: 'yesno', req: 1, name: 'mentorHighPerf', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'To what extent do you feel you can express your personal feelings and discuss non-career related topics:', detail: 'e.g. they encourage you to express your thoughts & feelings, and create a non-judgmental space to work through challenges / discuss other areas of your life', aType: 'yesno', req: 1, name: 'mentorIndivSupport', options: [
+      {q: 'Do they encourage you to express your thoughts & feelings and / or discuss non-career related topics:', aType: 'yesno', req: 1, name: 'mentorIndivSupport', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'To what extent do they play devils advocate, helping you think of new ideas, ways of thinking and / or how to solve problems:', detail: 'e.g. they challenge you to think, reflect & explain rationale and provides new ways of thinking about a problem', aType: 'yesno', req: 1, name: 'mentorIntellStimu', options: [
+      {q: 'Do they play devils advocate, challenging you to think of new ideas, ways of thinking and / or how to solve problems:', aType: 'yesno', req: 1, name: 'mentorIntellStimu', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'To what extent do they give you detailed instructions and specific tasks to complete:', detail: 'e.g. they tell you how to carry out certain tasks to achieve the career path you want', aType: 'yesno', req: 1, name: 'mentorDirLeader', options: [
+      {q: 'Do they give you detailed instructions and specific tasks to complete:', aType: 'yesno', req: 1, name: 'mentorDirLeader', options: [
         {value: '0', label: 'Regularly'},
         {value: '1', label: 'Sometimes'},
         {value: '2', label: 'Rarely'},
         {value: '3', label: 'Never'}
       ]},
-      {q: 'Do you think you\'d enjoy working with someone like ' + mentorName + '?', aType: 'select', req: 1, placeholder: 'Select response...', name: 'wouldWorkWith', valueToShow: 'label', options: [
+      {q: 'Do you think you\'d enjoy working with someone like ' + mentorName + '?', detail: 'Note: Your mentor will NOT see your answer to this question', aType: 'select', req: 1, placeholder: 'Select response...', name: 'wouldWorkWith', valueToShow: 'label', options: [
         {value: '0', label: 'Strongly Agree'},
         {value: '1', label: 'Agree'},
         {value: '2', label: 'Neutral'},
@@ -151,7 +149,7 @@ class ChatFeedbackReq extends Component {
         {value: '14', label: 'inspiring'},
         {value: '15', label: 'N/A or Don\'t know'},
       ]},
-      {q: 'Has ' + mentorName + ' helped you achieve any of the following?', aType: 'selectMulti', req: 1, showIcon: true, iconToShow: 'iconFA', showCheckbox: true, placeholder: 'Select achievements...', placeholderOnClick: 'Choose from our list:', name: 'menteeMilestones', valueToShow: 'label', options: [
+      {q: 'Has ' + mentorName + ' helped you with any of the following?', aType: 'selectMulti', req: 1, showIcon: true, iconToShow: 'iconFA', showCheckbox: true, placeholder: 'Select achievements...', placeholderOnClick: 'Choose from our list:', name: 'menteeMilestones', valueToShow: 'label', options: [
         {value: '', label: 'Career-related', iconFA: 'fas fa-briefcase', isTitle: true},
         {value: '1', label: 'Made a career decision', checkbox: true, isTitle: false},
         {value: '2', label: 'Knowing what next steps to take', checkbox: true, isTitle: false},
@@ -173,7 +171,7 @@ class ChatFeedbackReq extends Component {
         {value: '', label: 'Other', iconFA: 'fas fa-meteor', isTitle: true},
         {value: '0', label: 'Nothing, yet', checkbox: true, isTitle: false},
       ]},
-      {q: 'Going forward, would you like your E-Mentor to provide more insights to any of the following?', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select insights you\'d like...', placeholderOnClick: 'Choose from our list:', name: 'menteeWantsMoreOf', valueToShow: 'label', options: [
+      {q: 'What would you like your E-Mentor to provide more insights to?', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select insights you\'d like...', placeholderOnClick: 'Choose from our list:', name: 'menteeWantsMoreOf', valueToShow: 'label', options: [
         {value: '1', label: 'Work-life reality (e.g. hours, stress, etc.)'},
         {value: '2', label: 'Industry / sector trends & insights'},
         {value: '3', label: 'Company culture (e.g. team, values)'},
@@ -184,43 +182,43 @@ class ChatFeedbackReq extends Component {
         {value: '8', label: 'More pictures of work life'},
         {value: '0', label: 'None of these'},
       ]},
-      {q: 'Add a note to ' + mentorName + '. Let them know how they helped you.', detail: 'What have they done well? Did they give you a particularly memorable insight? And / or say thanks for being a great mentor!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your message to ' + mentorName + ' here...', name: 'noteToMentor'},
+      {q: 'Add a note to ' + mentorName + '. Let them know how they helped you:', detail: 'Did they give you a particularly memorable insight? And / or say thanks for being a great mentor! (Note: your mentor may choose to publicise this on their profile, so be sure not to include any personal information)', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your message to ' + mentorName + ' here...', name: 'noteToMentor'},
     ]
 
     var questionsMentor = [
       {q: 'How satisfied are you with how your relationship is progressing with ' + menteeName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod")', aType: 'rating', req: 1, name: 'overallSatisMentor', ratingOutOf: 10},
-      {q: 'Help your mentee learn how they came across. Describe their mindset / ability against the following key skills:', detail: 'Try to be as honest as possible to help them make the most of the mentoring experience (and beyond!). It will also help us know what support we can give them.', aType: 'interim', name: 'interim'},
-      {q: 'To what extent do they communicate clearly, in a professional & friendly way:', detail: 'e.g. speaking to-the-point, good grammar & spelling, injected with a bit of personality', aType: 'yesno', req: 1, name: 'menteeComms', options: [
+      {q: 'Help your mentee learn how they come across. Describe their mindset / ability against the following key skills:', detail: 'Try to be as honest as possible to help them make the most of the mentoring experience (and beyond!). It will also help us know what support we can give them.', aType: 'interim', name: 'interim'},
+      {q: 'Do they communicate clearly, in a professional & friendly way:', detail: 'e.g. speaking to-the-point, good grammar & spelling, injected with a bit of personality', aType: 'yesno', req: 1, name: 'menteeComms', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},
         {value: '2', label: 'Needs some work'},
         {value: '3', label: 'Inadequate'}
       ]},
-      {q: 'To what extent do they show curiosity, open-mindedness and proactively ask for help:', detail: 'e.g. they ask lots of questions, delve deeper on topics ("why / how?"), and demonstrate a desire for learning new things', aType: 'yesno', req: 1, name: 'menteeCurio', options: [
+      {q: 'Do they show curiosity, open-mindedness and proactively ask for help:', detail: 'e.g. they ask lots of questions, delve deeper on topics ("why / how?"), and demonstrate a desire for learning new things', aType: 'yesno', req: 1, name: 'menteeCurio', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},
         {value: '2', label: 'Needs some work'},
         {value: '3', label: 'Inadequate'}
       ]},
-      {q: 'To what extent do they demonstrate ambition, drive & clear commitment to accomplish their goals:', detail: 'e.g. they have a clear career motivation and seem willing to do whatever it takes to be successful', aType: 'yesno', req: 1, name: 'menteeAmb', options: [
+      {q: 'Do they demonstrate ambition, drive & clear commitment to accomplish their goals:', detail: 'e.g. they have a clear career motivation and seem willing to do whatever it takes to be successful', aType: 'yesno', req: 1, name: 'menteeAmb', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},
         {value: '2', label: 'Needs some work'},
         {value: '3', label: 'Inadequate'}
       ]},
-      {q: 'To what extent do they have a genuine confidence & belief in their own capacity to succeed:', detail: 'e.g. they\'re clear about their relative strengths & weaknesses, comfortable they can develop skills they lack if needed, and appear resilient when challenged / facing a hurdle', aType: 'yesno', req: 1, name: 'menteeConf', options: [
+      {q: 'Do they have a genuine confidence & belief in their own capacity to succeed:', detail: 'e.g. they\'re clear about their relative strengths & weaknesses, comfortable they can develop skills they lack if needed, and appear resilient when challenged / facing a hurdle', aType: 'yesno', req: 1, name: 'menteeConf', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},
         {value: '2', label: 'Needs some work'},
         {value: '3', label: 'Inadequate'}
       ]},
-      {q: 'To what extent do they try to build a strong relationship with you, and appreciate that networking opens doors:', detail: 'e.g. they\'re very likeable, show regular appreciation for your help, and perhaps even offered advice back to you', aType: 'yesno', req: 1, name: 'menteeNetw', options: [
+      {q: 'Do they try to build a strong relationship with you, and appreciate that networking opens doors:', detail: 'e.g. they\'re very likeable, show regular appreciation for your help, and perhaps even offered advice back to you', aType: 'yesno', req: 1, name: 'menteeNetw', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},
         {value: '2', label: 'Needs some work'},
         {value: '3', label: 'Inadequate'}
       ]},
-      {q: 'If you were hiring, would you hire this mentee?', aType: 'select', req: 1, placeholder: 'Select response...', name: 'wouldHire', valueToShow: 'label', options: [
+      {q: 'If you were hiring, would you hire this mentee?', detail: 'Note: Your mentee will NOT see your answer to this question', aType: 'select', req: 1, placeholder: 'Select response...', name: 'wouldHire', valueToShow: 'label', options: [
         {value: '0', label: 'Strongly Agree'},
         {value: '1', label: 'Agree'},
         {value: '2', label: 'Neutral'},
@@ -238,59 +236,214 @@ class ChatFeedbackReq extends Component {
       {q: 'What has ' + menteeName + ' done well?', detail: 'Help give them a leg up by letting others know about the qualities you\'ve witnessed do far. (Note: your mentee may choose to publicise this on their profile e.g. to employers)', aType: 'textLong', req: 0, maxLength: 500, placeholder: 'Type your positive feedback here...', name: 'referenceForMentee'},
     ]
 
-    return (
-      <React.Fragment>
-        <div className="block-container">
-          <div className="message-container">
-            <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
-            <div className="message-content-box">
-              <div className="sent-msg-info">
-                <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
-                <UserBadge badgeType='isPrBot' />
-                <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
-              </div>
-              <div className="message-content">
-                <TextParser text={text}/>
-              </div>
-              <div className="messageCTA">
-                {feedbackDone != true && (
-                  <React.Fragment>
-                    <div className="messageCTABtns">
-                      {feedbackBtnToShow == 'mentee' && (
-                        <FullPageModal {...MenteeFeedbackProps}>
-                          <Form
-                            questions={questionsMentee}
-                            usedFor="menteeChatFeedback"
-                            renderComponentsInitialState='ukUnisList'
-                          />
-                        </FullPageModal>
-                      )}
-                      {feedbackBtnToShow == 'mentor' && (
-                        <FullPageModal {...MentorFeedbackProps}>
-                          <Form
-                            questions={questionsMentor}
-                            usedFor="mentorChatFeedback"
-                            renderComponentsInitialState='ukUnisList'
-                          />
-                        </FullPageModal>
-                      )}
-                    </div>
-                  </React.Fragment>
-                )}
-                {feedbackDone == true && (
-                  <div className="positiveReply greenText"><Check /> You already completed your chat feedback.{(userRole == 'mentee' && feedbackDoneMentor != true) ? (' We\'ll let you know as soon as ' + mentorName + ' responds.') : ((userRole == 'mentor' && feedbackDoneMentee != true) ? (' We\'ll let you know as soon as ' + menteeName + ' responds.') : '')}</div>
-                )}
-                {showFeedbackSuccessModal == true && (
-                  <Modal {...FeedbackSuccessProps} handleLocalStateOnClose={this.closeFeedbackSuccessModal}>
-                    <FeedbackSuccessContent />
-                  </Modal>
-                )}
+    if (userRole == 'mentee') {
+      feedbackBtnToShow = 'mentee'
+      feedbackDone = feedbackDoneMentee
+    } else if (userRole == 'mentor') {
+      feedbackBtnToShow = 'mentor'
+      feedbackDone = feedbackDoneMentor
+    }
+
+    switch (chaserType) {
+      // Initial request for feedback within the channel between mentor & mentee
+      case 'initialReq':
+
+        menteeTxt = 'Hi @' + menteeName + '! \n\n~*📢 IT\'S CHAT FEEDBACK TIME! 📝*~ \n\n You\'ve had some time to kick off your conversation. Now, take a few minutes to *reflect* on the experience so far, *share some feedback* and *how you\'d like to engage* with ' + mentorName + ' going forward. \n\n Feedback is an important part of the Prospela community. You\'ll have space to leave useful private feedback, just for ' + mentorName + ', and you\'ll get to see feedback on how you come across.\n\n _You\'ll be able to continue chatting afterwards and we won\'t share any of your responses until after ' + mentorName + ' leaves their feedback too._ '
+        mentorTxt = 'Hi @' + mentorName + '! \n\n~*📢 IT\'S CHAT FEEDBACK TIME! 📝*~ \n\n You\'ve had some time to kick off your conversation. Now, take a few minutes to *reflect* on the experience so far, *share some feedback* and *how you\'d like to engage* with ' + menteeName + ' going forward. \n\n Feedback is an important part of the Prospela community. You\'ll have space to leave useful private feedback, just for ' + menteeName + ', and public comments if you\'d like to help give them a leg up with a positive reference, alongside feedback on your mentoring style!\n\n _You\'ll be able to continue chatting afterwards and we won\'t share any of your responses until after ' + menteeName + ' leaves their feedback too._ '
+
+        if (userRole == 'mentee') {
+          text = menteeTxt
+        } else if (userRole == 'mentor') {
+          text = mentorTxt
+        }
+
+        return (
+          <React.Fragment>
+            <div className="block-container">
+              <div className="message-container">
+                <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserBadge badgeType='isPrBot' />
+                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                  </div>
+                  <div className="message-content">
+                    <TextParser text={text}/>
+                  </div>
+                  <div className="messageCTA">
+                    {feedbackDone != true && (
+                      <React.Fragment>
+                        <div className="messageCTABtns">
+                          {feedbackBtnToShow == 'mentee' && (
+                            <FullPageModal {...MenteeFeedbackProps}>
+                              <Form
+                                questions={questionsMentee}
+                                usedFor="menteeChatFeedback"
+                              />
+                            </FullPageModal>
+                          )}
+                          {feedbackBtnToShow == 'mentor' && (
+                            <FullPageModal {...MentorFeedbackProps}>
+                              <Form
+                                questions={questionsMentor}
+                                usedFor="mentorChatFeedback"
+                              />
+                            </FullPageModal>
+                          )}
+                        </div>
+                      </React.Fragment>
+                    )}
+                    {feedbackDone == true && (
+                      <div className="positiveReply greenText"><Check /> You already completed your chat feedback.{(userRole == 'mentee' && feedbackDoneMentor != true) ? (' We\'ll let you know as soon as ' + mentorName + ' responds.') : ((userRole == 'mentor' && feedbackDoneMentee != true) ? (' We\'ll let you know as soon as ' + menteeName + ' responds.') : '')}</div>
+                    )}
+                    {showFeedbackSuccessModal == true && (
+                      <Modal {...FeedbackSuccessProps} handleLocalStateOnClose={this.closeFeedbackSuccessModal}>
+                        <FeedbackSuccessContent />
+                      </Modal>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </React.Fragment>
-    );
+          </React.Fragment>
+        );
+
+      // First chaser after 7 days if neither user has completed, sent from PrBot chat
+      case 'chaser':
+
+        menteeTxt = '~Don\'t forget to complete your *chat feedback* ~ ⏱️ \n\n Feedback is a key part of the Prospela community. It\'s your chance to give and receive useful private feedback, as well as gain a potential reference to showcase your qualities to the community (& future employers!).'
+        mentorTxt = '~Don\'t forget to complete your *chat feedback* ~ ⏱️ \n\n Feedback is a key part of the Prospela community. It\'s your chance to give and receive useful private feedback, as well as gain insight to how your mentoring style was perceived.'
+
+        if (userRole == 'mentee') {
+          text = menteeTxt
+        } else if (userRole == 'mentor') {
+          text = mentorTxt
+        }
+
+        return (
+          <React.Fragment>
+            <div className="block-container">
+              <div className="message-container">
+                <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserBadge badgeType='isPrBot' />
+                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                  </div>
+                  <div className="message-content">
+                    <TextParser text={text}/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </React.Fragment>
+        );
+
+      // First chaser after other user has completed, sent from PrBot chat
+      case 'otherCompleted':
+
+        menteeTxt = '~Find out what ' + mentorName + ' wrote~ 👀 \n\n You can read their review after you complete your chat feedback.'
+        mentorTxt = '~Find out what ' + menteeName + ' wrote~ 👀 \n\n You can read their review after you complete your chat feedback.'
+
+        if (userRole == 'mentee') {
+          text = menteeTxt
+        } else if (userRole == 'mentor') {
+          text = mentorTxt
+        }
+
+        return (
+          <React.Fragment>
+            <div className="block-container">
+              <div className="message-container">
+                <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserBadge badgeType='isPrBot' />
+                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                  </div>
+                  <div className="message-content">
+                    <TextParser text={text}/>
+                  </div>
+                  <div className="messageCTA">
+                    {feedbackDone != true && (
+                      <React.Fragment>
+                        <div className="messageCTABtns">
+                          {feedbackBtnToShow == 'mentee' && (
+                            <FullPageModal {...MenteeFeedbackProps}>
+                              <Form
+                                questions={questionsMentee}
+                                usedFor="menteeChatFeedback"
+                              />
+                            </FullPageModal>
+                          )}
+                          {feedbackBtnToShow == 'mentor' && (
+                            <FullPageModal {...MentorFeedbackProps}>
+                              <Form
+                                questions={questionsMentor}
+                                usedFor="mentorChatFeedback"
+                              />
+                            </FullPageModal>
+                          )}
+                        </div>
+                      </React.Fragment>
+                    )}
+                    {showFeedbackSuccessModal == true && (
+                      <Modal {...FeedbackSuccessProps} handleLocalStateOnClose={this.closeFeedbackSuccessModal}>
+                        <FeedbackSuccessContent />
+                      </Modal>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </React.Fragment>
+        );
+
+      // First chaser after other user has completed, sent from PrBot chat
+      case 'bothCompleted':
+
+        text = '~Here\'s what ' + (userRole == 'mentee' ? mentorName : menteeName) + ' wrote!~ \n\n Now that you\'ve both completed your chat feedback, you can now check it out (and - if you want to - show it off on your profile). \n\n _Note: You can view and manage your feedback at any time from the main menu or your profile_ '
+
+        return (
+          <React.Fragment>
+            <div className="block-container">
+              <div className="message-container">
+                <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
+                <div className="message-content-box">
+                  <div className="sent-msg-info">
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserBadge badgeType='isPrBot' />
+                    <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
+                  </div>
+                  <div className="message-content">
+                    <TextParser text={text}/>
+                  </div>
+                  <div className="potentialMatch-menteeIntroMsg">
+                    <div className="message-extras-border" />
+                    <div>
+                      <span className="highlight-titleText">A message to you from {userRole == 'mentee' ? mentorName : menteeName}:</span>
+                      <div>
+                        <i className="fas fa-quote-left"/>
+                        <TextParser text={userRole == 'mentee' ? feedbackFromMentor : feedbackFromMentee} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="messageCTA">
+                    <div className="messageCTABtns">
+                      <Modal {...ManageFeedbackProps}>
+                        <ManageFeedbackContent />
+                      </Modal>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </React.Fragment>
+        );
+    }
   }
 }
 

@@ -9,6 +9,8 @@
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 0;
+}
+.article-page.matching{
   height: 100%;
 }
 @media screen and (min-width: 759px) {

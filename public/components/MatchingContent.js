@@ -1,4 +1,4 @@
-// Dex last merged this code on 25th mar 2021 
+// Dex last merged this code on 25th mar 2021
 
 import React, { Component } from "react";
 
@@ -324,7 +324,7 @@ class MatchingContent extends Component {
 
     return (
       <React.Fragment>
-        <div className="article-page profile">
+        <div className="article-page profile matching">
           <div className="row article-container profile">
             <div className="col-5 col-s-12 article-extras matchUser">
               <div className="matchUser-header">USER TO BE MATCHED</div>

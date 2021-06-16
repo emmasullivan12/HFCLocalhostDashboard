@@ -353,7 +353,6 @@ class PrModAuto extends Component {
                   <TextParser text={text}/>
                 </div>
                 <div className="messageCTA">
-
                   <div className="potentialMatch-profileCard">
                     {isPicSet == true ? (
                       <div className={"userDetail-img img-square" + (eetstatus == 'sch' ? ' showSml': '')} style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
