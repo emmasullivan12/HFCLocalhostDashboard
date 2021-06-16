@@ -70,6 +70,12 @@ function ButtonContent(props) {
           {text}
         </div>
       );
+    case 'manageFeedbackFromUserMenu':
+      return (
+        <div className="mngFeedback-Btn-txt">
+          {text}
+        </div>
+      );
   /*  case 'addPrDM':
       return (
         <div>

@@ -337,7 +337,7 @@
 .menuCTAContainer{
   display: inline-block;
 }
-
+.ModalOpenBtn-manageFeedbackFromUserMenu,
 .ModalOpenBtn-settings{
   background: none!important;
   color: #3f3f3f!important;
@@ -346,11 +346,13 @@
   font-size: 15px;
   font-weight: 400;
 }
+.ModalOpenBtn-manageFeedbackFromUserMenu:hover .mngFeedback-Btn-txt,
+.ModalOpenBtn-manageFeedbackFromUserMenu:focus .mngFeedback-Btn-txt,
 .ModalOpenBtn-settings:hover .settings-Btn-txt,
 .ModalOpenBtn-settings:focus .settings-Btn-txt{
   color: #1dba86;
 }
-
+.ModalOpenBtn.ModalOpenBtn-manageFeedbackFromUserMenu:focus .userMenu-list-item,
 .ModalOpenBtn.ModalOpenBtn-settings:focus .userMenu-list-item {
   background-color: #e0f2f0;
 }

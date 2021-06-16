@@ -313,7 +313,7 @@ class ChatFeedbackReq extends Component {
       case 'chaser':
 
         menteeTxt = '~Don\'t forget to complete your *chat feedback* ~ ⏱️ \n\n Feedback is a key part of the Prospela community. It\'s your chance to give and receive useful private feedback, as well as gain a potential reference to showcase your qualities to the community (& future employers!).'
-        mentorTxt = '~Don\'t forget to complete your *chat feedback* ~ ⏱️ \n\n Feedback is a key part of the Prospela community. It\'s your chance to give and receive useful private feedback, as well as gain insight to how your mentoring style was perceived.'
+        mentorTxt = '~Don\'t forget to complete your *chat feedback* ~ ⏱️ \n\n Feedback is a key part of the Prospela community. It\'s your chance to give and receive useful private feedback, as well as gain an insight to how your mentoring style was perceived.'
 
         if (userRole == 'mentee') {
           text = menteeTxt
@@ -344,14 +344,7 @@ class ChatFeedbackReq extends Component {
       // First chaser after other user has completed, sent from PrBot chat
       case 'otherCompleted':
 
-        menteeTxt = '~Find out what ' + mentorName + ' wrote~ 👀 \n\n You can read their review after you complete your chat feedback.'
-        mentorTxt = '~Find out what ' + menteeName + ' wrote~ 👀 \n\n You can read their review after you complete your chat feedback.'
-
-        if (userRole == 'mentee') {
-          text = menteeTxt
-        } else if (userRole == 'mentor') {
-          text = mentorTxt
-        }
+        text = '~Find out what ' + (userRole == 'mentee' ? mentorName : menteeName) + ' wrote~ 👀 \n\n You can read their review after you complete your chat feedback.'
 
         return (
           <React.Fragment>
@@ -405,7 +398,7 @@ class ChatFeedbackReq extends Component {
       // First chaser after other user has completed, sent from PrBot chat
       case 'bothCompleted':
 
-        text = '~Here\'s what ' + (userRole == 'mentee' ? mentorName : menteeName) + ' wrote!~ \n\n Now that you\'ve both completed your chat feedback, you can now check it out (and - if you want to - show it off on your profile). \n\n _Note: You can view and manage your feedback at any time from the main menu or your profile_ '
+        text = 'Here\'s what ' + (userRole == 'mentee' ? mentorName : menteeName) + ' wrote! \n\n Now that you\'ve both completed your chat feedback, you can now view your full feedback (and - if you want to - show it off on your profile). \n\n _Note: You can view and manage your feedback at any time from the main menu or your profile_ '
 
         return (
           <React.Fragment>

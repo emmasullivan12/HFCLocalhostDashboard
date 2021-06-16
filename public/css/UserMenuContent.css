@@ -114,6 +114,7 @@
 .userMenu-list-item:hover,
 .userMenu-link:focus,
 .userMenu-list-item:focus-within,
+.ModalOpenBtn.ModalOpenBtn-manageFeedbackFromUserMenu:focus .userMenu-list-item,
 .ModalOpenBtn.ModalOpenBtn-settings:focus .userMenu-list-item {
   background-color: #e0f2f0;
 }
@@ -122,7 +123,8 @@
 .userMenu-list-item:hover .settings-Btn-txt,
 .userMenu-link:focus .userMenuLabel,
 .userMenu-link:focus .settings-Btn-txt,
-.ModalOpenBtn.ModalOpenBtn-settings:focus .settings-Btn-txt {
+.ModalOpenBtn.ModalOpenBtn-settings:focus .settings-Btn-txt,
+.ModalOpenBtn.ModalOpenBtn-manageFeedbackFromUserMenu:focus .mngFeedback-Btn-txt {
   color: #1dba86;
 }
 

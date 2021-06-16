@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import {usercdn, userAvatarsFolder} from './CDN.js';
+import ManageFeedbackContent from './ManageFeedbackContent.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
@@ -16,6 +17,12 @@ import {eduName} from './UserDetail.js';
 import "../css/UserMenuContent.css";
 import "../css/General.css";
 import "../css/Modal.css";
+
+const ManageFeedbackProps = {
+  ariaLabel: 'View & manage your chat feedback',
+  triggerText: 'Manage Feedback',
+  usedFor: 'manageFeedbackFromUserMenu',
+}
 
 const SettingsModalProps = {
   ariaLabel: 'Popup to manage your preferences and settings',
@@ -164,6 +171,13 @@ class UserMenuContent extends Component {
           )}*/}
           <section className="userMenu-settings">
             <ul className="userMenu-list">
+              <li className="userMenu-list-item">
+                <span className="userMenuLabel overflow-ellipsis">
+                  <Modal {...ManageFeedbackProps}>
+                    <ManageFeedbackContent />
+                  </Modal>
+                </span>
+              </li>
               <li className="userMenu-list-item">
                 <span className="userMenuLabel overflow-ellipsis">
                   <FullPageModal {...SettingsModalProps}>
