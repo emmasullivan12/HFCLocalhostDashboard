@@ -101,8 +101,6 @@ class PrModAuto extends Component {
           menteeResent: '2021-03-17T13:07:05.000Z',
           mentorResent: '2021-03-23T00:00:00.000Z'
         },
-        feedbackDoneMentee: false,
-        feedbackDoneMentor: true,
       }
     ]
     const mentorFname = '[ MENTOR FNAME ]'
@@ -187,8 +185,6 @@ class PrModAuto extends Component {
         roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
       }
     ]
-    const userRole = 'mentor' // Logged in user viewing message
-    const uid = '123' // Logged in user viewing message
     let userNotYetResponded;
     let userTimedOut;
     let userAcc;
@@ -203,10 +199,6 @@ class PrModAuto extends Component {
     let timeoutDate;
     let timerText;
     let dateDiff;
-    let feedbackDone;
-    let feedbackBtnToShow;
-    let menteeTxt;
-    let mentorTxt;
 
     var today = new Date();
     var x;

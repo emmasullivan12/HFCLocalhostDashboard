@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th apr 2021
+// Dex last merged this code on 26th june 2021
 
 import React, { Component } from "react";
 
@@ -9,9 +9,8 @@ import ChatFeedbackReq from './ChatFeedbackReq.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import EmojiReactions from './EmojiReactions.js';
 import FeedbkCTA from './FeedbkCTA.js';
-import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE, DateCalc, Check} from './GeneralFunctions.js';
+import {isIE, DateCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
