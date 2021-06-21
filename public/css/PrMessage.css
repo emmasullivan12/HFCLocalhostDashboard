@@ -391,6 +391,9 @@
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.message-extras-border.lightPurple{
+  background-color: #9595e6;
+}
 
 .date-separator{
   height: 2em;

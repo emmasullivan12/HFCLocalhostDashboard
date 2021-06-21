@@ -8,7 +8,6 @@ import Avatar from './Avatar.js';
 import ChatFeedbackReq from './ChatFeedbackReq.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import EmojiReactions from './EmojiReactions.js';
-import FeedbkCTA from './FeedbkCTA.js';
 import FullPageModal from './FullPageModal.js';
 import {isIE, DateCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
@@ -471,7 +470,6 @@ function PrAuto(props) {
                 <span className="prAutoMsgTitle">Your 3-month match ended</span>
               </div>
           </div>
-          <FeedbkCTA />
         </div>
       );
   }

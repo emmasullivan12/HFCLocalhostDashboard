@@ -358,6 +358,9 @@ table th .description{
 .smallFont{
   font-size: 14px!important;
 }
+.fontSize12{
+  font-size: 12px;
+}
 .bold{
   font-weight: 600;
 }
@@ -545,6 +548,12 @@ table th .description{
 .marginBottom {
   margin-bottom: 2rem;
 }
+.marginBottom20 {
+  margin-bottom: 20px!important;
+}
+.marginBottom5 {
+  margin-bottom: 5px!important;
+}
 .marginLeft{
   margin-left: 1rem;
 }
@@ -592,6 +601,9 @@ table th .description{
 }
 .normalLineheight{
   line-height: normal!important;
+}
+.lineHeight16{
+  line-height: 1.6rem;
 }
 .tooltip{
   position: relative;
@@ -1593,12 +1605,16 @@ a.button{
 }
 
 .ratingBubblesContainer .bubble{
-  padding: 5px 10px 5px 10px;
+  padding: 2px 5px 2px 5px;
   font-weight: 400;
+  cursor: pointer;
 }
+/*.ratingBubblesContainer .bubble:first-of-type{
+  margin-left: 5px;
+}*/
 .ratingBubblesContainer .bubble.strong{
   border: 1px solid #8bc34a;
-  color: #fff;
+  color: #3f3f3f;
   background-color: rgb(76,175,80,.51); /* green */
 }
 .ratingBubblesContainer .bubble.good{
@@ -1613,7 +1629,7 @@ a.button{
 }
 .ratingBubblesContainer .bubble.weak{
   border: 1px solid #bd293e;
-  color: #fff;
+  color: #3f3f3f;
   background-color: #fb6c81; /* red */
 }
 

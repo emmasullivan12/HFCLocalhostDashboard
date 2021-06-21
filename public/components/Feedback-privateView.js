@@ -5,6 +5,8 @@ import React, { Component } from "react";
 import Avatar from './Avatar.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
 
+import "../css/Feedback.css";
+
 class FeedbackPrivate extends Component {
   constructor(props) {
     super(props);
@@ -47,10 +49,11 @@ class FeedbackPrivate extends Component {
 
     return (
       <React.Fragment>
-        <div>
+        <div className="marginBottom20">
+          <div className="bold marginBottom5 smallFont">They thought you were:</div>
           {strongArr.length > 0 && (
-            <div>
-              <div>You were thriving in:</div>
+            <div className="marginBottom5">
+              <div className="smallFont marginBottom5 thrivingFontColor"><span role="img" aria-label="celebrateEmoji">🎉</span>Thriving in:</div>
               <div className="ratingBubblesContainer">
                 {strongArr.map((item) => {
                   console.log(item)
@@ -68,8 +71,8 @@ class FeedbackPrivate extends Component {
             </div>
           )}
           {goodArr.length > 0 && (
-            <div>
-              <div>Good at:</div>
+            <div className="marginBottom5">
+              <div className="smallFont marginBottom5 goodFontColor"><span role="img" aria-label="okEmoji">👌</span>Good at:</div>
               <div className="ratingBubblesContainer">
                 {goodArr.map((item) => {
                   return (
@@ -86,8 +89,8 @@ class FeedbackPrivate extends Component {
             </div>
           )}
           {needsWorkArr.length > 0 && (
-            <div>
-              <div>Needs some work:</div>
+            <div className="marginBottom5">
+              <div className="smallFont marginBottom5 needsWorkFontColor"><span role="img" aria-label="toolsEmoji">🛠️</span>Needing to work on:</div>
               <div className="ratingBubblesContainer">
                 {needsWorkArr.map((item) => {
                   return (
@@ -104,8 +107,8 @@ class FeedbackPrivate extends Component {
             </div>
           )}
           {weakArr.length > 0 && (
-            <div>
-              <div>Fairly poor:</div>
+            <div className="marginBottom5">
+              <div className="smallFont marginBottom5 weakFontColor"><span role="img" aria-label="thumbsDownEmoji">👎</span>Fairly poor at:</div>
               <div className="ratingBubblesContainer">
                 {weakArr.map((item) => {
                   return (
@@ -171,39 +174,46 @@ class FeedbackPrivate extends Component {
             const matchuid = userRole == 'mentee' ? item.mentoruid : item.menteeuid
             const eetStatus = item.eetstatus
             return (
-              <div key={item.matchid}>
-                <Avatar userID={matchuid} userName={matchName}/>
-                <div>
-                  <div>{matchName}</div>
-                  <div>
+              <div key={item.matchid} className="row feedbackItem">
+                <div className="col-4 col-s-12">
+                  <Avatar userID={matchuid} userName={matchName}/>
+                  <div className="bold lineHeight16">{matchName}</div>
+                  <div className="marginBottom5 smallFont">
                     {eetStatus == 'sch' && (
                       <div><span className="roleText">Student</span></div>
                     )}
                     {eetStatus == 'uni' && (
-                      <div><span className="roleText">{item.degree}</span><div>@ {item.uniname}</div></div>
+                      <div><span>{item.degree}</span><div>@ {item.uniname}</div></div>
                     )}
                     {eetStatus == 'job' && (
-                      <div><span className="roleText">{item.currrole}</span><div>@ {item.currco}</div></div>
+                      <div><span>{item.currrole}</span><div>@ {item.currco}</div></div>
                     )}
                     {eetStatus == 'train' && (
-                      <div><span className="roleText">{item.currtraining}</span><div>@ {item.currtrainingprovider}</div></div>
+                      <div><span>{item.currtraining}</span><div>@ {item.currtrainingprovider}</div></div>
                     )}
                     {eetStatus == 'none' && (
-                      <div><span className="roleText">Looking for opportunities</span></div>
+                      <div><span>Looking for opportunities</span></div>
                     )}
                   </div>
-                  <div>{matchName} was {userName}&#39;s {userRole == 'mentee' ? 'mentor' : 'mentee'} since <DateCalc time={item.date_matched} showPureDate /></div>
+                  <div className="fontSize12 greyText normalLineheight marginBottom5">{matchName} was {userName}&#39;s {userRole == 'mentee' ? 'mentor' : 'mentee'} since <DateCalc time={item.date_matched} showPureDate /></div>
                 </div>
-                <div>
+                <div className="col-8 col-s-12">
                   {userRole == 'mentee' && item.referenceForMentee != '' && (
-                    <div>{item.referenceForMentee}</div>
+                    <div className="lineHeight16 marginBottom20">{item.referenceForMentee}</div>
                   )}
                   {userRole == 'mentee' && (
                     <React.Fragment>
-                      { this.renderMenteeRatings(item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
-                      <div>
-                        <div>A private note from {matchName}</div>
-                        <div>{item.privNoteToMentee}</div>
+                      <div className="privateFeedbackSection">
+                        <div className="smallFont">Private Feedback</div>
+                        <div className="smallFont">(Will not be publicised if you choose to share this reference on your profile)</div>
+                        {this.renderMenteeRatings(item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
+                        <div className="bold marginBottom5 smallFont">A private note from {matchName}:</div>
+                        <div className="referenceText marginBottom5">
+                          <div className="message-extras-border lightPurple" />
+                          <div>
+                            <i className="fas fa-quote-left"/> {item.privNoteToMentee}
+                          </div>
+                        </div>
                       </div>
                     </React.Fragment>
                   )}
@@ -232,9 +242,7 @@ class FeedbackPrivate extends Component {
         )}
         {isLoading == false && (
           <div className="feedbackContainer">
-            <div className="">
-              { this.renderFeedback() }
-            </div>
+            { this.renderFeedback() }
           </div>
         )}
       </React.Fragment>
