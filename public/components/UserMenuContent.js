@@ -169,7 +169,7 @@ class UserMenuContent extends Component {
               </ul>
             </section>
           )}*/}
-          <section className="userMenu-settings">
+          <section className="userMenu-settings sectionBorder">
             <ul className="userMenu-list">
               <li className="userMenu-list-item">
                 <span className="userMenuLabel overflow-ellipsis">
@@ -178,6 +178,10 @@ class UserMenuContent extends Component {
                   </Modal>
                 </span>
               </li>
+            </ul>
+          </section>
+          <section className="userMenu-settings sectionBorder">
+            <ul className="userMenu-list">
               <li className="userMenu-list-item">
                 <span className="userMenuLabel overflow-ellipsis">
                   <FullPageModal {...SettingsModalProps}>

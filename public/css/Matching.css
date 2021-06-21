@@ -7,6 +7,11 @@
   overflow: auto;
   position: relative;
 }
+.tabWindow.modal{
+  padding: 5px 10px 5px 10px;
+  background-color: unset;
+  text-align: left;
+}
 .loadingPotentialMatches{
   text-align: center;
   padding-top: 25px;

@@ -43,7 +43,7 @@ class ProspelaMenuContent extends Component {
               </li>
             </ul>
           </section>
-          <section className="userMenu-settings">
+          <section className="userMenu-settings sectionBorder">
             <ul className="userMenu-list">
               <li className="userMenu-list-item" role="menuitem" onClick={onMenuClose} onKeyDown={onKeyDown}>
                 <Link to="/logout" className="userMenu-link">
