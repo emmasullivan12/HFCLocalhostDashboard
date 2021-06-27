@@ -8,9 +8,77 @@ class ManageFeedbackContent extends Component {
     super(props);
     this.state = {
       tabToView: 'received',
-      feedbackReceivedArr: [],
-    /*  feedbackReceivedArr: [
+      feedbackGivenArr: [
         {
+          matchid: 12345,
+          date_matched: '2021-03-21T00:00:00.000Z',
+          mentorname: 'Emma',
+          mentoruid: 2345,
+          menteename: 'Dexter',
+          menteeuid: 1234,
+          eetstatus: 'job',
+          schname: '',
+          schnamefreetext: '', // If their school wasn't on the list
+          uniname: '75',
+          uninamefreetext: '', // If their school wasn't on the list
+          degree: '',
+          currrole: 'Head of Marketing',
+          currco: 'Pladis',
+          currtraining: '',
+          currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
+          referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
+          menteeComms: 0,
+          menteeCurio: 1,
+          menteeAmb: 1,
+          menteeConf: 2,
+          menteeNetw: 3,
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3
+        },
+        {
+          matchid: 12346,
+          date_matched: '2021-03-21T00:00:00.000Z',
+          mentorname: 'Emma',
+          mentoruid: 2345,
+          menteename: 'Dexter',
+          menteeuid: 1234,
+          eetstatus: 'job',
+          schname: '',
+          schnamefreetext: '', // If their school wasn't on the list
+          uniname: '75',
+          uninamefreetext: '', // If their school wasn't on the list
+          degree: '',
+          currrole: 'Head of Marketing',
+          currco: 'Pladis',
+          currtraining: '',
+          currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
+          referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
+          menteeComms: 0,
+          menteeCurio: 1,
+          menteeAmb: 1,
+          menteeConf: 2,
+          menteeNetw: 3,
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3
+        },
+      ],
+      /*feedbackReceivedArr: [
+        {
+          isPublic: false,
           matchid: 12345,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -36,8 +104,9 @@ class ManageFeedbackContent extends Component {
           privNoteToMentee: 'this is a private note from mentor to mentee'
         },
       ],*/
-      feedbackGivenArr: [
+      feedbackReceivedArr: [
         {
+          isPublic: true,
           matchid: 12345,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -54,15 +123,24 @@ class ManageFeedbackContent extends Component {
           currco: 'Pladis',
           currtraining: '',
           currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
           referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
           menteeComms: 0,
           menteeCurio: 1,
           menteeAmb: 1,
           menteeConf: 2,
           menteeNetw: 3,
-          privNoteToMentee: 'this is a private note from mentor to mentee'
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3
         },
         {
+          isPublic: false,
           matchid: 12346,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -79,15 +157,24 @@ class ManageFeedbackContent extends Component {
           currco: 'Pladis',
           currtraining: '',
           currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
           referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
           menteeComms: 0,
           menteeCurio: 1,
           menteeAmb: 1,
           menteeConf: 2,
           menteeNetw: 3,
-          privNoteToMentee: 'this is a private note from mentor to mentee'
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3
         },
         {
+          isPublic: false,
           matchid: 12347,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -104,13 +191,21 @@ class ManageFeedbackContent extends Component {
           currco: 'Pladis',
           currtraining: '',
           currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
           referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
           menteeComms: 0,
           menteeCurio: 1,
           menteeAmb: 1,
           menteeConf: 2,
           menteeNetw: 3,
-          privNoteToMentee: 'this is a private note from mentor to mentee'
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3
         },
       ],
     }
@@ -124,13 +219,13 @@ class ManageFeedbackContent extends Component {
 
   renderTab = () => {
     const {tabToView, isLoading, feedbackReceivedArr, feedbackGivenArr} = this.state;
-    const userRole = 'mentee'
+    const userRole = 'mentor'
 
     switch (tabToView) {
       case 'received':
-        return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole}/>
+        return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received'/>
       case 'given':
-        return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole}/>
+        return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole} feedbackType='given'/>
     }
   }
 

@@ -8,10 +8,14 @@
   color: #abaaaa;
 }
 .barChart-container,
-.lineChart-container{
+.lineChart-container,
+.polarChart-container{
   position: relative;
   height: 100%;
   width: 100%;
+}
+.polarChart-container{
+  padding: 20px;
 }
 /*.choropleth-outerContainer.gbr{
   height: 43%;

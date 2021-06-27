@@ -17,6 +17,7 @@ const ManageFeedbackProps = {
   ariaLabel: 'View & manage your chat feedback',
   triggerText: 'View the full Feedback',
   usedFor: 'manageFeedback',
+  wider: true, // Have wider modal
 }
 const MenteeFeedbackProps = {
   ariaLabel: 'Complete your chat feedback',
@@ -58,7 +59,7 @@ class ChatFeedbackReq extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      showFeedbackSuccessModal: false
+      showFeedbackSuccessModal: true
     }
   }
 
@@ -74,7 +75,7 @@ class ChatFeedbackReq extends Component {
 
     const menteeName = 'Emma'
     const mentorName = 'Dexter'
-    const feedbackDoneMentee = true
+    const feedbackDoneMentee = false
     const feedbackDoneMentor = false
     const chaserType = message.chatFeedbackReq.type
     const feedbackFromMentee = 'Thank you so much for being an amazing mentor! I really liked when you said XYZ it was so inspiring!'
@@ -89,40 +90,40 @@ class ChatFeedbackReq extends Component {
       {q: 'How satisfied are you with how your relationship is progressing with ' + mentorName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod")', aType: 'rating', req: 1, name: 'overallSatisMentee', ratingOutOf: 10},
       {q: 'Help ' + mentorName + ' learn how they come across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve.', aType: 'interim', name: 'interim'},
       {q: 'Do they help you focus, prioritise and set a clear vision for your future:', detail: 'e.g. they help you with decision making and visualising what your success might look like', aType: 'yesno', req: 1, name: 'mentorCompFuture', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do they share their own experiences and best practice from other role models:', detail: 'e.g. they explain how they approach similar challenges / experiences, or analyse how others achieve great performance', aType: 'yesno', req: 1, name: 'mentorRoleModel', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do they encourage you to push yourself and insist on high effort from you:', detail: 'e.g. do they set high expectations, challenge you, and show belief that you can achieve more, go further or work harder', aType: 'yesno', req: 1, name: 'mentorHighPerf', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do they encourage you to express your thoughts & feelings and / or discuss non-career related topics:', aType: 'yesno', req: 1, name: 'mentorIndivSupport', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do they play devils advocate, challenging you to think of new ideas, ways of thinking and / or how to solve problems:', aType: 'yesno', req: 1, name: 'mentorIntellStimu', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do they give you detailed instructions and specific tasks to complete:', aType: 'yesno', req: 1, name: 'mentorDirLeader', options: [
-        {value: '0', label: 'Regularly'},
-        {value: '1', label: 'Sometimes'},
-        {value: '2', label: 'Rarely'},
-        {value: '3', label: 'Never'}
+        {value: '3', label: 'Regularly'},
+        {value: '2', label: 'Sometimes'},
+        {value: '1', label: 'Rarely'},
+        {value: '0', label: 'Never'}
       ]},
       {q: 'Do you think you\'d enjoy working with someone like ' + mentorName + '?', detail: 'Note: Your mentor will NOT see your answer to this question', aType: 'select', req: 1, placeholder: 'Select response...', name: 'wouldWorkWith', valueToShow: 'label', options: [
         {value: '0', label: 'Strongly Agree'},
@@ -280,6 +281,7 @@ class ChatFeedbackReq extends Component {
                               <Form
                                 questions={questionsMentee}
                                 usedFor="menteeChatFeedback"
+                                formTitle="Complete your chat feedback"
                               />
                             </FullPageModal>
                           )}
@@ -288,6 +290,7 @@ class ChatFeedbackReq extends Component {
                               <Form
                                 questions={questionsMentor}
                                 usedFor="mentorChatFeedback"
+                                formTitle="Complete your chat feedback"
                               />
                             </FullPageModal>
                           )}
@@ -369,6 +372,7 @@ class ChatFeedbackReq extends Component {
                               <Form
                                 questions={questionsMentee}
                                 usedFor="menteeChatFeedback"
+                                formTitle="Complete your chat feedback"
                               />
                             </FullPageModal>
                           )}
@@ -377,6 +381,7 @@ class ChatFeedbackReq extends Component {
                               <Form
                                 questions={questionsMentor}
                                 usedFor="mentorChatFeedback"
+                                formTitle="Complete your chat feedback"
                               />
                             </FullPageModal>
                           )}

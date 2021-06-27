@@ -4,6 +4,8 @@ import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
+import Checkbox from './Checkbox.js';
+import PolarChart from './PolarChart.js';
 
 import "../css/Feedback.css";
 
@@ -15,30 +17,147 @@ class FeedbackPrivate extends Component {
     }
   }
 
-  getRatingStrength = (name) => {
-  /*      {value: '0', label: 'They\'re thriving'},
-          {value: '1', label: 'Good'},
-          {value: '2', label: 'Needs some work'},
-          {value: '3', label: 'Inadequate'} */
-    /*switch(rating) {
-      case 0:
-        return "strong"
-      case 1:
-        return "good"
-      case 2:
-        return "needsWork"
-      case 3:
-        return "weak"
-    }*/
+  toggleCheckbox = (e) => {
+    const currentState = this.state[e.target.name];
+
+    // DEX TO SAVE DOWN ISPUBLIC BASED ON E.TARGET.NAME (WHICH IS FORMATTED LIKE THIS: item.matchid+"-"+userRole+"-isPublic", SO SPLIT BY "-" TO GRAB MATCH ID + USERROLE)
+    if (currentState === false || currentState == null) {
+      this.setState({
+        [e.target.name]: true,
+      });
+
+    } else {
+      this.setState({
+        [e.target.name]: false
+      });
+    }
   }
 
-  renderMenteeRatings = (menteeComms, menteeCurio, menteeAmb, menteeConf, menteeNetw) => {
+  renderMentorRatings = (mentorCompFuture, mentorRoleModel, mentorHighPerf, mentorIndivSupport, mentorIntellStimu, mentorDirLeader) => {
+    return (
+      <React.Fragment>
+        <div className="marginBottom20">
+          <div className="bold marginBottom5 smallFont">Their view of your mentoring style:</div>
+          <PolarChart
+            dataset1={[
+              {
+                "label": 'Creating a compelling future',
+                "value": (mentorCompFuture + 1)
+              },
+              {
+                "label": 'Leading by example',
+                "value": (mentorRoleModel + 1)
+              },
+              {
+                "label": 'High performance expectations',
+                "value": (mentorHighPerf + 1)
+              },
+              {
+                "label": 'Individualised support',
+                "value": (mentorIndivSupport + 1)
+              },
+              {
+                "label": 'Intellectual Stimulation',
+                "value": (mentorIntellStimu + 1)
+              },
+              {
+                "label": 'Directive Leadership',
+                "value": (mentorDirLeader + 1)
+              },
+            ]}
+          //  dataset1Title="Mentoring style ratings"
+            dataset1FillArr={[
+              'rgba(78,78,214,.3)', // purple
+              'rgba(255,193,7,.3)', // orange
+              'rgba(21,205,148,.3)', // green
+              'rgba(252,225,0,.3)', // yellow
+              'rgba(0,176,240,.3)', // blue
+              'rgba(249,123,171,.3)', // pink
+            ]}
+            dataset1BorderColorArr={[
+              'rgba(78,78,214,1)', // purple
+              'rgba(255,193,7,1)', // orange
+              'rgba(21,205,148,1)', // green
+              'rgba(252,225,0,1)', // yellow
+              'rgba(0,176,240,1)', // blue
+              'rgba(249,123,171,1)', // pink
+            ]}
+            dataset1HoverFillArr={[
+              'rgba(78,78,214,1)', // purple
+              'rgba(255,193,7,1)', // orange
+              'rgba(21,205,148,1)', // green
+              'rgba(252,225,0,1)', // yellow
+              'rgba(0,176,240,1)', // blue
+              'rgba(249,123,171,1)', // pink
+            ]}
+            dataset1LabelTextArr={[ // Mapping the ratings to text to show instead e.g. high / med / low instead of 3, 2, 1. Must be in order from smallest value to highest
+              {value: '0', label: 'Never'}, // Never
+              {value: '1', label: 'Rarely'}, // Rarely
+              {value: '2', label: 'Sometimes'}, // Sometimes
+              {value: '3', label: 'Regularly'}, // Regularly
+            ]}
+            showLegend={false}
+            showTicks={false}
+          />
+          <div className="marginBottom5">
+            <div className="bold marginBottom5 smallFont">Key:</div>
+            <div className="ratingBubblesContainer">
+              <div className="bubble tooltip purple">
+                Creating a compelling future
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>Creating a compelling future</strong></div>
+                  <div className="tooltiptextDetail">Helping them focus, prioritise and set a clear vision for the future, e.g. helping with decision making and visualising what success might look like</div>
+                </span>
+              </div>
+              <div className="bubble tooltip orange">
+                Leading by example
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>Leading by example</strong></div>
+                  <div className="tooltiptextDetail">Sharing your own experiences and best practice from other role models, e.g. explaining how you approach similar challenges / experiences, or analysing how others achieve great performance</div>
+                </span>
+              </div>
+              <div className="bubble tooltip green">
+                High performance expectations
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>High performance expectations</strong></div>
+                  <div className="tooltiptextDetail">Insisting on high effort from your mentee and encouraging them to push themselves, e.g. you set high expectations, challenge them, and show belief that they can achieve more, go further or work harder</div>
+                </span>
+              </div>
+              <div className="bubble tooltip yellow">
+                Individualised support
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>Individualised support</strong></div>
+                  <div className="tooltiptextDetail">Encouraging your mentee to express their thoughts & feelings and / or discuss non-career related topics</div>
+                </span>
+              </div>
+              <div className="bubble tooltip blue">
+                Intellectual Stimulation
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>Intellectual Stimulation</strong></div>
+                  <div className="tooltiptextDetail">Playing devils advocate, challenging your mentee to think of new ideas, ways of thinking and / or how to solve problems</div>
+                </span>
+              </div>
+              <div className="bubble tooltip pink">
+                Directive Leadership
+                <span className="tooltiptext ratings textLeft">
+                  <div><strong>Directive Leadership</strong></div>
+                  <div className="tooltiptextDetail">Giving your mentee detailed instructions and specific tasks to complete</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </React.Fragment>
+    )
+  }
+
+  renderMenteeRatings = (userRole, menteeComms, menteeCurio, menteeAmb, menteeConf, menteeNetw) => {
     let ratingsArr = [
       {name: "menteeComms", label: "Communication", rating: menteeComms, description: 'Communication: Communicating clearly, in a professional & friendly way', detail: 'e.g. speaking to-the-point, good grammar & spelling, injected with a bit of personality'},
       {name: "menteeCurio", label: "Curiosity", rating: menteeCurio, description: 'Curiosity: Showing curiosity, open-mindedness and proactively asking for help', detail: 'e.g. asking lots of questions, delving deeper on topics ("why / how?"), and demonstrating a desire for learning new things'},
       {name: "menteeAmb", label: "Ambition", rating: menteeAmb, description: 'Ambition: Demonstrating ambition, drive & a clear commitment to accomplishing your goals', detail: 'e.g. having a clear career motivation and seemingly being willing to do whatever it takes to be successful'},
-      {name: "menteeConf", label: "Confidence", rating: menteeConf, description: 'Confidence: A genuine confidence & belief in your own ability to succeed', detail: 'e.g. being clear about your own relative strengths & weaknesses, feeling comfortable that you can develop any skills you are lacking and appearing resilient when challenged / facing a hurdle'},
-      {name: "menteeNetw", label: "Networking", rating: menteeNetw, description: 'Networking: Trying to build a strong relationship with your mentor and showing an appreciation that networking can open doors', detail: 'e.g. coming across likeable, showing regular appreciation for your mentor\'s help and perhaps offering advice / insights back too!'}
+      {name: "menteeConf", label: "Confidence", rating: menteeConf, description: 'Confidence: A genuine confidence & belief in one\'s own ability to succeed', detail: 'e.g. being clear about relative personal strengths & weaknesses, feeling comfortable to develop any skills that are lacking and appearing resilient when challenged / facing a hurdle'},
+      {name: "menteeNetw", label: "Networking", rating: menteeNetw, description: 'Networking: Trying to build a strong relationship with the mentor and showing an appreciation that networking can open doors', detail: 'e.g. coming across likeable, showing regular appreciation for a mentor\'s help and perhaps offering advice / insights back too!'}
     ]
     let strongArr = ratingsArr.filter(x => x.rating == 0)
     let goodArr = ratingsArr.filter(x => x.rating == 1)
@@ -50,17 +169,16 @@ class FeedbackPrivate extends Component {
     return (
       <React.Fragment>
         <div className="marginBottom20">
-          <div className="bold marginBottom5 smallFont">They thought you were:</div>
+          <div className="bold marginBottom5 smallFont">{userRole == 'mentor' ? 'You thought they were:' : 'They thought you were:'} </div>
           {strongArr.length > 0 && (
             <div className="marginBottom5">
               <div className="smallFont marginBottom5 thrivingFontColor"><span role="img" aria-label="celebrateEmoji">🎉</span>Thriving in:</div>
               <div className="ratingBubblesContainer">
                 {strongArr.map((item) => {
-                  console.log(item)
                   return (
                     <div className="bubble strong tooltip" key={item.label}>
                       {item.label}
-                      <span className="tooltiptext ratings">
+                      <span className="tooltiptext ratings textLeft">
                         <div><strong>{item.description}</strong></div>
                         <div className="tooltiptextDetail">{item.detail}</div>
                       </span>
@@ -78,7 +196,7 @@ class FeedbackPrivate extends Component {
                   return (
                     <div className="bubble good tooltip" key={item.label}>
                       {item.label}
-                      <span className="tooltiptext ratings">
+                      <span className="tooltiptext ratings textLeft">
                         <div><strong>{item.description}</strong></div>
                         <div className="tooltiptextDetail">{item.detail}</div>
                       </span>
@@ -96,7 +214,7 @@ class FeedbackPrivate extends Component {
                   return (
                     <div className="bubble needsWork tooltip" key={item.label}>
                       {item.label}
-                      <span className="tooltiptext ratings">
+                      <span className="tooltiptext ratings textLeft">
                         <div><strong>{item.description}</strong></div>
                         <div className="tooltiptextDetail">{item.detail}</div>
                       </span>
@@ -114,7 +232,7 @@ class FeedbackPrivate extends Component {
                   return (
                     <div className="bubble weak tooltip" key={item.label}>
                       {item.label}
-                      <span className="tooltiptext ratings">
+                      <span className="tooltiptext ratings textLeft">
                         <div><strong>{item.description}</strong></div>
                         <div className="tooltiptextDetail">{item.detail}</div>
                       </span>
@@ -130,7 +248,7 @@ class FeedbackPrivate extends Component {
   }
 
   renderFeedback = () => {
-    const {feedbackArr, userRole, type} = this.props;
+    const {feedbackArr, userRole, type, feedbackType} = this.props;
     const menteesustep = 'ASK DEX'
     const mentorsustep = 'ASK DEX'
 
@@ -175,7 +293,7 @@ class FeedbackPrivate extends Component {
             const eetStatus = item.eetstatus
             return (
               <div key={item.matchid} className="row feedbackItem">
-                <div className="col-4 col-s-12">
+                <div className="col-4 col-s-12 paddingR">
                   <Avatar userID={matchuid} userName={matchName}/>
                   <div className="bold lineHeight16">{matchName}</div>
                   <div className="marginBottom5 smallFont">
@@ -198,24 +316,78 @@ class FeedbackPrivate extends Component {
                   <div className="fontSize12 greyText normalLineheight marginBottom5">{matchName} was {userName}&#39;s {userRole == 'mentee' ? 'mentor' : 'mentee'} since <DateCalc time={item.date_matched} showPureDate /></div>
                 </div>
                 <div className="col-8 col-s-12">
-                  {userRole == 'mentee' && item.referenceForMentee != '' && (
-                    <div className="lineHeight16 marginBottom20">{item.referenceForMentee}</div>
+                  {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && (
+                    <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
                   )}
-                  {userRole == 'mentee' && (
+                  {userRole == 'mentee' && feedbackType == 'received' && (
                     <React.Fragment>
                       <div className="privateFeedbackSection">
-                        <div className="smallFont">Private Feedback</div>
-                        <div className="smallFont">(Will not be publicised if you choose to share this reference on your profile)</div>
-                        {this.renderMenteeRatings(item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
                         <div className="bold marginBottom5 smallFont">A private note from {matchName}:</div>
-                        <div className="referenceText marginBottom5">
+                        <div className="referenceText marginBottom20">
                           <div className="message-extras-border lightPurple" />
                           <div>
                             <i className="fas fa-quote-left"/> {item.privNoteToMentee}
                           </div>
                         </div>
+                        {this.renderMenteeRatings(userRole, item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
+                        {item.referenceForMentee != '' && (
+                          <div className="smallFont greyText italic">Note: If you make your reference public, this section will remain private.</div>
+                        )}
                       </div>
                     </React.Fragment>
+                  )}
+                  {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && (
+                    <React.Fragment>
+                      <div className="notifToggleContainer rightAlign paddingTop">
+                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add to my profile'}</span>
+                        <Checkbox
+                          labelClassName="switch"
+                          if="make-feedback-public"
+                          name={item.matchid+"-"+userRole+"-isPublic"}
+                          spanClassName="slider round"
+                          onChange={this.toggleCheckbox}
+                          defaultChecked={item.isPublic}
+                        />
+                      </div>
+                    </React.Fragment>
+                  )}
+                  {userRole == 'mentee' && feedbackType == 'given' && (
+                    <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.noteToMentor}</div>
+                  )}
+                  {userRole == 'mentor' && feedbackType == 'received' && (
+                    <React.Fragment>
+                      <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.noteToMentor}</div>
+                      <div className="privateFeedbackSection">
+                        {this.renderMentorRatings(item.mentorCompFuture, item.mentorRoleModel, item.mentorHighPerf, item.mentorIndivSupport, item.mentorIntellStimu, item.mentorDirLeader) }
+                        <div className="smallFont greyText italic">Note: If you make your reference public, this section will remain private.</div>
+                      </div>
+                      <div className="notifToggleContainer rightAlign paddingTop">
+                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add to my profile'}</span>
+                        <Checkbox
+                          labelClassName="switch"
+                          if="make-feedback-public"
+                          name={item.matchid+"-"+userRole+"-isPublic"}
+                          spanClassName="slider round"
+                          onChange={this.toggleCheckbox}
+                          defaultChecked={item.isPublic}
+                        />
+                      </div>
+                    </React.Fragment>
+                  )}
+                  {userRole == 'mentor' && feedbackType == 'given' && item.referenceForMentee != '' && (
+                    <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
+                  )}
+                  {userRole == 'mentor' && feedbackType == 'given' && (
+                    <div className="privateFeedbackSection">
+                      <div className="bold marginBottom5 smallFont">Your private note to {matchName}:</div>
+                      <div className="referenceText marginBottom20">
+                        <div className="message-extras-border lightPurple" />
+                        <div>
+                          <i className="fas fa-quote-left"/> {item.privNoteToMentee}
+                        </div>
+                      </div>
+                      {this.renderMenteeRatings(userRole, item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
+                    </div>
                   )}
                 </div>
               </div>

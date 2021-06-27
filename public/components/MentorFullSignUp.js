@@ -42,7 +42,7 @@ class MentorFullSignUp extends Component {
     const degreeName = 'profiles.degreename'
 
     const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
-    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
+    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '555 555 5678' : country === 'CAN' ? '416 234 5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
 
     var questionsO18 = [
       {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
@@ -731,6 +731,7 @@ class MentorFullSignUp extends Component {
                   questions={questionsO18}
                   usedFor="mentorFullSUAusNzl"
                   saveOnSubmit='u18'
+                  formTitle="Complete your full sign up"
                 />
               </FullPageModal>
             )}

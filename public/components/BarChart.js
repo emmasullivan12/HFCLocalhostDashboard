@@ -278,7 +278,7 @@ componentDidUpdate() {
 render() {
     return (
       <div className="barChart-container">
-        <canvas ref={this.barChartRef} />
+        <canvas ref={this.barChartRef} aria-label="Bar Chart" />
       </div>
     );
   }

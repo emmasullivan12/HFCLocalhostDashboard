@@ -1272,7 +1272,7 @@ class Form extends Component {
 
   render() {
     const {focusedQ, isSubmitting, tabPressed, firstQEdited, pct, allVisibleArray, browser} = this.state
-    const {questions} = this.props
+    const {questions, formTitle} = this.props
 
     const isSafari = browser === 'safari'
 
@@ -1292,7 +1292,7 @@ class Form extends Component {
         </div>
         <h1 className="form-header">
           <br/>
-          <i className="emoji-icon form typing-emoji"/> Complete your full sign up
+          <i className="emoji-icon form typing-emoji"/> {formTitle}
         </h1>
         <div className="row">
           { this.renderQuestions() }

@@ -22,6 +22,7 @@ const ManageFeedbackProps = {
   ariaLabel: 'View & manage your chat feedback',
   triggerText: 'Manage Feedback',
   usedFor: 'manageFeedbackFromUserMenu',
+  wider: true,
 }
 
 const SettingsModalProps = {

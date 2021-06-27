@@ -8,7 +8,6 @@
   position: relative;
 }
 .tabWindow.modal{
-  padding: 5px 10px 5px 10px;
   background-color: unset;
   text-align: left;
 }

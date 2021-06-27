@@ -554,7 +554,7 @@
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
-  padding: 2.5em 1.5em 1.5em 1.5em;
+  padding: 1em 0.75em 1em 0.75em;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
@@ -631,6 +631,10 @@
     max-height: -webkit-calc(100% - 1em);
     max-height: -moz-calc(100% - 1em);
     max-height: calc(100% - 1em);
+    padding: 2.5em 1.5em 1.5em 1.5em;
+  }
+  .modal-container.wider {
+    max-width: 40em;
   }
 }
 

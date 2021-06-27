@@ -1409,7 +1409,7 @@ class GroupDashOverview extends Component {
                   dataset2Title={menteeRoleSplit2[0].label}
                   dataset2Colour="#ffc107" // orange
                   dataset2Fill="rgba(255,193,7,.3)"
-                  dataset2HoverFill="rgba255,193,7,0,1)"
+                  dataset2HoverFill="rgba(255,193,7,1)"
                   dataset3={menteeRoleSplit3}
                   dataset3Title={menteeRoleSplit3[0].label}
                   dataset3Colour="#15CD94" // green

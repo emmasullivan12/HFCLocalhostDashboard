@@ -32,11 +32,12 @@ const ModalContent = ({
   onKeyDown,
   removeOverflowY,
   title,
-  usedFor
+  usedFor,
+  wider,
 }) => {
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "")} ref={modalRef} id={'modal-' + usedFor}>
+      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "") + (wider == true ? ' wider' : "")} ref={modalRef} id={'modal-' + usedFor}>
         <div className="modal-header">
           <div className="modal-title">
             {title}
@@ -119,7 +120,7 @@ class Modal extends React.Component {
     if (this.openButtonNode != undefined) {
       this.openButtonNode.focus()
     }
-console.log("onclose")
+
     if (handleLocalStateOnClose) {
       handleLocalStateOnClose();
     }
@@ -161,7 +162,7 @@ console.log("onclose")
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY} = this.props;
+    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider} = this.props;
 
     return (
       <React.Fragment>
@@ -190,6 +191,7 @@ console.log("onclose")
             removeOverflowY={removeOverflowY}
             title={title}
             usedFor={usedFor}
+            wider={wider}
           />
         )}
       </React.Fragment>

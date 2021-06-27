@@ -367,6 +367,9 @@ table th .description{
 .noBold{
   font-weight: 400!important;
 }
+.italic{
+  font-style: italic;
+}
 .whiteFadedText{
   color: rgb(255,255,255,0.63)!important;
 }
@@ -483,7 +486,7 @@ table th .description{
   padding: 0 2rem 0 2rem;
 }
 .absolute{
-  position: absolute;
+  position: absolute!important;
 }
 .button-unstyled {
   background: none;
@@ -572,8 +575,17 @@ table th .description{
 .noMarginB{
   margin-bottom: 0!important;
 }
+.paddingTop{
+  padding-top: 10px!important;
+}
 .paddingBtm{
   padding-bottom: 10px;
+}
+.paddingR{
+  padding-right: 10px!important;
+}
+.paddingL{
+  padding-left: 10px!important;
 }
 .noPaddingL{
   padding-left: 0!important;
@@ -1338,6 +1350,18 @@ a.Submit-btn:disabled:active,
   padding-right: 1rem;
   margin-bottom: 1rem;
 }
+.notifToggleContainer.rightAlign{
+  padding: 0;
+}
+.notifToggleContainer.rightAlign .notifToggleTxt{
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
+}
+.notifToggleContainer.rightAlign .switch{
+  position: absolute;
+  right: 20px;
+}
 .notifToggleContainer.contact{
   display: inline-block;
   width: 100%;
@@ -1632,7 +1656,36 @@ a.button{
   color: #3f3f3f;
   background-color: #fb6c81; /* red */
 }
-
+.ratingBubblesContainer .bubble.purple{
+  border: 1px solid rgba(78,78,214,1);
+  color: rgba(78,78,214,1);
+  background-color: rgba(78,78,214,.3);
+}
+.ratingBubblesContainer .bubble.orange{
+  border: 1px solid rgba(255,193,7,1);
+  color: rgba(255,193,7,1);
+  background-color: rgba(255,193,7,.3);
+}
+.ratingBubblesContainer .bubble.green{
+  border: 1px solid rgba(21,205,148,1);
+  color: rgba(21,205,148,1);
+  background-color: rgba(21,205,148,.3);
+}
+.ratingBubblesContainer .bubble.yellow{
+  border: 1px solid rgba(252,225,0,1);
+  color: rgba(252,225,0,1);
+  background-color: rgba(252,225,0,.3);
+}
+.ratingBubblesContainer .bubble.blue{
+  border: 1px solid rgba(0,176,240,1);
+  color: rgba(0,176,240,1);
+  background-color: rgba(0,176,240,.3);
+}
+.ratingBubblesContainer .bubble.pink{
+  border: 1px solid rgba(249,123,171,1);
+  color: rgba(249,123,171,1);
+  background-color: rgba(249,123,171,.3);
+}
 
 .bubble{
   font-size: 13px;
