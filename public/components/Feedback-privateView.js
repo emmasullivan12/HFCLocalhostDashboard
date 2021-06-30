@@ -247,6 +247,58 @@ class FeedbackPrivate extends Component {
     )
   }
 
+  getInsightsType = (insightsType) => {
+    switch(insightsType) {
+      case 1:
+        return 'Work-life reality (e.g. hours, stress, etc.)'
+      case 2:
+        return 'Industry / sector trends & insights'
+      case 3:
+        return 'Your company\'s culture (e.g. team, values)'
+      case 4:
+        return 'Your current role & responsibilities'
+      case 5:
+        return 'Your career path so far'
+      case 6:
+        return 'Job application best practice'
+      case 7:
+        return 'Real pictures of work life & environment'
+    }
+  }
+
+  renderMenteeInsightsReq = (menteeWantsMoreOf) => {
+    if (menteeWantsMoreOf.length == 2) {
+      return (
+        <ul>
+          <li>{this.getInsightsType(menteeWantsMoreOf[0])}</li>
+          <li>and {this.getInsightsType(menteeWantsMoreOf[1])}.</li>
+        </ul>
+      )
+    } else {
+      return (
+        <ul>
+          {menteeWantsMoreOf.map((item, index) => {
+
+            // Check isn't the last one in the array
+            if (menteeWantsMoreOf.length == 2) {
+              return (
+                <li>and {this.getInsightsType(item)}.</li>
+              )
+            } else if (index != menteeWantsMoreOf.length - 1) {
+              return (
+                <li>{this.getInsightsType(item)}</li>
+              )
+            } else {
+              return (
+                <li>and {this.getInsightsType(item)}.</li>
+              )
+            }
+          })}
+        </ul>
+      )
+    }
+  }
+
   renderFeedback = () => {
     const {feedbackArr, userRole, type, feedbackType} = this.props;
     const menteesustep = 'ASK DEX'
@@ -291,6 +343,7 @@ class FeedbackPrivate extends Component {
             const matchName = userRole == 'mentee' ? item.mentorname : item.menteename
             const matchuid = userRole == 'mentee' ? item.mentoruid : item.menteeuid
             const eetStatus = item.eetstatus
+            const menteeWantsMoreOfArr = item.menteeWantsMoreOf.filter(x => x != 0) // i.e. mentee did not respond saying "None of these" options for things they wanted their mentor to share
             return (
               <div key={item.matchid} className="row feedbackItem">
                 <div className="col-4 col-s-12 paddingR">
@@ -317,7 +370,20 @@ class FeedbackPrivate extends Component {
                 </div>
                 <div className="col-8 col-s-12">
                   {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && (
-                    <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
+                    <React.Fragment>
+                      <div className="lineHeight16 marginBottom5"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
+                      <div className="notifToggleContainer rightAlign paddingTop marginBottom20">
+                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add comment to my profile'}</span>
+                        <Checkbox
+                          labelClassName="switch"
+                          if="make-feedback-public"
+                          name={item.matchid+"-"+userRole+"-isPublic"}
+                          spanClassName="slider round"
+                          onChange={this.toggleCheckbox}
+                          defaultChecked={item.isPublic}
+                        />
+                      </div>
+                    </React.Fragment>
                   )}
                   {userRole == 'mentee' && feedbackType == 'received' && (
                     <React.Fragment>
@@ -330,24 +396,6 @@ class FeedbackPrivate extends Component {
                           </div>
                         </div>
                         {this.renderMenteeRatings(userRole, item.menteeComms, item.menteeCurio, item.menteeAmb, item.menteeConf, item.menteeNetw) }
-                        {item.referenceForMentee != '' && (
-                          <div className="smallFont greyText italic">Note: If you make your reference public, this section will remain private.</div>
-                        )}
-                      </div>
-                    </React.Fragment>
-                  )}
-                  {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && (
-                    <React.Fragment>
-                      <div className="notifToggleContainer rightAlign paddingTop">
-                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add to my profile'}</span>
-                        <Checkbox
-                          labelClassName="switch"
-                          if="make-feedback-public"
-                          name={item.matchid+"-"+userRole+"-isPublic"}
-                          spanClassName="slider round"
-                          onChange={this.toggleCheckbox}
-                          defaultChecked={item.isPublic}
-                        />
                       </div>
                     </React.Fragment>
                   )}
@@ -356,13 +404,9 @@ class FeedbackPrivate extends Component {
                   )}
                   {userRole == 'mentor' && feedbackType == 'received' && (
                     <React.Fragment>
-                      <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.noteToMentor}</div>
-                      <div className="privateFeedbackSection">
-                        {this.renderMentorRatings(item.mentorCompFuture, item.mentorRoleModel, item.mentorHighPerf, item.mentorIndivSupport, item.mentorIntellStimu, item.mentorDirLeader) }
-                        <div className="smallFont greyText italic">Note: If you make your reference public, this section will remain private.</div>
-                      </div>
-                      <div className="notifToggleContainer rightAlign paddingTop">
-                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add to my profile'}</span>
+                      <div className="lineHeight16 marginBottom5"><i className="fas fa-quote-left"/> {item.noteToMentor}</div>
+                      <div className="notifToggleContainer rightAlign paddingTop marginBottom20">
+                        <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add comment to my profile'}</span>
                         <Checkbox
                           labelClassName="switch"
                           if="make-feedback-public"
@@ -371,6 +415,19 @@ class FeedbackPrivate extends Component {
                           onChange={this.toggleCheckbox}
                           defaultChecked={item.isPublic}
                         />
+                      </div>
+                      <div className="privateFeedbackSection">
+                        {menteeWantsMoreOfArr.length > 0 && (
+                          <React.Fragment>
+                            <div className="bold marginBottom5 smallFont">A private note from {matchName}:</div>
+                            <div className="referenceText marginBottom20">
+                              <div>
+                                I&#39;d love to see more insights to: {this.renderMenteeInsightsReq(item.menteeWantsMoreOf)}
+                              </div>
+                            </div>
+                          </React.Fragment>
+                        )}
+                        {this.renderMentorRatings(item.mentorCompFuture, item.mentorRoleModel, item.mentorHighPerf, item.mentorIndivSupport, item.mentorIntellStimu, item.mentorDirLeader) }
                       </div>
                     </React.Fragment>
                   )}
