@@ -218,7 +218,7 @@ class ManageFeedbackContent extends Component {
   }
 
   renderTab = () => {
-    const {tabToView, isLoading, feedbackReceivedArr, feedbackGivenArr} = this.state;
+    const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state;
     const userRole = 'mentor'
 
     switch (tabToView) {

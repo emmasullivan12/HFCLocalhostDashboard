@@ -1663,7 +1663,7 @@ a.button{
 }
 .ratingBubblesContainer .bubble.orange{
   border: 1px solid rgba(255,193,7,1);
-  color: rgba(255,193,7,1);
+  color: rgba(195,147,2,1);
   background-color: rgba(255,193,7,.3);
 }
 .ratingBubblesContainer .bubble.green{
@@ -1673,7 +1673,7 @@ a.button{
 }
 .ratingBubblesContainer .bubble.yellow{
   border: 1px solid rgba(252,225,0,1);
-  color: rgba(252,225,0,1);
+  color: rgba(195,176,15,1);
   background-color: rgba(252,225,0,.3);
 }
 .ratingBubblesContainer .bubble.blue{

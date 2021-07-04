@@ -4,7 +4,8 @@
   margin-top: -10px;
   margin-bottom: 20px;
 }
-.groupdash-menuBtn{
+.groupdash-menuBtn,
+.button-unstyled.groupdash-menuBtn{
   padding-left: 0;
   margin-right: 30px;
   padding-bottom: 8px;
