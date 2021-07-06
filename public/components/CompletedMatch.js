@@ -62,6 +62,7 @@ class CompletedMatch extends Component {
               <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(3, 'alphabetically', 'pendingMatches-table')}>E-Mentor <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(4, 'alphabetically', 'pendingMatches-table')}>E-Mentor Group <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="userToMatch-group alignCenter hasSort" onClick={() => this.handleSortTable(5, 'alphabetically', 'pendingMatches-table')}>Matched By <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="userToMatch-name hasSort" onClick={() => this.handleSortTable(6, 'date', 'pendingMatches-table')}>Date Last Active <span className="greyText"><i className="fas fa-sort"/></span></th>
             </tr>
           </thead>
         )}
@@ -92,6 +93,7 @@ class CompletedMatch extends Component {
             </td>
             <td className="alignCenter">{mentorgroup}</td>
             <td>{match.matchedby}</td>
+            <td><i><DateCalc time={match.date_lastactive} showPureDate /></i></td>
           </tr>
         </tbody>
       </React.Fragment>

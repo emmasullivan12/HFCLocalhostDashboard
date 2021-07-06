@@ -48,7 +48,7 @@
   -o-transform: translate(-50%, 0);
 }
 
-.formCTAContainer.submit.safari{
+/*.formCTAContainer.submit.safari{
   position: -webkit-sticky;
   position: sticky;
 }
@@ -57,7 +57,7 @@
   position: sticky;
   max-width: 90px;
   left: 85%;
-}
+}*/
 
 .formCTAContainer.other{
   position: fixed;
@@ -305,7 +305,7 @@
   .formCTAContainer.other.hidden{
     display: none;
   }
-  .formCTAContainer.submit.safari{
+/*  .formCTAContainer.submit.safari{
     left: 70%;
     right: unset;
     bottom: 10px;
@@ -315,7 +315,7 @@
     left: 70%;
     top: unset;
     bottom: 103%;
-  }
+  }*/
 }
 @media only screen and (min-width: 395px) and (max-width: 425px) {
   .formContainer{

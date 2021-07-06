@@ -95,6 +95,20 @@ class UpdateUserStatusContent extends Component {
     })
   }
 
+  copyEmail = (uid) => {
+    const email = 'user@gmail.com'
+
+    // Copy text to clipboard
+    navigator.clipboard.writeText(email)
+    document.execCommand("copy");
+
+    document.getElementById("tooltip-" + uid).innerHTML = "Copied!";
+  }
+
+  handleBlur = (uid) => {
+    document.getElementById("tooltip-" + uid).innerHTML = "Copy Email";
+  }
+
   canBeSubmitted() {
     /*const {isCompleteDud} = this.state;
     return (
@@ -205,7 +219,13 @@ class UpdateUserStatusContent extends Component {
       return (
         <React.Fragment>
           <div className="modal-title">
-            Update details for <span className="request-mentor-name">{this.props.fname} {this.props.lname}</span>
+            Update details for <span>
+            <a className="request-mentor-name link tooltip" onMouseLeave={() => this.handleBlur(this.props.uid)} onClick={() => this.copyEmail(this.props.uid)}>
+               {user.fname} {user.lname}
+              <span className="tooltiptext compact" id={"tooltip-"+this.props.uid}>
+                Copy Email
+              </span>
+            </a></span>
           </div>
           <form>
             <div className="modal-section">
