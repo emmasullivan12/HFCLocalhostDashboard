@@ -33,12 +33,19 @@ class AutoEnrollProgModalContent extends Component {
   handleSubmit = (evt) => {
     this.setState({ messageFromServer: 'Group code sent' });
   }
+  
+  canBeSubmitted() {
+    const {tanp} = this.state;
+    return (
+      tanp == true
+    );
+  }
 
   render() {
-    const { toggleCheckbox } = this;
     const { messageFromServer } = this.state;
     const {autoEnrollProgName} = this.props;
     const isError = false;
+    const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
         <React.Fragment>
@@ -55,13 +62,13 @@ class AutoEnrollProgModalContent extends Component {
               id="tncCheckbox"
               name="tanp"
               value="1"
-              onChange={toggleCheckbox}
+              onChange={this.toggleCheckbox}
               spanClassName="checkmark left"
               spanId="tncStyle"
               required={false}
             />
             <div className="request-btn-container">
-              <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="submit" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
                 Join Group
               </button>
             </div>

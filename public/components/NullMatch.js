@@ -1,4 +1,4 @@
-// Dex last merged this code on 25th mar 2021 
+// Dex last merged this code on 25th mar 2021
 
 import React, { Component } from "react";
 
@@ -247,10 +247,8 @@ class NullMatch extends Component {
             </td>
             <td>
               <Checkbox
-          //      labelId="tncText"
                 className='checkbox'
                 labelClassName="checkbox-container"
-          //      label="I agree to share my Prospela profile with the Group admin for the purposes of providing me career advice & support"
                 id="emailChased-Checkbox"
                 name="emailChased"
                 value="1"

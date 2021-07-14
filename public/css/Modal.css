@@ -157,6 +157,9 @@
   -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.08);
   background-color: #351c75;
 }
+.ModalOpenBtn-viewMoreFeedback{
+  background-color: #351c75;
+}
 
 .ModalOpenBtn-card-mentor-profile{
   text-align: center;

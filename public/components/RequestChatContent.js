@@ -1,6 +1,7 @@
 // Dex last merged this code on 9th mar 2021
 
 import React, { Component } from "react";
+import Checkbox from './Checkbox.js';
 import "../css/RequestChatContent.css";
 import "../css/Emoji.css";
 import "../css/General.css";
@@ -45,6 +46,7 @@ class RequestChatContent extends Component {
 
   render() {
     const { requestChatMessage, messageFromServer } = this.state;
+    const { isU18 } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
@@ -97,6 +99,11 @@ class RequestChatContent extends Component {
                 </li>
               </ul>
             </div>
+            {isU18 == true && (
+              <div className="paddingL paddingR marginLeft marginRight greyText marginBottom20 smallFont">
+                By clicking &#39;Request&#39; you agree to share your Prospela profile with your E-Mentor for the purposes of providing you career advice & support
+              </div>
+            )}
             <div className="request-btn-container">
               <button type="button" disabled={!isEnabled} className="Submit-btn" onClick={this.handleSubmit}>
                 Request

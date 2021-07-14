@@ -84,7 +84,7 @@ class PrModAuto extends Component {
         menteeuid: '123',
         mentoruid: '234',
         matchedby: 'pennyid',
-        status_of_match: '3', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
+        status_of_match: '1', // will be numbers i.e. 1 = 'profile sent', 2 = 'mentee timed out', 3 = 'mentee accepted', 4 = 'mentee rejected', 5 = 'mentor timed out', 6 = 'mentor accepted', 7 = 'mentor rejected'
         chasers: {
           type: 1, dateSent: '' // to be completed
         },
@@ -109,7 +109,7 @@ class PrModAuto extends Component {
         uid: '12343',
         fname: 'Boris',
         lname: 'Johnson',
-        birthday: '1995-01-01T00:00:00.000Z',
+        birthday: '2010-01-01T00:00:00.000Z',
         matchType: 'strong',
         role: 'mentor',
         city: 'London',
@@ -199,6 +199,8 @@ class PrModAuto extends Component {
     let timeoutDate;
     let timerText;
     let dateDiff;
+    const userIs18 = false
+    const isU18 = !userIs18 // dex's mapstatetotprops userIs18: state.userIs18,
 
     var today = new Date();
     var x;
@@ -407,7 +409,7 @@ class PrModAuto extends Component {
                     <React.Fragment>
                       <div className="messageCTABtns">
                         <Modal {...RequestChatModalProps}>
-                          <RequestChatContent mentorName={userProfileToShow.fname} matchid={matchid}/>
+                          <RequestChatContent mentorName={userProfileToShow.fname} matchid={matchid} isU18={isU18}/>
                         </Modal>
                         <Modal {...PassModalProps}>
                           <PassMentorContent matchid={matchid}/>

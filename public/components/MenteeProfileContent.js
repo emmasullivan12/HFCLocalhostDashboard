@@ -30,7 +30,7 @@ class MenteeProfileContent extends Component {
       uid: '23456',
       fname: 'Dexter',
       profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
-      is18plus: 1,
+      birthday: '2010-01-01T00:00:00.000Z',
       city: 'London',
       country: 'GBR',
       timeZone: "Europe/London",
@@ -129,6 +129,11 @@ class MenteeProfileContent extends Component {
     const isPicSet = mentee.profPicSrc != ''; // Has user added a profile pic? If not, show placeholder pic
 //    const isPicSet = false;
     const uid = '23456';
+    var today = new Date();
+    var ts = new Date(mentee.birthday);
+    var age = today.getFullYear() - ts.getFullYear()
+    const userIs18 = false
+    const isU18 = !userIs18 // dex's mapstatetotprops userIs18: state.userIs18,
     const isMe = uid === mentee.uid ? 'isMe' : 'isntMe';
     const profShareSettings = {
       groups: false
@@ -174,7 +179,7 @@ class MenteeProfileContent extends Component {
               </div>
               <h1 className="profileName">{mentee.fname}</h1>
               <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>
-              {mentee.is18plus === 1 && (
+              {isU18 != true && (
                 <div className="profileInstitution">
                   <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus==='sch' || mentee.eetStatus==='uni' ? eduInstName : (mentee.currCo)}</strong>
                 </div>

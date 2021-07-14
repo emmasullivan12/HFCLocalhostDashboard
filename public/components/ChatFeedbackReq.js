@@ -87,7 +87,7 @@ class ChatFeedbackReq extends Component {
     let feedbackDone;
 
     var questionsMentee = [
-      {q: 'How satisfied are you with how your relationship is progressing with ' + mentorName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod")', aType: 'rating', req: 1, name: 'overallSatisMentee', ratingOutOf: 10},
+      {q: 'How satisfied are you with how your relationship is progressing with ' + mentorName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod"). Note: Your answer to this question will not be visible to your mentor.', aType: 'rating', req: 1, name: 'overallSatisMentee', ratingOutOf: 10},
       {q: 'Help ' + mentorName + ' learn how they come across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve.', aType: 'interim', name: 'interim'},
       {q: 'Do they help you focus, prioritise and set a clear vision for your future:', detail: 'e.g. they help you with decision making and visualising what your success might look like', aType: 'yesno', req: 1, name: 'mentorCompFuture', options: [
         {value: '3', label: 'Regularly'},
@@ -187,7 +187,7 @@ class ChatFeedbackReq extends Component {
     ]
 
     var questionsMentor = [
-      {q: 'How satisfied are you with how your relationship is progressing with ' + menteeName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod")', aType: 'rating', req: 1, name: 'overallSatisMentor', ratingOutOf: 10},
+      {q: 'How satisfied are you with how your relationship is progressing with ' + menteeName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod"). Note: Your answer to this question will not be visible to your mentee.', aType: 'rating', req: 1, name: 'overallSatisMentor', ratingOutOf: 10},
       {q: 'Help your mentee learn how they come across. Describe their mindset / ability against the following key skills:', detail: 'Try to be as honest as possible to help them make the most of the mentoring experience (and beyond!). It will also help us know what support we can give them.', aType: 'interim', name: 'interim'},
       {q: 'Do they communicate clearly, in a professional & friendly way:', detail: 'e.g. speaking to-the-point, good grammar & spelling, injected with a bit of personality', aType: 'yesno', req: 1, name: 'menteeComms', options: [
         {value: '0', label: 'They\'re thriving'},

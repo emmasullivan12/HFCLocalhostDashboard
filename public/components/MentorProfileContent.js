@@ -3,6 +3,8 @@
 import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
+import FeedbackPublic from './Feedback-publicView.js';
+import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
@@ -21,6 +23,13 @@ const UploadProfPicProps = {
   usedFor: 'addPicBtn'
 }
 
+const ViewMoreFeedbackProps = {
+  ariaLabel: 'View more feedback for this user',
+  triggerText: 'View all Feedback',
+  usedFor: 'viewMoreFeedback',
+  wider: true, // Have wider modal
+}
+
 class MentorProfileContent extends Component {
   constructor (props) {
     super(props);
@@ -28,7 +37,114 @@ class MentorProfileContent extends Component {
       followStatus: false,
       save4LaterClicked: false,
       availabilityClicked: true,
-      saved4later: false
+      saved4later: false,
+      feedbackReceivedArr: [
+        {
+          matchid: 12345,
+          date_matched: '2021-03-21T00:00:00.000Z',
+          mentorname: 'Emma',
+          mentoruid: 2345,
+          menteename: 'Dexter',
+          menteeuid: 1234,
+          eetstatus: 'job',
+          schname: '',
+          schnamefreetext: '', // If their school wasn't on the list
+          uniname: '75',
+          uninamefreetext: '', // If their school wasn't on the list
+          degree: '',
+          currrole: 'Head of Marketing',
+          currco: 'Pladis',
+          currtraining: '',
+          currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
+          referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
+          menteeComms: 0,
+          menteeCurio: 1,
+          menteeAmb: 1,
+          menteeConf: 2,
+          menteeNetw: 3,
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3,
+          notetomentorpub: 1,
+          referenceformenteepub: 0
+        },
+        {
+          matchid: 12346,
+          date_matched: '2021-03-21T00:00:00.000Z',
+          mentorname: 'Emma',
+          mentoruid: 2345,
+          menteename: 'Dexter',
+          menteeuid: 1234,
+          eetstatus: 'job',
+          schname: '',
+          schnamefreetext: '', // If their school wasn't on the list
+          uniname: '75',
+          uninamefreetext: '', // If their school wasn't on the list
+          degree: '',
+          currrole: 'Head of Marketing',
+          currco: 'Pladis',
+          currtraining: '',
+          currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
+          referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
+          menteeComms: 0,
+          menteeCurio: 1,
+          menteeAmb: 1,
+          menteeConf: 2,
+          menteeNetw: 3,
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [1,2,3,4,7],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3,
+          notetomentorpub: 1,
+          referenceformenteepub: 0
+        },
+        {
+          matchid: 12347,
+          date_matched: '2021-03-21T00:00:00.000Z',
+          mentorname: 'Emma',
+          mentoruid: 2345,
+          menteename: 'Dexter',
+          menteeuid: 1234,
+          eetstatus: 'job',
+          schname: '',
+          schnamefreetext: '', // If their school wasn't on the list
+          uniname: '75',
+          uninamefreetext: '', // If their school wasn't on the list
+          degree: '',
+          currrole: 'Head of Marketing',
+          currco: 'Pladis',
+          currtraining: '',
+          currtrainingprovider: '',
+          noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
+          referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
+          menteeComms: 0,
+          menteeCurio: 1,
+          menteeAmb: 1,
+          menteeConf: 2,
+          menteeNetw: 3,
+          privNoteToMentee: 'this is a private note from mentor to mentee',
+          menteeWantsMoreOf: [0],
+          mentorCompFuture: 1,
+          mentorRoleModel: 2,
+          mentorHighPerf: 0,
+          mentorIndivSupport: 3,
+          mentorIntellStimu: 2,
+          mentorDirLeader: 3,
+          notetomentorpub: 0,
+          referenceformenteepub: 0
+        },
+      ],
     }
     this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
     this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
@@ -54,27 +170,28 @@ class MentorProfileContent extends Component {
   }
 
   availabilityMsg(userAvail) {
-    if (userAvail === 1) {
+    if (userAvail === 2 || userAvail === 3) {
       return <span>Available for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
-    } else if (userAvail === 2) {
+    } else if (userAvail === 0) {
       return <span>Available to offer <strong className="greenText">long-term</strong> mentorship</span>
-    } else if (userAvail === 3) {
+    } else if (userAvail === 1) {
       return <span>Available to offer <strong className="greenText">short-term</strong> mentor support</span>
-    } else if (userAvail === 4) {
-      return <span><span className="redText">Not currently available</span> for mentorship</span>
+/*    } else if (userAvail === 4) {
+      return <span><span className="redText">Not currently available</span> for mentorship</span> */
     }
   }
 
   render() {
-    const {followStatus, availabilityClicked, save4LaterClicked, saved4later} = this.state;
+    const {followStatus, availabilityClicked, save4LaterClicked, saved4later, feedbackReceivedArr} = this.state;
     const mentor = {
-      uid: '12345',
+      uid: '23456',
       fname: 'Emma',
+//      profPicSrc: '',
       profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       city: 'LA',
       country: 'USA',
       timeZone: 'Europe/London',
-      avail: 1,
+      availType: 1,
       activeMentees: 2,
       allMentees: 5,
       views: 200,
@@ -104,11 +221,11 @@ class MentorProfileContent extends Component {
       groupWomen: 1,
       groupParents: 1,
       groupSingle: 1,
-      whyJoin: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
+      whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
       roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
-    const userReads = [
+/*    const userReads = [
       {
         id: '11111',
         type: 'book',
@@ -160,7 +277,7 @@ class MentorProfileContent extends Component {
         text: ' just took on a new mentee'
       }
     ]
-    const profShareSettings = {
+*/    const profShareSettings = {
       groups: false
     };
     const lastActive = timeSince(mentor.lastActiveDate);
@@ -170,9 +287,11 @@ class MentorProfileContent extends Component {
     const eduInstName = eduName(mentor.schName, mentor.schNameFreeText, mentor.uniName, mentor.uniNameFreeText, mentor.eetStatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23456';
+    const uid = '12345';
     const isMe = uid === mentor.uid ? 'isMe' : 'isntMe';
     const userInitial = mentor.fname.charAt(0).toUpperCase();
+    const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
+    const feedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
 
     return (
       <React.Fragment>
@@ -188,7 +307,7 @@ class MentorProfileContent extends Component {
                       </Modal>
                     )}
                     <img
-                      src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'.png-360')}
+                      src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'-360')}
                       alt="User profile pic"
                     />
                   </div>
@@ -215,17 +334,11 @@ class MentorProfileContent extends Component {
               <h1 className="profileName">{mentor.fname}</h1>
               <div className="profilePosition">{mentor.currRole}</div>
               <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> {mentor.currCo}</a>
-              <div className="profileIndustryTag">{mentor.currInd}</div>
+          {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
               <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
                 {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
-              </button>
+              </button>*/}
               <div>
-                <h2>
-                  I&#39;m interested in being a mentor because:
-                </h2>
-                <p>
-                  {mentor.whyJoin}
-                </p>
                 <h2>
                   Location
                 </h2>
@@ -235,6 +348,34 @@ class MentorProfileContent extends Component {
                   </span>
                   {mentor.city}, {mentor.country}
                 </p>
+              </div>
+          {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
+              <div className={"contentBox feedbackOnProfile" + (feedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
+                <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Latest Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
+                <div className="credTxtContainer">
+
+                  {feedbackToShow.length == 0 && (
+                    <div className="restrictedContent darkGreytext">
+                      <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
+                      {mentor.fname} does not have any public endorsements from mentees yet.
+                    </div>
+                  )}
+
+                  {feedbackToShow.length > 0 && (
+                    <React.Fragment>
+                      <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[feedbackToShow[0]]} userRoleToView='mentor'/>
+                      {feedbackToShow.length > 1 && (
+                        <div className="feedbackBtn">
+                          <div className="messageCTABtns">
+                            <Modal {...ViewMoreFeedbackProps}>
+                              <ManageFeedbackContent isForPublicProfile userToView={mentor.fname} userRoleToView='mentor' feedbackToShow={feedbackToShow}/>
+                            </Modal>
+                          </div>
+                        </div>
+                      )}
+                    </React.Fragment>
+                  )}
+                </div>
               </div>
             </div>
             <div className="col-6 col-s-12 content-col profile">
@@ -250,7 +391,7 @@ class MentorProfileContent extends Component {
               </div>
               <div className="article-body profile">
                 <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
-                  <div className="contentBox">
+                {/*  <div className="contentBox">
                     <h2>Credentials & Highlights</h2>
                     <div className="credTxtContainer">
                       <div><span className="credNum">{mentor.yrsExp}</span>years experience</div>
@@ -261,7 +402,7 @@ class MentorProfileContent extends Component {
                       )}
                       <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>
                     </div>
-                  </div>
+                  </div>*/}
                   <h1 >
                     <br/>
                     <i className="emoji-icon suitcase-emoji"/> Expertise & Career
@@ -326,7 +467,13 @@ class MentorProfileContent extends Component {
                   <p>
                     {mentor.hobbies}
                   </p>
-                  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
+                  <h2>
+                    I&#39;m interested in being a mentor because:
+                  </h2>
+                  <p>
+                    {mentor.whyHelp}
+                  </p>
+                {/*  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
                     <React.Fragment>
                       <h2>
                         Groups I&#39;m passionate about supporting
@@ -340,9 +487,9 @@ class MentorProfileContent extends Component {
                         {mentor.groupSingle === 1 && <div className="bubble">Single parents</div>}
                       </div>
                     </React.Fragment>
-                  )}
+                  )}*/}
                 </section>
-                {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+            {/*    {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
                   <section className="scroll-anchor" id="recent-activity" name="recent-activity">
                     {mentor.activityPublic === 1 && (
                       <div className="contentBox">
@@ -392,7 +539,7 @@ class MentorProfileContent extends Component {
                       </div>
                     )}
                   </section>
-                )}
+                )}*/}
               </div>
             </div>
             <div className="col-3 col-s-12 category-list profile">
@@ -406,16 +553,16 @@ class MentorProfileContent extends Component {
                 <li>
                   <a href="#hobbies-interests">Outside of work</a>
                 </li>
-                {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+          {/*      {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
                   <li>
                     <a href="#recent-activity">Recent activity</a>
                   </li>
-                )}
+                )}*/}
               </ul>
               <div className="profileCTAContainer">
                 {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
                   <div className="profileBtnToolTip avail">
-                    {this.availabilityMsg(mentor.avail)}
+                    {this.availabilityMsg(mentor.availType)}
                   </div>
                   )
                 : (
@@ -425,7 +572,7 @@ class MentorProfileContent extends Component {
                   )
                 }
                 <div className="profileUserCTA">
-                  {mentor.avail === 1 || mentor.avail === 2 || mentor.avail === 3 ? (
+                  {(mentor.availType === 0 || mentor.availType === 1 || mentor.availType === 2 || mentor.availType === 3) ? (
                     <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
                       <span>&#10003;</span>
                     </button>
@@ -436,12 +583,13 @@ class MentorProfileContent extends Component {
                     </button>
                     )
                   }
-                  <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
+
+              {/*    <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
                     <i className="far fa-bookmark"/>
                   </button>
                   <button type="button" className="profileBtn">
                     <i className="fas fa-share-alt"/>
-                  </button>
+                  </button>*/}
                   <div className="timeContainer">
                     {isDayNight==='day' ? (
                       <button type="button" className="profileBtn dayTime">

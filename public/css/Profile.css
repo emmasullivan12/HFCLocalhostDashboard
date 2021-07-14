@@ -69,7 +69,6 @@
   font-size: 12px;
   padding-left: 2px;
 }
-
 .profile-thumb.noPic.isMe{
   background-color: #e6ddfd;
 }
@@ -91,7 +90,21 @@
   font-weight: 900;
   padding-top: 3px;
 }
-
+.contentBox.feedbackOnProfile{
+  background-color: #efe8ff;
+  border: 1px dashed #351c75;
+}
+.contentBox.feedbackOnProfile.noFeedbackYet{
+  background-color: #e0e0e0;
+}
+.contentBox.feedbackOnProfile h2,
+.contentBox.feedbackOnProfile .feedbackContainer{
+  color: #3f3f3f!important;
+}
+.feedbackBtn{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .prLogoContainer.profile{
   top: 30px;
   left: 50%;
@@ -354,37 +367,45 @@
   -moz-flex-direction: row;
 }
 @media screen and (min-width: 759px) and (max-width: 1251px) {
-  .profileUserCTA{
+/*  .profileUserCTA{
     display: block;
   }
   .timeContainer{
     margin-top: .3rem;
-  }
+  }*/
   .profileUserCTA.small{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
   }
-  .timeContainer.small{
+/*  .timeContainer.small{
     margin-top: 0;
-  }
+  }*/
 }
 @media screen and (min-width: 759px) and (max-width: 1033px) {
   .profileUserCTA.small{
     display: block;
   }
-  .timeContainer.small{
+/*  .timeContainer.small{
     margin-top: .3rem;
-  }
+  }*/
 }
 .profileCTAContainer{
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 759px) {
   .profileCTAContainer{
     position: absolute;
     bottom: 30px;
     padding-right: 20px;
+  }
+  .profileCTAContainer{
+    margin-bottom: 1rem;
+  }
+  .contentBox.feedbackOnProfile{
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
   }
 }
 .profileBtnToolTip{
@@ -407,6 +428,11 @@
   text-align: left;
   padding: .4rem .8rem .4rem .8rem;
   position: relative;
+}
+@media screen and (max-width: 759px) {
+  .feedbackBtn{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 759px) and (max-width: 846px) {
   .profileBtnToolTip{
@@ -467,6 +493,7 @@
   background: #ffd350;
   color: #fff;
   border: 1px solid #f3c848;
+  font-size: 20px;
 }
 .profileBtn.nightTime{
   background: #c5c5c5;

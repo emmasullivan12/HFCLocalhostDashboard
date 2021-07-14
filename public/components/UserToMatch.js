@@ -156,7 +156,8 @@ class UserToMatch extends Component {
     let safeguardingText;
     let wantsU18;
     let prApproved;
-    let isU18;
+    const userIs18 = false
+    const isU18 = !userIs18 // dex's mapstatetotprops userIs18: state.userIs18,
 
     if (user.role == 'mentee') {
       const birthdayts = user.birthday
@@ -165,7 +166,6 @@ class UserToMatch extends Component {
       let age;
 
       age = today.getFullYear() - ts.getFullYear()
-      isU18 = age < 18;
 
       if (isU18 == true) {
         safeguardingText = age + " years (U18)"

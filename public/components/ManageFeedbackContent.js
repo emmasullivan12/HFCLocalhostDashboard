@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import FeedbackPrivate from './Feedback-privateView.js';
+import FeedbackPublic from './Feedback-publicView.js';
 
 class ManageFeedbackContent extends Component {
   constructor(props) {
@@ -78,7 +79,6 @@ class ManageFeedbackContent extends Component {
       ],
       /*feedbackReceivedArr: [
         {
-          isPublic: false,
           matchid: 12345,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -106,7 +106,6 @@ class ManageFeedbackContent extends Component {
       ],*/
       feedbackReceivedArr: [
         {
-          isPublic: true,
           matchid: 12345,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -137,10 +136,11 @@ class ManageFeedbackContent extends Component {
           mentorHighPerf: 0,
           mentorIndivSupport: 3,
           mentorIntellStimu: 2,
-          mentorDirLeader: 3
+          mentorDirLeader: 3,
+          notetomentorpub: 1,
+          referenceformenteepub: 1
         },
         {
-          isPublic: false,
           matchid: 12346,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -165,16 +165,17 @@ class ManageFeedbackContent extends Component {
           menteeConf: 2,
           menteeNetw: 3,
           privNoteToMentee: 'this is a private note from mentor to mentee',
-          menteeWantsMoreOf: [1,2,3,4,7],
+          menteeWantsMoreOf: [0,1,2,3,4,7],
           mentorCompFuture: 1,
           mentorRoleModel: 2,
           mentorHighPerf: 0,
           mentorIndivSupport: 3,
           mentorIntellStimu: 2,
-          mentorDirLeader: 3
+          mentorDirLeader: 3,
+          notetomentorpub: 1,
+          referenceformenteepub: 1
         },
         {
-          isPublic: false,
           matchid: 12347,
           date_matched: '2021-03-21T00:00:00.000Z',
           mentorname: 'Emma',
@@ -198,14 +199,16 @@ class ManageFeedbackContent extends Component {
           menteeAmb: 1,
           menteeConf: 2,
           menteeNetw: 3,
-          privNoteToMentee: 'this is a private note from mentor to mentee',
+          privNoteToMentee: 'last message. this is a private note from mentor to mentee',
           menteeWantsMoreOf: [0],
           mentorCompFuture: 1,
           mentorRoleModel: 2,
           mentorHighPerf: 0,
           mentorIndivSupport: 3,
           mentorIntellStimu: 2,
-          mentorDirLeader: 3
+          mentorDirLeader: 3,
+          notetomentorpub: 1,
+          referenceformenteepub: 1
         },
       ],
     }
@@ -219,11 +222,16 @@ class ManageFeedbackContent extends Component {
 
   renderTab = () => {
     const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state;
+    const {isForPublicProfile, userToView, userRoleToView, feedbackToShow} = this.props;
     const userRole = 'mentor'
 
     switch (tabToView) {
       case 'received':
-        return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received'/>
+        if (!isForPublicProfile) {
+          return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received'/>
+        } else {
+          return <FeedbackPublic fname={userToView} feedbackArr={feedbackToShow} userRoleToView={userRoleToView}/>
+        }
       case 'given':
         return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole} feedbackType='given'/>
     }
@@ -231,7 +239,10 @@ class ManageFeedbackContent extends Component {
 
   render() {
     const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state
-    const numReceived = feedbackReceivedArr.length
+    const {isForPublicProfile, userRoleToView, feedbackToShow} = this.props;
+    const numReceived = (isForPublicProfile != true) ? feedbackReceivedArr.length : (
+      userRoleToView == 'mentee' ? feedbackToShow.length : feedbackToShow.length
+    )
     const numSent = feedbackGivenArr.length
 
     return (
@@ -242,7 +253,9 @@ class ManageFeedbackContent extends Component {
           </div>
           <div className="groupdash-menuBar">
             <button type="button" name="received" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'received' ? ' tabActive' : '')}>Received ({numReceived})</button>
-            <button type="button" name="given" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'given' ? ' tabActive' : '')}>Given ({numSent})</button>
+            {isForPublicProfile != true && (
+              <button type="button" name="given" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'given' ? ' tabActive' : '')}>Given ({numSent})</button>
+            )}
           </div>
           { this.renderTab() }
         </div>

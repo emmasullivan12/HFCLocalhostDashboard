@@ -267,11 +267,10 @@ class FeedbackPrivate extends Component {
   }
 
   renderMenteeInsightsReq = (menteeWantsMoreOf) => {
-    if (menteeWantsMoreOf.length == 2) {
+    if (menteeWantsMoreOf.length == 1) {
       return (
         <ul>
           <li>{this.getInsightsType(menteeWantsMoreOf[0])}</li>
-          <li>and {this.getInsightsType(menteeWantsMoreOf[1])}.</li>
         </ul>
       )
     } else {
@@ -280,11 +279,8 @@ class FeedbackPrivate extends Component {
           {menteeWantsMoreOf.map((item, index) => {
 
             // Check isn't the last one in the array
-            if (menteeWantsMoreOf.length == 2) {
-              return (
-                <li>and {this.getInsightsType(item)}.</li>
-              )
-            } else if (index != menteeWantsMoreOf.length - 1) {
+            if (index != menteeWantsMoreOf.length - 1) {
+          //  if (index != menteeWantsMoreOf.length - 1) {
               return (
                 <li>{this.getInsightsType(item)}</li>
               )
@@ -301,8 +297,8 @@ class FeedbackPrivate extends Component {
 
   renderFeedback = () => {
     const {feedbackArr, userRole, type, feedbackType} = this.props;
-    const menteesustep = 'ASK DEX'
-    const mentorsustep = 'ASK DEX'
+  //  const menteesustep = 'ASK DEX'
+  //  const mentorsustep = 'ASK DEX'
 
     // No feedback to show
     if (feedbackArr.length == 0) {
@@ -313,7 +309,7 @@ class FeedbackPrivate extends Component {
       if ( doneFullSU == false ) {
         return (
           <div className="restrictedContent greyText">
-            <div><i className="fas fa-exclamation" /></div>
+            <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
             You need to complete your full sign up and get a mentoring match to give and receive endorsements
           </div>
         )
@@ -322,7 +318,8 @@ class FeedbackPrivate extends Component {
       } else {
         return (
           <div className="restrictedContent greyText">
-            Your endorsements will show here once you and your match have completed your chat feedback (typically after 2 months of chatting)
+            <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
+            Your endorsements will show here once you and your match have both completed your chat feedback (typically after 2 months of chatting)
           </div>
         )
       }
@@ -369,7 +366,7 @@ class FeedbackPrivate extends Component {
                   <div className="fontSize12 greyText normalLineheight marginBottom5">{matchName} was {userName}&#39;s {userRole == 'mentee' ? 'mentor' : 'mentee'} since <DateCalc time={item.date_matched} showPureDate /></div>
                 </div>
                 <div className="col-8 col-s-12">
-                  {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && (
+                  {userRole == 'mentee' && feedbackType == 'received' && item.referenceForMentee != '' && item.referenceForMentee != null && (
                     <React.Fragment>
                       <div className="lineHeight16 marginBottom5"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
                       <div className="notifToggleContainer rightAlign paddingTop marginBottom20">
@@ -422,7 +419,7 @@ class FeedbackPrivate extends Component {
                             <div className="bold marginBottom5 smallFont">A private note from {matchName}:</div>
                             <div className="referenceText marginBottom20">
                               <div>
-                                I&#39;d love to see more insights to: {this.renderMenteeInsightsReq(item.menteeWantsMoreOf)}
+                                I&#39;d love to see more insights to: {this.renderMenteeInsightsReq(menteeWantsMoreOfArr)}
                               </div>
                             </div>
                           </React.Fragment>
@@ -431,7 +428,7 @@ class FeedbackPrivate extends Component {
                       </div>
                     </React.Fragment>
                   )}
-                  {userRole == 'mentor' && feedbackType == 'given' && item.referenceForMentee != '' && (
+                  {userRole == 'mentor' && feedbackType == 'given' && item.referenceForMentee != '' && item.referenceForMentee != null && (
                     <div className="lineHeight16 marginBottom20"><i className="fas fa-quote-left"/> {item.referenceForMentee}</div>
                   )}
                   {userRole == 'mentor' && feedbackType == 'given' && (

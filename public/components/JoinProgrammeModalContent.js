@@ -39,7 +39,7 @@ class JoinProgrammeModalContent extends Component {
   toggleCheckbox = (e) => {
     const currentState = this.state[e.target.name];
 
-    if (currentState === false) {
+    if (currentState === false || currentState == null) {
       this.setState({
         [e.target.name]: true,
       });
@@ -52,9 +52,9 @@ class JoinProgrammeModalContent extends Component {
   }
 
   canBeSubmitted() {
-    const {progCode, progName} = this.state;
+    const {progCode, progName, tanp} = this.state;
     return (
-      progCode.length === 6
+      progCode.length === 6 && tanp == true
     );
   }
 
@@ -63,7 +63,7 @@ class JoinProgrammeModalContent extends Component {
     const {userRole} = this.props;
     const isError = false;
     const nonPartnerInst = true; /// check school email (or prog code if signed up with personal email) for school partnership
-    //const isEnabled = this.canBeSubmitted();
+    const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
       return (
         <React.Fragment>
@@ -106,10 +106,10 @@ class JoinProgrammeModalContent extends Component {
               onChange={this.toggleCheckbox}
               spanClassName="checkmark left"
               spanId="tncStyle"
-              required={false}
+              required
             />
             <div className="request-btn-container">
-              <button type="submit" className="Submit-btn" onSubmit={this.handleSubmit}>
+              <button type="submit" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
                 Join Group
               </button>
             </div>

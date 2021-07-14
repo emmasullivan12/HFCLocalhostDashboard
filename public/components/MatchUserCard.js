@@ -1,4 +1,4 @@
-// Dex last merged this code on 25th mar 2021 
+// Dex last merged this code on 25th mar 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -177,7 +177,8 @@ class MatchUserCard extends React.Component {
    let safeguardingText;
    let wantsU18;
    let prApproved;
-   let isU18;
+   const userIs18 = false
+   const isU18 = !userIs18 // dex's mapstatetotprops userIs18: state.userIs18,
    let eduInstName;
    let matchType = user.matchType ? user.matchType : ''; // strong, medium, weak
    let outsideGroup = false;
@@ -193,8 +194,6 @@ class MatchUserCard extends React.Component {
   }
 
    if (user.role == 'mentee') {
-
-     isU18 = age < 18;
 
      if (isU18 == true) {
        safeguardingText = age + " years old (U18)"
