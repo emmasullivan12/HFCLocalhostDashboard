@@ -15,13 +15,15 @@ class GroupCircle extends Component {
     const {group, navlink} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
-    var string = group.groupname;
+    var string = group.groupname != null ? group.groupname : group.label;
 
     let progLogo
     let groupInitial
+    let imgLink = cdn + '/' + groupImgFolder + groupAvatarURL + '-40' //40px wide image
+    let navlinkToShow = navlink == null ? imgLink : navlink
 
     if (isGroupAvatarURL) {
-      progLogo = cdn + '/' + groupImgFolder + groupAvatarURL + '-40' //40px wide image
+      progLogo = imgLink
     } else {
       groupInitial = string.charAt(0).toUpperCase();
     }
@@ -30,7 +32,7 @@ class GroupCircle extends Component {
 //<span>{string.charAt(0)}</span>
 //<span className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
     return (
-      <Link to={navlink} className={isGroupAvatarURL ? '' : 'noAvatar'}>
+      <Link to={navlinkToShow} target={navlink == null ? "_blank" : ""} rel={navlink == null ? "noopener noreferrer" : ""} className={isGroupAvatarURL ? '' : 'noAvatar'}>
         <button type="button" className="groupBtn tooltip">
             {isGroupAvatarURL === true ? (
               <React.Fragment>

@@ -1,7 +1,9 @@
 // Dex last merged this code on 19th apr 2021
 
 import React, { Component } from "react";
+import subjectsOptions from './Subjects.js';
 import hobbiesOptions from './Hobbies.js';
+import industryList from './Industries.js';
 import roleOptions from './Roles.js';
 import groupsList from "./Groups.js";
 
@@ -47,12 +49,13 @@ function convertRole(roles, rolesfreetext) {
   let rolesFullText = [];
 
   const rolesArr = roleOptions
-  //  .filter(role => roles.includes(parseInt(role.value,10)))
-    .filter(role => roles.includes(role.value))
+    .filter(role => roles.includes(parseInt(role.value,10)))
+  //  .filter(role => roles.includes(role.value))
 
   rolesArr.forEach((x) => {
     rolesFullText.push(x.label)
   })
+
   rolesfreetext.forEach((y) => {
     rolesFullText.push(y)
   })
@@ -63,7 +66,6 @@ function convertRole(roles, rolesfreetext) {
 function getGroupName(gid, getLongOrShortName) {
 
   const groupArr = groupsList
-  //  .filter(role => roles.includes(parseInt(role.value,10)))
     .filter(group => group.value == gid)
 
   // If want short "source" version i.e. avfx
@@ -74,6 +76,24 @@ function getGroupName(gid, getLongOrShortName) {
   } else {
     return groupArr[0].label
   }
+
+}
+
+function getIndustryDeets(industryID) {
+
+  const indArr = industryList
+    .filter(industry => industry.value == industryID)
+
+  return indArr[0]
+}
+
+function getGroupDeets(gid) {
+
+  const groupArr = groupsList
+  //  .filter(role => roles.includes(parseInt(role.value,10)))
+    .filter(group => group.value == gid)
+
+  return groupArr[0]
 
 }
 
@@ -95,6 +115,20 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   return hobbiesFullText.join(", ")
 }
 
+function convertSubjects(subjects) {
+  let subjectsFullText = [];
+//  const stringifyHobbies = JSON.stringify(hobbies);
+
+  const subjectsArr = subjectsOptions
+    .filter(subject => subjects.includes(parseInt(subject.value,10)))
+//    .filter(hobby => stringifyHobbies.includes(hobby.value))
+
+  subjectsArr.forEach((x) => {
+    subjectsFullText.push(x.label)
+  })
+
+  return subjectsFullText.join(", ")
+}
 
 function setSchGraduYr(currYrGrp) {
   var d = new Date();
@@ -314,4 +348,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, convertHobbies, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHobbies, convertSubjects, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

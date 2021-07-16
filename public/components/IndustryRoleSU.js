@@ -9,6 +9,7 @@ import TextInput from './TextInput.js';
 import ProgressCircles from './ProgressCircles.js';
 import RatingItems from './RatingItems.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
+import industryOptions from './Industries.js';
 import roleOptions from './Roles.js';
 //import {lookupRoles} from './UserDetail.js';
 
@@ -51,7 +52,7 @@ import roleOptions from './Roles.js';
   {value: '9', label: 'Physics5', checkbox: true, isTitle: false}
 ];*/
 
-const industryOptions = [
+/*const industryOptions = [
   {value: '', label: 'Art, Fashion & Design', iconFA: 'fas fa-palette', isTitle: true},
   {value: '0', label: 'Art & Exhibitions', checkbox: true, isTitle: false},
   {value: '1', label: 'Fashion & Photography', checkbox: true, isTitle: false},
@@ -125,7 +126,7 @@ const industryOptions = [
   {value: '54', label: 'Cyber Security', checkbox: true, isTitle: false},
   {value: '55', label: 'Networking & Infrastructure', checkbox: true, isTitle: false},
   {value: '56', label: 'Telecommunications', checkbox: true, isTitle: false},
-];
+];*/
 
 const workEnvOptions = [
   {value: '0', label: 'friendly'},

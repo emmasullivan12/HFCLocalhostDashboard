@@ -661,13 +661,17 @@ table th .description{
   color: #c9c9c9;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: normal;
+}
+.tooltiptext.profile .tooltiptextDetail{
+  font-style: unset;
 }
 .tooltip .tooltiptext.below{
   bottom: unset;
-  top: 30px;
+  top: 35px;
 }
 .tooltip .tooltiptext.below:after{
-  top: -7%;
+  top: -10px;
   left: 33.5%;
   transform: scaleY(-1);
 }
@@ -688,18 +692,23 @@ table th .description{
 .tooltiptext.chats,
 .tooltiptext.groups,
 .tooltiptext.compact,
-.tooltiptext.ratings {
+.tooltiptext.ratings,
+.tooltiptext.profile {
   width: auto;
   left: 0;
   margin-left: unset;
   padding-left: 10px;
   padding-right: 10px;
 }
-.tooltiptext.ratings{
+.tooltiptext.ratings,
+.tooltiptext.profile{
   line-height: normal;
   width: 180px;
   padding-top: 10px;
   padding: 10px 15px 10px 15px;
+}
+.tooltiptext.profile{
+  width: 250px;
 }
 .tooltiptext.groups,
 .tooltiptext.compact {
@@ -735,9 +744,9 @@ table th .description{
 .tooltiptext.messageActions{
   right: 0;
 }
-.tooltip .tooltiptext.profile {
+/*.tooltip .tooltiptext.profile {
   left: -46%;
-}
+}*/
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -762,7 +771,8 @@ table th .description{
 .tooltip .tooltiptext.chats::after,
 .tooltip .tooltiptext.groups::after,
 .tooltip .tooltiptext.compact::after,
-.tooltip .tooltiptext.ratings::after {
+.tooltip .tooltiptext.ratings::after,
+.tooltip .tooltiptext.profile::after {
   left: 0;
   margin-left: 9px;
 }
@@ -1704,7 +1714,7 @@ a.button{
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   text-align: center;
-  font-weight: 600;
+  /*font-weight: 600;*/
   display: inline-block;
   padding: .1rem .25rem .1rem .25rem;
   margin-right: 5px;

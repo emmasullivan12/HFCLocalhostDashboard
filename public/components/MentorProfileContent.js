@@ -4,13 +4,14 @@ import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import FeedbackPublic from './Feedback-publicView.js';
+import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -152,6 +153,32 @@ class MentorProfileContent extends Component {
     this.availabilityMsg = this.availabilityMsg.bind(this);
   }
 
+  getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
+    let verifLevels = []
+
+    // If has verified email
+    if (mentorSUStep != 'did1stSU' && mentorSUStep != 'didCountry' && mentorSUStep != 'didEdu' && mentorSUStep != 'didIndRoleMentor' && mentorSUStep != 'updatingEmail' && mentorSUStep != 'didEduEmailNeedsRev' && mentorSUStep != 'didEmailVerifNeedsRev') {
+      verifLevels.push('email')
+    }
+
+    // If Prospela can verify their edu/work/training (i.e. inst email)
+    if (verifiedType == 1 || eduemailverif == true || profemailverif == true) {
+      verifLevels.push('inst')
+    }
+
+    // If completed their Prospela training
+    if (mentorSUStep == 'didIDTrain' || mentorSUStep == 'didTrain') {
+      verifLevels.push('training')
+    }
+
+    if (tsapproved != '' || tsapproved != null) {
+      verifLevels.push('id') // Prospela approved their ID
+      verifLevels.push('background') // Prospela did crim record & other background checks
+    }
+
+    return verifLevels;
+  }
+
   toggleFollowStatus() {
     const currentState = this.state.followStatus;
     this.setState({ followStatus: !currentState });
@@ -198,19 +225,23 @@ class MentorProfileContent extends Component {
       didTrain: 1,
       lastActiveDate: '1556389526',
       yrsExp: 7,
-      uni: 0,
+      uni: null,
       degree: 'BSc (Hons) Business Administration',
       schName: '',
       schNameFreeText: '', // If their school wasn't on the list
       uniName: '',
       uniNameFreeText: '', // If their school wasn't on the list
-      subjects: 'Business, Art, English Literature & Language',
+    //  subjects: 'Business, Art, English Literature & Language',
+      subjects: [1,13,21],
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
-      currInd: '#food&beverage',
+      industriesexp: [2, 19],
+      rolesexp: [1, 2, 69],
+      rolesexpfreetext: ['Head of M&A'],
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       learning: 'leadership, negotiations, excel, programming, python, mySQL',
-      hobbies: 'running, swimming, theatre, yoga, skiing, gabadee',
+      hobbies: [1,14,30],
+      hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
       activityPublic: 1,
       groupsSet: 1,
       readsSet: 1,
@@ -221,6 +252,7 @@ class MentorProfileContent extends Component {
       groupWomen: 1,
       groupParents: 1,
       groupSingle: 1,
+      mentorgroups: [1,3],
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
       roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
@@ -280,6 +312,7 @@ class MentorProfileContent extends Component {
 */    const profShareSettings = {
       groups: false
     };
+    const rolesArray = convertRole(mentor.rolesexp, mentor.rolesexpfreetext)
     const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -292,6 +325,13 @@ class MentorProfileContent extends Component {
     const userInitial = mentor.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
     const feedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
+    const verifiedType = 0 // LINK WITH DEX (THIS IS WHETHER PROSPELA DID FULL OR SOFT VERIF OF THEIR INSTITUTION)
+    const eduemailverif = true
+    const profemailverif = false
+    const mentorSUStep = 'didIDTrain' // LINK WITH DEX
+    const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
+    const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
+    const hasMinVerif = verifTypesArr.length > 0
 
     return (
       <React.Fragment>
@@ -324,10 +364,25 @@ class MentorProfileContent extends Component {
                     </div>
                   </div>
                 )}
-                {mentor.didTrain === 1 && (
+                {hasMinVerif == true && (
                   <div className="pr-certified img-circle tooltip">
                     <span>&#10003;</span>
-                    <span className="tooltiptext profile">Prospela Certified Mentor: Employee has completed Prospela&#39;s mentoring training</span>
+                    <span className="tooltiptext below profile textLeft">
+                      <strong>Prospela Certified Mentor:</strong>
+                      {verifTypesArr.map((verifType, index) => {
+                        if (verifType == 'id') {
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> ID Checked</div>
+                        } else if (verifType == 'background') {
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Background Checked</div>
+                        } else if (verifType == 'email') {
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Email Verified</div>
+                        } else if (verifType == 'inst') {
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Work or Education Status Verified</div>
+                        } else if (verifType == 'training') {
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Completed Prospela Training</div>
+                        }
+                      })}
+                    </span>
                   </div>
                 )}
               </div>
@@ -407,6 +462,28 @@ class MentorProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon suitcase-emoji"/> Expertise & Career
                   </h1>
+                  {mentor.industriesexp.length > 0 && (
+                    <React.Fragment>
+                      <div className="bubbleContainer">
+                        {mentor.industriesexp.map((indID) => {
+                          let industryItem = getIndustryDeets(indID)
+                          let icon = industryItem.fa
+                          let indName = industryItem.label
+                          return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
+                        })}
+                      </div>
+                    </React.Fragment>
+                  )}
+                  {rolesArray.length > 0 && (
+                    <React.Fragment>
+                      <h2>
+                        Roles I have experience in
+                      </h2>
+                      <p>
+                        {rolesArray}
+                      </p>
+                    </React.Fragment>
+                  )}
                   <h2>
                     My current role: <span className="noBold">{mentor.currRole} @ {mentor.currCo}</span>
                   </h2>
@@ -416,27 +493,17 @@ class MentorProfileContent extends Component {
                     </p>
                   )}
                   <h2>
-                    Areas of expertise
+                    My Expertise
                   </h2>
                   <p>
                     {mentor.expertise}
                   </p>
                   <h2>
-                    Skills I&#39;m currently trying to build
+                    Skills I&#39;m learning
                   </h2>
                   <p>
                     {mentor.learning}
                   </p>
-                  {mentor.helpFocus != null && (
-                    <React.Fragment>
-                      <h2>
-                        I might be good for helping you with
-                      </h2>
-                      <p>
-                        {mentor.helpFocus}
-                      </p>
-                    </React.Fragment>
-                  )}
                 </section>
                 <section className="scroll-anchor" id="education" name="education">
                   <h1 >
@@ -447,14 +514,23 @@ class MentorProfileContent extends Component {
                     University Degree:
                   </h2>
                   <p>
-                    {mentor.uni != 0 ? mentor.degree + ' @ ' + eduInstName : 'I didn\'t go to University'}
+                    {mentor.uni != null && (
+                      mentor.degree + ' @ ' + eduInstName
+                    )}
+                    {mentor.uni == null && (
+                      '❌ I didn\'t go to University'
+                    )}
                   </p>
-                  <h2>
-                    {eduSubjects(mentor.country)}
-                  </h2>
-                  <p>
-                    {mentor.subjects}
-                  </p>
+                  {mentor.subjects.length > 0 && (
+                    <React.Fragment>
+                      <h2>
+                        {eduSubjects(mentor.country)}
+                      </h2>
+                      <p>
+                        {convertSubjects(mentor.subjects)}
+                      </p>
+                    </React.Fragment>
+                  )}
                 </section>
                 <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
                   <h1 >
@@ -465,7 +541,7 @@ class MentorProfileContent extends Component {
                     When I&#39;m not working, you&#39;ll find me
                   </h2>
                   <p>
-                    {mentor.hobbies}
+                    {convertHobbies(mentor.hobbies, mentor.hobbiesfreetext)}
                   </p>
                   <h2>
                     I&#39;m interested in being a mentor because:
@@ -473,6 +549,23 @@ class MentorProfileContent extends Component {
                   <p>
                     {mentor.whyHelp}
                   </p>
+                  {mentor.mentorgroups.length > 0 && (
+                    <React.Fragment>
+                      <h2>
+                        Groups I&#39;m a member of
+                      </h2>
+                      <div className="bubbleContainer">
+                        {mentor.mentorgroups.map((group) => {
+                          return (
+                            <GroupCircle
+                              group={getGroupDeets(group)}
+                              key={group.gid}
+                            />
+                          )
+                        })}
+                      </div>
+                    </React.Fragment>
+                  )}
                 {/*  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
                     <React.Fragment>
                       <h2>
