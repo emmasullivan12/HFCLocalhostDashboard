@@ -2,6 +2,7 @@
 
 .editSectionContainer{
   position: relative;
+  z-index: 1; /* otherwise tooltip for PrVerified was overriden */
 }
 .editSectionContainer .editSectionBtn{
   visibility: hidden;
@@ -33,6 +34,9 @@
   top: 0;
   position: absolute;
   right: 0;
+}
+.editSectionItem:hover{
+  color: #989898;
 }
 
 .profile-thumb-container{
@@ -159,8 +163,7 @@
 }
 .profileInstitution{
   font-size: 14px;
-  line-height: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 15px;
 }
 .profileIndustryTag{
   margin-bottom: 1rem;

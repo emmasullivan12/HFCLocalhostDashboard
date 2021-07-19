@@ -204,7 +204,7 @@ function DateCalc(props) {
   // Show format May 2, 2020 i.e. Don't show things like "today" "yesterday" etc
   if (props.showPureDate == true) {
     year = ts.getFullYear()
-    time = month + ' ' + date + ", " + year
+    time = month + ' ' + (props.dontShowDay == true ? '' : (date + ", ")) + year
     return time;
   } else {
     var yestDate = new Date((today.setDate(today.getDate()-1))).toDateString()
@@ -222,7 +222,14 @@ function DateCalc(props) {
       return time;
     }
   }
+}
 
+function monthDiff(d1, d2) {
+  var months;
+  months = (d2.getFullYear() - d1.getFullYear()) * 12;
+  months -= d1.getMonth();
+  months += d2.getMonth();
+  return months <= 0 ? 0 : months;
 }
 
 function getUnreadIndicator(unreadCount, isGroupChannel, hasTooltip) {
@@ -497,4 +504,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner, sortTable};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner, sortTable, monthDiff};

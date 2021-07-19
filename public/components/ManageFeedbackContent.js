@@ -222,7 +222,7 @@ class ManageFeedbackContent extends Component {
 
   renderTab = () => {
     const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state;
-    const {isForPublicProfile, userToView, userRoleToView, feedbackToShow} = this.props;
+    const {isForPublicProfile, userToView, userRoleToView, publicFeedbackToShow} = this.props;
     const userRole = 'mentor'
 
     switch (tabToView) {
@@ -230,7 +230,7 @@ class ManageFeedbackContent extends Component {
         if (!isForPublicProfile) {
           return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received'/>
         } else {
-          return <FeedbackPublic fname={userToView} feedbackArr={feedbackToShow} userRoleToView={userRoleToView}/>
+          return <FeedbackPublic fname={userToView} feedbackArr={publicFeedbackToShow} userRoleToView={userRoleToView}/>
         }
       case 'given':
         return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole} feedbackType='given'/>
@@ -239,9 +239,9 @@ class ManageFeedbackContent extends Component {
 
   render() {
     const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state
-    const {isForPublicProfile, userRoleToView, feedbackToShow} = this.props;
+    const {isForPublicProfile, userRoleToView, publicFeedbackToShow} = this.props;
     const numReceived = (isForPublicProfile != true) ? feedbackReceivedArr.length : (
-      userRoleToView == 'mentee' ? feedbackToShow.length : feedbackToShow.length
+      userRoleToView == 'mentee' ? publicFeedbackToShow.length : publicFeedbackToShow.length
     )
     const numSent = feedbackGivenArr.length
 

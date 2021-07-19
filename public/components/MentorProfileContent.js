@@ -7,11 +7,13 @@ import FeedbackPublic from './Feedback-publicView.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
+import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
 import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {DateCalc, monthDiff} from "./GeneralFunctions";
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -33,7 +35,7 @@ const UploadProfPicProps = {
 
 const ViewMoreFeedbackProps = {
   ariaLabel: 'View more feedback for this user',
-  triggerText: 'View all Feedback',
+//  triggerText: 'View all Feedback',
   usedFor: 'viewMoreFeedback',
   wider: true, // Have wider modal
 }
@@ -79,7 +81,7 @@ class MentorProfileContent extends Component {
           mentorIndivSupport: 3,
           mentorIntellStimu: 2,
           mentorDirLeader: 3,
-          notetomentorpub: 0,
+          notetomentorpub: 1,
           referenceformenteepub: 0
         },
         {
@@ -186,6 +188,10 @@ class MentorProfileContent extends Component {
     return verifLevels;
   }
 
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
 /*  toggleFollowStatus() {
     const currentState = this.state.followStatus;
     this.setState({ followStatus: !currentState });
@@ -235,15 +241,16 @@ class MentorProfileContent extends Component {
       lastActiveDate: '1556389526',
       yrsExp: 7,
       uni: null,
+      eetstatus: 'job',
       degree: 'BSc (Hons) Business Administration',
-      schName: '',
-      schNameFreeText: '', // If their school wasn't on the list
-      uniName: '',
-      uniNameFreeText: '', // If their school wasn't on the list
+      schname: '',
+      schnamefreetext: '', // If their school wasn't on the list
+      uniname: '44',
+      uninamefreetext: '', // If their school wasn't on the list
     //  subjects: 'Business, Art, English Literature & Language',
       subjects: [1,13,21],
-      currRole: 'Head of Marketing',
-      currCo: 'Pladis',
+      currrole: 'Head of Marketing',
+      currco: 'Pladis',
       industriesexp: [2, 19],
       rolesexp: [1, 2, 69, 5, 22, 41],
       rolesexpfreetext: ['Head of M&A'],
@@ -264,8 +271,12 @@ class MentorProfileContent extends Component {
       mentorgroups: [1,3],
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-      roleDesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+      roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
+    const roleHistory = [
+      {title: 'Marketing Manager', co: 'GE', startDate: '2021-01-01T13:30:50.667Z', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
+      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
+    ]
 /*    const userReads = [
       {
         id: '11111',
@@ -333,7 +344,7 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
-    const eduInstName = eduName(mentor.schName, mentor.schNameFreeText, mentor.uniName, mentor.uniNameFreeText, mentor.eetStatus);
+    const eduInstName = eduName(mentor.schname, mentor.schnamefreetext, mentor.uniname, mentor.uninamefreetext, mentor.eetstatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
     const uid = '23456';
@@ -341,7 +352,7 @@ class MentorProfileContent extends Component {
     const menteeIsU18 = true;
     const userInitial = mentor.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
-    const feedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
+    const publicFeedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
     const verifiedType = 0 // LINK WITH DEX (THIS IS WHETHER PROSPELA DID FULL OR SOFT VERIF OF THEIR INSTITUTION)
     const eduemailverif = true
     const profemailverif = false
@@ -394,10 +405,10 @@ class MentorProfileContent extends Component {
                         } else if (verifType == 'email') {
                           return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Email Verified</div>
                         } else if (verifType == 'inst') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Work or Education Status Verified</div>
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Work or Edu Status Verified</div>
                         } else if (verifType == 'training') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Completed Prospela Training</div>
-                        }
+                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Prospela Trained</div>
+                        } else return
                       })}
                     </span>
                   </div>
@@ -405,8 +416,33 @@ class MentorProfileContent extends Component {
               </div>
               <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
               <div className="editSectionContainer">
-                <div className="profilePosition">{mentor.currRole}</div>
-                <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> {mentor.currCo}</a>
+                {mentor.eetstatus == 'sch' && (
+                  <React.Fragment>
+                    <div className="profilePosition">Student</div>
+                  </React.Fragment>
+                )}
+                {mentor.eetstatus == 'uni' && (
+                  <React.Fragment>
+                    <div className="profilePosition">{mentor.degree}</div>
+                  {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {eduInstName}</div>*/}
+                  </React.Fragment>
+                )}
+                {mentor.eetstatus == 'job' && (
+                  <React.Fragment>
+                    <div className="profilePosition">{mentor.currrole}</div>
+                    <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currco}</div>
+                  </React.Fragment>
+                )}
+                {mentor.eetstatus == 'train' && (
+                  <React.Fragment>
+                    <div className="profilePosition">{mentor.currtraining}</div>
+                    <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currtrainingprovider}</div>
+                  </React.Fragment>
+                )}
+                {mentor.eetstatus == 'none' && (
+                  <div className="profilePosition">Looking for opportunities</div>
+                )}
+
             {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
                 <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
                   {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
@@ -414,7 +450,7 @@ class MentorProfileContent extends Component {
                 {isMe == "isMe" && (
                   <div className="editSectionBtn dispInlineBlock">
                     <Modal {...EditProfileSectionModalProps}>
-                      <div>yo</div>
+                      <UpdateProfileOverviewContent currRole={mentor.currrole} currCo={mentor.currco} />
                     </Modal>
                   </div>
                 )}
@@ -431,7 +467,7 @@ class MentorProfileContent extends Component {
                 </p>
               </div>
           {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
-              <div className={"contentBox feedbackOnProfile" + (feedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
+              <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
                 <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
                 <div className="credTxtContainer">
                   <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
@@ -440,28 +476,28 @@ class MentorProfileContent extends Component {
                       <div className="marginBottom20"><span className="credNum">{mentor.maxmentees}</span>max mentees at a time</div>
                       {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
+                          <Modal {...EditProfileSectionModalProps} >
                             <div>yo</div>
                           </Modal>
                         </div>
                       )}
                     </div>
                   )}
-                  {feedbackToShow.length == 0 && (
-                    <div className="restrictedContent darkGreytext">
+                  {publicFeedbackToShow.length == 0 && (
+                    <div className="restrictedContent darkGreyText">
                       <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
                       {mentor.fname} does not have any public endorsements from mentees yet.
                     </div>
                   )}
 
-                  {feedbackToShow.length > 0 && (
+                  {publicFeedbackToShow.length > 0 && (
                     <React.Fragment>
-                      <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[feedbackToShow[0]]} userRoleToView='mentor'/>
-                      {feedbackToShow.length > 1 && (
+                      <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[publicFeedbackToShow[0]]} userRoleToView='mentor'/>
+                      {(publicFeedbackToShow.length > 1 || isMe == 'isMe') && (
                         <div className="feedbackBtn">
                           <div className="messageCTABtns">
-                            <Modal {...ViewMoreFeedbackProps}>
-                              <ManageFeedbackContent isForPublicProfile userToView={mentor.fname} userRoleToView='mentor' feedbackToShow={feedbackToShow}/>
+                            <Modal {...ViewMoreFeedbackProps} triggerText={isMe == 'isMe' ? 'Manage my Feedback' : 'View all Feedback'}>
+                              <ManageFeedbackContent isForPublicProfile={isMe == 'isMe' ? false : true} userToView={mentor.fname} userRoleToView='mentor' publicFeedbackToShow={isMe == 'isMe' ? null : publicFeedbackToShow}/>
                             </Modal>
                           </div>
                         </div>
@@ -500,21 +536,70 @@ class MentorProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon suitcase-emoji"/> Expertise & Career
                   </h1>
-                  <div className="editSectionContainer">
-                    <h2>
-                      My current role: <span className="noBold">{mentor.currRole} @ {mentor.currCo}</span>
-                    </h2>
-                    {mentor.roleDesc != null && (
-                      <p>
-                        {mentor.roleDesc}
-                      </p>
-                    )}
+                  <div>
+                    {roleHistory.map((role) => {
+                      let roleLengthMths
+                      let roleLengthYrs
+                      let roleLengthTxt
+                      let roleLengthRemainderMths
+
+                      // If hasn't set dates yet
+                      if (role.startDate == '') {
+                        roleLengthTxt = ''
+
+                      } else {
+
+                        // If is current role
+                        if (role.endDate == '') {
+                          var today = new Date()
+                          roleLengthMths = monthDiff(new Date(role.startDate), today)
+                        } else {
+                          roleLengthMths = monthDiff(new Date(role.startDate), new Date(role.endDate))
+                        }
+                        roleLengthYrs = Math.floor(roleLengthMths / 12)
+                        roleLengthRemainderMths = roleLengthMths - (roleLengthYrs * 12)
+                        roleLengthTxt = roleLengthYrs == 0 ? (roleLengthMths + ' mos') : (roleLengthYrs + (roleLengthYrs == 1 ? ' yr' : ' yrs') + (roleLengthRemainderMths > 0 ? (' ' + roleLengthRemainderMths + (roleLengthRemainderMths == 1 ? ' mo' : ' mos')) : ''))
+                      }
+
+                      return (
+                        <div className="editSectionContainer" key={role.title}>
+                          <div className="displayFlex marginBottom5">
+                            <div className="msg-thumb-container">
+                              <div className="msg-thumb img-square noPic isCompany">
+                                <div className="userInitial msg-thumb noModal">
+                                  {role.co.charAt(0).toUpperCase()}
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div><strong>{role.title}</strong></div>
+                              <div>{role.co}</div>
+                              <div className="marginBottom5 smallFont darkGreyText"><DateCalc time={role.startDate} showPureDate dontShowDay /> - {role.endDate == '' ? 'Present' : <DateCalc time={role.endDate} showPureDate dontShowDay />} &#8226; {roleLengthTxt}</div>
+                            </div>
+                          </div>
+                          {
+                            role.roledesc != '' ? (
+                              <p>
+                                {role.roledesc}
+                              </p>
+                              )
+                            : (
+                              <div className="smallFont greyText">Add description</div>
+                            )
+                          }
+                          {isMe == "isMe" && (
+                            <div className="editSectionBtn dispInlineBlock">
+                              <Modal {...EditProfileSectionModalProps}>
+                                <div>yo</div>
+                              </Modal>
+                            </div>
+                          )}
+                        </div>
+                      )
+                    })}
+
                     {isMe == "isMe" && (
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
-                        </Modal>
-                      </div>
+                      <div className="editSectionItem dispInlineBlock smallFont greyText">Add role</div>
                     )}
                   </div>
                   <div className="editSectionContainer">
@@ -544,11 +629,11 @@ class MentorProfileContent extends Component {
                     <h2>
                       <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
                     </h2>
-                    <p>
+                    <div>
                       {expertiseArr && expertiseArr.map((skill) => {
                         return <div key={skill}>{skill.trim()}</div>
                       })}
-                    </p>
+                    </div>
                     {isMe == "isMe" && (
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>
@@ -561,11 +646,11 @@ class MentorProfileContent extends Component {
                     <h2>
                       <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                     </h2>
-                    <p>
+                    <div>
                       {learningArr && learningArr.map((skill) => {
                         return <div key={skill}>{skill.trim()}</div>
                       })}
-                    </p>
+                    </div>
                     {isMe == "isMe" && (
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>
@@ -606,11 +691,11 @@ class MentorProfileContent extends Component {
                         <h2>
                           <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
                         </h2>
-                        <p>
+                        <div>
                           {subjectsArr && subjectsArr.map((subject) => {
                             return <div key={subject}>{subject}</div>
                           })}
-                        </p>
+                        </div>
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
@@ -631,11 +716,11 @@ class MentorProfileContent extends Component {
                     <h2>
                       <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
                     </h2>
-                    <p>
+                    <div>
                       {hobbiesArr && hobbiesArr.map((hobby) => {
                         return <div key={hobby}>{hobby}</div>
                       })}
-                    </p>
+                    </div>
                     {isMe == "isMe" && (
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>

@@ -127,6 +127,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .msg-thumb.noPic.isMe {
     background-color: #9e90c3!important;
   }
+  .msg-thumb.noPic.isCompany{
+    background-color: #351c75;
+  }
   .file-title-container{
     color: #b9b9b9!important;
   }
@@ -401,7 +404,7 @@ table th .description{
 .greyText{
   color: #bdbdbd;
 }
-.darkGreytext{
+.darkGreyText{
   color: #636262;
 }
 .lightGreyText{
@@ -597,6 +600,12 @@ table th .description{
 }
 .paddingL{
   padding-left: 10px!important;
+}
+.paddingR20{
+  padding-right: 20px!important;
+}
+.paddingL20{
+  padding-left: 20px!important;
 }
 .noPaddingL{
   padding-left: 0!important;

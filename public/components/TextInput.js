@@ -19,7 +19,7 @@ class TextInput extends React.Component {
   }
 
   render() {
-    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, minLength, maxLength, handleMouseDown, onKeyDown, className } = this.props;
+    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, minLength, maxLength, handleMouseDown, onKeyDown, className, defaultValue } = this.props;
 
     return (
       <React.Fragment>
@@ -28,6 +28,7 @@ class TextInput extends React.Component {
           name={name}
           id={id}
           placeholder={placeholder}
+          defaultValue={defaultValue}
           className={className}
           autoComplete="off"
           autoCorrect="off"

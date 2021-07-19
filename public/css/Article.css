@@ -72,6 +72,7 @@
 .article-page .article-container .category-list.profile,
 .article-page .article-container .article-extras.profile {
   padding-top: 5.5rem;
+  z-index: 2; /* otherwise tooltip for PrVerified was overriden */
 }
 .article-page .article-container .article-extras.matchUser,
 .article-page .article-container .content-col.matchUser {
