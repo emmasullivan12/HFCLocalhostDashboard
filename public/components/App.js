@@ -342,6 +342,26 @@ class App extends Component{
 //    this.checkBackspace = this.checkBackspace.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener("focus", this.onFocus)
+    window.addEventListener("blur", this.onBlur)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("focus", this.onFocus)
+    window.removeEventListener("blur", this.onBlur)
+  }
+
+  // Checking if user clicks on tab
+  onFocus = () => {
+    // console.log("tab is focused")
+  }
+
+  // Checking if user has clicked off the tab, but tab is still open
+  onBlur = () => {
+    // console.log("tab is BLURRED")
+  }
+
   render() {
     const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {

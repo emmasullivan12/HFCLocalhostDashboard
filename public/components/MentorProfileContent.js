@@ -18,6 +18,13 @@ import "../css/Article.css";
 import "../css/Emoji.css";
 import "../css/Profile.css";
 
+const EditProfileSectionModalProps = {
+  ariaLabel: 'Edit profile section',
+  triggerText: 'Edit section',
+  usedFor: 'editSection',
+  changeInitFocus: true
+}
+
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Profile Picture',
   triggerText: 'Add/Edit Profile pic',
@@ -72,7 +79,7 @@ class MentorProfileContent extends Component {
           mentorIndivSupport: 3,
           mentorIntellStimu: 2,
           mentorDirLeader: 3,
-          notetomentorpub: 1,
+          notetomentorpub: 0,
           referenceformenteepub: 0
         },
         {
@@ -213,6 +220,7 @@ class MentorProfileContent extends Component {
     const mentor = {
       uid: '23456',
       fname: 'Emma',
+      lname: 'Sullivan',
 //      profPicSrc: '',
       profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       city: 'LA',
@@ -220,7 +228,8 @@ class MentorProfileContent extends Component {
       timeZone: 'Europe/London',
       availType: 1,
       activeMentees: 2,
-      allMentees: 5,
+      allMentees: 2,
+      maxmentees: 6,
       views: 200,
       didTrain: 1,
       lastActiveDate: '1556389526',
@@ -236,7 +245,7 @@ class MentorProfileContent extends Component {
       currRole: 'Head of Marketing',
       currCo: 'Pladis',
       industriesexp: [2, 19],
-      rolesexp: [1, 2, 69],
+      rolesexp: [1, 2, 69, 5, 22, 41],
       rolesexpfreetext: ['Head of M&A'],
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       learning: 'leadership, negotiations, excel, programming, python, mySQL',
@@ -312,7 +321,14 @@ class MentorProfileContent extends Component {
 */    const profShareSettings = {
       groups: false
     };
-    const rolesArray = convertRole(mentor.rolesexp, mentor.rolesexpfreetext)
+    const rolesCommaString = convertRole(mentor.rolesexp, mentor.rolesexpfreetext)
+    const rolesArray = rolesCommaString.split(',')
+    const hobbiesCommaString = convertHobbies(mentor.hobbies, mentor.hobbiesfreetext)
+    const hobbiesArr = hobbiesCommaString.split(',');
+    const expertiseArr = mentor.expertise.split(',');
+    const learningArr = mentor.learning.split(',');
+    const subjectsCommaString = convertSubjects(mentor.subjects)
+    const subjectsArr = subjectsCommaString.split(',');
     const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -320,8 +336,9 @@ class MentorProfileContent extends Component {
     const eduInstName = eduName(mentor.schName, mentor.schNameFreeText, mentor.uniName, mentor.uniNameFreeText, mentor.eetStatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '12345';
-    const isMe = uid === mentor.uid ? 'isMe' : 'isntMe';
+    const uid = '23456';
+    const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
+    const menteeIsU18 = true;
     const userInitial = mentor.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
     const feedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
@@ -386,13 +403,22 @@ class MentorProfileContent extends Component {
                   </div>
                 )}
               </div>
-              <h1 className="profileName">{mentor.fname}</h1>
-              <div className="profilePosition">{mentor.currRole}</div>
-              <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> {mentor.currCo}</a>
-          {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
-              <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
-                {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
-              </button>*/}
+              <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
+              <div className="editSectionContainer">
+                <div className="profilePosition">{mentor.currRole}</div>
+                <a className="profileInstitution link" href="www.prospela.com"><span className="neutralText">&#64;</span> {mentor.currCo}</a>
+            {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
+                <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
+                  {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
+                </button>*/}
+                {isMe == "isMe" && (
+                  <div className="editSectionBtn dispInlineBlock">
+                    <Modal {...EditProfileSectionModalProps}>
+                      <div>yo</div>
+                    </Modal>
+                  </div>
+                )}
+              </div>
               <div>
                 <h2>
                   Location
@@ -406,9 +432,21 @@ class MentorProfileContent extends Component {
               </div>
           {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
               <div className={"contentBox feedbackOnProfile" + (feedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
-                <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Latest Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
+                <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
                 <div className="credTxtContainer">
-
+                  <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
+                  {isMe == "isMe" && (
+                    <div className="editSectionContainer">
+                      <div className="marginBottom20"><span className="credNum">{mentor.maxmentees}</span>max mentees at a time</div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <div>yo</div>
+                          </Modal>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   {feedbackToShow.length == 0 && (
                     <div className="restrictedContent darkGreytext">
                       <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
@@ -462,73 +500,125 @@ class MentorProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon suitcase-emoji"/> Expertise & Career
                   </h1>
-                  {mentor.industriesexp.length > 0 && (
-                    <React.Fragment>
-                      <div className="bubbleContainer">
-                        {mentor.industriesexp.map((indID) => {
-                          let industryItem = getIndustryDeets(indID)
-                          let icon = industryItem.fa
-                          let indName = industryItem.label
-                          return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
-                        })}
-                      </div>
-                    </React.Fragment>
-                  )}
-                  {rolesArray.length > 0 && (
-                    <React.Fragment>
-                      <h2>
-                        Roles I have experience in
-                      </h2>
+                  <div className="editSectionContainer">
+                    <h2>
+                      My current role: <span className="noBold">{mentor.currRole} @ {mentor.currCo}</span>
+                    </h2>
+                    {mentor.roleDesc != null && (
                       <p>
-                        {rolesArray}
+                        {mentor.roleDesc}
                       </p>
-                    </React.Fragment>
-                  )}
-                  <h2>
-                    My current role: <span className="noBold">{mentor.currRole} @ {mentor.currCo}</span>
-                  </h2>
-                  {mentor.roleDesc != null && (
+                    )}
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
+                  <div className="editSectionContainer">
+                    <h2>
+                      Industries / Roles I can talk about
+                    </h2>
+                    <div className="bubbleContainer">
+                      {mentor.industriesexp.map((indID) => {
+                        let industryItem = getIndustryDeets(indID)
+                        let icon = industryItem.fa
+                        let indName = industryItem.label
+                        return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
+                      })}
+                      {rolesArray && rolesArray.map((role) => {
+                        return <div className="bubble" key={role}>{role}</div>
+                      })}
+                    </div>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
+                  <div className="editSectionContainer">
+                    <h2>
+                      <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
+                    </h2>
                     <p>
-                      {mentor.roleDesc}
+                      {expertiseArr && expertiseArr.map((skill) => {
+                        return <div key={skill}>{skill.trim()}</div>
+                      })}
                     </p>
-                  )}
-                  <h2>
-                    My Expertise
-                  </h2>
-                  <p>
-                    {mentor.expertise}
-                  </p>
-                  <h2>
-                    Skills I&#39;m learning
-                  </h2>
-                  <p>
-                    {mentor.learning}
-                  </p>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
+                  <div className="editSectionContainer">
+                    <h2>
+                      <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
+                    </h2>
+                    <p>
+                      {learningArr && learningArr.map((skill) => {
+                        return <div key={skill}>{skill.trim()}</div>
+                      })}
+                    </p>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
                 </section>
                 <section className="scroll-anchor" id="education" name="education">
                   <h1 >
                     <br/>
                     <i className="emoji-icon schoolHat-emoji"/> Education
                   </h1>
-                  <h2>
-                    University Degree:
-                  </h2>
-                  <p>
-                    {mentor.uni != null && (
-                      mentor.degree + ' @ ' + eduInstName
+                  <div className="editSectionContainer">
+                    <h2>
+                      University Degree:
+                    </h2>
+                    <p>
+                      {mentor.uni != null && (
+                        mentor.degree + ' @ ' + eduInstName
+                      )}
+                      {mentor.uni == null && (
+                        '❌ I didn\'t go to University'
+                      )}
+                    </p>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
                     )}
-                    {mentor.uni == null && (
-                      '❌ I didn\'t go to University'
-                    )}
-                  </p>
+                  </div>
                   {mentor.subjects.length > 0 && (
                     <React.Fragment>
-                      <h2>
-                        {eduSubjects(mentor.country)}
-                      </h2>
-                      <p>
-                        {convertSubjects(mentor.subjects)}
-                      </p>
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
+                        </h2>
+                        <p>
+                          {subjectsArr && subjectsArr.map((subject) => {
+                            return <div key={subject}>{subject}</div>
+                          })}
+                        </p>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <div>yo</div>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
                     </React.Fragment>
                   )}
                 </section>
@@ -537,27 +627,48 @@ class MentorProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon rockOn-emoji"/> Outside of work
                   </h1>
-                  <h2>
-                    When I&#39;m not working, you&#39;ll find me
-                  </h2>
-                  <p>
-                    {convertHobbies(mentor.hobbies, mentor.hobbiesfreetext)}
-                  </p>
-                  <h2>
-                    I&#39;m interested in being a mentor because:
-                  </h2>
-                  <p>
-                    {mentor.whyHelp}
-                  </p>
+                  <div className="editSectionContainer">
+                    <h2>
+                      <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
+                    </h2>
+                    <p>
+                      {hobbiesArr && hobbiesArr.map((hobby) => {
+                        return <div key={hobby}>{hobby}</div>
+                      })}
+                    </p>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
+                  <div className="editSectionContainer">
+                    <h2>
+                      I&#39;m interested in being a mentor because:
+                    </h2>
+                    <p>
+                      {mentor.whyHelp}
+                    </p>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <div>yo</div>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
                   {mentor.mentorgroups.length > 0 && (
                     <React.Fragment>
                       <h2>
                         Groups I&#39;m a member of
                       </h2>
-                      <div className="bubbleContainer">
+                      <div>
                         {mentor.mentorgroups.map((group) => {
                           return (
                             <GroupCircle
+                              showAsLink={false}
                               group={getGroupDeets(group)}
                               key={group.gid}
                             />

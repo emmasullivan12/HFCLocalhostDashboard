@@ -304,9 +304,9 @@ function eduSubjects(userCountry) {
       return 'A-Level (or equivalent) subjects';
     case 'USA':
     case 'CAN':
-      return 'Subjects I specialised in at school';
+      return 'Subjects I studied at High School';
     default:
-      return 'Subjects I specialised in at school';
+      return 'Subjects I studied at High School';
   }
 }
 

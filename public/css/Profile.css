@@ -1,5 +1,40 @@
 /* Dex last merged this code on 14th dec 2020 */
 
+.editSectionContainer{
+  position: relative;
+}
+.editSectionContainer .editSectionBtn{
+  visibility: hidden;
+}
+.editSectionContainer:hover .editSectionBtn{
+  visibility: visible;
+}
+.editSectionBtnContainer{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ededed;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #3f3f3f;
+  position: absolute;
+  margin-top: -20px;
+  right: 0px;
+  padding-top: 7px;
+  font-size: 16px;
+}
+.editSectionBtnContainer:hover{
+  background-color: #e3e3e3;
+}
+.editSectionBtn{
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+
 .profile-thumb-container{
   width: 8rem;
   height: 8rem;
@@ -102,7 +137,6 @@
   color: #3f3f3f!important;
 }
 .feedbackBtn{
-  padding-top: 15px;
   padding-bottom: 15px;
 }
 .prLogoContainer.profile{
@@ -549,7 +583,7 @@
   margin-bottom: 12px;
 }
 .credNum{
-  width: 30px;
+  width: 15px;
   display: inline-block;
   color: #4d0cf3;
   font-weight: 700;

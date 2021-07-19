@@ -37,6 +37,7 @@ class MentorHomepageCTAContainer extends Component {
 
       groups.push(
         <GroupCircle
+          showAsLink
           group={group}
           key={group.gid}
           navlink={`/community/${group.gid}/${generalChannel.chlid}`}

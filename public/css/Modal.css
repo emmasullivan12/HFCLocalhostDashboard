@@ -261,13 +261,15 @@
 }
 .ModalOpenBtn-joinProg,
 .ModalOpenBtn-joinProgSml,
-.ModalOpenBtn-addPrDM{
+.ModalOpenBtn-addPrDM,
+.ModalOpenBtn-editSection{
   background: none;
   font-weight: 400;
   padding: 0;
 }
 .ModalOpenBtn-joinProgSml,
-.ModalOpenBtn-addPrDM{
+.ModalOpenBtn-addPrDM,
+.ModalOpenBtn-editSection{
   height: 16px;
 }
 .ModalOpenBtn-addPrDM .addContainer{
@@ -277,7 +279,8 @@
 }
 .ModalOpenBtn-joinProg:hover,
 .ModalOpenBtn-joinProgSml:hover,
-.ModalOpenBtn-addPrDM:hover{
+.ModalOpenBtn-addPrDM:hover,
+.ModalOpenBtn-editSection:hover{
   background: none;
 }
 .ModalOpenBtn-joinProgSmlHome{

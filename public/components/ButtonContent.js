@@ -45,6 +45,12 @@ function ButtonContent(props) {
           <i className="fas fa-plus" />
         </div>
       );
+    case 'editSection':
+      return (
+        <div className="editSectionBtnContainer">
+          <i className="fas fa-pencil-alt" />
+        </div>
+      )
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':
