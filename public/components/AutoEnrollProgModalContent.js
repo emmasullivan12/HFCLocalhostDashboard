@@ -1,4 +1,4 @@
-// Dex last merged this code on 25th oct 2020
+// Dex last merged this code on 19th july 2021
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
@@ -33,7 +33,7 @@ class AutoEnrollProgModalContent extends Component {
   handleSubmit = (evt) => {
     this.setState({ messageFromServer: 'Group code sent' });
   }
-  
+
   canBeSubmitted() {
     const {tanp} = this.state;
     return (

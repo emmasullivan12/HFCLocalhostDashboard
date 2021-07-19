@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th nov 2020
+// Dex last merged this code on 19th july 2021
 
 import React, { Component } from "react";
 
@@ -42,10 +42,10 @@ class MentorProfileContent extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      followStatus: false,
-      save4LaterClicked: false,
-      availabilityClicked: true,
-      saved4later: false,
+  //    followStatus: false,
+  //    save4LaterClicked: false,
+  //    availabilityClicked: true,
+  //    saved4later: false,
       feedbackReceivedArr: [
         {
           matchid: 12345,
@@ -154,9 +154,9 @@ class MentorProfileContent extends Component {
         },
       ],
     }
-    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
-    this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
-    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
+//    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
+//    this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
+//    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
     this.availabilityMsg = this.availabilityMsg.bind(this);
   }
 
@@ -186,22 +186,22 @@ class MentorProfileContent extends Component {
     return verifLevels;
   }
 
-  toggleFollowStatus() {
+/*  toggleFollowStatus() {
     const currentState = this.state.followStatus;
     this.setState({ followStatus: !currentState });
-  }
+  }*/
 
-  handleAvailabilityClick() {
+/*  handleAvailabilityClick() {
     this.setState({ availabilityClicked: true });
     this.setState({ save4LaterClicked: false });
-  }
+  }*/
 
-  toggleSave4LaterClick() {
+/*  toggleSave4LaterClick() {
     const saved = this.state.saved4later;
     this.setState({ save4LaterClicked: true });
     this.setState({ saved4later: !saved });
     this.setState({ availabilityClicked: false });
-  }
+  }*/
 
   availabilityMsg(userAvail) {
     if (userAvail === 2 || userAvail === 3) {
@@ -216,7 +216,7 @@ class MentorProfileContent extends Component {
   }
 
   render() {
-    const {followStatus, availabilityClicked, save4LaterClicked, saved4later, feedbackReceivedArr} = this.state;
+    const {feedbackReceivedArr} = this.state;
     const mentor = {
       uid: '23456',
       fname: 'Emma',
@@ -764,7 +764,7 @@ class MentorProfileContent extends Component {
                 )}*/}
               </ul>
               <div className="profileCTAContainer">
-                {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
+              {/*  {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
                   <div className="profileBtnToolTip avail">
                     {this.availabilityMsg(mentor.availType)}
                   </div>
@@ -774,7 +774,10 @@ class MentorProfileContent extends Component {
                     <span>Saved as a potential future mentor!</span>
                   </div>
                   )
-                }
+                }*/}
+                <div className="profileBtnToolTip avail">
+                  {this.availabilityMsg(mentor.availType)}
+                </div>
                 <div className="profileUserCTA">
                   {(mentor.availType === 0 || mentor.availType === 1 || mentor.availType === 2 || mentor.availType === 3) ? (
                     <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>

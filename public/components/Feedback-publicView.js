@@ -1,4 +1,4 @@
-// Dex last merged this code on 30th june 2021
+// Dex last merged this code on 19th july 2021
 
 import React, { Component } from "react";
 
@@ -17,7 +17,7 @@ class FeedbackPublic extends Component {
 
   renderFeedback = () => {
     const {feedbackArr, userRoleToView, fname, isProfile} = this.props;
-    
+
     // Show newest matches first
     feedbackArr.sort(function(a,b){
       if(a.date_matched < b.date_matched) { return -1; }
