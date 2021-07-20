@@ -75,7 +75,9 @@
 .msg-thumb.noPic.isntMe.isProspela{
   background-color: #4e4ed6!important;
 }
-
+.msg-thumb.noPic.isCompany{
+  background-color: #351c75;
+}
 .block-container {
   display:block;
 }

@@ -127,9 +127,6 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .msg-thumb.noPic.isMe {
     background-color: #9e90c3!important;
   }
-  .msg-thumb.noPic.isCompany{
-    background-color: #351c75;
-  }
   .file-title-container{
     color: #b9b9b9!important;
   }

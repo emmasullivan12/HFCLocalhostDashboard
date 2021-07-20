@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
+import AddEditRoleContent from './AddEditRoleModalContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
@@ -24,6 +25,20 @@ const EditProfileSectionModalProps = {
   ariaLabel: 'Edit profile section',
   triggerText: 'Edit section',
   usedFor: 'editSection',
+  changeInitFocus: true
+}
+
+const AddRoleModalProps = {
+  ariaLabel: 'Add / Edit role',
+  triggerText: '+ Add role',
+  usedFor: 'addEditRole',
+  changeInitFocus: true
+}
+
+const EditRoleDescModalProps = {
+  ariaLabel: 'Add / Edit role',
+  triggerText: '+ Add description',
+  usedFor: 'addRoleDesc',
   changeInitFocus: true
 }
 
@@ -562,7 +577,7 @@ class MentorProfileContent extends Component {
                       }
 
                       return (
-                        <div className="editSectionContainer" key={role.title}>
+                        <div className="editSectionContainer roleItem" key={role.title}>
                           <div className="displayFlex marginBottom5">
                             <div className="msg-thumb-container">
                               <div className="msg-thumb img-square noPic isCompany">
@@ -584,22 +599,25 @@ class MentorProfileContent extends Component {
                               </p>
                               )
                             : (
-                              <div className="smallFont greyText">Add description</div>
+                              <Modal {...EditRoleDescModalProps}>
+                                <div>yo</div>
+                              </Modal>
                             )
                           }
                           {isMe == "isMe" && (
                             <div className="editSectionBtn dispInlineBlock">
                               <Modal {...EditProfileSectionModalProps}>
-                                <div>yo</div>
+                                <AddEditRoleContent modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
                               </Modal>
                             </div>
                           )}
                         </div>
                       )
                     })}
-
                     {isMe == "isMe" && (
-                      <div className="editSectionItem dispInlineBlock smallFont greyText">Add role</div>
+                      <Modal {...AddRoleModalProps}>
+                        <div>yo</div>
+                      </Modal>
                     )}
                   </div>
                   <div className="editSectionContainer">

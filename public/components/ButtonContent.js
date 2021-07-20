@@ -51,6 +51,13 @@ function ButtonContent(props) {
           <i className="fas fa-pencil-alt" />
         </div>
       )
+    case 'addEditRole':
+    case 'addRoleDesc':
+      return (
+        <div className="editSectionItem dispInlineBlock smallFont greyText">
+          {text}
+        </div>
+      )
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':

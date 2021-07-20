@@ -88,7 +88,7 @@ class ChatFeedbackReq extends Component {
 
     var questionsMentee = [
       {q: 'How satisfied are you with how your relationship is progressing with ' + mentorName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod"). Note: Your answer to this question will not be visible to your mentor.', aType: 'rating', req: 1, name: 'overallSatisMentee', ratingOutOf: 10},
-      {q: 'Help ' + mentorName + ' learn how they come across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve.', aType: 'interim', name: 'interim'},
+      {q: 'Help ' + mentorName + ' learn how they come across as a mentor. To what extent do they display the following mentoring styles:', detail: 'Try to be as honest as possible to help them understand their traits and how they might improve. You\'ll have the chance to send a private note to them too.', aType: 'interim', name: 'interim'},
       {q: 'Do they help you focus, prioritise and set a clear vision for your future:', detail: 'e.g. they help you with decision making and visualising what your success might look like', aType: 'yesno', req: 1, name: 'mentorCompFuture', options: [
         {value: '3', label: 'Regularly'},
         {value: '2', label: 'Sometimes'},
@@ -183,7 +183,7 @@ class ChatFeedbackReq extends Component {
         {value: '8', label: 'More pictures of work life'},
         {value: '0', label: 'None of these'},
       ]},
-      {q: 'Add a note to ' + mentorName + '. Let them know how they helped you:', detail: 'Did they give you a particularly memorable insight? And / or say thanks for being a great mentor! (Note: your mentor may choose to publicise this on their profile, so be sure not to include any personal information)', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your message to ' + mentorName + ' here...', name: 'noteToMentor'},
+      {q: 'Add a note to ' + mentorName + '. Let them know how they helped you:', detail: 'Did they give you a particularly memorable insight? And / or say thanks for being a great mentor! (Note: your mentor may choose to publicise this on their profile, so be sure not to include any personal information)', aType: 'textLong', req: 1, maxLength: 1500, placeholder: 'Type your message to ' + mentorName + ' here...', name: 'noteToMentor'},
     ]
 
     var questionsMentor = [
@@ -233,8 +233,8 @@ class ChatFeedbackReq extends Component {
         {value: '3', label: 'Disagree'},
         {value: '4', label: 'Strongly Disagree'},
       ]},
-      {q: 'Add a private note to ' + menteeName, detail: 'Offer suggestions for things they should consider / start doing to make the most of the programme and / or say thanks for being a great mentee!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your private message to ' + menteeName + ' here...', name: 'privNoteToMentee'},
-      {q: 'What has ' + menteeName + ' done well?', detail: 'Help give them a leg up by letting others know about the qualities you\'ve witnessed do far. (Note: your mentee may choose to publicise this on their profile e.g. to employers)', aType: 'textLong', req: 0, maxLength: 500, placeholder: 'Type your positive feedback here...', name: 'referenceForMentee'},
+      {q: 'Add a private note to ' + menteeName, detail: 'Offer suggestions for things they should consider / start doing to make the most of the programme and / or say thanks for being a great mentee!', aType: 'textLong', req: 1, maxLength: 1500, placeholder: 'Type your private message to ' + menteeName + ' here...', name: 'privNoteToMentee'},
+      {q: 'What has ' + menteeName + ' done well? [OPTIONAL]', detail: 'Help give them a leg up by letting others know about the qualities you\'ve witnessed do far. (Note: your mentee may choose to publicise this on their profile e.g. to employers)', aType: 'textLong', req: 0, maxLength: 1500, placeholder: 'Type your positive feedback here...', name: 'referenceForMentee'},
     ]
 
     if (userRole == 'mentee') {

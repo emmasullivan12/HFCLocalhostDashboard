@@ -38,6 +38,9 @@
 .editSectionItem:hover{
   color: #989898;
 }
+.roleItem{
+  margin-top: 40px;
+}
 
 .profile-thumb-container{
   width: 8rem;
@@ -91,6 +94,9 @@
 .userInitial.msg-thumb.isntMe,
 .userInitial.msg-thumb.noModal{
   top: 0;
+}
+.msg-thumb.noPic.isCompany .userInitial.msg-thumb.noModal{
+  top: -3px;
 }
 .userInitial.msg-thumb.isGroupFlex{
   padding-top: 7px;
