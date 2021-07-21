@@ -17,6 +17,10 @@ class AddEditRoleContent extends Component {
       startdate: this.props.startDate,
       enddate: this.props.endDate,
       roledesc: this.props.roleDesc,
+      startDateMth: this.props.startDate == '' ? null : new Date(this.props.startDate).getMonth(),
+      startDateYr: this.props.startDate == '' ? null : new Date(this.props.startDate).getFullYear(),
+      endDateMth: this.props.endDate == '' ? null : new Date(this.props.endDate).getMonth(),
+      endDateYr: this.props.endDate == '' ? null : new Date(this.props.endDate).getFullYear(),
       iscurrent: false,
     };
   }
@@ -31,53 +35,84 @@ class AddEditRoleContent extends Component {
     });
   }
 
+  handleStartDateChange = (userInput, e) => {
+    const stateToSave = e.currentTarget.parentNode.id == 'options-startdateyr' ? 'startDateYr' : (e.currentTarget.parentNode.id == 'options-startdatemth' ? 'startDateMth' : null)
+
+    this.setState({
+      [stateToSave]: userInput
+    });
+  }
+
+  handleEndDateChange = (userInput, e) => {
+    const stateToSave = e.currentTarget.parentNode.id == 'options-enddateyr' ? 'endDateYr' : (e.currentTarget.parentNode.id == 'options-enddatemth' ? 'endDateMth' : null)
+
+    this.setState({
+      [stateToSave]: userInput
+    });
+  }
+
   handleSubmit = (evt) => {
     this.setState({ isSubmitting: true });
     if (!this.canBeSubmitted()) {
       evt.preventDefault();
       return;
     }
+    const {startDateYr, startDateMth} = this.state
+    const startDateToSave = new Date(startDateYr, startDateMth, 1) // THIS FOR THE STARTDATE
     this.setState({ updateSuccess: true })
   }
 
   canBeSubmitted() {
-    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent} = this.state;
+    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr} = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc } = this.props;
 
+    const _startDateFormatted = new Date(startDate)
+    const _endDateFormatted = new Date(endDate)
+
     return (
-      roletitle != '' && roleco != '' && startdate != '' && (enddate != '' || iscurrent == true)
-      && (roletitle != roleTitle || roleco != roleCo || startdate != startDate || enddate != endDate || roledesc != roleDesc) // Checks user has actually changed something
+      roletitle != '' && roleco != '' && startDateMth != null && startDateYr != null && ((endDateMth != null && endDateYr != null) || iscurrent == true)
+      && (roletitle != roleTitle || roleco != roleCo || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear() || endDateMth != _endDateFormatted.getMonth() || endDateYr != _endDateFormatted.getFullYear() || roledesc != roleDesc) // Checks user has actually changed something
     );
   }
 
   render() {
     const { isSubmitting, updateSuccess, roletitle, roleco, startdate, enddate, roledesc } = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle } = this.props;
+    const months = [
+      {value: '0', label: 'Jan'},
+      {value: '1', label: 'Feb'},
+      {value: '2', label: 'Mar'},
+      {value: '3', label: 'Apr'},
+      {value: '4', label: 'May'},
+      {value: '5', label: 'Jun'},
+      {value: '6', label: 'Jul'},
+      {value: '7', label: 'Aug'},
+      {value: '8', label: 'Sep'},
+      {value: '9', label: 'Oct'},
+      {value: '10', label: 'Nov'},
+      {value: '11', label: 'Dec'},
+    ];
     const isEnabled = this.canBeSubmitted();
-    const startDateMonth = new Date(startdate).getMonth()
-    const startDateYr = new Date(startdate).getFullYear()
-    const currYr = new Date().getFullYear()
-    let startYr = currYr - 80;
-    const years = []
+    if (startDate != '') {
+      const startDateFormatted = new Date(startDate)
+      const startDateMonth = startDateFormatted.getMonth()
+      var startDateYr = startDateFormatted.getFullYear()
+      var startMonthTxt = months[startDateMonth].label;
+    }
+    if (endDate != '') {
+      const endDateFormatted = new Date(endDate)
+      const endDateMonth = endDateFormatted.getMonth()
+      var endDateYr = endDateFormatted.getFullYear()
+      var endMonthTxt = months[endDateMonth].label;
+    }
+    let currYr = new Date().getFullYear()
+    let startYr = currYr - 60;
+    let years = []
     while (startYr <= currYr) {
-      let yearToAdd = startYr++
+    //  let yearToAdd = startYr++
+      let yearToAdd = currYr--
       years.push({value: yearToAdd, label: yearToAdd})
     }
-
-    const months = [
-      {value: '0', label: 'January'},
-      {value: '1', label: 'February'},
-      {value: '2', label: 'March'},
-      {value: '3', label: 'April'},
-      {value: '4', label: 'May'},
-      {value: '5', label: 'June'},
-      {value: '6', label: 'July'},
-      {value: '7', label: 'August'},
-      {value: '8', label: 'September'},
-      {value: '9', label: 'October'},
-      {value: '10', label: 'November'},
-      {value: '11', label: 'December'},
-    ];
 
     if(updateSuccess == false) {
       return (
@@ -131,33 +166,61 @@ class AddEditRoleContent extends Component {
               {roledesc.length} / 1000
             </div>
           </div>
-        {/*  <div className="form-group">
+          <div className="form-group">
             <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate">Start Date</label>
             <div className="inlineForm">
-              <div className="form-group inlineLeft">
+              <div className="form-group inlineLeft width50pc">
                 <SelectBox
                   options={months}
-                  name='startdate'
-                  placeholder={(startDate != null && startdate != '') ? null : 'Month:'}
-                  defaultChecked={startDate != null ? months.filter((mth) => mth.value == startDateMonth) : null}
-                  handleChange={this.handleChange}
+                  name='startdatemth'
+                  placeholder={(startDate != null && startDate != '') ? startMonthTxt : 'Month:'}
+                  handleChange={this.handleStartDateChange}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                  required
+                  showAbove
+                  bringBackE
                 />
               </div>
-              <div className="form-group inlineRight">
+              <div className="form-group inlineRight width50pc">
                 <SelectBox
-                  options={years}
-                  name='enddate'
-                  placeholder={startDate != null ? startDateYr : null}
-                  handleChange={this.handleChange}
-                  required
+                  options={years && years.sort(function(a, b){return a - b})}
+                  name='startdateyr'
+                  placeholder={(startDate != null && startDate != '') ? startDateYr : 'Year:'}
+                  handleChange={this.handleStartDateChange}
+                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  showAbove
+                  bringBackE
                 />
               </div>
             </div>
-          </div>*/}
-{/*          startdate: this.props.startDate,
-          enddate: this.props.endDate,
+          </div>
+          <div className="form-group">
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate">End Date</label>
+            <div className="inlineForm">
+              <div className="form-group inlineLeft width50pc">
+                <SelectBox
+                  options={months}
+                  name='enddatemth'
+                  placeholder={(endDate != null && endDate != '') ? endMonthTxt : 'Month:'}
+                  handleChange={this.handleEndDateChange}
+                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  showAbove
+                  bringBackE
+                />
+              </div>
+              <div className="form-group inlineRight width50pc">
+                <SelectBox
+                  options={years && years.sort(function(a, b){return a - b})}
+                  name='enddateyr'
+                  placeholder={(endDate != null && endDate != '') ? endDateYr : 'Year:'}
+                  handleChange={this.handleEndDateChange}
+                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  showAbove
+                  bringBackE
+                />
+              </div>
+            </div>
+          </div>
+{/*       enddate: this.props.endDate,
           iscurrent: false,*/}
           <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
             {isSubmitting == true && (

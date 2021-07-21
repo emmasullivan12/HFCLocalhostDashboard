@@ -110,6 +110,13 @@ svg {
   margin-bottom: 20px;
   display: inline-block;
 }*/
+.options.showAbove{
+  bottom: 100%;
+  top: unset;
+  box-shadow: 0px -5px 20px rgb(29 28 29 / 30%);
+  -webkit-box-shadow: 0px -5px 20px rgb(29 28 29 / 30%);
+  -moz-box-shadow: 0px -5px 20px rgb(29 28 29 / 30%);
+}
 .options.showDetail{
   max-height: calc(5 * 50px);
   -webkit-max-height: calc(5 * 50px);

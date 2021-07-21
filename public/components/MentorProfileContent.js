@@ -25,7 +25,7 @@ const EditProfileSectionModalProps = {
   ariaLabel: 'Edit profile section',
   triggerText: 'Edit section',
   usedFor: 'editSection',
-  changeInitFocus: true
+  changeInitFocus: true,
 }
 
 const AddRoleModalProps = {
@@ -289,7 +289,7 @@ class MentorProfileContent extends Component {
       roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '2021-01-01T13:30:50.667Z', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
+      {title: 'Marketing Manager', co: 'GE', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
       {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
     ]
 /*    const userReads = [
@@ -589,7 +589,13 @@ class MentorProfileContent extends Component {
                             <div>
                               <div><strong>{role.title}</strong></div>
                               <div>{role.co}</div>
-                              <div className="marginBottom5 smallFont darkGreyText"><DateCalc time={role.startDate} showPureDate dontShowDay /> - {role.endDate == '' ? 'Present' : <DateCalc time={role.endDate} showPureDate dontShowDay />} &#8226; {roleLengthTxt}</div>
+                              <div className="marginBottom5 smallFont darkGreyText">
+                                {role.startDate != '' && (
+                                  <span><DateCalc time={role.startDate} showPureDate dontShowDay /> - </span>
+                                )}
+                                {role.endDate == '' ? 'Present' : <DateCalc time={role.endDate} showPureDate dontShowDay />}
+                                {role.startDate != '' && <span> &#8226; {roleLengthTxt}</span>}
+                              </div>
                             </div>
                           </div>
                           {

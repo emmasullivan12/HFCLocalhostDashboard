@@ -27,7 +27,7 @@ const UpdateStatusProps = {
   usedFor: 'updateUserStatus',
   hideTrigger: true,
   changeInitFocus: true,
-  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead
 }
 
 // For viewing potential matches status (will not be able to select from these)

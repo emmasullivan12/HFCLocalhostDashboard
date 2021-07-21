@@ -547,6 +547,9 @@ table th .description{
 .fullWidth{
   width: 100%;
 }
+.width50pc{
+  width: 50%;
+}
 .noMarginBlockEnd{
   margin-block-end: 0;
 }

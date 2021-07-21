@@ -140,12 +140,10 @@ class SelectBox extends React.Component {
   onClick = (e) => {
     e.preventDefault()
     e.stopPropagation()
-    const {handleDone, isForForm} = this.props;
-
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
-    const { handleFocus, multiple, finMultiOptions, options, showCheckbox, name } = this.props;
+    const { handleDone, isForForm, handleFocus, multiple, finMultiOptions, options, showCheckbox, name } = this.props;
     const { values } = this.state;
     const currentState = this.state.isOpen;
 
@@ -1130,7 +1128,7 @@ class SelectBox extends React.Component {
   }
 
   renderOptions() {
-    const { options, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required, dataExtraInfo1, dataExtraInfo2 } = this.props
+    const { options, showAbove, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required, dataExtraInfo1, dataExtraInfo2 } = this.props
     const { isOpen, values, focusedValue } = this.state;
 
     if (!isOpen) {
@@ -1140,7 +1138,7 @@ class SelectBox extends React.Component {
     return (
       <React.Fragment>
         <div
-          className={(showDetail===true ? 'options showDetail' : 'options noDetail')}
+          className={(showDetail===true ? 'options showDetail' : 'options noDetail') + (showAbove ? ' showAbove' : '')}
           id={'options-'+name}
       //    onMouseMove={this.onMouseMove}
     //      onBlur={this.onMouseOut}
