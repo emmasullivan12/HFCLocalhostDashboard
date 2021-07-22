@@ -1,4 +1,4 @@
-// Dex last merged this code on 19th july 2021
+// Dex last merged this code on 22nd july 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -234,7 +234,7 @@ class ChatFeedbackReq extends Component {
         {value: '4', label: 'Strongly Disagree'},
       ]},
       {q: 'Add a private note to ' + menteeName, detail: 'Offer suggestions for things they should consider / start doing to make the most of the programme and / or say thanks for being a great mentee!', aType: 'textLong', req: 1, maxLength: 1500, placeholder: 'Type your private message to ' + menteeName + ' here...', name: 'privNoteToMentee'},
-      {q: 'What has ' + menteeName + ' done well? [OPTIONAL]', detail: 'Help give them a leg up by letting others know about the qualities you\'ve witnessed do far. (Note: your mentee may choose to publicise this on their profile e.g. to employers)', aType: 'textLong', req: 0, maxLength: 1500, placeholder: 'Type your positive feedback here...', name: 'referenceForMentee'},
+      {q: 'What has ' + menteeName + ' done well?', detail: '[OPTIONAL] Help give them a leg up by letting others know about the qualities you\'ve witnessed do far. (Note: your mentee may choose to publicise this on their profile e.g. to employers)', aType: 'textLong', req: 0, maxLength: 1500, placeholder: 'Type your positive feedback here...', name: 'referenceForMentee'},
     ]
 
     if (userRole == 'mentee') {
