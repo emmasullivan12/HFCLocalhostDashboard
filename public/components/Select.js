@@ -39,6 +39,13 @@ class SelectBox extends React.Component {
     }
   }
 
+  componentDidUpdate(prevProps){
+    const {resetValues} = this.props
+    if (prevProps.resetValues != resetValues && resetValues == true) {
+      this.resetValues()
+    }
+  }
+
   onFocus = (e) => {
     const { handleFocus } = this.props;
     if (handleFocus) {
@@ -51,7 +58,7 @@ class SelectBox extends React.Component {
 
   onBlur = (e) => {
     e.persist()
-    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange, isForForm } = this.props
+    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange, isForForm, bringBackE } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
@@ -72,7 +79,7 @@ class SelectBox extends React.Component {
               const isValid = required ? values.length > 0 : true;
               handleChange(values, formId, isValid);
             } else {
-              handleChange(values);
+              bringBackE == true ? handleChange(values, e): handleChange(values);
             }
           }
   //      }
@@ -242,7 +249,9 @@ class SelectBox extends React.Component {
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const value = e.currentTarget.dataset.text;
-    const index = options.findIndex(option => (hasMultipleAttributes ? option[valueToShow] : option.value) === value)
+    const _index = options.findIndex((option) => {
+      return (hasMultipleAttributes ? option[valueToShow] : option.value) == value
+    })
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
     if (!multiple) {
@@ -254,13 +263,10 @@ class SelectBox extends React.Component {
         } else {
           bringBackE == true ? handleChange(e.currentTarget.dataset.id, e) : handleChange(e.currentTarget.dataset.id);
         }
-
       }
-
     }
 
     this.setState(prevState => {
-
       if (otherValidityChecks) {
         otherValidityChecks();
       }
@@ -272,14 +278,13 @@ class SelectBox extends React.Component {
 
         return {
           values: [ value ],
-          focusedValue: index,
+          focusedValue: _index,
           isOpen: false
         }
       }
 
       const [ ...values ] = prevState.values
       const index = values.indexOf(value)
-
       if (index === -1) {
         values.push(value)
       } else {
@@ -767,7 +772,6 @@ class SelectBox extends React.Component {
 
         this.setState(prevState => {
           let { focusedValue } = prevState
-
           const elements = document.getElementsByClassName("multiple value")
           for (var i = 0; i < elements.length; i++) {
             elements[i].classList.remove('focused')
@@ -1062,13 +1066,20 @@ class SelectBox extends React.Component {
     }
   }
 
+  resetValues() {
+    this.setState({
+      values: [],
+    })
+  }
+
   renderValues() {
-    const { placeholder, placeholderOnClick, multiple, showCheckbox, options } = this.props
+    const { placeholder, placeholderOnClick, multiple, showCheckbox, options, placeholderIsDefaultValueIfNot } = this.props
     const { values, numSelected, isOpen } = this.state
 
     if (values.length === 0) {
+      const isDefaultValue = placeholderIsDefaultValueIfNot != null && placeholder != placeholderIsDefaultValueIfNot
       return (
-        <div className={"select-placeholder"+((isOpen === true && placeholderOnClick) ? ' onClick' : '')} id="select-placeholder">
+        <div className={"select-placeholder"+((isOpen === true && placeholderOnClick) ? ' onClick' : '') + (isDefaultValue ? ' prospelaPurpleText': '')} id="select-placeholder">
           { (isOpen === true && placeholderOnClick) ? placeholderOnClick : placeholder }
         </div>
       )
@@ -1257,14 +1268,14 @@ class SelectBox extends React.Component {
   }
 
   render() {
-    const { handleChange, required, name, handleMouseDown } = this.props;
+    const { required, name, handleMouseDown, disabled } = this.props;
     const { isOpen, isFocused } = this.state;
 
     return (
       <React.Fragment>
         <div
           tabIndex="0"
-          className="select form-control-std"
+          className={"select form-control-std" + (disabled ? ' disabled' : "")}
           id={"selectBox-"+name}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
@@ -1272,7 +1283,7 @@ class SelectBox extends React.Component {
       //    onKeyUp={this.onKeyUp}
           onMouseDown={handleMouseDown}
           required={required}
-          onClick={this.onClick}
+          onClick={disabled ? null : this.onClick}
           role="button"
         >
           <div className="selectContainer " id="selectContainer">

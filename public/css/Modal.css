@@ -399,7 +399,8 @@
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 .ModalOpenBtn-addEditRole,
-.ModalOpenBtn-addRoleDesc{
+.ModalOpenBtn-addRoleDesc,
+.ModalOpenBtn-deleteRole{
   background: none;
   padding: 0;
   border: none;
@@ -456,7 +457,8 @@
 .ModalOpenBtn-eduFreeTextBtn:hover,
 .ModalOpenBtn-noEduEmailBtn:hover,
 .ModalOpenBtn-addRoleDesc:hover,
-.ModalOpenBtn-addEditRole:hover {
+.ModalOpenBtn-addEditRole:hover,
+.ModalOpenBtn-deleteRole:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -470,7 +472,8 @@
 .ModalOpenBtn-eduFreeTextBtn:focus,
 .ModalOpenBtn-noEduEmailBtn:focus,
 .ModalOpenBtn-addRoleDesc:focus,
-.ModalOpenBtn-addEditRole:focus {
+.ModalOpenBtn-addEditRole:focus,
+.ModalOpenBtn-deleteRole:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;

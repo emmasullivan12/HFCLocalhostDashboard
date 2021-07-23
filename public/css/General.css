@@ -425,6 +425,9 @@ table th .description{
 .purpleText{
   color: #4E4ED6;
 }
+.prospelaPurpleText{
+  color: #351c75!important;
+}
 .white{
   color: #fff;
   text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;
@@ -556,8 +559,14 @@ table th .description{
 .noMarginBlockStart{
   margin-block-start: 0;
 }
+.marginAuto{
+  margin: auto;
+}
 .marginTop{
   margin-top: 2rem;
+}
+.marginTop10 {
+  margin-top: 10px!important;
 }
 .marginTop20 {
   margin-top: 20px!important;
@@ -1173,6 +1182,10 @@ a.Submit-btn:disabled:active,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.checkbox-container.formatLeft{
+  padding-left: 2.7rem;
+  padding-top: .3rem;
 }
 
 .textParser-container {

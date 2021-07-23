@@ -289,7 +289,7 @@ class MentorProfileContent extends Component {
       roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
+      {title: 'Marketing Manager', co: 'GE', startDate: '2019-06-01T13:30:50.667Z', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
       {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
     ]
 /*    const userReads = [
@@ -549,7 +549,7 @@ class MentorProfileContent extends Component {
                   </div>*/}
                   <h1 >
                     <br/>
-                    <i className="emoji-icon suitcase-emoji"/> Expertise & Career
+                    <i className="emoji-icon suitcase-emoji"/> Experience & Expertise
                   </h1>
                   <div>
                     {roleHistory.map((role) => {
@@ -606,14 +606,14 @@ class MentorProfileContent extends Component {
                               )
                             : (
                               <Modal {...EditRoleDescModalProps}>
-                                <div>yo</div>
+                                <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
                               </Modal>
                             )
                           }
                           {isMe == "isMe" && (
                             <div className="editSectionBtn dispInlineBlock">
                               <Modal {...EditProfileSectionModalProps}>
-                                <AddEditRoleContent modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
+                                <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
                               </Modal>
                             </div>
                           )}
@@ -622,7 +622,7 @@ class MentorProfileContent extends Component {
                     })}
                     {isMe == "isMe" && (
                       <Modal {...AddRoleModalProps}>
-                        <div>yo</div>
+                        <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc=''/>
                       </Modal>
                     )}
                   </div>
@@ -687,7 +687,7 @@ class MentorProfileContent extends Component {
                 <section className="scroll-anchor" id="education" name="education">
                   <h1 >
                     <br/>
-                    <i className="emoji-icon schoolHat-emoji"/> Education
+                    <i className="emoji-icon schoolHat-emoji"/> Education & Training
                   </h1>
                   <div className="editSectionContainer">
                     <h2>

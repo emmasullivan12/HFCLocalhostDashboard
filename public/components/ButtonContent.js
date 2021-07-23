@@ -53,8 +53,9 @@ function ButtonContent(props) {
       )
     case 'addEditRole':
     case 'addRoleDesc':
+    case 'deleteRole':
       return (
-        <div className="editSectionItem dispInlineBlock smallFont greyText">
+        <div className="marginTop10 marginAuto smallFont">
           {text}
         </div>
       )

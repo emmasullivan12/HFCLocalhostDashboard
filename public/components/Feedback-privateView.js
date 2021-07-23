@@ -373,7 +373,7 @@ class FeedbackPrivate extends Component {
                         <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add comment to my profile'}</span>
                         <Checkbox
                           labelClassName="switch"
-                          if="make-feedback-public"
+                          id="make-feedback-public"
                           name={item.matchid+"-"+userRole+"-isPublic"}
                           spanClassName="slider round"
                           onChange={this.toggleCheckbox}
@@ -406,7 +406,7 @@ class FeedbackPrivate extends Component {
                         <span className="notifToggleTxt">{(item.isPublic == true || this.state[item.matchid+"-"+userRole+"-isPublic"] == true) ? '👁️ Visible' : 'Add comment to my profile'}</span>
                         <Checkbox
                           labelClassName="switch"
-                          if="make-feedback-public"
+                          id="make-feedback-public"
                           name={item.matchid+"-"+userRole+"-isPublic"}
                           spanClassName="slider round"
                           onChange={this.toggleCheckbox}
