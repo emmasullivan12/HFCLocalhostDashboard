@@ -20,6 +20,7 @@ class AddEditRoleContent extends Component {
     super(props);
     this.state = {
       isSubmitting: false,
+      isSubmittingDeleteRole: false,
       updateSuccess: false,
     /*  roletitle: this.props.roleTitle == '' ? null : this.props.roleTitle,
       roleco: this.props.roleCo == '' ? '' : this.props.roleCo,
@@ -112,6 +113,10 @@ class AddEditRoleContent extends Component {
     this.setState({ updateSuccess: true })
   }
 
+  handleSubmitDeleteRole = (e) => {
+    this.setState({ isSubmittingDeleteRole: true });
+  }
+
   canBeSubmitted() {
     const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr} = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc } = this.props;
@@ -126,7 +131,7 @@ class AddEditRoleContent extends Component {
   }
 
   render() {
-    const { isSubmitting, updateSuccess, roletitle, roleco, startdate, enddate, roledesc, iscurrent, triggerResetValues } = this.state;
+    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, roledesc, iscurrent, triggerResetValues } = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle, addOrEdit } = this.props;
     const months = [
       {value: '0', label: 'Jan'},
@@ -172,7 +177,7 @@ class AddEditRoleContent extends Component {
         </div>
         <form className="paddingR20 paddingL20">
           <div className="form-group">
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">Current Role</label>
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">Role</label>
             <TextInput
               name="roletitle"
               id="roleTitleInput"
@@ -186,7 +191,7 @@ class AddEditRoleContent extends Component {
             />
           </div>
           <div className="form-group">
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Current Employer</label>
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Employer</label>
             <TextInput
               name="roleco"
               id="roleCoInput"
@@ -295,9 +300,26 @@ class AddEditRoleContent extends Component {
               <span>Update</span>
             )}
           </button>
-          <Modal {...DeleteRoleModalProps}>
-            Are you sure?
-          </Modal>
+          {addOrEdit != 'add' && (
+            <Modal {...DeleteRoleModalProps}>
+              <div className="modal-preTitle">
+                Are you sure?
+              </div>
+              <div className="modal-subtitle">
+                You&#39;re about to permanently delete this role
+              </div>
+              <div className="pass-btn-container">
+                <button type="button" disabled={isSubmittingDeleteRole == true ? true : false} onClick={this.handleSubmitDeleteRole} className="Submit-btn">
+                  {isSubmittingDeleteRole === true && (
+                    <LoadingSpinner />
+                  )}
+                  {isSubmittingDeleteRole != true && (
+                    <span>Yes, Delete Role</span>
+                  )}
+                </button>
+              </div>
+            </Modal>
+          )}
         </form>
         </React.Fragment>
       );

@@ -1892,3 +1892,7 @@ a.button{
 .u-lock-scroll {
   overflow: hidden!important;
 }
+.showSmallModalSize{
+  max-width: 30em;
+  margin: auto;
+}

@@ -4,7 +4,9 @@ import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
+import EditIndRolesContent from './EditIndRolesContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
+import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
@@ -20,6 +22,14 @@ import "../css/General.css";
 import "../css/Article.css";
 import "../css/Emoji.css";
 import "../css/Profile.css";
+
+const EditProfileSectionFPModalProps = {
+  ariaLabel: 'Edit profile section',
+  triggerText: 'Edit section',
+  usedFor: 'editSection',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
 
 const EditProfileSectionModalProps = {
   ariaLabel: 'Edit profile section',
@@ -552,6 +562,9 @@ class MentorProfileContent extends Component {
                     <i className="emoji-icon suitcase-emoji"/> Experience & Expertise
                   </h1>
                   <div>
+                    <h2>
+                      Expertise
+                    </h2>
                     {roleHistory.map((role) => {
                       let roleLengthMths
                       let roleLengthYrs
@@ -643,9 +656,9 @@ class MentorProfileContent extends Component {
                     </div>
                     {isMe == "isMe" && (
                       <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
-                        </Modal>
+                        <FullPageModal {...EditProfileSectionFPModalProps}>
+                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp} rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext} />
+                        </FullPageModal>
                       </div>
                     )}
                   </div>
