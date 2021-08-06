@@ -24,7 +24,9 @@ class AddEditRoleContent extends Component {
     this.state = {
       isSubmitting: false,
       updateSuccess: false,
-      industries: this.props.industriesexp != null ? this.props.industriesexp : [],
+      startingIndArr: [],
+      industries: [],
+      startingRolesArr: this.props.rolesArray ?  this.props.rolesArray : [],
       rolesFromList: this.props.rolesexp != null ? this.props.rolesexp :  [],
       freeTextRoles: this.props.rolesexpfreetext != null ? this.props.rolesexpfreetext : [],
       errorLoadingRoles: '',
@@ -32,6 +34,15 @@ class AddEditRoleContent extends Component {
     this.handleIndChange = this.handleIndChange.bind(this);
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleDoneClickRoles = this.handleDoneClickRoles.bind(this);
+  }
+
+  componentDidMount() {
+    if (this.props.industriesexp != null) {
+      this.convertStartingInd(this.props.industriesexp)
+    }
+    /*if (this.props.rolesArray != null && ) {
+      this.convertStartingRoles(this.props.rolesexp, this.props.rolesexpfreetext)
+    }*/
   }
 
   handleSubmit = (evt) => {
@@ -43,6 +54,34 @@ class AddEditRoleContent extends Component {
     this.setState({ updateSuccess: true })
   }
 
+  convertStartingInd = (startingInds) => {
+    let indArr
+
+    indArr = industryOptions
+      .filter(industry => startingInds.includes(parseInt(industry.value)))
+      .map(value => value.label)
+
+    this.setState({
+      startingIndArr: indArr,
+    })
+  }
+
+  /*convertStartingRoles = (startingRoles, startingRolesFreeText) => {
+    let rolesArr = []
+
+    rolesArr = roleOptions
+      .filter(role => startingRoles.includes(parseInt(role.value)))
+      .map(value => value.label)
+
+    if (startingRolesFreeText.length != 0) {
+      rolesArr.push(startingRolesFreeText)
+    }
+
+    this.setState({
+      startingRolesArr: rolesArray,
+    })
+  }*/
+
   handleIndChange(userInput) {
     let newArray
 
@@ -52,6 +91,8 @@ class AddEditRoleContent extends Component {
 
     this.setState({
       industries: newArray,
+    }, () => {
+      // NEED TO WORK WITH DEX TO UPDATE STARTINGINDARR TOO IN CASE OPEN AGAIN
     })
   }
 
@@ -74,7 +115,6 @@ class AddEditRoleContent extends Component {
         callback()
       }
     })
-
   }
 
   handleDoneClickRoles() {
@@ -96,9 +136,8 @@ class AddEditRoleContent extends Component {
   }
 
   render() {
-    const { isSubmitting, updateSuccess, errorLoadingRoles } = this.state;
-    const { modalTitle, } = this.props;
-
+    const { isSubmitting, updateSuccess, errorLoadingRoles, rolesexp, rolesexpfreetext, startingIndArr, startingRolesArr } = this.state;
+    const { modalTitle, industriesexp } = this.props;
     const isEnabled = this.canBeSubmitted();
 
     if(updateSuccess == false) {
@@ -110,7 +149,7 @@ class AddEditRoleContent extends Component {
             </div>
             <form className="paddingR20 paddingL20">
               <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="roletitle">Which <strong>industries</strong> do you have experience in / can talk about?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">Which <strong>industries</strong> do you have experience in / can talk about?</label>
                 <SelectBox
                   multiple
                   options={industryOptions}
@@ -123,10 +162,11 @@ class AddEditRoleContent extends Component {
                   showIcon
                   iconToShow='iconFA'
                   showCheckbox
+                  defaultChecked={startingIndArr}
                 />
               </div>
               <div className="form-group">
-                <label className="descriptor alignLeft" htmlFor="roleco">Which <strong>roles(s)</strong> do you have experience in?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Which <strong>roles(s)</strong> do you have experience in?</label>
                 <div className="autocompleter">
                   <AutocompleteTagsMulti
                     multiple
@@ -142,6 +182,7 @@ class AddEditRoleContent extends Component {
                     idValue='value'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required
+                    defaultChecked={startingRolesArr}
                   />
                   {errorLoadingRoles === true && (
                     <div className="descriptor prompt error indRoleForm alignLeft">

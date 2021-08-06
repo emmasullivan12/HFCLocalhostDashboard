@@ -91,7 +91,7 @@ class UpdateProfileOverviewContent extends Component {
               />
             </div>
           )}
-          <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
+          <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth">
             {isSubmitting == true && (
               <LoadingSpinner />
             )}

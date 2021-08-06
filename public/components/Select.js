@@ -25,7 +25,7 @@ class SelectBox extends React.Component {
       focusedValue: -1,
       isFocused: false,
       isOpen: false,
-      numSelected: 0,
+      numSelected: this.props.defaultChecked ? this.props.defaultChecked.length : 0,
     };
   }
 
@@ -40,9 +40,15 @@ class SelectBox extends React.Component {
   }
 
   componentDidUpdate(prevProps){
-    const {resetValues} = this.props
+    const {resetValues, defaultChecked} = this.props
     if (prevProps.resetValues != resetValues && resetValues == true) {
       this.resetValues()
+    }
+    if(prevProps.defaultChecked != defaultChecked) {
+      this.setState({
+        values: defaultChecked ? defaultChecked : [],
+        numSelected: defaultChecked ? defaultChecked.length : 0,
+      })
     }
   }
 

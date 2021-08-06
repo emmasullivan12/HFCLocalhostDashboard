@@ -13,8 +13,8 @@ class AutocompleteTagsMulti extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: [],
-      numSelected: 0,
+      values: this.props.defaultChecked ? this.props.defaultChecked : [],
+      numSelected: this.props.defaultChecked ? this.props.defaultChecked.length : 0,
       activeSuggestion: -1,
       filteredSuggestions: [],
       showSuggestions: false,
@@ -33,6 +33,16 @@ class AutocompleteTagsMulti extends React.Component {
     }
     if (handleTabPress) {
       handleTabPress(false);
+    }
+  }
+
+  componentDidUpdate(prevProps){
+    const {defaultChecked} = this.props
+    if(prevProps.defaultChecked != defaultChecked) {
+      this.setState({
+        values: defaultChecked ? defaultChecked : [],
+        numSelected: defaultChecked ? defaultChecked.length : 0,
+      })
     }
   }
 
@@ -663,7 +673,7 @@ class AutocompleteTagsMulti extends React.Component {
 
     if (showValues) {
       const numHidden = numSelected - 2
-      const showNumHidden = values.length > 2
+      var showNumHidden = values.length > 2
 
       let shortArray;
       //let arrayToMap;
@@ -699,7 +709,7 @@ class AutocompleteTagsMulti extends React.Component {
               </span>
             )
           })}
-          {showSuggestions != true && showNumHidden === true && (
+          {showSuggestions != true && showNumHidden == true && (
             <span className="multiple numHidden">
               <span>+ {numHidden} more</span>
             </span>

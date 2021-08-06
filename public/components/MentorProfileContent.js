@@ -10,6 +10,7 @@ import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
+import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
@@ -25,8 +26,16 @@ import "../css/Profile.css";
 
 const EditProfileSectionFPModalProps = {
   ariaLabel: 'Edit profile section',
-  triggerText: 'Edit section',
+  triggerText: '+ Add Industries / Roles',
   usedFor: 'editSection',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
+const AddIndRolesFPModalProps = {
+  ariaLabel: 'Add Industries / Roles',
+  triggerText: '+ Add Industries / Roles',
+  usedFor: 'editIndRoles',
   backBtn: 'arrow',
   changeInitFocus: true,
 }
@@ -36,6 +45,20 @@ const EditProfileSectionModalProps = {
   triggerText: 'Edit section',
   usedFor: 'editSection',
   changeInitFocus: true,
+}
+
+const AddExpertiseModalProps = {
+  ariaLabel: 'Add / Edit skills',
+  triggerText: '+ Add Key Skills',
+  usedFor: 'addEditSkills',
+  changeInitFocus: true
+}
+
+const AddLearningModalProps = {
+  ariaLabel: 'Add / Edit skills',
+  triggerText: '+ Add Skills I\'m learning',
+  usedFor: 'addEditSkills',
+  changeInitFocus: true
 }
 
 const AddRoleModalProps = {
@@ -272,15 +295,19 @@ class MentorProfileContent extends Component {
       schnamefreetext: '', // If their school wasn't on the list
       uniname: '44',
       uninamefreetext: '', // If their school wasn't on the list
-    //  subjects: 'Business, Art, English Literature & Language',
       subjects: [1,13,21],
       currrole: 'Head of Marketing',
       currco: 'Pladis',
       industriesexp: [2, 19],
       rolesexp: [1, 2, 69, 5, 22, 41],
       rolesexpfreetext: ['Head of M&A'],
+    //  industriesexp: [],
+    //  rolesexp: [],
+    //  rolesexpfreetext: [],
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
-      learning: 'leadership, negotiations, excel, programming, python, mySQL',
+    //  learning: 'leadership, negotiations, excel, programming, python, mySQL',
+    //  expertise: '',
+      learning: '',
       hobbies: [1,14,30],
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
       activityPublic: 1,
@@ -357,8 +384,8 @@ class MentorProfileContent extends Component {
 */    const profShareSettings = {
       groups: false
     };
-    const rolesCommaString = convertRole(mentor.rolesexp, mentor.rolesexpfreetext)
-    const rolesArray = rolesCommaString.split(',')
+    const rolesCommaString = (mentor.rolesexp.length > 0 || mentor.rolesexpfreetext.length > 0) ? convertRole(mentor.rolesexp, mentor.rolesexpfreetext) : []
+    const rolesArray = rolesCommaString.length == 0 ? [] : rolesCommaString.split(',')
     const hobbiesCommaString = convertHobbies(mentor.hobbies, mentor.hobbiesfreetext)
     const hobbiesArr = hobbiesCommaString.split(',');
     const expertiseArr = mentor.expertise.split(',');
@@ -372,7 +399,7 @@ class MentorProfileContent extends Component {
     const eduInstName = eduName(mentor.schname, mentor.schnamefreetext, mentor.uniname, mentor.uninamefreetext, mentor.eetstatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23456';
+    const uid = '23457';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
     const menteeIsU18 = true;
     const userInitial = mentor.fname.charAt(0).toUpperCase();
@@ -440,7 +467,7 @@ class MentorProfileContent extends Component {
                 )}
               </div>
               <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
-              <div className="editSectionContainer">
+              <div className="editSectionContainer zIndex0">
                 {mentor.eetstatus == 'sch' && (
                   <React.Fragment>
                     <div className="profilePosition">Student</div>
@@ -563,7 +590,7 @@ class MentorProfileContent extends Component {
                   </h1>
                   <div>
                     <h2>
-                      Expertise
+                      Experience
                     </h2>
                     {roleHistory.map((role) => {
                       let roleLengthMths
@@ -611,18 +638,14 @@ class MentorProfileContent extends Component {
                               </div>
                             </div>
                           </div>
-                          {
-                            role.roledesc != '' ? (
-                              <p>
-                                {role.roledesc}
-                              </p>
-                              )
-                            : (
-                              <Modal {...EditRoleDescModalProps}>
-                                <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
-                              </Modal>
-                            )
-                          }
+                          {role.roledesc != '' && (
+                            <p>{role.roledesc}</p>
+                          )}
+                          {isMe == "isMe" && role.roledesc == '' && (
+                            <Modal {...EditRoleDescModalProps}>
+                              <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
+                            </Modal>
+                          )}
                           {isMe == "isMe" && (
                             <div className="editSectionBtn dispInlineBlock">
                               <Modal {...EditProfileSectionModalProps}>
@@ -639,63 +662,114 @@ class MentorProfileContent extends Component {
                       </Modal>
                     )}
                   </div>
-                  <div className="editSectionContainer">
-                    <h2>
-                      Industries / Roles I can talk about
-                    </h2>
-                    <div className="bubbleContainer">
-                      {mentor.industriesexp.map((indID) => {
-                        let industryItem = getIndustryDeets(indID)
-                        let icon = industryItem.fa
-                        let indName = industryItem.label
-                        return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
-                      })}
-                      {rolesArray && rolesArray.map((role) => {
-                        return <div className="bubble" key={role}>{role}</div>
-                      })}
-                    </div>
-                    {isMe == "isMe" && (
+                  {isMe == "isMe" && (mentor.industriesexp.length == 0 && rolesArray.length == 0) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        Industries / Roles I can talk about
+                      </h2>
+                      <FullPageModal {...AddIndRolesFPModalProps}>
+                        <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} />
+                      </FullPageModal>
                       <div className="editSectionBtn dispInlineBlock">
                         <FullPageModal {...EditProfileSectionFPModalProps}>
-                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp} rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext} />
+                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
                         </FullPageModal>
                       </div>
-                    )}
-                  </div>
-                  <div className="editSectionContainer">
-                    <h2>
-                      <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
-                    </h2>
-                    <div>
-                      {expertiseArr && expertiseArr.map((skill) => {
-                        return <div key={skill}>{skill.trim()}</div>
-                      })}
                     </div>
-                    {isMe == "isMe" && (
+                  )}
+                  {(mentor.industriesexp.length > 0 || rolesArray.length > 0) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        Industries / Roles I can talk about
+                      </h2>
+                      <div className="bubbleContainer">
+                        {mentor.industriesexp.map((indID) => {
+                          let industryItem = getIndustryDeets(indID)
+                          let icon = industryItem.fa
+                          let indName = industryItem.label
+                          return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
+                        })}
+                        {rolesArray.length > 0 && rolesArray.map((role) => {
+                          return <div className="bubble" key={role}>{role}</div>
+                        })}
+                      </div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                            <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp.length > 0 ? mentor.industriesexp : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
+                          </FullPageModal>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {isMe == "isMe" && (mentor.expertise == '' || mentor.expertise == null) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
+                      </h2>
+                      <Modal {...AddExpertiseModalProps}>
+                        <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
+                      </Modal>
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
+                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
                         </Modal>
                       </div>
-                    )}
-                  </div>
-                  <div className="editSectionContainer">
-                    <h2>
-                      <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
-                    </h2>
-                    <div>
-                      {learningArr && learningArr.map((skill) => {
-                        return <div key={skill}>{skill.trim()}</div>
-                      })}
                     </div>
-                    {isMe == "isMe" && (
+                  )}
+                  {(mentor.expertise != '' && mentor.expertise != null) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
+                      </h2>
+                      <div>
+                        {expertiseArr && expertiseArr.map((skill) => {
+                          return <div key={skill}>{skill.trim()}</div>
+                        })}
+                      </div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                          </Modal>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {isMe == "isMe" && (mentor.learning == '' || mentor.learning == null) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
+                      </h2>
+                      <Modal {...AddLearningModalProps}>
+                        <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
+                      </Modal>
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
+                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
                         </Modal>
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  )}
+                  {mentor.learning != '' && mentor.learning != null && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
+                      </h2>
+                      <div>
+                        {learningArr && learningArr.map((skill) => {
+                          return <div key={skill}>{skill.trim()}</div>
+                        })}
+                      </div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                          </Modal>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </section>
                 <section className="scroll-anchor" id="education" name="education">
                   <h1 >

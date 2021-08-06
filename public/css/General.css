@@ -460,6 +460,9 @@ table th .description{
 }
 
 /* POSITIONING */
+.zIndex0{
+  z-index: 0!important;
+}
 .dispBlock{
   display: block;
 }

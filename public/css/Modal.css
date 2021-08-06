@@ -400,7 +400,9 @@
 }
 .ModalOpenBtn-addEditRole,
 .ModalOpenBtn-addRoleDesc,
-.ModalOpenBtn-deleteRole{
+.ModalOpenBtn-deleteRole,
+.ModalOpenBtn-editIndRole,
+.ModalOpenBtn-addEditSkills{
   background: none;
   padding: 0;
   border: none;
@@ -462,7 +464,9 @@
 .ModalOpenBtn-noEduEmailBtn:hover,
 .ModalOpenBtn-addRoleDesc:hover,
 .ModalOpenBtn-addEditRole:hover,
-.ModalOpenBtn-deleteRole:hover {
+.ModalOpenBtn-deleteRole:hover,
+.ModalOpenBtn-editIndRoles:hover,
+.ModalOpenBtn-addEditSkills:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -477,7 +481,9 @@
 .ModalOpenBtn-noEduEmailBtn:focus,
 .ModalOpenBtn-addRoleDesc:focus,
 .ModalOpenBtn-addEditRole:focus,
-.ModalOpenBtn-deleteRole:focus {
+.ModalOpenBtn-deleteRole:focus,
+.ModalOpenBtn-editIndRoles:focus,
+.ModalOpenBtn-addEditSkills:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
