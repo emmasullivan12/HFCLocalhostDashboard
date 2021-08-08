@@ -115,7 +115,7 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   return hobbiesFullText.join(", ")
 }
 
-function convertSubjects(subjects) {
+function convertSubjects(subjects, subjectsfreetext) {
   let subjectsFullText = [];
 //  const stringifyHobbies = JSON.stringify(hobbies);
 
@@ -125,6 +125,9 @@ function convertSubjects(subjects) {
 
   subjectsArr.forEach((x) => {
     subjectsFullText.push(x.label)
+  })
+  subjectsfreetext.forEach((y) => {
+    subjectsFullText.push(y)
   })
 
   return subjectsFullText.join(", ")

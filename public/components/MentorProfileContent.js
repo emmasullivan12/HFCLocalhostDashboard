@@ -422,7 +422,7 @@ class MentorProfileContent extends Component {
     const hobbiesArr = hobbiesCommaString.length == 0 ? [] : hobbiesCommaString.split(', ');
     const expertiseArr = mentor.expertise.split(',');
     const learningArr = mentor.learning.split(',');
-    const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects) : []
+    const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects, mentor.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
     const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
