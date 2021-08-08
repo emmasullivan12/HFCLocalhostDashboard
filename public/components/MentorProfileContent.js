@@ -1,4 +1,4 @@
-// Dex last merged this code on 8th aug 2021 
+// Dex last merged this code on 8th aug 2021
 
 import React, { Component } from "react";
 
@@ -857,7 +857,7 @@ class MentorProfileContent extends Component {
                       {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
                           <FullPageModal {...EditProfileSectionFPModalProps}>
-                            <EditSubjectsContent modalTitle='Edit the Subjects you studied at School' subjectsArray={subjectsArr.length > 0 ? subjectsArr : []}  />
+                            <EditSubjectsContent modalTitle='Edit the Subjects you studied at School' subjectsArray={subjectsArr.length > 0 ? subjectsArr : []} />
                           </FullPageModal>
                         </div>
                       )}

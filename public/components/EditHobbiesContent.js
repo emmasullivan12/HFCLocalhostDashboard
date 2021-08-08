@@ -14,10 +14,10 @@ class EditHobbiesContent extends Component {
     this.state = {
       isSubmitting: false,
       updateSuccess: false,
-      startingHobbiesArr: this.props.hobbiesArr ?  this.props.hobbiesArr : [],
-      hobbiesFromList: this.props.hobbies != null ? this.props.hobbies :  [],
+      startingHobbiesArr: this.props.hobbiesArr ? this.props.hobbiesArr : [],
+      hobbiesFromList: this.props.hobbies != null ? this.props.hobbies : [],
       freeTextHobbies: this.props.hobbiesfreetext != null ? this.props.hobbiesfreetext : [],
-      endingHobbiesArr: this.props.hobbiesArr ?  this.props.hobbiesArr : [],
+      endingHobbiesArr: this.props.hobbiesArr ? this.props.hobbiesArr : [],
       errorLoadingHobbies: '',
     };
     this.handleHobbiesChange = this.handleHobbiesChange.bind(this);
@@ -69,7 +69,7 @@ class EditHobbiesContent extends Component {
   }
 
   canBeSubmitted() {
-    const { hobbiesFromList, freeTextHobbies, startingHobbiesArr, endingHobbiesArr  } = this.state;
+    const { hobbiesFromList, freeTextHobbies, startingHobbiesArr, endingHobbiesArr } = this.state;
 
     return (
       (hobbiesFromList.length != 0 || freeTextHobbies.length != 0)

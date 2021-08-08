@@ -14,10 +14,10 @@ class EditSubjectsContent extends Component {
     this.state = {
       isSubmitting: false,
       updateSuccess: false,
-      startingSubjectsArr: this.props.subjectsArray ?  this.props.subjectsArray : [],
-      subjectsFromList: this.props.subjects != null ? this.props.subjects :  [],
+      startingSubjectsArr: this.props.subjectsArray ? this.props.subjectsArray : [],
+      subjectsFromList: this.props.subjects != null ? this.props.subjects : [],
       freeTextSubjects: this.props.subjectsfreetext != null ? this.props.subjectsfreetext : [],
-      endingSubjectsArr: this.props.subjectsArray ?  this.props.subjectsArray : [],
+      endingSubjectsArr: this.props.subjectsArray ? this.props.subjectsArray : [],
       errorLoadingSubjects: '',
     };
     this.handleSubjectsChange = this.handleSubjectsChange.bind(this);
@@ -69,7 +69,7 @@ class EditSubjectsContent extends Component {
   }
 
   canBeSubmitted() {
-    const { subjectsFromList, freeTextSubjects, startingSubjectsArr, endingSubjectsArr  } = this.state;
+    const { subjectsFromList, freeTextSubjects, startingSubjectsArr, endingSubjectsArr } = this.state;
 
     return (
       (subjectsFromList.length != 0 || freeTextSubjects.length != 0)
