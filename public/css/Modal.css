@@ -401,8 +401,11 @@
 .ModalOpenBtn-addEditRole,
 .ModalOpenBtn-addRoleDesc,
 .ModalOpenBtn-deleteRole,
-.ModalOpenBtn-editIndRole,
-.ModalOpenBtn-addEditSkills{
+.ModalOpenBtn-editIndRoles,
+.ModalOpenBtn-addEditSkills,
+.ModalOpenBtn-editHobbies,
+.ModalOpenBtn-addEditWhyHelp,
+.ModalOpenBtn-editSubjects{
   background: none;
   padding: 0;
   border: none;
@@ -466,7 +469,10 @@
 .ModalOpenBtn-addEditRole:hover,
 .ModalOpenBtn-deleteRole:hover,
 .ModalOpenBtn-editIndRoles:hover,
-.ModalOpenBtn-addEditSkills:hover {
+.ModalOpenBtn-addEditSkills:hover,
+.ModalOpenBtn-editHobbies:hover,
+.ModalOpenBtn-addEditWhyHelp:hover,
+.ModalOpenBtn-editSubjects:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -483,7 +489,10 @@
 .ModalOpenBtn-addEditRole:focus,
 .ModalOpenBtn-deleteRole:focus,
 .ModalOpenBtn-editIndRoles:focus,
-.ModalOpenBtn-addEditSkills:focus {
+.ModalOpenBtn-addEditSkills:focus,
+.ModalOpenBtn-editHobbies:focus,
+.ModalOpenBtn-addEditWhyHelp:focus,
+.ModalOpenBtn-editSubjects:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;

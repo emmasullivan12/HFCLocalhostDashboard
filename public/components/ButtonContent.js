@@ -56,6 +56,9 @@ function ButtonContent(props) {
     case 'deleteRole':
     case 'editIndRoles':
     case 'addEditSkills':
+    case 'editHobbies':
+    case 'addEditWhyHelp':
+    case 'editSubjects':
       return (
         <div className="marginTop10 marginAuto smallFont">
           {text}

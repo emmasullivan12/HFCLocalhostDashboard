@@ -53,14 +53,14 @@ class UpdateExpertiseContent extends Component {
 
   render() {
     const { isSubmitting, updateSuccess, expertiseNew, learningNew } = this.state;
-    const { expertise, learning } = this.props;
+    const { modalTitle, expertise, learning } = this.props;
     const isEnabled = this.canBeSubmitted();
 
     if(updateSuccess == false) {
       return (
         <React.Fragment>
         <div className="modal-title">
-          Edit Profile Overview
+          {modalTitle}
         </div>
         <form className="paddingR20 paddingL20">
           <div className="form-group">

@@ -4,7 +4,9 @@ import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
+import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
+import EditSubjectsContent from './EditSubjectsContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
 import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
@@ -13,6 +15,7 @@ import Modal from './Modal.js';
 import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
+import UpdateWhyHelpContent from './UpdateWhyHelpModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
@@ -40,6 +43,22 @@ const AddIndRolesFPModalProps = {
   changeInitFocus: true,
 }
 
+const AddSubjectsFPModalProps = {
+  ariaLabel: 'Add Subjects',
+  triggerText: '+ Add Subjects',
+  usedFor: 'editSubjects',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
+const AddHobbiesFPModalProps = {
+  ariaLabel: 'Add Hobbies',
+  triggerText: '+ Add Hobbies',
+  usedFor: 'editHobbies',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
 const EditProfileSectionModalProps = {
   ariaLabel: 'Edit profile section',
   triggerText: 'Edit section',
@@ -51,6 +70,13 @@ const AddExpertiseModalProps = {
   ariaLabel: 'Add / Edit skills',
   triggerText: '+ Add Key Skills',
   usedFor: 'addEditSkills',
+  changeInitFocus: true
+}
+
+const AddWhyHelpModalProps = {
+  ariaLabel: 'Add / Edit motivations',
+  triggerText: '+ Add Motivations',
+  usedFor: 'addEditWhyHelp',
   changeInitFocus: true
 }
 
@@ -296,6 +322,9 @@ class MentorProfileContent extends Component {
       uniname: '44',
       uninamefreetext: '', // If their school wasn't on the list
       subjects: [1,13,21],
+      subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
+    //  subjects: [],
+    //  subjectsfreetext: [],
       currrole: 'Head of Marketing',
       currco: 'Pladis',
       industriesexp: [2, 19],
@@ -305,11 +334,13 @@ class MentorProfileContent extends Component {
     //  rolesexp: [],
     //  rolesexpfreetext: [],
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
-    //  learning: 'leadership, negotiations, excel, programming, python, mySQL',
+      learning: 'leadership, negotiations, excel, programming, python, mySQL',
     //  expertise: '',
-      learning: '',
+    //  learning: '',
       hobbies: [1,14,30],
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
+    //  hobbies: [],
+    //  hobbiesfreetext: [],
       activityPublic: 1,
       groupsSet: 1,
       readsSet: 1,
@@ -322,6 +353,7 @@ class MentorProfileContent extends Component {
       groupSingle: 1,
       mentorgroups: [1,3],
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
+    //  whyHelp: '',
       helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
       roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
@@ -385,13 +417,13 @@ class MentorProfileContent extends Component {
       groups: false
     };
     const rolesCommaString = (mentor.rolesexp.length > 0 || mentor.rolesexpfreetext.length > 0) ? convertRole(mentor.rolesexp, mentor.rolesexpfreetext) : []
-    const rolesArray = rolesCommaString.length == 0 ? [] : rolesCommaString.split(',')
-    const hobbiesCommaString = convertHobbies(mentor.hobbies, mentor.hobbiesfreetext)
-    const hobbiesArr = hobbiesCommaString.split(',');
+    const rolesArray = rolesCommaString.length == 0 ? [] : rolesCommaString.split(', ')
+    const hobbiesCommaString = (mentor.hobbies.length > 0 || mentor.hobbiesfreetext.length > 0) ? convertHobbies(mentor.hobbies, mentor.hobbiesfreetext) : []
+    const hobbiesArr = hobbiesCommaString.length == 0 ? [] : hobbiesCommaString.split(', ');
     const expertiseArr = mentor.expertise.split(',');
     const learningArr = mentor.learning.split(',');
-    const subjectsCommaString = convertSubjects(mentor.subjects)
-    const subjectsArr = subjectsCommaString.split(',');
+    const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects) : []
+    const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
     const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -399,7 +431,7 @@ class MentorProfileContent extends Component {
     const eduInstName = eduName(mentor.schname, mentor.schnamefreetext, mentor.uniname, mentor.uninamefreetext, mentor.eetstatus);
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23457';
+    const uid = '23456';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
     const menteeIsU18 = true;
     const userInitial = mentor.fname.charAt(0).toUpperCase();
@@ -764,7 +796,7 @@ class MentorProfileContent extends Component {
                       {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                            <UpdateExpertiseContent modalTitle='Edit your Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
                           </Modal>
                         </div>
                       )}
@@ -796,26 +828,40 @@ class MentorProfileContent extends Component {
                       </div>
                     )}
                   </div>
-                  {mentor.subjects.length > 0 && (
-                    <React.Fragment>
-                      <div className="editSectionContainer">
-                        <h2>
-                          <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
-                        </h2>
-                        <div>
-                          {subjectsArr && subjectsArr.map((subject) => {
-                            return <div key={subject}>{subject}</div>
-                          })}
-                        </div>
-                        {isMe == "isMe" && (
-                          <div className="editSectionBtn dispInlineBlock">
-                            <Modal {...EditProfileSectionModalProps}>
-                              <div>yo</div>
-                            </Modal>
-                          </div>
-                        )}
+
+                  {isMe == "isMe" && subjectsArr.length == 0 && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
+                      </h2>
+                      <FullPageModal {...AddSubjectsFPModalProps}>
+                        <EditSubjectsContent modalTitle='Add the Subjects you studied at School' subjectsArray={[]} />
+                      </FullPageModal>
+                      <div className="editSectionBtn dispInlineBlock">
+                        <FullPageModal {...EditProfileSectionFPModalProps}>
+                          <EditSubjectsContent modalTitle='Add the Subjects you studied at School' subjectsArray={[]} />
+                        </FullPageModal>
                       </div>
-                    </React.Fragment>
+                    </div>
+                  )}
+                  {subjectsArr.length > 0 && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
+                      </h2>
+                      <div>
+                        {subjectsArr.length > 0 && subjectsArr.map((subject) => {
+                          return <div key={subject}>{subject.trim()}</div>
+                        })}
+                      </div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                            <EditSubjectsContent modalTitle='Edit the Subjects you studied at School' subjectsArray={subjectsArr.length > 0 ? subjectsArr : []}  />
+                          </FullPageModal>
+                        </div>
+                      )}
+                    </div>
                   )}
                 </section>
                 <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
@@ -823,38 +869,70 @@ class MentorProfileContent extends Component {
                     <br/>
                     <i className="emoji-icon rockOn-emoji"/> Outside of work
                   </h1>
-                  <div className="editSectionContainer">
-                    <h2>
-                      <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
-                    </h2>
-                    <div>
-                      {hobbiesArr && hobbiesArr.map((hobby) => {
-                        return <div key={hobby}>{hobby}</div>
-                      })}
+                  {isMe == "isMe" && hobbiesArr.length == 0 && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
+                      </h2>
+                      <FullPageModal {...AddHobbiesFPModalProps}>
+                        <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]} />
+                      </FullPageModal>
+                      <div className="editSectionBtn dispInlineBlock">
+                        <FullPageModal {...EditProfileSectionFPModalProps}>
+                          <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]}/>
+                        </FullPageModal>
+                      </div>
                     </div>
-                    {isMe == "isMe" && (
+                  )}
+                  {hobbiesArr.length > 0 && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
+                      </h2>
+                      <div>
+                        {hobbiesArr.length > 0 && hobbiesArr.map((hobby) => {
+                          return <div key={hobby}>{hobby.trim()}</div>
+                        })}
+                      </div>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                            <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={hobbiesArr}/>
+                          </FullPageModal>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {isMe == "isMe" && (mentor.whyHelp == '' || mentor.whyHelp == null) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        I&#39;m interested in being a mentor because:
+                      </h2>
+                      <Modal {...AddWhyHelpModalProps}>
+                        <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                      </Modal>
                       <div className="editSectionBtn dispInlineBlock">
                         <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
+                          <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
                         </Modal>
                       </div>
-                    )}
-                  </div>
-                  <div className="editSectionContainer">
-                    <h2>
-                      I&#39;m interested in being a mentor because:
-                    </h2>
-                    <p>
-                      {mentor.whyHelp}
-                    </p>
-                    {isMe == "isMe" && (
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
-                        </Modal>
-                      </div>
-                    )}
-                  </div>
+                    </div>
+                  )}
+                  {(mentor.whyHelp != '' && mentor.whyHelp != null) && (
+                    <div className="editSectionContainer">
+                      <h2>
+                        I&#39;m interested in being a mentor because:
+                      </h2>
+                      <p>{mentor.whyHelp}</p>
+                      {isMe == "isMe" && (
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                          </Modal>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   {mentor.mentorgroups.length > 0 && (
                     <React.Fragment>
                       <h2>

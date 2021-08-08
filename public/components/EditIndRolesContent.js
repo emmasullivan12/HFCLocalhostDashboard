@@ -18,7 +18,7 @@ const DeleteRoleModalProps = {
 }
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
-class AddEditRoleContent extends Component {
+class EditIndRolesContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,6 +29,7 @@ class AddEditRoleContent extends Component {
       startingRolesArr: this.props.rolesArray ?  this.props.rolesArray : [],
       rolesFromList: this.props.rolesexp != null ? this.props.rolesexp :  [],
       freeTextRoles: this.props.rolesexpfreetext != null ? this.props.rolesexpfreetext : [],
+      endingRolesArr: this.props.rolesArray ?  this.props.rolesArray : [],
       errorLoadingRoles: '',
     };
     this.handleIndChange = this.handleIndChange.bind(this);
@@ -40,9 +41,6 @@ class AddEditRoleContent extends Component {
     if (this.props.industriesexp != null) {
       this.convertStartingInd(this.props.industriesexp)
     }
-    /*if (this.props.rolesArray != null && ) {
-      this.convertStartingRoles(this.props.rolesexp, this.props.rolesexpfreetext)
-    }*/
   }
 
   handleSubmit = (evt) => {
@@ -65,22 +63,6 @@ class AddEditRoleContent extends Component {
       startingIndArr: indArr,
     })
   }
-
-  /*convertStartingRoles = (startingRoles, startingRolesFreeText) => {
-    let rolesArr = []
-
-    rolesArr = roleOptions
-      .filter(role => startingRoles.includes(parseInt(role.value)))
-      .map(value => value.label)
-
-    if (startingRolesFreeText.length != 0) {
-      rolesArr.push(startingRolesFreeText)
-    }
-
-    this.setState({
-      startingRolesArr: rolesArray,
-    })
-  }*/
 
   handleIndChange(userInput) {
     let newArray
@@ -109,7 +91,8 @@ class AddEditRoleContent extends Component {
 
     this.setState({
       rolesFromList: values,
-      freeTextRoles: freeTextRoles
+      freeTextRoles: freeTextRoles,
+      endingRolesArr: userInput
     }, () => {
       if(callback) {
         callback()
@@ -127,11 +110,11 @@ class AddEditRoleContent extends Component {
   }
 
   canBeSubmitted() {
-    const { industries, rolesFromList, freeTextRoles } = this.state;
+    const { industries, rolesFromList, freeTextRoles, startingRolesArr, endingRolesArr } = this.state;
 
     return (
       industries.length != 0 && (rolesFromList.length != 0 || freeTextRoles.length != 0)
-      && (industries != this.props.industries || rolesFromList != this.props.rolesFromList) // Checks user has actually changed something
+      && (industries != this.props.industries || JSON.stringify(startingRolesArr) != JSON.stringify(endingRolesArr)) // Checks user has actually changed something
     );
   }
 
@@ -220,4 +203,4 @@ class AddEditRoleContent extends Component {
   }
 }
 
-export default AddEditRoleContent;
+export default EditIndRolesContent;
