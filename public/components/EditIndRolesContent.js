@@ -1,4 +1,4 @@
-// Dex last merged this code on 2nd aug 2021
+// Dex last merged this code on 8th aug 2021
 
 import React, { Component } from "react";
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
@@ -26,10 +26,10 @@ class EditIndRolesContent extends Component {
       updateSuccess: false,
       startingIndArr: [],
       industries: [],
-      startingRolesArr: this.props.rolesArray ?  this.props.rolesArray : [],
-      rolesFromList: this.props.rolesexp != null ? this.props.rolesexp :  [],
+      startingRolesArr: this.props.rolesArray ? this.props.rolesArray : [],
+      rolesFromList: this.props.rolesexp != null ? this.props.rolesexp : [],
       freeTextRoles: this.props.rolesexpfreetext != null ? this.props.rolesexpfreetext : [],
-      endingRolesArr: this.props.rolesArray ?  this.props.rolesArray : [],
+      endingRolesArr: this.props.rolesArray ? this.props.rolesArray : [],
       errorLoadingRoles: '',
     };
     this.handleIndChange = this.handleIndChange.bind(this);

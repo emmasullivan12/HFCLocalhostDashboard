@@ -1,4 +1,4 @@
-// Dex last merged this code on 2nd aug 2021
+// Dex last merged this code on 8th aug 2021
 
 import React, { Component } from "react";
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
@@ -6,13 +6,6 @@ import Checkbox from './Checkbox.js';
 import Modal from './Modal.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
 import subjectOptions from './Subjects.js';
-
-const DeleteRoleModalProps = {
-  ariaLabel: 'Delete role',
-  triggerText: 'Delete Role',
-  usedFor: 'deleteRole',
-  changeInitFocus: true
-}
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class EditSubjectsContent extends Component {

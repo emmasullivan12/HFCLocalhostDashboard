@@ -1,4 +1,4 @@
-// Dex last merged this code on 2nd aug 2021
+// Dex last merged this code on 8th aug 2021
 
 import React, { Component } from "react";
 
@@ -29,7 +29,7 @@ import "../css/Profile.css";
 
 const EditProfileSectionFPModalProps = {
   ariaLabel: 'Edit profile section',
-  triggerText: '+ Add Industries / Roles',
+  triggerText: 'Edit Section',
   usedFor: 'editSection',
   backBtn: 'arrow',
   changeInitFocus: true,
@@ -321,10 +321,10 @@ class MentorProfileContent extends Component {
       schnamefreetext: '', // If their school wasn't on the list
       uniname: '44',
       uninamefreetext: '', // If their school wasn't on the list
-      subjects: [1,13,21],
-      subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
-    //  subjects: [],
-    //  subjectsfreetext: [],
+    //  subjects: [1,13,21],
+    //  subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
+      subjects: [],
+      subjectsfreetext: [],
       currrole: 'Head of Marketing',
       currco: 'Pladis',
       industriesexp: [2, 19],
@@ -624,7 +624,7 @@ class MentorProfileContent extends Component {
                     <h2>
                       Experience
                     </h2>
-                    {roleHistory.map((role) => {
+                    {roleHistory.map((role, index) => {
                       let roleLengthMths
                       let roleLengthYrs
                       let roleLengthTxt
@@ -675,13 +675,13 @@ class MentorProfileContent extends Component {
                           )}
                           {isMe == "isMe" && role.roledesc == '' && (
                             <Modal {...EditRoleDescModalProps}>
-                              <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
+                              <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
                             </Modal>
                           )}
                           {isMe == "isMe" && (
                             <div className="editSectionBtn dispInlineBlock">
                               <Modal {...EditProfileSectionModalProps}>
-                                <AddEditRoleContent addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
+                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
                               </Modal>
                             </div>
                           )}
