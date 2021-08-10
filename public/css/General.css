@@ -469,6 +469,9 @@ table th .description{
 .dispInlineBlock{
   display: inline-block;
 }
+.dispTable{
+  display: table;
+}
 .alignCenter{
   text-align: center!important;
 }

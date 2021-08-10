@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
+import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
 import EditSubjectsContent from './EditSubjectsContent.js';
@@ -19,8 +20,8 @@ import UpdateWhyHelpContent from './UpdateWhyHelpModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
-import {DateCalc, monthDiff} from "./GeneralFunctions";
+import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {DateCalc, monthDiff, LoadingSpinner} from "./GeneralFunctions";
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -39,6 +40,14 @@ const AddIndRolesFPModalProps = {
   ariaLabel: 'Add Industries / Roles',
   triggerText: '+ Add Industries / Roles',
   usedFor: 'editIndRoles',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
+const AddUniFPModalProps = {
+  ariaLabel: 'Add University',
+  triggerText: '+ Add University',
+  usedFor: 'editUni',
   backBtn: 'arrow',
   changeInitFocus: true,
 }
@@ -229,11 +238,28 @@ class MentorProfileContent extends Component {
           referenceformenteepub: 0
         },
       ],
+      isLoadingUnis: true,
+      isGeneralError: '',
+      userUniName: ''
     }
 //    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
 //    this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
 //    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
     this.availabilityMsg = this.availabilityMsg.bind(this);
+  }
+
+  componentDidMount() {
+    this.mounted = true
+    const mentor = {
+      uniname: '',
+    //  uninamefreetext: '',
+      uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
+    }
+    this.getEduInstName(mentor.uniname, mentor.uninamefreetext)
+  }
+
+  componentWillUnmount() {
+    this.mounted = false;
   }
 
   getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
@@ -283,6 +309,51 @@ class MentorProfileContent extends Component {
     this.setState({ availabilityClicked: false });
   }*/
 
+  getStartYr = (uniGraduYr, uniYrGrp) => {
+
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+
+    let startYr = uniGraduYr - uniYrGrp;
+
+/*      if (month <= 7) {
+      startYr = year - 1;
+    } else {
+      startYr = year;
+    }*/
+
+    return startYr
+  }
+
+  getEduInstName = (uniName, uniNameFreeText) => {
+    if (uniNameFreeText) {
+      this.setState({
+        isLoadingUnis: false,
+        userUniName: uniNameFreeText,
+        isGeneralError: false
+      })
+    } else {
+      return Promise.all([lookupUKSchUnis(uniName, 'label', 'uni')])
+        .then(uni => {
+          if(this.mounted) {
+            this.setState({
+              isLoadingUnis: false,
+              userUniName: uni[0].label,
+              isGeneralError: false
+            })
+          }
+        })
+        .catch(err => {
+          if(this.mounted) {
+            this.setState({
+              isGeneralError: true,
+            })
+          }
+        })
+    }
+  }
+
   availabilityMsg(userAvail) {
     if (userAvail === 2 || userAvail === 3) {
       return <span>Available for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
@@ -296,7 +367,7 @@ class MentorProfileContent extends Component {
   }
 
   render() {
-    const {feedbackReceivedArr} = this.state;
+    const {feedbackReceivedArr, isLoadingUnis, userUniName, isGeneralError} = this.state;
     const mentor = {
       uid: '23456',
       fname: 'Emma',
@@ -310,21 +381,24 @@ class MentorProfileContent extends Component {
       activeMentees: 2,
       allMentees: 2,
       maxmentees: 6,
-      views: 200,
+  //    views: 200,
       didTrain: 1,
       lastActiveDate: '1556389526',
       yrsExp: 7,
-      uni: null,
+  //    uni: null,
       eetstatus: 'job',
       degree: 'BSc (Hons) Business Administration',
       schname: '',
       schnamefreetext: '', // If their school wasn't on the list
-      uniname: '44',
-      uninamefreetext: '', // If their school wasn't on the list
-    //  subjects: [1,13,21],
-    //  subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
-      subjects: [],
-      subjectsfreetext: [],
+      uniname: '',
+    //  uninamefreetext: '',
+      uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
+      uniyrgrp: '1',
+      unigraduyr: '2021',
+      subjects: [1,13,21],
+      subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
+    //  subjects: [],
+    //  subjectsfreetext: [],
       currrole: 'Head of Marketing',
       currco: 'Pladis',
       industriesexp: [2, 19],
@@ -341,8 +415,8 @@ class MentorProfileContent extends Component {
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
     //  hobbies: [],
     //  hobbiesfreetext: [],
-      activityPublic: 1,
-      groupsSet: 1,
+    //  activityPublic: 1,
+    /*  groupsSet: 1,
       readsSet: 1,
       quotesSet: 1,
       groupDisabilities: 1,
@@ -350,12 +424,12 @@ class MentorProfileContent extends Component {
       groupBAME: 1,
       groupWomen: 1,
       groupParents: 1,
-      groupSingle: 1,
+      groupSingle: 1,*/
       mentorgroups: [1,3],
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     //  whyHelp: '',
-      helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
-      roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
+    //  helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
+    //  roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
     const roleHistory = [
       {title: 'Marketing Manager', co: 'GE', startDate: '2019-06-01T13:30:50.667Z', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
@@ -428,7 +502,7 @@ class MentorProfileContent extends Component {
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
-    const eduInstName = eduName(mentor.schname, mentor.schnamefreetext, mentor.uniname, mentor.uninamefreetext, mentor.eetstatus);
+    const uniStartYr = mentor.unistartyr ? mentor.unistartyr : (((mentor.uniname != '' || mentor.uninamefreetext != '') && mentor.uniyrgrp != 'rcGrad' && mentor.uniyrgrp != 'pg') ? this.getStartYr(mentor.unigraduyr, mentor.uniyrgrp) : '')
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
     const uid = '23456';
@@ -445,661 +519,724 @@ class MentorProfileContent extends Component {
     const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
     const hasMinVerif = verifTypesArr.length > 0
 
-    return (
-      <React.Fragment>
-        <div className="article-page profile">
-          <div className="row article-container profile">
-            <div className="col-3 col-s-12 article-extras profile">
-              <div className="profile-thumb-container">
-                {isPicSet ? (
-                  <div className={"profile-thumb img-circle allowAddPic "+isMe}>
-                    {isMe === 'isMe' && (
-                      <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} isMe={isMe} picSizeToShow={270}/>
-                      </Modal>
-                    )}
-                    <img
-                      src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'-360')}
-                      alt="User profile pic"
-                    />
-                  </div>
-                  )
-                : (
-                  <div className={"profile-thumb img-circle allowAddPic noPic "+isMe}>
-                    {isMe === 'isMe' && (
-                      <Modal {...UploadProfPicProps}>
-                        <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
-                      </Modal>
-                    )}
-                    <div className="userInitial">
-                      {userInitial}
-                    </div>
-                  </div>
-                )}
-                {hasMinVerif == true && (
-                  <div className="pr-certified img-circle tooltip">
-                    <span>&#10003;</span>
-                    <span className="tooltiptext below profile textLeft">
-                      <strong>Prospela Certified Mentor:</strong>
-                      {verifTypesArr.map((verifType, index) => {
-                        if (verifType == 'id') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> ID Checked</div>
-                        } else if (verifType == 'background') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Background Checked</div>
-                        } else if (verifType == 'email') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Email Verified</div>
-                        } else if (verifType == 'inst') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Work or Edu Status Verified</div>
-                        } else if (verifType == 'training') {
-                          return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Prospela Trained</div>
-                        } else return
-                      })}
-                    </span>
-                  </div>
-                )}
-              </div>
-              <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
-              <div className="editSectionContainer zIndex0">
-                {mentor.eetstatus == 'sch' && (
-                  <React.Fragment>
-                    <div className="profilePosition">Student</div>
-                  </React.Fragment>
-                )}
-                {mentor.eetstatus == 'uni' && (
-                  <React.Fragment>
-                    <div className="profilePosition">{mentor.degree}</div>
-                  {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {eduInstName}</div>*/}
-                  </React.Fragment>
-                )}
-                {mentor.eetstatus == 'job' && (
-                  <React.Fragment>
-                    <div className="profilePosition">{mentor.currrole}</div>
-                    <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currco}</div>
-                  </React.Fragment>
-                )}
-                {mentor.eetstatus == 'train' && (
-                  <React.Fragment>
-                    <div className="profilePosition">{mentor.currtraining}</div>
-                    <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currtrainingprovider}</div>
-                  </React.Fragment>
-                )}
-                {mentor.eetstatus == 'none' && (
-                  <div className="profilePosition">Looking for opportunities</div>
-                )}
+    if (isGeneralError === true) {
+      <div>
+        Oops! Something went wrong. Please try reloading the page.
+      </div>
+    } else {
 
-            {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
-                <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
-                  {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
-                </button>*/}
-                {isMe == "isMe" && (
-                  <div className="editSectionBtn dispInlineBlock">
-                    <Modal {...EditProfileSectionModalProps}>
-                      <UpdateProfileOverviewContent currRole={mentor.currrole} currCo={mentor.currco} />
-                    </Modal>
-                  </div>
-                )}
-              </div>
-              <div>
-                <h2>
-                  Location
-                </h2>
-                <p>
-                  <span>
-                    <i className={"emoji-icon " + flagEmoji}/>
-                  </span>
-                  {mentor.city}, {mentor.country}
-                </p>
-              </div>
-          {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
-              <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
-                <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
-                <div className="credTxtContainer">
-                  <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
-                  {isMe == "isMe" && (
-                    <div className="editSectionContainer">
-                      <div className="marginBottom20"><span className="credNum">{mentor.maxmentees}</span>max mentees at a time</div>
-                      {isMe == "isMe" && (
-                        <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps} >
-                            <div>yo</div>
-                          </Modal>
-                        </div>
+      return (
+        <React.Fragment>
+          <div className="article-page profile">
+            <div className="row article-container profile">
+              <div className="col-3 col-s-12 article-extras profile">
+                <div className="profile-thumb-container">
+                  {isPicSet ? (
+                    <div className={"profile-thumb img-circle allowAddPic "+isMe}>
+                      {isMe === 'isMe' && (
+                        <Modal {...UploadProfPicProps}>
+                          <UploadProfPicContent isPicSet={isPicSet} profPicSrc={mentor.profPicSrc} isMe={isMe} picSizeToShow={270}/>
+                        </Modal>
                       )}
+                      <img
+                        src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'-360')}
+                        alt="User profile pic"
+                      />
+                    </div>
+                    )
+                  : (
+                    <div className={"profile-thumb img-circle allowAddPic noPic "+isMe}>
+                      {isMe === 'isMe' && (
+                        <Modal {...UploadProfPicProps}>
+                          <UploadProfPicContent isPicSet={isPicSet} userInitial={userInitial} isMe={isMe}/>
+                        </Modal>
+                      )}
+                      <div className="userInitial">
+                        {userInitial}
+                      </div>
                     </div>
                   )}
-                  {publicFeedbackToShow.length == 0 && (
-                    <div className="restrictedContent darkGreyText">
-                      <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
-                      {mentor.fname} does not have any public endorsements from mentees yet.
+                  {hasMinVerif == true && (
+                    <div className="pr-certified img-circle tooltip">
+                      <span>&#10003;</span>
+                      <span className="tooltiptext below profile textLeft">
+                        <strong>Prospela Certified Mentor:</strong>
+                        {verifTypesArr.map((verifType, index) => {
+                          if (verifType == 'id') {
+                            return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> ID Checked</div>
+                          } else if (verifType == 'background') {
+                            return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Background Checked</div>
+                          } else if (verifType == 'email') {
+                            return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Email Verified</div>
+                          } else if (verifType == 'inst') {
+                            return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Work or Edu Status Verified</div>
+                          } else if (verifType == 'training') {
+                            return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> Prospela Trained</div>
+                          } else return
+                        })}
+                      </span>
                     </div>
-                  )}
-
-                  {publicFeedbackToShow.length > 0 && (
-                    <React.Fragment>
-                      <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[publicFeedbackToShow[0]]} userRoleToView='mentor'/>
-                      {(publicFeedbackToShow.length > 1 || isMe == 'isMe') && (
-                        <div className="feedbackBtn">
-                          <div className="messageCTABtns">
-                            <Modal {...ViewMoreFeedbackProps} triggerText={isMe == 'isMe' ? 'Manage my Feedback' : 'View all Feedback'}>
-                              <ManageFeedbackContent isForPublicProfile={isMe == 'isMe' ? false : true} userToView={mentor.fname} userRoleToView='mentor' publicFeedbackToShow={isMe == 'isMe' ? null : publicFeedbackToShow}/>
-                            </Modal>
-                          </div>
-                        </div>
-                      )}
-                    </React.Fragment>
                   )}
                 </div>
-              </div>
-            </div>
-            <div className="col-6 col-s-12 content-col profile">
-              <div className="prLogoContainer profile">
-              {/*    <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" /> */}
-                  <img
-                    className="prLogoImg"
-                    alt="Prospela Logo"
-                    srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
-                    sizes="(max-width: 1440px) 69px, 69px"
-                    src={cdn+"/images/Prospela-New-Logo_Colour.png"}
-                  />
-              </div>
-              <div className="article-body profile">
-                <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
-                {/*  <div className="contentBox">
-                    <h2>Credentials & Highlights</h2>
-                    <div className="credTxtContainer">
-                      <div><span className="credNum">{mentor.yrsExp}</span>years experience</div>
-                      <div><span className="credNum">{mentor.activeMentees}</span># active mentees</div>
-                      <div><span className="credNum">{mentor.allMentees}</span># total mentees supported</div>
-                      {mentor.views != null && (
-                        <div><span className="credNum">{mentor.views}</span># content views / reach</div>
-                      )}
-                      <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>
+                <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
+                <div className="editSectionContainer zIndex0">
+                  {mentor.eetstatus == 'sch' && (
+                    <React.Fragment>
+                      <div className="profilePosition">Student</div>
+                    </React.Fragment>
+                  )}
+                  {mentor.eetstatus == 'uni' && (
+                    <React.Fragment>
+                      <div className="profilePosition">{mentor.degree}</div>
+                    {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {eduInstName}</div>*/}
+                    </React.Fragment>
+                  )}
+                  {mentor.eetstatus == 'job' && (
+                    <React.Fragment>
+                      <div className="profilePosition">{mentor.currrole}</div>
+                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currco}</div>
+                    </React.Fragment>
+                  )}
+                  {mentor.eetstatus == 'train' && (
+                    <React.Fragment>
+                      <div className="profilePosition">{mentor.currtraining}</div>
+                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currtrainingprovider}</div>
+                    </React.Fragment>
+                  )}
+                  {mentor.eetstatus == 'none' && (
+                    <div className="profilePosition">Looking for opportunities</div>
+                  )}
+
+              {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
+                  <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
+                    {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
+                  </button>*/}
+                  {isMe == "isMe" && (
+                    <div className="editSectionBtn dispInlineBlock">
+                      <Modal {...EditProfileSectionModalProps}>
+                        <UpdateProfileOverviewContent currRole={mentor.currrole} currCo={mentor.currco} />
+                      </Modal>
                     </div>
-                  </div>*/}
-                  <h1 >
-                    <br/>
-                    <i className="emoji-icon suitcase-emoji"/> Experience & Expertise
-                  </h1>
-                  <div>
-                    <h2>
-                      Experience
-                    </h2>
-                    {roleHistory.map((role, index) => {
-                      let roleLengthMths
-                      let roleLengthYrs
-                      let roleLengthTxt
-                      let roleLengthRemainderMths
+                  )}
+                </div>
+                <div>
+                  <h2>
+                    Location
+                  </h2>
+                  <p>
+                    <span>
+                      <i className={"emoji-icon " + flagEmoji}/>
+                    </span>
+                    {mentor.city}, {mentor.country}
+                  </p>
+                </div>
+            {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
+                <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
+                  <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
+                  <div className="credTxtContainer">
+                    <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
+                    {isMe == "isMe" && (
+                      <div className="editSectionContainer">
+                        <div className="marginBottom20"><span className="credNum">{mentor.maxmentees}</span>max mentees at a time</div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps} >
+                              <div>yo</div>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {publicFeedbackToShow.length == 0 && (
+                      <div className="restrictedContent darkGreyText">
+                        <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
+                        {mentor.fname} does not have any public endorsements from mentees yet.
+                      </div>
+                    )}
 
-                      // If hasn't set dates yet
-                      if (role.startDate == '') {
-                        roleLengthTxt = ''
+                    {publicFeedbackToShow.length > 0 && (
+                      <React.Fragment>
+                        <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[publicFeedbackToShow[0]]} userRoleToView='mentor'/>
+                        {(publicFeedbackToShow.length > 1 || isMe == 'isMe') && (
+                          <div className="feedbackBtn">
+                            <div className="messageCTABtns">
+                              <Modal {...ViewMoreFeedbackProps} triggerText={isMe == 'isMe' ? 'Manage my Feedback' : 'View all Feedback'}>
+                                <ManageFeedbackContent isForPublicProfile={isMe == 'isMe' ? false : true} userToView={mentor.fname} userRoleToView='mentor' publicFeedbackToShow={isMe == 'isMe' ? null : publicFeedbackToShow}/>
+                              </Modal>
+                            </div>
+                          </div>
+                        )}
+                      </React.Fragment>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-s-12 content-col profile">
+                <div className="prLogoContainer profile">
+                {/*    <img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/05/Prospela-New-Logo_Colour.png" /> */}
+                    <img
+                      className="prLogoImg"
+                      alt="Prospela Logo"
+                      srcSet={cdn+"/images/Prospela-New-Logo_Colour_213.png 213w, "+cdn+"/images/Prospela-New-Logo_Colour_341.png 314w, "+cdn+"/images/Prospela-New-Logo_Colour_640.png 640w"}
+                      sizes="(max-width: 1440px) 69px, 69px"
+                      src={cdn+"/images/Prospela-New-Logo_Colour.png"}
+                    />
+                </div>
+                <div className="article-body profile">
+                  <section className="scroll-anchor" id="expertise-and-career" name="expertise-and-career">
+                  {/*  <div className="contentBox">
+                      <h2>Credentials & Highlights</h2>
+                      <div className="credTxtContainer">
+                        <div><span className="credNum">{mentor.yrsExp}</span>years experience</div>
+                        <div><span className="credNum">{mentor.activeMentees}</span># active mentees</div>
+                        <div><span className="credNum">{mentor.allMentees}</span># total mentees supported</div>
+                        {mentor.views != null && (
+                          <div><span className="credNum">{mentor.views}</span># content views / reach</div>
+                        )}
+                        <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>
+                      </div>
+                    </div>*/}
+                    <h1 >
+                      <br/>
+                      <i className="emoji-icon suitcase-emoji"/> Expertise & Career
+                    </h1>
+                    <div>
+                      <h2>
+                        Experience
+                      </h2>
+                      {roleHistory.map((role, index) => {
+                        let roleLengthMths
+                        let roleLengthYrs
+                        let roleLengthTxt
+                        let roleLengthRemainderMths
 
-                      } else {
+                        // If hasn't set dates yet
+                        if (role.startDate == '') {
+                          roleLengthTxt = ''
 
-                        // If is current role
-                        if (role.endDate == '') {
-                          var today = new Date()
-                          roleLengthMths = monthDiff(new Date(role.startDate), today)
                         } else {
-                          roleLengthMths = monthDiff(new Date(role.startDate), new Date(role.endDate))
-                        }
-                        roleLengthYrs = Math.floor(roleLengthMths / 12)
-                        roleLengthRemainderMths = roleLengthMths - (roleLengthYrs * 12)
-                        roleLengthTxt = roleLengthYrs == 0 ? (roleLengthMths + ' mos') : (roleLengthYrs + (roleLengthYrs == 1 ? ' yr' : ' yrs') + (roleLengthRemainderMths > 0 ? (' ' + roleLengthRemainderMths + (roleLengthRemainderMths == 1 ? ' mo' : ' mos')) : ''))
-                      }
 
-                      return (
-                        <div className="editSectionContainer roleItem" key={role.title}>
+                          // If is current role
+                          if (role.endDate == '') {
+                            var today = new Date()
+                            roleLengthMths = monthDiff(new Date(role.startDate), today)
+                          } else {
+                            roleLengthMths = monthDiff(new Date(role.startDate), new Date(role.endDate))
+                          }
+                          roleLengthYrs = Math.floor(roleLengthMths / 12)
+                          roleLengthRemainderMths = roleLengthMths - (roleLengthYrs * 12)
+                          roleLengthTxt = roleLengthYrs == 0 ? (roleLengthMths + ' mos') : (roleLengthYrs + (roleLengthYrs == 1 ? ' yr' : ' yrs') + (roleLengthRemainderMths > 0 ? (' ' + roleLengthRemainderMths + (roleLengthRemainderMths == 1 ? ' mo' : ' mos')) : ''))
+                        }
+
+                        return (
+                          <div className="editSectionContainer roleItem" key={role.title}>
+                            <div className="displayFlex marginBottom5">
+                              <div className="msg-thumb-container">
+                                <div className="msg-thumb img-square noPic isCompany">
+                                  <div className="userInitial msg-thumb noModal">
+                                    {role.co.charAt(0).toUpperCase()}
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <div><strong>{role.title}</strong></div>
+                                <div>{role.co}</div>
+                                <div className="marginBottom5 smallFont darkGreyText">
+                                  {role.startDate != '' && (
+                                    <span><DateCalc time={role.startDate} showPureDate dontShowDay /> - </span>
+                                  )}
+                                  {role.endDate == '' ? 'Present' : <DateCalc time={role.endDate} showPureDate dontShowDay />}
+                                  {role.startDate != '' && <span> &#8226; {roleLengthTxt}</span>}
+                                </div>
+                              </div>
+                            </div>
+                            {role.roledesc != '' && (
+                              <p>{role.roledesc}</p>
+                            )}
+                            {isMe == "isMe" && role.roledesc == '' && (
+                              <Modal {...EditRoleDescModalProps}>
+                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
+                              </Modal>
+                            )}
+                            {isMe == "isMe" && (
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionModalProps}>
+                                  <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
+                                </Modal>
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
+                      {isMe == "isMe" && (
+                        <Modal {...AddRoleModalProps}>
+                          <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc=''/>
+                        </Modal>
+                      )}
+                    </div>
+                    {isMe == "isMe" && (mentor.industriesexp.length == 0 && rolesArray.length == 0) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          Industries / Roles I can talk about
+                        </h2>
+                        <FullPageModal {...AddIndRolesFPModalProps}>
+                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} />
+                        </FullPageModal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                            <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
+                          </FullPageModal>
+                        </div>
+                      </div>
+                    )}
+                    {(mentor.industriesexp.length > 0 || rolesArray.length > 0) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          Industries / Roles I can talk about
+                        </h2>
+                        <div className="bubbleContainer">
+                          {mentor.industriesexp.map((indID) => {
+                            let industryItem = getIndustryDeets(indID)
+                            let icon = industryItem.fa
+                            let indName = industryItem.label
+                            return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
+                          })}
+                          {rolesArray.length > 0 && rolesArray.map((role) => {
+                            return <div className="bubble" key={role}>{role}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <FullPageModal {...EditProfileSectionFPModalProps}>
+                              <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp.length > 0 ? mentor.industriesexp : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
+                            </FullPageModal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && (mentor.expertise == '' || mentor.expertise == null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
+                        </h2>
+                        <Modal {...AddExpertiseModalProps}>
+                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {(mentor.expertise != '' && mentor.expertise != null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
+                        </h2>
+                        <div>
+                          {expertiseArr && expertiseArr.map((skill) => {
+                            return <div key={skill}>{skill.trim()}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && (mentor.learning == '' || mentor.learning == null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
+                        </h2>
+                        <Modal {...AddLearningModalProps}>
+                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {mentor.learning != '' && mentor.learning != null && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
+                        </h2>
+                        <div>
+                          {learningArr && learningArr.map((skill) => {
+                            return <div key={skill}>{skill.trim()}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <UpdateExpertiseContent modalTitle='Edit your Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </section>
+                  <section className="scroll-anchor" id="education" name="education">
+                    <h1 >
+                      <br/>
+                      <i className="emoji-icon schoolHat-emoji"/> Education & Training
+                    </h1>
+                    {(mentor.uniname == null || mentor.uniname == '') && (mentor.uninamefreetext == null || mentor.uninamefreetext == '') && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          University Degree(s):
+                        </h2>
+                        <p><span role="img" aria-label="cross-emoji">❌</span> I didnt go to University</p>
+                        {isMe == "isMe" && (
+                          <React.Fragment>
+                            <Modal {...AddUniFPModalProps}>
+                              <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' county={mentor.country}/>
+                            </Modal>
+                            <div className="editSectionBtn dispInlineBlock">
+                              <Modal {...EditProfileSectionFPModalProps}>
+                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' county={mentor.country}/>
+                              </Modal>
+                            </div>
+                          </React.Fragment>
+                        )}
+                      </div>
+                    )}
+                    {((mentor.uniname != null && mentor.uniname != '') || (mentor.uninamefreetext != null && mentor.uninamefreetext != '')) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          University Degree(s):
+                        </h2>
+                        {isLoadingUnis === true && (
+                          <div className="clientUI">
+                            <div className="clientContainer">
+                              <div className="loadingSUContainer">
+                                <div id="loadingSU-welcome">
+                                  <div className="loadingSUMsg">
+                                    <p className="loadingWelcomeMsg">
+                                      Loading University details...
+                                    </p>
+                                    <div className="infiniteSpinner infiniteSpinner-medium">
+                                      <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
+                                        <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
+                                          <LoadingSpinner />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        {!isLoadingUnis && (
                           <div className="displayFlex marginBottom5">
                             <div className="msg-thumb-container">
                               <div className="msg-thumb img-square noPic isCompany">
                                 <div className="userInitial msg-thumb noModal">
-                                  {role.co.charAt(0).toUpperCase()}
+                                  {userUniName && userUniName.charAt(0).toUpperCase()}
                                 </div>
                               </div>
                             </div>
                             <div>
-                              <div><strong>{role.title}</strong></div>
-                              <div>{role.co}</div>
+                              <div><strong>{mentor.degree}</strong></div>
+                              <div>{userUniName && userUniName}</div>
                               <div className="marginBottom5 smallFont darkGreyText">
-                                {role.startDate != '' && (
-                                  <span><DateCalc time={role.startDate} showPureDate dontShowDay /> - </span>
+                                {uniStartYr != '' && (
+                                  <span>{uniStartYr} - </span>
                                 )}
-                                {role.endDate == '' ? 'Present' : <DateCalc time={role.endDate} showPureDate dontShowDay />}
-                                {role.startDate != '' && <span> &#8226; {roleLengthTxt}</span>}
+                                {mentor.unigraduyr == '' ? 'Present' : mentor.unigraduyr}
                               </div>
                             </div>
+                            {isMe == "isMe" && (
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionFPModalProps}>
+                                  <AddEditUniContent modalTitle='Edit your University Degree' addOrEdit='edit' uniName={mentor.uniname} uniNameFreeText={mentor.uninamefreetext} degree={mentor.degree} uniStartYr={uniStartYr} uniGraduYr={mentor.unigraduyr} county={mentor.country}/>
+                                </Modal>
+                              </div>
+                            )}
                           </div>
-                          {role.roledesc != '' && (
-                            <p>{role.roledesc}</p>
-                          )}
-                          {isMe == "isMe" && role.roledesc == '' && (
-                            <Modal {...EditRoleDescModalProps}>
-                              <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
-                            </Modal>
-                          )}
-                          {isMe == "isMe" && (
-                            <div className="editSectionBtn dispInlineBlock">
-                              <Modal {...EditProfileSectionModalProps}>
-                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
-                              </Modal>
-                            </div>
-                          )}
-                        </div>
-                      )
-                    })}
-                    {isMe == "isMe" && (
-                      <Modal {...AddRoleModalProps}>
-                        <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc=''/>
-                      </Modal>
-                    )}
-                  </div>
-                  {isMe == "isMe" && (mentor.industriesexp.length == 0 && rolesArray.length == 0) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        Industries / Roles I can talk about
-                      </h2>
-                      <FullPageModal {...AddIndRolesFPModalProps}>
-                        <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} />
-                      </FullPageModal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <FullPageModal {...EditProfileSectionFPModalProps}>
-                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
-                        </FullPageModal>
-                      </div>
-                    </div>
-                  )}
-                  {(mentor.industriesexp.length > 0 || rolesArray.length > 0) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        Industries / Roles I can talk about
-                      </h2>
-                      <div className="bubbleContainer">
-                        {mentor.industriesexp.map((indID) => {
-                          let industryItem = getIndustryDeets(indID)
-                          let icon = industryItem.fa
-                          let indName = industryItem.label
-                          return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
-                        })}
-                        {rolesArray.length > 0 && rolesArray.map((role) => {
-                          return <div className="bubble" key={role}>{role}</div>
-                        })}
-                      </div>
-                      {isMe == "isMe" && (
-                        <div className="editSectionBtn dispInlineBlock">
-                          <FullPageModal {...EditProfileSectionFPModalProps}>
-                            <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp.length > 0 ? mentor.industriesexp : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
-                          </FullPageModal>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  {isMe == "isMe" && (mentor.expertise == '' || mentor.expertise == null) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
-                      </h2>
-                      <Modal {...AddExpertiseModalProps}>
-                        <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
-                      </Modal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
-                        </Modal>
-                      </div>
-                    </div>
-                  )}
-                  {(mentor.expertise != '' && mentor.expertise != null) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
-                      </h2>
-                      <div>
-                        {expertiseArr && expertiseArr.map((skill) => {
-                          return <div key={skill}>{skill.trim()}</div>
-                        })}
-                      </div>
-                      {isMe == "isMe" && (
-                        <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
-                          </Modal>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  {isMe == "isMe" && (mentor.learning == '' || mentor.learning == null) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
-                      </h2>
-                      <Modal {...AddLearningModalProps}>
-                        <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
-                      </Modal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
-                        </Modal>
-                      </div>
-                    </div>
-                  )}
-                  {mentor.learning != '' && mentor.learning != null && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
-                      </h2>
-                      <div>
-                        {learningArr && learningArr.map((skill) => {
-                          return <div key={skill}>{skill.trim()}</div>
-                        })}
-                      </div>
-                      {isMe == "isMe" && (
-                        <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Edit your Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
-                          </Modal>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </section>
-                <section className="scroll-anchor" id="education" name="education">
-                  <h1 >
-                    <br/>
-                    <i className="emoji-icon schoolHat-emoji"/> Education & Training
-                  </h1>
-                  <div className="editSectionContainer">
-                    <h2>
-                      University Degree:
-                    </h2>
-                    <p>
-                      {mentor.uni != null && (
-                        mentor.degree + ' @ ' + eduInstName
-                      )}
-                      {mentor.uni == null && (
-                        '❌ I didn\'t go to University'
-                      )}
-                    </p>
-                    {isMe == "isMe" && (
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
-                          <div>yo</div>
-                        </Modal>
+                        )}
                       </div>
                     )}
-                  </div>
-
-                  {isMe == "isMe" && subjectsArr.length == 0 && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
-                      </h2>
-                      <FullPageModal {...AddSubjectsFPModalProps}>
-                        <EditSubjectsContent modalTitle='Add the Subjects you studied at School' subjectsArray={[]} />
-                      </FullPageModal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <FullPageModal {...EditProfileSectionFPModalProps}>
+                    {isMe == "isMe" && subjectsArr.length == 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
+                        </h2>
+                        <FullPageModal {...AddSubjectsFPModalProps}>
                           <EditSubjectsContent modalTitle='Add the Subjects you studied at School' subjectsArray={[]} />
                         </FullPageModal>
-                      </div>
-                    </div>
-                  )}
-                  {subjectsArr.length > 0 && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
-                      </h2>
-                      <div>
-                        {subjectsArr.length > 0 && subjectsArr.map((subject) => {
-                          return <div key={subject}>{subject.trim()}</div>
-                        })}
-                      </div>
-                      {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
                           <FullPageModal {...EditProfileSectionFPModalProps}>
-                            <EditSubjectsContent modalTitle='Edit the Subjects you studied at School' subjectsArray={subjectsArr.length > 0 ? subjectsArr : []} />
+                            <EditSubjectsContent modalTitle='Add the Subjects you studied at School' subjectsArray={[]} />
                           </FullPageModal>
                         </div>
-                      )}
-                    </div>
-                  )}
-                </section>
-                <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
-                  <h1 >
-                    <br/>
-                    <i className="emoji-icon rockOn-emoji"/> Outside of work
-                  </h1>
-                  {isMe == "isMe" && hobbiesArr.length == 0 && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
-                      </h2>
-                      <FullPageModal {...AddHobbiesFPModalProps}>
-                        <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]} />
-                      </FullPageModal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <FullPageModal {...EditProfileSectionFPModalProps}>
-                          <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]}/>
+                      </div>
+                    )}
+                    {subjectsArr.length > 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="studybook emoji">📓</span> {eduSubjects(mentor.country)}
+                        </h2>
+                        <div>
+                          {subjectsArr.length > 0 && subjectsArr.map((subject) => {
+                            return <div key={subject}>{subject.trim()}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <FullPageModal {...EditProfileSectionFPModalProps}>
+                              <EditSubjectsContent modalTitle='Edit the Subjects you studied at School' subjectsArray={subjectsArr.length > 0 ? subjectsArr : []} />
+                            </FullPageModal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </section>
+                  <section className="scroll-anchor" id="hobbies-interests" name="hobbies-interests">
+                    <h1 >
+                      <br/>
+                      <i className="emoji-icon rockOn-emoji"/> Outside of work
+                    </h1>
+                    {isMe == "isMe" && hobbiesArr.length == 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
+                        </h2>
+                        <FullPageModal {...AddHobbiesFPModalProps}>
+                          <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]} />
                         </FullPageModal>
-                      </div>
-                    </div>
-                  )}
-                  {hobbiesArr.length > 0 && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
-                      </h2>
-                      <div>
-                        {hobbiesArr.length > 0 && hobbiesArr.map((hobby) => {
-                          return <div key={hobby}>{hobby.trim()}</div>
-                        })}
-                      </div>
-                      {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
                           <FullPageModal {...EditProfileSectionFPModalProps}>
-                            <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={hobbiesArr}/>
+                            <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={[]}/>
                           </FullPageModal>
                         </div>
-                      )}
-                    </div>
-                  )}
-                  {isMe == "isMe" && (mentor.whyHelp == '' || mentor.whyHelp == null) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        I&#39;m interested in being a mentor because:
-                      </h2>
-                      <Modal {...AddWhyHelpModalProps}>
-                        <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
-                      </Modal>
-                      <div className="editSectionBtn dispInlineBlock">
-                        <Modal {...EditProfileSectionModalProps}>
+                      </div>
+                    )}
+                    {hobbiesArr.length > 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="football emoji">⚽️</span> When I&#39;m not working, you&#39;ll find me
+                        </h2>
+                        <div>
+                          {hobbiesArr.length > 0 && hobbiesArr.map((hobby) => {
+                            return <div key={hobby}>{hobby.trim()}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <FullPageModal {...EditProfileSectionFPModalProps}>
+                              <EditHobbiesContent modalTitle='Edit your Hobbies' hobbiesArr={hobbiesArr}/>
+                            </FullPageModal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && (mentor.whyHelp == '' || mentor.whyHelp == null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          I&#39;m interested in being a mentor because:
+                        </h2>
+                        <Modal {...AddWhyHelpModalProps}>
                           <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
                         </Modal>
-                      </div>
-                    </div>
-                  )}
-                  {(mentor.whyHelp != '' && mentor.whyHelp != null) && (
-                    <div className="editSectionContainer">
-                      <h2>
-                        I&#39;m interested in being a mentor because:
-                      </h2>
-                      <p>{mentor.whyHelp}</p>
-                      {isMe == "isMe" && (
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
                             <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
                           </Modal>
                         </div>
-                      )}
-                    </div>
-                  )}
-                  {mentor.mentorgroups.length > 0 && (
-                    <React.Fragment>
-                      <h2>
-                        Groups I&#39;m a member of
-                      </h2>
-                      <div>
-                        {mentor.mentorgroups.map((group) => {
-                          return (
-                            <GroupCircle
-                              showAsLink={false}
-                              group={getGroupDeets(group)}
-                              key={group.gid}
-                            />
-                          )
-                        })}
-                      </div>
-                    </React.Fragment>
-                  )}
-                {/*  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
-                    <React.Fragment>
-                      <h2>
-                        Groups I&#39;m passionate about supporting
-                      </h2>
-                      <div className="bubbleContainer">
-                        {mentor.groupDisabilities === 1 && <div className="bubble">People with disabilities</div>}
-                        {mentor.groupLGB === 1 && <div className="bubble">LGBTQI+</div>}
-                        {mentor.groupBAME === 1 && <div className="bubble">Black, Asian, Minority Ethnic (BAME)</div>}
-                        {mentor.groupWomen === 1 && <div className="bubble">Women in the workforce</div>}
-                        {mentor.groupParents === 1 && <div className="bubble">Working parents</div>}
-                        {mentor.groupSingle === 1 && <div className="bubble">Single parents</div>}
-                      </div>
-                    </React.Fragment>
-                  )}*/}
-                </section>
-            {/*    {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
-                  <section className="scroll-anchor" id="recent-activity" name="recent-activity">
-                    {mentor.activityPublic === 1 && (
-                      <div className="contentBox">
-                        <h1 >
-                          <br/>
-                          <i className="emoji-icon chat-emoji"/> Recent activity / highlights
-                        </h1>
-                        {userActivity.map((activity, index) => {
-                          return (
-                            <UserActivity
-                              activity={activity}
-                              key={activity.id}
-                              fname={mentor.fname}
-                            />
-                          )
-                        })}
                       </div>
                     )}
-                    {mentor.readsSet === 1 && (
-                      <div className="contentBox">
+                    {(mentor.whyHelp != '' && mentor.whyHelp != null) && (
+                      <div className="editSectionContainer">
                         <h2>
-                          Good reads / links
+                          I&#39;m interested in being a mentor because:
                         </h2>
-                        {userReads.map((reads, index) => {
-                          return (
-                            <UserReads
-                              reads={reads}
-                              key={reads.id}
-                            />
-                          )
-                        })}
+                        <p>{mentor.whyHelp}</p>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                            </Modal>
+                          </div>
+                        )}
                       </div>
                     )}
-                    {mentor.quotesSet === 1 && (
-                      <div className="contentBox">
+                    {mentor.mentorgroups.length > 0 && (
+                      <React.Fragment>
                         <h2>
-                          Quotes that inspire me
+                          Groups I&#39;m a member of
                         </h2>
-                        {userQuotes.map((quotes, index) => {
-                          return (
-                            <UserQuotes
-                              quotes={quotes}
-                              key={quotes.id}
-                            />
-                          )
-                        })}
-                      </div>
+                        <div>
+                          {mentor.mentorgroups.map((group) => {
+                            return (
+                              <GroupCircle
+                                showAsLink={false}
+                                group={getGroupDeets(group)}
+                                key={group.gid}
+                              />
+                            )
+                          })}
+                        </div>
+                      </React.Fragment>
                     )}
+                  {/*  {mentor.groupsSet === 1 && profShareSettings.groups === true && (
+                      <React.Fragment>
+                        <h2>
+                          Groups I&#39;m passionate about supporting
+                        </h2>
+                        <div className="bubbleContainer">
+                          {mentor.groupDisabilities === 1 && <div className="bubble">People with disabilities</div>}
+                          {mentor.groupLGB === 1 && <div className="bubble">LGBTQI+</div>}
+                          {mentor.groupBAME === 1 && <div className="bubble">Black, Asian, Minority Ethnic (BAME)</div>}
+                          {mentor.groupWomen === 1 && <div className="bubble">Women in the workforce</div>}
+                          {mentor.groupParents === 1 && <div className="bubble">Working parents</div>}
+                          {mentor.groupSingle === 1 && <div className="bubble">Single parents</div>}
+                        </div>
+                      </React.Fragment>
+                    )}*/}
                   </section>
-                )}*/}
+              {/*    {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+                    <section className="scroll-anchor" id="recent-activity" name="recent-activity">
+                      {mentor.activityPublic === 1 && (
+                        <div className="contentBox">
+                          <h1 >
+                            <br/>
+                            <i className="emoji-icon chat-emoji"/> Recent activity / highlights
+                          </h1>
+                          {userActivity.map((activity, index) => {
+                            return (
+                              <UserActivity
+                                activity={activity}
+                                key={activity.id}
+                                fname={mentor.fname}
+                              />
+                            )
+                          })}
+                        </div>
+                      )}
+                      {mentor.readsSet === 1 && (
+                        <div className="contentBox">
+                          <h2>
+                            Good reads / links
+                          </h2>
+                          {userReads.map((reads, index) => {
+                            return (
+                              <UserReads
+                                reads={reads}
+                                key={reads.id}
+                              />
+                            )
+                          })}
+                        </div>
+                      )}
+                      {mentor.quotesSet === 1 && (
+                        <div className="contentBox">
+                          <h2>
+                            Quotes that inspire me
+                          </h2>
+                          {userQuotes.map((quotes, index) => {
+                            return (
+                              <UserQuotes
+                                quotes={quotes}
+                                key={quotes.id}
+                              />
+                            )
+                          })}
+                        </div>
+                      )}
+                    </section>
+                  )}*/}
+                </div>
               </div>
-            </div>
-            <div className="col-3 col-s-12 category-list profile">
-              <ul className="section-list left">
-                <li>
-                  <a href="#expertise-and-career" className="active">Expertise & Career</a>
-                </li>
-                <li>
-                  <a href="#education">Education</a>
-                </li>
-                <li>
-                  <a href="#hobbies-interests">Outside of work</a>
-                </li>
-          {/*      {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+              <div className="col-3 col-s-12 category-list profile">
+                <ul className="section-list left">
                   <li>
-                    <a href="#recent-activity">Recent activity</a>
+                    <a href="#expertise-and-career" className="active">Expertise & Career</a>
                   </li>
-                )}*/}
-              </ul>
-              <div className="profileCTAContainer">
-              {/*  {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
+                  <li>
+                    <a href="#education">Education</a>
+                  </li>
+                  <li>
+                    <a href="#hobbies-interests">Outside of work</a>
+                  </li>
+            {/*      {(mentor.activityPublic === 1 || mentor.readsSet === 1 || mentor.quotesSet === 1) && (
+                    <li>
+                      <a href="#recent-activity">Recent activity</a>
+                    </li>
+                  )}*/}
+                </ul>
+                <div className="profileCTAContainer">
+                {/*  {availabilityClicked===true || save4LaterClicked===false || save4LaterClicked===true && saved4later===false ? (
+                    <div className="profileBtnToolTip avail">
+                      {this.availabilityMsg(mentor.availType)}
+                    </div>
+                    )
+                  : (
+                    <div className="profileBtnToolTip save">
+                      <span>Saved as a potential future mentor!</span>
+                    </div>
+                    )
+                  }*/}
                   <div className="profileBtnToolTip avail">
                     {this.availabilityMsg(mentor.availType)}
                   </div>
-                  )
-                : (
-                  <div className="profileBtnToolTip save">
-                    <span>Saved as a potential future mentor!</span>
-                  </div>
-                  )
-                }*/}
-                <div className="profileBtnToolTip avail">
-                  {this.availabilityMsg(mentor.availType)}
-                </div>
-                <div className="profileUserCTA">
-                  {(mentor.availType === 0 || mentor.availType === 1 || mentor.availType === 2 || mentor.availType === 3) ? (
-                    <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
-                      <span>&#10003;</span>
-                    </button>
-                    )
-                  : (
-                    <button type="button" className="profileBtn redTextBorderBkgnd">
-                      <span>&#10007;</span>
-                    </button>
-                    )
-                  }
-
-              {/*    <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
-                    <i className="far fa-bookmark"/>
-                  </button>
-                  <button type="button" className="profileBtn">
-                    <i className="fas fa-share-alt"/>
-                  </button>*/}
-                  <div className="timeContainer">
-                    {isDayNight==='day' ? (
-                      <button type="button" className="profileBtn dayTime">
-                        <i className="fas fa-sun"/>
+                  <div className="profileUserCTA">
+                    {(mentor.availType === 0 || mentor.availType === 1 || mentor.availType === 2 || mentor.availType === 3) ? (
+                      <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
+                        <span>&#10003;</span>
                       </button>
                       )
                     : (
-                      <button type="button" className="profileBtn nightTime">
-                        <i className="fas fa-moon"/>
+                      <button type="button" className="profileBtn redTextBorderBkgnd">
+                        <span>&#10007;</span>
                       </button>
                       )
                     }
-                    <div className="TimeZoneContainer">
-                      <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
-                      <div className={"UserTimeZone " + isDayNight}>{mentor.country}</div>
+
+                {/*    <button type="button" className={"profileBtn save4Later " + (saved4later===true && "greenTextBorderBkgnd")} id="save4LaterBtn" onClick={this.toggleSave4LaterClick}>
+                      <i className="far fa-bookmark"/>
+                    </button>
+                    <button type="button" className="profileBtn">
+                      <i className="fas fa-share-alt"/>
+                    </button>*/}
+                    <div className="timeContainer">
+                      {isDayNight==='day' ? (
+                        <button type="button" className="profileBtn dayTime">
+                          <i className="fas fa-sun"/>
+                        </button>
+                        )
+                      : (
+                        <button type="button" className="profileBtn nightTime">
+                          <i className="fas fa-moon"/>
+                        </button>
+                        )
+                      }
+                      <div className="TimeZoneContainer">
+                        <div className={"UserLocalTime " + isDayNight}>{userCurrentTime}</div>
+                        <div className={"UserTimeZone " + isDayNight}>{mentor.country}</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={"mapImg " + mentor.country + " " + mentor.city}>
-              <div className="mapAttribution">
-                &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
+              <div className={"mapImg " + mentor.country + " " + mentor.city}>
+                <div className="mapAttribution">
+                  &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </React.Fragment>
-    );
+        </React.Fragment>
+      );
+    }
   }
 }
 

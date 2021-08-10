@@ -405,7 +405,8 @@
 .ModalOpenBtn-addEditSkills,
 .ModalOpenBtn-editHobbies,
 .ModalOpenBtn-addEditWhyHelp,
-.ModalOpenBtn-editSubjects{
+.ModalOpenBtn-editSubjects,
+.ModalOpenBtn-editUni{
   background: none;
   padding: 0;
   border: none;
@@ -472,7 +473,8 @@
 .ModalOpenBtn-addEditSkills:hover,
 .ModalOpenBtn-editHobbies:hover,
 .ModalOpenBtn-addEditWhyHelp:hover,
-.ModalOpenBtn-editSubjects:hover {
+.ModalOpenBtn-editSubjects:hover,
+.ModalOpenBtn-editUni:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -492,7 +494,8 @@
 .ModalOpenBtn-addEditSkills:focus,
 .ModalOpenBtn-editHobbies:focus,
 .ModalOpenBtn-addEditWhyHelp:focus,
-.ModalOpenBtn-editSubjects:focus {
+.ModalOpenBtn-editSubjects:focus,
+.ModalOpenBtn-editUni:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
