@@ -7,7 +7,7 @@ import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -43,7 +43,6 @@ class MenteeProfileContent extends Component {
       knowSkills: 2,
       eetStatus: 'sch', // 'sch', 'uni', 'job', 'train', 'none'
       schYrGrp: 'Year 13 (Sixth Form Yr 2)',
-      uniYrGrp: 'Second Year',
       planningUni: 2, // 0=no, 1=yes, 2=maybe, 3=not sure
       schName: '',
       uniName: 'Bath University',
@@ -178,7 +177,6 @@ class MenteeProfileContent extends Component {
                 )}
               </div>
               <h1 className="profileName">{mentee.fname}</h1>
-              <div className="profilePosition student">{eetStatus(mentee.eetStatus, mentee.schYrGrp, mentee.uniYrGrp)}</div>
               {isU18 != true && (
                 <div className="profileInstitution">
                   <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus==='sch' || mentee.eetStatus==='uni' ? eduInstName : (mentee.currCo)}</strong>

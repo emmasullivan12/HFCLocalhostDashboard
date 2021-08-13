@@ -42,12 +42,12 @@ const FullPageModalContent = ({
       <div className={"fullpage-modal-container " + usedFor + (animation ? animation : '') + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
         <div className="modal-header">
           { backBtn==='bk2Pr' && (
-            <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
+            <button type="button" className={"modal-close fullPage" + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
               <span id="close-modal">&#60;&#60; Back to Prospela</span>
             </button>
           )}
           { backBtn==='arrow' && (
-            <button type="button" className={"modal-close fullPage" + (backBtn==='arrow' ? ' bkArrow' : "") + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
+            <button type="button" className={"modal-close fullPage bkArrow" + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
               <span id="close-modal"><i className="fas fa-arrow-left"/></span>
             </button>
           )}

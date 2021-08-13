@@ -223,7 +223,7 @@ function availabilityMsg(userAvail) {
   }
 }
 
-function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
+/*function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
   if (eetStatus === 'sch') {
     return <span>{schYrGrp} Student</span>
   } else if (eetStatus === 'uni') {
@@ -235,7 +235,7 @@ function eetStatus(eetStatus, schYrGrp, uniYrGrp) {
   } else if (eetStatus === 'none') {
     return <span>Currently not in education, employment or training</span>
   }
-}
+}*/
 
 function eduName(schName, schNameFreeText, uniName, uniNameFreeText, eetStatus) {
   if (eetStatus === 'uni') {
@@ -351,4 +351,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHobbies, convertSubjects, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

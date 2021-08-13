@@ -151,8 +151,9 @@
 }
 .prLogoContainer.profile{
   top: 30px;
-  left: 50%;
-  right: 50%!important;
+  /*left: 50%;
+  right: 50%!important;*/
+  right: 0;
 }
 
 .profileName{
@@ -216,10 +217,10 @@
 
 .mapImg.GBR{
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
-  background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
-  background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
-  background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
-  background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
 }
 .mapImg.USA{
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
@@ -276,6 +277,55 @@
   background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
   background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
 }
+@media screen and (min-width: 501px) and (max-width: 758px) {
+  .mapImg.USA{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+  .mapImg.CAN{
+    height: 500px;
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+  .mapImg.GBR{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+  .mapImg.USA.NYC,
+  .mapImg.USA.New.York,
+  .mapImg.USA.New.York.City {
+    height: 500px;
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20NYC%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20NYC%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20NYC%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20NYC%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20NYC%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+  .mapImg.USA.LA,
+  .mapImg.USA.Los.Angeles {
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.4),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+  .mapImg.CAN.Montreal{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_350.png);
+  }
+}
 @media screen and (min-width: 759px) {
   .mapImg{
     background-repeat: no-repeat;
@@ -284,8 +334,9 @@
     height: 100vh;
     max-width: 70%;
     position: fixed;
+    pointer-events: none; /* allows click through mapImg onto scrollbar which may get hidden if does not use our c-scrollbar format & width */
     bottom: 0;
-    right: 0;
+    right: 8px; /* was showing over scrollbar otherwise */
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
     background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
     background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -337,14 +388,68 @@
     background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
     background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
   }
+  .mapImg.USA.Chicago{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Chicago-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Chicago-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Chicago-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Chicago-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Chicago-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .mapImg.USA.LA,
+  .mapImg.USA.Los.Angeles {
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Los%20Angeles%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+  }
+  .mapImg.CAN{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Canada%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+  }
+  .mapImg.CAN.Montreal{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20Montreal%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+  }
+  .mapImg.GBR{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20UKI%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+  .mapImg.USA{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.9),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map%20of%20USA%20-%20%C2%A9%20OpenStreetMap%20contributors.%20Available%20under%20the%20Open%20Database%20License.%20Cartography%20is%20licensed%20as%20CC%20BY-SA_500.png);
+  }
 }
 @media screen and (min-width: 1200px) {
+  .mapImg{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA_350.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA_350.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA_350.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA_350.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.95),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-World-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA_350.png);
+  }
   .mapImg.USA{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.85),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.8),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.8),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.8),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.8),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-USA-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   }
   .mapImg.GBR{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-UKI-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
@@ -379,10 +484,10 @@
   }
   .mapImg.CAN{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
-    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.75),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.7),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -moz-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.7),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -webkit-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.7),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
+    background-image: -o-linear-gradient(to top left,rgba(249,249,249,.2),rgba(249,249,249,.7),rgba(249,249,249,.95),rgb(249,249,249)),url(https://files-and-media.ams3.digitaloceanspaces.com/images/Map-of-Canada-%C2%A9-OpenStreetMap-contributors.-Available-under-the-Open-Database-License.-Cartography-is-licensed-as-CC-BY-SA.png);
   }
 }
 .mapAttribution{
@@ -531,6 +636,9 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+}
+.profileBtn.notMe:hover{
+  cursor: default;
 }
 .profileBtn.dayTime{
   background: #ffd350;

@@ -12,7 +12,7 @@ import RatingItems from './RatingItems.js';
 import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import SelectBox from './Select.js';
-import {availabilityMsg, userFlagEmoji, eetStatus, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Emoji.css";

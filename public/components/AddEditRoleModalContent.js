@@ -30,15 +30,17 @@ class AddEditRoleContent extends Component {
       roletitle: this.props.roleTitle,
       roleco: this.props.roleCo,
       startdate: this.props.startDate,
-      enddate: this.props.endDate,
+  //    enddate: this.props.endDate,
       roledesc: this.props.roleDesc,
-      startDateMth: this.props.startDate == '' ? null : new Date(this.props.startDate).getMonth(),
-      startDateYr: this.props.startDate == '' ? null : new Date(this.props.startDate).getFullYear(),
-      endDateMth: this.props.endDate == '' ? null : new Date(this.props.endDate).getMonth(),
-      endDateYr: this.props.endDate == '' ? null : new Date(this.props.endDate).getFullYear(),
+      startDateMth: this.props.startDate == '' ? '': new Date(this.props.startDate).getMonth(),
+      startDateYr: this.props.startDate == '' ? '' : new Date(this.props.startDate).getFullYear(),
+      endDateMth: this.props.endDate == '' ? '' : new Date(this.props.endDate).getMonth(),
+      endDateYr: this.props.endDate == '' ? '' : new Date(this.props.endDate).getFullYear(),
       iscurrent: (this.props.endDate == '' || this.props.addOrEdit == 'add') ? true : false,
+      invalidEndDate: false,
       triggerResetValues: false,
     };
+    this.onBlur = this.onBlur.bind(this);
   }
 
   componentDidMount(){
@@ -47,6 +49,43 @@ class AddEditRoleContent extends Component {
       document.getElementById(idToFocusOnOpen).focus()
     } else {
       document.getElementById("roleTitleInput").focus()
+    }
+  }
+
+  onBlur(e) {
+    if(e.target.checkValidity()) {
+      e.target.classList.remove('error');
+    } else {
+      e.target.classList.add('error');
+    }
+  }
+
+  otherValidityChecks = () => {
+    const {startDateMth, startDateYr, endDateMth, endDateYr, iscurrent } = this.state;
+
+    const _startDate = new Date(startDateYr, startDateMth, 1)
+    const _endDate = new Date(endDateYr, endDateMth, 1)
+
+    if (iscurrent == false && endDateMth !== '' && endDateYr != '') {
+      if (_endDate < _startDate) {
+        document.getElementById("selectBox-enddatemth").classList.add('error');
+        document.getElementById("selectBox-enddateyr").classList.add('error');
+        this.setState({
+          invalidEndDate: true
+        })
+      } else {
+        document.getElementById("selectBox-enddatemth").classList.remove('error');
+        document.getElementById("selectBox-enddateyr").classList.remove('error');
+        this.setState({
+          invalidEndDate: false
+        })
+      }
+    } else {
+      document.getElementById("selectBox-enddatemth").classList.remove('error');
+      document.getElementById("selectBox-enddateyr").classList.remove('error');
+      this.setState({
+        invalidEndDate: false
+      })
     }
   }
 
@@ -87,17 +126,21 @@ class AddEditRoleContent extends Component {
   toggleIsCurrentCheckbox = (userInput) => {
     const currentState = this.state.iscurrent;
 
-    if (currentState === false || currentState == null) {
+    if (currentState == false || currentState == null) {
       this.setState({
         iscurrent: true,
-        endDateMth: null,
-        endDateYr: null,
+        endDateMth: '',
+        endDateYr: '',
         triggerResetValues: true,
+        invalidEndDate: false,
       });
 
     } else {
       this.setState({
-        iscurrent: false
+        iscurrent: false,
+        endDateMth: '',
+        endDateYr: '',
+  //      triggerResetValues: true,
       });
     }
   }
@@ -108,8 +151,9 @@ class AddEditRoleContent extends Component {
       evt.preventDefault();
       return;
     }
-    const {startDateYr, startDateMth} = this.state
+    const {startDateYr, startDateMth, endDateYr, endDateMth} = this.state
     const startDateToSave = new Date(startDateYr, startDateMth, 1) // THIS FOR THE STARTDATE
+    const endDateToSave = new Date(endDateYr, endDateMth, 1) // THIS FOR THE STARTDATE
     this.setState({ updateSuccess: true })
   }
 
@@ -118,20 +162,22 @@ class AddEditRoleContent extends Component {
   }
 
   canBeSubmitted() {
-    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr} = this.state;
+    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr, invalidEndDate} = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc } = this.props;
 
     const _startDateFormatted = new Date(startDate)
     const _endDateFormatted = new Date(endDate)
 
     return (
-      roletitle != '' && roleco != '' && startDateMth != null && startDateYr != null && ((endDateMth != null && endDateYr != null) || iscurrent == true)
-      && (roletitle != roleTitle || roleco != roleCo || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear() || endDateMth != (iscurrent == true ? null : _endDateFormatted.getMonth()) || endDateYr != (iscurrent == true ? null : _endDateFormatted.getFullYear()) || roledesc != roleDesc) // Checks user has actually changed something
+      roletitle != '' && roleco != '' && startDateMth !== '' && startDateYr != '' && ((endDateMth !== '' && endDateYr != '') || iscurrent == true) && invalidEndDate == false
+      && (roletitle != roleTitle || roleco != roleCo || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear()
+      || (isNaN(_endDateFormatted.getMonth()) ? endDateMth !== '' : endDateMth != _endDateFormatted.getMonth()) || (isNaN(_endDateFormatted.getFullYear()) ? endDateYr != '' : endDateYr != _endDateFormatted.getFullYear())
+      || roledesc != roleDesc) // Checks user has actually changed something
     );
   }
 
   render() {
-    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, roledesc, iscurrent, triggerResetValues } = this.state;
+    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, endDateMth, endDateYr, roledesc, iscurrent, triggerResetValues, invalidEndDate } = this.state;
     const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle, addOrEdit } = this.props;
     const months = [
       {value: '0', label: 'Jan'},
@@ -148,17 +194,17 @@ class AddEditRoleContent extends Component {
       {value: '11', label: 'Dec'},
     ];
     const isEnabled = this.canBeSubmitted();
-    if (startDate != '' && startDate != null) {
+    if (startDate != '') {
       const startDateFormatted = new Date(startDate)
       const startDateMonth = startDateFormatted.getMonth()
       var startDateYr = startDateFormatted.getFullYear()
       var startMonthTxt = months[startDateMonth].label;
     }
-    if (endDate != '' && endDate != null) {
+    if (endDate != '') {
       const endDateFormatted = new Date(endDate)
-      const endDateMonth = endDateFormatted.getMonth()
-      var endDateYr = endDateFormatted.getFullYear()
-      var endMonthTxt = months[endDateMonth].label;
+      const _endDateMonth = endDateFormatted.getMonth()
+      var _endDateYr = endDateFormatted.getFullYear()
+      var endMonthTxt = months[_endDateMonth].label;
     }
     let currYr = new Date().getFullYear()
     let startYr = currYr - 60;
@@ -239,9 +285,10 @@ class AddEditRoleContent extends Component {
                 <SelectBox
                   options={months}
                   name='startdatemth'
-                  placeholder={(startDate != null && startDate != '') ? startMonthTxt : 'Month:'}
+                  placeholder={startDate != '' ? startMonthTxt : 'Month:'}
                   placeholderIsDefaultValueIfNot='Month:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleStartDateMthChange}
+                  otherValidityChecks={this.otherValidityChecks}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showAbove
                 />
@@ -251,9 +298,10 @@ class AddEditRoleContent extends Component {
                   //options={years && years.sort(function(a, b){return a - b})}
                   options={years}
                   name='startdateyr'
-                  placeholder={(startDate != null && startDate != '') ? startDateYr : 'Year:'}
+                  placeholder={startDate != '' ? startDateYr : 'Year:'}
                   placeholderIsDefaultValueIfNot='Year:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleStartDateYrChange}
+                  otherValidityChecks={this.otherValidityChecks}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showAbove
                 />
@@ -267,12 +315,13 @@ class AddEditRoleContent extends Component {
                 <SelectBox
                   options={months}
                   name='enddatemth'
-                  placeholder={(endDate != null && endDate != '' && iscurrent != true) ? endMonthTxt : 'Month:'}
+                  placeholder={(endDateMth !== '' && iscurrent != true) ? endMonthTxt : 'Month:'}
                   placeholderIsDefaultValueIfNot='Month:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleEndDateMthChange}
+                  otherValidityChecks={this.otherValidityChecks}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showAbove
-                  disabled={addOrEdit == 'add' ? true : iscurrent == true}
+                  disabled={iscurrent == true ? true : false}
                   resetValues={triggerResetValues == true}
                 />
               </div>
@@ -281,16 +330,20 @@ class AddEditRoleContent extends Component {
                   //options={years && years.sort(function(a, b){return a - b})}
                   options={years}
                   name='enddateyr'
-                  placeholder={(endDate != null && endDate != '' && iscurrent != true) ? endDateYr : 'Year:'}
+                  placeholder={(endDateYr != '' && iscurrent != true) ? _endDateYr : 'Year:'}
                   placeholderIsDefaultValueIfNot='Year:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleEndDateYrChange}
+                  otherValidityChecks={this.otherValidityChecks}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showAbove
-                  disabled={addOrEdit == 'add' ? true : iscurrent == true}
+                  disabled={iscurrent == true ? true : false}
                   resetValues={triggerResetValues == true}
                 />
               </div>
             </div>
+            {invalidEndDate && iscurrent != true && (
+              <div className="descriptor prompt error eduForm alignLeft">End Date can&#39;t be before Start Date</div>
+            )}
           </div>
           <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
             {isSubmitting == true && (

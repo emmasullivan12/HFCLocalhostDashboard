@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
+import AddEditTrainingContent from './AddEditTrainingModalContent.js';
 import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
@@ -82,6 +83,13 @@ const AddExpertiseModalProps = {
   changeInitFocus: true
 }
 
+const AddTrainingModalProps = {
+  ariaLabel: 'Add / Edit training',
+  triggerText: '+ Add Training',
+  usedFor: 'addEditTraining',
+  changeInitFocus: true
+}
+
 const AddWhyHelpModalProps = {
   ariaLabel: 'Add / Edit motivations',
   triggerText: '+ Add Motivations',
@@ -97,9 +105,16 @@ const AddLearningModalProps = {
 }
 
 const AddRoleModalProps = {
-  ariaLabel: 'Add / Edit role',
+  ariaLabel: 'Add role',
   triggerText: '+ Add role',
   usedFor: 'addEditRole',
+  changeInitFocus: true
+}
+
+const AddUniModalProps = {
+  ariaLabel: 'Add Degree',
+  triggerText: '+ Add Degree',
+  usedFor: 'addEditUni',
   changeInitFocus: true
 }
 
@@ -240,22 +255,15 @@ class MentorProfileContent extends Component {
       ],
       isLoadingUnis: true,
       isGeneralError: '',
-      userUniName: ''
+      nowAvailable: false
     }
 //    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
-//    this.handleAvailabilityClick = this.handleAvailabilityClick.bind(this);
 //    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
     this.availabilityMsg = this.availabilityMsg.bind(this);
   }
 
   componentDidMount() {
     this.mounted = true
-    const mentor = {
-      uniname: '',
-    //  uninamefreetext: '',
-      uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
-    }
-    this.getEduInstName(mentor.uniname, mentor.uninamefreetext)
   }
 
   componentWillUnmount() {
@@ -297,10 +305,13 @@ class MentorProfileContent extends Component {
     this.setState({ followStatus: !currentState });
   }*/
 
-/*  handleAvailabilityClick() {
-    this.setState({ availabilityClicked: true });
-    this.setState({ save4LaterClicked: false });
-  }*/
+  handleAvailabilityClick = () => {
+  //  this.setState({ availabilityClicked: true });
+    //this.setState({ save4LaterClicked: false });
+    this.setState({ nowAvailable: true }, () => {
+      this.availabilityMsg('', this.state.nowAvailable)
+    })
+  }
 
 /*  toggleSave4LaterClick() {
     const saved = this.state.saved4later;
@@ -327,11 +338,19 @@ class MentorProfileContent extends Component {
   }
 
   getEduInstName = (uniName, uniNameFreeText) => {
-    if (uniNameFreeText) {
+    if (uniName == '' && uniNameFreeText == '') {
       this.setState({
         isLoadingUnis: false,
-        userUniName: uniNameFreeText,
         isGeneralError: false
+      }, () => {
+        return ''
+      })
+    } else if (uniNameFreeText) {
+      this.setState({
+        isLoadingUnis: false,
+        isGeneralError: false
+      }, () => {
+        return uniNameFreeText
       })
     } else {
       return Promise.all([lookupUKSchUnis(uniName, 'label', 'uni')])
@@ -339,9 +358,10 @@ class MentorProfileContent extends Component {
           if(this.mounted) {
             this.setState({
               isLoadingUnis: false,
-              userUniName: uni[0].label,
-              isGeneralError: false
-            })
+              isGeneralError: false,
+            }), () => {
+              return uni[0].label
+            }
           }
         })
         .catch(err => {
@@ -354,20 +374,24 @@ class MentorProfileContent extends Component {
     }
   }
 
-  availabilityMsg(userAvail) {
-    if (userAvail === 2 || userAvail === 3) {
+  availabilityMsg(userAvail, nowAvailable) {
+    if (userAvail !== 0 || nowAvailable) {
+      return <span>Available for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
+    } else if (userAvail === 0) {
+      return <span><span className="redText"><strong>Not currently available</strong></span> for mentorship</span>
+    }
+  /*  if (userAvail === 2 || userAvail === 3) {
       return <span>Available for <strong className="greenText">long-term</strong> and/or <strong className="greenText">short-term</strong> mentorship</span>
     } else if (userAvail === 0) {
       return <span>Available to offer <strong className="greenText">long-term</strong> mentorship</span>
     } else if (userAvail === 1) {
       return <span>Available to offer <strong className="greenText">short-term</strong> mentor support</span>
-/*    } else if (userAvail === 4) {
+    } else if (userAvail === 4) {
       return <span><span className="redText">Not currently available</span> for mentorship</span> */
-    }
   }
 
   render() {
-    const {feedbackReceivedArr, isLoadingUnis, userUniName, isGeneralError} = this.state;
+    const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable} = this.state;
     const mentor = {
       uid: '23456',
       fname: 'Emma',
@@ -383,7 +407,7 @@ class MentorProfileContent extends Component {
       maxmentees: 6,
   //    views: 200,
       didTrain: 1,
-      lastActiveDate: '1556389526',
+  //    lastActiveDate: '1556389526',
       yrsExp: 7,
   //    uni: null,
       eetstatus: 'job',
@@ -393,8 +417,11 @@ class MentorProfileContent extends Component {
       uniname: '',
     //  uninamefreetext: '',
       uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
-      uniyrgrp: '1',
+    //  uniyrgrp: '1',
+      unistartyr: '',
       unigraduyr: '2021',
+      uniyrgrp: 'rcGrad',
+  //    unigraduyr: '',
       subjects: [1,13,21],
       subjectsfreetext: ['japanese with french, cryptography, cyberhacking'],
     //  subjects: [],
@@ -416,6 +443,13 @@ class MentorProfileContent extends Component {
     //  hobbies: [],
     //  hobbiesfreetext: [],
     //  activityPublic: 1,
+    //  currtraining: 'coursename',
+    //  currtrainingprovider: 'ICAS',
+      currtraining: '',
+      currtrainingprovider: '',
+      trainingstartdate: '',
+      trainingenddate: '',
+      trainingdesc: '',
     /*  groupsSet: 1,
       readsSet: 1,
       quotesSet: 1,
@@ -425,15 +459,23 @@ class MentorProfileContent extends Component {
       groupWomen: 1,
       groupParents: 1,
       groupSingle: 1,*/
+      isavailable: {status: 1, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1, userToRemind: 3},
       mentorgroups: [1,3],
       whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     //  whyHelp: '',
     //  helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
     //  roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
+//    const roleHistory = []
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '2019-06-01T13:30:50.667Z', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
-      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-06-01T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
+      {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
+      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
+    ]
+//    const uniHistory = []
+    const uniHistory = [
+      {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2021', uniyrgrp: 'pg'},
+      {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1'},
+      {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '', uniyrgrp: ''}
     ]
 /*    const userReads = [
       {
@@ -498,16 +540,17 @@ class MentorProfileContent extends Component {
     const learningArr = mentor.learning.split(',');
     const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects, mentor.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
-    const lastActive = timeSince(mentor.lastActiveDate);
+//    const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
     const flagEmoji = userFlagEmoji(mentor.country);
-    const uniStartYr = mentor.unistartyr ? mentor.unistartyr : (((mentor.uniname != '' || mentor.uninamefreetext != '') && mentor.uniyrgrp != 'rcGrad' && mentor.uniyrgrp != 'pg') ? this.getStartYr(mentor.unigraduyr, mentor.uniyrgrp) : '')
+
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23456';
+    const uid = '23457';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
-    const menteeIsU18 = true;
+    const menteeIsU18 = false;
+    const profUserIsU18 = false;
     const userInitial = mentor.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
     const publicFeedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
@@ -518,12 +561,31 @@ class MentorProfileContent extends Component {
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
     const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
     const hasMinVerif = verifTypesArr.length > 0
+    let trainLengthTxt = ''
+    let trainLengthMths
+    let trainLengthYrs
+    let trainLengthRemainderMths
+
+    if (mentor.trainingstartdate != '') {
+      // If is current role
+      if (mentor.trainingenddate == '') {
+        var today = new Date()
+        trainLengthMths = monthDiff(new Date(mentor.trainingstartdate), today)
+      } else {
+        trainLengthMths = monthDiff(new Date(mentor.trainingstartdate), new Date(mentor.trainingenddate))
+      }
+      trainLengthYrs = Math.floor(trainLengthMths / 12)
+      trainLengthRemainderMths = trainLengthMths - (trainLengthYrs * 12)
+      trainLengthTxt = trainLengthYrs == 0 ? (trainLengthMths + ' mos') : (trainLengthYrs + (trainLengthYrs == 1 ? ' yr' : ' yrs') + (trainLengthRemainderMths > 0 ? (' ' + trainLengthRemainderMths + (trainLengthRemainderMths == 1 ? ' mo' : ' mos')) : ''))
+    }
 
     if (isGeneralError === true) {
       <div>
         Oops! Something went wrong. Please try reloading the page.
       </div>
     } else {
+
+    const picSizePublic = (menteeIsU18 || profUserIsU18) ? '-40' : '-360'
 
       return (
         <React.Fragment>
@@ -539,7 +601,7 @@ class MentorProfileContent extends Component {
                         </Modal>
                       )}
                       <img
-                        src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,'-360')}
+                        src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,picSizePublic)}
                         alt="User profile pic"
                       />
                     </div>
@@ -578,7 +640,7 @@ class MentorProfileContent extends Component {
                     </div>
                   )}
                 </div>
-                <h1 className="profileName">{mentor.fname}{menteeIsU18 ? '' : (" " + mentor.lname)}</h1>
+                <h1 className="profileName">{mentor.fname}{(menteeIsU18 || profUserIsU18) ? '' : (" " + mentor.lname)}</h1>
                 <div className="editSectionContainer zIndex0">
                   {mentor.eetstatus == 'sch' && (
                     <React.Fragment>
@@ -634,7 +696,7 @@ class MentorProfileContent extends Component {
                 <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
                   <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
                   <div className="credTxtContainer">
-                    <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
+                  {/*  <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
                     {isMe == "isMe" && (
                       <div className="editSectionContainer">
                         <div className="marginBottom20"><span className="credNum">{mentor.maxmentees}</span>max mentees at a time</div>
@@ -646,7 +708,7 @@ class MentorProfileContent extends Component {
                           </div>
                         )}
                       </div>
-                    )}
+                    )}*/}
                     {publicFeedbackToShow.length == 0 && (
                       <div className="restrictedContent darkGreyText">
                         <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
@@ -888,79 +950,143 @@ class MentorProfileContent extends Component {
                       <br/>
                       <i className="emoji-icon schoolHat-emoji"/> Education & Training
                     </h1>
-                    {(mentor.uniname == null || mentor.uniname == '') && (mentor.uninamefreetext == null || mentor.uninamefreetext == '') && (
+                    <div>
+                      <h2>
+                        University Degree(s):
+                      </h2>
+                      {uniHistory.length == 0 && (
+                        <div className="editSectionContainer">
+                          <p><span role="img" aria-label="cross-emoji">❌</span> I didnt go to University</p>
+                          {isMe == "isMe" && (
+                            <React.Fragment>
+                              <Modal {...AddUniFPModalProps}>
+                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                              </Modal>
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionFPModalProps}>
+                                  <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                                </Modal>
+                              </div>
+                            </React.Fragment>
+                          )}
+                        </div>
+                      )}
+                      {uniHistory.length > 0 && (
+                        <React.Fragment>
+                        {/*  {isLoadingUnis == true && (
+                            <div className="loadingSUMsg">
+                              <p className="">
+                                Loading University details...
+                              </p>
+                              <div className="infiniteSpinner infiniteSpinner-medium">
+                                <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
+                                  <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
+                                    <LoadingSpinner />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}*/}
+                          {uniHistory.map((uni, index) => {
+                            const uniStartYr = uni.unistartyr ? uni.unistartyr : (((uni.uniname != '' || uni.uninamefreetext != '') && uni.uniyrgrp != 'rcGrad' && uni.uniyrgrp != 'pg') ? this.getStartYr(uni.unigraduyr, uni.uniyrgrp) : '')
+                          //  const userUniName = this.getEduInstName(uni.uniname, uni.uninamefreetext)
+                            const userUniName = uni.uniname ? uni.uniname : uni.uninamefreetext
+                            return (
+                              <div key={index} className="editSectionContainer">
+                                <div className="displayFlex marginBottom5">
+                                  <div className="msg-thumb-container">
+                                    <div className="msg-thumb img-square noPic isCompany">
+                                      <div className="userInitial msg-thumb noModal">
+                                        {userUniName && userUniName.charAt(0).toUpperCase()}
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div><strong>{uni.degree}</strong></div>
+                                    <div>{userUniName && userUniName}</div>
+                                    <div className="marginBottom5 smallFont darkGreyText">
+                                      {uniStartYr != '' && (
+                                        <span>{uniStartYr} - </span>
+                                      )}
+                                      {uni.unigraduyr == '' ? 'Present' : uni.unigraduyr}
+                                    </div>
+                                  </div>
+                                  {isMe == "isMe" && (
+                                    <div className="editSectionBtn dispInlineBlock">
+                                      <Modal {...EditProfileSectionFPModalProps}>
+                                        <AddEditUniContent modalTitle='Edit your University Degree' addOrEdit='edit' uniName={uni.uninamefreetext ? '' : userUniName} uniNameFreeText={uni.uninamefreetext ? userUniName : ''} degree={uni.degree} uniStartYr={uniStartYr} uniGraduYr={uni.unigraduyr}/>
+                                      </Modal>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            )
+                          })}
+                          {isMe == "isMe" && (
+                            <Modal {...AddUniFPModalProps}>
+                              <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                            </Modal>
+                          )}
+                        </React.Fragment>
+                      )}
+                    </div>
+                    {(mentor.currtraining == null || mentor.currtraining == '') && (
                       <div className="editSectionContainer">
                         <h2>
-                          University Degree(s):
+                          Training:
                         </h2>
-                        <p><span role="img" aria-label="cross-emoji">❌</span> I didnt go to University</p>
                         {isMe == "isMe" && (
                           <React.Fragment>
-                            <Modal {...AddUniFPModalProps}>
-                              <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' county={mentor.country}/>
+                            <Modal {...AddTrainingModalProps}>
+                              <AddEditTrainingContent modalTitle='Add Training Course' addOrEdit='add' currTraining='' currTrainingProvider='' startDate='' endDate='' trainingDesc='' />
                             </Modal>
                             <div className="editSectionBtn dispInlineBlock">
-                              <Modal {...EditProfileSectionFPModalProps}>
-                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' county={mentor.country}/>
+                              <Modal {...EditProfileSectionModalProps}>
+                                <AddEditTrainingContent modalTitle='Add Training Course' addOrEdit='add' currTraining='' currTrainingProvider='' startDate='' endDate='' trainingDesc='' />
                               </Modal>
                             </div>
                           </React.Fragment>
                         )}
                       </div>
                     )}
-                    {((mentor.uniname != null && mentor.uniname != '') || (mentor.uninamefreetext != null && mentor.uninamefreetext != '')) && (
+                    {(mentor.currtraining != null && mentor.currtraining != '') && (
                       <div className="editSectionContainer">
                         <h2>
-                          University Degree(s):
+                          Training:
                         </h2>
-                        {isLoadingUnis === true && (
-                          <div className="clientUI">
-                            <div className="clientContainer">
-                              <div className="loadingSUContainer">
-                                <div id="loadingSU-welcome">
-                                  <div className="loadingSUMsg">
-                                    <p className="loadingWelcomeMsg">
-                                      Loading University details...
-                                    </p>
-                                    <div className="infiniteSpinner infiniteSpinner-medium">
-                                      <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
-                                        <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
-                                          <LoadingSpinner />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                        <div className="displayFlex marginBottom5">
+                          <div className="msg-thumb-container">
+                            <div className="msg-thumb img-square noPic isCompany">
+                              <div className="userInitial msg-thumb noModal">
+                                {mentor.currtrainingprovider.charAt(0).toUpperCase()}
                               </div>
                             </div>
                           </div>
+                          <div>
+                            <div><strong>{mentor.currtraining}</strong></div>
+                            <div>{mentor.currtrainingprovider}</div>
+                            <div className="marginBottom5 smallFont darkGreyText">
+                              {mentor.trainingstartdate != '' && (
+                                <span><DateCalc time={mentor.trainingstartdate} showPureDate dontShowDay /> - </span>
+                              )}
+                              {mentor.trainingenddate == '' ? 'Present' : <DateCalc time={mentor.trainingenddate} showPureDate dontShowDay />}
+                              {mentor.trainingstartdate != '' && <span> &#8226; {trainLengthTxt}</span>}
+                            </div>
+                          </div>
+                        </div>
+                        {mentor.trainingdesc != '' && (
+                          <p>{mentor.trainingdesc}</p>
                         )}
-                        {!isLoadingUnis && (
-                          <div className="displayFlex marginBottom5">
-                            <div className="msg-thumb-container">
-                              <div className="msg-thumb img-square noPic isCompany">
-                                <div className="userInitial msg-thumb noModal">
-                                  {userUniName && userUniName.charAt(0).toUpperCase()}
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div><strong>{mentor.degree}</strong></div>
-                              <div>{userUniName && userUniName}</div>
-                              <div className="marginBottom5 smallFont darkGreyText">
-                                {uniStartYr != '' && (
-                                  <span>{uniStartYr} - </span>
-                                )}
-                                {mentor.unigraduyr == '' ? 'Present' : mentor.unigraduyr}
-                              </div>
-                            </div>
-                            {isMe == "isMe" && (
-                              <div className="editSectionBtn dispInlineBlock">
-                                <Modal {...EditProfileSectionFPModalProps}>
-                                  <AddEditUniContent modalTitle='Edit your University Degree' addOrEdit='edit' uniName={mentor.uniname} uniNameFreeText={mentor.uninamefreetext} degree={mentor.degree} uniStartYr={uniStartYr} uniGraduYr={mentor.unigraduyr} county={mentor.country}/>
-                                </Modal>
-                              </div>
-                            )}
+                        {isMe == "isMe" && mentor.trainingdesc == '' && (
+                          <Modal {...EditRoleDescModalProps}>
+                            <AddEditTrainingContent modalTitle='Edit Training Course' addOrEdit='edit' currTraining={mentor.currtraining} currTrainingProvider={mentor.currtrainingprovider} startDate={mentor.trainingstartdate} endDate={mentor.trainingenddate} trainingDesc={mentor.trainingdesc} idToFocusOnOpen='trainingDescInput'/>
+                          </Modal>
+                        )}
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionFPModalProps}>
+                              <AddEditTrainingContent modalTitle='Edit Training Course' addOrEdit='edit' currTraining={mentor.currtraining} currTrainingProvider={mentor.currtrainingprovider} startDate={mentor.trainingstartdate} endDate={mentor.trainingenddate} trainingDesc={mentor.trainingdesc} />
+                            </Modal>
                           </div>
                         )}
                       </div>
@@ -1186,16 +1312,16 @@ class MentorProfileContent extends Component {
                     )
                   }*/}
                   <div className="profileBtnToolTip avail">
-                    {this.availabilityMsg(mentor.availType)}
+                    {this.availabilityMsg(mentor.isavailable.status, this.state.nowAvailable)}
                   </div>
                   <div className="profileUserCTA">
-                    {(mentor.availType === 0 || mentor.availType === 1 || mentor.availType === 2 || mentor.availType === 3) ? (
-                      <button type="button" className="profileBtn" onClick={this.handleAvailabilityClick}>
+                    {(mentor.isavailable.status !== 0 || nowAvailable) ? (
+                      <button type="button" className={"profileBtn" + (isMe == "isMe" ? "" : " notMe")}>
                         <span>&#10003;</span>
                       </button>
                       )
                     : (
-                      <button type="button" className="profileBtn redTextBorderBkgnd">
+                      <button type="button" className={"profileBtn redTextBorderBkgnd" + (isMe == "isMe" ? "" : " notMe")} onClick={isMe == 'isMe' ? this.handleAvailabilityClick : null}>
                         <span>&#10007;</span>
                       </button>
                       )

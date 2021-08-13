@@ -406,7 +406,9 @@
 .ModalOpenBtn-editHobbies,
 .ModalOpenBtn-addEditWhyHelp,
 .ModalOpenBtn-editSubjects,
-.ModalOpenBtn-editUni{
+.ModalOpenBtn-editUni,
+.ModalOpenBtn-addEditUni,
+.ModalOpenBtn-addEditTraining{
   background: none;
   padding: 0;
   border: none;
@@ -446,7 +448,7 @@
 
 .ModalOpenBtn-eduFreeTextBtn,
 .ModalOpenBtn-noEduEmailBtn {
-  width: 6.6rem;
+  width: auto;
   float: right;
   text-align: right;
   height: auto;
@@ -474,7 +476,9 @@
 .ModalOpenBtn-editHobbies:hover,
 .ModalOpenBtn-addEditWhyHelp:hover,
 .ModalOpenBtn-editSubjects:hover,
-.ModalOpenBtn-editUni:hover {
+.ModalOpenBtn-editUni:hover,
+.ModalOpenBtn-addEditUni:hover,
+.ModalOpenBtn-addEditTraining:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -495,7 +499,9 @@
 .ModalOpenBtn-editHobbies:focus,
 .ModalOpenBtn-addEditWhyHelp:focus,
 .ModalOpenBtn-editSubjects:focus,
-.ModalOpenBtn-editUni:focus {
+.ModalOpenBtn-editUni:focus,
+.ModalOpenBtn-addEditUni:focus,
+.ModalOpenBtn-addEditTraining:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -686,6 +692,11 @@
     max-width: 40em;
   }
 }
+@media screen and (max-width: 759px) {
+  .fullpage-modal-container{
+    overflow-x: hidden;
+  }
+}
 
 .modal-title{
   font-size: 24px;
@@ -714,6 +725,7 @@
   margin-bottom: 2.5rem;
   width: 100%;
   text-align: center;
+  line-height: 20px;
 }
 .modal-subtitle-colour{
   text-align: center;
@@ -789,9 +801,10 @@
   max-width: 50px;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
-  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  background: #f6f6f7;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.18);
 }
 .modal-close.fullPage.bkArrow.safari {
   position: -webkit-sticky;

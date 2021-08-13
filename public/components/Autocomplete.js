@@ -74,9 +74,7 @@ class Autocomplete extends React.Component {
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const userInput = this.state.userInput;
     const isValid = this.checkUserInputExists(userInput);
-    console.log(e.relatedTarget)
-    console.log(e.target)
-    console.log(e.currentTarget)
+    
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className == noSuggestionsCTAclass) {
       return;
     } else {

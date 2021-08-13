@@ -60,6 +60,8 @@ function ButtonContent(props) {
     case 'addEditWhyHelp':
     case 'editSubjects':
     case 'editUni':
+    case 'addEditUni':
+    case 'addEditTraining':
       return (
         <div className="marginTop10 marginAuto smallFont">
           {text}
