@@ -1,4 +1,4 @@
-// Dex last merged this code on 8th aug 2021
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 
@@ -17,7 +17,7 @@ import Modal from './Modal.js';
 import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
-import UpdateWhyHelpContent from './UpdateWhyHelpModalContent.js';
+import UpdatewhyhelpContent from './UpdatewhyhelpModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
@@ -90,10 +90,10 @@ const AddTrainingModalProps = {
   changeInitFocus: true
 }
 
-const AddWhyHelpModalProps = {
+const AddwhyhelpModalProps = {
   ariaLabel: 'Add / Edit motivations',
   triggerText: '+ Add Motivations',
-  usedFor: 'addEditWhyHelp',
+  usedFor: 'addEditwhyhelp',
   changeInitFocus: true
 }
 
@@ -461,8 +461,8 @@ class MentorProfileContent extends Component {
       groupSingle: 1,*/
       isavailable: {status: 1, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1, userToRemind: 3},
       mentorgroups: [1,3],
-      whyHelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
-    //  whyHelp: '',
+      whyhelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
+    //  whyhelp: '',
     //  helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
     //  roledesc: 'In my role, I\'m in charge of XYZ and I travel regularly and work with lots of interesting people and projects include working with Excel, Powerpoint and managing 3 employees'
     }
@@ -1165,31 +1165,31 @@ class MentorProfileContent extends Component {
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentor.whyHelp == '' || mentor.whyHelp == null) && (
+                    {isMe == "isMe" && (mentor.whyhelp == '' || mentor.whyhelp == null) && (
                       <div className="editSectionContainer">
                         <h2>
                           I&#39;m interested in being a mentor because:
                         </h2>
-                        <Modal {...AddWhyHelpModalProps}>
-                          <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                        <Modal {...AddwhyhelpModalProps}>
+                          <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                            <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                           </Modal>
                         </div>
                       </div>
                     )}
-                    {(mentor.whyHelp != '' && mentor.whyHelp != null) && (
+                    {(mentor.whyhelp != '' && mentor.whyhelp != null) && (
                       <div className="editSectionContainer">
                         <h2>
                           I&#39;m interested in being a mentor because:
                         </h2>
-                        <p>{mentor.whyHelp}</p>
+                        <p>{mentor.whyhelp}</p>
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyHelp ? mentor.whyHelp : ''}/>
+                              <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyhelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                             </Modal>
                           </div>
                         )}

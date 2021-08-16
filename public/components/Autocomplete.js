@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th feb 2021
+// Dex last merged this code on 18th aug 2021
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -74,7 +74,7 @@ class Autocomplete extends React.Component {
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const userInput = this.state.userInput;
     const isValid = this.checkUserInputExists(userInput);
-    
+
     if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className == noSuggestionsCTAclass) {
       return;
     } else {
