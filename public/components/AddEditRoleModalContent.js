@@ -37,6 +37,7 @@ class AddEditRoleContent extends Component {
       endDateMth: this.props.endDate == '' ? '' : new Date(this.props.endDate).getMonth(),
       endDateYr: this.props.endDate == '' ? '' : new Date(this.props.endDate).getFullYear(),
       iscurrent: (this.props.endDate == '' || this.props.addOrEdit == 'add') ? true : false,
+      ismain: this.props.isMain == true ? true : false,
       invalidEndDate: false,
       triggerResetValues: false,
     };
@@ -145,6 +146,21 @@ class AddEditRoleContent extends Component {
     }
   }
 
+  toggleIsMainCheckbox = (userInput) => {
+    const currentState = this.state.ismain;
+
+    if (currentState == false || currentState == null) {
+      this.setState({
+        ismain: true,
+      });
+
+    } else {
+      this.setState({
+        ismain: false,
+      });
+    }
+  }
+
   handleSubmit = (evt) => {
     this.setState({ isSubmitting: true });
     if (!this.canBeSubmitted()) {
@@ -162,8 +178,8 @@ class AddEditRoleContent extends Component {
   }
 
   canBeSubmitted() {
-    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr, invalidEndDate} = this.state;
-    const { roleTitle, roleCo, startDate, endDate, roleDesc } = this.props;
+    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr, invalidEndDate, ismain} = this.state;
+    const { roleTitle, roleCo, startDate, endDate, roleDesc, isMain } = this.props;
 
     const _startDateFormatted = new Date(startDate)
     const _endDateFormatted = new Date(endDate)
@@ -172,13 +188,13 @@ class AddEditRoleContent extends Component {
       roletitle != '' && roleco != '' && startDateMth !== '' && startDateYr != '' && ((endDateMth !== '' && endDateYr != '') || iscurrent == true) && invalidEndDate == false
       && (roletitle != roleTitle || roleco != roleCo || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear()
       || (isNaN(_endDateFormatted.getMonth()) ? endDateMth !== '' : endDateMth != _endDateFormatted.getMonth()) || (isNaN(_endDateFormatted.getFullYear()) ? endDateYr != '' : endDateYr != _endDateFormatted.getFullYear())
-      || roledesc != roleDesc) // Checks user has actually changed something
+      || roledesc != roleDesc || ismain != isMain) // Checks user has actually changed something
     );
   }
 
   render() {
-    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, endDateMth, endDateYr, roledesc, iscurrent, triggerResetValues, invalidEndDate } = this.state;
-    const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle, addOrEdit } = this.props;
+    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, endDateMth, endDateYr, roledesc, iscurrent, ismain, triggerResetValues, invalidEndDate } = this.state;
+    const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle, addOrEdit, isMain } = this.props;
     const months = [
       {value: '0', label: 'Jan'},
       {value: '1', label: 'Feb'},
@@ -250,6 +266,17 @@ class AddEditRoleContent extends Component {
               maxLength="50"
             />
           </div>
+          <Checkbox
+            labelId="isMainText"
+            labelClassName="checkbox-container textLeft formatLeft"
+            label="Show this as my main role"
+            id="isMainCheckbox"
+            name="ismain"
+            value="1"
+            onChange={this.toggleIsMainCheckbox}
+            defaultChecked={ismain == true}
+            spanClassName="checkmark left"
+          />
           <div className="form-group">
             <label className="descriptor alignLeft" htmlFor="roledesc">Description</label>
             <textarea

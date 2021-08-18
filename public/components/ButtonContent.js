@@ -67,6 +67,12 @@ function ButtonContent(props) {
           {text}
         </div>
       )
+    case 'addEditHeadline':
+      return (
+        <div className="marginAuto smallFont">
+          {text}
+        </div>
+      )
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':

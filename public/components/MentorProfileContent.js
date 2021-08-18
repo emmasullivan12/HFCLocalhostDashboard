@@ -15,14 +15,15 @@ import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
 import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
+import UpdateHeadlineContent from './UpdateHeadlineModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
-import UpdatewhyhelpContent from './UpdatewhyhelpModalContent.js';
+import UpdateWhyHelpContent from './UpdateWhyHelpModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
 import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
-import {DateCalc, monthDiff, LoadingSpinner} from "./GeneralFunctions";
+import {DateCalc, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -108,6 +109,13 @@ const AddRoleModalProps = {
   ariaLabel: 'Add role',
   triggerText: '+ Add role',
   usedFor: 'addEditRole',
+  changeInitFocus: true
+}
+
+const AddHeadlineModalProps = {
+  ariaLabel: 'Add headline',
+  triggerText: '+ Add headline',
+  usedFor: 'addEditHeadline',
   changeInitFocus: true
 }
 
@@ -255,7 +263,8 @@ class MentorProfileContent extends Component {
       ],
       isLoadingUnis: true,
       isGeneralError: '',
-      nowAvailable: false
+      nowAvailable: false,
+      showFeedback: true,
     }
 //    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
 //    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
@@ -305,6 +314,13 @@ class MentorProfileContent extends Component {
     this.setState({ followStatus: !currentState });
   }*/
 
+  toggleShowFeedback = () => {
+    const currentState = this.state.showFeedback;
+    this.setState({
+      showFeedback: !currentState,
+    })
+  }
+
   handleAvailabilityClick = () => {
   //  this.setState({ availabilityClicked: true });
     //this.setState({ save4LaterClicked: false });
@@ -337,7 +353,7 @@ class MentorProfileContent extends Component {
     return startYr
   }
 
-  getEduInstName = (uniName, uniNameFreeText) => {
+  getUniInstName = (uniName, uniNameFreeText) => {
     if (uniName == '' && uniNameFreeText == '') {
       this.setState({
         isLoadingUnis: false,
@@ -359,9 +375,9 @@ class MentorProfileContent extends Component {
             this.setState({
               isLoadingUnis: false,
               isGeneralError: false,
-            }), () => {
+            }, () => {
               return uni[0].label
-            }
+            })
           }
         })
         .catch(err => {
@@ -391,13 +407,15 @@ class MentorProfileContent extends Component {
   }
 
   render() {
-    const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable} = this.state;
+    const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback} = this.state;
     const mentor = {
       uid: '23456',
       fname: 'Emma',
       lname: 'Sullivan',
 //      profPicSrc: '',
       profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
+      headline: 'Vegan slut drop who loves yoga, skiing and weightlifting',
+  //    headline: '',
       city: 'LA',
       country: 'USA',
       timeZone: 'Europe/London',
@@ -468,8 +486,8 @@ class MentorProfileContent extends Component {
     }
 //    const roleHistory = []
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.'},
-      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: ''}
+      {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
+      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
     ]
 //    const uniHistory = []
     const uniHistory = [
@@ -547,7 +565,7 @@ class MentorProfileContent extends Component {
 
     const isPicSet = mentor.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23457';
+    const uid = '23456';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
     const menteeIsU18 = false;
     const profUserIsU18 = false;
@@ -557,6 +575,9 @@ class MentorProfileContent extends Component {
     const verifiedType = 0 // LINK WITH DEX (THIS IS WHETHER PROSPELA DID FULL OR SOFT VERIF OF THEIR INSTITUTION)
     const eduemailverif = true
     const profemailverif = false
+  //  const uniInstName = (mentor.uniname != '' || mentor.uninamefreetext != '') ? this.getUniInstName(mentor.uniname, mentor.uninamefreetext) : ''
+    const uniInstName = mentor.uniname ? mentor.uniname : mentor.uninamefreetext
+    const schInstName = mentor.schname ? mentor.schname : mentor.schnamefreetext
     const mentorSUStep = 'didIDTrain' // LINK WITH DEX
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
     const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
@@ -650,7 +671,7 @@ class MentorProfileContent extends Component {
                   {mentor.eetstatus == 'uni' && (
                     <React.Fragment>
                       <div className="profilePosition">{mentor.degree}</div>
-                    {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {eduInstName}</div>*/}
+                    {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {uniInstName}</div>*/}
                     </React.Fragment>
                   )}
                   {mentor.eetstatus == 'job' && (
@@ -668,7 +689,6 @@ class MentorProfileContent extends Component {
                   {mentor.eetstatus == 'none' && (
                     <div className="profilePosition">Looking for opportunities</div>
                   )}
-
               {/*    <div className="profileIndustryTag">{mentor.currInd}</div>
                   <button type="button" className={"Submit-btn " + (followStatus===false ? 'notFollowing' : 'Following')} onClick={this.toggleFollowStatus}>
                     {followStatus===false ? 'Follow' : <span>&#10003; Following</span>}
@@ -676,15 +696,46 @@ class MentorProfileContent extends Component {
                   {isMe == "isMe" && (
                     <div className="editSectionBtn dispInlineBlock">
                       <Modal {...EditProfileSectionModalProps}>
-                        <UpdateProfileOverviewContent currRole={mentor.currrole} currCo={mentor.currco} />
+                        <UpdateProfileOverviewContent
+                          eetStatus={mentor.eetstatus}
+                          country={mentor.country}
+                          fName={mentor.fname}
+                          lName={mentor.lname}
+                          isPicSet={isPicSet}
+                          profPicSrc={mentor.profPicSrc}
+                          hasMinVerif={hasMinVerif}
+                          profUserIsU18={profUserIsU18}
+                          menteeIsU18={menteeIsU18}
+                          schInstName={schInstName}
+                          degree={mentor.degree}
+                          uniInstName={uniInstName}
+                          currRole={mentor.currrole} // will need to grab the most recent role / company from roleHistory
+                          currCo={mentor.currco} // will need to grab the most recent role / company from roleHistory
+                          currTraining={mentor.currtraining}
+                          currTrainingProvider={mentor.currtrainingprovider}
+                        />
                       </Modal>
                     </div>
                   )}
                 </div>
-                <div>
-                  <h2>
-                    Location
-                  </h2>
+                {mentor.headline != '' && (
+                  <div className="editSectionContainer zIndex0">
+                    <div className="profileHighlight">{mentor.headline}</div>
+                    {isMe == "isMe" && (
+                      <div className="editSectionBtn dispInlineBlock">
+                        <Modal {...EditProfileSectionModalProps}>
+                          <UpdateHeadlineContent addOrEdit='edit' modalTitle='Edit your Headline' headline={mentor.headline}/>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
+                )}
+                {mentor.headline == '' && isMe == "isMe" && (
+                  <Modal {...AddHeadlineModalProps}>
+                    <UpdateHeadlineContent addOrEdit='add' modalTitle='Add new Headline' headline=''/>
+                  </Modal>
+                )}
+                <div className="marginTop20">
                   <p>
                     <span>
                       <i className={"emoji-icon " + flagEmoji}/>
@@ -694,8 +745,16 @@ class MentorProfileContent extends Component {
                 </div>
             {/*    <div className="lastActiveTxt greenText">Last active <span>{lastActive}</span></div>*/}
                 <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
-                  <h2 className="marginBottom5"><span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span></h2>
-                  <div className="credTxtContainer">
+                  <h2 className="marginBottom5">
+                    <span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span>
+                    <div className="showHideBtn greyText textRight dispInlineBlock absolute right20" onClick={this.toggleShowFeedback}>
+                      {showFeedback == true ? 'Hide' : 'Show'}
+                      <span className="showHideArrow dispInlineBlock">
+                        { showFeedback == true ? <ChevronDown /> : <ChevronUp /> }
+                      </span>
+                    </div>
+                  </h2>
+                  <div className={"credTxtContainer showFeedback " + (showFeedback == true ? '' : ' hidden')}>
                   {/*  <div className={"marginTop20" + (isMe == "isMe" ? "" : " marginBottom20")}><span className="credNum">{mentor.allMentees}</span>mentees supported</div>
                     {isMe == "isMe" && (
                       <div className="editSectionContainer">
@@ -763,9 +822,6 @@ class MentorProfileContent extends Component {
                       <i className="emoji-icon suitcase-emoji"/> Expertise & Career
                     </h1>
                     <div>
-                      <h2>
-                        Experience
-                      </h2>
                       {roleHistory.map((role, index) => {
                         let roleLengthMths
                         let roleLengthYrs
@@ -817,13 +873,13 @@ class MentorProfileContent extends Component {
                             )}
                             {isMe == "isMe" && role.roledesc == '' && (
                               <Modal {...EditRoleDescModalProps}>
-                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} idToFocusOnOpen='roleDescInput'/>
+                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} idToFocusOnOpen='roleDescInput'/>
                               </Modal>
                             )}
                             {isMe == "isMe" && (
                               <div className="editSectionBtn dispInlineBlock">
                                 <Modal {...EditProfileSectionModalProps}>
-                                  <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc}/>
+                                  <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} />
                                 </Modal>
                               </div>
                             )}
@@ -832,7 +888,7 @@ class MentorProfileContent extends Component {
                       })}
                       {isMe == "isMe" && (
                         <Modal {...AddRoleModalProps}>
-                          <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc=''/>
+                          <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc='' isMain={false}/>
                         </Modal>
                       )}
                     </div>
@@ -956,7 +1012,9 @@ class MentorProfileContent extends Component {
                       </h2>
                       {uniHistory.length == 0 && (
                         <div className="editSectionContainer">
-                          <p><span role="img" aria-label="cross-emoji">❌</span> I didnt go to University</p>
+                          {mentor.eetstatus != 'sch' && (
+                            <p><span role="img" aria-label="cross-emoji">❌</span> I didnt go to University</p>
+                          )}
                           {isMe == "isMe" && (
                             <React.Fragment>
                               <Modal {...AddUniFPModalProps}>
@@ -989,7 +1047,7 @@ class MentorProfileContent extends Component {
                           )}*/}
                           {uniHistory.map((uni, index) => {
                             const uniStartYr = uni.unistartyr ? uni.unistartyr : (((uni.uniname != '' || uni.uninamefreetext != '') && uni.uniyrgrp != 'rcGrad' && uni.uniyrgrp != 'pg') ? this.getStartYr(uni.unigraduyr, uni.uniyrgrp) : '')
-                          //  const userUniName = this.getEduInstName(uni.uniname, uni.uninamefreetext)
+                          //  const userUniName = this.geUniInstName(uni.uniname, uni.uninamefreetext)
                             const userUniName = uni.uniname ? uni.uniname : uni.uninamefreetext
                             return (
                               <div key={index} className="editSectionContainer">
@@ -1171,11 +1229,11 @@ class MentorProfileContent extends Component {
                           I&#39;m interested in being a mentor because:
                         </h2>
                         <Modal {...AddwhyhelpModalProps}>
-                          <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
+                          <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
+                            <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                           </Modal>
                         </div>
                       </div>
@@ -1189,7 +1247,7 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdatewhyhelpContent modalTitle='Your motivations for Mentoring' whyhelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
+                              <UpdateWhyHelpContent modalTitle='Your motivations for Mentoring' whyHelp={mentor.whyhelp ? mentor.whyhelp : ''}/>
                             </Modal>
                           </div>
                         )}

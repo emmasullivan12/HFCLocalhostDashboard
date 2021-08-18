@@ -499,6 +499,9 @@ table th .description{
 .right{
   right: 0!important;
 }
+.right20{
+  right: 20px;
+}
 .leftRightPad{
   padding: 0 2rem 0 2rem;
 }
@@ -1822,6 +1825,18 @@ a.button{
 
 .buttonIcon{
   padding-right: .5rem;
+}
+.showHideBtn{
+  background-image: linear-gradient(to right, rgb(255 255 255 / 90%), rgb(255 255 255));
+  padding-left: 10px;
+}
+.showHideBtn:hover{
+  cursor: pointer;
+  color: #8e8e8e;
+}
+.showHideArrow{
+  padding-left: 3px;
+  font-size: 8px;
 }
 
 .spinner-container{

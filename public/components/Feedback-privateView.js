@@ -308,7 +308,7 @@ class FeedbackPrivate extends Component {
       // Not completed full sign up, then prompt them to complete
       if ( doneFullSU == false ) {
         return (
-          <div className="restrictedContent greyText">
+          <div className="restrictedContent darkGreyText">
             <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
             You need to complete your full sign up and get a mentoring match to give and receive endorsements
           </div>
@@ -317,7 +317,7 @@ class FeedbackPrivate extends Component {
       // Awaiting a match or has not reached point where feedback requested or still waiting for match to give feedback
       } else {
         return (
-          <div className="restrictedContent greyText">
+          <div className="restrictedContent darkGreyText">
             <div className="fontSize20"><i className="fas fa-exclamation-circle" /></div>
             Your endorsements will show here once you and your match have both completed your chat feedback (typically after 2 months of chatting)
           </div>

@@ -408,7 +408,8 @@
 .ModalOpenBtn-editSubjects,
 .ModalOpenBtn-editUni,
 .ModalOpenBtn-addEditUni,
-.ModalOpenBtn-addEditTraining{
+.ModalOpenBtn-addEditTraining,
+.ModalOpenBtn-addEditHeadline{
   background: none;
   padding: 0;
   border: none;
@@ -478,7 +479,8 @@
 .ModalOpenBtn-editSubjects:hover,
 .ModalOpenBtn-editUni:hover,
 .ModalOpenBtn-addEditUni:hover,
-.ModalOpenBtn-addEditTraining:hover {
+.ModalOpenBtn-addEditTraining:hover,
+.ModalOpenBtn-addEditHeadline:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -501,7 +503,8 @@
 .ModalOpenBtn-editSubjects:focus,
 .ModalOpenBtn-editUni:focus,
 .ModalOpenBtn-addEditUni:focus,
-.ModalOpenBtn-addEditTraining:focus {
+.ModalOpenBtn-addEditTraining:focus,
+.ModalOpenBtn-addEditHeadline:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;

@@ -135,6 +135,11 @@
   font-weight: 900;
   padding-top: 3px;
 }
+.profileHighlight{
+  line-height: 16px;
+  color: #2c2d30;
+  font-size: 13px;
+}
 .contentBox.feedbackOnProfile{
   background-color: #fff;
   border: 1px dashed #351c75;
@@ -155,7 +160,25 @@
   right: 50%!important;*/
   right: 0;
 }
-
+.profOverviewPreview{
+  padding: 30px 20px 20px 20px;
+  background: #f2f2f2;
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.profOverviewPreview .profileName{
+  font-weight: 700;
+  font-size: 22px;
+  color: #2C2D30;
+  line-height: 27px;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: none;
+  margin-bottom: .5rem;
+}
 .profileName{
   font-weight: 700;
   margin-top: .5rem;
@@ -178,6 +201,23 @@
   font-size: 14px;
   line-height: 10px;
   color: #d6d6d6;
+}
+.showFeedback.hidden{
+  /* OPTION 3 https://codepen.io/paulobrien/pen/tpmAi?editors=1100 */
+  height: 0!important;
+  opacity: 0;
+  display: block;
+
+}
+.showFeedback{
+  /* OPTION 3 https://codepen.io/paulobrien/pen/tpmAi?editors=1100 */
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
 .mapImg{
   background-repeat: no-repeat;
@@ -556,6 +596,12 @@
     left: 3rem;
   }
 }
+@media screen and (max-width: 758px) {
+  .showHideBtn{
+    right: 4rem!important;
+  }
+}
+
 .profileBtnToolTip{
   width: 100%;
   max-width: 400px;
