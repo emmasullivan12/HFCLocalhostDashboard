@@ -858,3 +858,6 @@
   color: grey;
   margin-top: -10px;
 }
+.modal-header.safari{
+  padding-top: 20px;
+}

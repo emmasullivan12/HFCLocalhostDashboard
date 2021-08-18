@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th aug 2021 
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 
@@ -23,7 +23,7 @@ import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
 import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
-import {DateCalc, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
+import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -265,6 +265,7 @@ class MentorProfileContent extends Component {
       isGeneralError: '',
       nowAvailable: false,
       showFeedback: true,
+      browser: '',
     }
 //    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
 //    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
@@ -273,6 +274,11 @@ class MentorProfileContent extends Component {
 
   componentDidMount() {
     this.mounted = true
+
+    this.setState({
+      browser: whichBrowser()
+    })
+
   }
 
   componentWillUnmount() {
@@ -407,7 +413,7 @@ class MentorProfileContent extends Component {
   }
 
   render() {
-    const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback} = this.state;
+    const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback, browser} = this.state;
     const mentor = {
       uid: '23456',
       fname: 'Emma',
@@ -495,6 +501,7 @@ class MentorProfileContent extends Component {
       {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1'},
       {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '', uniyrgrp: ''}
     ]
+    const isSafari = browser === 'safari'
 /*    const userReads = [
       {
         id: '11111',
@@ -610,8 +617,8 @@ class MentorProfileContent extends Component {
 
       return (
         <React.Fragment>
-          <div className="article-page profile">
-            <div className="row article-container profile">
+          <div className={"article-page profile" + (isSafari ? ' safari' : "")}>
+            <div className={"row article-container profile" + (isSafari ? ' safari' : "")}>
               <div className="col-3 col-s-12 article-extras profile">
                 <div className="profile-thumb-container">
                   {isPicSet ? (
@@ -747,7 +754,7 @@ class MentorProfileContent extends Component {
                 <div className={"contentBox feedbackOnProfile" + (publicFeedbackToShow.length > 0 ? "" : " noFeedbackYet")}>
                   <h2 className="marginBottom5">
                     <span className="smallFont" role="img" aria-label="star emoji">⭐</span> Credentials & Feedback <span className="smallFont" role="img" aria-label="star emoji">⭐</span>
-                    <div className="showHideBtn greyText textRight dispInlineBlock absolute right20" onClick={this.toggleShowFeedback}>
+                    <div className={"showHideBtn greyText textRight dispInlineBlock absolute right20 " + (publicFeedbackToShow.length == 0 ? 'greyBackground' : '')} onClick={this.toggleShowFeedback}>
                       {showFeedback == true ? 'Hide' : 'Show'}
                       <span className="showHideArrow dispInlineBlock">
                         { showFeedback == true ? <ChevronDown /> : <ChevronUp /> }

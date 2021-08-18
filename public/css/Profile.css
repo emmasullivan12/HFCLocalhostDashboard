@@ -596,6 +596,9 @@
     left: 3rem;
   }
 }
+.showHideBtn.greyBackground{
+  background-image: linear-gradient(to right, rgb(224 224 224 / 90%), rgb(224 224 224));
+}
 @media screen and (max-width: 758px) {
   .showHideBtn{
     right: 4rem!important;

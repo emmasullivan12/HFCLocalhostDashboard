@@ -40,7 +40,7 @@ const FullPageModalContent = ({
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role="dialog" aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown}>
       <div className={"fullpage-modal-container " + usedFor + (animation ? animation : '') + (isDevice ? ' isDevice' : '')} id={'fpModal-' + usedFor} ref={modalFPRef} onScroll={handleNavScroll}>
-        <div className="modal-header">
+        <div className={"modal-header" + (isSafari == true ? ' safari' : '')}>
           { backBtn==='bk2Pr' && (
             <button type="button" className={"modal-close fullPage" + (isSafari ? ' safari' : "")} aria-labelledby="Close Modal" onClick={onClose} ref={buttonFPRef}>
               <span id="close-modal">&#60;&#60; Back to Prospela</span>

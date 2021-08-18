@@ -10,6 +10,9 @@
   padding-right: 3rem;
   padding-bottom: 0;
 }
+.article-page.profile.safari{
+  margin-top: -90px;
+}
 .article-page.matching{
   height: 100%;
 }
@@ -36,6 +39,9 @@
   font-size: 17.1px;
   line-height: 26px;
   height: 100%;
+}
+.article-page .article-container.safari {
+  margin-top: 0;
 }
 .article-page .article-container.profile{
   padding: 0;
