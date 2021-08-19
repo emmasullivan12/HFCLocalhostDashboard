@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th aug 2021 
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -62,6 +62,9 @@ function ButtonContent(props) {
     case 'editUni':
     case 'addEditUni':
     case 'addEditTraining':
+    case 'editSch':
+    case 'addSchDesc':
+    case 'addUniDesc':
       return (
         <div className="marginTop10 marginAuto smallFont">
           {text}

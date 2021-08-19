@@ -1,10 +1,11 @@
-// Dex last merged this code on 18th aug 2021 
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
 import AddEditTrainingContent from './AddEditTrainingModalContent.js';
+import AddEditSchContent from './AddEditSchModalContent.js';
 import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
@@ -50,6 +51,14 @@ const AddUniFPModalProps = {
   ariaLabel: 'Add University',
   triggerText: '+ Add University',
   usedFor: 'editUni',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
+const AddSchFPModalProps = {
+  ariaLabel: 'Add School',
+  triggerText: '+ Add School',
+  usedFor: 'editSch',
   backBtn: 'arrow',
   changeInitFocus: true,
 }
@@ -130,6 +139,20 @@ const EditRoleDescModalProps = {
   ariaLabel: 'Add / Edit role',
   triggerText: '+ Add description',
   usedFor: 'addRoleDesc',
+  changeInitFocus: true
+}
+
+const EditSchDescModalProps = {
+  ariaLabel: 'Add / Edit Sch',
+  triggerText: '+ Add description',
+  usedFor: 'addSchDesc',
+  changeInitFocus: true
+}
+
+const EditUniDescModalProps = {
+  ariaLabel: 'Add / Edit Uni',
+  triggerText: '+ Add description',
+  usedFor: 'addUniDesc',
   changeInitFocus: true
 }
 
@@ -342,22 +365,57 @@ class MentorProfileContent extends Component {
     this.setState({ availabilityClicked: false });
   }*/
 
-  getStartYr = (uniGraduYr, uniYrGrp) => {
+  /*getUniStartYr = (uniYrGrp) => { //
 
     var d = new Date();
     var year = d.getFullYear();
     var month = d.getMonth();
 
-    let startYr = uniGraduYr - uniYrGrp;
+    let startYr = year - uniYrGrp;
 
-/*      if (month <= 7) {
-      startYr = year - 1;
-    } else {
-      startYr = year;
-    }*/
+    if (month > 7) {
+      startYr++;
+    }
 
     return startYr
   }
+
+  getSchStartYr = (schYrGrp) => {
+
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    let schYr
+
+    switch(schYrGrp) {
+      case 'yr8':
+        schYr = 2
+        break
+      case 'yr9':
+        schYr = 3
+        break
+      case 'yr10':
+        schYr = 4
+        break
+      case 'yr11':
+        schYr = 5
+        break
+      case 'yr12':
+        schYr = 6
+        break
+      case 'yr13':
+        schYr = 7
+        break
+    }
+
+    let startYr = year - schYr;
+
+    if (month > 7) {
+      startYr++;
+    }
+
+    return startYr
+  }*/
 
   getUniInstName = (uniName, uniNameFreeText) => {
     if (uniName == '' && uniNameFreeText == '') {
@@ -438,6 +496,8 @@ class MentorProfileContent extends Component {
       degree: 'BSc (Hons) Business Administration',
       schname: '',
       schnamefreetext: '', // If their school wasn't on the list
+      schgraduyr: '2021',
+      schyrgrp: '', // yr8/yr9/yr10/yr11/yr12/yr13/finSch
       uniname: '',
     //  uninamefreetext: '',
       uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
@@ -497,9 +557,15 @@ class MentorProfileContent extends Component {
     ]
 //    const uniHistory = []
     const uniHistory = [
-      {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2021', uniyrgrp: 'pg'},
-      {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1'},
-      {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '', uniyrgrp: ''}
+      {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
+      {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
+      {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '2017', uniyrgrp: '', unidesc: 'Such a good 4 years of my life!'}
+    ]
+//    const schHistory = []
+    const schHistory = [
+      {schname: '', schnamefreetext: 'Strodes College', schgraduyr: '2021', schyrgrp: 'yr13', schdesc: 'Studied A-Levels and did dissertation on XYZ - Got top grades!'}, // schyrgrp: yr8/yr9/yr10/yr11/yr12/yr13/finSch
+      {schname: '', schnamefreetext: 'Thamesmead', schgraduyr: '2002', schyrgrp: '', schdesc: ''},
+      {schname: '', schnamefreetext: 'Spelthorne', schgraduyr: '2005', schyrgrp: '', schdesc: ''},
     ]
     const isSafari = browser === 'safari'
 /*    const userReads = [
@@ -565,6 +631,13 @@ class MentorProfileContent extends Component {
     const learningArr = mentor.learning.split(',');
     const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects, mentor.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
+    const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
+    const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)
+    const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)
+    const sortedUnis = uniHistory && uniHistory.length != 0 && uniHistory.sort((a, b) => parseFloat(b.unigraduyr) - parseFloat(a.unigraduyr));
+    const latestUni = sortedUnis[0]
+    const sortedSchs = schHistory && schHistory.length != 0 && schHistory.sort((a, b) => parseFloat(b.schgraduyr) - parseFloat(a.schgraduyr));
+    const latestSch = sortedSchs[0]
 //    const lastActive = timeSince(mentor.lastActiveDate);
     const userCurrentTime = profileTimeZone(mentor.timeZone);
     const isDayNight = isNightDay(userCurrentTime);
@@ -576,6 +649,7 @@ class MentorProfileContent extends Component {
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
     const menteeIsU18 = false;
     const profUserIsU18 = false;
+    const viewerCountry = 'GBR'
     const userInitial = mentor.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
     const publicFeedbackToShow = feedbackReceivedArr.filter(feedback => feedback.notetomentorpub == true) // for mentee use referenceformenteepub == true
@@ -583,8 +657,8 @@ class MentorProfileContent extends Component {
     const eduemailverif = true
     const profemailverif = false
   //  const uniInstName = (mentor.uniname != '' || mentor.uninamefreetext != '') ? this.getUniInstName(mentor.uniname, mentor.uninamefreetext) : ''
-    const uniInstName = mentor.uniname ? mentor.uniname : mentor.uninamefreetext
-    const schInstName = mentor.schname ? mentor.schname : mentor.schnamefreetext
+    const uniInstName = latestUni.uniname ? latestUni.uniname : latestUni.uninamefreetext
+    const schInstName = latestSch.schname ? latestSch.schname : latestSch.schnamefreetext
     const mentorSUStep = 'didIDTrain' // LINK WITH DEX
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
     const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
@@ -677,14 +751,14 @@ class MentorProfileContent extends Component {
                   )}
                   {mentor.eetstatus == 'uni' && (
                     <React.Fragment>
-                      <div className="profilePosition">{mentor.degree}</div>
+                      <div className="profilePosition">{latestUni.degree}</div>
                     {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {uniInstName}</div>*/}
                     </React.Fragment>
                   )}
                   {mentor.eetstatus == 'job' && (
                     <React.Fragment>
-                      <div className="profilePosition">{mentor.currrole}</div>
-                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {mentor.currco}</div>
+                      <div className="profilePosition">{currRole}</div>
+                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {currCo}</div>
                     </React.Fragment>
                   )}
                   {mentor.eetstatus == 'train' && (
@@ -714,10 +788,10 @@ class MentorProfileContent extends Component {
                           profUserIsU18={profUserIsU18}
                           menteeIsU18={menteeIsU18}
                           schInstName={schInstName}
-                          degree={mentor.degree}
+                          degree={latestUni.degree}
                           uniInstName={uniInstName}
-                          currRole={mentor.currrole} // will need to grab the most recent role / company from roleHistory
-                          currCo={mentor.currco} // will need to grab the most recent role / company from roleHistory
+                          currRole={currRole}
+                          currCo={currCo}
                           currTraining={mentor.currtraining}
                           currTrainingProvider={mentor.currtrainingprovider}
                         />
@@ -1025,11 +1099,11 @@ class MentorProfileContent extends Component {
                           {isMe == "isMe" && (
                             <React.Fragment>
                               <Modal {...AddUniFPModalProps}>
-                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
                               </Modal>
                               <div className="editSectionBtn dispInlineBlock">
                                 <Modal {...EditProfileSectionFPModalProps}>
-                                  <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                                  <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
                                 </Modal>
                               </div>
                             </React.Fragment>
@@ -1053,7 +1127,7 @@ class MentorProfileContent extends Component {
                             </div>
                           )}*/}
                           {uniHistory.map((uni, index) => {
-                            const uniStartYr = uni.unistartyr ? uni.unistartyr : (((uni.uniname != '' || uni.uninamefreetext != '') && uni.uniyrgrp != 'rcGrad' && uni.uniyrgrp != 'pg') ? this.getStartYr(uni.unigraduyr, uni.uniyrgrp) : '')
+                            const uniStartYr = uni.unistartyr ? uni.unistartyr : ''
                           //  const userUniName = this.geUniInstName(uni.uniname, uni.uninamefreetext)
                             const userUniName = uni.uniname ? uni.uniname : uni.uninamefreetext
                             return (
@@ -1079,17 +1153,111 @@ class MentorProfileContent extends Component {
                                   {isMe == "isMe" && (
                                     <div className="editSectionBtn dispInlineBlock">
                                       <Modal {...EditProfileSectionFPModalProps}>
-                                        <AddEditUniContent modalTitle='Edit your University Degree' addOrEdit='edit' uniName={uni.uninamefreetext ? '' : userUniName} uniNameFreeText={uni.uninamefreetext ? userUniName : ''} degree={uni.degree} uniStartYr={uniStartYr} uniGraduYr={uni.unigraduyr}/>
+                                        <AddEditUniContent modalTitle='Edit your University Degree' addOrEdit='edit' uniName={uni.uninamefreetext ? '' : userUniName} uniNameFreeText={uni.uninamefreetext ? userUniName : ''} degree={uni.degree} uniStartYr={uniStartYr} uniGraduYr={uni.unigraduyr} uniDesc={uni.unidesc}/>
                                       </Modal>
                                     </div>
                                   )}
                                 </div>
+                                {uni.unidesc != '' && (
+                                  <p classNamme="marginBottom20">{uni.unidesc}</p>
+                                )}
+                                {isMe == "isMe" && uni.unidesc == '' && (
+                                  <Modal {...EditUniDescModalProps}>
+                                    <AddEditUniContent roleIndex={index} modalTitle='Edit your University Degree' addOrEdit='edit' uniName={uni.uninamefreetext ? '' : userUniName} uniNameFreeText={uni.uninamefreetext ? userUniName : ''} degree={uni.degree} uniStartYr={uniStartYr} uniGraduYr={uni.unigraduyr} uniDesc={uni.unidesc} idToFocusOnOpen='uniDescInput'/>
+                                  </Modal>
+                                )}
                               </div>
                             )
                           })}
                           {isMe == "isMe" && (
                             <Modal {...AddUniFPModalProps}>
-                              <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr=''/>
+                              <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
+                            </Modal>
+                          )}
+                        </React.Fragment>
+                      )}
+                    </div>
+                    <div>
+                      <h2>
+                        {viewerCountry == 'GBR' ? 'School / College:' : 'High School'}
+                      </h2>
+                      {schHistory.length == 0 && (
+                        <div className="editSectionContainer">
+                          {isMe == "isMe" && (
+                            <React.Fragment>
+                              <Modal {...AddSchFPModalProps}>
+                                <AddEditSchContent modalTitle={mentor.country == 'GBR' ? 'Add your School / College' : 'Add your High School(s)'} addOrEdit='add' schName='' schNameFreeText='' schStartYr='' schGraduYr='' schDesc=''/>
+                              </Modal>
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionFPModalProps}>
+                                  <AddEditSchContent modalTitle={mentor.country == 'GBR' ? 'Add your School / College' : 'Add your High School(s)'} addOrEdit='add' schName='' schNameFreeText='' schStarYr='' schGraduYr='' schDesc=''/>
+                                </Modal>
+                              </div>
+                            </React.Fragment>
+                          )}
+                        </div>
+                      )}
+                      {schHistory.length > 0 && (
+                        <React.Fragment>
+                        {/*  {isLoadingUnis == true && (
+                            <div className="loadingSUMsg">
+                              <p className="">
+                                Loading University details...
+                              </p>
+                              <div className="infiniteSpinner infiniteSpinner-medium">
+                                <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
+                                  <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
+                                    <LoadingSpinner />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}*/}
+                          {schHistory.map((sch, index) => {
+                            const schStartYr = sch.schstartyr ? sch.schstartyr : ''
+                          //  const userUniName = this.geUniInstName(uni.uniname, uni.uninamefreetext)
+                            const userSchName = sch.schname ? sch.schname : sch.schnamefreetext
+                            return (
+                              <div key={index} className="editSectionContainer">
+                                <div className="displayFlex marginBottom5">
+                                  <div className="msg-thumb-container">
+                                    <div className="msg-thumb img-square noPic isCompany">
+                                      <div className="userInitial msg-thumb noModal">
+                                        {userSchName && userSchName.charAt(0).toUpperCase()}
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div>{userSchName && userSchName}</div>
+                                    <div className="marginBottom5 smallFont darkGreyText">
+                                      {schStartYr != '' && (
+                                        <span>{schStartYr} - </span>
+                                      )}
+                                      {sch.schgraduyr == '' ? 'Present' : sch.schgraduyr}
+                                    </div>
+                                  </div>
+                                  {isMe == "isMe" && (
+                                    <div className="editSectionBtn dispInlineBlock">
+                                      <Modal {...EditProfileSectionFPModalProps}>
+                                        <AddEditSchContent modalTitle={mentor.country == 'GBR' ? 'Edit your School / College' : 'Edit your High School(s)'} addOrEdit='edit' schName={sch.schnamefreetext ? '' : userSchName} schNameFreeText={sch.schnamefreetext ? userSchName : ''} schStartYr={schStartYr} schGraduYr={sch.schgraduyr} schDesc={sch.schdesc}/>
+                                      </Modal>
+                                    </div>
+                                  )}
+                                </div>
+                                {sch.schdesc != '' && (
+                                  <p className="marginBottom20">{sch.schdesc}</p>
+                                )}
+                                {isMe == "isMe" && sch.schdesc == '' && (
+                                  <Modal {...EditSchDescModalProps}>
+                                    <AddEditSchContent roleIndex={index} addOrEdit='edit' modalTitle={mentor.country == 'GBR' ? 'Edit your School / College' : 'Edit your High School(s)'} schName={sch.schnamefreetext ? '' : userSchName} schNameFreeText={sch.schnamefreetext ? userSchName : ''} schStartYr={schStartYr} schGraduYr={sch.schgraduyr} schDesc={sch.schdesc} idToFocusOnOpen='schDescInput'/>
+                                  </Modal>
+                                )}
+                              </div>
+                            )
+                          })}
+                          {isMe == "isMe" && (
+                            <Modal {...AddSchFPModalProps}>
+                              <AddEditSchContent modalTitle={mentor.country == 'GBR' ? 'Add your School / College' : 'Add your High School(s)'} addOrEdit='add' schName='' schNameFreeText='' schStartYr='' schGraduYr='' schDesc='' />
                             </Modal>
                           )}
                         </React.Fragment>

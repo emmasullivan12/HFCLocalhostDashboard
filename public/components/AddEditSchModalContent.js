@@ -10,40 +10,39 @@ import TextInput from './TextInput.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
 import {cdn} from './CDN.js';
 
-const DeleteUniModalProps = {
-  ariaLabel: 'Delete uni / degree',
-  triggerText: 'Delete Uni / Degree',
+const DeleteSchModalProps = {
+  ariaLabel: 'Delete school',
+  triggerText: 'Delete School',
   usedFor: 'deleteRole',
   changeInitFocus: true
 }
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
-class AddEditUniContent extends Component {
+class AddEditSchContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isSubmitting: false,
-      isSubmittingDeleteUni: false,
+      isSubmittingDeleteSch: false,
       updateSuccess: false,
       errorLoadingEdu: false,
-      editingUni: (this.props.uniNameFreeText == '' && this.props.uniName == '') ? true : false,
-      uniname: this.props.uniName,
-      uninamefreetext: this.props.uniNameFreeText,
-      uniNameIsValid: false,
-      unistartyr: this.props.uniStartYr,
-      unigraduyr: this.props.uniGraduYr,
-      degreeNew: this.props.degree,
-      unidesc: this.props.uniDesc,
-      ukUnisList: [],
+      editingSch: (this.props.schNameFreeText == '' && this.props.schName == '') ? true : false,
+      schname: this.props.schName,
+      schnamefreetext: this.props.schNameFreeText,
+      schNameIsValid: false,
+      schstartyr: this.props.schStartYr,
+      schgraduyr: this.props.schGraduYr,
+      schdesc: this.props.schDesc,
+      ukSchsList: [],
     };
   }
 
   componentDidMount(){
-    const {idToFocusOnOpen, uniNameFreeText, uniName} = this.props
+    const {idToFocusOnOpen, schNameFreeText, schName} = this.props
     if (idToFocusOnOpen) {
       document.getElementById(idToFocusOnOpen).focus()
-    } else if (uniName != '' || uniNameFreeText != '') {
-      document.getElementById("editUniName-btn").focus()
+    } else if (schName != '' || schNameFreeText != '') {
+      document.getElementById("editSchName-btn").focus()
 //    } else {
   //    document.getElementById("autocompleteBox-uniName").focus()
     }
@@ -55,42 +54,42 @@ class AddEditUniContent extends Component {
     });
   }
 
-  handleUKUniChange = (userInput, isValid) => {
+  handleUKSchChange = (userInput, isValid) => {
     this.setState({
-      uniname: userInput,
-      uninamefreetext: '',
-      uniNameIsValid: isValid,
+      schname: userInput,
+      schnamefreetext: '',
+      schNameIsValid: isValid,
     })
   }
 
-  handleUniNotOnListChange = (e) => {
+  handleSchNotOnListChange = (e) => {
     this.setState({
-      uniname: '',
-      uninamefreetext: e.target.value
+      schname: '',
+      schnamefreetext: e.target.value
     });
   }
 
   handleStartYrChange = (userInput) => {
     this.setState({
-      unistartyr: userInput,
+      schstartyr: userInput,
     });
   }
 
   handleEndYrChange = (userInput) => {
     this.setState({
-      unigraduyr: userInput,
+      schgraduyr: userInput,
     });
   }
 
-  editUni = () => {
+  editSch = () => {
     this.setState({
-      editingUni: true,
+      editingSch: true,
     })
   }
 
-  saveUni = () => {
+  saveSch = () => {
     this.setState({
-      editingUni: false,
+      editingSch: false,
     })
   }
 
@@ -103,8 +102,8 @@ class AddEditUniContent extends Component {
     this.setState({ updateSuccess: true })
   }
 
-  handleSubmitDeleteUni = (e) => {
-    this.setState({ isSubmittingDeleteUni: true });
+  handleSubmitDeleteSch = (e) => {
+    this.setState({ isSubmittingDeleteSch: true });
   }
 
   renderComponents = (fileToRender, componentUpdatesState, error) => {
@@ -127,39 +126,28 @@ class AddEditUniContent extends Component {
   }
 
   otherValidityChecks = () => {
-    const { unistartyr, unigraduyr } = this.state;
-    if (unigraduyr < unistartyr) {
-      document.getElementById("selectBox-unigraduyr").classList.add('error');
+    const { schstartyr, schgraduyr } = this.state;
+    if (schgraduyr < schstartyr) {
+      document.getElementById("selectBox-schgraduyr").classList.add('error');
     } else {
-      document.getElementById("selectBox-unigraduyr").classList.remove('error');
+      document.getElementById("selectBox-schgraduyr").classList.remove('error');
     }
   }
 
   canBeSubmitted() {
-    const {uniname, uninamefreetext, unistartyr, unigraduyr, degreeNew, uniNameIsValid, editingUni, unidesc} = this.state;
-    const { uniName, uniNameFreeText, uniGraduYr, uniStartYr, degree, uniDesc } = this.props;
+    const {schname, schnamefreetext, schstartyr, schgraduyr, schNameIsValid, editingSch, schdesc} = this.state;
+    const { schName, schNameFreeText, schGraduYr, schStartYr, schDesc} = this.props;
 
     return (
-      ((uniname != '' && uniNameIsValid) || uninamefreetext != '') && unistartyr != '' && unigraduyr != '' && unistartyr <= unigraduyr && degreeNew != '' && editingUni == false
-      && (uniname != uniName || (uninamefreetext != uniNameFreeText) || unistartyr != uniStartYr || unigraduyr != uniGraduYr || degreeNew != degree || unidesc != uniDesc) // Checks user has actually changed something
+      ((schname != '' && schNameIsValid) || schnamefreetext != '') && schstartyr != '' && schgraduyr != '' && schstartyr <= schgraduyr && editingSch == false
+      && (schname != schName || (schnamefreetext != schNameFreeText) || schstartyr != schStartYr || schgraduyr != schGraduYr || schDesc != schdesc) // Checks user has actually changed something
     );
   }
 
   render() {
-    const { isSubmitting, isSubmittingDeleteUni, updateSuccess, errorLoadingEdu, unistartyr, ukUnisList, uniNameIsValid, uninamefreetext, uniname, editingUni, unigraduyr, unidesc} = this.state;
-    const { modalTitle, addOrEdit, uniName, uniNameFreeText, uniGraduYr, uniStartYr, degree, uniDesc } = this.props;
+    const { isSubmitting, isSubmittingDeleteSch, updateSuccess, errorLoadingEdu, schstartyr, ukSchsList, schNameIsValid, schnamefreetext, schname, editingSch, schgraduyr, schdesc} = this.state;
+    const { modalTitle, addOrEdit, schName, schNameFreeText, schGraduYr, schStartYr, schDesc} = this.props;
     const isEnabled = this.canBeSubmitted();
-
-  /*  const uniYrs = [
-      {value: '1', label: 'Foundation Year / Diploma'},
-      {value: '1', label: '1st Year'},
-      {value: '2', label: '2nd Year'},
-      {value: '3', label: '3rd Year'},
-      {value: '4', label: '4th Year'},
-      {value: '5', label: '5th Year'},
-      {value: 'rcGrad', label: 'Recently Graduated'},
-      {value: 'pg', label: 'Studying Post-grad'},
-    ]*/
 
     let currYr = new Date().getFullYear()
     let startYr = currYr - 60;
@@ -181,26 +169,26 @@ class AddEditUniContent extends Component {
           {modalTitle}
         </div>
         <form className="paddingR20 paddingL20">
-          {editingUni == false && (
+          {editingSch == false && (
             <div className="form-group eduName marginTop20">
               <div className="descriptor alignLeft">
-                University name: <strong>{uninamefreetext != '' ? uninamefreetext : (uniName != '' ? uniname : 'Add University...')}</strong>
+                School name: <strong>{schnamefreetext != '' ? schnamefreetext : (schName != '' ? schname : 'Add School...')}</strong>
               </div>
-              <button type="button" className="ModalOpenBtn ModalOpenBtn-eduFreeTextBtn" id="editUniName-btn" onClick={this.editUni}>{(uniName != '' || uniNameFreeText != '') ? 'Edit' : 'Add'}</button>
+              <button type="button" className="ModalOpenBtn ModalOpenBtn-eduFreeTextBtn" id="editSchName-btn" onClick={this.editSch}>{(schName != '' || schNameFreeText != '') ? 'Edit' : 'Add'}</button>
             </div>
           )}
-          {(editingUni == true) && (
+          {(editingSch == true) && (
             <div className="form-group">
-              <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-uniName">Search for your <strong>University:</strong></label>
+              <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-uniName">Search for your <strong>School:</strong></label>
               <div className="autocompleter">
                 <Autocomplete
-                  suggestions={ukUnisList ? ukUnisList : undefined}
-                  name='uniName'
-                  placeholder={(uniName != null && uniName != '') ? null : 'Type University...'}
-                  handleChange={this.handleUKUniChange}
-                  fileToRender={cdn+"/js/UKUnis"}
+                  suggestions={ukSchsList ? ukSchsList : undefined}
+                  name='schName'
+                  placeholder={(schName != null && schName != '') ? null : 'Type School...'}
+                  handleChange={this.handleUKSchChange}
+                  fileToRender={cdn+"/js/UKSchs"}
                   renderComponents={this.renderComponents}
-                  componentUpdatesState="ukUnisList"
+                  componentUpdatesState="ukSchsList"
                   idValue='value'
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
                   showDetail
@@ -210,18 +198,18 @@ class AddEditUniContent extends Component {
                   noSuggestionsCTAclass="form-control-std uniNotOnList"
                 >
                   <div className="form-group">
-                    <label className="descriptor reqAsterisk dispBlock" htmlFor="uniNameTextBox"><strong>University not on the list?</strong> Add it here:</label>
+                    <label className="descriptor reqAsterisk dispBlock" htmlFor="schNameTextBox"><strong>School not on the list?</strong> Add it here:</label>
                     <div className="chatItemFlexContainer">
                       <TextInput
-                        name="uninamefreetext"
-                        id="uniNameTextBox"
-                        placeholder="Type University..."
+                        name="schnamefreetext"
+                        id="schNameTextBox"
+                        placeholder="Type School..."
                         className="form-control-std uniNotOnList"
                         required
                         maxLength="75"
-                        handleChange={this.handleUniNotOnListChange}
+                        handleChange={this.handleSchNotOnListChange}
                       />
-                      <button type="button" className="Submit-btn backgroundCheck marginLeft" onClick={this.saveUni}>Add</button>
+                      <button type="button" className="Submit-btn backgroundCheck marginLeft" onClick={this.saveSch}>Add</button>
                     </div>
                   </div>
                 </Autocomplete>
@@ -234,26 +222,13 @@ class AddEditUniContent extends Component {
             </div>
           )}
           <div className="form-group">
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">Degree name:</label>
-            <TextInput
-              name="degreeNew"
-              id="degreeInput"
-              placeholder="Type Degree e.g. BSc (Hons) Business..."
-              className="form-control-std"
-              required
-              defaultValue={degree}
-              handleChange={this.handleChange}
-              maxLength="50"
-            />
-          </div>
-          <div className="form-group">
             <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate">Start Date</label>
             <div className="inlineForm">
               <div className="form-group textLeft width50pc">
                 <SelectBox
                   options={startYears}
-                  name='unistartyr'
-                  placeholder={(unistartyr != null && unistartyr != '') ? unistartyr : 'Year:'}
+                  name='schstartyr'
+                  placeholder={(schstartyr != null && schstartyr != '') ? schstartyr : 'Year:'}
                   placeholderIsDefaultValueIfNot='Year:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleStartYrChange}
                   otherValidityChecks={this.otherValidityChecks}
@@ -264,13 +239,13 @@ class AddEditUniContent extends Component {
             </div>
           </div>
           <div className="form-group marginBottom20">
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate">Graduation Date</label>
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate">Final Year</label>
             <div className="inlineForm">
               <div className="form-group textLeft width50pc">
                 <SelectBox
                   options={years}
-                  name='unigraduyr'
-                  placeholder={(uniGraduYr != null && uniGraduYr != '') ? uniGraduYr : 'Year:'}
+                  name='schgraduyr'
+                  placeholder={(schGraduYr != null && schGraduYr != '') ? schGraduYr : 'Year:'}
                   placeholderIsDefaultValueIfNot='Year:' // Changes font from grey to purple if is actually a default value
                   handleChange={this.handleEndYrChange}
                   otherValidityChecks={this.otherValidityChecks}
@@ -279,25 +254,25 @@ class AddEditUniContent extends Component {
                 />
               </div>
             </div>
-            {unigraduyr < unistartyr && unistartyr != '' && (
-              <div className="descriptor prompt error eduForm alignLeft">Graduation year can&#39;t be before Start Date</div>
+            {schgraduyr < schstartyr && schstartyr != '' && (
+              <div className="descriptor prompt error eduForm alignLeft">Final year can&#39;t be before Start Date</div>
             )}
           </div>
           <div className="form-group">
             <label className="descriptor alignLeft" htmlFor="schdesc">Description</label>
             <textarea
-              name="unidesc"
-              id="uniDescInput"
+              name="schdesc"
+              id="schDescInput"
               className="form-control-std textInputBox"
-              placeholder={(uniDesc != null && unidesc != '') ? null : 'Type a description e.g. grades, projects, societies...'}
-              defaultValue={uniDesc != null ? uniDesc : null}
+              placeholder={(schDesc != null && schdesc != '') ? null : 'Type a description e.g. grades, projects, extra-curricular activities...'}
+              defaultValue={schDesc != null ? schDesc : null}
               onChange={this.handleChange}
               onBlur={this.onBlur}
               maxLength="1000"
               required={false}
             />
             <div className="descriptor-br form">
-              {unidesc.length} / 1000
+              {schdesc.length} / 1000
             </div>
           </div>
           <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-Edu">
@@ -309,20 +284,20 @@ class AddEditUniContent extends Component {
             )}
           </button>
           {addOrEdit != 'add' && (
-            <Modal {...DeleteUniModalProps}>
+            <Modal {...DeleteSchModalProps}>
               <div className="modal-preTitle">
                 Are you sure?
               </div>
               <div className="modal-subtitle">
-                You&#39;re about to permanently delete this Degree
+                You&#39;re about to permanently delete this School
               </div>
               <div className="pass-btn-container">
-                <button type="button" disabled={isSubmittingDeleteUni == true ? true : false} onClick={this.handleSubmitDeleteUni} className="Submit-btn">
-                  {isSubmittingDeleteUni === true && (
+                <button type="button" disabled={isSubmittingDeleteSch == true ? true : false} onClick={this.handleSubmitDeleteSch} className="Submit-btn">
+                  {isSubmittingDeleteSch === true && (
                     <LoadingSpinner />
                   )}
-                  {isSubmittingDeleteUni != true && (
-                    <span>Yes, delete Degree</span>
+                  {isSubmittingDeleteSch != true && (
+                    <span>Yes, delete School</span>
                   )}
                 </button>
               </div>
@@ -338,7 +313,7 @@ class AddEditUniContent extends Component {
             <div className="ideas-icon-container">
               <span role="img" aria-label="ok emoji">👌</span>
             </div>
-            University details updated
+            School details updated
           </div>
         </React.Fragment>
       )
@@ -346,4 +321,4 @@ class AddEditUniContent extends Component {
   }
 }
 
-export default AddEditUniContent;
+export default AddEditSchContent;

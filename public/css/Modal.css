@@ -409,7 +409,10 @@
 .ModalOpenBtn-editUni,
 .ModalOpenBtn-addEditUni,
 .ModalOpenBtn-addEditTraining,
-.ModalOpenBtn-addEditHeadline{
+.ModalOpenBtn-addEditHeadline,
+.ModalOpenBtn-editSch,
+.ModalOpenBtn-addSchDesc,
+.ModalOpenBtn-addUniDesc{
   background: none;
   padding: 0;
   border: none;
@@ -424,6 +427,11 @@
 .ModalOpenBtn-deleteRole{
   margin: auto;
   margin-top: 10px;
+}
+.ModalOpenBtn-addSchDesc,
+.ModalOpenBtn-addUniDesc{
+  margin-bottom: 20px;
+  margin-top: -10px;
 }
 
 .ModalOpenBtn-noSuggestionsCTABtn,
@@ -480,7 +488,10 @@
 .ModalOpenBtn-editUni:hover,
 .ModalOpenBtn-addEditUni:hover,
 .ModalOpenBtn-addEditTraining:hover,
-.ModalOpenBtn-addEditHeadline:hover {
+.ModalOpenBtn-addEditHeadline:hover,
+.ModalOpenBtn-editSch:hover,
+.ModalOpenBtn-addSchDesc:hover,
+.ModalOpenBtn-addUniDesc:hover {
   background: none;
   color: rgba(63,63,63,.7);
 }
@@ -504,7 +515,10 @@
 .ModalOpenBtn-editUni:focus,
 .ModalOpenBtn-addEditUni:focus,
 .ModalOpenBtn-addEditTraining:focus,
-.ModalOpenBtn-addEditHeadline:focus {
+.ModalOpenBtn-addEditHeadline:focus,
+.ModalOpenBtn-editSch:focus,
+.ModalOpenBtn-addSchDesc:focus,
+.ModalOpenBtn-addUniDesc:focus {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
