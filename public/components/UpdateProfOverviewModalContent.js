@@ -52,7 +52,7 @@ class UpdateProfileOverviewContent extends Component {
 
   render() {
     const { isSubmitting, updateSuccess, eetstatus } = this.state;
-    const { eetStatus, fName, lName, isPicSet, profPicSrc, schInstName, degree, uniInstName, currRole, currCo, currTraining, currTrainingProvider, country, profUserIsU18, menteeIsU18, hasMinVerif } = this.props;
+    const { eetStatus, fName, lName, isPicSet, profPicSrc, schInstName, degree, uniInstName, currRole, currCo, currTraining, currTrainingProvider, country, profUserIsU18, viewerIsU18, hasMinVerif } = this.props;
     const isEnabled = this.canBeSubmitted();
 
     const eetStatusUKOptions = [
@@ -133,7 +133,7 @@ class UpdateProfileOverviewContent extends Component {
                     </div>
                   )}
                 </div>
-                <h1 className="profileName">{fName}{(menteeIsU18 || profUserIsU18) ? '' : (" " + lName)}</h1>
+                <h1 className="profileName">{fName}{(viewerIsU18 || profUserIsU18) ? '' : (" " + lName)}</h1>
               </React.Fragment>
             )}
             {eetstatus == 'sch' && (
@@ -148,7 +148,7 @@ class UpdateProfileOverviewContent extends Component {
                 : (
                   <React.Fragment>
                     <div className="profilePosition">Student</div>
-                    {(profUserIsU18 != true && menteeIsU18 != true) && (
+                    {(profUserIsU18 != true && viewerIsU18 != true) && (
                       <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {schInstName}</div>
                     )}
                   </React.Fragment>

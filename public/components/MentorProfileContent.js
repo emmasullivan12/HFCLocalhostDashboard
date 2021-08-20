@@ -647,7 +647,7 @@ class MentorProfileContent extends Component {
 //    const isPicSet = false;
     const uid = '23456';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
-    const menteeIsU18 = false;
+    const viewerIsU18 = false;
     const profUserIsU18 = false;
     const viewerCountry = 'GBR'
     const userInitial = mentor.fname.charAt(0).toUpperCase();
@@ -687,7 +687,7 @@ class MentorProfileContent extends Component {
       </div>
     } else {
 
-    const picSizePublic = (menteeIsU18 || profUserIsU18) ? '-40' : '-360'
+    const picSizePublic = (viewerIsU18 || profUserIsU18) ? '-40' : '-360'
 
       return (
         <React.Fragment>
@@ -742,7 +742,7 @@ class MentorProfileContent extends Component {
                     </div>
                   )}
                 </div>
-                <h1 className="profileName">{mentor.fname}{(menteeIsU18 || profUserIsU18) ? '' : (" " + mentor.lname)}</h1>
+                <h1 className="profileName">{mentor.fname}{(viewerIsU18 || profUserIsU18) ? '' : (" " + mentor.lname)}</h1>
                 <div className="editSectionContainer zIndex0">
                   {mentor.eetstatus == 'sch' && (
                     <React.Fragment>
@@ -786,7 +786,7 @@ class MentorProfileContent extends Component {
                           profPicSrc={mentor.profPicSrc}
                           hasMinVerif={hasMinVerif}
                           profUserIsU18={profUserIsU18}
-                          menteeIsU18={menteeIsU18}
+                          viewerIsU18={viewerIsU18}
                           schInstName={schInstName}
                           degree={latestUni.degree}
                           uniInstName={uniInstName}
