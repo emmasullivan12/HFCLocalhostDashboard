@@ -4,10 +4,10 @@ import React, { Component} from "react";
 import '../css/RatingItems.css';
 
 class RatingItems extends Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.state = {
-      indexChecked: '',
+      indexChecked: this.props.defaultValue ? this.props.defaultValue : '',
       indexHovered: ''
     }
   }
@@ -15,7 +15,7 @@ class RatingItems extends Component {
   componentDidMount(){
     const { focusOnLoad, handleTabPress, name } = this.props;
     if (focusOnLoad) {
-      document.getElementById("ratingsContainer").firstElementChild.focus()
+      document.getElementById("ratingsContainer" + (name != null ? ("-"+name) : '')).firstElementChild.focus()
     }
     if (handleTabPress) {
       handleTabPress(false);
@@ -24,9 +24,10 @@ class RatingItems extends Component {
 
 
   onBlur = (e) => {
+    const {name} = this.props;
     this.checkError()
 
-    if (e.currentTarget.id === 'ratingsContainer') {
+    if (e.currentTarget.id === ('ratingsContainer' + (name != null ? ("-"+name) : ''))) {
       this.setState({
         indexHovered: ''
       })
@@ -184,7 +185,7 @@ class RatingItems extends Component {
 
     return (
       <React.Fragment>
-        <div className="ratingItemsContainer" id="ratingsContainer" onMouseLeave={this.onBlur} onBlur={this.onBlur}>
+        <div className="ratingItemsContainer" id={"ratingsContainer" + (name != null ? ("-"+name) : '')} onMouseLeave={this.onBlur} onBlur={this.onBlur}>
           {ratings}
         </div>
       </React.Fragment>

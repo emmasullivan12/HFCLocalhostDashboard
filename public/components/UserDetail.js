@@ -304,7 +304,7 @@ function userFlagEmoji(userCountry) {
 function eduSubjects(userCountry) {
   switch (userCountry) {
     case 'GBR':
-      return 'A-Level (or equivalent) subjects';
+      return 'School subjects (A-Level or equivalent)';
     case 'USA':
     case 'CAN':
       return 'Subjects I studied at High School';

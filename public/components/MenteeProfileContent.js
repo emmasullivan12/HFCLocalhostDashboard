@@ -9,6 +9,8 @@ import AddEditSchContent from './AddEditSchModalContent.js';
 import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
+import EditLifestyleContent from './EditLifestyleModalContent.js';
+import EditRatingsContent from './EditRatingsModalContent.js';
 import EditSubjectsContent from './EditSubjectsContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
 import FullPageModal from './FullPageModal.js';
@@ -93,6 +95,13 @@ const AddExpertiseModalProps = {
   changeInitFocus: true
 }
 
+const AddRatingsModalProps = {
+  ariaLabel: 'Add / Edit self-ratings',
+  triggerText: '+ Add / Edit Self-Ratings',
+  usedFor: 'addEditTraining',
+  changeInitFocus: true
+}
+
 const AddTrainingModalProps = {
   ariaLabel: 'Add / Edit training',
   triggerText: '+ Add Training',
@@ -117,6 +126,13 @@ const AddLearningModalProps = {
 const AddRoleModalProps = {
   ariaLabel: 'Add role',
   triggerText: '+ Add role',
+  usedFor: 'addEditRole',
+  changeInitFocus: true
+}
+
+const AddLifestyleModalProps = {
+  ariaLabel: 'Add lifestyle',
+  triggerText: '+ Add lifestyle preferences',
   usedFor: 'addEditRole',
   changeInitFocus: true
 }
@@ -290,9 +306,6 @@ class MenteeProfileContent extends Component {
       showFeedback: true,
       browser: '',
     }
-//    this.toggleFollowStatus = this.toggleFollowStatus.bind(this);
-//    this.toggleSave4LaterClick = this.toggleSave4LaterClick.bind(this);
-    this.availabilityMsg = this.availabilityMsg.bind(this);
   }
 
   componentDidMount() {
@@ -316,12 +329,6 @@ class MenteeProfileContent extends Component {
     const currentState = this.state.showFeedback;
     this.setState({
       showFeedback: !currentState,
-    })
-  }
-
-  handleAvailabilityClick = () => {
-    this.setState({ nowAvailable: true }, () => {
-      this.availabilityMsg('', this.state.nowAvailable)
     })
   }
 
@@ -414,7 +421,10 @@ class MenteeProfileContent extends Component {
       trainingdesc: '',
       isavailable: {status: 1, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1, userToRemind: 3},
       menteegroups: [1,3],
-      whyjoin: 'I really need help knowing how to get to become a 3D Animator and get contacts in the industry'
+      whyjoin: 'I really need help knowing how to get to become a 3D Animator and get contacts in the industry',
+      certainty: 7,
+      knownextsteps: '',
+      lifestyle: 'Rich with a lambo'
     }
 //    const roleHistory = []
     const roleHistory = [
@@ -720,7 +730,7 @@ class MenteeProfileContent extends Component {
                           <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
                         </FullPageModal>
                         <div className="editSectionBtn dispInlineBlock">
-                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                          <FullPageModal {...EditProfileSectionModalProps}>
                             <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
                           </FullPageModal>
                         </div>
@@ -748,6 +758,93 @@ class MenteeProfileContent extends Component {
                               <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={mentee.industries.length > 0 ? mentee.industries : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} />
                             </FullPageModal>
                           </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && (mentee.lifestyle == '' || mentee.lifestyle == null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          The lifestyle I want
+                        </h2>
+                        <Modal {...AddLifestyleModalProps}>
+                          <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {mentee.lifestyle != '' && mentee.lifestyle != null && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          The lifestyle I want
+                        </h2>
+                        <p>{mentee.lifestyle}</p>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <EditLifestyleContent modalTitle='Your ambitions' lifestyle={mentee.lifestyle}/>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && mentee.certainty == '' && mentee.knownextsteps == '' && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          How I&#39;m feeling
+                        </h2>
+                        <Modal {...AddRatingsModalProps}>
+                          <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {(mentee.certainty != '' || mentee.knownextsteps != '') && (
+                      <div>
+                        <h2>
+                          How I&#39;m feeling
+                        </h2>
+                        {mentee.certainty != '' && mentee.certainty != null && (
+                          <div className="editSectionContainer">
+                            <p>
+                              <span className="impactTxt">How certain I am of the career I want:</span>
+                              <span className="impactRating">{mentee.certainty}</span><span className="neutralText"> / 10</span>
+                            </p>
+                            {isMe == "isMe" && (
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionModalProps}>
+                                  <EditRatingsContent modalTitle='Edit your self-ratings' certainty={mentee.certainty} knowNextSteps={mentee.knownextsteps == '' ? '' : mentee.knownextsteps}/>
+                                </Modal>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                        {mentee.knownextsteps != '' && mentee.knownextsteps != null && (
+                          <div className="editSectionContainer">
+                            <p>
+                              <span className="impactTxt">I know what next steps to take to get down my preferred career path:</span>
+                              <span className="impactRating">{mentee.knownextsteps}</span><span className="neutralText"> / 10</span>
+                            </p>
+                            {isMe == "isMe" && (
+                              <div className="editSectionBtn dispInlineBlock">
+                                <Modal {...EditProfileSectionModalProps}>
+                                  <EditRatingsContent modalTitle='Edit your self-ratings' idToFocusOnOpen="ratingsContainer-knowNextStepsRating" certainty={mentee.certainty == '' ? '' : mentee.certainty} knowNextSteps={mentee.knownextsteps}/>
+                                </Modal>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                        {isMe == "isMe" && (
+                          <Modal {...AddRatingsModalProps}>
+                            <EditRatingsContent modalTitle='Edit your self-ratings' certainty={mentee.certainty == '' ? '' : mentee.certainty} knowNextSteps={mentee.knownextsteps == '' ? '' : mentee.knownextsteps} />
+                          </Modal>
                         )}
                       </div>
                     )}
@@ -1298,17 +1395,6 @@ class MenteeProfileContent extends Component {
                 </ul>
                 <div className="profileCTAContainer">
                   <div className="profileUserCTA">
-                    {(mentee.isavailable.status !== 0 || nowAvailable) ? (
-                      <button type="button" className={"profileBtn" + (isMe == "isMe" ? "" : " notMe")}>
-                        <span>&#10003;</span>
-                      </button>
-                      )
-                    : (
-                      <button type="button" className={"profileBtn redTextBorderBkgnd" + (isMe == "isMe" ? "" : " notMe")} onClick={isMe == 'isMe' ? this.handleAvailabilityClick : null}>
-                        <span>&#10007;</span>
-                      </button>
-                      )
-                    }
                     <div className="timeContainer">
                       {isDayNight==='day' ? (
                         <button type="button" className="profileBtn dayTime">

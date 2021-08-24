@@ -1184,7 +1184,7 @@ class Form extends Component {
         return (
           <div
             className={"formA-"+usedFor}
-            data-idforfocus="ratingsContainer"
+            data-idforfocus={"ratingsContainer"+"-"+name}
             data-elementforfocus="firstElementChild"
             data-idforstate={i+"-"+name}
             data-index={i}
