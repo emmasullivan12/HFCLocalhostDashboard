@@ -575,11 +575,11 @@ class MenteeProfileContent extends Component {
     let trainLengthMths
     let trainLengthYrs
     let trainLengthRemainderMths
+    let today = new Date()
 
     if (mentee.trainingstartdate != '') {
       // If is current role
       if (mentee.trainingenddate == '') {
-        var today = new Date()
         trainLengthMths = monthDiff(new Date(mentee.trainingstartdate), today)
       } else {
         trainLengthMths = monthDiff(new Date(mentee.trainingstartdate), new Date(mentee.trainingenddate))
@@ -1052,7 +1052,6 @@ class MenteeProfileContent extends Component {
 
                               // If is current role
                               if (role.endDate == '') {
-                                var today = new Date()
                                 roleLengthMths = monthDiff(new Date(role.startDate), today)
                               } else {
                                 roleLengthMths = monthDiff(new Date(role.startDate), new Date(role.endDate))

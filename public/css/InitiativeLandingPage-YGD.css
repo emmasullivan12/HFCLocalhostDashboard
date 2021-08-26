@@ -1,0 +1,102 @@
+/* Dex last merged this code on 31st Aug 2020 */
+
+.gdpr-subCTA .link.ygd{
+  color: #0093be;
+}
+.gdpr-btn.ygd{
+  background: #78d797;
+}
+.gdpr-btn.ygd:hover{
+  background: #4ac773;
+  color: #fff;
+}
+.pwdByMain.ygd{
+  background-image: url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
+  background-image:linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
+  background-image:-moz-linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
+  background-image:-webkit-linear-gradient(90deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
+  background-image:-o-linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
+}
+.initiativeLogoContainer.ygd{
+  width: 150px;
+}
+.initiativeKeyPoints.ygd{
+  background-color: #000;
+}
+.pwdByNav.is-fixed.ygd {
+  background-color: #000!important;
+}
+.initiativeBtn-student.ygd{
+  color: #fff;
+  background: #78d797;
+}
+.initiativeBtn-student.ygd:hover{
+  background: #4ebf73;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeBtn-student.ygd:active{
+  background: #ff2528;
+}
+.initiativeBtn-mentor.ygd{
+  color: #ef898a;
+  background: transparent;
+  border: 2.5px solid #ee5557;
+}
+.initiativeBtn-mentor.ygd:hover{
+  background-color: rgb(238 85 87 / 20%);
+  color: rgb(179 174 174 / 90%);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+}
+.initiativeBtn-mentor.ygd:active{
+  background: transparent;
+}
+.sponsoredByText.ygd{
+  color: #cdcacc;
+}
+.tabHeader.ygd{
+  color: #000;
+}
+.joinSteps.ygd{
+  background-image: url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:linear-gradient(0deg,rgba(0,147,190,.8),rgba(0,147,190,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-moz-linear-gradient(0deg,rgba(0,147,190,.8),rgba(0,147,190,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-webkit-linear-gradient(90deg,rgba(0,147,190,.8),rgba(0,147,190,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+  background-image:-o-linear-gradient(0deg,rgba(0,147,190,.8),rgba(0,147,190,.8)),url(https://prospela.com/wp-content/uploads/2019/07/accessvfx_wallpaper-1.jpg);
+}
+.initiativeHeader.ygd{
+  color: #000;
+}
+.initiativeTextDetail.ygd{
+  color: #3f3f3f;
+}
+.mentee-click-ygd:before {
+  background-color: #78d797;
+}
+.mentor-click-ygd:before {
+  background-color: #ee5557;
+}
+.stepCrcl.ygd{
+  background-color: #ee5557;
+}
+#quotes li.quote-box.ygd:nth-child(1) {
+  border-color: #3092bb;
+}
+#quotes li.quote-box.ygd:nth-child(1):before {
+  color: #3092bb;
+}
+#quotes li.quote-box.ygd:nth-child(2) {
+  border-color: #ee5557;
+}
+#quotes li.quote-box.ygd:nth-child(2):before {
+  color: #ee5557;
+}
+#quotes li.quote-box.ygd:nth-child(3) {
+  border-color: #78d797;
+}
+#quotes li.quote-box.ygd:nth-child(3):before {
+  color: #78d797;
+}
