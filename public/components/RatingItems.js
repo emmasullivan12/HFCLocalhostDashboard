@@ -1,4 +1,4 @@
-// Dex last merged this code on 14th Aug 2019
+// Dex last merged this code on 26th Aug 2019
 
 import React, { Component} from "react";
 import '../css/RatingItems.css';
