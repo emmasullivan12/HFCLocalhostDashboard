@@ -1089,7 +1089,7 @@ class MentorProfileContent extends Component {
                     </h1>
                     <div>
                       <h2>
-                        University Degree(s):
+                        University:
                       </h2>
                       {uniHistory.length == 0 && (
                         <div className="editSectionContainer">

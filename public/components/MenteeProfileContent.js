@@ -10,8 +10,10 @@ import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
 import EditLifestyleContent from './EditLifestyleModalContent.js';
+import EditPlanningUniContent from './EditPlanningUniModalContent.js';
 import EditRatingsContent from './EditRatingsModalContent.js';
 import EditSubjectsContent from './EditSubjectsContent.js';
+import EditWorkingOnContent from './EditWorkingOnContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
 import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
@@ -81,6 +83,14 @@ const AddHobbiesFPModalProps = {
   changeInitFocus: true,
 }
 
+const AddWorkingOnFPModalProps = {
+  ariaLabel: 'Add Activities',
+  triggerText: '+ Add Activities',
+  usedFor: 'editHobbies',
+  backBtn: 'arrow',
+  changeInitFocus: true,
+}
+
 const EditProfileSectionModalProps = {
   ariaLabel: 'Edit profile section',
   triggerText: 'Edit section',
@@ -91,6 +101,13 @@ const EditProfileSectionModalProps = {
 const AddExpertiseModalProps = {
   ariaLabel: 'Add / Edit skills',
   triggerText: '+ Add Key Skills',
+  usedFor: 'addEditSkills',
+  changeInitFocus: true
+}
+
+const AddPlanningUniModalProps = {
+  ariaLabel: 'Add / Edit university plans',
+  triggerText: '+ Add Uni Plans',
   usedFor: 'addEditSkills',
   changeInitFocus: true
 }
@@ -321,6 +338,19 @@ class MenteeProfileContent extends Component {
     this.mounted = false;
   }
 
+  convertWorkingOn = (workingOn, workingOnOptions) => {
+    let workingOnArray = [];
+
+    const workingOnArr = workingOnOptions
+      .filter(item => workingOn.includes(parseInt(item.value,10)))
+
+    workingOnArr.forEach((x) => {
+      workingOnArray.push(x.label)
+    })
+
+    return workingOnArray.join(", ")
+  }
+
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -396,8 +426,9 @@ class MenteeProfileContent extends Component {
       schnamefreetext: '', // If their school wasn't on the list
       schgraduyr: '2021',
       schyrgrp: '', // yr8/yr9/yr10/yr11/yr12/yr13/finSch
+      planninguni: '1',
       uniname: '',
-      uninamefreetext: 'Random FreeText Uni', // If their school wasn't on the list
+      uninamefreetext: '',
       unistartyr: '',
       unigraduyr: '2021',
       uniyrgrp: 'rcGrad',
@@ -408,12 +439,17 @@ class MenteeProfileContent extends Component {
       industries: [2, 19],
       roles: [2, 69, 5, 22, 41],
       rolesfreetext: ['Head of M&A'],
+    //  industries: [],
+    //  roles: [],
+    //  rolesfreetext: [],
       rolesexp: [1],
       rolesexpfreetext: ['Trainer Sales Assistant'],
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
       learning: 'leadership, negotiations, excel, programming, python, mySQL',
       hobbies: [1,14,30],
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
+    //  workingon: [0,3,4],
+      workingon: [],
       currtraining: '',
       currtrainingprovider: '',
       trainingstartdate: '',
@@ -422,7 +458,7 @@ class MenteeProfileContent extends Component {
       isavailable: {status: 1, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1, userToRemind: 3},
       menteegroups: [1,3],
       whyjoin: 'I really need help knowing how to get to become a 3D Animator and get contacts in the industry',
-      certainty: 7,
+      certainty: '',
       knownextsteps: '',
       lifestyle: 'Rich with a lambo'
     }
@@ -430,7 +466,7 @@ class MenteeProfileContent extends Component {
     const roleHistory = [
       {title: 'Trainer Sales Assistant', co: 'JD Sports', startDate: '', endDate: '', roledesc: 'I sell trainers to consumers.', ismain: true},
     ]
-//    const uniHistory = []
+  //  const uniHistory = []
     const uniHistory = [
       {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
       {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
@@ -506,11 +542,27 @@ class MenteeProfileContent extends Component {
     const learningArr = mentee.learning.split(',');
     const subjectsCommaString = (mentee.subjects.length > 0 || mentee.subjectsfreetext.length > 0) ? convertSubjects(mentee.subjects, mentee.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
+    const workingOnOptions = [
+      {value: '0', label: 'Deciding on a career path'},
+      {value: '1', label: 'CV/Resume editing'},
+      {value: '2', label: 'Portfolio / Showreel review'},
+      {value: '3', label: 'Finding an internship / work experience'},
+      {value: '4', label: 'Full-time job search'},
+      {value: '5', label: 'Job Interviews'},
+      {value: '6', label: 'Making subject / degree choices'},
+      {value: '7', label: 'Applying to University'},
+      {value: '8', label: 'Learning to Code'},
+      {value: '9', label: 'Learning a language'},
+      {value: '10', label: 'Learning an instrument'},
+      {value: '11', label: 'Training for a sporting event'},
+    ]
+    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon, workingOnOptions) : []
+    const workingOnArr = workingOnCommaString.length == 0 ? [] : workingOnCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)
     const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)
     const sortedUnis = uniHistory && uniHistory.length != 0 && uniHistory.sort((a, b) => parseFloat(b.unigraduyr) - parseFloat(a.unigraduyr));
-    const latestUni = sortedUnis[0]
+    const latestUni = sortedUnis && sortedUnis[0]
     const sortedSchs = schHistory && schHistory.length != 0 && schHistory.sort((a, b) => parseFloat(b.schgraduyr) - parseFloat(a.schgraduyr));
     const latestSch = sortedSchs[0]
 //    const lastActive = timeSince(mentee.lastActiveDate);
@@ -520,17 +572,17 @@ class MenteeProfileContent extends Component {
 
     const isPicSet = mentee.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23456';
+    const uid = '23458';
     const isMe = uid == mentee.uid ? 'isMe' : 'isntMe';
     const viewerIsU18 = false;
-    const profUserIsU18 = false;
+    const profUserIsU18 = true;
     const viewerCountry = 'GBR'
     const userInitial = mentee.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);
     const publicFeedbackToShow = feedbackReceivedArr.filter(feedback => feedback.referenceformenteepub == true) // for mentor use notetomentorpub == true
   //  const uniInstName = (mentee.uniname != '' || mentee.uninamefreetext != '') ? this.getUniInstName(mentee.uniname, mentee.uninamefreetext) : ''
-    const uniInstName = latestUni.uniname ? latestUni.uniname : latestUni.uninamefreetext
-    const schInstName = latestSch.schname ? latestSch.schname : latestSch.schnamefreetext
+    const uniInstName = latestUni ? latestUni.uniname ? latestUni.uniname : latestUni.uninamefreetext : ''
+    const schInstName = latestSch ? latestSch.schname ? latestSch.schname : latestSch.schnamefreetext : ''
     const menteeSUStep = 'didIDTrain' // LINK WITH DEX
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
     let trainLengthTxt = ''
@@ -595,7 +647,7 @@ class MenteeProfileContent extends Component {
                 <div className="editSectionContainer zIndex0">
                   {mentee.eetstatus == 'sch' && (
                     <React.Fragment>
-                      <div className="profilePosition">Student</div>
+                      <div className={(profUserIsU18 != true && viewerIsU18 != true) ? "profileInstitution" : "profilePosition"}>Student</div>
                       {(profUserIsU18 != true && viewerIsU18 != true) && (
                         <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {schInstName}</div>
                       )}
@@ -761,56 +813,8 @@ class MenteeProfileContent extends Component {
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentee.lifestyle == '' || mentee.lifestyle == null) && (
-                      <div className="editSectionContainer">
-                        <h2>
-                          The lifestyle I want
-                        </h2>
-                        <Modal {...AddLifestyleModalProps}>
-                          <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
-                        </Modal>
-                        <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
-                            <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
-                          </Modal>
-                        </div>
-                      </div>
-                    )}
-                    {mentee.lifestyle != '' && mentee.lifestyle != null && (
-                      <div className="editSectionContainer">
-                        <h2>
-                          The lifestyle I want
-                        </h2>
-                        <p>{mentee.lifestyle}</p>
-                        {isMe == "isMe" && (
-                          <div className="editSectionBtn dispInlineBlock">
-                            <Modal {...EditProfileSectionModalProps}>
-                              <EditLifestyleContent modalTitle='Your ambitions' lifestyle={mentee.lifestyle}/>
-                            </Modal>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                    {isMe == "isMe" && mentee.certainty == '' && mentee.knownextsteps == '' && (
-                      <div className="editSectionContainer">
-                        <h2>
-                          How I&#39;m feeling
-                        </h2>
-                        <Modal {...AddRatingsModalProps}>
-                          <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
-                        </Modal>
-                        <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
-                            <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
-                          </Modal>
-                        </div>
-                      </div>
-                    )}
                     {(mentee.certainty != '' || mentee.knownextsteps != '') && (
-                      <div>
-                        <h2>
-                          How I&#39;m feeling
-                        </h2>
+                      <div className="marginTop20">
                         {mentee.certainty != '' && mentee.certainty != null && (
                           <div className="editSectionContainer">
                             <p>
@@ -848,6 +852,48 @@ class MenteeProfileContent extends Component {
                         )}
                       </div>
                     )}
+                    {isMe == "isMe" && mentee.certainty == '' && mentee.knownextsteps == '' && (
+                      <div className="editSectionContainer marginTop20">
+                        <Modal {...AddRatingsModalProps}>
+                          <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <EditRatingsContent modalTitle='Edit your self-ratings' certainty='' knowNextSteps='' />
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {isMe == "isMe" && (mentee.lifestyle == '' || mentee.lifestyle == null) && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          The lifestyle I want
+                        </h2>
+                        <Modal {...AddLifestyleModalProps}>
+                          <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
+                        </Modal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <Modal {...EditProfileSectionModalProps}>
+                            <EditLifestyleContent modalTitle='Edit your ambitions' lifestyle='' />
+                          </Modal>
+                        </div>
+                      </div>
+                    )}
+                    {mentee.lifestyle != '' && mentee.lifestyle != null && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          The lifestyle I want
+                        </h2>
+                        <p>{mentee.lifestyle}</p>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <Modal {...EditProfileSectionModalProps}>
+                              <EditLifestyleContent modalTitle='Your ambitions' lifestyle={mentee.lifestyle}/>
+                            </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
                     {isMe == "isMe" && (mentee.whyjoin == '' || mentee.whyjoin == null) && (
                       <div className="editSectionContainer">
                         <h2>
@@ -874,6 +920,40 @@ class MenteeProfileContent extends Component {
                             <Modal {...EditProfileSectionModalProps}>
                               <UpdateWhyJoinContent modalTitle='Your motivations for Mentoring' whyJoin={mentee.whyjoin ? mentee.whyjoin : ''}/>
                             </Modal>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {isMe == "isMe" && workingOnArr.length == 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="footsteps emoji">👣</span> My immediate next steps
+                        </h2>
+                        <FullPageModal {...AddWorkingOnFPModalProps}>
+                          <EditWorkingOnContent modalTitle='Edit what you are working on' workingOnArr={[]} />
+                        </FullPageModal>
+                        <div className="editSectionBtn dispInlineBlock">
+                          <FullPageModal {...EditProfileSectionFPModalProps}>
+                            <EditWorkingOnContent modalTitle='Edit what you are working on' workingOnArr={[]} />
+                          </FullPageModal>
+                        </div>
+                      </div>
+                    )}
+                    {workingOnArr.length > 0 && (
+                      <div className="editSectionContainer">
+                        <h2>
+                          <span role="img" aria-label="footsteps emoji">👣</span> My immediate next steps
+                        </h2>
+                        <div>
+                          {workingOnArr.length > 0 && workingOnArr.map((item) => {
+                            return <div key={item}>{item.trim()}</div>
+                          })}
+                        </div>
+                        {isMe == "isMe" && (
+                          <div className="editSectionBtn dispInlineBlock">
+                            <FullPageModal {...EditProfileSectionFPModalProps}>
+                              <EditWorkingOnContent modalTitle='Edit what you are working on' workingOnArr={workingOnArr}/>
+                            </FullPageModal>
                           </div>
                         )}
                       </div>
@@ -1052,36 +1132,52 @@ class MenteeProfileContent extends Component {
                     </h1>
                     <div>
                       <h2>
-                        University Degree(s):
+                        University:
                       </h2>
                       {uniHistory.length == 0 && (
-                        <div className="editSectionContainer">
+                        <React.Fragment>
                           {mentee.eetstatus != 'uni' && (
-                            <React.Fragment>
-                              {mentee.planningUni == 2 && (
-                                  <p><span role="img" aria-label="thinking-emoji">🤔</span> I&#39;m undecided as to whether to go to University</p>
+                            <div className="editSectionContainer">
+                              {mentee.planninguni == 2 && (
+                                  <p><span role="img" aria-label="thinking-emoji">🤔</span> I&#39;m undecided as to whether to go</p>
                               )}
-                              {mentee.planningUni == 1 && (
-                                  <p><span role="img" aria-label="cross-emoji">❌</span> I dont plan to go to University</p>
+                              {mentee.planninguni == 1 && (
+                                  <p><span role="img" aria-label="cross-emoji">❌</span> I dont plan to go</p>
                               )}
-                              {mentee.planningUni == 0 && (
-                                  <p><span role="img" aria-label="cross-emoji">🙏</span> I&#39;m planning to go to University</p>
+                              {mentee.planninguni === 0 && (
+                                  <p><span role="img" aria-label="cross-emoji">🙏</span> I&#39;m planning to go</p>
                               )}
-                            </React.Fragment>
+                              {isMe == "isMe" && (
+                                <React.Fragment>
+                                  {mentee.planninguni === '' && (
+                                    <Modal {...AddPlanningUniModalProps}>
+                                      <EditPlanningUniContent modalTitle='Add your University Plans' planningUni=''/>
+                                    </Modal>
+                                  )}
+                                  <div className="editSectionBtn dispInlineBlock">
+                                    <Modal {...EditProfileSectionFPModalProps}>
+                                      <EditPlanningUniContent modalTitle='Add your University Plans' planningUni={mentee.planninguni ? mentee.planninguni : ''}/>
+                                    </Modal>
+                                  </div>
+                                </React.Fragment>
+                              )}
+                            </div>
                           )}
-                          {isMe == "isMe" && (
-                            <React.Fragment>
-                              <Modal {...AddUniFPModalProps}>
-                                <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
-                              </Modal>
-                              <div className="editSectionBtn dispInlineBlock">
-                                <Modal {...EditProfileSectionFPModalProps}>
+                          <div className="editSectionContainer">
+                            {isMe == "isMe" && (
+                              <React.Fragment>
+                                <Modal {...AddUniFPModalProps}>
                                   <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
                                 </Modal>
-                              </div>
-                            </React.Fragment>
-                          )}
-                        </div>
+                                <div className="editSectionBtn dispInlineBlock">
+                                  <Modal {...EditProfileSectionFPModalProps}>
+                                    <AddEditUniContent modalTitle='Add your University Degree' addOrEdit='add' uniName='' uniNameFreeText='' degree='' uniStartYr='' uniYrGrp='' uniGraduYr='' uniDesc=''/>
+                                  </Modal>
+                                </div>
+                              </React.Fragment>
+                            )}
+                          </div>
+                        </React.Fragment>
                       )}
                       {uniHistory.length > 0 && (
                         <React.Fragment>
@@ -1132,7 +1228,7 @@ class MenteeProfileContent extends Component {
                                   )}
                                 </div>
                                 {uni.unidesc != '' && (
-                                  <p classNamme="marginBottom20">{uni.unidesc}</p>
+                                  <p className="marginBottom20">{uni.unidesc}</p>
                                 )}
                                 {isMe == "isMe" && uni.unidesc == '' && (
                                   <Modal {...EditUniDescModalProps}>
@@ -1384,7 +1480,7 @@ class MenteeProfileContent extends Component {
                     <a href="#career-aspirations" className="active">Career Aspirations</a>
                   </li>
                   <li>
-                    <a href="#work-experience" className="active">Work Experience</a>
+                    <a href="#work-experience">Work Experience</a>
                   </li>
                   <li>
                     <a href="#education">Education</a>
@@ -1415,7 +1511,7 @@ class MenteeProfileContent extends Component {
                   </div>
                 </div>
               </div>
-              <div className={"mapImg " + mentee.country + " " + mentee.city}>
+              <div className={"mapImg " + mentee.country + ((profUserIsU18 != true && viewerIsU18 != true) ? "" : (" " + mentee.city))}>
                 <div className="mapAttribution">
                   &#169; <a href="https://www.openstreetmap.org/copyright" className="link map">OpenStreetMap</a> contributors
                 </div>
