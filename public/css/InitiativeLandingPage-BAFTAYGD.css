@@ -17,8 +17,40 @@
   background-image:-webkit-linear-gradient(90deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
   background-image:-o-linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-ygd-backgroundImg-small.jpg);
 }
+.pwdByMain.yc{
+  background-image: url(https://files.prospela.com/progImages/bafta-yc-backgroundImg-small.jpg);
+  background-image:linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-yc-backgroundImg-small.jpg);
+  background-image:-moz-linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-yc-backgroundImg-small.jpg);
+  background-image:-webkit-linear-gradient(90deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-yc-backgroundImg-small.jpg);
+  background-image:-o-linear-gradient(0deg,#000,rgba(48 145 187 / 40%)),url(https://files.prospela.com/progImages/bafta-yc-backgroundImg-small.jpg);
+}
 .initiativeLogoContainer.ygd{
   width: 150px;
+}
+.initiativeLogosContainer.top{
+  height: 90px;
+}
+.initiativeLogoContainer.big{
+  height: unset;
+  width: unset;
+  margin-bottom: unset;
+  max-width: 22%;
+  display: inline-block;
+  max-height: 100px;
+}
+.initiativeLogoContainer.big.top{
+  vertical-align: middle;
+}
+.initiativeLogoContainer.big.initiativeHeader{
+  color: #ffe2a8;
+  max-width: unset;
+  font-size: 2rem;
+  top: 67%;
+  margin-left: 20px;
+  height: 100%;
+  position: relative;
+  margin-top: 0;
+  transform: translate(0,-50%);
 }
 .initiativeKeyPoints.ygd{
   background-color: #000;
@@ -99,4 +131,50 @@
 }
 #quotes li.quote-box.ygd:nth-child(3):before {
   color: #78d797;
+}
+@media only screen and (max-width: 454px) {
+  .initiativeLogoContainer.big {
+    max-width: 45%;
+  }
+  .initiativeLogoContainer.big.smallLogo {
+    max-width: 30%;
+  }
+  .initiativeLogoContainer.big.initiativeHeader{
+    font-size: 1.5rem;
+    margin-left: 0;
+    top: 70%;
+    max-width: 0;
+  }
+  .sectionMain {
+    top: 15%;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1040px) {
+  .initiativeHeader.big{
+    max-width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1267px) {
+  .initiativeHeader.big{
+    max-width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 1267px) {
+  .initiativeHeader.big{
+    max-width: 45vw;
+  }
+}
+@media only screen and (min-width: 763px) and (max-width: 1050px) {
+  .initiativeLogoContainer.big.initiativeHeader {
+    top: 60%;
+    margin-left: .7rem;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .initiativeLogoContainer.big.initiativeHeader {
+    top: 70%;
+  }
 }
