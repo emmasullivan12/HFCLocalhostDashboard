@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th mar 2021
+// Dex last merged this code on 31st aug 2021
 
 import React, { Component } from "react";
 import "../css/ChatMenu.css";
@@ -117,7 +117,7 @@ class GroupListItem extends Component {
             )}
 
         {/*    <span className="notificationNum announcement">COMING SOON!</span> */}
-            <span className="menuNavCTA" onClick={this.toggleGroupChannels}>
+            <span className={"menuNavCTA"+ (isOverflowing ? " overflowing" : "")} onClick={this.toggleGroupChannels}>
               {showChannels == true ?
                 'Hide'
               : 'Show'

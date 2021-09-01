@@ -1,4 +1,4 @@
-/* Dex last merged this code on 29th jan 2021 */
+/* Dex last merged this code on 31st aug 2021 */
 
 .chatMenu-header{
   color: rgba(255,255,255,.835);
@@ -34,6 +34,9 @@
   right: 66px;
   text-align: center;
   cursor: pointer;
+}
+.menuNavCTA.overflowing{
+  right: -4px;
 }
 
 .groupMenuItemContainer{
