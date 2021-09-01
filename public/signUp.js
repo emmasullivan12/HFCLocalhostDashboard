@@ -218,10 +218,10 @@ mentorbtn.addEventListener('click', function(event) {
   getStartedbtnText.innerHTML = 'Get Started as an E-Mentor';
   getStartedbtn.disabled = true;
   workEmailTooltip.style.display = 'block';
-  emailText.innerHTML = 'Work (or Uni) Email';
+  emailText.innerHTML = 'Work (or Education) Email';
 //  codeInput.style.display = 'none';
 //  codeTooltip.style.display = 'none';
-  emailPrompt.innerHTML = 'This must be your work (or uni) email address';
+  emailPrompt.innerHTML = 'This must be your work (or Education) email address';
   fname.focus();
   for(let input of formControlStd) {
     input.classList.remove('error');
@@ -266,7 +266,7 @@ lname.addEventListener('invalid', function(e) {
 }, false)
 
 email.addEventListener('focus', function(event) {
-  if (emailText.innerHTML === 'Work (or Uni) Email') {
+  if (emailText.innerHTML === 'Work (or Education) Email') {
     emailPrompt.style.visibility = 'visible';
   } else {
     emailPrompt.style.visibility = 'hidden';
@@ -296,7 +296,7 @@ function emailCheck(e) {
         emailConfiPrompt.style.visibility = 'hidden';
         emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       }
-    } else if (emailText.innerHTML === 'Work (or Uni) Email') {
+    } else if (emailText.innerHTML === 'Work (or Education) Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']
@@ -332,7 +332,7 @@ email.addEventListener('blur', function(e) {
         emailConfiPrompt.style.visibility = 'hidden';
         emailConfi.value != '' ? emailConfi.classList.remove('error') : '';
       }
-    } else if (emailText.innerHTML === 'Work (or Uni) Email') {
+    } else if (emailText.innerHTML === 'Work (or Education) Email') {
       var emailSplit = email.value.split('@')
       var freeEmail = emailSplit[emailSplit.length-1].toLowerCase();
       var personalEmails = ['gmail.com', 'hotmail.com']
