@@ -544,7 +544,7 @@ class MentorProfileContent extends Component {
       groupParents: 1,
       groupSingle: 1,*/
       isavailable: {status: 1, by: "auto", dateUnavailable:"2021-02-04T14:46:14.209Z", reminderDate:"2021-02-14T14:46:14.209Z", reminderStatus: 1, userToRemind: 3},
-      mentorgroups: [1,3],
+      mentorgroups: [1,3,6,7],
       whyhelp: 'I want to give back to those in need of support and which I didnt get to benefit from when I was starting out my career.',
     //  whyhelp: '',
     //  helpFocus: 'review CVs and job applications, feedback on reel, work-reality, general',
@@ -557,15 +557,15 @@ class MentorProfileContent extends Component {
     ]
 //    const uniHistory = []
     const uniHistory = [
-      {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
-      {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
-      {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '2017', uniyrgrp: '', unidesc: 'Such a good 4 years of my life!'}
+  //    {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
+  //    {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
+  //    {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '2017', uniyrgrp: '', unidesc: 'Such a good 4 years of my life!'}
     ]
 //    const schHistory = []
     const schHistory = [
-      {schname: '', schnamefreetext: 'Strodes College', schgraduyr: '2021', schyrgrp: 'yr13', schdesc: 'Studied A-Levels and did dissertation on XYZ - Got top grades!'}, // schyrgrp: yr8/yr9/yr10/yr11/yr12/yr13/finSch
-      {schname: '', schnamefreetext: 'Thamesmead', schgraduyr: '2002', schyrgrp: '', schdesc: ''},
-      {schname: '', schnamefreetext: 'Spelthorne', schgraduyr: '2005', schyrgrp: '', schdesc: ''},
+  //    {schname: '', schnamefreetext: 'Strodes College', schgraduyr: '2021', schyrgrp: 'yr13', schdesc: 'Studied A-Levels and did dissertation on XYZ - Got top grades!'}, // schyrgrp: yr8/yr9/yr10/yr11/yr12/yr13/finSch
+  //    {schname: '', schnamefreetext: 'Thamesmead', schgraduyr: '2002', schyrgrp: '', schdesc: ''},
+  //    {schname: '', schnamefreetext: 'Spelthorne', schgraduyr: '2005', schyrgrp: '', schdesc: ''},
     ]
     const isSafari = browser === 'safari'
 /*    const userReads = [
@@ -657,8 +657,8 @@ class MentorProfileContent extends Component {
     const eduemailverif = true
     const profemailverif = false
   //  const uniInstName = (mentor.uniname != '' || mentor.uninamefreetext != '') ? this.getUniInstName(mentor.uniname, mentor.uninamefreetext) : ''
-    const uniInstName = latestUni.uniname ? latestUni.uniname : latestUni.uninamefreetext
-    const schInstName = latestSch.schname ? latestSch.schname : latestSch.schnamefreetext
+    const uniInstName = latestUni ? (latestUni.uniname ? latestUni.uniname : latestUni.uninamefreetext) : ''
+    const schInstName = latestSch ? (latestSch.schname ? latestSch.schname : latestSch.schnamefreetext) : ''
     const mentorSUStep = 'didIDTrain' // LINK WITH DEX
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
     const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
@@ -751,7 +751,7 @@ class MentorProfileContent extends Component {
                   )}
                   {mentor.eetstatus == 'uni' && (
                     <React.Fragment>
-                      <div className="profilePosition">{latestUni.degree}</div>
+                      <div className="profilePosition">{latestUni ? latestUni.degree : 'Student'}</div>
                     {/*  <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {uniInstName}</div>*/}
                     </React.Fragment>
                   )}
@@ -788,7 +788,7 @@ class MentorProfileContent extends Component {
                           profUserIsU18={profUserIsU18}
                           viewerIsU18={viewerIsU18}
                           schInstName={schInstName}
-                          degree={latestUni.degree}
+                          degree={latestUni ? latestUni.degree : ''}
                           uniInstName={uniInstName}
                           currRole={currRole}
                           currCo={currCo}

@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th aug 2021 
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
@@ -146,15 +146,26 @@ class AddEditRoleContent extends Component {
     }
   }
 
+  handleIsMainErrorMsg = (e) => {
+    const {isMain} = this.props
+
+    if (isMain == false || isMain == null) {
+      document.getElementById('mainRoleError').style.visibility = 'hidden'
+    } else {
+      document.getElementById('mainRoleError').style.visibility = 'visible'
+    }
+  }
+
   toggleIsMainCheckbox = (userInput) => {
     const currentState = this.state.ismain;
+    const {isMain} = this.props
 
     if (currentState == false || currentState == null) {
       this.setState({
         ismain: true,
       });
 
-    } else {
+    } else if (isMain == false) {
       this.setState({
         ismain: false,
       });
@@ -266,17 +277,23 @@ class AddEditRoleContent extends Component {
               maxLength="50"
             />
           </div>
-          <Checkbox
-            labelId="isMainText"
-            labelClassName="checkbox-container textLeft formatLeft"
-            label="Show this as my main role"
-            id="isMainCheckbox"
-            name="ismain"
-            value="1"
-            onChange={this.toggleIsMainCheckbox}
-            defaultChecked={ismain == true}
-            spanClassName="checkmark left"
-          />
+          <div onClick={this.handleIsMainErrorMsg}>
+            <Checkbox
+              labelId="isMainText"
+              labelClassName="checkbox-container textLeft formatLeft"
+              label="Show this as my main role"
+              id="isMainCheckbox"
+              name="ismain"
+              value="1"
+              onChange={this.toggleIsMainCheckbox}
+              defaultChecked={ismain == true}
+              spanClassName="checkmark left"
+              disabled={isMain == true}
+            />
+          </div>
+          <div className="descriptor prompt error hidden" id="mainRoleError">
+            At least one of your roles must be set as your main role
+          </div>
           <div className="form-group">
             <label className="descriptor alignLeft" htmlFor="roledesc">Description</label>
             <textarea

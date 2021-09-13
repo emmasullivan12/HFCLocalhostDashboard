@@ -8,6 +8,8 @@ const groupsList = [
   {value: '3', label: 'Into Games', source: 'intogames', groupavatarurl: '/intogames-avatar.png', },
   {value: '4', label: 'ACCESS:VFX', source: 'avfx', groupavatarurl: '/avfx-avatar.png', },
   {value: '5', label: 'BAME in Games', source: 'big', groupavatarurl: '/big-avatar.png'},
+  {value: '6', label: 'BAFTA YGD', source: 'bafta-ygd', groupavatarurl: '/bafta-ygd-avatar.png'},
+  {value: '7', label: 'BAFTA', source: 'bafta', groupavatarurl: '/bafta-avatar.png'},
 ];
 
 export default groupsList;
