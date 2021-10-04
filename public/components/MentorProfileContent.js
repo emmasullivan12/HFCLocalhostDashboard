@@ -492,7 +492,7 @@ class MentorProfileContent extends Component {
   //    lastActiveDate: '1556389526',
       yrsExp: 7,
   //    uni: null,
-      eetstatus: 'job',
+      eetstatus: 'sch',
       degree: 'BSc (Hons) Business Administration',
       schname: '',
       schnamefreetext: '', // If their school wasn't on the list
@@ -746,7 +746,7 @@ class MentorProfileContent extends Component {
                 <div className="editSectionContainer zIndex0">
                   {mentor.eetstatus == 'sch' && (
                     <React.Fragment>
-                      <div className="profilePosition">Student</div>
+                      <div className="profileInstitution">Student</div>
                     </React.Fragment>
                   )}
                   {mentor.eetstatus == 'uni' && (

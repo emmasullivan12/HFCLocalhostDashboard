@@ -633,7 +633,7 @@ class MenteeProfileContent extends Component {
                 <div className="editSectionContainer zIndex0">
                   {mentee.eetstatus == 'sch' && (
                     <React.Fragment>
-                      <div className={(profUserIsU18 != true && viewerIsU18 != true) ? "profileInstitution" : "profilePosition"}>Student</div>
+                      <div className={(profUserIsU18 != true && viewerIsU18 != true) ? "profilePosition" : "profileInstitution"}>Student</div>
                       {(profUserIsU18 != true && viewerIsU18 != true) && (
                         <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {schInstName}</div>
                       )}
