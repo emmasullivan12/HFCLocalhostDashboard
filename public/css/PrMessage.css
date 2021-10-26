@@ -551,6 +551,13 @@
   color: #b1b1b1;
   margin: 10px;
 }
+.userDetail-viewProfile{
+  font-size: .8rem;
+  margin: 10px;
+}
+.userDetail-viewProfile:hover{
+  color: #fff!important;
+}
 .userDetail-scrollSection{
   overflow-y: auto;
   height: 220px;

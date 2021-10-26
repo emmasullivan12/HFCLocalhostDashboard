@@ -46,6 +46,32 @@
   outline: 0;
 }
 
+/* button unstyled */
+.ModalOpenBtn-mentee-profile-prModAuto,
+.ModalOpenBtn-mentor-profile-prModAuto{
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: inherit;
+  overflow: inherit;
+  padding: 0;
+  text-align: initial;
+  vertical-align: initial;
+  cursor: pointer;
+  height: auto;
+}
+.ModalOpenBtn-mentee-profile-prModAuto:hover,
+.ModalOpenBtn-mentor-profile-prModAuto:hover{
+  background: none;
+  color: inherit;
+}
+.ModalOpenBtn-mentee-profile-prModAuto:active,
+.ModalOpenBtn-mentor-profile-prModAuto:active{
+  background: none;
+}
 .ModalOpenBtn-addPicBtn,
 .ModalOpenBtn-mentor-msgBtn-profile,
 .ModalOpenBtn-mentee-msgBtn-profile,
@@ -141,6 +167,77 @@
   background: none;
   cursor: pointer;
   color: unset;
+}
+
+.ModalOpenBtn-addHighlight,
+.ModalOpenBtn-addHighlightSml,
+.ModalOpenBtn-addHighlightMenuSml{
+  position: fixed;
+  visibility: hidden;
+  bottom: 25px;
+  right: 25px;
+  padding: 1em 1.5em;
+  height: 50px;
+  box-shadow: 0 1px 13px 0 rgb(0 0 0 / 18%);
+  -webkit-box-shadow: 0 1px 13px 0 rgb(0 0 0 / 18%);
+  -moz-box-shadow: 0 1px 13px 0 rgb(0 0 0 / 18%);
+  z-index: 100;
+  background-color: #4e4ed6;
+  font-size: 16px;
+}
+
+.ModalOpenBtn-addHighlightGroup{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 40px;
+  padding: .5em 1.5em;
+}
+
+.ModalOpenBtn-addHighlightSml,
+.ModalOpenBtn-addHighlightMenuSml{
+  visibility: visible;
+  padding: 1em 1em;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.ModalOpenBtn-addHighlightMenuSml{
+  position: absolute;
+  top: 59px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  padding: .5em;
+  font-size: 15px;
+  border: 1px solid #aaa8ff;
+  background-color: rgb(159 158 231);
+  border: 1px solid #3f3f3f;
+}
+
+.ModalOpenBtn-addHighlight:hover,
+.ModalOpenBtn-addHighlightSml:hover,
+.ModalOpenBtn-addHighlight:active,
+.ModalOpenBtn-addHighlightSml:active{
+  background: #351c75;
+}
+
+.ModalOpenBtn-addHighlightMenuSml:hover,
+.ModalOpenBtn-addHighlightMenuSml:active{
+  background: #adabff;
+}
+
+@media screen and (min-width: 758px) {
+  .ModalOpenBtn-addHighlightSml{
+    visibility: hidden;
+  }
+  .ModalOpenBtn-addHighlight{
+    visibility: visible;
+  }
 }
 
 .ModalOpenBtn-joinProgLrg{
@@ -558,6 +655,8 @@
 
 .ModalOpenBtn-attachmentContainer,
 .ModalOpenBtn-picContainer,
+.ModalOpenBtn-highlightPicContainer,
+.ModalOpenBtn-highlightAttachmentContainer,
 .sendMsgContainer {
   margin-left: 10px;
   margin-right: 10px;
@@ -583,19 +682,29 @@
   font-family: Roboto, Signika, Raleway, Lato, Arial, Helvetica, sans-serif;
 }
 
-.ModalOpenBtn-attachmentContainer:hover{
+.ModalOpenBtn-highlightPicContainer,
+.ModalOpenBtn-highlightAttachmentContainer{
+  margin-left: unset;
+  position: unset;
+}
+
+.ModalOpenBtn-attachmentContainer:hover,
+.ModalOpenBtn-highlightAttachmentContainer:hover{
   background: none!important;
 }
 
-.ModalOpenBtn-attachmentContainer {
+.ModalOpenBtn-attachmentContainer,
+.ModalOpenBtn-highlightAttachmentContainer {
   right: 88px;
 }
 
-.ModalOpenBtn-picContainer {
+.ModalOpenBtn-picContainer,
+.ModalOpenBtn-highlightPicContainer {
   right: 54px;
 }
 
-.ModalOpenBtn-picContainer:hover{
+.ModalOpenBtn-picContainer:hover,
+.ModalOpenBtn-highlightPicContainer:hover{
   background: none!important;
 }
 
@@ -743,6 +852,11 @@
   width: 100%;
   text-align: center;
   line-height: 20px;
+}
+.modal-subtitleSml{
+  color: #4e4ed6;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 .modal-subtitle-colour{
   text-align: center;

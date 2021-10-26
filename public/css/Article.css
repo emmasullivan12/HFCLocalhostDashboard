@@ -272,6 +272,7 @@
 .article-page .article-body p {
   margin-bottom: 12px;
   margin-top: 0;
+  white-space: pre-wrap;
 }
 .article-page .article-extras p {
   margin-bottom: 12px;

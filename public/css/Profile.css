@@ -114,7 +114,9 @@
   font-size: 12px;
   padding-left: 2px;
 }
-.profile-thumb.noPic.isMe{
+
+.profile-thumb.noPic.isMe,
+.profOverviewPreview .profile-thumb.noPic{
   background-color: #e6ddfd;
 }
 .profile-thumb.noPic.isntMe{

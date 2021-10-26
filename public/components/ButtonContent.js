@@ -11,12 +11,14 @@ function ButtonContent(props) {
 
   switch (usedFor) {
     case 'picContainer':
+    case 'highlightPicContainer':
       return (
         <div type="button" className="picContainer">
           <i className="fas fa-camera" />
         </div>
       );
     case 'attachmentContainer':
+    case 'highlightAttachmentContainer':
       return (
         <div type="button" className="attachmentContainer">
           <i className="fas fa-paperclip" />
@@ -28,6 +30,13 @@ function ButtonContent(props) {
           <i className="fas fa-info-circle"/>
         </div>
       );
+    case 'addHighlightSml':
+    case 'addHighlightMenuSml':
+      return (
+        <div>
+          <i className="fas fa-pencil-alt" />
+        </div>
+      )
     case 'joinProgLrg':
       return (
         <div>+ Join a live Group</div>
@@ -73,6 +82,13 @@ function ButtonContent(props) {
     case 'addEditHeadline':
       return (
         <div className="marginAuto smallFont">
+          {text}
+        </div>
+      )
+    case 'mentee-profile-prModAuto':
+    case 'mentor-profile-prModAuto':
+      return (
+        <div className="button-unstyled userDetail-viewProfile lightPurpleText">
           {text}
         </div>
       )

@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
@@ -21,6 +22,22 @@ const JoinProgrammePlusModalProps = {
   triggerText: 'Join a Group',
   usedFor: 'joinProgSmlHome',
   changeInitFocus: true
+}
+
+const AddHighlightModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: '+ Highlight',
+  usedFor: 'addHighlight',
+  changeInitFocus: true,
+  wider: true
+}
+
+const AddHighlightSmlModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: '+ Highlight',
+  usedFor: 'addHighlightSml',
+  changeInitFocus: true,
+  wider: true
 }
 
 class MentorHomepageCTAContainer extends Component {
@@ -78,6 +95,12 @@ class MentorHomepageCTAContainer extends Component {
         {(step === 'fullSUTrain' || step === 'fullSUidTrain') && (
           <MentorMatches /> // to do
         )}
+        <Modal {...AddHighlightModalProps}>
+          <AddHighlightModalContent />
+        </Modal>
+        <Modal {...AddHighlightSmlModalProps}>
+          <AddHighlightModalContent />
+        </Modal>
       </div>
     );
   }

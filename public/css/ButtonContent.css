@@ -21,6 +21,10 @@
   -ms-transition: all 50ms ease-out 0s;
   -o-transition: all 50ms ease-out 0s;
 }
+.ModalOpenBtn-highlightPicContainer .picContainer,
+.ModalOpenBtn-highlightAttachmentContainer .attachmentContainer{
+  color: #9b9a9a;
+}
 
 .attachmentContainer:hover {
 /*  transform: scale(1.05);

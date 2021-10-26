@@ -358,11 +358,17 @@ table th .description{
 .smallFont{
   font-size: 14px!important;
 }
+.fontSize30{
+  font-size: 30px;
+}
 .fontSize20{
   font-size: 20px;
 }
+.fontSize14{
+  font-size: 14px!important;
+}
 .fontSize12{
-  font-size: 12px;
+  font-size: 12px!important;
 }
 .bold{
   font-weight: 600;
@@ -405,10 +411,10 @@ table th .description{
   color: #636262;
 }
 .lightGreyText{
-  color: lightgrey;
+  color: lightgrey!important;
 }
 .lightPurpleText{
-  color: #c6c6fd;
+  color: #c6c6fd!important;
 }
 .redText{
   color: #da0b0b;
@@ -1747,7 +1753,7 @@ a.button{
 
 .bubble{
   font-size: 13px;
-  max-width: 250px;
+/*  max-width: 250px;*/
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;
@@ -1759,8 +1765,8 @@ a.button{
   padding: .1rem .25rem .1rem .25rem;
   margin-right: 5px;
   margin-bottom: 5px;
+  white-space: break-spaces;
 }
-
 
 /* ICONS */
 .emoji-mart-emoji{

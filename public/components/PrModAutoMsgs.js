@@ -4,6 +4,9 @@ import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
 import AcceptMenteeContent from './AcceptMenteeContent.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
 import RequestChatContent from './RequestChatContent.js';
 import PassMenteeContent from './PassMenteeContent.js';
@@ -61,6 +64,20 @@ const AddNotesProps = {
   triggerText: 'Add Notes on User',
   usedFor: 'addNotesBtn',
   changeInitFocus: true
+}
+
+const MenteeProfileModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  triggerText: 'View full profile',
+  usedFor: 'mentee-profile-prModAuto',
+  backBtn: 'arrow'
+}
+
+const MentorProfileModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  triggerText: 'View full profile',
+  usedFor: 'mentor-profile-prModAuto',
+  backBtn: 'arrow'
 }
 
 class PrModAuto extends Component {
@@ -401,6 +418,9 @@ class PrModAuto extends Component {
                             <div className="lightPurpleText"><strong>Outside of work I love:</strong></div>
                             <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
                           </div>
+                          <FullPageModal {...MentorProfileModalProps}>
+                            <MentorProfileContent />
+                          </FullPageModal>
                         </React.Fragment>
                       )}
                     </div>
@@ -568,7 +588,6 @@ class PrModAuto extends Component {
                   <TextParser text={text}/>
                 </div>
                 <div className="messageCTA">
-
                   <div className="potentialMatch-profileCard">
                     {isPicSet == true ? (
                       <div className={"userDetail-img img-square" + (eetstatus == 'sch' ? ' showSml': '')} style={eetstatus == 'sch' ? {backgroundImage:"url(" + profPicSrc + ")"} : {backgroundImage:"url(" + profPicSrcLarger + ")"}}/>
@@ -620,6 +639,9 @@ class PrModAuto extends Component {
                         <div className="lightPurpleText"><strong>Outside {(eetstatus == 'uni' || eetstatus == 'sch') ? 'the classroom': 'of work'} I love:</strong></div>
                         <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
                       </div>
+                      <FullPageModal {...MenteeProfileModalProps}>
+                        <MenteeProfileContent />
+                      </FullPageModal>
                     </div>
                   </div>
               {/*}    <div className="potentialMatch-menteeIntroMsg"> */}

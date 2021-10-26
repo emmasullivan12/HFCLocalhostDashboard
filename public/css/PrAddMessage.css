@@ -220,7 +220,8 @@ mark {
 .msgInsights-bar-right.show{
   opacity: 1;
 }
-.emojiContainer {
+.emojiContainer,
+.highlightEmojiContainer {
   float: left;
   margin-right: 0;
   margin-left: .5rem;
@@ -247,12 +248,22 @@ mark {
   -o-transition: all 50ms ease-out 0s;
 }
 
-.emojiContainer .showOnHover{
+.highlightEmojiContainer{
+  margin-left: unset;
+  position: unset;
+  color: #9b9a9a;
+  margin-right: 5px;
+}
+
+.emojiContainer .showOnHover,
+.highlightEmojiContainer .showOnHover{
   display: none;
 }
 
 .emojiContainer:focus,
-.emojiContainer:hover {
+.emojiContainer:hover,
+.highlightEmojiContainer:focus,
+.highlightEmojiContainer:hover {
 /*  transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -261,14 +272,16 @@ mark {
   color: #f2c744;
 }
 
-.emojiContainer:hover .showOnHover{
+.emojiContainer:hover .showOnHover,
+.highlightEmojiContainer:hover .showOnHover{
   display: block;
   background: black;
   width: 19px;
   border-radius: 50%;
 }
 
-.emojiContainer:hover .hideOnHover{
+.emojiContainer:hover .hideOnHover,
+.highlightEmojiContainer:hover .hideOnHover{
   display: none;
 }
 

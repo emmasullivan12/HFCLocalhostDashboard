@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th sept 2021 
+// Dex last merged this code on 13th sept 2021
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -15,6 +15,7 @@ import {
 /*import store from "../store/configureStore";
 import { usersFetchData } from "../actions/Users";*/
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
 import GroupsMenu from "./GroupsMenu";
@@ -24,6 +25,7 @@ import {LoadingSpinner, showNotifFavicon, hideNotifFavicon} from './GeneralFunct
 import MainMenu from "./MainMenu";
 import MentorHomePage from './MentorHomePage.js';
 import MenuModal from "./MenuModal";
+import Modal from "./Modal";
 import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
 import ProspelaDashboard from "./ProspelaDashboard";
@@ -116,6 +118,14 @@ class LoadingDash extends Component{
       </BrowserRouter>
     );
   }
+}
+
+const AddHighlightSmlModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: '+ Highlight',
+  usedFor: 'addHighlightMenuSml',
+  changeInitFocus: true,
+  wider: true,
 }
 
 class Dashboard extends Component{
@@ -281,6 +291,9 @@ class Dashboard extends Component{
                 <span id="close-modal" className="u-hide-visually">Close</span>
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
+              <Modal {...AddHighlightSmlModalProps}>
+                <AddHighlightModalContent />
+              </Modal>
               <MenuModal changeInitFocus>
                 <UserMenuContent userRole={userRole}/>
               </MenuModal>
@@ -363,7 +376,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
