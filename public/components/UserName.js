@@ -6,25 +6,28 @@ import React, { Component } from "react";
 //import FullPageModal from './FullPageModal.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
 import {userFlagEmoji} from './UserDetail.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 
 import "../css/General.css";
 //import "../css/Modal.css";
 
 
-/*const MenteeProfileUsrNameModalProps = {
+const MenteeProfileUsrNameModalProps = {
   ariaLabel: 'View Mentee Profile',
-//  triggerText: 'View Mentee Profile',
-  usedFor: 'mentee-usrName-profile',
+  triggerText: 'View profile',
+  usedFor: 'mentee-profile-userName',
   backBtn: 'arrow'
 }
 
 const MentorProfileUsrNameModalProps = {
   ariaLabel: 'View Mentor Profile',
-//  triggerText: 'Profile',
-  usedFor: 'mentor-usrName-profile',
+  triggerText: 'View profile',
+  usedFor: 'mentor-profile-userName',
   backBtn: 'arrow'
 }
-*/
+
 class UserName extends Component {
   render() {
     const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle} = this.props;
@@ -85,6 +88,7 @@ class UserName extends Component {
     }
 
     const eetstatus = user[0].eetstatus;
+    const senderRole = 'mentee'
     const isOnline = true;
     let uniName;
     if (user[0].eetstatus == 'uni') {
@@ -113,16 +117,27 @@ class UserName extends Component {
                   <i className={isOnline ? "fas fa-circle" : "far fa-circle"} />
                 </div>
                 <div className="userDetail-name">{name}</div>
-                  <div className="userDetail-inst">
-                    {eetstatus == 'sch' ? 'Student' : ''}
-                    {eetstatus == 'uni' ? (user[0].degree + ' @ ' + uniName) : ''}
-                    {eetstatus == 'job' ? (user[0].currrole + ' @ ' + user[0].currco) : ''}
-                    {eetstatus == 'train' ? (user[0].currtraining + ' @ ' + user[0].currtrainingprovider) : ''}
-                    {eetstatus == 'none' ? 'Looking for opportunities' : ''}
-                  </div>
+                <div className="userDetail-inst">
+                  {eetstatus == 'sch' ? 'Student' : ''}
+                  {eetstatus == 'uni' ? (user[0].degree + ' @ ' + uniName) : ''}
+                  {eetstatus == 'job' ? (user[0].currrole + ' @ ' + user[0].currco) : ''}
+                  {eetstatus == 'train' ? (user[0].currtraining + ' @ ' + user[0].currtrainingprovider) : ''}
+                  {eetstatus == 'none' ? 'Looking for opportunities' : ''}
+                </div>
                 <div className="userDetail-flag">
                   <span className="alignVrtl-middle"><i className={"emoji-icon sml " + userFlagEmoji(user[0].country)}/></span>
                 </div>
+                {senderRole == 'mentee' ? (
+                    <FullPageModal {...MenteeProfileUsrNameModalProps}>
+                      <MenteeProfileContent />
+                    </FullPageModal>
+                    )
+                  : (
+                    <FullPageModal {...MentorProfileUsrNameModalProps}>
+                      <MentorProfileContent />
+                    </FullPageModal>
+                  )
+                }
               </div>
             </div>
           )}
@@ -133,17 +148,7 @@ class UserName extends Component {
           : null
         }
 */}
-  {  /*      : senderRole === 'mentee' ? (
-            <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={userName}>
-              <MenteeProfileContent />
-            </FullPageModal>
-            )
-          : (
-            <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={userName}>
-              <MentorProfileContent />
-            </FullPageModal>
-          )
-*/}   </React.Fragment>
+   </React.Fragment>
     );
   }
 }

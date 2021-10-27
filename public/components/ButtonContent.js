@@ -92,6 +92,13 @@ function ButtonContent(props) {
           {text}
         </div>
       )
+    case 'mentor-profile-userName':
+    case 'mentee-profile-userName':
+      return (
+        <div className="button-unstyled userNameCard-viewProfile lightPurpleText">
+          {text}
+        </div>
+      )
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':
@@ -105,11 +112,6 @@ function ButtonContent(props) {
     case 'mentee-msgBtn-profile':
       return (
         <i className="fas fa-user" />
-      );
-    case 'mentor-usrName-profile':
-    case 'mentee-usrName-profile':
-      return (
-        <span className="sender-name">{text}</span>
       );
     case 'settings':
       return (

@@ -554,8 +554,13 @@
 .userDetail-viewProfile{
   font-size: .8rem;
   margin: 10px;
+  opacity: 0.85;
 }
-.userDetail-viewProfile:hover{
+.userNameCard-viewProfile{
+  opacity: 0.85;
+}
+.userDetail-viewProfile:hover,
+.userNameCard-viewProfile:hover{
   color: #fff!important;
 }
 .userDetail-scrollSection{
