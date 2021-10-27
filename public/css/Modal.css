@@ -1,4 +1,4 @@
-/* Dex last merged this code on 27th Oct 2021  */
+/* Dex last merged this code on 27th Oct 2021 */
 
 .ModalOpenBtn {
   padding: .5em 1.5em;
@@ -786,7 +786,11 @@
 .fullpage-modal-container.menu-mentor-profile,
 .fullpage-modal-container.mentee-prauto-profile,
 .fullpage-modal-container.mentee-profile,
-.fullpage-modal-container.mentor-profile{
+.fullpage-modal-container.mentor-profile,
+.fullpage-modal-container.mentee-profile-prModAuto,
+.fullpage-modal-container.mentor-profile-prModAuto,
+.fullpage-modal-container.mentee-profile-userName,
+.fullpage-modal-container.mentor-profile-userName{
   background-color: #f9f9f9;
   padding-bottom: 0;
   padding: 0 0 0 0;
