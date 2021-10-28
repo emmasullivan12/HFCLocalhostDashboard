@@ -324,7 +324,7 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { suggestions, handleChange, name, valueToShow, required, isForForm } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required, isForForm, maxNumValues } = this.props;
     const value = e.currentTarget.dataset.text;
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
@@ -341,7 +341,9 @@ class AutocompleteTagsMulti extends React.Component {
   //    }
 
       if (index === -1) {
-        values.push(value)
+        if (maxNumValues == null || values.length < maxNumValues) {
+          values.push(value)
+        }
       } else {
         values.splice(index, 1)
       }
@@ -385,7 +387,7 @@ class AutocompleteTagsMulti extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected } = this.state;
-    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions, isForForm} = this.props;
+    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions, isForForm, maxNumValues} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
@@ -416,7 +418,9 @@ class AutocompleteTagsMulti extends React.Component {
           const index = values.indexOf(value)
 
           if (index === -1) {
-            values.push(value)
+            if (maxNumValues == null || values.length < maxNumValues) {
+              values.push(value)
+            }
           } else {
             values.splice(index, 1)
           }

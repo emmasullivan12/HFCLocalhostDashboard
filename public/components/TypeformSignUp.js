@@ -164,7 +164,7 @@ class TypeformSignUp extends Component {
       emailToVerify: 'emma@pladis.com',
       currCo: '',
       currTrainingProvider: '',
-      userRole: 'mentor'
+      userRole: 'mentee'
     }
     this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);

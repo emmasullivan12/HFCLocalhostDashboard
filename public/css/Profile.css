@@ -102,6 +102,10 @@
   padding-top: 7px;
   margin-left: -1px;
 }
+.userInitial.msg-thumb.isAddHighlight{
+  padding-top: 7px;
+  font-size: 16px;
+}
 .userInitial.msg-thumb.isMe.isGroupFlex{
   top: -32px;
   margin-top: 2px;

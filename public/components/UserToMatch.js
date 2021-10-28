@@ -28,7 +28,7 @@ const SetUnavailableProps = {
   usedFor: 'settingUnavailability',
   hideTrigger: true,
   changeInitFocus: true,
-  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead or modalOverflowOn/off functions instead
 }
 
 // This shows the content within an individual row in the ChatMenu

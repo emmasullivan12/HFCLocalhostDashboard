@@ -54,15 +54,21 @@
   height: auto;
 }
 
+.input-box-container.addHighlight{
+  border: unset;
+  padding: 10px 0px;
+}
+
 .input-box-container.offline{
   background: #f2f2f2;
 }
 
-.input-box-container:not(.offline):hover{
+.input-box-container:not(.offline):hover,
+.input-box-container:not(.addHighlight):hover{
   border-color: #c6c6c6;
 }
 
-.input-box-container:focus-within{
+.input-box-container:not(.addHighlight):focus-within{
   box-shadow: 0 0 0 1.2px #4e4ed6;
   -webkit-box-shadow: 0 0 0 1.2px #4e4ed6;
   -moz-box-shadow: 0 0 0 1.2px #4e4ed6;
@@ -94,6 +100,10 @@
   max-height: calc(60vh - 100px);
   overflow-y: hidden;
   vertical-align: middle;
+}
+.input-box.addHighlight{
+  padding-right: 0px;
+  font-size: 18px;
 }
 
 .input-box:focus{
@@ -251,7 +261,7 @@ mark {
 .highlightEmojiContainer{
   margin-left: unset;
   position: unset;
-  color: #9b9a9a;
+  color: #4e4ed6;
   margin-right: 5px;
 }
 

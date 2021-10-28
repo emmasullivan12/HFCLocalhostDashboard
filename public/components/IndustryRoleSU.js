@@ -236,7 +236,7 @@ class IndustryRoleSU extends React.Component {
       if (userRole === 'mentor') {
         document.getElementById("selectBox-selectWorkEnv").focus()
       } else {
-        document.getElementById("ratingsContainer").firstElementChild.focus()
+        document.getElementById("ratingsContainer-selectRating").firstElementChild.focus()
       }
     } else {
       document.getElementById("autocompleteBox-selectRole").focus()
@@ -296,7 +296,7 @@ class IndustryRoleSU extends React.Component {
       knowNextSteps: value
     }, () => {
       if (this.state.knowNextSteps === "") {
-        document.getElementById("ratingsContainer").firstElementChild.focus()
+        document.getElementById("ratingsContainer-selectRating").firstElementChild.focus()
       } else {
         document.getElementById("Submit-btn-ind").focus()
       }

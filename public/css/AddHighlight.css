@@ -21,6 +21,7 @@
   box-shadow: 0 0 0 1.2px #e7e7e7;
   -webkit-box-shadow: 0 0 0 1.2px #e7e7e7;
   -moz-box-shadow: 0 0 0 1.2px #e7e7e7;
+  cursor: pointer;
 }
 .postTypeButton:last-of-type{
   margin-bottom: 0;
@@ -45,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 110px;
   }
   .postTypeButton{
     width: 170px;
@@ -79,4 +80,8 @@
   -moz-box-shadow: 0 1px 13px 0 rgb(0 0 0 / 18%);
   background-color: #4e4ed6;
   font-size: 16px;
+}
+
+.addHighlight-user{
+  padding-left: 63px;
 }

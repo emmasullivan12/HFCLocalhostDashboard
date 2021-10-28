@@ -11,6 +11,7 @@ import CameraUploadContent from './CameraUploadContent.js';
 import FileUploadContent from './FileUploadContent.js';
 import Modal from './Modal.js';
 import UserName from './UserName.js';
+import hashtagOptions from './Hashtags.js';
 
 const FileUploadModalProps = {
   ariaLabel: 'Upload a file',
@@ -33,6 +34,10 @@ class AddHighlightModalContent extends Component {
       showEmojis: false,
       cursorPos: '', // cursor position to enter emoji within string
       errorLoadingHashtags: '',
+      hashtagsFromList: [],
+      freeTextHashtags: [],
+      endingHashtagsArr: [],
+      showMaxReachedError: false,
     };
   }
 
@@ -107,6 +112,75 @@ class AddHighlightModalContent extends Component {
     this.messageChange(value)
   }
 
+  handleHashtagChange = (userInput, callback) => {
+    const {endingHashtagsArr} = this.state
+
+    // If is at maxNumValues of 5 but user still trying to change, show error message
+    if (endingHashtagsArr.length == 5 && userInput.length == 5) {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    }
+
+    const hashtagsFromList = hashtagOptions
+      .filter(hashtag => userInput.includes(hashtag.label))
+
+    const labels = hashtagsFromList.map(value => value.label)
+
+    const freeTextHashtags = userInput
+      .filter(hashtag => labels.indexOf(hashtag) === -1)
+
+    const values = hashtagsFromList.map(value => value.value)
+
+    this.setState({
+      hashtagsFromList: values,
+      freeTextHashtags: freeTextHashtags,
+      endingHashtagsArr: userInput
+    }, () => {
+      if(callback) {
+        callback()
+      }
+    })
+  }
+
+  /* Toggles modal's overflow off so that z-index of AutocompleteTagsMulti box is not overriden */
+  modalOverflowOff = () => {
+    const {modalID} = this.props
+    document.getElementById(modalID).style.overflowY = 'unset'
+  }
+
+  modalOverflowOn = () => {
+    const {modalID} = this.props
+    document.getElementById(modalID).style.overflowY = 'auto'
+  }
+
+  handleFocus = () => {
+    this.modalOverflowOff()
+  }
+
+  finMultiOptions = () => {
+    const {endingHashtagsArr} = this.state
+
+    // If is less than or equal to maxNumValues of 5 remove error message
+    if (endingHashtagsArr.length <= 5) {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    }
+  }
+
+  handleBlur = () => {
+    this.modalOverflowOn()
+  }
+
   messageChange = (value) => {
     const addmsgbox = this.addMessageNode;
 
@@ -124,29 +198,33 @@ class AddHighlightModalContent extends Component {
 
   }
 
+  handleSubmit = () => {
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr} = this.state
+  }
+
   render() {
-    const { text, showEmojis, errorLoadingHashtags } = this.state;
+    const { text, showEmojis, errorLoadingHashtags, showMaxReachedError } = this.state;
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
     return (
       <React.Fragment>
         <div>
-          <div className="modal-title">
+        {/*  <div className="modal-title">
             Create post
-          </div>
+          </div>*/}
           <div className="group-detail-item bright">
-            <Avatar userID={user.uid} userName={user.fname} isGroupFlex smallIdle picSize={40}/>
-            <UserName userUID={user.uid} fname={user.fname} lname={user.lname} smallIdle/>
-            <div>Edit Credential</div>
+            <Avatar userID={user.uid} userName={user.fname} isAddHighlight picSize={40}/>
+            <div className="textLeft addHighlight-user"><strong>{user.fname} {user.lname}</strong></div>
+            <div className="textLeft addHighlight-user electricPurpleText">Edit Credential</div>
           </div>
           <div id="new-message" className="chatWindow-footer">
             <div className="footer-container">
-              <div className="input-box-container">
+              <div className="input-box-container addHighlight">
                 <div className="input-flexContainer">
                   <form className="textInput-container" id="chatMessageForm">
                     <textarea
                       ref={n => this.addMessageNode = n}
-                      className="input-box"
+                      className="input-box addHighlight"
                       id="txtInput-box"
                       form="chatMessageForm"
                       value={text}
@@ -163,11 +241,19 @@ class AddHighlightModalContent extends Component {
               </div>
             </div>
           </div>
-          <div className="fontSize14 marginTop20 textLeft">
+          <div className="fontSize14 marginTop50 textLeft">
             <form className="paddingR20 paddingL20">
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
               <div className="form-group">
-                <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">Help reach more mentees (Add up to 5)</label>
+                <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
+                  Help reach more mentees
+                  {showMaxReachedError && (
+                    <span className="redText"> (You can only add up to 5)</span>
+                  )}
+                  {!showMaxReachedError && (
+                    <span> (Add up to 5)</span>
+                  )}
+                </label>
                 <div className="autocompleter">
                   <AutocompleteTagsMulti
                     multiple
@@ -175,17 +261,15 @@ class AddHighlightModalContent extends Component {
                     showValues
                     showCheckbox
                     handleDone={this.handleDoneClickHobbies}
-                    suggestions={[
-                      {value: '0', label: '3D Animation'},
-                      {value: '1', label: 'Design'},
-                      {value: '2', label: 'AI'},
-                      {value: '3', label: 'Javascript'},
-                      {value: '4', label: 'Maya'}
-                    ]}
+                    suggestions={hashtagOptions}
                     name='selectHobby'
                     placeholder='Type Hashtags...'
                     placeholderOnClick="Type Hashtags..."
-                    handleChange={this.handleHobbiesChange}
+                    handleChange={this.handleHashtagChange}
+                    onFocus={this.handleFocus}
+                    onBlur={this.handleBlur}
+                    finMultiOptions={this.finMultiOptions}
+                    maxNumValues={5}
                     idValue='value'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     required

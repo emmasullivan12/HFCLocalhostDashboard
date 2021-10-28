@@ -23,6 +23,7 @@ class AddHighlightModalContent extends Component {
 
   render() {
     const { highlightType, text, showEmojis, errorLoadingHashtags } = this.state;
+    const {modalID} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
     if(highlightType == '') {
@@ -42,19 +43,12 @@ class AddHighlightModalContent extends Component {
               <div className="postType-title"><strong>Q&A</strong></div>
               <div className="postType-desc">Browse mentee questions to answer</div>
             </button>
-            <button type="button" className="postTypeButton" onClick={this.handleClick} value='ditl'>
-              <div className="postTypeIcon fontSize30">
-                <i className="fas fa-walking" />
-              </div>
-              <div className="postType-title"><strong>Work Life</strong></div>
-              <div className="postType-desc">Share insights to what you do, office pics etc.</div>
-            </button>
             <button type="button" className="postTypeButton" onClick={this.handleClick} value='other'>
               <div className="postTypeIcon fontSize30">
                 <i className="fas fa-hashtag" />
               </div>
-              <div className="postType-title"><strong>Other</strong></div>
-              <div className="postType-desc">Share quotes, resources or something else!</div>
+              <div className="postType-title"><strong>General</strong></div>
+              <div className="postType-desc">Share work-life insights, resources or other stuff!</div>
             </button>
           </div>
         </React.Fragment>
@@ -67,7 +61,9 @@ class AddHighlightModalContent extends Component {
       )
     } else {
       return (
-        <AddHighlightTextBox />
+        <AddHighlightTextBox
+          modalID={modalID}
+        />
       )
     }
   }

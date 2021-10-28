@@ -173,10 +173,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .chatWindow-footer {
     background-color: #272727!important;
   }
-  .input-box-container {
+  .input-box-container:not(.addHighlight) {
     border: 1px solid #6d6d6d!important;
   }
-  .input-box-container:focus-within {
+  .input-box-container:not(.addHighlight):focus-within {
     box-shadow: 0 0 0 1.2px #8e8efd!important;
     -webkit-box-shadow: 0 0 0 1.2px #8e8efd!important;
     -moz-box-shadow: 0 0 0 1.2px #4e4ed6!important;
@@ -416,6 +416,9 @@ table th .description{
 .lightPurpleText{
   color: #c6c6fd!important;
 }
+.electricPurpleText{
+  color: #4e4ed6;
+}
 .redText{
   color: #da0b0b;
   font-size: 13px;
@@ -588,6 +591,9 @@ table th .description{
 }
 .marginTop20 {
   margin-top: 20px!important;
+}
+.marginTop50 {
+  margin-top: 50px!important;
 }
 .marginBottom {
   margin-bottom: 2rem;

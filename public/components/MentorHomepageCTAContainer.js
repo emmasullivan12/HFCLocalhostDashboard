@@ -96,10 +96,10 @@ class MentorHomepageCTAContainer extends Component {
           <MentorMatches /> // to do
         )}
         <Modal {...AddHighlightModalProps}>
-          <AddHighlightModalContent />
+          <AddHighlightModalContent modalID="modal-addHighlight"/>
         </Modal>
         <Modal {...AddHighlightSmlModalProps}>
-          <AddHighlightModalContent />
+          <AddHighlightModalContent modalID="modal-addHighlightSml"/>
         </Modal>
       </div>
     );

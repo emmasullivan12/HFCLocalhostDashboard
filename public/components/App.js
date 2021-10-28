@@ -292,7 +292,7 @@ class Dashboard extends Component{
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
               <Modal {...AddHighlightSmlModalProps}>
-                <AddHighlightModalContent />
+                <AddHighlightModalContent modalID="modal-addHighlightMenuSml"/>
               </Modal>
               <MenuModal changeInitFocus>
                 <UserMenuContent userRole={userRole}/>
@@ -418,7 +418,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didEmailVerif';
+  const step = 'didEdu';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
@@ -436,7 +436,7 @@ function MenteeSteps({userRole}) {
           return (
             <BrowserRouter>
               <Switch>
-                <Route component={TypeformSignUp} />
+                <Route component={TypeformSignUp} step={step} />
               </Switch>
             </BrowserRouter>
           );

@@ -54,6 +54,12 @@
   position: absolute;
   bottom: 3px;
 }
+.msg-thumb.isAddHighlight{
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  display: inline-grid;
+}
 
 .msg-thumb.hasPic {
   background-size: cover;
