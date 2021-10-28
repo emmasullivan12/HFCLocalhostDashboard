@@ -11,14 +11,14 @@ function ButtonContent(props) {
 
   switch (usedFor) {
     case 'picContainer':
-    case 'highlightPicContainer':
+  //  case 'highlightPicContainer':
       return (
         <div type="button" className="picContainer">
           <i className="fas fa-camera" />
         </div>
       );
     case 'attachmentContainer':
-    case 'highlightAttachmentContainer':
+  //  case 'highlightAttachmentContainer':
       return (
         <div type="button" className="attachmentContainer">
           <i className="fas fa-paperclip" />

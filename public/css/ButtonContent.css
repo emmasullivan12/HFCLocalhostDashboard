@@ -26,6 +26,11 @@
   color: #4e4ed6;
 }
 
+.ModalOpenBtn-highlightPicContainer .picContainer:hover,
+.ModalOpenBtn-highlightAttachmentContainer .attachmentContainer:hover{
+  color: #000;
+}
+
 .attachmentContainer:hover {
 /*  transform: scale(1.05);
   -webkit-transform: scale(1.05);

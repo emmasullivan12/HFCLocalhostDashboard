@@ -352,6 +352,12 @@ mark {
   bottom: unset;
 }
 
+.emojiPickerContainer.addHighlight{
+  left: 0;
+  position: absolute;
+  bottom: 40px;
+}
+
 @media only screen and (max-width: 500px) {
   .emojiPickerContainer{
     right: calc((100vw - 346px)/2);
@@ -359,7 +365,8 @@ mark {
     right: -moz-calc((100vw - 346px)/2);
   }
   .emojiPickerContainer.msgReactions,
-  .emojiPickerContainer.messageActions{
+  .emojiPickerContainer.messageActions,
+  .emojiPickerContainer.addHighlight{
     position: fixed;
     left: 50%;
     top: 50%;

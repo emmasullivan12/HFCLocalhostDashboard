@@ -102,10 +102,13 @@ class PrAddMessage extends Component {
 
       return {
         text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
+        showEmojis: false,
       };
     }, () => {
       el.selectionStart = end + emojiPic.length; // Moves cursor after newly inserted emoji (start pos)
       el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji (end pos)
+      document.removeEventListener('click', this.closeMenu)
+      this.addMessageNode.focus()
     })
   }
 
@@ -342,7 +345,7 @@ class PrAddMessage extends Component {
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.setState({
         showEmojis: false
-      })
+      }, () => document.removeEventListener('click', this.closeMenu))
       this.addMessageNode.focus()
     } else {
       return;

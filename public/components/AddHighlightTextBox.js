@@ -8,22 +8,23 @@ import data from 'emoji-mart/data/emojione.json'
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Avatar from './Avatar.js';
 import CameraUploadContent from './CameraUploadContent.js';
+import {Check} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
 import Modal from './Modal.js';
 import UserName from './UserName.js';
 import hashtagOptions from './Hashtags.js';
 
-const FileUploadModalProps = {
+/*const FileUploadModalProps = {
   ariaLabel: 'Upload a file',
   usedFor: 'highlightAttachmentContainer',
   changeInitFocus: true
-}
+}*/
 
-const CameraUploadModalProps = {
+/*const CameraUploadModalProps = {
   ariaLabel: 'Upload a picture',
   usedFor: 'highlightPicContainer',
   changeInitFocus: true
-}
+}*/
 
 
 class AddHighlightModalContent extends Component {
@@ -58,6 +59,8 @@ class AddHighlightModalContent extends Component {
     const el = document.getElementById('txtInput-box')
     const cursorPos = el.selectionStart
 
+    this.modalOverflowOff()
+
     this.setState({
       showEmojis: true,
       cursorPos: cursorPos,
@@ -66,6 +69,7 @@ class AddHighlightModalContent extends Component {
 
   closeMenu = (e) => {
     if (this.emojiPicker !== null && !this.emojiPicker.contains(e.target)) {
+      this.modalOverflowOn()
       this.setState({
         showEmojis: false
       }, () => document.removeEventListener('click', this.closeMenu))
@@ -78,7 +82,8 @@ class AddHighlightModalContent extends Component {
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.setState({
         showEmojis: false
-      })
+      }, () => document.removeEventListener('click', this.closeMenu))
+      this.modalOverflowOn()
       this.addMessageNode.focus()
     } else {
       return;
@@ -100,10 +105,13 @@ class AddHighlightModalContent extends Component {
 
       return {
         text: string.substring(0, posToUse) + emojiPic + string.substring(posToUse, string.length),
+        showEmojis: false,
       };
     }, () => {
       el.selectionStart = end + emojiPic.length; // Moves cursor after newly inserted emoji (start pos)
       el.selectionEnd = end + emojiPic.length; // Moves cursor after newly inserted emoji (end pos)
+      document.removeEventListener('click', this.closeMenu)
+      this.addMessageNode.focus()
     })
   }
 
@@ -205,6 +213,7 @@ class AddHighlightModalContent extends Component {
   render() {
     const { text, showEmojis, errorLoadingHashtags, showMaxReachedError } = this.state;
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
+    const selectedFiles = true;
 
     return (
       <React.Fragment>
@@ -214,7 +223,7 @@ class AddHighlightModalContent extends Component {
           </div>*/}
           <div className="group-detail-item bright">
             <Avatar userID={user.uid} userName={user.fname} isAddHighlight picSize={40}/>
-            <div className="textLeft addHighlight-user"><strong>{user.fname} {user.lname}</strong></div>
+            <div className="textLeft addHighlight-user fontSize14"><strong>{user.fname} {user.lname}</strong></div>
             <div className="textLeft addHighlight-user electricPurpleText">Edit Credential</div>
           </div>
           <div id="new-message" className="chatWindow-footer">
@@ -242,6 +251,30 @@ class AddHighlightModalContent extends Component {
             </div>
           </div>
           <div className="fontSize14 marginTop50 textLeft">
+            { selectedFiles && (
+              <div className="fileNamesContainer">
+                <div className="fileNamesHeader">
+                  <span
+                    className="tickFilesUploaded"
+                  >
+                    <Check />
+                  </span>
+                  Files Uploaded: 4
+                </div>
+                <div className="fileNames">
+                  File name.xls
+                </div>
+                <div className="fileNames">
+                  File name2.xls
+                </div>
+                <div className="fileNames">
+                  File name3.xls
+                </div>
+                <div className="fileNames">
+                  ...
+                </div>
+              </div>
+            )}
             <form className="paddingR20 paddingL20">
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
               <div className="form-group">
@@ -262,7 +295,7 @@ class AddHighlightModalContent extends Component {
                     showCheckbox
                     handleDone={this.handleDoneClickHobbies}
                     suggestions={hashtagOptions}
-                    name='selectHobby'
+                    name='selectHashtag'
                     placeholder='Type Hashtags...'
                     placeholderOnClick="Type Hashtags..."
                     handleChange={this.handleHashtagChange}
@@ -285,9 +318,22 @@ class AddHighlightModalContent extends Component {
           </div>
           <div className="paddingL20 paddingR20">
             <div className="absolute">
-              <Modal {...CameraUploadModalProps}>
-                <CameraUploadContent/>
-              </Modal>
+              <input
+                type="file"
+                id="fileSelectCamera"
+                name="selectedFiles"
+                className="inputFile addHighlight BlankBtn"
+                placeholder="Choose a file..."
+                onChange={this.handleChange}
+                minsize={0}
+                title=""
+                required
+              />
+              <label htmlFor="fileSelectCamera" className="ModalOpenBtn-highlightPicContainer">
+                <div type="button" className="picContainer">
+                  <i className="fas fa-camera" />
+                </div>
+              </label>
               <button type="button" className="highlightEmojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                 <i className="hideOnHover far fa-smile" />
                 <i className="showOnHover fas fa-laugh" />
@@ -295,7 +341,7 @@ class AddHighlightModalContent extends Component {
               {showEmojis && (
                 /* The <div> element is just used as a container for EmojiPicker */
                 /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
-                <div className="emojiPickerContainer" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
+                <div className="emojiPickerContainer addHighlight" ref={el => (this.emojiPicker = el)} onKeyDown={this.closeOnEsc}>
                   <NimblePicker
                     onSelect={this.handleEmojiClick}
                     data={data}
@@ -306,9 +352,22 @@ class AddHighlightModalContent extends Component {
                   />
                 </div>
               )}
-              <Modal {...FileUploadModalProps}>
-                <FileUploadContent/>
-              </Modal>
+              <input
+                type="file"
+                id="fileSelect"
+                name="selectedFiles"
+                className="inputFile addHighlight BlankBtn"
+                placeholder="Choose a file..."
+                onChange={this.handleChange}
+                minsize={0}
+                title=""
+                required
+              />
+              <label htmlFor="fileSelect" className="ModalOpenBtn-highlightAttachmentContainer">
+                <div type="button" className="attachmentContainer">
+                  <i className="fas fa-paperclip" />
+                </div>
+              </label>
             </div>
             <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button">Post</button>
           </div>
