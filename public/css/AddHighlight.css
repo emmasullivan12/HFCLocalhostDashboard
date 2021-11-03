@@ -54,7 +54,26 @@
     margin-bottom: 0;
   }
 }
-
+.editCredentialBtn{
+  cursor: pointer;
+}
+.editCredentialBtn:hover{
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+.credentialPickerContainer{
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  left: 160px;
+  top: 15px;
+  width: 100%;
+  height: auto;
+  max-width: 40em;
+  box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
+  -webkit-box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+}
 .postTypeIcon{
   margin-top: 5px;
   margin-bottom: 5px;
@@ -105,4 +124,59 @@
 
 #autocompleteBox-selectHashtag{
   font-size: 14px;
+}
+
+.fileBoxesContainer{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.fileBox{
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e5;
+}
+
+.fileBoxImg{
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.fileIcon-container.addHighlight{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.fileBox:hover .ModalOpenBtn-addPicBtn {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  opacity: 1;
 }

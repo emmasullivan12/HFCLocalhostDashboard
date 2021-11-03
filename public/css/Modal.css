@@ -103,11 +103,11 @@
   top: 0;
   left: 0;
   z-index: 2;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
   border-radius: inherit;
   -webkit-border-radius: inherit;
@@ -117,6 +117,7 @@
 }
 .ModalOpenBtn-addPicBtn.userMenuPlus{
   font-size: 20px;
+  background: unset;
 }
 .ModalOpenBtn-addPicBtn.msg-thumb,
 .ModalOpenBtn-mentor-msgBtn-profile,

@@ -25,6 +25,9 @@
 .fileIcon-container.word i {
   color: #2b579a;
 }
+.fileIcon-container.ppt i {
+  color: #b73519;
+}
 .fileIcon-container.xls i {
   color: #008000;
 }

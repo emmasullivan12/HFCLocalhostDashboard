@@ -92,7 +92,7 @@ class FileUploadContent extends Component {
                   <div className="dragover-pane-overlay-pic">
                     <div className="dragover-pane-overlay-picFile"/>
                   </div>
-                  <div className="dragover-pane-overlay-title">Upload File</div>
+                  <div className="dragover-pane-overlay-title">Upload File(s)</div>
                   <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
                 </div>
               </div>

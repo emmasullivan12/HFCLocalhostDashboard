@@ -31,10 +31,12 @@ class DisplayMsgFile extends Component {
     fileType = 'img'
   } else if (file.fileType === 'application/pdf') {
     fileType = 'pdf'
-  } else if (file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+  } else if (file.fileType === 'application/vnd.ms-excel' || file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.template' || file.fileType === 'application/vnd.ms-excel.sheet.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.template.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.addin.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.sheet.binary.macroEnabled.12') {
     fileType = 'xls'
-  } else if (file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+  } else if (file.fileType === 'application/msword' || file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template' || file.fileType === 'application/vnd.ms-word.document.macroEnabled.12' || file.fileType === 'application/vnd.ms-word.template.macroEnabled.12') {
     fileType = 'word'
+  } else if (file.fileType === 'application/mspowerpoint' || file.fileType === 'application/ms-powerpoint' || file.fileType === 'application/mspowerpnt' || file.fileType === 'application/vnd-mspowerpoint' || file.fileType === 'application/powerpoint' || file.fileType === 'application/x-powerpoint' || file.fileType === 'application/vnd.ms-powerpoint' || file.fileType === 'application/vnd.ms-powerpoint.presentation.macroEnabled.12' || file.fileType === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
+    fileType = 'ppt'
   } else fileType = 'other'
 
     return (
@@ -78,6 +80,12 @@ class DisplayMsgFile extends Component {
                   {fileType === 'word' && (
                     <div className="fileIcon-container word">
                       <i className="far fa-file-word" />
+                      <span className="fileName-text">{file.name}</span>
+                    </div>
+                  )}
+                  {fileType === 'ppt' && (
+                    <div className="fileIcon-container ppt">
+                      <i className="far fa-file-powerpoint" />
                       <span className="fileName-text">{file.name}</span>
                     </div>
                   )}

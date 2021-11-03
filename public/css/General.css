@@ -370,6 +370,9 @@ table th .description{
 .fontSize12{
   font-size: 12px!important;
 }
+.breakWord{
+  word-break: break-word;
+}
 .bold{
   font-weight: 600;
 }
@@ -565,6 +568,10 @@ table th .description{
 .descriptor-br.form{
   margin-top: -1rem;
 }
+.descriptor-br.addHighlight{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .hidden{
   visibility: hidden
 }
@@ -594,6 +601,9 @@ table th .description{
 }
 .marginTop50 {
   margin-top: 50px!important;
+}
+.marginTopMinus20 {
+  margin-top: -20px;
 }
 .marginBottom {
   margin-bottom: 2rem;
