@@ -529,9 +529,9 @@ class MentorProfileContent extends Component {
     //  activityPublic: 1,
     //  currtraining: 'coursename',
     //  currtrainingprovider: 'ICAS',
-      currtraining: '',
-      currtrainingprovider: '',
-      trainingstartdate: '',
+      currtraining: 'test',
+      currtrainingprovider: 'testy',
+      trainingstartdate: '2021-02-04T14:46:14.209Z',
       trainingenddate: '',
       trainingdesc: '',
     /*  groupsSet: 1,
@@ -647,7 +647,7 @@ class MentorProfileContent extends Component {
 //    const isPicSet = false;
     const uid = '23456';
     const isMe = uid == mentor.uid ? 'isMe' : 'isntMe';
-    const viewerIsU18 = false;
+    const viewerIsU18 = true;
     const profUserIsU18 = false;
     const viewerCountry = 'GBR'
     const userInitial = mentor.fname.charAt(0).toUpperCase();
@@ -703,6 +703,7 @@ class MentorProfileContent extends Component {
                         </Modal>
                       )}
                       <img
+                        className={(viewerIsU18 || profUserIsU18) ? 'userImg showSml' : ''}
                         src={usercdn.concat('/',userAvatarsFolder,mentor.profPicSrc,picSizePublic)}
                         alt="User profile pic"
                       />

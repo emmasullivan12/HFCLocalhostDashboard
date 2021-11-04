@@ -73,6 +73,11 @@
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
   -webkit-box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
   -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
 .postTypeIcon{
   margin-top: 5px;

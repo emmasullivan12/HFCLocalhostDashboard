@@ -61,6 +61,13 @@
   border-left: 25px solid;
   border-color: #9a8dba;
 }
+.userImg.showSml{
+  border-top: 30px solid;
+  border-bottom: 30px solid;
+  border-right: 30px solid;
+  border-left: 30px solid;
+  border-color: #9a8dba;
+}
 .userDetail-img.noPic{
   text-align: center;
   color: #fff;

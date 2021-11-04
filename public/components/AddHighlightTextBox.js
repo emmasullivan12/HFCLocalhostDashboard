@@ -42,6 +42,13 @@ class AddHighlightModalContent extends Component {
       endingHashtagsArr: [],
       showMaxReachedError: false,
       dragover: '',
+      authorType: '',
+      authorInst: '',
+      authorRole: '',
+      authorDegree: '',
+      authorTraining: '',
+      authorState: '',
+      authorCountry: '',
       selectedFiles: [
         {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
         {fileid: '124', name: 'My PDF', type: 'application/pdf'},
@@ -80,8 +87,6 @@ class AddHighlightModalContent extends Component {
   }
 
   closeCredentials = (e) => {
-    console.log(e.target)
-    console.log(e.currentTarget)
     if ((this.credentialsPicker !== null && !this.credentialsPicker.contains(e.target)) || e.currentTarget.id == 'close-credential') {
       this.modalOverflowOn()
       this.setState({
@@ -162,6 +167,51 @@ class AddHighlightModalContent extends Component {
       document.removeEventListener('click', this.closeMenu)
       this.addMessageNode.focus()
     })
+  }
+
+  handleRadioClick = (e) => {
+    console.log(e.target.dataset)
+    var authorType = e.target.dataset.authortype
+    var authorState = e.target.dataset.state
+    var authorCountry = e.target.dataset.country
+    if (authorType == 'job') {
+      this.setState({
+        authorType: authorType,
+        authorInst: e.target.dataset.inst,
+        authorRole: e.target.dataset.role,
+        authorState: authorState,
+        authorCountry: authorCountry,
+      })
+    } else if (authorType == 'train') {
+      this.setState({
+        authorType: authorType,
+        authorInst: e.target.dataset.inst,
+        authorTraining: e.target.dataset.training,
+        authorState: authorState,
+        authorCountry: authorCountry,
+      })
+    } else if (authorType == 'uni') {
+      this.setState({
+        authorType: authorType,
+        authorInst: e.target.dataset.inst,
+        authorDegree: e.target.dataset.degree,
+        authorState: authorState,
+        authorCountry: authorCountry,
+      })
+    } else if (authorType == 'sch') {
+      this.setState({
+        authorType: authorType,
+        authorInst: e.target.dataset.inst,
+        authorState: authorState,
+        authorCountry: authorCountry,
+      })
+    } else {
+      this.setState({
+        authorType: authorType,
+        authorState: authorState,
+        authorCountry: authorCountry,
+      })
+    }
   }
 
   handleMessageChange = (e) => {
@@ -291,7 +341,7 @@ class AddHighlightModalContent extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorDegree, authorTraining, authorState, authorCountry} = this.state
   }
 
   removeFile = (e) => {
@@ -349,6 +399,8 @@ class AddHighlightModalContent extends Component {
     const { text, showEmojis, showCredentials, errorLoadingHashtags, showMaxReachedError, selectedFiles, errorFileSize, errorFileNumber } = this.state;
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     var currYr = new Date().getFullYear()
+    const stateProv = 'CA'
+    const country = 'USA'
     const roleHistory = [
       {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
       {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
@@ -389,63 +441,22 @@ class AddHighlightModalContent extends Component {
                     <React.Fragment>
                       {latestRole && (
                         <div>
-                          <div>
-                            <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">{latestRole[0].title} at {latestRole[0].co}
-                              <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
-                              <span className="radioCheckmark"/>
-                            </label>
-                          </div>
+                          <label className="radioContainer neutralText setPrimary" htmlFor={"job-"+latestRole[0].title}>{latestRole[0].title} at {latestRole[0].co}
+                            <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <span className="radioCheckmark"/>
+                          </label>
                           <div className="darkGeyText">default</div>
                         </div>
                       )}
-                      {roleHistoryNotMain.map((role) => {
+                      {roleHistoryNotMain && roleHistoryNotMain.length != 0 && roleHistoryNotMain.map((role) => {
                         let roleName = role.title;
                         let roleCo = role.co;
                         return (
                           <div key={role.title}>
-                            <div>
-                              <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">Worked at {roleCo} as {roleName}
-                                <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
-                                <span className="radioCheckmark"/>
-                              </label>
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </React.Fragment>
-                  )}
-                  {uniHistory && uniHistory.length != 0 && (
-                    <React.Fragment>
-                      {sortedUnis.map((uni) => {
-                        {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
-                        const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
-                        let degree = uni.degree;
-                        return (
-                          <div key={degree}>
-                            <div>
-                              <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}
-                                <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
-                                <span className="radioCheckmark"/>
-                              </label>
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </React.Fragment>
-                  )}
-                  {schHistory && schHistory.length != 0 && (
-                    <React.Fragment>
-                      {sortedSchs.map((sch) => {
-                        {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
-                        const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
-                        return (
-                          <div key={schInstName}>
-                            <div>
-                              <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}
-                                <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
-                                <span className="radioCheckmark"/>
-                              </label>
-                            </div>
+                            <label className="radioContainer neutralText setPrimary" htmlFor={"job-"+roleName}>Worked at {roleCo} as {roleName}
+                              <input type="radio" id={"job-"+roleName} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-inst={roleCo} name="radio-credentials" onChange={this.handleRadioClick}/>
+                              <span className="radioCheckmark"/>
+                            </label>
                           </div>
                         )
                       })}
@@ -453,12 +464,51 @@ class AddHighlightModalContent extends Component {
                   )}
                   {currTraining && currTraining != '' && (
                     <div>
-                      <div>
-                        <label className="radioContainer neutralText setPrimary" htmlFor="notif-formal-email">Trained at {currTrainingProvider}
-                          <input type="radio" id="notif-formal-email" defaultChecked name="radio"/>
-                          <span className="radioCheckmark"/>
-                        </label>
-                      </div>
+                      <label className="radioContainer neutralText setPrimary" htmlFor={"train-"+currTrainingProvider}>Trained at {currTrainingProvider}
+                        <input type="radio" id={"train-"+currTrainingProvider} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={latestRole ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                        <span className="radioCheckmark"/>
+                      </label>
+                    </div>
+                  )}
+                  {uniHistory && uniHistory.length != 0 && (
+                    <React.Fragment>
+                      {sortedUnis && sortedUnis.map((uni) => {
+                        {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
+                        const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
+                        let degree = uni.degree;
+                        return (
+                          <div key={degree}>
+                            <label className="radioContainer neutralText setPrimary" htmlFor={"uni-"+uniInstName}>{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}
+                              <input type="radio" id={"uni-"+uniInstName} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={(latestRole || currTraining) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                              <span className="radioCheckmark"/>
+                            </label>
+                          </div>
+                        )
+                      })}
+                    </React.Fragment>
+                  )}
+                  {schHistory && schHistory.length != 0 && (
+                    <React.Fragment>
+                      {sortedSchs && sortedSchs.map((sch) => {
+                        {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
+                        const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
+                        return (
+                          <div key={schInstName}>
+                            <label className="radioContainer neutralText setPrimary" htmlFor={"sch-"+schInstName}>{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}
+                              <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={(latestRole || currTraining || sortedUnis) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                              <span className="radioCheckmark"/>
+                            </label>
+                          </div>
+                        )
+                      })}
+                    </React.Fragment>
+                  )}
+                  {stateProv && country && (
+                    <div>
+                      <label className="radioContainer neutralText setPrimary" htmlFor="none">Lives in {stateProv}, {country}
+                        <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={(latestRole || currTraining || sortedUnis || sortedSchs) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                        <span className="radioCheckmark"/>
+                      </label>
                     </div>
                   )}
                 </div>
