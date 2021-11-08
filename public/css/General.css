@@ -1,4 +1,4 @@
-/* Dex last merged this code on 5th nov 2021 */
+/* Dex last merged this code on 8th nov 2021 */
 
 /* General CSS styles to add to any individual element anywhere in the app */
 
@@ -1637,6 +1637,7 @@ a.button{
   -moz-border-radius: inherit;
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
+  object-fit: cover;
 }
 /*.userMenu-thumb img{
   position: absolute;
