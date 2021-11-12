@@ -39,6 +39,10 @@
   -moz-box-shadow: 0 0 0 1.2px #6666dc;
 }
 
+input[type="radio"]:checked + .credential-text {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 758px) {
   .postTypeContainer{
     width: 100%;
@@ -54,6 +58,58 @@
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 500px) {
+  .previewSuperContainer{
+    position: absolute;
+    bottom: 30px;
+    width: 82vw;
+  }
+  .credentialPreviewContainer{
+    margin-top: unset!important;
+  }
+  .credentialPreviewContainer .credDetail{
+    display: inline-block;
+    height: auto;
+    vertical-align: text-top;
+    width: 185px;
+    white-space: normal;
+    text-align: left;
+  }
+}
+.crerdentialPreviewTitle{
+  color: #fff;
+    background-color: rgba(78,78,214,1);
+    width: auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    padding: 5px 10px;
+}
+.credentialPreviewContainer{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f8;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  padding: 16px;
+  text-align: center;
+  white-space: nowrap;
+  display: block!important;
+  overflow: hidden;
+}
 .editCredentialBtn{
   cursor: pointer;
 }
@@ -61,6 +117,10 @@
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
+#close-credential-bkBtn{
+  cursor: pointer;
+}
+/* CSS for a pop up box within a modal. If want to use then have to rename it
 .credentialPickerContainer{
   background-color: #fff;
   position: absolute;
@@ -70,14 +130,36 @@
   width: 100%;
   height: auto;
   max-width: 40em;
-  box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
-  -webkit-box-shadow: 0 3px 10px 0 rgb(0 0 0 / 8%);
-  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  box-shadow: 0 3px 10px 0 rgb(0 0 0 / 28%);
+  -webkit-box-shadow: 0 3px 10px 0 rgb(0 0 0 / 28%);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.28);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+}*/
+.credentialsContainer{
+  max-height: 197px;
+  overflow-y: scroll;
+}
+.credential-item{
+  height: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #3f3f3f;
+  border-bottom: 1px solid #e5e5e5;
+}
+.credential-item:hover{
+  background-color: #f6f6f6!important;
+}
+.credential-item .radioContainer{
+  margin-right: 5px;
+  margin-bottom: -5px;
+  line-height: 1.4rem;
+}
+.defaultCredential{
+  padding-left: 29px;
 }
 .postTypeIcon{
   margin-top: 5px;

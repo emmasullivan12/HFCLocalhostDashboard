@@ -10,6 +10,7 @@
   cursor: text;
   width: 100%;
   text-align: left;
+  background-color: #fff;
 }
 .tagsContainer{
   line-height: 14px;
@@ -89,6 +90,7 @@
   /* max-height: 250px; */
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #fff;
 
   /* For Firefox */
   scrollbar-color: rgba(63,63,63,.45) #fff;

@@ -358,17 +358,27 @@ table th .description{
 .smallFont{
   font-size: 14px!important;
 }
+.uppercase{
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
 .fontSize30{
   font-size: 30px;
 }
 .fontSize20{
   font-size: 20px;
 }
+.fontSize18{
+  font-size: 18px;
+}
 .fontSize14{
   font-size: 14px!important;
 }
 .fontSize12{
   font-size: 12px!important;
+}
+.fontSize10{
+  font-size: 10px!important;
 }
 .breakWord{
   word-break: break-word;
@@ -474,6 +484,9 @@ table th .description{
 /* POSITIONING */
 .zIndex0{
   z-index: 0!important;
+}
+.verticalAlignMiddle{
+  vertical-align: middle;
 }
 .dispBlock{
   display: block;
@@ -599,8 +612,14 @@ table th .description{
 .marginTop20 {
   margin-top: 20px!important;
 }
+.marginTop40 {
+  margin-top: 40px!important;
+}
 .marginTop50 {
   margin-top: 50px!important;
+}
+.marginTopMinus15 {
+  margin-top: -15px;
 }
 .marginTopMinus20 {
   margin-top: -20px;
@@ -723,6 +742,14 @@ table th .description{
 }
 .tooltiptext.profile .tooltiptextDetail{
   font-style: unset;
+}
+.tooltip .tooltiptext.updateCredential{
+  bottom: -80px;
+  margin-left: -90px;
+}
+.tooltip .tooltiptext.updateCredential:after{
+  top: -10px;
+  transform: scaleY(-1);
 }
 .tooltip .tooltiptext.below{
   bottom: unset;

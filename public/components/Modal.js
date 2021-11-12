@@ -148,6 +148,19 @@ class Modal extends React.Component {
 
   // Ensures if click within modal and end outside of modal does not cloes modal
   onMouseDown = (e) => {
+  /*  const {handleScrollBarClick} = this.props;
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var clientX = e.clientX
+    var careAboutScrollbar = h < '732' && e.target.style.overflowY == 'scroll' // i.e. if screenheight is small (but not on a mobile phone) & modal's overflowY has been turned off (which implies a container overflowing the screen height is likely in which case we care about scrollbar)
+    var scrollbarClicked = (w - clientX) <= 8
+    console.log("careAboutScrollbar: "+careAboutScrollbar)
+    console.log("scrollbarClicked: "+scrollbarClicked)
+    this.setState({
+      itemClicked: (careAboutScrollbar && scrollbarClicked) ? 'scrollbar' : e.target
+    }, () => {
+      console.log("itemClicked: "+this.state.itemClicked)
+    })*/
     this.setState({
       itemClicked: e.target
     })
@@ -156,6 +169,7 @@ class Modal extends React.Component {
   // Close modal by clicking outside of Modal
   onMouseUp = (e) => {
   //  if (this.modalNode && this.modalNode.contains(this.state.itemClicked)) return;
+  //  if (this.state.itemClicked == 'scrollbar' || this.state.itemClicked.classList[0] != 'modal-overlay') return;
     if (this.state.itemClicked.classList[0] != 'modal-overlay') return;
     this.onClose();
   }

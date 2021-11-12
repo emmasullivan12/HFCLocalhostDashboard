@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import { NimblePicker } from 'emoji-mart'
 import 'emoji-mart/css/emoji-mart.css'
 import data from 'emoji-mart/data/emojione.json'
+import AlertBox from './AlertBox.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Avatar from './Avatar.js';
 import CameraUploadContent from './CameraUploadContent.js';
@@ -42,13 +43,17 @@ class AddHighlightModalContent extends Component {
       endingHashtagsArr: [],
       showMaxReachedError: false,
       dragover: '',
+      //credentialChecked: '',
       authorType: '',
       authorInst: '',
       authorRole: '',
+      authorIsMainRole: '',
       authorDegree: '',
       authorTraining: '',
       authorState: '',
       authorCountry: '',
+      credentialText: '',
+      credentialUpdatedSuccess: false,
       selectedFiles: [
         {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
         {fileid: '124', name: 'My PDF', type: 'application/pdf'},
@@ -76,37 +81,47 @@ class AddHighlightModalContent extends Component {
 
   componentWillUnmount() {
     document.removeEventListener('click', this.closeMenu)
-    document.removeEventListener('click', this.closeCredentials)
+  //  document.removeEventListener('click', this.closeCredentials)
   }
 
   editCredential = () => {
-    this.modalOverflowOff()
+  //  this.modalOverflowOff()
     this.setState({
       showCredentials: true,
-    }, () => document.addEventListener('click', this.closeCredentials))
+    })
+  //  }, () => document.addEventListener('click', this.closeCredentials))
   }
 
   closeCredentials = (e) => {
-    if ((this.credentialsPicker !== null && !this.credentialsPicker.contains(e.target)) || e.currentTarget.id == 'close-credential') {
-      this.modalOverflowOn()
+  //  if ((this.credentialsPicker !== null && !this.credentialsPicker.contains(e.target)) || e.currentTarget.id == 'close-credential' || e.currentTarget.id == 'close-credential-bkBtn') {
+    //  this.modalOverflowOn()
       this.setState({
         showCredentials: false
-      }, () => document.removeEventListener('click', this.closeCredentials))
-    }
+      })
+  //    }, () => document.removeEventListener('click', this.closeCredentials))
+  //  }
   }
 
-  closeCredentialsOnEsc = (e) => {
+  /*handleSaveCredential = () => {
+    // Don't need to do much here as handleRadioClick has already saved the credential info into authorType, authorRole etc for you to use onSubmit of the post
+    this.modalOverflowOn()
+    this.setState({
+      showCredentials: false
+    }, () => document.removeEventListener('click', this.closeCredentials))
+  }*/
+
+/*  closeCredentialsOnEsc = (e) => {
     var key = e.key || e.keyCode
 
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.setState({
         showCredentials: false
       }, () => document.removeEventListener('click', this.closeCredentials))
-      this.modalOverflowOn()
+  //    this.modalOverflowOn()
     } else {
       return;
     }
-  }
+  }*/
 
   showEmojis = (e) => {
     // Set cursor position of textarea at moment Emoji box was opened
@@ -169,48 +184,129 @@ class AddHighlightModalContent extends Component {
     })
   }
 
+  /*resetCredentialUpdated = () => {
+    this.setState({
+      credentialUpdatedSuccess: false,
+    })
+  }*/
+
   handleRadioClick = (e) => {
-    console.log(e.target.dataset)
+    this.setState({
+      updatingCredentialIsLoading: true,
+    })
+    const container = document.querySelector(".credentialPickerContainer");
+    const credentialItems = container.querySelectorAll(".credential-item");
+
+    credentialItems.forEach((item) => {
+      item.style.backgroundColor = "#fff"
+    });
+
+    e.target.closest(".credential-item").style.backgroundColor = "#f2f2f2"
+
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state
     var authorCountry = e.target.dataset.country
+    let authorInst, authorRole, authorDegree, authorIsMainRole
+    //var credentialChecked = e.target.id
     if (authorType == 'job') {
+      authorInst = e.target.dataset.inst
+      authorRole = e.target.dataset.role
+      authorIsMainRole = e.target.dataset.ismainrole
+      var credentialTextToUse = authorIsMainRole == "true" ? (authorRole + ' at ' + authorInst) : ('Worked at ' + authorInst + ' as ' + authorRole)
       this.setState({
         authorType: authorType,
-        authorInst: e.target.dataset.inst,
-        authorRole: e.target.dataset.role,
+        authorInst: authorInst,
+        authorRole: authorRole,
+        authorIsMainRole: authorIsMainRole,
+        authorTraining: '',
+        authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
-      })
+        credentialText: credentialTextToUse,
+        credentialUpdatedSuccess: true,
+        updatingCredentialIsLoading: false,
+      //  credentialChecked: credentialChecked,
+    })
     } else if (authorType == 'train') {
+      authorInst = e.target.dataset.inst
       this.setState({
         authorType: authorType,
-        authorInst: e.target.dataset.inst,
+        authorInst: authorInst,
+        authorRole: '',
+        authorIsMainRole: false,
         authorTraining: e.target.dataset.training,
+        authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
+        credentialText: 'Trained at ' + authorInst,
+        credentialUpdatedSuccess: true,
+        updatingCredentialIsLoading: false,
+      //  credentialChecked: credentialChecked,
       })
     } else if (authorType == 'uni') {
+      authorInst = e.target.dataset.inst
+      authorDegree = e.target.dataset.degree
       this.setState({
         authorType: authorType,
-        authorInst: e.target.dataset.inst,
-        authorDegree: e.target.dataset.degree,
+        authorInst: authorInst,
+        authorRole: '',
+        authorIsMainRole: false,
+        authorTraining: '',
+        authorDegree: authorDegree,
         authorState: authorState,
         authorCountry: authorCountry,
+        credentialText: 'Studied ' + authorDegree + ' at ' + authorInst,
+        credentialUpdatedSuccess: true,
+        updatingCredentialIsLoading: false,
+      //  credentialChecked: credentialChecked,
       })
     } else if (authorType == 'sch') {
+      authorInst = e.target.dataset.inst
       this.setState({
         authorType: authorType,
-        authorInst: e.target.dataset.inst,
+        authorInst: authorInst,
+        authorRole: '',
+        authorIsMainRole: false,
+        authorTraining: '',
+        authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
+        credentialText: 'Studied at ' + authorInst,
+        credentialUpdatedSuccess: true,
+        updatingCredentialIsLoading: false,
+      //  credentialChecked: credentialChecked,
       })
     } else {
       this.setState({
         authorType: authorType,
+        authorInst: '',
+        authorRole: '',
+        authorIsMainRole: false,
+        authorTraining: '',
+        authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
+        credentialText: 'Lives in ' + authorState + ', ' + authorCountry,
+        credentialUpdatedSuccess: true,
+        updatingCredentialIsLoading: false,
+      //  credentialChecked: credentialChecked,
       })
+    }
+  }
+
+  getStartingCredText = (roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country) => {
+    if (roleHistory && roleHistory.length != 0) {
+      return latestRole[0].title + ' at ' + latestRole[0].co
+    } else if (currTraining != '') {
+      return 'Trained at ' + currTrainingProvider
+    } else if (uniHistory && uniHistory.length != 0) {
+      const uniInst = (sortedUnis[0].uniname) ? (sortedUnis[0].uniname) : (sortedUnis[0].uninamefreetext)
+      return 'Studied ' + sortedUnis[0].degree + ' at ' + uniInst
+    } else if (schHistory && schHistory.length != 0) {
+      const schInst = (sortedSchs[0].schname) ? (sortedSchs[0].schname) : (sortedSchs[0].schnamefreetext)
+      return 'Studied at ' + schInst
+    } else {
+      return 'Lives in ' + stateProv + ', ' + country
     }
   }
 
@@ -257,12 +353,31 @@ class AddHighlightModalContent extends Component {
   /* Toggles modal's overflow off so that z-index of AutocompleteTagsMulti box is not overriden */
   modalOverflowOff = () => {
     const {modalID} = this.props
-    document.getElementById(modalID).style.overflowY = 'unset'
+    const modal = document.getElementById(modalID)
+  //  modal.style.overflowY = 'unset'
+    var h = window.innerHeight;
+    var w = window.innerWidth;
+    var txtBox = document.getElementById('txtInput-box')
+    var txtBoxHeight = txtBox.offsetHeight
+    var heightToCheck = 732 - 25 + txtBoxHeight // 732 is min-height we need when textBox is in empty state / 25 is height of txtBox in empty state
+    var onMobile = w <= '500'
+    console.log("heightToCheck: "+heightToCheck)
+    if (h >= heightToCheck && !onMobile) {
+      console.log("here")
+      modal.style.overflowY = 'unset'
+    }
   }
 
   modalOverflowOn = () => {
     const {modalID} = this.props
-    document.getElementById(modalID).style.overflowY = 'auto'
+    const modal = document.getElementById(modalID)
+    modal.style.overflowY = 'auto'
+    var h = window.innerHeight;
+    var w = window.innerWidth;
+    var onMobile = w <= '500'
+    if (h < '732' || onMobile) {
+      modal.style.overflowY = 'auto'
+    }
   }
 
   handleFocus = () => {
@@ -341,7 +456,7 @@ class AddHighlightModalContent extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorDegree, authorTraining, authorState, authorCountry} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry} = this.state
   }
 
   removeFile = (e) => {
@@ -396,9 +511,34 @@ class AddHighlightModalContent extends Component {
   }
 
   render() {
-    const { text, showEmojis, showCredentials, errorLoadingHashtags, showMaxReachedError, selectedFiles, errorFileSize, errorFileNumber } = this.state;
+    const {
+      text,
+      showEmojis,
+      showCredentials,
+      credentialText,
+      credentialUpdatedSuccess,
+      updatingCredentialIsLoading,
+    //  credentialChecked,
+      errorLoadingHashtags,
+      showMaxReachedError,
+      selectedFiles,
+      errorFileSize,
+      errorFileNumber,
+      /*stateProv,
+      country,
+      roleHistory,
+      latestRole,
+      currRole,
+      currCo,
+      roleHistoryNotMain,
+      uniHistory,
+      sortedUnis,
+      schHistory,
+      sortedSchs,
+      currTraining,
+      currTrainingProvider*/
+    } = this.state;
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
-    var currYr = new Date().getFullYear()
     const stateProv = 'CA'
     const country = 'USA'
     const roleHistory = [
@@ -414,16 +554,19 @@ class AddHighlightModalContent extends Component {
       {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
       {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '2017', uniyrgrp: '', unidesc: 'Such a good 4 years of my life!'}
     ]
-    const sortedUnis = uniHistory && uniHistory.length != 0 && uniHistory.sort((a, b) => parseFloat(b.unigraduyr) - parseFloat(a.unigraduyr));
+    const sortedUnis = uniHistory && uniHistory.length != 0 && uniHistory.sort((a, b) => parseFloat(b.unigraduyr) - parseFloat(a.unigraduyr))
     const schHistory = [
       {schname: '', schnamefreetext: 'Thamesmead', schgraduyr: '2002', schyrgrp: '', schdesc: ''},
+      {schname: '', schnamefreetext: 'Strodes', schgraduyr: '2000', schyrgrp: '', schdesc: ''},
     ]
-    const sortedSchs = schHistory && schHistory.length != 0 && schHistory.sort((a, b) => parseFloat(b.schgraduyr) - parseFloat(a.schgraduyr));
-    const currTraining=''
-    const currTrainingProvider=''
+    const sortedSchs = schHistory && schHistory.length != 0 && schHistory.sort((a, b) => parseFloat(b.schgraduyr) - parseFloat(a.schgraduyr))
+    const currTraining = ''
+    const currTrainingProvider = ''
+    var currYr = new Date().getFullYear()
+    const startingCredentialPreviewText = this.getStartingCredText(roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country)
 
-    return (
-      <React.Fragment>
+    if (!showCredentials) {
+      return (
         <form className="fileUploadForm" id="fileUploadForm" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
           <div className="group-detail-item bright">
             <Avatar userID={user.uid} userName={user.fname} isAddHighlight picSize={40}/>
@@ -431,93 +574,154 @@ class AddHighlightModalContent extends Component {
             <div className="textLeft addHighlight-user editCredentialBtn electricPurpleText" onClick={this.editCredential} role="button" >
               Edit Credential
             </div>
-            {showCredentials && (
-              <div className="credentialPickerContainer" ref={el => (this.credentialsPicker = el)} onKeyDown={this.closeCredentialsOnEsc}>
-                <div>Choose post credential</div>
-                <div>Help mentees understand your experience with this topic</div>
-                <div>
-                  <div>Your credentials</div>
-                  {roleHistory && roleHistory.length != 0 && (
-                    <React.Fragment>
-                      {latestRole && (
-                        <div>
-                          <label className="radioContainer neutralText setPrimary" htmlFor={"job-"+latestRole[0].title}>{latestRole[0].title} at {latestRole[0].co}
-                            <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked name="radio-credentials" onChange={this.handleRadioClick}/>
-                            <span className="radioCheckmark"/>
-                          </label>
-                          <div className="darkGeyText">default</div>
-                        </div>
-                      )}
-                      {roleHistoryNotMain && roleHistoryNotMain.length != 0 && roleHistoryNotMain.map((role) => {
-                        let roleName = role.title;
-                        let roleCo = role.co;
-                        return (
-                          <div key={role.title}>
-                            <label className="radioContainer neutralText setPrimary" htmlFor={"job-"+roleName}>Worked at {roleCo} as {roleName}
-                              <input type="radio" id={"job-"+roleName} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-inst={roleCo} name="radio-credentials" onChange={this.handleRadioClick}/>
+          {/*  {showCredentials && (
+              <div className="credentialPickerContainer textLeft paddingR20 paddingL20" ref={el => (this.credentialsPicker = el)} onKeyDown={this.closeCredentialsOnEsc}>
+                <div className="marginBottom20 marginTop40">
+                  <div className="paddingR20 paddingL20 marginBottom20 marginTop20 fontSize18"><strong>Choose post credential</strong></div>
+                  <div className="paddingR20 paddingL20 marginTopMinus15 darkGreyText">Help mentees understand your experience with this topic</div>
+                  {updatingCredentialIsLoading == false && credentialUpdatedSuccess == true && (
+                    <AlertBox successOrFailure='success' fadesOut positionAbove>
+                      <div>	&#10003; Your credential has been saved</div>
+                    </AlertBox>
+                  )}
+                  <div className="credentialsContainer paddingR20 paddingL20 marginBottom20 marginTop20">
+                    <div className="uppercase fontSize10 paddingBtm">Your credentials</div>
+                    {roleHistory && roleHistory.length != 0 && (
+                      <React.Fragment>
+                        {latestRole && (
+                          <div className="credential-item">
+                            <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
+                              <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked name="radio-credentials" onChange={this.handleRadioClick}/>
+                              <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
                               <span className="radioCheckmark"/>
                             </label>
+                            <span className="defaultCredential neutralText tooltip">
+                              default
+                              <span className="tooltiptext updateCredential">
+                                This will be the credential that appears by default on your answers / posts
+                              </span>
+                            </span>
                           </div>
-                        )
-                      })}
-                    </React.Fragment>
-                  )}
-                  {currTraining && currTraining != '' && (
-                    <div>
-                      <label className="radioContainer neutralText setPrimary" htmlFor={"train-"+currTrainingProvider}>Trained at {currTrainingProvider}
-                        <input type="radio" id={"train-"+currTrainingProvider} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={latestRole ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
-                        <span className="radioCheckmark"/>
-                      </label>
+                        )}
+                        {roleHistoryNotMain && roleHistoryNotMain.length != 0 && roleHistoryNotMain.map((role) => {
+                          let roleName = role.title;
+                          let roleCo = role.co;
+                          return (
+                            <div className="credential-item" key={roleName}>
+                              <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
+                                <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-inst={roleCo} name="radio-credentials" onChange={this.handleRadioClick}/>
+                                <span className="credential-text">Worked at {roleCo} as {roleName}</span>
+                                <span className="radioCheckmark"/>
+                              </label>
+                            </div>
+                          )
+                        })}
+                      </React.Fragment>
+                    )}
+                    {currTraining && currTraining != '' && (
+                      <div className="credential-item">
+                        <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"train-"+currTrainingProvider+currTraining}>
+                          <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={latestRole ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <span className="credential-text">Trained at {currTrainingProvider}</span>
+                          <span className="radioCheckmark"/>
+                        </label>
+                        {(roleHistory == null || (roleHistory && roleHistory.length < 1)) && (
+                          <span className="defaultCredential neutralText tooltip">
+                            default
+                            <span className="tooltiptext updateCredential">
+                              This will be the credential that appears by default on your answers / posts
+                            </span>
+                          </span>
+                        )}
+                      </div>
+                    )}
+                    {uniHistory && uniHistory.length != 0 && (
+                      <React.Fragment>
+                        {sortedUnis && sortedUnis.map((uni, index) => { */}
+                          {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
+                      {/*}    const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
+                          let degree = uni.degree;
+                          return (
+                            <div className="credential-item" key={degree}>
+                              <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
+                                <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={(latestRole || currTraining || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                                <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
+                                <span className="radioCheckmark"/>
+                              </label>
+                              {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && index == 0) && (
+                                <span className="defaultCredential neutralText tooltip">
+                                  default
+                                  <span className="tooltiptext updateCredential">
+                                    This will be the credential that appears by default on your answers / posts
+                                  </span>
+                                </span>
+                              )}
+                            </div>
+                          )
+                        })}
+                      </React.Fragment>
+                    )}
+                    {schHistory && schHistory.length != 0 && (
+                      <React.Fragment>
+                        {sortedSchs && sortedSchs.map((sch, index) => { */}
+                          {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
+                        {/*}  const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
+                          return (
+                            <div className="credential-item" key={schInstName}>
+                              <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
+                                <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={(latestRole || currTraining || sortedUnis || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                                <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
+                                <span className="radioCheckmark"/>
+                              </label>
+                              {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && index == 0) && (
+                                <span className="defaultCredential neutralText tooltip">
+                                  default
+                                  <span className="tooltiptext updateCredential">
+                                    This will be the credential that appears by default on your answers / posts
+                                  </span>
+                                </span>
+                              )}
+                            </div>
+                          )
+                        })}
+                      </React.Fragment>
+                    )}
+                    {stateProv && country && (
+                      <div className="credential-item">
+                        <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
+                          <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={(latestRole || currTraining || sortedUnis || sortedSchs) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <span className="credential-text">Lives in {stateProv}, {country}</span>
+                          <span className="radioCheckmark"/>
+                        </label>
+                        {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1))) && (
+                          <span className="defaultCredential neutralText tooltip">
+                            default
+                            <span className="tooltiptext updateCredential">
+                              This will be the credential that appears by default on your answers / posts
+                            </span>
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                  <div className="italic paddingR20 paddingL20">You can add or edit your credentials from your Profile</div> */}
+                {/*}  <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight marginBottom20" type="button" onClick={this.handleSaveCredential}>Save</button>*/}
+                {/*}  <div>
+                    <div className="crerdentialPreviewTitle">Preview</div>
+                    <div className="credentialPreviewContainer">
+                      <div className="dispInlineBlock verticalAlignMiddle"><Avatar userID={user.uid} userName={user.fname} showAsCircle picSize={360}/></div>
+                      <div className="dispInlineBlock verticalAlignMiddle">
+                        <span className="fontSize12"><strong>{user.fname} {user.lname}</strong>, <span className="darkGreyText">{credentialText}</span></span>
+                      </div>
                     </div>
-                  )}
-                  {uniHistory && uniHistory.length != 0 && (
-                    <React.Fragment>
-                      {sortedUnis && sortedUnis.map((uni) => {
-                        {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
-                        const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
-                        let degree = uni.degree;
-                        return (
-                          <div key={degree}>
-                            <label className="radioContainer neutralText setPrimary" htmlFor={"uni-"+uniInstName}>{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}
-                              <input type="radio" id={"uni-"+uniInstName} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={(latestRole || currTraining) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
-                              <span className="radioCheckmark"/>
-                            </label>
-                          </div>
-                        )
-                      })}
-                    </React.Fragment>
-                  )}
-                  {schHistory && schHistory.length != 0 && (
-                    <React.Fragment>
-                      {sortedSchs && sortedSchs.map((sch) => {
-                        {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
-                        const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
-                        return (
-                          <div key={schInstName}>
-                            <label className="radioContainer neutralText setPrimary" htmlFor={"sch-"+schInstName}>{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}
-                              <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={(latestRole || currTraining || sortedUnis) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
-                              <span className="radioCheckmark"/>
-                            </label>
-                          </div>
-                        )
-                      })}
-                    </React.Fragment>
-                  )}
-                  {stateProv && country && (
-                    <div>
-                      <label className="radioContainer neutralText setPrimary" htmlFor="none">Lives in {stateProv}, {country}
-                        <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={(latestRole || currTraining || sortedUnis || sortedSchs) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
-                        <span className="radioCheckmark"/>
-                      </label>
-                    </div>
-                  )}
+                  </div>
+                  <button type="button" className="modal-close" id="close-credential" aria-labelledby="Close Modal" onClick={this.closeCredentials}>
+                    <span className="u-hide-visually">Close</span>
+                    <svg className="modal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+                  </button>
                 </div>
-                <button type="button" className="modal-close" id="close-credential" aria-labelledby="Close Modal" onClick={this.closeCredentials}>
-                  <span className="u-hide-visually">Close</span>
-                  <svg className="modal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
-                </button>
               </div>
-            )}
+            )} */}
           </div>
           <div id="new-message" className="chatWindow-footer">
             <div className="footer-container">
@@ -755,8 +959,160 @@ class AddHighlightModalContent extends Component {
             Create post
           </div>*/}
         </form>
-      </React.Fragment>
-    )
+      )
+    } else {
+      return (
+        <React.Fragment>
+          <div id="close-credential-bkBtn" className="paddingL20 textLeft electricPurpleText" onClick={this.closeCredentials}><i className="fas fa-arrow-left"/> Back to Post</div>
+          <div className="credentialPickerContainer textLeft paddingR20 paddingL20" ref={el => (this.credentialsPicker = el)}>
+            <div className="marginBottom20 marginTop40">
+              <div className="marginBottom20 marginTop20 fontSize18"><strong>Choose post credential</strong></div>
+              <div className="marginTopMinus15 darkGreyText">Help mentees understand your experience with this topic</div>
+              {updatingCredentialIsLoading == false && credentialUpdatedSuccess == true && (
+                <AlertBox successOrFailure='success' fadesOut positionAtTop>
+                  <div>	&#10003; Your credential has been saved</div>
+                </AlertBox>
+              )}
+              <div className="credentialsContainer marginBottom20 marginTop20">
+                <div className="uppercase fontSize10 paddingBtm">Your credentials</div>
+                {roleHistory && roleHistory.length != 0 && (
+                  <React.Fragment>
+                    {latestRole && (
+                      <div className="credential-item">
+                        <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
+                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
+                          <span className="radioCheckmark"/>
+                        </label>
+                        <span className="defaultCredential neutralText tooltip">
+                          default
+                          <span className="tooltiptext updateCredential">
+                            This will be the credential that appears by default on your answers / posts
+                          </span>
+                        </span>
+                      </div>
+                    )}
+                    {roleHistoryNotMain && roleHistoryNotMain.length != 0 && roleHistoryNotMain.map((role) => {
+                      let roleName = role.title;
+                      let roleCo = role.co;
+                      return (
+                        <div className="credential-item" key={roleName}>
+                          <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
+                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-inst={roleCo} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <span className="credential-text">Worked at {roleCo} as {roleName}</span>
+                            <span className="radioCheckmark"/>
+                          </label>
+                        </div>
+                      )
+                    })}
+                  </React.Fragment>
+                )}
+                {currTraining && currTraining != '' && (
+                  <div className="credential-item">
+                    <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"train-"+currTrainingProvider+currTraining}>
+                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={latestRole ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <span className="credential-text">Trained at {currTrainingProvider}</span>
+                      <span className="radioCheckmark"/>
+                    </label>
+                    {(roleHistory == null || (roleHistory && roleHistory.length < 1)) && (
+                      <span className="defaultCredential neutralText tooltip">
+                        default
+                        <span className="tooltiptext updateCredential">
+                          This will be the credential that appears by default on your answers / posts
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                )}
+                {uniHistory && uniHistory.length != 0 && (
+                  <React.Fragment>
+                    {sortedUnis && sortedUnis.map((uni, index) => {
+                      {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
+                      const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
+                      let degree = uni.degree;
+                      return (
+                        <div className="credential-item" key={degree}>
+                          <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
+                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={(latestRole || currTraining || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
+                            <span className="radioCheckmark"/>
+                          </label>
+                          {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && index == 0) && (
+                            <span className="defaultCredential neutralText tooltip">
+                              default
+                              <span className="tooltiptext updateCredential">
+                                This will be the credential that appears by default on your answers / posts
+                              </span>
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </React.Fragment>
+                )}
+                {schHistory && schHistory.length != 0 && (
+                  <React.Fragment>
+                    {sortedSchs && sortedSchs.map((sch, index) => {
+                      {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
+                      const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
+                      return (
+                        <div className="credential-item" key={schInstName}>
+                          <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
+                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={(latestRole || currTraining || sortedUnis || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
+                            <span className="radioCheckmark"/>
+                          </label>
+                          {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && index == 0) && (
+                            <span className="defaultCredential neutralText tooltip">
+                              default
+                              <span className="tooltiptext updateCredential">
+                                This will be the credential that appears by default on your answers / posts
+                              </span>
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </React.Fragment>
+                )}
+                {stateProv && country && (
+                  <div className="credential-item">
+                    <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
+                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={(latestRole || currTraining || sortedUnis || sortedSchs) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <span className="credential-text">Lives in {stateProv}, {country}</span>
+                      <span className="radioCheckmark"/>
+                    </label>
+                    {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1))) && (
+                      <span className="defaultCredential neutralText tooltip">
+                        default
+                        <span className="tooltiptext updateCredential">
+                          This will be the credential that appears by default on your answers / posts
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+              <div className="italic">You can add or edit your credentials from your Profile</div>
+            {/*}  <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight marginBottom20" type="button" onClick={this.handleSaveCredential}>Save</button>*/}
+              <div className="previewSuperContainer">
+                <div className="crerdentialPreviewTitle">Preview</div>
+                <div className="credentialPreviewContainer">
+                  <div className="dispInlineBlock verticalAlignMiddle"><Avatar userID={user.uid} userName={user.fname} showAsCircle picSize={360}/></div>
+                  <div className="credDetail dispInlineBlock verticalAlignMiddle">
+                    <span className="fontSize12"><strong>{user.fname} {user.lname}</strong>, <span className="darkGreyText">{credentialText == '' ? startingCredentialPreviewText : credentialText}</span></span>
+                  </div>
+                </div>
+              </div>
+              <button type="button" className="modal-close" id="close-credential" aria-labelledby="Close Modal" onClick={this.closeCredentials}>
+                <span className="u-hide-visually">Close</span>
+                <svg className="modal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+              </button>
+            </div>
+          </div>
+        </React.Fragment>
+      )
+    }
   }
 }
 

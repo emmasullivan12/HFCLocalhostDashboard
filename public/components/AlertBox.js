@@ -12,10 +12,12 @@ const AlertBoxContent = ({
   alertRef,
   onClose,
   successOrFailure,
+  positionAbove,
+  positionAtTop,
   fadesOut
 }) => {
   return (
-    <div role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" className={"alertBox" + (successOrFailure ? (" " + successOrFailure) : "") + (fadesOut == true ? " fadesOut" : "")} ref={alertRef}>
+    <div role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" className={"alertBox" + (successOrFailure ? (" " + successOrFailure) : "") + (fadesOut == true ? " fadesOut" : "") + (positionAbove == true ? " positionAbove" : "") + (positionAtTop == true ? " positionAtTop" : "")} ref={alertRef}>
       <div className="alertBox-content">
         <button type="button" className="alertBox-close" aria-labelledby="Close Alert Box" onClick={onClose} ref={buttonRef}>
           <span id="close-modal" className="u-hide-visually">Close</span>
@@ -47,7 +49,7 @@ class AlertBox extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, role, successOrFailure, fadesOut} = this.props;
+    const {ariaLabel, children, role, successOrFailure, fadesOut, positionAbove, positionAtTop} = this.props;
 
     return (
       <React.Fragment>
@@ -61,6 +63,8 @@ class AlertBox extends React.Component {
             successOrFailure={successOrFailure}
             fadesOut={fadesOut}
             role={role}
+            positionAbove={positionAbove}
+            positionAtTop={positionAtTop}
           />
         )}
       </React.Fragment>
