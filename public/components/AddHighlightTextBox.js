@@ -1,4 +1,4 @@
-// Dex last merged this code on 26th feb 2021
+// Last merged this code on 17th nov 2021
 
 import React, { Component } from "react";
 
@@ -746,7 +746,7 @@ class AddHighlightModalContent extends Component {
                       autoComplete="on"
                       autoCorrect="on"
                       spellCheck="true"
-                      maxLength="1000"
+                      maxLength="2000"
                       autoFocus
                     />
                     <p className="textLeft" id="notAllowedTextAddHighlight"/>
@@ -757,7 +757,7 @@ class AddHighlightModalContent extends Component {
           </div>
           {text.length > 0 && (
             <div className="descriptor-br addHighlight">
-              {text.length} / 1000
+              {text.length} / 2000
             </div>
           )}
           <div className="fontSize14 marginTop50 textLeft">

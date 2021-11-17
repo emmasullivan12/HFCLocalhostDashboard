@@ -1,4 +1,4 @@
-// Dex last merged this code on 30th june 2021
+// Dex last merged this code on 17th nov 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -146,8 +146,9 @@ class Modal extends React.Component {
     }
   }
 
-  // Ensures if click within modal and end outside of modal does not cloes modal
+  // Ensures if click within modal and end outside of modal does not close modal
   onMouseDown = (e) => {
+    // No longer required as put content within existing modal as another screen rather than a pop up box
   /*  const {handleScrollBarClick} = this.props;
     var w = window.innerWidth;
     var h = window.innerHeight;
