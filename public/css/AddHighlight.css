@@ -75,6 +75,13 @@ input[type="radio"]:checked + .credential-text {
     white-space: normal;
     text-align: left;
   }
+  .qaComingSoonContainer,
+  .selectPostTypeContainer{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 .crerdentialPreviewTitle{
   color: #fff;
@@ -160,6 +167,20 @@ input[type="radio"]:checked + .credential-text {
 }
 .defaultCredential{
   padding-left: 29px;
+}
+.anonOption{
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.anonOption .checkboxText{
+  margin-left: unset;
+}
+.anonOption .checkbox{
+  position: unset;
 }
 .postTypeIcon{
   margin-top: 5px;
@@ -266,4 +287,13 @@ input[type="radio"]:checked + .credential-text {
   background: rgba(0,0,0,0.5);
   color: #fff;
   opacity: 1;
+}
+.qaComingSoonContainer{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.qaTitle{
+  font-size: 32px;
+  font-family: system-ui;
 }

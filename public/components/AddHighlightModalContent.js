@@ -28,7 +28,7 @@ class AddHighlightModalContent extends Component {
 
     if(highlightType == '') {
       return (
-        <React.Fragment>
+        <div className="selectPostTypeContainer">
           <div className="modal-title">
             Select post type
           </div>
@@ -51,12 +51,16 @@ class AddHighlightModalContent extends Component {
               <div className="postType-desc">Share work-life insights, resources or other stuff!</div>
             </button>
           </div>
-        </React.Fragment>
+        </div>
       );
     } else if (highlightType == 'qa') {
       return (
-        <div className="modal-preTitle">
-          Q&A type of post
+        <div className="qaComingSoonContainer">
+          <div className="electricPurpleText fontSize30 marginTop20">
+            <i className="far fa-comments"/>
+          </div>
+          <div className="qaTitle modal-preTitle marginBottom20">Coming soon!</div>
+          <div className="darkGreyText">Help mentees from every background get access to quality careers advice, by contributing to our new open-access Q&A reference library</div>
         </div>
       )
     } else {

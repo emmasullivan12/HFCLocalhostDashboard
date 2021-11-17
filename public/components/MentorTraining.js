@@ -17,7 +17,7 @@ class MentorTraining extends Component {
             Complete your 5-min Prospela training
           </h2>
           <p className="landingCTADesc">
-            Our short (and sweet) online training is mandatory before we introduce you to students and will help you feel fully equipped in supporting students across the Prospela network!
+            Our short (and sweet) online training is mandatory before we introduce you to students (under 18 years old) and will help you feel fully equipped in supporting students across the Prospela network!
           </p>
           <a className="button link Submit-btn" href={mentorTrainingLink} target="_blank" rel="noopener noreferrer">
             Complete 5-min Training &gt;&gt;

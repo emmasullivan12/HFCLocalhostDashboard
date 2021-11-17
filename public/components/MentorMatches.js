@@ -1,7 +1,17 @@
 // Dex last merged this code on 25th oct 2020
 
 import React, { Component } from "react";
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import MentorCardMatches from "./MentorCard";
+import Modal from './Modal';
+
+const AddHighlightModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: '+ Highlight',
+  usedFor: 'addHighlightDashboard',
+  changeInitFocus: true,
+  wider: true
+}
 
 class MentorMatches extends Component {
   constructor(props) {
@@ -34,6 +44,10 @@ class MentorMatches extends Component {
               <p className="landingCTADesc">
                 Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
               </p>
+              <p className="landingCTADesc">In the meantime...</p>
+              <Modal {...AddHighlightModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlightDashboard"/>
+              </Modal>
             </div>
           </section>
         );

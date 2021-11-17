@@ -64,6 +64,7 @@ class AddHighlightModalContent extends Component {
       ],
       errorFileNumber: false,
       errorFileSize: false,
+      isAnon: false,
     };
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
@@ -361,9 +362,7 @@ class AddHighlightModalContent extends Component {
     var txtBoxHeight = txtBox.offsetHeight
     var heightToCheck = 732 - 25 + txtBoxHeight // 732 is min-height we need when textBox is in empty state / 25 is height of txtBox in empty state
     var onMobile = w <= '500'
-    console.log("heightToCheck: "+heightToCheck)
     if (h >= heightToCheck && !onMobile) {
-      console.log("here")
       modal.style.overflowY = 'unset'
     }
   }
@@ -455,6 +454,13 @@ class AddHighlightModalContent extends Component {
 
   }
 
+  onClickAnon = () => {
+    const currentState = this.state.isAnon
+    this.setState({
+      isAnon: !currentState
+    })
+  }
+
   handleSubmit = () => {
     const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry} = this.state
   }
@@ -524,6 +530,7 @@ class AddHighlightModalContent extends Component {
       selectedFiles,
       errorFileSize,
       errorFileNumber,
+      isAnon,
       /*stateProv,
       country,
       roleHistory,
@@ -1092,15 +1099,27 @@ class AddHighlightModalContent extends Component {
                     )}
                   </div>
                 )}
+                <div className="marginTop20 marginBottom20 fullWidth">
+                  <div className={"lightGreyText fontSize13 anonOption" + (isAnon ? " selectedCheckbox" : "")} onClick={this.onClickAnon}>
+                    <span className="checkbox">
+                      <Check />
+                    </span>
+                    <span className="checkboxText overflow-ellipsis">
+                      Add Anonymously
+                    </span>
+                  </div>
+                </div>
               </div>
               <div className="italic">You can add or edit your credentials from your Profile</div>
             {/*}  <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight marginBottom20" type="button" onClick={this.handleSaveCredential}>Save</button>*/}
               <div className="previewSuperContainer">
                 <div className="crerdentialPreviewTitle">Preview</div>
                 <div className="credentialPreviewContainer">
-                  <div className="dispInlineBlock verticalAlignMiddle"><Avatar userID={user.uid} userName={user.fname} showAsCircle picSize={360}/></div>
+                  <div className="dispInlineBlock verticalAlignMiddle">
+                    <Avatar userID={user.uid} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle picSize={360}/>
+                  </div>
                   <div className="credDetail dispInlineBlock verticalAlignMiddle">
-                    <span className="fontSize12"><strong>{user.fname} {user.lname}</strong>, <span className="darkGreyText">{credentialText == '' ? startingCredentialPreviewText : credentialText}</span></span>
+                    <span className="fontSize12"><strong>{isAnon ? "" : (user.fname + " " + user.lname + ", ")}</strong><span className="darkGreyText">{credentialText == '' ? startingCredentialPreviewText : credentialText}</span></span>
                   </div>
                 </div>
               </div>

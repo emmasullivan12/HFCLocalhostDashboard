@@ -374,6 +374,9 @@ table th .description{
 .fontSize14{
   font-size: 14px!important;
 }
+.fontSize13{
+  font-size: 13px!important;
+}
 .fontSize12{
   font-size: 12px!important;
 }
@@ -593,6 +596,12 @@ table th .description{
 }
 .width50pc{
   width: 50%;
+}
+.verticallyCenter{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .noMarginBlockEnd{
   margin-block-end: 0;
