@@ -594,6 +594,9 @@ table th .description{
 .fullWidth{
   width: 100%;
 }
+.width65pc{
+  width: 65%;
+}
 .width50pc{
   width: 50%;
 }
@@ -668,6 +671,9 @@ table th .description{
 }
 .paddingBtm{
   padding-bottom: 10px;
+}
+.paddingR5{
+  padding-right: 5px;
 }
 .paddingR{
   padding-right: 10px!important;
@@ -754,11 +760,12 @@ table th .description{
 }
 .tooltip .tooltiptext.updateCredential{
   bottom: -80px;
-  margin-left: -90px;
+  margin-left: -20px;
 }
 .tooltip .tooltiptext.updateCredential:after{
   top: -10px;
   transform: scaleY(-1);
+  left: 30px;
 }
 .tooltip .tooltiptext.below{
   bottom: unset;

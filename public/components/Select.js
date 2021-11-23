@@ -64,10 +64,14 @@ class SelectBox extends React.Component {
 
   onBlur = (e) => {
     e.persist()
-    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange, isForForm, bringBackE } = this.props
+    const { options, multiple, valueToShow, name, required, otherValidityChecks, finMultiOptions, handleChange, isForForm, bringBackE, onBlur } = this.props
 
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
+
+    if (onBlur) {
+      onBlur()
+    }
 
     this.setState(prevState => {
       const { values } = prevState
@@ -156,7 +160,7 @@ class SelectBox extends React.Component {
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
-    const { handleDone, isForForm, handleFocus, multiple, finMultiOptions, options, showCheckbox, name } = this.props;
+    const { handleDone, isForForm, handleFocus, multiple, finMultiOptions, options, showCheckbox, nam, showBubbleVersion } = this.props;
     const { values } = this.state;
     const currentState = this.state.isOpen;
 
@@ -164,6 +168,10 @@ class SelectBox extends React.Component {
       if (handleFocus) {
         handleFocus(document.activeElement.id);
       }
+    /*  if (showBubbleVersion) {
+        console.log("onclick undoing width")
+        e.currentTarget.style.width = "100%"
+      }*/
     }
 
     if (multiple && currentState != true) {
@@ -172,7 +180,7 @@ class SelectBox extends React.Component {
       }
     }
 
-    if (multiple && currentState === true && e.target.nodeName != 'svg' && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0 && e.target.id.indexOf("doneTick") != 0) {
+    if (!showBubbleVersion && multiple && currentState === true && e.target.nodeName != 'svg' && e.target.nodeName != 'path' && e.target.id != 'chevronUp' && e.target.id != "selectArrow" && e.target.id != 'select-placeholder' && e.target.id != 'selectContainer' && e.target.id.indexOf("selectBox") != 0 && e.target.id.indexOf("doneTick") != 0) {
       //change so if multiple and is open and clicked on box (not item) then close
       return;
     }
@@ -363,7 +371,7 @@ class SelectBox extends React.Component {
   onKeyDown = e => {
     e.persist()
     const { isOpen, focusedValue, isFocused } = this.state;
-    const { handleChange, handleDone, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm, bringBackE } = this.props;
+    const { handleChange, handleDone, handleTabPress, options, multiple, isLastChild, finMultiOptions, required, name, showCheckbox, valueToShow, otherValidityChecks, isForForm, bringBackE, showBubbleVersion } = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
@@ -376,6 +384,10 @@ class SelectBox extends React.Component {
         let { focusedValue } = prevState
 
         if (!isOpen) {
+          /*console.log("isnt open so gets here")
+          if (showBubbleVersion) {
+            e.currentTarget.style.width = "100%"
+          }*/
 
           if (multiple) {
             if (prevState.values.length === (options.length - this.countTitles()) && showCheckbox != true) {
@@ -1007,7 +1019,7 @@ class SelectBox extends React.Component {
   }
 
   heightCalc = (needValue) => {
-    const {options, name, showCheckbox, required} = this.props
+    const {options, name, showCheckbox, required, showBubbleVersion} = this.props
     const {values} = this.state
 
     let containerHeight = 0;
@@ -1036,7 +1048,10 @@ class SelectBox extends React.Component {
     } else {
       document.getElementById('options-'+name).style.maxHeight = containerHeight + "px";
       document.getElementById("autocompleter-doneContainer-"+name).style.maxHeight = containerHeight + "px";
-      document.getElementById("autocompleter-doneContainer-"+name).style.top = (containerHeight += 10) + "px";
+      document.getElementById("autocompleter-doneContainer-"+name).style.top = (showBubbleVersion ? containerHeight : (containerHeight += 10)) + "px";
+      if (showBubbleVersion) {
+        document.getElementById("autocompleter-doneContainer-"+name).style.right = 5 + "px";
+      }
       if (!required || (required && values.length > 0)) {
         if (containerHeight === 40) {
           return
@@ -1079,10 +1094,10 @@ class SelectBox extends React.Component {
   }
 
   renderValues() {
-    const { placeholder, placeholderOnClick, multiple, showCheckbox, options, placeholderIsDefaultValueIfNot } = this.props
+    const { placeholder, placeholderOnClick, multiple, showCheckbox, options, placeholderIsDefaultValueIfNot, showBubbleVersion } = this.props
     const { values, numSelected, isOpen } = this.state
 
-    if (values.length === 0) {
+    if (values.length === 0 && !showBubbleVersion) {
       const isDefaultValue = placeholderIsDefaultValueIfNot != null && placeholder != placeholderIsDefaultValueIfNot
       return (
         <div className={"select-placeholder"+((isOpen === true && placeholderOnClick) ? ' onClick' : '') + (isDefaultValue ? ' prospelaPurpleText': '')} id="select-placeholder">
@@ -1127,12 +1142,21 @@ class SelectBox extends React.Component {
           <span
             className="tickNumSelected"
           >
-            <Check />
+            {(values.length === 0 && showBubbleVersion) ? (
+              <span><strong>-</strong></span>
+            ) : (
+              <Check />
+            )}
           </span>
           {allSelected === true ? (
             <span>All</span>
           ) : (
-            <span>{numSelected} selected</span>
+            <span>{values.length === 0 ? placeholder : (numSelected + " selected")}</span>
+          )}
+          {showBubbleVersion && (
+            <span className="arrow" id="selectArrow">
+              { isOpen ? <ChevronUp /> : <ChevronDown /> }
+            </span>
           )}
         </span>
       )
@@ -1274,14 +1298,14 @@ class SelectBox extends React.Component {
   }
 
   render() {
-    const { required, name, handleMouseDown, disabled } = this.props;
+    const { required, name, handleMouseDown, showBubbleVersion, disabled } = this.props;
     const { isOpen, isFocused } = this.state;
 
     return (
       <React.Fragment>
         <div
           tabIndex="0"
-          className={"select form-control-std" + (disabled ? ' disabled' : "")}
+          className={"select form-control-std" + (disabled ? ' disabled' : "") + (showBubbleVersion ? " showBubbleVersion" : "")}
           id={"selectBox-"+name}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
@@ -1292,11 +1316,13 @@ class SelectBox extends React.Component {
           onClick={disabled ? null : this.onClick}
           role="button"
         >
-          <div className="selectContainer " id="selectContainer">
+          <div className="selectContainer" id="selectContainer">
             { this.renderValues() }
-            <span className="arrow" id="selectArrow">
-              { isOpen ? <ChevronUp /> : <ChevronDown /> }
-            </span>
+            {!showBubbleVersion && (
+              <span className="arrow" id="selectArrow">
+                { isOpen ? <ChevronUp /> : <ChevronDown /> }
+              </span>
+            )}
           </div>
           { this.renderOptions() }
         </div>

@@ -279,6 +279,12 @@ const Check = () => (
   </svg>
 )
 
+const PenIcon = () => (
+  <svg viewBox="0 0 16 16" className="penIcon">
+    <path d="M11.1979 2.09354L9.90646 0.802123C9.50363 0.399292 8.8503 0.399292 8.44746 0.802123L7.23253 2.01706L9.98295 4.76748L11.1979 3.55254C11.6007 3.14971 11.6007 2.49659 11.1979 2.09354ZM5.89556 1.65247C5.55997 1.31689 5.01599 1.31689 4.68041 1.65247L2.1285 4.20459C1.99422 4.33887 1.99422 4.55651 2.1285 4.69057L2.61469 5.17676C2.74897 5.31103 2.9666 5.31103 3.10088 5.17676L5.28841 2.98923L5.7746 3.4752L2.51844 6.73115C1.39059 7.85901 0.68005 9.33706 0.503642 10.9223L0.502997 10.9272C0.466474 11.2555 0.743836 11.5331 1.07212 11.4968C2.6594 11.3215 4.13963 10.6107 5.26886 9.48157L9.49676 5.25367L7.7185 3.47542L5.89556 1.65247Z" transform="translate(0 4)" />
+  </svg>
+)
+
 function escapeHTML(unsafe_str) {
   return unsafe_str
     .replace(/&/g, '&amp;')
@@ -504,4 +510,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, LoadingSpinner, sortTable, monthDiff};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};

@@ -58,7 +58,7 @@ input[type="radio"]:checked + .credential-text {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .previewSuperContainer{
     position: absolute;
     bottom: 30px;
@@ -81,6 +81,9 @@ input[type="radio"]:checked + .credential-text {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .postToGroupContainer{
+    width: 100%;
   }
 }
 .crerdentialPreviewTitle{
@@ -296,4 +299,7 @@ input[type="radio"]:checked + .credential-text {
 .qaTitle{
   font-size: 32px;
   font-family: system-ui;
+}
+.postToGroupContainer{
+  width: 330px;
 }

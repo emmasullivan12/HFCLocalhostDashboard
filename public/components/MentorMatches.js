@@ -7,7 +7,7 @@ import Modal from './Modal';
 
 const AddHighlightModalProps = {
   ariaLabel: 'Add a Highlight',
-  triggerText: '+ Highlight',
+  triggerText: 'Highlight',
   usedFor: 'addHighlightDashboard',
   changeInitFocus: true,
   wider: true

@@ -26,7 +26,7 @@ const JoinProgrammePlusModalProps = {
 
 const AddHighlightModalProps = {
   ariaLabel: 'Add a Highlight',
-  triggerText: '+ Highlight',
+  triggerText: 'Highlight',
   usedFor: 'addHighlight',
   changeInitFocus: true,
   wider: true

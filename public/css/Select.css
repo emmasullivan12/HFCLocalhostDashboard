@@ -11,6 +11,22 @@ svg {
   display: inline-block;
   cursor: pointer!important;
 }
+.select.showBubbleVersion {
+  padding: 0;
+  border: 0;
+}
+.select.showBubbleVersion.error {
+  width: auto;
+}
+.select.showBubbleVersion:focus{
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  padding: 0;
+  border: 0;
+  font-weight: 600;
+  width: 100%!important;
+}
 .selectContainer{
   line-height: 14px;
 }
@@ -72,11 +88,19 @@ svg {
   font-size: 12px;
   color: #3f3f3f;
 }
+.showBubbleVersion .arrow{
+  top: -2px;
+  right: 0;
+  /* margin-left: 130px;*/
+  font-size: 9px;
+  color: #8f8fe5;
+}
 .options {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
+  font-weight: normal;
   border: solid #d4d4d4;
   border-width: 0 1px;
   background: #fff;
@@ -398,6 +422,12 @@ svg {
   margin-left: 5px;
   padding-left: 30px;
   margin-bottom: 0;
+}
+.showBubbleVersion .multiple.numChecked {
+  padding-right: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  user-select: none;
 }
 
 .multiple.numHidden{

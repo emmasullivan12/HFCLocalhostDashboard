@@ -13,7 +13,9 @@ import {usercdn, userImgsFolder} from './CDN.js';
 import {Check} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
 import Modal from './Modal.js';
+import SelectBox from './Select.js';
 import UserName from './UserName.js';
+import industryOptions from './Industries.js';
 import hashtagOptions from './Hashtags.js';
 
 /*const FileUploadModalProps = {
@@ -52,8 +54,11 @@ class AddHighlightModalContent extends Component {
       authorTraining: '',
       authorState: '',
       authorCountry: '',
+      clickedEditCred: false,
       credentialText: '',
       credentialUpdatedSuccess: false,
+      postSuccess: false,
+      industriesToPostTo: [],
       selectedFiles: [
         {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
         {fileid: '124', name: 'My PDF', type: 'application/pdf'},
@@ -89,6 +94,7 @@ class AddHighlightModalContent extends Component {
   //  this.modalOverflowOff()
     this.setState({
       showCredentials: true,
+      clickedEditCred: true,
     })
   //  }, () => document.addEventListener('click', this.closeCredentials))
   }
@@ -98,6 +104,8 @@ class AddHighlightModalContent extends Component {
     //  this.modalOverflowOn()
       this.setState({
         showCredentials: false
+      }, () => {
+        this.setInputBoxHeight()
       })
   //    }, () => document.removeEventListener('click', this.closeCredentials))
   //  }
@@ -402,9 +410,18 @@ class AddHighlightModalContent extends Component {
     this.modalOverflowOn()
   }
 
-  messageChange = (value) => {
+  setInputBoxHeight = () => {
     const addmsgbox = this.addMessageNode;
 
+    // Expand height of box & add scroll if needed
+    addmsgbox.style.height = '20px';
+    addmsgbox.style.height = addmsgbox.scrollHeight + 'px';
+    if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
+      addmsgbox.style.overflowY = "auto";
+    }
+  }
+
+  messageChange = (value) => {
     this.setState({
       text: value
     })
@@ -444,14 +461,7 @@ class AddHighlightModalContent extends Component {
 
     checkEmailPhoneSharing()
 
-    // Expand height of box & add scroll if needed
-    addmsgbox.style.height = '20px';
-    addmsgbox.style.height = addmsgbox.scrollHeight + 'px';
-
-    if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
-      addmsgbox.style.overflowY = "auto";
-    }
-
+    this.setInputBoxHeight()
   }
 
   onClickAnon = () => {
@@ -462,7 +472,10 @@ class AddHighlightModalContent extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
+    this.setState({
+      postSuccess: true
+    })
   }
 
   removeFile = (e) => {
@@ -490,6 +503,18 @@ class AddHighlightModalContent extends Component {
       return uniName;
     }
   }*/
+
+  handleIndChange = (userInput) => {
+    let newArray
+
+    newArray = industryOptions
+      .filter(industry => userInput.includes(industry.label))
+      .map(value => value.value)
+
+    this.setState({
+      industriesToPostTo: newArray,
+    })
+  }
 
   handleDragEnter(e) {
     e.stopPropagation();
@@ -531,6 +556,14 @@ class AddHighlightModalContent extends Component {
       errorFileSize,
       errorFileNumber,
       isAnon,
+      authorType,
+      authorIsMainRole,
+      authorInst,
+      authorRole,
+      authorTraining,
+      authorDegree,
+      clickedEditCred,
+      postSuccess,
       /*stateProv,
       country,
       roleHistory,
@@ -571,13 +604,18 @@ class AddHighlightModalContent extends Component {
     const currTrainingProvider = ''
     var currYr = new Date().getFullYear()
     const startingCredentialPreviewText = this.getStartingCredText(roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country)
+    const industryGroups = [
+      ...industryOptions,
+      {value: '', label: 'Other', iconFA: 'fas fa-hashtag', isTitle: true},
+      {value: '99999', label: 'General Advice', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+    ]
 
-    if (!showCredentials) {
+    if (!showCredentials && !postSuccess) {
       return (
         <form className="fileUploadForm" id="fileUploadForm" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
           <div className="group-detail-item bright">
-            <Avatar userID={user.uid} userName={user.fname} isAddHighlight picSize={40}/>
-            <div className="textLeft addHighlight-user fontSize14"><strong>{user.fname} {user.lname}</strong></div>
+            <Avatar userID={user.uid} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40}/>
+            <div className="textLeft addHighlight-user fontSize14"><strong>{isAnon ? "" : (user.fname + " " + user.lname)}</strong><span className="darkGreyText">{credentialText == '' ? (clickedEditCred == false ? '' : (", " + startingCredentialPreviewText)) : (", " + credentialText)}</span></div>
             <div className="textLeft addHighlight-user editCredentialBtn electricPurpleText" onClick={this.editCredential} role="button" >
               Edit Credential
             </div>
@@ -854,6 +892,30 @@ class AddHighlightModalContent extends Component {
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
             <div className="paddingR20 paddingL20">
+              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to:</strong></label>
+              <div className="inlineForm">
+                <div className="form-group inlineLeft textLeft postToGroupContainer">
+                  <SelectBox
+                    multiple
+                    options={industryGroups}
+                    name='selectInd'
+                    placeholder='Select group(s):'
+                    handleChange={this.handleIndChange}
+                    handleFocus={this.handleFocus}
+                    onBlur={this.handleBlur}
+              //      handleTabPress={this.handleTabPress}
+              //      focusOnLoad
+                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    showIcon
+                    iconToShow='iconFA'
+                    showCheckbox
+                    showBubbleVersion
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="paddingR20 paddingL20">
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
               <div className="form-group">
                 <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
@@ -947,7 +1009,7 @@ class AddHighlightModalContent extends Component {
                 </div>
               </label>
             </div>
-            <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button">Post</button>
+            <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button" onClick={this.handleSubmit}>Post</button>
           </div>
           <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
             <div className="animate">
@@ -966,6 +1028,20 @@ class AddHighlightModalContent extends Component {
             Create post
           </div>*/}
         </form>
+      )
+    } else if (!showCredentials && postSuccess) {
+      return (
+        <React.Fragment>
+          <div className="modal-title">
+            <div className="emoji-icon tada-emoji successBox" />
+            You posted a highlight!
+          </div>
+        {/*  <div className="success-container">
+            <div className="ideas-Title">
+              Thanks for letting us know why this wasn&#39;t such a great match for you. We&#39;ll try to do better next time!
+            </div>
+          </div>*/}
+        </React.Fragment>
       )
     } else {
       return (
@@ -987,7 +1063,7 @@ class AddHighlightModalContent extends Component {
                     {latestRole && (
                       <div className="credential-item">
                         <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
-                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                           <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
                           <span className="radioCheckmark"/>
                         </label>
@@ -1005,7 +1081,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={roleName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
-                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-inst={roleCo} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-inst={roleCo} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInst == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">Worked at {roleCo} as {roleName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1017,7 +1093,7 @@ class AddHighlightModalContent extends Component {
                 {currTraining && currTraining != '' && (
                   <div className="credential-item">
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"train-"+currTrainingProvider+currTraining}>
-                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={latestRole ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={authorType == '' ? (latestRole ? false : true) : (authorType == 'train' && authorTraining == currTraining && authorInst == currTrainingProvider)} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Trained at {currTrainingProvider}</span>
                       <span className="radioCheckmark"/>
                     </label>
@@ -1040,7 +1116,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={degree}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
-                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={(latestRole || currTraining || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && authorInst == uniInstName)} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1065,7 +1141,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={schInstName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
-                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={(latestRole || currTraining || sortedUnis || index != 0) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && authorInst == schInstName)} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1085,7 +1161,7 @@ class AddHighlightModalContent extends Component {
                 {stateProv && country && (
                   <div className="credential-item">
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
-                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={(latestRole || currTraining || sortedUnis || sortedSchs) ? false : true} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || sortedSchs) ? false : true) : authorType == 'none'} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Lives in {stateProv}, {country}</span>
                       <span className="radioCheckmark"/>
                     </label>

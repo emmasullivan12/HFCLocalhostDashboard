@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import {X, Check} from "./GeneralFunctions.js";
+import {X, Check, PenIcon} from "./GeneralFunctions.js";
 import "../css/ButtonContent.css";
 
 function ButtonContent(props) {
@@ -35,6 +35,15 @@ function ButtonContent(props) {
       return (
         <div>
           <i className="fas fa-pencil-alt" />
+          {/*<span className="fontSize18 dispInlineBlock"><PenIcon /></span>*/}
+        </div>
+      )
+    case 'addHighlight':
+    case 'addHighlightDashboard':
+      return (
+        <div>
+          <span className="fontSize14 paddingR5"><i className="fas fa-pencil-alt" /></span> {text}
+          {/*<span className="fontSize18 dispInlineBlock"><PenIcon /></span> {text}*/}
         </div>
       )
     case 'joinProgLrg':
