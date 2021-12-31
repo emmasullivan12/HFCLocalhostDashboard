@@ -58,19 +58,25 @@ var numCharReq = document.getElementById("numCharReq");
 
 progLogoContainer.style.display = 'none';
 
-// Check for source in URL
-const string = window.location.href;
-var isSource = string.includes("source")
-let getSource
-let getProgName
+// Check for params in URL
+let params = (new URL(document.location)).searchParams;
+let hasSource = params.get('source')
+let hasClass = params.get('isclass')
 let source
+let classurl
+let getProgName
+let progLogoURL
 let query
+let isClass
 
-if(isSource) {
-  query = string.split("?source=")
-  getSource = query[1]
-//  source = encodeURIComponent(getSource);
-  var progLogoURL = 'https://files-and-media.ams3.digitaloceanspaces.com/progImages/' + getSource + '.png'
+if (hasSource != undefined && hasClass != true) {
+  source = parseInt(params.get('source'));
+  progLogoURL = 'https://files-and-media.ams3.digitaloceanspaces.com/progImages/' + source + '.png'
+  progLogoContainer.style.display = 'block';
+  progInviteLogo.src = progLogoURL
+} else if (hasSource != undefined && hasClass == true) {
+  classurl = parseInt(params.get('classurl'))
+  progLogoURL = 'https://files-and-media.ams3.digitaloceanspaces.com/progImages/' + classurl + '.png'
   progLogoContainer.style.display = 'block';
   progInviteLogo.src = progLogoURL
 }
