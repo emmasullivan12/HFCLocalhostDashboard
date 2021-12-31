@@ -376,7 +376,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -418,7 +418,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didEdu';
+  const step = 'didSafeG';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 

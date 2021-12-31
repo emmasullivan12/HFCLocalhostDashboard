@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
+import AskAQPrompt from "./AskAQPrompt";
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
@@ -35,6 +36,7 @@ class HomepageCTAContainer extends Component {
     const is18plus = 1;
     const matchstatus = 'didSafeG';
     const groups = [];
+    const isClass = true;
     const source = 'vhs' // i.e. from URL ?source=villiers
 
     this.props.groups.forEach((group) => {
@@ -69,8 +71,11 @@ class HomepageCTAContainer extends Component {
         {step === 'autoEnroll' && (
           <AutoEnrollPrompt source={source}/>
         )}
-        {step === 'joinedProg' && (
+        {step === 'joinedProg' && isClass == false && (
           <MenteeFullSignUp />
+        )}
+        {step === 'joinedProg' && isClass == true && (
+          <AskAQPrompt />
         )}
         {step === 'didFullSUtf' && (
           <MenteeTraining />

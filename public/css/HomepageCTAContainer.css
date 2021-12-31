@@ -144,6 +144,12 @@
   background-size: contain;
   background-position: center;
 }
+.placeholderPic.askAQ{
+  background-repeat: no-repeat;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon_60.png);
+  background-size: contain;
+  background-position: center;
+}
 .placeholderPic.cross{
   background-repeat: no-repeat;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon_50.png);
@@ -211,6 +217,9 @@
   .placeholderPic.openEnvelope{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon_100.png);
   }
+  .placeholderPic.askAQ{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon_100.png);
+  }
   .placeholderPic.uploadCV{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
   }
@@ -227,6 +236,9 @@
   }
   .placeholderPic.openEnvelope{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon.png);
+  }
+  .placeholderPic.askAQ{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon.png);
   }
 }
 
