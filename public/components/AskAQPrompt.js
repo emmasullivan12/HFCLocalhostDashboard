@@ -1,10 +1,8 @@
-// Dex last merged this code on 18th nov 2020
+// Dex last merged this code on 31st dec 2020
 
 import React, { Component } from "react";
 
-import "../css/General.css";
-
-class AutoEnrollPrompt extends Component {
+class AskAQPrompt extends Component {
   render() {
 
     return (
@@ -24,4 +22,4 @@ class AutoEnrollPrompt extends Component {
   }
 }
 
-export default AutoEnrollPrompt;
+export default AskAQPrompt;
