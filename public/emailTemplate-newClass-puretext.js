@@ -8,7 +8,7 @@ const groupName = 'Mr Elvie\'s Music Class'
 const link = 'https://beta.prospela.com/'
 const codetojoin = '12345'
 
-ejs.renderFile(__dirname + "/emailTemplate-newMatch.ejs", {groupName: groupName, link: link}, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-newClass.ejs", {groupName: groupName, link: link, codetojoin: codetojoin}, function (err, data) {
   if (err) {
     console.log(err);
   } else {
