@@ -40,6 +40,7 @@ function ButtonContent(props) {
       )
     case 'addHighlight':
     case 'addHighlightDashboard':
+    case 'askQuestionDashboard':
       return (
         <div>
           <span className="fontSize14 paddingR5"><i className="fas fa-pencil-alt" /></span> {text}

@@ -2,6 +2,17 @@
 
 import React, { Component } from "react";
 
+import AddHighlightTextBox from './AddHighlightTextBox.js';
+import Modal from './Modal';
+
+const AddHighlightModalProps = {
+  ariaLabel: 'Post a Question',
+  triggerText: 'Post a Question',
+  usedFor: 'askQuestionDashboard',
+  changeInitFocus: true,
+  wider: true
+}
+
 class AskAQPrompt extends Component {
   render() {
 
@@ -15,7 +26,9 @@ class AskAQPrompt extends Component {
           <p className="landingCTADesc">
             Click below to get started
           </p>
-          <button type="button" className="Submit-btn">Ask a Question</button>
+          <Modal {...AddHighlightModalProps}>
+            <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ />
+          </Modal>
         </div>
       </section>
     );

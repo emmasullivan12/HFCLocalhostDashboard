@@ -14,6 +14,7 @@ import {Check} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
+import TextInput from './TextInput.js';
 import UserName from './UserName.js';
 import industryOptions from './Industries.js';
 import hashtagOptions from './Hashtags.js';
@@ -36,6 +37,7 @@ class AddHighlightModalContent extends Component {
     super();
     this.state = {
       text: '',
+      qText: '',
       showEmojis: false,
       showCredentials: false,
       cursorPos: '', // cursor position to enter emoji within string
@@ -48,6 +50,7 @@ class AddHighlightModalContent extends Component {
       //credentialChecked: '',
       authorType: '',
       authorInst: '',
+      authorInstFreeText: '',
       authorRole: '',
       authorIsMainRole: '',
       authorDegree: '',
@@ -56,7 +59,8 @@ class AddHighlightModalContent extends Component {
       authorCountry: '',
       clickedEditCred: false,
       credentialText: '',
-      credentialUpdatedSuccess: false,
+    //  credentialUpdatedSuccess: false,
+      showCredentialUpdatedMsg: false,
       postSuccess: false,
       industriesToPostTo: [],
       selectedFiles: [
@@ -201,8 +205,10 @@ class AddHighlightModalContent extends Component {
 
   handleRadioClick = (e) => {
     this.setState({
-      updatingCredentialIsLoading: true,
+      //updatingCredentialIsLoading: true,
+      showCredentialUpdatedMsg: true,
     })
+
     const container = document.querySelector(".credentialPickerContainer");
     const credentialItems = container.querySelectorAll(".credential-item");
 
@@ -215,16 +221,17 @@ class AddHighlightModalContent extends Component {
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state
     var authorCountry = e.target.dataset.country
-    let authorInst, authorRole, authorDegree, authorIsMainRole
+    let authorInst, authorInstFreeText, authorRole, authorDegree, authorIsMainRole
     //var credentialChecked = e.target.id
     if (authorType == 'job') {
-      authorInst = e.target.dataset.inst
+      authorInstFreeText = e.target.dataset.instfreetext
       authorRole = e.target.dataset.role
       authorIsMainRole = e.target.dataset.ismainrole
-      var credentialTextToUse = authorIsMainRole == "true" ? (authorRole + ' at ' + authorInst) : ('Worked at ' + authorInst + ' as ' + authorRole)
+      var credentialTextToUse = authorIsMainRole == "true" ? (authorRole + ' at ' + authorInstFreeText) : ('Worked at ' + authorInstFreeText + ' as ' + authorRole)
       this.setState({
         authorType: authorType,
-        authorInst: authorInst,
+        authorInstFreeText: authorInstFreeText,
+        authorInst: '',
         authorRole: authorRole,
         authorIsMainRole: authorIsMainRole,
         authorTraining: '',
@@ -232,32 +239,35 @@ class AddHighlightModalContent extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: credentialTextToUse,
-        credentialUpdatedSuccess: true,
-        updatingCredentialIsLoading: false,
+      //  credentialUpdatedSuccess: true,
+      //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
     })
     } else if (authorType == 'train') {
-      authorInst = e.target.dataset.inst
+      authorInstFreeText = e.target.dataset.instfreetext
       this.setState({
         authorType: authorType,
-        authorInst: authorInst,
+        authorInstFreeText: authorInstFreeText,
+        authorInst: '',
         authorRole: '',
         authorIsMainRole: false,
         authorTraining: e.target.dataset.training,
         authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
-        credentialText: 'Trained at ' + authorInst,
-        credentialUpdatedSuccess: true,
-        updatingCredentialIsLoading: false,
+        credentialText: 'Trained at ' + authorInstFreeText,
+      //  credentialUpdatedSuccess: true,
+      //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
       })
     } else if (authorType == 'uni') {
-      authorInst = e.target.dataset.inst
+      authorInst = e.target.dataset.inst ? e.target.dataset.inst : ''
+      authorInstFreeText = e.target.dataset.instfreetext ? e.target.dataset.instfreetext : ''
       authorDegree = e.target.dataset.degree
       this.setState({
         authorType: authorType,
         authorInst: authorInst,
+        authorInstFreeText: authorInstFreeText,
         authorRole: '',
         authorIsMainRole: false,
         authorTraining: '',
@@ -265,15 +275,17 @@ class AddHighlightModalContent extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Studied ' + authorDegree + ' at ' + authorInst,
-        credentialUpdatedSuccess: true,
-        updatingCredentialIsLoading: false,
+      //  credentialUpdatedSuccess: true,
+      //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
       })
     } else if (authorType == 'sch') {
-      authorInst = e.target.dataset.inst
+      authorInst = e.target.dataset.inst ? e.target.dataset.inst : ''
+      authorInstFreeText = e.target.dataset.instfreetext ? e.target.dataset.instfreetext : ''
       this.setState({
         authorType: authorType,
         authorInst: authorInst,
+        authorInstFreeText: authorInstFreeText,
         authorRole: '',
         authorIsMainRole: false,
         authorTraining: '',
@@ -281,14 +293,15 @@ class AddHighlightModalContent extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Studied at ' + authorInst,
-        credentialUpdatedSuccess: true,
-        updatingCredentialIsLoading: false,
+      //  credentialUpdatedSuccess: true,
+      //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
       })
     } else {
       this.setState({
         authorType: authorType,
         authorInst: '',
+        authorInstFreeText: '',
         authorRole: '',
         authorIsMainRole: false,
         authorTraining: '',
@@ -296,8 +309,8 @@ class AddHighlightModalContent extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Lives in ' + authorState + ', ' + authorCountry,
-        credentialUpdatedSuccess: true,
-        updatingCredentialIsLoading: false,
+      //  credentialUpdatedSuccess: true,
+      //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
       })
     }
@@ -322,6 +335,17 @@ class AddHighlightModalContent extends Component {
   handleMessageChange = (e) => {
     let value = e.target.value;
     this.messageChange(value)
+  }
+
+  handleQuestionChange = (e) => {
+    let value = e.target.value;
+console.log(value)
+    this.setState({
+      qText: value
+    })
+
+    this.checkEmailPhoneSharing(value)
+
   }
 
   handleHashtagChange = (userInput, callback) => {
@@ -421,45 +445,45 @@ class AddHighlightModalContent extends Component {
     }
   }
 
+  checkEmailPhoneSharing = (value) => {
+    var notAllowedText = document.getElementById("notAllowedTextAddHighlight")
+    var emailExpression = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
+    let phoneExpression = /\+?(?:\d\s?\D?){9,12}$/g
+    let arrEmail = emailExpression.exec(value)
+    let arrPhone = phoneExpression.exec(value)
+    let idx
+    let matchLen
+
+    if (arrEmail != null) {
+      idx = arrEmail.index
+      matchLen = arrEmail[0].length
+    } else if (arrPhone != null) {
+      idx = arrPhone.index
+      matchLen = arrPhone[0].length
+    }
+
+    if(idx >= 0) {
+      const phoneEmailTxt = arrEmail != null ? ' an email address' : ' a phone number'
+      let newText
+      newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
+                value.substring(idx, idx + matchLen) +
+                '</span> is '+
+                phoneEmailTxt +
+                ', which we discourage you from sharing, particularly in this public post'
+      notAllowedText.style.display = 'block';
+      notAllowedText.innerHTML = newText
+    } else {
+      notAllowedText.style.display = 'none';
+      notAllowedText.innerHTML = ''
+    }
+  }
+
   messageChange = (value) => {
     this.setState({
       text: value
     })
 
-    function checkEmailPhoneSharing() {
-      var notAllowedText = document.getElementById("notAllowedTextAddHighlight")
-      var emailExpression = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
-      let phoneExpression = /\+?(?:\d\s?\D?){9,12}$/g
-      let arrEmail = emailExpression.exec(value)
-      let arrPhone = phoneExpression.exec(value)
-      let idx
-      let matchLen
-
-      if (arrEmail != null) {
-        idx = arrEmail.index
-        matchLen = arrEmail[0].length
-      } else if (arrPhone != null) {
-        idx = arrPhone.index
-        matchLen = arrPhone[0].length
-      }
-
-      if(idx >= 0) {
-        const phoneEmailTxt = arrEmail != null ? ' an email address' : ' a phone number'
-        let newText
-        newText = 'PLEASE CHECK: It looks like <span class="notAllowedHighlight">' +
-                  value.substring(idx, idx + matchLen) +
-                  '</span> is '+
-                  phoneEmailTxt +
-                  ', which we discourage you from sharing, particularly in this public post'
-        notAllowedText.style.display = 'block';
-        notAllowedText.innerHTML = newText
-      } else {
-        notAllowedText.style.display = 'none';
-        notAllowedText.innerHTML = ''
-      }
-    }
-
-    checkEmailPhoneSharing()
+    this.checkEmailPhoneSharing(value)
 
     this.setInputBoxHeight()
   }
@@ -472,7 +496,7 @@ class AddHighlightModalContent extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
     this.setState({
       postSuccess: true
     })
@@ -544,11 +568,13 @@ class AddHighlightModalContent extends Component {
   render() {
     const {
       text,
+      qText,
       showEmojis,
       showCredentials,
       credentialText,
-      credentialUpdatedSuccess,
-      updatingCredentialIsLoading,
+    //  credentialUpdatedSuccess,
+    //  updatingCredentialIsLoading,
+      showCredentialUpdatedMsg,
     //  credentialChecked,
       errorLoadingHashtags,
       showMaxReachedError,
@@ -559,6 +585,7 @@ class AddHighlightModalContent extends Component {
       authorType,
       authorIsMainRole,
       authorInst,
+      authorInstFreeText,
       authorRole,
       authorTraining,
       authorDegree,
@@ -578,6 +605,7 @@ class AddHighlightModalContent extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
+    const {isMenteeQ} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -614,8 +642,8 @@ class AddHighlightModalContent extends Component {
       return (
         <form className="fileUploadForm" id="fileUploadForm" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
           <div className="group-detail-item bright">
-            <Avatar userID={user.uid} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40}/>
-            <div className="textLeft addHighlight-user fontSize14"><strong>{isAnon ? "" : (user.fname + " " + user.lname)}</strong><span className="darkGreyText">{credentialText == '' ? (clickedEditCred == false ? '' : (", " + startingCredentialPreviewText)) : (", " + credentialText)}</span></div>
+            <Avatar userID={user.uid} isAnon={isAnon} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40}/>
+            <div className="textLeft addHighlight-user fontSize14"><strong>{isAnon ? "" : (user.fname + " " + user.lname)}</strong><span className="darkGreyText">{credentialText == '' ? (clickedEditCred == false ? '' : ((isAnon ? "" : ", ") + startingCredentialPreviewText)) : ((isAnon ? "" : ", ") + credentialText)}</span></div>
             <div className="textLeft addHighlight-user editCredentialBtn electricPurpleText" onClick={this.editCredential} role="button" >
               Edit Credential
             </div>
@@ -768,7 +796,32 @@ class AddHighlightModalContent extends Component {
               </div>
             )} */}
           </div>
-          <div id="new-message" className="chatWindow-footer">
+          {isMenteeQ == true && (
+            <React.Fragment>
+              <div className="descriptor">Ask a public question</div>
+              <TextInput
+                className="form-control-std"
+                id="new-question"
+                form="chatMessageForm"
+                value={text}
+                handleChange={this.handleQuestionChange}
+                placeholder="Be specific and start with 'What', 'How', 'Why', etc."
+                autoComplete="on"
+                autoCorrect="on"
+                spellCheck="true"
+                minLength="10"
+                maxLength="200"
+                required
+                focusOnLoad
+              />
+              {qText.length > 0 && (
+                <div className="descriptor-br addHighlight">
+                  {qText.length} / 200 (Min 10 characters)
+                </div>
+              )}
+            </React.Fragment>
+          )}
+          <div id="new-message" className="addHighlight-footer">
             <div className="footer-container">
               <div className="input-box-container addHighlight">
                 <div className="input-flexContainer">
@@ -780,12 +833,12 @@ class AddHighlightModalContent extends Component {
                       form="chatMessageForm"
                       value={text}
                       onChange={this.handleMessageChange}
-                      placeholder="What would you like to share?"
+                      placeholder={isMenteeQ == true ? 'Describe a little more detail if needed' : "What would you like to share?"}
                       autoComplete="on"
                       autoCorrect="on"
                       spellCheck="true"
                       maxLength="2000"
-                      autoFocus
+                      autoFocus={isMenteeQ != true}
                     />
                     <p className="textLeft" id="notAllowedTextAddHighlight"/>
                   </div>
@@ -799,7 +852,7 @@ class AddHighlightModalContent extends Component {
             </div>
           )}
           <div className="fontSize14 marginTop50 textLeft">
-            {selectedFiles && selectedFiles.length >= 1 && (
+            {isMenteeQ != true && selectedFiles && selectedFiles.length >= 1 && (
               <div className="paddingR20 paddingL20 marginBottom20 fileBoxesContainer">
                 {selectedFiles.map((file, index) => {
                   const fileName = file.name;
@@ -885,10 +938,10 @@ class AddHighlightModalContent extends Component {
                 })}
               </div>
             )}
-            {errorFileSize && (
+            {isMenteeQ != true && errorFileSize && (
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Files need to be under 25MB in size</div>
             )}
-            {errorFileNumber && (
+            {isMenteeQ != true && errorFileNumber && (
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
             <div className="paddingR20 paddingL20">
@@ -919,7 +972,7 @@ class AddHighlightModalContent extends Component {
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
               <div className="form-group">
                 <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
-                  Help reach more mentees
+                  {isMenteeQ == true ? 'Help your question reach more employees' : 'Help reach more mentees'}
                   {showMaxReachedError && (
                     <span className="redText"> (You can only add up to 5)</span>
                   )}
@@ -958,22 +1011,26 @@ class AddHighlightModalContent extends Component {
           </div>
           <div className="paddingL20 paddingR20">
             <div className="absolute">
-              <input
-                type="file"
-                id="fileSelectCamera"
-                name="selectedFiles"
-                className="inputFile addHighlight BlankBtn"
-                placeholder="Choose a file..."
-                onChange={this.handleChange}
-                minsize={0}
-                title=""
-                required
-              />
-              <label htmlFor="fileSelectCamera" className="ModalOpenBtn-highlightPicContainer">
-                <div type="button" className="picContainer">
-                  <i className="fas fa-camera" />
-                </div>
-              </label>
+              {isMenteeQ != true && (
+                <React.Fragment>
+                  <input
+                    type="file"
+                    id="fileSelectCamera"
+                    name="selectedFiles"
+                    className="inputFile addHighlight BlankBtn"
+                    placeholder="Choose a file..."
+                    onChange={this.handleChange}
+                    minsize={0}
+                    title=""
+                    required
+                  />
+                  <label htmlFor="fileSelectCamera" className="ModalOpenBtn-highlightPicContainer">
+                    <div type="button" className="picContainer">
+                      <i className="fas fa-camera" />
+                    </div>
+                  </label>
+                </React.Fragment>
+              )}
               <button type="button" className="highlightEmojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                 <i className="hideOnHover far fa-smile" />
                 <i className="showOnHover fas fa-laugh" />
@@ -992,38 +1049,44 @@ class AddHighlightModalContent extends Component {
                   />
                 </div>
               )}
-              <input
-                type="file"
-                id="fileSelect"
-                name="selectedFiles"
-                className="inputFile addHighlight BlankBtn"
-                placeholder="Choose a file..."
-                onChange={this.handleChange}
-                minsize={0}
-                title=""
-                required
-              />
-              <label htmlFor="fileSelect" className="ModalOpenBtn-highlightAttachmentContainer">
-                <div type="button" className="attachmentContainer">
-                  <i className="fas fa-paperclip" />
-                </div>
-              </label>
+              {isMenteeQ != true && (
+                <React.Fragment>
+                  <input
+                    type="file"
+                    id="fileSelect"
+                    name="selectedFiles"
+                    className="inputFile addHighlight BlankBtn"
+                    placeholder="Choose a file..."
+                    onChange={this.handleChange}
+                    minsize={0}
+                    title=""
+                    required
+                  />
+                  <label htmlFor="fileSelect" className="ModalOpenBtn-highlightAttachmentContainer">
+                    <div type="button" className="attachmentContainer">
+                      <i className="fas fa-paperclip" />
+                    </div>
+                  </label>
+                </React.Fragment>
+              )}
             </div>
             <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button" onClick={this.handleSubmit}>Post</button>
           </div>
-          <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
-            <div className="animate">
-              <div className='topbottom'/>
-              <div className='leftright'/>
-            </div>
-            <div className="dragover-pane-overlay-info">
-              <div className="dragover-pane-overlay-pic">
-                <div className="dragover-pane-overlay-picFile"/>
+          {isMenteeQ != true && (
+            <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
+              <div className="animate">
+                <div className='topbottom'/>
+                <div className='leftright'/>
               </div>
-              <div className="dragover-pane-overlay-title">Upload File(s)</div>
-              <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
+              <div className="dragover-pane-overlay-info">
+                <div className="dragover-pane-overlay-pic">
+                  <div className="dragover-pane-overlay-picFile"/>
+                </div>
+                <div className="dragover-pane-overlay-title">Upload File(s)</div>
+                <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
+              </div>
             </div>
-          </div>
+          )}
         {/*  <div className="modal-title">
             Create post
           </div>*/}
@@ -1034,7 +1097,7 @@ class AddHighlightModalContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <div className="emoji-icon tada-emoji successBox" />
-            You posted a highlight!
+            {isMenteeQ == true ? 'You posted a question!' : 'You posted a highlight!'}
           </div>
         {/*  <div className="success-container">
             <div className="ideas-Title">
@@ -1050,8 +1113,13 @@ class AddHighlightModalContent extends Component {
           <div className="credentialPickerContainer textLeft paddingR20 paddingL20" ref={el => (this.credentialsPicker = el)}>
             <div className="marginBottom20 marginTop40">
               <div className="marginBottom20 marginTop20 fontSize18"><strong>Choose post credential</strong></div>
-              <div className="marginTopMinus15 darkGreyText">Help mentees understand your experience with this topic</div>
-              {updatingCredentialIsLoading == false && credentialUpdatedSuccess == true && (
+              <div className="marginTopMinus15 darkGreyText">{isMenteeQ == true ? 'Help real employees know where you\'re coming from to get the best advice' : 'Help mentees understand your experience with this topic'}</div>
+            {/*}  {updatingCredentialIsLoading == false && credentialUpdatedSuccess == true && (
+                <AlertBox successOrFailure='success' fadesOut positionAtTop>
+                  <div>	&#10003; Your credential has been saved</div>
+                </AlertBox>
+              )}*/}
+              {showCredentialUpdatedMsg == true && (
                 <AlertBox successOrFailure='success' fadesOut positionAtTop>
                   <div>	&#10003; Your credential has been saved</div>
                 </AlertBox>
@@ -1063,14 +1131,14 @@ class AddHighlightModalContent extends Component {
                     {latestRole && (
                       <div className="credential-item">
                         <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
-                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-inst={latestRole[0].co} defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-instfreetext={latestRole[0].co} defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                           <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
                           <span className="radioCheckmark"/>
                         </label>
                         <span className="defaultCredential neutralText tooltip">
                           default
                           <span className="tooltiptext updateCredential">
-                            This will be the credential that appears by default on your answers / posts
+                            This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
                           </span>
                         </span>
                       </div>
@@ -1081,7 +1149,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={roleName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
-                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-inst={roleCo} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInst == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-instfreetext={roleCo} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInstFreeText == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">Worked at {roleCo} as {roleName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1093,7 +1161,7 @@ class AddHighlightModalContent extends Component {
                 {currTraining && currTraining != '' && (
                   <div className="credential-item">
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"train-"+currTrainingProvider+currTraining}>
-                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-inst={currTrainingProvider} defaultChecked={authorType == '' ? (latestRole ? false : true) : (authorType == 'train' && authorTraining == currTraining && authorInst == currTrainingProvider)} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-instfreetext={currTrainingProvider} defaultChecked={authorType == '' ? (latestRole ? false : true) : (authorType == 'train' && authorTraining == currTraining && authorInstFreeText == currTrainingProvider)} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Trained at {currTrainingProvider}</span>
                       <span className="radioCheckmark"/>
                     </label>
@@ -1101,7 +1169,7 @@ class AddHighlightModalContent extends Component {
                       <span className="defaultCredential neutralText tooltip">
                         default
                         <span className="tooltiptext updateCredential">
-                          This will be the credential that appears by default on your answers / posts
+                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
                         </span>
                       </span>
                     )}
@@ -1116,7 +1184,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={degree}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
-                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && authorInst == uniInstName)} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uni.uniname ? uniInstName : ''} data-instfreetext={uni.uniname ? '' : uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && (authorInst == uniInstName || authorInstFreeText == uniInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1124,7 +1192,7 @@ class AddHighlightModalContent extends Component {
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
-                                This will be the credential that appears by default on your answers / posts
+                                This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
                               </span>
                             </span>
                           )}
@@ -1141,7 +1209,7 @@ class AddHighlightModalContent extends Component {
                       return (
                         <div className="credential-item" key={schInstName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
-                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && authorInst == schInstName)} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={sch.schname ? schInstName : ''} data-instfreetext={sch.schname ? '' : schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && (authorInst == schInstName || authorInstFreeText == schInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1149,7 +1217,7 @@ class AddHighlightModalContent extends Component {
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
-                                This will be the credential that appears by default on your answers / posts
+                                This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
                               </span>
                             </span>
                           )}
@@ -1169,7 +1237,7 @@ class AddHighlightModalContent extends Component {
                       <span className="defaultCredential neutralText tooltip">
                         default
                         <span className="tooltiptext updateCredential">
-                          This will be the credential that appears by default on your answers / posts
+                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
                         </span>
                       </span>
                     )}
@@ -1192,7 +1260,7 @@ class AddHighlightModalContent extends Component {
                 <div className="crerdentialPreviewTitle">Preview</div>
                 <div className="credentialPreviewContainer">
                   <div className="dispInlineBlock verticalAlignMiddle">
-                    <Avatar userID={user.uid} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle picSize={360}/>
+                    <Avatar userID={user.uid} isAnon={isAnon} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle picSize={360}/>
                   </div>
                   <div className="credDetail dispInlineBlock verticalAlignMiddle">
                     <span className="fontSize12"><strong>{isAnon ? "" : (user.fname + " " + user.lname + ", ")}</strong><span className="darkGreyText">{credentialText == '' ? startingCredentialPreviewText : credentialText}</span></span>

@@ -46,14 +46,14 @@ class Avatar extends Component {
   render() {
     const users = {
       uid: '99999',
-      profilepic: '',
-    //  profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
+    //  profilepic: '',
+      profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
     //  profilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o',
     //  profilepic_20: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-20',
     //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
     //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
     };
-    const {userName, userID, isProspelaAuto, isGroupFlex, isAddHighlight, showOnline, smallIdle, picSize, showAsCircle} = this.props
+    const {userName, userID, isProspelaAuto, isGroupFlex, isAddHighlight, showOnline, smallIdle, picSize, showAsCircle, isAnon} = this.props
   //  const myProfPic = "2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o" // looks up profpic URL of UID
   //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   //  const profPicSrcProspela = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg'
@@ -62,8 +62,8 @@ class Avatar extends Component {
     let isOnline
     let userInitial
 
-    const myProfPic = users.profilepic;
-    const otherUserProfPic = users.profilepic;
+    const myProfPic = isAnon == true ? null : users.profilepic;
+    const otherUserProfPic = isAnon == true ? null : users.profilepic;
     const checkMe = myProfPic != null && myProfPic != ''
     const checkOtherPerson = (otherUserProfPic != null && otherUserProfPic != '')
     const myID = '99999'; //223456
