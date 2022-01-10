@@ -32,7 +32,7 @@ import hashtagOptions from './Hashtags.js';
 }*/
 
 
-class AddHighlightModalContent extends Component {
+class AddHighlightTextBox extends Component {
   constructor() {
     super();
     this.state = {
@@ -79,6 +79,7 @@ class AddHighlightModalContent extends Component {
     this.handleDragOver = this.handleDragOver.bind(this);
     this.handleDragLeave = this.handleDragLeave.bind(this);
     this.handleFileDrop = this.handleFileDrop.bind(this);
+    this.onBlur = this.onBlur.bind(this);
   }
 
   componentDidMount() {
@@ -92,6 +93,14 @@ class AddHighlightModalContent extends Component {
   componentWillUnmount() {
     document.removeEventListener('click', this.closeMenu)
   //  document.removeEventListener('click', this.closeCredentials)
+  }
+
+  onBlur(e) {
+    if(e.target.checkValidity()) {
+      e.target.classList.remove('error');
+    } else {
+      e.target.classList.add('error');
+    }
   }
 
   editCredential = () => {
@@ -339,7 +348,7 @@ class AddHighlightModalContent extends Component {
 
   handleQuestionChange = (e) => {
     let value = e.target.value;
-console.log(value)
+
     this.setState({
       qText: value
     })
@@ -641,7 +650,12 @@ console.log(value)
     if (!showCredentials && !postSuccess) {
       return (
         <form className="fileUploadForm" id="fileUploadForm" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-          <div className="group-detail-item bright">
+          {isMenteeQ == true && (
+            <div className="modal-title">
+              Ask a public question
+            </div>
+          )}
+          <div className="group-detail-item bright marginTop20">
             <Avatar userID={user.uid} isAnon={isAnon} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40}/>
             <div className="textLeft addHighlight-user fontSize14"><strong>{isAnon ? "" : (user.fname + " " + user.lname)}</strong><span className="darkGreyText">{credentialText == '' ? (clickedEditCred == false ? '' : ((isAnon ? "" : ", ") + startingCredentialPreviewText)) : ((isAnon ? "" : ", ") + credentialText)}</span></div>
             <div className="textLeft addHighlight-user editCredentialBtn electricPurpleText" onClick={this.editCredential} role="button" >
@@ -797,15 +811,16 @@ console.log(value)
             )} */}
           </div>
           {isMenteeQ == true && (
-            <React.Fragment>
-              <div className="descriptor">Ask a public question</div>
+            <div className="footer-container marginTop20 marginBottom10">
+              <label className="descriptor alignLeft reqAsterisk">Question</label>
               <TextInput
-                className="form-control-std"
+                className="form-control-std addHighlight"
                 id="new-question"
                 form="chatMessageForm"
-                value={text}
+                value={qText}
                 handleChange={this.handleQuestionChange}
-                placeholder="Be specific and start with 'What', 'How', 'Why', etc."
+                onBlur={this.onBlur}
+                placeholder="Be specific. Start with 'What', 'How', 'Why', etc."
                 autoComplete="on"
                 autoCorrect="on"
                 spellCheck="true"
@@ -815,20 +830,23 @@ console.log(value)
                 focusOnLoad
               />
               {qText.length > 0 && (
-                <div className="descriptor-br addHighlight">
+                <div className="descriptor-br addHighlight noMarginR marginTopMinus15">
                   {qText.length} / 200 (Min 10 characters)
                 </div>
               )}
-            </React.Fragment>
+            </div>
           )}
           <div id="new-message" className="addHighlight-footer">
             <div className="footer-container">
-              <div className="input-box-container addHighlight">
+              {isMenteeQ == true && (
+                <div className="descriptor">Detail <i className="greyText">(optional)</i></div>
+              )}
+              <div className={"input-box-container" + (isMenteeQ == true ? "" : " addHighlight")}>
                 <div className="input-flexContainer">
                   <div className="textInput-container" id="chatMessageForm">
                     <textarea
                       ref={n => this.addMessageNode = n}
-                      className="input-box addHighlight"
+                      className={"input-box addHighlight" + (isMenteeQ == true ? " showLargeBox" : "")}
                       id="txtInput-box"
                       form="chatMessageForm"
                       value={text}
@@ -840,7 +858,6 @@ console.log(value)
                       maxLength="2000"
                       autoFocus={isMenteeQ != true}
                     />
-                    <p className="textLeft" id="notAllowedTextAddHighlight"/>
                   </div>
                 </div>
               </div>
@@ -851,7 +868,8 @@ console.log(value)
               {text.length} / 2000
             </div>
           )}
-          <div className="fontSize14 marginTop50 textLeft">
+          <p className="footer-container textLeft" id="notAllowedTextAddHighlight"/>
+          <div className={"fontSize14 textLeft" + (isMenteeQ != true ? " marginTop50" : " marginTop35")}>
             {isMenteeQ != true && selectedFiles && selectedFiles.length >= 1 && (
               <div className="paddingR20 paddingL20 marginBottom20 fileBoxesContainer">
                 {selectedFiles.map((file, index) => {
@@ -1279,4 +1297,4 @@ console.log(value)
   }
 }
 
-export default AddHighlightModalContent;
+export default AddHighlightTextBox;

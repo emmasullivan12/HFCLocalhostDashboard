@@ -104,7 +104,20 @@
 }
 .input-box.addHighlight{
   padding-right: 0px;
+}
+.input-box.addHighlight:not(.showLargeBox){
   font-size: 18px;
+}
+.input-box.addHighlight.showLargeBox{
+  min-height: 67px;
+}
+@media screen and (min-width: 499px) {
+  .input-box.addHighlight{
+    font-size: 18px;
+  }
+/*  .input-box.addHighlight.showLargeBox{
+    min-height: 67px;
+  }*/
 }
 
 .input-box:focus{

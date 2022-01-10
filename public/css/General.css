@@ -624,6 +624,9 @@ table th .description{
 .marginTop20 {
   margin-top: 20px!important;
 }
+.marginTop35 {
+  margin-top: 35px!important;
+}
 .marginTop40 {
   margin-top: 40px!important;
 }
@@ -644,6 +647,9 @@ table th .description{
 }
 .marginBottom50 {
   margin-bottom: 50px!important;
+}
+.marginBottom10 {
+  margin-bottom: 10px!important;
 }
 .marginBottom5 {
   margin-bottom: 5px!important;

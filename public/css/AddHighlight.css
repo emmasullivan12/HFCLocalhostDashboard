@@ -303,3 +303,35 @@ input[type="radio"]:checked + .credential-text {
 .postToGroupContainer{
   width: 330px;
 }
+.form-control-std.addHighlight{
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 499px) {
+  .form-control-std.addHighlight{
+    font-size: 18px;
+  }
+}
+.form-control-std.addHighlight:focus{
+  color: #3f3f3f;
+}
+.form-control-std.addHighlight::placeholder{
+  color: #a3a1a1;
+  opacity: 1; /* Firefox */
+}
+.form-control-std.addHighlight::-webkit-input-placeholder{
+  color: #a3a1a1;
+}
+.form-control-std.addHighlight:-moz-input-placeholder{
+  color: #a3a1a1;
+}
+.form-control-std.addHighlight::-moz-input-placeholder{
+  color: #a3a1a1;
+}
+.form-control-std.addHighlight:-ms-input-placeholder{
+  color: #a3a1a1;
+}
+.form-control-std.addHighlight::-ms-input-placeholder{
+  color: #a3a1a1;
+}
