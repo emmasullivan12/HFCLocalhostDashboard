@@ -160,7 +160,7 @@ class SelectBox extends React.Component {
     if (e.target.dataset.id != undefined && e.target.dataset.id.indexOf("title") != -1) {
       return
     }
-    const { handleDone, isForForm, handleFocus, multiple, finMultiOptions, options, showCheckbox, nam, showBubbleVersion } = this.props;
+    const { handleDone, isForForm, handleFocus, multiple, finMultiOptions, options, showCheckbox, name, showBubbleVersion } = this.props;
     const { values } = this.state;
     const currentState = this.state.isOpen;
 

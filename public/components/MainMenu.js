@@ -14,7 +14,7 @@ import "../css/General.css";
 
 const MenteeProfileModalProps = {
   ariaLabel: 'View Mentee Profile',
-  triggerText: 'My Profile',
+  triggerText: 'Profile',
   usedFor: 'mentee-profile',
   backBtn: 'arrow'
 }
@@ -51,6 +51,7 @@ class MainMenu extends Component {
           <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>
+          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>My Activity</NavLink>
         {/*}  <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
           <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink> */}
         </div>

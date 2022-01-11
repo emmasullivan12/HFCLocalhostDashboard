@@ -986,7 +986,7 @@ class AddHighlightTextBox extends Component {
                 </div>
               </div>
             </div>
-            <div className="paddingR20 paddingL20">
+            <div className="paddingR20 paddingL20 descriptor">
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
               <div className="form-group">
                 <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
