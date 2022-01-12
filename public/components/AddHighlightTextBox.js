@@ -509,6 +509,51 @@ class AddHighlightTextBox extends Component {
     this.setState({
       postSuccess: true
     })
+
+    if (authorType == '') {
+      const roleHistory = [
+        {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
+        {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
+      ]
+      const currTraining = ''
+      const uniHistory = [
+        {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
+        {degree: 'Business', uniname: '', uninamefreetext: 'FreeName University', unistartyr: '2017', unigraduyr: '2020', uniyrgrp: '1', unidesc: ''},
+        {degree: 'Business Basics', uniname: '', uninamefreetext: 'Other University', unistartyr: '', unigraduyr: '2017', uniyrgrp: '', unidesc: 'Such a good 4 years of my life!'}
+      ]
+      const schHistory = [
+        {schname: '', schnamefreetext: 'Thamesmead', schgraduyr: '2002', schyrgrp: '', schdesc: ''},
+        {schname: '', schnamefreetext: 'Strodes', schgraduyr: '2000', schyrgrp: '', schdesc: ''},
+      ]
+
+      // Set initial authorType/isMainRole
+      if (roleHistory && roleHistory.length != 0) {
+        this.setState({
+          authorType: 'job',
+          authorIsMainRole: true,
+        })
+      } else if (currTraining != '') {
+        this.setState({
+          authorType: 'train',
+          authorIsMainRole: false
+        })
+      } else if (uniHistory && uniHistory.length != 0) {
+        this.setState({
+          authorType: 'uni',
+          authorIsMainRole: false
+        })
+      } else if (schHistory && schHistory.length != 0) {
+        this.setState({
+          authorType: 'sch',
+          authorIsMainRole: false
+        })
+      } else {
+        this.setState({
+          authorType: 'none',
+          authorIsMainRole: false
+        })
+      }
+    }
   }
 
   removeFile = (e) => {
@@ -600,6 +645,8 @@ class AddHighlightTextBox extends Component {
       authorDegree,
       clickedEditCred,
       postSuccess,
+      industriesToPostTo,
+      endingHashtagsArr,
       /*stateProv,
       country,
       roleHistory,
@@ -974,6 +1021,7 @@ class AddHighlightTextBox extends Component {
                     handleChange={this.handleIndChange}
                     handleFocus={this.handleFocus}
                     onBlur={this.handleBlur}
+              //      defaultChecked={industriesToPostTo}
               //      handleTabPress={this.handleTabPress}
               //      focusOnLoad
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
@@ -1004,6 +1052,7 @@ class AddHighlightTextBox extends Component {
                     openOnClick
                     showValues
                     showCheckbox
+                    defaultChecked={endingHashtagsArr}
                     handleDone={this.handleDoneClickHobbies}
                     suggestions={hashtagOptions}
                     name='selectHashtag'

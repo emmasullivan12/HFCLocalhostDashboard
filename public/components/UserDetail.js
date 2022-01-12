@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import subjectsOptions from './Subjects.js';
+import hashtagOptions from './Hashtags.js';
 import hobbiesOptions from './Hobbies.js';
 import industryList from './Industries.js';
 import roleOptions from './Roles.js';
@@ -113,6 +114,22 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   })
 
   return hobbiesFullText.join(", ")
+}
+
+function convertHashtags(hashtags, hashtagsfreetext) {
+  let hashtagsFullText = [];
+
+  const hashtagsArr = hashtagOptions
+    .filter(hashtag => hashtags.includes(hashtag.value))
+
+  hashtagsArr.forEach((x) => {
+    hashtagsFullText.push(x.label)
+  })
+  hashtagsfreetext.forEach((y) => {
+    hashtagsFullText.push(y)
+  })
+
+  return hashtagsFullText.join(", ")
 }
 
 function convertSubjects(subjects, subjectsfreetext) {
@@ -351,4 +368,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

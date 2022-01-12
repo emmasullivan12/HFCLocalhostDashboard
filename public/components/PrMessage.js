@@ -9,7 +9,7 @@ import ChatFeedbackReq from './ChatFeedbackReq.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import EmojiReactions from './EmojiReactions.js';
 import FullPageModal from './FullPageModal.js';
-import {isIE, DateCalc} from './GeneralFunctions.js';
+import {isIE, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MessageActions from './MessageActions.js';
@@ -43,18 +43,6 @@ const MentorProfileMsgBtnModalProps = {
   triggerText: 'View Mentor Profile',
   usedFor: 'mentor-msgBtn-profile',
   backBtn: 'arrow'
-}
-
-function TimeCalc(props) {
-  var ts = new Date(props.time);
-  var hour = ts.getHours();
-  var min = ts.getMinutes();
-  var ampm = hour >= 12 ? 'pm' : 'am';
-  hour = hour % 12;
-  hour = hour ? hour : 12; // the hour '0' should be '12'
-  min = min >= 0 && min < 10 ? '0'+min : min;
-  var timeTxt = hour + ':' + min + ' ' + ampm;
-  return timeTxt;
 }
 
 function toggleMoreActionsBlur(e) {

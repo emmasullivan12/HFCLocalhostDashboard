@@ -14,7 +14,7 @@ class MenteeActivityDashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tabToView: 'mycontent',
+      tabToView: 'questions',
     }
   }
 
@@ -49,7 +49,7 @@ class MenteeActivityDashboard extends React.Component {
           </div>
           <div className="groupdash-menuBar">
           {/*  <button type="button" name="overview" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button> */}
-            <button type="button" name="mycontent" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
+            <button type="button" name="questions" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
           {/*  <button type="button" name="savedcontent" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'savedcontent' ? ' tabActive' : '')}>Saved</button>
             <button type="button" name="following" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'following' ? ' tabActive' : '')}>Following</button> */}
           </div>

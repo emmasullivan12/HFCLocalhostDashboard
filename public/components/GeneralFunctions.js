@@ -188,6 +188,18 @@ function nthCalc(date) {
   }
 }
 
+function TimeCalc(props) {
+  var ts = new Date(props.time);
+  var hour = ts.getHours();
+  var min = ts.getMinutes();
+  var ampm = hour >= 12 ? 'pm' : 'am';
+  hour = hour % 12;
+  hour = hour ? hour : 12; // the hour '0' should be '12'
+  min = min >= 0 && min < 10 ? '0'+min : min;
+  var timeTxt = hour + ':' + min + ' ' + ampm;
+  return timeTxt;
+}
+
 function DateCalc(props) {
   const timestamp = props.time ? props.time : props
   var ts = new Date(timestamp);
@@ -510,4 +522,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
+export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
