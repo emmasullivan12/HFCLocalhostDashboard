@@ -386,6 +386,9 @@ table th .description{
 .breakWord{
   word-break: break-word;
 }
+.lineHeight20pc{
+  line-height: 1.2;
+}
 .bold{
   font-weight: 600;
 }
@@ -563,6 +566,27 @@ table th .description{
   text-align: center;
   margin-bottom: 0;
 }
+.popup {
+  display: none;
+}
+.popup.open {
+  display: block;
+}
+.popup .contents {
+  position: absolute;
+  height: auto;
+  z-index: 1;
+}
+.blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: ' ';
+  background: rgba(0,0,0,0.05);
+  z-index: 1;
+}
 @media only screen and (max-width: 425px) {
   .descriptor {
     font-size: 0.8rem;
@@ -671,6 +695,9 @@ table th .description{
 }
 .noMarginB{
   margin-bottom: 0!important;
+}
+.padding20{
+  padding: 20px!important;
 }
 .paddingTop{
   padding-top: 10px!important;
@@ -796,6 +823,9 @@ table th .description{
 .tooltip .tooltiptext.last {
   left: -25px;
 }
+.tooltip .tooltiptext.endContentBox {
+  left: -60px;
+}
 .tooltiptext.chats,
 .tooltiptext.groups,
 .tooltiptext.compact,
@@ -866,7 +896,7 @@ table th .description{
 }
 .tooltip .tooltiptext.last::after,
 .tooltip .tooltiptext.groups.last::after,
-.tooltip .tooltiptext.compact.last::after {
+.tooltip .tooltiptext.compact.last::after, {
   left: unset;
   right: 13px;
 }
@@ -882,6 +912,10 @@ table th .description{
 .tooltip .tooltiptext.profile::after {
   left: 0;
   margin-left: 9px;
+}
+.tooltip .tooltiptext.endContentBox::after{
+  left: 0;
+  margin-left: 72px;
 }
 .tooltip:hover .tooltiptext{
   visibility: visible;

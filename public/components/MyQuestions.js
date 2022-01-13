@@ -38,7 +38,7 @@ class MyQuestions extends Component {
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: ['1234','1235'], // 2 answers
         industriesToPostTo: ['2','19'],
-        hashtags: ['23','11','30'],
+        hashtags: ['23','11','30','55','61'],
         hashtagsfreetext: ['my free text hashtag'],
       },
     ]

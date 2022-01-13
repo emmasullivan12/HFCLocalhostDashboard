@@ -1,0 +1,21 @@
+.myContentMoreActionsContainer {
+  margin-right: 45px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 250px;
+  min-height: 30px;
+  max-height: -webkit-calc(100vh - 99px);
+  max-height: -moz-calc(100vh - 99px);
+  max-height: calc(100vh - 99px);
+  color: #3f3f3f;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.08), 0 4px 12px 0 rgba(0,0,0,.12);
+  cursor: default;
+}

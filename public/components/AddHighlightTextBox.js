@@ -619,6 +619,22 @@ class AddHighlightTextBox extends Component {
     this.setState({dragover: ''});
   }
 
+  canBeSubmitted() {
+    const {selectedFiles, errorFileSize, errorFileNumber, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
+    const {isMenteeQ} = this.props
+    console.log("selectedFiles.length: "+ selectedFiles.length)
+    console.log((!isMenteeQ && errorFileSize == false && errorFileNumber == false))
+    console.log(!isMenteeQ)
+    console.log((errorFileSize == false))
+    console.log((errorFileNumber == false))
+console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true))
+
+    return (
+      ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
+      (endingHashtagsArr.length > 0 && showMaxReachedError != true))
+    );
+  }
+
   render() {
     const {
       text,
@@ -693,6 +709,7 @@ class AddHighlightTextBox extends Component {
       {value: '', label: 'Other', iconFA: 'fas fa-hashtag', isTitle: true},
       {value: '99999', label: 'General Advice', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
     ]
+    const isEnabled = this.canBeSubmitted();
 
     if (!showCredentials && !postSuccess) {
       return (
@@ -1137,7 +1154,7 @@ class AddHighlightTextBox extends Component {
                 </React.Fragment>
               )}
             </div>
-            <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button" onClick={this.handleSubmit}>Post</button>
+            <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button" disabled={!isEnabled} onClick={this.handleSubmit}>Post</button>
           </div>
           {isMenteeQ != true && (
             <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
