@@ -14,21 +14,9 @@ import PassMentorContent from './PassMentorContent.js';
 import UserBadge from './UserBadge.js';
 import UserName from './UserName.js';
 import TextParser from './TextParser.js';
-import {LoadingSpinner, X, Check} from './GeneralFunctions.js';
+import {LoadingSpinner, X, Check, TimeCalc} from './GeneralFunctions.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
 import {userFlagEmoji, convertHobbies, convertRole} from './UserDetail.js';
-
-function TimeCalc(props) {
-  var ts = new Date(props.time);
-  var hour = ts.getHours();
-  var min = ts.getMinutes();
-  var ampm = hour >= 12 ? 'pm' : 'am';
-  hour = hour % 12;
-  hour = hour ? hour : 12; // the hour '0' should be '12'
-  min = min >= 0 && min < 10 ? '0'+min : min;
-  var timeTxt = hour + ':' + min + ' ' + ampm;
-  return timeTxt;
-}
 
 const RequestChatModalProps = {
   ariaLabel: 'Popup to request chat with matched E-Mentor',

@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Avatar from './Avatar.js';
-import {Check} from './GeneralFunctions.js';
+import {Check, TimeCalc} from './GeneralFunctions.js';
 import FeedbackSuccessContent from './FeedbackSuccessModalContent.js'
 import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
@@ -40,18 +40,6 @@ const FeedbackSuccessProps = {
   usedFor: 'feedbackSuccess',
   hideTrigger: true,
   changeInitFocus: true,
-}
-
-function TimeCalc(props) {
-  var ts = new Date(props.time);
-  var hour = ts.getHours();
-  var min = ts.getMinutes();
-  var ampm = hour >= 12 ? 'pm' : 'am';
-  hour = hour % 12;
-  hour = hour ? hour : 12; // the hour '0' should be '12'
-  min = min >= 0 && min < 10 ? '0'+min : min;
-  var timeTxt = hour + ':' + min + ' ' + ampm;
-  return timeTxt;
 }
 
 // Pbot to send both chat participants invite to provide chat feedback (after 2 months AND >= 20 messages sent)
