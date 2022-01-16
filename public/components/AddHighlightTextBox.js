@@ -50,6 +50,7 @@ class AddHighlightTextBox extends Component {
       //credentialChecked: '',
       authorType: '',
       authorInst: '',
+      authorInstNum: '',
       authorInstFreeText: '',
       authorRole: '',
       authorIsMainRole: '',
@@ -230,7 +231,7 @@ class AddHighlightTextBox extends Component {
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state
     var authorCountry = e.target.dataset.country
-    let authorInst, authorInstFreeText, authorRole, authorDegree, authorIsMainRole
+    let authorInst, authorInstNum, authorInstFreeText, authorRole, authorDegree, authorIsMainRole
     //var credentialChecked = e.target.id
     if (authorType == 'job') {
       authorInstFreeText = e.target.dataset.instfreetext
@@ -241,6 +242,7 @@ class AddHighlightTextBox extends Component {
         authorType: authorType,
         authorInstFreeText: authorInstFreeText,
         authorInst: '',
+        authorInstNum: '',
         authorRole: authorRole,
         authorIsMainRole: authorIsMainRole,
         authorTraining: '',
@@ -258,6 +260,7 @@ class AddHighlightTextBox extends Component {
         authorType: authorType,
         authorInstFreeText: authorInstFreeText,
         authorInst: '',
+        authorInstNum: '',
         authorRole: '',
         authorIsMainRole: false,
         authorTraining: e.target.dataset.training,
@@ -271,11 +274,13 @@ class AddHighlightTextBox extends Component {
       })
     } else if (authorType == 'uni') {
       authorInst = e.target.dataset.inst ? e.target.dataset.inst : ''
+      authorInstNum = e.target.dataset.instnum ? e.target.dataset.instnum : ''
       authorInstFreeText = e.target.dataset.instfreetext ? e.target.dataset.instfreetext : ''
       authorDegree = e.target.dataset.degree
       this.setState({
         authorType: authorType,
         authorInst: authorInst,
+        authorInstNum: authorInstNum,
         authorInstFreeText: authorInstFreeText,
         authorRole: '',
         authorIsMainRole: false,
@@ -290,10 +295,12 @@ class AddHighlightTextBox extends Component {
       })
     } else if (authorType == 'sch') {
       authorInst = e.target.dataset.inst ? e.target.dataset.inst : ''
+      authorInstNum = e.target.dataset.instnum ? e.target.dataset.instnum : ''
       authorInstFreeText = e.target.dataset.instfreetext ? e.target.dataset.instfreetext : ''
       this.setState({
         authorType: authorType,
         authorInst: authorInst,
+        authorInstNum: authorInstNum,
         authorInstFreeText: authorInstFreeText,
         authorRole: '',
         authorIsMainRole: false,
@@ -310,6 +317,7 @@ class AddHighlightTextBox extends Component {
       this.setState({
         authorType: authorType,
         authorInst: '',
+        authorInstNum: '',
         authorInstFreeText: '',
         authorRole: '',
         authorIsMainRole: false,
@@ -505,7 +513,7 @@ class AddHighlightTextBox extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstNum, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
     this.setState({
       postSuccess: true
     })
@@ -627,7 +635,7 @@ class AddHighlightTextBox extends Component {
     console.log(!isMenteeQ)
     console.log((errorFileSize == false))
     console.log((errorFileNumber == false))
-console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true))
+    console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true))
 
     return (
       ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
@@ -1268,7 +1276,7 @@ console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false &&
                       return (
                         <div className="credential-item" key={degree}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
-                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-inst={uni.uniname ? uniInstName : ''} data-instfreetext={uni.uniname ? '' : uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && (authorInst == uniInstName || authorInstFreeText == uniInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-instnum={uni.uniname ? uni.uniname : ''} data-inst={uni.uniname ? uniInstName : ''} data-instfreetext={uni.uniname ? '' : uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && (authorInst == uniInstName || authorInstFreeText == uniInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1293,7 +1301,7 @@ console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false &&
                       return (
                         <div className="credential-item" key={schInstName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
-                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-inst={sch.schname ? schInstName : ''} data-instfreetext={sch.schname ? '' : schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && (authorInst == schInstName || authorInstFreeText == schInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-instnum={sch.schname ? sch.schname : ''} data-inst={sch.schname ? schInstName : ''} data-instfreetext={sch.schname ? '' : schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && (authorInst == schInstName || authorInstFreeText == schInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
