@@ -129,6 +129,14 @@ const AddHighlightSmlModalProps = {
   wider: true,
 }
 
+const AddHighlightSmlMenteeModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: '+ Question',
+  usedFor: 'addHighlightMenuSml',
+  changeInitFocus: true,
+  wider: true,
+}
+
 class Dashboard extends Component{
   constructor(props) {
     super(props);
@@ -280,6 +288,13 @@ class Dashboard extends Component{
     const userRole = this.props.userRole;
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
+    const groupsList = [
+      {gid: 1234, isclass: true},
+      {gid: 1235, isclass: false},
+    ]
+  //  const groupsList = []
+    const numClasses = groupsList.filter(group => group.isclass == true).length
+    const isClass = numClasses > 0
 
     return(
       <BrowserRouter>
@@ -292,9 +307,16 @@ class Dashboard extends Component{
                 <span id="close-modal" className="u-hide-visually">Close</span>
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
-              <Modal {...AddHighlightSmlModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlightMenuSml"/>
-              </Modal>
+              {userRole == 'mentor' && (
+                <Modal {...AddHighlightSmlModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentor'/>
+                </Modal>
+              )}
+              {userRole == 'mentee' && isClass == true && (
+                <Modal {...AddHighlightSmlMenteeModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentee'/>
+                </Modal>
+              )}
               <MenuModal changeInitFocus>
                 <UserMenuContent userRole={userRole}/>
               </MenuModal>

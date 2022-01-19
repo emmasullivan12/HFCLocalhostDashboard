@@ -630,12 +630,6 @@ class AddHighlightTextBox extends Component {
   canBeSubmitted() {
     const {selectedFiles, errorFileSize, errorFileNumber, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
     const {isMenteeQ} = this.props
-    console.log("selectedFiles.length: "+ selectedFiles.length)
-    console.log((!isMenteeQ && errorFileSize == false && errorFileNumber == false))
-    console.log(!isMenteeQ)
-    console.log((errorFileSize == false))
-    console.log((errorFileNumber == false))
-    console.log((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true))
 
     return (
       ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
@@ -1035,14 +1029,14 @@ class AddHighlightTextBox extends Component {
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
             <div className="paddingR20 paddingL20">
-              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to:</strong></label>
+              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to mentors in:</strong></label>
               <div className="inlineForm">
                 <div className="form-group inlineLeft textLeft postToGroupContainer">
                   <SelectBox
                     multiple
                     options={industryGroups}
                     name='selectInd'
-                    placeholder='Select group(s):'
+                    placeholder='Select industry(s):'
                     handleChange={this.handleIndChange}
                     handleFocus={this.handleFocus}
                     onBlur={this.handleBlur}

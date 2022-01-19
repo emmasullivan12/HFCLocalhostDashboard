@@ -23,10 +23,10 @@ class AddHighlightModalContent extends Component {
 
   render() {
     const { highlightType, text, showEmojis, errorLoadingHashtags } = this.state;
-    const {modalID} = this.props
+    const {modalID, userRole} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
-    if(highlightType == '') {
+    if(userRole == 'mentor' && highlightType == '') {
       return (
         <div className="selectPostTypeContainer">
           <div className="modal-title">
@@ -53,7 +53,7 @@ class AddHighlightModalContent extends Component {
           </div>
         </div>
       );
-    } else if (highlightType == 'qa') {
+    } else if (userRole == 'mentor' && highlightType == 'qa') {
       return (
         <div className="qaComingSoonContainer">
           <div className="electricPurpleText fontSize30 marginTop20">
@@ -67,6 +67,7 @@ class AddHighlightModalContent extends Component {
       return (
         <AddHighlightTextBox
           modalID={modalID}
+          isMenteeQ={userRole == 'mentor' ? false : true}
         />
       )
     }

@@ -93,13 +93,13 @@ class MentorHomepageCTAContainer extends Component {
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}
         {(step === 'fullSUTrain' || step === 'fullSUidTrain') && (
-          <MentorMatches /> // to do
+          <MentorMatches userRole='mentor' /> // to do
         )}
         <Modal {...AddHighlightModalProps}>
-          <AddHighlightModalContent modalID="modal-addHighlight"/>
+          <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor'/>
         </Modal>
         <Modal {...AddHighlightSmlModalProps}>
-          <AddHighlightModalContent modalID="modal-addHighlightSml"/>
+          <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor'/>
         </Modal>
       </div>
     );

@@ -7,7 +7,7 @@ import Modal from './Modal';
 
 const AddHighlightModalProps = {
   ariaLabel: 'Post a Question',
-  triggerText: 'Post a Question',
+  triggerText: 'Post Question',
   usedFor: 'askQuestionDashboard',
   changeInitFocus: true,
   wider: true

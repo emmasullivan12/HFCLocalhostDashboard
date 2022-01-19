@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import AskAQPrompt from "./AskAQPrompt";
 import GroupCircle from "./GroupCircle";
@@ -22,6 +23,22 @@ const JoinProgrammePlusModalProps = {
   changeInitFocus: true
 }
 
+const AddHighlightModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'Post Question',
+  usedFor: 'addHighlight',
+  changeInitFocus: true,
+  wider: true
+}
+
+const AddHighlightSmlModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: '+ Question',
+  usedFor: 'addHighlightSml',
+  changeInitFocus: true,
+  wider: true
+}
+
 /*  case 'didEmailVerif':
     case 'didReviewVerif':
     case 'autoEnroll':
@@ -36,7 +53,14 @@ class HomepageCTAContainer extends Component {
     const is18plus = 1;
     const matchstatus = 'didSafeG';
     const groups = [];
-    const isClass = true;
+    const groupsList = [
+      {gid: 1234, isclass: true},
+      {gid: 1235, isclass: false},
+    ]
+    const numClasses = groupsList.filter(group => group.isclass == true).length
+    const isClass = numClasses > 0
+    const qidsArr = []
+//    const qidsArr = [1,2,3] // questions asked
     const source = 'vhs' // i.e. from URL ?source=villiers
 
     this.props.groups.forEach((group) => {
@@ -74,8 +98,11 @@ class HomepageCTAContainer extends Component {
         {step === 'joinedProg' && isClass == false && (
           <MenteeFullSignUp />
         )}
-        {step === 'joinedProg' && isClass == true && (
+        {step === 'joinedProg' && isClass == true && qidsArr.length == 0 && (
           <AskAQPrompt />
+        )}
+        {step === 'joinedProg' && isClass == true && qidsArr.length > 0 && (
+          <MenteeFullSignUp />
         )}
         {step === 'didFullSUtf' && (
           <MenteeTraining />
@@ -84,13 +111,23 @@ class HomepageCTAContainer extends Component {
           <MenteeTraining />
         )}
         {is18plus === 1 && step === 'didFullSUtf' && hasInvite === false && (
-          <MentorMatches />
+          <MentorMatches userRole='mentee'/>
         )}*/}
         {step === 'didSafeG' && hasInvite === false && (
-          <MentorMatches />
+          <MentorMatches userRole='mentee'/>
         )}
         {(is18plus != 1 && step === 'didSafeG') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true && (
           <AutoEnrollPrompt />
+        )}
+        {isClass == true && (
+          <React.Fragment>
+            <Modal {...AddHighlightModalProps}>
+              <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
+            </Modal>
+            <Modal {...AddHighlightSmlModalProps}>
+              <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentee'/>
+            </Modal>
+          </React.Fragment>
         )}
       </div>
     );

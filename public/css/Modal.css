@@ -204,6 +204,9 @@
   visibility: visible;
   position: unset;
 }
+.ModalOpenBtn-askQuestionDashboard{
+  background-color: #4e4ed6;
+}
 
 .ModalOpenBtn-addHighlightGroup{
   position: absolute;
@@ -239,9 +242,11 @@
 .ModalOpenBtn-addHighlight:hover,
 .ModalOpenBtn-addHighlightDashboard:hover,
 .ModalOpenBtn-addHighlightSml:hover,
+.ModalOpenBtn-askQuestionDashboard:hover,
 .ModalOpenBtn-addHighlight:active,
 .ModalOpenBtn-addHighlightDashboard:active,
-.ModalOpenBtn-addHighlightSml:active{
+.ModalOpenBtn-addHighlightSml:active,
+.ModalOpenBtn-askQuestionDashboard:active{
   background: #351c75;
 }
 

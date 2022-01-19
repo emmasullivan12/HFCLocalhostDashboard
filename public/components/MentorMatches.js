@@ -29,6 +29,7 @@ class MentorMatches extends Component {
 
   render() {
     const {matchstatus} = this.state;
+    const {userRole} = this.props
     const prevMatchesAvail = true; // Need to check if matches given before are still available / mentee didn't pass on them and will show them
 
     switch (matchstatus) {
@@ -46,7 +47,7 @@ class MentorMatches extends Component {
               </p>
               <p className="landingCTADesc">In the meantime...</p>
               <Modal {...AddHighlightModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlightDashboard"/>
+                <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
               </Modal>
             </div>
           </section>
