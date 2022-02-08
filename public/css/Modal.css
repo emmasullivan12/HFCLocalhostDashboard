@@ -50,7 +50,8 @@
 .ModalOpenBtn-mentee-profile-prModAuto,
 .ModalOpenBtn-mentor-profile-prModAuto,
 .ModalOpenBtn-mentee-profile-userName,
-.ModalOpenBtn-mentor-profile-userName{
+.ModalOpenBtn-mentor-profile-userName,
+.ModalOpenBtn-deleteContent{
   background: none;
   border: 0;
   outline: none;
@@ -65,25 +66,29 @@
   cursor: pointer;
   height: auto;
 }
-
+.ModalOpenBtn-mentee-profile-prModAuto:hover,
+.ModalOpenBtn-mentor-profile-prModAuto:hover,
+.ModalOpenBtn-mentee-profile-userName:hover,
+.ModalOpenBtn-mentor-profile-userName:hover,
+.ModalOpenBtn-deleteContent{
+  background: none!important;
+  color: inherit!important;
+}
+.ModalOpenBtn-mentee-profile-prModAuto:active,
+.ModalOpenBtn-mentor-profile-prModAuto:active,
+.ModalOpenBtn-mentee-profile-userName:active,
+.ModalOpenBtn-mentor-profile-userName:active,
+.ModalOpenBtn-deleteContent{
+  background: none;
+}
+.ModalOpenBtn-deleteContent{
+  width: 100%;
+}
 .ModalOpenBtn-mentee-profile-userName,
 .ModalOpenBtn-mentor-profile-userName{
   position: absolute;
   bottom: 0;
   margin-bottom: 5px;
-}
-.ModalOpenBtn-mentee-profile-prModAuto:hover,
-.ModalOpenBtn-mentor-profile-prModAuto:hover,
-.ModalOpenBtn-mentee-profile-userName:hover,
-.ModalOpenBtn-mentor-profile-userName:hover{
-  background: none;
-  color: inherit;
-}
-.ModalOpenBtn-mentee-profile-prModAuto:active,
-.ModalOpenBtn-mentor-profile-prModAuto:active,
-.ModalOpenBtn-mentee-profile-userName:active,
-.ModalOpenBtn-mentor-profile-userName:active{
-  background: none;
 }
 .ModalOpenBtn-addPicBtn,
 .ModalOpenBtn-mentor-msgBtn-profile,

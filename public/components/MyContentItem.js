@@ -3,9 +3,17 @@
 import React, { Component } from "react";
 
 import {Check, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import DeleteContentModalContent from './DeleteContentModalContent.js';
+import Modal from './Modal.js';
 import {convertHashtags} from './UserDetail.js';
 
 import '../css/MyActivity.css';
+
+const DeleteContentModalProps = {
+  ariaLabel: 'Confirm content deletion',
+  triggerText: 'Delete',
+  usedFor: 'deleteContent',
+}
 
 class MyContentItem extends Component {
 
@@ -39,11 +47,6 @@ class MyContentItem extends Component {
   //  if (this.popup !== null ) {
       this.popup.classList.remove('open');
   //  }
-  }
-
-  deleteQ = () => {
-    // Delete question logic goes here
-    this.closePopup()
   }
 
   render() {
@@ -89,17 +92,17 @@ class MyContentItem extends Component {
                 <div className="myContentMoreActionsContainer">
                   <div className="moreActions-scrollArea">
                     <ul className="moreActionsList">
-                      <li className="moreActionsListItem" onClick={this.deleteQ}>
-                        <span className="moreActionsLabel overflow-ellipsis">
-                          Delete
-                        </span>
+                      <li onClick={this.closePopup}>
+                        <Modal {...DeleteContentModalProps}>
+                          <DeleteContentModalContent />
+                        </Modal>
                       </li>
-                      <li className="moreActionsListItem" onClick={this.deleteQ}>
+                      <li className="moreActionsListItem" onClick={this.closePopup}>
                         <span className="moreActionsLabel overflow-ellipsis">
                           Share
                         </span>
                       </li>
-                      <li className="moreActionsListItem" onClick={this.deleteQ}>
+                      <li className="moreActionsListItem" onClick={this.closePopup}>
                         <span className="moreActionsLabel overflow-ellipsis">
                           Report
                         </span>

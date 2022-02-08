@@ -30,6 +30,14 @@ function ButtonContent(props) {
           <i className="fas fa-info-circle"/>
         </div>
       );
+    case 'deleteContent':
+     return (
+       <div className="moreActionsListItem">
+         <span className="moreActionsLabel overflow-ellipsis">
+           {text}
+         </span>
+        </div>
+     )
     case 'addHighlightSml':
     case 'addHighlightMenuSml':
       return (

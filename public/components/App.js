@@ -30,6 +30,7 @@ import Modal from "./Modal";
 import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
 import ProspelaDashboard from "./ProspelaDashboard";
+import QA from './QA.js';
 import Teams from "./Teams";
 import Todo from "./Todo";
 import TypeformSignUp from "./TypeformSignUp";
@@ -331,7 +332,6 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
-{/*<img className="prLogoImg" alt="Prospela Logo" src="https://prospela.com/wp-content/uploads/2019/03/Prospela-Logo.png" />*/}
                         <img
                           className="prLogoImg"
                           alt="Prospela Logo"
@@ -400,7 +400,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -475,7 +475,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'didShortSUtf';
+  const step = 'qa';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':
@@ -506,6 +506,8 @@ function MentorSteps({userRole}) {
           case 'fullSUTrain':
           case 'fullSUidTrain':
             return <Dashboard userRole={userRole} step={step}/>
+          case 'qa':
+            return <QA />
         }
 }
 

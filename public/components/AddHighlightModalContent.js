@@ -1,8 +1,10 @@
 // Last merged this code on 17th nov 2021
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import AddHighlightTextBox from './AddHighlightTextBox.js';
+import QA from './QA.js';
 
 import "../css/AddHighlight.css";
 
@@ -54,15 +56,25 @@ class AddHighlightModalContent extends Component {
         </div>
       );
     } else if (userRole == 'mentor' && highlightType == 'qa') {
+      const qid = '12345'
       return (
-        <div className="qaComingSoonContainer">
-          <div className="electricPurpleText fontSize30 marginTop20">
-            <i className="far fa-comments"/>
+        <Router>
+          <div>
+            <h2>
+            {/*  <Link to={`/question/${qid}`} target="_blank">Open Question in new tab</Link>
+              <Route path="/question/:qid" component={QA}/> */}
+              <Link to="/question">Open Question in new tab</Link>
+            </h2>
           </div>
-          <div className="qaTitle modal-preTitle marginBottom20">Coming soon!</div>
-          <div className="darkGreyText">Help mentees from every background get access to quality careers advice, by contributing to our new open-access Q&A reference library</div>
-        </div>
+        </Router>
       )
+      /*<div className="qaComingSoonContainer">
+        <div className="electricPurpleText fontSize30 marginTop20">
+          <i className="far fa-comments"/>
+        </div>
+        <div className="qaTitle modal-preTitle marginBottom20">Coming soon!</div>
+        <div className="darkGreyText">Help mentees from every background get access to quality careers advice, by contributing to our new open-access Q&A reference library</div>
+      </div>*/
     } else {
       return (
         <AddHighlightTextBox

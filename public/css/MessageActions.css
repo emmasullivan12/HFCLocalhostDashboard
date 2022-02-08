@@ -300,6 +300,12 @@
   padding: 0;
   margin: 0;
 }
+.moreActionsList:first-child{
+  margin-top: 10px;
+}
+.moreActionsList:nth-last-child(1){
+  margin-bottom: 10px;
+}
 
 .moreActionsListItem{
   margin: 0;
@@ -309,12 +315,6 @@
 }
 .moreActionsListItem:hover{
   color: #000;
-}
-.moreActionsListItem:first-of-type{
-  margin-top: 10px;
-}
-.moreActionsListItem:last-of-type{
-  margin-bottom: 10px;
 }
 
 .moreActionsLabel{
