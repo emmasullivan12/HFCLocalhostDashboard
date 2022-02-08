@@ -46,6 +46,29 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   }
 }
 
+function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
+//  const {ukSchsList, ukUnisList} = this.props;
+  if (authorinsttype == 'job') {
+    return authorroleishidden != true ? ('Worked at ' + authorinstfreetext + ' as ' + authorrole) : ('Worked at ' + authorinstfreetext)
+  } else if (authorinsttype == 'train') {
+    return (authortraining != '' ? (authortraining + ' at ' + authorinstfreetext) : ('Trained at ' + authorinstfreetext))
+  } else if (authorinsttype == 'uni') {
+  //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
+    const uniInst = authorinst ? authorinst : authorinstfreetext
+    return 'Studied ' + authordegree + ' at ' + uniInst
+  } else if (authorinsttype == 'sch') {
+  //  const schInst = authorinst ? (grabSchOrUni('sch', authorinst, ukSchsList)) : authorinstfreetext
+    const schInst = authorinst ? authorinst : authorinstfreetext
+    return 'Studied at ' + schInst
+  } else {
+    /* const country = selectCountry(authorcountry);
+    const stateProv = selectState(authorcountry, authorstate); */
+    const country = authorcountry
+    const stateProv = authorstate
+    return 'Lives in ' + stateProv + ', ' + country
+  }
+}
+
 function convertRole(roles, rolesfreetext) {
   let rolesFullText = [];
 
@@ -368,4 +391,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export { lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

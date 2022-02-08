@@ -1,7 +1,7 @@
 // Last merged this code on 8th feb 2022
 
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AddHighlightTextBox from './AddHighlightTextBox.js';
 import QA from './QA.js';
@@ -61,9 +61,9 @@ class AddHighlightModalContent extends Component {
         <Router>
           <div>
             <h2>
-            {/*  <Link to={`/question/${qid}`} target="_blank">Open Question in new tab</Link>
-              <Route path="/question/:qid" component={QA}/> */}
-              <Link to="/question">Open Question in new tab</Link>
+              <Link to={`/questions/${qid}`} target="_blank">Open Question in new tab</Link>
+              <Route path="/questions/:qid" component={QA}/>
+            {/*  <Link to="/questions">Open Question in new tab</Link> */}
             </h2>
           </div>
         </Router>

@@ -1,6 +1,7 @@
 // Dex last merged this code on 8th feb 2022
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {Check, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
@@ -112,9 +113,14 @@ class MyContentItem extends Component {
                 </div>
               </div>
             </div>
-
           </div>
-          <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc"><strong>{q.title}</strong></div>
+          <Router>
+            <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc">
+              <Link to="/questions">
+                <strong>{q.title}</strong>
+              </Link>
+            </div>
+          </Router>
           {hashtagsArray.length > 0 && (
             <div className="tagsList">
               {hashtagsArray.map((hashtag) => {

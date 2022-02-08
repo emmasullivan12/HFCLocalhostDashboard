@@ -38,6 +38,7 @@ class MainMenu extends Component {
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
             <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Dashboard</NavLink>
+            <NavLink exact to="/questions" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Q&A SEO page</NavLink>
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>

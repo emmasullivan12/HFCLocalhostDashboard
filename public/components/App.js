@@ -358,6 +358,7 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
+                <Route path="/questions" component={QA}/>
                 <Route path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
                 <Route path="/my-activity" roleAllowed="mentee" userRole="mentee" component={MenteeActivityDashboard}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
@@ -475,7 +476,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'qa';
+  const step = 'fullSUidTrain';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':
@@ -506,8 +507,6 @@ function MentorSteps({userRole}) {
           case 'fullSUTrain':
           case 'fullSUidTrain':
             return <Dashboard userRole={userRole} step={step}/>
-          case 'qa':
-            return <QA />
         }
 }
 
