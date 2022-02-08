@@ -1,4 +1,4 @@
-// Last merged this code on 16th jan 2022
+// Last merged this code on 8th feb 2022
 
 import React, { Component } from "react";
 
@@ -1029,7 +1029,7 @@ class AddHighlightTextBox extends Component {
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
             <div className="paddingR20 paddingL20">
-              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to mentors in:</strong></label>
+              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to {isMenteeQ == true ? 'mentors in' : 'mentees interested in'}:</strong></label>
               <div className="inlineForm">
                 <div className="form-group inlineLeft textLeft postToGroupContainer">
                   <SelectBox
