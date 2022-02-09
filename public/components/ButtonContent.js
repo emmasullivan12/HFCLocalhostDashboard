@@ -55,6 +55,12 @@ function ButtonContent(props) {
           {/*<span className="fontSize18 dispInlineBlock"><PenIcon /></span> {text}*/}
         </div>
       )
+    case 'addHighlightQApage':
+      return (
+        <div>
+          <span className="fontSize12 paddingR5"><i className="fas fa-pencil-alt" /></span> {text}
+        </div>
+      )
     case 'joinProgLrg':
       return (
         <div>+ Join a live Group</div>

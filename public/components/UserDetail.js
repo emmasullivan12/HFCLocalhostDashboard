@@ -355,16 +355,15 @@ function eduSubjects(userCountry) {
 
 function timeSince(lastActiveDate) {
   var now = new Date();
-  var then = new Date(lastActiveDate * 1000);
-  var diff = now.getTime() - then.getTime();
-  var diffDays = diff / (1000 * 3600 * 24);
+  var then = new Date(lastActiveDate);
+  const diffTime = Math.abs(now - then);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   let diffTxt;
   if (diffDays > 1) {
     diffTxt = ' days ago';
   } else {
     diffTxt = ' day ago'
   }
-  diffDays = Math.floor(diffDays);
   return diffDays + diffTxt
 }
 

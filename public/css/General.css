@@ -389,6 +389,9 @@ table th .description{
 .lineHeight20pc{
   line-height: 1.2;
 }
+.lineHeight40pc{
+  line-height: 1.4;
+}
 .bold{
   font-weight: 600;
 }
@@ -488,6 +491,31 @@ table th .description{
 }
 
 /* POSITIONING */
+.mainBar{
+   float: left;
+   width: 100%;
+   width: calc(100% - 300px - 24px);
+   margin: 0;
+   padding: 0;
+}
+.sideBar{
+  margin-left: 24px;
+  float: right;
+  width: 300px;
+  margin: 0 0 15px;
+}
+@media screen and (max-width: 1080px) {
+  .mainBar {
+    width: 100%;
+    float: none;
+  }
+  .sideBar {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .zIndex0{
   z-index: 0!important;
 }
@@ -698,6 +726,9 @@ table th .description{
 }
 .padding20{
   padding: 20px!important;
+}
+.padding25{
+  padding: 25px!important;
 }
 .paddingTop{
   padding-top: 10px!important;
@@ -920,6 +951,13 @@ table th .description{
 .tooltip:hover .tooltiptext{
   visibility: visible;
   opacity: 1;
+}
+.borderBtm{
+  border-bottom-style: solid!important;
+  border-bottom-width: 1px!important;
+}
+.borderGrey{
+  border-color: #e3e6e8!important;
 }
 
 /* BUTTONS */
@@ -1792,6 +1830,32 @@ a.button{
   background-color: #65c8d8;
 }
 
+.bubbleContainer .bubble.noBackground:nth-child(5n+0){
+  color: #eeb000;
+  background-color: unset;
+  border: unset;
+}
+.bubbleContainer .bubble.noBackground:nth-child(5n+1){
+  color: #9999e7;
+  background-color: unset;
+  border: unset;
+}
+.bubbleContainer .bubble.noBackground:nth-child(5n+2){
+  color: #58d2bb;
+  background-color: unset;
+  border: unset;
+}
+.bubbleContainer .bubble.noBackground:nth-child(5n+3){
+  color: #fb6c81;
+  background-color: unset;
+  border: unset;
+}
+.bubbleContainer .bubble.noBackground:nth-child(5n+4){
+  color: #65c8d8;
+  background-color: unset;
+  border: unset;
+}
+
 .ratingBubblesContainer .bubble{
   padding: 2px 5px 2px 5px;
   font-weight: 400;
@@ -1866,6 +1930,12 @@ a.button{
   margin-right: 5px;
   margin-bottom: 5px;
   white-space: break-spaces;
+}
+.bubble.noBackground{
+  padding: .1rem .25rem .1rem 0rem;
+}
+.bubble.noBackground:last-of-type{
+  margin-right: 3px;
 }
 
 /* ICONS */

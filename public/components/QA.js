@@ -2,9 +2,28 @@
 
 import React, { Component } from "react";
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
 import {ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
-import {getIndustryDeets, convertHashtags, getCredText} from './UserDetail.js';
+import DeleteContentModalContent from './DeleteContentModalContent.js';
+import Modal from './Modal';
+import {getIndustryDeets, convertHashtags, getCredText, timeSince} from './UserDetail.js';
+
+import "../css/QA.css";
+
+const AddHighlightModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'Ask Question',
+  usedFor: 'addHighlightQApage',
+  changeInitFocus: true,
+  wider: true
+}
+
+const DeleteContentModalProps = {
+  ariaLabel: 'Confirm content deletion',
+  triggerText: 'Delete',
+  usedFor: 'deleteQ',
+}
 
 class QA extends Component {
 
@@ -13,15 +32,16 @@ class QA extends Component {
       qid: '123456',
       uid: '123',
       datecreated: '2020-09-04T13:30:50.667Z',
-      lastupdated: '2020-09-05T13:30:50.667Z',
+      lastupdated: '2022-02-02T13:30:50.667Z',
       title: 'What is the best thing to wear to an interview?',
       textdetail: 'I know we have to be professional, but would like to stand out if possible.',
       hids: [], // no answers yet
       //hids: ['1234','1235'],
       industriesToPostTo: ['2','19'],
+      //industriesToPostTo: ['2','19','1','3','4','5','6','7','8','9','10'],
       hashtags: ['23','20'],
       hashtagsfreetext: ['my free text hashtag'],
-      isanon: 0,
+      isanon: 1,
       authorinst: '',
       authorinstfreetext: 'BPP',
       authorrole: '',
@@ -46,7 +66,9 @@ class QA extends Component {
     //  reported jsonb
     //  reportedstatus jsonb
     }
-    const author = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
+    const qAuthor = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
+    const myID = '123'; //223456
+    const qIsMe = (qaItem.uid === myID) ? 'isMe' : 'isntMe';
     const hidsArr = [
       {
         hid: '1234',
@@ -129,12 +151,14 @@ class QA extends Component {
       }
     }
     const credentialText = getCredText(qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
-    let hidsActiveDatesArr = hidsArr.map(hid => hid.lastupdated);
-    let activeDatesArr = [
-      ...qaItem.lastupdated,
-      hidsActiveDatesArr
-    ]
-    const mostRecentActivityDate = new Date(Math.max(...activeDatesArr.map(e => new Date(e))));
+    let activeDatesArr = []
+
+    activeDatesArr.push(qaItem.lastupdated)
+    hidsArr.map((hid) => {
+      activeDatesArr.push(hid.lastupdated)
+    });
+    const mostRecentActivityDate = activeDatesArr.sort().slice(-1)
+    const indArrToShow = qaItem.industriesToPostTo.length <= 2 ? qaItem.industriesToPostTo : qaItem.industriesToPostTo.slice(0,2)
     const hashtagsCommaString = (qaItem.hashtags.length > 0 || qaItem.hashtagsfreetext.length > 0) ? convertHashtags(qaItem.hashtags, qaItem.hashtagsfreetext) : []
     const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
 
@@ -143,25 +167,31 @@ class QA extends Component {
         <script type="application/ld+json">
           {JSON.stringify(qaStructuredData)}
         </script>
-        <div>
-          <h3>Question</h3>
-          <div>
-            <div>{qaItem.title}</div>
-            <div>
-              in
-              <div className="bubbleContainer">
-                {qaItem.industriesToPostTo.map((indID) => {
-                  let industryItem = getIndustryDeets(indID)
-                  let icon = industryItem.fa
-                  let indName = industryItem.label
-                  return <div className="bubble" key={indID}><i className={icon} /> {indName}</div>
-                })}
+        <div className="padding25 marginTop20">
+          <div className="borderBtm borderGrey paddingBtm marginBottom20">
+            <div className="chatItemFlexContainer">
+              <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
+              <span className="absolute right20">
+                <Modal {...AddHighlightModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                </Modal>
+              </span>
+            </div>
+            <div className="darkGreyText fontSize13">
+              <div>
+                Asked {timeSince(qaItem.datecreated)} in <span className="bubbleContainer">
+                  {indArrToShow.map((indID) => {
+                    let industryItem = getIndustryDeets(indID)
+                    let icon = industryItem.fa
+                    let indName = industryItem.label
+                    return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
+                  })}
+                </span>{qaItem.industriesToPostTo.length > 2 ? 'and other groups' : ''}
               </div>
+              <div>Active {timeSince(mostRecentActivityDate)}</div>
             </div>
-            <div>
-              <div>Asked {qaItem.datecreated}</div>
-              <div>Active {mostRecentActivityDate}</div>
-            </div>
+          </div>
+          <div className="mainBar" role="main" aria-label="question and answers">
             <div>
               <div>
                 <ChevronUp />
@@ -185,21 +215,25 @@ class QA extends Component {
                   </div>
                 )}
                 <div>
-                  <div>
-                    {/*<div>Share</div>
-                    <div>Follow</div> */}
-                    <div>Delete</div>
-                  {/*  <div>Report</div> */}
+                  <div className="greyText fontSize12">
+                    <div>Share</div>
+                    <div>Follow</div>
+                    {qIsMe == 'isMe' && (
+                      <Modal {...DeleteContentModalProps}>
+                        <DeleteContentModalContent />
+                      </Modal>
+                    )}
+                    <div>Report</div>
                   </div>
                   <div className="previewSuperContainer">
-                    <div className="textRight greyText fontSize14">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
+                    <div className="textRight greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
                     <div>
                       <div className="credentialPreviewContainer">
                         <div className="dispInlineBlock verticalAlignMiddle">
-                          <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : author.fname} showAsCircle picSize={360}/>
+                          <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qAuthor.fname} showAsCircle picSize={360}/>
                         </div>
                         <div className="credDetail dispInlineBlock verticalAlignMiddle">
-                          <span className="fontSize12"><strong>{qaItem.isanon ? "" : (author.fname + " " + author.lname + ", ")}</strong><span className="darkGreyText">{credentialText}</span></span>
+                          <span className="fontSize12"><strong>{qaItem.isanon ? "" : (qAuthor.fname + " " + qAuthor.lname + ", ")}</strong><span className="darkGreyText">{credentialText}</span></span>
                         </div>
                       </div>
                     </div>
@@ -207,9 +241,12 @@ class QA extends Component {
                 </div>
               </div>
             </div>
+            <br />
+            <h3>Answers to follow...</h3>
           </div>
-          <br />
-          <h3>Answers to follow...</h3>
+          <div className="sideBar" role="complementary" aria-label="sidebar">
+            SIDEBAR PLACEHOLDER
+          </div>
         </div>
       </React.Fragment>
     );
