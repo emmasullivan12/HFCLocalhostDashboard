@@ -49,17 +49,17 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
 function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
 //  const {ukSchsList, ukUnisList} = this.props;
   if (authorinsttype == 'job') {
-    return authorroleishidden != true ? ('Worked at ' + authorinstfreetext + ' as ' + authorrole) : ('Worked at ' + authorinstfreetext)
+    return authorroleishidden != true ? (authorrole + ' at ' + authorinstfreetext) : (authorinstfreetext)
   } else if (authorinsttype == 'train') {
-    return (authortraining != '' ? (authortraining + ' at ' + authorinstfreetext) : ('Trained at ' + authorinstfreetext))
+    return (authortraining != '' ? (authortraining + ' at ' + authorinstfreetext) : (authorinstfreetext))
   } else if (authorinsttype == 'uni') {
   //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
     const uniInst = authorinst ? authorinst : authorinstfreetext
-    return 'Studied ' + authordegree + ' at ' + uniInst
+    return authordegree + ' at ' + uniInst
   } else if (authorinsttype == 'sch') {
   //  const schInst = authorinst ? (grabSchOrUni('sch', authorinst, ukSchsList)) : authorinstfreetext
     const schInst = authorinst ? authorinst : authorinstfreetext
-    return 'Studied at ' + schInst
+    return schInst
   } else {
     /* const country = selectCountry(authorcountry);
     const stateProv = selectState(authorcountry, authorstate); */

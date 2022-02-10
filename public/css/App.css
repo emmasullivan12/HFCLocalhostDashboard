@@ -227,6 +227,7 @@ h2{
   -moz-flex-grow: 1;
   min-width: 1px;
 */  background: #fff;
+  overflow-y: auto;
   left: 220px;
   height: 100%;
 }

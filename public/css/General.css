@@ -365,6 +365,12 @@ table th .description{
 .fontSize30{
   font-size: 30px;
 }
+.fontSize28{
+  font-size: 28px;
+}
+.fontSize25{
+  font-size: 25px!important;
+}
 .fontSize20{
   font-size: 20px;
 }
@@ -516,6 +522,18 @@ table th .description{
     width: 100%;
   }
 }
+.gridContainer{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+.gridLeftColumn{
+  grid-column: 1;
+  width: auto;
+}
+.gridRightColumn{
+  grid-column: 2;
+  width: auto;
+}
 .zIndex0{
   z-index: 0!important;
 }
@@ -664,11 +682,17 @@ table th .description{
 .noMarginBlockStart{
   margin-block-start: 0;
 }
+.whiteSpace{
+  white-space: initial;
+}
 .marginAuto{
   margin: auto;
 }
 .marginTop{
   margin-top: 2rem;
+}
+.marginTop5 {
+  margin-top: 5px!important;
 }
 .marginTop10 {
   margin-top: 10px!important;
@@ -709,8 +733,14 @@ table th .description{
 .marginLeft{
   margin-left: 1rem;
 }
+.marginLeft8{
+  margin-left: 8px;
+}
 .marginRight {
   margin-right: 1rem;
+}
+.marginRight8 {
+  margin-right: 8px;
 }
 .noMarginL{
   margin-left: 0!important;
@@ -735,6 +765,9 @@ table th .description{
 }
 .paddingBtm{
   padding-bottom: 10px;
+}
+.paddingBtm20{
+  padding-bottom: 20px;
 }
 .paddingR5{
   padding-right: 5px;
@@ -768,6 +801,9 @@ table th .description{
 }
 .displayFlex{
   display: flex!important;
+}
+.flexDirColumn{
+  flex-direction: column!important;
 }
 .overflow-ellipsis{
   white-space: nowrap;
@@ -1144,7 +1180,6 @@ a.Submit-btn{
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
 }
-
 .uploadPicBtn{
   margin-top: 25px!important;
 }
@@ -1779,7 +1814,8 @@ a.button{
 .img-circle.allowAddPic.isntMe:hover > *,
 .img-square.allowAddPic.isntMe:hover > *,
 .img-circle.allowAddPic.isntMe:focus > *,
-.img-square.allowAddPic.isntMe:focus > *{
+.img-square.allowAddPic.isntMe:focus > *,
+.opacity1{
   opacity: 1;
 }
 

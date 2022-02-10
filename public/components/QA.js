@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
-import {ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import {Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import Modal from './Modal';
 import {getIndustryDeets, convertHashtags, getCredText, timeSince} from './UserDetail.js';
@@ -26,6 +26,166 @@ const DeleteContentModalProps = {
 }
 
 class QA extends Component {
+  constructor () {
+    super();
+    this.state = {
+      //isUpvoted: false,
+      //votes: this.props.qaItem.votes,
+      //votes: 10,
+    }
+  }
+
+  componentDidMount() {
+    const qaItem = {
+      qid: '123456',
+      uid: '123',
+      datecreated: '2020-09-04T13:30:50.667Z',
+      lastupdated: '2022-02-02T13:30:50.667Z',
+      title: 'What is the best thing to wear to an interview?',
+      textdetail: 'I know we have to be professional, but would like to stand out if possible. Is that possible? What do you think? I need to get some good advice on this and hope I\'ve provided enough context to get a good answer',
+      //hids: [], // no answers yet
+      hids: ['1234','1235'],
+      industriesToPostTo: ['2','19'],
+      //industriesToPostTo: ['2','19','1','3','4','5','6','7','8','9','10'],
+      hashtags: ['23','20','1','2','0',],
+      hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+      isanon: 0,
+      authorinst: '',
+      authorinstfreetext: 'Really Long Institution Name',
+      authorrole: '',
+    //  authorroleishidden: 0,
+      authordegree: 'BSc (Hons) Business Administration',
+      authortraining: '',
+      authorinsttype: 'uni',
+      authorstate: 'Bedf',
+      authorcountry: 'GBR',
+      votes: 123,
+    //  reactions jsonb
+    /*  seen: [
+          mentors: [
+            {uid: uid, ts: ts}
+          ],
+          mentees: [
+            {uid: uid, ts: ts}
+          ]
+        ]*/
+    //  followers jsonb
+    //  deleted jsonb
+    //  reported jsonb
+    //  reportedstatus jsonb
+    }
+    const hidsArr = [
+      {
+        hid: '1234',
+        uid: '123',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        authorinst: '',
+        authorinstfreetext: 'Really Long Institution Name',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: 'BSc (Hons) Business Administration',
+        authortraining: '',
+        authorinsttype: 'uni',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-05T19:30:50.667Z',
+        text: 'first answer',
+        isanon: 0,
+        votes: 12,
+        isacceptedanswer: true,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#firstanswer',
+      },
+      {
+        hid: '1235',
+        uid: '124',
+        fname: 'Dave',
+        lname: 'Petrie',
+        authorinst: '',
+        authorinstfreetext: '',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: '',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-06T13:30:50.667Z',
+        text: 'second answer',
+        isanon: 1,
+        votes: 10,
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#secondanswer',
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'third answer',
+        isanon: 0,
+        votes: 1,
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#thirdanswer',
+      }
+    ]
+    this.countVotes(qaItem.qid, qaItem.votes)
+    hidsArr.map((hid) => {
+      this.countVotes(hid.hid, hid.votes)
+    });
+    /* this.setState({
+      [qaItem.qid+"-isUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
+      [FOR EACH hid.hid+"-isUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
+    }) */
+  }
+
+  toggleUpvote = (postId) => {
+    const currentState = this.state[postId+"-isUpvoted"];
+console.log(postId)
+console.log(currentState)
+    this.setState(prevState => {
+      let newVotes, newIsUpvoted
+      if (currentState == false || currentState == undefined) {
+        newVotes = prevState[postId+'-votes'] + 1
+        newIsUpvoted = true
+      } else {
+        newVotes = prevState[postId+'-votes'] - 1
+        newIsUpvoted = false
+      }
+      console.log(newVotes)
+      console.log(newIsUpvoted)
+
+      return {
+        [postId+"-isUpvoted"]: newIsUpvoted,
+        [postId+'-votes']: newVotes
+      }
+    })
+  }
+
+  countVotes = (hid, votes) => {
+    this.setState({
+      [hid+'-votes']: votes
+    })
+  }
 
   render() {
     const qaItem = {
@@ -34,21 +194,21 @@ class QA extends Component {
       datecreated: '2020-09-04T13:30:50.667Z',
       lastupdated: '2022-02-02T13:30:50.667Z',
       title: 'What is the best thing to wear to an interview?',
-      textdetail: 'I know we have to be professional, but would like to stand out if possible.',
-      hids: [], // no answers yet
-      //hids: ['1234','1235'],
+      textdetail: 'I know we have to be professional, but would like to stand out if possible. Is that possible? What do you think? I need to get some good advice on this and hope I\'ve provided enough context to get a good answer',
+      //hids: [], // no answers yet
+      hids: ['1234','1235'],
       industriesToPostTo: ['2','19'],
       //industriesToPostTo: ['2','19','1','3','4','5','6','7','8','9','10'],
-      hashtags: ['23','20'],
-      hashtagsfreetext: ['my free text hashtag'],
-      isanon: 1,
+      hashtags: ['23','20','1','2','0',],
+      hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+      isanon: 0,
       authorinst: '',
-      authorinstfreetext: 'BPP',
+      authorinstfreetext: 'Villiers High School',
       authorrole: '',
     //  authorroleishidden: 0,
       authordegree: '',
       authortraining: '',
-      authorinsttype: 'train',
+      authorinsttype: 'sch',
       authorstate: 'Bedf',
       authorcountry: 'GBR',
       votes: 123,
@@ -72,29 +232,74 @@ class QA extends Component {
     const hidsArr = [
       {
         hid: '1234',
+        uid: '123',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        authorinst: '',
+        authorinstfreetext: 'Really Long Institution Name',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: 'BSc (Hons) Business Administration',
+        authortraining: '',
+        authorinsttype: 'uni',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
         datecreated: '2020-09-04T13:30:50.667Z',
         lastupdated: '2020-09-05T19:30:50.667Z',
         text: 'first answer',
+        isanon: 0,
         votes: 12,
         isacceptedanswer: true,
+        hashtags: ['23','20',],
+        hashtagsfreetext: ['my free text hashtag',],
         url: 'google.com/answer/#firstanswer',
       },
       {
         hid: '1235',
+        uid: '124',
+        fname: 'Dave',
+        lname: 'Petrie',
+        authorinst: '',
+        authorinstfreetext: '',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: '',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
         datecreated: '2020-09-04T13:30:50.667Z',
         lastupdated: '2020-09-06T13:30:50.667Z',
         text: 'second answer',
+        isanon: 1,
         votes: 10,
         isacceptedanswer: false,
+        hashtags: [],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#secondanswer',
       },
       {
         hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
         datecreated: '2020-09-04T13:30:50.667Z',
         lastupdated: '2020-09-07T13:30:50.667Z',
         text: 'third answer',
+        isanon: 0,
         votes: 1,
         isacceptedanswer: false,
+        hashtags: ['23','20'],
+        hashtagsfreetext: [],
         url: 'google.com/answer/#thirdanswer',
       }
     ]
@@ -161,6 +366,8 @@ class QA extends Component {
     const indArrToShow = qaItem.industriesToPostTo.length <= 2 ? qaItem.industriesToPostTo : qaItem.industriesToPostTo.slice(0,2)
     const hashtagsCommaString = (qaItem.hashtags.length > 0 || qaItem.hashtagsfreetext.length > 0) ? convertHashtags(qaItem.hashtags, qaItem.hashtagsfreetext) : []
     const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+    let aIsMe
+    let aCredentialText
 
     return (
       <React.Fragment>
@@ -192,13 +399,24 @@ class QA extends Component {
             </div>
           </div>
           <div className="mainBar" role="main" aria-label="question and answers">
-            <div>
-              <div>
-                <ChevronUp />
-                {qaItem.votes}
+            <div className="gridContainer">
+              <div className="gridLeftColumn paddingR20">
+                <div className="displayFlex flexDirColumn alignCenter">
+                {/*}  <ChevronUp /> */}
+                  <div className={"fontSize28 marginBottom5 " + (this.state[qaItem.qid+"-isUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                    <button type="button" className={"button-unstyled " + (this.state[qaItem.qid+"-isUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
+                      <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
+                        <path d="M2 25h32L18 9 2 25Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  {this.state[qaItem.qid+"-votes"]}
+                </div>
               </div>
-              <div>
-                <div>{qaItem.textdetail}</div>
+              <div className="gridRightColumn">
+                <div className="qDetailContainer marginBottom20">
+                  {qaItem.textdetail}
+                </div>
                 {hashtagsArray.length > 0 && (
                   <div className="tagsList">
                     {hashtagsArray.map((hashtag) => {
@@ -214,26 +432,29 @@ class QA extends Component {
                     })}
                   </div>
                 )}
-                <div>
-                  <div className="greyText fontSize12">
-                    <div>Share</div>
-                    <div>Follow</div>
+                <div className="marginTop20 marginBottom20 qActionsContainer">
+                  <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
+                  {/*  <div className="marginRight8">Share</div>
+                    <div className="marginRight8">Follow</div> */}
                     {qIsMe == 'isMe' && (
                       <Modal {...DeleteContentModalProps}>
                         <DeleteContentModalContent />
                       </Modal>
                     )}
-                    <div>Report</div>
+                  {/*  <div className="marginLeft8">Report</div> */}
                   </div>
-                  <div className="previewSuperContainer">
-                    <div className="textRight greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
-                    <div>
-                      <div className="credentialPreviewContainer">
-                        <div className="dispInlineBlock verticalAlignMiddle">
+                  <div className="credentialSuperContainer">
+                    <div className="credentialPreviewContainer">
+                      <div className="textLeft greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
+                      <div className="gridContainer marginTop10">
+                        <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
                           <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qAuthor.fname} showAsCircle picSize={360}/>
                         </div>
-                        <div className="credDetail dispInlineBlock verticalAlignMiddle">
-                          <span className="fontSize12"><strong>{qaItem.isanon ? "" : (qAuthor.fname + " " + qAuthor.lname + ", ")}</strong><span className="darkGreyText">{credentialText}</span></span>
+                        <div className="gridRightColumn textLeft whiteSpace fontSize12">
+                          <div>
+                            <strong>{qaItem.isanon ? "" : (qAuthor.fname + " " + qAuthor.lname)}</strong>
+                          </div>
+                          <div className="darkGreyText">{credentialText}</div>
                         </div>
                       </div>
                     </div>
@@ -242,7 +463,91 @@ class QA extends Component {
               </div>
             </div>
             <br />
-            <h3>Answers to follow...</h3>
+            <div>
+              {qaItem.hids.length == 0 ? (
+                <div className="qTitle qaPage marginBottom20 breakWord"><strong>Know someone who can answer?</strong> Share a link to this question via email or Twitter.</div>
+              ) : (
+                <div className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.hids.length} Answers</strong></div>
+              )}
+            </div>
+            {hidsArr.map((hid) => {
+              const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
+              const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
+
+              aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
+              aCredentialText = getCredText(hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
+
+              return (
+                <div key={hid.hid} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
+                  <div className="gridLeftColumn paddingR20">
+                    <div className="displayFlex flexDirColumn alignCenter">
+                      <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-isUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                        <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-isUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
+                          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M2 25h32L18 9 2 25Z"/>
+                          </svg>
+                        </button>
+                      </div>
+                      {this.state[hid.hid+'-votes']}
+                      {hid.isacceptedanswer == true && (
+                        <div className="greenText marginTop10 fontSize25">
+                          <Check />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="gridRightColumn">
+                    <div className="qDetailContainer marginBottom20">
+                      {hid.text}
+                    </div>
+                    {aHashtagsArray.length > 0 && (
+                      <div className="tagsList">
+                        {aHashtagsArray.map((hashtag) => {
+                          return (
+                            <span
+                              key={hashtag}
+                              className="multiple value paddingR"
+                              id={hashtag}
+                            >
+                              {hashtag}
+                            </span>
+                          )
+                        })}
+                      </div>
+                    )}
+                    <div className="marginTop20 marginBottom20 qActionsContainer">
+                      <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
+                      {/*  <div className="marginRight8">Share</div>
+                        <div className="marginRight8">Follow</div> */}
+                        {aIsMe == 'isMe' && (
+                          <Modal {...DeleteContentModalProps}>
+                            <DeleteContentModalContent />
+                          </Modal>
+                        )}
+                      {/*  <div className="marginLeft8">Report</div> */}
+                      </div>
+                      <div className="credentialSuperContainer">
+                        <div className="credentialPreviewContainer">
+                          <div className="textLeft greyText fontSize12">answered <DateCalc time={hid.datecreated} showPureDate /> at <TimeCalc time={hid.datecreated} /></div>
+                          <div className="gridContainer marginTop10">
+                            <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
+                              <Avatar userID={hid.uid} isAnon={hid.isanon} userName={hid.isanon ? 'Anonymous' : hid.fname} showAsCircle picSize={360}/>
+                            </div>
+                            <div className="gridRightColumn textLeft whiteSpace fontSize12">
+                              <div>
+                                <strong>{hid.isanon ? "" : (hid.fname + " " + hid.lname)}</strong>
+                              </div>
+                              <div className="darkGreyText">{aCredentialText}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              )
+            })}
           </div>
           <div className="sideBar" role="complementary" aria-label="sidebar">
             SIDEBAR PLACEHOLDER

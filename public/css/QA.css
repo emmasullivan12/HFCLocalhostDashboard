@@ -1,4 +1,33 @@
 .qTitle.qaPage{
+  font-size: 22px;
   margin-top: unset;
   margin-right: 180px;
+}
+.qDetailContainer{
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.qActionsContainer{
+  display: flex;
+  align-items: flex-start!important;
+  -webkit-align-items: flex-start!important;
+}
+@media only screen and (max-width: 425px) {
+  .qActionsContainer{
+    display: block;
+  }
+}
+.qActionsBox{
+  width: 96px!important;
+  flex: 1 auto!important;
+  -webkit-flex: 1 auto!important;
+  -moz-flex: 1 auto!important;
+  -ms-flex: 1 auto!important;
+  flex-wrap: wrap!important;
+  -webkit-flex-wrap: wrap!important;
+  -moz-flex-wrap: wrap!important;
+  flex-wrap: wrap!important;
+}
+.credentialSuperContainer{
+  width: 250px;
 }
