@@ -570,6 +570,9 @@ table th .description{
 .textRight{
   text-align: right!important;
 }
+.floatUnset{
+  float: unset!important;
+}
 .left{
   left: 0!important;
 }
@@ -866,6 +869,15 @@ table th .description{
   top: -10px;
   transform: scaleY(-1);
   left: 30px;
+}
+.tooltip .tooltiptext.acceptedAnswer{
+  bottom: -40px;
+  margin-left: -20px;
+}
+.tooltip .tooltiptext.acceptedAnswer:after{
+  top: -10px;
+  transform: scaleY(-1);
+  left: 20px;
 }
 .tooltip .tooltiptext.below{
   bottom: unset;

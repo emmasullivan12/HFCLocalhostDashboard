@@ -25,26 +25,29 @@ class DisplayMsgFile extends Component {
 
   render() {
   const {isFlexContainerOpen} = this.state;
-  const {file, error, isLastPic, handleLastPic, msgId} = this.props;
+  const {file, error, isLastPic, handleLastPic, msgId, isQA} = this.props;
+  let type = file.fileType ? file.fileType : file.type
   let fileType
-  if (file.fileType === 'image/png' || file.fileType === 'image/jpeg' || file.fileType === 'image/bmp') {
+  if (type === 'image/png' || type === 'image/jpeg' || type === 'image/bmp') {
     fileType = 'img'
-  } else if (file.fileType === 'application/pdf') {
+  } else if (type === 'application/pdf') {
     fileType = 'pdf'
-  } else if (file.fileType === 'application/vnd.ms-excel' || file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || file.fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.template' || file.fileType === 'application/vnd.ms-excel.sheet.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.template.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.addin.macroEnabled.12' || file.fileType === 'application/vnd.ms-excel.sheet.binary.macroEnabled.12') {
+  } else if (type === 'application/vnd.ms-excel' || type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.template' || type === 'application/vnd.ms-excel.sheet.macroEnabled.12' || type === 'application/vnd.ms-excel.template.macroEnabled.12' || type === 'application/vnd.ms-excel.addin.macroEnabled.12' || type === 'application/vnd.ms-excel.sheet.binary.macroEnabled.12') {
     fileType = 'xls'
-  } else if (file.fileType === 'application/msword' || file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || file.fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template' || file.fileType === 'application/vnd.ms-word.document.macroEnabled.12' || file.fileType === 'application/vnd.ms-word.template.macroEnabled.12') {
+  } else if (type === 'application/msword' || type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template' || type === 'application/vnd.ms-word.document.macroEnabled.12' || type === 'application/vnd.ms-word.template.macroEnabled.12') {
     fileType = 'word'
-  } else if (file.fileType === 'application/mspowerpoint' || file.fileType === 'application/ms-powerpoint' || file.fileType === 'application/mspowerpnt' || file.fileType === 'application/vnd-mspowerpoint' || file.fileType === 'application/powerpoint' || file.fileType === 'application/x-powerpoint' || file.fileType === 'application/vnd.ms-powerpoint' || file.fileType === 'application/vnd.ms-powerpoint.presentation.macroEnabled.12' || file.fileType === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
+  } else if (type === 'application/mspowerpoint' || type === 'application/ms-powerpoint' || type === 'application/mspowerpnt' || type === 'application/vnd-mspowerpoint' || type === 'application/powerpoint' || type === 'application/x-powerpoint' || type === 'application/vnd.ms-powerpoint' || type === 'application/vnd.ms-powerpoint.presentation.macroEnabled.12' || type === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
     fileType = 'ppt'
   } else fileType = 'other'
 
     return (
       <React.Fragment>
         <div className="display-file-container">
-          <div className="file-name">
-            <TextParser text={file.title}/>
-          </div>
+          {file.title && (
+            <div className="file-name">
+              <TextParser text={file.title}/>
+            </div>
+          )}
           <button type="button" onClick={this.toggleFlexContainer} className="file-title-container button-unstyled">
             <span className="file-title">
               {file.name}
@@ -55,7 +58,7 @@ class DisplayMsgFile extends Component {
           </button>
           {isFlexContainerOpen && (
             <div className="msg-img-container">
-              <div className="msg-img-content">
+              <div className={"msg-img-content" + isQA == true ? " floatUnset" : ""}>
                 <a className={error ? "disabled" : null} href='' target="_blank" rel="noopener noreferrer">
                   {fileType === 'img' && (
                     <img

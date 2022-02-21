@@ -206,7 +206,14 @@ class ProspelaDashboard extends Component{
       {q: 'Teacher\'s First Name:', aType: 'text', req: 1, maxLength: 35, placeholder: 'Type first name...', name: 'classteacherfname'},
       {q: 'Teacher\'s Last Name:', aType: 'text', req: 1, maxLength: 35, placeholder: 'Type last name...', name: 'classteacherlname'},
       {q: 'Teacher\'s Email:', aType: 'text', req: 1, maxLength: 350, placeholder: 'Type email...', name: 'classemailtonotify'},
-      {q: 'What subject do you teach?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subject...', placeholderOnClick: 'Choose your main subject specialism:', name: 'classsubject', idValue: 'value', valueToShow: 'label', options: [
+      {q: 'Are you from a School/College or University?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'eduType', valueToShow: 'label', options: [
+        {value: '0', label: 'School/College'},
+        {value: '1', label: 'University'},
+      ]},
+      {q: 'Which School/College do you work at?', conditionalOn: 'eduType', showIf: [0], aType: 'autocomplete', req: 1, placeholder: 'Type your School name...', name: 'schinst', componentUpdatesState: 'ukSchsList', fileToRender: 'UKSchs', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+      {q: 'Which University do you work at?', conditionalOn: 'eduType', showIf: [1], aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniinst', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
+      {q: 'Class Name:', detail: 'e.g. Mr. Elvie\'s Music Class, Year 12 Maths', aType: 'text', req: 1, maxLength: 50, placeholder: 'Type Class name...', name: 'groupname'},
+      {q: 'Does this group relate to a particular subject (leave blank if not)?', aType: 'autocompleteMulti', req: 0, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subject...', placeholderOnClick: 'Choose your main subject specialism:', name: 'classsubject', idValue: 'value', valueToShow: 'label', options: [
         {value: '0', label: 'Accounting'},
         {value: '1', label: 'Afrikaans'},
         {value: '2', label: 'Ancient History'},
@@ -325,13 +332,6 @@ class ProspelaDashboard extends Component{
         {value: '114', label: 'Welsh'},
         {value: '115', label: 'World Development'},
       ]},
-      {q: 'Are you from a School/College or University?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'eduType', valueToShow: 'label', options: [
-        {value: '0', label: 'School/College'},
-        {value: '1', label: 'University'},
-      ]},
-      {q: 'Which School/College do you work at?', conditionalOn: 'eduType', showIf: [0], aType: 'autocomplete', req: 1, placeholder: 'Type your School name...', name: 'schinst', componentUpdatesState: 'ukSchsList', fileToRender: 'UKSchs', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
-      {q: 'Which University do you work at?', conditionalOn: 'eduType', showIf: [1], aType: 'autocomplete', req: 1, placeholder: 'Type your University name...', name: 'uniinst', componentUpdatesState: 'ukUnisList', fileToRender: 'UKUnis', idValue: 'value', valueToShow: 'label', showDetail: true, detailToShow: 'location', noSuggestionsCTAclass: 'ModalOpenBtn ModalOpenBtn-noSuggestionsCTABtn'},
-      {q: 'Class Name:', detail: 'e.g. Mr. Elvie\'s Music Class, Chess Club', aType: 'text', req: 1, maxLength: 50, placeholder: 'Type Class name...', name: 'groupname'},
     ]
 
     return(

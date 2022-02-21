@@ -6,6 +6,7 @@ import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
 import {Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
+import DisplayMsgFile from './DisplayMsgFile.js';
 import Modal from './Modal';
 import {getIndustryDeets, convertHashtags, getCredText, timeSince} from './UserDetail.js';
 
@@ -15,6 +16,13 @@ const AddHighlightModalProps = {
   ariaLabel: 'Ask a Question',
   triggerText: 'Ask Question',
   usedFor: 'addHighlightQApage',
+  changeInitFocus: true,
+  wider: true
+}
+const AddAnswerModalProps = {
+  ariaLabel: 'Add Answer',
+  triggerText: 'Add Answer',
+  usedFor: 'addAnswerQApage',
   changeInitFocus: true,
   wider: true
 }
@@ -29,7 +37,6 @@ class QA extends Component {
   constructor () {
     super();
     this.state = {
-      //isUpvoted: false,
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
@@ -59,7 +66,7 @@ class QA extends Component {
       authorinsttype: 'uni',
       authorstate: 'Bedf',
       authorcountry: 'GBR',
-      votes: 123,
+      votes: ['123','234','345','456'],
     //  reactions jsonb
     /*  seen: [
           mentors: [
@@ -93,8 +100,8 @@ class QA extends Component {
         lastupdated: '2020-09-05T19:30:50.667Z',
         text: 'first answer',
         isanon: 0,
-        votes: 12,
-        isacceptedanswer: true,
+        votes: ['12','23'],
+        isacceptedanswer: false,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#firstanswer',
@@ -117,8 +124,8 @@ class QA extends Component {
         lastupdated: '2020-09-06T13:30:50.667Z',
         text: 'second answer',
         isanon: 1,
-        votes: 10,
-        isacceptedanswer: false,
+        votes: ['12','23'],
+        isacceptedanswer: true,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#secondanswer',
@@ -141,7 +148,7 @@ class QA extends Component {
         lastupdated: '2020-09-07T13:30:50.667Z',
         text: 'third answer',
         isanon: 0,
-        votes: 1,
+        votes: ['123','20'],
         isacceptedanswer: false,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
@@ -153,15 +160,14 @@ class QA extends Component {
       this.countVotes(hid.hid, hid.votes)
     });
     /* this.setState({
-      [qaItem.qid+"-isUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
-      [FOR EACH hid.hid+"-isUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
+      [qaItem.qid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
+      [FOR EACH hid.hid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
     }) */
   }
 
   toggleUpvote = (postId) => {
-    const currentState = this.state[postId+"-isUpvoted"];
-console.log(postId)
-console.log(currentState)
+    const currentState = this.state[postId+"-userUpvoted"];
+
     this.setState(prevState => {
       let newVotes, newIsUpvoted
       if (currentState == false || currentState == undefined) {
@@ -171,19 +177,19 @@ console.log(currentState)
         newVotes = prevState[postId+'-votes'] - 1
         newIsUpvoted = false
       }
-      console.log(newVotes)
-      console.log(newIsUpvoted)
 
       return {
-        [postId+"-isUpvoted"]: newIsUpvoted,
+        [postId+"-userUpvoted"]: newIsUpvoted,
         [postId+'-votes']: newVotes
       }
     })
   }
 
   countVotes = (hid, votes) => {
+    const myID = '123'; //223456
     this.setState({
-      [hid+'-votes']: votes
+      [hid+'-votes']: votes.length,
+      [hid+'-userUpvoted']: votes.includes(myID)
     })
   }
 
@@ -211,7 +217,8 @@ console.log(currentState)
       authorinsttype: 'sch',
       authorstate: 'Bedf',
       authorcountry: 'GBR',
-      votes: 123,
+      votes: ['123','234','345','456'],
+      urlText: "what-best-wear-to-interview"
     //  reactions jsonb
     /*  seen: [
           mentors: [
@@ -228,6 +235,14 @@ console.log(currentState)
     }
     const qAuthor = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
     const myID = '123'; //223456
+    const userRole = 'mentor'
+  /*  const user = {
+      birthday: '2015-02-02T13:30:50.667Z'
+    }
+    var ts = new Date(user.birthday);
+    var today = new Date();
+    const age = today.getFullYear() - ts.getFullYear()
+    const isU18 = age < 18;*/
     const qIsMe = (qaItem.uid === myID) ? 'isMe' : 'isntMe';
     const hidsArr = [
       {
@@ -248,11 +263,19 @@ console.log(currentState)
         lastupdated: '2020-09-05T19:30:50.667Z',
         text: 'first answer',
         isanon: 0,
-        votes: 12,
-        isacceptedanswer: true,
-        hashtags: ['23','20',],
+        votes: ['12','23'],
+        isacceptedanswer:  true,
+        hashtags: ['23','20'],
         hashtagsfreetext: ['my free text hashtag',],
         url: 'google.com/answer/#firstanswer',
+        files: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '124', name: 'My PDF', type: 'application/pdf'},
+          {fileid: '125', name: 'MyExcelspreadsheet.xls', type: 'application/vnd.ms-excel'},
+          {fileid: '126', name: 'MyWorddocfilename.word', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'},
+          {fileid: '127', name: 'MyPOWERPOINTBABY!', type: 'application/vnd-mspowerpoint'},
+          {fileid: '128', name: 'My other doc format', type: 'other'}
+        ]
       },
       {
         hid: '1235',
@@ -272,7 +295,7 @@ console.log(currentState)
         lastupdated: '2020-09-06T13:30:50.667Z',
         text: 'second answer',
         isanon: 1,
-        votes: 10,
+        votes: ['12','23'],
         isacceptedanswer: false,
         hashtags: [],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
@@ -296,9 +319,9 @@ console.log(currentState)
         lastupdated: '2020-09-07T13:30:50.667Z',
         text: 'third answer',
         isanon: 0,
-        votes: 1,
+        votes: ['12','23'],
         isacceptedanswer: false,
-        hashtags: ['23','20'],
+        hashtags: ['123','20','2'],
         hashtagsfreetext: [],
         url: 'google.com/answer/#thirdanswer',
       }
@@ -311,9 +334,9 @@ console.log(currentState)
       }
 
       answer.text = hid.text
-      answer.upvoteCount = hid.votes
+      answer.upvoteCount = hid.votes.length
       if (hid.url != '') {
-        answer.url = hid.url
+        answer.url = "https://app.prospela.com/questions/" + hid.url
       }
 
       /*  "author": {
@@ -326,12 +349,13 @@ console.log(currentState)
     const qaStructuredData = {
       "@context": "https://schema.org",
       "@type": "QAPage",
+      "url": "https://app.prospela.com/questions/" + qaItem.qid + "/" + qaItem.urlText,
       "mainEntity": {
         "@type": "Question",
         "name": qaItem.title,
         "text": qaItem.textdetail,
         "answerCount": qaItem.hids.length,
-        "upvoteCount": qaItem.votes,
+        "upvoteCount": qaItem.votes.length,
       /*  "author": {
           "@type": "Person",
           "name": "New Baking User"
@@ -344,9 +368,9 @@ console.log(currentState)
               "@type": "Person",
               "name": "New Baking User"
             },*/
-            "upvoteCount": acceptedAnswer[0].votes,
+            "upvoteCount": acceptedAnswer[0].votes.length,
             ...(acceptedAnswer[0].url != '' && {
-              "url": acceptedAnswer[0].url, // This is not required, but strongly recommended
+              "url": "https://app.prospela.com/questions/" + acceptedAnswer[0].url, // This is not required, but strongly recommended
             })
           },
         }),
@@ -359,7 +383,15 @@ console.log(currentState)
     let activeDatesArr = []
 
     activeDatesArr.push(qaItem.lastupdated)
-    hidsArr.map((hid) => {
+
+   let suggestedAnswersSorted = suggestedAnswers.sort((a, b) => {
+     return b.votes.length - a.votes.length || new Date(b.lastupdated) - new Date(a.lastupdated);
+   });
+   let hidsArrSorted = [
+     ...acceptedAnswer,
+     ...suggestedAnswersSorted
+   ]
+    hidsArrSorted.map((hid) => {
       activeDatesArr.push(hid.lastupdated)
     });
     const mostRecentActivityDate = activeDatesArr.sort().slice(-1)
@@ -379,9 +411,16 @@ console.log(currentState)
             <div className="chatItemFlexContainer">
               <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
               <span className="absolute right20">
-                <Modal {...AddHighlightModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                </Modal>
+                {userRole == 'mentee' && (
+                  <Modal {...AddHighlightModalProps}>
+                    <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                  </Modal>
+                )}
+                {userRole == 'mentor' && (
+                  <Modal {...AddAnswerModalProps}>
+                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor'/>
+                  </Modal>
+                )}
               </span>
             </div>
             <div className="darkGreyText fontSize13">
@@ -403,8 +442,8 @@ console.log(currentState)
               <div className="gridLeftColumn paddingR20">
                 <div className="displayFlex flexDirColumn alignCenter">
                 {/*}  <ChevronUp /> */}
-                  <div className={"fontSize28 marginBottom5 " + (this.state[qaItem.qid+"-isUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                    <button type="button" className={"button-unstyled " + (this.state[qaItem.qid+"-isUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
+                  <div className={"fontSize28 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                    <button type="button" className={"button-unstyled " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
                       <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
                         <path d="M2 25h32L18 9 2 25Z"/>
                       </svg>
@@ -470,7 +509,7 @@ console.log(currentState)
                 <div className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.hids.length} Answers</strong></div>
               )}
             </div>
-            {hidsArr.map((hid) => {
+            {hidsArrSorted.map((hid) => {
               const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
               const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
 
@@ -481,8 +520,8 @@ console.log(currentState)
                 <div key={hid.hid} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
                   <div className="gridLeftColumn paddingR20">
                     <div className="displayFlex flexDirColumn alignCenter">
-                      <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-isUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                        <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-isUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
+                      <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                        <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
                           <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
                             <path d="M2 25h32L18 9 2 25Z"/>
                           </svg>
@@ -490,8 +529,11 @@ console.log(currentState)
                       </div>
                       {this.state[hid.hid+'-votes']}
                       {hid.isacceptedanswer == true && (
-                        <div className="greenText marginTop10 fontSize25">
+                        <div className="greenText marginTop10 fontSize25 tooltip">
                           <Check />
+                          <span className="tooltiptext acceptedAnswer">
+                            Accepted answer
+                          </span>
                         </div>
                       )}
                     </div>
@@ -500,6 +542,20 @@ console.log(currentState)
                     <div className="qDetailContainer marginBottom20">
                       {hid.text}
                     </div>
+                    {hid.files && hid.files.length > 0 && (
+                      <div className="answerFilesContainer marginBottom20">
+                        {hid.files.map((file, index) => {
+                          return (
+                            <div className="extra-content-container" key={file.fileid}>
+                              <DisplayMsgFile
+                                file={file}
+                                isQA
+                              />
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )}
                     {aHashtagsArray.length > 0 && (
                       <div className="tagsList">
                         {aHashtagsArray.map((hashtag) => {
@@ -548,10 +604,28 @@ console.log(currentState)
 
               )
             })}
+            <div className="marginBottom50 marginTop20">
+              {userRole == 'mentee' && (
+                <div>
+                  <div className="qTitle marginBottom5"><strong>Not the answer you were looking for?</strong> Ask your own question</div>
+                  <Modal {...AddHighlightModalProps}>
+                    <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                  </Modal>
+                </div>
+              )}
+              {userRole == 'mentor' && (
+                <div>
+                  <div className="qTitle marginBottom5"><strong>Got something to add?</strong> The Prospela community would love to hear it!</div>
+                  <Modal {...AddAnswerModalProps}>
+                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor'/>
+                  </Modal>
+                </div>
+              )}
+            </div>
           </div>
-          <div className="sideBar" role="complementary" aria-label="sidebar">
+          {/*}<div className="sideBar" role="complementary" aria-label="sidebar">
             SIDEBAR PLACEHOLDER
-          </div>
+          </div>*/}
         </div>
       </React.Fragment>
     );

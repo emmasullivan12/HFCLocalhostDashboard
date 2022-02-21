@@ -64,6 +64,7 @@ class AddHighlightTextBox extends Component {
       showCredentialUpdatedMsg: false,
       postSuccess: false,
       industriesToPostTo: [],
+    //  selectedFiles: [],
       selectedFiles: [
         {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
         {fileid: '124', name: 'My PDF', type: 'application/pdf'},
@@ -597,6 +598,10 @@ class AddHighlightTextBox extends Component {
       .filter(industry => userInput.includes(industry.label))
       .map(value => value.value)
 
+    if (userInput.includes("General Advice")) {
+      newArray.push("99999")
+    }
+
     this.setState({
       industriesToPostTo: newArray,
     })
@@ -707,9 +712,9 @@ class AddHighlightTextBox extends Component {
     var currYr = new Date().getFullYear()
     const startingCredentialPreviewText = this.getStartingCredText(roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country)
     const industryGroups = [
-      ...industryOptions,
-      {value: '', label: 'Other', iconFA: 'fas fa-hashtag', isTitle: true},
+      {value: '', label: 'General', iconFA: 'fas fa-hashtag', isTitle: true},
       {value: '99999', label: 'General Advice', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+      ...industryOptions,
     ]
     const isEnabled = this.canBeSubmitted();
 

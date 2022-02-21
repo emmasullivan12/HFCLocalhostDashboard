@@ -193,6 +193,7 @@
 
 .ModalOpenBtn-addHighlight,
 .ModalOpenBtn-addHighlightQApage,
+.ModalOpenBtn-addAnswerQApage,
 .ModalOpenBtn-addHighlightDashboard,
 .ModalOpenBtn-addHighlightSml,
 .ModalOpenBtn-addHighlightMenuSml{
@@ -209,7 +210,8 @@
   background-color: #4e4ed6;
   font-size: 16px;
 }
-.ModalOpenBtn-addHighlightQApage{
+.ModalOpenBtn-addHighlightQApage,
+.ModalOpenBtn-addAnswerQApage{
   position: unset;
   visibility: visible;
   font-size: 14px;
@@ -256,11 +258,13 @@
 
 .ModalOpenBtn-addHighlight:hover,
 .ModalOpenBtn-addHighlightQApage:hover,
+.ModalOpenBtn-addAnswerQApage:hover,
 .ModalOpenBtn-addHighlightDashboard:hover,
 .ModalOpenBtn-addHighlightSml:hover,
 .ModalOpenBtn-askQuestionDashboard:hover,
 .ModalOpenBtn-addHighlight:active,
 .ModalOpenBtn-addHighlightQApage:active,
+.ModalOpenBtn-addAnswerQApage:active,
 .ModalOpenBtn-addHighlightDashboard:active,
 .ModalOpenBtn-addHighlightSml:active,
 .ModalOpenBtn-askQuestionDashboard:active{

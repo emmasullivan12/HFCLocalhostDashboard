@@ -16,7 +16,7 @@ ejs.renderFile(__dirname + "/emailTemplate-newClass.ejs", {groupName: groupName,
       from:  'Prospela',
       to: email,
       subject:  'Welcome to Prospela! You\'re new class: ' + groupName,
-      text: 'Welcome to the Prospela family! Prospela is a place students can get on-demand careers advice, insights to work-life and their own network of real employee contacts at anytime, anywhere. \n\nNext Steps \n\nSimply forward this email on for your students to join your class. \n\n Join ' + groupName + ': ' + link + ' \n\n Alternatively, if already a Prospela member here is your class code to join directly within the platform: ' + codetojoin,
+      text: 'Welcome to the Prospela family! Prospela is a place students can get anytime, anywhere access to on-demand careers advice, insights to work-life and start building their own professional network. \n\nNext Steps \n\nSimply forward this email on for your students to join your class. \n\n Join ' + groupName + ': ' + link + ' \n\n Alternatively, here is your class code to join directly within the platform if youre already a Prospela member: ' + codetojoin,
       html: data
     }
   }

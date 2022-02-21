@@ -56,6 +56,7 @@ function ButtonContent(props) {
         </div>
       )
     case 'addHighlightQApage':
+    case 'addAnswerQApage':
       return (
         <div>
           <span className="fontSize12 paddingR5"><i className="fas fa-pencil-alt" /></span> {text}
