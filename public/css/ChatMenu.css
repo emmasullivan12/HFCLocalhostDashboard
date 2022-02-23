@@ -189,6 +189,10 @@
   right: 66px;
   text-align: center;
 }
+.notificationNum.isMyContent{
+  right: unset;
+  margin-left: 20px;
+}
 .notificationNum.hasTooltip{
   margin-right: -81px;
 }

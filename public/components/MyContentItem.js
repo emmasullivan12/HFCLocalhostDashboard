@@ -65,6 +65,7 @@ class MyContentItem extends Component {
     if (contentType == 'q') {
       const hashtagsCommaString = (q.hashtags.length > 0 || q.hashtagsfreetext.length > 0) ? convertHashtags(q.hashtags, q.hashtagsfreetext) : []
       const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+      const hasUnreadAnswers = true
 
       return (
         //<div className="contentBox landingCTA">
@@ -76,6 +77,9 @@ class MyContentItem extends Component {
                   <Check />
                 </span>
                 <span>{q.hids.length} {q.hids.length == 1 ? 'answer' : 'answers'}</span>
+                {hasUnreadAnswers && (
+                  <div className="notificationNum isMyContent">New</div>
+                )}
               </span>
             )}
             {q.hids.length == 0 && (

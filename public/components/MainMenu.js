@@ -45,6 +45,7 @@ class MainMenu extends Component {
           </div>
         );
     } else {
+      const hasUnreadAnswers = true
       return (
         <div className="mainMenu">
           <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>
@@ -52,7 +53,13 @@ class MainMenu extends Component {
           <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>
-          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>My Activity</NavLink>
+          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
+            My Activity
+            {/*<span className={"notificationNum" + (hasTooltip == true ? ' hasTooltip' : '') + (isGroupChannel == true ? ' channel' : '')}>{text}</span */}
+            {hasUnreadAnswers && (
+              <span className="notificationNum">New</span>
+            )}
+          </NavLink>
         {/*}  <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
           <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink> */}
         </div>

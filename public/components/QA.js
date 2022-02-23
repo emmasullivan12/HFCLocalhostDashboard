@@ -158,7 +158,7 @@ class QA extends Component {
     ]
     this.countVotes(qaItem.qid, qaItem.votes)
     hidsArr.map((hid) => {
-      this.countVotes(hid.hid, hid.votes)
+      return this.countVotes(hid.hid, hid.votes)
     });
     /* this.setState({
       [qaItem.qid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
@@ -418,7 +418,7 @@ class QA extends Component {
      ...suggestedAnswersSorted
    ]
     hidsArrSorted.map((hid) => {
-      activeDatesArr.push(hid.lastupdated)
+      return activeDatesArr.push(hid.lastupdated)
     });
     const mostRecentActivityDate = activeDatesArr.sort().slice(-1)
     const indArrToShow = qaItem.industriesToPostTo.length <= 2 ? qaItem.industriesToPostTo : qaItem.industriesToPostTo.slice(0,2)
