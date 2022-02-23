@@ -637,7 +637,7 @@ class AddHighlightTextBox extends Component {
     const {isMenteeQ, isAddAnswer} = this.props
 
     return (
-      ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (!isAddAnswer && industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
+      ((selectedFiles.length > 0 ? (errorFileSize == false && errorFileNumber == false) : true) && (!isAddAnswer && industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
       (endingHashtagsArr.length > 0 && showMaxReachedError != true))
     );
   }
@@ -948,8 +948,8 @@ class AddHighlightTextBox extends Component {
             </div>
           )}
           <p className="footer-container textLeft" id="notAllowedTextAddHighlight"/>
-          <div className={"fontSize14 textLeft" + (isMenteeQ == true ? " marginTop35" : (isAddAnswer == true ? " marginTop20" : " marginTop50"))}>
-            {isMenteeQ != true && selectedFiles && selectedFiles.length >= 1 && (
+          <div className={"fontSize14 textLeft" + (isAddAnswer == true ? " marginTop20" : " marginTop50")}>
+            {selectedFiles && selectedFiles.length >= 1 && (
               <div className="paddingR20 paddingL20 marginBottom20 fileBoxesContainer">
                 {selectedFiles.map((file, index) => {
                   const fileName = file.name;
@@ -1035,10 +1035,10 @@ class AddHighlightTextBox extends Component {
                 })}
               </div>
             )}
-            {isMenteeQ != true && errorFileSize && (
+            {errorFileSize && (
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Files need to be under 25MB in size</div>
             )}
-            {isMenteeQ != true && errorFileNumber && (
+            {errorFileNumber && (
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
             {isAddAnswer != true && (
@@ -1126,26 +1126,22 @@ class AddHighlightTextBox extends Component {
           </div>
           <div className="paddingL20 paddingR20">
             <div className="absolute">
-              {isMenteeQ != true && (
-                <React.Fragment>
-                  <input
-                    type="file"
-                    id="fileSelectCamera"
-                    name="selectedFiles"
-                    className="inputFile addHighlight BlankBtn"
-                    placeholder="Choose a file..."
-                    onChange={this.handleChange}
-                    minsize={0}
-                    title=""
-                    required
-                  />
-                  <label htmlFor="fileSelectCamera" className="ModalOpenBtn-highlightPicContainer">
-                    <div type="button" className="picContainer">
-                      <i className="fas fa-camera" />
-                    </div>
-                  </label>
-                </React.Fragment>
-              )}
+              <input
+                type="file"
+                id="fileSelectCamera"
+                name="selectedFiles"
+                className="inputFile addHighlight BlankBtn"
+                placeholder="Choose a file..."
+                onChange={this.handleChange}
+                minsize={0}
+                title=""
+                required
+              />
+              <label htmlFor="fileSelectCamera" className="ModalOpenBtn-highlightPicContainer">
+                <div type="button" className="picContainer">
+                  <i className="fas fa-camera" />
+                </div>
+              </label>
               <button type="button" className="highlightEmojiContainer" onClick={this.showEmojis} onKeyDown={this.showEmojis}>
                 <i className="hideOnHover far fa-smile" />
                 <i className="showOnHover fas fa-laugh" />
@@ -1164,44 +1160,38 @@ class AddHighlightTextBox extends Component {
                   />
                 </div>
               )}
-              {isMenteeQ != true && (
-                <React.Fragment>
-                  <input
-                    type="file"
-                    id="fileSelect"
-                    name="selectedFiles"
-                    className="inputFile addHighlight BlankBtn"
-                    placeholder="Choose a file..."
-                    onChange={this.handleChange}
-                    minsize={0}
-                    title=""
-                    required
-                  />
-                  <label htmlFor="fileSelect" className="ModalOpenBtn-highlightAttachmentContainer">
-                    <div type="button" className="attachmentContainer">
-                      <i className="fas fa-paperclip" />
-                    </div>
-                  </label>
-                </React.Fragment>
-              )}
+              <input
+                type="file"
+                id="fileSelect"
+                name="selectedFiles"
+                className="inputFile addHighlight BlankBtn"
+                placeholder="Choose a file..."
+                onChange={this.handleChange}
+                minsize={0}
+                title=""
+                required
+              />
+              <label htmlFor="fileSelect" className="ModalOpenBtn-highlightAttachmentContainer">
+                <div type="button" className="attachmentContainer">
+                  <i className="fas fa-paperclip" />
+                </div>
+              </label>
             </div>
             <button className="ModalOpenBtn ModalOpenBtn-postHighlight alignRight" type="button" disabled={!isEnabled} onClick={this.handleSubmit}>Post</button>
           </div>
-          {isMenteeQ != true && (
-            <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
-              <div className="animate">
-                <div className='topbottom'/>
-                <div className='leftright'/>
-              </div>
-              <div className="dragover-pane-overlay-info">
-                <div className="dragover-pane-overlay-pic">
-                  <div className="dragover-pane-overlay-picFile"/>
-                </div>
-                <div className="dragover-pane-overlay-title">Upload File(s)</div>
-                <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
-              </div>
+          <div className={"dragover-pane-overlay dragover-pane-overlay-" +this.state.dragover} >
+            <div className="animate">
+              <div className='topbottom'/>
+              <div className='leftright'/>
             </div>
-          )}
+            <div className="dragover-pane-overlay-info">
+              <div className="dragover-pane-overlay-pic">
+                <div className="dragover-pane-overlay-picFile"/>
+              </div>
+              <div className="dragover-pane-overlay-title">Upload File(s)</div>
+              <div className="dragover-pane-overlay-subtitle">Drop file here to share</div>
+            </div>
+          </div>
         {/*  <div className="modal-title">
             Create post
           </div>*/}
