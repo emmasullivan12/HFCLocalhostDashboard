@@ -55,7 +55,6 @@ class MainMenu extends Component {
           </FullPageModal>
           <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
             My Activity
-            {/*<span className={"notificationNum" + (hasTooltip == true ? ' hasTooltip' : '') + (isGroupChannel == true ? ' channel' : '')}>{text}</span */}
             {hasUnreadAnswers && (
               <span className="notificationNum">New</span>
             )}
