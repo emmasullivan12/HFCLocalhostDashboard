@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
-import {metaAdder, Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import {metaAdder, checkMobile, Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import Modal from './Modal';
@@ -43,6 +43,7 @@ class QA extends Component {
   }
 
   componentDidMount() {
+    window.addEventListener('resize', this.isMobile);
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -165,6 +166,10 @@ class QA extends Component {
     }) */
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.isMobile);
+  }
+
   toggleUpvote = (postId) => {
     const currentState = this.state[postId+"-userUpvoted"];
 
@@ -193,7 +198,15 @@ class QA extends Component {
     })
   }
 
+  isMobile = () => {
+    this.setState({
+      isMobile: checkMobile()
+    })
+  }
+
   render() {
+
+    const {isMobile} = this.state;
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -421,9 +434,9 @@ class QA extends Component {
         </script>
         <div className="padding25 marginTop20">
           <div className="borderBtm borderGrey paddingBtm marginBottom20">
-            <div className="chatItemFlexContainer">
+            <div className={isMobile == true ? "" : "chatItemFlexContainer"}>
               <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
-              <span className="absolute right20">
+              <span className={isMobile == true ? "dispBlock" : "absolute right20"}>
                 {userRole == 'mentee' && (
                   <Modal {...AddHighlightModalProps}>
                     <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>

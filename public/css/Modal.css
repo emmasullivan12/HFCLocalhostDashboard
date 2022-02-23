@@ -217,6 +217,13 @@
   font-size: 14px;
   height: 40px;
 }
+@media screen and (max-width: 600px) {
+  .ModalOpenBtn-addHighlightQApage,
+  .ModalOpenBtn-addAnswerQApage{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
 .ModalOpenBtn-addHighlightDashboard{
   visibility: visible;
   position: unset;
