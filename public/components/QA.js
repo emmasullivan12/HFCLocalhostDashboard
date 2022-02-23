@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
-import {Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import {metaAdder, Check, ChevronUp, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import Modal from './Modal';
@@ -346,10 +346,11 @@ class QA extends Component {
 
       return answer
     })
+    let qURL = "https://app.prospela.com/questions/" + qaItem.qid + "/" + qaItem.urlText
     const qaStructuredData = {
       "@context": "https://schema.org",
       "@type": "QAPage",
-      "url": "https://app.prospela.com/questions/" + qaItem.qid + "/" + qaItem.urlText,
+      "url": qURL,
       "mainEntity": {
         "@type": "Question",
         "name": qaItem.title,
@@ -379,6 +380,18 @@ class QA extends Component {
         })
       }
     }
+
+    // Add meta tags
+    metaAdder('property="og:type"', "website")
+    metaAdder('property="og:title"', qaItem.title + " - Prospela.com")
+    metaAdder('name="title"', qaItem.title + " - Prospela.com")
+    metaAdder('property="og:url"', qURL)
+    metaAdder('property="og:site_name"', "Prospela.com")
+    if(qaItem.textdetail) {
+      metaAdder('name="description"', qaItem.textdetail)
+      metaAdder('property="og:description"', qaItem.textdetail)
+    }
+
     const credentialText = getCredText(qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
     let activeDatesArr = []
 
@@ -418,7 +431,7 @@ class QA extends Component {
                 )}
                 {userRole == 'mentor' && (
                   <Modal {...AddAnswerModalProps}>
-                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor'/>
+                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer/>
                   </Modal>
                 )}
               </span>
@@ -437,7 +450,8 @@ class QA extends Component {
               <div>Active {timeSince(mostRecentActivityDate)}</div>
             </div>
           </div>
-          <div className="mainBar" role="main" aria-label="question and answers">
+        {/*  <div className="mainBar" role="main" aria-label="question and answers"> */}
+          <div role="main" aria-label="question and answers">
             <div className="gridContainer">
               <div className="gridLeftColumn paddingR20">
                 <div className="displayFlex flexDirColumn alignCenter">
@@ -617,7 +631,7 @@ class QA extends Component {
                 <div>
                   <div className="qTitle marginBottom5"><strong>Got something to add?</strong> The Prospela community would love to hear it!</div>
                   <Modal {...AddAnswerModalProps}>
-                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor'/>
+                    <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer/>
                   </Modal>
                 </div>
               )}

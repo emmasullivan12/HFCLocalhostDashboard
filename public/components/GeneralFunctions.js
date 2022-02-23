@@ -21,6 +21,23 @@ function isEdge() {
   }
 }
 
+function metaAdder(queryProperty, value) {
+  // Get an element if it exists already
+  let element = document.querySelector(`meta[${queryProperty}]`);
+
+  // Check if the element exists
+  if (element) {
+    // If it does just change the content of the element
+    element.setAttribute("content", value);
+  } else {
+    // It doesn't exist so lets make a HTML element string with the info we want
+    element = `<meta ${queryProperty} content="${value}" />`;
+
+    // And insert it into the head
+    document.head.insertAdjacentHTML("beforeend", element);
+  }
+}
+
 function getIcon(channelType) {
   switch(channelType) {
     case "general":
@@ -522,4 +539,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
+export {isIE, isEdge, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};

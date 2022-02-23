@@ -739,6 +739,9 @@ table th .description{
 .marginLeft8{
   margin-left: 8px;
 }
+.marginRight0 {
+  margin-right: 0px!important;
+}
 .marginRight {
   margin-right: 1rem;
 }

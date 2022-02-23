@@ -62,6 +62,7 @@ class JoinProgrammeModalContent extends Component {
     const { progCode, progName, messageFromServer } = this.state;
     const {userRole} = this.props;
     const isError = false;
+    const isClass = true;
     const nonPartnerInst = true; /// check school email (or prog code if signed up with personal email) for school partnership
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer == '') {
@@ -72,10 +73,10 @@ class JoinProgrammeModalContent extends Component {
             <span>Join a live Group</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
-          <p className="modalDesc alignL noMarginBlockEnd paddingBtm noPaddingR noPaddingL reqAsterisk">
-            {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your Employer to increase your company\'s collective impact'}
-          </p>
           <form className="leftRightPad">
+            <p className="modalDesc alignL noMarginBlockEnd paddingBtm noPaddingR noPaddingL reqAsterisk">
+              {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your Employer to increase your company\'s collective impact'}
+            </p>
             <input
               type="text"
               name="progCode"
@@ -137,10 +138,14 @@ class JoinProgrammeModalContent extends Component {
             <div className="ideas-Title">
               You&#39;re now a member of {progName}.
             </div>
-            <p className="landingCTADesc">
-              You can access all of your memberships within &#39;My Groups&#39;
-            </p>
-            <div className="showProgsPic"/>
+            {isClass != true && (
+              <React.Fragment>
+                <p className="landingCTADesc">
+                  You can access all of your memberships within &#39;My Groups&#39;
+                </p>
+                <div className="showProgsPic"/>
+              </React.Fragment>
+            )}
           </div>
         </React.Fragment>
       )

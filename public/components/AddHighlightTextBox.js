@@ -634,10 +634,10 @@ class AddHighlightTextBox extends Component {
 
   canBeSubmitted() {
     const {selectedFiles, errorFileSize, errorFileNumber, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
-    const {isMenteeQ} = this.props
+    const {isMenteeQ, isAddAnswer} = this.props
 
     return (
-      ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
+      ((selectedFiles.length > 0 ? (!isMenteeQ && errorFileSize == false && errorFileNumber == false) : true) && (!isAddAnswer && industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
       (endingHashtagsArr.length > 0 && showMaxReachedError != true))
     );
   }
@@ -684,7 +684,7 @@ class AddHighlightTextBox extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
-    const {isMenteeQ} = this.props
+    const {isMenteeQ, isAddAnswer} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -724,6 +724,11 @@ class AddHighlightTextBox extends Component {
           {isMenteeQ == true && (
             <div className="modal-title">
               Ask a public question
+            </div>
+          )}
+          {isAddAnswer == true && (
+            <div className="modal-title">
+              Add your answer
             </div>
           )}
           <div className="group-detail-item bright marginTop20">
@@ -912,12 +917,15 @@ class AddHighlightTextBox extends Component {
               {isMenteeQ == true && (
                 <div className="descriptor">Detail <i className="greyText">(optional)</i></div>
               )}
-              <div className={"input-box-container" + (isMenteeQ == true ? "" : " addHighlight")}>
+              {isAddAnswer == true && (
+                <div className="descriptor reqAsterisk">Your answer</div>
+              )}
+              <div className={"input-box-container" + ((isMenteeQ == true || isAddAnswer == true) ? "" : " addHighlight")}>
                 <div className="input-flexContainer">
                   <div className="textInput-container" id="chatMessageForm">
                     <textarea
                       ref={n => this.addMessageNode = n}
-                      className={"input-box addHighlight" + (isMenteeQ == true ? " showLargeBox" : "")}
+                      className={"input-box addHighlight" + ((isMenteeQ == true || isAddAnswer == true) ? " showLargeBox" : "")}
                       id="txtInput-box"
                       form="chatMessageForm"
                       value={text}
@@ -940,7 +948,7 @@ class AddHighlightTextBox extends Component {
             </div>
           )}
           <p className="footer-container textLeft" id="notAllowedTextAddHighlight"/>
-          <div className={"fontSize14 textLeft" + (isMenteeQ != true ? " marginTop50" : " marginTop35")}>
+          <div className={"fontSize14 textLeft" + (isMenteeQ == true ? " marginTop35" : (isAddAnswer == true ? " marginTop20" : " marginTop50"))}>
             {isMenteeQ != true && selectedFiles && selectedFiles.length >= 1 && (
               <div className="paddingR20 paddingL20 marginBottom20 fileBoxesContainer">
                 {selectedFiles.map((file, index) => {
@@ -1033,33 +1041,49 @@ class AddHighlightTextBox extends Component {
             {isMenteeQ != true && errorFileNumber && (
               <div className="paddingR20 paddingL20 marginBottom20 marginTopMinus20 redText">Max number of files uploaded is 5</div>
             )}
-            <div className="paddingR20 paddingL20">
-              <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to {isMenteeQ == true ? 'mentors in' : 'mentees interested in'}:</strong></label>
-              <div className="inlineForm">
-                <div className="form-group inlineLeft textLeft postToGroupContainer">
-                  <SelectBox
-                    multiple
-                    options={industryGroups}
-                    name='selectInd'
-                    placeholder='Select industry(s):'
-                    handleChange={this.handleIndChange}
-                    handleFocus={this.handleFocus}
-                    onBlur={this.handleBlur}
-              //      defaultChecked={industriesToPostTo}
-              //      handleTabPress={this.handleTabPress}
-              //      focusOnLoad
-                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    showIcon
-                    iconToShow='iconFA'
-                    showCheckbox
-                    showBubbleVersion
-                    required
-                  />
+            {isAddAnswer != true && (
+              <div className="paddingR20 paddingL20">
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to {isMenteeQ == true ? 'mentors in' : 'mentees interested in'}:</strong></label>
+                <div className="inlineForm">
+                  <div className="form-group inlineLeft textLeft postToGroupContainer">
+                    <SelectBox
+                      multiple
+                      options={industryGroups}
+                      name='selectInd'
+                      placeholder='Select industry(s):'
+                      handleChange={this.handleIndChange}
+                      handleFocus={this.handleFocus}
+                      onBlur={this.handleBlur}
+                //      defaultChecked={industriesToPostTo}
+                //      handleTabPress={this.handleTabPress}
+                //      focusOnLoad
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      showIcon
+                      iconToShow='iconFA'
+                      showCheckbox
+                      showBubbleVersion
+                      required
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+            {isAddAnswer == true && (
+              <div className="paddingR20 paddingL20 marginBottom20">
+                <div className="multiple padding20 fontSize14 lineHeight20pc marginRight0">
+                  <p><strong>Thanks for contributing an answer to Prospela!</strong></p>
+                  <ul>
+                    <li>Please be sure to <i>answer the question</i>. Provide details and share your experience, rather than asking for clarification in your post.</li>
+                    <li>Please <i>do not</i> share personal details</li>
+                    <li><i>Showcase your personality!</i> No need to be serious here if you don&#39;t want to be. Let young people see the variety of characters out there in the workplace!</li>
+                    <li>...remember to have fun!</li>
+                  </ul>
+                  <p>You&#39;re doing a great thing by paying it forward.</p>
+                </div>
+              </div>
+            )}
             <div className="paddingR20 paddingL20 descriptor">
-              <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> Suggested hashtags:</strong></div>
+              <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> {isAddAnswer == true ? 'Add hashtags:' : 'Suggested hashtags:'}</strong></div>
               <div className="form-group">
                 <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
                   {isMenteeQ == true ? 'Help your question reach more employees' : 'Help reach more mentees'}
@@ -1188,7 +1212,7 @@ class AddHighlightTextBox extends Component {
         <React.Fragment>
           <div className="modal-title">
             <div className="emoji-icon tada-emoji successBox" />
-            {isMenteeQ == true ? 'You posted a question!' : 'You posted a highlight!'}
+            {isMenteeQ == true ? 'You posted a question!' : (isAddAnswer == true ? 'You posted an answer!' : 'You posted a highlight!')}
           </div>
         {/*  <div className="success-container">
             <div className="ideas-Title">
