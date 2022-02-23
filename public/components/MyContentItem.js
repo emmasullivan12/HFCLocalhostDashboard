@@ -1,4 +1,4 @@
-// Dex last merged this code on 8th feb 2022
+// Dex last merged this code on 23rd feb 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -116,9 +116,9 @@ class MyContentItem extends Component {
           </div>
           <Router>
             <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc">
-              <Link to="/questions">
+            {/*  <Link to="/questions"> */}
                 <strong>{q.title}</strong>
-              </Link>
+            {/*  </Link> */}
             </div>
           </Router>
           {hashtagsArray.length > 0 && (
