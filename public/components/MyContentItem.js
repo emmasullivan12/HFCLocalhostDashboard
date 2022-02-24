@@ -1,4 +1,4 @@
-// Dex last merged this code on 23rd feb 2022 
+// Dex last merged this code on 23rd feb 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -51,7 +51,7 @@ class MyContentItem extends Component {
   }
 
   render() {
-    const {contentType, q} = this.props
+    const {contentType, post} = this.props
 
   /*
     datecreated: '2020-09-04T13:30:50.667Z',
@@ -62,8 +62,8 @@ class MyContentItem extends Component {
     hashtags: ['23','11'],
     hashtagsfreetext: ['my free text hashtag'] */
 
-    if (contentType == 'q') {
-      const hashtagsCommaString = (q.hashtags.length > 0 || q.hashtagsfreetext.length > 0) ? convertHashtags(q.hashtags, q.hashtagsfreetext) : []
+    if (contentType == 'questions' || contentType == 'answers' || contentType == 'generalPosts') {
+      const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
       const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
       const hasUnreadAnswers = true
 
@@ -71,18 +71,18 @@ class MyContentItem extends Component {
         //<div className="contentBox landingCTA">
         <div className="contentBox padding20">
           <div>
-            {q.hids.length > 0 && (
+            {post.hids.length > 0 && (
               <span className="multiple green">
                 <span className="tickNumSelected">
                   <Check />
                 </span>
-                <span>{q.hids.length} {q.hids.length == 1 ? 'answer' : 'answers'}</span>
+                <span>{post.hids.length} {post.hids.length == 1 ? 'answer' : 'answers'}</span>
                 {hasUnreadAnswers && (
                   <div className="notificationNum isMyContent">New</div>
                 )}
               </span>
             )}
-            {q.hids.length == 0 && (
+            {post.hids.length == 0 && (
               <span className="multiple grey">No answers yet</span>
             )}
             <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
@@ -121,7 +121,7 @@ class MyContentItem extends Component {
           <Router>
             <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc">
             {/*  <Link to="/questions"> */}
-                <strong>{q.title}</strong>
+                <strong>{post.title}</strong>
             {/*  </Link> */}
             </div>
           </Router>
@@ -142,7 +142,7 @@ class MyContentItem extends Component {
               })}
             </div>
           )}
-          <div className="textRight greyText fontSize14"><DateCalc time={q.datecreated} showPureDate /> at <TimeCalc time={q.datecreated} /></div>
+          <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
         </div>
       );
     }

@@ -32,6 +32,7 @@ class MainMenu extends Component {
 
   render() {
   const {userRole, onClick} = this.props;
+  const hasUnreadAnswers = true
 
     if(userRole === 'mentor' || userRole === 'pr') {
       return (
@@ -42,10 +43,15 @@ class MainMenu extends Component {
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>
+            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
+              My Activity
+              {hasUnreadAnswers && (
+                <span className="notificationNum">New</span>
+              )}
+            </NavLink>
           </div>
         );
     } else {
-      const hasUnreadAnswers = true
       return (
         <div className="mainMenu">
           <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>

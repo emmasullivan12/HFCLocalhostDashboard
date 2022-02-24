@@ -99,7 +99,7 @@ class HomepageCTAContainer extends Component {
           <MenteeFullSignUp />
         )}
         {step === 'joinedProg' && isClass == true && qidsArr.length == 0 && (
-          <AskAQPrompt />
+          <AskAQPrompt userRole="mentee"/>
         )}
         {step === 'joinedProg' && isClass == true && qidsArr.length > 0 && (
           <MenteeFullSignUp />
