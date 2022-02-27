@@ -362,6 +362,9 @@ table th .description{
   text-transform: uppercase;
   letter-spacing: .025em;
 }
+.cursorText{
+  cursor: text!important;
+}
 .fontSize30{
   font-size: 30px;
 }
@@ -1854,6 +1857,12 @@ a.button{
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   padding: .5rem 1rem .5rem 1rem;
   margin-bottom: 1rem;
+}
+.contentBox.withHover:hover{
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);
+  -webkit-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);
+  -moz-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);
+  cursor: pointer;
 }
 .bubbleContainer div:nth-child(5n+0){
   border: 1px solid #ad8105;

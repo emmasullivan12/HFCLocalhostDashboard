@@ -1,4 +1,4 @@
-// Last merged this code on 23rd feb 2022 
+// Last merged this code on 23rd feb 2022
 
 import React, { Component } from "react";
 
@@ -637,8 +637,8 @@ class AddHighlightTextBox extends Component {
     const {isMenteeQ, isAddAnswer} = this.props
 
     return (
-      ((selectedFiles.length > 0 ? (errorFileSize == false && errorFileNumber == false) : true) && (!isAddAnswer && industriesToPostTo.length > 0) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
-      (endingHashtagsArr.length > 0 && showMaxReachedError != true))
+      ((selectedFiles.length > 0 ? (errorFileSize == false && errorFileNumber == false) : true) && (isAddAnswer == true ? true : (industriesToPostTo.length > 0)) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
+      (isAddAnswer == true || endingHashtagsArr.length > 0) && showMaxReachedError != true)
     );
   }
 
@@ -1085,7 +1085,7 @@ class AddHighlightTextBox extends Component {
             <div className="paddingR20 paddingL20 descriptor">
               <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> {isAddAnswer == true ? 'Add hashtags:' : 'Suggested hashtags:'}</strong></div>
               <div className="form-group">
-                <label className="alignLeft darkGreyText noBold reqAsterisk" htmlFor="roleco">
+                <label className={"alignLeft darkGreyText noBold" + (isAddAnswer == true ? "" : " reqAsterisk")} htmlFor="roleco">
                   {isMenteeQ == true ? 'Help your question reach more employees' : 'Help reach more mentees'}
                   {showMaxReachedError && (
                     <span className="redText"> (You can only add up to 5)</span>
@@ -1113,7 +1113,7 @@ class AddHighlightTextBox extends Component {
                     maxNumValues={5}
                     idValue='value'
                     valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    required
+                    required={isAddAnswer == true ? false : true}
                   />
                   {errorLoadingHashtags === true && (
                     <div className="descriptor prompt error indRoleForm alignLeft">

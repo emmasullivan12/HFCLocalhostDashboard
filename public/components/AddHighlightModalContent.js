@@ -1,4 +1,4 @@
-// Last merged this code on 23rd feb 2022 
+// Last merged this code on 23rd feb 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -38,7 +38,7 @@ class AddHighlightModalContent extends Component {
             Share a highlight with mentees
           </div>
           <div className="postTypeContainer">
-            <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='qa'>
+            <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
               <div className="postTypeIcon fontSize30">
                 <i className="fas fa-question" />
               </div>
@@ -55,7 +55,7 @@ class AddHighlightModalContent extends Component {
           </div>
         </div>
       );
-    } else if (userRole == 'mentor' && highlightType == 'qa') {
+    } else if (userRole == 'mentor' && highlightType == 'answer') {
       const qid = '12345'
       return (
         <Router>

@@ -53,6 +53,7 @@ class MyContentItem extends Component {
   render() {
     const {contentType, post} = this.props
 
+  // QUESTIONSnpm
   /*
     datecreated: '2020-09-04T13:30:50.667Z',
     title: 'What is the best thing to wear to an interview?',
@@ -62,16 +63,27 @@ class MyContentItem extends Component {
     hashtags: ['23','11'],
     hashtagsfreetext: ['my free text hashtag'] */
 
+  // ANSWERS
+  /*  hid: '1234',
+    uid: '123',
+    qids: ['1234'], // relates to 1 question
+    datecreated: '2020-09-04T13:30:50.667Z',
+    lastupdated: '2020-09-05T19:30:50.667Z',
+    text: 'first answer',
+    isanon: 0,
+    votes: ['12','23'], */
+  //  hashtags: ['23','20','1','2','0',],
+  //  hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+
     if (contentType == 'questions' || contentType == 'answers' || contentType == 'generalPosts') {
       const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
       const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
       const hasUnreadAnswers = true
 
       return (
-        //<div className="contentBox landingCTA">
-        <div className="contentBox padding20">
+        <div className="contentBox withHover padding20">
           <div>
-            {post.hids.length > 0 && (
+            {contentType == 'questions' && post.hids.length > 0 && (
               <span className="multiple green">
                 <span className="tickNumSelected">
                   <Check />
@@ -82,7 +94,7 @@ class MyContentItem extends Component {
                 )}
               </span>
             )}
-            {post.hids.length == 0 && (
+            {contentType == 'questions' && post.hids.length == 0 && (
               <span className="multiple grey">No answers yet</span>
             )}
             <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
@@ -121,11 +133,17 @@ class MyContentItem extends Component {
           <Router>
             <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc">
             {/*  <Link to="/questions"> */}
-                <strong>{post.title}</strong>
+              <strong>{post.title}</strong>
             {/*  </Link> */}
             </div>
           </Router>
-          {hashtagsArray.length > 0 && (
+          {contentType == 'answers' && (
+            <div className="marginBottom20 answerSummary greyText">
+              <div className="darkGreyText">You answered: </div>
+              <div>{post.text}</div>
+            </div>
+          )}
+          {(contentType == 'questions' || contentType == 'generalPosts') && hashtagsArray.length > 0 && (
             <div className="tagsList">
               {hashtagsArray.map((hashtag) => {
                 return (
@@ -142,7 +160,29 @@ class MyContentItem extends Component {
               })}
             </div>
           )}
-          <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+          {contentType == 'answers' && (
+            <div>
+              {post.votes.length > 0 && (
+                <span className="multiple green">
+                  <span className="tickNumSelected cursorText">
+                    {contentType == 'answers' &&  (
+                      <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
+                        <path d="M2 25h32L18 9 2 25Z"/>
+                      </svg>
+                    )}
+                  </span>
+                  <span>{post.votes.length} {post.votes.length == 1 ? 'upvote' : 'upvotes'}</span>
+                </span>
+              )}
+              {post.votes.length == 0 && (
+                <span className="multiple grey">No upvotes yet</span>
+              )}
+              <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+            </div>
+          )}
+          {(contentType == 'questions' || contentType == 'generalPosts') && (
+            <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+          )}
         </div>
       );
     }
