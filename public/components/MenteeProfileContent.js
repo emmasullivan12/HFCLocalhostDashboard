@@ -530,7 +530,7 @@ class MenteeProfileContent extends Component {
       {value: '10', label: 'Learning an instrument'},
       {value: '11', label: 'Training for a sporting event'},
     ]*/
-    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon, mentee.workingonfreetext) : []
+    const workingOnCommaString = mentee.workingon.length > 0 ? convertWorkingOn(mentee.workingon, mentee.workingonfreetext) : []
     const workingOnArr = workingOnCommaString.length == 0 ? [] : workingOnCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)

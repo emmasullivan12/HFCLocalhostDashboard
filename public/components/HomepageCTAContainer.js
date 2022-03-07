@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022
+// Dex last merged this code on 7th mar 2022 
 
 import React, { Component } from "react";
 
@@ -54,7 +54,7 @@ class HomepageCTAContainer extends Component {
     const matchstatus = 'didSafeG';
     const groups = [];
     const groupsList = [
-      {gid: 1234, isclass: false},
+      {gid: 1234, isclass: true},
       {gid: 1235, isclass: false},
     ]
     const numClasses = groupsList.filter(group => group.isclass == true).length
