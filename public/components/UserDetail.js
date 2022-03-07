@@ -88,15 +88,26 @@ function convertRole(roles, rolesfreetext) {
   return rolesFullText.join(", ")
 }
 
-function convertWorkingOn(workingOn) {
+function convertWorkingOn(workingOn, workingOnFreeText) {
   let workingOnArray = [];
+  let workingOnArr;
 
-  const workingOnArr = workingOnOptions
-    .filter(item => workingOn.includes(parseInt(item.value,10)))
+  if(workingOn != null && workingOn != ''){
+    workingOnArr = workingOnOptions
+      .filter(item => workingOn.includes(parseInt(item.value,10)))
+  }
 
-  workingOnArr.forEach((x) => {
-    workingOnArray.push(x.label)
-  })
+  if(workingOnArr != null && workingOnArr != ''){
+    workingOnArr.forEach((x) => {
+      workingOnArray.push(x.label)
+    })
+  }
+
+  if(workingOnFreeText != null && workingOnFreeText != ''){
+    workingOnFreeText.forEach((y) => {
+      workingOnArray.push(y)
+    })
+  }
 
   return workingOnArray.join(", ")
 }

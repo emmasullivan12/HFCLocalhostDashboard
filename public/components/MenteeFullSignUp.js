@@ -37,6 +37,8 @@ class MenteeFullSignUp extends Component {
     const certainty = '';
     const networkSize = '';
     const mobile = '';
+    const workingOn = []
+    const workingOnFreeText = []
 
     const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
@@ -70,15 +72,17 @@ class MenteeFullSignUp extends Component {
         {value: '4', label: 'Women in the Workforce'},
         {value: '0', label: 'None'},
       ]},
-      {q: 'Are you working on any of the following activities, events, documents in the near future?', detail: 'This could be related to a personal or "career" goal. ... and your mentor match might be able to help!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select activities...', placeholderOnClick: 'Choose as many as you like:', name: 'workingOn', valueToShow: 'label', options: [
-        ...workingOnOptions,
-      ]},
+      ...(workingOn === '' && workingOnFreeText === '') ? [
+        {q: 'Are you working on any of the following activities, events, documents in the near future?', detail: 'This could be related to a personal or "career" goal. ... and your mentor match might be able to help!', aType: 'selectMulti', req: 1, showCheckbox: true, placeholder: 'Select activities...', placeholderOnClick: 'Choose as many as you like:', name: 'workingOn', valueToShow: 'label', options: [
+          ...workingOnOptions,
+        ]},
+      ] : [],
       {q: 'Nearly there! We have a few quick questions about your current situation', aType: 'interim', name: 'interim'},
       ... (eetStatus === 'sch') ? [
         ... (subjects === '' && subjectsFreeText === '') ? [
           {q: 'What subjects are you studying?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
             ...subjectsOptions,
-        ]},
+          ]},
         ] : [],
         ... (gradeType === '') ? [
           {q: 'What type of student do you consider yourself to be?', detail: 'This will help us give you realistic advice relevant to your situation', aType: 'select', req: 1, name: 'gradeType', placeholder: 'Select type...', valueToShow: 'label', options: [

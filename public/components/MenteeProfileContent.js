@@ -423,6 +423,7 @@ class MenteeProfileContent extends Component {
       hobbies: [1,14,30],
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
       workingon: [],
+      workingonfreetext: [],
       currtraining: '',
       currtrainingprovider: '',
       trainingstartdate: '',
@@ -529,7 +530,7 @@ class MenteeProfileContent extends Component {
       {value: '10', label: 'Learning an instrument'},
       {value: '11', label: 'Training for a sporting event'},
     ]*/
-    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon) : []
+    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon, mentee.workingonfreetext) : []
     const workingOnArr = workingOnCommaString.length == 0 ? [] : workingOnCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)
@@ -545,7 +546,7 @@ class MenteeProfileContent extends Component {
 
     const isPicSet = mentee.profPicSrc != '';
 //    const isPicSet = false;
-    const uid = '23458';
+    const uid = '23456';
     const isMe = uid == mentee.uid ? 'isMe' : 'isntMe';
     const viewerIsU18 = false;
     const profUserIsU18 = true;

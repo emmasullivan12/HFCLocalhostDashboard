@@ -54,7 +54,7 @@ class HomepageCTAContainer extends Component {
     const matchstatus = 'didSafeG';
     const groups = [];
     const groupsList = [
-      {gid: 1234, isclass: true},
+      {gid: 1234, isclass: false},
       {gid: 1235, isclass: false},
     ]
     const numClasses = groupsList.filter(group => group.isclass == true).length

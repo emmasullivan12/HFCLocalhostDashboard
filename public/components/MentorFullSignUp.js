@@ -49,6 +49,7 @@ class MentorFullSignUp extends Component {
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '555 555 5678' : country === 'CAN' ? '416 234 5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
 
     var questionsO18 = [
+      /* eslint-disable object-property-newline */
       {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
