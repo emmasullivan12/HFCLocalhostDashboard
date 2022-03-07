@@ -1,4 +1,4 @@
-// Dex last merged this code on 23rd feb 2022
+// Dex last merged this code on 7th mar 2022
 
 import React, { Component } from "react";
 import {
@@ -32,9 +32,9 @@ class MainMenu extends Component {
 
   render() {
   const {userRole, onClick} = this.props;
-  const hasUnreadAnswers = true
 
     if(userRole === 'mentor' || userRole === 'pr') {
+      const hasUnreadMentorActivity = true
       const pathName = window.location.pathname
 
       return (
@@ -47,13 +47,14 @@ class MainMenu extends Component {
             </FullPageModal>
             <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
               My Activity
-              {hasUnreadAnswers && (
+              {hasUnreadMentorActivity && (
                 <span className="notificationNum">New</span>
               )}
             </NavLink>
           </div>
         );
     } else {
+      const hasUnreadAnswers = true
       return (
         <div className="mainMenu">
           <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>
