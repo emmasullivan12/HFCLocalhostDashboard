@@ -322,6 +322,10 @@ mark {
 .sendMsgContainer:disabled {
   cursor: text;
 }
+.sendMsgContainer.searchBox{
+  bottom: unset;
+  top: 35px;
+}
 
 .sendMsgContainer.isTyping{
   background: #02d89c;

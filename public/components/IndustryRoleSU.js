@@ -351,7 +351,7 @@ class IndustryRoleSU extends React.Component {
             <form autoComplete="off" id="form-IndRoleShortSU">
               <div className="form-group">
                 {userRole === 'mentee' && (
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> are you interested in?</label>
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Choose which <strong>industry communities</strong> are you interested in joining?</label>
                 )}
                 {userRole === 'mentor' && (
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="selectInd">Which <strong>industries</strong> do you have experience in / can talk about?</label>

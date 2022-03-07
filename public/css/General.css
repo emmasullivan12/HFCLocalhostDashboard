@@ -410,6 +410,9 @@ table th .description{
 .italic{
   font-style: italic;
 }
+.strikethrough{
+  text-decoration: line-through;
+}
 .whiteFadedText{
   color: rgb(255,255,255,0.63)!important;
 }
@@ -503,14 +506,14 @@ table th .description{
 .mainBar{
    float: left;
    width: 100%;
-   width: calc(100% - 300px - 24px);
+   width: calc(100% - 350px - 24px);
    margin: 0;
    padding: 0;
 }
 .sideBar{
   margin-left: 24px;
   float: right;
-  width: 300px;
+  width: 350px;
   margin: 0 0 15px;
 }
 @media screen and (max-width: 1080px) {
@@ -675,6 +678,12 @@ table th .description{
 }
 .width50pc{
   width: 50%;
+}
+.overflowYScroll{
+  overflow-y: scroll;
+}
+.overflowYHidden{
+  overflow-y: hidden;
 }
 .verticallyCenter{
   position: absolute;
@@ -1502,6 +1511,9 @@ a.Submit-btn:disabled:active,
 .checkbox-container-login input:checked ~ .checkmark,
 .checkbox-container input:checked ~ .checkmark {
   background-color: rgba(78,78,214,.79);
+}
+.checkbox-container input:checked ~ .checkmark.greenTick{
+  background-color: #01d1be;
 }
 .checkbox-container-login input:checked ~ .initiativeCheckmark {
   background-color: rgba(181,181,255,.74)!important;

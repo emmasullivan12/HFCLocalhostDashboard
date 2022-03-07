@@ -91,7 +91,6 @@ class ChatMenu extends Component {
   }
 
   resetAddChatModal = () => {
-    console.log("resetting")
     this.setState({
       showAddChatModal: true
     });

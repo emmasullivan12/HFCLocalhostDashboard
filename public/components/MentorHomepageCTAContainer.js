@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import GroupCircle from "./GroupCircle";
-import JoinProgPrompt from "./JoinProgPrompt";
+//import JoinProgPrompt from "./JoinProgPrompt";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import MentorFullSignUp from './MentorFullSignUp.js';
 import MentorMatches from './MentorMatches';
@@ -13,6 +13,7 @@ import MentorU18Picture from './MentorU18Picture.js';
 import MentorU18Doc from './MentorU18Doc.js';
 import MentorTraining from './MentorTraining.js';
 import Modal from './Modal';
+import SkillsLearningPrompt from "./SkillsLearningPrompt";
 
 import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
@@ -42,10 +43,12 @@ const AddHighlightSmlModalProps = {
 
 class MentorHomepageCTAContainer extends Component {
   render() {
-    const step = 'fullSUTrain'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
+    const step = 'didEduEmailVerif'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const groups = [];
     const source = 'vhs'
+    const expertise = '';
+    const learning = '';
 
     this.props.groups.forEach((group) => {
 
@@ -65,7 +68,7 @@ class MentorHomepageCTAContainer extends Component {
     return (
       // <div className={className}>
       <div className="landingCTA-container">
-        <div className="membershipsContainer">
+        {/*<div className="membershipsContainer">
           <div className="memberships-title">My Groups</div>
           <div className="groupsContainer">
             {groups}
@@ -73,9 +76,15 @@ class MentorHomepageCTAContainer extends Component {
               <JoinProgrammeModalContent />
             </Modal>
           </div>
-        </div>
-        {(step === 'didEduEmailVerif' || step === 'didReviewVerif') && (
-          <JoinProgPrompt userRole='mentor' /> // to do
+        </div>*/}
+        {(step === 'didEduEmailVerif' || step === 'didReviewVerif') && (expertise == '' || learning == '') && (
+          <SkillsLearningPrompt userRole='mentor' expertise={expertise} learning={learning}/>
+        )}
+        {(expertise != '' && learning != '') && step != 'autoEnroll'&& (
+          <React.Fragment>
+            {/*<Feed userRole='mentor' />*/}
+            <div>hello</div>
+          </React.Fragment>
         )}
         {step === 'autoEnroll' && (
           <AutoEnrollPrompt userRole='mentor' source={source}/>

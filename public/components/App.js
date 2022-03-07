@@ -24,7 +24,7 @@ import LgdInUsrProfile from "./LgdInUsrProfile";
 import {LoadingSpinner, showNotifFavicon, hideNotifFavicon} from './GeneralFunctions.js';
 import MainMenu from "./MainMenu";
 import UserActivityDashboard from "./UserActivityDashboard";
-import MentorHomePage from './MentorHomePage.js';
+import HomePage from './HomePage.js';
 import MenuModal from "./MenuModal";
 import Modal from "./Modal";
 import NotFound from "./NotFound";
@@ -348,18 +348,19 @@ class Dashboard extends Component{
                 </div>
               </div>
             </div>
-            <div className="clientWindowContainer col-s-12" role="button" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
+            <div className="clientWindowContainer col-s-12" role="button" id="clientWindowContainer" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
                 {{
                   ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
-                  ['mentor']: <Redirect exact from="/" to="/mentor-homepage" />,
+                  ['mentor']: <Redirect exact from="/" to="/home" />,
                 }[userRole]}
                 <Route path="/latest-advice" component={LatestAdvice}/>,
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route path="/questions" component={QA}/>
-                <Route path="/mentor-homepage" roleAllowed="mentor" userRole="mentor" component={MentorHomePage}/>
+                <Route exact path="/home" roleAllowed="mentor" userRole="mentor" component={HomePage}/>
+                <Route exact path="/questions" roleAllowed="mentor" userRole="mentor" render={(props) => <HomePage {...props} tabToView="questions" />}/>
+                <Route path="/questions/:qid" component={QA}/>
                 <Route path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

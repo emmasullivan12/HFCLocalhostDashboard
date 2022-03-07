@@ -7,6 +7,7 @@ import hobbiesOptions from './Hobbies.js';
 import industryList from './Industries.js';
 import roleOptions from './Roles.js';
 import groupsList from "./Groups.js";
+import workingOnOptions from './WorkingOn.js';
 
 function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   if (eetStatus === 'uni') {
@@ -85,6 +86,19 @@ function convertRole(roles, rolesfreetext) {
   })
 
   return rolesFullText.join(", ")
+}
+
+function convertWorkingOn(workingOn) {
+  let workingOnArray = [];
+
+  const workingOnArr = workingOnOptions
+    .filter(item => workingOn.includes(parseInt(item.value,10)))
+
+  workingOnArr.forEach((x) => {
+    workingOnArray.push(x.label)
+  })
+
+  return workingOnArray.join(", ")
 }
 
 function getGroupName(gid, getLongOrShortName) {
@@ -390,4 +404,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

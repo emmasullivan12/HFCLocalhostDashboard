@@ -35,11 +35,13 @@ class MainMenu extends Component {
   const hasUnreadAnswers = true
 
     if(userRole === 'mentor' || userRole === 'pr') {
+      const pathName = window.location.pathname
+
       return (
           <div className="mainMenu">
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
-            <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Dashboard</NavLink>
-            <NavLink exact to="/questions" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Q&A SEO page</NavLink>
+            <NavLink exact to="/home" isActive={() => ['/home', '/questions'].includes(pathName) || pathName.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink>
+        {/*    <NavLink exact to="/questions/1234" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Q&A SEO page</NavLink> */}
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>

@@ -27,7 +27,7 @@ import UpdateWhyJoinContent from './UpdateWhyJoinModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, convertWorkingOn, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
@@ -338,19 +338,6 @@ class MenteeProfileContent extends Component {
     this.mounted = false;
   }
 
-  convertWorkingOn = (workingOn, workingOnOptions) => {
-    let workingOnArray = [];
-
-    const workingOnArr = workingOnOptions
-      .filter(item => workingOn.includes(parseInt(item.value,10)))
-
-    workingOnArr.forEach((x) => {
-      workingOnArray.push(x.label)
-    })
-
-    return workingOnArray.join(", ")
-  }
-
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -528,7 +515,7 @@ class MenteeProfileContent extends Component {
     const learningArr = mentee.learning.split(',');
     const subjectsCommaString = (mentee.subjects.length > 0 || mentee.subjectsfreetext.length > 0) ? convertSubjects(mentee.subjects, mentee.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
-    const workingOnOptions = [
+  /*  const workingOnOptions = [
       {value: '0', label: 'Deciding on a career path'},
       {value: '1', label: 'CV/Resume editing'},
       {value: '2', label: 'Portfolio / Showreel review'},
@@ -541,8 +528,8 @@ class MenteeProfileContent extends Component {
       {value: '9', label: 'Learning a language'},
       {value: '10', label: 'Learning an instrument'},
       {value: '11', label: 'Training for a sporting event'},
-    ]
-    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon, workingOnOptions) : []
+    ]*/
+    const workingOnCommaString = mentee.workingon.length > 0 ? this.convertWorkingOn(mentee.workingon) : []
     const workingOnArr = workingOnCommaString.length == 0 ? [] : workingOnCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)

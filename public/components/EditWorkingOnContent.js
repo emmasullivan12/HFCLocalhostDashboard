@@ -5,6 +5,7 @@ import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Checkbox from './Checkbox.js';
 import Modal from './Modal.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
+import workingOnOptions from './WorkingOn.js';
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class EditWorkingOnContent extends Component {
@@ -35,20 +36,7 @@ class EditWorkingOnContent extends Component {
   }
 
   handleWorkingOnChange(userInput, callback) {
-    const workingOnOptions = [
-      {value: '0', label: 'Deciding on a career path'},
-      {value: '1', label: 'CV/Resume editing'},
-      {value: '2', label: 'Portfolio / Showreel review'},
-      {value: '3', label: 'Finding an internship / work experience'},
-      {value: '4', label: 'Full-time job search'},
-      {value: '5', label: 'Job Interviews'},
-      {value: '6', label: 'Making subject / degree choices'},
-      {value: '7', label: 'Applying to University'},
-      {value: '8', label: 'Learning to Code'},
-      {value: '9', label: 'Learning a language'},
-      {value: '10', label: 'Learning an instrument'},
-      {value: '11', label: 'Training for a sporting event'},
-    ]
+
     const workingOnFromList = workingOnOptions
       .filter(item => userInput.includes(item.label))
 
@@ -87,20 +75,6 @@ class EditWorkingOnContent extends Component {
   render() {
     const { isSubmitting, updateSuccess, workingOn, startingWorkingOnArr } = this.state;
     const { modalTitle, workingOnArr } = this.props;
-    const workingOnOptions = [
-      {value: '0', label: 'Deciding on a career path'},
-      {value: '1', label: 'CV/Resume editing'},
-      {value: '2', label: 'Portfolio / Showreel review'},
-      {value: '3', label: 'Finding an internship / work experience'},
-      {value: '4', label: 'Full-time job search'},
-      {value: '5', label: 'Job Interviews'},
-      {value: '6', label: 'Making subject / degree choices'},
-      {value: '7', label: 'Applying to University'},
-      {value: '8', label: 'Learning to Code'},
-      {value: '9', label: 'Learning a language'},
-      {value: '10', label: 'Learning an instrument'},
-      {value: '11', label: 'Training for a sporting event'},
-    ]
     const isEnabled = this.canBeSubmitted();
 
     if(updateSuccess == false) {

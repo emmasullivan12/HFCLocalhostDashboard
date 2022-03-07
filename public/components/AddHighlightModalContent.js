@@ -20,6 +20,10 @@ class AddHighlightModalContent extends Component {
     e.persist()
     this.setState({
       highlightType: e.currentTarget.value
+    }, () => {
+      if (this.state.highlightType == "answer") {
+        this.props.onClose()
+      }
     });
   }
 
@@ -38,13 +42,16 @@ class AddHighlightModalContent extends Component {
             Share a highlight with mentees
           </div>
           <div className="postTypeContainer">
-            <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
-              <div className="postTypeIcon fontSize30">
-                <i className="fas fa-question" />
-              </div>
-              <div className="postType-title"><strong>Q&A</strong></div>
-              <div className="postType-desc">Browse mentee questions to answer</div>
-            </button>
+            {/* <Link to={`/questions/${qid}`}> */}
+            <Link to="/questions">
+              <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
+                <div className="postTypeIcon fontSize30">
+                  <i className="fas fa-question" />
+                </div>
+                <div className="postType-title"><strong>Q&A</strong></div>
+                <div className="postType-desc">Browse mentee questions to answer</div>
+              </button>
+            </Link>
             <button type="button" className="postTypeButton" onClick={this.handleClick} value='other'>
               <div className="postTypeIcon fontSize30">
                 <i className="fas fa-hashtag" />
@@ -56,18 +63,18 @@ class AddHighlightModalContent extends Component {
         </div>
       );
     } else if (userRole == 'mentor' && highlightType == 'answer') {
-      const qid = '12345'
+      return null
+  /*  } else if (userRole == 'mentor' && highlightType == 'answer') {
+      const qid = '1234'
       return (
         <Router>
           <div>
             <h2>
               <Link to={`/questions/${qid}`} target="_blank">Open Question in new tab</Link>
-            {/* }  <Route path="/questions/:qid" component={QA}/> */}
-            {/*  <Link to="/questions">Open Question in new tab</Link> */}
             </h2>
           </div>
         </Router>
-      )
+      ) */
       /*<div className="qaComingSoonContainer">
         <div className="electricPurpleText fontSize30 marginTop20">
           <i className="far fa-comments"/>
@@ -75,7 +82,7 @@ class AddHighlightModalContent extends Component {
         <div className="qaTitle modal-preTitle marginBottom20">Coming soon!</div>
         <div className="darkGreyText">Help mentees from every background get access to quality careers advice, by contributing to our new open-access Q&A reference library</div>
       </div>*/
-    } else {
+    } else if (highlightType != 'answer') {
       return (
         <AddHighlightTextBox
           modalID={modalID}
