@@ -44,7 +44,7 @@ class FeedHeader extends Component {
     return (
       <div className="feed-header">
         <MenuNav />
-        <div className="chatWindow-footer">
+        <div className="chatWindow-footer horizontallyCenter">
           <div className="input-box-container noMarginB">
             <div className="input-flexContainer">
               <form className="textInput-container">

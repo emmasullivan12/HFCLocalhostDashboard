@@ -681,9 +681,14 @@ table th .description{
 }
 .overflowYScroll{
   overflow-y: scroll;
+  margin-left: 8px; /* This is scrollbar width which takes away from margin on right, so this evens out */
 }
 .overflowYHidden{
   overflow-y: hidden;
+}
+.horizontallyCenter{
+  width: 50%;
+  margin: auto;
 }
 .verticallyCenter{
   position: absolute;
@@ -793,14 +798,20 @@ table th .description{
 .paddingR{
   padding-right: 10px!important;
 }
-.paddingL{
-  padding-left: 10px!important;
-}
 .paddingR20{
   padding-right: 20px!important;
 }
+.paddingR30{
+  padding-right: 30px!important;
+}
+.paddingL{
+  padding-left: 10px!important;
+}
 .paddingL20{
   padding-left: 20px!important;
+}
+.paddingL30{
+  padding-left: 30px!important;
 }
 .noPaddingL{
   padding-left: 0!important;
@@ -2020,6 +2031,10 @@ a.button{
 }
 .logoContainer{
   height: 40px;
+  margin-bottom: 1.5rem;
+}
+.logoContainer.small{
+  height: 20px;
   margin-bottom: 1.5rem;
 }
 .logoImg{

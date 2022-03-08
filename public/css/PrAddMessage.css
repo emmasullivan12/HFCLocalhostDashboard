@@ -325,6 +325,10 @@ mark {
 .sendMsgContainer.searchBox{
   bottom: unset;
   top: 35px;
+  right: unset;
+  margin-bottom: 0;
+  margin-right: 0;
+  position: unset;
 }
 
 .sendMsgContainer.isTyping{

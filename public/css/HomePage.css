@@ -56,6 +56,18 @@
   -moz-box-sizing: inherit;
 }
 
+@media screen and (max-width: 760px) {
+  .feed-header .chatWindow-footer{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .feed-header .chatWindow-footer{
+    max-width: 600px;
+  }
+}
+
 .filterFeed-container .filter-btn:first-of-type{
   border-top-left-radius: .375em;
   border-bottom-left-radius: .375em;
@@ -88,20 +100,69 @@
   color: #4e4ed6;
 }
 
-.thickPurpleSideBar{
+.thickPurpleContentBox,
+.thinGreyContentBox{
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.thickPurpleContentBox{
   border: 6px solid #4e4ed6;
   border-top: 20px solid #4e4ed6;
-  border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
-  background-color: white;
+}
+.thinGreyContentBox{
+  border: 2px solid #d9d9d9;
+}
+.thinGreyContentBox .title{
+  background: #f5f5f5;
+  height: 35px;
+  border-top-left-radius: 15px;
+  -webkit-top-left-border-radius: 15px;
+  -moz-border-top-left-radius: 15px;
+  -ms-border-top-left-radius: 15px;
+  -o-border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-top-right-border-radius: 15px;
+  -moz-border-top-right-radius: 15px;
+  -ms-border-top-right-radius: 15px;
+  -o-border-top-right-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  color: #565656;
+}
+@media screen and (min-width: 1080px) {
+  .thickPurpleContentBox,
+  .thinGreyContentBox{
+    margin-left: 20px;
+  }
+}
+.userStepsTitle{
+  position: relative;
+  line-height: normal;
+  padding-top: 10px;
+  width: 100%;
+  cursor: pointer;
 }
 /*.sideBar-header{
   background-color: #4e4ed6;
   height: 20px;
 }*/
+
+.checkbox-container.homePage{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.checkbox-container.homePage:hover{
+  background: #f2f2f2;
+}
+.checkbox-container.homePage .checkmark{
+  top: 0.8rem;
+}
 
 .viewMenu{
   margin-right: 1rem!important;

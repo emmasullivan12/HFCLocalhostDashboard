@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022 
+// Dex last merged this code on 7th mar 2022
 
 import React, { Component } from "react";
 
@@ -13,7 +13,6 @@ import MenteeFullSignUp from './MenteeFullSignUp.js';
 import MenteeTraining from './MenteeTraining.js';
 import Modal from './Modal';
 
-import "../css/General.css";
 import "../css/HomepageCTAContainer.css";
 
 const JoinProgrammePlusModalProps = {

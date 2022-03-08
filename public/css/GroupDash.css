@@ -18,6 +18,9 @@
   color: #2a2ad6;
   font-weight: 600;
 }
+.groupdash-menuBtn.homePage.tabActive{
+  border-bottom: 3px solid #4e4ed6;
+}
 .dash-welcomeContainer{
   background-color: #ffdcdc;
   border-radius: 12px;

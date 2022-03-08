@@ -26,11 +26,9 @@ class GroupCircle extends Component {
       groupInitial = string.charAt(0).toUpperCase();
     }
 
-
 //<span>{string.charAt(0)}</span>
 //<span className={"groupsAvatarContainer "+(isGroupAvatarURL ? "" : "noImg")}>
     if (showAsLink == true) {
-
 
       return (
         <Link to={navlink} className={isGroupAvatarURL ? '' : 'noAvatar'}>
