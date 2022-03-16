@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022
+// Dex last merged this code on 16th mar 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -27,28 +27,11 @@ class FeedItem extends Component {
   }
 
   togglePopup = (e) => {
-  //  const {q} = this.props
-  //  const popupName = e.currentTarget.dataset.popupname
-  //  const popup = document.getElementById(popupName)
-  //  popup.classList.toggle('open')
-/*    function showPopup() {
-      popup.classList.add('open');
-    }
-    function hidePopup() {
-      popup.classList.remove('open');
-    }*/
-  /*  console.log(e.target)
-    console.log(e.currentTarget)
-    console.log(e.target.classList)
-    console.log(e.target.classList.contains("fas fa-ellipsis-h"))
-    if (e.target.classList.contains("fas fa-ellipsis-h")) {return} */
     this.popup.classList.toggle('open');
   }
 
   closePopup = (e) => {
-  //  if (this.popup !== null ) {
-      this.popup.classList.remove('open');
-  //  }
+    this.popup.classList.remove('open');
   }
 
   showContentTypeLabel = (contentType) => {

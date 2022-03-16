@@ -1,11 +1,11 @@
-// Dex last merged this code on 7th mar 2022
+// Dex last merged this code on 16th mar 2022
 
 import React, { Component } from "react";
 
 //import AskAQPrompt from "./AskAQPrompt";
 import FeedItem from "./FeedItem";
 
-class MyContent extends Component {
+class FeedContainer extends Component {
 
   render() {
     const {userRole, contentArr} = this.props
@@ -33,4 +33,4 @@ class MyContent extends Component {
   }
 }
 
-export default MyContent;
+export default FeedContainer;

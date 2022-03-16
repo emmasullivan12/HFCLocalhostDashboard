@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022
+// Dex last merged this code on 16th mar 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -94,6 +94,7 @@ class HomePage extends Component {
   filterBy = (e) => {
     e.stopPropagation()
 
+    /* eslint-disable no-restricted-syntax */
     for (let sibling of e.currentTarget.parentNode.children) {
         if (sibling !== e.currentTarget) {
           sibling.classList.remove('isActive');
@@ -105,7 +106,7 @@ class HomePage extends Component {
     // Update URL with searchParams i.e. "?filter=Unanswered"
     const url = new URL(window.location);
     url.searchParams.set('filter', e.currentTarget.value);
-    history.pushState({}, '', url)
+    history.pushState({}, '', url) // eslint-disable-line no-restricted-globals
   }
 
   updateActiveClasslists = () => {
@@ -353,7 +354,7 @@ class HomePage extends Component {
       ] : [],*/
       {stepText: 'Answer a question', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
       {stepText: 'Complete your full mentor application', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), validSteps: ['didShortSUtf']},
-      ... (wantsU18 == true) ? [
+      ...(wantsU18 == true) ? [
         {stepText: 'Upload a selfie with your Photo ID', isComplete: (userstep == 'didIDUpload' || (wantsU18 && userstep == 'didFullSUtf') || userstep == 'fullSUidTrain'), validSteps: ['didU18tf']},
         {stepText: 'Upload your CV/Resume or LinkedIn URL', isComplete: ((wantsU18 && userstep == 'didFullSUtf') || userstep == 'fullSUidTrain'), validSteps: ['didIDUpload']},
       ] : [],
