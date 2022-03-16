@@ -380,6 +380,9 @@ table th .description{
 .fontSize18{
   font-size: 18px;
 }
+.fontSize16{
+  font-size: 16px;
+}
 .fontSize14{
   font-size: 14px!important;
 }
@@ -503,10 +506,16 @@ table th .description{
 }
 
 /* POSITIONING */
+.mainAndSideContainer{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 .mainBar{
    float: left;
    width: 100%;
    width: calc(100% - 350px - 24px);
+  /* max-width: 58.33333333%;*/
    margin: 0;
    padding: 0;
 }
@@ -516,6 +525,12 @@ table th .description{
   width: 350px;
   margin: 0 0 15px;
 }
+
+/*@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .mainBar {
+    max-width: 66.66666667%;
+  }
+}*/
 @media screen and (max-width: 1080px) {
   .mainBar {
     width: 100%;
@@ -526,6 +541,9 @@ table th .description{
     clear: both;
     margin: 0 auto;
     width: 100%;
+  }
+  .sideBarContentHiddenOnShrink{
+    display: none;
   }
 }
 .gridContainer{
@@ -554,6 +572,9 @@ table th .description{
 }
 .dispTable{
   display: table;
+}
+.positionRel{
+  position: relative;
 }
 .alignCenter{
   text-align: center!important;
@@ -670,6 +691,9 @@ table th .description{
 .hidden{
   visibility: hidden
 }
+.maxWidth100{
+  max-width: 100%;
+}
 .fullWidth{
   width: 100%;
 }
@@ -679,9 +703,12 @@ table th .description{
 .width50pc{
   width: 50%;
 }
+.width100px{
+  width: 100px;
+}
 .overflowYScroll{
   overflow-y: scroll;
-  margin-left: 8px; /* This is scrollbar width which takes away from margin on right, so this evens out */
+/*  margin-left: 8px; *//* This is scrollbar width which takes away from margin on right, so this evens out */
 }
 .overflowYHidden{
   overflow-y: hidden;
@@ -765,6 +792,12 @@ table th .description{
 .marginRight8 {
   margin-right: 8px;
 }
+.marginRight10 {
+  margin-right: 10px;
+}
+.marginRight20 {
+  margin-right: 20px;
+}
 .noMarginL{
   margin-left: 0!important;
 }
@@ -810,6 +843,9 @@ table th .description{
 .paddingL20{
   padding-left: 20px!important;
 }
+.paddingL25{
+  padding-left: 25px!important;
+}
 .paddingL30{
   padding-left: 30px!important;
 }
@@ -831,8 +867,21 @@ table th .description{
 .displayFlex{
   display: flex!important;
 }
+.flexWrap{
+  flex-wrap: wrap;
+}
+.flexShrink0{
+  flex-shrink: 0;
+}
+.flexGrow1{
+  flex-grow: 1;
+}
 .flexDirColumn{
   flex-direction: column!important;
+}
+.flexEnd{
+  margin-left: auto;
+  justify-content: flex-end;
 }
 .overflow-ellipsis{
   white-space: nowrap;
@@ -928,6 +977,9 @@ table th .description{
 .tooltip .tooltiptext.last {
   left: -25px;
 }
+.tooltip .tooltiptext.last.signUpPage {
+  left: -85px;
+}
 .tooltip .tooltiptext.endContentBox {
   left: -60px;
 }
@@ -1005,7 +1057,8 @@ table th .description{
   left: unset;
   right: 13px;
 }
-.tooltip .tooltiptext.messageActions.last::after {
+.tooltip .tooltiptext.messageActions.last::after,
+.tooltip .tooltiptext.last.signUpPage::after {
   right: 0;
   margin-right: 9px;
   left: unset;
@@ -1807,6 +1860,7 @@ a.button{
   margin: auto;
   margin-top: 1rem;
 }
+
 /* IMAGES */
 .img-circle {
   border-radius: 50%;
@@ -1866,6 +1920,51 @@ a.button{
   opacity: 1;
 }
 
+/* ANIMATIONS */
+
+.circular-chart svg {
+  width: unset;
+  height: unset;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart.purple .circle {
+  stroke: #4e4ed6;
+}
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
 /* BOXES */
 .contentBox{
   border-radius: .25rem;
@@ -1880,6 +1979,9 @@ a.button{
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   padding: .5rem 1rem .5rem 1rem;
   margin-bottom: 1rem;
+}
+.contentBox.feedItem{
+  margin-bottom: 5px;
 }
 .contentBox.withHover:hover{
   box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);

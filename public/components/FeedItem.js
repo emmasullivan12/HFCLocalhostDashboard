@@ -1,0 +1,149 @@
+// Dex last merged this code on 7th mar 2022
+
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Avatar from './Avatar.js';
+import {Check, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import DeleteContentModalContent from './DeleteContentModalContent.js';
+import Modal from './Modal.js';
+import {getIndustryDeets, convertHashtags} from './UserDetail.js';
+
+import '../css/MyActivity.css';
+
+const DeleteContentModalProps = {
+  ariaLabel: 'Confirm content deletion',
+  triggerText: 'Delete',
+  usedFor: 'deleteContent',
+}
+
+class FeedItem extends Component {
+
+  onKeyDown = (e) => {
+    var key = e.key || e.keyCode
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.closePopup();
+    }
+  }
+
+  togglePopup = (e) => {
+  //  const {q} = this.props
+  //  const popupName = e.currentTarget.dataset.popupname
+  //  const popup = document.getElementById(popupName)
+  //  popup.classList.toggle('open')
+/*    function showPopup() {
+      popup.classList.add('open');
+    }
+    function hidePopup() {
+      popup.classList.remove('open');
+    }*/
+  /*  console.log(e.target)
+    console.log(e.currentTarget)
+    console.log(e.target.classList)
+    console.log(e.target.classList.contains("fas fa-ellipsis-h"))
+    if (e.target.classList.contains("fas fa-ellipsis-h")) {return} */
+    this.popup.classList.toggle('open');
+  }
+
+  closePopup = (e) => {
+  //  if (this.popup !== null ) {
+      this.popup.classList.remove('open');
+  //  }
+  }
+
+  showContentTypeLabel = (contentType) => {
+    let textToShow
+
+    switch (contentType) {
+      case 'questions':
+        textToShow = 'Question'
+        break;
+      default:
+        textToShow = 'General'
+    }
+
+    return (
+      <div className={"contentTypeLabel " + contentType}>{textToShow}</div>
+    )
+  }
+
+  render() {
+    const {contentType, post} = this.props
+
+    if (contentType == 'questions') {
+      const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
+      const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+      const qAuthor = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
+      const indArrToShow = post.industriesToPostTo.length <= 2 ? post.industriesToPostTo : post.industriesToPostTo.slice(0,2)
+      const numViews = post.views < 1000 ? post.views : ((Math.round(post.views / 100) / 10) + 'k')
+
+      return (
+        <Link to={"/questions/" + post.qid} className="link">
+          <div className="contentBox feedItem withHover padding20 positionRel">
+            { this.showContentTypeLabel("questions") }
+            <div className="postContainer">
+              <div className="postDetail marginRight20 marginTop10 textRight fontSize13 flexShrink0 width100px darkGreyText">
+                <div className="marginBottom5">{post.votes.length} votes</div>
+                <div className="numAnswers marginBottom5">
+                  {post.hids.length != 0 && (
+                    <span className={"multiple marginRight0 fontSize13 " + (post.hasAcceptedAnswer == true ? "green" : "greenOutline")}>
+                      {post.hasAcceptedAnswer == true && (
+                        <React.Fragment>
+                          <span className="tickNumSelected">
+                            <Check />
+                          </span>
+                        </React.Fragment>
+                      )}
+                      <span>{post.hids.length} {post.hids.length == 1 ? 'answer' : 'answers'}</span>
+                    </span>
+                  )}
+                  {post.hids.length == 0 && (
+                    <span className="multiple grey marginRight0 fontSize13">0 answers</span>
+                  )}
+                </div>
+                <div className="marginBottom5">{numViews} views</div>
+              </div>
+              <div className="flexGrow1 maxWidth100">
+                <div className="marginTop10 marginBottom10 fontSize16 lineHeight20pc darkGreyText">
+                  <strong>{post.title}</strong>
+                </div>
+                {/*{post.textdetail != '' && (
+                  <div className="marginBottom20 answerSummary greyText fontSize16">
+                    <div>{post.textdetail}</div>
+                  </div>
+                )}*/}
+                <div className="displayFlex flexWrap">
+                  {hashtagsArray.length > 0 && (
+                    <div className="tagsList">
+                      {hashtagsArray.map((hashtag) => {
+                        return (
+                          <span
+                            key={hashtag}
+                          //  onClick={this.onClickValue}
+                            className="multiple value paddingR"
+                          //  role="button"
+                            id={hashtag}
+                          >
+                            {hashtag}
+                          </span>
+                        )
+                      })}
+                    </div>
+                  )}
+                  <div className="fontSize13 positionRel dispInlineBlock flexEnd">
+                    <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : qAuthor.fname} showAsCircle smallIdle picSize={40}/>
+                    <span className="paddingL25">{post.isanon ? "Anonymous" : (qAuthor.fname + " " + qAuthor.lname)}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      );
+    } else if (contentType == 'answers' || contentType == 'generalPosts') {
+      return <div>Answer or General Post goes here</div>
+    }
+  }
+}
+
+export default FeedItem;

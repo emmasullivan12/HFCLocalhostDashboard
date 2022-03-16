@@ -28,7 +28,8 @@ class ProspelaBot extends Component {
       users: {
         count: 104,
         usersList: [
-          {uid: '223456', fname: 'simon', lname: 'Devereux', profilePic: '/2020/12/8/b2466221-ef6a-4c47-82c2-59e46ffe9bf3_88315b1d-7ca1-49db-8e7b-c1c516f9514d.jpeg', founder: 1, mentor: 1},
+          //{uid: '223456', fname: 'simon', lname: 'Devereux', profilePic: '/2020/12/8/b2466221-ef6a-4c47-82c2-59e46ffe9bf3_88315b1d-7ca1-49db-8e7b-c1c516f9514d.jpeg', founder: 1, mentor: 1},
+          {uid: '223456', fname: 'simon', lname: 'Devereux', profilePic: '', founder: 1, mentor: 1},
           {uid: '223457', fname: 'emma', lname: 'Moonraker', profilePic: '/2020/12/8/b2466221-ef6a-4c47-82c2-59e46ffe9bf3_88315b1d-7ca1-49db-8e7b-c1c516f9514d.jpeg', pm: 1, mentor: 1},
           {uid: '223458', fname: 'emma-prospela', lname: '', profilePic: '', pr: 1},
           {uid: '223459', fname: 'dexter-prospela', lname: '', profilePic: '', pr: 1},

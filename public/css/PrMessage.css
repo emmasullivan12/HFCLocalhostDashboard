@@ -52,7 +52,12 @@
   width: 15px;
   height: 15px;
   position: absolute;
+  top: 14px;
+}
+.msg-thumb.isGroupFlex.smallIdle{
+  top: unset;
   bottom: 3px;
+  padding-top: 2.5px;
 }
 .msg-thumb.isAddHighlight{
   position: absolute;

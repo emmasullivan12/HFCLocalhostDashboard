@@ -284,6 +284,18 @@ function getUnreadIndicator(unreadCount, isGroupChannel, hasTooltip) {
   )
 }
 
+function percentageCircle(pct, colour) {
+  return (
+    <div className="circular-chart">
+      <svg viewBox="0 0 36 36" className={"circular-chart " + colour}>
+        <path className="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path className="circle" strokeDasharray={pct + ", 100"} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <text x="18" y="20.35" className="percentage">{pct}%</text>
+      </svg>
+    </div>
+  )
+}
+
 const ChevronDown = () => (
   <svg viewBox="0 0 10 7" id="chevronDown">
     <path d="M2.08578644,6.5 C1.69526215,6.89052429 1.69526215,7.52368927 2.08578644,7.91421356 C2.47631073,8.30473785 3.10947571,8.30473785 3.5,7.91421356 L8.20710678,3.20710678 L3.5,-1.5 C3.10947571,-1.89052429 2.47631073,-1.89052429 2.08578644,-1.5 C1.69526215,-1.10947571 1.69526215,-0.476310729 2.08578644,-0.0857864376 L5.37867966,3.20710678 L2.08578644,6.5 Z" transform="translate(5.000000, 3.207107) rotate(90.000000) translate(-5.000000, -3.207107) " />
@@ -539,4 +551,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
+export {isIE, isEdge, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, percentageCircle, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};

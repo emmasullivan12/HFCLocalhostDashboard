@@ -113,10 +113,12 @@
 .userInitial.msg-thumb.isMe.isGroupFlex.smallIdle{
   top: -2px;
 }
+.userInitial.msg-thumb.isGroupFlex.smallIdle{
+  padding-left: 2px;
+}
 .userInitial.msg-thumb.smallIdle{
   padding-top: 0px;
   font-size: 12px;
-  padding-left: 2px;
 }
 
 .profile-thumb.noPic.isMe,

@@ -10,7 +10,7 @@ class MyContent extends Component {
   render() {
     const {userRole, contentType} = this.props
   //  const contentArr = []
-  /*  const contentArr = [ // Questions
+    const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -31,8 +31,8 @@ class MyContent extends Component {
         hashtags: ['23','11','30','55','61'],
         hashtagsfreetext: ['my free text hashtag'],
       },
-    ]*/
-    const contentArr = [ // Answers
+    ]
+  /*  const contentArr = [ // Answers
       {
         hid: '1234',
         uid: '123',
@@ -108,10 +108,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#thirdanswer',
       }
-    ]
-    console.log("gets here: MyContent")
-    console.log(userRole)
-    console.log(contentType)
+    ]*/
 
     return (
       <div className="mycontent-container">

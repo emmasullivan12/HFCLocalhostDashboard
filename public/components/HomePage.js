@@ -3,13 +3,15 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import Checkbox from './Checkbox.js';
+import FeedContainer from "./FeedContainer.js";
 import FeedHeader from './FeedHeader.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import Modal from './Modal';
-import {ChevronDown, ChevronUp} from './GeneralFunctions.js';
+import {percentageCircle, ChevronDown, ChevronUp} from './GeneralFunctions.js';
 import "../css/HomePage.css";
 import "../css/HomepageCTAContainer.css";
 
@@ -20,6 +22,22 @@ const JoinProgrammePlusModalProps = {
   changeInitFocus: true
 }
 
+const AddHighlightModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: 'Highlight',
+  usedFor: 'addHighlight',
+  changeInitFocus: true,
+  wider: true
+}
+
+const AddHighlightSmlModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: '+ Highlight',
+  usedFor: 'addHighlightSml',
+  changeInitFocus: true,
+  wider: true
+}
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -27,6 +45,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'autoEnroll',
+      userRole: 'mentor'
     }
   }
 
@@ -47,6 +66,21 @@ class HomePage extends Component {
 
   componentWillUnmount() {
     document.getElementById("clientWindowContainer").classList.remove('overflowYHidden')
+  }
+
+  showUpdateTabBtns = () => {
+    const {tabToView} = this.state
+
+    return (
+      <div>
+        <Link to="/home">
+          <button type="button" name="all" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn homePage alignCenter width50pc marginRight0' + (tabToView == 'all' ? ' tabActive' : '')}>All</button>
+        </Link>
+        <Link to="/questions">
+          <button type="button" name="questions" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn homePage alignCenter width50pc marginRight0' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
+        </Link>
+      </div>
+    )
   }
 
   updateTabToView = (e) => {
@@ -90,13 +124,144 @@ class HomePage extends Component {
   }
 
   renderTab = () => {
-    const {tabToView} = this.state;
+    const {tabToView, userRole} = this.state;
+  //  const contentArr = []
+    const contentArr = [ // Questions
+      {
+        qid: '123456',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: [], // no answers yet
+        industriesToPostTo: ['2','19'],
+        hashtags: ['23'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'questions',
+        hasAcceptedAnswer: false,
+        votes: ['123','234','345','456'],
+        views: 1300,
+        uid: '123',
+        isanon: 0,
+      },
+      {
+        qid: '123457',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriesToPostTo: ['2','19'],
+        hashtags: ['23','11','30','55','61'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'questions',
+        hasAcceptedAnswer: true,
+        votes: [],
+        views: 2,
+        uid: '124',
+        isanon: 0,
+      },
+      {
+        qid: '123458',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriesToPostTo: ['2','19'],
+        hashtags: ['23','11','30'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'questions',
+        hasAcceptedAnswer: false,
+        votes: [],
+        views: 2,
+        uid: '124',
+        isanon: 1,
+      },
+    ]
+  /*  const contentArr = [ // Answers
+      {
+        hid: '1234',
+        uid: '123',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        title: 'What is the best thing to wear to an interview?',
+        authorinst: '',
+        authorinstfreetext: 'Really Long Institution Name',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: 'BSc (Hons) Business Administration',
+        authortraining: '',
+        authorinsttype: 'uni',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-05T19:30:50.667Z',
+        text: 'first answer sfgh sldfkj ghlskjdf hglkjsd fhgkjls dhflkjg hsdlfkj ghlksdjfh glkjsd fhgkljsdh fgkjlh sdlfkj ghlskdjf ghlkjsdfh gkljsdfh glkjsdfh gkljsdh fgkjlhds flkgjh sdlkfj ghslkdjf ghlksjdf glksjdfh glsjkdf gkljsdf hglkjsd fhglkjsdfh glksjdfh glskjdfh glkjsdfh glkjsdfh gkljsdfh glkjsdfh gkjlsd fhgkljsdh fklgjhs dflkjgh slkdfj ghskldjf ghslkdfjgh lskdjf ghlskdjfgh slkdjf ghlksdfjgh ',
+        isanon: 0,
+        votes: [],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#firstanswer',
+        type: 'answers'
+      },
+      {
+        hid: '1235',
+        uid: '124',
+        fname: 'Dave',
+        lname: 'Petrie',
+        title: 'What is it like working at Pladis?',
+        authorinst: '',
+        authorinstfreetext: '',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: '',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-06T13:30:50.667Z',
+        text: 'second answer sfgh sldfkj ghlskjdf hglkjsd fhgkjls dhflkjg hsdlfkj ghlksdjfh glkjsd fhgkljsdh fgkjlh sdlfkj ghlskdjf ghlkjsdfh gkljsdfh glkjsdfh gkljsdh fgkjlhds flkgjh sdlkfj ghslkdjf ghlksjdf glksjdfh glsjkdf gkljsdf hglkjsd fhglkjsdfh glksjdfh glskjdfh glkjsdfh glkjsdfh gkljsdfh glkjsdfh gkjlsd fhgkljsdh fklgjhs dflkjgh slkdfj ghskldjf ghslkdfjgh lskdjf ghlskdjfgh slkdjf ghlksdfjgh',
+        isanon: 1,
+        votes: ['12','23'],
+        isacceptedanswer: true,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#secondanswer',
+        type: 'answers'
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        title: 'When should I apply to grad schemes (what time of year)?',
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'third answer',
+        isanon: 0,
+        votes: ['123','20'],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: 'google.com/answer/#thirdanswer',
+        type: 'answers'
+      }
+    ]*/
 
     switch (tabToView) {
       case 'all':
         return (
           <div>
-            <div className="filterFeed-container textRight marginTop20">
+            <div className="filterFeed-container textRight marginBottom20">
               <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
                 <div>
                   <span role="img" aria-label="latest">⏱️</span>
@@ -110,13 +275,14 @@ class HomePage extends Component {
                 </div>
               </button>
             </div>
-            <p>Home feed with all posts here</p>
+            { this.showUpdateTabBtns() }
+            <FeedContainer contentArr={contentArr} userRole={userRole}/>
           </div>
         )
       case 'questions':
         return (
           <div>
-            <div className="filterFeed-container textRight marginTop20">
+            <div className="filterFeed-container textRight marginBottom20">
               <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
                 <div>
                   <span role="img" aria-label="latest">⏱️</span>
@@ -136,6 +302,7 @@ class HomePage extends Component {
                 </div>
               </button>
             </div>
+            { this.showUpdateTabBtns() }
             <p>Questions only here</p>
             <Link to="/questions/1234">
               <button type="button">
@@ -208,7 +375,8 @@ class HomePage extends Component {
       {stepText: 'Complete your 5-min mentor training', isComplete: 1, validSteps: ['didFullSUtf']},
     ]*/
 
-    const allStepsCompleted = steps.filter(step => step.isComplete == 0).length == 0
+    const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
+    const allStepsCompleted = stepsLeftToDo == 0
 
     if (allStepsCompleted == true) {
       return (
@@ -231,6 +399,8 @@ class HomePage extends Component {
       )
     }
 
+    const pctStepsCompleted = (1 - (stepsLeftToDo / steps.length)) * 100
+
     return (
       <React.Fragment>
         <div className="userStepsTitle" onClick={this.onClick} onKeyDown={this.onKeyDown}>
@@ -242,30 +412,35 @@ class HomePage extends Component {
           </div>
         </div>
         {userStepsIsOpen && (
-          <div className="marginTop20">
-            {steps.map((step, index) => {
-              return (
-                <div key={index}>
-                  <Checkbox
-                    label={step.stepText}
-                    labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "")}
-                    name="stepStatus"
-                    className="SubmitMatch-input"
-                    spanClassName="checkmark greenTick"
-                    defaultChecked={step.isComplete}
-                    disabled
-                  />
-                </div>
-              )
-            })}
-          </div>
+          <React.Fragment>
+            <div className="marginTop10">
+              {steps.map((step, index) => {
+                return (
+                  <div key={index}>
+                    <Checkbox
+                      label={step.stepText}
+                      labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "")}
+                      name="stepStatus"
+                      className="SubmitMatch-input"
+                      spanClassName="checkmark"
+                      defaultChecked={step.isComplete}
+                      disabled
+                    />
+                  </div>
+                )
+              })}
+            </div>
+            <div id="pctCircleContainer-userSteps">
+              { percentageCircle(pctStepsCompleted,"purple") }
+            </div>
+          </React.Fragment>
         )}
       </React.Fragment>
     )
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -327,10 +502,11 @@ class HomePage extends Component {
         </div> */}
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn">
           <FeedHeader />
-          <div className="marginTop20 overflowYScroll">
+          {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
+          <div className="mainAndSideContainer marginTop20">
             <div className="sideBar" role="complementary" aria-label="sidebar">
               {hasKeyNotif == true && (
-                <div className="thickPurpleContentBox">
+                <div className="thickPurpleContentBox withBorderTop">
                   {/* <div className="sideBar-header" /> */}
                   <div className="padding20">
                     {userstep == 'autoEnroll' && (
@@ -339,14 +515,13 @@ class HomePage extends Component {
                   </div>
                 </div>
               )}
-
-              <div className="thickPurpleContentBox">
+              <div className="thinPurpleContentBox withBorderTop">
                 {/* <div className="sideBar-header" /> */}
                 <div className="padding20">
                   { this.renderSteps() }
                 </div>
               </div>
-              <div className="thinGreyContentBox">
+              <div className="thinGreyContentBox sideBarContentHiddenOnShrink">
                 <div className="title">My Groups</div>
                 <div className="padding20">
                   <div className="groupsContainer">
@@ -359,19 +534,16 @@ class HomePage extends Component {
               </div>
             </div>
             <div className="mainBar" role="main" aria-label="question and answers">
-              <div>
-                <Link to="/home">
-                  <button type="button" name="all" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn homePage alignCenter width50pc marginRight0' + (tabToView == 'all' ? ' tabActive' : '')}>All</button>
-                </Link>
-                <Link to="/questions">
-                  <button type="button" name="questions" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn homePage alignCenter width50pc marginRight0' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
-                </Link>
-              </div>
               { this.renderTab() }
             </div>
           </div>
+          <Modal {...AddHighlightModalProps}>
+            <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+          </Modal>
+          <Modal {...AddHighlightSmlModalProps}>
+            <AddHighlightModalContent modalID="modal-addHighlightSml" userRole={userRole}/>
+          </Modal>
         </div>
-
       </React.Fragment>
     );
   }

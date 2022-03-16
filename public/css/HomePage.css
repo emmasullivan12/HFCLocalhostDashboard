@@ -101,6 +101,7 @@
 }
 
 .thickPurpleContentBox,
+.thinPurpleContentBox,
 .thinGreyContentBox{
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -112,10 +113,21 @@
 }
 .thickPurpleContentBox{
   border: 6px solid #4e4ed6;
+}
+.thickPurpleContentBox.withBorderTop{
+  border-top: 20px solid #4e4ed6;
+}
+.thinPurpleContentBox{
+  border: 2px solid #4e4ed6;
+}
+.thinPurpleContentBox.withBorderTop{
   border-top: 20px solid #4e4ed6;
 }
 .thinGreyContentBox{
   border: 2px solid #d9d9d9;
+}
+.thinGreyContentBox.withBorderTop{
+  border-top: 20px solid #d9d9d9;
 }
 .thinGreyContentBox .title{
   background: #f5f5f5;
@@ -135,6 +147,7 @@
 }
 @media screen and (min-width: 1080px) {
   .thickPurpleContentBox,
+  .thinPurpleContentBox,
   .thinGreyContentBox{
     margin-left: 20px;
   }
@@ -150,6 +163,13 @@
   background-color: #4e4ed6;
   height: 20px;
 }*/
+
+#pctCircleContainer-userSteps{
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  margin-top: 10px;
+}
 
 .checkbox-container.homePage{
   padding-top: 1rem;

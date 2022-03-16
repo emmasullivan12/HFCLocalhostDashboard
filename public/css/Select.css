@@ -432,6 +432,15 @@ svg {
   background: #55c459; /* green */
   color: #fff;
 }
+.multiple.greenOutline{
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 15px;
+  background: #fff;
+  border: 1px solid #55c459;
+  color: #55c459;
+}
 .multiple.grey{
   position: relative;
   display: inline-block;
