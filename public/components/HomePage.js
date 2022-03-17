@@ -11,7 +11,8 @@ import FeedHeader from './FeedHeader.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import Modal from './Modal';
-import {percentageCircle, ChevronDown, ChevronUp} from './GeneralFunctions.js';
+import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
+import {percentageCircle, checkMobile, ChevronDown, ChevronUp} from './GeneralFunctions.js';
 import "../css/HomePage.css";
 import "../css/HomepageCTAContainer.css";
 
@@ -45,7 +46,8 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'autoEnroll',
-      userRole: 'mentor'
+      userRole: 'mentor',
+      showAddSkillsModal: false,
     }
   }
 
@@ -54,13 +56,20 @@ class HomePage extends Component {
   }
 
   componentDidUpdate() {
-    const {tabToView} = this.props;
+    const {tabToView} = this.props; // This comes from Dashboard.js
 
-    // Maybe use this to determine whether to trigger or now https://stackoverflow.com/questions/69806279/how-to-know-a-react-link-component-has-been-clicked
+    // Maybe use this to determine whether to trigger or not https://stackoverflow.com/questions/69806279/how-to-know-a-react-link-component-has-been-clicked
     if (tabToView == "questions" && tabToView != this.state.tabToView) {
+      const isMobile = checkMobile()
       this.setState({
-        tabToView: tabToView
+        tabToView: tabToView,
       })
+
+      if (isMobile) {
+        this.setState({
+          userStepsIsOpen: false
+        })
+      }
     }
   }
 
@@ -134,15 +143,22 @@ class HomePage extends Component {
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: [], // no answers yet
-        industriesToPostTo: ['2','19'],
+        industriestopostto: ['2','19'],
         hashtags: ['23'],
         hashtagsfreetext: ['my free text hashtag'],
         type: 'questions',
-        hasAcceptedAnswer: false,
+        hasacceptedanswer: false,
         votes: ['123','234','345','456'],
-        views: 1300,
+        mentorseen: ['123','234','345','456'],
+        menteeseen: ['123'],
+        prseen: [],
         uid: '123',
         isanon: 0,
+        authorinsttype: 'sch',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        profilepic: '',
+        url: "/what-wear-to-interview"
       },
       {
         qid: '123457',
@@ -150,15 +166,22 @@ class HomePage extends Component {
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: ['1234','1235'], // 2 answers
-        industriesToPostTo: ['2','19'],
+        industriestopostto: ['2','19'],
         hashtags: ['23','11','30','55','61'],
         hashtagsfreetext: ['my free text hashtag'],
         type: 'questions',
-        hasAcceptedAnswer: true,
+        hasacceptedanswer: true,
         votes: [],
-        views: 2,
+        mentorseen: ['123','234'],
+        menteeseen: [],
+        prseen: [],
         uid: '124',
         isanon: 0,
+        authorinsttype: 'uni',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        profilepic: '',
+        url: "/what-wear-to-interview-2"
       },
       {
         qid: '123458',
@@ -166,15 +189,22 @@ class HomePage extends Component {
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: ['1234','1235'], // 2 answers
-        industriesToPostTo: ['2','19'],
+        industriestopostto: ['2','19'],
         hashtags: ['23','11','30'],
         hashtagsfreetext: ['my free text hashtag'],
         type: 'questions',
-        hasAcceptedAnswer: false,
+        hasacceptedanswer: false,
         votes: [],
-        views: 2,
+        mentorseen: ['123','234','345','456'],
+        menteeseen: [],
+        prseen: [],
         uid: '124',
         isanon: 1,
+        authorinsttype: 'job',
+        fname: 'John',
+        lname: 'Smith',
+        profilepic: '',
+        url: "/what-wear-to-interview-3"
       },
     ]
   /*  const contentArr = [ // Answers
@@ -336,107 +366,183 @@ class HomePage extends Component {
     }
   }
 
+  showModal = (stepIsComplete, reqStepsComplete, modalType) => {
+    if (stepIsComplete || reqStepsComplete != true) { return }
+
+    this.setState({
+      ["show"+modalType+"Modal"]: true,
+    });
+  }
+
+  closeModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: false,
+    });
+  }
+
   renderSteps() {
-    const {userStepsIsOpen, userstep} = this.state;
-    const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
-    const hasJoinedAutoEnrollGroup = false
-    const expertise = ''
-    const learning = ''
-    const userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
-    const numUserAnswers = userHIDs.filter(hid => hid.type == 'qa').length
+    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal} = this.state;
+  //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
+  //  const hasJoinedAutoEnrollGroup = false
+    const expertise = []
+    const learning = []
+    const userHIDs = []
+  //  const userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
+    const numUserAnswers = userHIDs.length == 0 ? 0 : userHIDs.length /* userHIDs.filter(hid => hid.type == 'qa').length ... We decided to count either 'qa' or 'general' highlights because we wanted to orient mentor to what a highlight is when they click "answer a question" in the "complete sign up steps" box */
     const wantsU18 = false // Mentor wants to support U18s
+    const userGroups = []
+    const hasMatch = false
 
     const steps = [
-      {stepText: 'Visit your feed', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-      {stepText: 'Add your key skills', isComplete: (expertise != '' && learning != ''), validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+      {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+      {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: (expertise.length > 0 && learning.length > 0), validSteps: ['didEduEmailVerif', 'didReviewVerif']},
       /*... (userstep == 'autoEnroll') ? [
         {stepText: 'Accept your invite to join the ' + groupName + ' group', isComplete: hasJoinedAutoEnrollGroup, validSteps: ['autoEnroll']},
       ] : [],*/
-      {stepText: 'Answer a question', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
-      {stepText: 'Complete your full mentor application', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), validSteps: ['didShortSUtf']},
+      {stepText: 'Answer a question', modalToShow: 'AnswerAQ', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
+      {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
+      {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
       ...(wantsU18 == true) ? [
-        {stepText: 'Upload a selfie with your Photo ID', isComplete: (userstep == 'didIDUpload' || (wantsU18 && userstep == 'didFullSUtf') || userstep == 'fullSUidTrain'), validSteps: ['didU18tf']},
-        {stepText: 'Upload your CV/Resume or LinkedIn URL', isComplete: ((wantsU18 && userstep == 'didFullSUtf') || userstep == 'fullSUidTrain'), validSteps: ['didIDUpload']},
+        {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), validSteps: ['didU18tf']},
+        {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), validSteps: ['didIDUpload']},
       ] : [],
-      {stepText: 'Complete your 5-min mentor training', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), validSteps: ['didFullSUtf']},
+      {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didFullSUtf', 'didFullSUIDtf']},
     ]
 
-  /*  const steps = [
-      {stepText: 'Visit your feed', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-      {stepText: 'Add your key skills', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-      /*... (userstep == 'autoEnroll') ? [
-        {stepText: 'Accept your invite to join the ' + groupName + 'group', isComplete: 1, validSteps: ['autoEnroll']},
-      ] : [],*/
-    /*  {stepText: 'Answer a question', isComplete: 1, validSteps: ['didShortSUtf']},
-      {stepText: 'Complete your full mentor application', isComplete: 1, validSteps: ['didShortSUtf']},
-      ... (wantsU18 == true) ? [
-        {stepText: 'Upload a selfie with your Photo ID', isComplete: 1, validSteps: ['didU18tf']},
-        {stepText: 'Upload your CV/Resume or LinkedIn URL', isComplete: 0, validSteps: ['didIDUpload']},
-      ] : [],
-      {stepText: 'Complete your 5-min mentor training', isComplete: 1, validSteps: ['didFullSUtf']},
-    ]*/
+  /*  const AddSkillsModalProps = {
+      ariaLabel: 'Add / Edit skills',
+      triggerText: '+ Add Key Skills',
+      usedFor: 'addEditSkillsDashboard',
+      hideTrigger: true,
+      changeInitFocus: true
+    }*/
+
+    const MentorSkillsLearningPromptProps = {
+      ariaLabel: 'Add your key skills >>',
+      triggerText: 'Add your key skills >>',
+      usedFor: 'skillsLearningForm',
+      backBtn: 'arrow',
+      hideTrigger: true,
+      changeInitFocus: true,
+    }
+    const MenteeSkillsLearningPromptProps = {
+      ariaLabel: 'Add what you want to learn >>',
+      triggerText: 'Add what you want to learn >>',
+      usedFor: 'skillsLearningForm',
+      backBtn: 'arrow',
+      hideTrigger: true,
+      changeInitFocus: true,
+    }
+    const AnswerQModalProps = {
+      ariaLabel: 'Add a Highlight',
+      triggerText: 'Highlight',
+      usedFor: 'addHighlightDashboard',
+      hideTrigger: true,
+      changeInitFocus: true,
+      wider: true
+    }
 
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
     const allStepsCompleted = stepsLeftToDo == 0
 
+    if (allStepsCompleted && hasMatch == true) {return}
+
     if (allStepsCompleted == true) {
       return (
-        <div className="marginTop20">
-          <div>
-            <h2 className="landingCTATitle">
-              <span className="emoji-icon stopwatch-emoji titleLeft" />
-              Your matches are on their way!
-            </h2>
-            <p className="landingCTADesc">
-              Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
-            </p>
-            {/*<p className="landingCTADesc">In the meantime...</p>
-            <Modal {...AddHighlightModalProps}>
-              <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
-            </Modal>*/}
+        <div className="thinPurpleContentBox withBorderTop">
+          <div className="padding20">
+            <div className="marginTop20">
+              <div>
+                <h2 className="landingCTATitle">
+                  <span className="emoji-icon stopwatch-emoji titleLeft" />
+                  Your matches are on their way!
+                </h2>
+                <p className="landingCTADesc">
+                  Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us.
+                </p>
+                <p className="landingCTADesc">
+                  It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
+                </p>
+                {/*<p className="landingCTADesc">In the meantime...</p>
+                <Modal {...AddHighlightModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
+                </Modal>*/}
+              </div>
+            </div>
           </div>
         </div>
-
       )
     }
 
-    const pctStepsCompleted = (1 - (stepsLeftToDo / steps.length)) * 100
+    const pctStepsCompleted = Math.round((1 - (stepsLeftToDo / steps.length)) * 100)
 
     return (
-      <React.Fragment>
-        <div className="userStepsTitle" onClick={this.onClick} onKeyDown={this.onKeyDown}>
-          <span><strong>Finish setting up your account</strong></span>
-          <div className="selectContainer">
-            <span className="arrow">
-              { userStepsIsOpen ? <ChevronUp /> : <ChevronDown /> }
-            </span>
+      <div className="thinPurpleContentBox withBorderTop">
+        <div className="padding20">
+          <div className="userStepsTitle" onClick={this.onClick} onKeyDown={this.onKeyDown}>
+            <span><strong>Finish setting up your account</strong></span>
+            <div className="selectContainer">
+              <span className="arrow">
+                { userStepsIsOpen ? <ChevronUp /> : <ChevronDown /> }
+              </span>
+            </div>
           </div>
+          {userStepsIsOpen && (
+            <React.Fragment>
+              <div className="marginTop10">
+                {steps.map((step, index) => {
+                  const reqStepsComplete = step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true
+                  return (
+                    <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow)} className={reqStepsComplete != true ? "tooltip" : ""}>
+                      <Checkbox
+                        label={step.stepText}
+                        labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "") + (reqStepsComplete != true ? " greyText cursorText backgroundNone" : "")}
+                        name="stepStatus"
+                        className="SubmitMatch-input"
+                        spanClassName={"checkmark" + (reqStepsComplete != true ? " disabled" : "")}
+                        defaultChecked={step.isComplete}
+                        disabled
+                      />
+                      {reqStepsComplete != true && (
+                        <div className="tooltiptext checkboxTooltip">{step.tooltiptextWhenLocked}</div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+              <div id="pctCircleContainer-userSteps">
+                { percentageCircle(pctStepsCompleted,"purple") }
+              </div>
+            {/*}  {showAddSkillsModal == true && userRole == 'mentee' && (
+                <Modal {...AddSkillsModalProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+                  <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={(expertise && expertise.length > 0) ? expertise[0] : ''} learning={(learning && learning.length > 0) ? learning[0] : ''}/>
+                </Modal>
+                <FullPageModal {...MenteeSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+                  <Form
+                    questions={questionsSkillsHobbies}
+                    usedFor="skillsLearningForm"
+                    formTitle="Tell us what you want to learn"
+                  />
+                </FullPageModal>
+              )}
+              {showAddSkillsModal == true && userRole == 'mentor' && (
+                <FullPageModal {...MentorSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+                  <Form
+                    questions={questionsSkillsHobbies}
+                    usedFor="skillsLearningForm"
+                    formTitle='Tell us your key skills'
+                  />
+                </FullPageModal>
+              )}*/}
+              {showAnswerAQModal == true && (
+                <Modal {...AnswerQModalProps} handleLocalStateOnClose={() => this.closeModal("AnswerAQ")}>
+                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+                </Modal>
+              )}
+            </React.Fragment>
+          )}
         </div>
-        {userStepsIsOpen && (
-          <React.Fragment>
-            <div className="marginTop10">
-              {steps.map((step, index) => {
-                return (
-                  <div key={index}>
-                    <Checkbox
-                      label={step.stepText}
-                      labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "")}
-                      name="stepStatus"
-                      className="SubmitMatch-input"
-                      spanClassName="checkmark"
-                      defaultChecked={step.isComplete}
-                      disabled
-                    />
-                  </div>
-                )
-              })}
-            </div>
-            <div id="pctCircleContainer-userSteps">
-              { percentageCircle(pctStepsCompleted,"purple") }
-            </div>
-          </React.Fragment>
-        )}
-      </React.Fragment>
+      </div>
     )
   }
 
@@ -474,6 +580,7 @@ class HomePage extends Component {
     const groups = [];
     const hasKeyNotif = true
     const source = 'vhs'
+    const hasMatch = true
 
     if (usersGroups != null || usersGroups.length != 0) {
       usersGroups.forEach((group) => {
@@ -516,12 +623,7 @@ class HomePage extends Component {
                   </div>
                 </div>
               )}
-              <div className="thinPurpleContentBox withBorderTop">
-                {/* <div className="sideBar-header" /> */}
-                <div className="padding20">
-                  { this.renderSteps() }
-                </div>
-              </div>
+              { this.renderSteps() }
               <div className="thinGreyContentBox sideBarContentHiddenOnShrink">
                 <div className="title">My Groups</div>
                 <div className="padding20">

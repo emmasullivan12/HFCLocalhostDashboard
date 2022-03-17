@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022 
+// Dex last merged this code on 7th mar 2022
 
 import React, { Component } from "react";
 
@@ -29,11 +29,11 @@ class MentorFullSignUp extends Component {
     const userRole = 'mentor';
     const country = 'GBR'
 
-//    const expertise = '';
-//    const learning = '';
+    const expertise = '';
+    const learning = '';
     const whyHelp = '';
     const hobbies = [];
-    const hobbiesFreeText = [];
+    const hobbiesfreetext = [];
     const maxEdu = '';
     const eetStatus = 'job';
     const subjects = [];
@@ -68,13 +68,20 @@ class MentorFullSignUp extends Component {
         {value: '4', label: 'Women in the Workforce'},
         {value: '0', label: 'None right now'},
       ]},
-/*      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-      ... (expertise === '') ? [
-        {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+      ...(expertise == null || learning == null) ? [
+        {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+        ...(expertise == null) ? [
+          {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        ] : [],
+        ...(learning == null) ? [
+          {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+        ] : [],
+        ...(hobbies == null && hobbiesfreetext == null) ? [
+          {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+            ...hobbiesOptions,
+          ]},
+        ] : [],
       ] : [],
-      ... (learning === '') ? [
-        {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
-      ] : [], */
       {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
       ... (eetStatus != 'uni') ? [
         {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
@@ -100,12 +107,14 @@ class MentorFullSignUp extends Component {
       ... (subjects.length === 0 && subjectsFreeText.length === 0) ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           ...subjectsOptions,
-      ]},
+        ]},
       ] : [],
-      ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
+      ...(expertise != null && learning != null) ? [
+        ...(hobbies == null && hobbiesfreetext == null) ? [
           {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
             ...hobbiesOptions,
-        ]},
+          ]},
+        ] : [],
       ] : [],
       {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
       {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
@@ -128,9 +137,7 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'},
       ]},
-      ... (mobile == null) ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
-      ] : [],
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
 
     var questionsU18 = [
@@ -152,13 +159,20 @@ class MentorFullSignUp extends Component {
         {value: '4', label: 'Women in the Workforce'},
         {value: '0', label: 'None right now'},
       ]},
-    /*  {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-      ... (expertise === '') ? [
-        {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+      ...(expertise == null || learning == null) ? [
+        {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+        ...(expertise == null) ? [
+          {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        ] : [],
+        ...(learning == null) ? [
+          {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+        ] : [],
+        ...(hobbies == null && hobbiesfreetext == null) ? [
+          {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+            ...hobbiesOptions,
+          ]},
+        ] : [],
       ] : [],
-      ... (learning === '') ? [
-        {q: 'What are some of the skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
-      ] : [],*/
       {q: 'So how did you get where you are?', detail: 'You can help students immensely just by answering the following quick questions about your education', aType: 'interim', name: 'interim'},
       ... (eetStatus != 'uni') ? [
         {q: 'What\'s the highest level of education you\'ve achieved?', conditionalParent: 1, aType: 'select', req: 1, placeholder: 'Select option...', name: 'maxEdu', valueToShow: 'label', options: [
@@ -182,12 +196,14 @@ class MentorFullSignUp extends Component {
       ... (subjects.length === 0 && subjectsFreeText.length === 0) ? [
         {q: 'What subjects did you study at High School (e.g. A-Levels or equivalent)?', detail: 'This will help students relate where they are now to where they can potentially get to!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 75, placeholder: 'Type Subjects...', placeholderOnClick: 'Choose your main subject specialisms:', name: 'subjects', idValue: 'value', valueToShow: 'label', options: [
           ...subjectsOptions,
-      ]},
-      ] : [],
-      ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
-        {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
-          ...hobbiesOptions,
         ]},
+      ] : [],
+      ...(expertise != null && learning != null) ? [
+        ...(hobbies == null && hobbiesfreetext == null) ? [
+          {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
+            ...hobbiesOptions,
+          ]},
+        ] : [],
       ] : [],
       {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
       ... (country === 'GBR') ? [
@@ -236,9 +252,7 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'},
       ]},
-      ... (mobile == null) ? [
-        {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
-      ] : [],
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
 
     return (

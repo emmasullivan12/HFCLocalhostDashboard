@@ -4,11 +4,13 @@ import React, { Component } from "react";
 
 //import AskAQPrompt from "./AskAQPrompt";
 import FeedItem from "./FeedItem";
+import {LoadingSpinner} from './GeneralFunctions.js';
 
 class FeedContainer extends Component {
 
   render() {
     const {userRole, contentArr} = this.props
+    const isLoadingMorePosts = true
 
     return (
       <div className="marginTop20">
@@ -19,7 +21,7 @@ class FeedContainer extends Component {
           <AskAQPrompt userRole="mentor" hasNoContentYet/>
         )}*/}
         {contentArr.length > 0 && contentArr.map((post, index) => {
-          const contentType = post.type
+          const contentType = post.qid ? 'question' : post.type
           return (
             <FeedItem
               contentType={contentType}
@@ -28,6 +30,11 @@ class FeedContainer extends Component {
             />
           )
         })}
+        {isLoadingMorePosts == true && (
+          <div className="marginTop20 marginBottom20">
+            <LoadingSpinner />
+          </div>
+        )}
       </div>
     );
   }

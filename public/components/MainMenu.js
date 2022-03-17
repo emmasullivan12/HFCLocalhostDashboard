@@ -34,7 +34,7 @@ class MainMenu extends Component {
   const {userRole, onClick} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
-      const hasUnreadMentorActivity = true
+    //  const hasUnreadMentorActivity = true
       const pathName = window.location.pathname
 
       return (
@@ -47,9 +47,9 @@ class MainMenu extends Component {
             </FullPageModal>
             <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
               My Activity
-              {hasUnreadMentorActivity && (
+          {/*    {hasUnreadMentorActivity && (
                 <span className="notificationNum">New</span>
-              )}
+              )}*/}
             </NavLink>
           </div>
         );

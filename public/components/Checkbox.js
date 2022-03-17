@@ -47,7 +47,7 @@ class Checkbox extends Component {
             defaultChecked={defaultChecked}
             disabled={disabled}
           />
-          <span className={spanClassName} id={spanId ? spanId : ""}/>
+          <span className={spanClassName} id={spanId ? spanId : ""} />
         </label>
       </React.Fragment>
     )

@@ -468,9 +468,6 @@ table th .description{
 .blueText{
   color: #00B0F0;
 }
-.purpleText{
-  color: #4E4ED6;
-}
 .prospelaPurpleText{
   color: #351c75!important;
 }
@@ -492,6 +489,9 @@ table th .description{
 }
 .inheritFontSize{
   font-size: inherit;
+}
+.backgroundNone{
+  background: none!important;
 }
 .textCursor{
   cursor: text!important;
@@ -953,6 +953,12 @@ table th .description{
   top: -10px;
   transform: scaleY(-1);
   left: 20px;
+}
+.tooltip .tooltiptext.checkboxTooltip{
+  bottom: 60px;
+  left: unset;
+  right: 50px;
+  padding: 5px;
 }
 .tooltip .tooltiptext.below{
   bottom: unset;

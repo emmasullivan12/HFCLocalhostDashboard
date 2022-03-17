@@ -23,9 +23,9 @@
   -moz-box-shadow: 0 0 0 1.2px #e7e7e7;
   cursor: pointer;
 }
-.postTypeButton:last-of-type{
+/*.postTypeButton:last-of-type{
   margin-bottom: 0;
-}
+}*/
 .postTypeButton:hover{
   box-shadow: 0 0 0 1.2px #838383;
   -webkit-box-shadow: 0 0 0 1.2px #838383;

@@ -59,7 +59,7 @@ class MyContentItem extends Component {
     title: 'What is the best thing to wear to an interview?',
     textdetail: 'I know we have to be professional, but would like to stand out if possible.',
     hids: ['1234','1235'], // 2 answers
-    industriesToPostTo: ['2','19'],
+    industriestopostto: ['2','19'],
     hashtags: ['23','11'],
     hashtagsfreetext: ['my free text hashtag'] */
 

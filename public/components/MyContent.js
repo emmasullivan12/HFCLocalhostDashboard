@@ -10,16 +10,17 @@ class MyContent extends Component {
   render() {
     const {userRole, contentType} = this.props
   //  const contentArr = []
-    const contentArr = [ // Questions
+  /*  const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: [], // no answers yet
-        industriesToPostTo: ['2','19'],
+        industriestopostto: ['2','19'],
         hashtags: ['23'],
         hashtagsfreetext: ['my free text hashtag'],
+        votes: ['123','234','345','456'],
       },
       {
         qid: '123457',
@@ -27,12 +28,13 @@ class MyContent extends Component {
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: ['1234','1235'], // 2 answers
-        industriesToPostTo: ['2','19'],
+        industriestopostto: ['2','19'],
         hashtags: ['23','11','30','55','61'],
         hashtagsfreetext: ['my free text hashtag'],
+        votes: ['123','234','345','456'],
       },
-    ]
-  /*  const contentArr = [ // Answers
+    ] */
+    const contentArr = [ // Answers
       {
         hid: '1234',
         uid: '123',
@@ -108,7 +110,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#thirdanswer',
       }
-    ]*/
+    ]
 
     return (
       <div className="mycontent-container">

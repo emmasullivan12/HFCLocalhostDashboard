@@ -45,9 +45,10 @@ class AddHighlightModalContent extends Component {
             {/* <Link to={`/questions/${qid}`}> */}
             <Link to="/questions">
               <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
-                <div className="postTypeIcon fontSize30">
+              {/*  <div className="postTypeIcon fontSize30">
                   <i className="fas fa-question" />
-                </div>
+                </div> */}
+                <div className="placeholderPic askAQ" />
                 <div className="postType-title"><strong>Q&A</strong></div>
                 <div className="postType-desc">Browse mentee questions to answer</div>
               </button>

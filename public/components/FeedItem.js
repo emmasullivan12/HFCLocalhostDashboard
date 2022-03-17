@@ -38,7 +38,7 @@ class FeedItem extends Component {
     let textToShow
 
     switch (contentType) {
-      case 'questions':
+      case 'question':
         textToShow = 'Question'
         break;
       default:
@@ -53,24 +53,24 @@ class FeedItem extends Component {
   render() {
     const {contentType, post} = this.props
 
-    if (contentType == 'questions') {
+    if (contentType == 'question') {
       const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
       const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
-      const qAuthor = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
-      const indArrToShow = post.industriesToPostTo.length <= 2 ? post.industriesToPostTo : post.industriesToPostTo.slice(0,2)
-      const numViews = post.views < 1000 ? post.views : ((Math.round(post.views / 100) / 10) + 'k')
+      const indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
+      const numViews = (post.mentorseen && post.mentorseen.length) + (post.menteeseen && post.menteeseen.length) + (post.prseen && post.prseen.length)
+      const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
 
       return (
-        <Link to={"/questions/" + post.qid} className="link">
+        <Link to={"/questions/" + post.qid + post.url} className="link">
           <div className="contentBox feedItem withHover padding20 positionRel">
-            { this.showContentTypeLabel("questions") }
+            { this.showContentTypeLabel("question") }
             <div className="postContainer">
               <div className="postDetail marginRight20 marginTop10 textRight fontSize13 flexShrink0 width100px darkGreyText">
                 <div className="marginBottom5">{post.votes.length} votes</div>
                 <div className="numAnswers marginBottom5">
                   {post.hids.length != 0 && (
-                    <span className={"multiple marginRight0 fontSize13 " + (post.hasAcceptedAnswer == true ? "green" : "greenOutline")}>
-                      {post.hasAcceptedAnswer == true && (
+                    <span className={"multiple marginRight0 fontSize13 " + (post.hasacceptedanswer == true ? "green" : "greenOutline")}>
+                      {post.hasacceptedanswer == true && (
                         <React.Fragment>
                           <span className="tickNumSelected">
                             <Check />
@@ -84,7 +84,7 @@ class FeedItem extends Component {
                     <span className="multiple grey marginRight0 fontSize13">0 answers</span>
                   )}
                 </div>
-                <div className="marginBottom5">{numViews} views</div>
+                <div className="marginBottom5">{numViewsFormatted} views</div>
               </div>
               <div className="flexGrow1 maxWidth100">
                 <div className="marginTop10 marginBottom10 fontSize16 lineHeight20pc darkGreyText">
@@ -114,8 +114,8 @@ class FeedItem extends Component {
                     </div>
                   )}
                   <div className="fontSize13 positionRel dispInlineBlock flexEnd">
-                    <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : qAuthor.fname} showAsCircle smallIdle picSize={40}/>
-                    <span className="paddingL25">{post.isanon ? "Anonymous" : (qAuthor.fname + " " + qAuthor.lname)}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
+                    <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : post.fname} showAsCircle smallIdle picSize={40}/>
+                    <span className="paddingL25">{post.isanon ? "Anonymous" : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)))}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ class FeedItem extends Component {
           </div>
         </Link>
       );
-    } else if (contentType == 'answers' || contentType == 'generalPosts') {
+    } else if (contentType == 'answer' || contentType == 'general') {
       return <div>Answer or General Post goes here</div>
     }
   }
