@@ -61,7 +61,7 @@ class FeedItem extends Component {
       const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
 
       return (
-        <Link to={"/questions/" + post.qid + post.url} className="link">
+        <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: location.pathname}}} className="link">
           <div className="contentBox feedItem withHover padding20 positionRel">
             { this.showContentTypeLabel("question") }
             <div className="postContainer">
@@ -115,7 +115,7 @@ class FeedItem extends Component {
                   )}
                   <div className="fontSize13 positionRel dispInlineBlock flexEnd">
                     <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : post.fname} showAsCircle smallIdle picSize={40}/>
-                    <span className="paddingL25">{post.isanon ? "Anonymous" : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)))}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
+                    <span className="paddingL20 darkGreyText">{post.isanon ? "Anonymous" : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)))}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
                   </div>
                 </div>
               </div>

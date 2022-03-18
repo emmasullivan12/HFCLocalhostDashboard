@@ -360,7 +360,7 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" roleAllowed="mentor" userRole="mentor" component={HomePage}/>
                 <Route exact path="/questions" roleAllowed="mentor" userRole="mentor" render={(props) => <HomePage {...props} tabToView="questions" />}/>
-                <Route path="/questions/:qid" component={QA}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} />}/>
                 <Route path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

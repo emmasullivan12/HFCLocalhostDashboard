@@ -578,7 +578,7 @@ class HomePage extends Component {
       {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: '/aw-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
     ];
     const groups = [];
-    const hasKeyNotif = true
+    const hasKeyNotif = userstep == 'autoenroll'
     const source = 'vhs'
     const hasMatch = true
 

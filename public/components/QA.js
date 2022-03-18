@@ -1,10 +1,11 @@
 // Dex last merged this code on 23rd feb 2022
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
-import {metaAdder, checkMobile, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner} from './GeneralFunctions.js';
+import {metaAdder, checkMobile, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import MenuNav from './MenuNav.js';
@@ -212,6 +213,8 @@ class QA extends Component {
     const qaItem = {
       qid: '123456',
       uid: '123',
+      fname: 'Emma',
+      lname: 'Sullivan',
       datecreated: '2020-09-04T13:30:50.667Z',
       lastupdated: '2022-02-02T13:30:50.667Z',
       title: 'What is the best thing to wear to an interview?',
@@ -248,9 +251,9 @@ class QA extends Component {
     //  reported jsonb
     //  reportedstatus jsonb
     }
-    const qAuthor = {uid: '123', fname: 'Emma', lname: 'Sullivan'}
     const myID = '123'; //223456
     const userRole = 'mentor'
+    const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
     }
@@ -442,8 +445,15 @@ class QA extends Component {
           </div>
         ) : (
           <React.Fragment>
-            <div className="padding25 marginTop20">
-              <MenuNav />
+            <div className="padding25 marginTop40">
+            {/*  <MenuNav /> */}
+              <Link to={prevURL}>
+                <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14">
+                  <span className="dispInlineBlock"><X /></span>
+                {/*  <span><i className="fas fa-arrow-left"/></span> */}
+                  <span> Close</span>
+                </div>
+              </Link>
               <div className="borderBtm borderGrey paddingBtm marginBottom20">
                 <div className={isMobile == true ? "" : "chatItemFlexContainer"}>
                   <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
@@ -525,11 +535,11 @@ class QA extends Component {
                           <div className="textLeft greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
                           <div className="gridContainer marginTop10">
                             <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
-                              <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qAuthor.fname} showAsCircle picSize={360}/>
+                              <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qaItem.fname} showAsCircle picSize={360}/>
                             </div>
                             <div className="gridRightColumn textLeft whiteSpace fontSize12">
                               <div>
-                                <strong>{qaItem.isanon ? "" : (qAuthor.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qAuthor.lname)))}</strong>
+                                <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
                               </div>
                               <div className="darkGreyText">{credentialText}</div>
                             </div>
