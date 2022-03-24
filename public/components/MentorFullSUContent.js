@@ -7,7 +7,7 @@ import Form from './Form.js';
 import "../css/MentorFullSUContent.css";
 
 const MentorU18FullSUProps = {
-  ariaLabel: 'Speak to Under 18s | Complete your Full Sign Up',
+  ariaLabel: 'Speak to Under 18s | Complete your Full Mentor Application',
   triggerText: 'Yes!',
 //  focusOnLoad: true,
   usedFor: 'mentorFullSU-u18',
@@ -15,7 +15,7 @@ const MentorU18FullSUProps = {
   changeInitFocus: true,
 }
 const MentorOver18FullSUProps = {
-  ariaLabel: 'Complete your Full Sign Up',
+  ariaLabel: 'Complete your Full Mentor Application',
   triggerText: 'Not right now',
   usedFor: 'mentorFullSU',
   backBtn: 'arrow',
@@ -51,7 +51,7 @@ class MentorFullSignUp extends Component {
             usedFor="mentorFullSU-u18"
             renderComponentsInitialState='ukUnisList'
             saveOnSubmit='u18'
-            formTitle="Complete your full sign up"
+            formTitle="Complete your full mentor application"
           />
         </FullPageModal>
         <FullPageModal {...MentorOver18FullSUProps}>
@@ -60,7 +60,7 @@ class MentorFullSignUp extends Component {
             usedFor="mentorFullSU"
             renderComponentsInitialState='ukUnisList'
             saveOnSubmit='u18'
-            formTitle="Complete your full sign up"
+            formTitle="Complete your full mentor application"
           />
         </FullPageModal>
       </React.Fragment>

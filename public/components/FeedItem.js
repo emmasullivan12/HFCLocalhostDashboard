@@ -61,8 +61,8 @@ class FeedItem extends Component {
       const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
 
       return (
-        <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: location.pathname}}} className="link">
-          <div className="contentBox feedItem withHover padding20 positionRel">
+        <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link">
+          <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype="question">
             { this.showContentTypeLabel("question") }
             <div className="postContainer">
               <div className="postDetail marginRight20 marginTop10 textRight fontSize13 flexShrink0 width100px darkGreyText">
@@ -87,11 +87,27 @@ class FeedItem extends Component {
                 <div className="marginBottom5">{numViewsFormatted} views</div>
               </div>
               <div className="flexGrow1 maxWidth100">
-                <div className="marginTop10 marginBottom10 fontSize16 lineHeight20pc darkGreyText">
+                <div className="marginTop10 fontSize18 lineHeight20pc darkGreyText">
                   <strong>{post.title}</strong>
                 </div>
+                <div className="marginBottom10 marginTop5 fontSize13">
+                  in <span className="bubbleContainer">
+                    {indArrToShow.map((indID) => {
+                      let industryItem, icon, indName
+                      if (indID == '99999') {
+                        icon = 'fas fa-hashtag'
+                        indName = 'General Advice'
+                      } else {
+                        industryItem = getIndustryDeets(indID)
+                        icon = industryItem.fa
+                        indName = industryItem.label
+                      }
+                      return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
+                    })}
+                  </span>{post.industriestopostto.length > 2 ? 'and other groups' : ''}
+                </div>
                 {/*{post.textdetail != '' && (
-                  <div className="marginBottom20 answerSummary greyText fontSize16">
+                  <div className="marginBottom20 max2Lines greyText fontSize16">
                     <div>{post.textdetail}</div>
                   </div>
                 )}*/}
@@ -123,8 +139,10 @@ class FeedItem extends Component {
           </div>
         </Link>
       );
-    } else if (contentType == 'answer' || contentType == 'general') {
-      return <div>Answer or General Post goes here</div>
+    } else if (contentType == 'answer') {
+      return <div className="feedItem" data-itemid={post.hid} data-itemtype="answer">Answer posts goes here</div>
+    } else if (contentType == 'general') {
+      return <div className="feedItem" data-itemid={post.hid} data-itemtype="general">General posts goes here</div>
     }
   }
 }

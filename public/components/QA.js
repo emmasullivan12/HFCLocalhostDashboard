@@ -236,6 +236,9 @@ class QA extends Component {
       authorstate: 'Bedf',
       authorcountry: 'GBR',
       votes: ['123','234','345','456'],
+      mentorseen: ['123','234','345','456'],
+      menteeseen: ['123'],
+      prseen: [],
       url: "what-best-wear-to-interview"
     //  reactions jsonb
     /*  seen: [
@@ -432,6 +435,8 @@ class QA extends Component {
     const indArrToShow = qaItem.industriestopostto.length <= 2 ? qaItem.industriestopostto : qaItem.industriestopostto.slice(0,2)
     const hashtagsCommaString = (qaItem.hashtags.length > 0 || qaItem.hashtagsfreetext.length > 0) ? convertHashtags(qaItem.hashtags, qaItem.hashtagsfreetext) : []
     const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+    const numViews = (qaItem.mentorseen && qaItem.mentorseen.length) + (qaItem.menteeseen && qaItem.menteeseen.length) + (qaItem.prseen && qaItem.prseen.length)
+    const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
     let aIsMe, aCredentialText, aAuthorinsttype
 
     return (
@@ -474,14 +479,23 @@ class QA extends Component {
                   <div>
                     Asked {timeSince(qaItem.datecreated)} in <span className="bubbleContainer">
                       {indArrToShow.map((indID) => {
-                        let industryItem = getIndustryDeets(indID)
-                        let icon = industryItem.fa
-                        let indName = industryItem.label
+                        let industryItem, icon, indName
+                        if (indID == '99999') {
+                          icon = 'fas fa-hashtag'
+                          indName = 'General Advice'
+                        } else {
+                          industryItem = getIndustryDeets(indID)
+                          icon = industryItem.fa
+                          indName = industryItem.label
+                        }
                         return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
                       })}
                     </span>{qaItem.industriestopostto.length > 2 ? 'and other groups' : ''}
                   </div>
-                  <div>Active {timeSince(mostRecentActivityDate)}</div>
+                  <div>
+                    <span className="paddingR20">Active {timeSince(mostRecentActivityDate)}</span>
+                    <span><span className="greyText"><i className="fas fa-eye"/></span> Viewed {numViewsFormatted} times</span>
+                  </div>
                 </div>
               </div>
             {/*  <div className="mainBar" role="main" aria-label="question and answers"> */}
@@ -501,9 +515,11 @@ class QA extends Component {
                     </div>
                   </div>
                   <div className="gridRightColumn">
-                    <div className="qDetailContainer marginBottom20">
-                      {qaItem.textdetail}
-                    </div>
+                    {qaItem.textdetail && (
+                      <div className="qDetailContainer marginBottom20">
+                        {qaItem.textdetail}
+                      </div>
+                    )}
                     {hashtagsArray.length > 0 && (
                       <div className="tagsList">
                         {hashtagsArray.map((hashtag) => {

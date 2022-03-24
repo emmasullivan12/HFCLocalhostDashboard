@@ -9,8 +9,8 @@ import GroupCircle from "./GroupCircle";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import MentorFullSignUp from './MentorFullSignUp.js';
 import MentorMatches from './MentorMatches';
-import MentorU18Picture from './MentorU18Picture.js';
-import MentorU18Doc from './MentorU18Doc.js';
+//import MentorU18Picture from './MentorU18Picture.js';
+//import MentorU18Doc from './MentorU18Doc.js';
 import MentorTraining from './MentorTraining.js';
 import Modal from './Modal';
 import SkillsLearningPrompt from "./SkillsLearningPrompt";
@@ -80,24 +80,23 @@ class MentorHomepageCTAContainer extends Component {
         {(step === 'didEduEmailVerif' || step === 'didReviewVerif') && (expertise == '' || learning == '') && (
           <SkillsLearningPrompt userRole='mentor' expertise={expertise} learning={learning}/>
         )}
-        {(expertise != '' && learning != '') && step != 'autoEnroll'&& (
+      {/*  {(expertise != '' && learning != '') && step != 'autoEnroll'&& (
           <React.Fragment>
-            {/*<Feed userRole='mentor' />*/}
             <div>hello</div>
           </React.Fragment>
-        )}
+        )} */}
         {step === 'autoEnroll' && (
           <AutoEnrollPrompt userRole='mentor' source={source}/>
         )}
         {step === 'didShortSUtf' && (
           <MentorFullSignUp />
         )}
-        {step === 'didU18tf' && (
-          <MentorU18Picture />
-        )}
-        {step === 'didIDUpload' && (
-          <MentorU18Doc />
-        )}
+      {/*  {step === 'didU18tf' && (
+          <MentorU18Picture /> // Deleted as no longer using / has moved
+        )} */}
+      {/*  {step === 'didIDUpload' && (
+          <MentorU18Doc /> // Deleted as no longer using / has moved
+        )} */}
         {step === 'didFullSUtf' && (
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}

@@ -10,22 +10,25 @@ import hobbiesOptions from './Hobbies.js';
 import subjectsOptions from './Subjects.js';
 
 const MentorFullSUModalProps = {
-  ariaLabel: 'Complete Full Sign Up',
-  triggerText: 'Complete Full Sign Up >>',
+  ariaLabel: 'Complete your Full Mentor Application',
+  triggerText: 'Complete your Full Mentor Application >>',
   usedFor: 'underOrOver18',
-  changeInitFocus: true,
+  hideTrigger: true,
+//  changeInitFocus: true,
 }
 
 const MentorOver18FullSUProps = {
-  ariaLabel: 'Complete Full Sign Up >>',
-  triggerText: 'Complete Full Sign Up >>',
+  ariaLabel: 'Complete Full Mentor Application >>',
+  triggerText: 'Complete Full Mentor Application >>',
   usedFor: 'mentorFullSUAusNzl',
   backBtn: 'arrow',
-  changeInitFocus: true,
+  hideTrigger: true,
+//  changeInitFocus: true,
 }
 
 class MentorFullSignUp extends Component {
   render() {
+    const {closeModal} = this.props
     const userRole = 'mentor';
     const country = 'GBR'
 
@@ -50,7 +53,7 @@ class MentorFullSignUp extends Component {
 
     var questionsO18 = [
       /* eslint-disable object-property-newline */
-      {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
+      {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
         {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
@@ -141,7 +144,7 @@ class MentorFullSignUp extends Component {
     ]
 
     var questionsU18 = [
-      {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We know life gets in the way. That\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
+      {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
         {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
@@ -255,39 +258,27 @@ class MentorFullSignUp extends Component {
       {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
     ]
 
-    return (
-      <section>
-        <div className="contentBox landingCTA">
-          <div className="placeholderPic completeFullSUMentor"/>
-          <h2 className="landingCTATitle">
-            Complete your mentor profile / full application
-          </h2>
-          <p className="landingCTADesc">
-            {'We need to know a few more quick details, including your current situation and ' + ((country != 'AUS' && country != 'NZL') ? 'whether you want to support under-18 students' : 'how you\'d like to mentor')}
-          </p>
-          <div>
-            {country != 'AUS' && country != 'NZL' && (
-              <Modal {...MentorFullSUModalProps}>
-                <MentorFullSUContent
-                  questionsO18={questionsO18}
-                  questionsU18={questionsU18}
-                />
-              </Modal>
-            )}
-            {(country === 'AUS' || country === 'NZL') && (
-              <FullPageModal {...MentorOver18FullSUProps}>
-                <Form
-                  questions={questionsO18}
-                  usedFor="mentorFullSUAusNzl"
-                  saveOnSubmit='u18'
-                  formTitle="Complete your full sign up"
-                />
-              </FullPageModal>
-            )}
-          </div>
-        </div>
-      </section>
-    );
+    if (country != 'AUS' && country != 'NZL') {
+      return (
+        <Modal {...MentorFullSUModalProps} handleLocalStateOnClose={() => closeModal("MentorFullApp")}>
+          <MentorFullSUContent
+            questionsO18={questionsO18}
+            questionsU18={questionsU18}
+          />
+        </Modal>
+      )
+    } else if (country === 'AUS' || country === 'NZL') {
+      return (
+        <FullPageModal {...MentorOver18FullSUProps} handleLocalStateOnClose={() => closeModal("MentorFullApp")}>
+          <Form
+            questions={questionsO18}
+            usedFor="mentorFullSUAusNzl"
+            saveOnSubmit='u18'
+            formTitle="Complete your full mentor application"
+          />
+        </FullPageModal>
+      )
+    }
   }
 }
 

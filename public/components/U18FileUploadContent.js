@@ -94,10 +94,14 @@ class U18FileUploadContent extends Component {
       <React.Fragment>
         <div className="capture">
           <div onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-            <div className="modal-subtitle">
-              Upload CV or LinkedIn URL
-            </div>
-            <form className="fileUploadForm" id="fileUploadForm" encType="multipart/form-data">
+            <div className="placeholderPic uploadCV"/>
+            <h2 className="landingCTATitle marginBottom20 paddingL paddingR">
+              Upload your CV/Resume or LinkedIn URL
+            </h2>
+            <p className="landingCTADesc marginBottom20 paddingL paddingR">
+              To mentor under-18s, please upload a copy of your CV/Resume or your LinkedIn profile URL.
+            </p>
+            <form className="fileUploadForm paddingL paddingR" id="fileUploadForm" encType="multipart/form-data">
               <label htmlFor="profProfileURL" className="descriptor alignLeft">
                 Link to your <strong>LinkedIn (or equivalent) professional profile</strong>
               </label>

@@ -6,6 +6,7 @@ import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
 import Modal from './Modal.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
+import skillsOptions from './Skills.js';
 
 import "../css/General.css";
 
@@ -40,20 +41,12 @@ class SkillsLearningPrompt extends Component {
       {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
       ... (userRole == 'mentor' && expertise === '') ? [
         {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
-          {value: '1', label: 'Skill 1'},
-          {value: '2', label: 'Skill 2'},
-          {value: '3', label: 'Skill 3'},
-          {value: '4', label: 'Skill 4'},
-          {value: '0', label: 'Skill 5'},
+          ...skillsOptions
         ]},
       ] : [],
       ... (learning === '') ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: (userRole == 'mentee' ? '' : 'Help us demonstrate to students that careers evolve over time!'), aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
-          {value: '1', label: 'Skill 1'},
-          {value: '2', label: 'Skill 2'},
-          {value: '3', label: 'Skill 3'},
-          {value: '4', label: 'Skill 4'},
-          {value: '0', label: 'Skill 5'},
+          ...skillsOptions
         ]},
       ] : [],
     ]

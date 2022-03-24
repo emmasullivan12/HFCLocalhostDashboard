@@ -131,14 +131,14 @@ class MyContentItem extends Component {
             </div>
           </div>
           <Router>
-            <div className="marginTop10 marginBottom10 fontSize18 lineHeight20pc">
+            <div className="marginTop10 marginBottom10 fontSize16 lineHeight20pc">
             {/*  <Link to="/questions"> */}
               <strong>{post.title}</strong>
             {/*  </Link> */}
             </div>
           </Router>
           {contentType == 'answers' && (
-            <div className="marginBottom20 answerSummary greyText">
+            <div className="marginBottom20 max2Lines greyText">
               <div className="darkGreyText">You answered: </div>
               <div>{post.text}</div>
             </div>

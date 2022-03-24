@@ -6,13 +6,23 @@ import {Link} from "react-router-dom";
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
 import Checkbox from './Checkbox.js';
+import FeedbackReqPrompt from "./FeedbackReqPrompt";
 import FeedContainer from "./FeedContainer.js";
 import FeedHeader from './FeedHeader.js';
+import Form from './Form.js';
+import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
+import MentorFullSignUp from './MentorFullSignUp.js';
+import MentorTraining from './MentorTraining.js';
 import Modal from './Modal';
+import NewAnswerToQPrompt from "./NewAnswerToQPrompt";
+import NewMatchPrompt from "./NewMatchPrompt";
 import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
+import U18CameraUploadContent from './U18CameraUploadContent.js';
+import U18FileUploadContent from './U18FileUploadContent.js';
 import {percentageCircle, checkMobile, ChevronDown, ChevronUp} from './GeneralFunctions.js';
+import skillsOptions from './Skills.js';
 import "../css/HomePage.css";
 import "../css/HomepageCTAContainer.css";
 
@@ -20,6 +30,14 @@ const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live Group',
   triggerText: 'Join a Group',
   usedFor: 'joinProgSmlHome',
+  changeInitFocus: true
+}
+
+const JoinProgrammeStepModalProps = {
+  ariaLabel: 'Join a live Group',
+  triggerText: 'Join a Group',
+  usedFor: 'joinProgSmlHome',
+  hideTrigger: true,
   changeInitFocus: true
 }
 
@@ -40,19 +58,38 @@ const AddHighlightSmlModalProps = {
 }
 
 class HomePage extends Component {
+  observer = null
+
   constructor(props) {
     super(props);
     this.state = {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
-      userstep: 'autoEnroll',
+      userstep: 'somethingelse',
       userRole: 'mentor',
+      source: 'vhs',
       showAddSkillsModal: false,
+      showAnswerAQModal: false,
+      showMentorFullAppModal: false,
+      showJoinAGroupModal: false,
+      showMentorIDModal: false,
+      showMentorCVModal: false,
+      showMentorTrainingModal: false,
+      seenQIDsArr: [],
+      seenHIDsArr: [],
     }
   }
 
   componentDidMount() {
     document.getElementById("clientWindowContainer").classList.add('overflowYHidden')
+
+    // Create observer to detect which feed items have been viewed in viewport
+    this.observer = this.createFeedItemObserver()
+
+    // Track all feed items currently loaded
+    document.getElementById("feedItems").querySelectorAll('.feedItem').forEach((item) => {
+      this.observer.observe(item);
+    });
   }
 
   componentDidUpdate() {
@@ -71,10 +108,72 @@ class HomePage extends Component {
         })
       }
     }
+
+    // Observe new feed items that are loaded
+    if (this.state.newFeedItemsLoaded == true) {
+      // Firstly, stop observing all prev feed items. Might not need to do this because I already unobserve each individual item once it becomes visible
+      this.observer.disconnect()
+
+      // Observe those new items
+      this.state.newFeedItemArr.map((item) => {
+        this.observer.observe(item);
+      })
+    }
   }
 
   componentWillUnmount() {
+    // Unobserve all feed items
+    // const observer = this.createFeedItemObserver()
+    /*document.getElementById("feedItems").querySelectorAll('.feedItem').forEach((item) => {
+      this.observer.unobserve(item);
+    });*/
+    this.observer.disconnect()
+
     document.getElementById("clientWindowContainer").classList.remove('overflowYHidden')
+  }
+
+  createFeedItemObserver = () => {
+    let options = {
+      threshold: 1
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const el = entry.target
+        const itemId = el.dataset.itemid
+        const itemType = el.dataset.itemtype
+
+        if (entry.intersectionRatio > 0) {
+          if (itemType == "question") {
+            // Stop observing the item as we don't need to anymore
+            this.observer.unobserve(el);
+
+            this.setState(prevState => ({
+              seenQIDsArr: [...prevState.seenQIDsArr, itemId],
+            //  seenQIDsArr: [...prevState.seenQIDsArr, {"itemId": itemId}]
+            //}), () => {
+            //  console.log(this.state.seenQIDsArr)
+            //  console.log(this.observer)
+            }))
+          } else if (itemType == "answer" || itemType == "general") {
+            // Stop observing the item as we don't need to anymore
+            this.observer.unobserve(el);
+
+            this.setState(prevState => ({
+              seenHIDsArr: [...prevState.seenHIDsArr, itemId],
+            //  seenHIDsArr: [...prevState.seenHIDsArr, {"itemId": itemId}]
+            //}), () => {
+            //  console.log(this.state.seenHIDsArr)
+            }))
+          }
+        }
+
+      // Might need to add something for switching tabs i.e. from "All" to "Questions" tab on feed
+
+      });
+    }, options);
+
+    return observer
   }
 
   showUpdateTabBtns = () => {
@@ -143,7 +242,7 @@ class HomePage extends Component {
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
         hids: [], // no answers yet
-        industriestopostto: ['2','19'],
+        industriestopostto: ['99999','19'],
         hashtags: ['23'],
         hashtagsfreetext: ['my free text hashtag'],
         type: 'questions',
@@ -345,6 +444,32 @@ class HomePage extends Component {
     }
   }
 
+  renderKeyNotif = () => {
+    const {userstep, userRole, source} = this.state
+    const pendingMatchRequest = false
+    const hasUnreadAnswers = false
+    const hasFeedbackToComplete = true
+
+    if (pendingMatchRequest == true) {
+      return (
+        <NewMatchPrompt userRole={userRole}/>
+      )
+    } else if (userstep == 'autoEnroll') {
+      return (
+        <AutoEnrollPrompt source={source}/>
+      )
+    } else if (hasUnreadAnswers == true) {
+      return (
+        <NewAnswerToQPrompt />
+      )
+    } else if (hasFeedbackToComplete == true) {
+      return (
+        <FeedbackReqPrompt />
+      )
+    } else return
+
+  }
+
   onClick = (e) => {
     const currentState = this.state.userStepsIsOpen;
 
@@ -381,7 +506,7 @@ class HomePage extends Component {
   }
 
   renderSteps() {
-    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal} = this.state;
+    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal, showMentorFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
     const expertise = []
@@ -389,8 +514,8 @@ class HomePage extends Component {
     const userHIDs = []
   //  const userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
     const numUserAnswers = userHIDs.length == 0 ? 0 : userHIDs.length /* userHIDs.filter(hid => hid.type == 'qa').length ... We decided to count either 'qa' or 'general' highlights because we wanted to orient mentor to what a highlight is when they click "answer a question" in the "complete sign up steps" box */
-    const wantsU18 = false // Mentor wants to support U18s
-    const userGroups = []
+    const wantsU18 = true // Mentor wants to support U18s
+    const userGroups = ['123']
     const hasMatch = false
 
     const steps = [
@@ -403,19 +528,11 @@ class HomePage extends Component {
       {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
       {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
       ...(wantsU18 == true) ? [
-        {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), validSteps: ['didU18tf']},
-        {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), validSteps: ['didIDUpload']},
+        {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didU18tf']},
+        {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorID', tooltiptextWhenLocked: 'Upload your selfie with Photo ID to unlock this step', validSteps: ['didIDUpload']},
       ] : [],
-      {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didFullSUtf', 'didFullSUIDtf']},
+      {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: (wantsU18 == true ? 'MentorCV' : 'MentorFullApp'), tooltiptextWhenLocked: (wantsU18 == true ? 'Upload your CV/Resume or LinkedIn URL to uplock this step' : 'Complete your full mentor application to unlock this step'), validSteps: ['didFullSUtf', 'didFullSUIDtf']},
     ]
-
-  /*  const AddSkillsModalProps = {
-      ariaLabel: 'Add / Edit skills',
-      triggerText: '+ Add Key Skills',
-      usedFor: 'addEditSkillsDashboard',
-      hideTrigger: true,
-      changeInitFocus: true
-    }*/
 
     const MentorSkillsLearningPromptProps = {
       ariaLabel: 'Add your key skills >>',
@@ -440,6 +557,29 @@ class HomePage extends Component {
       hideTrigger: true,
       changeInitFocus: true,
       wider: true
+    }
+
+    const U18CameraUploadModalProps = {
+      ariaLabel: 'Upload a picture',
+      triggerText: 'Take Selfie with Photo ID >>',
+      usedFor: 'U18picContainer',
+      hideTrigger: true,
+    }
+
+    const U18FileUploadModalProps = {
+      ariaLabel: 'Upload a CV/Resume or URL of your LinkedIn profile)',
+      triggerText: 'Upload CV / LinkedIn >>',
+      usedFor: 'U18fileContainer',
+      changeInitFocus: true,
+      hideTrigger: true,
+    }
+
+    const MentorTrainingModalProps = {
+      ariaLabel: 'Complete your 5-min Mentor Training',
+      triggerText: 'Complete your 5-min Mentor Training >>',
+      usedFor: 'trainingModal',
+      hideTrigger: true,
+    //  changeInitFocus: true,
     }
 
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
@@ -475,6 +615,20 @@ class HomePage extends Component {
     }
 
     const pctStepsCompleted = Math.round((1 - (stepsLeftToDo / steps.length)) * 100)
+
+    var questionsSkillsHobbies = [
+      {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
+      ...(userRole == 'mentor' && expertise && expertise.length == 0) ? [
+        {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
+          ...skillsOptions
+        ]},
+      ] : [],
+      ...(learning && learning.length == 0) ? [
+        {q: 'What are the skills / areas of interest you are currently looking to build?', detail: (userRole == 'mentee' ? '' : 'Help us demonstrate to students that careers evolve over time!'), aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
+          ...skillsOptions
+        ]},
+      ] : [],
+    ]
 
     return (
       <div className="thinPurpleContentBox withBorderTop">
@@ -513,10 +667,7 @@ class HomePage extends Component {
               <div id="pctCircleContainer-userSteps">
                 { percentageCircle(pctStepsCompleted,"purple") }
               </div>
-            {/*}  {showAddSkillsModal == true && userRole == 'mentee' && (
-                <Modal {...AddSkillsModalProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
-                  <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={(expertise && expertise.length > 0) ? expertise[0] : ''} learning={(learning && learning.length > 0) ? learning[0] : ''}/>
-                </Modal>
+              {showAddSkillsModal == true && userRole == 'mentee' && (
                 <FullPageModal {...MenteeSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
                   <Form
                     questions={questionsSkillsHobbies}
@@ -533,10 +684,33 @@ class HomePage extends Component {
                     formTitle='Tell us your key skills'
                   />
                 </FullPageModal>
-              )}*/}
+              )}
               {showAnswerAQModal == true && (
                 <Modal {...AnswerQModalProps} handleLocalStateOnClose={() => this.closeModal("AnswerAQ")}>
                   <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+                </Modal>
+              )}
+              {showMentorFullAppModal == true && (
+                <MentorFullSignUp closeModal={this.closeModal}/>
+              )}
+              {showJoinAGroupModal == true && (
+                <Modal {...JoinProgrammeStepModalProps} handleLocalStateOnClose={() => this.closeModal("JoinAGroup")}>
+                  <JoinProgrammeModalContent />
+                </Modal>
+              )}
+              {showMentorIDModal == true && (
+                <Modal {...U18CameraUploadModalProps} handleLocalStateOnClose={() => this.closeModal("MentorID")}>
+                  <U18CameraUploadContent/>
+                </Modal>
+              )}
+              {showMentorCVModal == true && (
+                <Modal {...U18FileUploadModalProps} handleLocalStateOnClose={() => this.closeModal("MentorCV")}>
+                  <U18FileUploadContent/>
+                </Modal>
+              )}
+              {showMentorTrainingModal == true && (
+                <Modal {...MentorTrainingModalProps} handleLocalStateOnClose={() => this.closeModal("MentorTraining")}>
+                  <MentorTraining />
                 </Modal>
               )}
             </React.Fragment>
@@ -547,7 +721,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep, userRole} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -578,9 +752,9 @@ class HomePage extends Component {
       {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: '/aw-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
     ];
     const groups = [];
-    const hasKeyNotif = userstep == 'autoenroll'
-    const source = 'vhs'
     const hasMatch = true
+    const pendingMatchRequest = true
+    const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true
 
     if (usersGroups != null || usersGroups.length != 0) {
       usersGroups.forEach((group) => {
@@ -617,9 +791,7 @@ class HomePage extends Component {
                 <div className="thickPurpleContentBox withBorderTop">
                   {/* <div className="sideBar-header" /> */}
                   <div className="padding20">
-                    {userstep == 'autoEnroll' && (
-                      <AutoEnrollPrompt source={source}/>
-                    )}
+                    { this.renderKeyNotif() }
                   </div>
                 </div>
               )}

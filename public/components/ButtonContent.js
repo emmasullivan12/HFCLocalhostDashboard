@@ -113,7 +113,7 @@ function ButtonContent(props) {
     case 'mentee-profile-prModAuto':
     case 'mentor-profile-prModAuto':
       return (
-        <div className="button-unstyled userDetail-viewProfile lightPurpleText">
+        <div className="button-unstyled userDetail-viewProfile lightPurpleText marginLeft10">
           {text}
         </div>
       )

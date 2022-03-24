@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th aug 2021 
+// Dex last merged this code on 18th aug 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -82,16 +82,28 @@ class FullPageModal extends React.Component {
   }
 
   componentDidMount() {
+    const {hideTrigger} = this.props;
+
     window.addEventListener('scroll', this.handleNavScroll)
 
     // Closes modal if user presses browser back button
     let self = this
     window.addEventListener("popstate", this.onPopState.bind(event, self))
+
+    // If want to open Modal automatically when called
+    if (hideTrigger == true) {
+      this.onOpen();
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleNavScroll)
     window.removeEventListener('popstate', this.onPopState)
+    if (this.props.manualCloseModalNotTrigger) {
+      if (this.state.isOpen == true) {
+        this.onClose()
+      }
+    }
   }
 
   onOpen() {

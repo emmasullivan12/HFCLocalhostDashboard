@@ -152,7 +152,7 @@
 }
 .placeholderPic.askAQ{
   background-repeat: no-repeat;
-  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon_60.png);
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon.png);
   background-size: contain;
   background-position: center;
   height: 40px;
@@ -192,6 +192,14 @@
   min-height: 80px;
 }
 
+.placeholderPic.completeTrain{
+  background-repeat: no-repeat;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteTraining_Icon.png);
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+
 .placeholderPic.completeMenteeTrain{
   background-repeat: no-repeat;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteMenteeTraining.png);
@@ -215,6 +223,21 @@
   background-position: center;
   min-height: 80px;
 }
+
+.placeholderPic.newMatch{
+  background-repeat: no-repeat;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/NewMatch_Icon.png);
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
+.placeholderPic.feedbackReq{
+  background-repeat: no-repeat;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CompleteFeedback_Icon.png);
+  background-size: contain;
+  background-position: center;
+  min-height: 80px;
+}
 @media screen and (min-width: 758px) {
   .placeholderPic.uploadSelfieID{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/PhotoID.png);
@@ -227,9 +250,6 @@
   }
   .placeholderPic.openEnvelope{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon_100.png);
-  }
-  .placeholderPic.askAQ{
-    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon_100.png);
   }
   .placeholderPic.uploadCV{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/CVIcon.png);
@@ -247,9 +267,6 @@
   }
   .placeholderPic.openEnvelope{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon.png);
-  }
-  .placeholderPic.askAQ{
-    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/AskAQ_Icon.png);
   }
 }
 

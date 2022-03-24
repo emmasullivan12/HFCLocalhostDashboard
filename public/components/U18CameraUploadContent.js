@@ -27,6 +27,16 @@ render() {
     return (
       <React.Fragment>
         <div className="capture">
+          <div className="placeholderPic uploadSelfieID"/>
+          <h2 className="landingCTATitle marginBottom20 paddingL paddingR">
+            Upload a selfie with your Photo ID
+          </h2>
+          <p className="landingCTADesc marginBottom20 paddingL paddingR">
+            To verify your identify and support under-18s, please upload a clear photo of yourself <strong>holding</strong> your valid government-issued photo ID (e.g. Passport, Drivers Licence).
+          </p>
+          <p className="landingCTADesc marginBottom20 paddingL paddingR">
+            NOTE: Your photo ID must be legible otherwise your selfie will be rejected.
+          </p>
           <Camera  />
           <canvas id="canvas" hidden />
           <form className="upload#PhotoForm" id="idPicUploadForm" >

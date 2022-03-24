@@ -13,7 +13,7 @@ class FeedContainer extends Component {
     const isLoadingMorePosts = true
 
     return (
-      <div className="marginTop20">
+      <div className="marginTop20" id="feedItems">
         {/*{contentArr.length == 0 && userRole == "mentee" && (
           <AskAQPrompt userRole="mentee" hasNoContentYet />
         )}
