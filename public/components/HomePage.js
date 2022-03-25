@@ -234,8 +234,8 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole} = this.state;
-  //  const contentArr = []
-    const contentArr = [ // Questions
+    const contentArr = []
+  /*  const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -305,7 +305,7 @@ class HomePage extends Component {
         profilepic: '',
         url: "/what-wear-to-interview-3"
       },
-    ]
+    ]*/
   /*  const contentArr = [ // Answers
       {
         hid: '1234',

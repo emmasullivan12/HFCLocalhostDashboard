@@ -65,7 +65,7 @@ class UserActivityDashboard extends React.Component {
             {userRole == 'mentor' && (
               <React.Fragment>
                 <button type="button" name="answers" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'answers' ? ' tabActive' : '')}>Answers</button>
-                <button type="button" name="generalPosts" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'generalPosts' ? ' tabActive' : '')}>General Posts</button>
+                <button type="button" name="generalPosts" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'generalPosts' ? ' tabActive' : '')}>General Highlights</button>
               </React.Fragment>
             )}
 

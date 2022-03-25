@@ -9,7 +9,7 @@ class MyContent extends Component {
 
   render() {
     const {userRole, contentType} = this.props
-  //  const contentArr = []
+    const contentArr = []
   /*  const contentArr = [ // Questions
       {
         qid: '123456',
@@ -33,7 +33,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag'],
         votes: ['123','234','345','456'],
       },
-    ] */
+    ]
     const contentArr = [ // Answers
       {
         hid: '1234',
@@ -110,7 +110,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#thirdanswer',
       }
-    ]
+    ] */
 
     return (
       <div className="mycontent-container">

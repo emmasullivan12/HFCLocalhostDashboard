@@ -24,17 +24,33 @@ const AddHighlightMentorModalProps = {
 
 class AskAQPrompt extends Component {
   render() {
-    const {userRole, hasNoContentYet} = this.props
+    const {userRole, hasNoContentYet, noResultsFound} = this.props
 
     return (
       <section>
         <div className="contentBox landingCTA">
           <div className="placeholderPic askAQ" />
           <h2 className="landingCTATitle">
-            {userRole == 'mentee' ? ((hasNoContentYet == true ? "You haven't asked anything yet. " : "") + 'Get your burning questions answered by real employees') : (hasNoContentYet == true ? "You haven't created any content yet." : "Share a highlight or answer mentees Q&A")}
+            {userRole == "mentee" && hasNoContentYet == true && (
+              <div>You haven&#39;t asked anything yet. </div>
+            )}
+            {userRole == "mentee" && noResultsFound == true && (
+              <div>No results found. </div>
+            )}
+            {userRole == "mentor" && hasNoContentYet == true && (
+              <div>You haven&#39;t created any content yet. </div>
+            )}
+            {userRole == "mentor" && noResultsFound == true && (
+              <div>No results found. </div>
+            )}
           </h2>
           <p className="landingCTADesc">
-            {(userRole == 'mentor' && hasNoContentYet == true) ? 'Share a highlight or answer mentees Q&A' : 'Click below to get started'}
+            {userRole == "mentee" && (
+              <div>Get your burning questions answered by real employees</div>
+            )}
+            {userRole == "mentor" && (
+              <div>Share a general highlight or answer mentees Q&A</div>
+            )}
           </p>
           {userRole == 'mentee' && (
             <Modal {...AddHighlightModalProps}>
