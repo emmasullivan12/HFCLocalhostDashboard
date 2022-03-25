@@ -1,4 +1,4 @@
-// Dex last merged this code on 18th mar 2022
+// Last merged this code on 25th mar 2022
 
 import React, { Component } from "react";
 
@@ -114,11 +114,8 @@ class MyContent extends Component {
 
     return (
       <div className="mycontent-container">
-        {contentArr.length == 0 && userRole == "mentee" && (
-          <AskAQPrompt userRole="mentee" hasNoContentYet />
-        )}
-        {contentArr.length == 0 && userRole == "mentor" && (
-          <AskAQPrompt userRole="mentor" hasNoContentYet/>
+        {contentArr.length == 0 && (
+          <AskAQPrompt userRole={userRole} hasNoContentYet />
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           return (

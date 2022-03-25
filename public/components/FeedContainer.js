@@ -14,11 +14,8 @@ class FeedContainer extends Component {
 
     return (
       <div className="marginTop20" id="feedItems">
-        {contentArr.length == 0 && userRole == "mentee" && (
-          <AskAQPrompt userRole="mentee" noResultsFound />
-        )}
-        {contentArr.length == 0 && userRole == "mentor" && (
-          <AskAQPrompt userRole="mentor" noResultsFound />
+        {contentArr.length == 0 && (
+          <AskAQPrompt userRole={userRole} noResultsFound />
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           const contentType = post.qid ? 'question' : post.type
