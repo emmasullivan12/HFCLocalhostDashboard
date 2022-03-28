@@ -68,6 +68,7 @@ class HomePage extends Component {
       userstep: 'somethingelse',
       userRole: 'mentor',
       source: 'vhs',
+      filterBy: '',
       showAddSkillsModal: false,
       showAnswerAQModal: false,
       showMentorFullAppModal: false,
@@ -75,6 +76,7 @@ class HomePage extends Component {
       showMentorIDModal: false,
       showMentorCVModal: false,
       showMentorTrainingModal: false,
+      isUserSearch: false,
       seenQIDsArr: [],
       seenHIDsArr: [],
     }
@@ -195,19 +197,25 @@ class HomePage extends Component {
     this.updateActiveClasslists()
 
     this.setState({
-      tabToView: e.target.name
+      tabToView: e.target.name,
+      filterBy: 'latest' // Sort posts by "latest" by default on tab change
     })
   }
 
   filterBy = (e) => {
+    const {filterBy} = this.state
     e.stopPropagation()
 
     /* eslint-disable no-restricted-syntax */
     for (let sibling of e.currentTarget.parentNode.children) {
-        if (sibling !== e.currentTarget) {
-          sibling.classList.remove('isActive');
-        }
+      if (sibling !== e.currentTarget) {
+        sibling.classList.remove('isActive');
+      }
     }
+
+    this.setState({
+      filterBy: e.currentTarget.value
+    })
 
     e.currentTarget.classList.add('isActive')
 
@@ -215,6 +223,8 @@ class HomePage extends Component {
     const url = new URL(window.location);
     url.searchParams.set('filter', e.currentTarget.value);
     history.pushState({}, '', url) // eslint-disable-line no-restricted-globals
+
+    // Actually do the filtering here
   }
 
   updateActiveClasslists = () => {
@@ -232,8 +242,14 @@ class HomePage extends Component {
     }
   }
 
+  handleSearchResults = () => {
+    this.setState({
+      isUserSearch: true
+    })
+  }
+
   renderTab = () => {
-    const {tabToView, userRole} = this.state;
+    const {tabToView, userRole, isUserSearch} = this.state;
     const contentArr = []
   /*  const contentArr = [ // Questions
       {
@@ -406,7 +422,7 @@ class HomePage extends Component {
               </button>
             </div>
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch}/>
           </div>
         )
       case 'questions':
@@ -419,12 +435,14 @@ class HomePage extends Component {
                   <span>Latest</span>
                 </div>
               </button>
-              <button type="button" className="filter-btn" value="unanswered" onClick={(e) => this.filterBy(e)}>
-                <div>
-                  <span role="img" aria-label="question icon">❓</span>
-                  <span>Unanswered</span>
-                </div>
-              </button>
+              {userRole != 'mentee' && (
+                <button type="button" className="filter-btn" value="unanswered" onClick={(e) => this.filterBy(e)}>
+                  <div>
+                    <span role="img" aria-label="question icon">❓</span>
+                    <span>Unanswered</span>
+                  </div>
+                </button>
+              )}
               <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
                 <div>
                   <span role="img" aria-label="trending">🔥</span>
@@ -783,7 +801,7 @@ class HomePage extends Component {
           <MentorHomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
         </div> */}
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn">
-          <FeedHeader />
+          <FeedHeader handleSearchResults={this.handleSearchResults}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20">
             <div className="sideBar" role="complementary" aria-label="sidebar">

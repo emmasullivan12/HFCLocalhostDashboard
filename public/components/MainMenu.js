@@ -31,25 +31,23 @@ const MentorProfileModalProps = {
 class MainMenu extends Component {
 
   render() {
-  const {userRole, onClick} = this.props;
+    const {userRole, onClick, pathName} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
-    //  const hasUnreadMentorActivity = true
-      const pathName = window.location.pathname
+      //const pathName = window.location.pathname
+      // console.log("pathName in mainmenu: " + pathName)
 
       return (
           <div className="mainMenu">
+            <NavLink exact to="/home" isActive={() => ['/', '/home', '/questions'].includes(pathName) || pathName.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink>
+        {/*    <NavLink exact to="/home" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink> */}
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
-            <NavLink exact to="/home" isActive={() => ['/home', '/questions'].includes(pathName) || pathName.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink>
-        {/*    <NavLink exact to="/questions/1234" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Q&A SEO page</NavLink> */}
+        {/*    <NavLink exact to="/home" isActive={() => ['/home', '/questions'].includes(window.location.pathname) || window.location.pathname.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink> */}
             <FullPageModal {...MentorProfileModalProps}>
               <MentorProfileContent />
             </FullPageModal>
-            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
+            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>
               My Activity
-          {/*    {hasUnreadMentorActivity && (
-                <span className="notificationNum">New</span>
-              )}*/}
             </NavLink>
           </div>
         );

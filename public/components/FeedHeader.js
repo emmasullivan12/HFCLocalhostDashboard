@@ -30,12 +30,22 @@ class FeedHeader extends Component {
   }
 
   handleSubmit = () => {
+    const {handleSearchResults} = this.props
 
     // Set input box text back to ''
     //this.searchTextNode.value = ''
     this.setState({
       text: ''
     })
+
+    const searchCompleted = true
+
+    // Once search results come back / completed
+    if (searchCompleted == true) {
+      if (handleSearchResults) {
+        handleSearchResults()
+      }
+    }
   }
 
   render() {

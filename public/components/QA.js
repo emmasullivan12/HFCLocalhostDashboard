@@ -417,7 +417,9 @@ class QA extends Component {
     const credentialText = getCredText(qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
     let activeDatesArr = []
 
-    activeDatesArr.push(qaItem.lastupdated)
+    if (qaItem) {
+      activeDatesArr.push(qaItem.lastupdated)
+    }
 
     let suggestedAnswersSorted = suggestedAnswers && suggestedAnswers.sort((a, b) => {
       return b.votes.length - a.votes.length || new Date(b.lastupdated) - new Date(a.lastupdated);
@@ -426,7 +428,7 @@ class QA extends Component {
       ...(acceptedAnswer.length > 0 ? acceptedAnswer : []),
       ...(suggestedAnswersSorted.length > 0 ? suggestedAnswersSorted : []),
     ]
-    if (hidsArrSorted.length > 0) {
+    if (hidsArrSorted && hidsArrSorted.length > 0) {
       hidsArrSorted.map((hid) => {
         return activeDatesArr.push(hid.lastupdated)
       });

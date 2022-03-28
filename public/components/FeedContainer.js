@@ -2,19 +2,37 @@
 
 import React, { Component } from "react";
 
+import AddHighlightModalContent from "./AddHighlightModalContent";
 import AskAQPrompt from "./AskAQPrompt";
 import FeedItem from "./FeedItem";
+import Modal from './Modal';
 import {LoadingSpinner} from './GeneralFunctions.js';
+
+const AddHighlightModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'Ask Question',
+  usedFor: 'addHighlightQApage',
+  changeInitFocus: true,
+  wider: true
+}
+
+const AddGeneralHighlightModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: 'Add Highlight',
+  usedFor: 'addHighlightDashboard',
+  changeInitFocus: true,
+  wider: true
+}
 
 class FeedContainer extends Component {
 
   render() {
-    const {userRole, contentArr} = this.props
+    const {userRole, contentArr, isUserSearch} = this.props
     const isLoadingMorePosts = true
 
     return (
       <div className="marginTop20" id="feedItems">
-        {contentArr.length == 0 && (
+        {contentArr.length == 0 && isLoadingMorePosts != true && (
           <AskAQPrompt userRole={userRole} noResultsFound />
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
@@ -27,6 +45,23 @@ class FeedContainer extends Component {
             />
           )
         })}
+        {isUserSearch == true && (
+          <div className="marginBottom50 marginTop20">
+            <div>
+              <div className="qTitle marginBottom5"><strong>Not quite what you were looking for?</strong> {userRole == 'mentee' ? 'Ask your own question about this topic' : 'Add a general post about this topic'}</div>
+              {userRole == 'mentee' && (
+                <Modal {...AddHighlightModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                </Modal>
+              )}
+              {userRole == 'mentor' && (
+                <Modal {...AddGeneralHighlightModalProps}>
+                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole='mentor' isAddGeneral/>
+                </Modal>
+              )}
+            </div>
+          </div>
+        )}
         {isLoadingMorePosts == true && (
           <div className="marginTop20 marginBottom20">
             <LoadingSpinner />

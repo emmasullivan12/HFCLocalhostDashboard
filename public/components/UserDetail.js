@@ -1,4 +1,4 @@
-// Dex last merged this code on 7th mar 2022 
+// Dex last merged this code on 7th mar 2022
 
 import React, { Component } from "react";
 import subjectsOptions from './Subjects.js';
@@ -73,17 +73,21 @@ function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst,
 function convertRole(roles, rolesfreetext) {
   let rolesFullText = [];
 
-  const rolesArr = roleOptions
-    .filter(role => roles.includes(parseInt(role.value,10)))
-  //  .filter(role => roles.includes(role.value))
+  if (roles && roles.length > 0) {
+    const rolesArr = roleOptions
+      .filter(role => roles.includes(parseInt(role.value,10)))
+    //  .filter(role => roles.includes(role.value))
 
-  rolesArr.forEach((x) => {
-    rolesFullText.push(x.label)
-  })
+    rolesArr.forEach((x) => {
+      rolesFullText.push(x.label)
+    })
+  }
 
-  rolesfreetext.forEach((y) => {
-    rolesFullText.push(y)
-  })
+  if (rolesfreetext && rolesfreetext.length > 0) {
+    rolesfreetext.forEach((y) => {
+      rolesFullText.push(y)
+    })
+  }
 
   return rolesFullText.join(", ")
 }
@@ -150,16 +154,21 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   let hobbiesFullText = [];
 //  const stringifyHobbies = JSON.stringify(hobbies);
 
-  const hobbiesArr = hobbiesOptions
-    .filter(hobby => hobbies.includes(parseInt(hobby.value,10)))
-//    .filter(hobby => stringifyHobbies.includes(hobby.value))
+  if (hobbies & hobbies.length > 0) {
+    const hobbiesArr = hobbiesOptions
+      .filter(hobby => hobbies.includes(parseInt(hobby.value,10)))
+  //    .filter(hobby => stringifyHobbies.includes(hobby.value))
 
-  hobbiesArr.forEach((x) => {
-    hobbiesFullText.push(x.label)
-  })
-  hobbiesfreetext.forEach((y) => {
-    hobbiesFullText.push(y)
-  })
+    hobbiesArr.forEach((x) => {
+      hobbiesFullText.push(x.label)
+    })
+  }
+
+  if (hobbiesfreetext && hobbiesfreetext.length > 0) {
+    hobbiesfreetext.forEach((y) => {
+      hobbiesFullText.push(y)
+    })
+  }
 
   return hobbiesFullText.join(", ")
 }
@@ -167,15 +176,20 @@ function convertHobbies(hobbies, hobbiesfreetext) {
 function convertHashtags(hashtags, hashtagsfreetext) {
   let hashtagsFullText = [];
 
-  const hashtagsArr = hashtagOptions
-    .filter(hashtag => hashtags.includes(hashtag.value))
+  if (hashtags && hashtags.length > 0) {
+    const hashtagsArr = hashtagOptions
+      .filter(hashtag => hashtags.includes(hashtag.value))
 
-  hashtagsArr.forEach((x) => {
-    hashtagsFullText.push(x.label)
-  })
-  hashtagsfreetext.forEach((y) => {
-    hashtagsFullText.push(y)
-  })
+    hashtagsArr.forEach((x) => {
+      hashtagsFullText.push(x.label)
+    })
+  }
+
+  if (hashtagsfreetext && hashtagsfreetext.length > 0) {
+    hashtagsfreetext.forEach((y) => {
+      hashtagsFullText.push(y)
+    })
+  }
 
   return hashtagsFullText.join(", ")
 }
@@ -184,16 +198,21 @@ function convertSubjects(subjects, subjectsfreetext) {
   let subjectsFullText = [];
 //  const stringifyHobbies = JSON.stringify(hobbies);
 
-  const subjectsArr = subjectsOptions
-    .filter(subject => subjects.includes(parseInt(subject.value,10)))
-//    .filter(hobby => stringifyHobbies.includes(hobby.value))
+  if (subjects && subjects.length > 0) {
+    const subjectsArr = subjectsOptions
+      .filter(subject => subjects.includes(parseInt(subject.value,10)))
+  //    .filter(hobby => stringifyHobbies.includes(hobby.value))
 
-  subjectsArr.forEach((x) => {
-    subjectsFullText.push(x.label)
-  })
-  subjectsfreetext.forEach((y) => {
-    subjectsFullText.push(y)
-  })
+    subjectsArr.forEach((x) => {
+      subjectsFullText.push(x.label)
+    })
+  }
+
+  if (subjectsfreetext && subjectsfreetext.length > 0) {
+    subjectsfreetext.forEach((y) => {
+      subjectsFullText.push(y)
+    })
+  }
 
   return subjectsFullText.join(", ")
 }

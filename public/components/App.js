@@ -145,6 +145,7 @@ class Dashboard extends Component{
       scrollerBeingDragged: false,
       normalizedPosition: 0,
       contentPosition: 0,
+      pathName: window.location.pathname,
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
     }
@@ -158,6 +159,19 @@ class Dashboard extends Component{
   componentDidMount() {
     this.createScroller();
     window.addEventListener('resize', this.createScroller);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const {pathName} = this.state
+    /*console.log(pathName)
+    console.log("window.location.pathname: "+window.location.pathname)
+    console.log(prevState.pathName)*/
+
+    if (pathName == '' || (window.location.pathname != prevState.pathName)) {
+      this.setState({
+        pathName: window.location.pathname
+      })
+    }
   }
 
   componentWillUnmount() {
@@ -245,6 +259,18 @@ class Dashboard extends Component{
     scrollTrack.style.opacity = 0
   }
 
+  handleMenuItemClick = (e) => {
+    e.persist()
+    this.updatePathName()
+    this.closeMenu(e)
+  }
+
+  updatePathName = () => {
+    this.setState({
+      pathName: window.location.pathname
+    })
+  }
+
   calculateScrollerHeight() {
     var scrollContentWrapper = document.querySelector('.c-scrollbar .c-scrollbar__hider');
     var scrollContainer = document.querySelector('.c-scrollbar');
@@ -287,6 +313,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
+    const {pathName} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -324,11 +351,12 @@ class Dashboard extends Component{
               <div className="c-scrollbar">
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
-                    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/>
+                {/*    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/> */}
+                    <MainMenu userRole={userRole} onClick={this.handleMenuItemClick} pathName={pathName}/>
                     <div className="menuBreak"/>
-                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.closeMenu}/>
+                    <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.closeMenu}/>
+                    <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -361,7 +389,7 @@ class Dashboard extends Component{
                 <Route exact path="/home" roleAllowed="mentor" userRole="mentor" component={HomePage}/>
                 <Route exact path="/questions" roleAllowed="mentor" userRole="mentor" render={(props) => <HomePage {...props} tabToView="questions" />}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} />}/>
-                <Route path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
+                <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
@@ -402,7 +430,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

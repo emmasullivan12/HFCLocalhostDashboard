@@ -39,12 +39,12 @@ class SkillsLearningPrompt extends Component {
 
     var questionsSkillsHobbies = [
       {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
-      ... (userRole == 'mentor' && expertise === '') ? [
+      ...(userRole == 'mentor' && expertise.length == 0) ? [
         {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
           ...skillsOptions
         ]},
       ] : [],
-      ... (learning === '') ? [
+      ...(learning.length == 0) ? [
         {q: 'What are some of the skills / areas of interest you are looking to build?', detail: (userRole == 'mentee' ? '' : 'Help us demonstrate to students that careers evolve over time!'), aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
           ...skillsOptions
         ]},

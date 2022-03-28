@@ -684,7 +684,7 @@ class AddHighlightTextBox extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
-    const {isMenteeQ, isAddAnswer} = this.props
+    const {isMenteeQ, isAddAnswer, isAddGeneral} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -729,6 +729,11 @@ class AddHighlightTextBox extends Component {
           {isAddAnswer == true && (
             <div className="modal-title">
               Add your answer
+            </div>
+          )}
+          {isAddGeneral == true && (
+            <div className="modal-title">
+              Add a general post
             </div>
           )}
           <div className="group-detail-item bright marginTop20">

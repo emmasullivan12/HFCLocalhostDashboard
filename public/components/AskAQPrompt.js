@@ -46,10 +46,10 @@ class AskAQPrompt extends Component {
           </h2>
           <p className="landingCTADesc">
             {userRole == "mentee" && (
-              <div>Get your burning questions answered by real employees</div>
+              <span>Get your burning questions answered by real employees</span>
             )}
             {userRole == "mentor" && (
-              <div>Share a general highlight or answer mentees Q&A</div>
+              <span>Share a general highlight or answer mentees Q&A</span>
             )}
           </p>
           {userRole == 'mentee' && (
