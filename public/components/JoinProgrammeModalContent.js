@@ -76,7 +76,7 @@ class JoinProgrammeModalContent extends Component {
           </div>
           <form className="leftRightPad">
             <p className="modalDesc alignL noMarginBlockEnd paddingBtm noPaddingR noPaddingL reqAsterisk">
-              {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your from your programme manager to become a mentor'}
+              {userRole === 'mentee' ? 'Enter an invite code from your teacher or Prospela Partner below (or click the link if they\'ve sent you an invite email):' : 'Get a group code or invite link from your programme manager to become a mentor'}
             </p>
             <input
               type="text"

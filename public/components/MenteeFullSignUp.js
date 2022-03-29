@@ -10,10 +10,12 @@ import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';
 
 const MenteeFullSignUpProps = {
-  triggerText: 'Complete Full Sign Up >>',
+  ariaLabel: 'Complete your Full Mentee Application',
+  triggerText: 'Complete your Full Mentee Application >>',
   usedFor: 'menteeFullSU',
   backBtn: 'arrow',
-  changeInitFocus: true
+  hideTrigger: true
+//  changeInitFocus: true
 }
 
 // Passes Typeform links to full sign up (mentee) or training (mentors)
@@ -21,6 +23,7 @@ class MenteeFullSignUp extends Component {
   render() {
 //    const fname = 'Emma';
   //  const id = '12345';
+    const {closeModal} = this.props
     const eetStatus = 'sch';
     const userRole = 'mentee';
     const country = 'GBR'
@@ -34,6 +37,7 @@ class MenteeFullSignUp extends Component {
     const hobbies = [];
     const hobbiesFreeText = [];
     const expertise = '';
+    const learning = '';
     const certainty = '';
     const networkSize = '';
     const mobile = '';
@@ -44,7 +48,7 @@ class MenteeFullSignUp extends Component {
     const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
 
     var questions = [
-      {q: 'So, ' + fname + ', you\'ve previously told us about the industry, role(s) & skills that interest you, but what about the things you\'re truly passionate about?', detail: 'Your answers to the following questions will help us find you a mentor match that you\'re likely to click with', aType: 'interim', name: 'interim'},
+      {q: 'So, ' + fname + ', you\'ve previously told us about the industry & role(s) that interest you, but what about the things you\'re truly passionate about and your future ambitions?', detail: 'Your answers to the following questions will help us find you a mentor match that you\'re likely to click with', aType: 'interim', name: 'interim'},
       {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about working hours, social life, salary, being your own boss etc. Note: There are no right or wrong answers here!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'lifestyle'},
       ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
         {q: 'Outside of work & school, what are some of your interests & hobbies?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
@@ -53,6 +57,9 @@ class MenteeFullSignUp extends Component {
       ] : [],
       ... (expertise === '') ? [
         {q: 'What would you say your "key skills" are?', detail: 'To help you think: What do you enjoy doing? Have you helped someone recently? How? What did someone last compliment you on? Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+      ] : [],
+      ...(learning === '') ? [
+        {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us get you the right advice!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
       ] : [],
       {q: 'Nice! So how can we help?', detail: 'Customize what type of support you\'d prefer', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you looking for?', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'supportType', valueToShow: 'label', options: [
@@ -119,38 +126,15 @@ class MenteeFullSignUp extends Component {
     ]
 
     return (
-      <section>
-        <div className="contentBox landingCTA">
-          <div className="placeholderPic completeFullSU"/>
-          <h2 className="landingCTATitle">
-            Complete your mentee profile / full application
-          </h2>
-          <p className="landingCTADesc">
-            We need to know a little more about your future ambitions and what help you might need to help determine the best mentor matches for you
-          </p>
-          <div>
-            <FullPageModal {...MenteeFullSignUpProps}>
-              <Form
-                questions={questions}
-                usedFor="menteeFullSU"
-                formTitle="Complete your full sign up"
-              />
-            </FullPageModal>
-          </div>
-        </div>
-      </section>
+      <FullPageModal {...MenteeFullSignUpProps} handleLocalStateOnClose={() => closeModal("MenteeFullApp")}>
+        <Form
+          questions={questions}
+          usedFor="menteeFullSU"
+          formTitle="Complete your full mentee application"
+        />
+      </FullPageModal>
     );
   }
 }
 
-/*TypeformFullSignUp.propTypes = {
-    users: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => {
-  return {
-    users: state.users
-  };
-};
-*/
 export default MenteeFullSignUp;

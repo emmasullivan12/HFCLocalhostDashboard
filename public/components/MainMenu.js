@@ -55,8 +55,9 @@ class MainMenu extends Component {
       const hasUnreadAnswers = true
       return (
         <div className="mainMenu">
-          <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink>
+        {/*  <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink> */}
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
+          <NavLink exact to="/home" isActive={() => ['/', '/home', '/questions'].includes(pathName) || pathName.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink>
           <FullPageModal {...MenteeProfileModalProps}>
             <MenteeProfileContent />
           </FullPageModal>

@@ -13,7 +13,9 @@ import Form from './Form.js';
 import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
+import MenteeFullSignUp from './MenteeFullSignUp.js';
 import MentorFullSignUp from './MentorFullSignUp.js';
+import MenteeTraining from './MenteeTraining.js';
 import MentorTraining from './MentorTraining.js';
 import Modal from './Modal';
 import NewAnswerToQPrompt from "./NewAnswerToQPrompt";
@@ -57,6 +59,22 @@ const AddHighlightSmlModalProps = {
   wider: true
 }
 
+const AddQModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'Post Question',
+  usedFor: 'addHighlight',
+  changeInitFocus: true,
+  wider: true
+}
+
+const AddQSmlModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: '+ Question',
+  usedFor: 'addHighlightSml',
+  changeInitFocus: true,
+  wider: true
+}
+
 class HomePage extends Component {
   observer = null
 
@@ -66,16 +84,19 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingelse',
-      userRole: 'mentor',
+      userRole: 'mentee',
       source: 'vhs',
       filterBy: '',
       showAddSkillsModal: false,
       showAnswerAQModal: false,
+      showAskAQModal: false,
       showMentorFullAppModal: false,
+      showMenteeFullAppModal: false,
       showJoinAGroupModal: false,
       showMentorIDModal: false,
       showMentorCVModal: false,
       showMentorTrainingModal: false,
+      showMenteeTrainingModal: false,
       isUserSearch: false,
       seenQIDsArr: [],
       seenHIDsArr: [],
@@ -250,8 +271,8 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole, isUserSearch} = this.state;
-    const contentArr = []
-  /*  const contentArr = [ // Questions
+  //  const contentArr = []
+    const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -321,7 +342,7 @@ class HomePage extends Component {
         profilepic: '',
         url: "/what-wear-to-interview-3"
       },
-    ]*/
+    ]
   /*  const contentArr = [ // Answers
       {
         hid: '1234',
@@ -462,11 +483,8 @@ class HomePage extends Component {
     }
   }
 
-  renderKeyNotif = () => {
+  renderKeyNotif = (pendingMatchRequest, hasUnreadAnswers, hasFeedbackToComplete) => {
     const {userstep, userRole, source} = this.state
-    const pendingMatchRequest = false
-    const hasUnreadAnswers = false
-    const hasFeedbackToComplete = true
 
     if (pendingMatchRequest == true) {
       return (
@@ -524,33 +542,52 @@ class HomePage extends Component {
   }
 
   renderSteps() {
-    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal, showMentorFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal} = this.state;
+    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
-    const expertise = []
-    const learning = []
-    const userHIDs = []
-  //  const userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
-    const numUserAnswers = userHIDs.length == 0 ? 0 : userHIDs.length /* userHIDs.filter(hid => hid.type == 'qa').length ... We decided to count either 'qa' or 'general' highlights because we wanted to orient mentor to what a highlight is when they click "answer a question" in the "complete sign up steps" box */
-    const wantsU18 = true // Mentor wants to support U18s
-    const userGroups = ['123']
-    const hasMatch = false
+    let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps
 
-    const steps = [
-      {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-      {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: (expertise.length > 0 && learning.length > 0), validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-      /*... (userstep == 'autoEnroll') ? [
-        {stepText: 'Accept your invite to join the ' + groupName + ' group', isComplete: hasJoinedAutoEnrollGroup, validSteps: ['autoEnroll']},
-      ] : [],*/
-      {stepText: 'Answer a question', modalToShow: 'AnswerAQ', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
-      {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
-      {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
-      ...(wantsU18 == true) ? [
-        {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didU18tf']},
-        {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorID', tooltiptextWhenLocked: 'Upload your selfie with Photo ID to unlock this step', validSteps: ['didIDUpload']},
-      ] : [],
-      {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: (wantsU18 == true ? 'MentorCV' : 'MentorFullApp'), tooltiptextWhenLocked: (wantsU18 == true ? 'Upload your CV/Resume or LinkedIn URL to uplock this step' : 'Complete your full mentor application to unlock this step'), validSteps: ['didFullSUtf', 'didFullSUIDtf']},
-    ]
+    learning = []
+    userGroups = []
+    hasMatch = false
+
+    if (userRole == 'mentor') {
+      expertise = []
+      userHIDs = []
+    //  userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
+      numUserAnswers = userHIDs.length == 0 ? 0 : userHIDs.length /* userHIDs.filter(hid => hid.type == 'qa').length ... We decided to count either 'qa' or 'general' highlights because we wanted to orient mentor to what a highlight is when they click "answer a question" in the "complete sign up steps" box */
+      wantsU18 = true // Mentor wants to support U18s
+      mentorSteps = [
+        {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+        {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: (expertise.length > 0 && learning.length > 0), validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+        /*... (userstep == 'autoEnroll') ? [
+          {stepText: 'Accept your invite to join the ' + groupName + ' group', isComplete: hasJoinedAutoEnrollGroup, validSteps: ['autoEnroll']},
+        ] : [],*/
+        {stepText: 'Answer a question', modalToShow: 'AnswerAQ', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
+        ...(wantsU18 == true) ? [
+          {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didU18tf']},
+          {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorID', tooltiptextWhenLocked: 'Upload your selfie with Photo ID to unlock this step', validSteps: ['didIDUpload']},
+        ] : [],
+        {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: (wantsU18 == true ? 'MentorCV' : 'MentorFullApp'), tooltiptextWhenLocked: (wantsU18 == true ? 'Upload your CV/Resume or LinkedIn URL to uplock this step' : 'Complete your full mentor application to unlock this step'), validSteps: ['didFullSUtf', 'didFullSUIDtf']},
+      ]
+    }
+
+    if (userRole == 'mentee') {
+      userQIDs = []
+      numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
+      menteeSteps = [
+        {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+        {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+        {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
+        {stepText: 'Complete your 5-min mentee training', modalToShow: 'MenteeTraining', isComplete: userstep == 'didSafeG', reqStep: 'MenteeFullApp', tooltiptextWhenLocked: 'Complete your full mentee application to unlock this step', validSteps: ['didFullSUtf']},
+      ]
+    }
+
+    const steps = userRole == 'mentor' ? mentorSteps : menteeSteps
 
     const MentorSkillsLearningPromptProps = {
       ariaLabel: 'Add your key skills >>',
@@ -576,14 +613,20 @@ class HomePage extends Component {
       changeInitFocus: true,
       wider: true
     }
-
+    const AskQModalProps = {
+      ariaLabel: 'Ask a Question',
+      triggerText: 'Ask Question',
+      usedFor: 'askQuestionDashboard',
+      hideTrigger: true,
+      changeInitFocus: true,
+      wider: true
+    }
     const U18CameraUploadModalProps = {
       ariaLabel: 'Upload a picture',
       triggerText: 'Take Selfie with Photo ID >>',
       usedFor: 'U18picContainer',
       hideTrigger: true,
     }
-
     const U18FileUploadModalProps = {
       ariaLabel: 'Upload a CV/Resume or URL of your LinkedIn profile)',
       triggerText: 'Upload CV / LinkedIn >>',
@@ -591,13 +634,18 @@ class HomePage extends Component {
       changeInitFocus: true,
       hideTrigger: true,
     }
-
     const MentorTrainingModalProps = {
       ariaLabel: 'Complete your 5-min Mentor Training',
       triggerText: 'Complete your 5-min Mentor Training >>',
       usedFor: 'trainingModal',
       hideTrigger: true,
     //  changeInitFocus: true,
+    }
+    const MenteeTrainingModalProps = {
+      ariaLabel: 'Complete your 5-min Mentee Training',
+      triggerText: 'Complete your 5-min Mentee Training >>',
+      usedFor: 'trainingModal',
+      hideTrigger: true,
     }
 
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
@@ -635,14 +683,14 @@ class HomePage extends Component {
     const pctStepsCompleted = Math.round((1 - (stepsLeftToDo / steps.length)) * 100)
 
     var questionsSkillsHobbies = [
-      {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
+      {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you\'re interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
       ...(userRole == 'mentor' && expertise && expertise.length == 0) ? [
         {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
           ...skillsOptions
         ]},
       ] : [],
       ...(learning && learning.length == 0) ? [
-        {q: 'What are the skills / areas of interest you are currently looking to build?', detail: (userRole == 'mentee' ? '' : 'Help us demonstrate to students that careers evolve over time!'), aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
+        {q: 'What are the skills / areas of interest you are currently looking to build?', detail: (userRole == 'mentee' ? 'Help us show you the right advice' : 'Help us demonstrate to students that careers evolve over time!'), aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
           ...skillsOptions
         ]},
       ] : [],
@@ -708,12 +756,20 @@ class HomePage extends Component {
                   <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
                 </Modal>
               )}
+              {showAskAQModal == true && (
+                <Modal {...AskQModalProps} handleLocalStateOnClose={() => this.closeModal("AskAQ")}>
+                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+                </Modal>
+              )}
               {showMentorFullAppModal == true && (
                 <MentorFullSignUp closeModal={this.closeModal}/>
               )}
+              {showMenteeFullAppModal == true && (
+                <MenteeFullSignUp closeModal={this.closeModal}/>
+              )}
               {showJoinAGroupModal == true && (
                 <Modal {...JoinProgrammeStepModalProps} handleLocalStateOnClose={() => this.closeModal("JoinAGroup")}>
-                  <JoinProgrammeModalContent />
+                  <JoinProgrammeModalContent userRole={userRole}/>
                 </Modal>
               )}
               {showMentorIDModal == true && (
@@ -729,6 +785,11 @@ class HomePage extends Component {
               {showMentorTrainingModal == true && (
                 <Modal {...MentorTrainingModalProps} handleLocalStateOnClose={() => this.closeModal("MentorTraining")}>
                   <MentorTraining />
+                </Modal>
+              )}
+              {showMenteeTrainingModal == true && (
+                <Modal {...MenteeTrainingModalProps} handleLocalStateOnClose={() => this.closeModal("MenteeTraining")}>
+                  <MenteeTraining />
                 </Modal>
               )}
             </React.Fragment>
@@ -772,7 +833,9 @@ class HomePage extends Component {
     const groups = [];
     const hasMatch = true
     const pendingMatchRequest = true
-    const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true
+    const hasUnreadAnswers = false
+    const hasFeedbackToComplete = true
+    const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true || hasUnreadAnswers == true || hasFeedbackToComplete == true
 
     if (usersGroups != null || usersGroups.length != 0) {
       usersGroups.forEach((group) => {
@@ -796,10 +859,6 @@ class HomePage extends Component {
 
     return (
       <React.Fragment>
-        {/*}<PageHeader {...PageHeaderProps} />
-        <div className="page-panel">
-          <MentorHomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
-        </div> */}
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn">
           <FeedHeader handleSearchResults={this.handleSearchResults}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
@@ -809,7 +868,7 @@ class HomePage extends Component {
                 <div className="thickPurpleContentBox withBorderTop">
                   {/* <div className="sideBar-header" /> */}
                   <div className="padding20">
-                    { this.renderKeyNotif() }
+                    { this.renderKeyNotif(pendingMatchRequest, hasUnreadAnswers, hasFeedbackToComplete) }
                   </div>
                 </div>
               )}
@@ -830,12 +889,26 @@ class HomePage extends Component {
               { this.renderTab() }
             </div>
           </div>
-          <Modal {...AddHighlightModalProps}>
-            <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
-          </Modal>
-          <Modal {...AddHighlightSmlModalProps}>
-            <AddHighlightModalContent modalID="modal-addHighlightSml" userRole={userRole}/>
-          </Modal>
+          {userRole == 'mentor' && (
+            <React.Fragment>
+              <Modal {...AddHighlightModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor'/>
+              </Modal>
+              <Modal {...AddHighlightSmlModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor'/>
+              </Modal>
+            </React.Fragment>
+          )}
+          {userRole == 'mentee' && (
+            <React.Fragment>
+              <Modal {...AddQModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
+              </Modal>
+              <Modal {...AddQSmlModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentee'/>
+              </Modal>
+            </React.Fragment>
+          )}
         </div>
       </React.Fragment>
     );

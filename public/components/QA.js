@@ -255,7 +255,7 @@ class QA extends Component {
     //  reportedstatus jsonb
     }
     const myID = '123'; //223456
-    const userRole = 'mentor'
+    const userRole = 'mentee'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -498,24 +498,25 @@ class QA extends Component {
                     <span className="paddingR20">Active {timeSince(mostRecentActivityDate)}</span>
                     <span><span className="greyText"><i className="fas fa-eye"/></span> Viewed {numViewsFormatted} times</span>
                   </div>
+                  <div className={"fontSize20 marginTop10 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                    <button type="button" className={"button-unstyled alignCenter " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
+                      <span className="paddingR5">
+                        {this.state[qaItem.qid+"-userUpvoted"] == true && (
+                          <i className="fas fa-bell" />
+                        )}
+                        {this.state[qaItem.qid+"-userUpvoted"] != true && (
+                          <i className="far fa-bell" />
+                        )}
+                      </span>
+                      <span className="fontSize12 verticalAlignMiddle">{this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}</span>
+                    </button>
+                    {/*  {this.state[qaItem.qid+"-votes"]} */}
+                  </div>
                 </div>
               </div>
             {/*  <div className="mainBar" role="main" aria-label="question and answers"> */}
               <div role="main" aria-label="question and answers">
                 <div className="gridContainer">
-                  <div className="gridLeftColumn paddingR20">
-                    <div className="displayFlex flexDirColumn alignCenter">
-                    {/*}  <ChevronUp /> */}
-                      <div className={"fontSize28 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                        <button type="button" className={"button-unstyled " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
-                          <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
-                            <path d="M2 25h32L18 9 2 25Z"/>
-                          </svg>
-                        </button>
-                      </div>
-                      {this.state[qaItem.qid+"-votes"]}
-                    </div>
-                  </div>
                   <div className="gridRightColumn">
                     {qaItem.textdetail && (
                       <div className="qDetailContainer marginBottom20">

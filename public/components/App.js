@@ -379,15 +379,15 @@ class Dashboard extends Component{
             <div className="clientWindowContainer col-s-12" role="button" id="clientWindowContainer" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
                 {{
-                  ['mentee']: <Redirect exact from="/" to="/latest-advice" />,
+                  ['mentee']: <Redirect exact from="/" to="/home" />,
                   ['mentor']: <Redirect exact from="/" to="/home" />,
                 }[userRole]}
-                <Route path="/latest-advice" component={LatestAdvice}/>,
+              {/*  <Route path="/latest-advice" component={LatestAdvice}/>, */}
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" roleAllowed="mentor" userRole="mentor" component={HomePage}/>
-                <Route exact path="/questions" roleAllowed="mentor" userRole="mentor" render={(props) => <HomePage {...props} tabToView="questions" />}/>
+                <Route exact path="/home" component={HomePage}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" />}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
@@ -430,7 +430,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
