@@ -128,7 +128,7 @@ class UpdateProfileOverviewContent extends Component {
                     </div>
                   )}
                   {hasMinVerif == true && (
-                    <div className="pr-certified img-circle tooltip">
+                    <div className="pr-certified onProfile img-circle tooltip">
                       <span>&#10003;</span>
                     </div>
                   )}

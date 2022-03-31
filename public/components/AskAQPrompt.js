@@ -24,7 +24,7 @@ const AddHighlightMentorModalProps = {
 
 class AskAQPrompt extends Component {
   render() {
-    const {userRole, hasNoContentYet, noResultsFound} = this.props
+    const {userRole, hasNoContentYet, noResultsFound, updatePathName} = this.props
 
     return (
       <section>
@@ -59,7 +59,7 @@ class AskAQPrompt extends Component {
           )}
           {userRole == 'mentor' && (
             <Modal {...AddHighlightMentorModalProps}>
-              <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
+              <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName}/>
             </Modal>
           )}
         </div>

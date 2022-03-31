@@ -255,7 +255,7 @@ class QA extends Component {
     //  reportedstatus jsonb
     }
     const myID = '123'; //223456
-    const userRole = 'mentee'
+    const userRole = 'mentor'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -508,7 +508,7 @@ class QA extends Component {
                           <i className="far fa-bell" />
                         )}
                       </span>
-                      <span className="fontSize12 verticalAlignMiddle">{this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}</span>
+                      <span className="fontSize12 verticalAlignMiddle noSelect">{this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}</span>
                     </button>
                     {/*  {this.state[qaItem.qid+"-votes"]} */}
                   </div>

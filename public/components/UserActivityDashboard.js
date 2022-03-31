@@ -25,7 +25,7 @@ class UserActivityDashboard extends React.Component {
   }
 
   renderTab = () => {
-    const {userRole} = this.props;
+    const {userRole, updatePathName} = this.props;
     const {tabToView} = this.state;
 
     switch (tabToView) {
@@ -33,8 +33,8 @@ class UserActivityDashboard extends React.Component {
         return <GroupDashOverview /> */
       case 'questions':
       case 'answers':
-      case 'generalPosts':
-        return <MyContent userRole={userRole} contentType={tabToView}/>
+      case 'generals':
+        return <MyContent userRole={userRole} contentType={tabToView} updatePathName={updatePathName}/>
     /*  case 'savedcontent':
         return <GroupDashPayment />
       case 'following':
@@ -65,7 +65,7 @@ class UserActivityDashboard extends React.Component {
             {userRole == 'mentor' && (
               <React.Fragment>
                 <button type="button" name="answers" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'answers' ? ' tabActive' : '')}>Answers</button>
-                <button type="button" name="generalPosts" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'generalPosts' ? ' tabActive' : '')}>General Highlights</button>
+                <button type="button" name="generals" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'generals' ? ' tabActive' : '')}>General Highlights</button>
               </React.Fragment>
             )}
 

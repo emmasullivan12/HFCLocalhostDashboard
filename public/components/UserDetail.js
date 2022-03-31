@@ -70,6 +70,32 @@ function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst,
   }
 }
 
+function getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
+  let verifLevels = []
+
+  // If has verified email
+  if (mentorSUStep != 'did1stSU' && mentorSUStep != 'didCountry' && mentorSUStep != 'didEdu' && mentorSUStep != 'didIndRoleMentor' && mentorSUStep != 'updatingEmail' && mentorSUStep != 'didEduEmailNeedsRev' && mentorSUStep != 'didEmailVerifNeedsRev') {
+    verifLevels.push('email')
+  }
+
+  // If Prospela can verify their edu/work/training (i.e. inst email)
+  if (verifiedType == 1 || eduemailverif == true || profemailverif == true) {
+    verifLevels.push('inst')
+  }
+
+  // If completed their Prospela training
+  if (mentorSUStep == 'didIDTrain' || mentorSUStep == 'didTrain') {
+    verifLevels.push('training')
+  }
+
+  if (tsapproved != '' || tsapproved != null) {
+    verifLevels.push('id') // Prospela approved their ID
+    verifLevels.push('background') // Prospela did crim record & other background checks
+  }
+
+  return verifLevels;
+}
+
 function convertRole(roles, rolesfreetext) {
   let rolesFullText = [];
 
@@ -434,4 +460,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

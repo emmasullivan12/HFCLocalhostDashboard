@@ -1,5 +1,23 @@
 /* Dex last merged this code on 16th dec 2020  */
 
+.prCertifiedBadge{
+  height: 1.25em;
+  position: relative;
+  vertical-align: text-bottom;
+  fill: #6228da;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  max-width: 20px;
+  max-height: 20px;
+}
+.prCertifiedBadge.onProfile{
+  bottom: 45px;
+  left: 58px;
+  font-size: 30px;
+  max-width: unset;
+  max-height: unset;
+}
 .badge{
   display: inline-block;
   font-size: 10px;

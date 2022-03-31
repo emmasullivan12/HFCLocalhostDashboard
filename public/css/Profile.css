@@ -129,8 +129,12 @@
   background-color: rgb(53,28,117);
   background-color: rgba(53,28,117,.5)
 }
-.pr-certified{
+/*pr-certified{
   background-color: #6228da;
+  color: #fff;
+  font-weight: 900;
+}
+.pr-certified.onProfile{
   width: 2rem;
   height: 2rem;
   padding-top: -20px;
@@ -138,11 +142,16 @@
   left: 100px;
   border-style: none;
   position: relative;
-  color: #fff;
   font-size: 20px;
-  font-weight: 900;
   padding-top: 3px;
 }
+.pr-certified.onFeed{
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 2px 4px;
+}*/
 .profileHighlight{
   line-height: 16px;
   color: #2c2d30;

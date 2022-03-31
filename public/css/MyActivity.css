@@ -57,7 +57,11 @@
   background: #e1e1e1;
   color: #a9a9a9;
 }
-.contentTypeLabel.questions{
+.contentTypeLabel.question{
   background: #d8d8ff;
   color: #9b8fe9;
+}
+.contentTypeLabel.answer{
+  background: #d9fdf6;
+  color: #58d2bb;
 }

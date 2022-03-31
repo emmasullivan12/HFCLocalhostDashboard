@@ -496,6 +496,9 @@ table th .description{
 .textCursor{
   cursor: text!important;
 }
+.pointerCursor{
+  cursor: pointer!important;
+}
 .restrictedContent{
   height: 100%;
   padding: 20px 15px 20px 15px;
@@ -558,12 +561,28 @@ table th .description{
   grid-column: 2;
   width: auto;
 }
+.max1Line{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .max2Lines{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.max3Lines{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .zIndex0{
@@ -869,6 +888,9 @@ table th .description{
 .paddingL30{
   padding-left: 30px!important;
 }
+.paddingL50{
+  padding-left: 50px!important;
+}
 .noPaddingL{
   padding-left: 0!important;
 }
@@ -1029,6 +1051,13 @@ table th .description{
 }
 .tooltiptext.profile{
   width: 250px;
+}
+.tooltiptext.profile.onProfile{
+  top: unset;
+  left: 62px;
+}
+.tooltiptext.profile.onFeed{
+  width: 180px;
 }
 .tooltiptext.groups,
 .tooltiptext.compact {

@@ -75,7 +75,7 @@ class MyContentItem extends Component {
   //  hashtags: ['23','20','1','2','0',],
   //  hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
 
-    if (contentType == 'questions' || contentType == 'answers' || contentType == 'generalPosts') {
+    if (contentType == 'questions' || contentType == 'answers' || contentType == 'generals') {
       const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
       const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
       const hasUnreadAnswers = true
@@ -143,7 +143,7 @@ class MyContentItem extends Component {
               <div>{post.text}</div>
             </div>
           )}
-          {(contentType == 'questions' || contentType == 'generalPosts') && hashtagsArray.length > 0 && (
+          {(contentType == 'questions' || contentType == 'generals') && hashtagsArray.length > 0 && (
             <div className="tagsList">
               {hashtagsArray.map((hashtag) => {
                 return (
@@ -180,7 +180,7 @@ class MyContentItem extends Component {
               <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
             </div>
           )}
-          {(contentType == 'questions' || contentType == 'generalPosts') && (
+          {(contentType == 'questions' || contentType == 'generals') && (
             <div className="textRight greyText fontSize14"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
           )}
         </div>

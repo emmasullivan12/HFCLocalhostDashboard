@@ -8,8 +8,8 @@ import MyContentItem from "./MyContentItem";
 class MyContent extends Component {
 
   render() {
-    const {userRole, contentType} = this.props
-    const contentArr = []
+    const {userRole, contentType, updatePathName} = this.props
+  //  const contentArr = []
   /*  const contentArr = [ // Questions
       {
         qid: '123456',
@@ -33,7 +33,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag'],
         votes: ['123','234','345','456'],
       },
-    ]
+    ]*/
     const contentArr = [ // Answers
       {
         hid: '1234',
@@ -110,12 +110,12 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#thirdanswer',
       }
-    ] */
+    ]
 
     return (
       <div className="mycontent-container">
         {contentArr.length == 0 && (
-          <AskAQPrompt userRole={userRole} hasNoContentYet />
+          <AskAQPrompt userRole={userRole} hasNoContentYet updatePathName={updatePathName}/>
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           return (

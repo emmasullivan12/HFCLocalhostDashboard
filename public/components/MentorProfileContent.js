@@ -21,9 +21,10 @@ import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import UpdateWhyHelpContent from './UpdateWhyHelpModalContent.js';
 import UserActivity from './UserActivity.js';
+import UserBadge from './UserBadge.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getIndustryDeets, getGroupDeets, getVerifLevelArr, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
@@ -306,32 +307,6 @@ class MentorProfileContent extends Component {
 
   componentWillUnmount() {
     this.mounted = false;
-  }
-
-  getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
-    let verifLevels = []
-
-    // If has verified email
-    if (mentorSUStep != 'did1stSU' && mentorSUStep != 'didCountry' && mentorSUStep != 'didEdu' && mentorSUStep != 'didIndRoleMentor' && mentorSUStep != 'updatingEmail' && mentorSUStep != 'didEduEmailNeedsRev' && mentorSUStep != 'didEmailVerifNeedsRev') {
-      verifLevels.push('email')
-    }
-
-    // If Prospela can verify their edu/work/training (i.e. inst email)
-    if (verifiedType == 1 || eduemailverif == true || profemailverif == true) {
-      verifLevels.push('inst')
-    }
-
-    // If completed their Prospela training
-    if (mentorSUStep == 'didIDTrain' || mentorSUStep == 'didTrain') {
-      verifLevels.push('training')
-    }
-
-    if (tsapproved != '' || tsapproved != null) {
-      verifLevels.push('id') // Prospela approved their ID
-      verifLevels.push('background') // Prospela did crim record & other background checks
-    }
-
-    return verifLevels;
   }
 
   handleChange = (e) => {
@@ -661,7 +636,7 @@ class MentorProfileContent extends Component {
     const schInstName = latestSch ? (latestSch.schname ? latestSch.schname : latestSch.schnamefreetext) : ''
     const mentorSUStep = 'didIDTrain' // LINK WITH DEX
     const tsapproved = '2020-09-01T13:30:50.667Z' // LINK WITH DEX (THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND)
-    const verifTypesArr = this.getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
+    const verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved)
     const hasMinVerif = verifTypesArr.length > 0
     let trainLengthTxt = ''
     let trainLengthMths
@@ -722,10 +697,10 @@ class MentorProfileContent extends Component {
                     </div>
                   )}
                   {hasMinVerif == true && (
-                    <div className="pr-certified img-circle tooltip">
-                      <span>&#10003;</span>
-                      <span className="tooltiptext below profile textLeft">
-                        <strong>Prospela Certified Mentor:</strong>
+                    <span className="tooltip fontSize18">
+                      <UserBadge badgeType='pr-certified' onProfile />
+                      <span className="tooltiptext below profile onProfile textLeft">
+                        <strong>Prospela Certified Mentor</strong>
                         {verifTypesArr.map((verifType, index) => {
                           if (verifType == 'id') {
                             return <div className="tooltiptextDetail" key={verifType}><span role="img" aria-label="tick emoji">✔️</span> ID Checked</div>
@@ -740,7 +715,7 @@ class MentorProfileContent extends Component {
                           } else return
                         })}
                       </span>
-                    </div>
+                    </span>
                   )}
                 </div>
                 <h1 className="profileName">{mentor.fname}{(viewerIsU18 || profUserIsU18) ? '' : (" " + mentor.lname)}</h1>

@@ -153,6 +153,7 @@ class Dashboard extends Component{
     this.calculateScrollerHeight = this.calculateScrollerHeight.bind(this);
     this.createScroller = this.createScroller.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.updatePathName = this.updatePathName.bind(this);
   //  this.updateActiveMenu = this.updateActiveMenu.bind(this);
   }
 
@@ -265,7 +266,7 @@ class Dashboard extends Component{
     this.closeMenu(e)
   }
 
-  updatePathName = () => {
+  updatePathName(){
     this.setState({
       pathName: window.location.pathname
     })
@@ -337,12 +338,12 @@ class Dashboard extends Component{
               </button>
               {userRole == 'mentor' && (
                 <Modal {...AddHighlightSmlModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentor'/>
+                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentor' updatePathName={this.updatePathName}/>
                 </Modal>
               )}
               {userRole == 'mentee' && isClass == true && (
                 <Modal {...AddHighlightSmlMenteeModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentee'/>
+                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentee' updatePathName={this.updatePathName}/>
                 </Modal>
               )}
               <MenuModal changeInitFocus>
@@ -386,10 +387,10 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" component={HomePage}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" />}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" updatePathName={this.updatePathName}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} />}/>
-                <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} />}/>
+                <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
@@ -430,7 +431,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

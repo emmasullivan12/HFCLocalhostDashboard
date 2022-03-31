@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class NewAnswerToQPrompt extends Component {
   render() {
+    const {updatePathName} = this.props
     const myQuestionsAskedLink = "/my-activity"
 
     return (
@@ -17,7 +18,7 @@ class NewAnswerToQPrompt extends Component {
         <p className="landingCTADesc marginBottom20 paddingL paddingR">
           Click below to see more
         </p>
-        <Link to={myQuestionsAskedLink} className="link">
+        <Link to={myQuestionsAskedLink} className="link" onClick={updatePathName}>
           <button type="button" className="button link Submit-btn dispInlineBlock">
             See answer
           </button>

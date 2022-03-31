@@ -84,9 +84,9 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingelse',
-      userRole: 'mentee',
+      userRole: 'mentor',
       source: 'vhs',
-      filterBy: '',
+      filterBy: 'latest',
       showAddSkillsModal: false,
       showAnswerAQModal: false,
       showAskAQModal: false,
@@ -271,8 +271,9 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole, isUserSearch} = this.state;
+    const {updatePathName} = this.props
   //  const contentArr = []
-    const contentArr = [ // Questions
+  /* const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -342,14 +343,84 @@ class HomePage extends Component {
         profilepic: '',
         url: "/what-wear-to-interview-3"
       },
-    ]
-  /*  const contentArr = [ // Answers
+    ] */
+    const contentArr = [ // Answers
+      {
+        qid: '123456',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: [], // no answers yet
+        industriestopostto: ['99999','19'],
+        hashtags: ['23'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: ['123','234','345','456'],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: ['123'],
+        prseen: [],
+        uid: '123',
+        isanon: 0,
+        authorinsttype: 'sch',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        profilepic: '',
+        url: "/what-wear-to-interview"
+      },
+      {
+        qid: '123457',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19'],
+        hashtags: ['23','11','30','55','61'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: true,
+        votes: [],
+        mentorseen: ['123','234'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 0,
+        authorinsttype: 'uni',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        profilepic: '',
+        url: "/what-wear-to-interview-2"
+      },
+      {
+        qid: '123458',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19'],
+        hashtags: ['23','11','30'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: [],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 1,
+        authorinsttype: 'job',
+        fname: 'John',
+        lname: 'Smith',
+        profilepic: '',
+        url: "/what-wear-to-interview-3"
+      },
       {
         hid: '1234',
         uid: '123',
         fname: 'Emma',
         lname: 'Sullivan',
         title: 'What is the best thing to wear to an interview?',
+        industriestopostto: ['99999','19'],
         authorinst: '',
         authorinstfreetext: 'Really Long Institution Name',
         authorrole: '',
@@ -367,8 +438,17 @@ class HomePage extends Component {
         isacceptedanswer: false,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
-        url: 'google.com/answer/#firstanswer',
-        type: 'answers'
+        url: '/what-wear-to-interview/#firstanswer',
+        type: 'answer',
+        relatedqid: '123',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '124', name: 'My PDF', type: 'application/pdf'},
+          {fileid: '125', name: 'MyExcelspreadsheet.xls', type: 'application/vnd.ms-excel'},
+          {fileid: '126', name: 'MyWorddocfilename.word', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'},
+          {fileid: '127', name: 'MyPOWERPOINTBABY!', type: 'application/vnd-mspowerpoint'},
+          {fileid: '128', name: 'My other doc format', type: 'other'}
+        ],
       },
       {
         hid: '1235',
@@ -376,6 +456,7 @@ class HomePage extends Component {
         fname: 'Dave',
         lname: 'Petrie',
         title: 'What is it like working at Pladis?',
+        industriestopostto: ['99999','19'],
         authorinst: '',
         authorinstfreetext: '',
         authorrole: '',
@@ -393,8 +474,9 @@ class HomePage extends Component {
         isacceptedanswer: true,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
-        url: 'google.com/answer/#secondanswer',
-        type: 'answers'
+        url: '/what-wear-to-interview/#secondanswer',
+        type: 'answer',
+        relatedqid: '124'
       },
       {
         hid: '1236',
@@ -402,6 +484,7 @@ class HomePage extends Component {
         fname: 'Dexter',
         lname: 'Boyce',
         title: 'When should I apply to grad schemes (what time of year)?',
+        industriestopostto: ['99999','19'],
         authorinst: '',
         authorinstfreetext: 'Pladis',
         authorrole: 'Marketing Manager',
@@ -419,10 +502,70 @@ class HomePage extends Component {
         isacceptedanswer: false,
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
-        url: 'google.com/answer/#thirdanswer',
-        type: 'answers'
+        url: '/what-wear-to-interview/#thirdanswer',
+        type: 'answer',
+        relatedqid: '125',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content!',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content!',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        selectedFiles: [],
       }
-    ]*/
+    ]
 
     switch (tabToView) {
       case 'all':
@@ -443,7 +586,7 @@ class HomePage extends Component {
               </button>
             </div>
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
       case 'questions':
@@ -478,6 +621,7 @@ class HomePage extends Component {
                 Click to view Answer #1234
               </button>
             </Link>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
     }
@@ -485,6 +629,7 @@ class HomePage extends Component {
 
   renderKeyNotif = (pendingMatchRequest, hasUnreadAnswers, hasFeedbackToComplete) => {
     const {userstep, userRole, source} = this.state
+    const {updatePathName} = this.props
 
     if (pendingMatchRequest == true) {
       return (
@@ -496,7 +641,7 @@ class HomePage extends Component {
       )
     } else if (hasUnreadAnswers == true) {
       return (
-        <NewAnswerToQPrompt />
+        <NewAnswerToQPrompt updatePathName={updatePathName}/>
       )
     } else if (hasFeedbackToComplete == true) {
       return (
@@ -548,7 +693,7 @@ class HomePage extends Component {
     let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps
 
     learning = []
-    userGroups = []
+    userGroups = ['123']
     hasMatch = false
 
     if (userRole == 'mentor') {
@@ -579,7 +724,7 @@ class HomePage extends Component {
       numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
       menteeSteps = [
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-        {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
+        {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
         {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf']},
         {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf']},
         {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
@@ -720,7 +865,7 @@ class HomePage extends Component {
                         name="stepStatus"
                         className="SubmitMatch-input"
                         spanClassName={"checkmark" + (reqStepsComplete != true ? " disabled" : "")}
-                        defaultChecked={step.isComplete}
+                        defaultChecked={step.isComplete == true}
                         disabled
                       />
                       {reqStepsComplete != true && (
@@ -753,7 +898,7 @@ class HomePage extends Component {
               )}
               {showAnswerAQModal == true && (
                 <Modal {...AnswerQModalProps} handleLocalStateOnClose={() => this.closeModal("AnswerAQ")}>
-                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole} updatePathName={this.updatePathName}/>
                 </Modal>
               )}
               {showAskAQModal == true && (
@@ -832,8 +977,8 @@ class HomePage extends Component {
     ];
     const groups = [];
     const hasMatch = true
-    const pendingMatchRequest = true
-    const hasUnreadAnswers = false
+    const pendingMatchRequest = false
+    const hasUnreadAnswers = true
     const hasFeedbackToComplete = true
     const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true || hasUnreadAnswers == true || hasFeedbackToComplete == true
 
@@ -892,10 +1037,10 @@ class HomePage extends Component {
           {userRole == 'mentor' && (
             <React.Fragment>
               <Modal {...AddHighlightModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor'/>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor' updatePathName={this.updatePathName}/>
               </Modal>
               <Modal {...AddHighlightSmlModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor'/>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor' updatePathName={this.updatePathName}/>
               </Modal>
             </React.Fragment>
           )}

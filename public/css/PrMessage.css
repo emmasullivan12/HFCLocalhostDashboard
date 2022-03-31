@@ -20,6 +20,9 @@
   padding-right: 2px;
   height: 15px;
 }
+.msg-thumb-container.onFeed{
+  height: 10px;
+}
 
 .title-emoji-container {
   margin-left: 0;

@@ -27,13 +27,13 @@ const AddGeneralHighlightModalProps = {
 class FeedContainer extends Component {
 
   render() {
-    const {userRole, contentArr, isUserSearch} = this.props
+    const {userRole, contentArr, isUserSearch, updatePathName} = this.props
     const isLoadingMorePosts = true
 
     return (
       <div className="marginTop20" id="feedItems">
         {contentArr.length == 0 && isLoadingMorePosts != true && (
-          <AskAQPrompt userRole={userRole} noResultsFound />
+          <AskAQPrompt userRole={userRole} noResultsFound updatePathName={updatePathName}/>
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           const contentType = post.qid ? 'question' : post.type
@@ -42,6 +42,7 @@ class FeedContainer extends Component {
               contentType={contentType}
               key={post.qid ? post.qid : post.hid}
               post={post}
+              userRole={userRole}
             />
           )
         })}
