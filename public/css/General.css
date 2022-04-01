@@ -374,6 +374,9 @@ table th .description{
 .fontSize25{
   font-size: 25px!important;
 }
+.fontSize24{
+  font-size: 24px;
+}
 .fontSize20{
   font-size: 20px;
 }
@@ -452,6 +455,9 @@ table th .description{
 }
 .lightPurpleText{
   color: #c6c6fd!important;
+}
+.linkPurpleText{
+  color: #8f8fe5;
 }
 .electricPurpleText{
   color: #4e4ed6;
@@ -759,6 +765,9 @@ table th .description{
 .whiteSpace{
   white-space: initial;
 }
+.bottom15{
+  bottom: 15px;
+}
 .marginAuto{
   margin: auto;
 }
@@ -770,6 +779,9 @@ table th .description{
 }
 .marginTop10 {
   margin-top: 10px!important;
+}
+.marginTop12 {
+  margin-top: 12px!important;
 }
 .marginTop20 {
   margin-top: 20px!important;
@@ -816,6 +828,9 @@ table th .description{
 .marginLeft{
   margin-left: 1rem;
 }
+.marginLeft5{
+  margin-left: 5px;
+}
 .marginLeft8{
   margin-left: 8px;
 }
@@ -857,6 +872,9 @@ table th .description{
 }
 .paddingTop{
   padding-top: 10px!important;
+}
+.paddingTop2{
+  padding-top: 2px;
 }
 .paddingBtm{
   padding-bottom: 10px;

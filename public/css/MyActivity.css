@@ -39,6 +39,9 @@
   .postDetail div{
     margin-right: 10px;
   }
+  .postDetail .followBtn{
+    margin-bottom: 5px!important;
+  }
 }
 .contentTypeLabel{
   width: 80px;

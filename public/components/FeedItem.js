@@ -20,6 +20,45 @@ const DeleteContentModalProps = {
 }
 
 class FeedItem extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isTextClamped: '',
+    }
+    this.textItemRef = React.createRef();
+  }
+
+  componentDidMount() {
+    const {post} = this.props
+    this.checkIfTextClamped()
+    this.countVotes(post.votes)
+    window.addEventListener('resize', this.checkIfTextClamped);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.checkIfTextClamped);
+  }
+
+  countVotes = (votes) => {
+    const myID = '123'; //223456
+    this.setState({
+      votes: votes.length,
+      userUpvoted: votes.includes(myID)
+    })
+  }
+
+  checkIfTextClamped = () => {
+    const {contentType} = this.props
+
+    if (contentType == 'answer' || contentType == 'general') {
+      const el = this.textItemRef.current
+      const isTextClamped = el.scrollHeight > el.clientHeight
+
+      this.setState({
+        isTextClamped: isTextClamped
+      })
+    }
+  }
 
   onKeyDown = (e) => {
     var key = e.key || e.keyCode
@@ -64,18 +103,37 @@ class FeedItem extends Component {
     )
   }
 
-  handleSeeMore = (e) => {
-    console.log(e)
-    console.log(e.target)
-    console.log(e.currentTarget)
-    console.log(e.currentTarget.previousSibling)
+  handleSeeMore = (e, contentType) => {
+    if (contentType != 'general') return
 
-    e.currentTarget.previousSibling.classList.remove("max3lines");
+    e.currentTarget.previousSibling.classList.remove("max3Lines");
     e.currentTarget.innerHTML = '';
+  }
+
+  toggleUpvote = (e, postId) => {
+    e.preventDefault()
+    const currentState = this.state.userUpvoted;
+
+    this.setState(prevState => {
+      let newVotes, newIsUpvoted
+      if (currentState == false || currentState == undefined) {
+        newVotes = prevState.votes + 1
+        newIsUpvoted = true
+      } else {
+        newVotes = prevState.votes - 1
+        newIsUpvoted = false
+      }
+
+      return {
+        userUpvoted: newIsUpvoted,
+        votes: newVotes
+      }
+    })
   }
 
   render() {
     const {contentType, post, userRole} = this.props
+    const {userUpvoted, votes} = this.state
 
     if (contentType == 'question') {
       const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
@@ -89,8 +147,21 @@ class FeedItem extends Component {
           <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype="question">
             { this.showContentTypeLabel(contentType) }
             <div className="postContainer">
-              <div className="postDetail marginRight20 marginTop10 textRight fontSize13 flexShrink0 width100px darkGreyText">
-                <div className="marginBottom5">{post.votes.length} votes</div>
+              <div className="postDetail marginRight20 marginTop12 textRight fontSize13 flexShrink0 width100px darkGreyText">
+              {/*  <div className="marginBottom5">{post.votes && (post.votes.length < 1000 ? post.votes.length : ((Math.round(post.votes.length / 100) / 10) + 'k'))} votes</div> */}
+                <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.qid)}>
+                  <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
+                    <span className="paddingR5">
+                      {userUpvoted == true && (
+                        <i className="fas fa-bell" />
+                      )}
+                      {userUpvoted != true && (
+                        <i className="far fa-bell" />
+                      )}
+                    </span>
+                  </button>
+                  <span className="fontSize13 paddingTop2 noSelect">{userUpvoted == true ? 'Following' : 'Follow'}</span>
+                </div>
                 <div className="numAnswers marginBottom5">
                   {post.hids.length != 0 && (
                     <span className={"multiple marginRight0 fontSize13 " + (post.hasacceptedanswer == true ? "green" : "greenOutline")}>
@@ -108,7 +179,7 @@ class FeedItem extends Component {
                     <span className="multiple grey marginRight0 fontSize13">0 answers</span>
                   )}
                 </div>
-                <div className="marginBottom5">{numViewsFormatted} views</div>
+                <div className="marginBottom5"><i className="fas fa-eye"/> {numViewsFormatted} views</div>
               </div>
               <div className="flexGrow1 maxWidth100">
                 <div className="marginTop10 fontSize18 lineHeight20pc darkGreyText">
@@ -164,6 +235,7 @@ class FeedItem extends Component {
         </Link>
       );
     } else if (contentType == 'answer' || contentType == 'general') {
+      const {isTextClamped} = this.state
       const aCredentialText = getCredText(post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
     //  const indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
       const mentor = {
@@ -182,6 +254,13 @@ class FeedItem extends Component {
       const verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
       const hasMinVerif = userRole == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
       const error = false
+      let indArrToShow, hashtagsCommaString, hashtagsArray
+
+      if (contentType == 'general') {
+      //  indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
+        hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
+        hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+      }
 
       const FeedItemDetail = () => (
         <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.hid} data-itemtype={contentType}>
@@ -225,12 +304,14 @@ class FeedItem extends Component {
                   })}
                 </span>{post.industriestopostto.length > 2 ? 'and other groups' : ''}
               </div> */}
-              <div className="marginTop10 max3Lines greyText">
+              <div className={"marginTop10 max3Lines greyText" + (isTextClamped == true ? "" : " marginBottom10")} ref={this.textItemRef} >
                 <div className="darkGreyText fontSize13">{post.text}</div>
               </div>
-              <div className="fontSize13 marginBottom10 pointerCursor" onClick={contentType == 'general' ? (e) => {this.handleSeeMore(e)} : null}>
-                See more...
-              </div>
+              {isTextClamped == true && (
+                <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
+                  See more...
+                </div>
+              )}
               <div className="fontSize14 textLeft">
                 {post.selectedFiles && post.selectedFiles.length >= 1 && (
                   <div className="marginTop20 marginBottom20 fileBoxesContainer">
@@ -309,11 +390,64 @@ class FeedItem extends Component {
                 )}
               </div>
               {contentType != 'general' && (
-                <div className="fontSize13 lineHeight20pc darkGreyText max1Line">
+                <div className={"fontSize13 lineHeight20pc darkGreyText max1Line" + (isTextClamped == true ? "" : " marginTop10")}>
                   Replying to: <strong className="purpleText">{post.title}</strong>
                 </div>
               )}
-              <div className="marginTop10 textRight greyText fontSize13"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+              {contentType == 'general' && (
+                <React.Fragment>
+                {/*  <div className="linkPurpleText marginBottom10 marginTop5 fontSize13">
+                    in <span className="bubbleContainer">
+                      {indArrToShow.map((indID) => {
+                        let industryItem, icon, indName
+                        if (indID == '99999') {
+                          icon = 'fas fa-hashtag'
+                          indName = 'General Advice'
+                        } else {
+                          industryItem = getIndustryDeets(indID)
+                          icon = industryItem.fa
+                          indName = industryItem.label
+                        }
+                        return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
+                      })}
+                    </span>{post.industriestopostto.length > 2 ? 'and other groups' : ''}
+                  </div> */}
+                  {hashtagsArray.length > 0 && (
+                    <div className="tagsList">
+                      {hashtagsArray.map((hashtag) => {
+                        return (
+                          <span
+                            key={hashtag}
+                          //  onClick={this.onClickValue}
+                            className="multiple value paddingR"
+                          //  role="button"
+                            id={hashtag}
+                          >
+                            {hashtag}
+                          </span>
+                        )
+                      })}
+                    </div>
+                  )}
+                </React.Fragment>
+              )}
+              <div className={"fontSize12 absolute displayFlex bottom15" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
+                <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
+                {/*  <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
+                    <path d="M2 25h32L18 9 2 25Z"/>
+                  </svg> */}
+                  {userUpvoted == true && (
+                    <i className="fas fa-thumbs-up"/>
+                  )}
+                  {userUpvoted != true && (
+                    <i className="far fa-thumbs-up"/>
+                  )}
+                </button>
+                <div className="fontSize14 marginLeft5 paddingTop2 noSelect">{votes && (votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))}</div>
+              </div>
+              <div>
+                <div className="marginTop10 textRight greyText fontSize13"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+              </div>
             </div>
           </div>
         </div>
