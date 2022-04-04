@@ -33,3 +33,50 @@
 .credentialSuperContainer{
   width: 250px;
 }
+
+.highlighted-post{
+  animation: highlighted-post-fade 3s;
+  -webkit-animation: highlighted-post-fade 3s;
+  -moz-animation: highlighted-post-fade 3s;
+  -ms-animation: highlighted-post-fade 3s;
+  -o-animation: highlighted-post-fade 3s;
+  animation-timing-function: ease-out;
+  -webkit-animation-function: ease-out;
+  -moz-animation-function: ease-out;
+  -ms-animation-function: ease-out;
+  -o-animation-function: ease-out;
+}
+
+
+@-webkit-keyframes highlighted-post-fade {
+  0% {
+    background-color: rgb(207 207 255 / 45%);
+  }
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
+}
+@-moz-keyframes highlighted-post-fade {
+  0% {
+    background-color: rgb(207 207 255 / 45%);
+  }
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
+}
+@-o-keyframes highlighted-post-fade {
+  0% {
+    background-color: rgb(207 207 255 / 45%);
+  }
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
+}
+@keyframes highlighted-post-fade {
+  0% {
+    background-color: rgb(207 207 255 / 45%);
+  }
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
+}

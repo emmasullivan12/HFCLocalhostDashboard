@@ -24,6 +24,7 @@ class FeedItem extends Component {
     super(props);
     this.state = {
       isTextClamped: '',
+      userUpvoted: '',
     }
     this.textItemRef = React.createRef();
   }
@@ -63,15 +64,19 @@ class FeedItem extends Component {
   onKeyDown = (e) => {
     var key = e.key || e.keyCode
     if (key === 'Escape' || key === 'Esc' || key === 27) {
-      this.closePopup();
+      this.closePopup(e);
     }
   }
 
   togglePopup = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
     this.popup.classList.toggle('open');
   }
 
   closePopup = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
     this.popup.classList.remove('open');
   }
 
@@ -111,7 +116,12 @@ class FeedItem extends Component {
   }
 
   toggleUpvote = (e, postId) => {
+    const {isOnMyContentPage, contentType} = this.props
     e.preventDefault()
+
+    // Don't allow to upvote own content
+    if (isOnMyContentPage == true && contentType != 'following') { return }
+
     const currentState = this.state.userUpvoted;
 
     this.setState(prevState => {
@@ -132,38 +142,108 @@ class FeedItem extends Component {
   }
 
   render() {
-    const {contentType, post, userRole} = this.props
+    const {contentType, post, userRole, updatePathName, isOnMyContentPage} = this.props
     const {userUpvoted, votes} = this.state
 
-    if (contentType == 'question') {
-      const hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
-      const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
-      const indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
+    let indArrToShow, hashtagsCommaString, hashtagsArray
+    let isProspelaTeam, verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, verifTypesArr, hasMinVerif
+    let userRoleOfAuthor = 'mentor'
+
+    if (userRoleOfAuthor == 'mentor') {
+      const mentor = {
+        verifiedtype: '1',
+        eduemailverif: '',
+        profemailverif: '',
+        mentorsustep: '',
+        tsapproved: ''
+      }
+      isProspelaTeam = false
+      verifiedType = mentor.verifiedtype
+      eduemailverif = mentor.eduemailverif;
+      profemailverif = mentor.profemailverif;
+      mentorSUStep = mentor.mentorsustep;
+      tsapproved = mentor.tsapproved // THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND
+      verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
+    }
+
+    hasMinVerif = userRole == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
+
+    if (contentType == 'question' || contentType == 'following') {
+      hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
+      hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
+      indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
       const numViews = (post.mentorseen && post.mentorseen.length) + (post.menteeseen && post.menteeseen.length) + (post.prseen && post.prseen.length)
       const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
+      const hasUnreadAnswers = true // isOnMyContentPage == true ? null : [LINKTODEX]
 
       return (
-        <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link">
+        <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
           <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype="question">
-            { this.showContentTypeLabel(contentType) }
+            { isOnMyContentPage != true && this.showContentTypeLabel(contentType) }
+            { isOnMyContentPage == true && contentType != 'following' && (
+              <React.Fragment>
+                <button type="button" className="msgActions-btn absolute right20 tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
+                  <div className="msgAction-icon">
+                    <i className="fas fa-ellipsis-h" />
+                  </div>
+                  <span className="tooltiptext endContentBox groups">More actions</span>
+                </button>
+                <div className="popup" ref={el => (this.popup = el)} >
+                  <div className="blocker" onClick={this.closePopup} />
+                  <div className="contents right" onClick={this.closePopup}>
+                    <div className="myContentMoreActionsContainer">
+                      <div className="moreActions-scrollArea">
+                        <ul className="moreActionsList">
+                          <li onClick={this.closePopup}>
+                            <Modal {...DeleteContentModalProps}>
+                              <DeleteContentModalContent />
+                            </Modal>
+                          </li>
+                          <li className="moreActionsListItem" onClick={this.closePopup}>
+                            <span className="moreActionsLabel overflow-ellipsis">
+                              Share
+                            </span>
+                          </li>
+                          <li className="moreActionsListItem" onClick={this.closePopup}>
+                            <span className="moreActionsLabel overflow-ellipsis">
+                              Report
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </React.Fragment>
+            )}
             <div className="postContainer">
               <div className="postDetail marginRight20 marginTop12 textRight fontSize13 flexShrink0 width100px darkGreyText">
               {/*  <div className="marginBottom5">{post.votes && (post.votes.length < 1000 ? post.votes.length : ((Math.round(post.votes.length / 100) / 10) + 'k'))} votes</div> */}
-                <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.qid)}>
-                  <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
-                    <span className="paddingR5">
-                      {userUpvoted == true && (
-                        <i className="fas fa-bell" />
-                      )}
-                      {userUpvoted != true && (
-                        <i className="far fa-bell" />
-                      )}
-                    </span>
-                  </button>
-                  <span className="fontSize13 paddingTop2 noSelect">{userUpvoted == true ? 'Following' : 'Follow'}</span>
-                </div>
+                {(isOnMyContentPage != true || contentType == 'following') && (
+                  <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.qid)}>
+                    <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
+                      <span className="paddingR5">
+                        {userUpvoted == true && (
+                          <i className="fas fa-bell" />
+                        )}
+                        {userUpvoted != true && (
+                          <i className="far fa-bell" />
+                        )}
+                      </span>
+                    </button>
+                    <span className="fontSize13 paddingTop2 noSelect">{userUpvoted == true ? 'Following' : 'Follow'}</span>
+                  </div>
+                )}
+                {(isOnMyContentPage == true && contentType != 'following') && (
+                  <div className="followBtn fontSize13 marginBottom10 darkGreyText">
+                    <button type="button" className="button-unstyled">
+                      <i className="far fa-thumbs-up"/>
+                    </button>
+                    <span className="fontSize13 marginLeft5 paddingTop2 noSelect">{votes && (votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))}</span>
+                  </div>
+                )}
                 <div className="numAnswers marginBottom5">
-                  {post.hids.length != 0 && (
+                  {post.hids && post.hids.length != 0 && (
                     <span className={"multiple marginRight0 fontSize13 " + (post.hasacceptedanswer == true ? "green" : "greenOutline")}>
                       {post.hasacceptedanswer == true && (
                         <React.Fragment>
@@ -172,10 +252,19 @@ class FeedItem extends Component {
                           </span>
                         </React.Fragment>
                       )}
-                      <span>{post.hids.length} {post.hids.length == 1 ? 'answer' : 'answers'}</span>
+                      <span>
+                        {hasUnreadAnswers && isOnMyContentPage == true && (
+                          <span>
+                            <span className="notificationNum isMyContent">New</span> {post.hids.length == 1 ? 'answer' : 'answers'}
+                          </span>
+                        )}
+                        {isOnMyContentPage != true && (
+                          <span>{post.hids.length} {post.hids.length == 1 ? 'answer' : 'answers'}</span>
+                        )}
+                      </span>
                     </span>
                   )}
-                  {post.hids.length == 0 && (
+                  {post.hids && post.hids.length == 0 && (
                     <span className="multiple grey marginRight0 fontSize13">0 answers</span>
                   )}
                 </div>
@@ -237,35 +326,53 @@ class FeedItem extends Component {
     } else if (contentType == 'answer' || contentType == 'general') {
       const {isTextClamped} = this.state
       const aCredentialText = getCredText(post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
-    //  const indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
-      const mentor = {
-        verifiedtype: '1',
-        eduemailverif: '',
-        profemailverif: '',
-        mentorsustep: '',
-        tsapproved: ''
-      }
-      const isProspelaTeam = false
-      const verifiedType = mentor.verifiedtype
-      const eduemailverif = mentor.eduemailverif;
-      const profemailverif = mentor.profemailverif;
-      const mentorSUStep = mentor.mentorsustep;
-      const tsapproved = mentor.tsapproved // THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND
-      const verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
-      const hasMinVerif = userRole == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
       const error = false
-      let indArrToShow, hashtagsCommaString, hashtagsArray
 
       if (contentType == 'general') {
-      //  indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
         hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
         hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
       }
 
       const FeedItemDetail = () => (
         <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.hid} data-itemtype={contentType}>
-          { this.showContentTypeLabel(contentType) }
-          <div className="postContainer">
+          { isOnMyContentPage != true && this.showContentTypeLabel(contentType) }
+          { isOnMyContentPage == true && (
+            <React.Fragment>
+              <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
+                <div className="msgAction-icon">
+                  <i className="fas fa-ellipsis-h" />
+                </div>
+                <span className="tooltiptext endContentBox groups">More actions</span>
+              </button>
+              <div className="popup" ref={el => (this.popup = el)} >
+                <div className="blocker" onClick={this.closePopup} />
+                <div className="contents right" onClick={this.closePopup}>
+                  <div className="myContentMoreActionsContainer">
+                    <div className="moreActions-scrollArea">
+                      <ul className="moreActionsList">
+                        <li onClick={this.closePopup}>
+                          <Modal {...DeleteContentModalProps}>
+                            <DeleteContentModalContent />
+                          </Modal>
+                        </li>
+                        <li className="moreActionsListItem" onClick={this.closePopup}>
+                          <span className="moreActionsLabel overflow-ellipsis">
+                            Share
+                          </span>
+                        </li>
+                        <li className="moreActionsListItem" onClick={this.closePopup}>
+                          <span className="moreActionsLabel overflow-ellipsis">
+                            Report
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </React.Fragment>
+          )}
+          <div className="">
           {/*  <div className="postDetail marginRight20 marginTop10 textRight fontSize13 flexShrink0 width100px darkGreyText">
               <div className="marginBottom5">{post.votes.length} votes</div>
               <div className="marginBottom5">{numViewsFormatted} views</div>
@@ -288,22 +395,6 @@ class FeedItem extends Component {
                   <div className="darkGreyText">{aCredentialText}</div>
                 </div>
               </div>
-            {/*  <div className="marginBottom10 marginTop5 fontSize13">
-                in <span className="bubbleContainer">
-                  {indArrToShow.map((indID) => {
-                    let industryItem, icon, indName
-                    if (indID == '99999') {
-                      icon = 'fas fa-hashtag'
-                      indName = 'General Advice'
-                    } else {
-                      industryItem = getIndustryDeets(indID)
-                      icon = industryItem.fa
-                      indName = industryItem.label
-                    }
-                    return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
-                  })}
-                </span>{post.industriestopostto.length > 2 ? 'and other groups' : ''}
-              </div> */}
               <div className={"marginTop10 max3Lines greyText" + (isTextClamped == true ? "" : " marginBottom10")} ref={this.textItemRef} >
                 <div className="darkGreyText fontSize13">{post.text}</div>
               </div>
@@ -396,31 +487,13 @@ class FeedItem extends Component {
               )}
               {contentType == 'general' && (
                 <React.Fragment>
-                {/*  <div className="linkPurpleText marginBottom10 marginTop5 fontSize13">
-                    in <span className="bubbleContainer">
-                      {indArrToShow.map((indID) => {
-                        let industryItem, icon, indName
-                        if (indID == '99999') {
-                          icon = 'fas fa-hashtag'
-                          indName = 'General Advice'
-                        } else {
-                          industryItem = getIndustryDeets(indID)
-                          icon = industryItem.fa
-                          indName = industryItem.label
-                        }
-                        return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
-                      })}
-                    </span>{post.industriestopostto.length > 2 ? 'and other groups' : ''}
-                  </div> */}
                   {hashtagsArray.length > 0 && (
                     <div className="tagsList">
                       {hashtagsArray.map((hashtag) => {
                         return (
                           <span
                             key={hashtag}
-                          //  onClick={this.onClickValue}
                             className="multiple value paddingR"
-                          //  role="button"
                             id={hashtag}
                           >
                             {hashtag}
@@ -433,9 +506,6 @@ class FeedItem extends Component {
               )}
               <div className={"fontSize12 absolute displayFlex bottom15" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
                 <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
-                {/*  <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
-                    <path d="M2 25h32L18 9 2 25Z"/>
-                  </svg> */}
                   {userUpvoted == true && (
                     <i className="fas fa-thumbs-up"/>
                   )}
@@ -455,7 +525,7 @@ class FeedItem extends Component {
 
       if (contentType == 'answer') {
         return (
-          <Link to={contentType == 'general' ? null : {pathname: "/questions/" + post.relatedqid + post.url, state: {prevPath: window.location.pathname}}} className="link">
+          <Link to={{pathname: "/questions/" + post.relatedqid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
             <FeedItemDetail />
           </Link>
         )

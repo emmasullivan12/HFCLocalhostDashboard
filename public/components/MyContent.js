@@ -3,14 +3,14 @@
 import React, { Component } from "react";
 
 import AskAQPrompt from "./AskAQPrompt";
-import MyContentItem from "./MyContentItem";
+import FeedItem from "./FeedItem";
 
 class MyContent extends Component {
 
   render() {
     const {userRole, contentType, updatePathName} = this.props
   //  const contentArr = []
-  /*  const contentArr = [ // Questions
+    const contentArr = [ // Questions
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -27,14 +27,48 @@ class MyContent extends Component {
         datecreated: '2020-09-04T13:30:50.667Z',
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        text: 'I know we have to be professional, but would like to stand out if possible.I know we have to be professional, but would like to stand out if possible.I know we have to be professional, but would like to stand out if possible.I know we have to be professional, but would like to stand out if possible.I know we have to be professional, but would like to stand out if possible.I know we have to be professional, but would like to stand out if possible.',
         hids: ['1234','1235'], // 2 answers
         industriestopostto: ['2','19'],
         hashtags: ['23','11','30','55','61'],
         hashtagsfreetext: ['my free text hashtag'],
         votes: ['123','234','345','456'],
       },
-    ]*/
-    const contentArr = [ // Answers
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        title: 'When should I apply to grad schemes (what time of year)?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'third answer',
+        isanon: 0,
+        votes: ['123','20'],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#thirdanswer',
+        type: 'answer',
+        relatedqid: '125',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 2', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+      },
+    ]
+  /*  const contentArr = [ // Answers
       {
         hid: '1234',
         uid: '123',
@@ -110,7 +144,7 @@ class MyContent extends Component {
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#thirdanswer',
       }
-    ]
+    ]*/
 
     return (
       <div className="mycontent-container">
@@ -119,10 +153,13 @@ class MyContent extends Component {
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           return (
-            <MyContentItem
+            <FeedItem
               contentType={contentType}
+              userRole={userRole}
+              updatePathName={updatePathName}
               key={post.qid ? post.qid : post.hid}
               post={post}
+              isOnMyContentPage
             />
           )
         })}

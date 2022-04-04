@@ -164,6 +164,16 @@ class QA extends Component {
     hidsArr.map((hid) => {
       return this.countVotes(hid.hid, hid.votes)
     });
+
+    // On load, scroll to answer & show animation
+    const hash = window.location.hash
+    const id = hash.split('#')[1]
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({behavior: "smooth"});
+      element.classList.add("highlighted-post")
+    }
+
     /* this.setState({
       [qaItem.qid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
       [FOR EACH hid.hid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
@@ -210,6 +220,7 @@ class QA extends Component {
 
   render() {
     const {isMobile, isLoading} = this.state;
+    const {updatePathName} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -454,7 +465,7 @@ class QA extends Component {
           <React.Fragment>
             <div className="padding25 marginTop40">
             {/*  <MenuNav /> */}
-              <Link to={prevURL}>
+              <Link to={prevURL} onClick={updatePathName}>
                 <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14">
                   <span className="dispInlineBlock"><X /></span>
                 {/*  <span><i className="fas fa-arrow-left"/></span> */}
@@ -580,13 +591,14 @@ class QA extends Component {
                 {hidsArrSorted.map((hid) => {
                   const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
                   const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
+                  const hashURL = hid.url.split('#')[1] // Get the bit after the hash '#' in the saved URL
 
                   aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
                   aAuthorinsttype = hid.authorinsttype
                   aCredentialText = getCredText(hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
 
                   return (
-                    <div key={hid.hid} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
+                    <div key={hid.hid} id={hashURL} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
                       <div className="gridLeftColumn paddingR20">
                         <div className="displayFlex flexDirColumn alignCenter">
                           <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>

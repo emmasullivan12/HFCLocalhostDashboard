@@ -389,7 +389,7 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" updatePathName={this.updatePathName}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} />}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

@@ -682,6 +682,7 @@ table th .description{
   display: block;
 }
 .popup .contents {
+  margin-right: 45px;
   position: absolute;
   height: auto;
   z-index: 1;

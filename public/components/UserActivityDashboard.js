@@ -14,7 +14,7 @@ class UserActivityDashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tabToView: this.props.userRole == 'mentee' ? 'questions' : 'answers',
+      tabToView: this.props.userRole == 'mentee' ? 'question' : 'answer',
     }
   }
 
@@ -31,13 +31,14 @@ class UserActivityDashboard extends React.Component {
     switch (tabToView) {
     /*  case 'overview':
         return <GroupDashOverview /> */
-      case 'questions':
-      case 'answers':
-      case 'generals':
+      case 'question':
+      case 'answer':
+      case 'general':
+      case 'following':
         return <MyContent userRole={userRole} contentType={tabToView} updatePathName={updatePathName}/>
     /*  case 'savedcontent':
         return <GroupDashPayment />
-      case 'following':
+      case 'settings':
         return <GroupDashSettings /> */
     }
   }
@@ -57,15 +58,16 @@ class UserActivityDashboard extends React.Component {
             {userRole == 'mentee' && (
               <React.Fragment>
                 {/*  <button type="button" name="overview" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button> */}
-                <button type="button" name="questions" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
-                {/*  <button type="button" name="savedcontent" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'savedcontent' ? ' tabActive' : '')}>Saved</button>
-                <button type="button" name="following" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'following' ? ' tabActive' : '')}>Following</button> */}
+                <button type="button" name="question" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'question' ? ' tabActive' : '')}>Questions</button>
+                <button type="button" name="following" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'following' ? ' tabActive' : '')}>Following</button>
+                {/*  <button type="button" name="savedcontent" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'savedcontent' ? ' tabActive' : '')}>Saved</button>*/}
               </React.Fragment>
             )}
             {userRole == 'mentor' && (
               <React.Fragment>
-                <button type="button" name="answers" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'answers' ? ' tabActive' : '')}>Answers</button>
-                <button type="button" name="generals" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'generals' ? ' tabActive' : '')}>General Highlights</button>
+                <button type="button" name="answer" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'answer' ? ' tabActive' : '')}>Answers</button>
+                <button type="button" name="general" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'general' ? ' tabActive' : '')}>General Posts</button>
+                <button type="button" name="following" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'following' ? ' tabActive' : '')}>Following</button>
               </React.Fragment>
             )}
 
