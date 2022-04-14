@@ -6,9 +6,11 @@ import { NimblePicker } from 'emoji-mart'
 import 'emoji-mart/css/emoji-mart.css'
 import data from 'emoji-mart/data/emojione.json'
 import AlertBox from './AlertBox.js';
+import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Avatar from './Avatar.js';
 import CameraUploadContent from './CameraUploadContent.js';
+import Checkbox from './Checkbox.js';
 import {usercdn, userImgsFolder} from './CDN.js';
 import {Check} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
@@ -38,8 +40,10 @@ class AddHighlightTextBox extends Component {
     this.state = {
       text: '',
       qText: '',
+      isPrUser: true,
       showEmojis: false,
       showCredentials: false,
+      addCustomCredentials: false,
       cursorPos: '', // cursor position to enter emoji within string
       errorLoadingHashtags: '',
       hashtagsFromList: [],
@@ -76,6 +80,7 @@ class AddHighlightTextBox extends Component {
       errorFileNumber: false,
       errorFileSize: false,
       isAnon: false,
+      isPrAnon: false,
     };
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
@@ -124,6 +129,14 @@ class AddHighlightTextBox extends Component {
       })
   //    }, () => document.removeEventListener('click', this.closeCredentials))
   //  }
+  }
+
+  toggleAddCustomCredentials = () => {
+    const currentState = this.state.addCustomCredentials;
+    this.setState({
+      addCustomCredentials: !currentState,
+      isPrAnon: !currentState // By Default user does nto have a name
+    });
   }
 
   /*handleSaveCredential = () => {
@@ -513,13 +526,56 @@ class AddHighlightTextBox extends Component {
     })
   }
 
+  onPrClickAnon =() => {
+    const currentState = this.state.isPrAnon
+    this.setState({
+      isPrAnon: !currentState
+    })
+  }
+
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstNum, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstNum, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo, isPrUser, addCustomCredentials} = this.state
     this.setState({
       postSuccess: true
     })
 
-    if (authorType == '') {
+    let finalAuthorState, finalAuthorCountry, finalAuthorType, finalAuthorInstNum, finalAuthorInstFreeText, finalAuthorRole, finalAuthorIsMainRole, finalAuthorDegree, finalAuthorTraining, finalIsAnon
+
+    if (isPrUser && addCustomCredentials == true) {
+      const {prAuthorType, prAuthorRole, prAuthorInstNum, prAuthorInstFreeText, prAuthorDegree, prAuthorTraining, isPrAnon, prAuthorState, prAuthorFName, prAuthorLName} = this.state
+      finalAuthorType = prAuthorType
+      finalAuthorInstNum = prAuthorInstNum
+      finalAuthorInstFreeText = prAuthorInstFreeText
+      finalAuthorRole = prAuthorRole
+      finalAuthorIsMainRole = false
+      finalAuthorDegree = prAuthorDegree
+      finalAuthorTraining = prAuthorTraining
+      finalIsAnon = isPrAnon == true ? 1 : 0
+      finalAuthorState = prAuthorState
+      finalAuthorCountry = 'GBR'
+
+      const submission = {
+        //qid: qid,
+        prauthorfname: isPrAnon == true ? '' : prAuthorFName,
+        prauthorlname: isPrAnon == true ? '' : prAuthorLName,
+        authorinsttype: finalAuthorType,
+        isanon: finalIsAnon,
+        //title: qText,
+        //textdetail: text,
+        hashtags: hashtagsFromList,
+        hashtagsfreetext: freeTextHashtags,
+        authorinst: finalAuthorInstNum,
+        authorinstfreetext: finalAuthorInstFreeText,
+        authorrole: finalAuthorRole,
+        authorismainrole: finalAuthorIsMainRole == true ? 1 : 0,
+        authordegree: finalAuthorDegree,
+        authortraining: finalAuthorTraining,
+        industriestopostto: industriesToPostTo,
+        authorstate: finalAuthorState,
+        authorcountry: finalAuthorCountry
+      }
+
+    } else if (authorType == '') {
       const roleHistory = [
         {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
         {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
@@ -607,6 +663,73 @@ class AddHighlightTextBox extends Component {
     })
   }
 
+  handlePrAuthorInstTypeChange = (userInput) => {
+    this.setState({
+      prAuthorType: userInput,
+      prAuthorRole: '',
+      prAuthorInstNum: '',
+      prAuthorInstFreeText: '',
+      prAuthorDegree: '',
+      prAuthorTraining: '',
+    })
+  }
+
+  handlePrAuthorInstFreeTextChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorInstFreeText: e.target.value,
+      prAuthorInstNum: '',
+    });
+  }
+
+  handleUKEduChange = (userInput) => {
+    this.setState({
+      prAuthorInstNum: userInput,
+      prAuthorInstFreeText: '',
+    })
+  }
+
+  handlePrAuthorRoleChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorRole: e.target.value
+    });
+  }
+
+  handlePrAuthorDegreeChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorDegree: e.target.value
+    });
+  }
+
+  handlePrAuthorTrainingChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorTraining: e.target.value
+    });
+  }
+
+  handleStateChange = (userInput) => {
+    this.setState({
+      prAuthorState: userInput,
+    })
+  }
+
+  handlePrAuthorFnameChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorFName: e.target.value
+    });
+  }
+
+  handlePrAuthorLnameChange = (e) => {
+    e.persist()
+    this.setState({
+      prAuthorLName: e.target.value
+    });
+  }
+
   handleDragEnter(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -648,7 +771,13 @@ class AddHighlightTextBox extends Component {
       qText,
       showEmojis,
       showCredentials,
+      addCustomCredentials,
       credentialText,
+      isPrUser,
+      isPrAnon,
+      prAuthorType,
+      prAuthorInstNum,
+      prAuthorInstFreeText,
     //  credentialUpdatedSuccess,
     //  updatingCredentialIsLoading,
       showCredentialUpdatedMsg,
@@ -717,6 +846,17 @@ class AddHighlightTextBox extends Component {
       ...industryOptions,
     ]
     const isEnabled = this.canBeSubmitted();
+  //  const authorinsttypes = ['job','train','uni','sch','none']
+    const authorinsttypes = [
+      {value: 'job', label: 'job'},
+      {value: 'train', label: 'train'},
+      {value: 'uni', label: 'uni'},
+      {value: 'sch', label: 'sch'},
+      {value: 'none', label: 'none'},
+    ];
+    var ukCounties = [
+      {value: 'Avon', label: 'Avon'},{value: 'Bedf', label: 'Bedfordshire'},{value: 'Berk', label: 'Berkshire'},{value: 'Buck', label: 'Buckinghamshire'},{value: 'Camb', label: 'Cambridgeshire'},{value: 'Ches', label: 'Cheshire'},{value: 'Clev', label: 'Cleveland'},{value: 'Corn', label: 'Cornwall'},{value: 'Cumb', label: 'Cumbria'},{value: 'Derb', label: 'Derbyshire'},{value: 'Devo', label: 'Devon'},{value: 'Dors', label: 'Dorset'},{value: 'Durh', label: 'Durham'},{value: 'ERYr', label: 'East Riding of Yorkshire'},{value: 'Suss', label: 'East Sussex'},{value: 'Esse', label: 'Essex'},{value: 'Glou', label: 'Gloucestershire'},{value: 'Manc', label: 'Greater Manchester'},{value: 'Hamp', label: 'Hampshire'},{value: 'Hert', label: 'Hertfordshire'},{value: 'Here', label: 'Herefordshire'},{value: 'IOW', label: 'Isle of Wight'},{value: 'Kent', label: 'Kent'},{value: 'Lanc', label: 'Lancashire'},{value: 'Leic', label: 'Leicestershire'},{value: 'Linc', label: 'Lincolnshire'},{value: 'LdBD', label: 'London - Barking and Dagenham'},{value: 'LdBa', label: 'London - Barnet'},{value: 'LdBe', label: 'London - Bexley'},{value: 'LdBr', label: 'London - Brent'},{value: 'LdBro', label: 'London - Bromley'},{value: 'LdCa', label: 'London - Camden'},{value: 'LdCL', label: 'London - City of London'},{value: 'LdCr', label: 'London - Croydon'},{value: 'LdEa', label: 'London - Ealing'},{value: 'LdEn', label: 'London - Enfield'},{value: 'LdGr', label: 'London - Greenwich'},{value: 'LdHa', label: 'London - Hackney'},{value: 'LdHF', label: 'London - Hammersmith and Fulham'},{value: 'LdHry', label: 'London - Haringey'},{value: 'LdHar', label: 'London - Harrow'},{value: 'LdHav', label: 'London - Havering'},{value: 'LdHi', label: 'London - Hillingdon'},{value: 'LdHo', label: 'London - Hounslow'},{value: 'LdIs', label: 'London - Islington'},{value: 'LdKC', label: 'London - Kensington and Chelsea'},{value: 'LdKT', label: 'London - Kingston upon Thames'},{value: 'LdLa', label: 'London - Lambeth'},{value: 'LdLe', label: 'London - Lewisham'},{value: 'LdMe', label: 'London - Merton'},{value: 'LdNe', label: 'London - Newham'},{value: 'LdRe', label: 'London - Redbridge'},{value: 'LdRT', label: 'London - Richmond upon Thames'},{value: 'LdSo', label: 'London - Southwark'},{value: 'LdSu', label: 'London - Sutton'},{value: 'LdTH', label: 'London - Tower Hamlets'},{value: 'LdWF', label: 'London - Waltham Forest'},{value: 'LdWa', label: 'London - Wandsworth'},{value: 'LdWe', label: 'London - Westminster'},{value: 'Mers', label: 'Merseyside'},{value: 'Norf', label: 'Norfolk'},{value: 'Nyor', label: 'North Yorkshire'},{value: 'Ntha', label: 'Northamptonshire'},{value: 'Nthu', label: 'Northumberland'},{value: 'Nott', label: 'Nottinghamshire'},{value: 'Oxfo', label: 'Oxfordshire'},{value: 'Rutl', label: 'Rutland'},{value: 'Shro', label: 'Shropshire'},{value: 'Some', label: 'Somerset'},{value: 'Syor', label: 'South Yorkshire'},{value: 'Staf', label: 'Staffordshire'},{value: 'Suff', label: 'Suffolk'},{value: 'Surr', label: 'Surrey'},{value: 'Tyne', label: 'Tyne and Wear'},{value: 'Warw', label: 'Warwickshire'},{value: 'Wmid', label: 'West Midlands'},{value: 'Wsus', label: 'West Sussex'},{value: 'Wyor', label: 'West Yorkshire'},{value: 'Wilt', label: 'Wiltshire'},{value: 'Worc', label: 'Worcestershire'},{value: 'Angl', label: 'Anglesey'},{value: 'Blae', label: 'Blaenau Gwent'},{value: 'Brec', label: 'Breconshire'},{value: 'Brid', label: 'Bridgend'},{value: 'Caer', label: 'Caernarvonshire'},{value: 'Cphi', label: 'Caerphilly'},{value: 'Card', label: 'Cardiff'},{value: 'Cdgn', label: 'Cardiganshire'},{value: 'Carm', label: 'Carmarthenshire'},{value: 'Conw', label: 'Conwy'},{value: 'Denb', label: 'Denbighshire'},{value: 'Flin', label: 'Flintshire'},{value: 'Glam', label: 'Glamorgan'},{value: 'Neat', label: 'Neath Port Talbot'},{value: 'Meri', label: 'Merionethshire'},{value: 'Mert', label: 'Merthyr Tydfil'},{value: 'Monm', label: 'Monmouthshire'},{value: 'Mont', label: 'Montgomeryshire'},{value: 'Newp', label: 'Newport'},{value: 'Pemb', label: 'Pembrokeshire'},{value: 'Radn', label: 'Radnorshire'},{value: 'Sgla', label: 'South Glamorgan'},{value: 'Torf', label: 'Torfaen'},{value: 'Swan', label: 'Swansea'},{value: 'Wrex', label: 'Wrexham'},{value: 'Aber', label: 'Aberdeen City'},{value: 'Abds', label: 'Aberdeenshire'},{value: 'Angu', label: 'Angus'},{value: 'Argy', label: 'Argyll and Bute'},{value: 'Berw', label: 'Berwickshire'},{value: 'Edin', label: 'City of Edinburgh'},{value: 'Clac', label: 'Clackmannanshire'},{value: 'Dumf', label: 'Dumfries and Galloway'},{value: 'Dund', label: 'Dundee City'},{value: 'Eayr', label: 'East Ayrshire'},{value: 'Edun', label: 'East Dunbartonshire'},{value: 'Elot', label: 'East Lothian'},{value: 'Eren', label: 'East Renfrewshire'},{value: 'Eile', label: 'Eilean Siar'},{value: 'Falk', label: 'Falkirk'},{value: 'Fife', label: 'Fife'},{value: 'Glas', label: 'Glasgow City'},{value: 'High', label: 'Highland'},{value: 'Inve', label: 'Inverclyde'},{value: 'Midl', label: 'Midlothian'},{value: 'Mora', label: 'Moray'},{value: 'Nayr', label: 'North Ayrshire'},{value: 'Nlan', label: 'North Lanarkshire'},{value: 'Orkn', label: 'Orkney Islands'},{value: 'Pert', label: 'Perth and Kinross'},{value: 'Renf', label: 'Renfrewshire'},{value: 'Shet', label: 'Shetland Islands'},{value: 'Sayr', label: 'South Ayrshire'},{value: 'Slan', label: 'South Lanarkshire'},{value: 'Stir', label: 'Stirling'},{value: 'Wdun', label: 'West Dunbartonshire'},{value: 'Wlot', label: 'West Lothian'},{value: 'Antr', label: 'Antrim'},{value: 'Arma', label: 'Armagh'},{value: 'cDow', label: 'County Down'},{value: 'Ferm', label: 'Fermanagh'},{value: 'CoDe', label: 'City of Derry'},{value: 'Lond', label: 'Londonderry'},{value: 'cTyr', label: 'County Tyrone'}
+    ]
 
     if (!showCredentials && !postSuccess) {
       return (
@@ -962,6 +1102,7 @@ class AddHighlightTextBox extends Component {
                   let fileType, backgroundImgURL
                   if (file.type === 'image/png' || file.type === 'image/jpeg' || file.type === 'image/bmp') {
                     fileType = 'img'
+                    //backgroundImgURL = URL.createObjectURL(file)
                     backgroundImgURL = usercdn + '/' + userImgsFolder + file.imgurl + '-80'
                   } else if (file.type === 'application/pdf') {
                     fileType = 'pdf'
@@ -1128,6 +1269,216 @@ class AddHighlightTextBox extends Component {
                 </div>
               </div>
             </div>
+            {isPrUser == true && (
+              <div className="paddingR20 paddingL20 descriptor marginBottom20 lineHeight2">
+                <span className="paddingR20"><strong>Add Custom Credentials?</strong></span>
+                <Checkbox
+                  labelClassName="switch"
+                  id="customCredentials"
+                  spanClassName="slider round"
+                  onChange={this.toggleAddCustomCredentials}
+                />
+              </div>
+            )}
+            {isPrUser == true && addCustomCredentials == true && (
+              <div className="addCustomCredentialsContainer paddingR20 paddingL20 descriptor marginBottom20">
+                <div className="paddingR20 paddingL20">
+                  <label className="descriptor alignLeft reqAsterisk"><strong>Select Authorinsttype:</strong></label>
+                  <div className="inlineForm">
+                    <div className="form-group inlineLeft textLeft">
+                      <SelectBox
+                        options={authorinsttypes}
+                        name='selectAuthorinsttype'
+                        placeholder='Select Authorinsttype:'
+                        handleChange={this.handlePrAuthorInstTypeChange}
+                        valueToShow='label'
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                {prAuthorType == 'job' && (
+                  <React.Fragment>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Which Company (free text)?</strong></label>
+                      <TextInput
+                        placeholder="Type Company Free Text..."
+                        className="form-control-std"
+                        maxLength="75"
+                        required
+                        handleChange={this.handlePrAuthorInstFreeTextChange}
+                      />
+                    </div>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Which Role?</strong></label>
+                      <TextInput
+                        placeholder="Type Role title..."
+                        className="form-control-std"
+                        required
+                        maxLength="200"
+                        handleChange={this.handlePrAuthorRoleChange}
+                      />
+                    </div>
+                  </React.Fragment>
+                )}
+                {prAuthorType == 'train' && (
+                  <React.Fragment>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Which Training Provider (free text)?</strong></label>
+                      <TextInput
+                        placeholder="Type Training Provider Free Text..."
+                        className="form-control-std"
+                        maxLength="75"
+                        required
+                        handleChange={this.handlePrAuthorInstFreeTextChange}
+                      />
+                    </div>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Which Training Course?</strong></label>
+                      <TextInput
+                        placeholder="Type training course..."
+                        className="form-control-std"
+                        required
+                        maxLength="150"
+                        handleChange={this.handlePrAuthorTrainingChange}
+                      />
+                    </div>
+                  </React.Fragment>
+                )}
+                {prAuthorType == 'uni' && (
+                  <React.Fragment>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk">What&#39;s the name of the <strong>Uni?</strong></label>
+                      <div className="autocompleter">
+                        <Autocomplete
+                        //  suggestions={ukUnisList ? ukUnisList : undefined}
+                          suggestions={[{value: '0', label: 'Anglia Ruskin University', location: 'Chelmsford, Essex, UK'},
+                            {value: '1', label: 'Arts University Bournemouth', location: 'Poole, Dorset, UK'},
+                            {value: '2', label: 'Aston University', location: 'Birmingham, West Midlands, UK'}]}
+                          name='schName'
+                          placeholder='Find School or College'
+                          handleChange={this.handleUKEduChange}
+                        //  renderComponents={this.renderComponents}
+                        //  fileToRender={cdn+"/js/UKSchs"}
+                        //  componentUpdatesState="ukSchsList"
+                          idValue='value'
+                          value={prAuthorInstNum}
+                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                          showDetail
+                          required
+                          detailToShow='location'
+                        />
+                      </div>
+                    </div>
+                {/*    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft"><strong>Which Uni (free text)?</strong></label>
+                      <TextInput
+                        placeholder="Type Uni Free Text..."
+                        className="form-control-std"
+                        maxLength="75"
+                        value={prAuthorInstFreeText}
+                        handleChange={this.handlePrAuthorInstFreeTextChange}
+                      />
+                    </div> */}
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Which Degree?</strong></label>
+                      <TextInput
+                        placeholder="Type Degree..."
+                        className="form-control-std"
+                        required
+                        maxLength="75"
+                        handleChange={this.handlePrAuthorDegreeChange}
+                      />
+                    </div>
+                  </React.Fragment>
+                )}
+                {prAuthorType == 'sch' && (
+                  <React.Fragment>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk">What&#39;s the name of the <strong>School / College?</strong></label>
+                      <div className="autocompleter">
+                        <Autocomplete
+                        //  suggestions={ukSchsList ? ukSchsList : undefined}
+                          suggestions={[{value: '0', label: 'City of London School for Girls', location: 'London, UK' },
+                          {value: '1', label: 'City of London School', location: 'London, UK' },
+                          {value: '2', label: 'CCfL Key Stage 4 PRU', location: 'London, UK' }]}
+                          name='schName'
+                          placeholder='Find School or College'
+                          value={prAuthorInstNum}
+                          handleChange={this.handleUKEduChange}
+                        //  renderComponents={this.renderComponents}
+                        //  fileToRender={cdn+"/js/UKSchs"}
+                        //  componentUpdatesState="ukSchsList"
+                          idValue='value'
+                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                          showDetail
+                          required
+                          detailToShow='location'
+                        />
+                      </div>
+                    </div>
+                {/*    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft"><strong>Which School (free text)?</strong></label>
+                      <TextInput
+                        placeholder="Type School Free Text..."
+                        className="form-control-std"
+                        maxLength="75"
+                        value={prAuthorInstFreeText}
+                        handleChange={this.handlePrAuthorInstFreeTextChange}
+                      />
+                    </div> */}
+                  </React.Fragment>
+                )}
+                <div className="marginBottom20 fullWidth paddingR20 paddingL20">
+                  <div className={"lightGreyText fontSize13 anonOption" + (isPrAnon ? " selectedCheckbox" : "")} onClick={this.onPrClickAnon}>
+                    <span className="checkbox">
+                      <Check />
+                    </span>
+                    <span className="checkboxText overflow-ellipsis">
+                      Add Anonymously
+                    </span>
+                  </div>
+                </div>
+                {isPrAnon != true && (
+                  <React.Fragment>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Author first name?</strong></label>
+                      <TextInput
+                        placeholder="Type First Name..."
+                        className="form-control-std"
+                        maxLength="200"
+                        required
+                        handleChange={this.handlePrAuthorFnameChange}
+                      />
+                    </div>
+                    <div className="form-group paddingR20 paddingL20">
+                      <label className="descriptor alignLeft reqAsterisk"><strong>Author last name?</strong></label>
+                      <TextInput
+                        placeholder="Type Last Name..."
+                        className="form-control-std"
+                        required
+                        maxLength="200"
+                        handleChange={this.handlePrAuthorLnameChange}
+                      />
+                    </div>
+                  </React.Fragment>
+                )}
+                <div className="form-group paddingR20 paddingL20">
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>UK County?</strong></label>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={ukCounties}
+                      name='stateprovince'
+                      placeholder='County'
+                      handleChange={this.handleStateChange}
+                      idValue='value'
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div className="paddingL20 paddingR20">
             <div className="absolute">
@@ -1137,7 +1488,7 @@ class AddHighlightTextBox extends Component {
                 name="selectedFiles"
                 className="inputFile addHighlight BlankBtn"
                 placeholder="Choose a file..."
-                onChange={this.handleChange}
+                onChange={this.handleFileUpload}
                 minsize={0}
                 title=""
                 required
@@ -1171,7 +1522,7 @@ class AddHighlightTextBox extends Component {
                 name="selectedFiles"
                 className="inputFile addHighlight BlankBtn"
                 placeholder="Choose a file..."
-                onChange={this.handleChange}
+                onChange={this.handleFileUpload}
                 minsize={0}
                 title=""
                 required

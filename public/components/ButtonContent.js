@@ -124,6 +124,20 @@ function ButtonContent(props) {
           {text}
         </div>
       )
+    case 'mentor-profile-feedItem':
+    case 'mentee-profile-feedItem':
+      return (
+        <strong className="darkGreyText">
+          {text}
+        </strong>
+      )
+    case 'mentor-profile-qaItem':
+    case 'mentee-profile-qaItem':
+      return (
+        <strong>
+          {text}
+        </strong>
+      )
     case 'joinProgSmlHome':
     case 'addPicBtn':
     case 'addPicBtn userMenuPlus':

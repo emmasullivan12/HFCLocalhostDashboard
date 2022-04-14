@@ -57,13 +57,14 @@ class Avatar extends Component {
   //  const myProfPic = "2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o" // looks up profpic URL of UID
   //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   //  const profPicSrcProspela = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg'
+    const anonAvatarURL = 'https://files.prospela.com/images/AnonymousUser.png'
     let profPicSrc
     let profPicSrcNotMe
     let isOnline
     let userInitial
 
-    const myProfPic = isAnon == true ? null : users.profilepic;
-    const otherUserProfPic = isAnon == true ? null : users.profilepic;
+    const myProfPic = isAnon == true ? anonAvatarURL : users.profilepic;
+    const otherUserProfPic = isAnon == true ? anonAvatarURL : users.profilepic;
     const checkMe = myProfPic != null && myProfPic != ''
     const checkOtherPerson = (otherUserProfPic != null && otherUserProfPic != '')
     const myID = '99999'; //223456
@@ -77,12 +78,12 @@ class Avatar extends Component {
 
     if (checkMe == true) {
       // Create the URL
-      profPicSrc = createProfPicURL(myProfPic)
+      profPicSrc = isAnon == true ? anonAvatarURL : createProfPicURL(myProfPic)
     }
 
     if (checkOtherPerson == true) {
       // Create the URL
-      profPicSrcNotMe = createProfPicURL(otherUserProfPic)
+      profPicSrcNotMe = isAnon == true ? anonAvatarURL : createProfPicURL(otherUserProfPic)
     }
 
     if (!isPicSet) {

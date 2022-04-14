@@ -51,6 +51,10 @@
 .ModalOpenBtn-mentor-profile-prModAuto,
 .ModalOpenBtn-mentee-profile-userName,
 .ModalOpenBtn-mentor-profile-userName,
+.ModalOpenBtn-mentee-profile-feedItem,
+.ModalOpenBtn-mentor-profile-feedItem,
+.ModalOpenBtn-mentee-profile-qaItem,
+.ModalOpenBtn-mentor-profile-qaItem,
 .ModalOpenBtn-deleteContent,
 .ModalOpenBtn-deleteQ{
   background: none;
@@ -71,6 +75,10 @@
 .ModalOpenBtn-mentor-profile-prModAuto:hover,
 .ModalOpenBtn-mentee-profile-userName:hover,
 .ModalOpenBtn-mentor-profile-userName:hover,
+.ModalOpenBtn-mentee-profile-feedItem:hover,
+.ModalOpenBtn-mentor-profile-feedItem:hover,
+.ModalOpenBtn-mentee-profile-qaItem:hover,
+.ModalOpenBtn-mentor-profile-qaItem:hover,
 .ModalOpenBtn-deleteContent:hover,
 .ModalOpenBtn-deleteQ:hover{
   background: none!important;
@@ -80,6 +88,10 @@
 .ModalOpenBtn-mentor-profile-prModAuto:active,
 .ModalOpenBtn-mentee-profile-userName:active,
 .ModalOpenBtn-mentor-profile-userName:active,
+.ModalOpenBtn-mentee-profile-feedItem:active,
+.ModalOpenBtn-mentor-profile-feedItem:active,
+.ModalOpenBtn-mentee-profile-qaItem:active,
+.ModalOpenBtn-mentor-profile-qaItem:active,
 .ModalOpenBtn-deleteContent:active,
 .ModalOpenBtn-deleteQ:active{
   background: none;
@@ -828,7 +840,11 @@
 .fullpage-modal-container.mentee-profile-prModAuto,
 .fullpage-modal-container.mentor-profile-prModAuto,
 .fullpage-modal-container.mentee-profile-userName,
-.fullpage-modal-container.mentor-profile-userName{
+.fullpage-modal-container.mentor-profile-userName,
+.fullpage-modal-container.mentee-profile-feedItem,
+.fullpage-modal-container.mentor-profile-feedItem,
+.fullpage-modal-container.mentee-profile-qaItem,
+.fullpage-modal-container.mentor-profile-qaItem{
   background-color: #f9f9f9;
   padding-bottom: 0;
   padding: 0 0 0 0;

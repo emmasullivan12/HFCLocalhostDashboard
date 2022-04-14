@@ -59,7 +59,8 @@ function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst,
     return authordegree + ' at ' + uniInst
   } else if (authorinsttype == 'sch') {
   //  const schInst = authorinst ? (grabSchOrUni('sch', authorinst, ukSchsList)) : authorinstfreetext
-    const schInst = authorinst ? authorinst : authorinstfreetext
+  //  const schInst = authorinst ? authorinst : authorinstfreetext
+    const schInst = 'School Student' // Do not show school name if under 18
     return schInst
   } else {
     /* const country = selectCountry(authorcountry);

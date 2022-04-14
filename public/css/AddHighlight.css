@@ -216,6 +216,21 @@ input[type="radio"]:checked + .credential-text {
   padding-left: 63px;
 }
 
+.addCustomCredentialsContainer{
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid grey;
+}
+
+#selectBox-selectAuthorinsttype{
+  margin-right: 20px;
+}
+
 #autocompleterTags-selectHashtag{
   border-top: none;
   border-left: none;

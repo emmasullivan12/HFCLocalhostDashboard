@@ -407,6 +407,9 @@ table th .description{
 .lineHeight40pc{
   line-height: 1.4;
 }
+.lineHeight2{
+  line-height: 2!important;
+}
 .bold{
   font-weight: 600;
 }
@@ -1077,6 +1080,10 @@ table th .description{
 }
 .tooltiptext.profile.onFeed{
   width: 180px;
+}
+.tooltiptext.onQA{
+  left: -18px;
+  padding: 5px;
 }
 .tooltiptext.groups,
 .tooltiptext.compact {

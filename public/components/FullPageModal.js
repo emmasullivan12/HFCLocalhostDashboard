@@ -16,7 +16,7 @@ const FullPageModalTrigger = ({
   usedFor,
   focusOnLoad
 }) => (
-  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={onOpen} ref={buttonFPRef}>
+  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={(e) => onOpen(e)} ref={buttonFPRef}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -106,8 +106,11 @@ class FullPageModal extends React.Component {
     }
   }
 
-  onOpen() {
+  onOpen(e) {
     const {changeInitFocus} = this.props;
+/*    if (preventDefault) { // Where required, this makes the Full Page Modal trigger button key action, rather than something else (e.g. opens user profile from feedItem, rather than the feedItem QA.js page)
+      preventDefault(e)
+    }*/
     this.setState({ isFPOpen: true }, () => {
       if (changeInitFocus) {
         return

@@ -8,11 +8,28 @@ import Avatar from './Avatar.js';
 import {metaAdder, checkMobile, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal';
-import {getIndustryDeets, convertHashtags, getCredText, timeSince} from './UserDetail.js';
+import TextParser from './TextParser.js';
+import UserBadge from './UserBadge.js';
+import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSince} from './UserDetail.js';
 
 import "../css/QA.css";
+
+const MenteeProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  usedFor: 'mentee-profile-qaItem',
+  backBtn: 'arrow'
+}
+
+const MentorProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  usedFor: 'mentor-profile-qaItem',
+  backBtn: 'arrow'
+}
 
 const AddHighlightModalProps = {
   ariaLabel: 'Ask a Question',
@@ -57,11 +74,13 @@ class QA extends Component {
       textdetail: 'I know we have to be professional, but would like to stand out if possible. Is that possible? What do you think? I need to get some good advice on this and hope I\'ve provided enough context to get a good answer',
       //hids: [], // no answers yet
       hids: ['1234','1235'],
-      industriestopostto: ['2','19'],
-      //industriestopostto: ['2','19','1','3','4','5','6','7','8','9','10'],
+      //industriestopostto: ['2','19'],
+      industriestopostto: ['2','19','1','3','4','5','6','7','8','9','10'],
       hashtags: ['23','20','1','2','0',],
       hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
       isanon: 0,
+      isPr: 0,
+      authorUserRole: 'mentee',
       authorinst: '',
       authorinstfreetext: 'Really Long Institution Name',
       authorrole: '',
@@ -92,6 +111,8 @@ class QA extends Component {
         uid: '123',
         fname: 'Emma',
         lname: 'Sullivan',
+        isPr: 0,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: 'Really Long Institution Name',
         authorrole: '',
@@ -116,6 +137,8 @@ class QA extends Component {
         uid: '124',
         fname: 'Dave',
         lname: 'Petrie',
+        isPr: 0,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: '',
         authorrole: '',
@@ -140,6 +163,8 @@ class QA extends Component {
         uid: '125',
         fname: 'Dexter',
         lname: 'Boyce',
+        isPr: 1,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: 'Pladis',
         authorrole: 'Marketing Manager',
@@ -226,14 +251,16 @@ class QA extends Component {
       uid: '123',
       fname: 'Emma',
       lname: 'Sullivan',
+      isPr: 0,
+      authorUserRole: 'mentee',
       datecreated: '2020-09-04T13:30:50.667Z',
       lastupdated: '2022-02-02T13:30:50.667Z',
       title: 'What is the best thing to wear to an interview?',
       textdetail: 'I know we have to be professional, but would like to stand out if possible. Is that possible? What do you think? I need to get some good advice on this and hope I\'ve provided enough context to get a good answer',
       //hids: [], // no answers yet
       hids: ['1234','1235'],
-      industriestopostto: ['2','19'],
-      //industriestopostto: ['2','19','1','3','4','5','6','7','8','9','10'],
+      //industriestopostto: ['2','19'],
+      industriestopostto: ['2','19','1','3','4','5','6','7','8','9','10'],
       hashtags: ['23','20','1','2','0',],
       hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
       isanon: 0,
@@ -283,6 +310,8 @@ class QA extends Component {
         uid: '123',
         fname: 'Emma',
         lname: 'Sullivan',
+        isPr: 0,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: 'Really Long Institution Name',
         authorrole: '',
@@ -315,6 +344,8 @@ class QA extends Component {
         uid: '124',
         fname: 'Dave',
         lname: 'Petrie',
+        isPr: 0,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: '',
         authorrole: '',
@@ -339,6 +370,8 @@ class QA extends Component {
         uid: '125',
         fname: 'Dexter',
         lname: 'Boyce',
+        isPr: 1,
+        authorUserRole: 'mentor',
         authorinst: '',
         authorinstfreetext: 'Pladis',
         authorrole: 'Marketing Manager',
@@ -445,7 +478,25 @@ class QA extends Component {
       });
     }
     const mostRecentActivityDate = activeDatesArr.sort().slice(-1)
-    const indArrToShow = qaItem.industriestopostto.length <= 2 ? qaItem.industriestopostto : qaItem.industriestopostto.slice(0,2)
+
+    //Prioritise showing similar industries to viewer
+    const viewersIndustries = ['2','11']
+    //const viewersIndustries = userRole == 'mentee' ? this.props.users.idustries : this.props.users.industriesexp
+    const indToPostTo = qaItem.industriestopostto
+    let indArrToShow
+    if (indToPostTo && indToPostTo.length <= 2) {
+      indArrToShow = indToPostTo
+    } else {
+      const indToPostToFiltered = indToPostTo && indToPostTo.filter(ind => viewersIndustries.includes(ind))
+      if (indToPostToFiltered && indToPostToFiltered.length == 0) {
+        indArrToShow = indToPostTo.slice(0,2) // Will just show the poster's first 2 industries
+      } else if (indToPostToFiltered && indToPostToFiltered.length >= 2) {
+        indArrToShow = indToPostToFiltered.slice(0,2) // Will show the first 2 relevant industries
+      } else {
+        indArrToShow = indToPostToFiltered // Will only show the relevant industry even if there are more
+      }
+    }
+
     const hashtagsCommaString = (qaItem.hashtags.length > 0 || qaItem.hashtagsfreetext.length > 0) ? convertHashtags(qaItem.hashtags, qaItem.hashtagsfreetext) : []
     const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
     const numViews = (qaItem.mentorseen && qaItem.mentorseen.length) + (qaItem.menteeseen && qaItem.menteeseen.length) + (qaItem.prseen && qaItem.prseen.length)
@@ -531,7 +582,7 @@ class QA extends Component {
                   <div className="gridRightColumn">
                     {qaItem.textdetail && (
                       <div className="qDetailContainer marginBottom20">
-                        {qaItem.textdetail}
+                        <TextParser text={qaItem.textdetail} />
                       </div>
                     )}
                     {hashtagsArray.length > 0 && (
@@ -568,9 +619,27 @@ class QA extends Component {
                               <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qaItem.fname} showAsCircle picSize={360}/>
                             </div>
                             <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                              <div>
-                                <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
-                              </div>
+                              {qaItem.isanon != true && qaItem.isPr != true && qaItem.authorinsttype != 'sch' && (
+                                <div>
+                                {/*  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong> */}
+                                  {qaItem.authorUserRole == 'mentee' ? (
+                                      <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                        <MenteeProfileContent />
+                                      </FullPageModal>
+                                      )
+                                    : (
+                                      <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                        <MentorProfileContent />
+                                      </FullPageModal>
+                                    )
+                                  }
+                                </div>
+                              )}
+                              {(qaItem.isPr == true || qaItem.authorinsttype == 'sch') && (
+                                <div>
+                                  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
+                                </div>
+                              )}
                               <div className="darkGreyText">{credentialText}</div>
                             </div>
                           </div>
@@ -592,6 +661,28 @@ class QA extends Component {
                   const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
                   const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
                   const hashURL = hid.url.split('#')[1] // Get the bit after the hash '#' in the saved URL
+
+                  let isProspelaTeam, verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, verifTypesArr, hasMinVerif
+                  let userRoleOfAuthor = 'mentor'
+
+                  if (userRoleOfAuthor == 'mentor') {
+                    const mentor = {
+                      verifiedtype: '1',
+                      eduemailverif: '',
+                      profemailverif: '',
+                      mentorsustep: '',
+                      tsapproved: ''
+                    }
+                    isProspelaTeam = false
+                    verifiedType = mentor.verifiedtype
+                    eduemailverif = mentor.eduemailverif;
+                    profemailverif = mentor.profemailverif;
+                    mentorSUStep = mentor.mentorsustep;
+                    tsapproved = mentor.tsapproved // THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND
+                    verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
+                  }
+
+                  hasMinVerif = userRoleOfAuthor == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
 
                   aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
                   aAuthorinsttype = hid.authorinsttype
@@ -621,7 +712,7 @@ class QA extends Component {
                       </div>
                       <div className="gridRightColumn">
                         <div className="qDetailContainer marginBottom20">
-                          {hid.text}
+                          <TextParser text={hid.text} />
                         </div>
                         {hid.files && hid.files.length > 0 && (
                           <div className="answerFilesContainer marginBottom20">
@@ -671,9 +762,43 @@ class QA extends Component {
                                   <Avatar userID={hid.uid} isAnon={hid.isanon} userName={hid.isanon ? 'Anonymous' : hid.fname} showAsCircle picSize={360}/>
                                 </div>
                                 <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                                  <div>
-                                    <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong>
-                                  </div>
+                                  {hid.isanon != true && hid.isPr != true && hid.authorinsttype != 'sch' && (
+                                    <div>
+                                    {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
+                                      {hid.authorUserRole == 'mentee' ? (
+                                          <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                            <MenteeProfileContent />
+                                          </FullPageModal>
+                                          )
+                                        : (
+                                          <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                            <MentorProfileContent />
+                                          </FullPageModal>
+                                        )
+                                      }
+                                      {hasMinVerif == true && (
+                                        <span className="tooltip fontSize18">
+                                          <UserBadge badgeType='pr-certified' />
+                                          <span className="tooltiptext onQA">
+                                            <strong>Prospela Certified Mentor</strong>
+                                          </span>
+                                        </span>
+                                      )}
+                                    </div>
+                                  )}
+                                  {(hid.isanon == true || hid.isPr == true || hid.authorinsttype == 'sch') && (
+                                    <div>
+                                      <strong>{hid.isanon ? "Anonymous" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong>
+                                      {hasMinVerif == true && (
+                                        <span className="tooltip fontSize18">
+                                          <UserBadge badgeType='pr-certified' />
+                                          <span className="tooltiptext onQA">
+                                            <strong>Prospela Certified Mentor</strong>
+                                          </span>
+                                        </span>
+                                      )}
+                                    </div>
+                                  )}
                                   <div className="darkGreyText">{aCredentialText}</div>
                                 </div>
                               </div>

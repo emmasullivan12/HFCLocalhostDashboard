@@ -30,13 +30,14 @@ const MentorProfileUsrNameModalProps = {
 
 class UserName extends Component {
   render() {
-    const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle} = this.props;
+    const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle, isAnon} = this.props;
   /*  console.log(grabSchOrUni)
     console.log(ukUnisListLoaded)*/
     const userRole = 'mentor'
     const myUid = '12345';
     const fnameLocal = isProspelaAuto ? 'Prospela' : fname
     const lnameLocal = isProspelaAuto ? '' : (lname ? lname : '')
+    const anonAvatarURL = 'https://files.prospela.com/images/AnonymousUser.png'
     const name = (isProspelaAuto || isProspelaTeam == true) ? fnameLocal : (userRole === 'mentee' ? fnameLocal : (fnameLocal + (lnameLocal ? (' ' + lnameLocal) : '')))
     const user = [
       {
@@ -66,7 +67,7 @@ class UserName extends Component {
       }
     ]
 
-    const isPicSet = user[0].profilepic != null && user[0].profilepic != '';
+    const isPicSet = isAnon == true || (user[0].profilepic != null && user[0].profilepic != '');
     let profPicSrc;
     let profPicSrcLarger;
     let userInitial;
@@ -79,9 +80,9 @@ class UserName extends Component {
 
     if (isPicSet == true) {
       if (eetstatus == 'sch') {
-        profPicSrc = createProfPicURL(user[0].profilepic, '40');
+        profPicSrc = isAnon == true ? anonAvatarURL : createProfPicURL(user[0].profilepic, '40');
       } else {
-        profPicSrcLarger = createProfPicURL(user[0].profilepic, '80');
+        profPicSrcLarger = isAnon == true ? anonAvatarURL : createProfPicURL(user[0].profilepic, '80');
       }
     } else {
       userInitial = fname && fname.charAt(0).toUpperCase();

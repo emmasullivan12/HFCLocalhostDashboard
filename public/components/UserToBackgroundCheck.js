@@ -49,7 +49,7 @@ class UserToCheck extends Component {
     if (approvePhoto == true && approveCV == true && approveSocialMedia ==  true) {
       if (user.country == 'GBR') {
 
-        if (user.ukConv == 1) {
+        if (user.ukConv == 0) {
 
           if (approveCrimRecord == true) {
             return true
@@ -59,7 +59,7 @@ class UserToCheck extends Component {
 
       } else if (user.country == 'USA') {
 
-        if (user.usConv1 == 1 || user.usConv2 == 1 || user.usConv3 == 1 || user.usConv4 == 1) {
+        if (user.usConv1 == 0 || user.usConv2 == 0 || user.usConv3 == 0 || user.usConv4 == 0) {
           if (approveCrimRecord == true && approveSexOffenderReg == true) {
             return true
           } else return false
@@ -69,7 +69,7 @@ class UserToCheck extends Component {
 
         } else return false
 
-      } else if (user.usConv1 == 1 || user.usConv2 == 1 || user.usConv3 == 1 || user.usConv4 == 1) {
+      } else if (user.usConv1 == 0 || user.usConv2 == 0 || user.usConv3 == 0 || user.usConv4 == 0) {
 
         if (approveCrimRecord == true) {
           return true
@@ -84,7 +84,7 @@ class UserToCheck extends Component {
 
     const name = user.fname + " " + user.lname;
     const selfieURL = this.createIDSelfieURL(user.idpic);
-    const hasNoConvictions = user.ukConv != 1 && user.usConv1 != 1 && user.usConv2 != 1 && user.usConv3 != 1 && user.usConv4 != 1;
+    const hasNoConvictions = user.ukConv != 0 && user.usConv1 != 0 && user.usConv2 != 0 && user.usConv3 != 0 && user.usConv4 != 0;
     let classNameSafeguarding = "userToMatch-sgStatus";
     let safeguardingText;
     let eduName;
@@ -96,18 +96,18 @@ class UserToCheck extends Component {
     }
 
     if (user.country == 'GBR') {
-      if (user.ukConv == 1) {
+      if (user.ukConv == 0) {
         safeguardingText = "Convictions (UK)"
         classNameSafeguarding += " redText"
       } else {
         safeguardingText = 'None'
         classNameSafeguarding += " greyText";
       }
-    } else if (user.usConv1 != 1 && user.usConv2 != 1 && user.usConv3 != 1 && user.usConv4 != 1) {
+    } else if (user.usConv1 != 0 && user.usConv2 != 0 && user.usConv3 != 0 && user.usConv4 != 0) {
       safeguardingText = 'None'
       classNameSafeguarding += " greyText";
     } else {
-      safeguardingText = (user.usConv1 == 1 ? 'Felony, ': '') + (user.usConv2 == 1 ? 'Misdemeanor, ': '') + (user.usConv3 == 1 ? 'Crime against Minor, ': '') + (user.usConv4 == 1 ? 'Volunteering warning' : '')
+      safeguardingText = (user.usConv1 == 0 ? 'Felony, ': '') + (user.usConv2 == 0 ? 'Misdemeanor, ': '') + (user.usConv3 == 0 ? 'Crime against Minor, ': '') + (user.usConv4 == 0 ? 'Volunteering warning' : '')
       classNameSafeguarding += " redText"
     }
 
@@ -231,7 +231,7 @@ class UserToCheck extends Component {
                 onChange={this.toggleCheckbox}
                 spanClassName={"checkmark left" + (hasNoConvictions ? ' disabled' : '')}
                 spanId="checkedPhoto"
-                required={user.ukConv == 1 || user.usConv1 == 1 || user.usConv2 == 1 || user.usConv3 == 1 || user.usConv4 == 1}
+                required={user.ukConv == 0 || user.usConv1 == 0 || user.usConv2 == 0 || user.usConv3 == 0 || user.usConv4 == 0}
                 disabled={hasNoConvictions}
               />
             </td>

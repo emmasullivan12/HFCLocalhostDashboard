@@ -7,11 +7,27 @@ import Avatar from './Avatar.js';
 import {usercdn, userImgsFolder} from './CDN.js';
 import {Check, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
 import UserBadge from './UserBadge.js';
+import TextParser from './TextParser.js';
 import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText} from './UserDetail.js';
 
 import '../css/MyActivity.css';
+
+const MenteeProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  usedFor: 'mentee-profile-feedItem',
+  backBtn: 'arrow'
+}
+
+const MentorProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  usedFor: 'mentor-profile-feedItem',
+  backBtn: 'arrow'
+}
 
 const DeleteContentModalProps = {
   ariaLabel: 'Confirm content deletion',
@@ -166,19 +182,35 @@ class FeedItem extends Component {
       verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
     }
 
-    hasMinVerif = userRole == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
+    hasMinVerif = userRoleOfAuthor == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
 
     if (contentType == 'question' || contentType == 'following') {
+      //Prioritise showing similar industries to viewer
+      const viewersIndustries = ['2','11']
+      //const viewersIndustries = userRole == 'mentee' ? this.props.users.idustries : this.props.users.industriesexp
+      const indToPostTo = post.industriestopostto
+      if (indToPostTo && indToPostTo.length <= 2) {
+        indArrToShow = indToPostTo
+      } else {
+        const indToPostToFiltered = indToPostTo && indToPostTo.filter(ind => viewersIndustries.includes(ind))
+        if (indToPostToFiltered && indToPostToFiltered.length == 0) {
+          indArrToShow = indToPostTo.slice(0,2) // Will just show the poster's first 2 industries
+        } else if (indToPostToFiltered && indToPostToFiltered.length >= 2) {
+          indArrToShow = indToPostToFiltered.slice(0,2) // Will show the first 2 relevant industries
+        } else {
+          indArrToShow = indToPostToFiltered // Will only show the relevant industry even if there are more
+        }
+      }
+
       hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
       hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
-      indArrToShow = post.industriestopostto.length <= 2 ? post.industriestopostto : post.industriestopostto.slice(0,2)
       const numViews = (post.mentorseen && post.mentorseen.length) + (post.menteeseen && post.menteeseen.length) + (post.prseen && post.prseen.length)
       const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
       const hasUnreadAnswers = true // isOnMyContentPage == true ? null : [LINKTODEX]
 
       return (
         <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
-          <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype="question">
+          <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype={contentType}>
             { isOnMyContentPage != true && this.showContentTypeLabel(contentType) }
             { isOnMyContentPage == true && contentType != 'following' && (
               <React.Fragment>
@@ -274,7 +306,7 @@ class FeedItem extends Component {
                 <div className="marginTop10 fontSize18 lineHeight20pc darkGreyText">
                   <strong>{post.title}</strong>
                 </div>
-                <div className="marginBottom10 marginTop5 fontSize13">
+                <div className="marginBottom10 marginTop5 fontSize13 darkGreyText">
                   in <span className="bubbleContainer">
                     {indArrToShow.map((indID) => {
                       let industryItem, icon, indName
@@ -383,7 +415,26 @@ class FeedItem extends Component {
                   <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : post.fname} showAsCircle onFeed picSize={40}/>
                 </div>
                 <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                  <span className="darkGreyText"><strong>{post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}</strong></span>
+                  {/*<span className="darkGreyText"><strong>{post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}</strong></span> */}
+                  {contentType == 'general' && post.isanon != true && post.isPr != true && post.authorinsttype != 'sch' && (
+                    <span>
+                    {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
+                      {post.authorUserRole == 'mentee' ? (
+                          <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
+                            <MenteeProfileContent />
+                          </FullPageModal>
+                          )
+                        : (
+                          <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
+                            <MentorProfileContent />
+                          </FullPageModal>
+                        )
+                      }
+                    </span>
+                  )}
+                  {(contentType != 'general' || post.isanon == true || post.isPr == true || post.authorinsttype == 'sch') && (
+                    <span className="darkGreyText"><strong>{post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}</strong></span>
+                  )}
                   {hasMinVerif == true && (
                     <span className="tooltip fontSize18">
                       <UserBadge badgeType='pr-certified' />
@@ -396,7 +447,9 @@ class FeedItem extends Component {
                 </div>
               </div>
               <div className={"marginTop10 max3Lines greyText" + (isTextClamped == true ? "" : " marginBottom10")} ref={this.textItemRef} >
-                <div className="darkGreyText fontSize13">{post.text}</div>
+                {post.text && (
+                  <div className="darkGreyText fontSize13"><TextParser text={post.text} /></div>
+                )}
               </div>
               {isTextClamped == true && (
                 <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
