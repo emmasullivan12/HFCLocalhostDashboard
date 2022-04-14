@@ -1,4 +1,4 @@
-// Dex last merged this code on 24th mar 2022
+// Dex last merged this code on 14th mar 2022
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -16,7 +16,7 @@ const FullPageModalTrigger = ({
   usedFor,
   focusOnLoad
 }) => (
-  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={(e) => onOpen(e)} ref={buttonFPRef}>
+  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={onOpen} ref={buttonFPRef}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -106,7 +106,7 @@ class FullPageModal extends React.Component {
     }
   }
 
-  onOpen(e) {
+  onOpen() {
     const {changeInitFocus} = this.props;
 /*    if (preventDefault) { // Where required, this makes the Full Page Modal trigger button key action, rather than something else (e.g. opens user profile from feedItem, rather than the feedItem QA.js page)
       preventDefault(e)

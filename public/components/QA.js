@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th apr 2022
+// Dex last merged this code on 14th apr 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -481,7 +481,7 @@ class QA extends Component {
 
     //Prioritise showing similar industries to viewer
     const viewersIndustries = ['2','11']
-    //const viewersIndustries = userRole == 'mentee' ? this.props.users.idustries : this.props.users.industriesexp
+    //const viewersIndustries = userRole == 'mentee' ? this.props.users.industries : this.props.users.industriesexp
     const indToPostTo = qaItem.industriestopostto
     let indArrToShow
     if (indToPostTo && indToPostTo.length <= 2) {
