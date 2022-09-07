@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 
 import MenuNav from './MenuNav.js';
+import {X} from './GeneralFunctions.js';
 
 class FeedHeader extends Component {
   constructor(props) {
@@ -15,6 +16,16 @@ class FeedHeader extends Component {
   handleMessageChange = (e) => {
     this.setState({
       text: e.target.value
+    })
+  }
+
+  onResetSearch = () => {
+    const {resetSearch} = this.props
+
+    resetSearch()
+
+    this.setState({
+      text: ''
     })
   }
 
@@ -34,9 +45,9 @@ class FeedHeader extends Component {
 
     // Set input box text back to ''
     //this.searchTextNode.value = ''
-    this.setState({
+    /* this.setState({
       text: ''
-    })
+    }) */
 
     const searchCompleted = true
 
@@ -50,6 +61,7 @@ class FeedHeader extends Component {
 
   render() {
     const {text} = this.state;
+    const {isUserSearch} = this.props;
 
     return (
       <div className="feed-header">
@@ -57,27 +69,53 @@ class FeedHeader extends Component {
         <div className="chatWindow-footer horizontallyCenter">
           <div className="input-box-container noMarginB">
             <div className="input-flexContainer">
-              <form className="textInput-container">
-                <input
-                  type="text"
-                  ref={n => this.searchTextNode = n}
-                  className="input-box noPaddingR"
-                //  id="txtInput-box"
-                //  form="chatMessageForm"
-                  value={text}
-                  onChange={this.handleMessageChange}
-                  onKeyDown={this.onEnterPress}
-                  placeholder="Search Prospela..."
-                  autoComplete="on"
-                  autoCorrect="on"
-                  spellCheck="true"
-                  maxLength="5000"
-                  autoFocus
-                />
-             </form>
-             <button type="button" disabled={text.length === 0} className={"sendMsgContainer searchBox" + ((text.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>
-               <i className="fas fa-search" />
-             </button>
+              {isUserSearch && (
+                <div className="fullWidth">
+                  <div className="tagsContainer " id="selectContainer">
+                    <div className="tagsList">
+                      <span
+                      //  onClick={this.editSearchValue}
+                        className="multiple value"
+                      //  role="button"
+                      >
+                        {text}
+                        <span
+                          data-value={text}
+                          onMouseDown={this.onResetSearch}
+                          role="button"
+                          className="delete"
+                        >
+                          <X />
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {!isUserSearch && (
+                <React.Fragment>
+                  <form className="textInput-container">
+                    <input
+                      type="text"
+                      id="mainSearchBox"
+                      ref={n => this.searchTextNode = n}
+                      className="input-box noPaddingR"
+                      value={text}
+                      onChange={this.handleMessageChange}
+                      onKeyDown={this.onEnterPress}
+                      placeholder="Search Prospela..."
+                      autoComplete="on"
+                      autoCorrect="on"
+                      spellCheck="true"
+                      maxLength="5000"
+                      autoFocus
+                    />
+                  </form>
+                  <button type="button" disabled={text.length === 0} className={"sendMsgContainer searchBox" + ((text.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>
+                    <i className="fas fa-search" />
+                  </button>
+                </React.Fragment>
+             )}
             </div>
           </div>
         </div>

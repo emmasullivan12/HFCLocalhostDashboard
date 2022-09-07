@@ -1718,6 +1718,12 @@ const hashtagOptions = [
   {value: '1712', label: 'Ziva Dynamics'},
   {value: '1713', label: 'Zookeeper'},
   {value: '1714', label: 'Zoologist'},
+  {value: '1715', label: 'BAME'},
+  {value: '1716', label: 'Black Excellence'},
+  {value: '1717', label: 'People with disabilities'},
+  {value: '1718', label: 'LGBTQI+'},
+  {value: '1719', label: 'Women in the Workforce'},
+  {value: '1720', label: 'Veterans'},
 ];
 
 export default hashtagOptions;

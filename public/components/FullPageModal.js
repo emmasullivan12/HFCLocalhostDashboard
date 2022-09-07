@@ -141,6 +141,9 @@ class FullPageModal extends React.Component {
   }
 
   onPopState = (e, self) => {
+    console.log(e)
+    console.log(self)
+    console.log(self.state)
     if (self.state.fullPageModal === 'open') {
       e.onClose()
     }

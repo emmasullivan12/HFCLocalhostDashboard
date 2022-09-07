@@ -67,3 +67,7 @@
   background: #d9fdf6;
   color: #58d2bb;
 }
+.contentTypeLabel.custom{
+  background: #000;
+  color: #fff;
+}

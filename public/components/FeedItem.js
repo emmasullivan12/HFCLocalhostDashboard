@@ -115,6 +115,9 @@ class FeedItem extends Component {
       case 'answer':
         textToShow = 'Answer'
         break;
+      case 'custom':
+        textToShow = 'custom'
+        break;
       default:
         textToShow = 'General'
     }
@@ -211,7 +214,7 @@ class FeedItem extends Component {
       return (
         <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
           <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype={contentType}>
-            { isOnMyContentPage != true && this.showContentTypeLabel(contentType) }
+            { isOnMyContentPage != true && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
             { isOnMyContentPage == true && contentType != 'following' && (
               <React.Fragment>
                 <button type="button" className="msgActions-btn absolute right20 tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
@@ -367,7 +370,7 @@ class FeedItem extends Component {
 
       const FeedItemDetail = () => (
         <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.hid} data-itemtype={contentType}>
-          { isOnMyContentPage != true && this.showContentTypeLabel(contentType) }
+          { isOnMyContentPage != true && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
           { isOnMyContentPage == true && (
             <React.Fragment>
               <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>

@@ -117,6 +117,13 @@ class HomePage extends Component {
 
   componentDidUpdate() {
     const {tabToView} = this.props; // This comes from Dashboard.js
+    //console.log("tabToView: "+tabToView)
+    //console.log("window.location.pathname: "+window.location.pathname)
+
+    // if (user clicks 'home' and HomePage.js is already loaded) {
+    //  this.resetSearch()
+    //  reload feed
+    // }
 
     // Maybe use this to determine whether to trigger or not https://stackoverflow.com/questions/69806279/how-to-know-a-react-link-component-has-been-clicked
     if (tabToView == "questions" && tabToView != this.state.tabToView) {
@@ -266,6 +273,14 @@ class HomePage extends Component {
   handleSearchResults = () => {
     this.setState({
       isUserSearch: true
+    })
+  }
+
+  resetSearch = () => {
+    this.setState({
+      isUserSearch: false
+    }, () => {
+      document.getElementById("mainSearchBox").focus();
     })
   }
 
@@ -579,56 +594,74 @@ class HomePage extends Component {
       case 'all':
         return (
           <div>
-            <div className="filterFeed-container textRight marginBottom20">
-              <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
-                <div>
-                  <span role="img" aria-label="latest">⏱️</span>
-                  <span>Latest</span>
+            {!isUserSearch && (
+              <React.Fragment>
+                <div className="filterFeed-container textRight marginBottom20">
+                  <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
+                    <div>
+                      <span role="img" aria-label="latest">⏱️</span>
+                      <span>Latest</span>
+                    </div>
+                  </button>
+                  <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
+                    <div>
+                      <span role="img" aria-label="trending">🔥</span>
+                      <span>Trending</span>
+                    </div>
+                  </button>
                 </div>
-              </button>
-              <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
-                <div>
-                  <span role="img" aria-label="trending">🔥</span>
-                  <span>Trending</span>
-                </div>
-              </button>
-            </div>
-            { this.showUpdateTabBtns() }
+                { this.showUpdateTabBtns() }
+              </React.Fragment>
+            )}
+            {isUserSearch && (
+              <div className="marginTop20">
+                Search results:
+              </div>
+            )}
             <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
       case 'questions':
         return (
           <div>
-            <div className="filterFeed-container textRight marginBottom20">
-              <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
-                <div>
-                  <span role="img" aria-label="latest">⏱️</span>
-                  <span>Latest</span>
+            {!isUserSearch && (
+              <React.Fragment>
+                <div className="filterFeed-container textRight marginBottom20">
+                  <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
+                    <div>
+                      <span role="img" aria-label="latest">⏱️</span>
+                      <span>Latest</span>
+                    </div>
+                  </button>
+                  {userRole != 'mentee' && (
+                    <button type="button" className="filter-btn" value="unanswered" onClick={(e) => this.filterBy(e)}>
+                      <div>
+                        <span role="img" aria-label="question icon">❓</span>
+                        <span>Unanswered</span>
+                      </div>
+                    </button>
+                  )}
+                  <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
+                    <div>
+                      <span role="img" aria-label="trending">🔥</span>
+                      <span>Trending</span>
+                    </div>
+                  </button>
                 </div>
-              </button>
-              {userRole != 'mentee' && (
-                <button type="button" className="filter-btn" value="unanswered" onClick={(e) => this.filterBy(e)}>
-                  <div>
-                    <span role="img" aria-label="question icon">❓</span>
-                    <span>Unanswered</span>
-                  </div>
-                </button>
-              )}
-              <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
-                <div>
-                  <span role="img" aria-label="trending">🔥</span>
-                  <span>Trending</span>
-                </div>
-              </button>
-            </div>
-            { this.showUpdateTabBtns() }
-            <p>Questions only here</p>
-            <Link to="/questions/1234">
-              <button type="button">
-                Click to view Answer #1234
-              </button>
-            </Link>
+                { this.showUpdateTabBtns() }
+                <p>Questions only here</p>
+                <Link to="/questions/1234">
+                  <button type="button">
+                    Click to view Answer #1234
+                  </button>
+                </Link>
+              </React.Fragment>
+            )}
+            {isUserSearch && (
+              <div className="marginTop20">
+                Search results:
+              </div>
+            )}
             <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
@@ -953,7 +986,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep, userRole, source} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -1013,7 +1046,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn">
-          <FeedHeader handleSearchResults={this.handleSearchResults}/>
+          <FeedHeader handleSearchResults={this.handleSearchResults} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20">
             <div className="sideBar" role="complementary" aria-label="sidebar">

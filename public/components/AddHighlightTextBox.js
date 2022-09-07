@@ -67,6 +67,7 @@ class AddHighlightTextBox extends Component {
     //  credentialUpdatedSuccess: false,
       showCredentialUpdatedMsg: false,
       postSuccess: false,
+      generalTypeSelected: '',
       industriesToPostTo: [],
     //  selectedFiles: [],
       selectedFiles: [
@@ -663,6 +664,13 @@ class AddHighlightTextBox extends Component {
     })
   }
 
+  handleGeneralTypeChange = (userInput) => {
+    console.log(userInput)
+    this.setState({
+      generalTypeSelected: userInput, // should only select 1 item
+    })
+  }
+
   handlePrAuthorInstTypeChange = (userInput) => {
     this.setState({
       prAuthorType: userInput,
@@ -756,7 +764,7 @@ class AddHighlightTextBox extends Component {
   }
 
   canBeSubmitted() {
-    const {selectedFiles, errorFileSize, errorFileNumber, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
+    const {selectedFiles, errorFileSize, errorFileNumber, generalTypeSelected, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
     const {isMenteeQ, isAddAnswer} = this.props
 
     return (
@@ -1207,6 +1215,32 @@ class AddHighlightTextBox extends Component {
                       showIcon
                       iconToShow='iconFA'
                       showCheckbox
+                      showBubbleVersion
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+            {isMenteeQ != true && isAddAnswer != true && (
+              <div className="paddingR20 paddingL20">
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="loudspeaker-emoji">📢</span> <strong>Type of post</strong></label>
+                <div className="inlineForm">
+                  <div className="form-group inlineLeft textLeft postToGroupContainer">
+                    <SelectBox
+                      options={[
+                        {value: '1', label: 'Useful tools / Resources', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+                        {value: '2', label: 'Events', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+                        {value: '3', label: 'Job', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+                        {value: '4', label: 'Other / General', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
+                      ]}
+                      name='selectGeneralType'
+                      placeholder='Select type of post:'
+                      handleChange={this.handleGeneralTypeChange}
+                      valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                    //  showIcon //
+                    //  iconToShow='iconFA' //
+                    //  showCheckbox
                       showBubbleVersion
                       required
                     />

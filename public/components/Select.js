@@ -1160,12 +1160,36 @@ class SelectBox extends React.Component {
           )}
         </span>
       )
+    } else if (showBubbleVersion) {
+      return (
+        <span className="multiple numChecked">
+          <span
+            className="tickNumSelected"
+          >
+            {(values.length == 0) ? (
+              <span><strong>-</strong></span>
+            ) : (
+              <Check />
+            )}
+          </span>
+          {values.length == 0 && (
+            <span>{placeholder}</span>
+          )}
+          <div className="overflow-ellipsis">
+            { values[0] }
+          </div>
+          <span className="arrow" id="selectArrow">
+            { isOpen ? <ChevronUp /> : <ChevronDown /> }
+          </span>
+        </span>
+      )
+    } else {
+      return (
+        <div className="value overflow-ellipsis">
+          { values[0] }
+        </div>
+      )
     }
-    return (
-      <div className="value overflow-ellipsis">
-        { values[0] }
-      </div>
-    )
   }
 
   renderOptions() {
