@@ -1,4 +1,4 @@
-// Last merged this code on 14th apr 2022
+// Last merged this code on 11th sept 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -610,7 +610,6 @@ class HomePage extends Component {
                     </div>
                   </button>
                 </div>
-                { this.showUpdateTabBtns() }
               </React.Fragment>
             )}
             {isUserSearch && (
@@ -618,6 +617,7 @@ class HomePage extends Component {
                 Search results:
               </div>
             )}
+            { this.showUpdateTabBtns() }
             <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
@@ -648,13 +648,6 @@ class HomePage extends Component {
                     </div>
                   </button>
                 </div>
-                { this.showUpdateTabBtns() }
-                <p>Questions only here</p>
-                <Link to="/questions/1234">
-                  <button type="button">
-                    Click to view Answer #1234
-                  </button>
-                </Link>
               </React.Fragment>
             )}
             {isUserSearch && (
@@ -662,6 +655,13 @@ class HomePage extends Component {
                 Search results:
               </div>
             )}
+            { this.showUpdateTabBtns() }
+            <p>Questions only here</p>
+            <Link to="/questions/1234">
+              <button type="button">
+                Click to view Answer #1234
+              </button>
+            </Link>
             <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
