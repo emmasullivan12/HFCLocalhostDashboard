@@ -43,7 +43,7 @@ class AddHighlightModalContent extends Component {
           </div>
           <div className="postTypeContainer">
             {/* <Link to={`/questions/${qid}`}> */}
-            <Link to="/questions" onClick={updatePathName}>
+            <Link to={{pathname: "/questions", state: { fromAddHighlightBtn: true }}} onClick={updatePathName}>
               <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
               {/*  <div className="postTypeIcon fontSize30">
                   <i className="fas fa-question" />

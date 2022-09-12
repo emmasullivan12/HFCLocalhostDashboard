@@ -8,18 +8,18 @@ import {X} from './GeneralFunctions.js';
 class FeedHeader extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+  /*  this.state = {
       text: '',
-    }
+    }*/
   }
 
-  handleMessageChange = (e) => {
+  /*handleMessageChange = (e) => {
     this.setState({
       text: e.target.value
     })
-  }
+  }*/
 
-  onResetSearch = () => {
+/*  onResetSearch = () => {
     const {resetSearch} = this.props
 
     resetSearch()
@@ -27,7 +27,7 @@ class FeedHeader extends Component {
     this.setState({
       text: ''
     })
-  }
+  }*/
 
   onEnterPress = (e) => {
     var key = e.key || e.keyCode
@@ -43,12 +43,6 @@ class FeedHeader extends Component {
   handleSubmit = () => {
     const {handleSearchResults} = this.props
 
-    // Set input box text back to ''
-    //this.searchTextNode.value = ''
-    /* this.setState({
-      text: ''
-    }) */
-
     const searchCompleted = true
 
     // Once search results come back / completed
@@ -60,11 +54,11 @@ class FeedHeader extends Component {
   }
 
   render() {
-    const {text} = this.state;
-    const {isUserSearch} = this.props;
+    //const {text} = this.state;
+    const {isUserSearch, searchText, resetSearch, handleSearchTextChange} = this.props;
 
     return (
-      <div className="feed-header">
+      <div className="feed-header" id="feedHeader">
         <MenuNav />
         <div className="chatWindow-footer horizontallyCenter">
           <div className="input-box-container noMarginB">
@@ -78,10 +72,11 @@ class FeedHeader extends Component {
                         className="multiple value"
                       //  role="button"
                       >
-                        {text}
+                        {searchText}
                         <span
-                          data-value={text}
-                          onMouseDown={this.onResetSearch}
+                          data-value={searchText}
+                        //  onMouseDown={this.onResetSearch}
+                          onMouseDown={resetSearch}
                           role="button"
                           className="delete"
                         >
@@ -96,12 +91,12 @@ class FeedHeader extends Component {
                 <React.Fragment>
                   <form className="textInput-container">
                     <input
-                      type="text"
+                      type="searchText"
                       id="mainSearchBox"
                       ref={n => this.searchTextNode = n}
                       className="input-box noPaddingR"
-                      value={text}
-                      onChange={this.handleMessageChange}
+                      value={searchText}
+                      onChange={handleSearchTextChange}
                       onKeyDown={this.onEnterPress}
                       placeholder="Search Prospela..."
                       autoComplete="on"
@@ -111,7 +106,7 @@ class FeedHeader extends Component {
                       autoFocus
                     />
                   </form>
-                  <button type="button" disabled={text.length === 0} className={"sendMsgContainer searchBox" + ((text.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>
+                  <button type="button" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>
                     <i className="fas fa-search" />
                   </button>
                 </React.Fragment>

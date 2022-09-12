@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
+/*import React, { Component, useCallback } from 'react';
+import {Link, useHistory} from "react-router-dom";*/
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
@@ -87,6 +89,7 @@ class HomePage extends Component {
       userRole: 'mentor',
       source: 'vhs',
       filterBy: 'latest',
+      searchText: '',
       showAddSkillsModal: false,
       showAnswerAQModal: false,
       showAskAQModal: false,
@@ -117,16 +120,24 @@ class HomePage extends Component {
 
   componentDidUpdate() {
     const {tabToView} = this.props; // This comes from Dashboard.js
-    //console.log("tabToView: "+tabToView)
-    //console.log("window.location.pathname: "+window.location.pathname)
+    const {isUserSearch, justResetSearch} = this.state
+    const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
 
-    // if (user clicks 'home' and HomePage.js is already loaded) {
-    //  this.resetSearch()
-    //  reload feed
-    // }
+    // Scroll to top of feed if click the "Q&A" add highlight button
+    if (cameFromAddHighlightBtn == true) {
+      if (isUserSearch == true) {
+        this.resetSearch()
+      }
+      if (this.state.searchText != '') {
+        this.resetSearchTextChange()
+      }
+    
+      const homepageContainer = document.getElementById("homepageContainer")
+      homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     // Maybe use this to determine whether to trigger or not https://stackoverflow.com/questions/69806279/how-to-know-a-react-link-component-has-been-clicked
-    if (tabToView == "questions" && tabToView != this.state.tabToView) {
+    if (tabToView == "questions" && tabToView != this.state.tabToView && isUserSearch != true && justResetSearch != true) {
       const isMobile = checkMobile()
       this.setState({
         tabToView: tabToView,
@@ -137,6 +148,12 @@ class HomePage extends Component {
           userStepsIsOpen: false
         })
       }
+    }
+
+    if (justResetSearch == true) {
+      this.setState({
+        justResetSearch: false,
+      })
     }
 
     // Observe new feed items that are loaded
@@ -207,10 +224,10 @@ class HomePage extends Component {
   }
 
   showUpdateTabBtns = () => {
-    const {tabToView} = this.state
+    const {tabToView, isUserSearch} = this.state
 
     return (
-      <div>
+      <div className={isUserSearch == true ? "marginTop20" : ""}>
         <Link to="/home">
           <button type="button" name="all" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn homePage alignCenter width50pc marginRight0' + (tabToView == 'all' ? ' tabActive' : '')}>All</button>
         </Link>
@@ -221,12 +238,27 @@ class HomePage extends Component {
     )
   }
 
+  // If has hardcoded "all" or "questions" then means <Link> wasnt clicked but needs to be redirected to that tab
   updateTabToView = (e) => {
-    this.updateActiveClasslists()
+    const {isUserSearch} = this.state
+    const {updatePathName} = this.props
+
+    if (!isUserSearch) {
+      this.updateActiveClasslists()
+    }
 
     this.setState({
-      tabToView: e.target.name,
+      tabToView: e == 'all' ? 'all' : (e == 'questions' ? 'questions' : e.target.name),
       filterBy: 'latest' // Sort posts by "latest" by default on tab change
+    }, () => {
+      if (isUserSearch == true) {
+        if (e == 'all') {
+          this.props.history.push('/home');
+        } else if (e == 'questions') {
+          this.props.history.push('/questions');
+        }
+        updatePathName()
+      }
     })
   }
 
@@ -270,15 +302,40 @@ class HomePage extends Component {
     }
   }
 
+  handleSearchTextChange = (e) => {
+    this.setState({
+      searchText: e.target.value
+    })
+  }
+
+  resetSearchTextChange = () => {
+    this.setState({
+      searchText: ''
+    })
+  }
+
   handleSearchResults = () => {
     this.setState({
-      isUserSearch: true
+      isUserSearch: true,
+    }, () => {
+      this.updateTabToView('all')
     })
   }
 
   resetSearch = () => {
+    const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
+    console.log("cameFromAddHighlightBtn in resetsearch: "+cameFromAddHighlightBtn)
+    if (cameFromAddHighlightBtn == true) {
+      this.updateTabToView('questions')
+    } else {
+      this.updateTabToView('all')
+    }
+
+    this.resetSearchTextChange()
+
     this.setState({
-      isUserSearch: false
+      justResetSearch: true,
+      isUserSearch: false,
     }, () => {
       document.getElementById("mainSearchBox").focus();
     })
@@ -656,12 +713,6 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <p>Questions only here</p>
-            <Link to="/questions/1234">
-              <button type="button">
-                Click to view Answer #1234
-              </button>
-            </Link>
             <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
           </div>
         )
@@ -986,7 +1037,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -1045,10 +1096,10 @@ class HomePage extends Component {
 
     return (
       <React.Fragment>
-        <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn">
-          <FeedHeader handleSearchResults={this.handleSearchResults} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
+        <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn" id="homepageContainer">
+          <FeedHeader handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
-          <div className="mainAndSideContainer marginTop20">
+          <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
             <div className="sideBar" role="complementary" aria-label="sidebar">
               {hasKeyNotif == true && (
                 <div className="thickPurpleContentBox withBorderTop">
