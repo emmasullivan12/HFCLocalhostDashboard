@@ -216,7 +216,7 @@
   font-size: 12px;
   margin-top: -3px;
 }
-
+/*
 .tickIconContainer{
   float: left;
   margin-left: 0;
@@ -228,7 +228,7 @@
   font-size: 13px;
   opacity: 0.95;
   left: 0;
-}
+}*/
 
 .match-reason{
   display: -ms-flexbox;

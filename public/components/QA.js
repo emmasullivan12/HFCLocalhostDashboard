@@ -68,6 +68,7 @@ class QA extends Component {
     const qaItem = {
       qid: '123456',
       uid: '123',
+      hasacceptedanswer: false,
       datecreated: '2020-09-04T13:30:50.667Z',
       lastupdated: '2022-02-02T13:30:50.667Z',
       title: 'What is the best thing to wear to an interview?',
@@ -229,6 +230,14 @@ class QA extends Component {
     })
   }
 
+  toggleAcceptedAnswer = (isacceptedanswercurrently, hid) => {
+    if (isacceptedanswercurrently == true) {
+      console.log("will UNMARK this hid as accepted answer: "+hid)
+    } else {
+      console.log("will MARK this hid as accepted answer: "+hid)
+    }
+  }
+
   countVotes = (hid, votes) => {
     const myID = '123'; //223456
     this.setState({
@@ -252,6 +261,7 @@ class QA extends Component {
       fname: 'Emma',
       lname: 'Sullivan',
       isPr: 0,
+      hasacceptedanswer: false,
       authorUserRole: 'mentee',
       datecreated: '2020-09-04T13:30:50.667Z',
       lastupdated: '2022-02-02T13:30:50.667Z',
@@ -293,7 +303,7 @@ class QA extends Component {
     //  reportedstatus jsonb
     }
     const myID = '123'; //223456
-    const userRole = 'mentor'
+    const userRole = 'pr'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -701,10 +711,18 @@ class QA extends Component {
                           </div>
                           {this.state[hid.hid+'-votes']}
                           {hid.isacceptedanswer == true && (
-                            <div className="greenText marginTop10 fontSize25 tooltip">
+                            <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(true, hid.hid) : null}>
                               <Check />
                               <span className="tooltiptext acceptedAnswer">
                                 Accepted answer
+                              </span>
+                            </div>
+                          )}
+                          {qaItem.hasacceptedanswer == false && (userRole == 'pr' || qIsMe == true) && (
+                            <div className="lightGreyText marginTop10 fontSize25 tooltip pointerCursor" onClick={() => this.toggleAcceptedAnswer(false, hid.hid)}>
+                              <Check />
+                              <span className="tooltiptext acceptedAnswer">
+                                Mark as Accepted answer?
                               </span>
                             </div>
                           )}

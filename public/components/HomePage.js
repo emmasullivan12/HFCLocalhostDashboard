@@ -1,4 +1,4 @@
-// Last merged this code on 11th sept 2022
+// Last merged this code on 13th sept 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -131,7 +131,7 @@ class HomePage extends Component {
       if (this.state.searchText != '') {
         this.resetSearchTextChange()
       }
-    
+
       const homepageContainer = document.getElementById("homepageContainer")
       homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
