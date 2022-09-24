@@ -1,4 +1,4 @@
-// Dex last merged this code on 13th sept 2022
+// Dex last merged this code on 24th sept 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -253,19 +253,6 @@ class QA extends Component {
         qidHasAcceptedAnswer: true
       })
     }
-  /*  if (isacceptedanswercurrently == true) {
-      console.log("will UNMARK this hid as accepted answer: "+hid)
-      this.setState({
-        acceptedAnswerHID: '',
-        qidHasAcceptedAnswer: true,
-      })
-    } else {
-      console.log("will MARK this hid as accepted answer: "+hid)
-      this.setState({
-        acceptedAnswerHID: hid,
-        qidHasAcceptedAnswer: false
-      })
-    } */
   }
 
   countVotes = (hid, votes) => {
