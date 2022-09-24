@@ -1,4 +1,4 @@
-// Last merged this code on 24th sept 2022
+// Last merged this code on 24th sept 2022 
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -131,7 +131,7 @@ class HomePage extends Component {
     const {tabToView} = this.props; // This comes from Dashboard.js
     const {isUserSearch, justResetSearch} = this.state
     const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
-console.log(document.activeElement)
+
     // Scroll to top of feed if click the "Q&A" add highlight button
     if (cameFromAddHighlightBtn == true) {
       if (isUserSearch == true) {
@@ -140,7 +140,7 @@ console.log(document.activeElement)
       if (this.state.searchText != '') {
         this.resetSearchTextChange()
       }
-console.log("scrolling here")
+
       const homepageContainer = document.getElementById("homepageContainer")
       homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -333,7 +333,7 @@ console.log("scrolling here")
 
   resetSearch = () => {
     const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
-    console.log("cameFromAddHighlightBtn in resetsearch: "+cameFromAddHighlightBtn)
+
     if (cameFromAddHighlightBtn == true) {
       this.updateTabToView('questions')
     } else {
