@@ -113,11 +113,13 @@ class Modal extends React.Component {
   }
 
   onClose() {
-    const {handleLocalStateOnClose} = this.props;
+    const {handleLocalStateOnClose, hideTrigger} = this.props;
 
+    history.pushState({ modal: 'closed'}, '')
+    history.pushState({ modal: 'closed'}, '')
     this.setState({ isOpen: false });
 
-    if (this.openButtonNode != undefined) {
+    if (this.openButtonNode != undefined && hideTrigger != true) {
       this.openButtonNode.focus()
     }
 
@@ -129,7 +131,7 @@ class Modal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    if (self.state && self.state.modal === 'open') {
+    if (self.state && self.state.modal && self.state.modal === 'open' && this.state.isOpen == true) {
       e.onClose()
     }
   }

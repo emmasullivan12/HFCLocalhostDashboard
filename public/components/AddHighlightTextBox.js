@@ -665,7 +665,6 @@ class AddHighlightTextBox extends Component {
   }
 
   handleGeneralTypeChange = (userInput) => {
-    console.log(userInput)
     this.setState({
       generalTypeSelected: userInput, // should only select 1 item
     })

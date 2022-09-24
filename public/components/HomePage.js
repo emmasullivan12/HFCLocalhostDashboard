@@ -131,7 +131,7 @@ class HomePage extends Component {
     const {tabToView} = this.props; // This comes from Dashboard.js
     const {isUserSearch, justResetSearch} = this.state
     const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
-
+console.log(document.activeElement)
     // Scroll to top of feed if click the "Q&A" add highlight button
     if (cameFromAddHighlightBtn == true) {
       if (isUserSearch == true) {
@@ -140,7 +140,7 @@ class HomePage extends Component {
       if (this.state.searchText != '') {
         this.resetSearchTextChange()
       }
-
+console.log("scrolling here")
       const homepageContainer = document.getElementById("homepageContainer")
       homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -1049,7 +1049,7 @@ class HomePage extends Component {
                 { percentageCircle(pctStepsCompleted,"purple") }
               </div>
               {(showAddSkillsModal == true && userRole == 'mentee') && (
-                <FullPageModal {...MenteeSkillsLearningPromptProps} >
+                <FullPageModal {...MenteeSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
                   <Form
                     questions={questionsSkillsHobbies}
                     usedFor="skillsLearningForm"
@@ -1059,7 +1059,7 @@ class HomePage extends Component {
                 </FullPageModal>
               )}
               {(showAddSkillsModal == true && userRole == 'mentor') && (
-                <FullPageModal {...MentorSkillsLearningPromptProps} >
+                <FullPageModal {...MentorSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")} >
                   <Form
                     questions={questionsSkillsHobbies}
                     usedFor="skillsLearningForm"
@@ -1080,13 +1080,13 @@ class HomePage extends Component {
               )}
               {showMentorFullAppModal == true && (
                 <MentorFullSignUp
-                //  closeModal={() => this.closeModal}
+                  handleLocalStateOnClose={() => this.closeModal("MentorFullApp")}
                   onSubmit={() => this.handleSuccessModalFromFPModal("MentorFullApp", "fullSUcompleted")}
                 />
               )}
               {showMenteeFullAppModal == true && (
                 <MenteeFullSignUp
-                //  closeModal={() => this.closeModal}
+                  handleLocalStateOnClose={() => this.closeModal("MenteeFullApp")}
                   onSubmit={() => this.handleSuccessModalFromFPModal("MenteeFullApp", "fullSUcompleted")}
                 />
               )}

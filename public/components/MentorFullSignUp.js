@@ -14,7 +14,7 @@ const MentorFullSUModalProps = {
   triggerText: 'Complete your Full Mentor Application >>',
   usedFor: 'underOrOver18',
   hideTrigger: true,
-//  changeInitFocus: true,
+  changeInitFocus: true,
 }
 
 const MentorOver18FullSUProps = {
@@ -23,12 +23,12 @@ const MentorOver18FullSUProps = {
   usedFor: 'mentorFullSUAusNzl',
   backBtn: 'arrow',
   hideTrigger: true,
-//  changeInitFocus: true,
+  changeInitFocus: true,
 }
 
 class MentorFullSignUp extends Component {
   render() {
-    const {onSubmit} = this.props
+    const {handleLocalStateOnClose, onSubmit} = this.props
     const userRole = 'mentor';
     const country = 'GBR'
 
@@ -260,7 +260,7 @@ class MentorFullSignUp extends Component {
 
     if (country != 'AUS' && country != 'NZL') {
       return (
-        <Modal {...MentorFullSUModalProps} >
+        <Modal {...MentorFullSUModalProps} handleLocalStateOnClose={handleLocalStateOnClose} >
           <MentorFullSUContent
             questionsO18={questionsO18}
             questionsU18={questionsU18}
@@ -270,7 +270,7 @@ class MentorFullSignUp extends Component {
       )
     } else if (country === 'AUS' || country === 'NZL') {
       return (
-        <FullPageModal {...MentorOver18FullSUProps}>
+        <FullPageModal {...MentorOver18FullSUProps} handleLocalStateOnClose={handleLocalStateOnClose}>
           <Form
             questions={questionsO18}
             usedFor="mentorFullSUAusNzl"

@@ -80,6 +80,11 @@ class MenuModal extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('popstate', this.onPopState)
+    if (this.props.manualCloseModalNotTrigger) {
+      if (this.state.isOpen == true) {
+        this.onClose()
+      }
+    }
   }
 
   onOpen() {
@@ -102,13 +107,17 @@ class MenuModal extends React.Component {
   }
 
   onMenuClose() {
+    history.pushState({ menuModal: 'closed'}, '')
+    history.pushState({ menuModal: 'closed'}, '')
     this.setState({ isMenuOpen: false });
-    this.openButtonNode.focus();
+    if (this.openButtonNode != undefined) {
+      this.openButtonNode.focus();
+    }
     this.toggleScrollLock();
   }
 
   onPopState = (e, self) => {
-    if (self.state && self.state.menuModal === 'open') {
+    if (self.state && self.state.menuModal === 'open' && this.state.isMenuOpen == true) {
       e.onMenuClose()
     }
   }

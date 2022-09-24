@@ -101,7 +101,7 @@ class FullPageModal extends React.Component {
     window.removeEventListener('popstate', this.onPopState)
 
     if (this.props.manualCloseModalNotTrigger) {
-      if (this.state.isOpen == true) {
+      if (this.state.isFPOpen == true) {
         this.onClose()
       }
     }
@@ -129,8 +129,10 @@ class FullPageModal extends React.Component {
   }
 
   onClose() {
-    const {handleLocalStateOnClose} = this.props;
+    const {handleLocalStateOnClose, hideTrigger} = this.props;
 
+    history.pushState({ fullPageModal: 'closed'}, '')
+    history.pushState({ fullPageModal: 'closed'}, '')
     this.setState({ isFPOpen: false });
 
     // If there is a #hash in the URL, remove any URL search parameters e.g. the hash sections from user profiles
@@ -138,7 +140,7 @@ class FullPageModal extends React.Component {
       removeHash()
     }
 
-    if (this.openButtonFPNode) {
+    if (this.openButtonFPNode != undefined && hideTrigger != true) {
       this.openButtonFPNode.focus()
     }
 
@@ -150,7 +152,7 @@ class FullPageModal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    if (self.state && self.state.fullPageModal === 'open') {
+    if (self.state && self.state.fullPageModal && self.state.fullPageModal === 'open' && this.state.isFPOpen == true) {
       e.onClose()
     }
   }
