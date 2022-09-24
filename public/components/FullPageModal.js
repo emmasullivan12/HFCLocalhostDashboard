@@ -1,10 +1,10 @@
-// Dex last merged this code on 13th sept 2022 
+// Dex last merged this code on 13th sept 2022
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import ButtonContent from './ButtonContent.js';
-import {isIE, isEdge, whichBrowser} from './GeneralFunctions.js';
+import {removeHash, isIE, isEdge, whichBrowser} from './GeneralFunctions.js';
 
 import "../css/Modal.css";
 
@@ -99,6 +99,7 @@ class FullPageModal extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleNavScroll)
     window.removeEventListener('popstate', this.onPopState)
+
     if (this.props.manualCloseModalNotTrigger) {
       if (this.state.isOpen == true) {
         this.onClose()
@@ -131,7 +132,15 @@ class FullPageModal extends React.Component {
     const {handleLocalStateOnClose} = this.props;
 
     this.setState({ isFPOpen: false });
-    this.openButtonFPNode.focus()
+
+    // If there is a #hash in the URL, remove any URL search parameters e.g. the hash sections from user profiles
+    if (window.location.hash) {
+      removeHash()
+    }
+
+    if (this.openButtonFPNode) {
+      this.openButtonFPNode.focus()
+    }
 
     if (handleLocalStateOnClose) {
       handleLocalStateOnClose();
@@ -141,10 +150,7 @@ class FullPageModal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    console.log(e)
-    console.log(self)
-    console.log(self.state)
-    if (self.state.fullPageModal === 'open') {
+    if (self.state && self.state.fullPageModal === 'open') {
       e.onClose()
     }
   }
@@ -153,7 +159,7 @@ class FullPageModal extends React.Component {
     const { modalFPRef } = this;
     let mainNavLinks = Array.prototype.slice.call(document.querySelectorAll(".section-list li a"), 0);
     const mainNavLinksLength = mainNavLinks.length;
-    const scrollTop = this.modalFPRef.current.scrollTop;
+    const scrollTop = Math.floor(this.modalFPRef.current.scrollTop);
     const offsetHeight = this.modalFPRef.current.offsetHeight;
     const maxHeight = this.modalFPRef.current.scrollHeight;
     mainNavLinks.forEach((link, index) => {
@@ -163,8 +169,8 @@ class FullPageModal extends React.Component {
       if (
         isFirstSection && section.offsetTop > scrollTop ||
         isLastSection && (scrollTop === (maxHeight - offsetHeight)) ||
-        (section.offsetTop-6) <= scrollTop && (scrollTop != (maxHeight - offsetHeight)) &&
-        ((section.offsetTop-6) + section.offsetHeight) > scrollTop
+        (section.offsetTop) <= scrollTop && (scrollTop != (maxHeight - offsetHeight)) &&
+        ((section.offsetTop) + section.offsetHeight) > scrollTop
       ) {
         link.classList.add("active");
       } else {

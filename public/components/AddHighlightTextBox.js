@@ -434,6 +434,8 @@ class AddHighlightTextBox extends Component {
   modalOverflowOn = () => {
     const {modalID} = this.props
     const modal = document.getElementById(modalID)
+    console.log(modalID)
+    console.log(modal)
     modal.style.overflowY = 'auto'
     var h = window.innerHeight;
     var w = window.innerWidth;

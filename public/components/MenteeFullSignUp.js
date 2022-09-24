@@ -23,7 +23,7 @@ class MenteeFullSignUp extends Component {
   render() {
 //    const fname = 'Emma';
   //  const id = '12345';
-    const {closeModal} = this.props
+    const {onSubmit} = this.props
     const eetStatus = 'sch';
     const userRole = 'mentee';
     const country = 'GBR'
@@ -126,11 +126,12 @@ class MenteeFullSignUp extends Component {
     ]
 
     return (
-      <FullPageModal {...MenteeFullSignUpProps} handleLocalStateOnClose={() => closeModal("MenteeFullApp")}>
+      <FullPageModal {...MenteeFullSignUpProps}>
         <Form
           questions={questions}
           usedFor="menteeFullSU"
           formTitle="Complete your full mentee application"
+          onSubmit={onSubmit}
         />
       </FullPageModal>
     );

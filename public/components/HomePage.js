@@ -1,4 +1,4 @@
-// Last merged this code on 13th sept 2022 
+// Last merged this code on 13th sept 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -41,6 +41,14 @@ const JoinProgrammeStepModalProps = {
   ariaLabel: 'Join a live Group',
   triggerText: 'Join a Group',
   usedFor: 'joinProgSmlHome',
+  hideTrigger: true,
+  changeInitFocus: true
+}
+
+const SuccessModalProps = {
+  ariaLabel: 'Successfully submitted',
+  triggerText: 'Successfully submitted',
+  usedFor: 'success',
   hideTrigger: true,
   changeInitFocus: true
 }
@@ -90,6 +98,7 @@ class HomePage extends Component {
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
+      showSuccessModal: false,
       showAddSkillsModal: false,
       showAnswerAQModal: false,
       showAskAQModal: false,
@@ -339,6 +348,19 @@ class HomePage extends Component {
     }, () => {
       document.getElementById("mainSearchBox").focus();
     })
+  }
+
+  /*closeSucessModal = () => {
+    this.setState({
+      showSuccessModal: false
+    });
+  } */
+
+  showSuccessModal = (successModalToShow) => {
+    this.setState({
+      showSuccessModal: true,
+      successModalToShow: successModalToShow
+    });
   }
 
   renderTab = () => {
@@ -764,6 +786,62 @@ class HomePage extends Component {
     }
   }
 
+  handleSuccessModalFromFPModal = (modalTypeToClose, successModalToShow) => {
+    this.showSuccessModal(successModalToShow)
+    this.closeModal(modalTypeToClose)
+  }
+
+  renderSuccessModalContent = () => {
+    const {successModalToShow} = this.state
+    switch(successModalToShow) {
+      case 'skillsUpdated':
+        return (
+          <React.Fragment>
+            <div className="modal-title">
+              <div className="emoji-icon tada-emoji successBox" />
+              Success!
+            </div>
+            <div className="success-container">
+              <div className="ideas-Title">
+                You&#39;ve updated your skills.
+              </div>
+            </div>
+          </React.Fragment>
+        );
+      case 'fullSUcompleted':
+        return (
+          <React.Fragment>
+            <div className="modal-title">
+              <div className="emoji-icon stopwatch-emoji successBox" />
+              Application submitted!
+            </div>
+            <div className="success-container">
+              <div className="ideas-Title">
+                Your matches are on their way.
+              </div>
+              <p className="landingCTADesc">
+                Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
+              </p>
+            </div>
+          </React.Fragment>
+        );
+      default:
+        return (
+          <React.Fragment>
+            <div className="modal-title">
+              <div className="emoji-icon tada-emoji successBox" />
+              Success!
+            </div>
+            <div className="success-container">
+              <div className="ideas-Title">
+                You&#39;ve updated your info.
+              </div>
+            </div>
+          </React.Fragment>
+        )
+    }
+  }
+
   showModal = (stepIsComplete, reqStepsComplete, modalType) => {
     if (stepIsComplete || reqStepsComplete != true) { return }
 
@@ -779,7 +857,7 @@ class HomePage extends Component {
   }
 
   renderSteps() {
-    const {userStepsIsOpen, userstep, userRole, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
+    const {userStepsIsOpen, userstep, userRole, showSuccessModal, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
     let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps
@@ -970,39 +1048,52 @@ class HomePage extends Component {
               <div id="pctCircleContainer-userSteps">
                 { percentageCircle(pctStepsCompleted,"purple") }
               </div>
-              {showAddSkillsModal == true && userRole == 'mentee' && (
-                <FullPageModal {...MenteeSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+              {(showAddSkillsModal == true && userRole == 'mentee') && (
+                <FullPageModal {...MenteeSkillsLearningPromptProps} >
                   <Form
                     questions={questionsSkillsHobbies}
                     usedFor="skillsLearningForm"
                     formTitle="Tell us what you want to learn"
+                    onSubmit={() => this.handleSuccessModalFromFPModal("AddSkills", "skillsUpdated")}
                   />
                 </FullPageModal>
               )}
-              {showAddSkillsModal == true && userRole == 'mentor' && (
-                <FullPageModal {...MentorSkillsLearningPromptProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+              {(showAddSkillsModal == true && userRole == 'mentor') && (
+                <FullPageModal {...MentorSkillsLearningPromptProps} >
                   <Form
                     questions={questionsSkillsHobbies}
                     usedFor="skillsLearningForm"
                     formTitle='Tell us your key skills'
+                    onSubmit={() => this.handleSuccessModalFromFPModal("AddSkills", "skillsUpdated")}
                   />
                 </FullPageModal>
               )}
               {showAnswerAQModal == true && (
                 <Modal {...AnswerQModalProps} handleLocalStateOnClose={() => this.closeModal("AnswerAQ")}>
-                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole} updatePathName={this.updatePathName}/>
+                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={this.updatePathName}/>
                 </Modal>
               )}
               {showAskAQModal == true && (
                 <Modal {...AskQModalProps} handleLocalStateOnClose={() => this.closeModal("AskAQ")}>
-                  <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole}/>
+                  <AddHighlightModalContent modalID="modal-askQuestionDashboard" userRole={userRole}/>
                 </Modal>
               )}
               {showMentorFullAppModal == true && (
-                <MentorFullSignUp closeModal={this.closeModal}/>
+                <MentorFullSignUp
+                //  closeModal={() => this.closeModal}
+                  onSubmit={() => this.handleSuccessModalFromFPModal("MentorFullApp", "fullSUcompleted")}
+                />
               )}
               {showMenteeFullAppModal == true && (
-                <MenteeFullSignUp closeModal={this.closeModal}/>
+                <MenteeFullSignUp
+                //  closeModal={() => this.closeModal}
+                  onSubmit={() => this.handleSuccessModalFromFPModal("MenteeFullApp", "fullSUcompleted")}
+                />
+              )}
+              {showSuccessModal == true && (
+                <Modal {...SuccessModalProps} handleLocalStateOnClose={() => this.closeModal("Success")}>
+                  {this.renderSuccessModalContent()}
+                </Modal>
               )}
               {showJoinAGroupModal == true && (
                 <Modal {...JoinProgrammeStepModalProps} handleLocalStateOnClose={() => this.closeModal("JoinAGroup")}>

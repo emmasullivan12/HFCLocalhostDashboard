@@ -129,7 +129,7 @@ class Modal extends React.Component {
   }
 
   onPopState = (e, self) => {
-    if (self.state.modal === 'open') {
+    if (self.state && self.state.modal === 'open') {
       e.onClose()
     }
   }

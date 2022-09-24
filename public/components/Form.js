@@ -616,6 +616,9 @@ class Form extends Component {
         }
       });
 
+      if (onSubmit) {
+        onSubmit()
+      }
       // DEX TO SAVE DOWN ANSWERS WITHIN STATESTOSAVE
 
     })

@@ -2,6 +2,11 @@
 
 import React, { Component } from "react";
 
+
+function removeHash() {
+  history.replaceState("", document.title, window.location.pathname + window.location.search);
+}
+
 function isIE() {
   var ua = window.navigator.userAgent;
   var msie = ua.indexOf("MSIE ");
@@ -551,4 +556,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {isIE, isEdge, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, percentageCircle, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
+export {removeHash, isIE, isEdge, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, percentageCircle, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};

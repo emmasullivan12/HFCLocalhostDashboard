@@ -58,6 +58,9 @@ class QA extends Component {
     this.state = {
       isLoading: false,
       isMobile: checkMobile(),
+      qidHasAcceptedAnswer: false,
+      //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
+      acceptedAnswerHID: '',
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
@@ -200,6 +203,12 @@ class QA extends Component {
       element.classList.add("highlighted-post")
     }
 
+  /*  const acceptedAnswer = hidsArr.length > 0 && hidsArr.filter(hid => hid.isacceptedanswer == true)
+    console.log("about to update hasacceptedanswerHID in CDM to: "+acceptedAnswer.hid)
+    this.setState({
+      acceptedAnswerHID: acceptedAnswer.hid
+    })*/
+
     /* this.setState({
       [qaItem.qid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
       [FOR EACH hid.hid+"-userUpvoted"]: NEED TO DETECT IF USER HAS UPVOTED??
@@ -230,12 +239,33 @@ class QA extends Component {
     })
   }
 
-  toggleAcceptedAnswer = (isacceptedanswercurrently, hid) => {
-    if (isacceptedanswercurrently == true) {
+  toggleAcceptedAnswer = (hid) => {
+    const {qidHasAcceptedAnswer} = this.state
+
+    if (qidHasAcceptedAnswer == true) {
+      this.setState({
+        acceptedAnswerHID: '',
+        qidHasAcceptedAnswer: false
+      })
+    } else {
+      this.setState({
+        acceptedAnswerHID: hid,
+        qidHasAcceptedAnswer: true
+      })
+    }
+  /*  if (isacceptedanswercurrently == true) {
       console.log("will UNMARK this hid as accepted answer: "+hid)
+      this.setState({
+        acceptedAnswerHID: '',
+        qidHasAcceptedAnswer: true,
+      })
     } else {
       console.log("will MARK this hid as accepted answer: "+hid)
-    }
+      this.setState({
+        acceptedAnswerHID: hid,
+        qidHasAcceptedAnswer: false
+      })
+    } */
   }
 
   countVotes = (hid, votes) => {
@@ -253,7 +283,7 @@ class QA extends Component {
   }
 
   render() {
-    const {isMobile, isLoading} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer} = this.state;
     const {updatePathName} = this.props
     const qaItem = {
       qid: '123456',
@@ -526,7 +556,7 @@ class QA extends Component {
           <React.Fragment>
             <div className="padding25 marginTop40">
             {/*  <MenuNav /> */}
-              <Link to={prevURL} onClick={updatePathName}>
+              <Link to={prevURL ? prevURL : "/home"} onClick={updatePathName}>
                 <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14">
                   <span className="dispInlineBlock"><X /></span>
                 {/*  <span><i className="fas fa-arrow-left"/></span> */}
@@ -710,16 +740,18 @@ class QA extends Component {
                             </button>
                           </div>
                           {this.state[hid.hid+'-votes']}
-                          {hid.isacceptedanswer == true && (
-                            <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(true, hid.hid) : null}>
+                          {/* {hid.isacceptedanswer == true && ( */}
+                          {hid.hid == acceptedAnswerHID && (
+                            <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(hid.hid) : null}>
                               <Check />
                               <span className="tooltiptext acceptedAnswer">
                                 Accepted answer
                               </span>
                             </div>
                           )}
-                          {qaItem.hasacceptedanswer == false && (userRole == 'pr' || qIsMe == true) && (
-                            <div className="lightGreyText marginTop10 fontSize25 tooltip pointerCursor" onClick={() => this.toggleAcceptedAnswer(false, hid.hid)}>
+                        {/*  {qaItem.hasacceptedanswer == false && (userRole == 'pr' || qIsMe == true) && ( */}
+                          {qidHasAcceptedAnswer == false && (userRole == 'pr' || qIsMe == true) && (
+                            <div className="lightGreyText marginTop10 fontSize25 tooltip pointerCursor" onClick={() => this.toggleAcceptedAnswer(hid.hid)}>
                               <Check />
                               <span className="tooltiptext acceptedAnswer">
                                 Mark as Accepted answer?

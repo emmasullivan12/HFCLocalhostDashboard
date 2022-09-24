@@ -28,7 +28,7 @@ const MentorOver18FullSUProps = {
 
 class MentorFullSignUp extends Component {
   render() {
-    const {closeModal} = this.props
+    const {onSubmit} = this.props
     const userRole = 'mentor';
     const country = 'GBR'
 
@@ -260,21 +260,23 @@ class MentorFullSignUp extends Component {
 
     if (country != 'AUS' && country != 'NZL') {
       return (
-        <Modal {...MentorFullSUModalProps} handleLocalStateOnClose={() => closeModal("MentorFullApp")}>
+        <Modal {...MentorFullSUModalProps} >
           <MentorFullSUContent
             questionsO18={questionsO18}
             questionsU18={questionsU18}
+            onSubmit={onSubmit}
           />
         </Modal>
       )
     } else if (country === 'AUS' || country === 'NZL') {
       return (
-        <FullPageModal {...MentorOver18FullSUProps} handleLocalStateOnClose={() => closeModal("MentorFullApp")}>
+        <FullPageModal {...MentorOver18FullSUProps}>
           <Form
             questions={questionsO18}
             usedFor="mentorFullSUAusNzl"
             saveOnSubmit='u18'
             formTitle="Complete your full mentor application"
+            onSubmit={onSubmit}
           />
         </FullPageModal>
       )

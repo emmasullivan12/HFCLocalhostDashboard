@@ -24,7 +24,7 @@ const MentorOver18FullSUProps = {
 
 class MentorFullSignUp extends Component {
   render() {
-    const {questionsO18, questionsU18} = this.props;
+    const {questionsO18, questionsU18, onSubmit} = this.props;
 
     return (
       <React.Fragment>
@@ -52,6 +52,7 @@ class MentorFullSignUp extends Component {
             renderComponentsInitialState='ukUnisList'
             saveOnSubmit='u18'
             formTitle="Complete your full mentor application"
+            onSubmit={onSubmit}
           />
         </FullPageModal>
         <FullPageModal {...MentorOver18FullSUProps}>
@@ -61,6 +62,7 @@ class MentorFullSignUp extends Component {
             renderComponentsInitialState='ukUnisList'
             saveOnSubmit='u18'
             formTitle="Complete your full mentor application"
+            onSubmit={onSubmit}
           />
         </FullPageModal>
       </React.Fragment>
