@@ -1,4 +1,4 @@
-// Last merged this code on 24th sept 2022 
+// Last merged this code on 24th sept 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -252,9 +252,9 @@ class HomePage extends Component {
     const {isUserSearch} = this.state
     const {updatePathName} = this.props
 
-    if (!isUserSearch) {
+  /*  if (!isUserSearch) {
       this.updateActiveClasslists()
-    }
+    }*/
 
     this.setState({
       tabToView: e == 'all' ? 'all' : (e == 'questions' ? 'questions' : e.target.name),
@@ -276,17 +276,17 @@ class HomePage extends Component {
     e.stopPropagation()
 
     /* eslint-disable no-restricted-syntax */
-    for (let sibling of e.currentTarget.parentNode.children) {
+  /*  for (let sibling of e.currentTarget.parentNode.children) {
       if (sibling !== e.currentTarget) {
         sibling.classList.remove('isActive');
       }
-    }
+    } */
 
     this.setState({
       filterBy: e.currentTarget.value
     })
 
-    e.currentTarget.classList.add('isActive')
+  //  e.currentTarget.classList.add('isActive')
 
     // Update URL with searchParams i.e. "?filter=Unanswered"
     const url = new URL(window.location);
@@ -296,7 +296,7 @@ class HomePage extends Component {
     // Actually do the filtering here
   }
 
-  updateActiveClasslists = () => {
+  /*updateActiveClasslists = () => {
     const {tabToView} = this.state;
     const filterBtns = document.querySelectorAll(".filter-btn");
 
@@ -309,7 +309,7 @@ class HomePage extends Component {
         filterBtns[i].classList.remove('isActive');
       }
     }
-  }
+  }*/
 
   handleSearchTextChange = (e) => {
     this.setState({
@@ -364,7 +364,7 @@ class HomePage extends Component {
   }
 
   renderTab = () => {
-    const {tabToView, userRole, isUserSearch} = this.state;
+    const {tabToView, userRole, isUserSearch, filterBy} = this.state;
     const {updatePathName} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
@@ -676,13 +676,13 @@ class HomePage extends Component {
             {!isUserSearch && (
               <React.Fragment>
                 <div className="filterFeed-container textRight marginBottom20">
-                  <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
+                  <button type="button" className={"filter-btn " + (filterBy == "latest" ? "isActive" : "")} value="latest" onClick={(e) => this.filterBy(e)}>
                     <div>
                       <span role="img" aria-label="latest">⏱️</span>
                       <span>Latest</span>
                     </div>
                   </button>
-                  <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
+                  <button type="button" className={"filter-btn " + (filterBy == "trending" ? "isActive" : "")} value="trending" onClick={(e) => this.filterBy(e)}>
                     <div>
                       <span role="img" aria-label="trending">🔥</span>
                       <span>Trending</span>
@@ -706,21 +706,21 @@ class HomePage extends Component {
             {!isUserSearch && (
               <React.Fragment>
                 <div className="filterFeed-container textRight marginBottom20">
-                  <button type="button" className="filter-btn isActive" value="latest" onClick={(e) => this.filterBy(e)}>
+                  <button type="button" className={"filter-btn " + (filterBy == "latest" ? "isActive" : "")} value="latest" onClick={(e) => this.filterBy(e)}>
                     <div>
                       <span role="img" aria-label="latest">⏱️</span>
                       <span>Latest</span>
                     </div>
                   </button>
                   {userRole != 'mentee' && (
-                    <button type="button" className="filter-btn" value="unanswered" onClick={(e) => this.filterBy(e)}>
+                    <button type="button" className={"filter-btn " + (filterBy == "unanswered" ? "isActive" : "")} value="unanswered" onClick={(e) => this.filterBy(e)}>
                       <div>
                         <span role="img" aria-label="question icon">❓</span>
                         <span>Unanswered</span>
                       </div>
                     </button>
                   )}
-                  <button type="button" className="filter-btn" value="trending" onClick={(e) => this.filterBy(e)}>
+                  <button type="button" className={"filter-btn " + (filterBy == "trending" ? "isActive" : "")} value="trending" onClick={(e) => this.filterBy(e)}>
                     <div>
                       <span role="img" aria-label="trending">🔥</span>
                       <span>Trending</span>
