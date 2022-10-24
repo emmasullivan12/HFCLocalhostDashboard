@@ -38,6 +38,9 @@
   .postDetail div{
     margin-right: 10px;
   }
+  .postDetail div:last-of-type{
+    margin-right: 0px;
+  }
   .postDetail .followBtn{
     margin-bottom: 5px!important;
   }

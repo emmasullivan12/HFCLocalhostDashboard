@@ -1,7 +1,8 @@
 /* Dex last merged this code on 16th mar 2022 */
 
 .chatWindow-footer,
-.addHighlight-footer{
+.addHighlight-footer,
+.searchBox-header{
 /*  flex-shrink: 0;
   -webkit-flex-shrink: 0;
   -moz-flex-shrink: 0;

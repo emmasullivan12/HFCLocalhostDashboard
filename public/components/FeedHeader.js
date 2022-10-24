@@ -1,9 +1,9 @@
-// Dex last merged this code on 13th sept 2022 
+// Dex last merged this code on 13th sept 2022
 
 import React, { Component } from "react";
 
 import MenuNav from './MenuNav.js';
-import {X} from './GeneralFunctions.js';
+import {checkMobile, X} from './GeneralFunctions.js';
 
 class FeedHeader extends Component {
   constructor(props) {
@@ -56,11 +56,12 @@ class FeedHeader extends Component {
   render() {
     //const {text} = this.state;
     const {isUserSearch, searchText, resetSearch, handleSearchTextChange} = this.props;
+    const isMobile = checkMobile()
 
     return (
       <div className="feed-header" id="feedHeader">
         <MenuNav />
-        <div className="chatWindow-footer horizontallyCenter">
+        <div className="searchBox-header horizontallyCenter">
           <div className="input-box-container noMarginB">
             <div className="input-flexContainer">
               {isUserSearch && (
@@ -103,7 +104,7 @@ class FeedHeader extends Component {
                       autoCorrect="on"
                       spellCheck="true"
                       maxLength="5000"
-                      autoFocus
+                      autoFocus={isMobile == true ? false : true}
                     />
                   </form>
                   <button type="button" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>

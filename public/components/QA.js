@@ -628,16 +628,16 @@ class QA extends Component {
                       </div>
                     )}
                     <div className="marginTop20 marginBottom20 qActionsContainer">
-                      <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
+                      {/*<div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20"> */}
                       {/*  <div className="marginRight8">Share</div>
                         <div className="marginRight8">Follow</div> */}
-                        {qIsMe == 'isMe' && (
+                      {/*  {qIsMe == 'isMe' && (
                           <Modal {...DeleteContentModalProps}>
                             <DeleteContentModalContent />
                           </Modal>
-                        )}
+                        )} */}
                       {/*  <div className="marginLeft8">Report</div> */}
-                      </div>
+                      {/* </div> */}
                       <div className="credentialSuperContainer">
                         <div className="credentialPreviewContainer">
                           <div className="textLeft greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>

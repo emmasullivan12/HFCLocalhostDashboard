@@ -85,6 +85,71 @@ const AddQSmlModalProps = {
   wider: true
 }
 
+const MentorSkillsLearningPromptProps = {
+  ariaLabel: 'Add your key skills >>',
+  triggerText: 'Add your key skills >>',
+  usedFor: 'skillsLearningForm',
+  backBtn: 'arrow',
+  hideTrigger: true,
+  changeInitFocus: true,
+}
+const MenteeSkillsLearningPromptProps = {
+  ariaLabel: 'Add what you want to learn >>',
+  triggerText: 'Add what you want to learn >>',
+  usedFor: 'skillsLearningForm',
+  backBtn: 'arrow',
+  hideTrigger: true,
+  changeInitFocus: true,
+}
+const AnswerQModalProps = {
+  ariaLabel: 'Add a Highlight',
+  triggerText: 'Highlight',
+  usedFor: 'addHighlightDashboard',
+  hideTrigger: true,
+  changeInitFocus: true,
+  wider: true
+}
+const AskQModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'Ask Question',
+  usedFor: 'askQuestionDashboard',
+  hideTrigger: true,
+  changeInitFocus: true,
+  wider: true
+}
+const U18CameraUploadModalProps = {
+  ariaLabel: 'Upload a picture',
+  triggerText: 'Take Selfie with Photo ID >>',
+  usedFor: 'U18picContainer',
+  hideTrigger: true,
+}
+const U18CameraUploadFromModalModalProps = {
+  ariaLabel: 'Upload a picture',
+  triggerText: 'Take Selfie with Photo ID >>',
+  usedFor: 'U18picContainer',
+  hideTrigger: false,
+}
+const U18FileUploadModalProps = {
+  ariaLabel: 'Upload a CV/Resume or URL of your LinkedIn profile)',
+  triggerText: 'Upload CV / LinkedIn >>',
+  usedFor: 'U18fileContainer',
+  changeInitFocus: true,
+  hideTrigger: true,
+}
+const MentorTrainingModalProps = {
+  ariaLabel: 'Complete your 5-min Mentor Training',
+  triggerText: 'Complete your 5-min Mentor Training >>',
+  usedFor: 'trainingModal',
+  hideTrigger: true,
+//  changeInitFocus: true,
+}
+const MenteeTrainingModalProps = {
+  ariaLabel: 'Complete your 5-min Mentee Training',
+  triggerText: 'Complete your 5-min Mentee Training >>',
+  usedFor: 'trainingModal',
+  hideTrigger: true,
+}
+
 class HomePage extends Component {
   observer = null
 
@@ -93,7 +158,7 @@ class HomePage extends Component {
     this.state = {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
-      userstep: 'somethingelse',
+      userstep: 'somethingElse', //didU18tf
       userRole: 'mentor',
       source: 'vhs',
       filterBy: 'latest',
@@ -112,11 +177,14 @@ class HomePage extends Component {
       isUserSearch: false,
       seenQIDsArr: [],
       seenHIDsArr: [],
+      windowWidth: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, // grab window size
+      userIsClickingStepsBox: false
     }
   }
 
   componentDidMount() {
     document.getElementById("clientWindowContainer").classList.add('overflowYHidden')
+    window.addEventListener("resize", this.updaqteShowStepsInSideBar);
 
     // Create observer to detect which feed items have been viewed in viewport
     this.observer = this.createFeedItemObserver()
@@ -127,10 +195,11 @@ class HomePage extends Component {
     });
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     const {tabToView} = this.props; // This comes from Dashboard.js
-    const {isUserSearch, justResetSearch} = this.state
+    const {isUserSearch, justResetSearch, userStepsIsOpen, windowWidth, userIsClickingStepsBox} = this.state
     const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
+    const sideBarIsShowing = windowWidth > 1080
 
     // Scroll to top of feed if click the "Q&A" add highlight button
     if (cameFromAddHighlightBtn == true) {
@@ -145,14 +214,20 @@ class HomePage extends Component {
       homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    if (isUserSearch == true && sideBarIsShowing != true && userStepsIsOpen == true && userIsClickingStepsBox == false && prevState.userIsClickingStepsBox != true) {
+      this.setState({
+        userStepsIsOpen: false
+      })
+    }
+
     // Maybe use this to determine whether to trigger or not https://stackoverflow.com/questions/69806279/how-to-know-a-react-link-component-has-been-clicked
     if (tabToView == "questions" && tabToView != this.state.tabToView && isUserSearch != true && justResetSearch != true) {
-      const isMobile = checkMobile()
+
       this.setState({
         tabToView: tabToView,
       })
 
-      if (isMobile) {
+      if (!sideBarIsShowing) {
         this.setState({
           userStepsIsOpen: false
         })
@@ -162,6 +237,12 @@ class HomePage extends Component {
     if (justResetSearch == true) {
       this.setState({
         justResetSearch: false,
+      })
+    }
+
+    if (userIsClickingStepsBox == true) {
+      this.setState({
+        userIsClickingStepsBox: false
       })
     }
 
@@ -186,6 +267,17 @@ class HomePage extends Component {
     this.observer.disconnect()
 
     document.getElementById("clientWindowContainer").classList.remove('overflowYHidden')
+    window.removeEventListener("resize", this.updaqteShowStepsInSideBar);
+  }
+
+  // If screen is resized to show sizebar, always have the steps box open
+  updaqteShowStepsInSideBar = () => {
+    const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth // grab window size
+    const sideBarIsShowing = w > 1080
+    this.setState({
+      windowWidth: w,
+      userStepsIsOpen: sideBarIsShowing
+    })
   }
 
   createFeedItemObserver = () => {
@@ -765,11 +857,11 @@ class HomePage extends Component {
 
   }
 
-  onClick = (e) => {
+  toggleStepsBox = (e) => {
     const currentState = this.state.userStepsIsOpen;
-
     this.setState({
       userStepsIsOpen: !currentState,
+      userIsClickingStepsBox: true
     })
   }
 
@@ -792,7 +884,8 @@ class HomePage extends Component {
   }
 
   renderSuccessModalContent = () => {
-    const {successModalToShow} = this.state
+    const {successModalToShow, userRole} = this.state
+    const wantsU18 = true
     switch(successModalToShow) {
       case 'skillsUpdated':
         return (
@@ -808,6 +901,25 @@ class HomePage extends Component {
             </div>
           </React.Fragment>
         );
+      case 'fullSUcompletedWantsU18':
+        return (
+          <React.Fragment>
+            <div className="modal-title">
+              <div className="emoji-icon stopwatch-emoji successBox" />
+              Almost there!
+            </div>
+            <div className="success-container">
+              <div className="ideas-Title">
+                Now upload your PhotoID selfie
+              </div>
+              <p className="landingCTADesc">
+                <Modal {...U18CameraUploadFromModalModalProps} handleLocalStateOnClose={() => this.closeModal("MentorID")}>
+                  <U18CameraUploadContent/>
+                </Modal>
+              </p>
+            </div>
+          </React.Fragment>
+        )
       case 'fullSUcompleted':
         return (
           <React.Fragment>
@@ -903,66 +1015,6 @@ class HomePage extends Component {
     }
 
     const steps = userRole == 'mentor' ? mentorSteps : menteeSteps
-
-    const MentorSkillsLearningPromptProps = {
-      ariaLabel: 'Add your key skills >>',
-      triggerText: 'Add your key skills >>',
-      usedFor: 'skillsLearningForm',
-      backBtn: 'arrow',
-      hideTrigger: true,
-      changeInitFocus: true,
-    }
-    const MenteeSkillsLearningPromptProps = {
-      ariaLabel: 'Add what you want to learn >>',
-      triggerText: 'Add what you want to learn >>',
-      usedFor: 'skillsLearningForm',
-      backBtn: 'arrow',
-      hideTrigger: true,
-      changeInitFocus: true,
-    }
-    const AnswerQModalProps = {
-      ariaLabel: 'Add a Highlight',
-      triggerText: 'Highlight',
-      usedFor: 'addHighlightDashboard',
-      hideTrigger: true,
-      changeInitFocus: true,
-      wider: true
-    }
-    const AskQModalProps = {
-      ariaLabel: 'Ask a Question',
-      triggerText: 'Ask Question',
-      usedFor: 'askQuestionDashboard',
-      hideTrigger: true,
-      changeInitFocus: true,
-      wider: true
-    }
-    const U18CameraUploadModalProps = {
-      ariaLabel: 'Upload a picture',
-      triggerText: 'Take Selfie with Photo ID >>',
-      usedFor: 'U18picContainer',
-      hideTrigger: true,
-    }
-    const U18FileUploadModalProps = {
-      ariaLabel: 'Upload a CV/Resume or URL of your LinkedIn profile)',
-      triggerText: 'Upload CV / LinkedIn >>',
-      usedFor: 'U18fileContainer',
-      changeInitFocus: true,
-      hideTrigger: true,
-    }
-    const MentorTrainingModalProps = {
-      ariaLabel: 'Complete your 5-min Mentor Training',
-      triggerText: 'Complete your 5-min Mentor Training >>',
-      usedFor: 'trainingModal',
-      hideTrigger: true,
-    //  changeInitFocus: true,
-    }
-    const MenteeTrainingModalProps = {
-      ariaLabel: 'Complete your 5-min Mentee Training',
-      triggerText: 'Complete your 5-min Mentee Training >>',
-      usedFor: 'trainingModal',
-      hideTrigger: true,
-    }
-
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
     const allStepsCompleted = stepsLeftToDo == 0
 
@@ -1014,7 +1066,7 @@ class HomePage extends Component {
     return (
       <div className="thinPurpleContentBox withBorderTop">
         <div className="padding20">
-          <div className="userStepsTitle" onClick={this.onClick} onKeyDown={this.onKeyDown}>
+          <div className="userStepsTitle" onClick={this.toggleStepsBox} onKeyDown={this.onKeyDown}>
             <span><strong>Finish setting up your account</strong></span>
             <div className="selectContainer">
               <span className="arrow">
@@ -1070,7 +1122,7 @@ class HomePage extends Component {
               )}
               {showAnswerAQModal == true && (
                 <Modal {...AnswerQModalProps} handleLocalStateOnClose={() => this.closeModal("AnswerAQ")}>
-                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={this.updatePathName}/>
+                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={this.props.updatePathName}/>
                 </Modal>
               )}
               {showAskAQModal == true && (
@@ -1081,7 +1133,7 @@ class HomePage extends Component {
               {showMentorFullAppModal == true && (
                 <MentorFullSignUp
                   handleLocalStateOnClose={() => this.closeModal("MentorFullApp")}
-                  onSubmit={() => this.handleSuccessModalFromFPModal("MentorFullApp", "fullSUcompleted")}
+                  onSubmit={() => this.handleSuccessModalFromFPModal("MentorFullApp", (wantsU18 == true ? "fullSUcompletedWantsU18" : "fullSUcompleted"))}
                 />
               )}
               {showMenteeFullAppModal == true && (
@@ -1220,10 +1272,10 @@ class HomePage extends Component {
           {userRole == 'mentor' && (
             <React.Fragment>
               <Modal {...AddHighlightModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor' updatePathName={this.updatePathName}/>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor' updatePathName={this.props.updatePathName}/>
               </Modal>
               <Modal {...AddHighlightSmlModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor' updatePathName={this.updatePathName}/>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor' updatePathName={this.props.updatePathName}/>
               </Modal>
             </React.Fragment>
           )}

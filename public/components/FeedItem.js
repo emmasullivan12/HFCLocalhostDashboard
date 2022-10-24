@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Avatar from './Avatar.js';
 import {usercdn, userImgsFolder} from './CDN.js';
-import {Check, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import {Check, DateCalc, TimeCalc, checkMobile} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
@@ -211,6 +211,8 @@ class FeedItem extends Component {
       const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
       const hasUnreadAnswers = true // isOnMyContentPage == true ? null : [LINKTODEX]
 
+      const isMobile = checkMobile()
+
       return (
         <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
           <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.qid} data-itemtype={contentType}>
@@ -252,7 +254,7 @@ class FeedItem extends Component {
               </React.Fragment>
             )}
             <div className="postContainer">
-              <div className="postDetail marginRight20 marginTop12 textRight fontSize13 flexShrink0 width100px darkGreyText">
+              <div className={"postDetail marginTop12 textRight fontSize13 flexShrink0 width100px darkGreyText" + (isMobile == true ? "" : " marginRight20 ")}>
               {/*  <div className="marginBottom5">{post.votes && (post.votes.length < 1000 ? post.votes.length : ((Math.round(post.votes.length / 100) / 10) + 'k'))} votes</div> */}
                 {(isOnMyContentPage != true || contentType == 'following') && (
                   <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.qid)}>

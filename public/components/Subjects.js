@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 const subjectOptions = [
   {value: '0', label: 'Accounting'},
-  {value: '116', label: 'Aeronautical Engineering'},
+  {value: '140', label: 'Aeronautical Engineering'},
   {value: '1', label: 'Afrikaans'},
   {value: '117', label: 'Agriculture and Forestry'},
   {value: '2', label: 'Ancient History'},

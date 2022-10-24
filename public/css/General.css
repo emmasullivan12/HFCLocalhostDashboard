@@ -1047,8 +1047,8 @@ table th .description{
 .tooltip .tooltiptext.last {
   left: -25px;
 }
-.tooltip .tooltiptext.last.signUpPage {
-  left: -85px;
+.tooltip .tooltiptext.signUpPage {
+  left: -85px!important;
 }
 .tooltip .tooltiptext.endContentBox {
   left: -60px;
