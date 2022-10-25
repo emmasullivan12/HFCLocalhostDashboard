@@ -1262,9 +1262,9 @@ class AddHighlightTextBox extends Component {
               </div>
             )}
             <div className="paddingR20 paddingL20 descriptor">
-              <div><span role="img" aria-label="sparkle-emoji">✨</span><strong> {isAddAnswer == true ? 'Add hashtags:' : 'Suggested hashtags:'}</strong></div>
+              <div className={(isAddAnswer == true ? "" : " reqAsterisk")}><span role="img" aria-label="sparkle-emoji">✨</span><strong> {isAddAnswer == true ? 'Add hashtags:' : 'Suggested hashtags:'}</strong></div>
               <div className="form-group">
-                <label className={"alignLeft darkGreyText noBold" + (isAddAnswer == true ? "" : " reqAsterisk")} htmlFor="roleco">
+                <label className="alignLeft darkGreyText noBold" htmlFor="roleco">
                   {isMenteeQ == true ? 'Help your question reach more employees' : 'Help reach more mentees'}
                   {showMaxReachedError && (
                     <span className="redText"> (You can only add up to 5)</span>

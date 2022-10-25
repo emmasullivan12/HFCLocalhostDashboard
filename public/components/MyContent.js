@@ -21,6 +21,7 @@ class MyContent extends Component {
         hashtags: ['23'],
         hashtagsfreetext: ['my free text hashtag'],
         votes: ['123','234','345','456'],
+        hidden: 1,
       },
       {
         qid: '123457',

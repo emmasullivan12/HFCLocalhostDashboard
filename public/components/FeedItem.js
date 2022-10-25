@@ -440,6 +440,14 @@ class FeedItem extends Component {
                   {(contentType != 'general' || post.isanon == true || post.isPr == true || post.authorinsttype == 'sch') && (
                     <span className="darkGreyText"><strong>{post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}</strong></span>
                   )}
+                  {isOnMyContentPage == true && post.hidden == 1 && (
+                    <span className="tooltip fontSize18">
+                      <UserBadge badgeType='questionRemoved' />
+                      <span className="tooltiptext below profile onFeed textLeft">
+                        <strong>The question related to the answer has been removed by the author</strong>
+                      </span>
+                    </span>
+                  )}
                   {hasMinVerif == true && (
                     <span className="tooltip fontSize18">
                       <UserBadge badgeType='pr-certified' />

@@ -816,7 +816,7 @@ class QA extends Component {
                                       {hasMinVerif == true && (
                                         <span className="tooltip fontSize18">
                                           <UserBadge badgeType='pr-certified' />
-                                          <span className="tooltiptext onQA">
+                                          <span className="tooltiptext onQA below">
                                             <strong>Prospela Certified Mentor</strong>
                                           </span>
                                         </span>
@@ -829,7 +829,7 @@ class QA extends Component {
                                       {hasMinVerif == true && (
                                         <span className="tooltip fontSize18">
                                           <UserBadge badgeType='pr-certified' />
-                                          <span className="tooltiptext onQA">
+                                          <span className={"tooltiptext onQA below" + (hid.isanon ? " anonymous" : "")} >
                                             <strong>Prospela Certified Mentor</strong>
                                           </span>
                                         </span>

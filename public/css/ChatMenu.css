@@ -194,6 +194,8 @@
   margin-right: 2px;
   display: inline;
   position: unset;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .notificationNum.hasTooltip{
   margin-right: -81px;

@@ -1082,8 +1082,9 @@ table th .description{
   width: 180px;
 }
 .tooltiptext.onQA{
-  left: -94px;
   padding: 5px;
+  top: 27px!important;
+  left: -65px;
 }
 .tooltiptext.groups,
 .tooltiptext.compact {
@@ -1139,10 +1140,14 @@ table th .description{
   right: 13px;
 }
 .tooltip .tooltiptext.messageActions.last::after,
-.tooltip .tooltiptext.last.signUpPage::after,
-.tooltip .tooltiptext.onQA::after{
+.tooltip .tooltiptext.last.signUpPage::after{
   right: 0;
   margin-right: 9px;
+  left: unset;
+}
+.tooltip .tooltiptext.onQA::after{
+  right: 0;
+  margin-right: 39px;
   left: unset;
 }
 .tooltip .tooltiptext.chats::after,

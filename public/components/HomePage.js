@@ -159,7 +159,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: 'mentor',
+      userRole: 'mentee',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
@@ -178,7 +178,10 @@ class HomePage extends Component {
       seenQIDsArr: [],
       seenHIDsArr: [],
       windowWidth: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, // grab window size
-      userIsClickingStepsBox: false
+      userIsClickingStepsBox: false,
+      cameFromAddHighlightBtn: false,
+      hideKeyNotifBox: false,
+      numResults: 0,
     }
   }
 
@@ -197,8 +200,16 @@ class HomePage extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     const {tabToView} = this.props; // This comes from Dashboard.js
-    const {isUserSearch, justResetSearch, userStepsIsOpen, windowWidth, userIsClickingStepsBox} = this.state
-    const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
+    const {isUserSearch, justResetSearch, userStepsIsOpen, windowWidth, userIsClickingStepsBox, cameFromAddHighlightBtn, hideKeyNotifBox} = this.state
+    if (this.props.location.state && this.props.location.state.fromAddHighlightBtn == true) {
+      this.setState({
+        cameFromAddHighlightBtn: true
+      }, () => {
+        this.props.history.push({
+          state: { fromAddHighlightBtn:false }
+        })
+      })
+    }
     const sideBarIsShowing = windowWidth > 1080
 
     // Scroll to top of feed if click the "Q&A" add highlight button
@@ -210,13 +221,19 @@ class HomePage extends Component {
         this.resetSearchTextChange()
       }
 
+      this.setState({
+        userStepsIsOpen: false,
+        hideKeyNotifBox: true
+      })
+
       const homepageContainer = document.getElementById("homepageContainer")
       homepageContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    if (isUserSearch == true && sideBarIsShowing != true && userStepsIsOpen == true && userIsClickingStepsBox == false && prevState.userIsClickingStepsBox != true) {
+    if ((isUserSearch == true || cameFromAddHighlightBtn == true) && sideBarIsShowing != true && (userStepsIsOpen == true || hideKeyNotifBox == false) && userIsClickingStepsBox == false && prevState.userIsClickingStepsBox != true) {
       this.setState({
-        userStepsIsOpen: false
+        userStepsIsOpen: false,
+        hideKeyNotifBox: true
       })
     }
 
@@ -234,9 +251,16 @@ class HomePage extends Component {
       }
     }
 
+    if (cameFromAddHighlightBtn == true) {
+      this.setState({
+        cameFromAddHighlightBtn: false // reset back to false
+      })
+    }
+
     if (justResetSearch == true) {
       this.setState({
         justResetSearch: false,
+        hideKeyNotifBox: false
       })
     }
 
@@ -424,7 +448,8 @@ class HomePage extends Component {
   }
 
   resetSearch = () => {
-    const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
+    const {cameFromAddHighlightBtn} = this.state
+  //  const cameFromAddHighlightBtn = this.props.location.state && this.props.location.state.fromAddHighlightBtn
 
     if (cameFromAddHighlightBtn == true) {
       this.updateTabToView('questions')
@@ -456,7 +481,7 @@ class HomePage extends Component {
   }
 
   renderTab = () => {
-    const {tabToView, userRole, isUserSearch, filterBy} = this.state;
+    const {tabToView, userRole, isUserSearch, filterBy, numResults} = this.state;
     const {updatePathName} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
@@ -552,6 +577,7 @@ class HomePage extends Component {
         authorinsttype: 'sch',
         fname: 'Emma',
         lname: 'Sullivan',
+        hidden: 1,
         profilepic: '',
         url: "/what-wear-to-interview"
       },
@@ -785,7 +811,7 @@ class HomePage extends Component {
             )}
             {isUserSearch && (
               <div className="marginTop20">
-                Search results:
+                Search results: {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
               </div>
             )}
             { this.showUpdateTabBtns() }
@@ -823,7 +849,7 @@ class HomePage extends Component {
             )}
             {isUserSearch && (
               <div className="marginTop20">
-                Search results:
+                Search results: {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
               </div>
             )}
             { this.showUpdateTabBtns() }
@@ -1180,7 +1206,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -1244,7 +1270,7 @@ class HomePage extends Component {
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
             <div className="sideBar" role="complementary" aria-label="sidebar">
-              {hasKeyNotif == true && (
+              {hasKeyNotif == true && hideKeyNotifBox == false && (
                 <div className="thickPurpleContentBox withBorderTop">
                   {/* <div className="sideBar-header" /> */}
                   <div className="padding20">

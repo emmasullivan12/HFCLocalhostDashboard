@@ -35,6 +35,13 @@ class UserBadge extends Component {
             Prospela
           </div>
         );
+      case 'questionRemoved':
+        return (
+          <div className="badge removed">
+            <i className="fas fa-check" />
+            Question no longer exists
+          </div>
+        );
       case 'founder':
         return (
           <div className="badge founder">

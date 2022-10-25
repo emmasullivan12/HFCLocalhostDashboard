@@ -90,7 +90,7 @@ class FeedHeader extends Component {
               )}
               {!isUserSearch && (
                 <React.Fragment>
-                  <form className="textInput-container">
+                  <form className="textInput-container" onSubmit={this.handleSubmit}>
                     <input
                       type="searchText"
                       id="mainSearchBox"
@@ -106,10 +106,10 @@ class FeedHeader extends Component {
                       maxLength="5000"
                       autoFocus={isMobile == true ? false : true}
                     />
+                    <button type="submit" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} >
+                      <i className="fas fa-search" />
+                    </button>
                   </form>
-                  <button type="button" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} onClick={this.handleSubmit}>
-                    <i className="fas fa-search" />
-                  </button>
                 </React.Fragment>
              )}
             </div>

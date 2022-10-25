@@ -35,6 +35,11 @@
   background-color: #4e4ed6;
 }
 
+.badge.removed{
+  border: 1px solid #262667;
+  background-color: #4e4ed6;
+}
+
 .badge.pm{
   border: 1px solid #4eb9a5;
   background-color: #58d2bb;
