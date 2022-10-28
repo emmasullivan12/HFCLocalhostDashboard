@@ -1,4 +1,4 @@
-// Dex last merged this code on 24th sept 2022
+// Dex last merged this code on 28th oct 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -819,7 +819,7 @@ class QA extends Component {
                                       {hasMinVerif == true && (
                                         <span className="tooltip fontSize18">
                                           <UserBadge badgeType='pr-certified' />
-                                          <span className="tooltiptext hiddenProf below">
+                                          <span className="tooltiptext onQA below">
                                             <strong>Prospela Certified Mentor</strong>
                                           </span>
                                         </span>

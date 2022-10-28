@@ -1,4 +1,4 @@
-// Last merged this code on 24th sept 2022
+// Last merged this code on 28th oct 2022
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -187,7 +187,7 @@ class HomePage extends Component {
 
   componentDidMount() {
     document.getElementById("clientWindowContainer").classList.add('overflowYHidden')
-    window.addEventListener("resize", this.updaqteShowStepsInSideBar);
+    window.addEventListener("resize", this.updateShowStepsInSideBar);
 
     // Create observer to detect which feed items have been viewed in viewport
     this.observer = this.createFeedItemObserver()
@@ -291,11 +291,11 @@ class HomePage extends Component {
     this.observer.disconnect()
 
     document.getElementById("clientWindowContainer").classList.remove('overflowYHidden')
-    window.removeEventListener("resize", this.updaqteShowStepsInSideBar);
+    window.removeEventListener("resize", this.updateShowStepsInSideBar);
   }
 
   // If screen is resized to show sizebar, always have the steps box open
-  updaqteShowStepsInSideBar = () => {
+  updateShowStepsInSideBar = () => {
     const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth // grab window size
     const sideBarIsShowing = w > 1080
     this.setState({
