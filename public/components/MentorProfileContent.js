@@ -1520,7 +1520,7 @@ class MentorProfileContent extends Component {
                     </div>
                     )
                   }*/}
-                  <div className="profileBtnToolTip avail">
+                  <div className="profileBtnToolTip avail max2Lines">
                     {this.availabilityMsg(mentor.isavailable.status, this.state.nowAvailable)}
                   </div>
                   <div className="profileUserCTA">

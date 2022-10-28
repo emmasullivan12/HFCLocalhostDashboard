@@ -663,8 +663,11 @@ class QA extends Component {
                                 </div>
                               )}
                               {(qaItem.isPr == true || qaItem.authorinsttype == 'sch') && (
-                                <div>
+                                <div className="tooltip">
                                   <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
+                                  <span className="tooltiptext hiddenProf below">
+                                    This profile cannot be viewed
+                                  </span>
                                 </div>
                               )}
                               <div className="darkGreyText">{credentialText}</div>
@@ -816,7 +819,7 @@ class QA extends Component {
                                       {hasMinVerif == true && (
                                         <span className="tooltip fontSize18">
                                           <UserBadge badgeType='pr-certified' />
-                                          <span className="tooltiptext onQA below">
+                                          <span className="tooltiptext hiddenProf below">
                                             <strong>Prospela Certified Mentor</strong>
                                           </span>
                                         </span>

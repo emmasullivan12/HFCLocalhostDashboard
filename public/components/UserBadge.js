@@ -38,7 +38,6 @@ class UserBadge extends Component {
       case 'questionRemoved':
         return (
           <div className="badge removed">
-            <i className="fas fa-check" />
             Question no longer exists
           </div>
         );

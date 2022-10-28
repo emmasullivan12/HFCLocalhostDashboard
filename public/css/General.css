@@ -1086,6 +1086,11 @@ table th .description{
   top: 27px!important;
   left: -65px;
 }
+.tooltiptext.hiddenProf{
+  padding: 5px;
+  top: 22px!important;
+  left: 5px;
+}
 .tooltiptext.groups,
 .tooltiptext.compact {
   white-space: nowrap;
@@ -1148,6 +1153,11 @@ table th .description{
 .tooltip .tooltiptext.onQA::after{
   right: 0;
   margin-right: 39px;
+  left: unset;
+}
+.tooltip .tooltiptext.hiddenProf::after{
+  right: 0;
+  margin-right: 99px;
   left: unset;
 }
 .tooltip .tooltiptext.chats::after,
