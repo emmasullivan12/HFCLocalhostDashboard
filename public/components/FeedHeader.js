@@ -90,7 +90,7 @@ class FeedHeader extends Component {
               )}
               {!isUserSearch && (
                 <React.Fragment>
-                  <form className="textInput-container" onSubmit={this.handleSubmit}>
+                  <form className="textInput-container searchBox" onSubmit={this.handleSubmit}>
                     <input
                       type="searchText"
                       id="mainSearchBox"

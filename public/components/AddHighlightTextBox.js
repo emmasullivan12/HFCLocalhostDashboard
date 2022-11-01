@@ -12,7 +12,7 @@ import Avatar from './Avatar.js';
 import CameraUploadContent from './CameraUploadContent.js';
 import Checkbox from './Checkbox.js';
 import {usercdn, userImgsFolder} from './CDN.js';
-import {Check, checkMobile} from './GeneralFunctions.js';
+import {Check, checkMobile, whichBrowser} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
@@ -82,6 +82,7 @@ class AddHighlightTextBox extends Component {
       errorFileSize: false,
       isAnon: false,
       isPrAnon: false,
+      whichBrowser: whichBrowser()
     };
     this.handleDragEnter = this.handleDragEnter.bind(this);
     this.handleDragOver = this.handleDragOver.bind(this);
@@ -418,6 +419,7 @@ class AddHighlightTextBox extends Component {
   /* Toggles modal's overflow off so that z-index of AutocompleteTagsMulti box is not overriden */
   modalOverflowOff = () => {
     const {modalID} = this.props
+    const isSafari = this.state.whichBrowser == 'safari'
     const modal = document.getElementById(modalID)
   //  modal.style.overflowY = 'unset'
     var h = window.innerHeight;
@@ -429,16 +431,25 @@ class AddHighlightTextBox extends Component {
     if (h >= heightToCheck && !onMobile) {
       modal.style.overflowY = 'unset'
     }
+    if (isSafari == true) {
+      modal.style.WebkitOverflowScrolling = 'unset'
+    }
   }
 
   modalOverflowOn = () => {
     const {modalID} = this.props
+    const isSafari = this.state.whichBrowser == 'safari'
     const modal = document.getElementById(modalID)
-    modal.style.overflowY = 'auto'
+    if (isSafari == true) {
+      modal.style.overflowY = 'scroll'
+      modal.style.WebkitOverflowScrolling = 'touch'
+    } else {
+      modal.style.overflowY = 'auto'
+    }
     var h = window.innerHeight;
     var w = window.innerWidth;
     var onMobile = w <= '500'
-    if (h < '732' || onMobile) {
+    if ((h < '732' || onMobile) && isSafari != true) {
       modal.style.overflowY = 'auto'
     }
   }

@@ -27,11 +27,11 @@ const AddGeneralHighlightModalProps = {
 class FeedContainer extends Component {
 
   render() {
-    const {userRole, contentArr, isUserSearch, updatePathName} = this.props
+    const {userRole, contentArr, isUserSearch, updatePathName, handleFeedClick} = this.props
     const isLoadingMorePosts = true
 
     return (
-      <div className="marginTop20" id="feedItems">
+      <div className="marginTop20" id="feedItems" onMouseDown={handleFeedClick}>
         {contentArr.length == 0 && isLoadingMorePosts != true && (
           <AskAQPrompt userRole={userRole} noResultsFound updatePathName={updatePathName}/>
         )}

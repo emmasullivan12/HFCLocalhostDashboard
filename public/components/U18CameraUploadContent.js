@@ -23,7 +23,8 @@ canBeSubmitted() {
 }
 
 render() {
-  const isEnabled = this.canBeSubmitted();
+  //const isEnabled = this.canBeSubmitted();
+  const isEnabled = true
     return (
       <React.Fragment>
         <div className="capture">

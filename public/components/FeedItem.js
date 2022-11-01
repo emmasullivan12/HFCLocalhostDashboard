@@ -161,7 +161,7 @@ class FeedItem extends Component {
   }
 
   render() {
-    const {contentType, post, userRole, updatePathName, isOnMyContentPage} = this.props
+    const {contentType, post, userRole, isOnMyContentPage, updatePathName} = this.props
     const {userUpvoted, votes} = this.state
 
     let indArrToShow, hashtagsCommaString, hashtagsArray

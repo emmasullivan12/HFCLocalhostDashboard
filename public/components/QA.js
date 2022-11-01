@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
-import {metaAdder, checkMobile, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
+import {metaAdder, checkMobile, whichBrowser, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FullPageModal from './FullPageModal.js';
@@ -528,6 +528,7 @@ class QA extends Component {
     const hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
     const numViews = (qaItem.mentorseen && qaItem.mentorseen.length) + (qaItem.menteeseen && qaItem.menteeseen.length) + (qaItem.prseen && qaItem.prseen.length)
     const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
+    const isSafari = whichBrowser() == 'safari'
     let aIsMe, aCredentialText, aAuthorinsttype
 
     return (
@@ -665,7 +666,7 @@ class QA extends Component {
                               {(qaItem.isPr == true || qaItem.authorinsttype == 'sch') && (
                                 <div className="tooltip">
                                   <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
-                                  <span className="tooltiptext hiddenProf below">
+                                  <span className={"tooltiptext hiddenProf below" + (isSafari == true ? " fontSize11" : "")}>
                                     This profile cannot be viewed
                                   </span>
                                 </div>

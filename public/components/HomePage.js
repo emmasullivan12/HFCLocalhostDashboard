@@ -159,7 +159,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: 'mentee',
+      userRole: 'mentor',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
@@ -182,12 +182,20 @@ class HomePage extends Component {
       cameFromAddHighlightBtn: false,
       hideKeyNotifBox: false,
       numResults: 0,
+      prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0
     }
   }
 
   componentDidMount() {
     document.getElementById("clientWindowContainer").classList.add('overflowYHidden')
     window.addEventListener("resize", this.updateShowStepsInSideBar);
+
+    const {prevFeedScrollPos} = this.state
+
+    if (prevFeedScrollPos != 0) {
+      const homepageContainer = document.getElementById("homepageContainer")
+      homepageContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
+    }
 
     // Create observer to detect which feed items have been viewed in viewport
     this.observer = this.createFeedItemObserver()
@@ -290,6 +298,13 @@ class HomePage extends Component {
     });*/
     this.observer.disconnect()
 
+  /*  this.props.history.push({
+      state: { currFeedScrollPos: document.scrollTop }
+    }, () => { */
+    //  console.log("currFeedScrollPos onCLOSE: ")
+    //  console.log(this.props.location.state && this.props.location.state.currFeedScrollPos)
+//    })
+
     document.getElementById("clientWindowContainer").classList.remove('overflowYHidden')
     window.removeEventListener("resize", this.updateShowStepsInSideBar);
   }
@@ -338,6 +353,11 @@ class HomePage extends Component {
             //  console.log(this.state.seenHIDsArr)
             }))
           }
+
+          // Update scroll position
+        /*  this.setState({
+            currScrollPos:
+          }) */
         }
 
       // Might need to add something for switching tabs i.e. from "All" to "Questions" tab on feed
@@ -478,6 +498,14 @@ class HomePage extends Component {
       showSuccessModal: true,
       successModalToShow: successModalToShow
     });
+  }
+
+  handleFeedClick = (e) => {
+    e.stopPropagation()
+    const {updateFeedScrollPos} = this.props
+    const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
+    console.log("in handleFeedClick: "+prevScrollPos)
+    updateFeedScrollPos(prevScrollPos)
   }
 
   renderTab = () => {
@@ -815,7 +843,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
       case 'questions':
@@ -853,7 +881,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
     }
@@ -909,6 +937,12 @@ class HomePage extends Component {
     this.closeModal(modalTypeToClose)
   }
 
+  cleanUpModals = () => {
+    console.log("cleaning up")
+    this.closeModal("MentorID")
+    this.closeModal("Success")
+  }
+
   renderSuccessModalContent = () => {
     const {successModalToShow, userRole} = this.state
     const wantsU18 = true
@@ -939,8 +973,8 @@ class HomePage extends Component {
                 Now upload your PhotoID selfie
               </div>
               <p className="landingCTADesc">
-                <Modal {...U18CameraUploadFromModalModalProps} handleLocalStateOnClose={() => this.closeModal("MentorID")}>
-                  <U18CameraUploadContent/>
+                <Modal {...U18CameraUploadFromModalModalProps} handleLocalStateOnClose={() => this.cleanUpModals()}>
+                  <U18CameraUploadContent />
                 </Modal>
               </p>
             </div>

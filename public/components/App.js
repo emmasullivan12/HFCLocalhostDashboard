@@ -146,6 +146,7 @@ class Dashboard extends Component{
       normalizedPosition: 0,
       contentPosition: 0,
       pathName: window.location.pathname,
+      prevFeedScrollPos: 0,
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
     }
@@ -266,6 +267,13 @@ class Dashboard extends Component{
     this.closeMenu(e)
   }
 
+  updateFeedScrollPos = (prevScrollPos) => {
+    console.log("updating it as: "+prevScrollPos)
+    this.setState({
+      prevFeedScrollPos: prevScrollPos
+    })
+  }
+
   updatePathName(){
     this.setState({
       pathName: window.location.pathname
@@ -314,7 +322,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {pathName} = this.state
+    const {pathName, prevFeedScrollPos} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -387,7 +395,7 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} />}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" updatePathName={this.updatePathName}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>

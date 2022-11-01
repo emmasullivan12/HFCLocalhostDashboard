@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import '../css/Autocomplete.css';
-import {ChevronDown, ChevronUp, X, Check} from './GeneralFunctions.js';
+import {whichBrowser, ChevronDown, ChevronUp, X, Check} from './GeneralFunctions.js';
 
 class AutocompleteTagsMulti extends React.Component {
   static defaultProperty={
@@ -747,6 +747,7 @@ class AutocompleteTagsMulti extends React.Component {
     const { onChange, onClickOption, onMouseDown, onKeyDown } = this;
     const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, showCheckbox, valueToShow, children } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected, values} = this.state;
+    const isSafari = whichBrowser() == 'safari'
 
     if (!showSuggestions) {
       return;
@@ -832,7 +833,7 @@ class AutocompleteTagsMulti extends React.Component {
                 onClick={this.focusOnInput}
                 role="button"
               //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
-                className="doneTickSq-btn"
+                className={"doneTickSq-btn" + (isSafari == true ? " fontSize10" : "")}
                 id={"doneTick-"+name}
               >
                 <span
