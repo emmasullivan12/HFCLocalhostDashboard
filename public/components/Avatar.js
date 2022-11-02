@@ -1,4 +1,4 @@
-// Dex last merged this code on 14th apr 2022
+// Dex last merged this code on 2nd nov 2022
 
 import React, { Component } from "react";
 
@@ -53,7 +53,7 @@ class Avatar extends Component {
     //  profilepic_40: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-40',
     //  profilepic_80: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-80'
     };
-    const {userName, userID, isProspelaAuto, isGroupFlex, isAddHighlight, showOnline, smallIdle, picSize, showAsCircle, isAnon, onFeed, isMedium} = this.props
+    const {userName, userID, isProspelaAuto, isGroupFlex, isAddHighlight, showOnline, smallIdle, picSize, showAsCircle, isAnon, onFeed, isMedium, isFeedMini} = this.props
   //  const myProfPic = "2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png-o" // looks up profpic URL of UID
   //  const profPicSrcNotMe = "https://files-and-media.ams3.digitaloceanspaces.com/images/Puppy%20Power.jpeg"
   //  const profPicSrcProspela = 'https://files-and-media.ams3.digitaloceanspaces.com/images/Professional%20Photo_50.jpg'
