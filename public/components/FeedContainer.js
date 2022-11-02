@@ -31,7 +31,7 @@ class FeedContainer extends Component {
     const isLoadingMorePosts = true
 
     return (
-      <div className="marginTop20" id="feedItems" onMouseDown={handleFeedClick}>
+      <div className="marginTop20" id="feedItems" onClick={handleFeedClick}>
         {contentArr.length == 0 && isLoadingMorePosts != true && (
           <AskAQPrompt userRole={userRole} noResultsFound updatePathName={updatePathName}/>
         )}

@@ -504,7 +504,7 @@ class HomePage extends Component {
     e.stopPropagation()
     const {updateFeedScrollPos} = this.props
     const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
-    console.log("in handleFeedClick: "+prevScrollPos)
+
     updateFeedScrollPos(prevScrollPos)
   }
 
