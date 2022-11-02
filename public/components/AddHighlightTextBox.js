@@ -896,7 +896,7 @@ class AddHighlightTextBox extends Component {
             </div>
           )}
           <div className="group-detail-item bright marginTop20">
-            <Avatar userID={user.uid} isAnon={isAnon} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40}/>
+            <Avatar userID={user.uid} isAnon={isAnon} userName={isAnon ? 'Anonymous' : user.fname} showAsCircle isAddHighlight picSize={40} isMedium/>
             <div className="textLeft addHighlight-user fontSize14"><strong>{isAnon ? "" : (user.fname + " " + user.lname)}</strong><span className="darkGreyText">{credentialText == '' ? (clickedEditCred == false ? '' : ((isAnon ? "" : ", ") + startingCredentialPreviewText)) : ((isAnon ? "" : ", ") + credentialText)}</span></div>
             <div className="textLeft addHighlight-user editCredentialBtn electricPurpleText" onClick={this.editCredential} role="button" >
               Edit Credential

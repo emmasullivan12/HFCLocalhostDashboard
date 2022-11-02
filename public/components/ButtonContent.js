@@ -144,6 +144,7 @@ function ButtonContent(props) {
     case 'addPicBtn msg-thumb':
     case 'addPicBtn msg-thumb isGroupFlex':
     case 'addPicBtn msg-thumb isGroupFlex smallIdle':
+    case 'addPicBtn msg-thumb smallIdle':
       return (
         <i className="fas fa-plus" />
       );

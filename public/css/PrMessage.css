@@ -68,6 +68,10 @@
   height: 31px;
   display: inline-grid;
 }
+.msg-thumg.isAddHighlight .ModalOpenBtn-addPicBtn {
+  width: 31px;
+  height: 31px;
+}
 
 .msg-thumb.hasPic {
   background-size: cover;

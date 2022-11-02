@@ -62,7 +62,7 @@ class FeedHeader extends Component {
       <div className="feed-header" id="feedHeader">
         <MenuNav />
         <div className="searchBox-header horizontallyCenter">
-          <div className="input-box-container noMarginB">
+          <div className="input-box-container noMarginB onFeed">
             <div className="input-flexContainer">
               {isUserSearch && (
                 <div className="fullWidth">
@@ -95,7 +95,7 @@ class FeedHeader extends Component {
                       type="searchText"
                       id="mainSearchBox"
                       ref={n => this.searchTextNode = n}
-                      className="input-box noPaddingR"
+                      className="input-box noPaddingR onFeed"
                       value={searchText}
                       onChange={handleSearchTextChange}
                       onKeyDown={this.onEnterPress}

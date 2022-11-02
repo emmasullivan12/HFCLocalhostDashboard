@@ -268,7 +268,6 @@ class Dashboard extends Component{
   }
 
   updateFeedScrollPos = (prevScrollPos) => {
-    console.log("updating it as: "+prevScrollPos)
     this.setState({
       prevFeedScrollPos: prevScrollPos
     })

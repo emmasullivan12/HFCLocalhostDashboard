@@ -281,7 +281,7 @@ class FeedItem extends Component {
                 )}
                 <div className="numAnswers marginBottom5">
                   {post.hids && post.hids.length != 0 && (
-                    <span className={"multiple marginRight0 fontSize13 " + (post.hasacceptedanswer == true ? "green" : "greenOutline")}>
+                    <span className={"multiple marginRight0 fontSize12 " + (post.hasacceptedanswer == true ? "green" : "greenOutline")}>
                       {post.hasacceptedanswer == true && (
                         <React.Fragment>
                           <span className="tickNumSelected">
@@ -351,7 +351,7 @@ class FeedItem extends Component {
                     </div>
                   )}
                   <div className="fontSize13 positionRel dispInlineBlock flexEnd">
-                    <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : post.fname} showAsCircle smallIdle picSize={40}/>
+                    <Avatar userID={post.uid} isAnon={post.isanon} userName={post.isanon ? 'Anonymous' : post.fname} showAsCircle smallIdle isFeedMini picSize={40}/>
                     <span className="paddingL20 darkGreyText">{post.isanon ? "Anonymous" : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)))}</span><span className="greyText"> asked <DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></span>
                   </div>
                 </div>

@@ -93,9 +93,9 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
-  #mainMenu-burger {
+/*  #mainMenu-burger {
     fill: #f2f2f2!important;
-  }
+  }*/
   .page-title{
     color: #dedede!important;
   }
@@ -173,7 +173,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .chatWindow-footer {
     background-color: #272727!important;
   }
-  .input-box-container:not(.addHighlight) {
+  .input-box-container:not(.addHighlight),
+  .input-box-container:not(.onFeed) {
     border: 1px solid #6d6d6d!important;
   }
   .input-box-container:not(.addHighlight):focus-within {
@@ -197,7 +198,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .msgInsights-bar-right {
     color: #797979!important;
   }
-  .input-box{
+  .input-box:not(.onFeed){
     color: #b9b9b9!important;
   }
   .tooltip .tooltiptext {
