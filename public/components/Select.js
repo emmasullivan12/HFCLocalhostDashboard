@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import '../css/General.css';
 import '../css/Select.css';
-import {ChevronDown, ChevronUp, X, Check} from './GeneralFunctions.js';
+import {whichBrowser, ChevronDown, ChevronUp, X, Check} from './GeneralFunctions.js';
 
 // USE THESE TO STYLE:
 // https://www.w3schools.com/howto/howto_custom_select.asp
@@ -1195,6 +1195,7 @@ class SelectBox extends React.Component {
   renderOptions() {
     const { options, showAbove, multiple, valueToShow, showDetail, showIcon, showCheckbox, detailToShow, iconToShow, name, required, dataExtraInfo1, dataExtraInfo2 } = this.props
     const { isOpen, values, focusedValue } = this.state;
+    const isSafari = whichBrowser() == 'safari'
 
     if (!isOpen) {
       return;
@@ -1305,7 +1306,7 @@ class SelectBox extends React.Component {
               onClick={this.onClick}
               role="button"
             //  className={"doneTickSq-btn" + ((required === true && values.length === 0) ? " disabled" : "")}
-              className="doneTickSq-btn"
+              className={"doneTickSq-btn" + (isSafari == true ? " fontSize10" : "")}
               id={"doneTick-"+name}
             >
               <span

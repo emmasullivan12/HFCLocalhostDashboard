@@ -57,6 +57,9 @@
   position: absolute;
   top: 14px;
 }
+.msg-thumb-container.smallIdle.onFeed .msg-thumb.smallIdle:not(.isFeedMini){
+  top: 10px;
+}
 .msg-thumb.isGroupFlex.smallIdle{
   top: unset;
   bottom: 3px;
@@ -68,7 +71,7 @@
   height: 31px;
   display: inline-grid;
 }
-.msg-thumg.isAddHighlight .ModalOpenBtn-addPicBtn {
+.msg-thumb.isAddHighlight .ModalOpenBtn-addPicBtn {
   width: 31px;
   height: 31px;
 }

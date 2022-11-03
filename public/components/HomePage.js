@@ -182,7 +182,8 @@ class HomePage extends Component {
       cameFromAddHighlightBtn: false,
       hideKeyNotifBox: false,
       numResults: 0,
-      prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0
+      prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
+      userStepsWasOpenInFeed: this.props.userStepsWasOpenInFeed != null ? this.props.userStepsWasOpenInFeed : null
     }
   }
 
@@ -190,10 +191,14 @@ class HomePage extends Component {
     document.getElementById("clientWindowContainer").classList.add('overflowYHidden')
     window.addEventListener("resize", this.updateShowStepsInSideBar);
 
-    const {prevFeedScrollPos} = this.state
+    const {prevFeedScrollPos, userStepsWasOpenInFeed} = this.state
 
     if (prevFeedScrollPos != 0) {
       const homepageContainer = document.getElementById("homepageContainer")
+      console.log(userStepsWasOpenInFeed)
+      if (userStepsWasOpenInFeed != null) {
+        this.setStepsBoxAsWasPrev(userStepsWasOpenInFeed)
+      }
       homepageContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
     }
 
@@ -502,10 +507,11 @@ class HomePage extends Component {
 
   handleFeedClick = (e) => {
     e.stopPropagation()
+    const {userStepsIsOpen} = this.state
     const {updateFeedScrollPos} = this.props
     const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
-
-    updateFeedScrollPos(prevScrollPos)
+console.log("steps box as open: "+userStepsIsOpen)
+    updateFeedScrollPos(prevScrollPos, userStepsIsOpen)
   }
 
   renderTab = () => {
@@ -911,6 +917,13 @@ class HomePage extends Component {
 
   }
 
+  setStepsBoxAsWasPrev = (wasOpenPrev) => {
+    console.log("setting usersteps box as: "+wasOpenPrev)
+    this.setState({
+      userStepsIsOpen: wasOpenPrev,
+    })
+  }
+
   toggleStepsBox = (e) => {
     const currentState = this.state.userStepsIsOpen;
     this.setState({
@@ -938,7 +951,6 @@ class HomePage extends Component {
   }
 
   cleanUpModals = () => {
-    console.log("cleaning up")
     this.closeModal("MentorID")
     this.closeModal("Success")
   }

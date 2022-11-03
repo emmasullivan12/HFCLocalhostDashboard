@@ -126,7 +126,7 @@ class Avatar extends Component {
             </div>
             )
           : (
-            <div className={"msg-thumb allowAddPic noPic " + isMe + (showAsCircle == true ? ' img-circle' : ' img-square') + (isProspelaAuto === true ? ' isProspela' : '') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '') + (isAddHighlight == true ? ' isAddHighlight' : '') + (isMedium == true ? ' inModal' : '') + (isFeedMini == true ? ' isFeedMini' : '')}>
+            <div className={"msg-thumb allowAddPic noPic " + isMe + (showAsCircle == true ? ' img-circle' : ' img-square') + (isProspelaAuto === true ? ' isProspela' : '') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '') + (isAddHighlight == true ? ' isAddHighlight' : '') + (isFeedMini == true ? ' isFeedMini' : '')}>
               {isMe==="isMe" ? (
             //  {isMe==="isMe" ? (
                 <Modal ariaLabel='Add or Edit Profile Picture' triggerText='Add/Edit Profile pic' usedFor={'addPicBtn msg-thumb'+ (isGroupFlex === true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '')}>
@@ -146,7 +146,7 @@ class Avatar extends Component {
                   </FullPageModal>
                 )
               )}*/}
-              <div className={"userInitial msg-thumb " + (isMe==='isMe' ? 'isMe' : 'noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '') + (isAddHighlight == true ? ' isAddHighlight' : '')}>
+              <div className={"userInitial msg-thumb " + (isMe==='isMe' ? 'isMe' : 'noModal') + (isGroupFlex == true ? ' isGroupFlex' : '')  + (smallIdle == true ? ' smallIdle' : '') + (isAddHighlight == true ? ' isAddHighlight' : '') + (isMedium == true ? ' inModal' : '') + (isFeedMini == true ? ' isFeedMini' : '')}>
                 {userInitial}
               </div>
             </div>

@@ -123,6 +123,14 @@
   padding-top: 0px;
   font-size: 12px;
 }
+.msg-thumb.smallIdle.isFeedMini{
+  top: 10px;
+}
+.msg-thumb-container.smallIdle.onFeed .msg-thumb.smallIdle .ModalOpenBtn-addPicBtn.smallIdle{
+  top: unset;
+  left: 0;
+  font-size: 11px;
+}
 .userInitial.msg-thumb.smallIdle.isFeedMini{
   top: 0;
 }

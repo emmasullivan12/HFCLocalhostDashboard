@@ -1,4 +1,4 @@
-// Dex last merged this code on 2nd nov 2022 
+// Dex last merged this code on 2nd nov 2022
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -267,9 +267,11 @@ class Dashboard extends Component{
     this.closeMenu(e)
   }
 
-  updateFeedScrollPos = (prevScrollPos) => {
+  updateFeedScrollPos = (prevScrollPos, userStepsIsOpen) => {
+    console.log("setting userStepsWasOpenInFeed as: "+userStepsIsOpen)
     this.setState({
-      prevFeedScrollPos: prevScrollPos
+      prevFeedScrollPos: prevScrollPos,
+      userStepsWasOpenInFeed: userStepsIsOpen
     })
   }
 
@@ -321,7 +323,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {pathName, prevFeedScrollPos} = this.state
+    const {pathName, prevFeedScrollPos, userStepsWasOpenInFeed} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -394,7 +396,7 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} />}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" updatePathName={this.updatePathName}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
