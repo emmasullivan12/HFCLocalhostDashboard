@@ -682,7 +682,7 @@ console.log("steps box as open: "+userStepsIsOpen)
         authorcountry: 'GBR',
         datecreated: '2020-09-04T13:30:50.667Z',
         lastupdated: '2020-09-05T19:30:50.667Z',
-        text: 'first answer sfgh sldfkj ghlskjdf hglkjsd fhgkjls dhflkjg hsdlfkj ghlksdjfh glkjsd fhgkljsdh fgkjlh sdlfkj ghlskdjf ghlkjsdfh gkljsdfh glkjsdfh gkljsdh fgkjlhds flkgjh sdlkfj ghslkdjf ghlksjdf glksjdfh glsjkdf gkljsdf hglkjsd fhglkjsdfh glksjdfh glskjdfh glkjsdfh glkjsdfh gkljsdfh glkjsdfh gkjlsd fhgkljsdh fklgjhs dflkjgh slkdfj ghskldjf ghslkdfjgh lskdjf ghlskdjfgh slkdjf ghlksdfjgh ',
+        text: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
         isanon: 0,
         votes: [],
         isacceptedanswer: false,
@@ -918,7 +918,6 @@ console.log("steps box as open: "+userStepsIsOpen)
   }
 
   setStepsBoxAsWasPrev = (wasOpenPrev) => {
-    console.log("setting usersteps box as: "+wasOpenPrev)
     this.setState({
       userStepsIsOpen: wasOpenPrev,
     })

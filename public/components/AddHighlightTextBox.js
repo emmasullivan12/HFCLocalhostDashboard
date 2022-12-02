@@ -1,4 +1,4 @@
-// Last merged this code on 2nd nov 2022 
+// Last merged this code on 2nd nov 2022
 
 import React, { Component } from "react";
 
@@ -431,9 +431,9 @@ class AddHighlightTextBox extends Component {
     if (h >= heightToCheck && !onMobile) {
       modal.style.overflowY = 'unset'
     }
-    if (isSafari == true) {
+  /*  if (isSafari == true) {
       modal.style.WebkitOverflowScrolling = 'unset'
-    }
+    } */
   }
 
   modalOverflowOn = () => {
@@ -442,7 +442,7 @@ class AddHighlightTextBox extends Component {
     const modal = document.getElementById(modalID)
     if (isSafari == true) {
       modal.style.overflowY = 'scroll'
-      modal.style.WebkitOverflowScrolling = 'touch'
+  //    modal.style.WebkitOverflowScrolling = 'touch'
     } else {
       modal.style.overflowY = 'auto'
     }
@@ -1107,9 +1107,14 @@ class AddHighlightTextBox extends Component {
             </div>
           </div>
           {text.length > 0 && (
-            <div className="descriptor-br addHighlight">
-              {text.length} / 2000
-            </div>
+            <React.Fragment>
+              <div className="descriptor-br addHighlight black marginBottom10 fontSize12">
+                <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
+              </div>
+              <div className="descriptor-br addHighlight">
+                {text.length} / 2000
+              </div>
+            </React.Fragment>
           )}
           <p className="footer-container textLeft" id="notAllowedTextAddHighlight"/>
           <div className={"fontSize14 textLeft" + (isAddAnswer == true ? " marginTop20" : " marginTop50")}>

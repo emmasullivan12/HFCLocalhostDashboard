@@ -173,8 +173,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .chatWindow-footer {
     background-color: #272727!important;
   }
-  .input-box-container:not(.addHighlight),
-  .input-box-container:not(.onFeed) {
+  .input-box-container:not(.onFeed, .addHighlight) {
     border: 1px solid #6d6d6d!important;
   }
   .input-box-container:not(.addHighlight):focus-within {
@@ -198,7 +197,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .msgInsights-bar-right {
     color: #797979!important;
   }
-  .input-box:not(.onFeed){
+  .input-box:not(.onFeed, .addHighlight){
     color: #b9b9b9!important;
   }
   .tooltip .tooltiptext {
@@ -489,7 +488,7 @@ table th .description{
   text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;
 }
 .black{
-  color: black;
+  color: black!important;
 }
 .brown{
   color: rosybrown;

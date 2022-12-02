@@ -46,6 +46,7 @@
   flex-direction: row;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
+  flex: 1 0 auto; /* to fix iphone bug */
   height: 80px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
