@@ -2089,6 +2089,9 @@ a.button{
   -moz-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);
   cursor: pointer;
 }
+.contentBox.withHover:focus{
+  background: #fbfbfb;
+}
 .bubbleContainer div:nth-child(5n+0){
   border: 1px solid #ad8105;
   color: #fff;

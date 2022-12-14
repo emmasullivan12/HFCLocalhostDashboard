@@ -111,6 +111,9 @@ class FileUploadContent extends Component {
             maxLength="5000"
             autoFocus
           />
+          <div className="descriptor-br addHighlight black marginBottom10 fontSize12">
+            <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
+          </div>
           <div className="descriptor-br form">
             {this.state.fileUploadDescription.length} / 2000 characters
           </div>
@@ -122,7 +125,7 @@ class FileUploadContent extends Component {
                 >
                   <Check />
                 </span>
-                Files Uploaded: 4
+                Files ready to send: 4
               </div>
               <div className="fileNames">
                 File name.xls

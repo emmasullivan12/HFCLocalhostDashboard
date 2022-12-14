@@ -30,6 +30,15 @@
   -moz-flex-wrap: wrap!important;
   flex-wrap: wrap!important;
 }
+#qaCloseBtn:hover{
+  color: #3f3f3f;
+}
+#qaCloseBtn:focus,
+#qaCloseBtn:focus-within,
+#qaCloseBtn:active{
+  color: #7e7ec9;
+  background: #f6f6f6;
+}
 .credentialSuperContainer{
   width: 250px;
 }

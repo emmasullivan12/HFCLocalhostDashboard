@@ -545,7 +545,7 @@ class QA extends Component {
             <div className="padding25 marginTop40">
             {/*  <MenuNav /> */}
               <Link to={prevURL ? prevURL : "/home"} onClick={updatePathName}>
-                <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14">
+                <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
                   <span className="dispInlineBlock"><X /></span>
                 {/*  <span><i className="fas fa-arrow-left"/></span> */}
                   <span> Close</span>
