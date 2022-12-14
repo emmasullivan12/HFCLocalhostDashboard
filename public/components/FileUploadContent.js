@@ -111,7 +111,7 @@ class FileUploadContent extends Component {
             maxLength="5000"
             autoFocus
           />
-          <div className="descriptor-br addHighlight black marginBottom10 fontSize12">
+          <div className="descriptor-br black marginTopMinus20 fontSize12">
             <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
           </div>
           <div className="descriptor-br form">

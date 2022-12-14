@@ -1,9 +1,9 @@
-// Dex last merged this code on 2nd nov 2022 
+// Dex last merged this code on 2nd nov 2022
 
 import React, { Component } from "react";
 
 import MenuNav from './MenuNav.js';
-import {checkMobile, X} from './GeneralFunctions.js';
+import {checkMobile, isiOS, X} from './GeneralFunctions.js';
 
 class FeedHeader extends Component {
   constructor(props) {
@@ -57,9 +57,10 @@ class FeedHeader extends Component {
     //const {text} = this.state;
     const {isUserSearch, searchText, resetSearch, handleSearchTextChange} = this.props;
     const isMobile = checkMobile()
+    const isIphone = isiOS()
 
     return (
-      <div className="feed-header" id="feedHeader">
+      <div className={"feed-header" + (isIphone == true ? " isIphone" : "")} id="feedHeader">
         <MenuNav />
         <div className="searchBox-header horizontallyCenter">
           <div className="input-box-container noMarginB onFeed">

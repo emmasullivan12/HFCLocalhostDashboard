@@ -299,7 +299,7 @@ class PrMessagesList extends Component {
         file: {
           id: '99999',
           name: 'Image uploaded from iOS',
-          title: 'Here is a pic of my office at lunchtime!',
+          title: 'Here *is* a _pic_ of my ~office~ at lunchtime!',
           uid: '23456',
           fileType: 'image/jpeg',
           imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'
