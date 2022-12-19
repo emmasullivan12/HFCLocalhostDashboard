@@ -13,6 +13,7 @@ import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal';
+import QAThreads from './QAThreads.js';
 import TextParser from './TextParser.js';
 import UserBadge from './UserBadge.js';
 import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSince} from './UserDetail.js';

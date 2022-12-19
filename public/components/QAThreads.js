@@ -3,14 +3,38 @@
 import React, { Component } from "react";
 
 import AddCommentModalContent from './AddCommentModalContent.js';
-import {LoadingSpinner} from './GeneralFunctions.js';
+import DeleteContentModalContent from './DeleteContentModalContent.js';
+import FullPageModal from './FullPageModal.js';
+import MenteeProfileContent from './MenteeProfileContent.js';
+import MentorProfileContent from './MentorProfileContent.js';
+import Modal from './Modal';
+import TextParser from './TextParser.js';
+import {LoadingSpinner, DateCalc, TimeCalc} from './GeneralFunctions.js';
 
+const MenteeProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentee Profile',
+  usedFor: 'mentee-profile-qaItem',
+  backBtn: 'arrow'
+}
+
+const MentorProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  usedFor: 'mentor-profile-qaItem',
+  backBtn: 'arrow'
+}
 
 const AddCommentModalProps = {
   ariaLabel: 'Add a comment',
   triggerText: 'Add a comment',
   usedFor: 'addComment',
 }
+
+const DeleteContentModalProps = {
+  ariaLabel: 'Confirm content deletion',
+  triggerText: 'Delete',
+  usedFor: 'deleteQ',
+}
+
 
 class QAThreads extends Component {
   constructor () {
@@ -21,6 +45,8 @@ class QAThreads extends Component {
   }
 
   componentDidMount() {
+    const {comments} = this.props
+
     comments.map((comment) => {
       return this.countVotes(comment.cid, comment.upvotes)
     });
@@ -55,6 +81,7 @@ class QAThreads extends Component {
   }
 
   render() {
+    const {isLoading} = this.state
     const {comments, originalPostAuthorID} = this.props
 
     let commentsSorted = comments && comments.sort((a, b) => {
@@ -106,7 +133,6 @@ class QAThreads extends Component {
                                 <span> - </span>
                                 {comment.authorinsttype != 'sch' && (
                                   <div className={isOriginalPostAuthor == true ? "multiple value paddingR" : ""}>
-                                  {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
                                     {comment.userroleofauthor == 'mentee' ? (
                                         <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
                                           <MenteeProfileContent />
@@ -148,7 +174,7 @@ class QAThreads extends Component {
               <Modal {...AddCommentModalProps}>
                 <AddCommentModalContent />
               </Modal>
-              <span> | </span>
+              <span> &#124;	</span>
               {comments.length > 5 && (
                 <div>Show {(comments.length - 5)} more {((comments.length - 5) > 1) ? 'comments' : 'comment'}</div>
               )}
