@@ -56,7 +56,8 @@
 .ModalOpenBtn-mentee-profile-qaItem,
 .ModalOpenBtn-mentor-profile-qaItem,
 .ModalOpenBtn-deleteContent,
-.ModalOpenBtn-deleteQ{
+.ModalOpenBtn-deleteQ,
+.ModalOpenBtn-addComment{
   background: none;
   border: 0;
   outline: none;
@@ -80,7 +81,8 @@
 .ModalOpenBtn-mentee-profile-qaItem:hover,
 .ModalOpenBtn-mentor-profile-qaItem:hover,
 .ModalOpenBtn-deleteContent:hover,
-.ModalOpenBtn-deleteQ:hover{
+.ModalOpenBtn-deleteQ:hover,
+.ModalOpenBtn-addComment:hover{
   background: none!important;
   color: inherit!important;
 }
@@ -93,7 +95,8 @@
 .ModalOpenBtn-mentee-profile-qaItem:active,
 .ModalOpenBtn-mentor-profile-qaItem:active,
 .ModalOpenBtn-deleteContent:active,
-.ModalOpenBtn-deleteQ:active{
+.ModalOpenBtn-deleteQ:active,
+.ModalOpenBtn-addComment:active{
   background: none;
 }
 .ModalOpenBtn-deleteContent{

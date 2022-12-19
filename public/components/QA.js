@@ -304,6 +304,14 @@ class QA extends Component {
       mentorseen: ['123','234','345','456'],
       menteeseen: ['123'],
       prseen: [],
+      comments: [
+        {cid: '1', text: 'comment 1', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '', datecreated: '234345345', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '2', text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '3', text: 'comment 3', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '4', text: 'comment 4', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '5', text: 'comment 5', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '6', text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
+      ],
       url: "what-best-wear-to-interview"
     //  reactions jsonb
     /*  seen: [
@@ -676,6 +684,7 @@ class QA extends Component {
                           </div>
                         </div>
                       </div>
+                      <QAThreads comments={qaItem.comments} originalPostAuthorID={qaItem.uid} />
                     </div>
                   </div>
                 </div>
