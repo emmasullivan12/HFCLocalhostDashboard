@@ -3,14 +3,18 @@
 import React, { Component } from "react";
 
 import MenuNav from './MenuNav.js';
-import {checkMobile, isiOS, X} from './GeneralFunctions.js';
+import {LoadingSpinner, checkMobile, isiOS, X} from './GeneralFunctions.js';
 
 class FeedHeader extends Component {
   constructor(props) {
     super(props);
-  /*  this.state = {
-      text: '',
-    }*/
+    this.state = {
+      showMenuBtn: false,
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(this.showMenuBtn, 2000);
   }
 
   /*handleMessageChange = (e) => {
@@ -28,6 +32,12 @@ class FeedHeader extends Component {
       text: ''
     })
   }*/
+
+  showMenuBtn = () => {
+    this.setState({
+      showMenuBtn: true
+    })
+  }
 
   onEnterPress = (e) => {
     var key = e.key || e.keyCode
@@ -56,12 +66,18 @@ class FeedHeader extends Component {
   render() {
     //const {text} = this.state;
     const {isUserSearch, searchText, resetSearch, handleSearchTextChange} = this.props;
+    const {showMenuBtn} = this.state;
     const isMobile = checkMobile()
     const isIphone = isiOS()
 
     return (
       <div className={"feed-header" + (isIphone == true ? " isIphone" : "")} id="feedHeader">
-        <MenuNav />
+        {showMenuBtn == true && (
+          <MenuNav />
+        )}
+        {showMenuBtn != true && isMobile == true && (
+          <LoadingSpinner />
+        )}
         <div className="searchBox-header horizontallyCenter">
           <div className="input-box-container noMarginB onFeed">
             <div className="input-flexContainer">
