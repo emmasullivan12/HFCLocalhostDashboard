@@ -28,7 +28,7 @@ class TextParser extends Component {
 
   render() {
     //let text = this.formatEmojis(this.props.text);
-    let text = this.props.text;
+    const {text, showInline} = this.props
     let parsed, regex, paragraphs;
 
     regex = {
@@ -87,6 +87,12 @@ class TextParser extends Component {
       const key = x++
       if (text == '') {
         return <br />
+      } else if (showInline == true) {
+        return (
+          <span className="textParser-container" key={key}>
+            { applyFormatting(text) }
+          </span>
+        )
       } else {
         return (
           <p className="textParser-container" key={key}>
@@ -96,9 +102,15 @@ class TextParser extends Component {
       }
     })
 
-    return (
-      <div>{paragraphs}</div>
-    )
+    if (showInline == true) {
+      return (
+        <span>{paragraphs}</span>
+      )
+    } else {
+      return (
+        <div>{paragraphs}</div>
+      )
+    }
   }
 }
 

@@ -355,6 +355,9 @@ table th .description{
   display: table-cell;
   vertical-align: middle;
 }
+.noBulletList{
+  list-style: none;
+}
 .smallFont{
   font-size: 14px!important;
 }
@@ -877,6 +880,9 @@ table th .description{
 .padding25{
   padding: 25px!important;
 }
+.paddingTop0{
+  padding-top: 0px!important;
+}
 .paddingTop{
   padding-top: 10px!important;
 }
@@ -885,6 +891,9 @@ table th .description{
 }
 .paddingBtm{
   padding-bottom: 10px;
+}
+.paddingBtm0{
+  padding-bottom: 0px!important;
 }
 .paddingBtm20{
   padding-bottom: 20px;
@@ -903,6 +912,9 @@ table th .description{
 }
 .paddingL{
   padding-left: 10px!important;
+}
+.paddingL2{
+  padding-left: 2px!important;
 }
 .paddingL20{
   padding-left: 20px!important;
@@ -1182,6 +1194,10 @@ table th .description{
 .borderBtm{
   border-bottom-style: solid!important;
   border-bottom-width: 1px!important;
+}
+.borderTop{
+  border-top-style: solid !important;
+  border-top-width: 1px!important;
 }
 .borderGrey{
   border-color: #e3e6e8!important;

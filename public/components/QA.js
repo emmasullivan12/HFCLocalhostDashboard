@@ -292,6 +292,7 @@ class QA extends Component {
       hashtags: ['23','20','1','2','0',],
       hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
       isanon: 0,
+      u18: 1,
       authorinst: '',
       authorinstfreetext: 'Villiers High School',
       authorrole: '',
@@ -306,12 +307,12 @@ class QA extends Component {
       menteeseen: ['123'],
       prseen: [],
       comments: [
-        {cid: '1', text: 'comment 1', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '', datecreated: '234345345', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '2', text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '3', text: 'comment 3', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '4', text: 'comment 4', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '5', text: 'comment 5', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '6', text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', Uid: '', datecreated: '234345345', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
+        {cid: '1', text: 'comment 1 what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '2', text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '3', text: 'comment 3 - this is such a ~great post~ i just love it', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '456', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '4', text: 'comment 4 in _italics_ mate what about - bullets or ', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '5', text: 'comment 5 \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah h', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-03T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '6', text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-01T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
       ],
       url: "what-best-wear-to-interview"
     //  reactions jsonb
@@ -650,7 +651,7 @@ class QA extends Component {
                       {/* </div> */}
                       <div className="credentialSuperContainer">
                         <div className="credentialPreviewContainer">
-                          <div className="textLeft greyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
+                          <div className="textLeft darkGreyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
                           <div className="gridContainer marginTop10">
                             <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
                               <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qaItem.fname} showAsCircle picSize={360}/>
@@ -685,8 +686,13 @@ class QA extends Component {
                           </div>
                         </div>
                       </div>
-                      <QAThreads comments={qaItem.comments} originalPostAuthorID={qaItem.uid} />
                     </div>
+                    <QAThreads
+                      comments={qaItem.comments}
+                      originalPostAuthorID={qaItem.uid}
+                      originalPostIsAnon={qaItem.isanon}
+                      isQ
+                    />
                   </div>
                 </div>
                 <br />
@@ -807,7 +813,7 @@ class QA extends Component {
                           </div>
                           <div className="credentialSuperContainer">
                             <div className="credentialPreviewContainer">
-                              <div className="textLeft greyText fontSize12">answered <DateCalc time={hid.datecreated} showPureDate /> at <TimeCalc time={hid.datecreated} /></div>
+                              <div className="textLeft darkGreyText fontSize12">answered <DateCalc time={hid.datecreated} showPureDate /> at <TimeCalc time={hid.datecreated} /></div>
                               <div className="gridContainer marginTop10">
                                 <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
                                   <Avatar userID={hid.uid} isAnon={hid.isanon} userName={hid.isanon ? 'Anonymous' : hid.fname} showAsCircle picSize={360}/>

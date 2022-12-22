@@ -82,10 +82,13 @@ class QAThreads extends Component {
 
   render() {
     const {isLoading} = this.state
-    const {comments, originalPostAuthorID} = this.props
+    const {comments, originalPostAuthorID, isQ, originalPostIsAnon} = this.props
+    const myID = '234'
+    const isPrUser = false
+    let isOriginalPostAuthor, aIsMe
 
     let commentsSorted = comments && comments.sort((a, b) => {
-      return new Date(b.lastupdated) - new Date(a.lastupdated);
+      return new Date(a.datecreated) - new Date(b.datecreated);
     });
 
     /*comments: [
@@ -99,78 +102,75 @@ class QAThreads extends Component {
             <LoadingSpinner />
           </div>
         ) : (
-          <div className="marginTop20 marginBottom20 qActionsContainer">
+          <ul className={"marginTop20 marginBottom20 borderTop borderGrey noBulletList noPaddingL" + (isQ == true ? "marginLeft20" : "")}>
             {commentsSorted.map((comment, i) => {
-              let isOriginalPostAuthor
-
               isOriginalPostAuthor = originalPostAuthorID == comment.uid
+              aIsMe = comment.uid == myID
 
               // Only show first 5 comments
               if (i < 5) {
                 return (
-                  <div key={comment.cid} id={comment.cid} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
-                    <div className="gridLeftColumn paddingR20">
-                      <div className="displayFlex flexDirColumn alignCenter">
-                        <div className={"fontSize28 marginBottom5 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                          <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(comment.cid)}>
-                            <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
-                              <path d="M2 25h32L18 9 2 25Z"/>
+                  <li key={comment.cid} id={comment.cid} className="gridContainer borderBtm borderGrey">
+                    <div className="commentActions">
+                      <div className="commentScore">
+                        {this.state[comment.cid+'-votes']}
+                      </div>
+                      {(aIsMe == false || isPrUser == true) && (
+                        <div className={"commentVoting fontSize28 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "lightGreyText")}>
+                          <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} aria-label="Upvote comment" title="Upvote this comment" onClick={() => this.toggleUpvote(comment.cid)}>
+                            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
+                              <path d="M1 12h16L9 4l-8 8Z"/>
                             </svg>
                           </button>
                         </div>
-                        {this.state[comment.cid+'-votes']}
+                      )}
+                      <div className="commentFlagging fontSize28 lightGreyText">
+                        <button type="button" className="button-unstyled" aria-label="Flag comment" title="Flag this comment for serious problems or moderator attention">
+                          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
+                            <path d="M3 2v14h2v-6h3.6l.4 1h6V3H9.5L9 2H3Z"/>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                    <div className="gridRightColumn">
-                      <div className="qDetailContainer marginBottom20">
-                        <TextParser text={comment.text} />
-                      </div>
-                      <div className="marginTop20 marginBottom20 qActionsContainer">
-                        <div className="credentialSuperContainer">
-                          <div className="credentialPreviewContainer">
-                            <div className="gridContainer marginTop10">
-                              <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                                <span> - </span>
-                                {comment.authorinsttype != 'sch' && (
-                                  <div className={isOriginalPostAuthor == true ? "multiple value paddingR" : ""}>
-                                    {comment.userroleofauthor == 'mentee' ? (
-                                        <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
-                                          <MenteeProfileContent />
-                                        </FullPageModal>
-                                        )
-                                      : (
-                                        <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
-                                          <MentorProfileContent />
-                                        </FullPageModal>
-                                      )
-                                    }
-                                  </div>
-                                )}
-                                {(comment.authorinsttype == 'sch') && (
-                                  <div>
-                                    <strong>{comment.fname}</strong>
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-                            <div className="textLeft greyText fontSize12"> <DateCalc time={comment.datecreated} showPureDate /> at <TimeCalc time={comment.datecreated} /></div>
-                            <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
-                              /* {aIsMe == 'isMe' && (
-                                <Modal {...DeleteContentModalProps}>
-                                  <DeleteContentModalContent />
-                                </Modal>
-                              )} */
-                              Delete
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="commentText fontSize14">
+                      <TextParser text={comment.text} showInline />
+                      <span className="fontSize12 paddingL2">
+                        <span> &#8212; </span>
+                        {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (
+                          <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+                            {comment.userroleofauthor == 'mentee' ? (
+                                <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                                  <MenteeProfileContent />
+                                </FullPageModal>
+                                )
+                              : (
+                                <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                                  <MentorProfileContent />
+                                </FullPageModal>
+                              )
+                            }
+                          </span>
+                        )}
+                        {((originalPostIsAnon == true && isOriginalPostAuthor == true) || comment.u18 == true) && (
+                          <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+                            <strong>{(originalPostIsAnon == true && isOriginalPostAuthor == true) ? "Anonymous" : comment.fname}</strong>
+                          </span>
+                        )}
+                        <span className="greyText fontSize12 paddingL2"> <DateCalc time={comment.datecreated} showPureDate /> at <TimeCalc time={comment.datecreated} /></span>
+                      </span>
+                      {(aIsMe == true || isPrUser == true) && (
+                        <span className="greyText fontSize12 paddingL">
+                          <Modal {...DeleteContentModalProps}>
+                            <DeleteContentModalContent />
+                          </Modal>
+                        </span>
+                      )}
                     </div>
-                  </div>
+                  </li>
                 )
               }
             })}
-            <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20"> */}
+            <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
               <Modal {...AddCommentModalProps}>
                 <AddCommentModalContent />
               </Modal>
@@ -180,7 +180,7 @@ class QAThreads extends Component {
               )}
             </div>
 
-          </div>
+          </ul>
         )}
       </React.Fragment>
     );

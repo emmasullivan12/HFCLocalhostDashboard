@@ -111,7 +111,7 @@ input[type="radio"]:checked + .credential-text {
   -o-border-radius: 10px;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f8;
+  background-color: #e1e1e1;
   margin-top: 25px;
   margin-bottom: 8px;
   padding: 16px;
