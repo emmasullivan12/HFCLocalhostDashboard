@@ -1,4 +1,4 @@
-// Dex last merged this code on 30th jan 2021
+// Dex last merged this code on 30th dec 2022
 
 import React, { Component } from "react";
 import { Emoji } from 'emoji-mart'
