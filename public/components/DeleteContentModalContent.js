@@ -24,7 +24,7 @@ class DeleteContentModalContent extends Component {
             Are you sure you want to delete this post?
           </div>
           <div className="request-btn-container">
-            <button type="button" className="Submit-btn" onClick={this.handleSubmit}>
+            <button type="button" className="Submit-btn" autoFocus onClick={this.handleSubmit}>
               Yes, Delete
             </button>
           </div>

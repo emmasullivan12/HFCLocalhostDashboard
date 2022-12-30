@@ -291,7 +291,7 @@ class QA extends Component {
       industriestopostto: ['2','19','1','3','4','5','6','7','8','9','10'],
       hashtags: ['23','20','1','2','0',],
       hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
-      isanon: 0,
+      isanon: 1,
       u18: 1,
       authorinst: '',
       authorinstfreetext: 'Villiers High School',
@@ -307,13 +307,13 @@ class QA extends Component {
       menteeseen: ['123'],
       prseen: [],
       comments: [
-        {cid: '1', text: 'comment 1 what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '2', text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '3', text: 'comment 3 - this is such a ~great post~ i just love it', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '456', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '4', text: 'comment 4 in _italics_ mate what about - bullets or ', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '5', text: 'comment 5 \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah h', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-03T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
-        {cid: '6', text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-01T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
-      ],
+/*        {cid: '1', u18: 1, text: 'comment 1 what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '2', u18: 0, text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '3', u18: 1, text: 'comment 3 - this is such a ~great post~ i just love it', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '456', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '4', u18: 0, text: 'comment 4 in _italics_ mate what about - bullets or ', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '5', u18: 1, text: 'comment 5 \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah h', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-03T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+        {cid: '6', u18: 0, text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-01T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
+  */    ],
       url: "what-best-wear-to-interview"
     //  reactions jsonb
     /*  seen: [
@@ -374,7 +374,11 @@ class QA extends Component {
           {fileid: '126', name: 'MyWorddocfilename.word', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'},
           {fileid: '127', name: 'MyPOWERPOINTBABY!', type: 'application/vnd-mspowerpoint'},
           {fileid: '128', name: 'My other doc format', type: 'other'}
-        ]
+        ],
+        comments: [
+          {cid: '1', u18: 1, text: 'comment 1 what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        ],
       },
       {
         hid: '1235',
@@ -401,10 +405,18 @@ class QA extends Component {
         hashtags: [],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         url: 'google.com/answer/#secondanswer',
+        comments: [
+          {cid: '1', u18: 1, text: 'comment 1 what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'comment 2', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '3', u18: 1, text: 'comment 3 - this is such a ~great post~ i just love it', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '456', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '4', u18: 0, text: 'comment 4 in _italics_ mate what about - bullets or ', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '5', u18: 1, text: 'comment 5 \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah h', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-03T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '6', u18: 0, text: 'comment 6', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-01T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''}
+        ],
       },
       {
         hid: '1236',
-        uid: '125',
+        uid: '1234',
         fname: 'Dexter',
         lname: 'Boyce',
         isPr: 1,
@@ -427,6 +439,8 @@ class QA extends Component {
         hashtags: ['123','20','2'],
         hashtagsfreetext: [],
         url: 'google.com/answer/#thirdanswer',
+        comments: [
+        ],
       }
     ]
     const acceptedAnswer = hidsArr.length > 0 && hidsArr.filter(hid => hid.isacceptedanswer == true)
@@ -691,7 +705,8 @@ class QA extends Component {
                       comments={qaItem.comments}
                       originalPostAuthorID={qaItem.uid}
                       originalPostIsAnon={qaItem.isanon}
-                      isQ
+                      originalPostID={qaItem.qid}
+                      type="q"
                     />
                   </div>
                 </div>
@@ -862,6 +877,13 @@ class QA extends Component {
                             </div>
                           </div>
                         </div>
+                        <QAThreads
+                          comments={hid.comments}
+                          originalPostAuthorID={hid.uid}
+                          originalPostIsAnon={hid.isanon}
+                          originalPostID={hid.hid}
+                          type="a"
+                        />
                       </div>
                     </div>
 

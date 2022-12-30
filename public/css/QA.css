@@ -87,6 +87,10 @@
 .commentFlagging:hover{
   color: #e22e48!important;
 }
+.commentFlaggingBtns {
+  font-size: 14px;
+  display: inline-block;
+}
 @-webkit-keyframes highlighted-post-fade {
   0% {
     background-color: rgb(207 207 255 / 45%);

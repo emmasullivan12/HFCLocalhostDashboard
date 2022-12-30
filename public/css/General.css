@@ -389,6 +389,9 @@ table th .description{
 .fontSize16{
   font-size: 16px;
 }
+.fontSize15{
+  font-size: 15px;
+}
 .fontSize14{
   font-size: 14px!important;
 }
@@ -853,6 +856,9 @@ table th .description{
 .marginRight {
   margin-right: 1rem;
 }
+.marginRight5{
+  margin-right: 5px;
+}
 .marginRight8 {
   margin-right: 8px;
 }
@@ -943,8 +949,14 @@ table th .description{
 .alignVrtl-middle{
   vertical-align: middle;
 }
+.displayNone{
+  display: none;
+}
 .displayFlex{
   display: flex!important;
+}
+.displayInlineFlex{
+  display: inline-flex;
 }
 .flexWrap{
   flex-wrap: wrap;
