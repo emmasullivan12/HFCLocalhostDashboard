@@ -1222,7 +1222,7 @@ class MenteeProfileContent extends Component {
                     </div>
                     <div>
                       <h2>
-                        {viewerCountry == 'GBR' ? 'School / College:' : 'High School'}
+                        {viewerCountry == 'GBR' ? 'School / College:' : 'High School:'}
                       </h2>
                       {schHistory.length == 0 && (
                         <div className="editSectionContainer">

@@ -16,10 +16,8 @@ ejs.renderFile(__dirname + "/emailTemplate-newCommentForCommentor.ejs", {type: t
       from:  'Prospela',
       to: email,
       subject:  'Someone replied to your comment on Prospela',
-      text: 'You have a reply to your comment on Prospela! \n\nSomeone replied to your comment on ' + (type == 'q' ? ('the question: ' + originalQText) : (type == 'a' ? ('an answer to the question: ' + originalQText) : 'a post')) + '" \n\nClick below to check out the comment, and be sure to reply or upvote if you\'re happy! \n\nSee Comment: ' + link + ' \n\nFrom The Team @ Prospela',
+      text: 'You have a reply to your comment on Prospela! \n\nSomeone replied to your comment on ' + (type == 'q' ? ('the question: "' + originalQText) : (type == 'a' ? ('an answer to the question: "' + originalQText) : 'a post')) + '" \n\nClick below to check out the comment, and be sure to reply or upvote if you\'re happy! \n\nSee Comment: ' + link + ' \n\nFrom The Team @ Prospela',
       html: data
     }
   }
 });
-
-originalQText
