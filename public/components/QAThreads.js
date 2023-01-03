@@ -102,9 +102,10 @@ class QAThreads extends Component {
 
   }
 
-  showFlagCommentModal = () => {
+  showFlagCommentModal = (cid) => {
     this.setState({
-      showFlagCommentModal: true
+      showFlagCommentModal: true,
+      commentIDToFlag: cid
     })
   }
 
@@ -144,7 +145,7 @@ class QAThreads extends Component {
 
   displayComment = (comment) => {
     const {originalPostAuthorID, originalPostIsAnon} = this.props
-    const {showFlagCommentModal} = this.state
+    const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
     const isPrUser = false
@@ -168,7 +169,7 @@ class QAThreads extends Component {
             </div>
           )}
           <div className="commentFlagging fontSize28 lightGreyText">
-            <button type="button" className="button-unstyled" aria-label="Flag comment" title="Flag this comment for serious problems or moderator attention" onClick={this.showFlagCommentModal}>
+            <button type="button" className="button-unstyled" aria-label="Flag comment" title="Flag this comment for serious problems or moderator attention" onClick={() => this.showFlagCommentModal(comment.cid)}>
               <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
                 <path d="M3 2v14h2v-6h3.6l.4 1h6V3H9.5L9 2H3Z"/>
               </svg>
@@ -211,7 +212,7 @@ class QAThreads extends Component {
         </div>
         {showFlagCommentModal == true && (
           <Modal {...FlagCommentModalProps} handleLocalStateOnClose={() => this.closeModal("FlagComment")}>
-            <FlagCommentModalContent cid={comment.cid}/>
+            <FlagCommentModalContent cid={commentIDToFlag}/>
           </Modal>
         )}
       </li>
