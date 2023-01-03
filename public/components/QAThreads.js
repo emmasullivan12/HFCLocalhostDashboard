@@ -43,7 +43,7 @@ const FlagCommentModalProps = {
   ariaLabel: 'Flag comment',
   triggerText: 'Flag comment',
   usedFor: 'flagComment',
-  hideTrigger: true,
+//  hideTrigger: true,
 }
 
 class QAThreads extends Component {
@@ -54,7 +54,7 @@ class QAThreads extends Component {
       showMoreComments: false,
       arrToShow: [],
       moreCommentsArr: [],
-      showFlagCommentModal: false
+    //  showFlagCommentModal: false
     }
   }
 
@@ -102,12 +102,12 @@ class QAThreads extends Component {
 
   }
 
-  showFlagCommentModal = (cid) => {
+/*  showFlagCommentModal = (cid) => {
     this.setState({
       showFlagCommentModal: true,
       commentIDToFlag: cid
     })
-  }
+  } */
 
   toggleUpvote = (postId) => {
     const currentState = this.state[postId+"-userUpvoted"];
@@ -145,7 +145,7 @@ class QAThreads extends Component {
 
   displayComment = (comment) => {
     const {originalPostAuthorID, originalPostIsAnon} = this.props
-    const {showFlagCommentModal, commentIDToFlag} = this.state
+  //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
     const isPrUser = false
@@ -169,11 +169,9 @@ class QAThreads extends Component {
             </div>
           )}
           <div className="commentFlagging fontSize28 lightGreyText">
-            <button type="button" className="button-unstyled" aria-label="Flag comment" title="Flag this comment for serious problems or moderator attention" onClick={() => this.showFlagCommentModal(comment.cid)}>
-              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
-                <path d="M3 2v14h2v-6h3.6l.4 1h6V3H9.5L9 2H3Z"/>
-              </svg>
-            </button>
+            <Modal {...FlagCommentModalProps}>
+              <FlagCommentModalContent cid={comment.cid}/>
+            </Modal>
           </div>
         </div>
         <div className="commentText fontSize14">
@@ -210,11 +208,11 @@ class QAThreads extends Component {
             </span>
           )}
         </div>
-        {showFlagCommentModal == true && (
+      {/*  {showFlagCommentModal == true && (
           <Modal {...FlagCommentModalProps} handleLocalStateOnClose={() => this.closeModal("FlagComment")}>
             <FlagCommentModalContent cid={commentIDToFlag}/>
           </Modal>
-        )}
+        )} */}
       </li>
     )
   }

@@ -85,6 +85,14 @@ function ButtonContent(props) {
           <i className="fas fa-pencil-alt" />
         </div>
       )
+    case 'flagComment':
+      return (
+        <div className="button-unstyled">
+          <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
+            <path d="M3 2v14h2v-6h3.6l.4 1h6V3H9.5L9 2H3Z"/>
+          </svg>
+        </div>
+      )
     case 'addEditRole':
     case 'addRoleDesc':
     case 'deleteRole':
