@@ -15,6 +15,19 @@
   }
 }
 
+.feedTopBanner{
+  top: 55px;
+  left: 50%;
+  right: unset;
+  z-index: 1001;
+  position: fixed;
+}
+@media screen and (max-width: 758px) {
+  .feedTopBanner{
+    transform: translateX(-52%);
+  }
+}
+
 .page-header {
   display: flex;
   display: -webkit-flex;

@@ -183,7 +183,9 @@ class HomePage extends Component {
       hideKeyNotifBox: false,
       numResults: 0,
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
-      userStepsWasOpenInFeed: this.props.userStepsWasOpenInFeed != null ? this.props.userStepsWasOpenInFeed : null
+      userStepsWasOpenInFeed: this.props.userStepsWasOpenInFeed != null ? this.props.userStepsWasOpenInFeed : null,
+      newPostsAbove: true,
+      newPostsBannerSeen: false
     }
   }
 
@@ -195,7 +197,6 @@ class HomePage extends Component {
 
     if (prevFeedScrollPos != 0) {
       const homepageContainer = document.getElementById("homepageContainer")
-      console.log(userStepsWasOpenInFeed)
       if (userStepsWasOpenInFeed != null) {
         this.setStepsBoxAsWasPrev(userStepsWasOpenInFeed)
       }
@@ -321,6 +322,33 @@ class HomePage extends Component {
     this.setState({
       windowWidth: w,
       userStepsIsOpen: sideBarIsShowing
+    })
+  }
+
+  hideNewPostsNotif = (e) => {
+    if (e != null) {
+      // If clicked 'x'
+      if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
+        this.markAsSeen();
+      }
+    }
+    this.setState({
+      newPostsAbove: false
+    })
+  }
+
+  loadNewPosts = (e) => {
+    // If user clicks on 'x' to close/ignore the button then do nothing
+    if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
+      return
+    } else {
+      console.log("Dex to load new posts")
+    }
+  }
+
+  markAsSeen = (hideNewMsgsBelowBtn) => {
+    this.setState({
+      newPostsBannerSeen: true
     })
   }
 
@@ -510,7 +538,6 @@ class HomePage extends Component {
     const {userStepsIsOpen} = this.state
     const {updateFeedScrollPos} = this.props
     const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
-console.log("steps box as open: "+userStepsIsOpen)
     updateFeedScrollPos(prevScrollPos, userStepsIsOpen)
   }
 
@@ -1251,7 +1278,7 @@ console.log("steps box as open: "+userStepsIsOpen)
   }
 
   render(){
-    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -1287,6 +1314,10 @@ console.log("steps box as open: "+userStepsIsOpen)
     const hasUnreadAnswers = true
     const hasFeedbackToComplete = true
     const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true || hasUnreadAnswers == true || hasFeedbackToComplete == true
+    const contentArr = [
+      {name: 'HELLO'},
+      {name: 'yO'}
+    ]
 
     if (usersGroups != null || usersGroups.length != 0) {
       usersGroups.forEach((group) => {
@@ -1314,6 +1345,18 @@ console.log("steps box as open: "+userStepsIsOpen)
           <FeedHeader handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
+            {contentArr.length > 0 && newPostsAbove == true && newPostsBannerSeen === false && (
+              <div className="feedTopBanner pointerCursor" id="newMsgsAboveBtn" onClick={(e) => this.loadNewPosts(e)}>
+                <div className="separator__text go2NewMsgs">
+                  <i className="fas fa-arrow-up" />
+                  <span>New posts above</span>
+                  <button type="button" className="close-chatAlert-container" aria-labelledby="Close Flex Container" onClick={(e) => this.hideNewPostsNotif(e)}>
+                    <span id="close-modal" className="u-hide-visually">Close</span>
+                    <svg className="menu-close-icon chatAlert" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="sideBar" role="complementary" aria-label="sidebar">
               {hasKeyNotif == true && hideKeyNotifBox == false && (
                 <div className="thickPurpleContentBox withBorderTop">
