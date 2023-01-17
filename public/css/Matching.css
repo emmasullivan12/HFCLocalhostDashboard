@@ -102,18 +102,30 @@
   overflow-x: auto;
 }
 #tobeMatched-table,
-#pendingMatches-table{
+#pendingMatches-table,
+#countriesMentor-table,
+#countriesMentee-table{
   width: 100%;
   position: relative;
   border-spacing: 0 15px;
   color: #969696;
 }
+#countriesMentor-table,
+#countriesMentee-table{
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 #tobeMatched-table tbody,
-#pendingMatches-table tbody {
+#pendingMatches-table tbody,
+#countriesMentor-table tbody,
+#countriesMentee-table tbody{
   font-size: 14px;
 }
 #tobeMatched-table th,
-#pendingMatches-table th {
+#pendingMatches-table th,
+#countriesMentor-table th,
+#countriesMentee-table th {
   color: #3f3f3f;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -121,6 +133,15 @@
   vertical-align: top;
   border-bottom: 1pt solid black;
   background-color: #f1f1ff;
+}
+
+#countriesMentor-table th{
+  background-color: #4e4ed6;
+  color: #fff;
+}
+#countriesMentee-table th{
+  background-color: #00b0f0;
+  color: #fff;
 }
 th.userToMatch-match{
   width: 80px;

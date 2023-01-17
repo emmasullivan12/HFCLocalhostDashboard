@@ -123,7 +123,7 @@ const hobbiesOptions = [
   {value: '112', label: 'Walking / Hiking'},
   {value: '113', label: 'Watching sport'},
   {value: '114', label: 'Web design'},
-  {value: '115', label: 'Weighlifting'},
+  {value: '115', label: 'Weightlifting'},
   {value: '123', label: 'Wine / Cocktails'},
   {value: '116', label: 'Writing'},
   {value: '117', label: 'Yoga / Pilates'},

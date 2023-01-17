@@ -427,6 +427,18 @@ function sortTable(n, sortType, tableId, callback) {
             shouldSwitch = true;
             break;
           }
+        } else if (sortType == 'number') {
+          // convert to Date format and compare
+          const xString = x.getElementsByTagName("i")[0].innerHTML
+          const yString = y.getElementsByTagName("i")[0].innerHTML
+          const xDate = xString
+          const yDate = yString
+
+          if (xDate > yDate) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
         } else if (sortType == 'date') {
           // convert to Date format and compare
           const xString = x.getElementsByTagName("i")[0].innerHTML
@@ -495,6 +507,18 @@ function sortTable(n, sortType, tableId, callback) {
           }
         } else if (sortType == 'alphabetically'){
           if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        } else if (sortType == 'number') {
+          // convert to Date format and compare
+          const xString = x.getElementsByTagName("i")[0].innerHTML
+          const yString = y.getElementsByTagName("i")[0].innerHTML
+          const xDate = xString
+          const yDate = yString
+
+          if (xDate > yDate) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
             break;

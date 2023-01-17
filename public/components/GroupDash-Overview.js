@@ -696,7 +696,7 @@ class GroupDashOverview extends Component {
   }
 
   render() {
-    const {isGeneralError, generalErrorMessage, ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, menteeRoleSplit6, menteeRoleSplit7, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, mentorRoleSplit6, mentorRoleSplit7, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded} = this.state;
+    const {isSortingMenteeTable, isSortingMentorTable, isGeneralError, generalErrorMessage, ourGBRDataMentees, ourGBRDataMentors, heardAboutFrom, menteeTopEdu, mentorTopCos, menteeTopRoles, mentorTopRoles, menteesByAge, mentorsByAge, menteeEthnicity, mentorEthnicity, mentorGender, menteeGender, menteeRoleSplit1, menteeRoleSplit2, menteeRoleSplit3, menteeRoleSplit4, menteeRoleSplit5, menteeRoleSplit6, menteeRoleSplit7, mentorRoleSplit1, mentorRoleSplit2, mentorRoleSplit3, mentorRoleSplit4, mentorRoleSplit5, mentorRoleSplit6, mentorRoleSplit7, menteesData, mentorsData, menteesTopRolesDemand, menteesTopRolesSupply, mentorsTopRolesDemand, mentorsTopRolesSupply, totalMembersLineChartLoaded, menteesWaitingBarChartLoaded, mentorsWaitingBarChartLoaded, menteesStackedBarChartLoaded, menteesGenderChartLoaded, menteesEthChartLoaded, mentorsStackedBarChartLoaded, mentorsGenderChartLoaded, mentorsEthChartLoaded, userAgeBarChartLoaded, menteeTopRolesStackedBarsLoaded, mentorTopRolesStackedBarsLoaded, menteeGBRMapLoaded, menteeUSAMapLoaded, menteeCANMapLoaded, menteeAUSMapLoaded, menteeNZLMapLoaded, mentorGBRMapLoaded, mentorUSAMapLoaded, mentorCANMapLoaded, mentorAUSMapLoaded, mentorNZLMapLoaded, menteeTopEduStackedBarsLoaded, mentorTopCosStackedBarsLoaded, wordCloudLoaded, } = this.state;
     const adminUser = {
       fname: 'Simon'
     }
@@ -859,6 +859,27 @@ class GroupDashOverview extends Component {
       ["AR", 32],
       ["AL", 0],
     ]
+    const mentorCountryArr = [
+      {label: "Netherlands", value: 5},
+      {label: "Germany", value: 25},
+      {label: "Spain", value: 15},
+      {label: "France", value: 1},
+      {label: "Italy", value: 2},
+      {label: "Belgium", value: 5},
+      {label: "Denmark", value: 35},
+      {label: "Sweden", value: 5},
+    ]
+    const menteeCountryArr = [
+      {label: "Netherlands", value: 5},
+      {label: "Germany", value: 25},
+      {label: "Spain", value: 15},
+      {label: "France", value: 1},
+      {label: "Italy", value: 2},
+      {label: "Belgium", value: 5},
+      {label: "Denmark", value: 35},
+      {label: "Sweden", value: 5},
+    ]
+
 
     /*const gbrDataMentees = [ // PO = our labels 'Brec' + 'Mont + 'Radn' and GD = our labels 'Caer' + 'Meri'
       ["AB", 100],["AG", 95],["AM", 90],["AN", 85],["AR", 80],["AS", 70],["AY", 65],["BA", 60],["BB", 55],["BD", 50],["BE", 40],["BF", 35],["BG", 30],["BH", 25],["BJ", 20],["BK", 15],["BL", 15],["BM", 20],["BN", 30],["BO", 35],["BS", 40],["BU", 45],["BW", 50],["BY", 55],["BZ", 60],["CA", 65],["CC", 70],["CE", 0],["CF", 5],["CH", 10],["CI", 15],["CK", 0],["CL", 5],["CM", 10],["CN", 15],["CO", 20],["CP", 25],["CR", 30],["CS", 35],["CU", 40],["CW", 45],["CY", 50],["DA", 55],["DB", 60],["DE", 65],["DG", 70],["DH", 75],["DI", 80],["DN", 85],["DEVO", 90],["DS", 100],["DU", 105],["DW", 110],["EA", 115],["EB", 120],["ED", 125],["EF", 135],["EG", 145],["EL", 150],["ER", 155],["SUSS", 160],["EX", 165],["EY", 170],["FE", 175],["FI", 180],["FK", 185],["FL", 190],["GC", 195],["GD", 200],["GG", 205],["GR", 210],["HA", 215],["HD", 220],["HE", 225],["HF", 230],["HI", 235],["HK", 240],["HL", 245],["HP", 250],["HR", 255],["HT", 260],["HU", 265],["HV", 270],["HY", 275],["IC", 280],["IT", 285],["IW", 295],["KC", 300],["KE", 305],["KH", 310],["KT", 315],["LA", 320],["LB", 330],["LC", 335],["LD", 340],["LI", 345],["LM", 350],["LR", 355],["LS", 0],["LT", 5],["LU", 10],["LW", 15],["MB", 20],["ME", 25],["MF", 30],["MK", 35],["ML", 40],["MM", 45],["MN", 52],["MO", 100],["MS", 110],["MT", 130],["MW", 135],["MY", 140],["NA", 145],["NB", 150],["ND", 155],["NE", 165],["NF", 170],["NG", 175],["NH", 180],["NL", 185],["NM", 190],["NN", 195],["NO", 200],["NP", 205],["NS", 210],["NT", 215],["NW", 220],["NY", 225],["OM", 230],["OX", 235],["PB", 240],["PE", 245],["PK", 0],["PO", 5],["PS", 10],["RB", 15],["RC", 20],["RF", 25],["RL", 30],["RT", 35],["RU", 40],["SA", 45],["SB", 50],["SF", 55],["SJ", 60],["SL", 65],["SM", 70],["SN", 75],["SO", 80],["SP", 85],["SQ", 90],["SR", 95],["SS", 100],["ST", 105],["SU", 110],["SW", 115],["SY", 120],["TB", 140],["TF", 145],["TH", 150],["TK", 155],["TR", 160],["TW", 165],["VG", 190],["WC", 195],["WD", 200],["WE", 205],["WF", 210],["WH", 215],["WI", 220],["WL", 225],["WM", 230],["WR", 265],["WS", 270],["WT", 275],["WW", 285],["WX", 290],["WY", 295],["XB", 320],["YK", 325],["ZG", 330],["ZH", 335],["ZT", 340],
@@ -1737,6 +1758,28 @@ class GroupDashOverview extends Component {
                 )}
               </div>
             )}
+            {menteeCountryArr && (
+              <div>
+                <table className="marginLeft20 marginRight20" id="countriesMentee-table">
+                  <thead>
+                    <tr>
+                      <th className="userToMatch-status" >Country</th>
+                      <th className="userToMatch-chats alignCenter">Mentees</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {menteeCountryArr.map((country) => {
+                      return (
+                        <tr key={country}>
+                          <td>{country.label}</td>
+                          <td className="alignCenter">{country.value}</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
           <div className="col-6 mainBox">
             <div className="dash-boxTitle absolute">
@@ -1827,6 +1870,28 @@ class GroupDashOverview extends Component {
                     hoverBorderColour="#bbbbff" // '#bbbbff' is light purple and "#95d9f3" is light blue
                   />
                 )}
+              </div>
+            )}
+            {mentorCountryArr && (
+              <div>
+                <table className="marginLeft20 marginRight20" id="countriesMentor-table">
+                  <thead>
+                    <tr>
+                      <th className="userToMatch-status" >Country</th>
+                      <th className="userToMatch-chats alignCenter" >Mentors</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {mentorCountryArr.map((country) => {
+                      return (
+                        <tr key={country}>
+                          <td>{country.label}</td>
+                          <td className="alignCenter">{country.value}</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
               </div>
             )}
           </div>
