@@ -1,8 +1,9 @@
-// Dex last merged this code on 2nd nov 2022 
+// Dex last merged this code on 2nd nov 2022
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import AddComment from './AddComment.js';
 import Avatar from './Avatar.js';
 import {usercdn, userImgsFolder} from './CDN.js';
 import {Check, DateCalc, TimeCalc, checkMobile} from './GeneralFunctions.js';
@@ -11,11 +12,21 @@ import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import Modal from './Modal.js';
+import PrAddMessage from "./PrAddMessage";
+import QAThreads from './QAThreads.js';
 import UserBadge from './UserBadge.js';
 import TextParser from './TextParser.js';
 import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText} from './UserDetail.js';
 
 import '../css/MyActivity.css';
+
+const GeneralPostModalProps = {
+  ariaLabel: 'View General Post',
+  triggerText: 'View General Post',
+  usedFor: 'GeneralPost',
+  hideTrigger: true,
+  changeInitFocus: true
+}
 
 const MenteeProfileUsrNameModalProps = {
   ariaLabel: 'View Mentee Profile',
@@ -41,6 +52,7 @@ class FeedItem extends Component {
     this.state = {
       isTextClamped: '',
       userUpvoted: '',
+      showGeneralPostModal: false,
     }
     this.textItemRef = React.createRef();
   }
@@ -54,6 +66,20 @@ class FeedItem extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.checkIfTextClamped);
+  }
+
+  showModal = (e, modalType) => {
+    if (e.target.dataset.label == 'ignoreOpenModal') {return}
+
+    this.setState({
+      ["show"+modalType+"Modal"]: true,
+    });
+  }
+
+  closeModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: false,
+    });
   }
 
   countVotes = (votes) => {
@@ -130,6 +156,8 @@ class FeedItem extends Component {
   handleSeeMore = (e, contentType) => {
     if (contentType != 'general') return
 
+    e.stopPropagation();
+
     e.currentTarget.previousSibling.classList.remove("max3Lines");
     e.currentTarget.innerHTML = '';
   }
@@ -162,7 +190,9 @@ class FeedItem extends Component {
 
   render() {
     const {contentType, post, userRole, isOnMyContentPage, updatePathName} = this.props
-    const {userUpvoted, votes} = this.state
+    const {userUpvoted, votes, showGeneralPostModal} = this.state
+
+    const isOffline = false;
 
     let indArrToShow, hashtagsCommaString, hashtagsArray
     let isProspelaTeam, verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, verifTypesArr, hasMinVerif
@@ -370,9 +400,19 @@ class FeedItem extends Component {
         hashtagsArray = hashtagsCommaString.length == 0 ? [] : hashtagsCommaString.split(', ')
       }
 
-      const FeedItemDetail = () => (
-        <div className="contentBox feedItem withHover padding20 positionRel" data-itemid={post.hid} data-itemtype={contentType}>
-          { isOnMyContentPage != true && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
+      const FixedBottomContent = () => (
+        <AddComment
+          showGeneralNotAllowedText
+          isInModal
+          isOffline={isOffline}
+          gid={post.hid}
+          type="g"
+        />
+      )
+
+      const FeedItemDetail = (props) => (
+        <div className={props.isInModal ? "textLeft" : "contentBox feedItem withHover padding20 positionRel" + (contentType == 'general' ? " paddingBtm0" : "")} data-itemid={post.hid} data-itemtype={contentType}>
+          { isOnMyContentPage != true && !props.isInModal && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
           { isOnMyContentPage == true && (
             <React.Fragment>
               <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
@@ -465,7 +505,7 @@ class FeedItem extends Component {
                 )}
               </div>
               {isTextClamped == true && (
-                <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
+                <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" data-label="ignoreOpenModal" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
                   See more...
                 </div>
               )}
@@ -570,7 +610,7 @@ class FeedItem extends Component {
                   )}
                 </React.Fragment>
               )}
-              <div className={"fontSize12 absolute displayFlex bottom15" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
+              <div className={"fontSize12 displayFlex bottom15" + (contentType != 'general' ? " absolute" : " relative top15") + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
                 <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
                   {userUpvoted == true && (
                     <i className="fas fa-thumbs-up"/>
@@ -582,8 +622,45 @@ class FeedItem extends Component {
                 <div className="fontSize14 marginLeft5 paddingTop2 noSelect">{votes && (votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))}</div>
               </div>
               <div>
-                <div className="marginTop10 textRight greyText fontSize13"><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
+                <div className={"textRight greyText fontSize13" + (contentType != 'general' ? " marginTop10" : "")}><DateCalc time={post.datecreated} showPureDate /> at <TimeCalc time={post.datecreated} /></div>
               </div>
+              {contentType == 'general' && (
+                <div className="marginTop10 paddingTop borderTop borderGrey">
+                  {!props.isInModal && (
+                    <React.Fragment>
+                      {post.postComments.length > 0 && (
+                        <div className="greyText fontSize14">View all {post.postComments.length} comments</div>
+                      )}
+                      <AddComment
+                        showGeneralNotAllowedText
+                        isInModal={false}
+                        isOffline={isOffline}
+                        gid={post.hid}
+                        type="g"
+                      />
+                    </React.Fragment>
+                  )}
+                  {props.isInModal && (
+                    <React.Fragment>
+                      <QAThreads
+                        comments={post.postComments}
+                        originalPostAuthorID={post.uid}
+                        originalPostIsAnon={post.isanon}
+                        originalPostID={post.hid}
+                        isInModal
+                        type="g"
+                      />
+                    {/*  <AddComment
+                        showGeneralNotAllowedText
+                        isInModal
+                        isOffline={isOffline}
+                        gid={post.hid}
+                        type="g"
+                      /> */}
+                    </React.Fragment>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -594,6 +671,21 @@ class FeedItem extends Component {
           <Link to={{pathname: "/questions/" + post.relatedqid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
             <FeedItemDetail />
           </Link>
+        )
+      } else if (contentType == 'general') {
+        return (
+          <React.Fragment>
+            <div className="link" onClick={(e) => this.showModal(e, 'GeneralPost')}>
+              <FeedItemDetail />
+            </div>
+            {showGeneralPostModal == true && (
+              <Modal {...GeneralPostModalProps} handleLocalStateOnClose={() => this.closeModal("GeneralPost")} fixedBottomContent={FixedBottomContent}>
+                <FeedItemDetail
+                  isInModal
+                />
+              </Modal>
+            )}
+          </React.Fragment>
         )
       } else {
         return (

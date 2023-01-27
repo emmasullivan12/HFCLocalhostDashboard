@@ -176,7 +176,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .input-box-container:not(.onFeed, .addHighlight) {
     border: 1px solid #6d6d6d!important;
   }
-  .input-box-container:not(.addHighlight):focus-within {
+  .input-box-container:not(.addHighlight):focus-within{
     box-shadow: 0 0 0 1.2px #8e8efd!important;
     -webkit-box-shadow: 0 0 0 1.2px #8e8efd!important;
     -moz-box-shadow: 0 0 0 1.2px #4e4ed6!important;
@@ -660,6 +660,9 @@ table th .description{
 .absolute{
   position: absolute!important;
 }
+.relative{
+  position: relative;
+}
 .button-unstyled {
   background: none;
   border: 0;
@@ -778,6 +781,9 @@ table th .description{
 .whiteSpace{
   white-space: initial;
 }
+.top15{
+  top: 15px;
+}
 .bottom15{
   bottom: 15px;
 }
@@ -837,6 +843,9 @@ table th .description{
 }
 .marginBottom5 {
   margin-bottom: 5px!important;
+}
+.marginBottomMinus5 {
+  margin-bottom: -5px;
 }
 .marginLeft{
   margin-left: 1rem;
@@ -1947,6 +1956,9 @@ a:active {
   color: #8f8fe5;
 }
 a.disabled{
+  pointer-events: none;
+}
+.noPointerEvents{
   pointer-events: none;
 }
 .legal-href{

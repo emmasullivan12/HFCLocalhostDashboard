@@ -34,9 +34,6 @@ function checkIsAdjacent(prevMsg, message) {
 }
 
 class PrMessagesList extends Component {
-  constructor (props) {
-    super(props);
-  }
 
   render() {
     const messages = [
@@ -677,7 +674,7 @@ class PrMessagesList extends Component {
 
     return (
       <React.Fragment>
-        <div className="messages-container" >
+        <div className="messages-container">
           {messages.map((message, index) => {
             const showDateHeader = (index===0 ? true : shouldShowDateHeader(prevMsg, message));
             const prospelaBotID = '8d91cd17-5858-4a52-acd8-5ebb8bc24199'

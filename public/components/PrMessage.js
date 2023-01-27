@@ -129,7 +129,7 @@ function StdMessage(props) {
         ? (
           <div className="message-container adjacent">
             <div className="messageGutter">
-              <div className="msg-sent-time adjacent">
+              <div className="msg-sent-time adjacent noSelect">
                 <TimeCalc time={props.message.ts} />
               </div>
             </div>
@@ -140,10 +140,10 @@ function StdMessage(props) {
               {showReactions && (
                 <EmojiReactions msgID={props.message.id} reactions={props.message.reactions}/>
               )}
-              <div className="msgStatus read">
+              <div className="msgStatus read noSelect">
                 &#10003; Seen
               </div>
-              <div className="msgStatus error">
+              <div className="msgStatus error noSelect">
                 &#10007; Error sending message. Please try again
               </div>
             </div>
@@ -164,7 +164,7 @@ function StdMessage(props) {
                 {props.isPM && (
                   <UserBadge badgeType='pm' />
                 )}
-                <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
+                <span className="msg-sent-time noSelect"><TimeCalc time={props.message.ts} /></span>
               </div>
               <div className="message-content">
                 <TextParser text={props.message.text}/>
@@ -172,10 +172,10 @@ function StdMessage(props) {
               {showReactions && (
                 <EmojiReactions msgID={props.message.id} reactions={props.message.reactions}/>
               )}
-              <div className="msgStatus read">
+              <div className="msgStatus read noSelect">
                 &#10003; Seen
               </div>
-              <div className="msgStatus error">
+              <div className="msgStatus error noSelect">
                 &#10007; Error sending message. Please try again
               </div>
             </div>

@@ -34,7 +34,10 @@ const ModalContent = ({
   title,
   usedFor,
   wider,
+  fixedBottomContent
 }) => {
+
+  console.log(fixedBottomContent)
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
       <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "") + (wider == true ? ' wider' : "")} ref={modalRef} id={'modal-' + usedFor}>
@@ -50,6 +53,11 @@ const ModalContent = ({
         <div className="modal-content" id="modal-content">
           {React.Children.map(content, child => React.cloneElement(child, {onClose, onKeyDown}))}
         </div>
+        {fixedBottomContent && (
+          <div className="fixedContent">
+            {fixedBottomContent}
+          </div>
+        )}
       </div>
     </aside>,
     document.body
@@ -179,8 +187,8 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider} = this.props;
-
+    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, fixedBottomContent} = this.props;
+console.log(fixedBottomContent)
     return (
       <React.Fragment>
         {hideTrigger != true && (
@@ -209,6 +217,7 @@ class Modal extends React.Component {
             title={title}
             usedFor={usedFor}
             wider={wider}
+            fixedBottomContent={fixedBottomContent}
           />
         )}
       </React.Fragment>

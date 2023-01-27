@@ -402,7 +402,7 @@ class PrAddMessage extends Component {
 
   render() {
     const {showEmojis, text} = this.state;
-    const {isOffline, incompleteFeedback} = this.props;
+    const {isOffline, incompleteFeedback, autoFocus} = this.props;
 
     return (
       <React.Fragment>
@@ -430,7 +430,7 @@ class PrAddMessage extends Component {
                     spellCheck="true"
                     maxLength="5000"
                     disabled={isOffline || incompleteFeedback}
-                    autoFocus
+                    autoFocus={autoFocus ? autoFocus : true}
                   />
           {  /*    <div className="highlight-container">
                   <div className="highlight-backdrop" id="notAllowedHighlightsBackdrop">

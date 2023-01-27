@@ -1,4 +1,4 @@
-// Dex last merged this code on 3rd jan 2023 
+// Dex last merged this code on 3rd jan 2023
 
 import React, { Component } from "react";
 
@@ -81,19 +81,24 @@ class QAThreads extends Component {
   }
 
   setCommentsArr = (comments) => {
+    const {isInModal, type} = this.props
 
-    let first5CommentsArr, moreCommentsArr
+    let first5CommentsArr, moreCommentsArr, arrToShow
 
     let commentsSorted = comments && comments.sort((a, b) => {
       return new Date(a.datecreated) - new Date(b.datecreated);
     });
 
-    first5CommentsArr = commentsSorted.splice(0,Math.min(5,commentsSorted.length))
-    moreCommentsArr = commentsSorted.splice(0,5)
+    if (type == 'g' && isInModal) {
+      arrToShow = commentsSorted
+    } else {
+      first5CommentsArr = commentsSorted.splice(0,Math.min(5,commentsSorted.length))
+      moreCommentsArr = commentsSorted.splice(0,5)
 
-    const showMoreComments = this.state.showMoreComments
+      const showMoreComments = this.state.showMoreComments
 
-    const arrToShow = showMoreComments == true ? first5CommentsArr.concat(moreCommentsArr) : first5CommentsArr;
+      arrToShow = (type == 'g' && isInModal) ? commentsSorted : (showMoreComments == true ? first5CommentsArr.concat(moreCommentsArr) : first5CommentsArr);
+    }
 
     this.setState({
       arrToShow: arrToShow,
@@ -144,7 +149,7 @@ class QAThreads extends Component {
   }
 
   displayComment = (comment) => {
-    const {originalPostAuthorID, originalPostIsAnon} = this.props
+    const {originalPostAuthorID, originalPostIsAnon, type, isInModal} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
@@ -154,7 +159,7 @@ class QAThreads extends Component {
     aIsMe = comment.uid == myID
 
     return (
-      <li key={comment.cid} id={comment.cid} className="gridContainer borderBtm borderGrey">
+      <li key={comment.cid} id={comment.cid} className={type != 'g' ? "gridContainer borderBtm borderGrey" : "gridContainer"}>
         <div className="commentActions">
           <div className="commentScore">
             {this.state[comment.cid+'-votes']}
@@ -175,11 +180,35 @@ class QAThreads extends Component {
           </div>
         </div>
         <div className="commentText fontSize14">
+    {/*      {(isOnFeed == true || (type == 'g' && isInModal)) && (
+            <span className="paddingR5">
+              {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (
+                <span className={isOriginalPostAuthor == true ? "onFeedOriginalAuthor fontSize14 multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+                  {comment.userroleofauthor == 'mentee' ? (
+                      <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                        <MenteeProfileContent />
+                      </FullPageModal>
+                      )
+                    : (
+                      <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                        <MentorProfileContent />
+                      </FullPageModal>
+                    )
+                  }
+                </span>
+              )}
+              {((originalPostIsAnon == true && isOriginalPostAuthor == true) || comment.u18 == true) && (
+                <span className={isOriginalPostAuthor == true ? "onFeedOriginalAuthor fontSize14 multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+                  <strong>{(originalPostIsAnon == true && isOriginalPostAuthor == true) ? "Anonymous" : comment.fname}</strong>
+                </span>
+              )}
+            </span>
+          )} */}
           <TextParser text={comment.text} showInline />
           <span className="fontSize12 paddingL2">
             <span> &#8212; </span>
             {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (
-              <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+              <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0 marginBottomMinus5" : ""}>
                 {comment.userroleofauthor == 'mentee' ? (
                     <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
                       <MenteeProfileContent />
@@ -194,7 +223,7 @@ class QAThreads extends Component {
               </span>
             )}
             {((originalPostIsAnon == true && isOriginalPostAuthor == true) || comment.u18 == true) && (
-              <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0" : ""}>
+              <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0 marginBottomMinus5" : ""}>
                 <strong>{(originalPostIsAnon == true && isOriginalPostAuthor == true) ? "Anonymous" : comment.fname}</strong>
               </span>
             )}
@@ -237,30 +266,31 @@ class QAThreads extends Component {
             <LoadingSpinner />
           </div>
         ) : (
-          <ul className={"marginTop20 marginBottom20 noBulletList" + (arrToShow.length == 0 ? " noPaddingL" : " borderTop borderGrey") + (type == 'a' ? " noPaddingL" : "")}>
+          <ul className={"marginTop20 marginBottom20 noBulletList" + (arrToShow.length == 0 ? " noPaddingL" : (type != 'g' ? " borderTop borderGrey" : "")) + ((type == 'a' || type == 'g') ? " noPaddingL" : "")}>
             {arrToShow && arrToShow.map((comment) => {
               return this.displayComment(comment)
             })}
-            <div className="purpleText fontSize12 paddingBtm20 marginTop5 displayInlineFlex">
-              <Modal {...AddCommentModalProps}>
-                <AddCommentModalContent
-                  type={type} //i.e. general/answer/question
-                  qid={type == 'q' ? originalPostID : null}
-                  hid={type == 'q' ? null : originalPostID}
-                  showAsAnon={originalPostIsAnon == true && isThisUserOriginalPostAuthor == true}
-                  userID={myID}
-                />
-              </Modal>
-              {(moreCommentsArr.length > 0 && showMoreComments != true) && (
-                <span className="fontSize12">
-                  <span className="marginLeft5 marginRight5 fontSize15"> &#124;	</span>
-                    <button type="button" aria-label="Show more comments" className="button-unstyled purpleText opacity1" onClick={this.showMoreComments}>
-                      Show {(moreCommentsArr.length)} more {((moreCommentsArr.length) > 1) ? 'comments' : 'comment'}
-                    </button>
-                </span>
-              )}
-            </div>
-
+            {type != 'g' && (
+              <div className="purpleText fontSize12 paddingBtm20 marginTop5 displayInlineFlex">
+                <Modal {...AddCommentModalProps}>
+                  <AddCommentModalContent
+                    type={type} //i.e. general/answer/question
+                    qid={type == 'q' ? originalPostID : null}
+                    hid={type == 'q' ? null : originalPostID}
+                    showAsAnon={originalPostIsAnon == true && isThisUserOriginalPostAuthor == true}
+                    userID={myID}
+                  />
+                </Modal>
+                {(moreCommentsArr.length > 0 && showMoreComments != true) && (
+                  <span className="fontSize12">
+                    <span className="marginLeft5 marginRight5 fontSize15"> &#124;	</span>
+                      <button type="button" aria-label="Show more comments" className="button-unstyled purpleText opacity1" onClick={this.showMoreComments}>
+                        Show {(moreCommentsArr.length)} more {((moreCommentsArr.length) > 1) ? 'comments' : 'comment'}
+                      </button>
+                  </span>
+                )}
+              </div>
+            )}
           </ul>
         )}
       </React.Fragment>

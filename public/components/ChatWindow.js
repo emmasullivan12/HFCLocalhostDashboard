@@ -69,6 +69,7 @@ class ChatWindow extends Component {
       newMsgsBelow: true,
       newMsgsAbove: true,
       observerIsOn: false,
+      highlightedText: ''
   //    ukUnisList: '',
   //    ukUnisListLoaded: false,
     //  prevIndexOfLatest: '',
@@ -221,6 +222,28 @@ class ChatWindow extends Component {
       return uniName;
     }
   }*/
+
+  handleHighlightText = (e) => {
+    console.log(e.target)
+
+    if (window.getSelection()) {
+      this.setState({
+        highlightedText: window.getSelection().toString()
+      }, () => {
+        console.log(this.state.highlightedText)
+      })
+    } else if (document.getSelection()) {
+      this.setState({
+        highlightedText: document.getSelection().toString()
+      })
+    } else if (document.selection) {
+      this.setState({
+        highlightedText: document.selection.createRange().text
+      })
+    }
+
+    // Then show action button (askQ icon / bookmark icon / twitter icon)
+  }
 
   handleUnreads = () => {
     const {observerIsOn} = this.state;
@@ -662,7 +685,7 @@ class ChatWindow extends Component {
                 </div>
               </div>
             )}
-            <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
+            <div id="drop-zone" className="messages-panel" ref={this.scrollRef} onMouseUp={(e) => this.handleHighlightText(e)} onScroll={onScroll} onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
               <PrMessagesList
                 handleLastPic={this.handleLastPic}
                 isGroup={isGroup}

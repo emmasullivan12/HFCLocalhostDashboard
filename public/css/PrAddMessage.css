@@ -60,7 +60,9 @@
   border: unset;
   padding: 10px 0px;
 }
-
+.input-box-container.isGeneralOnFeed{
+  background: #f1f1ff;
+}
 .input-box-container.offline{
   background: #f2f2f2;
 }
@@ -106,6 +108,9 @@
   overflow-y: hidden;
   vertical-align: middle;
 }
+.input-box.isAddComment{
+  padding-right: 38px;
+}
 .input-box.addHighlight{
   padding-right: 0px;
 }
@@ -143,12 +148,35 @@
 .input-box::-ms-input-placeholder{
   color: #a3a1a1;
 }
+/*
+.input-box.isAddComment::placeholder{
+  color: #4e4ed6;
+  opacity: 1; /* Firefox */
+/*}
+.input-box.isAddComment::-webkit-input-placeholder{
+  color: #4e4ed6;
+}
+.input-box.isAddComment:-moz-input-placeholder{
+  color: #4e4ed6;
+}
+.input-box.isAddComment::-moz-input-placeholder{
+  color: #4e4ed6;
+}
+.input-box.isAddComment:-ms-input-placeholder{
+  color: #4e4ed6;
+}
+.input-box.isAddComment::-ms-input-placeholder{
+  color: #4e4ed6;
+}*/
+
+.notAllowedText,
 #notAllowedText,
 #notAllowedTextAddHighlight{
   display: none;
   color: #b71049;
   font-size: .8rem;
 }
+.txtInput-box,
 #txtInput-box{
   background-color: transparent;
 }
@@ -273,7 +301,18 @@ mark {
   -ms-transition: all 50ms ease-out 0s;
   -o-transition: all 50ms ease-out 0s;
 }
-
+.emojiContainer.isAddComment{
+  bottom: 28px;
+  right: 58px;
+}
+.sendMsgContainer.isAddComment{
+  bottom: 28px;
+  right: 22px;
+}
+.emojiContainer.isAddComment.isInModal,
+.sendMsgContainer.isAddComment.isInModal{
+  bottom: 62px;
+}
 .highlightEmojiContainer{
   margin-left: unset;
   position: unset;
