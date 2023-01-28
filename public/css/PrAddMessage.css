@@ -60,7 +60,8 @@
   border: unset;
   padding: 10px 0px;
 }
-.input-box-container.isGeneralOnFeed{
+.input-box-container.isGeneralOnFeed,
+.input-box-container.isGeneralInModal{
   background: #f1f1ff;
 }
 .input-box-container.offline{
@@ -309,9 +310,13 @@ mark {
   bottom: 28px;
   right: 22px;
 }
-.emojiContainer.isAddComment.isInModal,
+.emojiContainer.isAddComment.isInModal{
+  bottom: 38px;
+  right: 68px;
+}
 .sendMsgContainer.isAddComment.isInModal{
-  bottom: 62px;
+  bottom: 38px;
+  right: 32px;
 }
 .highlightEmojiContainer{
   margin-left: unset;

@@ -34,13 +34,11 @@ const ModalContent = ({
   title,
   usedFor,
   wider,
-  fixedBottomContent
+  FixedBottomContent
 }) => {
-
-  console.log(fixedBottomContent)
   return ReactDOM.createPortal(
     <aside className="modal-overlay" role='dialog' aria-label={ariaLabel} aria-modal="true" tabIndex="-1" onKeyDown={onKeyDown} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "") + (wider == true ? ' wider' : "")} ref={modalRef} id={'modal-' + usedFor}>
+      <div className={"modal-container" + (removeOverflowY == true ? ' removeOverflowY' : "") + (wider == true ? ' wider' : "") + (FixedBottomContent ? ' hasFixedBottomContent' : "")} ref={modalRef} id={'modal-' + usedFor}>
         <div className="modal-header">
           <div className="modal-title">
             {title}
@@ -50,12 +48,12 @@ const ModalContent = ({
             <svg className="modal-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
           </button>
         </div>
-        <div className="modal-content" id="modal-content">
+        <div className={"modal-content" + (FixedBottomContent ? ' hasFixedBottomContent' : "")} id="modal-content">
           {React.Children.map(content, child => React.cloneElement(child, {onClose, onKeyDown}))}
         </div>
-        {fixedBottomContent && (
+        {FixedBottomContent && (
           <div className="fixedContent">
-            {fixedBottomContent}
+            <FixedBottomContent />
           </div>
         )}
       </div>
@@ -187,8 +185,8 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, fixedBottomContent} = this.props;
-console.log(fixedBottomContent)
+    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent} = this.props;
+
     return (
       <React.Fragment>
         {hideTrigger != true && (
@@ -217,7 +215,7 @@ console.log(fixedBottomContent)
             title={title}
             usedFor={usedFor}
             wider={wider}
-            fixedBottomContent={fixedBottomContent}
+            FixedBottomContent={FixedBottomContent}
           />
         )}
       </React.Fragment>

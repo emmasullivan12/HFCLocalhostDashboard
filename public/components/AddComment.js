@@ -255,7 +255,7 @@ class AddComment extends Component {
     return (
       <React.Fragment>
         <div id={"new-message-"+gid+(isInModal ? "-isInModal" : "")} className="chatWindow-footer marginTop20">
-          <div className={"input-box-container" + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + (isOffline ? " offline" : "")}>
+          <div className={"input-box-container" + ((type == 'g' && isInModal) ? " isGeneralInModal" : "") + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + (isOffline ? " offline" : "")}>
             <div className="input-flexContainer">
               <form className="textInput-container" id={"addCommentForm-"+gid+(isInModal ? "-isInModal" : "")}>
                 <p className="notAllowedText" id={"notAllowedText-"+gid+(isInModal ? "-isInModal" : "")}/>

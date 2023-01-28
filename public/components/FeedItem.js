@@ -679,7 +679,7 @@ class FeedItem extends Component {
               <FeedItemDetail />
             </div>
             {showGeneralPostModal == true && (
-              <Modal {...GeneralPostModalProps} handleLocalStateOnClose={() => this.closeModal("GeneralPost")} fixedBottomContent={FixedBottomContent}>
+              <Modal {...GeneralPostModalProps} handleLocalStateOnClose={() => this.closeModal("GeneralPost")} FixedBottomContent={FixedBottomContent}>
                 <FeedItemDetail
                   isInModal
                 />

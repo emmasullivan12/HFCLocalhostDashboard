@@ -821,6 +821,20 @@
   overflow-y: visible;
   overflow-y: unset;
 }
+.modal-container.hasFixedBottomContent{
+  overflow: hidden;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  padding: 1em 2em 1em 2em;
+}
 .fullpage-modal-container {
   position: fixed;
   top: 0;
@@ -1049,6 +1063,12 @@
   padding-top: 1.5em;
   margin-bottom: 1rem;
   text-align: center
+}
+.modal-content.hasFixedBottomContent{
+  overflow-y: auto;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
 }
 .fpModal-content{
   padding-top: 1.5em;
