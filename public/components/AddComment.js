@@ -1,4 +1,4 @@
-// Dex last merged this code on 28th jan 2023
+// Dex last merged this code on 31st jan 2023
 
 import React, { Component } from "react";
 import "../css/PrAddMessage.css";
@@ -62,6 +62,7 @@ class AddComment extends Component {
   handleMessageChange = (e) => {
     let value = e.target.value;
     this.messageChange(value)
+    console.log("value: "+value)
   }
 
   messageChange = (value, hardReset) => {

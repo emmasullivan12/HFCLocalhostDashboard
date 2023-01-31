@@ -1,4 +1,4 @@
-// Dex last merged this code on 28th jan 2023
+// Dex last merged this code on 31st jan 2023
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -163,8 +163,6 @@ class FeedItem extends Component {
   }
 
   toggleUpvote = (e, postId) => {
-    console.log(e.target)
-    console.log(e.currentTarget)
     const {isOnMyContentPage, contentType} = this.props
     e.preventDefault()
 
@@ -642,7 +640,7 @@ class FeedItem extends Component {
                       />
                     </React.Fragment>
                   )}
-                  {props.isInModal && (
+                  {props.isInModal && post.postComments.length > 0 && (
                     <React.Fragment>
                       <QAThreads
                         comments={post.postComments}

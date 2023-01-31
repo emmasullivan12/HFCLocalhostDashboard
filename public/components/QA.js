@@ -1,4 +1,4 @@
-// Dex last merged this code on 30th dec 022
+// Dex last merged this code on 31st jan 2023
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -586,7 +586,7 @@ class QA extends Component {
                     )}
                     {userRole == 'mentor' && (
                       <Modal {...AddAnswerModalProps}>
-                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer/>
+                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                       </Modal>
                     )}
                   </span>
