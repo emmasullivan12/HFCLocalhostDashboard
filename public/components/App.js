@@ -440,7 +440,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

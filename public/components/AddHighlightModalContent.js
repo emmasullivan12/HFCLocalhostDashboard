@@ -29,7 +29,7 @@ class AddHighlightModalContent extends Component {
 
   render() {
     const { highlightType, text, showEmojis, errorLoadingHashtags } = this.state;
-    const {modalID, userRole, isAddAnswer, isAddGeneral, updatePathName} = this.props
+    const {modalID, userRole, isAddAnswer, isAddGeneral, updatePathName, qToAnswer} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
     if(userRole == 'mentor' && highlightType == '' && isAddAnswer != true && isAddGeneral != true) {
@@ -90,6 +90,7 @@ class AddHighlightModalContent extends Component {
           isMenteeQ={userRole == 'mentor' ? false : true}
           isAddAnswer={isAddAnswer}
           isAddGeneral={isAddGeneral}
+          qToAnswer={qToAnswer}
         />
       )
     }

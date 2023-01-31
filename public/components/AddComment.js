@@ -5,7 +5,7 @@ import "../css/PrAddMessage.css";
 import 'emoji-mart/css/emoji-mart.css'
 import { NimblePicker } from 'emoji-mart'
 import data from 'emoji-mart/data/emojione.json'
-import {checkMobile} from './GeneralFunctions.js';
+import {LoadingSpinner, checkMobile} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 
 
@@ -216,7 +216,6 @@ class AddComment extends Component {
       text: ''
     }, () => {
       // Hide the bold/italics/highlight key
-      var msgInsights = document.getElementById('msgInsights-bar-right-'+this.props.gid+(isInModal ? "-isInModal" : ""));
       msgInsights.classList.remove("show");
 
       // Hide the character counter
@@ -255,6 +254,7 @@ class AddComment extends Component {
     return (
       <React.Fragment>
         <div id={"new-message-"+gid+(isInModal ? "-isInModal" : "")} className="chatWindow-footer marginTop20">
+          <div className="redText"> Hmmm, looks like something went wrong. Please refresh the page and try again. </div>
           <div className={"input-box-container" + ((type == 'g' && isInModal) ? " isGeneralInModal" : "") + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + (isOffline ? " offline" : "")}>
             <div className="input-flexContainer">
               <form className="textInput-container" id={"addCommentForm-"+gid+(isInModal ? "-isInModal" : "")}>

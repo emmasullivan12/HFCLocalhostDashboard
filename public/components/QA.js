@@ -902,7 +902,7 @@ class QA extends Component {
                     <div>
                       <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}</div>
                       <Modal {...AddAnswerModalProps}>
-                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer/>
+                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                       </Modal>
                     </div>
                   )}

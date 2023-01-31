@@ -69,7 +69,7 @@ class FeedItem extends Component {
   }
 
   showModal = (e, modalType) => {
-    if (e.target.dataset.label == 'ignoreOpenModal') {return}
+    if (e.target.dataset.label == 'ignoreOpenModal' || e.currentTarget.dataset.label == 'ignoreOpenModal') {return}
 
     this.setState({
       ["show"+modalType+"Modal"]: true,
@@ -163,6 +163,8 @@ class FeedItem extends Component {
   }
 
   toggleUpvote = (e, postId) => {
+    console.log(e.target)
+    console.log(e.currentTarget)
     const {isOnMyContentPage, contentType} = this.props
     e.preventDefault()
 
@@ -610,13 +612,13 @@ class FeedItem extends Component {
                   )}
                 </React.Fragment>
               )}
-              <div className={"fontSize12 displayFlex bottom15" + (contentType != 'general' ? " absolute" : " relative top15") + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
-                <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
+              <div className={"fontSize12 displayFlex bottom15 width25px" + (contentType != 'general' ? " absolute" : " relative top15") + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
+                <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")} data-label="ignoreOpenModal">
                   {userUpvoted == true && (
-                    <i className="fas fa-thumbs-up"/>
+                    <i className="fas fa-thumbs-up" data-label="ignoreOpenModal"/>
                   )}
                   {userUpvoted != true && (
-                    <i className="far fa-thumbs-up"/>
+                    <i className="far fa-thumbs-up" data-label="ignoreOpenModal"/>
                   )}
                 </button>
                 <div className="fontSize14 marginLeft5 paddingTop2 noSelect">{votes && (votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))}</div>

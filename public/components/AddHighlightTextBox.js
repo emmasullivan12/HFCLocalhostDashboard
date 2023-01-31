@@ -831,7 +831,7 @@ class AddHighlightTextBox extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
-    const {isMenteeQ, isAddAnswer, isAddGeneral} = this.props
+    const {isMenteeQ, isAddAnswer, isAddGeneral, qToAnswer} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -887,7 +887,7 @@ class AddHighlightTextBox extends Component {
           )}
           {isAddAnswer == true && (
             <div className="modal-title">
-              Add your answer
+              Add your answer {qToAnswer ? ('to: ' + <span className="modal-subtitle highlight-titleText">{qToAnswer}</span>) : ""}
             </div>
           )}
           {isAddGeneral == true && (
