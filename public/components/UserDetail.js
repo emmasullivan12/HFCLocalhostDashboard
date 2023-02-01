@@ -47,16 +47,16 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   }
 }
 
-function getCredText(authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
+function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
 //  const {ukSchsList, ukUnisList} = this.props;
   if (authorinsttype == 'job') {
-    return authorroleishidden != true ? (authorrole + ' at ' + authorinstfreetext) : (authorinstfreetext)
+    return authorroleishidden != true ? ((wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Worked as ") + authorinstfreetext)
   } else if (authorinsttype == 'train') {
-    return (authortraining != '' ? (authortraining + ' at ' + authorinstfreetext) : (authorinstfreetext))
+    return (authortraining != '' ? ((wasDefaultRole == true ? "" : "Trained as ") + authortraining + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Trained at ") + authorinstfreetext))
   } else if (authorinsttype == 'uni') {
   //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
     const uniInst = authorinst ? authorinst : authorinstfreetext
-    return authordegree + ' at ' + uniInst
+    return (wasDefaultRole == true ? "" : "Studied ") + authordegree + ' at ' + uniInst
   } else if (authorinsttype == 'sch') {
   //  const schInst = authorinst ? (grabSchOrUni('sch', authorinst, ukSchsList)) : authorinstfreetext
   //  const schInst = authorinst ? authorinst : authorinstfreetext

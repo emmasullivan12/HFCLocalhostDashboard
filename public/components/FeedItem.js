@@ -392,7 +392,7 @@ class FeedItem extends Component {
       );
     } else if (contentType == 'answer' || contentType == 'general') {
       const {isTextClamped} = this.state
-      const aCredentialText = getCredText(post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
+      const aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
       const error = false
 
       if (contentType == 'general') {

@@ -244,6 +244,7 @@ class AddHighlightTextBox extends Component {
 
     e.target.closest(".credential-item").style.backgroundColor = "#f2f2f2"
 
+    var wasDefaultRole = e.target.dataset.defaultChecked
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state
     var authorCountry = e.target.dataset.country
@@ -266,6 +267,7 @@ class AddHighlightTextBox extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: credentialTextToUse,
+        wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
@@ -284,6 +286,7 @@ class AddHighlightTextBox extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Trained at ' + authorInstFreeText,
+        wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
@@ -305,6 +308,7 @@ class AddHighlightTextBox extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Studied ' + authorDegree + ' at ' + authorInst,
+        wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
@@ -325,6 +329,7 @@ class AddHighlightTextBox extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Studied at ' + authorInst,
+        wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
@@ -342,6 +347,7 @@ class AddHighlightTextBox extends Component {
         authorState: authorState,
         authorCountry: authorCountry,
         credentialText: 'Lives in ' + authorState + ', ' + authorCountry,
+        wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
       //  credentialChecked: credentialChecked,
@@ -546,7 +552,7 @@ class AddHighlightTextBox extends Component {
   }
 
   handleSubmit = () => {
-    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstNum, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo, isPrUser, addCustomCredentials} = this.state
+    const {hashtagsFromList, freeTextHashtags, endingHashtagsArr, authorType, authorInst, authorInstNum, authorInstFreeText, authorRole, authorIsMainRole, authorDegree, authorTraining, authorState, authorCountry, industriesToPostTo, isPrUser, addCustomCredentials, wasDefaultRole} = this.state
     this.setState({
       postSuccess: true
     })

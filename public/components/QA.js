@@ -509,7 +509,7 @@ class QA extends Component {
       metaAdder('property="og:description"', qaItem.textdetail)
     }
 
-    const credentialText = getCredText(qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
+    const credentialText = getCredText((qaItem.wasDefaultRole ? qaItem.wasDefaultRole : null), qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
     let activeDatesArr = []
 
     if (qaItem) {
@@ -748,7 +748,7 @@ class QA extends Component {
 
                   aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
                   aAuthorinsttype = hid.authorinsttype
-                  aCredentialText = getCredText(hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
+                  aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
 
                   return (
                     <div key={hid.hid} id={hashURL} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
