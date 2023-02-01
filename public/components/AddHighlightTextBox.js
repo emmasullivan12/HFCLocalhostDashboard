@@ -244,7 +244,7 @@ class AddHighlightTextBox extends Component {
 
     e.target.closest(".credential-item").style.backgroundColor = "#f2f2f2"
 
-    var wasDefaultRole = e.target.dataset.defaultChecked
+    var wasDefaultRole = e.target.dataset.wasdefaultrole // Don't need it if user doesn't click "edit credential" because would have been the default i.e. save wasDefaultRole as true
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state
     var authorCountry = e.target.dataset.country
@@ -1648,7 +1648,7 @@ class AddHighlightTextBox extends Component {
                     {latestRole && (
                       <div className="credential-item">
                         <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
-                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-instfreetext={latestRole[0].co} defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-instfreetext={latestRole[0].co} data-wasdefaultrole defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                           <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
                           <span className="radioCheckmark"/>
                         </label>
@@ -1666,7 +1666,7 @@ class AddHighlightTextBox extends Component {
                       return (
                         <div className="credential-item" key={roleName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
-                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-instfreetext={roleCo} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInstFreeText == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-instfreetext={roleCo} data-wasdefaultrole={false} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInstFreeText == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">Worked at {roleCo} as {roleName}</span>
                             <span className="radioCheckmark"/>
                           </label>
@@ -1678,7 +1678,7 @@ class AddHighlightTextBox extends Component {
                 {currTraining && currTraining != '' && (
                   <div className="credential-item">
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"train-"+currTrainingProvider+currTraining}>
-                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-instfreetext={currTrainingProvider} defaultChecked={authorType == '' ? (latestRole ? false : true) : (authorType == 'train' && authorTraining == currTraining && authorInstFreeText == currTrainingProvider)} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <input type="radio" id={"train-"+currTrainingProvider+currTraining} data-authortype="train" data-state={stateProv} data-country={country} data-training={currTraining} data-instfreetext={currTrainingProvider} data-wasdefaultrole={(roleHistory == null || (roleHistory && roleHistory.length < 1))} defaultChecked={authorType == '' ? (latestRole ? false : true) : (authorType == 'train' && authorTraining == currTraining && authorInstFreeText == currTrainingProvider)} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Trained at {currTrainingProvider}</span>
                       <span className="radioCheckmark"/>
                     </label>
@@ -1698,14 +1698,15 @@ class AddHighlightTextBox extends Component {
                       {/*const uniInstName = (uni.uniname) ? (this.grabSchOrUni('uni', uni.uniname)) : (uni.uninamefreetext)*/}
                       const uniInstName = (uni.uniname) ? (uni.uniname) : (uni.uninamefreetext)
                       let degree = uni.degree;
+                      let isDefaultUni = ((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && index == 0)
                       return (
                         <div className="credential-item" key={degree}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"uni-"+uniInstName+degree}>
-                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-instnum={uni.uniname ? uni.uniname : ''} data-inst={uni.uniname ? uniInstName : ''} data-instfreetext={uni.uniname ? '' : uniInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && (authorInst == uniInstName || authorInstFreeText == uniInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"uni-"+uniInstName+degree} data-authortype="uni" data-state={stateProv} data-country={country} data-degree={degree} data-instnum={uni.uniname ? uni.uniname : ''} data-inst={uni.uniname ? uniInstName : ''} data-instfreetext={uni.uniname ? '' : uniInstName} data-wasdefaultrole={isDefaultUni} defaultChecked={authorType == '' ? ((latestRole || currTraining || index != 0) ? false : true) : (authorType == 'uni' && authorDegree == degree && (authorInst == uniInstName || authorInstFreeText == uniInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{uni.unigraduyr <= currYr ? 'Studied' : 'Studying'} {degree} at {uniInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
-                          {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && index == 0) && (
+                          {isDefaultUni == true && (
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
@@ -1723,14 +1724,15 @@ class AddHighlightTextBox extends Component {
                     {sortedSchs && sortedSchs.map((sch, index) => {
                       {/*const schInstName = (sch.schname) ? (this.grabSchOrUni('sch', sch.schname)) : (sch.schnamefreetext)*/}
                       const schInstName = (sch.schname) ? (sch.schname) : (sch.schnamefreetext)
+                      let isDefaultSch = ((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && index == 0)
                       return (
                         <div className="credential-item" key={schInstName}>
                           <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"sch-"+schInstName}>
-                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-instnum={sch.schname ? sch.schname : ''} data-inst={sch.schname ? schInstName : ''} data-instfreetext={sch.schname ? '' : schInstName} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && (authorInst == schInstName || authorInstFreeText == schInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <input type="radio" id={"sch-"+schInstName} data-authortype="sch" data-state={stateProv} data-country={country} data-instnum={sch.schname ? sch.schname : ''} data-inst={sch.schname ? schInstName : ''} data-instfreetext={sch.schname ? '' : schInstName} data-wasdefaultrole={isDefaultSch} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || index != 0) ? false : true) : (authorType == 'sch' && (authorInst == schInstName || authorInstFreeText == schInstName))} name="radio-credentials" onChange={this.handleRadioClick}/>
                             <span className="credential-text">{sch.schgraduyr <= currYr ? 'Studied' : 'Studying'} at {schInstName}</span>
                             <span className="radioCheckmark"/>
                           </label>
-                          {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && index == 0) && (
+                          {isDefaultSch == true && (
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
@@ -1746,7 +1748,7 @@ class AddHighlightTextBox extends Component {
                 {stateProv && country && (
                   <div className="credential-item">
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
-                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || sortedSchs) ? false : true) : authorType == 'none'} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} data-wasdefaultrole={((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1)))} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || sortedSchs) ? false : true) : authorType == 'none'} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Lives in {stateProv}, {country}</span>
                       <span className="radioCheckmark"/>
                     </label>
