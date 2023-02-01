@@ -13,7 +13,7 @@ class AddComment extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: '',
+      text: this.props.isInModal ? 'really long text omg kjsahdf akjsdhf kajsdh fkasjd hfkajsd hkasjdh fkasjdh fkasjd hfkajs dfkasjd hkasjd fhkasjd fhkasjd fkasjd asd hjsdf adjsh' : '',
       showEmojis: false,
       isMobile: checkMobile(),
       cursorPos: '', // cursor position to enter emoji within string
@@ -22,11 +22,43 @@ class AddComment extends Component {
 
   componentDidMount() {
     const {gid, isInModal} = this.props
+    const {text} = this.state
     const addmsgbox = document.getElementById("txtInput-box-"+gid+(isInModal ? "-isInModal" : ""));
     const addmsgboxMaxHeight = window.getComputedStyle(addmsgbox).maxHeight;
+
+  /*  const addmsgbox = this.addMessageNode; */
+    var msgInsights = document.getElementById('msgInsights-bar-right-'+gid+(isInModal ? "-isInModal" : ""));
+    var msgCount = document.getElementById("prAddMessageCount-"+gid+(isInModal ? "-isInModal" : ""));
+
     this.setState({
       addmsgboxMaxHeight: addmsgboxMaxHeight,
     })
+
+    // Show box height larger if has saved text in it when modal opens
+    if (text.length > 0) {
+      // Show the bold/italics/highlight key
+      msgInsights.classList.add("show");
+
+      // Expand height of box & add scroll if needed
+      addmsgbox.style.height = '20px';
+      addmsgbox.style.height = addmsgbox.scrollHeight + 'px';
+
+      if (addmsgbox.style.height > this.state.addmsgboxMaxHeight) {
+        addmsgbox.style.overflowY = "auto";
+      }
+
+      // Show the chraacter counter if goes over 1 line
+      if (addmsgbox.scrollHeight > 26) {
+        msgCount.style.display = 'block'
+      } else {
+        msgCount.style.display = 'none'
+      }
+
+      //Put cursor at end of the text (have to set focus first)
+      addmsgbox.focus()
+      let end = addmsgbox.selectionEnd;
+      addmsgbox.selectionStart = end = text.length;
+    }
   }
 
   componentWillUnmount() {
@@ -71,7 +103,8 @@ class AddComment extends Component {
     const userRole = 'mentor'
     const {isGroup, showGeneralNotAllowedText, gid, isInModal} = this.props
     //const addmsgbox = document.getElementById("txtInput-box-"+gid)
-    const addmsgbox = this.addMessageNode;
+  //  const addmsgbox = this.addMessageNode;
+    const addmsgbox = document.getElementById("txtInput-box-"+gid+(isInModal ? "-isInModal" : ""));
     var msgInsights = document.getElementById('msgInsights-bar-right-'+gid+(isInModal ? "-isInModal" : ""));
     var msgCount = document.getElementById("prAddMessageCount-"+gid+(isInModal ? "-isInModal" : ""));
 
