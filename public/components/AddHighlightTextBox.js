@@ -1,4 +1,4 @@
-// Last merged this code on 1st feb 2023 
+// Last merged this code on 1st feb 2023
 
 import React, { Component } from "react";
 
@@ -64,6 +64,7 @@ class AddHighlightTextBox extends Component {
       authorCountry: '',
       clickedEditCred: false,
       credentialText: '',
+      wasDefaultRole: true,
     //  credentialUpdatedSuccess: false,
       showCredentialUpdatedMsg: false,
       postSuccess: false,
