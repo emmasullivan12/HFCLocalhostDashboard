@@ -814,6 +814,7 @@ class HomePage extends Component {
         hashtags: ['23','20','1','2','0',],
         hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
         type: 'general',
+        wasDefaultRole: true,
         selectedFiles: [
           {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
           {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},

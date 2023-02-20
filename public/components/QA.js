@@ -302,7 +302,7 @@ class QA extends Component {
       authorinsttype: 'sch',
       authorstate: 'Bedf',
       authorcountry: 'GBR',
-      votes: ['123','234','345','456'],
+      votes: [],
       mentorseen: ['123','234','345','456'],
       menteeseen: ['123'],
       prseen: [],
@@ -554,6 +554,7 @@ class QA extends Component {
     const numViewsFormatted = numViews < 1000 ? numViews : ((Math.round(numViews / 100) / 10) + 'k')
     const isSafari = whichBrowser() == 'safari'
     let aIsMe, aCredentialText, aAuthorinsttype
+    let qVotes = this.state[qaItem.qid+'-votes']
 
     return (
       <React.Fragment>
@@ -622,7 +623,12 @@ class QA extends Component {
                           <i className="far fa-bell" />
                         )}
                       </span>
-                      <span className="fontSize12 verticalAlignMiddle noSelect">{this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}</span>
+                      <span className="fontSize12 verticalAlignMiddle noSelect">
+                        {this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}
+                        {qVotes && (qVotes != '0' && qVotes != 0) && (
+                          <span> ({(qVotes < 1000 ? qVotes : ((Math.round(qVotes / 100) / 10) + 'k'))})</span>
+                        )}
+                      </span>
                     </button>
                     {/*  {this.state[qaItem.qid+"-votes"]} */}
                   </div>

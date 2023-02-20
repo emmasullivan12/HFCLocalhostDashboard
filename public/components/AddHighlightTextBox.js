@@ -244,7 +244,7 @@ class AddHighlightTextBox extends Component {
     });
 
     e.target.closest(".credential-item").style.backgroundColor = "#f2f2f2"
-
+console.log(e.target.dataset.wasdefaultrole)
     var wasDefaultRole = e.target.dataset.wasdefaultrole // Don't need it if user doesn't click "edit credential" because would have been the default i.e. save wasDefaultRole as true
     var authorType = e.target.dataset.authortype
     var authorState = e.target.dataset.state

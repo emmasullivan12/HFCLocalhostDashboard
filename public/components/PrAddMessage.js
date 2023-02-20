@@ -33,6 +33,8 @@ class PrAddMessage extends Component {
       showEmojis: false,
       isMobile: checkMobile(),
       cursorPos: '', // cursor position to enter emoji within string
+      isGroupFounder: false,
+      isGroupAdmin: false,
     //  prAddMsgHeight: 26,
   //    playMsgAudio: false
     }
@@ -189,6 +191,7 @@ class PrAddMessage extends Component {
   }
 
   messageChange = (value, hardReset) => {
+    const {isGroupAdmin, isGroupFounder} = this.state
   //  const isUnder18Chat = true;
     const country = 'GBR'
     const userRole = 'mentor'
@@ -265,10 +268,42 @@ class PrAddMessage extends Component {
       }
     }
 
+    function checkAtEveryone() {
+      let atEveryoneExpression = /(^|\s)@(everyone)\b/
+      let arrAtEveryone = atEveryoneExpression.exec(value)
+      let idx
+      let matchLen
+
+      if (arrAtEveryone != null) {
+        idx = arrAtEveryone.index
+        matchLen = arrAtEveryone[0].length
+      }
+
+      var atEveryoneText = document.getElementById("atEveryoneText")
+
+      if(idx >= 0) {
+        let newText
+        if (isGroup) {
+          newText = 'PLEASE NOTE: You are using <span class="highlight-titleText"><strong>' +
+                    value.substring(idx, idx + matchLen) +
+                    '</strong></span> which will notify everyone in this channel. Are you sure?'
+        }
+        atEveryoneText.style.display = 'block';
+        atEveryoneText.innerHTML = newText
+      } else {
+        atEveryoneText.style.display = 'none';
+        atEveryoneText.innerHTML = ''
+      }
+    }
+
     if (hardReset != true) {
       //  if (isUnder18Chat === true) {
       if (userRole === 'mentor') {
         checkEmailPhoneSharing()
+      }
+
+      if (userRole === 'pr' || isGroupFounder || isGroupAdmin) {
+        checkAtEveryone()
       }
 
       // Show the bold/italics/highlight key
@@ -401,8 +436,10 @@ class PrAddMessage extends Component {
   }
 
   render() {
-    const {showEmojis, text} = this.state;
+    const {showEmojis, text, isGroupFounder, isGroupAdmin} = this.state;
     const {isOffline, incompleteFeedback, autoFocus} = this.props;
+
+    const userRole = 'mentor'
 
     return (
       <React.Fragment>
@@ -412,6 +449,7 @@ class PrAddMessage extends Component {
               <div className="input-flexContainer">
                 <form className="textInput-container" id="chatMessageForm">
                   <p id="notAllowedText"/>
+                  <p id="atEveryoneText"/>
                   <textarea
                     ref={n => this.addMessageNode = n}
                     className="input-box"
@@ -481,7 +519,7 @@ class PrAddMessage extends Component {
                 {this.state.isMobile != true && (
                   <span>↑ Shift + ⤶ Enter for new line </span>
                 )}
-                <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
+                {(userRole == 'pr' || isGroupFounder || isGroupAdmin) && <span className="highlight-titleText">@everyone</span>} <b>*bold*</b> <i>_italics_</i> <span className="highlight-titleText">~highlight~</span>
               </div>
             </div>
           </div>

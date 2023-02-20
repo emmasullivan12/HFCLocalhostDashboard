@@ -177,6 +177,11 @@
   color: #b71049;
   font-size: .8rem;
 }
+#atEveryoneText{
+  display: none;
+  color: #4e4ed6;
+  font-size: .8rem;
+}
 .txtInput-box,
 #txtInput-box{
   background-color: transparent;
@@ -229,7 +234,6 @@ mark {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin-right: 12px;
   width: -webkit-calc(100%-10px);
   width: -moz-calc(100%-10px);
   width: calc(100%-10px);
