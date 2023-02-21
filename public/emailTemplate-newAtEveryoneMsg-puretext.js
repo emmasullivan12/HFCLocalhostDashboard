@@ -1,6 +1,4 @@
-// Merged on 22nd Sept 2020
-
-const ejs = require("ejs");
+// Merged on 21st feb 2023
 
 const user = {uid: '22222'}
 const userRole = 'pr'
@@ -10,7 +8,7 @@ const author = userRole == 'pr' ? (fname + " from Prospela") : (fname + " " + ln
 const link = 'https://beta.prospela.com/'
 const email = 'dexter@hotmail.com'
 
-ejs.renderFile(__dirname + "/emailTemplate-newMsg.ejs", {author: author, link: link}, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-newAtEveryoneMsg.ejs", {author: author, link: link}, function (err, data) {
   if (err) {
     console.log(err);
   } else {
