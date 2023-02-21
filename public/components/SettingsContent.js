@@ -106,10 +106,38 @@ class SettingsContent extends Component {
                     {desktopNotifsOn===false ? 'Enable' : 'Disable'} desktop notifications
                   </button>
                   <h2>
-                    Messages
+                    Group Messages (from group admins)
                   </h2>
                   <p>
-                    Receive messages from {userRole === 'mentee' ? 'E-Mentors and other students in your groups, including 1:1 careers advice personalised to you' : 'Mentees and other employees in your groups'}.
+                    Receive messages & key reminders from Group Admins
+                  </p>
+                  <form>
+                    <div className="notifToggleContainer">
+                      <span className="notifToggleTxt">By Email</span>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-msgsgroupadmins-email"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked
+                      />
+                    </div>
+                    <div className="notifToggleContainer">
+                      <span className="notifToggleTxt">By SMS / Text Message</span>
+                      <Checkbox
+                        labelClassName="switch"
+                        id="notif-msgsgroupadmins-sms"
+                        spanClassName="slider round"
+                        onChange={this.handleSubmit}
+                        defaultChecked={false}
+                      />
+                    </div>
+                  </form>
+                  <h2>
+                    Group Messages (from other {userRole === 'mentee' ? 'Mentees' : 'E-Mentors'})
+                  </h2>
+                  <p>
+                    Receive messages from {userRole === 'mentee' ? 'other Mentees in your groups' : 'other E-Mentors in your groups'}.
                   </p>
                   <form>
                     <div className="notifToggleContainer">
@@ -134,10 +162,10 @@ class SettingsContent extends Component {
                     </div>
                   </form>
                   <h2>
-                    Reminders
+                    1:1 Chat Messages & Reminders
                   </h2>
                   <p>
-                    Receive requests to give & receive a review, chat reminders, and other reminders related to your activities on Prospela.
+                    Receive messages from your {userRole === 'mentee' ? 'mentor(s)' : 'mentee(s)'}, requests to give & receive a review, and other key reminders related to your mentoring activities on Prospela.
                   </p>
                   <form>
                     <div className="notifToggleContainer">

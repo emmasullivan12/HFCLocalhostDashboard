@@ -301,7 +301,7 @@ class FeedItem extends Component {
                     <span className="fontSize13 paddingTop2 noSelect">
                       {userUpvoted == true ? 'Following' : 'Follow'}
                       {!isMobile && votes && (votes != '0' && votes != 0) && (
-                        <span className="redText"> ({(votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))})</span>
+                        <span> ({(votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))})</span>
                       )}
                     </span>
                   </div>
