@@ -62,6 +62,8 @@ class QA extends Component {
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
+      showSignUpBanner: false,
+      maxViewsReached: true,
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
@@ -204,6 +206,11 @@ class QA extends Component {
       element.classList.add("highlighted-post")
     }
 
+    const observer = this.createObserver()
+
+    let target = document.getElementById("answersSection")
+    observer.observe(target)
+
   /*  const acceptedAnswer = hidsArr.length > 0 && hidsArr.filter(hid => hid.isacceptedanswer == true)
     console.log("about to update hasacceptedanswerHID in CDM to: "+acceptedAnswer.hid)
     this.setState({
@@ -217,7 +224,12 @@ class QA extends Component {
   }
 
   componentWillUnmount() {
+    const observer = this.createObserver()
+
     window.removeEventListener('resize', this.isMobile);
+
+    let target = document.getElementById("answersSection")
+    observer.unobserve(target)
   }
 
   toggleUpvote = (postId) => {
@@ -270,9 +282,34 @@ class QA extends Component {
     })
   }
 
+  createObserver = () => {
+    const {maxViewsReached} = this.state
+
+    let options = {
+      threshold: 0.7
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+
+        if (entry.intersectionRatio > 0 && maxViewsReached == true) {
+          this.setState({
+            showSignUpBanner: true
+          })
+        } else {
+          this.setState({
+            showSignUpBanner: false
+          })
+        }
+      });
+    }, options);
+
+    return observer
+  }
+
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer} = this.state;
-    const {updatePathName} = this.props
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner} = this.state;
+    const {updatePathName, isLoggedIn} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -329,8 +366,8 @@ class QA extends Component {
     //  reported jsonb
     //  reportedstatus jsonb
     }
-    const myID = '123'; //223456
-    const userRole = 'pr'
+    const myID = '1234567'; //223456
+    const userRole = 'mentor'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -452,6 +489,12 @@ class QA extends Component {
 
       answer.text = hid.text
       answer.upvoteCount = hid.votes.length
+      answer.isAccessibleForFree = "False"
+      answer.hasPart = {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": "False",
+        "cssSelector": ".answerContent"
+      }
       if (hid.url != '') {
         answer.url = "https://app.prospela.com/questions/" + hid.url
       }
@@ -487,6 +530,12 @@ class QA extends Component {
               "name": "New Baking User"
             },*/
             "upvoteCount": acceptedAnswer[0].votes.length,
+            "isAccessibleForFree": "False",
+            "hasPart": {
+              "@type": "WebPageElement",
+              "isAccessibleForFree": "False",
+              "cssSelector": ".answerContent"
+            },
             ...(acceptedAnswer[0].url != '' && {
               "url": "https://app.prospela.com/questions/" + acceptedAnswer[0].url, // This is not required, but strongly recommended
             })
@@ -555,6 +604,8 @@ class QA extends Component {
     const isSafari = whichBrowser() == 'safari'
     let aIsMe, aCredentialText, aAuthorinsttype
     let qVotes = this.state[qaItem.qid+'-votes']
+    const showVotesNum = qVotes && (qVotes != '0' && qVotes != 0)
+    const postdeleted = false
 
     return (
       <React.Fragment>
@@ -567,357 +618,426 @@ class QA extends Component {
           </div>
         ) : (
           <React.Fragment>
-            <div className="padding25 marginTop40">
-            {/*  <MenuNav /> */}
-              <Link to={prevURL ? prevURL : "/home"} onClick={updatePathName}>
-                <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
-                  <span className="dispInlineBlock"><X /></span>
-                {/*  <span><i className="fas fa-arrow-left"/></span> */}
-                  <span> Close</span>
-                </div>
-              </Link>
-              <div className="borderBtm borderGrey paddingBtm marginBottom20">
-                <div className={isMobile == true ? "" : "chatItemFlexContainer"}>
-                  <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
-                  <span className={isMobile == true ? "dispBlock" : "absolute right20"}>
-                    {userRole == 'mentee' && (
-                      <Modal {...AddHighlightModalProps}>
-                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                      </Modal>
-                    )}
-                    {userRole == 'mentor' && (
-                      <Modal {...AddAnswerModalProps}>
-                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
-                      </Modal>
-                    )}
-                  </span>
-                </div>
-                <div className="darkGreyText fontSize13">
-                  <div>
-                    Asked {timeSince(qaItem.datecreated)} in <span className="bubbleContainer">
-                      {indArrToShow.map((indID) => {
-                        let industryItem, icon, indName
-                        if (indID == '99999') {
-                          icon = 'fas fa-hashtag'
-                          indName = 'General Advice'
-                        } else {
-                          industryItem = getIndustryDeets(indID)
-                          icon = industryItem.fa
-                          indName = industryItem.label
-                        }
-                        return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
+            {postdeleted == true ? (
+              <div className="mainBar padding25 marginTop40">
+                <div className="qTitle marginBottom5">
+                  <strong><span role="img" aria-label="eyes emoji">👀</span> Sorry, this post no longer exists </strong>
+                  <div className="fontSize18">The user might have deleted it.</div>
+                  <br />
+                  <div className="marginTop40 marginBottom10 fontSize18">Browse other questions tagged {hashtagsArray.length > 0 && (
+                    <div className="tagsList">
+                      {hashtagsArray.map((hashtag) => {
+                        return (
+                          <span
+                            key={hashtag}
+                            className="multiple value paddingR"
+                            id={hashtag}
+                          >
+                            {hashtag}
+                          </span>
+                        )
                       })}
-                    </span>{qaItem.industriestopostto.length > 2 ? 'and other groups' : ''}
+                    </div>
+                    )}
+                    or ask your own question
                   </div>
                   <div>
-                    <span className="paddingR20">Active {timeSince(mostRecentActivityDate)}</span>
-                    <span><span className="greyText"><i className="fas fa-eye"/></span> Viewed {numViewsFormatted} times</span>
-                  </div>
-                  <div className={"fontSize20 marginTop10 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                    <button type="button" className={"button-unstyled alignCenter " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
-                      <span className="paddingR5">
-                        {this.state[qaItem.qid+"-userUpvoted"] == true && (
-                          <i className="fas fa-bell" />
-                        )}
-                        {this.state[qaItem.qid+"-userUpvoted"] != true && (
-                          <i className="far fa-bell" />
-                        )}
-                      </span>
-                      <span className="fontSize12 verticalAlignMiddle noSelect">
-                        {this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}
-                        {qVotes && (qVotes != '0' && qVotes != 0) && (
-                          <span> ({(qVotes < 1000 ? qVotes : ((Math.round(qVotes / 100) / 10) + 'k'))})</span>
-                        )}
-                      </span>
-                    </button>
-                    {/*  {this.state[qaItem.qid+"-votes"]} */}
+                    <Modal {...AddHighlightModalProps}>
+                      <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                    </Modal>
                   </div>
                 </div>
               </div>
-            {/*  <div className="mainBar" role="main" aria-label="question and answers"> */}
-              <div role="main" aria-label="question and answers">
-                <div className="gridContainer">
-                  <div className="gridRightColumn">
-                    {qaItem.textdetail && (
-                      <div className="qDetailContainer marginBottom20">
-                        <TextParser text={qaItem.textdetail} />
-                      </div>
-                    )}
-                    {hashtagsArray.length > 0 && (
-                      <div className="tagsList">
-                        {hashtagsArray.map((hashtag) => {
-                          return (
-                            <span
-                              key={hashtag}
-                              className="multiple value paddingR"
-                              id={hashtag}
-                            >
-                              {hashtag}
-                            </span>
-                          )
+            ) : (
+              <div className="padding25 marginTop40">
+              {/*  <MenuNav /> */}
+                <Link to={prevURL ? prevURL : "/home"} onClick={updatePathName}>
+                  <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
+                    <span className="dispInlineBlock"><X /></span>
+                  {/*  <span><i className="fas fa-arrow-left"/></span> */}
+                    <span> Close</span>
+                  </div>
+                </Link>
+                <div className="borderBtm borderGrey paddingBtm marginBottom20">
+                  <div className={isMobile == true ? "" : "chatItemFlexContainer"}>
+                    <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
+                    <span className={isMobile == true ? "dispBlock" : "absolute right20"}>
+                      {userRole == 'mentee' && (
+                        <Modal {...AddHighlightModalProps}>
+                          <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                        </Modal>
+                      )}
+                      {(!isLoggedIn || userRole == 'mentor') && (
+                        <Modal {...AddAnswerModalProps}>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                        </Modal>
+                      )}
+                    </span>
+                  </div>
+                  <div className="darkGreyText fontSize13">
+                    <div>
+                      Asked {timeSince(qaItem.datecreated)} in <span className="bubbleContainer">
+                        {indArrToShow.map((indID) => {
+                          let industryItem, icon, indName
+                          if (indID == '99999') {
+                            icon = 'fas fa-hashtag'
+                            indName = 'General Advice'
+                          } else {
+                            industryItem = getIndustryDeets(indID)
+                            icon = industryItem.fa
+                            indName = industryItem.label
+                          }
+                          return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
                         })}
-                      </div>
-                    )}
-                    <div className="marginTop20 marginBottom20 qActionsContainer">
-                      {/*<div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20"> */}
-                      {/*  <div className="marginRight8">Share</div>
-                        <div className="marginRight8">Follow</div> */}
-                      {/*  {qIsMe == 'isMe' && (
-                          <Modal {...DeleteContentModalProps}>
-                            <DeleteContentModalContent />
-                          </Modal>
-                        )} */}
-                      {/*  <div className="marginLeft8">Report</div> */}
-                      {/* </div> */}
-                      <div className="credentialSuperContainer">
-                        <div className="credentialPreviewContainer">
-                          <div className="textLeft darkGreyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
-                          <div className="gridContainer marginTop10">
-                            <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
-                              <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qaItem.fname} showAsCircle picSize={360}/>
-                            </div>
-                            <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                              {qaItem.isanon != true && qaItem.isPr != true && qaItem.authorinsttype != 'sch' && (
-                                <div>
-                                {/*  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong> */}
-                                  {qaItem.authorUserRole == 'mentee' ? (
-                                      <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
-                                        <MenteeProfileContent />
-                                      </FullPageModal>
-                                      )
-                                    : (
-                                      <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
-                                        <MentorProfileContent />
-                                      </FullPageModal>
-                                    )
-                                  }
-                                </div>
-                              )}
-                              {(qaItem.isPr == true || qaItem.authorinsttype == 'sch') && (
-                                <div className="tooltip">
-                                  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
-                                  <span className={"tooltiptext hiddenProf below" + (isSafari == true ? " fontSize11" : "")}>
-                                    This profile cannot be viewed
-                                  </span>
-                                </div>
-                              )}
-                              <div className="darkGreyText">{credentialText}</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </span>{qaItem.industriestopostto.length > 2 ? 'and other groups' : ''}
                     </div>
-                    <QAThreads
-                      comments={qaItem.comments}
-                      originalPostAuthorID={qaItem.uid}
-                      originalPostIsAnon={qaItem.isanon}
-                      originalPostID={qaItem.qid}
-                      type="q"
-                    />
+                    <div>
+                      <span className="paddingR20">Active {timeSince(mostRecentActivityDate)}</span>
+                      <span><span className="greyText"><i className="fas fa-eye"/></span> Viewed {numViewsFormatted} times</span>
+                    </div>
+                    <div className={"fontSize20 marginTop10 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                      <button type="button" className={"button-unstyled alignCenter " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
+                        <span className="paddingR5">
+                          {this.state[qaItem.qid+"-userUpvoted"] == true && (
+                            <i className="fas fa-bell" />
+                          )}
+                          {this.state[qaItem.qid+"-userUpvoted"] != true && (
+                            <i className="far fa-bell" />
+                          )}
+                        </span>
+                        <span className="fontSize12 verticalAlignMiddle noSelect">
+                          {this.state[qaItem.qid+"-userUpvoted"] == true ? 'Following' : 'Follow'}
+                          {showVotesNum == true && (
+                            <span> ({(qVotes < 1000 ? qVotes : ((Math.round(qVotes / 100) / 10) + 'k'))})</span>
+                          )}
+                        </span>
+                      </button>
+                      {/*  {this.state[qaItem.qid+"-votes"]} */}
+                    </div>
                   </div>
                 </div>
-                <br />
-                <div>
-                {/*  {qaItem.hids.length == 0 ? (
-                    <div className="qTitle qaPage marginBottom20 breakWord"><strong>Know someone who can answer?</strong> Share a link to this question via email or Twitter.</div>
-                  ) : (*/}
-                  {qaItem.hids.length > 0 && (
-                    <div className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.hids.length} Answers</strong></div>
-                  )}
-                </div>
-                {hidsArrSorted.map((hid) => {
-                  const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
-                  const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
-                  const hashURL = hid.url.split('#')[1] // Get the bit after the hash '#' in the saved URL
-
-                  let isProspelaTeam, verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, verifTypesArr, hasMinVerif
-                  let userRoleOfAuthor = 'mentor'
-
-                  if (userRoleOfAuthor == 'mentor') {
-                    const mentor = {
-                      verifiedtype: '1',
-                      eduemailverif: '',
-                      profemailverif: '',
-                      mentorsustep: '',
-                      tsapproved: ''
-                    }
-                    isProspelaTeam = false
-                    verifiedType = mentor.verifiedtype
-                    eduemailverif = mentor.eduemailverif;
-                    profemailverif = mentor.profemailverif;
-                    mentorSUStep = mentor.mentorsustep;
-                    tsapproved = mentor.tsapproved // THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND
-                    verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
-                  }
-
-                  hasMinVerif = userRoleOfAuthor == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
-
-                  aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
-                  aAuthorinsttype = hid.authorinsttype
-                  aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
-
-                  return (
-                    <div key={hid.hid} id={hashURL} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
-                      <div className="gridLeftColumn paddingR20">
-                        <div className="displayFlex flexDirColumn alignCenter">
-                          <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                            <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
-                              <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
-                                <path d="M2 25h32L18 9 2 25Z"/>
-                              </svg>
-                            </button>
-                          </div>
-                          {this.state[hid.hid+'-votes']}
-                          {/* {hid.isacceptedanswer == true && ( */}
-                          {hid.hid == acceptedAnswerHID && (
-                            <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(hid.hid) : null}>
-                              <Check />
-                              <span className="tooltiptext acceptedAnswer">
-                                Accepted answer
-                              </span>
-                            </div>
-                          )}
-                        {/*  {qaItem.hasacceptedanswer == false && (userRole == 'pr' || qIsMe == true) && ( */}
-                          {qidHasAcceptedAnswer == false && (userRole == 'pr' || qIsMe == true) && (
-                            <div className="lightGreyText marginTop10 fontSize25 tooltip pointerCursor" onClick={() => this.toggleAcceptedAnswer(hid.hid)}>
-                              <Check />
-                              <span className="tooltiptext acceptedAnswer">
-                                Mark as Accepted answer?
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                      <div className="gridRightColumn">
+              {/*  <div className="mainBar" role="main" aria-label="question and answers"> */}
+                <div role="main" aria-label="question and answers">
+                  <div className="gridContainer">
+                    <div className="gridRightColumn">
+                      {qaItem.textdetail && (
                         <div className="qDetailContainer marginBottom20">
-                          <TextParser text={hid.text} />
+                          <TextParser text={qaItem.textdetail} />
                         </div>
-                        {hid.files && hid.files.length > 0 && (
-                          <div className="answerFilesContainer marginBottom20">
-                            {hid.files.map((file, index) => {
-                              return (
-                                <div className="extra-content-container" key={file.fileid}>
-                                  <DisplayMsgFile
-                                    file={file}
-                                    isQA
-                                  />
-                                </div>
-                              )
-                            })}
-                          </div>
-                        )}
-                        {aHashtagsArray.length > 0 && (
-                          <div className="tagsList">
-                            {aHashtagsArray.map((hashtag) => {
-                              return (
-                                <span
-                                  key={hashtag}
-                                  className="multiple value paddingR"
-                                  id={hashtag}
-                                >
-                                  {hashtag}
-                                </span>
-                              )
-                            })}
-                          </div>
-                        )}
-                        <div className="marginTop20 marginBottom20 qActionsContainer">
-                          <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
-                          {/*  <div className="marginRight8">Share</div>
-                            <div className="marginRight8">Follow</div> */}
-                            {aIsMe == 'isMe' && (
-                              <Modal {...DeleteContentModalProps}>
-                                <DeleteContentModalContent />
-                              </Modal>
-                            )}
-                          {/*  <div className="marginLeft8">Report</div> */}
-                          </div>
-                          <div className="credentialSuperContainer">
-                            <div className="credentialPreviewContainer">
-                              <div className="textLeft darkGreyText fontSize12">answered <DateCalc time={hid.datecreated} showPureDate /> at <TimeCalc time={hid.datecreated} /></div>
-                              <div className="gridContainer marginTop10">
-                                <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
-                                  <Avatar userID={hid.uid} isAnon={hid.isanon} userName={hid.isanon ? 'Anonymous' : hid.fname} showAsCircle picSize={360}/>
-                                </div>
-                                <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                                  {hid.isanon != true && hid.isPr != true && hid.authorinsttype != 'sch' && (
-                                    <div>
-                                    {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
-                                      {hid.authorUserRole == 'mentee' ? (
-                                          <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
-                                            <MenteeProfileContent />
-                                          </FullPageModal>
-                                          )
-                                        : (
-                                          <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
-                                            <MentorProfileContent />
-                                          </FullPageModal>
+                      )}
+                      {hashtagsArray.length > 0 && (
+                        <div className="tagsList">
+                          {hashtagsArray.map((hashtag) => {
+                            return (
+                              <span
+                                key={hashtag}
+                                className="multiple value paddingR"
+                                id={hashtag}
+                              >
+                                {hashtag}
+                              </span>
+                            )
+                          })}
+                        </div>
+                      )}
+                      <div className="marginTop20 marginBottom20 qActionsContainer">
+                        {/*<div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20"> */}
+                        {/*  <div className="marginRight8">Share</div>
+                          <div className="marginRight8">Follow</div> */}
+                        {/*  {qIsMe == 'isMe' && (
+                            <Modal {...DeleteContentModalProps}>
+                              <DeleteContentModalContent />
+                            </Modal>
+                          )} */}
+                        {/*  <div className="marginLeft8">Report</div> */}
+                        {/* </div> */}
+                        <div className="credentialSuperContainer">
+                          <div className="credentialPreviewContainer">
+                            <div className="textLeft darkGreyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
+                            <div className="gridContainer marginTop10">
+                              <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
+                                <Avatar userID={qaItem.uid} isAnon={qaItem.isanon} userName={qaItem.isanon ? 'Anonymous' : qaItem.fname} showAsCircle picSize={360}/>
+                              </div>
+                              <div className="gridRightColumn textLeft whiteSpace fontSize12">
+                                {qaItem.isanon != true && qaItem.isPr != true && qaItem.authorinsttype != 'sch' && (
+                                  <div>
+                                  {/*  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong> */}
+                                    {qaItem.authorUserRole == 'mentee' ? (
+                                        <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                          <MenteeProfileContent />
+                                        </FullPageModal>
                                         )
-                                      }
-                                      {hasMinVerif == true && (
-                                        <span className="tooltip fontSize18">
-                                          <UserBadge badgeType='pr-certified' />
-                                          <span className="tooltiptext onQA below">
-                                            <strong>Prospela Certified Mentor</strong>
-                                          </span>
-                                        </span>
-                                      )}
-                                    </div>
-                                  )}
-                                  {(hid.isanon == true || hid.isPr == true || hid.authorinsttype == 'sch') && (
-                                    <div>
-                                      <strong>{hid.isanon ? "Anonymous" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong>
-                                      {hasMinVerif == true && (
-                                        <span className="tooltip fontSize18">
-                                          <UserBadge badgeType='pr-certified' />
-                                          <span className={"tooltiptext onQA below" + (hid.isanon ? " anonymous" : "")} >
-                                            <strong>Prospela Certified Mentor</strong>
-                                          </span>
-                                        </span>
-                                      )}
-                                    </div>
-                                  )}
-                                  <div className="darkGreyText">{aCredentialText}</div>
-                                </div>
+                                      : (
+                                        <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                          <MentorProfileContent />
+                                        </FullPageModal>
+                                      )
+                                    }
+                                  </div>
+                                )}
+                                {(qaItem.isPr == true || qaItem.authorinsttype == 'sch') && (
+                                  <div className="tooltip">
+                                    <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong>
+                                    <span className={"tooltiptext hiddenProf below" + (isSafari == true ? " fontSize11" : "")}>
+                                      This profile cannot be viewed
+                                    </span>
+                                  </div>
+                                )}
+                                <div className="darkGreyText">{credentialText}</div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <QAThreads
-                          comments={hid.comments}
-                          originalPostAuthorID={hid.uid}
-                          originalPostIsAnon={hid.isanon}
-                          originalPostID={hid.hid}
-                          type="a"
-                        />
                       </div>
+                      <QAThreads
+                        comments={qaItem.comments}
+                        originalPostAuthorID={qaItem.uid}
+                        originalPostIsAnon={qaItem.isanon}
+                        originalPostID={qaItem.qid}
+                        type="q"
+                      />
                     </div>
+                  </div>
+                  <br />
+                  <div id="answersSection">
+                    <div>
+                    {/*  {qaItem.hids.length == 0 ? (
+                        <div className="qTitle qaPage marginBottom20 breakWord"><strong>Know someone who can answer?</strong> Share a link to this question via email or Twitter.</div>
+                      ) : (*/}
+                      {qaItem.hids.length > 0 && (
+                        <div className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.hids.length} Answers</strong></div>
+                      )}
+                    </div>
+                    {hidsArrSorted.map((hid) => {
+                      const aHashtagsCommaString = (hid.hashtags.length > 0 || hid.hashtagsfreetext.length > 0) ? convertHashtags(hid.hashtags, hid.hashtagsfreetext) : []
+                      const aHashtagsArray = aHashtagsCommaString.length == 0 ? [] : aHashtagsCommaString.split(', ')
+                      const hashURL = hid.url.split('#')[1] // Get the bit after the hash '#' in the saved URL
 
-                  )
-                })}
-                <div className="marginBottom50 marginTop20">
-                  {userRole == 'mentee' && (
-                    <div>
-                      <div className="qTitle marginBottom5"><strong>Not the answer you were looking for?</strong> Ask your own question</div>
-                      <Modal {...AddHighlightModalProps}>
-                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                      </Modal>
+                      let isProspelaTeam, verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, verifTypesArr, hasMinVerif
+                      let userRoleOfAuthor = 'mentor'
+
+                      if (userRoleOfAuthor == 'mentor') {
+                        const mentor = {
+                          verifiedtype: '1',
+                          eduemailverif: '',
+                          profemailverif: '',
+                          mentorsustep: '',
+                          tsapproved: ''
+                        }
+                        isProspelaTeam = false
+                        verifiedType = mentor.verifiedtype
+                        eduemailverif = mentor.eduemailverif;
+                        profemailverif = mentor.profemailverif;
+                        mentorSUStep = mentor.mentorsustep;
+                        tsapproved = mentor.tsapproved // THIS IS TIMESTAMP APPROVED THEIR ID / BACKGROUND
+                        verifTypesArr = getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved, isProspelaTeam)
+                      }
+
+                      hasMinVerif = userRoleOfAuthor == 'mentee' ? false : (verifTypesArr && verifTypesArr.length > 0)
+
+                      aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
+                      aAuthorinsttype = hid.authorinsttype
+                      aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
+
+                      return (
+                        <div key={hid.hid} id={hashURL} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">
+                          <div className="gridLeftColumn paddingR20">
+                            <div className="displayFlex flexDirColumn alignCenter">
+                              <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
+                                <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
+                                  <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
+                                    <path d="M2 25h32L18 9 2 25Z"/>
+                                  </svg>
+                                </button>
+                              </div>
+                              <span className={showSignUpBanner == true ? "blurryText" : ""}>{this.state[hid.hid+'-votes']}</span>
+                              {/* {hid.isacceptedanswer == true && ( */}
+                              {hid.hid == acceptedAnswerHID && (
+                                <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(hid.hid) : null}>
+                                  <Check />
+                                  <span className="tooltiptext acceptedAnswer">
+                                    Accepted answer
+                                  </span>
+                                </div>
+                              )}
+                            {/*  {qaItem.hasacceptedanswer == false && (userRole == 'pr' || qIsMe == true) && ( */}
+                              {qidHasAcceptedAnswer == false && (userRole == 'pr' || qIsMe == true) && (
+                                <div className="lightGreyText marginTop10 fontSize25 tooltip pointerCursor" onClick={() => this.toggleAcceptedAnswer(hid.hid)}>
+                                  <Check />
+                                  <span className="tooltiptext acceptedAnswer">
+                                    Mark as Accepted answer?
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                          <div className="gridRightColumn">
+                            <div className={"qDetailContainer marginBottom20 answerContent" + (showSignUpBanner == true ? " blurryText" : "")}>
+                              <TextParser text={hid.text} />
+                            </div>
+                            {hid.files && hid.files.length > 0 && (
+                              <div className="answerFilesContainer marginBottom20">
+                                {hid.files.map((file, index) => {
+                                  return (
+                                    <div className="extra-content-container" key={file.fileid}>
+                                      <DisplayMsgFile
+                                        file={file}
+                                        isQA
+                                      />
+                                    </div>
+                                  )
+                                })}
+                              </div>
+                            )}
+                            {aHashtagsArray.length > 0 && (
+                              <div className="tagsList">
+                                {aHashtagsArray.map((hashtag) => {
+                                  return (
+                                    <span
+                                      key={hashtag}
+                                      className="multiple value paddingR"
+                                      id={hashtag}
+                                    >
+                                      {hashtag}
+                                    </span>
+                                  )
+                                })}
+                              </div>
+                            )}
+                            <div className="marginTop20 marginBottom20 qActionsContainer">
+                              <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
+                              {/*  <div className="marginRight8">Share</div>
+                                <div className="marginRight8">Follow</div> */}
+                                {aIsMe == 'isMe' && (
+                                  <Modal {...DeleteContentModalProps}>
+                                    <DeleteContentModalContent />
+                                  </Modal>
+                                )}
+                              {/*  <div className="marginLeft8">Report</div> */}
+                              </div>
+                              <div className="credentialSuperContainer">
+                                <div className="credentialPreviewContainer">
+                                  <div className="textLeft darkGreyText fontSize12">answered <DateCalc time={hid.datecreated} showPureDate /> at <TimeCalc time={hid.datecreated} /></div>
+                                  <div className="gridContainer marginTop10">
+                                    <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
+                                      <Avatar userID={hid.uid} isAnon={hid.isanon} userName={hid.isanon ? 'Anonymous' : hid.fname} showAsCircle picSize={360}/>
+                                    </div>
+                                    <div className="gridRightColumn textLeft whiteSpace fontSize12">
+                                      {hid.isanon != true && hid.isPr != true && hid.authorinsttype != 'sch' && (
+                                        <div>
+                                        {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
+                                          {hid.authorUserRole == 'mentee' ? (
+                                              <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                                <MenteeProfileContent />
+                                              </FullPageModal>
+                                              )
+                                            : (
+                                              <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                                <MentorProfileContent />
+                                              </FullPageModal>
+                                            )
+                                          }
+                                          {hasMinVerif == true && (
+                                            <span className="tooltip fontSize18">
+                                              <UserBadge badgeType='pr-certified' />
+                                              <span className="tooltiptext onQA below">
+                                                <strong>Prospela Certified Mentor</strong>
+                                              </span>
+                                            </span>
+                                          )}
+                                        </div>
+                                      )}
+                                      {(hid.isanon == true || hid.isPr == true || hid.authorinsttype == 'sch') && (
+                                        <div>
+                                          <strong>{hid.isanon ? "Anonymous" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong>
+                                          {hasMinVerif == true && (
+                                            <span className="tooltip fontSize18">
+                                              <UserBadge badgeType='pr-certified' />
+                                              <span className={"tooltiptext onQA below" + (hid.isanon ? " anonymous" : "")} >
+                                                <strong>Prospela Certified Mentor</strong>
+                                              </span>
+                                            </span>
+                                          )}
+                                        </div>
+                                      )}
+                                      <div className="darkGreyText">{aCredentialText}</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <QAThreads
+                              comments={hid.comments}
+                              originalPostAuthorID={hid.uid}
+                              originalPostIsAnon={hid.isanon}
+                              originalPostID={hid.hid}
+                              type="a"
+                              showSignUpBanner={showSignUpBanner}
+                            />
+                          </div>
+                        </div>
+
+                      )
+                    })}
+                  </div>
+                  {showSignUpBanner == true && (
+                    <div className="signUpPromptBanner">
+                      <div>PROSPELA LOGO </div>
+                      <div className="fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
+                      <div>Unlimited access to insider insights from real employees</div>
+                      <button type="button">Sign up now</button>
+                      <a href="https://app.prospela.com/sign-up">or Login</a>
+                      <div>Career Q&A with industry experts, 1:1 mentoring and a lasting professional network at your fingertips</div>
                     </div>
                   )}
-                  {userRole == 'mentor' && (
-                    <div>
-                      <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}</div>
-                      <Modal {...AddAnswerModalProps}>
-                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
-                      </Modal>
-                    </div>
-                  )}
+                  <div className="marginBottom50 marginTop20">
+                    {userRole == 'mentee' && (
+                      <div>
+                        <div className="qTitle marginBottom5"><strong>Not the answer you were looking for?</strong> Ask your own question</div>
+                        <Modal {...AddHighlightModalProps}>
+                          <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                        </Modal>
+                      </div>
+                    )}
+                    {!isLoggedIn && (
+                      <div>
+                        <div className="qTitle marginBottom5">
+                          <strong>Not the answer you were looking for? </strong>
+                          <span>Browse other questions tagged {hashtagsArray.length > 0 && (
+                            <div className="tagsList">
+                              {hashtagsArray.map((hashtag) => {
+                                return (
+                                  <span
+                                    key={hashtag}
+                                    className="multiple value paddingR"
+                                    id={hashtag}
+                                  >
+                                    {hashtag}
+                                  </span>
+                                )
+                              })}
+                            </div>
+                          )}
+                          </span>
+                          <span>or <span className="link linkPurpleText linkUnderline">ask your own question</span></span>
+                        </div>
+                      </div>
+                    )}
+                    {(!isLoggedIn || userRole == 'mentor') && (
+                      <div>
+                        <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}</div>
+                        <Modal {...AddAnswerModalProps}>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                        </Modal>
+                      </div>
+                    )}
+                  </div>
                 </div>
+                {/*}<div className="sideBar" role="complementary" aria-label="sidebar">
+                  SIDEBAR PLACEHOLDER
+                </div>*/}
               </div>
-              {/*}<div className="sideBar" role="complementary" aria-label="sidebar">
-                SIDEBAR PLACEHOLDER
-              </div>*/}
-            </div>
+            )}
           </React.Fragment>
         )}
       </React.Fragment>

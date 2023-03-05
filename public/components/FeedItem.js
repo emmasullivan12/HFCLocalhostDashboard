@@ -242,6 +242,7 @@ class FeedItem extends Component {
       const hasUnreadAnswers = true // isOnMyContentPage == true ? null : [LINKTODEX]
 
       const isMobile = checkMobile()
+      const showVotesNum = !isMobile && votes && (votes != '0' && votes != 0)
 
       return (
         <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
@@ -300,7 +301,7 @@ class FeedItem extends Component {
                     </button>
                     <span className="fontSize13 paddingTop2 noSelect">
                       {userUpvoted == true ? 'Following' : 'Follow'}
-                      {!isMobile && votes && (votes != '0' && votes != 0) && (
+                      {showVotesNum == true && (
                         <span> ({(votes < 1000 ? votes : ((Math.round(votes / 100) / 10) + 'k'))})</span>
                       )}
                     </span>

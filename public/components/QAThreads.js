@@ -149,7 +149,7 @@ class QAThreads extends Component {
   }
 
   displayComment = (comment) => {
-    const {originalPostAuthorID, originalPostIsAnon, type, isInModal} = this.props
+    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, showSignUpBanner} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
@@ -161,7 +161,7 @@ class QAThreads extends Component {
     return (
       <li key={comment.cid} id={comment.cid} className={type != 'g' ? "gridContainer borderBtm borderGrey" : "gridContainer"}>
         <div className="commentActions">
-          <div className="commentScore">
+          <div className={"commentScore" + (showSignUpBanner == true ? " blurryText" : "")}>
             {this.state[comment.cid+'-votes']}
           </div>
           {(aIsMe == false || isPrUser == true) && (
@@ -204,7 +204,9 @@ class QAThreads extends Component {
               )}
             </span>
           )} */}
-          <TextParser text={comment.text} showInline />
+          <span className={showSignUpBanner == true ? "blurryText" : ""} >
+            <TextParser text={comment.text} showInline />
+          </span>
           <span className="fontSize12 paddingL2">
             <span> &#8212; </span>
             {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (
@@ -279,6 +281,7 @@ class QAThreads extends Component {
                     hid={type == 'q' ? null : originalPostID}
                     showAsAnon={originalPostIsAnon == true && isThisUserOriginalPostAuthor == true}
                     userID={myID}
+                    modalID="modal-addComment"
                   />
                 </Modal>
                 {(moreCommentsArr.length > 0 && showMoreComments != true) && (

@@ -333,6 +333,8 @@ class Dashboard extends Component{
   //  const groupsList = []
     const numClasses = groupsList.filter(group => group.isclass == true).length
     const isClass = numClasses > 0
+    const isQ = true
+    const isLoggedIn = false
 
     return(
       <BrowserRouter>
@@ -350,12 +352,12 @@ class Dashboard extends Component{
                   <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentor' updatePathName={this.updatePathName}/>
                 </Modal>
               )}
-              {userRole == 'mentee' && isClass == true && (
+              {(!isLoggedIn || (userRole == 'mentee' && isClass == true)) && (
                 <Modal {...AddHighlightSmlMenteeModalProps}>
                   <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentee' updatePathName={this.updatePathName}/>
                 </Modal>
               )}
-              <MenuModal changeInitFocus>
+              <MenuModal changeInitFocus isLoggedIn={isLoggedIn}>
                 <UserMenuContent userRole={userRole}/>
               </MenuModal>
               <div className="c-scrollbar">
@@ -366,7 +368,9 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
-                    <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.handleMenuItemClick}/>
+                    {isLoggedIn && (
+                      <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.handleMenuItemClick}/>
+                    )}
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -388,17 +392,24 @@ class Dashboard extends Component{
             </div>
             <div className="clientWindowContainer col-s-12" role="button" id="clientWindowContainer" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
-                {{
+            {/*    {{
                   ['mentee']: <Redirect exact from="/" to="/home" />,
                   ['mentor']: <Redirect exact from="/" to="/home" />,
-                }[userRole]}
+                }[userRole]} */}
+              {/*  <Redirect exact from="/" to="/home" />
+                {isQ == true && (
+                  <Redirect exact from="/home" to="/questions/123456" />
+                )} */}
+                <Route exact path="/">
+                  {isQ == true ? <Redirect to="/questions/123456" /> : <Redirect to="/home" />}
+                </Route>
               {/*  <Route path="/latest-advice" component={LatestAdvice}/>, */}
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} updatePathName={this.updatePathName}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} isLoggedIn={isLoggedIn} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
@@ -440,7 +451,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = '' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
@@ -458,6 +469,7 @@ class App extends Component{
             ['mentee']: <MenteeSteps userRole={userRole}/>,
             ['mentor']: <MentorSteps userRole={userRole}/>,
             ['prospela']: <ProspelaDashboard userRole={userRole}/>,
+            ['']: <Dashboard />,
           }[userRole]}
         </div>
       );

@@ -95,6 +95,29 @@
   font-size: 14px;
   display: inline-block;
 }
+
+.signUpPromptBanner{
+  position: sticky;
+  height: 400px;
+  width: auto;
+  z-index: 1000;
+  bottom: 0;
+  border-top: 1px solid #4e4ed6;
+  box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
+  -webkit-box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
+  -moz-box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
+  background-image: url(https://files.prospela.com/images%2FSignUpPromptBannerPurple.pptx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  -webkit-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
+  -moz-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
+  -ms-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
+  -o-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
+  animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
+  animation-duration: 1s;
+}
+
 @-webkit-keyframes highlighted-post-fade {
   0% {
     background-color: rgb(207 207 255 / 45%);

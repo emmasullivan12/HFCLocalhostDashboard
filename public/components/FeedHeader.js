@@ -116,7 +116,7 @@ class FeedHeader extends Component {
                       value={searchText}
                       onChange={handleSearchTextChange}
                       onKeyDown={this.onEnterPress}
-                      placeholder="Search Prospela..."
+                      placeholder={isMobile == true ? "Search advice on Prospela..." : "Search careers advice on Prospela..."}
                       autoComplete="on"
                       autoCorrect="on"
                       spellCheck="true"

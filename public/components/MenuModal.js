@@ -1,4 +1,4 @@
-// Dex last merged this code on 24th sept 2021 
+// Dex last merged this code on 24th sept 2021
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -10,7 +10,8 @@ const MenuTrigger = ({
   menuButtonRef,
   onOpen,
   text,
-  usedFor
+  usedFor,
+  isLoggedIn
 }) => (
   <button type="button" onClick={onOpen} ref={menuButtonRef} className="userMenu">
     <div className="userContainer">
@@ -21,7 +22,7 @@ const MenuTrigger = ({
         <i className="fa fa-angle-down" />
       </span>
       <div className="userName overflow-ellipsis">
-        fname
+        {isLoggedIn == false ? 'Welcome!' : 'fname'}
       </div>
     </div>
 {/*    <div className="userBadgesContainer">
@@ -157,12 +158,13 @@ class MenuModal extends React.Component {
 
     render() {
     const {isMenuOpen} = this.state;
-    const {ariaLabel, children, role} = this.props;
+    const {ariaLabel, children, role, isLoggedIn} = this.props;
     return (
       <React.Fragment>
         <MenuTrigger
           onOpen={this.onOpen}
           menuButtonRef={n => this.openButtonNode = n}
+          isLoggedIn={isLoggedIn}
         />
         {isMenuOpen && (
           <MenuContent

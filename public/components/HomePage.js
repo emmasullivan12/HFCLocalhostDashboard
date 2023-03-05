@@ -54,16 +54,16 @@ const SuccessModalProps = {
 }
 
 const AddHighlightModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: 'Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: 'Post',
   usedFor: 'addHighlight',
   changeInitFocus: true,
   wider: true
 }
 
 const AddHighlightSmlModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: '+ Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: '+ Posts',
   usedFor: 'addHighlightSml',
   changeInitFocus: true,
   wider: true
@@ -102,8 +102,8 @@ const MenteeSkillsLearningPromptProps = {
   changeInitFocus: true,
 }
 const AnswerQModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: 'Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: 'Post',
   usedFor: 'addHighlightDashboard',
   hideTrigger: true,
   changeInitFocus: true,
@@ -159,7 +159,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: 'mentor',
+      userRole: '',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
@@ -543,7 +543,7 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole, isUserSearch, filterBy, numResults} = this.state;
-    const {updatePathName} = this.props
+    const {updatePathName, isLoggedIn} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
       {
@@ -906,7 +906,7 @@ class HomePage extends Component {
                       <span>Latest</span>
                     </div>
                   </button>
-                  {userRole != 'mentee' && (
+                  {isLoggedIn == true && userRole != 'mentee' && (
                     <button type="button" className={"filter-btn " + (filterBy == "unanswered" ? "isActive" : "")} value="unanswered" onClick={(e) => this.filterBy(e)}>
                       <div>
                         <span role="img" aria-label="question icon">❓</span>
@@ -1082,13 +1082,15 @@ class HomePage extends Component {
   }
 
   renderSteps() {
+    const {isLoggedIn} = this.props
     const {userStepsIsOpen, userstep, userRole, showSuccessModal, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
     let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps
 
     learning = []
-    userGroups = ['123']
+  //  userGroups = ['123']
+    userGroups = []
     hasMatch = false
 
     if (userRole == 'mentor') {
@@ -1114,7 +1116,7 @@ class HomePage extends Component {
       ]
     }
 
-    if (userRole == 'mentee') {
+    if (userRole == 'mentee' || isLoggedIn == false) {
       userQIDs = []
       numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
       menteeSteps = [
@@ -1293,6 +1295,7 @@ class HomePage extends Component {
   }
 
   render(){
+    const {isLoggedIn} = this.props
     const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
@@ -1408,7 +1411,7 @@ class HomePage extends Component {
               </Modal>
             </React.Fragment>
           )}
-          {userRole == 'mentee' && (
+          {(userRole == 'mentee' || isLoggedIn == false) && (
             <React.Fragment>
               <Modal {...AddQModalProps}>
                 <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>

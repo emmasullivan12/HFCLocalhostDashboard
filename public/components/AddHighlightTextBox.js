@@ -893,8 +893,13 @@ class AddHighlightTextBox extends Component {
             </div>
           )}
           {isAddAnswer == true && (
-            <div className="modal-title">
-              Add your answer {qToAnswer ? ('to: ' + <span className="modal-subtitle highlight-titleText">{qToAnswer}</span>) : ""}
+            <div className="modal-title paddingL20 paddingR20">
+              {qToAnswer != null && (
+                <div>Add your answer to: <span className="modal-subtitle highlight-titleText">{qToAnswer}</span></div>
+              )}
+              {qToAnswer == null && (
+                <span>Add your answer</span>
+              )}
             </div>
           )}
           {isAddGeneral == true && (
