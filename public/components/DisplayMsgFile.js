@@ -25,7 +25,7 @@ class DisplayMsgFile extends Component {
 
   render() {
   const {isFlexContainerOpen} = this.state;
-  const {file, error, isLastPic, handleLastPic, msgId, isQA} = this.props;
+  const {file, error, isLastPic, handleLastPic, msgId, isQA, showBlurry} = this.props;
   let type = file.fileType ? file.fileType : file.type
   let fileType
   if (type === 'image/png' || type === 'image/jpeg' || type === 'image/bmp') {
@@ -44,12 +44,12 @@ class DisplayMsgFile extends Component {
       <React.Fragment>
         <div className="display-file-container">
           {file.title && (
-            <div className="file-name">
+            <div className={"file-name" + (showBlurry == true ? " blurryText" : "")}>
               <TextParser text={file.title}/>
             </div>
           )}
           <button type="button" onClick={this.toggleFlexContainer} className="file-title-container button-unstyled">
-            <span className="file-title">
+            <span className={"file-title" + (showBlurry == true ? " blurryText" : "")}>
               {file.name}
             </span>
             <span className="down-arrow-img-icon">
@@ -62,7 +62,7 @@ class DisplayMsgFile extends Component {
                 <a className={error ? "disabled" : null} href='' target="_blank" rel="noopener noreferrer">
                   {fileType === 'img' && (
                     <img
-                      className="msg-img"
+                      className={"msg-img" + (showBlurry == true ? " blurryImg" : "")}
                       src={usercdn + '/' + userImgsFolder + file.imgurl + '-270'} // 270px width size
                       alt={file.name}
                       onLoad={isLastPic ? () => handleLastPic() : null}
@@ -71,31 +71,31 @@ class DisplayMsgFile extends Component {
                   {fileType === 'pdf' && (
                     <div className="fileIcon-container pdf">
                       <i className="far fa-file-pdf" />
-                      <span className="fileName-text">{file.name}</span>
+                      <span className={"fileName-text" + (showBlurry == true ? " blurryText" : "")}>{file.name}</span>
                     </div>
                   )}
                   {fileType === 'xls' && (
                     <div className="fileIcon-container xls">
                       <i className="far fa-file-excel" />
-                      <span className="fileName-text">{file.name}</span>
+                      <span className={"fileName-text" + (showBlurry == true ? " blurryText" : "")}>{file.name}</span>
                     </div>
                   )}
                   {fileType === 'word' && (
                     <div className="fileIcon-container word">
                       <i className="far fa-file-word" />
-                      <span className="fileName-text">{file.name}</span>
+                      <span className={"fileName-text" + (showBlurry == true ? " blurryText" : "")}>{file.name}</span>
                     </div>
                   )}
                   {fileType === 'ppt' && (
                     <div className="fileIcon-container ppt">
                       <i className="far fa-file-powerpoint" />
-                      <span className="fileName-text">{file.name}</span>
+                      <span className={"fileName-text" + (showBlurry == true ? " blurryText" : "")}>{file.name}</span>
                     </div>
                   )}
                   {fileType === 'other' && (
                     <div>
                       <i className="far fa-file-alt" />
-                      <span className="fileName-text">{file.name}</span>
+                      <span className={"fileName-text" + (showBlurry == true ? " blurryText" : "")}>{file.name}</span>
                     </div>
                   )}
                   {error && (

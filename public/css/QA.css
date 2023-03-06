@@ -98,18 +98,19 @@
 
 .signUpPromptBanner{
   position: sticky;
-  height: 400px;
-  width: auto;
+  height: 60vh; /* 40vh on mobile */
+  max-height: 400px;
+  width: 100%;
   z-index: 1000;
   bottom: 0;
-  border-top: 1px solid #4e4ed6;
   box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
   -webkit-box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
   -moz-box-shadow: rgb(0 0 0 / 20%) 1px -17px 20px;
+  border-top: 1px solid #4e4ed6;
   background-image: url(https://files.prospela.com/images%2FSignUpPromptBannerPurple.pptx.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   -webkit-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   -moz-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   -ms-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);

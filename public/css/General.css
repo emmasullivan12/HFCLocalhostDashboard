@@ -445,6 +445,10 @@ table th .description{
 .blurryText a:link {
   color: transparent;
 }
+.blurryImg{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
 .greenText{
   color: #14bd14;
   font-size: 13px;

@@ -70,6 +70,7 @@ class QA extends Component {
   }
 
   componentDidMount() {
+    const {maxViewsReached} = this.state
     window.addEventListener('resize', this.isMobile);
     const qaItem = {
       qid: '123456',
@@ -206,10 +207,12 @@ class QA extends Component {
       element.classList.add("highlighted-post")
     }
 
-    const observer = this.createObserver()
+    let parent = document.getElementById('clientWindowContainer')
+    parent.addEventListener('scroll', this.showSignUpPromptOnScroll)
+  /*  const observer = this.createObserver()
 
     let target = document.getElementById("answersSection")
-    observer.observe(target)
+    observer.observe(target) */
 
   /*  const acceptedAnswer = hidsArr.length > 0 && hidsArr.filter(hid => hid.isacceptedanswer == true)
     console.log("about to update hasacceptedanswerHID in CDM to: "+acceptedAnswer.hid)
@@ -224,12 +227,14 @@ class QA extends Component {
   }
 
   componentWillUnmount() {
-    const observer = this.createObserver()
+  //  const observer = this.createObserver()
 
     window.removeEventListener('resize', this.isMobile);
+    let parent = document.getElementById('clientWindowContainer')
+    parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
 
-    let target = document.getElementById("answersSection")
-    observer.unobserve(target)
+  //  let target = document.getElementById("answersSection")
+  //  observer.unobserve(target)
   }
 
   toggleUpvote = (postId) => {
@@ -282,7 +287,19 @@ class QA extends Component {
     })
   }
 
-  createObserver = () => {
+  showSignUpPromptOnScroll = () => {
+    const {maxViewsReached} = this.state
+    let parent = document.getElementById('clientWindowContainer')
+    let el = document.getElementById('answersSection')
+
+    if (parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) {
+      this.setState({
+        showSignUpBanner: true
+      })
+    }
+
+  }
+/* createObserver = () => {
     const {maxViewsReached} = this.state
 
     let options = {
@@ -305,7 +322,7 @@ class QA extends Component {
     }, options);
 
     return observer
-  }
+  } */
 
   render() {
     const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner} = this.state;
@@ -882,6 +899,7 @@ class QA extends Component {
                                     <div className="extra-content-container" key={file.fileid}>
                                       <DisplayMsgFile
                                         file={file}
+                                        showBlurry={showSignUpBanner == true ? true : false}
                                         isQA
                                       />
                                     </div>
