@@ -149,7 +149,7 @@ class QAThreads extends Component {
   }
 
   displayComment = (comment) => {
-    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, showSignUpBanner} = this.props
+    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
@@ -161,7 +161,7 @@ class QAThreads extends Component {
     return (
       <li key={comment.cid} id={comment.cid} className={type != 'g' ? "gridContainer borderBtm borderGrey" : "gridContainer"}>
         <div className="commentActions">
-          <div className={"commentScore" + (showSignUpBanner == true ? " blurryText" : "")}>
+          <div className={"commentScore" + (maxViewsReached == true ? " blurryText" : "")}>
             {this.state[comment.cid+'-votes']}
           </div>
           {(aIsMe == false || isPrUser == true) && (
@@ -204,7 +204,7 @@ class QAThreads extends Component {
               )}
             </span>
           )} */}
-          <span className={showSignUpBanner == true ? "blurryText" : ""} >
+          <span className={maxViewsReached == true ? "blurryText" : ""} >
             <TextParser text={comment.text} showInline />
           </span>
           <span className="fontSize12 paddingL2">

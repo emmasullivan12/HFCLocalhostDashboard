@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
+import {cdn} from './CDN.js';
 import {metaAdder, checkMobile, whichBrowser, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
@@ -209,6 +210,7 @@ class QA extends Component {
 
     let parent = document.getElementById('clientWindowContainer')
     parent.addEventListener('scroll', this.showSignUpPromptOnScroll)
+
   /*  const observer = this.createObserver()
 
     let target = document.getElementById("answersSection")
@@ -226,15 +228,60 @@ class QA extends Component {
     }) */
   }
 
+  componentDidUpdate() {
+    const {showSignUpBanner} = this.state
+    // Check when signUpPromptBanner becomes "sticky"
+
+    if (showSignUpBanner == true) {
+      this.observer = this.createObserver()
+
+      const el = document.querySelector(".signUpPromptBanner")
+      this.observer.observe(el);
+    }
+  }
+
   componentWillUnmount() {
+    const {showSignUpBanner} = this.state
   //  const observer = this.createObserver()
 
     window.removeEventListener('resize', this.isMobile);
     let parent = document.getElementById('clientWindowContainer')
     parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
 
-  //  let target = document.getElementById("answersSection")
-  //  observer.unobserve(target)
+    // Stop IntersectionObserver for signUpPromptBanner
+    if (showSignUpBanner == true) {
+      const el = document.querySelector(".signUpPromptBanner")
+      this.observer.unobserve(el);
+    }
+  }
+
+  createObserver = () => {
+    const {signUpPromptBannerIsSticky} = this.state
+    let options = {
+      threshold: 0
+    }
+
+    const observer = new IntersectionObserver(el => {
+      const targetInfo = el[0].boundingClientRect;
+      const rootBoundsInfo = el[0].rootBounds;
+
+      // Started sticking.
+      if (targetInfo.bottom < rootBoundsInfo.bottom && signUpPromptBannerIsSticky != true) {
+        this.setState({
+          signUpPromptBannerIsSticky: true,
+        })
+      } else if (targetInfo.bottom >= rootBoundsInfo.bottom && signUpPromptBannerIsSticky != false) {
+        this.setState({
+          signUpPromptBannerIsSticky: false
+        })
+      } else return
+    }, options);
+
+    return observer
+  /*  new IntersectionObserver(
+      ([e]) => e.target.classList.toggle("isSticky", e.intersectionRatio < 1),
+      { threshold: [1] }
+    ); */
   }
 
   toggleUpvote = (postId) => {
@@ -325,7 +372,7 @@ class QA extends Component {
   } */
 
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, maxViewsReached, signUpPromptBannerIsSticky} = this.state;
     const {updatePathName, isLoggedIn} = this.props
     const qaItem = {
       qid: '123456',
@@ -867,7 +914,7 @@ class QA extends Component {
                                   </svg>
                                 </button>
                               </div>
-                              <span className={showSignUpBanner == true ? "blurryText" : ""}>{this.state[hid.hid+'-votes']}</span>
+                              <span className={maxViewsReached == true ? "blurryText" : ""}>{this.state[hid.hid+'-votes']}</span>
                               {/* {hid.isacceptedanswer == true && ( */}
                               {hid.hid == acceptedAnswerHID && (
                                 <div className={"greenText marginTop10 fontSize25 tooltip" + ((userRole == 'pr' || qIsMe == true) ? " pointerCursor" : "")} onClick={(userRole == 'pr' || qIsMe == true) ? () => this.toggleAcceptedAnswer(hid.hid) : null}>
@@ -889,7 +936,7 @@ class QA extends Component {
                             </div>
                           </div>
                           <div className="gridRightColumn">
-                            <div className={"qDetailContainer marginBottom20 answerContent" + (showSignUpBanner == true ? " blurryText" : "")}>
+                            <div className={"qDetailContainer marginBottom20 answerContent" + (maxViewsReached == true ? " blurryText" : "")}>
                               <TextParser text={hid.text} />
                             </div>
                             {hid.files && hid.files.length > 0 && (
@@ -899,7 +946,7 @@ class QA extends Component {
                                     <div className="extra-content-container" key={file.fileid}>
                                       <DisplayMsgFile
                                         file={file}
-                                        showBlurry={showSignUpBanner == true ? true : false}
+                                        showBlurry={maxViewsReached == true ? true : false}
                                         isQA
                                       />
                                     </div>
@@ -990,7 +1037,7 @@ class QA extends Component {
                               originalPostIsAnon={hid.isanon}
                               originalPostID={hid.hid}
                               type="a"
-                              showSignUpBanner={showSignUpBanner}
+                              maxViewsReached={maxViewsReached}
                             />
                           </div>
                         </div>
@@ -999,13 +1046,27 @@ class QA extends Component {
                     })}
                   </div>
                   {showSignUpBanner == true && (
-                    <div className="signUpPromptBanner">
-                      <div>PROSPELA LOGO </div>
-                      <div className="fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
-                      <div>Unlimited access to insider insights from real employees</div>
-                      <button type="button">Sign up now</button>
-                      <a href="https://app.prospela.com/sign-up">or Login</a>
-                      <div>Career Q&A with industry experts, 1:1 mentoring and a lasting professional network at your fingertips</div>
+                    <div className={"signUpPromptBanner" + (signUpPromptBannerIsSticky == true ? " isSticky" : "")}>
+                      <div className="bannerTextContainer">
+                        <div className="prBannerLogoContainer marginBottom20">
+                          <img
+                            className="prLogoImg"
+                            alt="Prospela Logo"
+                            srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                            sizes="(max-width: 1440px) 69px, 69px"
+                            src={cdn+"/images/Prospela%20Logo_Dark.png"}
+                          />
+                        </div>
+                        <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
+                        <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
+                        <div className="marginBottom20 dispInlineBlock">
+                          <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+                            Sign up (free)
+                          </a>
+                          <a className="dispBlock alignCenter fontSize13" href="https://app.prospela.com/login/">or Login</a>
+                        </div>
+                        <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
+                      </div>
                     </div>
                   )}
                   <div className="marginBottom50 marginTop20">

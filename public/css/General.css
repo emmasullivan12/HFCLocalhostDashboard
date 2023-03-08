@@ -46,7 +46,7 @@
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...} */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 759px) {
   .clientWindowContainer {
     width: calc(100% - 220px);
     width: -webkit-calc(100% - 220px);
@@ -835,6 +835,9 @@ table th .description{
 .marginTop50 {
   margin-top: 50px!important;
 }
+.marginTop55{
+  margin-top: 55px!important;
+}
 .marginTopMinus15 {
   margin-top: -15px;
 }
@@ -1330,8 +1333,18 @@ a.Submit-btn{
   background: #9f9ee7!important;
   border: 1px solid #8b8bdc;
 }
-.Submit-btn.formInterim:hover{
+.Submit-btn.formInterim:hover,
+.Submit-btn.formInterim:active,
+.Submit-btn.formInterim:focus{
   background: #8b8bdc;
+}
+.Submit-btn.signUpPrompt{
+  background: #333359;
+}
+.Submit-btn.signUpPrompt:hover,
+.Submit-btn.signUpPrompt:active,
+.Submit-btn.signUpPrompt:focus{
+  background: black;
 }
 .Submit-btn.landingCTA.hollow{
   border: 1px solid #351c75;
