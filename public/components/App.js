@@ -147,6 +147,7 @@ class Dashboard extends Component{
       contentPosition: 0,
       pathName: window.location.pathname,
       prevFeedScrollPos: 0,
+      cameFromFeedUnlockBtn: false,
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
     }
@@ -178,6 +179,13 @@ class Dashboard extends Component{
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.createScroller);
+  }
+
+  handleUnlockBtnClick = (e) => {
+    const cameFromUnlockBtn = e.target.id == 'itemUnlockBtn' || e.target.id == 'itemUnlockIcon'
+    this.setState({
+      cameFromFeedUnlockBtn: cameFromUnlockBtn
+    })
   }
 
   moveScroller = (e) => {
@@ -268,7 +276,6 @@ class Dashboard extends Component{
   }
 
   updateFeedScrollPos = (prevScrollPos, userStepsIsOpen) => {
-    console.log("setting userStepsWasOpenInFeed as: "+userStepsIsOpen)
     this.setState({
       prevFeedScrollPos: prevScrollPos,
       userStepsWasOpenInFeed: userStepsIsOpen
@@ -323,7 +330,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {pathName, prevFeedScrollPos, userStepsWasOpenInFeed} = this.state
+    const {pathName, prevFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -335,6 +342,7 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = true
     const isLoggedIn = false
+    const maxViewsReached = true
 
     return(
       <BrowserRouter>
@@ -407,9 +415,9 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} isLoggedIn={isLoggedIn} updatePathName={this.updatePathName}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

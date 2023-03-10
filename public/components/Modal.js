@@ -98,6 +98,7 @@ class Modal extends React.Component {
 
   onOpen(e) {
     const {changeInitFocus} = this.props;
+
     this.setState({ isOpen: true }, () => {
 
       // if there is an input within modal content then allow focus to

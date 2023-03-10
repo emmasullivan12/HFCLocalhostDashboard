@@ -2,7 +2,6 @@
 
 import React, { Component } from "react";
 
-
 function removeHash() {
   history.replaceState("", document.title, window.location.pathname + window.location.search);
 }
@@ -59,6 +58,10 @@ function getIcon(channelType) {
     default:
       return <i className="fas fa-hashtag" />
   }
+}
+
+function getLoremIpsumText() {
+  return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat risus nec est pretium, nec eleifend dolor sagittis. Nunc suscipit risus nec elit tempus, et ultrices nisi blandit. Aenean gravida posuere tristique. Nullam urna est, feugiat at ex vel, facilisis tempor sapien. Aliquam ac vestibulum enim. Nullam et suscipit arcu. Fusce ac lorem congue, cursus erat eget, molestie ligula. Curabitur hendrerit, ipsum tincidunt vestibulum eleifend, arcu felis vestibulum nibh, a egestas tellus lorem posuere augue.'
 }
 
 function getChannelAbout(channelType, allowed) {
@@ -593,4 +596,4 @@ function sortTable(n, sortType, tableId, callback) {
   }
 }
 
-export {removeHash, isIE, isEdge, isiOS, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, percentageCircle, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};
+export {getLoremIpsumText, removeHash, isIE, isEdge, isiOS, isURL, escapeHTML, metaAdder, getIcon, getUnreadIndicator, showNotifFavicon, hideNotifFavicon, getChannelAbout, whichBrowser, checkMobile, checkDevice, DateCalc, TimeCalc, percentageCircle, ChevronDown, ChevronUp, X, Check, PenIcon, LoadingSpinner, sortTable, monthDiff};

@@ -185,7 +185,7 @@ class HomePage extends Component {
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
       userStepsWasOpenInFeed: this.props.userStepsWasOpenInFeed != null ? this.props.userStepsWasOpenInFeed : null,
       newPostsAbove: true,
-      newPostsBannerSeen: false
+      newPostsBannerSeen: false,
     }
   }
 
@@ -543,7 +543,7 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole, isUserSearch, filterBy, numResults} = this.state;
-    const {updatePathName, isLoggedIn} = this.props
+    const {updatePathName, isLoggedIn, maxViewsReached, handleUnlockBtnClick} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
       {
@@ -891,7 +891,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
       case 'questions':
@@ -929,7 +929,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
     }

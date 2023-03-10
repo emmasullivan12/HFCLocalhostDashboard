@@ -28,7 +28,7 @@ class FeedContainer extends Component {
 
 
   render() {
-    const {userRole, contentArr, isUserSearch, updatePathName, handleFeedClick} = this.props
+    const {userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick} = this.props
     const isLoadingMorePosts = true
 
     return (
@@ -44,6 +44,8 @@ class FeedContainer extends Component {
               key={post.qid ? post.qid : post.hid}
               post={post}
               userRole={userRole}
+              maxViewsReached={maxViewsReached}
+              handleUnlockBtnClick={handleUnlockBtnClick}
             />
           )
         })}

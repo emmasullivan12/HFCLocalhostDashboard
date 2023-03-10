@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import MenuNav from './MenuNav.js';
 import {LoadingSpinner, checkMobile, isiOS, X} from './GeneralFunctions.js';
 
+
 class FeedHeader extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +15,17 @@ class FeedHeader extends Component {
   }
 
   componentDidMount() {
-    setTimeout(this.showMenuBtn, 2000);
+    this.timerHandle = setTimeout(() => {
+      this.showMenuBtn
+      this.timerHandle = 0;
+    }, 2000);
+  }
+
+  componentWillUnmount() {
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   /*handleMessageChange = (e) => {

@@ -21,6 +21,12 @@ import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSi
 
 import "../css/QA.css";
 
+const NoAccessContentModalProps = {
+  ariaLabel: 'No Access - Sign up or Login',
+  triggerText: 'Sign up or Login',
+  usedFor: 'noAccess',
+}
+
 const MenteeProfileUsrNameModalProps = {
   ariaLabel: 'View Mentee Profile',
   usedFor: 'mentee-profile-qaItem',
@@ -55,8 +61,8 @@ const DeleteContentModalProps = {
 }
 
 class QA extends Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.state = {
       isLoading: false,
       isMobile: checkMobile(),
@@ -64,14 +70,14 @@ class QA extends Component {
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
       showSignUpBanner: false,
-      maxViewsReached: true,
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
   }
 
   componentDidMount() {
-    const {maxViewsReached} = this.state
+    const {showSignUpBanner} = this.state
+    const {maxViewsReached, cameFromFeedUnlockBtn} = this.props
     window.addEventListener('resize', this.isMobile);
     const qaItem = {
       qid: '123456',
@@ -200,14 +206,22 @@ class QA extends Component {
     });
 
     // On load, scroll to answer & show animation
-    const hash = window.location.hash
-    const id = hash.split('#')[1]
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({behavior: "smooth"});
-      element.classList.add("highlighted-post")
+    if (maxViewsReached != true) {
+      const hash = window.location.hash
+      const id = hash.split('#')[1]
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({behavior: "smooth"});
+        element.classList.add("highlighted-post")
+      }
     }
 
+    if (cameFromFeedUnlockBtn == true) {
+      this.setState({
+        showSignUpBanner: true
+      })
+    }
+    // On scroll show the sign up prompt
     let parent = document.getElementById('clientWindowContainer')
     parent.addEventListener('scroll', this.showSignUpPromptOnScroll)
 
@@ -232,6 +246,7 @@ class QA extends Component {
     const {showSignUpBanner} = this.state
     // Check when signUpPromptBanner becomes "sticky"
 
+    // Do not create again if banner is already showing i.e. came from feed unlock button
     if (showSignUpBanner == true) {
       this.observer = this.createObserver()
 
@@ -264,13 +279,17 @@ class QA extends Component {
     const observer = new IntersectionObserver(el => {
       const targetInfo = el[0].boundingClientRect;
       const rootBoundsInfo = el[0].rootBounds;
-
+console.log(targetInfo)
+console.log(rootBoundsInfo)
+console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
       // Started sticking.
       if (targetInfo.bottom < rootBoundsInfo.bottom && signUpPromptBannerIsSticky != true) {
+        console.log("gets here")
         this.setState({
           signUpPromptBannerIsSticky: true,
         })
       } else if (targetInfo.bottom >= rootBoundsInfo.bottom && signUpPromptBannerIsSticky != false) {
+        console.log("gets here 2")
         this.setState({
           signUpPromptBannerIsSticky: false
         })
@@ -335,11 +354,14 @@ class QA extends Component {
   }
 
   showSignUpPromptOnScroll = () => {
-    const {maxViewsReached} = this.state
+    const {maxViewsReached} = this.props
+
+    if (maxViewsReached != true) {return}
+
     let parent = document.getElementById('clientWindowContainer')
     let el = document.getElementById('answersSection')
 
-    if (parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) {
+    if ((parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) && this.state.showSignUpBanner != true) {
       this.setState({
         showSignUpBanner: true
       })
@@ -372,8 +394,8 @@ class QA extends Component {
   } */
 
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, maxViewsReached, signUpPromptBannerIsSticky} = this.state;
-    const {updatePathName, isLoggedIn} = this.props
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, signUpPromptBannerIsSticky} = this.state;
+    const {updatePathName, isLoggedIn, maxViewsReached} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -863,6 +885,30 @@ class QA extends Component {
                     </div>
                   </div>
                   <br />
+                  <Modal {...NoAccessContentModalProps}>
+                    <div className="signUpPromptBanner">
+                      <div className="bannerTextContainer">
+                        <div className="prBannerLogoContainer marginBottom20">
+                          <img
+                            className="prLogoImg"
+                            alt="Prospela Logo"
+                            srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                            sizes="(max-width: 1440px) 69px, 69px"
+                            src={cdn+"/images/Prospela%20Logo_Dark.png"}
+                          />
+                        </div>
+                        <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
+                        <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
+                        <div className="marginBottom20 dispInlineBlock">
+                          <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+                            Sign up (free)
+                          </a>
+                          <a className="dispBlock alignCenter fontSize13" href="https://app.prospela.com/login/">or Login</a>
+                        </div>
+                        <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
+                      </div>
+                    </div>
+                  </Modal>
                   <div id="answersSection">
                     <div>
                     {/*  {qaItem.hids.length == 0 ? (

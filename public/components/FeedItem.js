@@ -189,7 +189,7 @@ class FeedItem extends Component {
   }
 
   render() {
-    const {contentType, post, userRole, isOnMyContentPage, updatePathName} = this.props
+    const {contentType, post, userRole, isOnMyContentPage, updatePathName, maxViewsReached, handleUnlockBtnClick} = this.props
     const {userUpvoted, votes, showGeneralPostModal} = this.state
 
     const isOffline = false;
@@ -400,6 +400,7 @@ class FeedItem extends Component {
       const {isTextClamped} = this.state
       const aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
       const error = false
+      let answerURL
 
       if (contentType == 'general') {
         hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []
@@ -505,93 +506,106 @@ class FeedItem extends Component {
                   <div className="darkGreyText">{aCredentialText}</div>
                 </div>
               </div>
-              <div className={"marginTop10 max3Lines greyText" + (isTextClamped == true ? "" : " marginBottom10")} ref={this.textItemRef} >
-                {post.text && (
-                  <div className="darkGreyText fontSize13"><TextParser text={post.text} /></div>
-                )}
-              </div>
-              {isTextClamped == true && (
-                <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" data-label="ignoreOpenModal" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
-                  See more...
+              <div className={"feedItemTextContainer" + ((contentType == 'answer' && maxViewsReached == true) ? " maxViewsReached" : "")}>
+                <div className={"marginTop10 max3Lines greyText" + (isTextClamped == true ? "" : " marginBottom10")} ref={this.textItemRef} >
+                  {post.text && (
+                    <div className={"darkGreyText fontSize13" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryText" : "")}><TextParser text={post.text} /></div>
+                  )}
                 </div>
-              )}
-              <div className="fontSize14 textLeft">
-                {post.selectedFiles && post.selectedFiles.length >= 1 && (
-                  <div className="marginTop20 marginBottom20 fileBoxesContainer">
-                    {post.selectedFiles.map((file, index) => {
-                      const fileName = file.name;
-                      const fileID = file.fileid
-                      let fileType, backgroundImgURL, fileurl
-                      if (file.type === 'image/png' || file.type === 'image/jpeg' || file.type === 'image/bmp') {
-                        fileType = 'img'
-                        backgroundImgURL = usercdn + '/' + userImgsFolder + file.imgurl + '-80'
-                        fileurl = usercdn + userImgsFolder + file.imgurl + '-o'
-                      } else if (file.type === 'application/pdf') {
-                        fileType = 'pdf'
-                        fileurl = "https://google.com"
-                      } else if (file.type === 'application/vnd.ms-excel' || file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.template' || file.type === 'application/vnd.ms-excel.sheet.macroEnabled.12' || file.type === 'application/vnd.ms-excel.template.macroEnabled.12' || file.type === 'application/vnd.ms-excel.addin.macroEnabled.12' || file.type === 'application/vnd.ms-excel.sheet.binary.macroEnabled.12') {
-                        fileType = 'xls'
-                        fileurl = "https://google.com"
-                      } else if (file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template' || file.type === 'application/vnd.ms-word.document.macroEnabled.12' || file.type === 'application/vnd.ms-word.template.macroEnabled.12') {
-                        fileType = 'word'
-                        fileurl = "https://google.com"
-                      } else if (file.type === 'application/mspowerpoint' || file.type === 'application/ms-powerpoint' || file.type === 'application/mspowerpnt' || file.type === 'application/vnd-mspowerpoint' || file.type === 'application/powerpoint' || file.type === 'application/x-powerpoint' || file.type === 'application/vnd.ms-powerpoint' || file.type === 'application/vnd.ms-powerpoint.presentation.macroEnabled.12' || file.type === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
-                        fileType = 'ppt'
-                        fileurl = "https://google.com"
-                      } else {
-                        fileType = 'other'
-                        fileurl = "https://google.com"
-                      }
-
-                      return (
-                        <div className="fileBox tooltip" key={fileName} onClick={(e) => {this.openFile(e, fileurl, error)}} >
-                          {fileType === 'img' && (
-                            <div className="fileBoxImg" style={{backgroundImage: `url(${backgroundImgURL})`}} />
-                          )}
-                          {fileType === 'pdf' && (
-                            <React.Fragment>
-                              <div className="fileIcon-container addHighlight pdf fontSize30">
-                                <i className="far fa-file-pdf" />
-                              </div>
-                            </React.Fragment>
-                          )}
-                          {fileType === 'xls' && (
-                            <React.Fragment>
-                              <div className="fileIcon-container addHighlight xls fontSize30">
-                                <i className="far fa-file-excel" />
-                              </div>
-                            </React.Fragment>
-                          )}
-                          {fileType === 'word' && (
-                            <React.Fragment>
-                              <div className="fileIcon-container addHighlight word fontSize30">
-                                <i className="far fa-file-word" />
-                              </div>
-                            </React.Fragment>
-                          )}
-                          {fileType === 'ppt' && (
-                            <React.Fragment>
-                              <div className="fileIcon-container addHighlight ppt fontSize30">
-                                <i className="far fa-file-powerpoint" />
-                              </div>
-                            </React.Fragment>
-                          )}
-                          {fileType === 'other' && (
-                            <React.Fragment>
-                              <div className="fileIcon-container addHighlight fontSize30">
-                                <i className="far fa-file-alt" />
-                              </div>
-                            </React.Fragment>
-                          )}
-                          <span className="tooltiptext chats breakWord">
-                            {fileName}
-                          </span>
-                        </div>
-                      )
-                    })}
+                {isTextClamped == true && (
+                  <div className="fontSize13 marginBottom10 pointerCursor linkPurpleText" data-label="ignoreOpenModal" onClick={(e) => {this.handleSeeMore(e, contentType)}}>
+                    See more...
                   </div>
                 )}
+                <div className="fontSize14 textLeft">
+                  {post.selectedFiles && post.selectedFiles.length >= 1 && (
+                    <div className="marginTop20 marginBottom20 fileBoxesContainer">
+                      {post.selectedFiles.map((file, index) => {
+                        const fileName = file.name;
+                        const fileID = file.fileid
+                        let fileType, backgroundImgURL, fileurl
+                        if (file.type === 'image/png' || file.type === 'image/jpeg' || file.type === 'image/bmp') {
+                          fileType = 'img'
+                          backgroundImgURL = usercdn + '/' + userImgsFolder + file.imgurl + '-80'
+                          fileurl = usercdn + userImgsFolder + file.imgurl + '-o'
+                        } else if (file.type === 'application/pdf') {
+                          fileType = 'pdf'
+                          fileurl = "https://google.com"
+                        } else if (file.type === 'application/vnd.ms-excel' || file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.template' || file.type === 'application/vnd.ms-excel.sheet.macroEnabled.12' || file.type === 'application/vnd.ms-excel.template.macroEnabled.12' || file.type === 'application/vnd.ms-excel.addin.macroEnabled.12' || file.type === 'application/vnd.ms-excel.sheet.binary.macroEnabled.12') {
+                          fileType = 'xls'
+                          fileurl = "https://google.com"
+                        } else if (file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template' || file.type === 'application/vnd.ms-word.document.macroEnabled.12' || file.type === 'application/vnd.ms-word.template.macroEnabled.12') {
+                          fileType = 'word'
+                          fileurl = "https://google.com"
+                        } else if (file.type === 'application/mspowerpoint' || file.type === 'application/ms-powerpoint' || file.type === 'application/mspowerpnt' || file.type === 'application/vnd-mspowerpoint' || file.type === 'application/powerpoint' || file.type === 'application/x-powerpoint' || file.type === 'application/vnd.ms-powerpoint' || file.type === 'application/vnd.ms-powerpoint.presentation.macroEnabled.12' || file.type === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
+                          fileType = 'ppt'
+                          fileurl = "https://google.com"
+                        } else {
+                          fileType = 'other'
+                          fileurl = "https://google.com"
+                        }
+
+                        return (
+                          <div className="fileBox tooltip" key={fileName} onClick={(contentType == 'answer' && maxViewsReached == true) ? null : ((e) => {this.openFile(e, fileurl, error)})} >
+                            {fileType === 'img' && (
+                              <div className={"fileBoxImg" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")} style={{backgroundImage: `url(${backgroundImgURL})`}} />
+                            )}
+                            {fileType === 'pdf' && (
+                              <React.Fragment>
+                                <div className={"fileIcon-container addHighlight pdf fontSize30" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")}>
+                                  <i className="far fa-file-pdf" />
+                                </div>
+                              </React.Fragment>
+                            )}
+                            {fileType === 'xls' && (
+                              <React.Fragment>
+                                <div className={"fileIcon-container addHighlight xls fontSize30" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")}>
+                                  <i className="far fa-file-excel" />
+                                </div>
+                              </React.Fragment>
+                            )}
+                            {fileType === 'word' && (
+                              <React.Fragment>
+                                <div className={"fileIcon-container addHighlight word fontSize30" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")}>
+                                  <i className="far fa-file-word" />
+                                </div>
+                              </React.Fragment>
+                            )}
+                            {fileType === 'ppt' && (
+                              <React.Fragment>
+                                <div className={"fileIcon-container addHighlight ppt fontSize30" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")}>
+                                  <i className="far fa-file-powerpoint" />
+                                </div>
+                              </React.Fragment>
+                            )}
+                            {fileType === 'other' && (
+                              <React.Fragment>
+                                <div className={"fileIcon-container addHighlight fontSize30" + ((contentType == 'answer' && maxViewsReached == true) ? " blurryImg" : "")}>
+                                  <i className="far fa-file-alt" />
+                                </div>
+                              </React.Fragment>
+                            )}
+                            <span className="tooltiptext chats breakWord">
+                              {fileName}
+                            </span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
               </div>
+              {(contentType == 'answer' && maxViewsReached == true) && (
+                <div>
+                  <div className="feedItemUnlockSection marginTop10 marginBottom10">
+                    <div className="feedItemUnlockSection-btnContainer" >
+                      <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                        <i className="fas fa-lock" id="itemUnlockIcon"/> Unlock
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
               {contentType != 'general' && (
                 <div className={"fontSize13 lineHeight20pc darkGreyText max1Line" + (isTextClamped == true ? "" : " marginTop10")}>
                   Replying to: <strong className="purpleText">{post.title}</strong>
@@ -674,7 +688,7 @@ class FeedItem extends Component {
 
       if (contentType == 'answer') {
         return (
-          <Link to={{pathname: "/questions/" + post.relatedqid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
+          <Link to={{pathname: "/questions/" + post.relatedqid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={(e) => {handleUnlockBtnClick(e), updatePathName}}>
             <FeedItemDetail />
           </Link>
         )
