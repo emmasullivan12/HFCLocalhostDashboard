@@ -24,7 +24,7 @@ const AddHighlightMentorModalProps = {
 
 class AskAQPrompt extends Component {
   render() {
-    const {userRole, hasNoContentYet, noResultsFound, updatePathName} = this.props
+    const {userRole, hasNoContentYet, noResultsFound, updatePathName, isLoggedIn, checkHasAccess, noAccessHandler} = this.props
 
     return (
       <section>
@@ -34,7 +34,7 @@ class AskAQPrompt extends Component {
             {userRole == "mentee" && hasNoContentYet == true && (
               <div>You haven&#39;t asked anything yet. </div>
             )}
-            {userRole == "mentee" && noResultsFound == true && (
+            {(!isLoggedIn || (userRole == "mentee" && noResultsFound == true)) && (
               <div>No results found. </div>
             )}
             {userRole == "mentor" && hasNoContentYet == true && (
@@ -45,7 +45,7 @@ class AskAQPrompt extends Component {
             )}
           </h2>
           <p className="landingCTADesc">
-            {userRole == "mentee" && (
+            {(!isLoggedIn || userRole == "mentee") && (
               <span>Get your burning questions answered by real employees</span>
             )}
             {userRole == "mentor" && (
@@ -60,6 +60,11 @@ class AskAQPrompt extends Component {
           {userRole == 'mentor' && (
             <Modal {...AddHighlightMentorModalProps}>
               <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName}/>
+            </Modal>
+          )}
+          {!isLoggedIn && (
+            <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ />
             </Modal>
           )}
         </div>

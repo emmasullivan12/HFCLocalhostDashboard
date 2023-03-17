@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+//import AccessControl from './AccessControl.js';
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
 import {cdn} from './CDN.js';
@@ -242,7 +243,7 @@ class QA extends Component {
     }) */
   }
 
-  componentDidUpdate() {
+  /*componentDidUpdate() {
     const {showSignUpBanner} = this.state
     // Check when signUpPromptBanner becomes "sticky"
 
@@ -253,10 +254,10 @@ class QA extends Component {
       const el = document.querySelector(".signUpPromptBanner")
       this.observer.observe(el);
     }
-  }
+  }*/
 
   componentWillUnmount() {
-    const {showSignUpBanner} = this.state
+  //  const {showSignUpBanner} = this.state
   //  const observer = this.createObserver()
 
     window.removeEventListener('resize', this.isMobile);
@@ -264,13 +265,13 @@ class QA extends Component {
     parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
 
     // Stop IntersectionObserver for signUpPromptBanner
-    if (showSignUpBanner == true) {
+  /*  if (showSignUpBanner == true) {
       const el = document.querySelector(".signUpPromptBanner")
       this.observer.unobserve(el);
-    }
+    }*/
   }
 
-  createObserver = () => {
+  /*createObserver = () => {
     const {signUpPromptBannerIsSticky} = this.state
     let options = {
       threshold: 0
@@ -301,7 +302,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
       ([e]) => e.target.classList.toggle("isSticky", e.intersectionRatio < 1),
       { threshold: [1] }
     ); */
-  }
+//  }
 
   toggleUpvote = (postId) => {
     const currentState = this.state[postId+"-userUpvoted"];
@@ -394,7 +395,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
   } */
 
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, signUpPromptBannerIsSticky} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, signUpPromptBannerNotMaxedViews} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached} = this.props
     const qaItem = {
       qid: '123456',
@@ -758,6 +759,32 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
                       )}
+                  {/*    <AccessControl
+                        allowedPermissions={["maxViewsReached"]}
+                        requireLogIn={false}
+                        renderNoAccess={() => (
+                          <Modal {...NoAccessContentModalProps}>
+                            <SignUpPromptModalContent />
+                          </Modal>
+                        )}
+                      >
+                        <Modal {...AddAnswerModalProps}>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                        </Modal>
+                      </AccessControl>
+                      <AccessControl
+                        allowedPermissions={["maxViewsNotReached"]}
+                        requireLogIn
+                        renderNoAccess={() => (
+                          <Modal {...NoAccessContentModalProps}>
+                            <SignUpPromptModalContent />
+                          </Modal>
+                        )}
+                      >
+                        <Modal {...AddAnswerModalProps}>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                        </Modal>
+                      </AccessControl> */}
                     </span>
                   </div>
                   <div className="darkGreyText fontSize13">
@@ -885,30 +912,6 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     </div>
                   </div>
                   <br />
-                  <Modal {...NoAccessContentModalProps}>
-                    <div className="signUpPromptBanner">
-                      <div className="bannerTextContainer">
-                        <div className="prBannerLogoContainer marginBottom20">
-                          <img
-                            className="prLogoImg"
-                            alt="Prospela Logo"
-                            srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
-                            sizes="(max-width: 1440px) 69px, 69px"
-                            src={cdn+"/images/Prospela%20Logo_Dark.png"}
-                          />
-                        </div>
-                        <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
-                        <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
-                        <div className="marginBottom20 dispInlineBlock">
-                          <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
-                            Sign up (free)
-                          </a>
-                          <a className="dispBlock alignCenter fontSize13" href="https://app.prospela.com/login/">or Login</a>
-                        </div>
-                        <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
-                      </div>
-                    </div>
-                  </Modal>
                   <div id="answersSection">
                     <div>
                     {/*  {qaItem.hids.length == 0 ? (
@@ -1092,7 +1095,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     })}
                   </div>
                   {showSignUpBanner == true && (
-                    <div className={"signUpPromptBanner" + (signUpPromptBannerIsSticky == true ? " isSticky" : "")}>
+                    <div className={"signUpPromptBanner" + (signUpPromptBannerNotMaxedViews == true ? " isSticky" : "")}>
                       <div className="bannerTextContainer">
                         <div className="prBannerLogoContainer marginBottom20">
                           <img

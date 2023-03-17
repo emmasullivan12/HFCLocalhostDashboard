@@ -2603,15 +2603,28 @@ a.button{
   animation: unset;
   animation-duration: unset;
 }
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 440px) and (max-width: 719px) {
+  #modal-noAccess{
+    max-width: 90%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 720px) {
+  #modal-noAccess{
+    max-width: 75%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 440px) {
    #modal-noAccess .signUpPromptBanner{
-     background-position: -340px center;
+     background-position: right -200px center;
      position: fixed;
      margin-left: unset;
      box-shadow: none;
      -webkit-box-shadow: none;
      -moz-box-shadow: none;
      border-top: none;
+     height: 45vh;
    }
    #modal-noAccess .signUpBannerTopText {
      display: block;
@@ -2620,15 +2633,27 @@ a.button{
      display: block;
    }
    #modal-noAccess .bannerTextContainer{
-     margin-top: -80%;
+     margin-top: -100%;
      width: 70%;
+     padding-top: 40px;
    }
 }
-/*@media screen and (min-width: 608px) and (max-width: 1270px) {
+@media screen and (min-width: 641px) and (max-width: 1270px) {
    #modal-noAccess .signUpPromptBanner{
      height: 400px;
    }
- }*/
+   #modal-noAccess .bannerTextContainer{
+     width: 53%;
+   }
+}
+@media screen and (min-width: 441px) and (max-width: 640px) {
+  #modal-noAccess .signUpPromptBanner{
+    height: 430px;
+  }
+  #modal-noAccess .bannerTextContainer{
+    width: 53%;
+  }
+}
 
 /* Lock the scroll position by adding this class to the `<html>` element.*/
 .u-lock-scroll {

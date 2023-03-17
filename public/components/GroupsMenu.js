@@ -138,7 +138,7 @@ class GroupListItem extends Component {
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class GroupsMenu extends Component {
   render() {
-    const {userRole, onClick} = this.props;
+    const {userRole, onClick, checkHasAccess, noAccessHandler} = this.props;
     const groups = [];
 
     if (this.props.groups.length == 0) {
@@ -172,7 +172,7 @@ class GroupsMenu extends Component {
               <i className="fas fa-plug" />
             </span>
             <div className="menuCTAContainer">
-              <Modal {...JoinProgrammePlusModalProps}>
+              <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                 <JoinProgrammeModalContent />
               </Modal>
             </div>

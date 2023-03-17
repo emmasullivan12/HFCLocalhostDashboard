@@ -28,13 +28,13 @@ class FeedContainer extends Component {
 
 
   render() {
-    const {userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick} = this.props
+    const {userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler, isLoggedIn} = this.props
     const isLoadingMorePosts = true
 
     return (
       <div className="marginTop20" id="feedItems" onClick={handleFeedClick}>
         {contentArr.length == 0 && isLoadingMorePosts != true && (
-          <AskAQPrompt userRole={userRole} noResultsFound updatePathName={updatePathName}/>
+          <AskAQPrompt userRole={userRole} noResultsFound updatePathName={updatePathName} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler}/>
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           const contentType = post.qid ? 'question' : post.type
@@ -61,6 +61,11 @@ class FeedContainer extends Component {
               {userRole == 'mentor' && (
                 <Modal {...AddGeneralHighlightModalProps}>
                   <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole='mentor' isAddGeneral/>
+                </Modal>
+              )}
+              {!isLoggedIn && (
+                <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                  <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
                 </Modal>
               )}
             </div>

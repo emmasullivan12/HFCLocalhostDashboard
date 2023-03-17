@@ -7,13 +7,13 @@ import "../css/General.css";
 
 // ModalTrigger is the button that will open the Modal
 const MenuTrigger = ({
+  clickHandler,
   menuButtonRef,
-  onOpen,
   text,
   usedFor,
   isLoggedIn
 }) => (
-  <button type="button" onClick={onOpen} ref={menuButtonRef} className="userMenu">
+  <button type="button" onClick={clickHandler} ref={menuButtonRef} className="userMenu">
     <div className="userContainer">
       <div className="presenceContainer">
         <i className="fa fa-circle" />
@@ -156,13 +156,32 @@ class MenuModal extends React.Component {
 //    this.onMenuClose();
   }
 
+  clickHandler = () => {
+    const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.onOpen()
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.onOpen()
+    }
+  }
+
     render() {
     const {isMenuOpen} = this.state;
     const {ariaLabel, children, role, isLoggedIn} = this.props;
     return (
       <React.Fragment>
         <MenuTrigger
-          onOpen={this.onOpen}
+          clickHandler={this.clickHandler}
           menuButtonRef={n => this.openButtonNode = n}
           isLoggedIn={isLoggedIn}
         />

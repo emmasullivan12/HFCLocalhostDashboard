@@ -31,7 +31,7 @@ const MentorProfileModalProps = {
 class MainMenu extends Component {
 
   render() {
-    const {userRole, onClick, pathName} = this.props;
+    const {userRole, onClick, pathName, checkHasAccess, noAccessHandler} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
       //const pathName = window.location.pathname
@@ -43,7 +43,7 @@ class MainMenu extends Component {
         {/*    <NavLink exact to="/home" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink> */}
         {/*    <NavLink exact to="/mentor-homepage" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Dashboard</NavLink> */}
         {/*    <NavLink exact to="/home" isActive={() => ['/home', '/questions'].includes(window.location.pathname) || window.location.pathname.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink> */}
-            <FullPageModal {...MentorProfileModalProps}>
+            <FullPageModal {...MentorProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
               <MentorProfileContent />
             </FullPageModal>
             <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>
@@ -58,7 +58,7 @@ class MainMenu extends Component {
         {/*  <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>Get Started</NavLink> */}
         {/* <NavLink exact to="/latest-advice" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Get Started</NavLink>  */}
           <NavLink exact to="/home" isActive={() => ['/', '/home', '/questions'].includes(pathName) || pathName.includes('/questions/')} activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>Home</NavLink>
-          <FullPageModal {...MenteeProfileModalProps}>
+          <FullPageModal {...MenteeProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
             <MenteeProfileContent />
           </FullPageModal>
           <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>

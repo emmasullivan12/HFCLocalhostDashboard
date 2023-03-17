@@ -543,7 +543,7 @@ class HomePage extends Component {
 
   renderTab = () => {
     const {tabToView, userRole, isUserSearch, filterBy, numResults} = this.state;
-    const {updatePathName, isLoggedIn, maxViewsReached, handleUnlockBtnClick} = this.props
+    const {updatePathName, isLoggedIn, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
       {
@@ -891,7 +891,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
       case 'questions':
@@ -929,7 +929,7 @@ class HomePage extends Component {
               </div>
             )}
             { this.showUpdateTabBtns() }
-            <FeedContainer contentArr={contentArr} userRole={userRole} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
+            <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} isUserSearch={isUserSearch} updatePathName={updatePathName} handleFeedClick={(e) => this.handleFeedClick(e)}/>
           </div>
         )
     }
@@ -1295,7 +1295,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {isLoggedIn} = this.props
+    const {isLoggedIn, checkHasAccess, noAccessHandler} = this.props
     const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
@@ -1390,7 +1390,7 @@ class HomePage extends Component {
                 <div className="padding20">
                   <div className="groupsContainer">
                     {groups}
-                    <Modal {...JoinProgrammePlusModalProps}>
+                    <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                       <JoinProgrammeModalContent />
                     </Modal>
                   </div>
@@ -1411,12 +1411,22 @@ class HomePage extends Component {
               </Modal>
             </React.Fragment>
           )}
-          {(userRole == 'mentee' || isLoggedIn == false) && (
+          {(userRole == 'mentee') && (
             <React.Fragment>
               <Modal {...AddQModalProps}>
                 <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
               </Modal>
               <Modal {...AddQSmlModalProps}>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentee'/>
+              </Modal>
+            </React.Fragment>
+          )}
+          {(isLoggedIn == false) && (
+            <React.Fragment>
+              <Modal {...AddQModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
+              </Modal>
+              <Modal {...AddQSmlModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                 <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentee'/>
               </Modal>
             </React.Fragment>

@@ -926,10 +926,6 @@
   .modal-container.wider {
     max-width: 40em;
   }
-  #modal-noAccess{
-    max-width: 75%;
-    padding: 0;
-  }
 }
 @media screen and (max-width: 759px) {
   .fullpage-modal-container{

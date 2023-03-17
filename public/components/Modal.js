@@ -5,16 +5,18 @@ import ReactDOM from "react-dom";
 import ButtonContent from './ButtonContent.js';
 import "../css/Modal.css";
 
+
+
 // ModalTrigger is the button that will open the Modal
 const ModalTrigger = ({
   ariaLabel,
   buttonRef,
-  onOpen,
+  clickHandler,
   text,
   triggerHasAutoFocus,
   usedFor
 }) => (
-  <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={onOpen} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
+  <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={clickHandler} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -83,7 +85,22 @@ class Modal extends React.Component {
 
     // If want to open Modal automatically when called
     if (hideTrigger == true) {
-      this.onOpen();
+      const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+
+      // If there is an access requirement
+      if (checkHasAccess) {
+        checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+          if (hasAccess == false) {
+            return noAccessHandler ? noAccessHandler() : null
+          } else {
+            return this.onOpen()
+          }
+        })
+
+      // There was na ccess requirement
+      } else {
+        this.onOpen()
+      }
     }
   }
 
@@ -184,6 +201,48 @@ class Modal extends React.Component {
     this.onClose();
   }
 
+  /*hasAccess = (requireLogin, allowedPermissions) => {
+    const checkPermissions = (userPermissions, allowedPermissions) => {
+      if (allowedPermissions.length === 0) {
+        return true;
+      }
+
+      return userPermissions.some(permission =>
+        allowedPermissions.includes(permission)
+      );
+    };
+
+    const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
+    const isLoggedIn = false //To be linked to Redux
+    const permitted = (requireLogin == true ? isLoggedIn : true) && checkPermissions(userPermissions, allowedPermissions)
+    if (permitted == true) {
+      console.log("permitted")
+      return true
+    } else {
+      console.log("not permitted")
+      return false
+    }
+  }*/
+
+  clickHandler = () => {
+    const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.onOpen()
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.onOpen()
+    }
+  }
+
     render() {
     const {isOpen} = this.state;
     const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent} = this.props;
@@ -193,8 +252,8 @@ class Modal extends React.Component {
         {hideTrigger != true && (
           <ModalTrigger
             ariaLabel={ariaLabel}
-            onOpen={this.onOpen}
             buttonRef={n => this.openButtonNode = n}
+            clickHandler={this.clickHandler}
             text={triggerText}
             triggerHasAutoFocus={triggerHasAutoFocus}
             usedFor={usedFor}

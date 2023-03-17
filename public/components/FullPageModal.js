@@ -1,4 +1,4 @@
-// Dex last merged this code on 24th sept 2022 
+// Dex last merged this code on 24th sept 2022
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -11,12 +11,12 @@ import "../css/Modal.css";
 // ModalTrigger is the button that will open the Modal
 const FullPageModalTrigger = ({
   buttonFPRef,
-  onOpen,
+  clickHandler,
   text,
   usedFor,
   focusOnLoad
 }) => (
-  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={onOpen} ref={buttonFPRef}>
+  <button type="button" className={"ModalOpenBtn ModalOpenBtn-" + usedFor} autoFocus={focusOnLoad} onClick={clickHandler} ref={buttonFPRef}>
     <ButtonContent usedFor={usedFor} text={text}/>
   </button>
 )
@@ -92,7 +92,22 @@ class FullPageModal extends React.Component {
 
     // If want to open Modal automatically when called
     if (hideTrigger == true) {
-      this.onOpen();
+      const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+
+      // If there is an access requirement
+      if (checkHasAccess) {
+        checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+          if (hasAccess == false) {
+            return noAccessHandler ? noAccessHandler() : null
+          } else {
+            return this.onOpen()
+          }
+        })
+
+      // There was na ccess requirement
+      } else {
+        this.onOpen()
+      }
     }
   }
 
@@ -202,6 +217,28 @@ class FullPageModal extends React.Component {
     }
   }
 
+  clickHandler = () => {
+    const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+console.log(checkHasAccess)
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          console.log("no access")
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          console.log("has access - open full page modal")
+          return this.onOpen()
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      console.log("shouldnt get here")
+      this.onOpen()
+    }
+  }
+
   // Close modal by clicking outside of Modal
 /*  onClickAway = (e) => {
     if (this.modalFPNode && this.modalFPNode.contains(e.target)) return;
@@ -217,7 +254,7 @@ class FullPageModal extends React.Component {
     return (
       <React.Fragment>
         <FullPageModalTrigger
-          onOpen={this.onOpen}
+          clickHandler={this.clickHandler}
           buttonFPRef={n => this.openButtonFPNode = n}
           text={triggerText}
           usedFor={usedFor}
