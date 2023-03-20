@@ -70,14 +70,14 @@ class QA extends Component {
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
-      showSignUpBanner: false,
+      signUpPromptBannerNotMaxedViews: false,
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
   }
 
   componentDidMount() {
-    const {showSignUpBanner} = this.state
+    const {signUpPromptBannerNotMaxedViews} = this.state
     const {maxViewsReached, cameFromFeedUnlockBtn} = this.props
     window.addEventListener('resize', this.isMobile);
     const qaItem = {
@@ -219,7 +219,7 @@ class QA extends Component {
 
     if (cameFromFeedUnlockBtn == true) {
       this.setState({
-        showSignUpBanner: true
+        signUpPromptBannerNotMaxedViews: true
       })
     }
     // On scroll show the sign up prompt
@@ -304,6 +304,26 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     ); */
 //  }
 
+  handleToggle = (postId, requireLogin, allowedPermissions) => {
+    const {checkHasAccess, noAccessHandler} = this.props
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+        //  e.preventDefault();
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.toggleUpvote(postId)
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.toggleUpvote(postId)
+    }
+  }
+
   toggleUpvote = (postId) => {
     const currentState = this.state[postId+"-userUpvoted"];
 
@@ -364,7 +384,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
     if ((parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) && this.state.showSignUpBanner != true) {
       this.setState({
-        showSignUpBanner: true
+        signUpPromptBannerNotMaxedViews: true
       })
     }
 
@@ -395,8 +415,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
   } */
 
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, showSignUpBanner, signUpPromptBannerNotMaxedViews} = this.state;
-    const {updatePathName, isLoggedIn, maxViewsReached} = this.props
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerNotMaxedViews} = this.state;
+    const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -454,7 +474,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     //  reportedstatus jsonb
     }
     const myID = '1234567'; //223456
-    const userRole = 'mentor'
+    const userRole = ''
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -729,7 +749,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     or ask your own question
                   </div>
                   <div>
-                    <Modal {...AddHighlightModalProps}>
+                    <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                       <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
                     </Modal>
                   </div>
@@ -754,37 +774,16 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
                         </Modal>
                       )}
-                      {(!isLoggedIn || userRole == 'mentor') && (
+                      {userRole == 'mentor' && (
                         <Modal {...AddAnswerModalProps}>
                           <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
                       )}
-                  {/*    <AccessControl
-                        allowedPermissions={["maxViewsReached"]}
-                        requireLogIn={false}
-                        renderNoAccess={() => (
-                          <Modal {...NoAccessContentModalProps}>
-                            <SignUpPromptModalContent />
-                          </Modal>
-                        )}
-                      >
-                        <Modal {...AddAnswerModalProps}>
+                      {!isLoggedIn && (
+                        <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                           <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
-                      </AccessControl>
-                      <AccessControl
-                        allowedPermissions={["maxViewsNotReached"]}
-                        requireLogIn
-                        renderNoAccess={() => (
-                          <Modal {...NoAccessContentModalProps}>
-                            <SignUpPromptModalContent />
-                          </Modal>
-                        )}
-                      >
-                        <Modal {...AddAnswerModalProps}>
-                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
-                        </Modal>
-                      </AccessControl> */}
+                      )}
                     </span>
                   </div>
                   <div className="darkGreyText fontSize13">
@@ -809,7 +808,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       <span><span className="greyText"><i className="fas fa-eye"/></span> Viewed {numViewsFormatted} times</span>
                     </div>
                     <div className={"fontSize20 marginTop10 marginBottom5 " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                      <button type="button" className={"button-unstyled alignCenter " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(qaItem.qid)}>
+                      <button type="button" className={"button-unstyled alignCenter " + (this.state[qaItem.qid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.handleToggle(qaItem.qid, true)}>
                         <span className="paddingR5">
                           {this.state[qaItem.qid+"-userUpvoted"] == true && (
                             <i className="fas fa-bell" />
@@ -876,12 +875,12 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                                   <div>
                                   {/*  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong> */}
                                     {qaItem.authorUserRole == 'mentee' ? (
-                                        <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                        <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
                                           <MenteeProfileContent />
                                         </FullPageModal>
                                         )
                                       : (
-                                        <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
+                                        <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
                                           <MentorProfileContent />
                                         </FullPageModal>
                                       )
@@ -908,6 +907,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         originalPostIsAnon={qaItem.isanon}
                         originalPostID={qaItem.qid}
                         type="q"
+                        checkHasAccess={checkHasAccess}
+                        noAccessHandler={noAccessHandler}
                       />
                     </div>
                   </div>
@@ -957,7 +958,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           <div className="gridLeftColumn paddingR20">
                             <div className="displayFlex flexDirColumn alignCenter">
                               <div className={"fontSize28 marginBottom5 " + (this.state[hid.hid+"-userUpvoted"] == true ? "electricPurpleText" : "darkGreyText")}>
-                                <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.toggleUpvote(hid.hid)}>
+                                <button type="button" className={"button-unstyled " + (this.state[hid.hid+"-userUpvoted"] == true ? "opacity1" : "")} onClick={() => this.handleToggle(hid.hid, true)}>
                                   <svg aria-hidden="true" width="36" height="36" viewBox="0 0 36 36">
                                     <path d="M2 25h32L18 9 2 25Z"/>
                                   </svg>
@@ -1041,12 +1042,12 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                                         <div>
                                         {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
                                           {hid.authorUserRole == 'mentee' ? (
-                                              <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                              <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
                                                 <MenteeProfileContent />
                                               </FullPageModal>
                                               )
                                             : (
-                                              <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
+                                              <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
                                                 <MentorProfileContent />
                                               </FullPageModal>
                                             )
@@ -1087,6 +1088,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                               originalPostID={hid.hid}
                               type="a"
                               maxViewsReached={maxViewsReached}
+                              checkHasAccess={checkHasAccess}
+                              noAccessHandler={noAccessHandler}
                             />
                           </div>
                         </div>
@@ -1094,8 +1097,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       )
                     })}
                   </div>
-                  {showSignUpBanner == true && (
-                    <div className={"signUpPromptBanner" + (signUpPromptBannerNotMaxedViews == true ? " isSticky" : "")}>
+              {/*    {showSignUpBanner == true && ( */}
+                    <div className={"signUpPromptBanner" + (signUpPromptBannerNotMaxedViews == true ? " withAnimation" : "")}>
                       <div className="bannerTextContainer">
                         <div className="prBannerLogoContainer marginBottom20">
                           <img
@@ -1117,7 +1120,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
                       </div>
                     </div>
-                  )}
+              {/*    )} */}
                   <div className="marginBottom50 marginTop20">
                     {userRole == 'mentee' && (
                       <div>
@@ -1154,7 +1157,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     {(!isLoggedIn || userRole == 'mentor') && (
                       <div>
                         <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}</div>
-                        <Modal {...AddAnswerModalProps}>
+                        <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                           <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
                       </div>

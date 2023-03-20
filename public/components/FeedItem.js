@@ -162,6 +162,26 @@ class FeedItem extends Component {
     e.currentTarget.innerHTML = '';
   }
 
+  handleToggle = (e, postId, requireLogin, allowedPermissions) => {
+    const {checkHasAccess, noAccessHandler} = this.props
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          e.preventDefault();
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.toggleUpvote(e, postId)
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.toggleUpvote(e, postId)
+    }
+  }
+
   toggleUpvote = (e, postId) => {
     const {isOnMyContentPage, contentType} = this.props
     e.preventDefault()
@@ -288,7 +308,7 @@ class FeedItem extends Component {
               <div className={"postDetail marginTop12 textRight fontSize13 flexShrink0 width100px darkGreyText" + (isMobile == true ? "" : " marginRight20 ")}>
               {/*  <div className="marginBottom5">{post.votes && (post.votes.length < 1000 ? post.votes.length : ((Math.round(post.votes.length / 100) / 10) + 'k'))} votes</div> */}
                 {(isOnMyContentPage != true || contentType == 'following') && (
-                  <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.qid)}>
+                  <div className={"followBtn fontSize13 marginBottom10" + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.handleToggle(e, post.qid, true)}>
                     <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")}>
                       <span className="paddingR5">
                         {userUpvoted == true && (
@@ -398,6 +418,7 @@ class FeedItem extends Component {
       );
     } else if (contentType == 'answer' || contentType == 'general') {
       const {isTextClamped} = this.state
+      const {isLoggedIn, checkHasAccess, noAccessHandler} = this.props
       const aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
       const error = false
       let answerURL
@@ -411,6 +432,7 @@ class FeedItem extends Component {
         <AddComment
           showGeneralNotAllowedText
           isInModal
+          isLoggedIn={isLoggedIn}
           isOffline={isOffline}
           gid={post.hid}
           type="g"
@@ -472,12 +494,12 @@ class FeedItem extends Component {
                     <span>
                     {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
                       {post.authorUserRole == 'mentee' ? (
-                          <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
+                          <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
                             <MenteeProfileContent />
                           </FullPageModal>
                           )
                         : (
-                          <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
+                          <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
                             <MentorProfileContent />
                           </FullPageModal>
                         )
@@ -630,7 +652,7 @@ class FeedItem extends Component {
                   )}
                 </React.Fragment>
               )}
-              <div className={"fontSize12 displayFlex bottom15 width25px" + (contentType != 'general' ? " absolute" : " relative top15") + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.toggleUpvote(e, post.hid)}>
+              <div className={"fontSize12 displayFlex bottom15 width25px" + (contentType != 'general' ? " absolute" : " relative top15") + (userUpvoted == true ? " electricPurpleText" : " darkGreyText")} onClick={(e) => this.handleToggle(e, post.hid, true)}>
                 <button type="button" className={"button-unstyled " + (userUpvoted == true ? "opacity1" : "")} data-label="ignoreOpenModal">
                   {userUpvoted == true && (
                     <i className="fas fa-thumbs-up" data-label="ignoreOpenModal"/>
@@ -654,6 +676,7 @@ class FeedItem extends Component {
                       <AddComment
                         showGeneralNotAllowedText
                         isInModal={false}
+                        isLoggedIn={isLoggedIn}
                         isOffline={isOffline}
                         gid={post.hid}
                         type="g"
@@ -669,6 +692,8 @@ class FeedItem extends Component {
                         originalPostID={post.hid}
                         isInModal
                         type="g"
+                        checkHasAccess={checkHasAccess}
+                        noAccessHandler={noAccessHandler}
                       />
                     {/*  <AddComment
                         showGeneralNotAllowedText

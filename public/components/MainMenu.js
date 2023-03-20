@@ -30,6 +30,26 @@ const MentorProfileModalProps = {
 // Depending on whether user is Mentor or Student, will display different Main Menu
 class MainMenu extends Component {
 
+  handleLinkClick = (e, requireLogin, allowedPermissions) => {
+    const {onClick, checkHasAccess, noAccessHandler} = this.props
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          e.preventDefault();
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return onClick ? onClick() : null
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      onClick ? onClick() : null
+    }
+  }
+
   render() {
     const {userRole, onClick, pathName, checkHasAccess, noAccessHandler} = this.props;
 
@@ -46,7 +66,7 @@ class MainMenu extends Component {
             <FullPageModal {...MentorProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
               <MentorProfileContent />
             </FullPageModal>
-            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>
+            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={(e) => {this.handleLinkClick(e, true)}}>
               My Activity
             </NavLink>
           </div>
@@ -61,7 +81,7 @@ class MainMenu extends Component {
           <FullPageModal {...MenteeProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
             <MenteeProfileContent />
           </FullPageModal>
-          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
+          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={(e) => {this.handleLinkClick(e, true)}} onMouseDown={this.props.onMouseDown}>
             My Activity
             {hasUnreadAnswers && (
               <span className="notificationNum">New</span>

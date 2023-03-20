@@ -13,7 +13,7 @@ class AddComment extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: this.props.isInModal ? 'really long text omg kjsahdf akjsdhf kajsdh fkasjd hfkajsd hkasjdh fkasjdh fkasjd hfkajs dfkasjd hkasjd fhkasjd fhkasjd fkasjd asd hjsdf adjsh' : '',
+      text: this.props.isInModal ? '' : '',
       showEmojis: false,
       isMobile: checkMobile(),
       cursorPos: '', // cursor position to enter emoji within string
@@ -94,7 +94,6 @@ class AddComment extends Component {
   handleMessageChange = (e) => {
     let value = e.target.value;
     this.messageChange(value)
-    console.log("value: "+value)
   }
 
   messageChange = (value, hardReset) => {
@@ -283,13 +282,13 @@ class AddComment extends Component {
 
   render() {
     const {showEmojis, text} = this.state;
-    const {isOffline, gid, type, isInModal} = this.props;
+    const {isOffline, gid, type, isInModal, isLoggedIn} = this.props;
 
     return (
       <React.Fragment>
         <div id={"new-message-"+gid+(isInModal ? "-isInModal" : "")} className="chatWindow-footer marginTop20">
           <div className="redText"> Hmmm, looks like something went wrong. Please refresh the page and try again. </div>
-          <div className={"input-box-container" + ((type == 'g' && isInModal) ? " isGeneralInModal" : "") + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + (isOffline ? " offline" : "")}>
+          <div className={"input-box-container" + ((type == 'g' && isInModal) ? " isGeneralInModal" : "") + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + ((!isLoggedIn || isOffline) ? " offline" : "")}>
             <div className="input-flexContainer">
               <form className="textInput-container" id={"addCommentForm-"+gid+(isInModal ? "-isInModal" : "")}>
                 <p className="notAllowedText" id={"notAllowedText-"+gid+(isInModal ? "-isInModal" : "")}/>
@@ -305,19 +304,19 @@ class AddComment extends Component {
                 //  onScroll={this.handleTextAreaScroll}
                   onKeyDown={this.onEnterPress}
                   onKeyUp={this.onKeyUp}
-                  placeholder={isOffline ? "You're offline..." : (isInModal ? "Add comment..." : "Join the conversation...")}
+                  placeholder={isOffline ? "You're offline..." : (isInModal ? (!isLoggedIn ? "Log in to post..." : "Add comment...") : "Join the conversation...")}
                   autoComplete="on"
                   autoCorrect="on"
                   spellCheck="true"
                   maxLength="5000"
-                  disabled={isOffline}
+                  disabled={isOffline || (isInModal && !isLoggedIn)}
                   autoFocus={isInModal ? true : false}
                 />
               </form>
               <div className="descriptor-br prAddMessage" id={"prAddMessageCount-"+gid+(isInModal ? "-isInModal" : "")}>
                 {text.length} / 5000
               </div>
-              <button type="button" className={"emojiContainer isAddComment" + (isInModal ? " isInModal" : "")} onClick={this.showEmojis} onKeyDown={this.showEmojis}>
+              <button type="button" className={"emojiContainer isAddComment" + (isInModal ? " isInModal" : "")} onClick={!isLoggedIn ? null : this.showEmojis} onKeyDown={!isLoggedIn ? null : this.showEmojis}>
                 <i className="hideOnHover far fa-smile" />
                 <i className="showOnHover fas fa-laugh" />
               </button>
@@ -335,7 +334,7 @@ class AddComment extends Component {
                   />
                 </div>
               )}
-              <button type="button" disabled={text.length === 0} className={"sendMsgContainer isAddComment" + (isInModal ? " isInModal" : "") + ((!isOffline && text.length > 0) ? ' isTyping' : "") + (isOffline ? ' isOffline' : '')} onClick={(isOffline ? null : this.handleSubmit)}>
+              <button type="button" disabled={text.length === 0} className={"sendMsgContainer isAddComment" + (isInModal ? " isInModal" : "") + ((!isOffline && text.length > 0) ? ' isTyping' : "") + (isOffline ? ' isOffline' : '')} onClick={((!isLoggedIn || isOffline) ? null : this.handleSubmit)}>
                 <i className="fas fa-paper-plane" />
               </button>
             </div>

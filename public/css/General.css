@@ -2461,31 +2461,28 @@ a.button{
 }
 
 .signUpPromptBanner{
-  position: sticky;
   height: 350px; /* 40vh on mobile */
   width: 100%;
   z-index: 1000;
   bottom: 0;
-  box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
-  -webkit-box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
-  -moz-box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
   border-top: 1px solid #4e4ed6;
   background-image: url(https://files.prospela.com/images%2FSignUpPromptBanner.pptx.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #9f9ee7;
+}
+.signUpPromptBanner.withAnimation{
+  position: sticky;
+  box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
+  -webkit-box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
+  -moz-box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
   -webkit-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   -moz-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   -ms-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   -o-animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   animation: slide-in--up 420ms cubic-bezier(.165,.84,.44,1);
   animation-duration: 1s;
-}
-.signUpPromptBanner.isSticky{
-  box-shadow: unset;
-  -webkit-box-shadow: unset;
-  -moz-box-shadow: unset;
 }
 .bannerTextContainer{
   width: 50%;

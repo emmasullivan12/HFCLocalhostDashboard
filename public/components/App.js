@@ -301,7 +301,7 @@ class Dashboard extends Component{
       );
     };
 
-    const userPermissions = ["maxViewsReached"] //To be linked to Redux
+    const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
     const isLoggedIn = false //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 

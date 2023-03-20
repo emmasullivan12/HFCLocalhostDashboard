@@ -98,6 +98,7 @@ class FullPageModal extends React.Component {
       if (checkHasAccess) {
         checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
           if (hasAccess == false) {
+
             return noAccessHandler ? noAccessHandler() : null
           } else {
             return this.onOpen()
@@ -219,22 +220,19 @@ class FullPageModal extends React.Component {
 
   clickHandler = () => {
     const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
-console.log(checkHasAccess)
+
     // If there is an access requirement
     if (checkHasAccess) {
       checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
         if (hasAccess == false) {
-          console.log("no access")
           return noAccessHandler ? noAccessHandler() : null
         } else {
-          console.log("has access - open full page modal")
           return this.onOpen()
         }
       })
 
     // There was na ccess requirement
     } else {
-      console.log("shouldnt get here")
       this.onOpen()
     }
   }

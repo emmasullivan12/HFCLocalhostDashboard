@@ -159,7 +159,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: '',
+      userRole: 'mentee',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
@@ -1067,12 +1067,29 @@ class HomePage extends Component {
     }
   }
 
-  showModal = (stepIsComplete, reqStepsComplete, modalType) => {
+  showModal = (stepIsComplete, reqStepsComplete, modalType, requireLogin, allowedPermissions) => {
     if (stepIsComplete || reqStepsComplete != true) { return }
 
-    this.setState({
-      ["show"+modalType+"Modal"]: true,
-    });
+    const {checkHasAccess, noAccessHandler} = this.props;
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.setState({
+            ["show"+modalType+"Modal"]: true,
+          });
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.setState({
+        ["show"+modalType+"Modal"]: true,
+      });
+    }
   }
 
   closeModal = (modalType) => {
@@ -1121,15 +1138,15 @@ class HomePage extends Component {
       numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
       menteeSteps = [
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-        {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-        {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf']},
-        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif'], requireLogin: true},
+        {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf'], requireLogin: true},
+        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true},
         {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
         {stepText: 'Complete your 5-min mentee training', modalToShow: 'MenteeTraining', isComplete: userstep == 'didSafeG', reqStep: 'MenteeFullApp', tooltiptextWhenLocked: 'Complete your full mentee application to unlock this step', validSteps: ['didFullSUtf']},
       ]
     }
 
-    const steps = userRole == 'mentor' ? mentorSteps : menteeSteps
+    const steps = (userRole && userRole == 'mentor') ? mentorSteps : menteeSteps
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
     const allStepsCompleted = stepsLeftToDo == 0
 
@@ -1195,7 +1212,7 @@ class HomePage extends Component {
                 {steps.map((step, index) => {
                   const reqStepsComplete = step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true
                   return (
-                    <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow)} className={reqStepsComplete != true ? "tooltip" : ""}>
+                    <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow, step.requireLogin)} className={reqStepsComplete != true ? "tooltip" : ""}>
                       <Checkbox
                         label={step.stepText}
                         labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "") + (reqStepsComplete != true ? " greyText cursorText backgroundNone" : "")}

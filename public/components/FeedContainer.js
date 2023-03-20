@@ -46,6 +46,9 @@ class FeedContainer extends Component {
               userRole={userRole}
               maxViewsReached={maxViewsReached}
               handleUnlockBtnClick={handleUnlockBtnClick}
+              checkHasAccess={checkHasAccess}
+              noAccessHandler={noAccessHandler}
+              isLoggedIn={isLoggedIn}
             />
           )
         })}

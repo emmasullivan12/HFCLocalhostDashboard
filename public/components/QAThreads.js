@@ -114,6 +114,26 @@ class QAThreads extends Component {
     })
   } */
 
+  handleToggle = (postId, requireLogin, allowedPermissions) => {
+    const {checkHasAccess, noAccessHandler} = this.props
+
+    // If there is an access requirement
+    if (checkHasAccess) {
+      checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
+        if (hasAccess == false) {
+        //  e.preventDefault();
+          return noAccessHandler ? noAccessHandler() : null
+        } else {
+          return this.toggleUpvote(postId)
+        }
+      })
+
+    // There was na ccess requirement
+    } else {
+      this.toggleUpvote(postId)
+    }
+  }
+
   toggleUpvote = (postId) => {
     const currentState = this.state[postId+"-userUpvoted"];
 
@@ -149,7 +169,7 @@ class QAThreads extends Component {
   }
 
   displayComment = (comment) => {
-    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached} = this.props
+    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '234'
@@ -166,7 +186,7 @@ class QAThreads extends Component {
           </div>
           {(aIsMe == false || isPrUser == true) && (
             <div className={"commentVoting fontSize28 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "lightGreyText")}>
-              <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} aria-label="Upvote comment" title="Upvote this comment" onClick={() => this.toggleUpvote(comment.cid)}>
+              <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} aria-label="Upvote comment" title="Upvote this comment" onClick={() => this.handleToggle(comment.cid, true)}>
                 <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
                   <path d="M1 12h16L9 4l-8 8Z"/>
                 </svg>
@@ -174,7 +194,7 @@ class QAThreads extends Component {
             </div>
           )}
           <div className="commentFlagging fontSize28 lightGreyText">
-            <Modal {...FlagCommentModalProps}>
+            <Modal {...FlagCommentModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
               <FlagCommentModalContent cid={comment.cid}/>
             </Modal>
           </div>
@@ -212,12 +232,12 @@ class QAThreads extends Component {
             {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (
               <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0 marginBottomMinus5" : ""}>
                 {comment.userroleofauthor == 'mentee' ? (
-                    <FullPageModal {...MenteeProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                    <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={comment.fname + " " + comment.lname}>
                       <MenteeProfileContent />
                     </FullPageModal>
                     )
                   : (
-                    <FullPageModal {...MentorProfileUsrNameModalProps} triggerText={comment.fname + " " + comment.lname}>
+                    <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={comment.fname + " " + comment.lname}>
                       <MentorProfileContent />
                     </FullPageModal>
                   )
@@ -250,7 +270,7 @@ class QAThreads extends Component {
 
   render() {
     const {isLoading, showMoreComments, arrToShow, moreCommentsArr} = this.state
-    const {comments, type, originalPostID, originalPostIsAnon, originalPostAuthorID} = this.props
+    const {comments, type, originalPostID, originalPostIsAnon, originalPostAuthorID, checkHasAccess, noAccessHandler} = this.props
 
     let isThisUserOriginalPostAuthor
     const myID = '1234'
@@ -274,7 +294,7 @@ class QAThreads extends Component {
             })}
             {type != 'g' && (
               <div className="purpleText fontSize12 paddingBtm20 marginTop5 displayInlineFlex">
-                <Modal {...AddCommentModalProps}>
+                <Modal {...AddCommentModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                   <AddCommentModalContent
                     type={type} //i.e. general/answer/question
                     qid={type == 'q' ? originalPostID : null}
