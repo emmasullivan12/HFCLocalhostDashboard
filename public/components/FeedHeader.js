@@ -16,7 +16,7 @@ class FeedHeader extends Component {
 
   componentDidMount() {
     this.timerHandle = setTimeout(() => {
-      this.showMenuBtn
+      this.showMenuBtn()
       this.timerHandle = 0;
     }, 2000);
   }
@@ -76,74 +76,90 @@ class FeedHeader extends Component {
 
   render() {
     //const {text} = this.state;
-    const {isUserSearch, searchText, resetSearch, handleSearchTextChange} = this.props;
+    const {isUserSearch, searchText, resetSearch, handleSearchTextChange, isLoggedIn} = this.props;
     const {showMenuBtn} = this.state;
     const isMobile = checkMobile()
     const isIphone = isiOS()
 
     return (
-      <div className={"feed-header" + (isIphone == true ? " isIphone" : "")} id="feedHeader">
-        {showMenuBtn == true && (
-          <MenuNav />
-        )}
-        {showMenuBtn != true && isMobile == true && (
-          <LoadingSpinner />
-        )}
-        <div className="searchBox-header horizontallyCenter">
-          <div className="input-box-container noMarginB onFeed">
-            <div className="input-flexContainer">
-              {isUserSearch && (
-                <div className="fullWidth">
-                  <div className="tagsContainer " id="selectContainer">
-                    <div className="tagsList">
-                      <span
-                      //  onClick={this.editSearchValue}
-                        className="multiple value"
-                      //  role="button"
-                      >
-                        {searchText}
+      <React.Fragment>
+        <div className={"feed-header" + (isIphone == true ? " isIphone" : "")} id="feedHeader">
+          {showMenuBtn == true && (
+            <MenuNav />
+          )}
+          {showMenuBtn != true && isMobile == true && (
+            <LoadingSpinner />
+          )}
+          <div className="searchBox-header horizontallyCenter">
+            <div className="input-box-container noMarginB onFeed">
+              <div className="input-flexContainer">
+                {isUserSearch && (
+                  <div className="fullWidth">
+                    <div className="tagsContainer " id="selectContainer">
+                      <div className="tagsList">
                         <span
-                          data-value={searchText}
-                        //  onMouseDown={this.onResetSearch}
-                          onMouseDown={resetSearch}
-                          role="button"
-                          className="delete"
+                        //  onClick={this.editSearchValue}
+                          className="multiple value"
+                        //  role="button"
                         >
-                          <X />
+                          {searchText}
+                          <span
+                            data-value={searchText}
+                          //  onMouseDown={this.onResetSearch}
+                            onMouseDown={resetSearch}
+                            role="button"
+                            className="delete"
+                          >
+                            <X />
+                          </span>
                         </span>
-                      </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
-              {!isUserSearch && (
-                <React.Fragment>
-                  <form className="textInput-container searchBox" onSubmit={this.handleSubmit}>
-                    <input
-                      type="searchText"
-                      id="mainSearchBox"
-                      ref={n => this.searchTextNode = n}
-                      className="input-box noPaddingR onFeed"
-                      value={searchText}
-                      onChange={handleSearchTextChange}
-                      onKeyDown={this.onEnterPress}
-                      placeholder={isMobile == true ? "Search advice on Prospela..." : "Search careers advice on Prospela..."}
-                      autoComplete="on"
-                      autoCorrect="on"
-                      spellCheck="true"
-                      maxLength="5000"
-                      autoFocus={isMobile == true ? false : true}
-                    />
-                    <button type="submit" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} >
-                      <i className="fas fa-search" />
-                    </button>
-                  </form>
-                </React.Fragment>
-             )}
+                )}
+                {!isUserSearch && (
+                  <React.Fragment>
+                    <form className="textInput-container searchBox" onSubmit={this.handleSubmit}>
+                      <input
+                        type="searchText"
+                        id="mainSearchBox"
+                        ref={n => this.searchTextNode = n}
+                        className="input-box noPaddingR onFeed"
+                        value={searchText}
+                        onChange={handleSearchTextChange}
+                        onKeyDown={this.onEnterPress}
+                        placeholder={isMobile == true ? "Search advice on Prospela..." : "Search careers advice on Prospela..."}
+                        autoComplete="on"
+                        autoCorrect="on"
+                        spellCheck="true"
+                        maxLength="5000"
+                        autoFocus={isMobile == true ? false : true}
+                      />
+                      <button type="submit" disabled={searchText.length === 0} className={"sendMsgContainer searchBox" + ((searchText.length > 0) ? ' isTyping' : "")} >
+                        <i className="fas fa-search" />
+                      </button>
+                    </form>
+                  </React.Fragment>
+               )}
+              </div>
             </div>
           </div>
+          {!isLoggedIn && (
+            <div className="signUpPrompt-header">
+              <a className="link fontSize16 black" href="https://app.prospela.com/login/"><strong>Login</strong></a>
+              <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+                Join for free
+              </a>
+            </div>
+          )}
         </div>
-      </div>
+        <div className="signUpPrompt-headerBanner marginTop10">
+          <a className="link fontSize16 black" href="https://app.prospela.com/login/"><strong>Login</strong></a>
+          <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+            Join for free
+          </a>
+        </div>
+      </React.Fragment>
     )
   }
 }

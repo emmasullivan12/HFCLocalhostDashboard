@@ -1377,7 +1377,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn" id="homepageContainer">
-          <FeedHeader handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
+          <FeedHeader isLoggedIn={isLoggedIn} handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
             {contentArr.length > 0 && newPostsAbove == true && newPostsBannerSeen === false && (

@@ -70,14 +70,15 @@ class QA extends Component {
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
-      signUpPromptBannerNotMaxedViews: false,
+      signUpPromptBannerScrollAnimation: false,
+      showAlmostMaxViewsBanner: this.props.oneMoreTilMaxViewsReached && this.props.oneMoreTilMaxViewsReached == true,
       //votes: this.props.qaItem.votes,
       //votes: 10,
     }
   }
 
   componentDidMount() {
-    const {signUpPromptBannerNotMaxedViews} = this.state
+  //  const {signUpPromptBannerScrollAnimation} = this.state
     const {maxViewsReached, cameFromFeedUnlockBtn} = this.props
     window.addEventListener('resize', this.isMobile);
     const qaItem = {
@@ -219,7 +220,7 @@ class QA extends Component {
 
     if (cameFromFeedUnlockBtn == true) {
       this.setState({
-        signUpPromptBannerNotMaxedViews: true
+        signUpPromptBannerScrollAnimation: true
       })
     }
     // On scroll show the sign up prompt
@@ -375,7 +376,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
   }
 
   showSignUpPromptOnScroll = () => {
-    const {maxViewsReached} = this.props
+    const {maxViewsReached, oneMoreTilMaxViewsReached} = this.props
 
     if (maxViewsReached != true) {return}
 
@@ -384,7 +385,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
     if ((parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) && this.state.showSignUpBanner != true) {
       this.setState({
-        signUpPromptBannerNotMaxedViews: true
+        signUpPromptBannerScrollAnimation: true
       })
     }
 
@@ -415,7 +416,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
   } */
 
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerNotMaxedViews} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
     const qaItem = {
       qid: '123456',
@@ -1098,7 +1099,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     })}
                   </div>
               {/*    {showSignUpBanner == true && ( */}
-                    <div className={"signUpPromptBanner" + (signUpPromptBannerNotMaxedViews == true ? " withAnimation" : "")}>
+                  {!isLoggedIn && (
+                    <div className={"signUpPromptBanner" + (signUpPromptBannerScrollAnimation == true ? " withAnimation" : "")}>
                       <div className="bannerTextContainer">
                         <div className="prBannerLogoContainer marginBottom20">
                           <img
@@ -1120,7 +1122,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
                       </div>
                     </div>
-              {/*    )} */}
+                  )}
                   <div className="marginBottom50 marginTop20">
                     {userRole == 'mentee' && (
                       <div>
@@ -1156,13 +1158,24 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     )}
                     {(!isLoggedIn || userRole == 'mentor') && (
                       <div>
-                        <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}</div>
+                        <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'} Join as an E-Mentor and contribute.</div>
                         <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                           <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
                       </div>
                     )}
                   </div>
+                  {(!isLoggedIn && showAlmostMaxViewsBanner == true) && (
+                    <div className="almostMaxViewsBanner withAnimation">
+                      <div className="fullWidth marginRight10">
+                        <div className="signUpPromptTitle fontSize25"><strong><span className="redText inheritFontSize">Last</span> answer from real employees for today</strong></div>
+                        <div className="almostMaxViewsBannerExtraText fontSize13">Create a free account for career Q&A with industry experts, 1:1 mentoring & a lasting professional network</div>
+                      </div>
+                      <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+                        Join for free
+                      </a>
+                    </div>
+                  )}
                 </div>
                 {/*}<div className="sideBar" role="complementary" aria-label="sidebar">
                   SIDEBAR PLACEHOLDER

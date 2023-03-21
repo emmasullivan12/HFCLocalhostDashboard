@@ -380,6 +380,9 @@ table th .description{
 .fontSize24{
   font-size: 24px;
 }
+.fontSize22{
+  font-size: 22px;
+}
 .fontSize20{
   font-size: 20px;
 }
@@ -2460,11 +2463,39 @@ a.button{
   white-space: nowrap!important;
 }
 
-.signUpPromptBanner{
-  height: 350px; /* 40vh on mobile */
+.signUpPromptBanner,
+.almostMaxViewsBanner{
   width: 100%;
   z-index: 1000;
   bottom: 0;
+  margin-left: -30px;
+  margin-right: -30px;
+  width: calc(100% + 55px);
+}
+.almostMaxViewsBanner{
+  background-color: #fff3d6;
+  padding: 1px 40px;
+  border-top: 2px solid #dadada;
+  align-items: center;
+  -webkit-align-items: center;
+  position: sticky;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-bottom: -25px;
+  height: 100px;
+}
+.almostMaxViewsBanner a{
+  min-width: 120px;
+}
+.almostMaxViewsBanner .signUpPromptTitle{
+  margin-top: unset;
+}
+.signUpPromptBanner{
+  height: 350px; /* 40vh on mobile */
   border-top: 1px solid #4e4ed6;
   background-image: url(https://files.prospela.com/images%2FSignUpPromptBanner.pptx.png);
   background-repeat: no-repeat;
@@ -2472,7 +2503,8 @@ a.button{
   background-position: center;
   background-color: #9f9ee7;
 }
-.signUpPromptBanner.withAnimation{
+.signUpPromptBanner.withAnimation,
+.showAlmostMaxViewsBanner.withAnimation{
   position: sticky;
   box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
   -webkit-box-shadow: rgb(0 0 0 / 25%) 1px -17px 20px;
@@ -2494,6 +2526,10 @@ a.button{
   height: 45px;
   width: 103.5px;
 }
+.prBannerSmallLogoContainer{
+  height: 30px;
+  width: 69px;
+}
 .signUpPromptTitle{
   line-height: 1.75rem;
 }
@@ -2502,6 +2538,7 @@ a.button{
      height: 500px;
    }
 }
+
 @media screen and (min-width: 1271px) and (max-width: 1553px) {
    .signUpPromptBanner{
      height: 450px;
@@ -2525,21 +2562,24 @@ a.button{
 @media screen and (max-width: 400px) {
    .signUpPromptBanner{
      height: 300px;
-      background-position: -285px center;
-      position: sticky;
+     background-position: -285px center;
+     /*position: sticky;
       width: 101vw;
-      margin-left: -37px;
+      margin-left: -37px;*/
    }
    .signUpPromptTitle{
      font-size: 22px;
      line-height: 1.5rem;
    }
-   .prBannerLogoContainers{
+/*   .prBannerLogoContainer{
      height: 30px;
      width: 69px;
-   }
+   }*/
    .signUpBannerTopText{
      display: none;
+   }
+   .almostMaxViewsBanner {
+     padding: 10px 20px;
    }
 }
 @media screen and (max-width: 485px) {
@@ -2575,6 +2615,11 @@ a.button{
      font-size: 26px;
    }
 }
+@media screen and (max-width: 530px) {
+   .almostMaxViewsBannerExtraText{
+     display: none;
+   }
+}
 #modal-noAccess{
   padding: 0;
   background-color: #9f9ee7;
@@ -2599,6 +2644,8 @@ a.button{
   -o-animation: unset;
   animation: unset;
   animation-duration: unset;
+  width: unset;
+  margin: 0;
 }
 @media screen and (min-width: 440px) and (max-width: 719px) {
   #modal-noAccess{

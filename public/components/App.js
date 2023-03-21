@@ -302,7 +302,7 @@ class Dashboard extends Component{
     };
 
     const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
-    const isLoggedIn = false //To be linked to Redux
+    const isLoggedIn = true //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 
     if (permitted == true) {
@@ -392,6 +392,7 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const isLoggedIn = false
+    const oneMoreTilMaxViewsReached = false
     const maxViewsReached = true
 
     return(
@@ -470,7 +471,7 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" render={(props) => <HomePage {...props} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt")}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt")}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt")}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt")}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
