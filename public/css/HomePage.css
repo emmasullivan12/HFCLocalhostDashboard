@@ -108,7 +108,6 @@
 }
 .signUpPromptBanner.onFeedSideBar{
   width: auto;
-  margin-left: unset;
   margin-right: unset;
   height: 300px;
   background-position: -345px center;
@@ -293,7 +292,10 @@
   margin: auto;
   margin-top: 10px;
 }
-
+.groupsContainer.dispInline .ModalOpenBtn-joinProgSmlHome{
+  margin-top: -3px;
+  smargin-left: 3px;
+}
 .checkbox-container.homePage{
   padding-top: 1rem;
   padding-bottom: 1rem;

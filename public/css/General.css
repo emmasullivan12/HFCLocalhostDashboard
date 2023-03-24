@@ -633,6 +633,9 @@ table th .description{
 .dispBlock{
   display: block;
 }
+.dispInline{
+  display: inline;
+}
 .dispInlineBlock{
   display: inline-block;
 }
