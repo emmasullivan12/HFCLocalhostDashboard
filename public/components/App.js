@@ -302,7 +302,7 @@ class Dashboard extends Component{
     };
 
     const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
-    const isLoggedIn = true //To be linked to Redux
+    const isLoggedIn = false //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 
     if (permitted == true) {
@@ -393,7 +393,7 @@ class Dashboard extends Component{
     const isQ = false
     const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = true
+    const maxViewsReached = false
 
     return(
       <BrowserRouter>

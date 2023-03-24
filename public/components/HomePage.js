@@ -7,6 +7,7 @@ import {Link, useHistory} from "react-router-dom";*/
 
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import AutoEnrollPrompt from "./AutoEnrollPrompt";
+import {cdn} from './CDN.js';
 import Checkbox from './Checkbox.js';
 import FeedbackReqPrompt from "./FeedbackReqPrompt";
 import FeedContainer from "./FeedContainer.js";
@@ -1413,6 +1414,30 @@ class HomePage extends Component {
                   </div>
                 </div>
               </div>
+              {!isLoggedIn && (
+                <div className="thickPurpleContentBox withBorderTop sideBarContentHiddenOnShrink">
+                  <div className="signUpPromptBanner onFeedSideBar">
+                    <div className="bannerTextContainer">
+                      <div className="prBannerSmallLogoContainer marginBottom20">
+                        <img
+                          className="prLogoImg"
+                          alt="Prospela Logo"
+                          srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                          sizes="(max-width: 1440px) 69px, 69px"
+                          src={cdn+"/images/Prospela%20Logo_Dark.png"}
+                        />
+                      </div>
+                      <div className="fontSize14">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
+                      <div className="marginBottom20 marginTop70 dispInlineBlock">
+                        <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+                          Sign up (free)
+                        </a>
+                        <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="mainBar" role="main" aria-label="question and answers">
               { this.renderTab() }

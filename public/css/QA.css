@@ -5,6 +5,21 @@
   margin-top: unset;
   margin-right: 180px;
 }
+.qCTA.qaPage{
+  right: 20px;
+  position: absolute!important;
+}
+@media screen and (max-width: 600px) {
+  .qCTA.qaPage{
+    display: block;
+    right: unset;
+    position: unset!important;
+  }
+  .chatItemFlexContainer.qaPage {
+    display: unset;
+    flex-direction: unset;
+  }
+}
 .qDetailContainer{
   line-height: 1.5;
   word-wrap: break-word;

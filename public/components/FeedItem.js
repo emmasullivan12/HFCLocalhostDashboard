@@ -364,10 +364,10 @@ class FeedItem extends Component {
                 <div className="marginBottom5"><i className="fas fa-eye"/> {numViewsFormatted} views</div>
               </div>
               <div className="flexGrow1 maxWidth100">
-                <div className="marginTop10 fontSize18 lineHeight20pc darkGreyText">
+                <div className="marginTop10 fontSize20 lineHeight20pc darkGreyText">
                   <strong>{post.title}</strong>
                 </div>
-                <div className="marginBottom10 marginTop5 fontSize13 darkGreyText">
+                <div className="marginBottom20 marginTop10 fontSize13 darkGreyText lineHeight10px">
                   in <span className="bubbleContainer">
                     {indArrToShow.map((indID) => {
                       let industryItem, icon, indName

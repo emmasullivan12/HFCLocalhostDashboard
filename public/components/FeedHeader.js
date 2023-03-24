@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 
+import {cdn} from './CDN.js';
 import MenuNav from './MenuNav.js';
 import {LoadingSpinner, checkMobile, isiOS, X} from './GeneralFunctions.js';
 
@@ -83,6 +84,15 @@ class FeedHeader extends Component {
 
     return (
       <React.Fragment>
+        <div className="prBannerSmallLogoContainer marginTop20 horizontallyCenter">
+          <img
+            className="prLogoImg"
+            alt="Prospela Logo"
+            srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+            sizes="(max-width: 1440px) 69px, 69px"
+            src={cdn+"/images/Prospela%20Logo_Dark.png"}
+          />
+        </div>
         <div className={"feed-header" + (isIphone == true ? " isIphone" : "")} id="feedHeader">
           {showMenuBtn == true && (
             <MenuNav />

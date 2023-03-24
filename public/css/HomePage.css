@@ -78,6 +78,9 @@
 .signUpPrompt-header a {
   margin-left: 20px;
 }
+.signUpPrompt-header.isOnQAPage{
+  margin-top: 10px;
+}
 .signUpPrompt-headerBanner{
   display: none;
   -webkit-justify-content: space-around;
@@ -100,13 +103,62 @@
   align-items: center;
   -webkit-align-items: center;
 }
+.prBannerSmallLogoContainer.isOnQAPage{
+  margin: auto;
+}
+.signUpPromptBanner.onFeedSideBar{
+  width: auto;
+  margin-left: unset;
+  margin-right: unset;
+  height: 300px;
+  background-position: -345px center;
+}
+.signUpPromptBanner.onFeedSideBar .bannerTextContainer{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 40%;
+}
 @media screen and (max-width: 400px) {
   .Submit-btn.signUpPrompt{
     min-width: 120px;
   }
 }
+/*@media screen and (max-width: 400px) {
+  .QABackBtn.notLoggedIn span{
+    display: none;
+  }
+  .QABackBtn.notLoggedIn:after{
+    content: ' More advice';
+    font-size: 13px;
+  }
+}*/
+@media screen and (max-width: 600px) {
+  .signUpPrompt-header.isOnQAPage{
+    text-align: left;
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  .signUpPrompt-header.isOnQAPage a:first-of-type{
+    order: 2;
+  }
+  .signUpPrompt-header.isOnQAPage a:nth-of-type(2){
+    order: 1;
+    min-width: 120px;
+  }
+  .signUpPrompt-header.isOnQAPage a {
+    margin-left: unset;
+    margin-right: 20px;
+  }
+  .prBannerSmallLogoContainer.isOnQAPage{
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 670px) {
-  .signUpPrompt-header{
+  .signUpPrompt-header:not(.isOnQAPage){
     display: none;
   }
   .signUpPrompt-headerBanner{
@@ -117,7 +169,7 @@
   }
 }
 @media screen and (min-width: 759px) and (max-width: 875px) {
-  .signUpPrompt-header{
+  .signUpPrompt-header:not(.isOnQAPage){
     display: none;
   }
   .signUpPrompt-headerBanner{

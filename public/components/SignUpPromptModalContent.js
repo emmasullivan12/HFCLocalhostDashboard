@@ -23,7 +23,7 @@ class SignUpPromptModalContent extends Component {
             <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
               Sign up (free)
             </a>
-            <a className="dispBlock alignCenter fontSize13" href="https://app.prospela.com/login/">or Login</a>
+            <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
           </div>
           <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
         </div>

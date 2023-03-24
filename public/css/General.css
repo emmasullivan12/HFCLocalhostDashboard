@@ -493,7 +493,7 @@ table th .description{
   text-decoration: underline!important;
 }
 .electricPurpleText{
-  color: #4e4ed6;
+  color: #4e4ed6!important;
 }
 .redText{
   color: #da0b0b;
@@ -829,6 +829,9 @@ table th .description{
 .marginTop20 {
   margin-top: 20px!important;
 }
+.marginTop30 {
+  margin-top: 30px!important;
+}
 .marginTop35 {
   margin-top: 35px!important;
 }
@@ -841,6 +844,9 @@ table th .description{
 .marginTop55{
   margin-top: 55px!important;
 }
+.marginTop70{
+  margin-top: 70px!important;
+}
 .marginTopMinus15 {
   margin-top: -15px;
 }
@@ -849,6 +855,9 @@ table th .description{
 }
 .marginTopMinus30 {
   margin-top: -30px;
+}
+.marginTopMinus45{
+  margin-top: -45px;
 }
 .marginBottom {
   margin-bottom: 2rem;
@@ -1021,6 +1030,9 @@ table th .description{
 }
 .normalLineheight{
   line-height: normal!important;
+}
+.lineHeight10px{
+  line-height: 10px;
 }
 .lineHeight16{
   line-height: 1.6rem;

@@ -714,7 +714,6 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     let qVotes = this.state[qaItem.qid+'-votes']
     const showVotesNum = qVotes && (qVotes != '0' && qVotes != 0)
     const postdeleted = false
-
     return (
       <React.Fragment>
         <script type="application/ld+json">
@@ -726,50 +725,72 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
           </div>
         ) : (
           <React.Fragment>
+            <div className="prBannerSmallLogoContainer marginTop20 isOnQAPage">
+              <img
+                className="prLogoImg"
+                alt="Prospela Logo"
+                srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                sizes="(max-width: 1440px) 69px, 69px"
+                src={cdn+"/images/Prospela%20Logo_Dark.png"}
+              />
+            </div>
             {postdeleted == true ? (
-              <div className="mainBar padding25 marginTop40">
-                <div className="qTitle marginBottom5">
-                  <strong><span role="img" aria-label="eyes emoji">👀</span> Sorry, this post no longer exists </strong>
-                  <div className="fontSize18">The user might have deleted it.</div>
-                  <br />
-                  <div className="marginTop40 marginBottom10 fontSize18">Browse other questions tagged {hashtagsArray.length > 0 && (
-                    <div className="tagsList">
-                      {hashtagsArray.map((hashtag) => {
-                        return (
-                          <span
-                            key={hashtag}
-                            className="multiple value paddingR"
-                            id={hashtag}
-                          >
-                            {hashtag}
-                          </span>
-                        )
-                      })}
-                    </div>
-                    )}
-                    or ask your own question
+              <div className="padding25">
+                <Link to={prevURL ? prevURL : "/home"} className="dispBlock" onClick={updatePathName}>
+                  <div className="absolute marginTopMinus45 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
+                    <span className="dispInlineBlock marginRight5">
+                      {!isLoggedIn ? (<span id="close-modal"><i className="fas fa-arrow-left"/></span>) : <X />}
+                    </span>
+                  {/*  <span><i className="fas fa-arrow-left"/></span> */}
+                    <span className={"QABackBtn greyText" + (!isLoggedIn ? " notLoggedIn": "")}><span>{!isLoggedIn ? ' Browse career advice' : ' Close'}</span></span>
                   </div>
-                  <div>
-                    <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                      <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                    </Modal>
+                </Link>
+                <div className="mainBar marginTop40">
+                  <div className="qTitle marginBottom5">
+                    <strong><span role="img" aria-label="eyes emoji">👀</span> Sorry, this post no longer exists </strong>
+                    <div className="fontSize18">The user might have deleted it.</div>
+                    <br />
+                    <div className="marginTop40 marginBottom10 fontSize18">Browse other questions tagged {hashtagsArray.length > 0 && (
+                      <div className="tagsList">
+                        {hashtagsArray.map((hashtag) => {
+                          return (
+                            <span
+                              key={hashtag}
+                              className="multiple value paddingR"
+                              id={hashtag}
+                            >
+                              {hashtag}
+                            </span>
+                          )
+                        })}
+                      </div>
+                      )}
+                      or ask your own question
+                    </div>
+                    <div>
+                      <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                      </Modal>
+                    </div>
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="padding25 marginTop40">
+              <div className="padding25">
               {/*  <MenuNav /> */}
                 <Link to={prevURL ? prevURL : "/home"} onClick={updatePathName}>
-                  <div className="absolute marginTopMinus30 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
-                    <span className="dispInlineBlock"><X /></span>
+                  <div className="absolute marginTopMinus45 darkGreyText dispInlineBlock fontSize14" id="qaCloseBtn">
+                    <span className="dispInlineBlock marginRight5">
+                      {!isLoggedIn ? (<span id="close-modal"><i className="fas fa-arrow-left"/></span>) : <X />}
+                    </span>
                   {/*  <span><i className="fas fa-arrow-left"/></span> */}
-                    <span> Close</span>
+                    <span className={"QABackBtn greyText" + (!isLoggedIn ? " notLoggedIn": "")}><span>{!isLoggedIn ? ' More career advice' : ' Close'}</span></span>
                   </div>
                 </Link>
                 <div className="borderBtm borderGrey paddingBtm marginBottom20">
-                  <div className={isMobile == true ? "" : "chatItemFlexContainer"}>
+                  <div className={isMobile == true ? "" : "chatItemFlexContainer qaPage"}>
                     <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
-                    <span className={isMobile == true ? "dispBlock" : "absolute right20"}>
+                    <span className="qCTA qaPage">
                       {userRole == 'mentee' && (
                         <Modal {...AddHighlightModalProps}>
                           <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
@@ -781,14 +802,19 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </Modal>
                       )}
                       {!isLoggedIn && (
-                        <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
-                        </Modal>
+                        <React.Fragment>
+                          <div className="signUpPrompt-header isOnQAPage">
+                            <a className="link fontSize16 black" href="https://app.prospela.com/login/">Login</a>
+                            <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+                              Join for free
+                            </a>
+                          </div>
+                        </React.Fragment>
                       )}
                     </span>
                   </div>
                   <div className="darkGreyText fontSize13">
-                    <div>
+                    <div className="marginBottom10">
                       Asked {timeSince(qaItem.datecreated)} in <span className="bubbleContainer">
                         {indArrToShow.map((indID) => {
                           let industryItem, icon, indName
@@ -1117,7 +1143,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
                             Sign up (free)
                           </a>
-                          <a className="dispBlock alignCenter fontSize13" href="https://app.prospela.com/login/">or Login</a>
+                          <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
                         </div>
                         <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
                       </div>
