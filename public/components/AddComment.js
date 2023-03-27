@@ -286,7 +286,7 @@ class AddComment extends Component {
 
     return (
       <React.Fragment>
-        <div id={"new-message-"+gid+(isInModal ? "-isInModal" : "")} className="chatWindow-footer marginTop20">
+        <div id={"new-message-"+gid+(isInModal ? "-isInModal" : "")} className={"chatWindow-footer marginTop20" + (type == 'g' ? " isGeneral" : "")}>
           <div className="redText"> Hmmm, looks like something went wrong. Please refresh the page and try again. </div>
           <div className={"input-box-container" + ((type == 'g' && isInModal) ? " isGeneralInModal" : "") + ((type == 'g' && !isInModal) ? " noPointerEvents isGeneralOnFeed" : "") + ((!isLoggedIn || isOffline) ? " offline" : "")}>
             <div className="input-flexContainer">

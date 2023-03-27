@@ -170,10 +170,10 @@ Extra large devices (large laptops and desktops, 1200px and up)
     background: #696969!important;
     border: .0625rem solid #929292!important;
   }
-  .chatWindow-footer {
+  .chatWindow-footer:not(.isGeneral) {
     background-color: #272727!important;
   }
-  .input-box-container:not(.onFeed, .addHighlight) {
+  .input-box-container:not(.onFeed, .addHighlight, .isGeneralInModal, .isGeneralOnFeed) {
     border: 1px solid #6d6d6d!important;
   }
   .input-box-container:not(.addHighlight):focus-within{
@@ -231,11 +231,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .userDetail-inst{
     color: #717171!important;
   }
-  a.Submit-btn {
+  a.Submit-btn:not(.signUpPrompt) {
     color: #fff!important;
     background: #76c1b3!important;
   }
-  .Submit-btn {
+  .Submit-btn:not(.signUpPrompt) {
     color: #fff!important;
     background: #76c1b3!important;
   }
