@@ -189,6 +189,12 @@
     max-width: 600px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .signUpPrompt-header{
+    position: absolute;
+    right: 30px;
+  }
+}
 
 .filterFeed-container .filter-btn:first-of-type{
   border-top-left-radius: .375em;

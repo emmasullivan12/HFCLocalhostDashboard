@@ -156,16 +156,16 @@ class FeedHeader extends Component {
           </div>
           {!isLoggedIn && (
             <div className="signUpPrompt-header">
-              <a className="link fontSize16 black" href="https://app.prospela.com/login/"><strong>Login</strong></a>
-              <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+              <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=feedTopBtn"><strong>Login</strong></a>
+              <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=feedTopBtn">
                 Join for free
               </a>
             </div>
           )}
         </div>
         <div className="signUpPrompt-headerBanner marginTop10">
-          <a className="link fontSize16 black" href="https://app.prospela.com/login/"><strong>Login</strong></a>
-          <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+          <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=feedTopBtn"><strong>Login</strong></a>
+          <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=feedTopBtn">
             Join for free
           </a>
         </div>

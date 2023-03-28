@@ -5,6 +5,7 @@ import {cdn} from './CDN.js';
 
 class SignUpPromptModalContent extends Component {
   render() {
+    const {clickOrigin} = this.props
     return (
       <div className="signUpPromptBanner">
         <div className="bannerTextContainer">
@@ -20,10 +21,10 @@ class SignUpPromptModalContent extends Component {
           <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT FOR UNLIMITED ACCESS</div>
           <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
           <div className="marginBottom20 dispInlineBlock">
-            <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+            <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href={"https://app.prospela.com/signup" + (clickOrigin ? ("?origin=" + clickOrigin) : '')}>
               Sign up (free)
             </a>
-            <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
+            <a className="dispBlock alignCenter fontSize13 electricPurpleText" href={"https://app.prospela.com/login" + (clickOrigin ? ("?origin=" + clickOrigin) : '')}>or Login</a>
           </div>
           <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
         </div>

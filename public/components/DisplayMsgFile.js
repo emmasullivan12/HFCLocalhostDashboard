@@ -59,7 +59,7 @@ class DisplayMsgFile extends Component {
           {isFlexContainerOpen && (
             <div className="msg-img-container">
               <div className={"msg-img-content" + isQA == true ? " floatUnset" : ""}>
-                <a className={error ? "disabled" : null} href='' target="_blank" rel="noopener noreferrer">
+                <a className={(showBlurry == true || error) ? "disabled" : null} href='' target="_blank" rel="noopener noreferrer">
                   {fileType === 'img' && (
                     <img
                       className={"msg-img" + (showBlurry == true ? " blurryImg" : "")}

@@ -28,7 +28,7 @@ class TextParser extends Component {
 
   render() {
     //let text = this.formatEmojis(this.props.text);
-    const {text, showInline} = this.props
+    const {text, showInline, dontAllowClick} = this.props
     let parsed, regex, paragraphs;
 
     regex = {
@@ -71,7 +71,7 @@ class TextParser extends Component {
           )*/
           : str.split(regex.links).map((str) => { // Checks for URLs
             let parsedURL = regex.links.test(str)
-              ? (<a className="msgText-link" rel='external noopener noreferrer' target="_blank" href={(str.includes("http://") || str.includes("https://")) ? str : ("https://" + str)}>{str}</a>)
+              ? (<a className={"msgText-link" + (dontAllowClick == true ? " noPointerEvents" : "")} rel='external noopener noreferrer' target="_blank" href={(str.includes("http://") || str.includes("https://")) ? str : ("https://" + str)}>{str}</a>)
               : str
             return parsedURL
           });

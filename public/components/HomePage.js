@@ -1077,7 +1077,7 @@ class HomePage extends Component {
     if (checkHasAccess) {
       checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
         if (hasAccess == false) {
-          return noAccessHandler ? noAccessHandler() : null
+          return noAccessHandler ? noAccessHandler(null, "modal-"+modalType) : null
         } else {
           return this.setState({
             ["show"+modalType+"Modal"]: true,
@@ -1313,7 +1313,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {isLoggedIn, checkHasAccess, noAccessHandler} = this.props
+    const {isLoggedIn, checkHasAccess, noAccessHandler, reachedMaxFeedLength} = this.props
     const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
@@ -1433,10 +1433,10 @@ class HomePage extends Component {
                     </div>
                     <div className="fontSize14">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
                     <div className="marginBottom20 marginTop70 dispInlineBlock">
-                      <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+                      <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup?origin=feedSideBar">
                         Sign up (free)
                       </a>
-                      <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
+                      <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login?origin=feedSideBar">or Login</a>
                     </div>
                   </div>
                 </div>
@@ -1444,6 +1444,30 @@ class HomePage extends Component {
             </div>
             <div className="mainBar" role="main" aria-label="question and answers">
               { this.renderTab() }
+              {(!isLoggedIn && reachedMaxFeedLength == true) && (
+                <div className="signUpPromptBanner withAnimation reachedMaxFeed">
+                  <div className="bannerTextContainer">
+                    <div className="prBannerLogoContainer marginBottom20">
+                      <img
+                        className="prLogoImg"
+                        alt="Prospela Logo"
+                        srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                        sizes="(max-width: 1440px) 69px, 69px"
+                        src={cdn+"/images/Prospela%20Logo_Dark.png"}
+                      />
+                    </div>
+                    <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
+                    <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
+                    <div className="marginBottom20 dispInlineBlock">
+                      <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup?origin=maxFeedScroll">
+                        Sign up (free)
+                      </a>
+                      <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login?origin=maxFeedScroll">or Login</a>
+                    </div>
+                    <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           {userRole == 'mentor' && (

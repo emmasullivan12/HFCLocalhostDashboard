@@ -804,8 +804,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       {!isLoggedIn && (
                         <React.Fragment>
                           <div className="signUpPrompt-header isOnQAPage">
-                            <a className="link fontSize16 black" href="https://app.prospela.com/login/">Login</a>
-                            <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+                            <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=qaTopBtn">Login</a>
+                            <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=qaTopBtn">
                               Join for free
                             </a>
                           </div>
@@ -1014,7 +1014,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           </div>
                           <div className="gridRightColumn">
                             <div className={"qDetailContainer marginBottom20 answerContent" + (maxViewsReached == true ? " blurryText" : "")}>
-                              <TextParser text={hid.text} />
+                              <TextParser text={hid.text} dontAllowClick={maxViewsReached == true ? true : false}/>
                             </div>
                             {hid.files && hid.files.length > 0 && (
                               <div className="answerFilesContainer marginBottom20">
@@ -1140,10 +1140,10 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="signUpBannerTopText fontSize13">CREATE A FREE ACCOUNT TO GET UNLIMITED ACCESS TO ANSWERS</div>
                         <div className="signUpPromptTitle fontSize30 marginBottom20"><strong>Unlimited access to insider insights from real employees</strong></div>
                         <div className="marginBottom20 dispInlineBlock">
-                          <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href="https://app.prospela.com/signup">
+                          <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href={"https://app.prospela.com/signup?origin=" +(signUpPromptBannerScrollAnimation == true ? 'qaBannerMaxedViews' : 'qaNotMaxedViewsYet')}>
                             Sign up (free)
                           </a>
-                          <a className="dispBlock alignCenter fontSize13 electricPurpleText" href="https://app.prospela.com/login/">or Login</a>
+                          <a className="dispBlock alignCenter fontSize13 electricPurpleText" href={"https://app.prospela.com/login?origin=" +(signUpPromptBannerScrollAnimation == true ? 'qaBannerMaxedViews' : 'qaNotMaxedViewsYet')}>or Login</a>
                         </div>
                         <div className="signUpBannerExtraText fontSize13">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
                       </div>
@@ -1197,7 +1197,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="signUpPromptTitle fontSize25"><strong><span className="redText inheritFontSize">Last</span> answer from real employees for today</strong></div>
                         <div className="almostMaxViewsBannerExtraText fontSize13">Create a free account for career Q&A with industry experts, 1:1 mentoring & a lasting professional network</div>
                       </div>
-                      <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup">
+                      <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=qaAlmostMaxViews">
                         Join for free
                       </a>
                     </div>

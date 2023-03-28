@@ -92,11 +92,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 
 /* DARK MODE */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 /*  #mainMenu-burger {
     fill: #f2f2f2!important;
   }*/
-  .page-title{
+/*  .page-title{
     color: #dedede!important;
   }
   .page-detail{
@@ -106,7 +106,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     background-color: #272727!important;
     background-image: none!important;
   /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
-  }
+/*  }
   .message-content{
     color: #b9b9b9!important;
   }
@@ -254,7 +254,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
      background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark.png)!important;
    }
  }*/
-}
+/*} */
 
 /* FONT */
 html{
@@ -2562,6 +2562,9 @@ a.button{
 @media screen and (min-width: 608px) and (max-width: 1270px) {
    .signUpPromptBanner{
      height: 370px;
+   }
+   .signUpPromptBanner.reachedMaxFeed{
+     height: 450px;
    }
 }
 /*@media screen and (min-width: 608px) and (max-width: 1270px) {
