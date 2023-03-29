@@ -85,13 +85,13 @@ class Modal extends React.Component {
 
     // If want to open Modal automatically when called
     if (hideTrigger == true) {
-      const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+      const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler, usedFor} = this.props;
 
       // If there is an access requirement
       if (checkHasAccess) {
         checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
           if (hasAccess == false) {
-            return noAccessHandler ? noAccessHandler() : null
+            return noAccessHandler ? noAccessHandler(null, "modal-"+usedFor) : null
           } else {
             return this.onOpen()
           }
@@ -225,13 +225,13 @@ class Modal extends React.Component {
   }*/
 
   clickHandler = () => {
-    const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler} = this.props;
+    const {checkHasAccess, requireLogin, allowedPermissions, noAccessHandler, usedFor} = this.props;
 
     // If there is an access requirement
     if (checkHasAccess) {
       checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
         if (hasAccess == false) {
-          return noAccessHandler ? noAccessHandler() : null
+          return noAccessHandler ? noAccessHandler(null, "modal-"+usedFor) : null
         } else {
           return this.onOpen()
         }

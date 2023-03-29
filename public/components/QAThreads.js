@@ -122,7 +122,7 @@ class QAThreads extends Component {
       checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
         if (hasAccess == false) {
         //  e.preventDefault();
-          return noAccessHandler ? noAccessHandler() : null
+          return noAccessHandler ? noAccessHandler(null, "comment-upvote") : null
         } else {
           return this.toggleUpvote(postId)
         }

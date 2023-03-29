@@ -170,7 +170,7 @@ class FeedItem extends Component {
       checkHasAccess(requireLogin, allowedPermissions ? allowedPermissions : null, (hasAccess) => {
         if (hasAccess == false) {
           e.preventDefault();
-          return noAccessHandler ? noAccessHandler() : null
+          return noAccessHandler ? noAccessHandler(null, "feedItem-upvote") : null
         } else {
           return this.toggleUpvote(e, postId)
         }
