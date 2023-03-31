@@ -43,6 +43,72 @@
   width: 24px;
   height: 24px;
 }
+.CIVFlag-emoji{
+  background-position: 1.96078% 45.098%;
+  width: 24px;
+  height: 24px;
+}
+.BELFlag-emoji{
+  background-position: 0% 100%;
+  width: 24px;
+  height: 24px;
+}
+.DEUFlag-emoji{
+  background-position: 1.96078% 72.549%;
+  width: 24px;
+  height: 24px;
+}
+.DNKFlag-emoji{
+  background-position: 1.96078% 78.4314%;
+  width: 24px;
+  height: 24px;
+}
+.ESPFlag-emoji{
+  background-position: 1.96078% 98.0392%;
+  width: 24px;
+  height: 24px;
+}
+.FRAFlag-emoji{
+  background-position: 3.92157% 11.7647%;
+  width: 24px;
+  height: 24px;
+}
+.GBRFlag-emoji{
+  background-position: 3.92157% 15.6863%;
+  width: 24px;
+  height: 24px;
+}
+.ITAFlag-emoji{
+  background-position: 3.92157% 82.3529%;
+  width: 24px;
+  height: 24px;
+}
+.IREFlag-emoji{
+  background-position: 3.92157% 66.6667%;
+  width: 24px;
+  height: 24px;
+}
+.NLDFlag-emoji{
+  background-position: 5.88235% 90.1961%;
+  width: 24px;
+  height: 24px;
+}
+.NZLFlag-emoji{
+  background-position: 5.88235% 100%;
+  width: 24px;
+  height: 24px;
+}
+.SWEFlag-emoji{
+  background-position: 7.84314% 49.0196%;
+  width: 24px;
+  height: 24px;
+}
+.USAFlag-emoji{
+  background-position: 9.80392% 21.5686%;
+  width: 24px;
+  height: 24px;
+}
+
 .book-emoji{
   background-position: 50.9804% 25.4902%;
 }
@@ -58,11 +124,6 @@
 .footprints-emoji{
   background-position: 29.4118% 76.4706%;
 }
-.GBRFlag-emoji{
-  background-position: 3.92157% 15.6863%;
-  width: 24px;
-  height: 24px;
-}
 .globe-emoji{
   background-position: 11.7647% 9.80392%;
   width: 24px;
@@ -71,18 +132,8 @@
 .heart-emoji{
   background-position: 49.0196% 3.92157%;
 }
-.IREFlag-emoji{
-  background-position: 3.92157% 66.6667%;
-  width: 24px;
-  height: 24px;
-}
 .link-emoji{
   background-position: 52.9412% 49.0196%;
-}
-.NZLFlag-emoji{
-  background-position: 5.88235% 100%;
-  width: 24px;
-  height: 24px;
 }
 .ok-emoji{
   background-position: 27.451% 84.3137%;
@@ -148,11 +199,6 @@
 }
 .typing-emoji{
   background-position: 49.0196% 45.098%;
-}
-.USAFlag-emoji{
-  background-position: 9.80392% 21.5686%;
-  width: 24px;
-  height: 24px;
 }
 .wave-emoji{
   background-position: 27.451% 72.549%;

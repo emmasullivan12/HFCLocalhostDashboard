@@ -395,18 +395,36 @@ function planningUni(planningUni) {
 
 function userFlagEmoji(userCountry) {
   switch (userCountry) {
+    case 'AUS':
+      return 'AUSFlag-emoji';
+    case 'BEL':
+      return 'BELFlag-emoji';
+    case 'CAN':
+      return 'CANFlag-emoji';
+    case 'CIV':
+      return 'CIVFlag-emoji';
+    case 'DEU':
+      return 'DEUFlag-emoji';
+    case 'DNK':
+      return 'DNKFlag-emoji';
+    case 'ESP':
+      return 'ESPFlag-emoji';
+    case 'FRA':
+      return 'FRAFlag-emoji';
     case 'GBR':
       return 'GBRFlag-emoji';
     case 'IRE':
       return 'IREFlag-emoji';
-    case 'USA':
-      return 'USAFlag-emoji';
-    case 'CAN':
-      return 'CANFlag-emoji';
+    case 'ITA':
+      return 'ITAFlag-emoji';
+    case 'NLD':
+      return 'NLDFlag-emoji';
     case 'NZL':
       return 'NZLFlag-emoji';
-    case 'AUS':
-      return 'AUSFlag-emoji';
+    case 'SWE':
+      return 'SWEFlag-emoji';
+    case 'USA':
+      return 'USAFlag-emoji';
     default:
       return 'globe-emoji';
   }

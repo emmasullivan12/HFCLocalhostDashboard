@@ -394,8 +394,8 @@ class MenteeProfileContent extends Component {
       lname: 'Sullivan',
       profPicSrc: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       headline: 'Vegan slut drop who loves yoga, skiing and weightlifting',
-      city: 'LA',
-      country: 'USA',
+      city: 'CIV Capital',
+      country: 'CIV',
       timeZone: 'Europe/London',
       eetstatus: 'sch',
       degree: 'BSc (Hons) Business Administration',
@@ -549,7 +549,7 @@ class MenteeProfileContent extends Component {
     const uid = '23456';
     const isMe = uid == mentee.uid ? 'isMe' : 'isntMe';
     const viewerIsU18 = false;
-    const profUserIsU18 = true;
+    const profUserIsU18 = false;
     const viewerCountry = 'GBR'
     const userInitial = mentee.fname.charAt(0).toUpperCase();
     const numMentees = 3 // user.matches.filter(x => x.status_of_match == 6 && x.mentoruid == user.uid);

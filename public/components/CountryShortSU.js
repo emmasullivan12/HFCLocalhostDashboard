@@ -168,7 +168,7 @@ class CountryShortSU extends React.Component {
           }
 
         } else {
-          return false;
+          return true;
         }
       }
   }
@@ -199,7 +199,7 @@ class CountryShortSU extends React.Component {
   var ieCounties = ['Armagh','Carlow','Cavan','Clare','Cork','Derry','Donegal','Down','Dublin','Fermanagh','Galway','Kenmare','Kerry','Kildare','Kilkenny','Laois','Leitrim','Limerick','Longford','Louth','Mayo','Meath','Monaghan','Offaly','Roscommon','Sligo','Tipperary','Tyrone','Waterford','Westmeath','Wexford','Wicklow'];
 
   const isEnabled = this.canBeSubmitted(countries, states, provinces, ozStates, nzlRegions, ukCounties, ieCounties);
-
+  const isU18 = true
     return (
       <React.Fragment>
         <div>
@@ -226,9 +226,6 @@ class CountryShortSU extends React.Component {
                   />
                 </div>
               </div>
-              {countryLocal != '' && countryIsValid === true && (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'AUS' && countryLocal != 'NZL') && (
-                <div className="descriptor prompt autocompleter alignLeft">Sorry, we&#39;re currently only in the UK, USA, Canada, Oz & NZL! </div>
-              )}
               {countryLocal === 'USA' && (
                 <div className="form-group" id="userState">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="autocompleteBox-stateprovince">Which <strong>State?</strong></label>
@@ -324,7 +321,7 @@ class CountryShortSU extends React.Component {
                   </div>
                 </div>
               )}
-              {countryLocal != '' && (countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN' || countryLocal === 'AUS' || countryLocal === 'NZL') && countryIsValid === true && (stateProv != '' && stateProvIsValid === true || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'AUS' && countryLocal != 'NZL')) && (
+              {countryLocal != '' && countryIsValid === true && (((countryLocal === 'GBR' || countryLocal === 'USA' || countryLocal === 'CAN' || countryLocal === 'AUS' || countryLocal === 'NZL') && (stateProv != '' && stateProvIsValid === true)) || (countryLocal != 'GBR' && countryLocal != 'USA' && countryLocal != 'CAN' && countryLocal != 'AUS' && countryLocal != 'NZL')) && (
                 <div className="form-group" id="userCity">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="cityTextBox">Which <strong>{countryLocal != 'GBR' ? 'City?' : 'Town/City?'}</strong></label>
                   <TextInput

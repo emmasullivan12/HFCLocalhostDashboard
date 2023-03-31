@@ -1,4 +1,4 @@
-// Dex last merged this code on 24th sept 2022 
+// Dex last merged this code on 24th sept 2022
 
 import React, { Component } from "react";
 
@@ -20,7 +20,7 @@ const MentorFullSUModalProps = {
 const MentorOver18FullSUProps = {
   ariaLabel: 'Complete Full Mentor Application >>',
   triggerText: 'Complete Full Mentor Application >>',
-  usedFor: 'mentorFullSUAusNzl',
+  usedFor: 'mentorFullSUO18only',
   backBtn: 'arrow',
   hideTrigger: true,
   changeInitFocus: true,
@@ -30,7 +30,7 @@ class MentorFullSignUp extends Component {
   render() {
     const {handleLocalStateOnClose, onSubmit} = this.props
     const userRole = 'mentor';
-    const country = 'GBR'
+    const country = 'CIV'
 
     const expertise = '';
     const learning = '';
@@ -48,8 +48,9 @@ class MentorFullSignUp extends Component {
     const degreeName = 'profiles.degreename'
     const mobile = ''
 
-    const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
-    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '555 555 5678' : country === 'CAN' ? '416 234 5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
+    var questionsTEST = [
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
+    ]
 
     var questionsO18 = [
       /* eslint-disable object-property-newline */
@@ -119,28 +120,30 @@ class MentorFullSignUp extends Component {
           ]},
         ] : [],
       ] : [],
-      {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
-        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
-        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
-        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
-      ]},
-      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
-        {value: '9', label: 'Aboriginal Australian'},
-        {value: '0', label: 'Asian'},
-        {value: '1', label: 'Arab'},
-        {value: '2', label: 'Black / African / Caribbean'},
-        {value: '3', label: 'Hispanic / Latinx'},
-        {value: '4', label: 'Indian / Pakistani'},
-        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
-        {value: '10', label: 'Maori'},
-        {value: '11', label: 'Pacific Islander'},
-        {value: '6', label: 'White'},
-        {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'},
-      ]},
-      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+      ...(country == 'GBR' || country == 'USA' || country == 'CAN' || country == 'NZL' || country == 'AUS') ? [
+        {q: 'Nearly there! Just a bit of housekeeping...', detail: "We use the following information to offer the safest & most impactful mentoring experience to our mentees. By providing us with this information you consent us to use it for this purpose. All of your personal information is appropriately safeguarded and kept secure and you can see our Privacy Policy for more information (prospela.com/privacy-policy).", aType: 'interim', name: 'interim'},
+        {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+          {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+          {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+          {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
+          {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
+        ]},
+        {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+          {value: '9', label: 'Aboriginal Australian'},
+          {value: '0', label: 'Asian'},
+          {value: '1', label: 'Arab'},
+          {value: '2', label: 'Black / African / Caribbean'},
+          {value: '3', label: 'Hispanic / Latinx'},
+          {value: '4', label: 'Indian / Pakistani'},
+          {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+          {value: '10', label: 'Maori'},
+          {value: '11', label: 'Pacific Islander'},
+          {value: '6', label: 'White'},
+          {value: '7', label: 'Other'},
+          {value: '8', label: 'Prefer not to say'},
+        ]},
+      ] : [],
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
     ]
 
     var questionsU18 = [
@@ -255,10 +258,10 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'},
       ]},
-      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
     ]
 
-    if (country != 'AUS' && country != 'NZL') {
+    if (country === 'GBR' || country === 'USA' || country === 'CAN') {
       return (
         <Modal {...MentorFullSUModalProps} handleLocalStateOnClose={handleLocalStateOnClose} >
           <MentorFullSUContent
@@ -268,12 +271,12 @@ class MentorFullSignUp extends Component {
           />
         </Modal>
       )
-    } else if (country === 'AUS' || country === 'NZL') {
+    } else if (country != 'GBR' && country != 'USA' && country != 'CAN') {
       return (
         <FullPageModal {...MentorOver18FullSUProps} handleLocalStateOnClose={handleLocalStateOnClose}>
           <Form
             questions={questionsO18}
-            usedFor="mentorFullSUAusNzl"
+            usedFor="mentorFullSUO18only"
             saveOnSubmit='u18'
             formTitle="Complete your full mentor application"
             onSubmit={onSubmit}

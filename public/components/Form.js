@@ -7,7 +7,7 @@ import {cdn} from './CDN.js';
 import Checkbox from './Checkbox.js';
 import TextInput from './TextInput.js';
 import NumberInput from './NumberInput.js';
-import PhoneInput from './PhoneInput.js';
+import PhoneInputContainer from './PhoneInput.js';
 import RatingItems from './RatingItems.js';
 import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
@@ -240,6 +240,8 @@ class Form extends Component {
 
     this.setState({
       [id]: e.target.value,
+    }, () => {
+      console.log(e.target.value)
     })
     if (e.target.checkValidity()) {
       this.setState({
@@ -990,11 +992,9 @@ class Form extends Component {
             data-idforstate={i+"-"+name}
             data-index={i}
           >
-            <PhoneInput
+            <PhoneInputContainer
               name={name}
               id={i+"-"+name}
-              placeholder={question['placeholder']}
-              pattern={question['pattern']}
               required={required}
               handleChange={this.handleChange}
               onBlur={this.onBlur}

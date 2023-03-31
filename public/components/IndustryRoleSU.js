@@ -308,11 +308,13 @@ class IndustryRoleSU extends React.Component {
   }
 
   handleSubmit(e) {
-    const {updateStep, userRole} = this.props;
+    const {updateStep, userRole, country} = this.props;
     this.setState({ isSubmitting: true });
   //  const mentorEmailOK = true;
   //  const newStep = userRole === 'mentee' ? 'didIndRole' : (mentorEmailOK === true ? 'didIndRoleMentor' : 'updatingEmailError');
-    const newStep = userRole === 'mentee' ? 'didIndRole' : 'didIndRoleMentor';
+
+    // Skip the DiversitySU page if not from our core countries
+    const newStep = (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS') ? "didDiversity" : (userRole === 'mentee' ? 'didIndRole' : 'didIndRoleMentor');
     updateStep(newStep)
   }
 

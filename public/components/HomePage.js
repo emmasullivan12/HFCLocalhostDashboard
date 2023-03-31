@@ -160,7 +160,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: 'mentee',
+      userRole: 'mentor',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',
@@ -1104,19 +1104,20 @@ class HomePage extends Component {
     const {userStepsIsOpen, userstep, userRole, showSuccessModal, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
-    let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps
-
+    let expertise, learning, userHIDs, userQIDs, numUserQs, numUserAnswers, wantsU18, userGroups, hasMatch, mentorSteps, menteeSteps, isNonCoreCountry, isU18
+    let country = 'GBR'
     learning = []
-  //  userGroups = ['123']
-    userGroups = []
+    userGroups = ['123']
+  //  userGroups = []
     hasMatch = false
+    isNonCoreCountry = (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS')
 
     if (userRole == 'mentor') {
       expertise = []
       userHIDs = []
     //  userHIDs = [{hid: '1234', type: 'qa'}, {hid: '1235', type: 'highlight'}]
       numUserAnswers = userHIDs.length == 0 ? 0 : userHIDs.length /* userHIDs.filter(hid => hid.type == 'qa').length ... We decided to count either 'qa' or 'general' highlights because we wanted to orient mentor to what a highlight is when they click "answer a question" in the "complete sign up steps" box */
-      wantsU18 = true // Mentor wants to support U18s
+      wantsU18 = false // Mentor wants to support U18s
       mentorSteps = [
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
         {stepText: 'Add your key skills', modalToShow: 'AddSkills', isComplete: (expertise.length > 0 && learning.length > 0), validSteps: ['didEduEmailVerif', 'didReviewVerif']},
@@ -1141,7 +1142,7 @@ class HomePage extends Component {
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
         {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif'], requireLogin: true},
         {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf'], requireLogin: true},
-        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true},
+        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true, limitForNonCoreCountries: true, tooltiptextWhenLocked: 'Mentoring programmes are not available in your country yet', },
         {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
         {stepText: 'Complete your 5-min mentee training', modalToShow: 'MenteeTraining', isComplete: userstep == 'didSafeG', reqStep: 'MenteeFullApp', tooltiptextWhenLocked: 'Complete your full mentee application to unlock this step', validSteps: ['didFullSUtf']},
       ]
@@ -1211,7 +1212,7 @@ class HomePage extends Component {
             <React.Fragment>
               <div className="marginTop10">
                 {steps.map((step, index) => {
-                  const reqStepsComplete = step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true
+                  const reqStepsComplete = (step.limitForNonCoreCountries != null && step.limitForNonCoreCountries == true && isNonCoreCountry == true) ? false : (step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true)
                   return (
                     <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow, step.requireLogin)} className={reqStepsComplete != true ? "tooltip" : ""}>
                       <Checkbox

@@ -153,9 +153,9 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'updatingEmail', // set to did1stSU when first loaded
+      step: 'didEdu', // set to did1stSU when first loaded
       userEduName: '',
-      country: 'USA',
+      country: 'GBR',
       eetStatus: 'uni',
       schName: '',
       schNameFreeText: '',
@@ -533,6 +533,7 @@ class TypeformSignUp extends Component {
             <SignUpScreenTemplate {...MenteeSU3Props(userRole)}>
               <IndustryRoleSU
                 step={step}
+                country={country}
                 userRole={userRole}
                 currentStep="3"
                 eetStatus={eetStatus}
