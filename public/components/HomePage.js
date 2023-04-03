@@ -160,7 +160,7 @@ class HomePage extends Component {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
       userstep: 'somethingElse', //didU18tf
-      userRole: 'mentor',
+      userRole: 'mentee',
       source: 'vhs',
       filterBy: 'latest',
       searchText: '',

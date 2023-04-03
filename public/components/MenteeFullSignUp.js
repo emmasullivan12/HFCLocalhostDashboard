@@ -1,4 +1,4 @@
-// Last merged this code on 24th sept 2022 
+// Last merged this code on 24th sept 2022
 
 import React, { Component } from "react";
 //import { connect } from "react-redux";
@@ -44,12 +44,9 @@ class MenteeFullSignUp extends Component {
     const workingOn = []
     const workingOnFreeText = []
 
-    const mobNumPattern = country === 'GBR' ? '07[0-9]{3}[0-9]{6}' : country === 'USA' ? '[2-9]{1}[0-9]{2}[2-9]{1}[0-9]{2}[0-9]{4}' : country === 'CAN' ? '[0-9]{10}' : country === 'AUS' ? '0[0-9]{3}[0-9]{6}' : country === 'NZL' ? '02[0-9]{1,2}[0-9]{6,8}' : null
-    const mobNumPlaceholder = country === 'GBR' ? '07400 123456' : country === 'USA' ? '(555) 555-5678' : country === 'CAN' ? '(416) 234-5678' : country === 'AUS' ? '0420 123456' : country === 'NZL' ? '022 1234 5678' : '07400 123456'
-
     var questions = [
       {q: 'So, ' + fname + ', you\'ve previously told us about the industry & role(s) that interest you, but what about the things you\'re truly passionate about and your future ambitions?', detail: 'Your answers to the following questions will help us find you a mentor match that you\'re likely to click with', aType: 'interim', name: 'interim'},
-      {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about working hours, social life, salary, being your own boss etc. Note: There are no right or wrong answers here!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your answer here...', name: 'lifestyle'},
+      {q: 'When you think about work & careers, what kind of lifestyle do you want to have?', detail: 'Think about working hours, social life, salary, being your own boss etc. Note: There are no right or wrong answers here!', aType: 'textLong', req: 0, maxLength: 500, placeholder: 'Type your answer here...', name: 'lifestyle'},
       ... (hobbies.length === 0 && hobbiesFreeText.length === 0) ? [
         {q: 'Outside of work & school, what are some of your interests & hobbies?', detail: 'To help you think: What sports do you play? What do you spend your money on? What kind of people interest you? What annoys / excites you?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
           ...hobbiesOptions,
@@ -111,7 +108,7 @@ class MenteeFullSignUp extends Component {
       ... (networkSize === '') ? [
         {q: 'Roughly, how many people do you consider yourself to have in your professional network?', detail: 'e.g. people who aren\'t close family or friends and that can support you in business or a career related activity.', aType: 'number', req: 1, min: 0, max: 1000, placeholder: 'Type number...', name: 'networkSize'},
       ] : [],
-      {q: 'What\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, pattern: mobNumPattern, placeholder: mobNumPlaceholder, name: 'mobile'},
+      {q: 'What\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
     /*  {q: 'Notification preferences: Messages from your E-Mentor etc.', detail: 'Receive messages from '+ (userRole === 'mentee' ? 'your E-Mentors and other students in your network, including 1:1 careers advice personalised to you' : 'your Mentees and other employees in your groups'), aType: 'checkbox', name: 'memail', options: [
         {label: 'By Email', id: 'formA-MenteeFullSignUp-memail', name: 'memail'},
         {label: 'By SMS / Text Message', id: 'formA-MenteeFullSignUp-msms', name: 'msms'},

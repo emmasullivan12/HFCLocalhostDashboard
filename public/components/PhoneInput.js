@@ -3,6 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import {parsePhoneNumber, isPossiblePhoneNumber, isValidPhoneNumber, ParseError} from 'libphonenumber-js'
 import PhoneInput from 'react-phone-input-international'
 import 'react-phone-input-international/lib/style.css'
 
@@ -12,7 +13,9 @@ class PhoneInputContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phone: ''
+      phone: this.props.initialValue ? this.props.initialValue : '',
+      phoneNumberIsValid: false,
+      hasError: false,
     }
   }
 
@@ -31,17 +34,80 @@ class PhoneInputContainer extends React.Component {
     }); */
   }
 
+  checkPhoneValidity = (value, country) => {
+    const {id, handleChange, required} = this.props
+
+    if (value.length == 0 || (value.length <= country.dialCode.length)) {
+      this.setState({
+        phoneNumberIsValid: required == true ? false : true,
+        hasError: required == true ? true : false, //
+      }, () => {
+        handleChange(id, value, this.state.phoneNumberIsValid)
+      })
+      return
+    } else {
+      let phoneNumber
+      try {
+        const countryCode = country.countryCode.toUpperCase()
+        phoneNumber = parsePhoneNumber(value, {defaultCountry: countryCode, extract: false})
+      } catch (error) {
+        this.setState({
+          phoneNumberIsValid: false,
+          hasError: true,
+        }, () => {
+          handleChange(id, value, this.state.phoneNumberIsValid)
+        })
+        if (error instanceof ParseError) {
+          // Not a phone number, non-existent country, etc.
+          console.log(error.message)
+        } else {
+          throw error
+        }
+      }
+
+      if (phoneNumber != undefined) {
+        let isPossiblePhoneNumber = phoneNumber.isPossible()
+        let isValidPhoneNumber = phoneNumber.isValid()
+
+        if (isPossiblePhoneNumber == true && isValidPhoneNumber == true) {
+          this.setState({
+            phoneNumberIsValid: true,
+            hasError: false,
+          }, () => {
+            handleChange(id, value, this.state.phoneNumberIsValid)
+          })
+        } else {
+          this.setState({
+            phoneNumberIsValid: false,
+            hasError: true,
+          }, () => {
+            handleChange(id, value, this.state.phoneNumberIsValid)
+          })
+        }
+      } else {
+        this.setState({
+          phoneNumberIsValid: false,
+          hasError: true,
+        }, () => {
+          handleChange(id, value, this.state.phoneNumberIsValid)
+        })
+      }
+    }
+  }
+
   render() {
 //    const { onChange } = this;
-    const { name, id, onBlur, placeholder, handleChange, handleKeyUp, required, min, max, handleMouseDown, onKeyDown, pattern } = this.props;
+    const { name, id, onBlur, handleKeyUp, required, min, max, handleMouseDown, onKeyDown, extraInputCSSClass} = this.props;
+    const {phoneNumberIsValid, hasError} = this.state
 
     return (
       <PhoneInput
-        country={'gb'}
+        country='gb'
         preferredCountries={['gb','us','ca','au','nz']}
         value={this.state.phone}
-        onChange={phone => {console.log(phone)}}
-        inputClass="form-control-std phoneInput"
+      //  isValid={(value, country) => {this.checkPhoneValidity(value, country)}}
+        onChange={(value, country) => {this.checkPhoneValidity(value, country)}}
+        inputClass={"form-control-std phoneInput " + (extraInputCSSClass ? extraInputCSSClass : "") + (hasError == true ? " error" : "")}
         inputProps={{
           name: name,
           required: required,
@@ -50,7 +116,6 @@ class PhoneInputContainer extends React.Component {
           autoCorrect: "off",
           spellCheck: "off",
           onBlur: onBlur,
-          required: required,
           onKeyDown: onKeyDown,
           onKeyUp: handleKeyUp,
           onMouseDown: handleMouseDown,

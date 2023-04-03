@@ -92,9 +92,16 @@ class Form extends Component {
     this.mounted = false
   }
 
-  onBlur(e) {
+  onBlur = (e) => {
     if(e.target.checkValidity()) {
-      e.target.classList.remove('error');
+      console.log(this.state[e.target.id+"isValid"])
+      // If is undefined that means the user clicked in and out of box but didnt change it (and html input is valid i.e. is not required to be completed)
+      if (this.state[e.target.id+"isValid"] == true || this.state[e.target.id+"isValid"] == undefined) {
+        e.target.classList.remove('error');
+      } else {
+        e.target.classList.add('error');
+      }
+
     } else {
       e.target.classList.add('error');
     }
@@ -240,10 +247,56 @@ class Form extends Component {
 
     this.setState({
       [id]: e.target.value,
-    }, () => {
-      console.log(e.target.value)
     })
     if (e.target.checkValidity()) {
+      this.setState({
+        [id+"isValid"]: true
+      }, () => {
+        if (isConditionalParent) {
+          const condParentName = q['name']
+          this.updateConditional(id, condParentName, () => {
+            this.updateProgress()
+          })
+        } else {
+          this.updateProgress()
+        }
+      })
+    } else {
+      this.setState({
+        [id+"isValid"]: false
+      }, () => {
+        if (isConditionalParent) {
+          const condParentName = q['name']
+          this.updateConditional(id, condParentName, () => {
+            this.updateProgress()
+          })
+        } else {
+          this.updateProgress()
+        }
+      })
+    }
+  }
+
+  handlePhoneChange = (id, value, isValid) => {
+    const {questions} = this.props
+  //  const phoneInputIsValid = this.checkPhoneValidity(value)
+
+    const i = id.split("-")[0]
+
+    const q = questions[i]
+
+    const isConditionalParent = q['conditionalParent'] === 1
+
+    if (i == 0) {
+      this.setState({
+        firstQEdited: true,
+      })
+    }
+
+    this.setState({
+      [id]: value,
+    })
+    if (isValid == true) {
       this.setState({
         [id+"isValid"]: true
       }, () => {
@@ -800,13 +853,17 @@ class Form extends Component {
     const {qViewed} = this.state;
 
     const statesToCheck = [];
+    const nonReqStatesToCheck = [];
 
     questions.forEach((question, i) => {
       const required = question['req'] === 1;
       const name = question['name'];
 
       if (!required) {
-        return
+        // Still check correct format even if its not required, but "undefined" is allowed as means user clicked in and our of input box without changing it
+        nonReqStatesToCheck.push(
+          this.state[i+"-"+name+"isValid"]
+        );
       } else {
         const condOn = question['conditionalOn']
         if (condOn != undefined) {
@@ -848,7 +905,7 @@ class Form extends Component {
       }
     });
 
-    if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
+    if (statesToCheck.includes(false) || statesToCheck.includes(undefined) || nonReqStatesToCheck.includes(false)) {
       return false
 
     // Make sure they've seen all questions before Submit button shows
@@ -996,7 +1053,7 @@ class Form extends Component {
               name={name}
               id={i+"-"+name}
               required={required}
-              handleChange={this.handleChange}
+              handleChange={this.handlePhoneChange}
               onBlur={this.onBlur}
               focusOnLoad={(i === 0) ? true : false}
             />

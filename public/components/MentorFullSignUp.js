@@ -48,10 +48,6 @@ class MentorFullSignUp extends Component {
     const degreeName = 'profiles.degreename'
     const mobile = ''
 
-    var questionsTEST = [
-      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
-    ]
-
     var questionsO18 = [
       /* eslint-disable object-property-newline */
       {q: 'Let\'s personalise how you\'d like to mentor with us', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},

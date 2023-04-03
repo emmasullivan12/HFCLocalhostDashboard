@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import Checkbox from './Checkbox.js';
+import PhoneInputContainer from './PhoneInput.js';
 
 import "../css/Article.css";
 import "../css/General.css";
@@ -16,13 +17,15 @@ class SettingsContent extends Component {
       isEditFormalEmail: false,
       isEditPersonalEmail: false,
       phoneNo: '+44 7854 191 949',
+      phoneNoInProg: '+44 7854 191 949', // Needs to be the saved phoneno by default
+      phoneNoInProgIsValid: true,
       formalEmail: 'emma@work.com',
       personalEmail: 'emmapersonal@gmail.com',
       isRemoved: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRemoveNo = this.handleRemoveNo.bind(this);
-    this.editPhoneNo = this.editPhoneNo.bind(this);
+    this.toggleEditPhoneNo = this.toggleEditPhoneNo.bind(this);
     this.editFormalEmail = this.editFormalEmail.bind(this);
     this.editPersonalEmail = this.editPersonalEmail.bind(this);
     this.toggleDesktopNotifs = this.toggleDesktopNotifs.bind(this);
@@ -32,11 +35,30 @@ class SettingsContent extends Component {
     this.setState({ [evt.target.name]: evt.target.value });
   }
 
+  handlePhoneChange = (id, value, isValid) => {
+    this.setState({
+      phoneNoInProg: value,
+      phoneNoInProgIsValid: isValid,
+      showPhoneNoError: isValid,
+    });
+  }
+
   handlePhoneNoSave = (evt) => {
+    const {phoneNoInProgIsValid, phoneNoInProg} = this.state
     evt.preventDefault();
-    this.setState({ isEditPhoneNo: false });
-    this.setState({ isRemoved: false });
-    this.setState({ [evt.target.name]: evt.target.value });
+    if (phoneNoInProgIsValid == true) {
+      this.setState({
+        phoneNo: phoneNoInProg,
+        showPhoneNoError: false,
+        isEditPhoneNo: false,
+        isRemoved: false
+      })
+    } else {
+      this.setState({
+        showPhoneNoError: true
+      })
+    }
+  //  this.setState({ [evt.target.name]: evt.target.value });
   }
 
   handleEmailSave = (evt) => {
@@ -59,8 +81,12 @@ class SettingsContent extends Component {
     this.setState({ phoneNo: '' });
   }
 
-  editPhoneNo() {
-    this.setState({ isEditPhoneNo: true });
+  toggleEditPhoneNo() {
+    const currentState = this.state.isEditPhoneNo
+    this.setState({
+      isEditPhoneNo: !currentState,
+      showPhoneNoError: false
+    });
   }
 
   editFormalEmail() {
@@ -78,7 +104,7 @@ class SettingsContent extends Component {
   }
 
   render() {
-    const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail} = this.state;
+    const {desktopNotifsOn, isEditPhoneNo, phoneNo, isRemoved, formalEmail, personalEmail, isEditFormalEmail, isEditPersonalEmail, showPhoneNoError} = this.state;
     const {userRole} = this.props;
     return (
       <React.Fragment>
@@ -323,29 +349,33 @@ class SettingsContent extends Component {
                       {isEditPhoneNo===false ?
                         !isRemoved && <span className="contactToggleTxt" id="existingPhoneNo">{phoneNo}</span>
                       : (
-                        <input
-                          type="tel"
-                          name="phoneNo"
-                          pattern="^[0-9-+\s()]*$"
-                          className="form-control-std contactInput"
-                          placeholder={phoneNo}
-                          value={phoneNo}
-                          onChange={this.handleChange}
-                          autoComplete="off"
-                          autoCorrect="off"
-                          spellCheck="off"
-                        />
+                        <div className="dispInlineBlock">
+                          <PhoneInputContainer
+                            name="phoneNo"
+                            id="phoneNo"
+                            initialValue={phoneNo}
+                            handleChange={this.handlePhoneChange}
+                            onBlur={this.onBlur}
+                            focusOnLoad
+                          />
+                        </div>
                         )
                       }
                       <div className="emailBtns">
                         {isEditPhoneNo===false ?
                           !isRemoved && <button type="button" className="Submit-btn BlankBtn neutralText smallCTA" onClick={this.handleRemoveNo}>Remove</button>
-                        :
-                          <button type="submit" className="Submit-btn BlankBtn greenText Edit">Save</button>
-                        }
+                        : (
+                          <div>
+                            <button type="button" className="Submit-btn BlankBtn darkGreyText Edit" onClick={this.toggleEditPhoneNo}>Cancel</button>
+                            <button type="submit" className="Submit-btn BlankBtn greenText Edit">Save</button>
+                          </div>
+                        )}
                       </div>
                     </div>
-                    <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.editPhoneNo}>Add / edit a phone Number</button>
+                    {showPhoneNoError == true && (
+                      <div className="redText">Phone number is invalid, so was not saved.</div>
+                    )}
+                    <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.toggleEditPhoneNo}>Add / edit a phone Number</button>
                   </form>
                 </section>
               </div>
