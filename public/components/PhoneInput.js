@@ -13,8 +13,8 @@ class PhoneInputContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phone: this.props.initialValue ? this.props.initialValue : '',
-      phoneNumberIsValid: false,
+      phone: this.props.initialValue ? this.props.initialValue : '', // i.e. had already saved a phone number in database
+      phoneNumberIsValid: this.props.initialValue ? true : false,
       hasError: false,
     }
   }

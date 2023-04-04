@@ -36,15 +36,28 @@ class SettingsContent extends Component {
   }
 
   handlePhoneChange = (id, value, isValid) => {
+
     this.setState({
       phoneNoInProg: value,
       phoneNoInProgIsValid: isValid,
-      showPhoneNoError: isValid,
+      showPhoneNoError: !isValid,
+    });
+  }
+
+  handleCancelPhoneChange = (evt) => {
+    const {phoneNo} = this.state
+    evt.preventDefault();
+    this.toggleEditPhoneNo()
+    this.setState({
+      phoneNoInProg: phoneNo,
+      phoneNoInProgIsValid: true,
+      showPhoneNoError: false,
     });
   }
 
   handlePhoneNoSave = (evt) => {
     const {phoneNoInProgIsValid, phoneNoInProg} = this.state
+
     evt.preventDefault();
     if (phoneNoInProgIsValid == true) {
       this.setState({
@@ -366,14 +379,14 @@ class SettingsContent extends Component {
                           !isRemoved && <button type="button" className="Submit-btn BlankBtn neutralText smallCTA" onClick={this.handleRemoveNo}>Remove</button>
                         : (
                           <div>
-                            <button type="button" className="Submit-btn BlankBtn darkGreyText Edit" onClick={this.toggleEditPhoneNo}>Cancel</button>
+                            <button type="button" className="Submit-btn BlankBtn darkGreyText Edit" onClick={this.handleCancelPhoneChange}>Cancel</button>
                             <button type="submit" className="Submit-btn BlankBtn greenText Edit">Save</button>
                           </div>
                         )}
                       </div>
                     </div>
                     {showPhoneNoError == true && (
-                      <div className="redText">Phone number is invalid, so was not saved.</div>
+                      <div className="redText">Phone number is invalid.</div>
                     )}
                     <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.toggleEditPhoneNo}>Add / edit a phone Number</button>
                   </form>
