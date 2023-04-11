@@ -30,7 +30,7 @@ const MentorProfileModalProps = {
 // Depending on whether user is Mentor or Student, will display different Main Menu
 class MainMenu extends Component {
 
-  handleLinkClick = (e, requireLogin, allowedPermissions) => {
+  /*handleLinkClick = (e, requireLogin, allowedPermissions) => {
     const {onClick, checkHasAccess, noAccessHandler} = this.props
 
     // If there is an access requirement
@@ -40,18 +40,18 @@ class MainMenu extends Component {
           e.preventDefault();
           return noAccessHandler ? noAccessHandler() : null
         } else {
-          return onClick ? onClick() : null
+          return onClick ? onClick(e) : null
         }
       })
 
     // There was na ccess requirement
     } else {
-      onClick ? onClick() : null
+      onClick ? onClick(e) : null
     }
-  }
+  }*/
 
   render() {
-    const {userRole, onClick, pathName, checkHasAccess, noAccessHandler} = this.props;
+    const {userRole, onClick, pathName, checkHasAccess, noAccessHandler, isLoggedIn} = this.props;
 
     if(userRole === 'mentor' || userRole === 'pr') {
       //const pathName = window.location.pathname
@@ -66,9 +66,11 @@ class MainMenu extends Component {
             <FullPageModal {...MentorProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
               <MentorProfileContent />
             </FullPageModal>
-            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={(e) => {this.handleLinkClick(e, true)}}>
-              My Activity
-            </NavLink>
+            {isLoggedIn == true && (
+              <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick}>
+                My Activity
+              </NavLink>
+            )}
           </div>
         );
     } else {
@@ -81,12 +83,14 @@ class MainMenu extends Component {
           <FullPageModal {...MenteeProfileModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
             <MenteeProfileContent />
           </FullPageModal>
-          <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={(e) => {this.handleLinkClick(e, true)}} onMouseDown={this.props.onMouseDown}>
-            My Activity
-            {hasUnreadAnswers && (
-              <span className="notificationNum">New</span>
-            )}
-          </NavLink>
+          {isLoggedIn == true && (
+            <NavLink exact to="/my-activity" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={onClick} onMouseDown={this.props.onMouseDown}>
+              My Activity
+              {hasUnreadAnswers && (
+                <span className="notificationNum">New</span>
+              )}
+            </NavLink>
+          )}
         {/*}  <NavLink to="/to-do-list" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>To Do List</NavLink>
           <NavLink to="/teams" activeClassName="is-active" className="mainMenuItem overflow-ellipsis" onClick={closeMenu}>Create a Team</NavLink> */}
         </div>

@@ -302,7 +302,7 @@ class Dashboard extends Component{
     };
 
     const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
-    const isLoggedIn = true //To be linked to Redux
+    const isLoggedIn = false //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 
     if (permitted == true) {
@@ -407,9 +407,9 @@ class Dashboard extends Component{
     const numClasses = groupsList.filter(group => group.isclass == true).length
     const isClass = numClasses > 0
     const isQ = false
-    const isLoggedIn = true
+    const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = false
+    const maxViewsReached = true
     const reachedMaxFeedLength = false
 
     return(
@@ -445,7 +445,7 @@ class Dashboard extends Component{
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
                 {/*    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/> */}
-                    <MainMenu userRole={userRole} onClick={this.handleMenuItemClick} pathName={pathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
+                    <MainMenu userRole={userRole} isLoggedIn={isLoggedIn} onClick={this.handleMenuItemClick} pathName={pathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
@@ -535,7 +535,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = '' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

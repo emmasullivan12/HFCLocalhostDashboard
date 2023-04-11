@@ -383,7 +383,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     let parent = document.getElementById('clientWindowContainer')
     let el = document.getElementById('answersSection')
 
-    if ((parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) && this.state.showSignUpBanner != true) {
+    if (parent.scrollTop >= el.offsetTop || window.innerHeight >= el.offsetTop) {
       this.setState({
         signUpPromptBannerScrollAnimation: true
       })

@@ -182,7 +182,7 @@ class QAThreads extends Component {
       <li key={comment.cid} id={comment.cid} className={type != 'g' ? "gridContainer borderBtm borderGrey" : "gridContainer"}>
         <div className="commentActions">
           <div className={"commentScore" + (maxViewsReached == true ? " blurryText" : "")}>
-            {this.state[comment.cid+'-votes']}
+            {this.state[comment.cid+'-votes'] == 0 ? "" : this.state[comment.cid+'-votes']}
           </div>
           {(aIsMe == false || isPrUser == true) && (
             <div className={"commentVoting fontSize28 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "lightGreyText")}>

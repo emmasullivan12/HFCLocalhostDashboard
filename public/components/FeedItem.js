@@ -421,7 +421,6 @@ class FeedItem extends Component {
       const {isLoggedIn, checkHasAccess, noAccessHandler} = this.props
       const aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
       const error = false
-      let answerURL
 
       if (contentType == 'general') {
         hashtagsCommaString = (post.hashtags.length > 0 || post.hashtagsfreetext.length > 0) ? convertHashtags(post.hashtags, post.hashtagsfreetext) : []

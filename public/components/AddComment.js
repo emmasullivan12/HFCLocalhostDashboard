@@ -304,7 +304,7 @@ class AddComment extends Component {
                 //  onScroll={this.handleTextAreaScroll}
                   onKeyDown={this.onEnterPress}
                   onKeyUp={this.onKeyUp}
-                  placeholder={isOffline ? "You're offline..." : (isInModal ? (!isLoggedIn ? "Log in to post..." : "Add comment...") : "Join the conversation...")}
+                  placeholder={(isInModal ? (!isLoggedIn ? "Log in to post..." : (isOffline ? "You're offline..." : "Add comment...")) : "Join the conversation...")}
                   autoComplete="on"
                   autoCorrect="on"
                   spellCheck="true"

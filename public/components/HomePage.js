@@ -536,10 +536,21 @@ class HomePage extends Component {
 
   handleFeedClick = (e) => {
     e.stopPropagation()
-    const {userStepsIsOpen} = this.state
-    const {updateFeedScrollPos} = this.props
-    const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
-    updateFeedScrollPos(prevScrollPos, userStepsIsOpen)
+
+    const feedItems = document.getElementById('feedItems')
+
+    // Only if item is on the feed, otherwise is probably in a modal
+    if (feedItems.contains(e.target)){
+      const {userStepsIsOpen} = this.state
+      const {updateFeedScrollPos} = this.props
+      const prevScrollPos = e.target.closest('#homepageContainer').scrollTop
+      updateFeedScrollPos(prevScrollPos, userStepsIsOpen)
+
+    // Is probably within a modal i.e. not directly clicking on feed
+    } else {
+      return
+    }
+
   }
 
   renderTab = () => {
