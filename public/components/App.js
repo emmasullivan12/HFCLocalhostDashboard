@@ -409,7 +409,7 @@ class Dashboard extends Component{
     const isQ = false
     const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = true
+    const maxViewsReached = false
     const reachedMaxFeedLength = false
 
     return(

@@ -908,7 +908,7 @@ table th .description{
   margin-right: 1rem;
 }
 .marginRight5{
-  margin-right: 5px;
+  margin-right: 5px!important;
 }
 .marginRight8 {
   margin-right: 8px;

@@ -9,6 +9,7 @@ class PrDashboard extends React.Component {
   }
 
   render() {
+    const {isLoggedIn} = this.props
 
     return (
       <React.Fragment>

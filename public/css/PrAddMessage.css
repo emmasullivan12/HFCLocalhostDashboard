@@ -60,10 +60,10 @@
   border: unset;
   padding: 10px 0px;
 }
-.input-box-container.isGeneralOnFeed,
+/*.input-box-container.isGeneralOnFeed,
 .input-box-container.isGeneralInModal{
   background: #f1f1ff;
-}
+}*/
 .input-box-container.offline{
   background: #f2f2f2;
 }

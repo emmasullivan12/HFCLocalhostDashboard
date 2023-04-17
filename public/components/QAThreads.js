@@ -172,7 +172,7 @@ class QAThreads extends Component {
     const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
-    const myID = '234'
+    const myID = '123'
     const isPrUser = false
 
     isOriginalPostAuthor = originalPostAuthorID == comment.uid
@@ -185,21 +185,23 @@ class QAThreads extends Component {
             {this.state[comment.cid+'-votes'] == 0 ? "" : this.state[comment.cid+'-votes']}
           </div>
           {(aIsMe == false || isPrUser == true) && (
-            <div className={"commentVoting fontSize28 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "lightGreyText")}>
-              <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} aria-label="Upvote comment" title="Upvote this comment" onClick={() => this.handleToggle(comment.cid, true)}>
-                <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
-                  <path d="M1 12h16L9 4l-8 8Z"/>
-                </svg>
-              </button>
-            </div>
+            <React.Fragment>
+              <div className={"commentVoting fontSize28 " + (this.state[comment.cid+"-userUpvoted"] == true ? "electricPurpleText" : "lightGreyText")}>
+                <button type="button" className={"button-unstyled " + (this.state[comment.cid+"-userUpvoted"] == true ? "opacity1" : "")} aria-label="Upvote comment" title="Upvote this comment" onClick={() => this.handleToggle(comment.cid, true)}>
+                  <svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26">
+                    <path d="M1 12h16L9 4l-8 8Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div className="commentFlagging fontSize28 lightGreyText">
+                <Modal {...FlagCommentModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                  <FlagCommentModalContent cid={comment.cid}/>
+                </Modal>
+              </div>
+            </React.Fragment>
           )}
-          <div className="commentFlagging fontSize28 lightGreyText">
-            <Modal {...FlagCommentModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-              <FlagCommentModalContent cid={comment.cid}/>
-            </Modal>
-          </div>
         </div>
-        <div className="commentText fontSize14">
+        <div className={"commentText fontSize14" + (aIsMe == true ? " marginLeft20" : "")} >
     {/*      {(isOnFeed == true || (type == 'g' && isInModal)) && (
             <span className="paddingR5">
               {comment.u18 != true && (isOriginalPostAuthor != true || (isOriginalPostAuthor == true && originalPostIsAnon != true)) && (

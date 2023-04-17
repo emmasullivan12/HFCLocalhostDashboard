@@ -201,6 +201,7 @@ class ProspelaDashboard extends Component{
   render(){
     const userRole = this.props.userRole;
     const {moveScroller, startDrag} = this;
+    const isLoggedIn = true
 
     var teacherQuestions = [
       {q: 'Teacher\'s First Name:', aType: 'text', req: 1, maxLength: 35, placeholder: 'Type first name...', name: 'classteacherfname'},
@@ -440,7 +441,7 @@ class ProspelaDashboard extends Component{
             <div className="clientWindowContainer col-s-12" role="button" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
                 <Redirect exact from="/" to="/prospela-dashboard" />,
-                <Route path="/prospela-dashboard" component={PrDashboard}/>
+                <Route path="/prospela-dashboard" render={(props) => <PrDashboard {...props} isLoggedIn={isLoggedIn} />}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>

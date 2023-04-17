@@ -270,7 +270,7 @@ class FeedItem extends Component {
             { isOnMyContentPage != true && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
             { isOnMyContentPage == true && contentType != 'following' && (
               <React.Fragment>
-                <button type="button" className="msgActions-btn absolute right20 tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
+                <button type="button" className="msgActions-btn absolute right20 tooltip moreActions marginRight5 alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
                   <div className="msgAction-icon">
                     <i className="fas fa-ellipsis-h" />
                   </div>
@@ -443,7 +443,7 @@ class FeedItem extends Component {
           { isOnMyContentPage != true && !props.isInModal && this.showContentTypeLabel((userRole == 'pr' && post.custom && post.custom == 1) ? 'custom' : contentType) }
           { isOnMyContentPage == true && (
             <React.Fragment>
-              <button type="button" className="msgActions-btn tooltip moreActions alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
+              <button type="button" className="msgActions-btn tooltip moreActions marginRight5 alignRight lightGreyText" onClick={this.togglePopup} tabIndex={0} onKeyDown={this.onKeyDown}>
                 <div className="msgAction-icon">
                   <i className="fas fa-ellipsis-h" />
                 </div>

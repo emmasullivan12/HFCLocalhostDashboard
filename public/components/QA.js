@@ -1194,7 +1194,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                   {(!isLoggedIn && showAlmostMaxViewsBanner == true) && (
                     <div className="almostMaxViewsBanner withAnimation">
                       <div className="fullWidth marginRight10">
-                        <div className="signUpPromptTitle fontSize25"><strong><span className="redText inheritFontSize">Last</span> answer from real employees for today</strong></div>
+                        <div className="signUpPromptTitle fontSize25"><strong><span className="redText inheritFontSize">Last</span> answer from real employees</strong></div>
                         <div className="almostMaxViewsBannerExtraText fontSize13">Create a free account for career Q&A with industry experts, 1:1 mentoring & a lasting professional network</div>
                       </div>
                       <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=qaAlmostMaxViews">
