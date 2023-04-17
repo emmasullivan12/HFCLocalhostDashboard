@@ -138,6 +138,7 @@
     height: 40px;
     margin-top: 10px;
     margin-bottom: 15px;
+    -webkit-align-items: center;
     align-items: center;
   }
   .signUpPrompt-header.isOnQAPage a:first-of-type{

@@ -1010,12 +1010,20 @@ table th .description{
   display: none;
 }
 .displayFlex{
+  display: -webkit-box!important;
+  display: -moz-box!important;
+  display: -ms-flexbox!important;
+  display: -moz-flex!important;
+  display: -webkit-flex!important;
   display: flex!important;
 }
 .displayInlineFlex{
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .flexWrap{
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .flexShrink0{
@@ -1025,6 +1033,7 @@ table th .description{
   flex-grow: 1;
 }
 .flexDirColumn{
+  -webkit-flex-direction: column!important;
   flex-direction: column!important;
 }
 .flexEnd{
@@ -2585,6 +2594,16 @@ a.button{
      height: 400px;
    }
 }
+@media screen and (max-width: 1047px) {
+   .signUpPromptTitle{
+     font-size: 28px;
+   }
+}
+@media screen and (max-width: 786px) {
+   .signUpPromptTitle{
+     font-size: 26px;
+   }
+}
 @media screen and (max-width: 400px) {
    .signUpPromptBanner{
      height: 300px;
@@ -2596,6 +2615,9 @@ a.button{
    .signUpPromptTitle{
      font-size: 22px;
      line-height: 1.5rem;
+   }
+   .signUpPromptTitle:not(.isInModal){
+     font-size: 22px!important;
    }
 /*   .prBannerLogoContainer{
      height: 30px;
@@ -2630,16 +2652,6 @@ a.button{
   .signUpPromptTitle{
     margin-top: 55px;
   }
-}
-@media screen and (max-width: 1047px) {
-   .signUpPromptTitle{
-     font-size: 28px;
-   }
-}
-@media screen and (max-width: 786px) {
-   .signUpPromptTitle{
-     font-size: 26px;
-   }
 }
 @media screen and (max-width: 530px) {
    .almostMaxViewsBannerExtraText{
@@ -2706,6 +2718,9 @@ a.button{
      margin-top: -100%;
      width: 70%;
      padding-top: 40px;
+   }
+   #modal-noAccess .bannerTextContainer.iPhoneBannerText{
+     padding-top: 140px;
    }
 }
 @media screen and (min-width: 641px) and (max-width: 1270px) {

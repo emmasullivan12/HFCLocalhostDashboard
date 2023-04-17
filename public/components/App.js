@@ -21,7 +21,7 @@ import ChatMenu from "./ChatMenu";
 import GroupsMenu from "./GroupsMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
-import {LoadingSpinner, showNotifFavicon, hideNotifFavicon, whichBrowser} from './GeneralFunctions.js';
+import {LoadingSpinner, showNotifFavicon, hideNotifFavicon, whichBrowser, isiOS} from './GeneralFunctions.js';
 import MainMenu from "./MainMenu";
 import UserActivityDashboard from "./UserActivityDashboard";
 import HomePage from './HomePage.js';
@@ -411,9 +411,10 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const isLoggedIn = false
-    const oneMoreTilMaxViewsReached = true
-    const maxViewsReached = false
+    const oneMoreTilMaxViewsReached = false
+    const maxViewsReached = true
     const reachedMaxFeedLength = false
+    const isIphone = isiOS()
 
     return(
       <BrowserRouter>
@@ -501,7 +502,7 @@ class Dashboard extends Component{
             </div>
             {showSignUpPromptModal && (
               <Modal {...NoAccessContentModalProps} handleLocalStateOnClose={() => this.closeModal("SignUpPrompt")}>
-                <SignUpPromptModalContent clickOrigin={clickOrigin}/>
+                <SignUpPromptModalContent clickOrigin={clickOrigin} isIphone={isIphone} />
               </Modal>
             )}
           </div>
