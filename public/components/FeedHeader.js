@@ -77,10 +77,11 @@ class FeedHeader extends Component {
 
   render() {
     //const {text} = this.state;
-    const {isUserSearch, searchText, resetSearch, handleSearchTextChange, isLoggedIn} = this.props;
+    const {isUserSearch, searchText, resetSearch, handleSearchTextChange, isLoggedIn, browser} = this.props;
     const {showMenuBtn} = this.state;
     const isMobile = checkMobile()
     const isIphone = isiOS()
+    const isFirefox = browser == 'firefox'
 
     return (
       <React.Fragment>
@@ -157,7 +158,7 @@ class FeedHeader extends Component {
           {!isLoggedIn && (
             <div className="signUpPrompt-header">
               <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=feedTopBtn"><strong>Login</strong></a>
-              <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=feedTopBtn">
+              <a className={"button link Submit-btn signUpPrompt" + (isFirefox == true ? " dispRubyBase" : "")} href="https://app.prospela.com/signup?origin=feedTopBtn">
                 Join for free
               </a>
             </div>

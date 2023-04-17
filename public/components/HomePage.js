@@ -1325,7 +1325,7 @@ class HomePage extends Component {
   }
 
   render(){
-    const {isLoggedIn, checkHasAccess, noAccessHandler, reachedMaxFeedLength} = this.props
+    const {isLoggedIn, checkHasAccess, noAccessHandler, reachedMaxFeedLength, browser} = this.props
     const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
@@ -1390,7 +1390,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn" id="homepageContainer">
-          <FeedHeader isLoggedIn={isLoggedIn} handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
+          <FeedHeader isLoggedIn={isLoggedIn} browser={browser} handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
             {contentArr.length > 0 && newPostsAbove == true && newPostsBannerSeen === false && (

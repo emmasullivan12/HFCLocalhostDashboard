@@ -92,7 +92,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 
 /* DARK MODE */
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 /*  #mainMenu-burger {
     fill: #f2f2f2!important;
   }*/
@@ -101,13 +101,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
   }
   .page-detail{
     color: #bfbfbf!important;
-  }
+  }*/
   .messages-panel{
     background-color: #272727!important;
     background-image: none!important;
   /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
-/*  }
-  .message-content{
+  }
+}
+/*  .message-content{
     color: #b9b9b9!important;
   }
   .page-header {
@@ -556,6 +557,8 @@ table th .description{
 .mainBar{
    float: left;
    width: 100%;
+   width: -webkit-calc(100% - 350px - 24px);
+   width: -moz-calc(100% - 350px - 24px);
    width: calc(100% - 350px - 24px);
   /* max-width: 58.33333333%;*/
    margin: 0;
@@ -641,6 +644,9 @@ table th .description{
 }
 .dispTable{
   display: table;
+}
+.dispRubyBase{
+  display: ruby-base;
 }
 .positionRel{
   position: relative;
@@ -2485,6 +2491,8 @@ a.button{
   bottom: 0;
   margin-left: -30px;
   margin-right: -30px;
+  width: -webkit-calc(100% + 55px);
+  width: -moz-calc(100% + 55px);
   width: calc(100% + 55px);
 }
 .almostMaxViewsBanner{

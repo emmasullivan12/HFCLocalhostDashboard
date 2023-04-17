@@ -21,7 +21,7 @@ import ChatMenu from "./ChatMenu";
 import GroupsMenu from "./GroupsMenu";
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
-import {LoadingSpinner, showNotifFavicon, hideNotifFavicon} from './GeneralFunctions.js';
+import {LoadingSpinner, showNotifFavicon, hideNotifFavicon, whichBrowser} from './GeneralFunctions.js';
 import MainMenu from "./MainMenu";
 import UserActivityDashboard from "./UserActivityDashboard";
 import HomePage from './HomePage.js';
@@ -170,6 +170,9 @@ class Dashboard extends Component{
   componentDidMount() {
     this.createScroller();
     window.addEventListener('resize', this.createScroller);
+    this.setState({
+      browser: whichBrowser()
+    })
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -396,7 +399,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {pathName, prevFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin} = this.state
+    const {browser, pathName, prevFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -408,7 +411,7 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const isLoggedIn = false
-    const oneMoreTilMaxViewsReached = false
+    const oneMoreTilMaxViewsReached = true
     const maxViewsReached = false
     const reachedMaxFeedLength = false
 
@@ -486,8 +489,8 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>

@@ -1197,7 +1197,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="signUpPromptTitle fontSize25"><strong><span className="redText inheritFontSize">Last</span> answer from real employees</strong></div>
                         <div className="almostMaxViewsBannerExtraText fontSize13">Create a free account for career Q&A with industry experts, 1:1 mentoring & a lasting professional network</div>
                       </div>
-                      <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=qaAlmostMaxViews">
+                      <a className="button link Submit-btn signUpPrompt fontSize14" href="https://app.prospela.com/signup?origin=qaAlmostMaxViews">
                         Join for free
                       </a>
                     </div>
