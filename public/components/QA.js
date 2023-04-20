@@ -71,7 +71,6 @@ class QA extends Component {
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
       signUpPromptBannerScrollAnimation: false,
-      thisQUpdatedTo3Views: false,
       showAlmostMaxViewsBanner: this.props.oneMoreTilMaxViewsReached && this.props.oneMoreTilMaxViewsReached == true,
       //votes: this.props.qaItem.votes,
       //votes: 10,
