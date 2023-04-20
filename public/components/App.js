@@ -1,4 +1,4 @@
-// Dex last merged this code on 17th apr 2023 
+// Dex last merged this code on 17th apr 2023
 
 import React, { Component} from "react";
 /*import { connect } from "react-redux";
@@ -325,11 +325,6 @@ class Dashboard extends Component{
 
   // To help track click origin for signuprompt modal.
   updateClickOrigin = (e, clickOrigin) => {
-    console.log(clickOrigin)
-    console.log(e)
-    console.log(e && e.target)
-    console.log(e && e.currentTarget)
-
     // use of 'e' if child has multiple click options (e.g. on QA.js or HomePage, otherwise can provide function with text clickOrigin)
     let origin = (e && e.target && e.target.dataset.origin) ? e.target.dataset.origin : (clickOrigin ? clickOrigin : '')
 

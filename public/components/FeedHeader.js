@@ -164,12 +164,14 @@ class FeedHeader extends Component {
             </div>
           )}
         </div>
-        <div className="signUpPrompt-headerBanner marginTop10">
-          <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=feedTopBtn"><strong>Login</strong></a>
-          <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=feedTopBtn">
-            Join for free
-          </a>
-        </div>
+        {!isLoggedIn && (
+          <div className="signUpPrompt-headerBanner marginTop10">
+            <a className="link fontSize16 black" href="https://app.prospela.com/login?origin=feedTopBtn"><strong>Login</strong></a>
+            <a className="button link Submit-btn signUpPrompt" href="https://app.prospela.com/signup?origin=feedTopBtn">
+              Join for free
+            </a>
+          </div>
+        )}
       </React.Fragment>
     )
   }

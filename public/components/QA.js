@@ -1,4 +1,4 @@
-// Dex last merged this code on 17th apr 2023 
+// Dex last merged this code on 17th apr 2023
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -71,6 +71,7 @@ class QA extends Component {
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
       signUpPromptBannerScrollAnimation: false,
+      thisQUpdatedTo3Views: false,
       showAlmostMaxViewsBanner: this.props.oneMoreTilMaxViewsReached && this.props.oneMoreTilMaxViewsReached == true,
       //votes: this.props.qaItem.votes,
       //votes: 10,

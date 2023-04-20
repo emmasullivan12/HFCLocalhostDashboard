@@ -69,7 +69,7 @@ class QAThreads extends Component {
   }
 
   componentDidUpdate(prevProps, prevState){
-    if(this.state.showMoreComments != prevState.showMoreComments && this.state.showMoreComments == true){
+    if((this.state.showMoreComments != prevState.showMoreComments) && this.state.showMoreComments == true){
       this.setCommentsArr(this.props.comments);
     }
   }

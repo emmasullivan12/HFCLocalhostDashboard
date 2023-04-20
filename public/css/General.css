@@ -2613,7 +2613,6 @@ a.button{
       margin-left: -37px;*/
    }
    .signUpPromptTitle{
-     font-size: 22px;
      line-height: 1.5rem;
    }
    .signUpPromptTitle:not(.isInModal){
