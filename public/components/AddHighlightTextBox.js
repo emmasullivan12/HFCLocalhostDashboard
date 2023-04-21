@@ -1,4 +1,4 @@
-// Last merged this code on 22nd mar 2023
+// Last merged this code on 21st apr 2023
 
 import React, { Component } from "react";
 
@@ -370,7 +370,7 @@ class AddHighlightTextBox extends Component {
     } else if (stateProv != null) {
       return 'Lives in ' + stateProv + ', ' + country
     } else {
-      return 'Lives in ' + country  
+      return 'Lives in ' + country
     }
   }
 
