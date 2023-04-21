@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th apr 2023
+// Dex last merged this code on 21st apr 2023
 
 import React, { Component } from "react";
 
@@ -853,7 +853,7 @@ class Form extends Component {
     const {qViewed} = this.state;
 
     const statesToCheck = [];
-    const nonReqStatesToCheck = [];
+    //const nonReqStatesToCheck = [];
 
     questions.forEach((question, i) => {
       const required = question['req'] === 1;
@@ -861,9 +861,10 @@ class Form extends Component {
 
       if (!required) {
         // Still check correct format even if its not required, but "undefined" is allowed as means user clicked in and our of input box without changing it
-        nonReqStatesToCheck.push(
-          this.state[i+"-"+name+"isValid"]
-        );
+        //nonReqStatesToCheck.push(
+        //  this.state[i+"-"+name+"isValid"]
+        //);
+        return
       } else {
         const condOn = question['conditionalOn']
         if (condOn != undefined) {
@@ -905,7 +906,8 @@ class Form extends Component {
       }
     });
 
-    if (statesToCheck.includes(false) || statesToCheck.includes(undefined) || nonReqStatesToCheck.includes(false)) {
+//    if (statesToCheck.includes(false) || statesToCheck.includes(undefined) || nonReqStatesToCheck.includes(false)) {
+    if (statesToCheck.includes(false) || statesToCheck.includes(undefined)) {
       return false
 
     // Make sure they've seen all questions before Submit button shows

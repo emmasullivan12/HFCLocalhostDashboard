@@ -17,15 +17,15 @@ class SettingsContent extends Component {
       isEditFormalEmail: false,
       isEditPersonalEmail: false,
       phoneNo: '+44 7854 191 949',
-      phoneNoInProg: '+44 7854 191 949', // Needs to be the saved phoneno by default
-      phoneNoInProgIsValid: true,
+    //  phoneNoInProg: '+44 7854 191 949', // Needs to be the saved phoneno by default
+    //  phoneNoInProgIsValid: true,
       formalEmail: 'emma@work.com',
       personalEmail: 'emmapersonal@gmail.com',
       isRemoved: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleRemoveNo = this.handleRemoveNo.bind(this);
-    this.toggleEditPhoneNo = this.toggleEditPhoneNo.bind(this);
+    //this.handleRemoveNo = this.handleRemoveNo.bind(this);
+    //this.toggleEditPhoneNo = this.toggleEditPhoneNo.bind(this);
     this.editFormalEmail = this.editFormalEmail.bind(this);
     this.editPersonalEmail = this.editPersonalEmail.bind(this);
     this.toggleDesktopNotifs = this.toggleDesktopNotifs.bind(this);
