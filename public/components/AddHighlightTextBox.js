@@ -347,7 +347,7 @@ class AddHighlightTextBox extends Component {
         authorDegree: '',
         authorState: authorState,
         authorCountry: authorCountry,
-        credentialText: 'Lives in ' + authorState + ', ' + authorCountry,
+        credentialText: 'Lives in ' + (authorState != null ? (authorState + ', ' ) : "") + authorCountry,
         wasDefaultRole: wasDefaultRole,
       //  credentialUpdatedSuccess: true,
       //  updatingCredentialIsLoading: false,
@@ -367,8 +367,10 @@ class AddHighlightTextBox extends Component {
     } else if (schHistory && schHistory.length != 0) {
       const schInst = (sortedSchs[0].schname) ? (sortedSchs[0].schname) : (sortedSchs[0].schnamefreetext)
       return 'Studied at ' + schInst
-    } else {
+    } else if (stateProv != null) {
       return 'Lives in ' + stateProv + ', ' + country
+    } else {
+      return 'Lives in ' + country  
     }
   }
 
@@ -1756,6 +1758,23 @@ class AddHighlightTextBox extends Component {
                     <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
                       <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} data-wasdefaultrole={((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1)))} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || sortedSchs) ? false : true) : authorType == 'none'} name="radio-credentials" onChange={this.handleRadioClick}/>
                       <span className="credential-text">Lives in {stateProv}, {country}</span>
+                      <span className="radioCheckmark"/>
+                    </label>
+                    {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1))) && (
+                      <span className="defaultCredential neutralText tooltip">
+                        default
+                        <span className="tooltiptext updateCredential">
+                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                )}
+                {stateProv == null && country && (
+                  <div className="credential-item">
+                    <label className="radioContainer setPrimary overflow-ellipsis" htmlFor="none">
+                      <input type="radio" id="none" data-authortype="none" data-state={stateProv} data-country={country} data-wasdefaultrole={((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1)))} defaultChecked={authorType == '' ? ((latestRole || currTraining || sortedUnis || sortedSchs) ? false : true) : authorType == 'none'} name="radio-credentials" onChange={this.handleRadioClick}/>
+                      <span className="credential-text">Lives in {country}</span>
                       <span className="radioCheckmark"/>
                     </label>
                     {((roleHistory == null || (roleHistory && roleHistory.length < 1)) && currTraining == '' && (uniHistory == null || (uniHistory && uniHistory.length < 1)) && (schHistory == null || (schHistory && schHistory.length < 1))) && (

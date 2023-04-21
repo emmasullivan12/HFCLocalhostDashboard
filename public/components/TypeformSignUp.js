@@ -152,7 +152,7 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didEdu', // set to did1stSU when first loaded
+      step: 'did1stSU', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
       eetStatus: 'uni',

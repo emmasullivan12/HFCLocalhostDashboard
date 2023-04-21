@@ -1,5 +1,5 @@
 // Last merged this code on 29th apr 2023
- 
+
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 /*import React, { Component, useCallback } from 'react';
@@ -1121,9 +1121,8 @@ class HomePage extends Component {
     userGroups = ['123']
   //  userGroups = []
     hasMatch = false
-    isNonCoreCountry = (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE')
-    isFromO18OnlyCountry = (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE')
-    isu18 = true
+    isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE')
+    isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE')
 
     if (userRole == 'mentor') {
       expertise = []
@@ -1138,8 +1137,8 @@ class HomePage extends Component {
           {stepText: 'Accept your invite to join the ' + groupName + ' group', isComplete: hasJoinedAutoEnrollGroup, validSteps: ['autoEnroll']},
         ] : [],*/
         {stepText: 'Answer a question', modalToShow: 'AnswerAQ', isComplete: numUserAnswers > 0, validSteps: ['didShortSUtf']},
-        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
-        {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
+        {stepText: (isNonCoreCountry == true ? 'Join a programme' : 'Join a mentoring programme'), modalToShow: 'JoinAGroup', isComplete: userGroups.length > 0, validSteps: ['didShortSUtf']},
+        {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring is not available in your country yet' : 'Join a mentoring programme to unlock this step'), validSteps: ['didShortSUtf']},
         ...(wantsU18 == true) ? [
           {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didU18tf']},
           {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorID', tooltiptextWhenLocked: 'Upload your selfie with Photo ID to unlock this step', validSteps: ['didIDUpload']},
@@ -1149,14 +1148,15 @@ class HomePage extends Component {
     }
 
     if (userRole == 'mentee' || isLoggedIn == false) {
+      isU18 = false
       userQIDs = []
       numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
       menteeSteps = [
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
         {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif'], requireLogin: true},
         {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf'], requireLogin: true},
-        {stepText: 'Join a mentoring programme', modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true, O18CountriesOnly: true, limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring programmes are not available in your country yet' : ((isFromO18OnlyCountry == true && isU18 == true) ? 'Mentoring for under 18s is not available in your country yet' : 'Not yet available')), },
-        {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', tooltiptextWhenLocked: 'Join a mentoring programme to unlock this step', validSteps: ['didShortSUtf']},
+        {stepText: ((isNonCoreCountry == true || (isFromO18OnlyCountry && isU18)) ? 'Join a programme' : 'Join a mentoring programme'), modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true},
+        {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', O18CountriesOnly: true, limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring is not available in your country yet' : ((isFromO18OnlyCountry == true && isU18 == true) ? 'Mentoring for under 18s is not available in your country yet' : 'Join a mentoring programme to unlock this step')), validSteps: ['didShortSUtf']},
         {stepText: 'Complete your 5-min mentee training', modalToShow: 'MenteeTraining', isComplete: userstep == 'didSafeG', reqStep: 'MenteeFullApp', tooltiptextWhenLocked: 'Complete your full mentee application to unlock this step', validSteps: ['didFullSUtf']},
       ]
     }
@@ -1225,7 +1225,7 @@ class HomePage extends Component {
             <React.Fragment>
               <div className="marginTop10">
                 {steps.map((step, index) => {
-                  const reqStepsComplete = ((step.limitForNonCoreCountries != null && step.limitForNonCoreCountries == true && isNonCoreCountry == true) || (step.O18CountriesOnly != null && step.O18CountriesOnly == true && isFromO18OnlyCountry == true)) ? false : (step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true)
+                  const reqStepsComplete = ((step.limitForNonCoreCountries != null && step.limitForNonCoreCountries == true && isNonCoreCountry == true) || (step.O18CountriesOnly != null && step.O18CountriesOnly == true && isFromO18OnlyCountry == true && isU18 == true)) ? false : (step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true)
                   return (
                     <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow, step.requireLogin)} className={reqStepsComplete != true ? "tooltip" : ""}>
                       <Checkbox
