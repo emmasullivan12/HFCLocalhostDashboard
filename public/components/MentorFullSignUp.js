@@ -139,7 +139,7 @@ class MentorFullSignUp extends Component {
           {value: '8', label: 'Prefer not to say'},
         ]},
       ] : [],
-      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
+    //  {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
     ]
 
     var questionsU18 = [
@@ -254,7 +254,7 @@ class MentorFullSignUp extends Component {
         {value: '7', label: 'Other'},
         {value: '8', label: 'Prefer not to say'},
       ]},
-      {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
+    //  {q: 'Lastly, what\'s your mobile number?', detail: 'We might need this additional way to contact you, particularly in the (unlikely) event of an emergency', aType: 'tel', req: 0, name: 'mobile'},
     ]
 
     if (country === 'GBR' || country === 'USA' || country === 'CAN') {

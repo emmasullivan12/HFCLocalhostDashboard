@@ -34,7 +34,7 @@ class SettingsContent extends Component {
   handleChange = (evt) => {
     this.setState({ [evt.target.name]: evt.target.value });
   }
-
+/*
   handlePhoneChange = (id, value, isValid) => {
 
     this.setState({
@@ -73,7 +73,7 @@ class SettingsContent extends Component {
     }
   //  this.setState({ [evt.target.name]: evt.target.value });
   }
-
+*/
   handleEmailSave = (evt) => {
     evt.preventDefault();
     this.setState({ isEditFormalEmail: false });
@@ -88,7 +88,7 @@ class SettingsContent extends Component {
   handleSubmit() {
     alert('Your preferences have been saved!');
   }
-
+/*
   handleRemoveNo() {
     this.setState({ isRemoved: true });
     this.setState({ phoneNo: '' });
@@ -101,7 +101,7 @@ class SettingsContent extends Component {
       showPhoneNoError: false
     });
   }
-
+*/
   editFormalEmail() {
     this.setState({ isEditFormalEmail: true });
   }
@@ -161,7 +161,7 @@ class SettingsContent extends Component {
                         defaultChecked
                       />
                     </div>
-                    <div className="notifToggleContainer">
+                {/*    <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
                       <Checkbox
                         labelClassName="switch"
@@ -170,7 +170,7 @@ class SettingsContent extends Component {
                         onChange={this.handleSubmit}
                         defaultChecked={false}
                       />
-                    </div>
+                    </div>*/}
                   </form>
                   <h2>
                     Group Messages (from other {userRole === 'mentee' ? 'Mentees' : 'E-Mentors'})
@@ -189,7 +189,7 @@ class SettingsContent extends Component {
                         defaultChecked
                       />
                     </div>
-                    <div className="notifToggleContainer">
+                {/*    <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
                       <Checkbox
                         labelClassName="switch"
@@ -198,7 +198,7 @@ class SettingsContent extends Component {
                         onChange={this.handleSubmit}
                         defaultChecked={false}
                       />
-                    </div>
+                    </div> */}
                   </form>
                   <h2>
                     1:1 Chat Messages & Reminders
@@ -245,7 +245,7 @@ class SettingsContent extends Component {
                         defaultChecked={false}
                       />
                     </div>
-                    <div className="notifToggleContainer">
+                  {/*  <div className="notifToggleContainer">
                       <span className="notifToggleTxt">By SMS / Text Message</span>
                       <Checkbox
                         labelClassName="switch"
@@ -254,7 +254,7 @@ class SettingsContent extends Component {
                         onChange={this.handleSubmit}
                         defaultChecked={false}
                       />
-                    </div>
+                    </div> */}
                   </form>
                   <h2>
                     Account support
@@ -354,7 +354,7 @@ class SettingsContent extends Component {
                       </div>
                     </div>
                   </form>
-                  <h2>
+{/*                  <h2>
                     Phone Numbers:
                   </h2>
                   <form onSubmit={this.handlePhoneNoSave}>
@@ -390,6 +390,7 @@ class SettingsContent extends Component {
                     )}
                     <button type="button" className="Submit-btn HollowBtn Edit" onClick={this.toggleEditPhoneNo}>Add / edit a phone Number</button>
                   </form>
+                  */}
                 </section>
               </div>
             </div>
