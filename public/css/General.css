@@ -96,19 +96,18 @@ Extra large devices (large laptops and desktops, 1200px and up)
 /*  #mainMenu-burger {
     fill: #f2f2f2!important;
   }*/
-/*  .page-title{
+  .page-title{
     color: #dedede!important;
   }
   .page-detail{
     color: #bfbfbf!important;
-  }*/
+  }
   .messages-panel{
     background-color: #272727!important;
     background-image: none!important;
   /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
   }
-}
-/*  .message-content{
+  .message-content{
     color: #b9b9b9!important;
   }
   .page-header {
@@ -198,7 +197,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .msgInsights-bar-right {
     color: #797979!important;
   }
-  .input-box:not(.onFeed, .addHighlight){
+  .input-box:not(.onFeed, .addHighlight, .isAddComment){
     color: #b9b9b9!important;
   }
   .tooltip .tooltiptext {
@@ -255,7 +254,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
      background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark.png)!important;
    }
  }*/
-/*} */
+}
 
 /* FONT */
 html{
