@@ -1364,6 +1364,7 @@ class HomePage extends Component {
     const hasUnreadAnswers = true
     const hasFeedbackToComplete = true
     const hasKeyNotif = userstep == 'autoEnroll' || pendingMatchRequest == true || hasUnreadAnswers == true || hasFeedbackToComplete == true
+  //  const contentArr = []
     const contentArr = [
       {name: 'HELLO'},
       {name: 'yO'}

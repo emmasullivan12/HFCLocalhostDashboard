@@ -870,6 +870,9 @@ table th .description{
 .marginBottom {
   margin-bottom: 2rem;
 }
+.marginBottom0{
+  margin-bottom: 0;
+}
 .marginBottom20 {
   margin-bottom: 20px!important;
 }

@@ -85,7 +85,7 @@ class FeedHeader extends Component {
 
     return (
       <React.Fragment>
-        <div className="prBannerSmallLogoContainer marginTop20 horizontallyCenter">
+        <div className="prBannerSmallLogoContainer marginTop20 horizontallyCenter marginBottom0">
           <img
             className="prLogoImg"
             alt="Prospela Logo"
