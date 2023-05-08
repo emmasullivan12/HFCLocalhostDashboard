@@ -5,6 +5,7 @@
   height: 100%;
   background-color: #f2f2f2;
   overflow: auto;
+  overflow-x: hidden;
   position: relative;
 }
 .tabWindow.modal{

@@ -156,6 +156,7 @@ class Dashboard extends Component{
       pathName: window.location.pathname,
       prevFeedScrollPos: 0,
       cameFromFeedUnlockBtn: false,
+  //    documentTitle: 'Prospela Dashboard',
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
     }
@@ -197,6 +198,13 @@ class Dashboard extends Component{
     this.setState({
       cameFromFeedUnlockBtn: cameFromUnlockBtn
     })
+  }
+
+  updateDocumentTitle = (newTitleText) => {
+  /*  this.setState({
+      documentTitle: newTitleText
+    })*/
+    document.title = newTitleText
   }
 
   moveScroller = (e) => {
@@ -444,7 +452,7 @@ class Dashboard extends Component{
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
                 {/*    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/> */}
-                    <MainMenu userRole={userRole} isLoggedIn={isLoggedIn} onClick={this.handleMenuItemClick} pathName={pathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
+                    <MainMenu userRole={userRole} onMouseDown={this.onMouseDown} isLoggedIn={isLoggedIn} onClick={this.handleMenuItemClick} pathName={pathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
@@ -487,7 +495,7 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

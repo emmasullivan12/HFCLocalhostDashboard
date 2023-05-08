@@ -93,9 +93,12 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
-/*  #mainMenu-burger {
+  /*OLDIGNORE #mainMenu-burger {
     fill: #f2f2f2!important;
   }*/
+  .page-header.chat #nav-mainMenu svg path:nth-of-type(2) { /* ONLY BURGER ON THE CHAT WINDOW */
+    fill: #f2f2f2!important;
+  }
   .page-title{
     color: #dedede!important;
   }
@@ -105,7 +108,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .messages-panel{
     background-color: #272727!important;
     background-image: none!important;
-  /*  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
+  /*  OLDIGNOREbackground-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
   }
   .message-content{
     color: #b9b9b9!important;
@@ -200,7 +203,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .input-box:not(.onFeed, .addHighlight, .isAddComment){
     color: #b9b9b9!important;
   }
-  .tooltip .tooltiptext {
+  .tooltip .tooltiptext:not(.tooltiptext.user) {
     background-color: #b9b9b9!important;
     color: #3f3f3f!important;
   }
@@ -228,7 +231,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .whiteFadedText {
     color: rgb(72 72 72 / 63%)!important;
   }
-  .userDetail-inst{
+  .userDetail-inst:not(.tooltiptext.user .userDetail-inst){
     color: #717171!important;
   }
   a.Submit-btn:not(.signUpPrompt) {
@@ -249,7 +252,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
   .presenceIndicator {
     background: #272727!important;
   }
- /*@media screen and (min-width: 758px) {
+ /* OLDIGNORE @media screen and (min-width: 758px) {
    #drop-zone{
      background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark.png)!important;
    }
@@ -1243,6 +1246,7 @@ table th .description{
   right: 13px;
 }
 .tooltip .tooltiptext.messageActions.last::after,
+.tooltip .tooltiptext.emojiReactions.last::after,
 .tooltip .tooltiptext.last.signUpPage::after{
   right: 0;
   margin-right: 9px;

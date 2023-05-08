@@ -202,6 +202,9 @@ class QA extends Component {
         url: 'google.com/answer/#thirdanswer',
       }
     ]
+
+    this.props.updateDocumentTitle(qaItem.title + " - Prospela.com")
+    
     this.countVotes(qaItem.qid, qaItem.votes)
     hidsArr.map((hid) => {
       return this.countVotes(hid.hid, hid.votes)
@@ -264,6 +267,8 @@ class QA extends Component {
     window.removeEventListener('resize', this.isMobile);
     let parent = document.getElementById('clientWindowContainer')
     parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
+
+    this.props.updateDocumentTitle("Prospela Dashboard")
 
     // Stop IntersectionObserver for signUpPromptBanner
   /*  if (showSignUpBanner == true) {

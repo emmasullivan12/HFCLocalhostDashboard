@@ -244,8 +244,11 @@
     position: unset;
     top: unset;
     margin-top: -73px;
-    margin-left: 30%;
-    font-size: 1rem;
+    margin-left: 26%;
+    /*font-size: 1rem; */
+  }
+  .form-header.safari{
+    padding-top: 20px;
   }
 }
 @media only screen and (max-width: 600px) {

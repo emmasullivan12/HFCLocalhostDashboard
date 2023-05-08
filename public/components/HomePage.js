@@ -159,7 +159,7 @@ class HomePage extends Component {
     this.state = {
       tabToView: this.props.tabToView ? this.props.tabToView : 'all',
       userStepsIsOpen: true,
-      userstep: 'somethingElse', //didU18tf
+      userstep: 'autoEnroll', //didU18tf
       userRole: 'mentee',
       source: 'vhs',
       filterBy: 'latest',
@@ -322,8 +322,13 @@ class HomePage extends Component {
     const sideBarIsShowing = w > 1080
     this.setState({
       windowWidth: w,
-      userStepsIsOpen: sideBarIsShowing
     })
+    // Only want to amend if resizing to larger screen otherwise on mobile was causing steps to always close as was on small screen (and thus closing modals)
+    if (sideBarIsShowing == true) {
+      this.setState({
+        userStepsIsOpen: sideBarIsShowing
+      })
+    }
   }
 
   hideNewPostsNotif = (e) => {
