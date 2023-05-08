@@ -1,4 +1,4 @@
-// Dex last merged this code on 17th apr 2023
+// Dex last merged this code on 8th may 2023
 
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -204,7 +204,7 @@ class QA extends Component {
     ]
 
     this.props.updateDocumentTitle(qaItem.title + " - Prospela.com")
-    
+
     this.countVotes(qaItem.qid, qaItem.votes)
     hidsArr.map((hid) => {
       return this.countVotes(hid.hid, hid.votes)
