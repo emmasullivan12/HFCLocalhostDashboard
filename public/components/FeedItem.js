@@ -638,13 +638,14 @@ class FeedItem extends Component {
                     <div className="tagsList">
                       {hashtagsArray.map((hashtag) => {
                         return (
-                          <span
-                            key={hashtag}
-                            className="multiple value paddingR"
-                            id={hashtag}
-                          >
-                            {hashtag}
-                          </span>
+                          <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple value paddingR"
+                              id={hashtag}
+                            >
+                              {hashtag}
+                            </span>
+                          </Link>
                         )
                       })}
                     </div>

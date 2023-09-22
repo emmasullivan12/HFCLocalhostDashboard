@@ -63,21 +63,21 @@ class FeedHeader extends Component {
   }
 
   handleSubmit = () => {
-    const {handleSearchResults} = this.props
+    const {handleSearchResults, searchText} = this.props
 
     const searchCompleted = true
 
     // Once search results come back / completed
     if (searchCompleted == true) {
       if (handleSearchResults) {
-        handleSearchResults()
+        handleSearchResults(searchText)
       }
     }
   }
 
   render() {
     //const {text} = this.state;
-    const {isUserSearch, searchText, resetSearch, handleSearchTextChange, isLoggedIn, browser} = this.props;
+    const {isUserSearch, searchText, resetSearch, handleSearchTextChange, isTagSearch, isLoggedIn, browser} = this.props;
     const {showMenuBtn} = this.state;
     const isMobile = checkMobile()
     const isIphone = isiOS()
@@ -113,6 +113,11 @@ class FeedHeader extends Component {
                           className="multiple value"
                         //  role="button"
                         >
+                          {isTagSearch && (
+                            <div className="msgAction-icon">
+                              <i className="fas fa-tag"/>
+                            </div>
+                          )}
                           {searchText}
                           <span
                             data-value={searchText}

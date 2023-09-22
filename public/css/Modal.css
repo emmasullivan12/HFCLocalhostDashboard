@@ -58,6 +58,7 @@
 .ModalOpenBtn-deleteContent,
 .ModalOpenBtn-deleteQ,
 .ModalOpenBtn-addComment,
+.ModalOpenBtn-textModalTrigger,
 .ModalOpenBtn-flagComment{
   background: none;
   border: 0;
@@ -84,6 +85,7 @@
 .ModalOpenBtn-deleteContent:hover,
 .ModalOpenBtn-deleteQ:hover,
 .ModalOpenBtn-addComment:hover,
+.ModalOpenBtn-textModalTrigger:hover,
 .ModalOpenBtn-flagComment:hover{
   background: none!important;
   color: inherit!important;
@@ -99,6 +101,7 @@
 .ModalOpenBtn-deleteContent:active,
 .ModalOpenBtn-deleteQ:active,
 .ModalOpenBtn-addComment:active,
+.ModalOpenBtn-textModalTrigger:active,
 .ModalOpenBtn-flagComment:active{
   background: none;
 }

@@ -176,6 +176,7 @@ class HomePage extends Component {
       showMentorTrainingModal: false,
       showMenteeTrainingModal: false,
       isUserSearch: false,
+      isTagSearch: true,
       seenQIDsArr: [],
       seenHIDsArr: [],
       windowWidth: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, // grab window size
@@ -499,8 +500,11 @@ class HomePage extends Component {
   }
 
   handleSearchResults = () => {
+    const {searchText} = this.state
+    console.log(searchText)
     this.setState({
       isUserSearch: true,
+      isTagSearch: searchText.startsWith('[') && searchText.endsWith(']'),
     }, () => {
       this.updateTabToView('all')
     })
@@ -521,6 +525,7 @@ class HomePage extends Component {
     this.setState({
       justResetSearch: true,
       isUserSearch: false,
+      isTagSearch: false,
     }, () => {
       document.getElementById("mainSearchBox").focus();
     })
@@ -559,7 +564,7 @@ class HomePage extends Component {
   }
 
   renderTab = () => {
-    const {tabToView, userRole, isUserSearch, filterBy, numResults} = this.state;
+    const {tabToView, userRole, isUserSearch, isTagSearch, searchText, filterBy, numResults} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler} = this.props
   //  const contentArr = []
   /* const contentArr = [ // Questions
@@ -904,7 +909,7 @@ class HomePage extends Component {
             )}
             {isUserSearch && (
               <div className="marginTop20">
-                Search results: {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
+                {isTagSearch ? ('Questions tagged ' + searchText) : 'Search results'}: {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
               </div>
             )}
             { this.showUpdateTabBtns() }
@@ -1333,7 +1338,7 @@ class HomePage extends Component {
 
   render(){
     const {isLoggedIn, checkHasAccess, noAccessHandler, reachedMaxFeedLength, browser} = this.props
-    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
+    const {tabToView, userStepsIsOpen, userstep, userRole, source, isUserSearch, isTagSearch, searchText, hideKeyNotifBox, newPostsAbove, newPostsBannerSeen} = this.state
     const usersGroups = [
       {
         gid: '20000',
@@ -1398,7 +1403,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <div className="tabWindow paddingL30 paddingR30 overflowYHidden displayFlex flexDirColumn" id="homepageContainer">
-          <FeedHeader isLoggedIn={isLoggedIn} browser={browser} handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch}/>
+          <FeedHeader isLoggedIn={isLoggedIn} browser={browser} handleSearchResults={this.handleSearchResults} searchText={searchText} handleSearchTextChange={this.handleSearchTextChange} resetSearch={this.resetSearch} isUserSearch={isUserSearch} isTagSearch={isTagSearch}/>
           {/*<div className="mainAndSideContainer marginTop20 overflowYScroll"> */}
           <div className="mainAndSideContainer marginTop20" id="mainAndSideContainer">
             {contentArr.length > 0 && newPostsAbove == true && newPostsBannerSeen === false && (

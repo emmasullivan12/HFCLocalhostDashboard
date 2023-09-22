@@ -22,6 +22,15 @@ import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSi
 
 import "../css/QA.css";
 
+const AddQModalProps = {
+  ariaLabel: 'Ask a Question',
+  triggerText: 'ask your own question',
+  usedFor: 'textModalTrigger',
+  otherFormatting: 'linkUnderline',
+  changeInitFocus: true,
+  wider: true
+}
+
 const NoAccessContentModalProps = {
   ariaLabel: 'No Access - Sign up or Login',
   triggerText: 'Sign up or Login',
@@ -480,7 +489,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     //  reportedstatus jsonb
     }
     const myID = '1234567'; //223456
-    const userRole = ''
+    const userRole = 'mentee'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -759,13 +768,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       <div className="tagsList">
                         {hashtagsArray.map((hashtag) => {
                           return (
-                            <span
-                              key={hashtag}
-                              className="multiple value paddingR"
-                              id={hashtag}
-                            >
-                              {hashtag}
-                            </span>
+                            <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
+                              <span
+                                className="multiple value paddingR"
+                                id={hashtag}
+                              >
+                                {hashtag}
+                              </span>
+                            </Link>
                           )
                         })}
                       </div>
@@ -873,13 +883,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         <div className="tagsList">
                           {hashtagsArray.map((hashtag) => {
                             return (
-                              <span
-                                key={hashtag}
-                                className="multiple value paddingR"
-                                id={hashtag}
-                              >
-                                {hashtag}
-                              </span>
+                              <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
+                                <span
+                                  className="multiple value paddingR"
+                                  id={hashtag}
+                                >
+                                  {hashtag}
+                                </span>
+                              </Link>
                             )
                           })}
                         </div>
@@ -1040,13 +1051,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                               <div className="tagsList">
                                 {aHashtagsArray.map((hashtag) => {
                                   return (
-                                    <span
-                                      key={hashtag}
-                                      className="multiple value paddingR"
-                                      id={hashtag}
-                                    >
-                                      {hashtag}
-                                    </span>
+                                    <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
+                                      <span
+                                        className="multiple value paddingR"
+                                        id={hashtag}
+                                      >
+                                        {hashtag}
+                                      </span>
+                                    </Link>
                                   )
                                 })}
                               </div>
@@ -1163,30 +1175,6 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </Modal>
                       </div>
                     )}
-                    {!isLoggedIn && (
-                      <div>
-                        <div className="qTitle marginBottom5">
-                          <strong>Not the answer you were looking for? </strong>
-                          <span>Browse other questions tagged {hashtagsArray.length > 0 && (
-                            <div className="tagsList">
-                              {hashtagsArray.map((hashtag) => {
-                                return (
-                                  <span
-                                    key={hashtag}
-                                    className="multiple value paddingR"
-                                    id={hashtag}
-                                  >
-                                    {hashtag}
-                                  </span>
-                                )
-                              })}
-                            </div>
-                          )}
-                          </span>
-                          <span>or <span className="link linkPurpleText linkUnderline">ask your own question</span></span>
-                        </div>
-                      </div>
-                    )}
                     {(!isLoggedIn || userRole == 'mentor') && (
                       <div>
                         <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'} Join as an E-Mentor and contribute.</div>
@@ -1195,6 +1183,40 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </Modal>
                       </div>
                     )}
+                    <div className="qTitle marginBottom5">
+                      <div><strong>Related questions</strong></div>
+                    </div>
+                    <div>
+                      <div className="qTitle marginBottom5">
+                        <span>Browse other questions tagged {hashtagsArray.length > 0 && (
+                          <div className="tagsList">
+                            {hashtagsArray.map((hashtag) => {
+                              return (
+                                <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
+                                  <span
+                                    className="multiple value paddingR"
+                                    id={hashtag}
+                                  >
+                                    {hashtag}
+                                  </span>
+                                </Link>
+                              )
+                            })}
+                          </div>
+                        )}
+                        </span>
+                        {(!isLoggedIn || userRole == 'mentee') && (
+                          <span>
+                            or <span className="link linkPurpleText linkUnderline">
+                              <Modal {...AddQModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
+                              </Modal>
+                            </span>
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
                   </div>
                   {(!isLoggedIn && showAlmostMaxViewsBanner == true) && (
                     <div className="almostMaxViewsBanner withAnimation">

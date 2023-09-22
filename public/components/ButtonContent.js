@@ -8,6 +8,7 @@ import "../css/ButtonContent.css";
 function ButtonContent(props) {
   const usedFor = props.usedFor;
   const text = props.text;
+  const otherFormatting = props.otherFormatting
 
   switch (usedFor) {
     case 'picContainer':
@@ -205,7 +206,7 @@ function ButtonContent(props) {
         <X />
       )
     default:
-      return <div className="overflow-ellipsis">{text}</div>
+      return <div className={"overflow-ellipsis " + otherFormatting}>{text}</div>
   }
 }
 

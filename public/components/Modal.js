@@ -12,12 +12,13 @@ const ModalTrigger = ({
   ariaLabel,
   buttonRef,
   clickHandler,
+  otherFormatting,
   text,
   triggerHasAutoFocus,
   usedFor
 }) => (
   <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={clickHandler} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
-    <ButtonContent usedFor={usedFor} text={text}/>
+    <ButtonContent usedFor={usedFor} text={text} otherFormatting={otherFormatting}/>
   </button>
 )
 
@@ -245,7 +246,7 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent} = this.props;
+    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent, otherFormatting} = this.props;
 
     return (
       <React.Fragment>
@@ -254,6 +255,7 @@ class Modal extends React.Component {
             ariaLabel={ariaLabel}
             buttonRef={n => this.openButtonNode = n}
             clickHandler={this.clickHandler}
+            otherFormatting={otherFormatting}
             text={triggerText}
             triggerHasAutoFocus={triggerHasAutoFocus}
             usedFor={usedFor}
