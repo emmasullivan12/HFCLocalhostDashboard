@@ -431,7 +431,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
   render() {
     const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner} = this.state;
-    const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
+    const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr, cameFromFeed} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -1183,12 +1183,57 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </Modal>
                       </div>
                     )}
-                    <div className="qTitle marginBottom5">
-                      <div><strong>Related questions</strong></div>
-                    </div>
+                    {relatedQsArr.length > 0 && (
+                      <div className="qTitle marginBottom5">
+                        <div><strong>Related questions</strong></div>
+                        <div>
+                          {relatedQsArr.map((q) => {
+                            return (
+                              <Link to={{pathname: "/questions/" + q.qid + q.url, state: {prevPath: window.location.pathname}}} className="list-item-container link fontSize16 alignItemsCenter displayFlex" key={q.qid} onClick={updatePathName}>
+                                <span className="marginRight10">
+                                  {q.hids && q.hids.length != 0 && (
+                                    <span className={"multiple marginRight0 fontSize12 " + (q.hasacceptedanswer == true ? "green small" : "greenOutline small")}>
+                                      <span>{q.hids.length}</span>
+                                    </span>
+                                  )}
+                                  {q.hids && q.hids.length == 0 && (
+                                    <span className="multiple grey small marginRight0 fontSize13">0</span>
+                                  )}
+                                </span>
+                                <span className="paddingL10 overflow-ellipsis">{q.title}</span>
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )}
+                    {cameFromFeed == true && trendingQsArr.length > 0 && (
+                      <div className="qTitle marginBottom5">
+                        <div><strong><span role="img" aria-label="fire emoji">🔥</span> Trending questions</strong></div>
+                        <div>
+                          {trendingQsArr.map((q) => {
+                            return (
+                              <Link to={{pathname: "/questions/" + q.qid + q.url, state: {prevPath: window.location.pathname}}} className="list-item-container link fontSize16 alignItemsCenter displayFlex" key={q.qid} onClick={updatePathName}>
+                                <div className="marginRight10">
+                                  {q.hids && q.hids.length != 0 && (
+                                    <span className={"multiple marginRight0 fontSize12 " + (q.hasacceptedanswer == true ? "green small" : "greenOutline small")}>
+                                      <span>{q.hids.length}</span>
+                                    </span>
+                                  )}
+                                  {q.hids && q.hids.length == 0 && (
+                                    <span className="multiple grey small marginRight0 fontSize13">0</span>
+                                  )}
+                                </div>
+                                <div className="paddingL10 overflow-ellipsis">{q.title}</div>
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )}
                     <div>
                       <div className="qTitle marginBottom5">
-                        <span>Browse other questions tagged {hashtagsArray.length > 0 && (
+                        <span><strong>Browse other questions tagged </strong>{hashtagsArray.length > 0 && (
                           <div className="tagsList">
                             {hashtagsArray.map((hashtag) => {
                               return (
@@ -1216,7 +1261,6 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         )}
                       </div>
                     </div>
-
                   </div>
                   {(!isLoggedIn && showAlmostMaxViewsBanner == true) && (
                     <div className="almostMaxViewsBanner withAnimation">

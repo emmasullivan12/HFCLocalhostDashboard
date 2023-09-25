@@ -656,6 +656,10 @@ table th .description{
 .alignCenter{
   text-align: center!important;
 }
+.alignItemsCenter{
+  align-items: center!important;
+  -webkit-align-items: center!important;
+}
 .alignCenter svg{
   display: inline-block;
 }
@@ -668,6 +672,7 @@ table th .description{
 .alignRight{
   float: right!important;
 }
+.align
 .textLeft{
   text-align: left!important;
 }

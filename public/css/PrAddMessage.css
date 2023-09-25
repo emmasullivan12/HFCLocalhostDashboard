@@ -27,7 +27,40 @@
   -moz-flex-direction: row;
   width: 100%;
 }
-
+.list-item-container{
+  width: 100%;
+  display: block;
+  font-family: inherit;
+  line-height: normal;
+  padding: 10px 15px;
+  border: 1px solid #d9d9d9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  color: #351c75;
+  max-width: 100%;
+  margin: 0 0 .25rem;
+  transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  -webkit-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  -moz-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  -ms-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  -o-transition: box-shadow 70ms ease-out,border-color 70ms ease-out;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  height: auto;
+  margin-bottom: 0px;
+}
+.list-item-container:first-of-type{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 0px;
+}
+.list-item-container:last-of-type{
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top: 0px;
+}
 .input-box-container{
   width: 100%;
   font-family: inherit;

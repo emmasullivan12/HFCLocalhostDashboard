@@ -413,11 +413,154 @@ class Dashboard extends Component{
     const numClasses = groupsList.filter(group => group.isclass == true).length
     const isClass = numClasses > 0
     const isQ = false
-    const isLoggedIn = true
+    const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
     const maxViewsReached = true
     const reachedMaxFeedLength = false
     const isIphone = isiOS()
+    const cameFromFeed = true
+    const relatedQsArr = [ // Questions
+        {
+          qid: '123456',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: [], // no answers yet
+          industriestopostto: ['99999','19'],
+          hashtags: ['23'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: false,
+          votes: ['123','234','345','456'],
+          mentorseen: ['123','234','345','456'],
+          menteeseen: ['123'],
+          prseen: [],
+          uid: '123',
+          isanon: 0,
+          authorinsttype: 'sch',
+          fname: 'Emma',
+          lname: 'Sullivan',
+          profilepic: '',
+          url: "/what-wear-to-interview"
+        },
+        {
+          qid: '123457',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: ['1234','1235'], // 2 answers
+          industriestopostto: ['2','19'],
+          hashtags: ['23','11','30','55','61'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: true,
+          votes: [],
+          mentorseen: ['123','234'],
+          menteeseen: [],
+          prseen: [],
+          uid: '124',
+          isanon: 0,
+          authorinsttype: 'uni',
+          fname: 'Dexter',
+          lname: 'Boyce',
+          profilepic: '',
+          url: "/what-wear-to-interview-2"
+        },
+        {
+          qid: '123458',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: ['1234','1235'], // 2 answers
+          industriestopostto: ['2','19'],
+          hashtags: ['23','11','30'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: false,
+          votes: [],
+          mentorseen: ['123','234','345','456'],
+          menteeseen: [],
+          prseen: [],
+          uid: '124',
+          isanon: 1,
+          authorinsttype: 'job',
+          fname: 'John',
+          lname: 'Smith',
+          profilepic: '',
+          url: "/what-wear-to-interview-3"
+        },
+      ]
+    const trendingQsArr = [ // Questions
+        {
+          qid: '123456',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: [], // no answers yet
+          industriestopostto: ['99999','19'],
+          hashtags: ['23'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: false,
+          votes: ['123','234','345','456'],
+          mentorseen: ['123','234','345','456'],
+          menteeseen: ['123'],
+          prseen: [],
+          uid: '123',
+          isanon: 0,
+          authorinsttype: 'sch',
+          fname: 'Emma',
+          lname: 'Sullivan',
+          profilepic: '',
+          url: "/what-wear-to-interview"
+        },
+        {
+          qid: '123457',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: ['1234','1235'], // 2 answers
+          industriestopostto: ['2','19'],
+          hashtags: ['23','11','30','55','61'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: true,
+          votes: [],
+          mentorseen: ['123','234'],
+          menteeseen: [],
+          prseen: [],
+          uid: '124',
+          isanon: 0,
+          authorinsttype: 'uni',
+          fname: 'Dexter',
+          lname: 'Boyce',
+          profilepic: '',
+          url: "/what-wear-to-interview-2"
+        },
+        {
+          qid: '123458',
+          datecreated: '2020-09-04T13:30:50.667Z',
+          title: 'What is the best thing to wear to an interview?',
+          textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+          hids: ['1234','1235'], // 2 answers
+          industriestopostto: ['2','19'],
+          hashtags: ['23','11','30'],
+          hashtagsfreetext: ['my free text hashtag'],
+          type: 'questions',
+          hasacceptedanswer: false,
+          votes: [],
+          mentorseen: ['123','234','345','456'],
+          menteeseen: [],
+          prseen: [],
+          uid: '124',
+          isanon: 1,
+          authorinsttype: 'job',
+          fname: 'John',
+          lname: 'Smith',
+          profilepic: '',
+          url: "/what-wear-to-interview-3"
+        },
+      ]
 
     return(
       <BrowserRouter>
@@ -495,7 +638,7 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} cameFromFeed={cameFromFeed}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
