@@ -498,6 +498,11 @@ table th .description{
 .electricPurpleText{
   color: #4e4ed6!important;
 }
+.highlightedText,
+.highlightedTextOnFocus:focus{
+  color: #fafafa;
+  background: #4e4ed6;
+}
 .redText{
   color: #da0b0b;
   font-size: 13px;
@@ -833,6 +838,9 @@ table th .description{
 .marginTop{
   margin-top: 2rem;
 }
+.marginTop0 {
+  margin-top: 0px!important;
+}
 .marginTop5 {
   margin-top: 5px!important;
 }
@@ -1049,6 +1057,11 @@ table th .description{
 .flexEnd{
   margin-left: auto;
   justify-content: flex-end;
+}
+.spaceBetween{
+  justify-content: space-between!important;
+  -webkit-justify-content: space-between!important;
+  -moz-justify-content: space-between!important;
 }
 .overflow-ellipsis{
   white-space: nowrap;
@@ -2346,7 +2359,29 @@ a.button{
 .bubble.noBackground:last-of-type{
   margin-right: 3px;
 }
-
+.shareOptionsContainer{
+  position: relative;
+  bottom: -5px;
+  z-index: 100;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  background: white;
+  padding: 10px;
+}
+.shareOptionsContainer::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ddd transparent transparent transparent;
+  top: -10px!important;
+  left: 15px!important;
+  transform: scaleY(-1);
+}
 /* ICONS */
 .emoji-mart-emoji{
   cursor: pointer;

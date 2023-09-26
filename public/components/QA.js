@@ -76,6 +76,7 @@ class QA extends Component {
     this.state = {
       isLoading: false,
       isMobile: checkMobile(),
+      showShareOptions: false,
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
@@ -272,7 +273,7 @@ class QA extends Component {
   componentWillUnmount() {
   //  const {showSignUpBanner} = this.state
   //  const observer = this.createObserver()
-
+    document.removeEventListener('click', this.closeShareOptionsMenu)
     window.removeEventListener('resize', this.isMobile);
     let parent = document.getElementById('clientWindowContainer')
     parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
@@ -429,8 +430,67 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     return observer
   } */
 
+  showShareOptions = () => {
+    const currentState = this.state.showShareOptions;
+    this.setState({
+      showShareOptions: true
+    }, () => {
+      document.addEventListener('click', this.closeShareOptionsMenu)
+      if (currentState != this.state.showShareOptions) {
+        console.log("yo")
+        this.highlightedTextOnFocus.focus()
+        const name = this.highlightedTextOnFocus.getAttribute('name')
+        navigator.clipboard.writeText(name)
+        document.execCommand("copy");
+      }
+    })
+  }
+
+  closeShareOptionsMenu = (e) => {
+    // If user clicks on URL box copy it
+    if (this.shareOptions !== null && this.highlightedTextOnFocus !== null && this.highlightedTextOnFocus.contains(e.target)) {
+      console.log("yoooooooo")
+      this.highlightedTextOnFocus.focus()
+      const name = this.highlightedTextOnFocus.getAttribute('name')
+      navigator.clipboard.writeText(name)
+      document.execCommand("copy");
+    }
+
+    // Close menu if click off of it
+    if (this.shareOptions !== null && !this.shareOptions.contains(e.target)) {
+      this.setState({
+        showShareOptions: false
+      }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
+    }
+  }
+
+  closeShareOptionsOnEsc = (e) => {
+    var key = e.key || e.keyCode
+    console.log("pressing: "+e.key)
+
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+      this.setState({
+        showShareOptions: false
+      }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
+    } else {
+      return;
+    }
+  }
+
+  copyURL = (url, tooltipID) => {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(url)
+    document.execCommand("copy");
+
+    document.getElementById(tooltipID).innerHTML = "Copied!";
+  }
+
+  handleBlur = (tooltipID) => {
+    document.getElementById(tooltipID).innerHTML = "Copy URL";
+  }
+
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner, showShareOptions} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr, cameFromFeed} = this.props
     const qaItem = {
       qid: '123456',
@@ -628,7 +688,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
       return answer
     })
-    let qURL = "https://app.prospela.com/questions/" + qaItem.qid + qaItem.url
+    let qURL = "https://app.prospela.com/questions/" + qaItem.qid + "/" + qaItem.url
     const qaStructuredData = {
       "@context": "https://schema.org",
       "@type": "QAPage",
@@ -733,6 +793,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
         <script type="application/ld+json">
           {JSON.stringify(qaStructuredData)}
         </script>
+      {/*  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js" /> {/* Twitter for Websites JavaScript to enable tweeting */}
         {isLoading == true ? (
           <div className="padding25 marginTop20">
             <LoadingSpinner />
@@ -896,16 +957,38 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </div>
                       )}
                       <div className="marginTop20 marginBottom20 qActionsContainer">
-                        {/*<div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20"> */}
-                        {/*  <div className="marginRight8">Share</div>
-                          <div className="marginRight8">Follow</div> */}
+                        <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20 noSelect">
+                          <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={this.showShareOptions} onKeyDown={this.showShareOptions}>
+                            Share <i className="fas fa-share-nodes"/>
+                            {showShareOptions && (
+                              <div className="shareOptionsContainer" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
+                                <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this question</strong></div>
+                                <div className="input-box-container">
+                                  <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>
+                                </div>
+                                <div className="displayFlex spaceBetween">
+                                  <a className="link tooltip" onMouseLeave={() => this.handleBlur("tooltip-share-q-link")} onClick={() => this.copyURL(qURL, "tooltip-share-q-link")}>
+                                    Copy link
+                                    <div className="tooltiptext compact" id="tooltip-share-q-link">
+                                      Copy URL
+                                    </div>
+                                  </a>
+                                  <div>
+                                    <a className="marginRight8 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://twitter.com/intent/tweet?text=" + qaItem.title + " " + qURL}>Twitter</a>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </button>
+
+                        {/*  <div className="marginRight8">Follow</div> */}
                         {/*  {qIsMe == 'isMe' && (
                             <Modal {...DeleteContentModalProps}>
                               <DeleteContentModalContent />
                             </Modal>
                           )} */}
                         {/*  <div className="marginLeft8">Report</div> */}
-                        {/* </div> */}
+                        </div>
                         <div className="credentialSuperContainer">
                           <div className="credentialPreviewContainer">
                             <div className="textLeft darkGreyText fontSize12">asked <DateCalc time={qaItem.datecreated} showPureDate /> at <TimeCalc time={qaItem.datecreated} /></div>
