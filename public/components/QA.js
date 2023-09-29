@@ -18,7 +18,7 @@ import Modal from './Modal';
 import QAThreads from './QAThreads.js';
 import TextParser from './TextParser.js';
 import UserBadge from './UserBadge.js';
-import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSince} from './UserDetail.js';
+import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, getEmployerName, timeSince} from './UserDetail.js';
 
 import "../css/QA.css";
 
@@ -76,6 +76,7 @@ class QA extends Component {
     this.state = {
       isLoading: false,
       isMobile: checkMobile(),
+      showOptionsForItem: '',
       showShareOptions: false,
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
@@ -430,14 +431,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     return observer
   } */
 
-  showShareOptions = () => {
+  showShareOptions = (id) => {
     const currentState = this.state.showShareOptions;
     this.setState({
-      showShareOptions: true
+      showShareOptions: true,
+      showOptionsForItem: id,
     }, () => {
       document.addEventListener('click', this.closeShareOptionsMenu)
       if (currentState != this.state.showShareOptions) {
-        console.log("yo")
         this.highlightedTextOnFocus.focus()
         const name = this.highlightedTextOnFocus.getAttribute('name')
         navigator.clipboard.writeText(name)
@@ -449,7 +450,6 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
   closeShareOptionsMenu = (e) => {
     // If user clicks on URL box copy it
     if (this.shareOptions !== null && this.highlightedTextOnFocus !== null && this.highlightedTextOnFocus.contains(e.target)) {
-      console.log("yoooooooo")
       this.highlightedTextOnFocus.focus()
       const name = this.highlightedTextOnFocus.getAttribute('name')
       navigator.clipboard.writeText(name)
@@ -459,18 +459,29 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     // Close menu if click off of it
     if (this.shareOptions !== null && !this.shareOptions.contains(e.target)) {
       this.setState({
-        showShareOptions: false
+        showShareOptions: false,
+        showOptionsForItem: '',
       }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
+    }
+  }
+
+  showShareOptionsOnEnter = (e, id) => {
+    var key = e.key || e.keyCode
+
+    if((key === 'Enter' || key === 13) && e.shiftKey === false) {
+      this.showShareOptions(id)
+    } else {
+      return;
     }
   }
 
   closeShareOptionsOnEsc = (e) => {
     var key = e.key || e.keyCode
-    console.log("pressing: "+e.key)
 
     if (key === 'Escape' || key === 'Esc' || key === 27) {
       this.setState({
-        showShareOptions: false
+        showShareOptions: false,
+        showOptionsForItem: '',
       }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
     } else {
       return;
@@ -489,8 +500,44 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     document.getElementById(tooltipID).innerHTML = "Copy URL";
   }
 
+  renderShareOptionsBox = (id, qURL, qaItem, contentType, authorinsttype, authorinstfreetext, authorinst) => {
+    const mentorInstText = (authorinsttype != "sch" && authorinsttype != null) ? getEmployerName(authorinsttype, authorinstfreetext, authorinst) : " "
+    const answerAddedText = "Check out this" + mentorInstText + "answer on Prospela - "
+    const url = encodeURIComponent(qURL)
+    return (
+      <div className="shareOptionsContainer" id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
+        <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this question</strong></div>
+        <div className="input-box-container marginBottom10">
+          <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>
+        </div>
+        <div className="displayFlex spaceBetween">
+          <a className="link tooltip" tabIndex="0" onMouseLeave={() => this.handleBlur("tooltip-share-q-link")} onClick={() => this.copyURL(qURL, "tooltip-share-q-link")}>
+            Copy link
+            <div className="tooltiptext compact" id="tooltip-share-q-link">
+              Copy URL
+            </div>
+          </a>
+          <div>
+            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://twitter.com/intent/tweet?text=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url}>
+              <span className="fontSize18 greyText twitterIcon-greyed"><i className="fab fa-twitter"/></span>
+            </a>
+            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"http://www.linkedin.com/shareArticle?mini=true&url=" + url}>
+              <span className="fontSize18 greyText linkedinIcon-greyed"><i className="fab fa-linkedin-in"/></span>
+            </a>
+            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://reddit.com/submit?url=" + url + "&title=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title}>
+              <span className="fontSize18 greyText redditIcon-greyed"><i className="fab fa-reddit-alien"/></span>
+            </a>
+            <a className="link" target="_blank" rel="noopener noreferrer nofollow" href={"https://api.whatsapp.com/send?text=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url}>
+              <span className="fontSize18 greyText whatsAppIcon-greyed"><i className="fab fa-whatsapp"/></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner, showShareOptions} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner, showShareOptions, showOptionsForItem} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr, cameFromFeed} = this.props
     const qaItem = {
       qid: '123456',
@@ -734,10 +781,16 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     metaAdder('property="og:title"', qaItem.title + " - Prospela.com")
     metaAdder('name="title"', qaItem.title + " - Prospela.com")
     metaAdder('property="og:url"', qURL)
+    metaAdder('property="og:image"', "https://files.prospela.com/images/AskAQ_Icon.png") // this meta tag required for LinkedIn sharing
     metaAdder('property="og:site_name"', "Prospela.com")
-    if(qaItem.textdetail) {
-      metaAdder('name="description"', qaItem.textdetail)
-      metaAdder('property="og:description"', qaItem.textdetail)
+
+    //Add link tags to head
+    if(!document.getElementById('canonicalLink')) {
+      var link = document.createElement('link');
+      link.id = 'canonicalLink'
+      link.rel = 'canonical';
+      link.href = qURL
+      document.head.appendChild(link);
     }
 
     const credentialText = getCredText((qaItem.wasDefaultRole ? qaItem.wasDefaultRole : null), qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
@@ -762,7 +815,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     const mostRecentActivityDate = activeDatesArr.sort().slice(-1)
 
     //Prioritise showing similar industries to viewer
-    const viewersIndustries = ['2','11']
+    const viewersIndustries = []
     //const viewersIndustries = userRole == 'mentee' ? this.props.users.industries : this.props.users.industriesexp
     const indToPostTo = qaItem.industriestopostto
     let indArrToShow
@@ -788,6 +841,23 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     let qVotes = this.state[qaItem.qid+'-votes']
     const showVotesNum = qVotes && (qVotes != '0' && qVotes != 0)
     const postdeleted = false
+
+    // Update description tag with hashtags & other text
+    const industryText = indArrToShow.map((indID) => {
+      let industryItem, indName
+      if (indID == '99999') {
+        indName = 'General Advice'
+      } else {
+        industryItem = getIndustryDeets(indID)
+        indName = industryItem.label
+      }
+      return indName
+    })
+    const industryHashtagTextToUse = hashtagsCommaString.length != 0 ? (" re: " + hashtagsCommaString + " in " + industryText.join(", ")) : (" in " + industryText.join(", "))
+    const metaDescriptionText = "Answers from real employees" + industryHashtagTextToUse + (qaItem.textdetail ? (" | " + qaItem.textdetail) : "")
+    metaAdder('name="description"', metaDescriptionText)
+    metaAdder('property="og:description"', metaDescriptionText)
+
     return (
       <React.Fragment>
         <script type="application/ld+json">
@@ -825,7 +895,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     <strong><span role="img" aria-label="eyes emoji">👀</span> Sorry, this post no longer exists </strong>
                     <div className="fontSize18">The user might have deleted it.</div>
                     <br />
-                    <div className="marginTop40 marginBottom10 fontSize18">Browse other questions tagged {hashtagsArray.length > 0 && (
+                    <div className="marginTop40 marginBottom10 fontSize18">Browse other questions tagged
+                    {hashtagsArray.length > 0 && (
                       <div className="tagsList">
                         {hashtagsArray.map((hashtag) => {
                           return (
@@ -957,27 +1028,11 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </div>
                       )}
                       <div className="marginTop20 marginBottom20 qActionsContainer">
-                        <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20 noSelect">
-                          <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={this.showShareOptions} onKeyDown={this.showShareOptions}>
+                        <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
+                          <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(qaItem.qid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, qaItem.qid)}>
                             Share <i className="fas fa-share-nodes"/>
-                            {showShareOptions && (
-                              <div className="shareOptionsContainer" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
-                                <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this question</strong></div>
-                                <div className="input-box-container">
-                                  <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>
-                                </div>
-                                <div className="displayFlex spaceBetween">
-                                  <a className="link tooltip" onMouseLeave={() => this.handleBlur("tooltip-share-q-link")} onClick={() => this.copyURL(qURL, "tooltip-share-q-link")}>
-                                    Copy link
-                                    <div className="tooltiptext compact" id="tooltip-share-q-link">
-                                      Copy URL
-                                    </div>
-                                  </a>
-                                  <div>
-                                    <a className="marginRight8 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://twitter.com/intent/tweet?text=" + qaItem.title + " " + qURL}>Twitter</a>
-                                  </div>
-                                </div>
-                              </div>
+                            {showShareOptions && showOptionsForItem == qaItem.qid && (
+                              this.renderShareOptionsBox(qaItem.qid, qURL, qaItem, "question", null, null, null)
                             )}
                           </button>
 
@@ -1147,7 +1202,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                               </div>
                             )}
                             <div className="marginTop20 marginBottom20 qActionsContainer">
-                              <div className="displayFlex greyText fontSize12 qActionsBox marginRight paddingBtm20">
+                              <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
+                                <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(hid.hid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, hid.hid)}>
+                                  Share <i className="fas fa-share-nodes"/>
+                                  {showShareOptions && showOptionsForItem == hid.hid && (
+                                    this.renderShareOptionsBox(hid.hid, ("https://app.prospela.com/questions/" + hid.url), qaItem, "answer", hid.authorinsttype, hid.authorinstfreetext, hid.authorinst)
+                                  )}
+                                </button>
+
                               {/*  <div className="marginRight8">Share</div>
                                 <div className="marginRight8">Follow</div> */}
                                 {aIsMe == 'isMe' && (

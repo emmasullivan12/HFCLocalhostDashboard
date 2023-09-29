@@ -71,6 +71,18 @@ function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishid
   }
 }
 
+function getEmployerName(authorinsttype, authorinstfreetext, authorinst){
+  if (authorinsttype == 'job' || authorinsttype == 'train') {
+    return " " + authorinstfreetext + " employee "
+  } else if (authorinsttype == 'uni') {
+  //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
+    const uniInst = authorinst ? authorinst : authorinstfreetext
+    return " " + uniInst + " student "
+  } else {
+    return
+  }
+}
+
 function getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
   let verifLevels = []
 
@@ -479,4 +491,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

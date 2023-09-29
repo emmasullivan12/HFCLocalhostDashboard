@@ -200,6 +200,38 @@ class SettingsContent extends Component {
                       />
                     </div> */}
                   </form>
+                  {userRole == 'mentor' && (
+                    <React.Fragment>
+                      <h2>
+                        Requests for expertise - Q&A (weekly)
+                      </h2>
+                      <p>
+                        Receive weekly summary of relevant Q&A from students, based on your expertise. To get more relevant notifications, update your skills tags on your profile.
+                      </p>
+                      <form>
+                        <div className="notifToggleContainer">
+                          <span className="notifToggleTxt">By Email</span>
+                          <Checkbox
+                            labelClassName="switch"
+                            id="notif-relevantQA-email"
+                            spanClassName="slider round"
+                            onChange={this.handleSubmit}
+                            defaultChecked
+                          />
+                        </div>
+                    {/*    <div className="notifToggleContainer">
+                          <span className="notifToggleTxt">By SMS / Text Message</span>
+                          <Checkbox
+                            labelClassName="switch"
+                            id="notif-relevantQA-sms"
+                            spanClassName="slider round"
+                            onChange={this.handleSubmit}
+                            defaultChecked={false}
+                          />
+                        </div> */}
+                      </form>
+                    </React.Fragment>
+                  )}
                   <h2>
                     1:1 Chat Messages & Reminders
                   </h2>

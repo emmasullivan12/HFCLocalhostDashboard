@@ -554,6 +554,18 @@ table th .description{
   margin: 1rem 0 1rem 0;
   border: 1px dashed #bcbabf;
 }
+.twitterIcon-greyed:hover{
+  color: #26a7de!important;
+}
+.linkedinIcon-greyed:hover{
+  color: #0073b1!important;
+}
+.redditIcon-greyed:hover{
+  color: #FF4500!important;
+}
+.whatsAppIcon-greyed:hover{
+  color: #25d366!important;
+}
 
 /* POSITIONING */
 .mainAndSideContainer{
@@ -1292,7 +1304,8 @@ table th .description{
   left: 0;
   margin-left: 72px;
 }
-.tooltip:hover .tooltiptext{
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext{
   visibility: visible;
   opacity: 1;
 }
