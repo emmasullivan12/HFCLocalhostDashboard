@@ -1,4 +1,4 @@
-// Last merged this code on 8th may 023
+// Last merged this code on 30th sept 023
 
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
@@ -501,7 +501,6 @@ class HomePage extends Component {
 
   handleSearchResults = () => {
     const {searchText} = this.state
-    console.log(searchText)
     this.setState({
       isUserSearch: true,
       isTagSearch: searchText.startsWith('[') && searchText.endsWith(']'),

@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th may 2023
+// Dex last merged this code on 30th sept 2023
 
 import React, { Component } from "react";
 
@@ -63,14 +63,14 @@ class FeedHeader extends Component {
   }
 
   handleSubmit = () => {
-    const {handleSearchResults, searchText} = this.props
+    const {handleSearchResults} = this.props
 
     const searchCompleted = true
 
     // Once search results come back / completed
     if (searchCompleted == true) {
       if (handleSearchResults) {
-        handleSearchResults(searchText)
+        handleSearchResults()
       }
     }
   }
