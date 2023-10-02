@@ -19,6 +19,7 @@ import AddHighlightModalContent from "./AddHighlightModalContent";
 import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
 import GroupsMenu from "./GroupsMenu";
+import FullPageModal from './FullPageModal.js';
 import LatestAdvice from "./LatestAdvice";
 import LgdInUsrProfile from "./LgdInUsrProfile";
 import {LoadingSpinner, showNotifFavicon, hideNotifFavicon, whichBrowser, isiOS} from './GeneralFunctions.js';
@@ -31,6 +32,7 @@ import NotFound from "./NotFound";
 import ProspelaBot from "./ProspelaBot";
 import ProspelaDashboard from "./ProspelaDashboard";
 import QA from './QA.js';
+import SettingsContent from './SettingsContent.js';
 import SignUpPromptModalContent from './SignUpPromptModalContent.js'
 import Teams from "./Teams";
 import Todo from "./Todo";
@@ -42,6 +44,14 @@ import VerifyEmail from "./VerifyEmail";
 const SUContent = ('mentor or mentee?')
 const MenteeSUContent = ('mentee SU')
 const MentorSUContent = ('mentor SU')*/
+
+const SettingsModalProps = {
+  ariaLabel: 'Popup to manage your preferences and settings',
+  triggerText: 'Preferences & Settings',
+  usedFor: 'settings',
+  backBtn: 'arrow',
+  hideTrigger: true,
+}
 
 class LoadingSU extends Component{
   render(){
@@ -413,6 +423,7 @@ class Dashboard extends Component{
     const numClasses = groupsList.filter(group => group.isclass == true).length
     const isClass = numClasses > 0
     const isQ = false
+    const goToSettings = true // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
     const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
     const maxViewsReached = true
@@ -650,6 +661,11 @@ class Dashboard extends Component{
               <Modal {...NoAccessContentModalProps} handleLocalStateOnClose={() => this.closeModal("SignUpPrompt")}>
                 <SignUpPromptModalContent clickOrigin={clickOrigin} isIphone={isIphone} />
               </Modal>
+            )}
+            {goToSettings == true && (
+              <FullPageModal {...SettingsModalProps} handleLocalStateOnClose={() => this.closeModal("settings")}>
+                <SettingsContent userRole={userRole}/>
+              </FullPageModal>
             )}
           </div>
         </div>
