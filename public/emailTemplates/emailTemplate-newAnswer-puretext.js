@@ -1,4 +1,4 @@
-// Merged on 24th feb 2022
+// Merged on 24th feb 2022 
 
 const ejs = require("ejs");
 
