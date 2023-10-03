@@ -38,6 +38,11 @@
   width: 24px;
   height: 24px;
 }
+.AUTFlag-emoji{
+  background-position: 0% 84.3137%;
+  width: 24px;
+  height: 24px;
+}
 .CANFlag-emoji{
   background-position: 1.96078% 33.3333%;
   width: 24px;
@@ -48,8 +53,18 @@
   width: 24px;
   height: 24px;
 }
+.CZEFlag-emoji{
+  background-position: 1.96078% 70.5882%;
+  width: 24px;
+  height: 24px;
+}
 .BELFlag-emoji{
   background-position: 0% 100%;
+  width: 24px;
+  height: 24px;
+}
+.BGRFlag-emoji{
+  background-position: 1.96078% 1.96078%;
   width: 24px;
   height: 24px;
 }

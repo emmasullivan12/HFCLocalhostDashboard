@@ -409,12 +409,18 @@ function userFlagEmoji(userCountry) {
   switch (userCountry) {
     case 'AUS':
       return 'AUSFlag-emoji';
+    case 'AUT':
+      return 'AUTFlag-emoji';
     case 'BEL':
       return 'BELFlag-emoji';
+    case 'BGR':
+      return 'BGRFlag-emoji';
     case 'CAN':
       return 'CANFlag-emoji';
     case 'CIV':
       return 'CIVFlag-emoji';
+    case 'CZE':
+      return 'CZEFlag-emoji';
     case 'DEU':
       return 'DEUFlag-emoji';
     case 'DNK':

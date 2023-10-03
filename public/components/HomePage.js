@@ -1130,8 +1130,8 @@ class HomePage extends Component {
     userGroups = ['123']
   //  userGroups = []
     hasMatch = false
-    isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE')
-    isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE')
+    isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE' || country != 'AUT' || country != 'BGR' || country != 'CZE')
+    isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE' || country == 'AUT' || country == 'BGR' || country == 'CZE')
 
     if (userRole == 'mentor') {
       expertise = []
