@@ -2,11 +2,12 @@
 
 import React, { Component } from "react";
 import subjectsOptions from './Subjects.js';
+import groupsList from "./Groups.js";
 import hashtagOptions from './Hashtags.js';
 import hobbiesOptions from './Hobbies.js';
 import industryList from './Industries.js';
 import roleOptions from './Roles.js';
-import groupsList from "./Groups.js";
+import skillsOptions from './Skills.js';
 import workingOnOptions from './WorkingOn.js';
 
 function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
@@ -177,6 +178,14 @@ function getIndustryDeets(industryID) {
     .filter(industry => industry.value == industryID)
 
   return indArr[0]
+}
+
+function getSkillDeets(skillID) {
+
+  const skillArr = skillsOptions
+    .filter(skill => skill.value == skillID)
+
+  return skillArr[0]
 }
 
 function getGroupDeets(gid) {
@@ -497,4 +506,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

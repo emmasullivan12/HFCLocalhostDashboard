@@ -18,6 +18,8 @@ import { usersFetchData } from "../actions/Users";*/
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
+import CommunityMenu from "./CommunityMenu";
+import CommunityPage from "./CommunityPage";
 import GroupsMenu from "./GroupsMenu";
 import FullPageModal from './FullPageModal.js';
 import LatestAdvice from "./LatestAdvice";
@@ -423,13 +425,12 @@ class Dashboard extends Component{
     const numClasses = groupsList.filter(group => group.isclass == true).length
     const isClass = numClasses > 0
     const isQ = false
-    const goToSettings = true // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
+    const goToSettings = false // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
     const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = true
+    const maxViewsReached = false
     const reachedMaxFeedLength = false
     const isIphone = isiOS()
-    const cameFromFeed = true
     const relatedQsArr = [ // Questions
         {
           qid: '123456',
@@ -612,6 +613,10 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "groupsMenu")}}/>
                     <div className="menuBreak"/>
+                    <CommunityMenu type="industry" groups={DUMMY_INDUSTRY_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "industryMenu")}}/>
+                    <div className="menuBreak"/>
+                    <CommunityMenu type="skill" groups={DUMMY_SKILL_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "skillsMenu")}}/>
+                    <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
                         <img
@@ -649,10 +654,14 @@ class Dashboard extends Component{
                 <Route path="/teams" component={Teams}/>
                 <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} cameFromFeed={cameFromFeed}/>}/>
+                <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
+                <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname" render={(props) => <CommunityPage {...props} type="skill" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname/questions" render={(props) => <CommunityPage {...props} type="skill" initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route component={NotFound}/>
               </Switch>
@@ -824,6 +833,18 @@ const DUMMY_GROUP_LIST = [
   {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: '/avfx-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
   {gid: '20003', groupname: 'BAME in Games', status: 'active', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
   {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: '/aw-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
+];
+
+const DUMMY_INDUSTRY_LIST = [
+  {gid: '19'},
+  {gid: '20'},
+  {gid: '15'},
+  {gid: '2'},
+];
+
+const DUMMY_SKILL_LIST = [
+ {gid: '5'},
+ {gid: '28'}
 ];
 
 /* App.propTypes = {

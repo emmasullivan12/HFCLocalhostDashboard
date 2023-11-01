@@ -464,6 +464,9 @@
   right: unset;
   margin-left: 10px;
 }
+.chatMenu-header .addContainer {
+  margin-top: -20px;
+}
 .ModalOpenBtn-joinProg:hover,
 .ModalOpenBtn-joinProgSml:hover,
 .ModalOpenBtn-addPrDM:hover,
@@ -828,7 +831,7 @@
   box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
   -moz-box-shadow: 0 0 10px 3px rgba(0, 0, 0,.1);
-  overflow-y: scroll;
+  overflow-y: auto;
   cursor: default;
   -webkit-overflow-scrolling: touch;
 }

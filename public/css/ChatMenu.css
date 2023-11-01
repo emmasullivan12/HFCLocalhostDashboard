@@ -111,7 +111,9 @@
 .chatMenuItem.menuCTA:focus .menuCTA{
   color: #0cf7ca;
 }
-
+.chatMenuItem.huddle{
+  padding: 0;
+}
 .chatMenuItem:hover .chatMenuLink {
   color: #fff;
 }
@@ -140,6 +142,10 @@
 }
 .chatMenuLink.channel{
   color: #b9b9b9;
+}
+.chatMenuLink.huddle{
+  margin-right: 10px;
+  font-size: 14px;
 }
 .chatMenuLink.unread {
   color: #fff;

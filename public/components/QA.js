@@ -506,7 +506,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     const url = encodeURIComponent(qURL)
     return (
       <div className="shareOptionsContainer" id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
-        <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this question</strong></div>
+        <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this {contentType}</strong></div>
         <div className="input-box-container marginBottom10">
           <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>
         </div>
@@ -521,7 +521,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
             <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://twitter.com/intent/tweet?text=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url}>
               <span className="fontSize18 greyText twitterIcon-greyed"><i className="fab fa-twitter"/></span>
             </a>
-            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"http://www.linkedin.com/shareArticle?mini=true&url=" + url}>
+            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://www.linkedin.com/sharing/share-offsite/?url=" + url}>
               <span className="fontSize18 greyText linkedinIcon-greyed"><i className="fab fa-linkedin-in"/></span>
             </a>
             <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://reddit.com/submit?url=" + url + "&title=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title}>
@@ -538,7 +538,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
   render() {
     const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner, showShareOptions, showOptionsForItem} = this.state;
-    const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr, cameFromFeed} = this.props
+    const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr} = this.props
     const qaItem = {
       qid: '123456',
       uid: '123',
@@ -785,7 +785,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     metaAdder('property="og:site_name"', "Prospela.com")
 
     //Add link tags to head
-    if(!document.getElementById('canonicalLink')) {
+    var linkTag = document.getElementById('canonicalLink')
+    if(!linkTag && qURL != "https://app.prospela.com/questions/falsefalse") {
       var link = document.createElement('link');
       link.id = 'canonicalLink'
       link.rel = 'canonical';
@@ -1030,7 +1031,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       <div className="marginTop20 marginBottom20 qActionsContainer">
                         <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
                           <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(qaItem.qid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, qaItem.qid)}>
-                            Share <i className="fas fa-share-nodes"/>
+                            Share <i className="fas fa-share-alt"/>
                             {showShareOptions && showOptionsForItem == qaItem.qid && (
                               this.renderShareOptionsBox(qaItem.qid, qURL, qaItem, "question", null, null, null)
                             )}
@@ -1204,7 +1205,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                             <div className="marginTop20 marginBottom20 qActionsContainer">
                               <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
                                 <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(hid.hid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, hid.hid)}>
-                                  Share <i className="fas fa-share-nodes"/>
+                                  Share <i className="fas fa-share-alt"/>
                                   {showShareOptions && showOptionsForItem == hid.hid && (
                                     this.renderShareOptionsBox(hid.hid, ("https://app.prospela.com/questions/" + hid.url), qaItem, "answer", hid.authorinsttype, hid.authorinstfreetext, hid.authorinst)
                                   )}
@@ -1331,7 +1332,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     {relatedQsArr.length > 0 && (
                       <div className="qTitle marginBottom5">
                         <div><strong>Related questions</strong></div>
-                        <div>
+                        <div className="maxWidth700px">
                           {relatedQsArr.map((q) => {
                             return (
                               <Link to={{pathname: "/questions/" + q.qid + q.url, state: {prevPath: window.location.pathname}}} className="list-item-container link fontSize16 alignItemsCenter displayFlex" key={q.qid} onClick={updatePathName}>
@@ -1352,10 +1353,10 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </div>
                       </div>
                     )}
-                    {cameFromFeed == true && trendingQsArr.length > 0 && (
+                    {trendingQsArr.length > 0 && (
                       <div className="qTitle marginBottom5">
                         <div><strong><span role="img" aria-label="fire emoji">🔥</span> Trending questions</strong></div>
-                        <div>
+                        <div className="maxWidth700px">
                           {trendingQsArr.map((q) => {
                             return (
                               <Link to={{pathname: "/questions/" + q.qid + q.url, state: {prevPath: window.location.pathname}}} className="list-item-container link fontSize16 alignItemsCenter displayFlex" key={q.qid} onClick={updatePathName}>

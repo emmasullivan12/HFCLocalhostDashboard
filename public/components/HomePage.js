@@ -908,7 +908,7 @@ class HomePage extends Component {
             )}
             {isUserSearch && (
               <div className="marginTop20">
-                {isTagSearch ? ('Questions tagged ' + searchText) : 'Search results'}: {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
+                {isTagSearch ? ('Questions tagged ' + <strong>searchText</strong>) : 'Search results'} : {(numResults > 40 ? "(40+)" : ("(" + numResults + ")"))}
               </div>
             )}
             { this.showUpdateTabBtns() }

@@ -110,7 +110,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
     background-image: none!important;
   /*  OLDIGNOREbackground-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Chat-background_dark_sml.png)!important;*/
   }
-  .message-content{
+  .message-content,
+  .potentialMatch-menteeIntroMsg{
     color: #b9b9b9!important;
   }
   .page-header {
@@ -483,6 +484,9 @@ table th .description{
 .darkGreyText{
   color: #636262;
 }
+.mediumGreyText{
+  color: #a9a7a7;
+}
 .lightGreyText{
   color: lightgrey!important;
 }
@@ -689,7 +693,6 @@ table th .description{
 .alignRight{
   float: right!important;
 }
-.align
 .textLeft{
   text-align: left!important;
 }
@@ -796,6 +799,9 @@ table th .description{
 }
 .maxWidth100{
   max-width: 100%;
+}
+.maxWidth700px{
+  max-width: 700px;
 }
 .fullWidth{
   width: 100%;
@@ -947,7 +953,7 @@ table th .description{
   margin-right: 5px!important;
 }
 .marginRight8 {
-  margin-right: 8px;
+  margin-right: 8px!important;
 }
 .marginRight10 {
   margin-right: 10px;
@@ -2428,12 +2434,14 @@ a.button{
   text-align: center;
   color: #fff;
 }
+.groupsAvatarContainer.industry{
+  color: #58d2bb;
+}
 .groupsAvatarContainer.flexContainer{
   height: 40px;
   width: 40px;
 }
 .menuItemIconContainer{
-  margin-top: 2px;
   float: unset;
   margin-left: 6px;
   margin-right: 0;
@@ -2441,7 +2449,8 @@ a.button{
   margin-top: 2px;
   color: #bfbeff;
 }
-.menuItemIconContainer.chat{
+.menuItemIconContainer.chat,
+.menuItemIconContainer.huddle{
   margin-top: 0;
 }
 .groupsAvatarContainer.noImg{

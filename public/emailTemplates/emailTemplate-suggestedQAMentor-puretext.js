@@ -1,4 +1,4 @@
-// Merged on 12th oct 2020 
+// Merged on 12th oct 2020
 const ejs = require("ejs");
 import {usercdn, userAvatarsFolder} from './CDN.js';
 
@@ -12,11 +12,11 @@ const qaArray = [
   {qid: '789', userprofilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png', isAnon: true, url: 'advice-first-showreel', qauthorfname: 'Tom', title: 'Best advice for first showreel?', textdetail: ''},
 ]
 
-const qaArrayPureTextVersion = qaArray && qaArray.map(qa => ('\n\n' + qa.qauthorfname + ' asked:\n\n' + qa.title + (qa.textdetail != '' ? ('\n\n' + qa.textdetail) : '') + '\n\n Answer >> ' + ("https://app.prospela.com/questions/" + qa.qid + "/" + qa.url))
+const qaArrayPureTextVersion = qaArray && qaArray.map(qa => ('\n\n' + qa.qauthorfname + ' asked:\n\n' + qa.title + (qa.textdetail != '' ? ('\n\n' + qa.textdetail) : '') + '\n\n Answer >> ' + ("https://app.prospela.com/questions/" + qa.qid + "/" + qa.url)))
 const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
   const userProfPic = qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : qa.userprofilepic;
   const isPicSet = userProfPic != null && userProfPic != ''
-  const profPicSrc = usercdn.concat('/',userAvatarsFolder,string,'-',360);
+  const profPicSrc = qa.isanon == true ? userProfPic : usercdn.concat('/',userAvatarsFolder,qa.userprofilepic,'-',360);
   return (
     <tr style="border-bottom:2px solid #f2f2f2;border-top:1px solid white">
       <td class="stack-column-center padding-top-20-onmobile" align="center" style="vertical-align:middle">
@@ -90,6 +90,14 @@ const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
     </tr>
   )
 })
+
+{/*<script>
+  id="<%= qa.userprofilepic %>"
+  let profPicSrc
+  profPicSrc = qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : ('https://media-uploads.prospela.com/userAvatars/' + qa.userprofilepic + '-360')
+  document.getElementById(qa.userprofilepic).style.backgroundImage = "url(" + profPicSrc + ")"
+</script>
+*/}
 const data = {
   fname: fname,
   numQASuggestions: numQASuggestions,
@@ -98,7 +106,7 @@ const data = {
   qaArrayHTMLVersion: qaArrayHTMLVersion
 }
 
-ejs.renderFile(__dirname + "/emailTemplate-suggestedQAMentor.ejs", data, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-suggestedQAMentor.ejs", {fname: fname, numQASuggestions: numQASuggestions, link: link, qaArrayPureTextVersion: qaArrayPureTextVersion, qaArrayHTMLVersion: qaArrayHTMLVersion, qaArray: qaArray}, function (err, data) {
   if (err) {
     console.log(err);
   } else {
