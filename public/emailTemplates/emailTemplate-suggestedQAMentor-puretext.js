@@ -13,7 +13,7 @@ const qaArray = [
 ]
 
 const qaArrayPureTextVersion = qaArray && qaArray.map(qa => ('\n\n' + qa.qauthorfname + ' asked:\n\n' + qa.title + (qa.textdetail != '' ? ('\n\n' + qa.textdetail) : '') + '\n\n Answer >> ' + ("https://app.prospela.com/questions/" + qa.qid + "/" + qa.url)))
-const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
+{/*const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
   const userProfPic = qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : qa.userprofilepic;
   const isPicSet = userProfPic != null && userProfPic != ''
   const profPicSrc = qa.isanon == true ? userProfPic : usercdn.concat('/',userAvatarsFolder,qa.userprofilepic,'-',360);
@@ -89,7 +89,7 @@ const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
       </td>
     </tr>
   )
-})
+})*/}
 
 {/*<script>
   id="<%= qa.userprofilepic %>"
@@ -103,10 +103,10 @@ const data = {
   numQASuggestions: numQASuggestions,
   link: link,
   qaArrayPureTextVersion: qaArrayPureTextVersion,
-  qaArrayHTMLVersion: qaArrayHTMLVersion
+//  qaArrayHTMLVersion: qaArrayHTMLVersion
 }
 
-ejs.renderFile(__dirname + "/emailTemplate-suggestedQAMentor.ejs", {fname: fname, numQASuggestions: numQASuggestions, link: link, qaArrayPureTextVersion: qaArrayPureTextVersion, qaArrayHTMLVersion: qaArrayHTMLVersion, qaArray: qaArray}, function (err, data) {
+ejs.renderFile(__dirname + "/emailTemplate-suggestedQAMentor.ejs", {fname: fname, numQASuggestions: numQASuggestions, link: link, qaArrayPureTextVersion: qaArrayPureTextVersion, qaArray: qaArray}, function (err, data) {
   if (err) {
     console.log(err);
   } else {

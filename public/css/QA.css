@@ -15,6 +15,13 @@
     right: unset;
     position: unset!important;
   }
+  .shareOptionsContainer.commPage{
+    right: unset!important;
+  }
+  .shareOptionsContainer.commPage::after{
+    right: unset!important;
+    left: 15px!important;
+  }
   .chatItemFlexContainer.qaPage {
     display: unset;
     flex-direction: unset;

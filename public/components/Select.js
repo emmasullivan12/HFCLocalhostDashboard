@@ -20,7 +20,7 @@ class SelectBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: this.props.defaultChecked ? this.props.defaultChecked : [],
+      values: this.props.defaultChecked ? this.props.defaultChecked : [], // array of text i.e. 'labels' not 'values'
   //    keysPressed: [],
       focusedValue: -1,
       isFocused: false,
@@ -30,7 +30,7 @@ class SelectBox extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad, handleTabPress, name } = this.props;
+    const { focusOnLoad, handleTabPress, name, fromCommunityPage, commType, commTypeId } = this.props;
     if (focusOnLoad) {
       document.getElementById("selectBox-"+name).focus();
     }

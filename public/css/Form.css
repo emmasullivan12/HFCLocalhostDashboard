@@ -148,6 +148,9 @@
   margin-bottom: 1rem;
   -webkit-font-smoothing: antialiased;
 }
+button.qDetail:hover{
+  color: black;
+}
 .qDetail.small{
   font-size: 10px;
   line-height: 14px;

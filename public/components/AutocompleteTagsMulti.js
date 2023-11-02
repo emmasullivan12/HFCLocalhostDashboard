@@ -13,36 +13,32 @@ class AutocompleteTagsMulti extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: this.props.defaultChecked ? this.props.defaultChecked : [],
-      numSelected: this.props.defaultChecked ? this.props.defaultChecked.length : 0,
+      values: [],
+      numSelected: 0,
       activeSuggestion: -1,
       filteredSuggestions: [],
       showSuggestions: false,
-      userInput: ''
+      userInput: '',
     };
   }
 
   componentDidMount(){
-    const { focusOnLoad, handleTabPress, renderComponents, fileToRender, componentUpdatesState, name } = this.props
+    const { focusOnLoad, handleTabPress, renderComponents, fileToRender, componentUpdatesState, name, defaultChecked } = this.props
 
     if (focusOnLoad) {
       document.getElementById("autocompleterTags-"+name).focus();
+    }
+    if (defaultChecked) {
+      this.setState({
+        values: defaultChecked,
+        numSelected: defaultChecked.length
+      })
     }
     if (renderComponents) {
       renderComponents(fileToRender, componentUpdatesState)
     }
     if (handleTabPress) {
       handleTabPress(false);
-    }
-  }
-
-  componentDidUpdate(prevProps){
-    const {defaultChecked} = this.props
-    if(prevProps.defaultChecked != defaultChecked) {
-      this.setState({
-        values: defaultChecked ? defaultChecked : [],
-        numSelected: defaultChecked ? defaultChecked.length : 0,
-      })
     }
   }
 
@@ -309,7 +305,7 @@ class AutocompleteTagsMulti extends React.Component {
       return {
         values,
         numSelected: values.length,
-        showSuggestions: prevState.showSuggestions
+        showSuggestions: prevState.showSuggestions,
       }
     }, () => {
       if (this.state.values.length === 0) {

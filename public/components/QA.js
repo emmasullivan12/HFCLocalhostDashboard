@@ -16,9 +16,10 @@ import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal';
 import QAThreads from './QAThreads.js';
+import ShareOptionsBox from './ShareOptionsBox.js';
 import TextParser from './TextParser.js';
 import UserBadge from './UserBadge.js';
-import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, getEmployerName, timeSince} from './UserDetail.js';
+import {getIndustryDeets, getVerifLevelArr, convertHashtags, getCredText, timeSince} from './UserDetail.js';
 
 import "../css/QA.css";
 
@@ -76,8 +77,6 @@ class QA extends Component {
     this.state = {
       isLoading: false,
       isMobile: checkMobile(),
-      showOptionsForItem: '',
-      showShareOptions: false,
       qidHasAcceptedAnswer: false,
       //qidHasAcceptedAnswer: qaItem && qaItem.hasacceptedanswer ? qaItem.hasacceptedanswer : false,
       acceptedAnswerHID: '',
@@ -274,7 +273,6 @@ class QA extends Component {
   componentWillUnmount() {
   //  const {showSignUpBanner} = this.state
   //  const observer = this.createObserver()
-    document.removeEventListener('click', this.closeShareOptionsMenu)
     window.removeEventListener('resize', this.isMobile);
     let parent = document.getElementById('clientWindowContainer')
     parent.removeEventListener('scroll', this.showSignUpPromptOnScroll)
@@ -431,113 +429,8 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     return observer
   } */
 
-  showShareOptions = (id) => {
-    const currentState = this.state.showShareOptions;
-    this.setState({
-      showShareOptions: true,
-      showOptionsForItem: id,
-    }, () => {
-      document.addEventListener('click', this.closeShareOptionsMenu)
-      if (currentState != this.state.showShareOptions) {
-        this.highlightedTextOnFocus.focus()
-        const name = this.highlightedTextOnFocus.getAttribute('name')
-        navigator.clipboard.writeText(name)
-        document.execCommand("copy");
-      }
-    })
-  }
-
-  closeShareOptionsMenu = (e) => {
-    // If user clicks on URL box copy it
-    if (this.shareOptions !== null && this.highlightedTextOnFocus !== null && this.highlightedTextOnFocus.contains(e.target)) {
-      this.highlightedTextOnFocus.focus()
-      const name = this.highlightedTextOnFocus.getAttribute('name')
-      navigator.clipboard.writeText(name)
-      document.execCommand("copy");
-    }
-
-    // Close menu if click off of it
-    if (this.shareOptions !== null && !this.shareOptions.contains(e.target)) {
-      this.setState({
-        showShareOptions: false,
-        showOptionsForItem: '',
-      }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
-    }
-  }
-
-  showShareOptionsOnEnter = (e, id) => {
-    var key = e.key || e.keyCode
-
-    if((key === 'Enter' || key === 13) && e.shiftKey === false) {
-      this.showShareOptions(id)
-    } else {
-      return;
-    }
-  }
-
-  closeShareOptionsOnEsc = (e) => {
-    var key = e.key || e.keyCode
-
-    if (key === 'Escape' || key === 'Esc' || key === 27) {
-      this.setState({
-        showShareOptions: false,
-        showOptionsForItem: '',
-      }, () => document.removeEventListener('click', this.closeShareOptionsMenu))
-    } else {
-      return;
-    }
-  }
-
-  copyURL = (url, tooltipID) => {
-    // Copy text to clipboard
-    navigator.clipboard.writeText(url)
-    document.execCommand("copy");
-
-    document.getElementById(tooltipID).innerHTML = "Copied!";
-  }
-
-  handleBlur = (tooltipID) => {
-    document.getElementById(tooltipID).innerHTML = "Copy URL";
-  }
-
-  renderShareOptionsBox = (id, qURL, qaItem, contentType, authorinsttype, authorinstfreetext, authorinst) => {
-    const mentorInstText = (authorinsttype != "sch" && authorinsttype != null) ? getEmployerName(authorinsttype, authorinstfreetext, authorinst) : " "
-    const answerAddedText = "Check out this" + mentorInstText + "answer on Prospela - "
-    const url = encodeURIComponent(qURL)
-    return (
-      <div className="shareOptionsContainer" id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
-        <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this {contentType}</strong></div>
-        <div className="input-box-container marginBottom10">
-          <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>
-        </div>
-        <div className="displayFlex spaceBetween">
-          <a className="link tooltip" tabIndex="0" onMouseLeave={() => this.handleBlur("tooltip-share-q-link")} onClick={() => this.copyURL(qURL, "tooltip-share-q-link")}>
-            Copy link
-            <div className="tooltiptext compact" id="tooltip-share-q-link">
-              Copy URL
-            </div>
-          </a>
-          <div>
-            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://twitter.com/intent/tweet?text=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url}>
-              <span className="fontSize18 greyText twitterIcon-greyed"><i className="fab fa-twitter"/></span>
-            </a>
-            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://www.linkedin.com/sharing/share-offsite/?url=" + url}>
-              <span className="fontSize18 greyText linkedinIcon-greyed"><i className="fab fa-linkedin-in"/></span>
-            </a>
-            <a className="marginRight10 link" target="_blank" rel="noopener noreferrer nofollow" href={"https://reddit.com/submit?url=" + url + "&title=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title}>
-              <span className="fontSize18 greyText redditIcon-greyed"><i className="fab fa-reddit-alien"/></span>
-            </a>
-            <a className="link" target="_blank" rel="noopener noreferrer nofollow" href={"https://api.whatsapp.com/send?text=" + (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url}>
-              <span className="fontSize18 greyText whatsAppIcon-greyed"><i className="fab fa-whatsapp"/></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   render() {
-    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner, showShareOptions, showOptionsForItem} = this.state;
+    const {isMobile, isLoading, acceptedAnswerHID, qidHasAcceptedAnswer, signUpPromptBannerScrollAnimation, showAlmostMaxViewsBanner} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, checkHasAccess, noAccessHandler, relatedQsArr, trendingQsArr} = this.props
     const qaItem = {
       qid: '123456',
@@ -1030,13 +923,16 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       )}
                       <div className="marginTop20 marginBottom20 qActionsContainer">
                         <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
-                          <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(qaItem.qid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, qaItem.qid)}>
-                            Share <i className="fas fa-share-alt"/>
-                            {showShareOptions && showOptionsForItem == qaItem.qid && (
-                              this.renderShareOptionsBox(qaItem.qid, qURL, qaItem, "question", null, null, null)
-                            )}
-                          </button>
-
+                          <ShareOptionsBox
+                            id={qaItem.qid}
+                            qURL={qURL}
+                            qaItem={qaItem}
+                            contentType="question"
+                            authorinsttype={null}
+                            authorinstfreetext={null}
+                            authorinst={null}
+                            buttonToShow="shareTextShareIcon"
+                          />
                         {/*  <div className="marginRight8">Follow</div> */}
                         {/*  {qIsMe == 'isMe' && (
                             <Modal {...DeleteContentModalProps}>
@@ -1204,13 +1100,16 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                             )}
                             <div className="marginTop20 marginBottom20 qActionsContainer">
                               <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
-                                <button type="button" className="marginRight8 button-unstyled opacity1 positionRel" aria-label="Share URL options" onClick={() => this.showShareOptions(hid.hid)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, hid.hid)}>
-                                  Share <i className="fas fa-share-alt"/>
-                                  {showShareOptions && showOptionsForItem == hid.hid && (
-                                    this.renderShareOptionsBox(hid.hid, ("https://app.prospela.com/questions/" + hid.url), qaItem, "answer", hid.authorinsttype, hid.authorinstfreetext, hid.authorinst)
-                                  )}
-                                </button>
-
+                                <ShareOptionsBox
+                                  id={hid.hid}
+                                  qURL={("https://app.prospela.com/questions/" + hid.url)}
+                                  qaItem={qaItem}
+                                  contentType="answer"
+                                  authorinsttype={hid.authorinsttype}
+                                  authorinstfreetext={hid.authorinstfreetext}
+                                  authorinst={hid.authorinst}
+                                  buttonToShow="shareTextShareIcon"
+                                />
                               {/*  <div className="marginRight8">Share</div>
                                 <div className="marginRight8">Follow</div> */}
                                 {aIsMe == 'isMe' && (

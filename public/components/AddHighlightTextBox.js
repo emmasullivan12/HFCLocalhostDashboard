@@ -840,7 +840,7 @@ class AddHighlightTextBox extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
-    const {isMenteeQ, isAddAnswer, isAddGeneral, qToAnswer} = this.props
+    const {isMenteeQ, isAddAnswer, isAddGeneral, qToAnswer, fromCommunityPage, commType, commName} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -1238,6 +1238,7 @@ class AddHighlightTextBox extends Component {
                       handleChange={this.handleIndChange}
                       handleFocus={this.handleFocus}
                       onBlur={this.handleBlur}
+                      defaultChecked={(fromCommunityPage && commType == 'industry') ? ([commName]) : null}
                 //      defaultChecked={industriesToPostTo}
                 //      handleTabPress={this.handleTabPress}
                 //      focusOnLoad
@@ -1310,7 +1311,7 @@ class AddHighlightTextBox extends Component {
                     openOnClick
                     showValues
                     showCheckbox
-                    defaultChecked={endingHashtagsArr}
+                    defaultChecked={(fromCommunityPage && (commType == 'skill' || commType == 'role')) ? ([commName]) : endingHashtagsArr}
                     handleDone={this.handleDoneClickHobbies}
                     suggestions={hashtagOptions}
                     name='selectHashtag'

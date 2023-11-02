@@ -2390,6 +2390,12 @@ a.button{
   background: white;
   padding: 10px;
 }
+.shareOptionsContainer.commPage{
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  display: table;
+}
 .shareOptionsContainer::after{
   content: "";
   position: absolute;
@@ -2400,6 +2406,10 @@ a.button{
   top: -10px!important;
   left: 15px!important;
   transform: scaleY(-1);
+}
+.shareOptionsContainer.commPage::after{
+  right: 15px!important;
+  left: unset!important;
 }
 /* ICONS */
 .emoji-mart-emoji{

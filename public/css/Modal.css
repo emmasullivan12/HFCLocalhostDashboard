@@ -261,6 +261,14 @@
     margin-top: 10px;
     margin-bottom: 15px;
   }
+  .qCTA.qaPage.commPage .ModalOpenBtn-addHighlightQApage {
+    float: left;
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  .qCTA.qaPage.commPage .commShareBtn{
+    margin-top: 5px;
+  }
 }
 .ModalOpenBtn-addHighlightDashboard{
   visibility: visible;

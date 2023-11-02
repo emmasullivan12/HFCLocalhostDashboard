@@ -426,7 +426,7 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const goToSettings = false // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
-    const isLoggedIn = false
+    const isLoggedIn = true
     const oneMoreTilMaxViewsReached = false
     const maxViewsReached = false
     const reachedMaxFeedLength = false
