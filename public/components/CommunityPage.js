@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import {metaAdder, checkMobile} from './GeneralFunctions.js';
+import {metaAdder} from './GeneralFunctions.js';
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import CommunityOverview from "./CommunityOverview.js";
 import CommunityQuestions from "./CommunityQuestions.js";
@@ -38,13 +38,11 @@ class CommunityPage extends React.Component {
     super(props);
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
-      isMobile: checkMobile(),
     }
   }
 
   componentDidMount() {
     const {updateDocumentTitle} = this.props
-    window.addEventListener('resize', this.isMobile);
 
     const community = {
       cmid: '1234',
@@ -64,19 +62,23 @@ class CommunityPage extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.isMobile);
     this.props.updateDocumentTitle("Prospela Dashboard")
   }
 
   updateTabToView = (e) => {
     let name
-
     e.persist()
     name = e.target.name ? e.target.name : e.currentTarget.name
 
     this.setState({
       tabToView: name
     })
+  }
+
+  scrollToView = (e) => {
+    var el = e.target.name ? e.target : e.currentTarget
+
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 
   goToUnansweredQs = () => {
@@ -86,23 +88,269 @@ class CommunityPage extends React.Component {
   }
 
   renderTab = (community) => {
-    const {userRole, updatePathName} = this.props;
+    const {userRole, isLoggedIn, updatePathName} = this.props;
     const {tabToView, goToUnansweredTab} = this.state;
+
+    const contentArr = [ // Answers
+      {
+        qid: '123456',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: [], // no answers yet
+        industriestopostto: ['99999','19','11','3','2'],
+        hashtags: ['23'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: ['123','234','345','456'],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: ['123'],
+        prseen: [],
+        uid: '123',
+        isanon: 0,
+        isPr: 0,
+        authorinsttype: 'sch',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        hidden: 1,
+        profilepic: '',
+        url: "/what-wear-to-interview"
+      },
+      {
+        qid: '123457',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19','10','99999'],
+        hashtags: ['23','11','30','55','61'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: true,
+        votes: [],
+        mentorseen: ['123','234'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 0,
+        isPr: 0,
+        authorinsttype: 'uni',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        profilepic: '',
+        url: "/what-wear-to-interview-2"
+      },
+      {
+        qid: '123458',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19'],
+        hashtags: ['23','11','30'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: [],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 1,
+        isPr: 0,
+        authorinsttype: 'job',
+        fname: 'John',
+        lname: 'Smith',
+        profilepic: '',
+        url: "/what-wear-to-interview-3"
+      },
+      {
+        hid: '1234',
+        uid: '123',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        isPr: 0,
+        title: 'What is the best thing to wear to an interview?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Really Long Institution Name',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: 'BSc (Hons) Business Administration',
+        authortraining: '',
+        authorinsttype: 'uni',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-05T19:30:50.667Z',
+        text: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
+        isanon: 0,
+        votes: [],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#firstanswer',
+        type: 'answer',
+        relatedqid: '123',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '124', name: 'My PDF', type: 'application/pdf'},
+          {fileid: '125', name: 'MyExcelspreadsheet.xls', type: 'application/vnd.ms-excel'},
+          {fileid: '126', name: 'MyWorddocfilename.word', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'},
+          {fileid: '127', name: 'MyPOWERPOINTBABY!', type: 'application/vnd-mspowerpoint'},
+          {fileid: '128', name: 'My other doc format', type: 'other'}
+        ],
+      },
+      {
+        hid: '1235',
+        uid: '124',
+        fname: 'Dave',
+        lname: 'Petrie',
+        isPr: 0,
+        title: 'What is it like working at Pladis?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: '',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: '',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-06T13:30:50.667Z',
+        text: 'second answer sfgh sldfkj ghlskjdf hglkjsd fhgkjls dhflkjg hsdlfkj ghlksdjfh glkjsd fhgkljsdh fgkjlh sdlfkj ghlskdjf ghlkjsdfh gkljsdfh glkjsdfh gkljsdh fgkjlhds flkgjh sdlkfj ghslkdjf ghlksjdf glksjdfh glsjkdf gkljsdf hglkjsd fhglkjsdfh glksjdfh glskjdfh glkjsdfh glkjsdfh gkljsdfh glkjsdfh gkjlsd fhgkljsdh fklgjhs dflkjgh slkdfj ghskldjf ghslkdfjgh lskdjf ghlskdjfgh slkdjf ghlksdfjgh',
+        isanon: 1,
+        votes: ['12','23'],
+        isacceptedanswer: true,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#secondanswer',
+        type: 'answer',
+        relatedqid: '124'
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        title: 'When should I apply to grad schemes (what time of year)?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'third answer',
+        isanon: 0,
+        votes: ['123','20'],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#thirdanswer',
+        type: 'answer',
+        relatedqid: '125',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 2', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+      },
+      {
+        hid: '1237',
+        uid: '126',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content! SDFGKLJH SDLFJKH GSLKJDF GJK Hlkjh xdljfh gslkjdh fgkjls hdfglkj hsdfkljh gslkdfjglksjdh gjh skgsh kdhgksdfkldlfjhskfhgljdfhg jdfh gsjdhfkjshdgjhdfgkjshfglhsdflkghdfjh dkfjh g',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        wasDefaultRole: true,
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 2', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+        postComments: [
+          {cid: '1', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '3', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '4', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '5', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: [], relatedqid: '', relatedhid: ''},
+          {cid: '6', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '7', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '8', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        ],
+      },
+      {
+        hid: '1238',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content!',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        selectedFiles: [],
+        postComments: [
+          {cid: '1', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '125', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        ],
+      }
+    ]
 
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview community={community} goToUnansweredQs={this.goToUnansweredQs}/>
+        return <CommunityOverview isLoggedIn={isLoggedIn} userRole={userRole} community={community} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr}/>
       case 'questions':
-        return <CommunityQuestions />
+        return <CommunityQuestions contentArr={contentArr} />
       case 'leaderboard':
         return <CommunityLeaderboard />
     }
   }
 
   render() {
-    const {tabToView, isMobile} = this.state
-    const {isLoggedIn} = this.props;
-    const userRole = 'mentor'
+    const {tabToView} = this.state
+    const {userRole, isLoggedIn} = this.props;
     const community = {
       cmid: '1234',
     /*  name: 'Houdini',
@@ -159,7 +407,7 @@ class CommunityPage extends React.Component {
               <i className="fas fa-home" /> &gt; Communities &gt; {community.type == 'skill' ? 'Skills' : (community.type == 'industry' ? 'Industries' : 'Roles')} &gt; {community.name}
             </div>
             <div className="paddingBtm marginBottom20">
-              <div className={isMobile == true ? "" : "chatItemFlexContainer qTitle qaPage"}>
+              <div className="chatItemFlexContainer qTitle qaPage">
                 <div>
                   <span className="marginBottom20 breakWord"><strong>{community.name} <span className="mediumGreyText">community</span></strong></span>
                   <div className="qDetail normalLineheight fontSize13 noBold marginBottom20 breakWord">
@@ -182,7 +430,7 @@ class CommunityPage extends React.Component {
                     authorinsttype={null}
                     authorinstfreetext={null}
                     authorinst={null}
-                    buttonToShow="linkEmojiShareText"
+                    buttonToShow="linkEmojiInviteText"
                     fromCommunityPage
                     commName={community.name}
                   />
@@ -209,10 +457,10 @@ class CommunityPage extends React.Component {
               </div>
             </div>
           </div>
-          <div className="groupdash-menuBar borderBtm borderGrey">
-            <button type="button" name="overview" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>
-            <button type="button" name="questions" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
-            <button type="button" name="leaderboard" onClick={this.updateTabToView} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
+          <div className="groupdash-menuBar borderBtm borderGrey commPage">
+            <button type="button" name="overview" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>
+            <button type="button" name="questions" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
+            <button type="button" name="leaderboard" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
           </div>
           { this.renderTab(community) }
         </div>

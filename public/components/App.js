@@ -658,10 +658,10 @@ class Dashboard extends Component{
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
-                <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/skills/:skillsname" render={(props) => <CommunityPage {...props} type="skill" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/skills/:skillsname/questions" render={(props) => <CommunityPage {...props} type="skill" initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname/questions" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} updateDocumentTitle={this.updateDocumentTitle} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route component={NotFound}/>
               </Switch>
@@ -710,7 +710,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

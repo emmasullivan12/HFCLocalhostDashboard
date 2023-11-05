@@ -100,8 +100,8 @@ class ShareOptionsBox extends React.Component {
       redditTextToShare = joinCommunityText
       whatsappTextToShare = (joinCommunityText + " - " + url)
     } else {
-      const mentorInstText = (authorinsttype != "sch" && authorinsttype != null) ? getEmployerName(authorinsttype, authorinstfreetext, authorinst) : " "
-      const answerAddedText = encodeURIComponent("Check out this" + mentorInstText + "answer on Prospela - ")
+      const mentorInstText = (authorinsttype != "sch" && authorinsttype != null) ? getEmployerName(authorinsttype, authorinstfreetext, authorinst, true) : " "
+      const answerAddedText = encodeURIComponent("Check out this " + mentorInstText + " answer on Prospela - ")
       twitterTextToShare = (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url
       redditTextToShare = (contentType == 'answer' ? answerAddedText : "") + qaItem.title
       whatsappTextToShare = (contentType == 'answer' ? answerAddedText : "") + qaItem.title + " " + url
@@ -112,8 +112,8 @@ class ShareOptionsBox extends React.Component {
         {buttonToShow == "shareTextShareIcon" && (
           <span>Share <i className="fas fa-share-alt"/></span>
         )}
-        {buttonToShow == "linkEmojiShareText" && (
-          <span className="fontSize15 marginRight5"><span role="img" aria-label="link emoji">🔗</span> Share</span>
+        {buttonToShow == "linkEmojiInviteText" && (
+          <span className="fontSize15 marginRight5"><span role="img" aria-label="link emoji">🔗</span> Invite</span>
         )}
         {showShareOptions && showOptionsForItem == id && (
           <div className={"shareOptionsContainer" + (fromCommunityPage ? " commPage" : "")} id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>

@@ -72,13 +72,15 @@ function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishid
   }
 }
 
-function getEmployerName(authorinsttype, authorinstfreetext, authorinst){
+function getEmployerName(authorinsttype, authorinstfreetext, authorinst, showDescText){
   if (authorinsttype == 'job' || authorinsttype == 'train') {
-    return " " + authorinstfreetext + " employee "
+    return authorinstfreetext + (showDescText == true ? (authorinsttype == 'train' ? " trainee" : " employee") : "")
   } else if (authorinsttype == 'uni') {
   //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
     const uniInst = authorinst ? authorinst : authorinstfreetext
-    return " " + uniInst + " student "
+    return uniInst + (showDescText == true ? " student" : "")
+  } else if (authorinsttype == 'sch') {
+    return 'school' + (showDescText == true ? " student" : "")
   } else {
     return
   }
