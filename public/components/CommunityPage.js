@@ -3,18 +3,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import {metaAdder} from './GeneralFunctions.js';
+import {metaAdder, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import Avatar from './Avatar.js';
 import AddHighlightModalContent from "./AddHighlightModalContent";
+import {cdn} from './CDN.js';
 import CommunityOverview from "./CommunityOverview.js";
 import CommunityQuestions from "./CommunityQuestions.js";
 import CommunityLeaderboard from "./CommunityLeaderboard.js";
+import FullPageModal from './FullPageModal.js';
+import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import MyContent from "./MyContent.js";
 import ShareOptionsBox from './ShareOptionsBox.js';
 import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
 
-import '../css/GroupDash.css';
+import '../css/CommunityPage.css';
 
 //import {LoadingSpinner, Check} from "./GeneralFunctions";
 const AddHighlightModalProps = {
@@ -31,6 +35,12 @@ const AskQModalProps = {
   usedFor: 'addHighlightQApage',
   changeInitFocus: true,
   wider: true
+}
+
+const MentorProfileUsrNameModalProps = {
+  ariaLabel: 'View Mentor Profile',
+  usedFor: 'mentor-profile-qaItem',
+  backBtn: 'arrow'
 }
 
 class CommunityPage extends React.Component {
@@ -348,6 +358,79 @@ class CommunityPage extends React.Component {
     }
   }
 
+/*  {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'job', mentorText: '11', menteefname: 'Barbara', mentoruid: '123'},
+  {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: null, mentorlname: null, mentorText: null, menteefname:'David', mentoruid: null},
+  {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorText: 'SATC', menteefname: null, mentoruid: '123'} */
+  renderActivityType = (activity) => {
+    const {checkHasAccess, noAccessHandler} = this.props
+    switch(activity.type) {
+      case 'newMatch':
+        return (
+          <div className="displayFlex marginBottom20" >
+            <div className="activityIcon">
+              <img
+                className="groupDashImg"
+                alt="Ask a question icon"
+                src={cdn+"/images/NewMatch_Icon.png"}
+              />
+            </div>
+            <div className="dashedTimeline" />
+            <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
+              <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
+            </div>
+            <div>
+              <div className="darkGreyText">
+                {activity.mentorinsttype != 'sch' ? (
+                  <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
+                    <MentorProfileContent />
+                  </FullPageModal>
+                ) : (
+                  <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
+                )}
+                <span className="textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
+              </div>
+              <div className="fontSize14">from {activity.mentorText} is now supporting a new lucky mentee</div>
+            </div>
+          </div>
+        )
+      case 'chatFeedbackRec':
+        return (
+          <div className="displayFlex marginBottom20" >
+            <div className="activityIcon">
+              <img
+                className="groupDashImg"
+                alt="Completed feedback icon"
+                src={cdn+"/images/CompleteFeedback_Icon.png"}
+              />
+            </div>
+            <div className="dashedTimeline" />
+            <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
+              <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
+            </div>
+            <div>
+              <div className="darkGreyText">
+                {activity.mentorinsttype != 'sch' ? (
+                  <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
+                    <MentorProfileContent />
+                  </FullPageModal>
+                ) : (
+                  <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
+                )}
+                <span className="textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
+              </div>
+              <div className="fontSize14">from {activity.mentorText} just gave their mentee a reference</div>
+            </div>
+          </div>
+        )
+      case 'question':
+        return 'question!' // AskAQ_Icon_60.png
+      case 'answer':
+        return 'answer!' // AskAQ_Icon_60.png
+      default:
+        return ''
+    }
+  }
+
   render() {
     const {tabToView} = this.state
     const {userRole, isLoggedIn} = this.props;
@@ -363,6 +446,13 @@ class CommunityPage extends React.Component {
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       numUnanswered: 24
     }
+    const activityArrToShow = [
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob'},
+      {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara'},
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill'},
+      {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David'},
+      {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null}
+    ]
 
     let urlText, commItem
 
@@ -446,7 +536,7 @@ class CommunityPage extends React.Component {
                   )}
                   {!isLoggedIn && (
                     <React.Fragment>
-                      <div className="signUpPrompt-header isOnQAPage fontSize16">
+                      <div className="signUpPrompt-header isOnQAPage fontdarkGreyText marginBottom10Size16">
                         <a className="button link Submit-btn signUpPrompt" href={"https://app.prospela.com/signup?origin=" + community.type + "&communityid=" + community.typeid}>
                           Join
                         </a>
@@ -462,7 +552,23 @@ class CommunityPage extends React.Component {
             <button type="button" name="questions" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
             <button type="button" name="leaderboard" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
           </div>
-          { this.renderTab(community) }
+          <div className="marginTop20">
+            <div className="sideBar" role="complementary" aria-label="sidebar">
+              <div className="paddingL20 paddingR20">
+                <div className="bold darkGreyText marginBottom10"><i className="fontSize14 fas fa-coffee" /> Community Activity</div>
+                {activityArrToShow.map((activity, index) => {
+                  return (
+                  <div className="paddingTop5" key={index}>
+                    {this.renderActivityType(activity)}
+                  </div>
+                  )
+                })}
+              </div>
+            </div>
+            <div className="mainBar" role="main" aria-label="rendered tab">
+              { this.renderTab(community) }
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );

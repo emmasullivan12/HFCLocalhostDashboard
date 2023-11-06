@@ -769,6 +769,14 @@ table th .description{
   background: rgba(0,0,0,0.05);
   z-index: 1;
 }
+.dashedTimeline{
+  width: 1px;
+  margin-left: -15px;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  border-right: 2px dashed black;
+  position: relative;
+}
 @media only screen and (max-width: 425px) {
   .descriptor {
     font-size: 0.8rem;
@@ -907,6 +915,9 @@ table th .description{
 .marginBottom0{
   margin-bottom: 0;
 }
+.marginBottom10 {
+  margin-bottom: 10px!important;
+}
 .marginBottom20 {
   margin-bottom: 20px!important;
 }
@@ -981,6 +992,9 @@ table th .description{
 }
 .paddingTop0{
   padding-top: 0px!important;
+}
+.paddingTop5{
+  padding-top: 5px!important;
 }
 .paddingTop{
   padding-top: 10px!important;
