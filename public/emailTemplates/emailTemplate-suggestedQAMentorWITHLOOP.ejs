@@ -256,7 +256,7 @@
                                 </td>
                             </tr>
 
-                            <table frame="hsides" rules="rows" style="margin-left:0px;margin-right:0px;max-width:550px;">
+                            <table frame="hsides" rules="rows" style="max-width:550px;margin: auto;">
                               <tbody>
                                 <% qaArray.forEach(qa => { %>
                                   <tr style="border-bottom:2px solid #f2f2f2;border-top:1px solid white">
@@ -265,9 +265,9 @@
                                         <tbody style="margin-bottom:15px;margin-top:15px">
                                           <tr style="vertical-align:bottom">
                                             <td style="text-align:center;vertical-align:bottom">
-                                              <div style="width: 40px;height:100%;box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;">
+                                              <div style="width: 40px;height:100%;box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;left: 50%;transform: translate(-50%);position: relative;">
                                                 <% if (qa.isanon == true || (qa.userprofilepic != null && qa.userprofilepic != '')) { %>
-                                                  <div style="width:40px;height:40px;border-style:none;background-size: cover; background-size: cover;background-position: center center; border-radius: 50%; -webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%; <%= qa.isanon == true ? 'left: 55%;position: relative;' : '' %> background-image: url('<%= qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : ('https://media-uploads.prospela.com/userAvatars/' + qa.userprofilepic + '-360') %>')" />
+                                                  <div style="width:40px;height:40px;border-style:none;background-size: cover; background-size: cover;background-position: center center; border-radius: 50%; -webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%; background-image: url('<%= qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : ('https://media-uploads.prospela.com/userAvatars/' + qa.userprofilepic + '-360') %>')" />
                                                 <% } else {%>
                                                   <div style="text-transform: uppercase;width:40px;font-size: 20px;text-align: center;font-family:Lato;color: #fff;background-color: rgb(53,28,117); background-color: rgba(53,28,117,.5); margin: auto;border-radius: 50%; -webkit-border-radius: 50%;  -moz-border-radius: 50%;  -ms-border-radius: 50%;-o-border-radius: 50%;line-height: 40px;" >
                                                     <%= qa.qauthorfname.charAt(0) %>

@@ -1,7 +1,7 @@
 // Last merged this code on 4th apr 2022
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {metaAdder, DateCalc, TimeCalc} from './GeneralFunctions.js';
 import Avatar from './Avatar.js';
@@ -362,7 +362,7 @@ class CommunityPage extends React.Component {
   {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: null, mentorlname: null, mentorText: null, menteefname:'David', mentoruid: null},
   {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorText: 'SATC', menteefname: null, mentoruid: '123'} */
   renderActivityType = (activity) => {
-    const {checkHasAccess, noAccessHandler} = this.props
+    const {checkHasAccess, noAccessHandler, updatePathName} = this.props
     switch(activity.type) {
       case 'newMatch':
         return (
@@ -371,7 +371,7 @@ class CommunityPage extends React.Component {
               <img
                 className="groupDashImg"
                 alt="Ask a question icon"
-                src={cdn+"/images/NewMatch_Icon.png"}
+                src={cdn+"/images/NewMatch_SmlIcon_40.png"}
               />
             </div>
             <div className="dashedTimeline" />
@@ -379,7 +379,7 @@ class CommunityPage extends React.Component {
               <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
             </div>
             <div>
-              <div className="darkGreyText">
+              <span className="darkGreyText fontSize14">
                 {activity.mentorinsttype != 'sch' ? (
                   <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
                     <MentorProfileContent />
@@ -387,9 +387,9 @@ class CommunityPage extends React.Component {
                 ) : (
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
                 )}
-                <span className="textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
-              </div>
-              <div className="fontSize14">from {activity.mentorText} is now supporting a new lucky mentee</div>
+              </span>
+              <span className="fontSize14"> from {activity.mentorText} is now supporting a new lucky mentee</span>
+              <span className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
             </div>
           </div>
         )
@@ -400,7 +400,7 @@ class CommunityPage extends React.Component {
               <img
                 className="groupDashImg"
                 alt="Completed feedback icon"
-                src={cdn+"/images/CompleteFeedback_Icon.png"}
+                src={cdn+"/images/CompleteFeedback_SmlIcon_40.png"}
               />
             </div>
             <div className="dashedTimeline" />
@@ -408,7 +408,7 @@ class CommunityPage extends React.Component {
               <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
             </div>
             <div>
-              <div className="darkGreyText">
+              <span className="darkGreyText fontSize14">
                 {activity.mentorinsttype != 'sch' ? (
                   <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
                     <MentorProfileContent />
@@ -416,16 +416,77 @@ class CommunityPage extends React.Component {
                 ) : (
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
                 )}
-                <span className="textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
-              </div>
-              <div className="fontSize14">from {activity.mentorText} just gave their mentee a reference</div>
+              </span>
+              <span className="fontSize14"> from {activity.mentorText} just gave their mentee a reference</span>
+              <span className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
             </div>
           </div>
         )
       case 'question':
-        return 'question!' // AskAQ_Icon_60.png
+        return (
+          // <Link to={{pathname: "/questions/" + post.qid + post.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
+          <div className="displayFlex marginBottom20" >
+            <div className="activityIcon">
+              <img
+                className="groupDashImg"
+                alt="Answered a question icon"
+                src={cdn+"/images/AskAQ_NoWhiteBackgroundIcon_60.png"}
+              />
+            </div>
+            <div className="dashedTimeline" />
+            <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
+              <Avatar userID={null} isAnon userName={activity.menteefname} showAsCircle picSize={360}/>
+            </div>
+            <div>
+              <span className="darkGreyText fontSize14">
+                <span className="bold">{activity.menteefname} </span>
+              </span>
+              <span className="fontSize14"> asked the question
+                <span>
+                  <Link to={{pathname: "/questions/" + activity.qid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
+                    {activity.qTitle}
+                  </Link>
+                  <div className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></div>
+                </span>
+              </span>
+            </div>
+          </div>
+        )
       case 'answer':
-        return 'answer!' // AskAQ_Icon_60.png
+        return (
+          <div className="displayFlex marginBottom20" >
+            <div className="activityIcon">
+              <img
+                className="groupDashImg"
+                alt="Answered a question icon"
+                src={cdn+"/images/AskAQ_NoWhiteBackgroundIcon_60.png"}
+              />
+            </div>
+            <div className="dashedTimeline" />
+            <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
+              <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
+            </div>
+            <div>
+              <span className="darkGreyText fontSize14">
+                {activity.mentorinsttype != 'sch' ? (
+                  <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
+                    <MentorProfileContent />
+                  </FullPageModal>
+                ) : (
+                  <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
+                )}
+              </span>
+              <span className="fontSize14"> from {activity.mentorText} answered the question 
+                <span>
+                  <Link to={{pathname: "/questions/" + activity.relatedqid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
+                    {activity.qTitle}
+                  </Link>
+                  <div className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></div>
+                </span>
+              </span>
+            </div>
+          </div>
+        )
       default:
         return ''
     }
@@ -447,12 +508,13 @@ class CommunityPage extends React.Component {
       numUnanswered: 24
     }
     const activityArrToShow = [
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob'},
-      {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara'},
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill'},
-      {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David'},
-      {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null}
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob'},
+      {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara'},
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill'},
+      {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David'},
+      {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null}
     ]
+    //https://app.prospela.com/questions/
 
     let urlText, commItem
 

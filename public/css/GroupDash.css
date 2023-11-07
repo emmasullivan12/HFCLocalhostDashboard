@@ -99,21 +99,21 @@
   }
 }
 @media only screen and (min-width: 859px) {
-  .dash-welcomeImg-container{
+  .dash-welcomeImg-container:not(.commPage){
     height: 160px;
     width: 270px;
     position: absolute;
     top: 40px;
     right: 45px;
   }
-  .dash-welcomeImg-container.commPage{
+/*  .dash-welcomeImg-container.commPage{
     height: 120px;
     width: 200px;
     position: relative;
     top: -107px;
     right: 0;
     float: right;
-  }
+  }*/
 }
 .groupDashImg{
   height: 100%;
