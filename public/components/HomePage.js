@@ -196,6 +196,7 @@ class HomePage extends Component {
     window.addEventListener("resize", this.updateShowStepsInSideBar);
 
     const {prevFeedScrollPos, userStepsWasOpenInFeed} = this.state
+    const {unHighlightStepsBox, showHighlightStepsBox} = this.props
 
     if (prevFeedScrollPos != 0) {
       const homepageContainer = document.getElementById("homepageContainer")
@@ -203,6 +204,13 @@ class HomePage extends Component {
         this.setStepsBoxAsWasPrev(userStepsWasOpenInFeed)
       }
       homepageContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
+    }
+
+    if (showHighlightStepsBox == true) {
+      const stepsBox = document.getElementById("stepsBox");
+      stepsBox.scrollIntoView({behavior: "smooth"});
+      stepsBox.classList.add("highlighted-post")
+      unHighlightStepsBox()
     }
 
     // Create observer to detect which feed items have been viewed in viewport
@@ -1220,7 +1228,7 @@ class HomePage extends Component {
     ]
 
     return (
-      <div className="thinPurpleContentBox withBorderTop">
+      <div className="thinPurpleContentBox withBorderTop" id="stepsBox">
         <div className="padding20">
           <div className="userStepsTitle" onClick={this.toggleStepsBox} onKeyDown={this.onKeyDown}>
             <span><strong>Finish setting up your account</strong></span>

@@ -777,6 +777,9 @@ table th .description{
   border-right: 2px dashed black;
   position: relative;
 }
+.dashedTimeline.isLast{
+  visibility: hidden;
+}
 @media only screen and (max-width: 425px) {
   .descriptor {
     font-size: 0.8rem;

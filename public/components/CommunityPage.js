@@ -24,7 +24,7 @@ import '../css/CommunityPage.css';
 const AddHighlightModalProps = {
   ariaLabel: 'Add a Post',
   triggerText: 'Post',
-  usedFor: 'addHighlightQApage',
+  usedFor: 'addAnswerQApage',
   changeInitFocus: true,
   wider: true
 }
@@ -361,7 +361,7 @@ class CommunityPage extends React.Component {
 /*  {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'job', mentorText: '11', menteefname: 'Barbara', mentoruid: '123'},
   {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: null, mentorlname: null, mentorText: null, menteefname:'David', mentoruid: null},
   {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorText: 'SATC', menteefname: null, mentoruid: '123'} */
-  renderActivityType = (activity) => {
+  renderActivityType = (activity, isLast) => {
     const {checkHasAccess, noAccessHandler, updatePathName} = this.props
     switch(activity.type) {
       case 'newMatch':
@@ -374,7 +374,7 @@ class CommunityPage extends React.Component {
                 src={cdn+"/images/NewMatch_SmlIcon_40.png"}
               />
             </div>
-            <div className="dashedTimeline" />
+            <div className={"dashedTimeline" + (isLast ? " isLast" : "")} />
             <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
               <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
             </div>
@@ -388,7 +388,7 @@ class CommunityPage extends React.Component {
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
                 )}
               </span>
-              <span className="fontSize14"> from {activity.mentorText} is now supporting a new lucky mentee</span>
+              <span className="fontSize14"> from {activity.mentorText} is matched with a new lucky mentee</span>
               <span className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
             </div>
           </div>
@@ -403,7 +403,7 @@ class CommunityPage extends React.Component {
                 src={cdn+"/images/CompleteFeedback_SmlIcon_40.png"}
               />
             </div>
-            <div className="dashedTimeline" />
+            <div className={"dashedTimeline" + (isLast ? " isLast" : "")} />
             <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
               <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
             </div>
@@ -433,7 +433,7 @@ class CommunityPage extends React.Component {
                 src={cdn+"/images/AskAQ_NoWhiteBackgroundIcon_60.png"}
               />
             </div>
-            <div className="dashedTimeline" />
+            <div className={"dashedTimeline" + (isLast ? " isLast" : "")} />
             <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
               <Avatar userID={null} isAnon userName={activity.menteefname} showAsCircle picSize={360}/>
             </div>
@@ -441,11 +441,9 @@ class CommunityPage extends React.Component {
               <span className="darkGreyText fontSize14">
                 <span className="bold">{activity.menteefname} </span>
               </span>
-              <span className="fontSize14"> asked the question
+              <span className="fontSize14"> asked a question
                 <span>
-                  <Link to={{pathname: "/questions/" + activity.qid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
-                    {activity.qTitle}
-                  </Link>
+                  <Link to={{pathname: "/questions/" + activity.qid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}> {activity.qTitle}</Link>
                   <div className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></div>
                 </span>
               </span>
@@ -462,7 +460,7 @@ class CommunityPage extends React.Component {
                 src={cdn+"/images/AskAQ_NoWhiteBackgroundIcon_60.png"}
               />
             </div>
-            <div className="dashedTimeline" />
+            <div className={"dashedTimeline" + (isLast ? " isLast" : "")} />
             <div className="marginLeft20 gridLeftColumn dispInlineBlock verticalAlignMiddle">
               <Avatar userID={activity.mentoruid} isAnon={false} userName={activity.mentorfname} showAsCircle picSize={360}/>
             </div>
@@ -476,11 +474,9 @@ class CommunityPage extends React.Component {
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
                 )}
               </span>
-              <span className="fontSize14"> from {activity.mentorText} answered the question 
+              <span className="fontSize14"> from {activity.mentorText} answered a question
                 <span>
-                  <Link to={{pathname: "/questions/" + activity.relatedqid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}>
-                    {activity.qTitle}
-                  </Link>
+                  <Link to={{pathname: "/questions/" + activity.relatedqid + activity.url, state: {prevPath: window.location.pathname}}} className="link" onClick={updatePathName}> {activity.qTitle}</Link>
                   <div className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></div>
                 </span>
               </span>
@@ -492,9 +488,70 @@ class CommunityPage extends React.Component {
     }
   }
 
+/*  renderSteps = () => {
+    const {isLoggedIn} = this.props
+    const {userstep, userRole, showSuccessModal, showMentorFullAppModal, showMenteeFullAppModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
+    let wantsU18, mentorSteps, menteeSteps, isNonCoreCountry, isFromO18OnlyCountry, isU18
+    let country = 'GBR'
+    isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE' && country != 'AUT' && country != 'BGR' && country != 'CZE')
+    isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE' || country == 'AUT' || country == 'BGR' || country == 'CZE')
+
+    if (userRole == 'mentor') {
+      wantsU18 = false // Mentor wants to support U18s
+      mentorSteps = [
+        {stepText: 'Complete your full mentor application', modalToShow: 'MentorFullApp', isComplete: (userstep == 'didU18tf' || userstep == 'didIDUpload' || userstep == 'didFullSUtf' || userstep == 'didFullSUIDtf' || userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: 'JoinAGroup', limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring is not available in your country yet' : 'Join a mentoring programme to unlock this step'), validSteps: ['didShortSUtf']},
+        ...(wantsU18 == true) ? [
+          {stepText: 'Upload a selfie with your Photo ID', modalToShow: 'MentorID', isComplete: (userstep == 'didIDUpload' || (userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorFullApp', tooltiptextWhenLocked: 'Complete your full mentor application to unlock this step', validSteps: ['didU18tf']},
+          {stepText: 'Upload your CV/Resume or LinkedIn URL', modalToShow: 'MentorCV', isComplete: ((userstep == 'didFullSUIDtf') || userstep == 'fullSUidTrain'), reqStep: 'MentorID', tooltiptextWhenLocked: 'Upload your selfie with Photo ID to unlock this step', validSteps: ['didIDUpload']},
+        ] : [],
+        {stepText: 'Complete your 5-min mentor training', modalToShow: 'MentorTraining', isComplete: (userstep == 'fullSUTrain' || userstep == 'fullSUidTrain'), reqStep: (wantsU18 == true ? 'MentorCV' : 'MentorFullApp'), tooltiptextWhenLocked: (wantsU18 == true ? 'Upload your CV/Resume or LinkedIn URL to uplock this step' : 'Complete your full mentor application to unlock this step'), validSteps: ['didFullSUtf', 'didFullSUIDtf']},
+      ]
+    }
+
+    if (userRole == 'mentee' || isLoggedIn == false) {
+      isU18 = false
+      menteeSteps = [
+        {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', O18CountriesOnly: true, limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring is not available in your country yet' : ((isFromO18OnlyCountry == true && isU18 == true) ? 'Mentoring for under 18s is not available in your country yet' : 'Join a mentoring programme to unlock this step')), validSteps: ['didShortSUtf']},
+        {stepText: 'Complete your 5-min mentee training', modalToShow: 'MenteeTraining', isComplete: userstep == 'didSafeG', reqStep: 'MenteeFullApp', tooltiptextWhenLocked: 'Complete your full mentee application to unlock this step', validSteps: ['didFullSUtf']},
+      ]
+    }
+
+    const steps = (userRole && userRole == 'mentor') ? mentorSteps : menteeSteps
+    const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
+    const allStepsCompleted = stepsLeftToDo == 0
+
+    if (allStepsCompleted) {
+      return
+    } else {
+      return (
+        <div className="marginTop10">
+          {steps.map((step, index) => {
+            const reqStepsComplete = ((step.limitForNonCoreCountries != null && step.limitForNonCoreCountries == true && isNonCoreCountry == true) || (step.O18CountriesOnly != null && step.O18CountriesOnly == true && isFromO18OnlyCountry == true && isU18 == true)) ? false : (step.reqStep != null ? steps.filter(x => x.modalToShow == step.reqStep)[0].isComplete : true)
+            return (
+              <div key={index} onClick={() => this.showModal(step.isComplete, reqStepsComplete, step.modalToShow, step.requireLogin)} className={reqStepsComplete != true ? "tooltip" : ""}>
+                <Checkbox
+                  label={step.stepText}
+                  labelClassName={"checkbox-container homePage" + (step.isComplete == true ? " strikethrough greyText" : "") + (reqStepsComplete != true ? " greyText cursorText backgroundNone" : "")}
+                  name="stepStatus"
+                  className="SubmitMatch-input"
+                  spanClassName={"checkmark" + (reqStepsComplete != true ? " disabled" : "")}
+                  defaultChecked={step.isComplete == true}
+                  disabled
+                />
+                {reqStepsComplete != true && (
+                  <div className="tooltiptext checkboxTooltip">{step.tooltiptextWhenLocked}</div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      )
+    }
+  }
+*/
   render() {
     const {tabToView} = this.state
-    const {userRole, isLoggedIn} = this.props;
+    const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
     /*  name: 'Houdini',
@@ -507,16 +564,27 @@ class CommunityPage extends React.Component {
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       numUnanswered: 24
     }
-    const activityArrToShow = [
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob'},
-      {type: "chatFeedbackRec", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara'},
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill'},
-      {type: "question", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David'},
-      {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null}
+    const activityArr = [
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob', mentoruid: '123'},
+      {type: "chatFeedbackRec", timestamp: '2020-02-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara', mentoruid: '123'},
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill', mentoruid: '123'},
+      {type: "question", timestamp: '2020-01-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David', mentoruid: null},
+      {type: "answer", timestamp: '2020-10-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null, mentoruid: '123'}
     ]
-    //https://app.prospela.com/questions/
+    const activityArrToShow = activityArr.sort((a,b)=> {
+      if(a.timestamp < b.timestamp) { return -1; }
+      if(a.timestamp > b.timestamp) { return 1; }
+      return 0;
+    })
 
-    let urlText, commItem
+    let urlText, commItem, isNonCoreCountry, isFromO18OnlyCountry, isU18
+    var country = 'GBR'
+    isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE' && country != 'AUT' && country != 'BGR' && country != 'CZE')
+    isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE' || country == 'AUT' || country == 'BGR' || country == 'CZE')
+
+    if (userRole == 'mentee') {
+      isU18 = false
+    }
 
     if (community.type == 'industry') {
       commItem = getIndustryDeets(community.typeid)
@@ -593,7 +661,7 @@ class CommunityPage extends React.Component {
                   )}
                   {userRole == 'mentor' && (
                     <Modal {...AddHighlightModalProps}>
-                      <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor' fromCommunityPage commType={community.type} commName={community.name} updatePathName={this.props.updatePathName} handleCommPageChange={this.updateTabToView}/>
+                      <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' fromCommunityPage commType={community.type} commName={community.name} updatePathName={updatePathName} handleCommPageChange={this.updateTabToView}/>
                     </Modal>
                   )}
                   {!isLoggedIn && (
@@ -619,13 +687,24 @@ class CommunityPage extends React.Component {
               <div className="paddingL20 paddingR20">
                 <div className="bold darkGreyText marginBottom10"><i className="fontSize14 fas fa-coffee" /> Community Activity</div>
                 {activityArrToShow.map((activity, index) => {
+                  var isLast = (activityArrToShow.length - 1) == index
                   return (
                   <div className="paddingTop5" key={index}>
-                    {this.renderActivityType(activity)}
+                    {this.renderActivityType(activity, isLast)}
                   </div>
                   )
                 })}
               </div>
+              {(userRole == 'mentor' && isNonCoreCountry != true) || !isLoggedIn || (userRole == 'mentee' && isNonCoreCountry != true && (isFromO18OnlyCountry != true || (isFromO18OnlyCountry == true && isU18 != true))) && (
+                <div className="thinGreyContentBox sideBarContentHiddenOnShrink">
+                  <div className="title">My Next Steps</div>
+                  <div className="padding20">
+                     <Link to={{pathname: "/home", state: {prevPath: window.location.pathname}}} className="dispBlock" onClick={() => {updatePathName(), highlightStepsBox()}}>
+                       <div>Apply to {(userRole == 'mentee' || !isLoggedIn) ? 'get a mentor' : 'to become a mentor'}</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="mainBar" role="main" aria-label="rendered tab">
               { this.renderTab(community) }

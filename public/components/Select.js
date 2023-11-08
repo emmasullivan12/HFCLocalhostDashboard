@@ -20,7 +20,7 @@ class SelectBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: this.props.defaultChecked ? this.props.defaultChecked : [], // array of text i.e. 'labels' not 'values'
+      values: this.props.defaultChecked ? this.props.defaultChecked : [], // this will be an array of text i.e. 'labels' not 'values'
   //    keysPressed: [],
       focusedValue: -1,
       isFocused: false,
@@ -30,25 +30,25 @@ class SelectBox extends React.Component {
   }
 
   componentDidMount(){
-    const { focusOnLoad, handleTabPress, name, fromCommunityPage, commType, commTypeId } = this.props;
+    const { focusOnLoad, handleTabPress, name, fromCommunityPage, commType, commTypeId, defaultChecked } = this.props;
     if (focusOnLoad) {
       document.getElementById("selectBox-"+name).focus();
     }
     if (handleTabPress) {
       handleTabPress(false);
     }
+    if (defaultChecked) {
+      this.setState({
+        values: defaultChecked,
+        numSelected: defaultChecked.length
+      })
+    }
   }
 
   componentDidUpdate(prevProps){
-    const {resetValues, defaultChecked} = this.props
+    const {resetValues} = this.props
     if (prevProps.resetValues != resetValues && resetValues == true) {
       this.resetValues()
-    }
-    if(prevProps.defaultChecked != defaultChecked) {
-      this.setState({
-        values: defaultChecked ? defaultChecked : [],
-        numSelected: defaultChecked ? defaultChecked.length : 0,
-      })
     }
   }
 

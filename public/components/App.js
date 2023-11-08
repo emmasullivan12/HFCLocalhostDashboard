@@ -168,6 +168,7 @@ class Dashboard extends Component{
       pathName: window.location.pathname,
       prevFeedScrollPos: 0,
       cameFromFeedUnlockBtn: false,
+      highlightStepsBox: false,
   //    documentTitle: 'Prospela Dashboard',
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
@@ -366,6 +367,22 @@ class Dashboard extends Component{
     });
   }
 
+  highlightStepsBox = () => {
+    console.log("setting highlightstepsbox as true")
+    this.setState({
+      highlightStepsBox: true
+    })
+  }
+
+  unHighlightStepsBox = () => {
+
+    console.log("unhighlgiht")
+
+    this.setState({
+      highlightStepsBox: false
+    })
+  }
+
   updatePathName(){
     this.setState({
       pathName: window.location.pathname
@@ -414,7 +431,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {browser, pathName, prevFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin} = this.state
+    const {browser, pathName, prevFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin, highlightStepsBox} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -652,16 +669,16 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
-                <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/skills/:skillsname" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} updateDocumentTitle={this.updateDocumentTitle} />}/>
-                <Route path="/community/skills/:skillsname/questions" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
+                <Route path="/community/skills/:skillsname/questions" render={(props) => <CommunityPage {...props} type="skill" userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
                 <Route path="/community/:groupid" render={(props) => <ProspelaBot {...props} isGroup />}/>
                 <Route component={NotFound}/>
               </Switch>
@@ -710,7 +727,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (
