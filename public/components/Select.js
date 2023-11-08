@@ -1,4 +1,4 @@
-// Dex last merged this code on 3rd nov 2022
+// Dex last merged this code on 8th nov 2023
 /* eslint-disable no-lonely-if, no-use-before-define, no-unused-expressions, no-shadow */
 
 import React from "react";
@@ -20,12 +20,12 @@ class SelectBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: this.props.defaultChecked ? this.props.defaultChecked : [], // this will be an array of text i.e. 'labels' not 'values'
+      values: [],
   //    keysPressed: [],
       focusedValue: -1,
       isFocused: false,
       isOpen: false,
-      numSelected: this.props.defaultChecked ? this.props.defaultChecked.length : 0,
+      numSelected: 0,
     };
   }
 
@@ -39,7 +39,7 @@ class SelectBox extends React.Component {
     }
     if (defaultChecked) {
       this.setState({
-        values: defaultChecked,
+        values: defaultChecked, // this will be an array of text i.e. 'labels' not 'values'
         numSelected: defaultChecked.length
       })
     }

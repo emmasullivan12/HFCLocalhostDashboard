@@ -368,16 +368,12 @@ class Dashboard extends Component{
   }
 
   highlightStepsBox = () => {
-    console.log("setting highlightstepsbox as true")
     this.setState({
       highlightStepsBox: true
     })
   }
 
   unHighlightStepsBox = () => {
-
-    console.log("unhighlgiht")
-
     this.setState({
       highlightStepsBox: false
     })

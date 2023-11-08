@@ -1,4 +1,4 @@
-// Merged on 12th oct 2020
+// Merged on 8th nov 2023
 const ejs = require("ejs");
 import {usercdn, userAvatarsFolder} from './CDN.js';
 

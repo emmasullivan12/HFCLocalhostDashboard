@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-const skillsList = [
+const skillsOptions = [
   {value: '0', label: '.NET', urlText: 'net'},
   {value: '1', label: '.NET Core', urlText: 'net-core'},
   {value: '2', label: '2D', urlText: '2d'},
@@ -914,4 +914,4 @@ const skillsList = [
   {value: '908', label: 'Ziva Dynamics', urlText: 'ziva-dynamics'},
 ];
 
-export default skillsList;
+export default skillsOptions;
