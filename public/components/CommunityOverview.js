@@ -3,6 +3,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {cdn} from './CDN.js';
 import Carousel from './Carousel.js';
@@ -98,10 +99,18 @@ class CommunityOverview extends React.Component {
   }
 
   render() {
-    const {userRole, isLoggedIn, community} = this.props
+    const {userRole, isLoggedIn, community, updatePathName} = this.props
     //const {activityArrToShow} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
+    const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
+    const menteeSkillsArray = ['Houdini', 'MS Excel', 'Leadership', 'Presenting']
+    const menteeLearningSkillsArray = ['Houdini', 'MS Excel', 'Leadership', 'Presenting']
+    const mentorSkillsArray = ['Houdini', 'MS Excel', 'Leadership', 'Presenting']
+    const mentorLearningSkillsArray = ['Houdini', 'MS Excel', 'Leadership', 'Presenting']
+    const popularIndustriesArray = ['Film, TV & VFX', 'Energy & Utilities', 'Construction Sites & Facilities', 'Gaming (incl. VFX) & eSports']
+    const popularRolesArray = ['Application Analyst', 'Architect', 'Dental Hygienist', 'Compositor']
+    const subjectsArray = ['Citizenship Studies', 'English Language and Literature', 'Computing', 'Anthropology']
 
     return (
       <div>
@@ -130,14 +139,26 @@ class CommunityOverview extends React.Component {
             <Carousel>
               <div className="dataCard card" data-target="card" id="card-0">
                 <div className="padding10">
-                  <strong><span role="img" aria-label="fire emoji">🔥</span> Popular companies</strong>
-                  <div>Companies hashtags go here</div>
+                  <strong><span role="img" aria-label="green-heart emoji">💚</span> Active companies</strong>
+                  <div className="tagsList">
+                    {companiesArray.map((company) => {
+                      return (
+                        <span
+                          className="multiple value paddingR"
+                          id={company}
+                          key={company}
+                        >
+                          {company}
+                        </span>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " hidden" : "")} data-target="card" id="card-1">
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "")} data-target="card" id="card-1">
                 {!isLoggedIn ? (
                   <div className="padding10">
-                    <strong className="darkGreyText"><span role="img" aria-label="brain emoji">🧠</span> Mentees also learning:</strong>
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Mentees also learning</strong>
                     <div>
                       <div className="feedItemUnlockSection marginTop10 marginBottom10">
                         <div className="feedItemUnlockSection-btnContainer" >
@@ -150,27 +171,98 @@ class CommunityOverview extends React.Component {
                   </div>
                 ) : (
                   <div className="padding10">
-                    <strong><span role="img" aria-label="brain emoji">🧠</span> Mentees also learning:</strong>
-                    <div>Mentee skills go here</div>
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Mentees also learning</strong>
+                    <div className="tagsList">
+                      {menteeLearningSkillsArray.map((skill) => {
+                        return (
+                          <Link to={{pathname: "/community/skills/" + skill, state: {prevPath: window.location.pathname}}} key={skill} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple value paddingR"
+                              id={skill}
+                            >
+                              {skill}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
                   </div>
                 )}
               </div>
               <div className="dataCard card" data-target="card" id="card-2">
                 <div className="padding10">
                   <strong><span role="img" aria-label="office emoji">🏢</span> Popular industries</strong>
-                  <div>Industries go here</div>
+                  <div className="tagsList">
+                    {popularIndustriesArray.map((ind) => {
+                      return (
+                        <Link to={{pathname: "/community/industry/" + ind, state: {prevPath: window.location.pathname}}} key={ind} className="link" onClick={updatePathName}>
+                          <span
+                            className="multiple value paddingR"
+                            id={ind}
+                          >
+                            {ind}
+                          </span>
+                        </Link>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
               <div className="dataCard card" data-target="card" id="card-3">
                 <div className="padding10">
                   <strong><span role="img" aria-label="suitcase emoji">💼</span> Popular roles</strong>
-                  <div>Roles go here</div>
+                  <div className="tagsList">
+                    {popularRolesArray.map((role) => {
+                      return (
+                        <span
+                          className="multiple value paddingR"
+                          id={role}
+                          key={role}
+                        >
+                          {role}
+                        </span>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " hidden" : "")} data-target="card" id="card-4">
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "")} data-target="card" id="card-4">
                 {!isLoggedIn ? (
                   <div className="padding10">
-                    <strong className="darkGreyText"><span role="img" aria-label="book emoji">📖</span> Subjects people stud</strong>
+                    <strong><span role="img" aria-label="book emoji">📖</span> Top school subjects studied</strong>
+                    <div>
+                      <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                        <div className="dataItemUnlockSection-btnContainer" >
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="book emoji">📖</span> Top school subjects studied</strong>
+                    <div className="tagsList">
+                      {subjectsArray.map((subject) => {
+                        return (
+                          <span
+                            className="multiple value paddingR"
+                            id={subject}
+                            key={subject}
+                          >
+                            {subject}
+                          </span>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "")} data-target="card" id="card-5">
+                {!isLoggedIn ? (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="tools emoji">🛠️</span> Skills mentees have today</strong>
                     <div>
                       <div className="feedItemUnlockSection marginTop10 marginBottom10">
                         <div className="feedItemUnlockSection-btnContainer" >
@@ -183,13 +275,91 @@ class CommunityOverview extends React.Component {
                   </div>
                 ) : (
                   <div className="padding10">
-                    <strong><span role="img" aria-label="book emoji">📖</span> Subjects people stud</strong>
-                    <div>Subjects go here</div>
+                    <strong><span role="img" aria-label="tools emoji">🛠️</span> Skills mentees have today</strong>
+                    <div className="tagsList">
+                      {menteeSkillsArray.map((skill) => {
+                        return (
+                          <Link to={{pathname: "/community/skills/" + skill, state: {prevPath: window.location.pathname}}} key={skill} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple value paddingR"
+                              id={skill}
+                            >
+                              {skill}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
                   </div>
                 )}
               </div>
-              <div className="dataCard card" data-target="card" id="card-5">
-                BOX 6
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "")} data-target="card" id="card-6">
+                {!isLoggedIn ? (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Skills experts have today</strong>
+                    <div>
+                      <div className="feedItemUnlockSection marginTop10 marginBottom10">
+                        <div className="feedItemUnlockSection-btnContainer" >
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Skills experts have today</strong>
+                    <div className="tagsList">
+                      {mentorSkillsArray.map((skill) => {
+                        return (
+                          <Link to={{pathname: "/community/skills/" + skill, state: {prevPath: window.location.pathname}}} key={skill} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple value paddingR"
+                              id={skill}
+                            >
+                              {skill}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "")} data-target="card" id="card-7">
+                {!isLoggedIn ? (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Skills experts are building</strong>
+                    <div>
+                      <div className="feedItemUnlockSection marginTop10 marginBottom10">
+                        <div className="feedItemUnlockSection-btnContainer" >
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="fire emoji">🔥</span> Skills experts are building</strong>
+                    <div className="tagsList">
+                      {mentorLearningSkillsArray.map((skill) => {
+                        return (
+                          <Link to={{pathname: "/community/skills/" + skill, state: {prevPath: window.location.pathname}}} key={skill} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple value paddingR"
+                              id={skill}
+                            >
+                              {skill}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             </Carousel>
           )}

@@ -350,7 +350,7 @@ class CommunityPage extends React.Component {
 
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview isLoggedIn={isLoggedIn} userRole={userRole} community={community} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr}/>
+        return <CommunityOverview updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr}/>
       case 'questions':
         return <CommunityQuestions contentArr={contentArr} />
       case 'leaderboard':

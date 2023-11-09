@@ -34,6 +34,23 @@
 .dataCard:last-of-type {
   margin-left: 0px;
 }
-.dataCard.hidden{
-  background-color: grey;
+.dataCard.locked{
+  background-color: lightgrey;
+}
+.dataItemUnlockSection{
+  line-height: 1.25rem;
+}
+.dataItemUnlockSection:before{
+  color: transparent;
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.";
+  display: block;
+  position: relative;
+  text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+}
+.dataItemUnlockSection-btnContainer{
+  left: 6%;
+  position: relative;
+  top: 20%;
+  -webkit-transform: translate(0%,-180%);
+  transform: translate(0%,-180%);
 }
