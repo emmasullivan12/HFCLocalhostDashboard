@@ -5,6 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import {cdn} from './CDN.js';
+import Carousel from './Carousel.js';
 import {timeSince, getEmployerName} from './UserDetail.js';
 
 class CommunityOverview extends React.Component {
@@ -97,7 +98,7 @@ class CommunityOverview extends React.Component {
   }
 
   render() {
-    const {userRole, isLoggedIn} = this.props
+    const {userRole, isLoggedIn, community} = this.props
     //const {activityArrToShow} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
@@ -124,6 +125,97 @@ class CommunityOverview extends React.Component {
             </div>
           </div>
         )}
+        <div className="marginTop20">
+          {community.type == 'skill' && (
+            <Carousel>
+              <div className="dataCard card" data-target="card" id="card-0">
+                <div className="padding10">
+                  <strong><span role="img" aria-label="fire emoji">🔥</span> Popular companies</strong>
+                  <div>Companies hashtags go here</div>
+                </div>
+              </div>
+              <div className={"dataCard card" + (!isLoggedIn ? " hidden" : "")} data-target="card" id="card-1">
+                {!isLoggedIn ? (
+                  <div className="padding10">
+                    <strong className="darkGreyText"><span role="img" aria-label="brain emoji">🧠</span> Mentees also learning:</strong>
+                    <div>
+                      <div className="feedItemUnlockSection marginTop10 marginBottom10">
+                        <div className="feedItemUnlockSection-btnContainer" >
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="brain emoji">🧠</span> Mentees also learning:</strong>
+                    <div>Mentee skills go here</div>
+                  </div>
+                )}
+              </div>
+              <div className="dataCard card" data-target="card" id="card-2">
+                <div className="padding10">
+                  <strong><span role="img" aria-label="office emoji">🏢</span> Popular industries</strong>
+                  <div>Industries go here</div>
+                </div>
+              </div>
+              <div className="dataCard card" data-target="card" id="card-3">
+                <div className="padding10">
+                  <strong><span role="img" aria-label="suitcase emoji">💼</span> Popular roles</strong>
+                  <div>Roles go here</div>
+                </div>
+              </div>
+              <div className={"dataCard card" + (!isLoggedIn ? " hidden" : "")} data-target="card" id="card-4">
+                {!isLoggedIn ? (
+                  <div className="padding10">
+                    <strong className="darkGreyText"><span role="img" aria-label="book emoji">📖</span> Subjects people stud</strong>
+                    <div>
+                      <div className="feedItemUnlockSection marginTop10 marginBottom10">
+                        <div className="feedItemUnlockSection-btnContainer" >
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10">
+                    <strong><span role="img" aria-label="book emoji">📖</span> Subjects people stud</strong>
+                    <div>Subjects go here</div>
+                  </div>
+                )}
+              </div>
+              <div className="dataCard card" data-target="card" id="card-5">
+                BOX 6
+              </div>
+            </Carousel>
+          )}
+          {community.type == 'industry' && (
+            <Carousel>
+              <div className="dataCard card" data-target="card" id="card-0">
+                BOX 1
+              </div>
+              <div className="dataCard card" data-target="card" id="card-1">
+                BOX 2
+              </div>
+              <div className="dataCard card" data-target="card" id="card-2">
+                BOX 3
+              </div>
+              <div className="dataCard card" data-target="card" id="card-3">
+                BOX 4
+              </div>
+              <div className="dataCard card" data-target="card" id="card-4">
+                BOX 5
+              </div>
+              <div className="dataCard card" data-target="card" id="card-5">
+                BOX 6
+              </div>
+            </Carousel>
+          )}
+        </div>
       </div>
     );
   }

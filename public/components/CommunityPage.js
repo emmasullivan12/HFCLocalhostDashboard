@@ -56,12 +56,12 @@ class CommunityPage extends React.Component {
 
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skill',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       numUnanswered: 24
@@ -554,12 +554,12 @@ class CommunityPage extends React.Component {
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skill',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       numUnanswered: 24

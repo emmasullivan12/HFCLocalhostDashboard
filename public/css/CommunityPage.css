@@ -11,3 +11,29 @@
   border-top: 1px solid #000;
   width: 100px;
 }
+.dataCard {
+  background-color: #ffffff;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,.08);
+  height: 150px;
+  min-width: 200px;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 20px;
+}
+.dataCard:last-of-type {
+  margin-left: 0px;
+}
+.dataCard.hidden{
+  background-color: grey;
+}
