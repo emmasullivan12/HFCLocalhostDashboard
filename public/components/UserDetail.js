@@ -190,6 +190,14 @@ function getSkillDeets(skillID) {
   return skillArr[0]
 }
 
+function getRoleDeets(roleID) {
+
+  const roleArr = roleOptions
+    .filter(role => role.value == roleID)
+
+  return roleArr[0]
+}
+
 function getGroupDeets(gid) {
 
   const groupArr = groupsList
@@ -198,6 +206,14 @@ function getGroupDeets(gid) {
 
   return groupArr[0]
 
+}
+
+function getSubjectDeets(subjectID) {
+
+  const subjectArr = subjectsOptions
+    .filter(subject => subject.value == subjectID)
+
+  return subjectArr[0]
 }
 
 function convertHobbies(hobbies, hobbiesfreetext) {
@@ -508,4 +524,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

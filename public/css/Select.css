@@ -407,6 +407,15 @@ svg {
   -o-border-radius: .25rem;
   word-break: break-word;
 }
+.multiple.breakLine{
+  display: inline;
+  line-height: 30px;
+  word-break: auto-phrase;
+}
+.multiple.clickable:hover{
+  background: #d5d4ff;
+  cursor: pointer;
+}
 
 .multiple.value.focused {
   border: 1px solid #d8d7f5;

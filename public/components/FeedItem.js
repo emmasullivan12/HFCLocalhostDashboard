@@ -640,7 +640,7 @@ class FeedItem extends Component {
                         return (
                           <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={hashtag} className="link" onClick={updatePathName}>
                             <span
-                              className="multiple value paddingR"
+                              className="multiple clickable value paddingR"
                               id={hashtag}
                             >
                               {hashtag}

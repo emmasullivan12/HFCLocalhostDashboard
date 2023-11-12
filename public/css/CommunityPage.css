@@ -30,15 +30,30 @@
   vertical-align: top;
   text-align: left;
   margin-right: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
+/*.dataCard.isOverflowing{
+  -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent);
+}*/
 .dataCard:last-of-type {
   margin-left: 0px;
 }
+.dataCard::-webkit-scrollbar-thumb{
+  visibility: hidden;
+}
+.dataCard:hover::-webkit-scrollbar-thumb{
+  visibility: visible;
+}
 .dataCard.locked{
-  background-color: lightgrey;
+  background-color: #dbdada;
+  overflow: hidden;
 }
 .dataItemUnlockSection{
   line-height: 1.25rem;
+  position: absolute;
+  bottom: -17px;
+  width: 190px;
 }
 .dataItemUnlockSection:before{
   color: transparent;
@@ -53,4 +68,10 @@
   top: 20%;
   -webkit-transform: translate(0%,-180%);
   transform: translate(0%,-180%);
+}
+.dataItemUnlockSection-btnContainer #itemUnlockBtn {
+  background: #e5e5e5;
+}
+.dataItemUnlockSection-btnContainer #itemUnlockBtn:hover {
+  background: #e1e1e1;
 }

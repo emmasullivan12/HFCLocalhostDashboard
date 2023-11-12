@@ -3,14 +3,15 @@
   min-height: 150px;
   width: 100%;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  margin-bottom: 40px;
 }
 
 .carousel {
   overflow: hidden;
   scroll-behavior: smooth;
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0px;
   list-style: none;
   width: 100%;
   display: flex;
@@ -45,20 +46,22 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 1000;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
-  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.08);
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,.18);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.18);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.18);
 }
 .arrowBtn.left {
   position: absolute;
-  top: 50%;
+  /*top: 50%; */
+  top: 100%;
   left: 10px!important;
   transform: translate(0,-50%);
 }
 
 .arrowBtn.right {
   position: absolute;
-  top: 50%;
+  /*top: 50%; */
+  top: 100%;
   right: 10px!important;
   transform: translate(0,-50%);
 }

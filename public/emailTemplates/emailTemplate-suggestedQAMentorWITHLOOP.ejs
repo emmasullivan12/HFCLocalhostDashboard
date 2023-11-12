@@ -1,6 +1,6 @@
 <!-- THIS EMAIL WAS BUILT AND TESTED WITH LITMUS http://litmus.com -->
 <!-- IT WAS RELEASED UNDER THE MIT LICENSE https://opensource.org/licenses/MIT -->
-<!-- QUESTIONS? TWEET US @LITMUSAPP -->
+<!-- QUESTIONS? TWEET US @LITMUSAPP  -->
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
@@ -268,11 +268,11 @@
                                               <tr style="vertical-align:bottom">
                                                 <td style="text-align:center;vertical-align:bottom">
                                                   <table style="width: 40px;height:100%;box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;">
-                                                    <% if (qa.isanon == true || (qa.userprofilepic != null && qa.userprofilepic != '')) { %>
+                                                    <% if (qa.isanon == true || (qa.profilepic != null && qa.profilepic != '')) { %>
                                                       <tbody>
                                                         <tr>
                                                           <td>
-                                                            <p style="margin-bottom: 0px;left: 50%;transform: translate(-50%);position: relative;width:40px;height:40px;border-style:none;background-size: cover; background-size: cover;background-position: center center; border-radius: 50%; -webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%; background-image: url('<%= qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : ('https://media-uploads.prospela.com/userAvatars/' + qa.userprofilepic + '-360') %>')" />
+                                                            <p style="margin-bottom: 0px;left: 50%;transform: translate(-50%);position: relative;width:40px;height:40px;border-style:none;background-size: cover; background-size: cover;background-position: center center; border-radius: 50%; -webkit-border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-o-border-radius: 50%; background-image: url('<%= qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : ('https://media-uploads.prospela.com/userAvatars/' + qa.profilepic + '-360') %>')" />
                                                           </td>
                                                         </tr>
                                                       </tbody>
@@ -281,7 +281,7 @@
                                                         <tr>
                                                           <td>
                                                             <p style="padding-top: 10px;text-transform: uppercase;width:40px;height:30px;font-size: 20px;text-align: center;font-family:Lato;color: #fff;background-color: rgb(53,28,117); background-color: rgba(53,28,117,.5); margin: auto;border-radius: 50%; -webkit-border-radius: 50%;  -moz-border-radius: 50%;  -ms-border-radius: 50%;-o-border-radius: 50%;line-height: 20px;" >
-                                                              <%= qa.qauthorfname.charAt(0) %>
+                                                              <%= qa.fname.charAt(0) %>
                                                             </p>
                                                           </td>
                                                         </tr>
@@ -296,7 +296,7 @@
                                                     <% if (qa.isanon == true) { %>
                                                       <span>Anonymous</span>
                                                     <% } else {%>
-                                                      <%= qa.qauthorfname %>
+                                                      <%= qa.fname %>
                                                     <% } %>
                                                   </p>
                                                 </td>

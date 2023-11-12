@@ -48,11 +48,13 @@ class CommunityPage extends React.Component {
     super(props);
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
+      prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
     }
   }
 
   componentDidMount() {
     const {updateDocumentTitle} = this.props
+    const {prevFeedScrollPos} = this.state
 
     const community = {
       cmid: '1234',
@@ -68,6 +70,10 @@ class CommunityPage extends React.Component {
     }
     if(community != null){
       updateDocumentTitle(community.name + " community - Prospela.com")
+    }
+    if (prevFeedScrollPos != 0) {
+      const commContainer = document.getElementById("communityFeedContainer")
+      commContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
     }
   }
 
@@ -97,8 +103,26 @@ class CommunityPage extends React.Component {
     })
   }
 
+  handleCommunityFeedClick = (e) => {
+    e.stopPropagation()
+
+    const feedItems = document.getElementById('feedItems')
+
+    // Only if item is on the feed, otherwise is probably in a modal
+    if (feedItems.contains(e.target)){
+      const {updateFeedScrollPos} = this.props
+      const prevScrollPos = e.target.closest('#communityFeedContainer').scrollTop
+      updateFeedScrollPos(prevScrollPos)
+
+    // Is probably within a modal i.e. not directly clicking on feed
+    } else {
+      return
+    }
+
+  }
+
   renderTab = (community) => {
-    const {userRole, isLoggedIn, updatePathName} = this.props;
+    const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
     const {tabToView, goToUnansweredTab} = this.state;
 
     const contentArr = [ // Answers
@@ -350,9 +374,9 @@ class CommunityPage extends React.Component {
 
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr}/>
+        return <CommunityOverview updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={handleCommunityFeedClick}/>
       case 'questions':
-        return <CommunityQuestions contentArr={contentArr} />
+        return <CommunityQuestions contentArr={contentArr} handleCommunityFeedClick={handleCommunityFeedClick} />
       case 'leaderboard':
         return <CommunityLeaderboard />
     }
@@ -572,8 +596,8 @@ class CommunityPage extends React.Component {
       {type: "answer", timestamp: '2020-10-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null, mentoruid: '123'}
     ]
     const activityArrToShow = activityArr.sort((a,b)=> {
-      if(a.timestamp < b.timestamp) { return -1; }
-      if(a.timestamp > b.timestamp) { return 1; }
+      if(b.timestamp < a.timestamp) { return -1; }
+      if(b.timestamp > a.timestamp) { return 1; }
       return 0;
     })
 
@@ -620,7 +644,7 @@ class CommunityPage extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="tabWindow">
+        <div className="tabWindow" id="communityFeedContainer">
           <div className="title-blankPage marginBottom20">
             <MenuNav />
             <div className="greyText fontSize12 marginBottom20 noBold">
