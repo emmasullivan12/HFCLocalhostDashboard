@@ -32,12 +32,37 @@
   margin-right: 20px;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 }
 /*.dataCard.isOverflowing{
   -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent);
 }*/
 .dataCard:last-of-type {
   margin-left: 0px;
+}
+.dataCard.green { /* green */
+  background: #00d5a069!important;
+  border: 1px dotted #00d5a0!important;
+}
+.dataCard.red { /* red */
+  background: #ff6e8866!important;
+  border: 1px dotted #ff6e88!important;
+}
+.dataCard.purple { /* purple */
+  background: #6227de3d!important;
+  border: 1px dotted #6227de!important;
+}
+.dataCard:nth-of-type(3n+1) { /* green */
+  /*background: #00d5a021;*/
+  border: 1px dotted #00d5a0;
+}
+.dataCard:nth-of-type(3n+2) { /* red */
+/*  background: #ff6e8830;*/
+  border: 1px dotted #ff6e88;
+}
+.dataCard:nth-of-type(3n+0) { /* purple */
+  /*background: #6227de1f;*/
+  border: 1px dotted #6227de;
 }
 .dataCard::-webkit-scrollbar-thumb{
   visibility: hidden;
@@ -46,8 +71,25 @@
   visibility: visible;
 }
 .dataCard.locked{
-  background-color: #dbdada;
+  background-color: #aeaeae38!important;
+  border: 1px dotted #dbdada!important;
   overflow: hidden;
+}
+.more-info-icon{
+  position: absolute;
+  top: 10px;
+  left: 174px;
+}
+.more-info-icon.tooltip .tooltiptext.below{
+  top: 25px;
+  line-height: 15px;
+  padding: 5px 10px;
+  width: 150px;
+  right: 0;
+  left: unset;
+}
+.more-info-icon.tooltip .tooltiptext.below:after{
+  left: 92%;
 }
 .dataItemUnlockSection{
   line-height: 1.25rem;
@@ -60,7 +102,7 @@
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.";
   display: block;
   position: relative;
-  text-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  text-shadow: 0 0 8px rgb(0 0 0 / 30%);
 }
 .dataItemUnlockSection-btnContainer{
   left: 6%;
@@ -71,6 +113,10 @@
 }
 .dataItemUnlockSection-btnContainer #itemUnlockBtn {
   background: #e5e5e5;
+  border: 1px solid #a1a1a1;
+  box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
+  -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
+  -moz-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
 }
 .dataItemUnlockSection-btnContainer #itemUnlockBtn:hover {
   background: #e1e1e1;

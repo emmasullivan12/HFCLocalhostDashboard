@@ -316,6 +316,7 @@ class Dashboard extends Component{
   }
 
   updateCommFeedScrollPos = (prevScrollPos) => {
+
     this.setState({
       prevCommFeedScrollPos: prevScrollPos,
     })
@@ -448,7 +449,7 @@ class Dashboard extends Component{
     const goToSettings = false // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
     const isLoggedIn = true
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = false
+    const maxViewsReached = true
     const maxDataViewsReached = true // already viewed one "ah-ha" data on a skills/industry page so now prompt sign up
     const reachedMaxFeedLength = false
     const isIphone = isiOS()

@@ -46,7 +46,7 @@ class Carousel2 extends Component {
     const carousel = document.querySelector("[data-target='carousel']");
     const carouselWidth = carousel.offsetWidth
     const cardsShown = carouselWidth/(cardWidth+cardMarginRight);
-    console.log("cardsShown == cardCount: " +(Math.floor(cardsShown) == cardCount))
+
     this.setState({
       cardsShown: cardsShown,
       allCardsShown: Math.floor(cardsShown) == cardCount,
@@ -65,7 +65,7 @@ class Carousel2 extends Component {
       var cardToGet = ((currentIndex < (Math.floor(cardsShown) - 1)) ? (currentIndex + Math.floor(cardsShown)) : (currentIndex + 1))
       var cardID = ("card-"+cardToGet)
       var el = carousel.querySelector("#" + cardID)
-      el.scrollIntoView({ behavior: "smooth"})
+      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
 
       this.setState({
         atStart: false,
@@ -93,7 +93,7 @@ class Carousel2 extends Component {
       var cardToGet = ((currentIndex > Math.floor(cardsShown) - 1) ? (currentIndex - Math.floor(cardsShown)) : (currentIndex - 1))
       var cardID = ("card-"+cardToGet)
       var el = carousel.querySelector("#" + cardID)
-      el.scrollIntoView({ behavior: "smooth"})
+      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
       this.setState({
         atEnd: false,
         index: cardToGet

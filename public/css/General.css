@@ -817,6 +817,9 @@ table th .description{
 .fullWidth{
   width: 100%;
 }
+.width75pc{
+  width: 75%;
+}
 .width65pc{
   width: 65%;
 }
@@ -839,6 +842,10 @@ table th .description{
 .horizontallyCenter{
   width: 50%;
   margin: auto;
+}
+.horizontallyCenterLeftTransform{
+  left: 50%;
+  transform: translate(-50%);
 }
 .verticallyCenter{
   position: absolute;
@@ -941,6 +948,9 @@ table th .description{
 }
 .marginBottomMinus5 {
   margin-bottom: -5px;
+}
+.marginBottomMinus10 {
+  margin-bottom: -10px;
 }
 .marginLeft{
   margin-left: 1rem;
@@ -1209,6 +1219,13 @@ table th .description{
 }
 .tooltip .tooltiptext.endContentBox {
   left: -60px;
+}
+.tooltip.lightGreyText:hover{
+  color: #bdbdbd!important;
+}
+.tooltip.mediumGreyText:hover,
+.tooltip.darkGreyText:hover{
+  color: #3f3f3f!important;
 }
 .tooltiptext.chats,
 .tooltiptext.groups,

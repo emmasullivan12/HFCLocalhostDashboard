@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import AddHighlightTextBox from './AddHighlightTextBox.js';
 import Modal from './Modal';
+import ShareOptionsBox from './ShareOptionsBox.js';
 
 const AddHighlightModalProps = {
   ariaLabel: 'Post a Question',
@@ -24,7 +25,7 @@ const AddHighlightMentorModalProps = {
 
 class AskAQPrompt extends Component {
   render() {
-    const {userRole, hasNoContentYet, noResultsFound, updatePathName, isLoggedIn, checkHasAccess, noAccessHandler} = this.props
+    const {community, commURL, isCommPage, userRole, hasNoContentYet, noResultsFound, updatePathName, isLoggedIn, checkHasAccess, noAccessHandler} = this.props
 
     return (
       <section>
@@ -46,10 +47,10 @@ class AskAQPrompt extends Component {
           </h2>
           <p className="landingCTADesc">
             {(!isLoggedIn || userRole == "mentee") && (
-              <span>Get your burning questions answered by real employees</span>
+              <span>{isCommPage == true ? 'Looks like theres nobody here yet. Ask a question or invite others and we\'ll try to get this community going' : 'Get your burning questions answered by real employees'}</span>
             )}
             {userRole == "mentor" && (
-              <span>Share a general highlight or answer mentees Q&A</span>
+              <span>{isCommPage == true ? 'Looks like theres nobody here yet. Share a general highlight or invite others and we\'ll try to get this community going' : 'Share a general highlight or answer mentees Q&A'}</span>
             )}
           </p>
           {userRole == 'mentee' && (
@@ -66,6 +67,21 @@ class AskAQPrompt extends Component {
             <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
               <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ />
             </Modal>
+          )}
+          {isCommPage == true && (
+            <div className="marginTop20 dispBlock horizontallyCenterLeftTransform positionRel">
+              <ShareOptionsBox
+                id={community.cmid}
+                qURL={commURL}
+                contentType={community.type}
+                authorinsttype={null}
+                authorinstfreetext={null}
+                authorinst={null}
+                buttonToShow="linkEmojiInviteText"
+                fromCommunityPage
+                commName={community.name}
+              />
+            </div>
           )}
         </div>
       </section>
