@@ -121,3 +121,9 @@
 .dataItemUnlockSection-btnContainer #itemUnlockBtn:hover {
   background: #e1e1e1;
 }
+button[name="leaderboard"]:hover {
+  color: #c78c00;
+}
+button[name="leaderboard"].tabActive:hover {
+  border-bottom: 2px solid #c78c00;
+}

@@ -593,6 +593,9 @@ table th .description{
   width: 350px;
   margin: 0 0 15px;
 }
+.isSideDivOnMain{
+  display: none;
+}
 
 /*@media screen and (min-width: 1080px) and (max-width: 1200px) {
   .mainBar {
@@ -612,6 +615,9 @@ table th .description{
   }
   .sideBarContentHiddenOnShrink{
     display: none;
+  }
+  .isSideDivOnMain{
+    display: block;
   }
 }
 .gridContainer{
@@ -652,6 +658,9 @@ table th .description{
 }
 .zIndex0{
   z-index: 0!important;
+}
+.zIndex1{
+  z-index: 1;
 }
 .verticalAlignMiddle{
   vertical-align: middle;
@@ -808,8 +817,14 @@ table th .description{
 .hidden{
   visibility: hidden
 }
+.overflowVisible{
+  overflow: visible!important;
+}
 .maxWidth100{
   max-width: 100%;
+}
+.maxWidth450px{
+  max-width: 450px;
 }
 .maxWidth700px{
   max-width: 700px;
@@ -831,6 +846,9 @@ table th .description{
 }
 .width100px{
   width: 100px;
+}
+.width180px{
+  width: 180px;
 }
 .overflowYScroll{
   overflow-y: scroll;
@@ -867,6 +885,9 @@ table th .description{
 }
 .bottom15{
   bottom: 15px;
+}
+.bottom20 {
+  bottom: 20px;
 }
 .marginAuto{
   margin: auto;
@@ -906,6 +927,9 @@ table th .description{
 }
 .marginTop70{
   margin-top: 70px!important;
+}
+.marginTopMinus10 {
+  margin-top: -10px;
 }
 .marginTopMinus15 {
   margin-top: -15px;
@@ -973,6 +997,9 @@ table th .description{
 .marginRight {
   margin-right: 1rem;
 }
+.marginRight3{
+  margin-right: 3px!important;
+}
 .marginRight5{
   margin-right: 5px!important;
 }
@@ -1033,6 +1060,9 @@ table th .description{
 .paddingR{
   padding-right: 10px!important;
 }
+.paddingR15{
+  padding-right: 15px!important;
+}
 .paddingR20{
   padding-right: 20px!important;
 }
@@ -1087,6 +1117,9 @@ table th .description{
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+.displayInlineBlock{
+  display: inline-block;
 }
 .flexWrap{
   -webkit-flex-wrap: wrap;
@@ -2433,6 +2466,9 @@ a.button{
   right: 0px;
   display: table;
 }
+.shareOptionsContainer.commPage.tooltipLeft{
+  left: 0;
+}
 .shareOptionsContainer::after{
   content: "";
   position: absolute;
@@ -2447,6 +2483,10 @@ a.button{
 .shareOptionsContainer.commPage::after{
   right: 15px!important;
   left: unset!important;
+}
+.shareOptionsContainer.commPage.tooltipLeft::after{
+  left: 15px!important;
+  right: unset!important;
 }
 /* ICONS */
 .emoji-mart-emoji{

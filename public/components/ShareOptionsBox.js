@@ -88,7 +88,7 @@ class ShareOptionsBox extends React.Component {
   }
 
   render() {
-    const {id, qURL, qaItem, contentType, authorinsttype, authorinstfreetext, authorinst, buttonToShow, fromCommunityPage, commName} = this.props
+    const {id, qURL, qaItem, contentType, authorinsttype, authorinstfreetext, authorinst, buttonToShow, buttonTextToShow, fromCommunityPage, commName, customClassName} = this.props
     const {showShareOptions, showOptionsForItem} = this.state
 
     let url, twitterTextToShare, redditTextToShare, whatsappTextToShare // linkedinTextToShare is irrelevant as the only accept a url
@@ -108,15 +108,18 @@ class ShareOptionsBox extends React.Component {
     }
 
     return (
-      <button type="button" className={"marginRight8 button-unstyled opacity1 positionRel textLeft noSelect" + (fromCommunityPage ? " commShareBtn" : "")} aria-label="Share URL options" onClick={() => this.showShareOptions(id)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, id)}>
+      <button type="button" className={"button-unstyled opacity1 positionRel textLeft noSelect" + (fromCommunityPage ? " commShareBtn" : "")} aria-label="Share URL options" onClick={() => this.showShareOptions(id)} onKeyDown={(e) => this.showShareOptionsOnEnter(e, id)}>
         {buttonToShow == "shareTextShareIcon" && (
           <span>Share <i className="fas fa-share-alt"/></span>
         )}
         {buttonToShow == "linkEmojiInviteText" && (
           <span className="fontSize15 marginRight5"><span role="img" aria-label="link emoji">🔗</span> Invite</span>
         )}
+        {buttonToShow == "freeTextElectricPurple" && (
+          <span className="electricPurpleText fontSize15">{buttonTextToShow}</span>
+        )}
         {showShareOptions && showOptionsForItem == id && (
-          <div className={"shareOptionsContainer" + (fromCommunityPage ? " commPage" : "")} id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
+          <div className={"shareOptionsContainer" + (fromCommunityPage ? " commPage" : "") + (customClassName ? (" " + customClassName) : "")} id={id} tabIndex="0" ref={el => (this.shareOptions = el)} onKeyDown={this.closeShareOptionsOnEsc}>
             <div className="qTitle fontSize14 marginTop0"><strong>Share a link to this {fromCommunityPage == true ? "community" : contentType}</strong></div>
             <div className="input-box-container marginBottom10 fontSize12 noBold">
               <div className="highlightedTextOnFocus" name={qURL} tabIndex="0" ref={el => (this.highlightedTextOnFocus = el)}>{qURL}</div>

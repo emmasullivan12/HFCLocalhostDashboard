@@ -97,11 +97,11 @@ class CommunityPage extends React.Component {
     el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 
-  goToUnansweredQs = () => {
+/*goToUnansweredQs = () => {
     this.setState({
       tabToView: 'questions'
     })
-  }
+  }*/
 
   handleCommunityFeedClick = (e) => {
     e.stopPropagation()
@@ -121,11 +121,79 @@ class CommunityPage extends React.Component {
 
   }
 
+  renderCommunityActivity = (commURL, isMainBar) => {
+    const community = {
+      cmid: '1234',
+      name: 'Houdini',
+      type: 'skill',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
+      type: 'industry',
+      typeid: '19',*/
+      experts: ['1','2','3','4'],
+      members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
+    /*  experts: ['1','2','3','4'],
+      members: ['1','2','3','4','1','2','3','4','1','2','3','4'], */
+      numUnanswered: 24
+    }
+    //const activityArr = []
+    const activityArr = [
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob', mentoruid: '123'},
+      {type: "chatFeedbackRec", timestamp: '2020-02-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara', mentoruid: '123'},
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill', mentoruid: '123'},
+      {type: "question", timestamp: '2020-01-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David', mentoruid: null},
+      {type: "answer", timestamp: '2020-10-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null, mentoruid: '123'}
+    ]
+    const activityArrToShow = activityArr.length > 0 && activityArr.sort((a,b)=> {
+      if(b.timestamp < a.timestamp) { return -1; }
+      if(b.timestamp > a.timestamp) { return 1; }
+      return 0;
+    })
+
+    return (
+      <div className={isMainBar ? ("isSideDivOnMain marginBottom40 paddingL maxWidth450px" + (activityArr.length == 0 ? " displayNone" : "")) : "paddingL20 paddingR20"}>
+        <div className="bold darkGreyText marginBottom10">
+          {!isMainBar ? (
+            <span><i className="fontSize14 fas fa-coffee" /> Community Activity</span>
+          ) : (
+            <span>Community Activity</span>
+          )}
+        </div>
+        {activityArr.length > 0 && activityArrToShow.map((activity, index) => {
+          var isLast = (activityArrToShow.length - 1) == index
+          return (
+          <div className="paddingTop5" key={index}>
+            {this.renderActivityType(activity, isLast)}
+          </div>
+          )
+        })}
+        {activityArr.length == 0 && (
+          <div className="darkGreyText fontSize14">
+            <div>...nothing here yet!</div>
+            <div className="marginTop20">
+              <ShareOptionsBox
+                id={community.cmid}
+                qURL={commURL}
+                contentType={community.type}
+                authorinsttype={null}
+                authorinstfreetext={null}
+                authorinst={null}
+                buttonToShow="linkEmojiInviteText"
+                fromCommunityPage
+                commName={community.name}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
+
   renderTab = (community, commURL) => {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
-    const {tabToView, goToUnansweredTab} = this.state;
+    const {tabToView} = this.state;
 
-    /*const contentArr = [ // Answers
+    const contentArr = [ // Answers
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -370,13 +438,13 @@ class CommunityPage extends React.Component {
           {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
         ],
       }
-    ] */
-    const contentArr = []
+    ]
+  //  const contentArr = []
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} goToUnansweredQs={this.goToUnansweredQs} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick}/>
+        return <CommunityOverview renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick}/>
       case 'questions':
-        return <CommunityQuestions contentArr={contentArr} handleCommunityFeedClick={this.handleCommunityFeedClick} />
+        return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} contentArr={contentArr} handleCommunityFeedClick={this.handleCommunityFeedClick} />
       case 'leaderboard':
         return <CommunityLeaderboard />
     }
@@ -590,19 +658,6 @@ class CommunityPage extends React.Component {
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'], */
       numUnanswered: 24
     }
-    /*const activityArr = [
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob', mentoruid: '123'},
-      {type: "chatFeedbackRec", timestamp: '2020-02-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara', mentoruid: '123'},
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill', mentoruid: '123'},
-      {type: "question", timestamp: '2020-01-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David', mentoruid: null},
-      {type: "answer", timestamp: '2020-10-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qid: null, relatedqid: '123', qURL: "/what-wear-to-interview/#firstanswer", mentorfname: 'Samantha', mentorlname: 'Jones', mentorinsttype: 'sch', mentorText: 'SATC', menteefname: null, mentoruid: '123'}
-    ]*/
-    const activityArr = []
-    const activityArrToShow = activityArr.length > 0 && activityArr.sort((a,b)=> {
-      if(b.timestamp < a.timestamp) { return -1; }
-      if(b.timestamp > a.timestamp) { return 1; }
-      return 0;
-    })
 
     let urlText, commItem, isNonCoreCountry, isFromO18OnlyCountry, isU18
     var country = 'GBR'
@@ -624,8 +679,8 @@ class CommunityPage extends React.Component {
       //commItem = getRoleDeets(community.typeid)
       //urlText = commItem.urlText
     }
-
-    const commURL = "https://app.prospela.com/community/" + community.type + (community.type == 'skill' ? 's/' : '/') + urlText
+    const commURLending = "/community/" + community.type + (community.type == 'skill' ? 's/' : '/') + urlText
+    const commURL = "https://app.prospela.com" + commURLending
 
     // Add meta tags
     metaAdder('property="og:type"', "website")
@@ -670,17 +725,19 @@ class CommunityPage extends React.Component {
                   </button>
                 </div>
                 <span className="qCTA qaPage commPage">
-                  <ShareOptionsBox
-                    id={community.cmid}
-                    qURL={commURL}
-                    contentType={community.type}
-                    authorinsttype={null}
-                    authorinstfreetext={null}
-                    authorinst={null}
-                    buttonToShow="linkEmojiInviteText"
-                    fromCommunityPage
-                    commName={community.name}
-                  />
+                  <span className="marginRight8">
+                    <ShareOptionsBox
+                      id={community.cmid}
+                      qURL={commURL}
+                      contentType={community.type}
+                      authorinsttype={null}
+                      authorinstfreetext={null}
+                      authorinst={null}
+                      buttonToShow="linkEmojiInviteText"
+                      fromCommunityPage
+                      commName={community.name}
+                    />
+                  </span>
                   {userRole == 'mentee' && (
                     <Modal {...AskQModalProps}>
                       <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee' fromCommunityPage commType={community.type} commName={community.name}/>
@@ -705,43 +762,19 @@ class CommunityPage extends React.Component {
             </div>
           </div>
           <div className="groupdash-menuBar borderBtm borderGrey commPage">
-            <button type="button" name="overview" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>
-            <button type="button" name="questions" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
-            <button type="button" name="leaderboard" onClick={(e) => {this.updateTabToView(e), this.scrollToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
+            <Link to={{pathname: commURLending, state: {prevPath: window.location.pathname}}}>
+              <button type="button" name="overview" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>
+            </Link>
+            <Link to={{pathname: commURLending + "/questions", state: {prevPath: window.location.pathname}}}>
+              <button type="button" name="questions" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'questions' ? ' tabActive' : '')}>Questions</button>
+            </Link>
+            <Link to={{pathname: commURLending + "/leaderboard", state: {prevPath: window.location.pathname}}}>
+              <button type="button" name="leaderboard" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
+            </Link>
           </div>
           <div className="marginTop20">
-            <div className={"sideBar" + (tabToView != 'overview' ? " sideBarContentHiddenOnShrink" : "")} role="complementary" aria-label="sidebar">
-              <div className="paddingL20 paddingR20">
-                <div className="bold darkGreyText marginBottom10"><i className="fontSize14 fas fa-coffee" /> Community Activity</div>
-                {activityArr.length > 0 && activityArrToShow.map((activity, index) => {
-                  var isLast = (activityArrToShow.length - 1) == index
-                  return (
-                  <div className="paddingTop5" key={index}>
-                    {this.renderActivityType(activity, isLast)}
-                  </div>
-                  )
-                })}
-                {activityArr.length == 0 && (
-                  <div className="darkGreyText fontSize14">
-                    <div>...nothing here yet!</div>
-                    <div className="marginTop20">
-                      <ShareOptionsBox
-                        id={community.cmid}
-                        qURL={commURL}
-                        contentType={community.type}
-                        authorinsttype={null}
-                        authorinstfreetext={null}
-                        authorinst={null}
-                        buttonToShow="linkEmojiInviteText"
-                        fromCommunityPage
-                        commName={community.name}
-                      />
-                    </div>
-
-                  </div>
-
-                )}
-              </div>
+            <div className="sideBar sideBarContentHiddenOnShrink" role="complementary" aria-label="sidebar">
+              { this.renderCommunityActivity(commURL, false) }
               {(userRole == 'mentor' && isNonCoreCountry != true) || !isLoggedIn || (userRole == 'mentee' && isNonCoreCountry != true && (isFromO18OnlyCountry != true || (isFromO18OnlyCountry == true && isU18 != true))) && (
                 <div className="thinGreyContentBox sideBarContentHiddenOnShrink">
                   <div className="title">My Next Steps</div>

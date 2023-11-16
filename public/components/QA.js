@@ -489,7 +489,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     //  reportedstatus jsonb
     }
     const myID = '1234567'; //223456
-    const userRole = 'mentee'
+    const userRole = 'mentor'
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -923,16 +923,18 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                       )}
                       <div className="marginTop20 marginBottom20 qActionsContainer">
                         <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
-                          <ShareOptionsBox
-                            id={qaItem.qid}
-                            qURL={qURL}
-                            qaItem={qaItem}
-                            contentType="question"
-                            authorinsttype={null}
-                            authorinstfreetext={null}
-                            authorinst={null}
-                            buttonToShow="shareTextShareIcon"
-                          />
+                          <div className="marginRight8">
+                            <ShareOptionsBox
+                              id={qaItem.qid}
+                              qURL={qURL}
+                              qaItem={qaItem}
+                              contentType="question"
+                              authorinsttype={null}
+                              authorinstfreetext={null}
+                              authorinst={null}
+                              buttonToShow="shareTextShareIcon"
+                            />
+                          </div>
                         {/*  <div className="marginRight8">Follow</div> */}
                         {/*  {qIsMe == 'isMe' && (
                             <Modal {...DeleteContentModalProps}>
@@ -1100,16 +1102,18 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                             )}
                             <div className="marginTop20 marginBottom20 qActionsContainer">
                               <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
-                                <ShareOptionsBox
-                                  id={hid.hid}
-                                  qURL={("https://app.prospela.com/questions/" + hid.url)}
-                                  qaItem={qaItem}
-                                  contentType="answer"
-                                  authorinsttype={hid.authorinsttype}
-                                  authorinstfreetext={hid.authorinstfreetext}
-                                  authorinst={hid.authorinst}
-                                  buttonToShow="shareTextShareIcon"
-                                />
+                                <div className="marginRight8">
+                                  <ShareOptionsBox
+                                    id={hid.hid}
+                                    qURL={("https://app.prospela.com/questions/" + hid.url)}
+                                    qaItem={qaItem}
+                                    contentType="answer"
+                                    authorinsttype={hid.authorinsttype}
+                                    authorinstfreetext={hid.authorinstfreetext}
+                                    authorinst={hid.authorinst}
+                                    buttonToShow="shareTextShareIcon"
+                                  />
+                                </div>
                               {/*  <div className="marginRight8">Share</div>
                                 <div className="marginRight8">Follow</div> */}
                                 {aIsMe == 'isMe' && (

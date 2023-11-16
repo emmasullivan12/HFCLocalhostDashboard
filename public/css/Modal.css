@@ -261,7 +261,11 @@
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  .qCTA.qaPage.commPage .ModalOpenBtn-addHighlightQApage {
+  .qCTA.qaPage.commPage{
+    margin-top: -10px;
+  }
+  .qCTA.qaPage.commPage .ModalOpenBtn-addHighlightQApage,
+  .qCTA.qaPage.commPage .ModalOpenBtn-addAnswerQApage {
     float: left;
     margin-top: 0px;
     margin-right: 10px;
