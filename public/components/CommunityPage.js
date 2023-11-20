@@ -652,10 +652,10 @@ class CommunityPage extends React.Component {
     /*  name: 'Film, TV & VFX',
       type: 'industry',
       typeid: '19',*/
-    //  experts: ['1','2','3','4'],
-    //  members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
-      experts: [],
-      members: [],
+      experts: ['1','2','3','4'],
+      members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
+    //  experts: [],
+    ///  members: [],
       numUnanswered: 24
     }
 

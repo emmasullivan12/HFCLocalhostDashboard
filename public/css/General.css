@@ -532,6 +532,15 @@ table th .description{
 .brown{
   color: rosybrown;
 }
+.goldText{
+  color: #FFD700;
+}
+.silverText{
+  color: #C0C0C0;
+}
+.bronzeText{
+  color: #c78c00;
+}
 .orangeText{
   color: orange;
 }
