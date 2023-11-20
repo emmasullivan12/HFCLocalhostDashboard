@@ -1054,6 +1054,9 @@ table th .description{
 .paddingBtm20{
   padding-bottom: 20px;
 }
+.paddingR0{
+  padding-right: 0px!important;
+}
 .paddingR5{
   padding-right: 5px;
 }
@@ -2463,12 +2466,11 @@ a.button{
 .shareOptionsContainer.commPage{
   position: absolute;
   top: 30px;
-  right: 0px;
   display: table;
 }
-.shareOptionsContainer.commPage.tooltipLeft{
+/*.shareOptionsContainer.commPage.tooltipLeft{
   left: 0;
-}
+}*/
 .shareOptionsContainer::after{
   content: "";
   position: absolute;
@@ -2481,12 +2483,36 @@ a.button{
   transform: scaleY(-1);
 }
 .shareOptionsContainer.commPage::after{
+  left: 25px!important;
+}
+.shareOptionsContainer.commPage.topBtn{
+  right: 0px;
+}
+.shareOptionsContainer.commPage.topBtn::after{
   right: 15px!important;
   left: unset!important;
 }
-.shareOptionsContainer.commPage.tooltipLeft::after{
+/*.shareOptionsContainer.commPage.tooltipLeft::after{
   left: 15px!important;
   right: unset!important;
+}*/
+@media screen and (max-width: 600px) {
+  .shareOptionsContainer.commPage{
+    right: -130px;
+  }
+  .shareOptionsContainer.commPage::after{
+    right: 150px!important;
+    left: unset!important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shareOptionsContainer.commPage.topBtn{
+    right: -180px;
+  }
+  .shareOptionsContainer.commPage.topBtn::after{
+    right: 200px!important;
+    left: unset!important;
+  }
 }
 /* ICONS */
 .emoji-mart-emoji{

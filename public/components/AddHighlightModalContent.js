@@ -30,7 +30,7 @@ class AddHighlightModalContent extends Component {
 
   render() {
     const { highlightType, text, showEmojis, errorLoadingHashtags } = this.state;
-    const {modalID, userRole, isAddAnswer, isAddGeneral, updatePathName, qToAnswer, fromCommunityPage, commType, commName, handleCommPageChange} = this.props
+    const {modalID, userRole, isAddAnswer, isAddGeneral, updatePathName, qToAnswer, fromCommunityPage, commType, commName, updateTabToView, commURLending} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
     if(userRole == 'mentor' && highlightType == '' && isAddAnswer != true && isAddGeneral != true) {
@@ -58,14 +58,13 @@ class AddHighlightModalContent extends Component {
                 </Link>
               )
               : (
-                <button type="button" name="questions" className="postTypeButton" autoFocus onClick={(e) => {this.handleClick(e), handleCommPageChange(e)}} value='answer'>
-                {/*  <div className="postTypeIcon fontSize30">
-                    <i className="fas fa-question" />
-                  </div> */}
-                  <div className="placeholderPic askAQ" />
-                  <div className="postType-title"><strong>Q&A</strong></div>
-                  <div className="postType-desc">Browse mentee questions to answer</div>
-                </button>
+                <Link to={{pathname: commURLending + "/questions", state: {prevPath: window.location.pathname}}}>
+                  <button type="button" name="questions" autoFocus onClick={(e) => {this.handleClick(e), updateTabToView(e)}} className="postTypeButton" value='answer'>
+                    <div className="placeholderPic askAQ" />
+                    <div className="postType-title"><strong>Q&A</strong></div>
+                    <div className="postType-desc">Browse mentee questions to answer</div>
+                  </button>
+                </Link>
               )
             }
             <button type="button" className="postTypeButton" onClick={this.handleClick} value='other'>

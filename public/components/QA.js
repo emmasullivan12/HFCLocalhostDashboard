@@ -922,7 +922,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         </div>
                       )}
                       <div className="marginTop20 marginBottom20 qActionsContainer">
-                        <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
+                        <div className="displayFlex greyText fontSize12 qActionsBox marginBottom10 marginRight noSelect">
                           <div className="marginRight8">
                             <ShareOptionsBox
                               id={qaItem.qid}

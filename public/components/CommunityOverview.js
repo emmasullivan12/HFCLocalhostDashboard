@@ -127,7 +127,7 @@ class CommunityOverview extends React.Component {
   }
 
   render() {
-    const {renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick} = this.props
+    const {renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
     //const {activityArrToShow} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
@@ -198,7 +198,7 @@ class CommunityOverview extends React.Component {
                     Companies with the most active employee experts in this community
                   </span>
                 </span>
-                <div className="padding10">
+                <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="green-heart emoji">💚</span> </div>
                     <div className="displayInlineBlock"><strong>Active companies</strong></div>
@@ -245,7 +245,7 @@ class CommunityOverview extends React.Component {
                   </span>
                 </span>
                 {!isLoggedIn ? (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
@@ -263,7 +263,7 @@ class CommunityOverview extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span></div>
                       <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
@@ -311,7 +311,7 @@ class CommunityOverview extends React.Component {
                     Industries that use this skill most regularly, based on employee expert data
                   </span>
                 </span>
-                <div className="padding10">
+                <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="office emoji">🏢</span> </div>
                     <div className="displayInlineBlock"><strong>Popular industries</strong></div>
@@ -358,7 +358,7 @@ class CommunityOverview extends React.Component {
                     Roles that use this skill most regularly, based on employee expert data
                   </span>
                 </span>
-                <div className="padding10">
+                <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
                     <div className="displayInlineBlock"><strong>Popular roles</strong></div>
@@ -408,10 +408,10 @@ class CommunityOverview extends React.Component {
                   </span>
                 </span>
                 {!isLoggedIn ? (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                      <div className="displayInlineBlock"><strong>Top subjects studied</strong></div>
+                      <div className="displayInlineBlock"><strong>Top subjects</strong></div>
                     </div>
                     <div>
                       <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -426,10 +426,10 @@ class CommunityOverview extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                      <div className="displayInlineBlock"><strong>Top subjects studied</strong></div>
+                      <div className="displayInlineBlock"><strong>Top subjects</strong></div>
                     </div>
                     {subjects.length > 0 && (
                       <div className="dispBlock marginTop10">
@@ -474,7 +474,7 @@ class CommunityOverview extends React.Component {
                   </span>
                 </span>
                 {!isLoggedIn ? (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
@@ -492,7 +492,7 @@ class CommunityOverview extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
@@ -541,7 +541,7 @@ class CommunityOverview extends React.Component {
                   </span>
                 </span>
                 {!isLoggedIn ? (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
@@ -559,7 +559,7 @@ class CommunityOverview extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
@@ -608,7 +608,7 @@ class CommunityOverview extends React.Component {
                   </span>
                 </span>
                 {!isLoggedIn ? (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
@@ -626,7 +626,7 @@ class CommunityOverview extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="padding10">
+                  <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
                       <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
@@ -673,7 +673,7 @@ class CommunityOverview extends React.Component {
         { renderCommunityActivity(commURL, true) }
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
-          <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick}/>
+          <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} updateTabToView={updateTabToView}/>
         </div>
       </div>
     );

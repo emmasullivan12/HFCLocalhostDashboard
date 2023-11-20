@@ -28,13 +28,13 @@ class FeedContainer extends Component {
 
 
   render() {
-    const {community, commURL, isCommPage, userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler, isLoggedIn} = this.props
+    const {community, commURL, isCommPage, userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler, isLoggedIn, updateTabToView} = this.props
     const isLoadingMorePosts = false
 
     return (
       <div className="marginTop20" id="feedItems" onClick={handleFeedClick}>
         {contentArr.length == 0 && isLoadingMorePosts != true && (
-          <AskAQPrompt community={community} commURL={commURL} isCommPage={isCommPage} userRole={userRole} noResultsFound updatePathName={updatePathName} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler}/>
+          <AskAQPrompt community={community} commURL={commURL} isCommPage={isCommPage} userRole={userRole} noResultsFound updatePathName={updatePathName} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={updateTabToView}/>
         )}
         {contentArr.length > 0 && contentArr.map((post, index) => {
           const contentType = post.qid ? 'question' : post.type

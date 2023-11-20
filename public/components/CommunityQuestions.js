@@ -23,7 +23,7 @@ class CommunityQuestions extends React.Component {
 
   render() {
     const {filterBy} = this.state
-    const {contentArr, userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick} = this.props
+    const {community, commURL, contentArr, userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
 
     return (
       <div>
@@ -49,7 +49,7 @@ class CommunityQuestions extends React.Component {
             </div>
           </button>
         </div>
-        <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick}/>
+        <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} updateTabToView={updateTabToView}/>
       </div>
     );
   }
