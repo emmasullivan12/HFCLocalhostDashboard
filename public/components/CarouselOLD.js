@@ -1,4 +1,4 @@
-// Dex last merged this code on 15th sept 2020
+// Dex last merged this code on 20th nov 2023
 
 import React, { Component } from "react";
 import "../css/Carousel.css";

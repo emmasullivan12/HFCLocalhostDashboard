@@ -1,4 +1,4 @@
-// Dex last merged this code on 22nd mar 2023
+// Dex last merged this code on 20th nov 2023
 
 import React, { Component } from "react";
 
@@ -34,16 +34,16 @@ class AskAQPrompt extends Component {
             <React.Fragment>
               <div className="placeholderPic askAQ" />
               <h2 className="landingCTATitle">
-                {userRole == "mentee" && hasNoContentYet == true && (
+                {isLoggedIn && userRole == "mentee" && hasNoContentYet == true && (
                   <div>You haven&#39;t asked anything yet. </div>
                 )}
                 {(!isLoggedIn || (userRole == "mentee" && noResultsFound == true)) && (
                   <div>No results found. </div>
                 )}
-                {userRole == "mentor" && hasNoContentYet == true && (
+                {isLoggedIn && userRole == "mentor" && hasNoContentYet == true && (
                   <div>You haven&#39;t created any content yet. </div>
                 )}
-                {userRole == "mentor" && noResultsFound == true && (
+                {isLoggedIn && userRole == "mentor" && noResultsFound == true && (
                   <div>No results found. </div>
                 )}
               </h2>
@@ -58,19 +58,19 @@ class AskAQPrompt extends Component {
             </React.Fragment>
           )}
           <p className="landingCTADesc">
-            {userRole == "mentee" && (
-              <span>Looks like theres nobody here yet. Ask a question or invite others and we&#39;ll try to get this community going</span>
+            {(!isLoggedIn || userRole == "mentee") && (
+              <span>{isCommPage == true ? 'Looks like theres nobody here yet. Ask a question or invite others and we\'ll try to get this community going' : 'Get your burning questions answered by real employees'}</span>
             )}
             {userRole == "mentor" && (
-              <span>Looks like theres nobody here yet. Share a general highlight or invite others and we&#39;ll try to get this community going</span>
+              <span>{isCommPage == true ? 'Looks like theres nobody here yet. Share a general highlight or invite others and we\'ll try to get this community going' : 'Share a general highlight or answer mentees Q&A'}</span>
             )}
           </p>
-          {userRole == 'mentee' && (
+          {isLoggedIn && userRole == 'mentee' && (
             <Modal {...AddHighlightModalProps}>
               <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community.type} commName={community.name}/>
             </Modal>
           )}
-          {userRole == 'mentor' && (
+          {isLoggedIn && userRole == 'mentor' && (
             <Modal {...AddHighlightMentorModalProps}>
               <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName} fromCommunityPage={isCommPage == true} commType={community.type} commName={community.name} commURLending={commURLending} updateTabToView={updateTabToView}/>
             </Modal>

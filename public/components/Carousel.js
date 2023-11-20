@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import "../css/Carousel.css";
 
-class Carousel2 extends Component {
+class Carousel extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -137,4 +137,4 @@ class Carousel2 extends Component {
   }
 }
 
-export default Carousel2;
+export default Carousel;

@@ -489,7 +489,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
     //  reportedstatus jsonb
     }
     const myID = '1234567'; //223456
-    const userRole = 'mentor'
+    const userRole = ''
     const prevURL = this.props.location.state && this.props.location.state.prevPath
   /*  const user = {
       birthday: '2015-02-02T13:30:50.667Z'
@@ -1101,7 +1101,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                               </div>
                             )}
                             <div className="marginTop20 marginBottom20 qActionsContainer">
-                              <div className="displayFlex greyText fontSize12 qActionsBox marginRight noSelect">
+                              <div className="displayFlex greyText fontSize12 qActionsBox marginBottom10 marginRight noSelect">
                                 <div className="marginRight8">
                                   <ShareOptionsBox
                                     id={hid.hid}
