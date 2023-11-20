@@ -573,7 +573,7 @@ class HomePage extends Component {
   renderTab = () => {
     const {tabToView, userRole, isUserSearch, isTagSearch, searchText, filterBy, numResults} = this.state;
     const {updatePathName, isLoggedIn, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler} = this.props
-  //  const contentArr = []
+    const contentArr = []
   /* const contentArr = [ // Questions
       {
         qid: '123456',
@@ -645,7 +645,7 @@ class HomePage extends Component {
         url: "/what-wear-to-interview-3"
       },
     ] */
-    const contentArr = [ // Answers
+  /*  const contentArr = [ // Answers
       {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
@@ -890,7 +890,7 @@ class HomePage extends Component {
           {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
         ],
       }
-    ]
+    ] */
 
     switch (tabToView) {
       case 'all':

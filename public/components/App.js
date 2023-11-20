@@ -334,7 +334,7 @@ class Dashboard extends Component{
     };
 
     const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
-    const isLoggedIn = false //To be linked to Redux
+    const isLoggedIn = true //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 
     if (permitted == true) {
@@ -447,7 +447,7 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const goToSettings = false // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
-    const isLoggedIn = false
+    const isLoggedIn = true
     const oneMoreTilMaxViewsReached = false
     const maxViewsReached = false
     const maxDataViewsReached = true // already viewed one "ah-ha" data on a skills/industry page so now prompt sign up
@@ -734,7 +734,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = '' /*this.props.users.role*/;
+    const userRole = 'mentee' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

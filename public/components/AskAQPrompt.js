@@ -67,17 +67,17 @@ class AskAQPrompt extends Component {
           </p>
           {isLoggedIn && userRole == 'mentee' && (
             <Modal {...AddHighlightModalProps}>
-              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community.type} commName={community.name}/>
+              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name}/>
             </Modal>
           )}
           {isLoggedIn && userRole == 'mentor' && (
             <Modal {...AddHighlightMentorModalProps}>
-              <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName} fromCommunityPage={isCommPage == true} commType={community.type} commName={community.name} commURLending={commURLending} updateTabToView={updateTabToView}/>
+              <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName} fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name} commURLending={commURLending} updateTabToView={updateTabToView}/>
             </Modal>
           )}
-          {!isLoggedIn && !isLeaderboard && (
+          {!isLoggedIn && (
             <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community.type} commName={community.name}/>
+              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name}/>
             </Modal>
           )}
           {isCommPage == true && (

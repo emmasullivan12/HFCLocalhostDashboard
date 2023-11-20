@@ -58,12 +58,12 @@ class CommunityPage extends React.Component {
 
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skill',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       numUnanswered: 24
@@ -124,12 +124,12 @@ class CommunityPage extends React.Component {
   renderCommunityActivity = (commURL, isMainBar) => {
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skill',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
     /*  experts: ['1','2','3','4'],
@@ -646,12 +646,12 @@ class CommunityPage extends React.Component {
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skill',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
     //  experts: ['1','2','3','4'],
     //  members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
       experts: [],
@@ -731,20 +731,22 @@ class CommunityPage extends React.Component {
                     </button>
                   </div>
                   <span className="qCTA qaPage commPage">
-                    <span className="marginRight8">
-                      <ShareOptionsBox
-                        id={community.cmid}
-                        qURL={commURL}
-                        contentType={community.type}
-                        authorinsttype={null}
-                        authorinstfreetext={null}
-                        authorinst={null}
-                        buttonToShow="linkEmojiInviteText"
-                        fromCommunityPage
-                        commName={community.name}
-                        customClassName="topBtn"
-                      />
-                    </span>
+                    {isLoggedIn && (
+                      <span className="marginRight8">
+                        <ShareOptionsBox
+                          id={community.cmid}
+                          qURL={commURL}
+                          contentType={community.type}
+                          authorinsttype={null}
+                          authorinstfreetext={null}
+                          authorinst={null}
+                          buttonToShow="linkEmojiInviteText"
+                          fromCommunityPage
+                          commName={community.name}
+                          customClassName="topBtn"
+                        />
+                      </span>
+                    )}
                     {userRole == 'mentee' && (
                       <Modal {...AskQModalProps}>
                         <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee' fromCommunityPage commType={community.type} commName={community.name}/>
@@ -757,7 +759,19 @@ class CommunityPage extends React.Component {
                     )}
                     {!isLoggedIn && (
                       <React.Fragment>
-                        <div className="signUpPrompt-header isOnQAPage fontdarkGreyText marginBottom10Size16">
+                        <div className="signUpPrompt-header isOnQAPage fontdarkGreyText marginBottom10 fontSize16">
+                          <ShareOptionsBox
+                            id={community.cmid}
+                            qURL={commURL}
+                            contentType={community.type}
+                            authorinsttype={null}
+                            authorinstfreetext={null}
+                            authorinst={null}
+                            buttonToShow="linkEmojiInviteText"
+                            fromCommunityPage
+                            commName={community.name}
+                            customClassName="topBtn"
+                          />
                           <a className="button link Submit-btn signUpPrompt" href={"https://app.prospela.com/signup?origin=" + community.type + "&communityid=" + community.typeid}>
                             Join
                           </a>
