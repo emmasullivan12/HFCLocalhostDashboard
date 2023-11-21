@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {cdn} from './CDN.js';
 import Carousel from './Carousel.js';
 import FeedContainer from "./FeedContainer.js";
+import ShareOptionsBox from './ShareOptionsBox.js';
 import {getRoleDeets, getSkillDeets, getIndustryDeets, getSubjectDeets, timeSince, getEmployerName} from './UserDetail.js';
 
 class CommunityOverview extends React.Component {
@@ -73,30 +74,49 @@ class CommunityOverview extends React.Component {
     })
   }*/
 
-  renderMentorWelcomeMsg = () => {
+  renderMentorWelcomeMsg = (numQs, numUnanswered) => {
     const {community, commURL} = this.props
     var commURLending = commURL.split("https://app.prospela.com")[1]
-    console.log(commURLending)
-    if (community.numUnanswered > 0) {
+
+    if (numUnanswered > 0) {
       return (
         <div>
-          The community is humming along nicely! But there&#39;s <strong>+{community.numUnanswered} unanswered questions</strong> students are waiting on. <Link to={{pathname: commURLending + "/questions?filter=trending", state: {prevPath: window.location.pathname}}}><span className="link purpleText linkUnderline">Answer or share with a colleague &gt;&gt;</span></Link>
+          The community is humming along nicely! But there&#39;s <strong>+{numUnanswered} unanswered question{numUnanswered > 1 ? 's' : ''}</strong> students are waiting on. <Link to={{pathname: commURLending + "/questions?filter=trending", state: {prevPath: window.location.pathname}}}><span className="link purpleText linkUnderline">Answer or share with a colleague &gt;&gt;</span></Link>
+        </div>
+      )
+    } else if (numQs > 0) {
+      return (
+        <div>
+          By golly, the {community.name} community is doing swell. You don&#39;t have any unanswered questions from students.
         </div>
       )
     } else {
       return (
         <div>
-          By golly, the {community.name} community is doing swell. You don&#39;t have any unanswered questions from students!
+          It&#39;s quiet in the {community.name} community right now. Why not share a general post for students to see when they arrive?
         </div>
       )
     }
   }
 
   renderMenteeWelcomeMsg = () => {
-    const {community} = this.props
+    const {community, commURL} = this.props
     return (
       <div>
-        The community is humming along nicely! Know someone interested in learning from real employees? <strong>Invite them!</strong> (link above)
+        The community is humming along nicely! Know someone interested in learning from real employees? <span className="marginRight8">
+          <ShareOptionsBox
+            id={community.cmid}
+            qURL={commURL}
+            contentType={community.type}
+            authorinsttype={null}
+            authorinstfreetext={null}
+            authorinst={null}
+            buttonToShow="freeTextElectricPurple"
+            fromCommunityPage
+            commName={community.name}
+            buttonTextToShow="Invite them!"
+          />
+        </span>
       </div>
     )
   }
@@ -131,7 +151,7 @@ class CommunityOverview extends React.Component {
     //const {activityArrToShow} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
-    let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray
+    let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, questionsArr, numQs, numUnanswered
 
     const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
     const menteeSkills = ['2','15','26','55']
@@ -166,13 +186,18 @@ class CommunityOverview extends React.Component {
     // Grab subjects
     subjectsArray = subjects.length > 0 ? subjects.map(subject => getSubjectDeets(subject)) : []
 
+    // Work out unanswered questions
+    questionsArr = contentArr.filter(x => x.qid != null);
+    numQs = questionsArr != null ? questionsArr.length : 0
+    numUnanswered = questionsArr != null ? questionsArr.filter(x => (x.hids == null || x.hids.length == 0)).length : 0
+
     return (
       <div>
         {isLoggedIn && (
           <div className="dash-welcomeContainer marginBottom20">
             <div className="col-9">
               <div className="dash-welcomeHeader"><strong>Welcome{isFirstVisit ? ' back' : ''}, {fname}!</strong></div>
-              {(userRole == 'mentor' || userRole == 'mentor') && this.renderMentorWelcomeMsg()}
+              {(userRole == 'mentor' || userRole == 'mentor') && this.renderMentorWelcomeMsg(numQs, numUnanswered)}
               {userRole == 'mentee' && this.renderMenteeWelcomeMsg()}
             </div>
             <div className="col-3">

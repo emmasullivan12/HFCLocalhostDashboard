@@ -538,3 +538,11 @@ svg {
   border-color: #4e4ed6;
   background: #8f8fe5;
 }
+.select.smallSelect{
+  font-size: 13px!important;
+  padding: 3px 25px 3px 8px!important;
+  margin-bottom: 0!important;
+}
+.select.smallSelect .arrow{
+  top: 0px!important;
+}

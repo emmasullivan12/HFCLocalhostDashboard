@@ -193,13 +193,13 @@ class CommunityPage extends React.Component {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
     const {tabToView} = this.state;
 
-  /*  const contentArr = [ // Answers
-      {
+    const contentArr = [ // Answers
+    /*  {
         qid: '123456',
         datecreated: '2020-09-04T13:30:50.667Z',
         title: 'What is the best thing to wear to an interview?',
         textdetail: 'I know we have to be professional, but would like to stand out if possible.',
-        hids: [], // no answers yet
+        hids: ['1'], // no answers yet
         industriestopostto: ['99999','19','11','3','2'],
         hashtags: ['23'],
         hashtagsfreetext: ['my free text hashtag'],
@@ -266,7 +266,7 @@ class CommunityPage extends React.Component {
         lname: 'Smith',
         profilepic: '',
         url: "/what-wear-to-interview-3"
-      },
+      },*/
       {
         hid: '1234',
         uid: '123',
@@ -439,7 +439,8 @@ class CommunityPage extends React.Component {
         ],
       }
     ]
-  */  const contentArr = []
+
+  //  const contentArr = []
     switch (tabToView) {
       case 'overview':
         return <CommunityOverview renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>

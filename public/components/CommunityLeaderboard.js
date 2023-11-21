@@ -9,8 +9,8 @@ import {LoadingSpinner} from "./GeneralFunctions";
 import SelectBox from './Select.js';
 
 const userTypeOptions = [
-  {value: '0', label: 'Mentor'},
-  {value: '1', label: 'Mentee'},
+  {value: '0', label: 'Mentors'},
+  {value: '1', label: 'Mentees'},
   {value: '2', label: 'Company'},
 ];
 
@@ -20,7 +20,7 @@ class CommunityLeaderboard extends React.Component {
     this.state = {
       isFilteringTable: false,
       filterBy: 'last7days',
-      userTypeToShow: 'mentor',
+      userTypeToShow: '0', // 0 = mentor / 1 = mentee / 2 = company
     }
   }
 
@@ -42,6 +42,7 @@ class CommunityLeaderboard extends React.Component {
     })
 
     const { userTypeToShow } = this.state;
+
     this.setState({
       userTypeToShow: userInput,
     })
@@ -57,6 +58,9 @@ class CommunityLeaderboard extends React.Component {
       {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentee: 2, isU18: false},
       {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentee: 1, isU18: false},
       {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentee: 5, isU18: false},
+      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentee: 2, isU18: false},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentee: 1, isU18: false},
+      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentee: 5, isU18: false},
     ];
 
     const mentees = [
@@ -72,12 +76,13 @@ class CommunityLeaderboard extends React.Component {
     ];
 
     if (community.members.length > 0) {
-      if (userTypeToShow == 'mentor') {
+      if (userTypeToShow == '0') { // mentors
         mentors.forEach((user, index) => {
           rankedUsers.push(
             <LeaderboardItem
               user={user}
               key={user.uid}
+              index={index}
               isFirstItem={index == 0}
               userTypeToShow={userTypeToShow}
             />
@@ -85,7 +90,7 @@ class CommunityLeaderboard extends React.Component {
         }, () => {
           console.log("turn isFilteringTable back to false here in test server")
         });
-      } else if (userTypeToShow == 'mentee') {
+      } else if (userTypeToShow == '1') { // mentees
         return
       } else { // is a company filter
         companies.forEach((company, index) => {
@@ -93,6 +98,7 @@ class CommunityLeaderboard extends React.Component {
             <LeaderboardItem
               user={company}
               key={company.uid}
+              index={index}
               isFirstItem={index == 0}
               userTypeToShow={userTypeToShow}
             />
@@ -108,63 +114,67 @@ class CommunityLeaderboard extends React.Component {
       {community.members.length == 0 ? (
         <AskAQPrompt community={community} commURL={commURL} isCommPage={isCommPage} userRole={userRole} isLeaderboard updatePathName={updatePathName} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={updateTabToView}/>
       ) : (
-        <div className="contentBox">
-          <div className="fontSize15"><span className="fontSize20" role="img" aria-label="heart-hands emoji">🫶</span> A ranking of members by their contributions to elevating this community. Board updated daily.</div>
-          <div className="filterFeed-container textRight marginBottom20">
-            <button type="button" className={"filter-btn " + (filterBy == "last7days" ? "isActive" : "")} value="last7days" onClick={(e) => this.filterBy(e)}>
-              <div>
-                <span>Last 7 days</span>
-              </div>
-            </button>
-            <button type="button" className={"filter-btn " + (filterBy == "last30days" ? "isActive" : "")} value="last30days" onClick={(e) => this.filterBy(e)}>
-              <div>
-                <span>Last 30 days</span>
-              </div>
-            </button>
-            <button type="button" className={"filter-btn " + (filterBy == "last12m" ? "isActive" : "")} value="last12m" onClick={(e) => this.filterBy(e)}>
-              <div>
-                <span>Last 12 months</span>
-              </div>
-            </button>
-            <button type="button" className={"filter-btn " + (filterBy == "allTime" ? "isActive" : "")} value="allTime" onClick={(e) => this.filterBy(e)}>
-              <div>
-                <span>All time</span>
-              </div>
-            </button>
-            <div className="filterSection">
-              <div className="filterSelectBox dispInlineBlock">
+        <div>
+          <div className="displayFlex flexEnd marginBottom20">
+            <div className="filterFeed-container">
+              <button type="button" className={"filter-btn " + (filterBy == "last7days" ? "isActive" : "")} value="last7days" onClick={(e) => this.filterBy(e)}>
+                <div>
+                  <span>Last 7 days</span>
+                </div>
+              </button>
+              <button type="button" className={"filter-btn " + (filterBy == "last30days" ? "isActive" : "")} value="last30days" onClick={(e) => this.filterBy(e)}>
+                <div>
+                  <span>Last month</span>
+                </div>
+              </button>
+              <button type="button" className={"filter-btn " + (filterBy == "last12m" ? "isActive" : "")} value="last12m" onClick={(e) => this.filterBy(e)}>
+                <div>
+                  <span>Last year</span>
+                </div>
+              </button>
+              <button type="button" className={"filter-btn " + (filterBy == "allTime" ? "isActive" : "")} value="allTime" onClick={(e) => this.filterBy(e)}>
+                <div>
+                  <span>All time</span>
+                </div>
+              </button>
+            </div>
+            <div className="marginLeft10">
+              <div className="dispInlineBlock">
                 <SelectBox
                   options={userTypeOptions}
                   name='selectUserType'
                   placeholder='Mentors:'
-                  placeholderOnClick="Select leaderboard to show"
                   handleChange={this.filterUserType}
                   valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                  customClassName="smallSelect"
                 />
               </div>
             </div>
           </div>
-          <div className="table-container">
-            {(userTypeToShow == "mentor" || userTypeToShow == "company") && (
-              <table id={userTypeToShow == "mentor" ? "mentorLeaderboard-table" : "companyLeaderboard-table"}>
-                {isFilteringTable == true && (
-                  <div className="spinner-container">
-                    <LoadingSpinner />
-                  </div>
-                )}
-                {rankedUsers}
-              </table>
-            )}
-            {userTypeToShow == "mentee" && (
-              <table id="menteeLeaderboard-table">
-                {isFilteringTable == true && (
-                  <div className="spinner-container">
-                    <LoadingSpinner />
-                  </div>
-                )}
-                Mentee ranking goes here
-              </table>
-            )}
+          <div className="contentBox">
+            <div className="fontSize15"><span role="img" aria-label="green-heart emoji">💚</span> A ranking of members by their contributions to elevating this community. Board updated daily.</div>
+            <div className="table-container">
+              {(userTypeToShow == "0" || userTypeToShow == "2") && (
+                <table id={userTypeToShow == "mentor" ? "mentorLeaderboard-table" : "companyLeaderboard-table"}>
+                  {isFilteringTable == true && (
+                    <div className="spinner-container">
+                      <LoadingSpinner />
+                    </div>
+                  )}
+                  {rankedUsers}
+                </table>
+              )}
+              {userTypeToShow == "1" && (
+                <table id="menteeLeaderboard-table">
+                  {isFilteringTable == true && (
+                    <div className="spinner-container">
+                      <LoadingSpinner />
+                    </div>
+                  )}
+                  Mentee ranking goes here
+                </table>
+              )}
+            </div>
           </div>
         </div>
       )}

@@ -824,7 +824,10 @@ table th .description{
   margin-right: 1.25rem;
 }
 .hidden{
-  visibility: hidden
+  visibility: hidden;
+}
+.hidden.showOnHover:hover{
+  visibility: visible;
 }
 .overflowVisible{
   overflow: visible!important;

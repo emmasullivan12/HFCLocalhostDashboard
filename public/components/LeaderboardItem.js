@@ -29,22 +29,21 @@ class LeaderboardItem extends Component {
   }
 
   render() {
-    const {user, key, isFirstItem, userTypeToShow} = this.props;
+    const {user, index, isFirstItem, userTypeToShow} = this.props;
     const {isSortingTable} = this.state;
 
-    const nameToShow = (userTypeToShow == 'mentor' || (userTypeToShow == 'mentee' && user.isU18 != true)) ? (user.fname + " " + user.lname) : (userTypeToShow == 'mentee' ? user.fname : user.companyname)
-console.log(key)
+    const nameToShow = (userTypeToShow == '0' || (userTypeToShow == '1' && user.isU18 != true)) ? (user.fname + " " + user.lname) : (userTypeToShow == 'mentee' ? user.fname : user.companyname)
     return(
       <React.Fragment>
         {isFirstItem && (
           <thead>
             <tr>
-              <th className="leaderboardItem-ranking hasSort" onClick={() => this.handleSortTable(0, 'number', (userTypeToShow + 'Leaderboard-table'))}>Ranking <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="leaderboardItem-name hasSort" onClick={() => this.handleSortTable(1, 'alphabetically', (userTypeToShow + 'Leaderboard-table'))}>Username <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="leaderboardItem-ranking hasSort alignCenter" onClick={() => this.handleSortTable(0, 'number', (userTypeToShow + 'Leaderboard-table'))}><span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="leaderboardItem-name hasSort textLeft" onClick={() => this.handleSortTable(1, 'alphabetically', (userTypeToShow + 'Leaderboard-table'))}>Username <span className="greyText"><i className="fas fa-sort"/></span></th>
               <th className="leaderboardItem-topContribution">Top contribution</th>
-              <th className="leaderboardItem-numAnswers hasSort" onClick={() => this.handleSortTable(3, 'number', (userTypeToShow + 'Leaderboard-table'))}># Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="leaderboardItem-numGenerals hasSort" onClick={() => this.handleSortTable(4, 'number', (userTypeToShow + 'Leaderboard-table'))}># General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
-              <th className="leaderboardItem-numMentees hasSort" onClick={() => this.handleSortTable(5, 'number', (userTypeToShow + 'Leaderboard-table'))}># Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', (userTypeToShow + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', (userTypeToShow + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
+              <th className="leaderboardItem-numMentees hasSort alignCenter" onClick={() => this.handleSortTable(5, 'number', (userTypeToShow + 'Leaderboard-table'))}>No. Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
             </tr>
           </thead>
         )}
@@ -55,22 +54,22 @@ console.log(key)
         )}
         <tbody>
           <tr>
-            <td>
-              {(key + 1 > 3) &&  (
-                <span>{key + 1}</span>
+            <td className="alignCenter">
+              {(index + 1 > 3) && (
+                <span>{index + 1}</span>
               )}
-              {(key + 1 == 1) &&  (
-                <span className="goldText"><i className="fas fa-home" /></span>
+              {(index + 1 == 1) && (
+                <span className="goldText"><i className="fas fa-trophy" /></span>
               )}
-              {(key + 1 == 2) &&  (
-                <span className="silverText"><i className="fas fa-home" /></span>
+              {(index + 1 == 2) && (
+                <span className="silverText"><i className="fas fa-trophy" /></span>
               )}
-              {(key + 1 == 3) &&  (
-                <span className="bronzeText"><i className="fas fa-home" /></span>
+              {(index + 1 == 3) && (
+                <span className="bronzeText"><i className="fas fa-trophy" /></span>
               )}
             </td>
-            <td>{nameToShow}</td>
-            <td>
+            <td className="textLeft">{nameToShow}</td>
+            <td className="textLeft">
               {user.topContributionType}
             </td>
             <td className="alignCenter">{user.numAnswers}</td>

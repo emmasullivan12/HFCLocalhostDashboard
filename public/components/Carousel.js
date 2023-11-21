@@ -65,8 +65,17 @@ class Carousel extends Component {
       var cardToGet = ((currentIndex < (Math.floor(cardsShown) - 1)) ? (currentIndex + Math.floor(cardsShown)) : (currentIndex + 1))
       var cardID = ("card-"+cardToGet)
       var el = carousel.querySelector("#" + cardID)
-      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
 
+      // Remove (and reinstate) scroll on boxes as scrollbar was playing with scrollintoview function)
+      var elHadScroll = el.style.overflowY = "auto"
+      if (elHadScroll) {
+        el.style.overflowY = "hidden"
+      }
+      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
+      if (elHadScroll) {
+        el.style.overflowY = "auto"
+      }
+      
       this.setState({
         atStart: false,
         index: cardToGet

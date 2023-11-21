@@ -1323,14 +1323,14 @@ class SelectBox extends React.Component {
   }
 
   render() {
-    const { required, name, handleMouseDown, showBubbleVersion, disabled } = this.props;
+    const { required, name, handleMouseDown, showBubbleVersion, disabled, customClassName } = this.props;
     const { isOpen, isFocused } = this.state;
 
     return (
       <React.Fragment>
         <div
           tabIndex="0"
-          className={"select form-control-std" + (disabled ? ' disabled' : "") + (showBubbleVersion ? " showBubbleVersion" : "")}
+          className={"select form-control-std" + (customClassName ? (" " + customClassName) : "") + (disabled ? ' disabled' : "") + (showBubbleVersion ? " showBubbleVersion" : "")}
           id={"selectBox-"+name}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
