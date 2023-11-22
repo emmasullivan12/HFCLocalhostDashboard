@@ -70,7 +70,7 @@ class CommunityListItem extends Component {
               {type == 'industry' && (
                 <i className={groupIcon} alt="Industry Icon" />
               )}
-              {type == 'skill' && (
+              {type == 'skills' && (
                 <div className="presenceContainer">
                   <i className="fas fa-circle" />
                 </div>

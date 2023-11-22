@@ -214,7 +214,7 @@ class CommunityOverview extends React.Component {
           </div>
         )}
         <div>
-          {community.type == 'skill' && (
+          {community.type == 'skills' && (
             <Carousel>
               <div className={"dataCard card" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
                 <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
@@ -266,7 +266,7 @@ class CommunityOverview extends React.Component {
                 <span className="tooltip mediumGreyText more-info-icon">
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
-                    {community.type == 'skill' ? "Other skills" : "Skills"} mentees in this community are learning
+                    {community.type == 'skills' ? "Other skills" : "Skills"} mentees in this community are learning
                   </span>
                 </span>
                 {!isLoggedIn ? (

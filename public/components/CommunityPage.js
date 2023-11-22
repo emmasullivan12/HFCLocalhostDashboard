@@ -59,7 +59,7 @@ class CommunityPage extends React.Component {
     const community = {
       cmid: '1234',
       name: 'Houdini',
-      type: 'skill',
+      type: 'skills',
       typeid: '425',
     /*  name: 'Film, TV & VFX',
       type: 'industry',
@@ -125,7 +125,7 @@ class CommunityPage extends React.Component {
     const community = {
       cmid: '1234',
       name: 'Houdini',
-      type: 'skill',
+      type: 'skills',
       typeid: '425',
     /*  name: 'Film, TV & VFX',
       type: 'industry',
@@ -648,7 +648,7 @@ class CommunityPage extends React.Component {
     const community = {
       cmid: '1234',
       name: 'Houdini',
-      type: 'skill',
+      type: 'skills',
       typeid: '425',
     /*  name: 'Film, TV & VFX',
       type: 'industry',
@@ -672,7 +672,7 @@ class CommunityPage extends React.Component {
     if (community.type == 'industry') {
       commItem = getIndustryDeets(community.typeid)
       urlText = commItem.urlText
-    } else if (community.type == 'skill') {
+    } else if (community.type == 'skills') {
       commItem = getSkillDeets(community.typeid)
       urlText = commItem.urlText
     } else {
@@ -680,7 +680,7 @@ class CommunityPage extends React.Component {
       //commItem = getRoleDeets(community.typeid)
       //urlText = commItem.urlText
     }
-    const commURLending = "/community/" + community.type + (community.type == 'skill' ? 's/' : '/') + urlText
+    const commURLending = "/community/" + community.type + '/' + urlText
     const commURL = "https://app.prospela.com" + commURLending
 
     // Add meta tags
@@ -708,7 +708,7 @@ class CommunityPage extends React.Component {
             <div className="title-blankPage marginBottom20">
               <MenuNav />
               <div className="greyText fontSize12 marginBottom20 noBold">
-                <i className="fas fa-home" /> &gt; Communities &gt; {community.type == 'skill' ? 'Skills' : (community.type == 'industry' ? 'Industries' : 'Roles')} &gt; {community.name}
+                <i className="fas fa-home" /> &gt; Communities &gt; {community.type == 'skills' ? 'Skills' : (community.type == 'industry' ? 'Industries' : 'Roles')} &gt; {community.name}
               </div>
               <div className="paddingBtm marginBottom20">
                 <div className="chatItemFlexContainer qTitle qaPage">

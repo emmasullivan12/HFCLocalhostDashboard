@@ -1311,7 +1311,7 @@ class AddHighlightTextBox extends Component {
                     openOnClick
                     showValues
                     showCheckbox
-                    defaultChecked={(fromCommunityPage && (commType == 'skill' || commType == 'role')) ? ([commName]) : endingHashtagsArr}
+                    defaultChecked={(fromCommunityPage && (commType == 'skills' || commType == 'role')) ? ([commName]) : endingHashtagsArr}
                     handleDone={this.handleDoneClickHobbies}
                     suggestions={hashtagOptions}
                     name='selectHashtag'
