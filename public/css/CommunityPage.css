@@ -127,3 +127,84 @@ button[name="leaderboard"]:hover {
 button[name="leaderboard"].tabActive:hover {
   border-bottom: 2px solid #c78c00;
 }
+#companyLeaderboard-table,
+#mentorLeaderboard-table,
+#menteeLeaderboard-table{
+  border-collapse: collapse;
+}
+#companyLeaderboard-table thead tr,
+#mentorLeaderboard-table thead tr,
+#menteeLeaderboard-table thead tr {
+  height: 1px!important;
+  font-size: 13px;
+}
+th.leaderboardItem-ranking:hover .hidden.showOnHover{
+  visibility: visible;
+}
+th.leaderboardItem-ranking {
+  min-width: 40px;
+  width: 40px;
+}
+th.leaderboardItem-name,
+th.leaderboardItem-topContribution {
+  min-width: 200px;
+  width: 320px;
+}
+th.leaderboardItem-numAnswers {
+  min-width: 80px;
+  width: 80px;
+}
+th.leaderboardItem-numGenerals,
+th.leaderboardItem-numMentees{
+  min-width: 100px;
+  width: 100px;
+}
+#companyLeaderboard-table tr,
+#mentorLeaderboard-table tr,
+#menteeLeaderboard-table tr{
+  height: 60px;
+}
+
+#companyLeaderboard-table tbody tr:hover,
+#mentorLeaderboard-table tbody tr:hover,
+#menteeLeaderboard-table tbody tr:hover,
+#companyLeaderboard-table tbody tr:first-child,
+#mentorLeaderboard-table tbody tr:first-child,
+#menteeLeaderboard-table tbody tr:first-child{
+  background: #caf9f0bd;
+}
+#companyLeaderboard-table tbody tr:hover .internalBorder.green,
+#mentorLeaderboard-table tbody tr:hover .internalBorder.green,
+#menteeLeaderboard-table tbody tr:hover .internalBorder.green,
+#companyLeaderboard-table tbody tr:first-child .internalBorder.green,
+#mentorLeaderboard-table tbody tr:first-child .internalBorder.green,
+#menteeLeaderboard-table tbody tr:first-child .internalBorder.green{
+  visibility: visible;
+}
+#companyLeaderboard-table tbody tr:hover .greyText,
+#mentorLeaderboard-table tbody tr:hover .greyText,
+#menteeLeaderboard-table tbody tr:hover .greyText,
+#companyLeaderboard-table tbody tr:first-child .greyText,
+#mentorLeaderboard-table tbody tr:first-child .greyText,
+#menteeLeaderboard-table tbody tr:first-child .greyText{
+  color: #636262;
+}
+#companyLeaderboard-table tbody tr:hover svg.pointsIcon,
+#mentorLeaderboard-table tbody tr:hover svg.pointsIcon,
+#menteeLeaderboard-table tbody tr:hover svg.pointsIcon,
+#companyLeaderboard-table tbody tr:first-child svg.pointsIcon,
+#mentorLeaderboard-table tbody tr:first-child svg.pointsIcon,
+#menteeLeaderboard-table tbody tr:first-child svg.pointsIcon{ /* green */
+  filter: invert(44%) sepia(87%) saturate(1753%) hue-rotate(137deg) brightness(102%) contrast(101%);
+}
+#companyLeaderboard-table tbody tr:hover .pointsIcon,
+#mentorLeaderboard-table tbody tr:hover .pointsIcon,
+#menteeLeaderboard-table tbody tr:hover .pointsIcon,
+#companyLeaderboard-table tbody tr:first-child .pointsIcon,
+#mentorLeaderboard-table tbody tr:first-child .pointsIcon,
+#menteeLeaderboard-table tbody tr:first-child .pointsIcon{ /* green */
+  color: #00bf9b;
+}
+svg.pointsIcon{
+  transform: translate(0px, 3px);
+}

@@ -431,13 +431,11 @@ function sortTable(n, sortType, tableId, callback) {
             break;
           }
         } else if (sortType == 'number') {
-          // convert to Date format and compare
-          const xString = x.getElementsByTagName("i")[0].innerHTML
-          const yString = y.getElementsByTagName("i")[0].innerHTML
-          const xDate = xString
-          const yDate = yString
-
-          if (xDate > yDate) {
+          const xNumString = x.getElementsByClassName("number")[0]
+          const yNumString = y.getElementsByClassName("number")[0]
+          const xNum = parseInt(xNumString.innerHTML)
+          const yNum = parseInt(yNumString.innerHTML)
+          if (xNum > yNum) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
             break;
@@ -515,13 +513,11 @@ function sortTable(n, sortType, tableId, callback) {
             break;
           }
         } else if (sortType == 'number') {
-          // convert to Date format and compare
-          const xString = x.getElementsByTagName("i")[0].innerHTML
-          const yString = y.getElementsByTagName("i")[0].innerHTML
-          const xDate = xString
-          const yDate = yString
-
-          if (xDate > yDate) {
+          const xNumString = x.getElementsByClassName("number")[0]
+          const yNumString = y.getElementsByClassName("number")[0]
+          const xNum = parseInt(xNumString.innerHTML)
+          const yNum = parseInt(yNumString.innerHTML)
+          if (xNum < yNum) {
             // If so, mark as a switch and break the loop:
             shouldSwitch = true;
             break;

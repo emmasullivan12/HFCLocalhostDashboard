@@ -80,7 +80,7 @@ function getEmployerName(authorinsttype, authorinstfreetext, authorinst, showDes
     const uniInst = authorinst ? authorinst : authorinstfreetext
     return uniInst + (showDescText == true ? " student" : "")
   } else if (authorinsttype == 'sch') {
-    return 'school' + (showDescText == true ? " student" : "")
+    return 'School' + (showDescText == true ? " student" : "")
   } else {
     return
   }
