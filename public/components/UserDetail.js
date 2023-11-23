@@ -86,6 +86,36 @@ function getEmployerName(authorinsttype, authorinstfreetext, authorinst, showDes
   }
 }
 
+function getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18){
+  if (authorinsttype == 'job') {
+    if (isU18 == true) {
+      return authorrole
+    } else {
+      return authorrole + ' at ' + authorinstfreetext
+    }
+  } else if (authorinsttype == 'train') {
+    if (isU18 == true) {
+      return authortraining + ' trainee'
+    } else {
+      return authortraining + ' at ' + authorinstfreetext
+    }
+  } else if (authorinsttype == 'uni') {
+  //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
+    const uniInst = authorinst ? authorinst : authorinstfreetext
+    return authordegree + ' at ' + uniInst
+  } else if (authorinsttype == 'sch') {
+    return 'School Student'
+  } else {
+    const country = authorcountry
+    if (isU18 == true) {
+      return 'Lives in ' + country
+    } else {
+      const stateProv = authorstate
+      return 'Lives in ' + stateProv + ', ' + country
+    }
+  }
+}
+
 function getVerifLevelArr(verifiedType, eduemailverif, profemailverif, mentorSUStep, tsapproved) {
   let verifLevels = []
 
@@ -524,4 +554,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getRoleAndInst, getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

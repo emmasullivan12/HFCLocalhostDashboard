@@ -1075,6 +1075,9 @@ table th .description{
 .noMarginB{
   margin-bottom: 0!important;
 }
+.padding1pt5rem{
+  padding: 1.5rem!important;
+}
 .padding10{
   padding: 10px!important;
 }

@@ -131,12 +131,19 @@ button[name="leaderboard"].tabActive:hover {
 #mentorLeaderboard-table,
 #menteeLeaderboard-table{
   border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
 }
 #companyLeaderboard-table thead tr,
 #mentorLeaderboard-table thead tr,
 #menteeLeaderboard-table thead tr {
   height: 1px!important;
   font-size: 13px;
+}
+#companyLeaderboard-table thead tr.isMobile,
+#mentorLeaderboard-table thead tr.isMobile,
+#menteeLeaderboard-table thead tr.isMobile {
+  display: none;
 }
 th.leaderboardItem-ranking:hover .hidden.showOnHover{
   visibility: visible;
@@ -150,6 +157,16 @@ th.leaderboardItem-topContribution {
   min-width: 200px;
   width: 320px;
 }
+/*th.leaderboardItem-name.isMobile{
+  min-width: 180px;
+  width: 180px;
+}
+th.leaderboardItem-numAnswers.isMobile,
+th.leaderboardItem-numGenerals.isMobile,
+th.leaderboardItem-numMentees.isMobile{
+  min-width: 40px;
+  width: 40px;
+}*/
 th.leaderboardItem-numAnswers {
   min-width: 80px;
   width: 80px;
@@ -158,6 +175,14 @@ th.leaderboardItem-numGenerals,
 th.leaderboardItem-numMentees{
   min-width: 100px;
   width: 100px;
+}
+.contentBox.isMobile{
+  margin-left: -21px;
+  margin-right: -21px;
+  margin-bottom: -21px;
+}
+.table-container.isMobile{
+  overflow-x: hidden;
 }
 #companyLeaderboard-table tr,
 #mentorLeaderboard-table tr,
@@ -207,4 +232,13 @@ th.leaderboardItem-numMentees{
 }
 svg.pointsIcon{
   transform: translate(0px, 3px);
+}
+svg.pointsIcon.isMobile {
+  transform: translate(0px, 0px);
+}
+.pointsIcon.tooltip .tooltiptext.last{
+  left: -38px;
+}
+.pointsIcon.tooltip .tooltiptext.below{
+  top: 25px;
 }

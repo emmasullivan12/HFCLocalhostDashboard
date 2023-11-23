@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 
 import AskAQPrompt from "./AskAQPrompt";
 import LeaderboardItem from "./LeaderboardItem";
-import {sortTable, LoadingSpinner} from "./GeneralFunctions";
+import {sortTable, checkMobile, LoadingSpinner} from "./GeneralFunctions";
 import SelectBox from './Select.js';
 
 const userTypeOptions = [
@@ -21,6 +21,7 @@ class CommunityLeaderboard extends React.Component {
       isFilteringTable: false,
       isSortingTable: false,
       filterBy: 'last7days',
+      isMobile: checkMobile(),
       userTypeToShow: '0', // 0 = mentor / 1 = mentee / 2 = company
     }
   }
@@ -62,23 +63,27 @@ class CommunityLeaderboard extends React.Component {
 
   render() {
     const {community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
-    const {isFilteringTable, isSortingTable, userTypeToShow, filterBy} = this.state
+    const {isFilteringTable, isSortingTable, userTypeToShow, filterBy, isMobile} = this.state
 
     const rankedUsers = [];
 
     const mentors = [
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: false},
-      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false},
-      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false},
-      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: false},
-      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false},
-      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false},
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 7, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '11', currrole: '', currtraining: '', degree: 'BSc Business', state: '', country: ''},
+      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 3, numMentees: 2, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 4, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
     ];
 
     const mentees = [
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: true},
-      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false},
-      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: true},
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: true, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: true, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: true, eetstatus: 'job', currco: 'Starbucks', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Barista', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'NY', country: 'USA'},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: true, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
     ];
 
     const companies = [
@@ -89,7 +94,17 @@ class CommunityLeaderboard extends React.Component {
 
     if (community.members.length > 0) {
       if (userTypeToShow == '0') { // mentors
-        mentors.forEach((user, index) => {
+        const mentorsSorted = mentors.sort((a,b)=> {
+          if(b.numAnswers < a.numAnswers) { return -1; }
+          if(b.numAnswers > a.numAnswers) { return 1; }
+          if (b.numGenerals < a.numGenerals) return -1;
+          if (b.numGenerals > a.numGenerals) return 1;
+          if (b.numMentees < a.numMentees) return -1;
+          if (b.numMentees > a.numMentees) return 1;
+          return 0;
+        })
+
+        mentorsSorted.forEach((user, index) => {
           rankedUsers.push(
             <LeaderboardItem
               user={user}
@@ -98,6 +113,8 @@ class CommunityLeaderboard extends React.Component {
               userTypeToShow={userTypeToShow}
               checkHasAccess={checkHasAccess}
               noAccessHandler={noAccessHandler}
+              isMobile={isMobile}
+              isLastItem={(index + 1) == mentorsSorted.length}
             />
           );
         }, () => {
@@ -106,7 +123,17 @@ class CommunityLeaderboard extends React.Component {
       } else if (userTypeToShow == '1') { // mentees
         return
       } else { // is a company filter
-        companies.forEach((company, index) => {
+        const companiesSorted = companies.sort((a,b)=> {
+          if(b.numAnswers < a.numAnswers) { return -1; }
+          if(b.numAnswers > a.numAnswers) { return 1; }
+          if (b.numGenerals < a.numGenerals) return -1;
+          if (b.numGenerals > a.numGenerals) return 1;
+          if (b.numMentees < a.numMentees) return -1;
+          if (b.numMentees > a.numMentees) return 1;
+          return 0;
+        })
+
+        companiesSorted.forEach((company, index) => {
           rankedUsers.push(
             <LeaderboardItem
               user={company}
@@ -115,6 +142,8 @@ class CommunityLeaderboard extends React.Component {
               userTypeToShow={userTypeToShow}
               checkHasAccess={checkHasAccess}
               noAccessHandler={noAccessHandler}
+              isMobile={isMobile}
+              isLastItem={(index + 1) == companiesSorted.length}
             />
           );
         }, () => {
@@ -129,16 +158,16 @@ class CommunityLeaderboard extends React.Component {
         <AskAQPrompt community={community} commURL={commURL} isCommPage={isCommPage} userRole={userRole} isLeaderboard updatePathName={updatePathName} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={updateTabToView}/>
       ) : (
         <div>
-          <div className="displayFlex flexEnd marginBottom20">
+          <div className={isMobile == true ? "textRight marginBottom20" : "displayFlex flexEnd marginBottom20"}>
             <div className="filterFeed-container">
-              <button type="button" className={"filter-btn " + (filterBy == "last7days" ? "isActive" : "")} value="last7days" onClick={(e) => this.filterBy(e)}>
+            {/*  <button type="button" className={"filter-btn " + (filterBy == "last7days" ? "isActive" : "")} value="last7days" onClick={(e) => this.filterBy(e)}>
                 <div>
                   <span>Last 7 days</span>
                 </div>
-              </button>
+              </button>*/}
               <button type="button" className={"filter-btn " + (filterBy == "last30days" ? "isActive" : "")} value="last30days" onClick={(e) => this.filterBy(e)}>
                 <div>
-                  <span>Last month</span>
+                  <span>Last 30 days</span>
                 </div>
               </button>
               <button type="button" className={"filter-btn " + (filterBy == "last12m" ? "isActive" : "")} value="last12m" onClick={(e) => this.filterBy(e)}>
@@ -152,7 +181,7 @@ class CommunityLeaderboard extends React.Component {
                 </div>
               </button>
             </div>
-            <div className="marginLeft10">
+            <div className={isMobile == true ? "marginTop10" : "marginLeft10"}>
               <div className="dispInlineBlock">
                 <SelectBox
                   options={userTypeOptions}
@@ -165,19 +194,19 @@ class CommunityLeaderboard extends React.Component {
               </div>
             </div>
           </div>
-          <div className="contentBox">
+          <div className={"contentBox padding1pt5rem" + (isMobile == true ? " isMobile" : "")}>
             <div className="fontSize15 marginBottom20"><span role="img" aria-label="green-heart emoji">💚</span> A ranking of members by their contributions to elevating this community. Board updated daily.</div>
-            <div className="table-container marginLeftMinus5">
+            <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")}>
               {(userTypeToShow == "0" || userTypeToShow == "2") && (
                 <table id={userTypeToShow == "0" ? "mentorLeaderboard-table" : "companyLeaderboard-table"}>
                   <thead>
-                    <tr>
+                    <tr className={(isMobile == true ? "isMobile" : "")}>
                       <th className="leaderboardItem-ranking hasSort alignCenter" onClick={() => this.handleSortTable(0, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}><span className="greyText hidden showOnHover"><i className="fas fa-sort"/></span></th>
                       <th className="leaderboardItem-name textLeft" />
-                      <th className="leaderboardItem-topContribution textLeft">Top contribution</th>
-                      <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
-                      <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
-                      <th className="leaderboardItem-numMentees hasSort alignCenter" onClick={() => this.handleSortTable(5, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>No. Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
+                    {/*  <th className="leaderboardItem-topContribution textLeft">Top contribution</th>*/}
+                      <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(2, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
+                      <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
+                      <th className="leaderboardItem-numMentees hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>No. Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
                     </tr>
                   </thead>
                   {(isFilteringTable == true || isSortingTable == true) && (
