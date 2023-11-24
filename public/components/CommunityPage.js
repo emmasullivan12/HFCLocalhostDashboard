@@ -49,6 +49,7 @@ class CommunityPage extends React.Component {
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
+      loggedInUserIsGroupMember: false,
     }
   }
 
@@ -58,19 +59,25 @@ class CommunityPage extends React.Component {
 
     const community = {
       cmid: '1234',
-      name: 'Houdini',
+    /*  name: 'Houdini',
       type: 'skills',
-      typeid: '425',
-    /*  name: 'Film, TV & VFX',
+      typeid: '425',*/
+      name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',*/
+      typeid: '19',
       experts: ['1','2','3','4'],
-      members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
+      members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
       numUnanswered: 24
     }
     if(community != null){
       updateDocumentTitle(community.name + " community - Prospela.com")
     }
+    const loggedInUID = '2'
+    const loggedInUserIsGroupMember = community.members.some(e => e.uid == loggedInUID);
+    this.setState({
+      loggedInUserIsGroupMember: loggedInUserIsGroupMember
+    })
+    console.log(loggedInUserIsGroupMember)
     if (prevFeedScrollPos != 0) {
       const commContainer = document.getElementById("communityFeedContainer")
       commContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
@@ -124,12 +131,12 @@ class CommunityPage extends React.Component {
   renderCommunityActivity = (commURL, isMainBar) => {
     const community = {
       cmid: '1234',
-      name: 'Houdini',
+    /*  name: 'Houdini',
       type: 'skills',
-      typeid: '425',
-    /*  name: 'Film, TV & VFX',
+      typeid: '425', */
+      name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',*/
+      typeid: '19',
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
     /*  experts: ['1','2','3','4'],
@@ -191,7 +198,7 @@ class CommunityPage extends React.Component {
 
   renderTab = (community, commURL) => {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
-    const {tabToView} = this.state;
+    const {tabToView, loggedInUserIsGroupMember} = this.state;
 
     const contentArr = [ // Answers
     /*  {
@@ -447,7 +454,7 @@ class CommunityPage extends React.Component {
       case 'questions':
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
-        return <CommunityLeaderboard isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
+        return <CommunityLeaderboard loggedInUserIsGroupMember={loggedInUserIsGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
     }
   }
 
@@ -647,14 +654,14 @@ class CommunityPage extends React.Component {
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-      name: 'Houdini',
+    /*  name: 'Houdini',
       type: 'skills',
-      typeid: '425',
-    /*  name: 'Film, TV & VFX',
+      typeid: '425',*/
+      name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',*/
+      typeid: '19',
       experts: ['1','2','3','4'],
-      members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
+      members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
     //  experts: [],
     ///  members: [],
       numUnanswered: 24
@@ -804,6 +811,28 @@ class CommunityPage extends React.Component {
                        <Link to={{pathname: "/home", state: {prevPath: window.location.pathname}}} className="dispBlock" onClick={() => {updatePathName(), highlightStepsBox()}}>
                          <div>Apply to {(userRole == 'mentee' || !isLoggedIn) ? 'get a mentor' : 'to become a mentor'}</div>
                       </Link>
+                    </div>
+                  </div>
+                )}
+                {!isLoggedIn && (
+                  <div className="thinPurpleContentBox sideBarContentHiddenOnShrink signUpPromptBanner onFeedSideBar">
+                    <div className="bannerTextContainer">
+                      <div className="prBannerSmallLogoContainer marginBottom20">
+                        <img
+                          className="prLogoImg"
+                          alt="Prospela Logo"
+                          srcSet={cdn+"/images/Prospela%20Logo_Dark.png 213w, "+cdn+"/images/Prospela%20Logo_Dark.png 314w, "+cdn+"/images/Prospela%20Logo_Dark.png 640w"}
+                          sizes="(max-width: 1440px) 69px, 69px"
+                          src={cdn+"/images/Prospela%20Logo_Dark.png"}
+                        />
+                      </div>
+                      <div className="fontSize14">Career Q&A with industry experts, 1:1 mentoring & a lasting professional network at your fingertips</div>
+                      <div className="marginBottom20 marginTop70 dispInlineBlock">
+                        <a className="button link Submit-btn signUpPrompt marginBottom5 dispInlineBlock" href={"https://app.prospela.com/signup?origin=" + community.type + "FeedSideBar"}>
+                          Sign up (free)
+                        </a>
+                        <a className="dispBlock alignCenter fontSize13 electricPurpleText" href={"https://app.prospela.com/login?origin=" + community.type + "FeedSideBar"}>or Login</a>
+                      </div>
                     </div>
                   </div>
                 )}

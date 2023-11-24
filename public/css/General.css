@@ -337,13 +337,13 @@ table th .description{
 .height60px{
   height: 60px;
 }
+.height400px{
+  height: 400px;
+}
 .internalBorder{
   width: 3px;
   margin-left: -1px;
   background-color: inherit;
-}
-.internalBorder.green{
-  background-color: #58d2bb;
 }
 .div-li-container{
   margin-top: .5rem;
@@ -853,6 +853,9 @@ table th .description{
 .visible{
   visibility: visible;
 }
+.overflowHidden{
+  overflow: hidden;
+}
 .overflowVisible{
   overflow: visible!important;
 }
@@ -925,6 +928,9 @@ table th .description{
 .top15{
   top: 15px;
 }
+.top35{
+  top: 35px;
+}
 .bottom15{
   bottom: 15px;
 }
@@ -960,7 +966,7 @@ table th .description{
 }
 .marginTop40 {
   margin-top: 40px!important;
-}
+}.
 .marginTop50 {
   margin-top: 50px!important;
 }
@@ -1096,6 +1102,9 @@ table th .description{
 .paddingTop{
   padding-top: 10px!important;
 }
+.paddingTop15{
+  padding-top: 15px!important;
+}
 .paddingTop2{
   padding-top: 2px;
 }
@@ -1141,6 +1150,9 @@ table th .description{
 .paddingL30{
   padding-left: 30px!important;
 }
+.paddingL40{
+  padding-left: 40px!important;
+}
 .paddingL50{
   padding-left: 50px!important;
 }
@@ -1177,6 +1189,9 @@ table th .description{
 }
 .displayInlineBlock{
   display: inline-block;
+}
+.displayBlock{
+  display: block;
 }
 .flexWrap{
   -webkit-flex-wrap: wrap;

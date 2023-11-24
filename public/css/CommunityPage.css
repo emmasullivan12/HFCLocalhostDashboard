@@ -111,20 +111,23 @@
   -webkit-transform: translate(0%,-180%);
   transform: translate(0%,-180%);
 }
-.dataItemUnlockSection-btnContainer #itemUnlockBtn {
+.dataItemUnlockSection-btnContainer #itemUnlockBtn,
+.leaderboardUnlockSection-btnContainer #itemUnlockBtn {
   background: #e5e5e5;
   border: 1px solid #a1a1a1;
   box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
   -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
   -moz-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
 }
-.dataItemUnlockSection-btnContainer #itemUnlockBtn:hover {
+.dataItemUnlockSection-btnContainer #itemUnlockBtn:hover,
+.leaderboardUnlockSection-btnContainer #itemUnlockBtn:hover {
   background: #e1e1e1;
 }
-button[name="leaderboard"]:hover {
+button[name="leaderboard"].groupdash-menuBtn:not(.tabActive) { /* gold */
   color: #c78c00;
 }
 button[name="leaderboard"].tabActive:hover {
+  color: #c78c00;
   border-bottom: 2px solid #c78c00;
 }
 #companyLeaderboard-table,
@@ -152,6 +155,10 @@ th.leaderboardItem-ranking {
   min-width: 40px;
   width: 40px;
 }
+th.leaderboardItem-ranking.isMentee{
+  min-width: 0px;
+  width: 0px;
+}
 th.leaderboardItem-name,
 th.leaderboardItem-topContribution {
   min-width: 200px;
@@ -167,12 +174,14 @@ th.leaderboardItem-numMentees.isMobile{
   min-width: 40px;
   width: 40px;
 }*/
-th.leaderboardItem-numAnswers {
+th.leaderboardItem-numAnswers,
+th.leaderboardItem-numQs {
   min-width: 80px;
   width: 80px;
 }
 th.leaderboardItem-numGenerals,
-th.leaderboardItem-numMentees{
+th.leaderboardItem-numMentees,
+th.leaderboardItem-numMentors{
   min-width: 100px;
   width: 100px;
 }
@@ -192,43 +201,82 @@ th.leaderboardItem-numMentees{
 
 #companyLeaderboard-table tbody tr:hover,
 #mentorLeaderboard-table tbody tr:hover,
-#menteeLeaderboard-table tbody tr:hover,
-#companyLeaderboard-table tbody tr:first-child,
-#mentorLeaderboard-table tbody tr:first-child,
-#menteeLeaderboard-table tbody tr:first-child{
+#menteeLeaderboard-table tbody tr:hover { /* grey */
+  background: #f7f7f7bd;
+}
+#companyLeaderboard-table tbody tr.isLoggedInUser,
+#mentorLeaderboard-table tbody tr.isLoggedInUser,
+#menteeLeaderboard-table tbody tr.isLoggedInUser{ /* green */
   background: #caf9f0bd;
 }
-#companyLeaderboard-table tbody tr:hover .internalBorder.green,
-#mentorLeaderboard-table tbody tr:hover .internalBorder.green,
-#menteeLeaderboard-table tbody tr:hover .internalBorder.green,
-#companyLeaderboard-table tbody tr:first-child .internalBorder.green,
-#mentorLeaderboard-table tbody tr:first-child .internalBorder.green,
-#menteeLeaderboard-table tbody tr:first-child .internalBorder.green{
+#companyLeaderboard-table tbody tr.isFirstItem,
+#mentorLeaderboard-table tbody tr.isFirstItem,
+#menteeLeaderboard-table tbody tr.isFirstItem{ /* gold */
+  background: #fdf9e4;
+}
+#companyLeaderboard-table tbody tr:hover .internalBorder,
+#mentorLeaderboard-table tbody tr:hover .internalBorder,
+#menteeLeaderboard-table tbody tr:hover .internalBorder,
+#companyLeaderboard-table tbody tr.isFirstItem .internalBorder,
+#mentorLeaderboard-table tbody tr.isFirstItem .internalBorder,
+#menteeLeaderboard-table tbody tr.isFirstItem .internalBorder,
+#companyLeaderboard-table tbody tr.isLoggedInUser .internalBorder,
+#mentorLeaderboard-table tbody tr.isLoggedInUser .internalBorder,
+#menteeLeaderboard-table tbody tr.isLoggedInUser .internalBorder{
   visibility: visible;
+}
+#companyLeaderboard-table tbody tr:hover .internalBorder,
+#mentorLeaderboard-table tbody tr:hover .internalBorder,
+#menteeLeaderboard-table tbody tr:hover .internalBorder{ /* grey */
+  background-color: #d9d9d9;
+}
+#companyLeaderboard-table tbody tr.isLoggedInUser .internalBorder,
+#mentorLeaderboard-table tbody tr.isLoggedInUser .internalBorder,
+#menteeLeaderboard-table tbody tr.isLoggedInUser .internalBorder{ /* green */
+  background-color: #58d2bb;
+}
+#companyLeaderboard-table tbody tr.isFirstItem .internalBorder,
+#mentorLeaderboard-table tbody tr.isFirstItem .internalBorder,
+#menteeLeaderboard-table tbody tr.isFirstItem .internalBorder{ /* Show gold colour */
+  background-color: #e7c300;
 }
 #companyLeaderboard-table tbody tr:hover .greyText,
 #mentorLeaderboard-table tbody tr:hover .greyText,
 #menteeLeaderboard-table tbody tr:hover .greyText,
-#companyLeaderboard-table tbody tr:first-child .greyText,
-#mentorLeaderboard-table tbody tr:first-child .greyText,
-#menteeLeaderboard-table tbody tr:first-child .greyText{
+#companyLeaderboard-table tbody tr.isLoggedInUser .greyText,
+#mentorLeaderboard-table tbody tr.isLoggedInUser .greyText,
+#menteeLeaderboard-table tbody tr.isLoggedInUser .greyText{
   color: #636262;
 }
 #companyLeaderboard-table tbody tr:hover svg.pointsIcon,
 #mentorLeaderboard-table tbody tr:hover svg.pointsIcon,
-#menteeLeaderboard-table tbody tr:hover svg.pointsIcon,
-#companyLeaderboard-table tbody tr:first-child svg.pointsIcon,
-#mentorLeaderboard-table tbody tr:first-child svg.pointsIcon,
-#menteeLeaderboard-table tbody tr:first-child svg.pointsIcon{ /* green */
+#menteeLeaderboard-table tbody tr:hover svg.pointsIcon{ /* grey */
+  filter: invert(84%) sepia(0%) saturate(7%) hue-rotate(194deg) brightness(86%) contrast(87%);
+}
+#companyLeaderboard-table tbody tr.isLoggedInUser svg.pointsIcon,
+#mentorLeaderboard-table tbody tr.isLoggedInUser svg.pointsIcon,
+#menteeLeaderboard-table tbody tr.isLoggedInUser svg.pointsIcon{ /* green */
   filter: invert(44%) sepia(87%) saturate(1753%) hue-rotate(137deg) brightness(102%) contrast(101%);
+}
+#companyLeaderboard-table tbody tr.isFirstItem svg.pointsIcon,
+#mentorLeaderboard-table tbody tr.isFirstItem svg.pointsIcon,
+#menteeLeaderboard-table tbody tr.isFirstItem svg.pointsIcon{ /* gold */
+  filter: invert(64%) sepia(96%) saturate(690%) hue-rotate(9deg) brightness(99%) contrast(107%);
 }
 #companyLeaderboard-table tbody tr:hover .pointsIcon,
 #mentorLeaderboard-table tbody tr:hover .pointsIcon,
-#menteeLeaderboard-table tbody tr:hover .pointsIcon,
-#companyLeaderboard-table tbody tr:first-child .pointsIcon,
-#mentorLeaderboard-table tbody tr:first-child .pointsIcon,
-#menteeLeaderboard-table tbody tr:first-child .pointsIcon{ /* green */
+#menteeLeaderboard-table tbody tr:hover .pointsIcon { /* grey */
+  color: #b1b1b1;
+}
+#companyLeaderboard-table tbody tr.isLoggedInUser .pointsIcon,
+#mentorLeaderboard-table tbody tr.isLoggedInUser .pointsIcon,
+#menteeLeaderboard-table tbody tr.isLoggedInUser .pointsIcon{ /* green */
   color: #00bf9b;
+}
+#companyLeaderboard-table tbody tr.isFirstItem .pointsIcon,
+#mentorLeaderboard-table tbody tr.isFirstItem .pointsIcon,
+#menteeLeaderboard-table tbody tr.isFirstItem .pointsIcon{ /* Show gold colour */
+  color: #e7c300;
 }
 svg.pointsIcon{
   transform: translate(0px, 3px);

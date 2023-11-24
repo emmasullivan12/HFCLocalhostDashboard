@@ -51,7 +51,7 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
 function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
 //  const {ukSchsList, ukUnisList} = this.props;
   if (authorinsttype == 'job') {
-    return authorroleishidden != true ? ((wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Worked as ") + authorinstfreetext)
+    return authorroleishidden != true ? ((wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Worked at ") + authorinstfreetext)
   } else if (authorinsttype == 'train') {
     return (authortraining != '' ? ((wasDefaultRole == true ? "" : "Trained as ") + authortraining + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Trained at ") + authorinstfreetext))
   } else if (authorinsttype == 'uni') {
@@ -72,6 +72,7 @@ function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishid
   }
 }
 
+// Only for over 18s (i.e. mentors)
 function getEmployerName(authorinsttype, authorinstfreetext, authorinst, showDescText){
   if (authorinsttype == 'job' || authorinsttype == 'train') {
     return authorinstfreetext + (showDescText == true ? (authorinsttype == 'train' ? " trainee" : " employee") : "")
@@ -100,15 +101,19 @@ function getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorro
       return authortraining + ' at ' + authorinstfreetext
     }
   } else if (authorinsttype == 'uni') {
+    if (isU18 == true) {
+      return authordegree + ' student'
+    } else {
+      const uniInst = authorinst ? authorinst : authorinstfreetext
+      return authordegree + ' at ' + uniInst
+    }
   //  const uniInst = authorinst ? (grabSchOrUni('uni', authorinst, ukUnisList)) : authorinstfreetext
-    const uniInst = authorinst ? authorinst : authorinstfreetext
-    return authordegree + ' at ' + uniInst
-  } else if (authorinsttype == 'sch') {
+  } else if (authorinsttype == 'sch') { // assume they are under 18 by default
     return 'School Student'
   } else {
     const country = authorcountry
     if (isU18 == true) {
-      return 'Lives in ' + country
+      return 'Mentee'
     } else {
       const stateProv = authorstate
       return 'Lives in ' + stateProv + ', ' + country
