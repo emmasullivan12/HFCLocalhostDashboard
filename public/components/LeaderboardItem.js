@@ -45,8 +45,6 @@ class LeaderboardItem extends Component {
       isU18 = user.isU18
     }
 
-    console.log
-
     return(
       <React.Fragment>
         <tr className={isFirstItem ? "isFirstItem" : (isLoggedInUser ? "isLoggedInUser" : "")}>

@@ -14,6 +14,13 @@
   height: 100%;
   width: 100%;
 }
+.lineChart-container.isCommPage{
+  margin-top: -20px;
+  margin-left: -8px;
+}
+.lineChart-container.isCommPage canvas{
+  height: 320px;
+}
 .polarChart-container{
   padding: 20px;
 }

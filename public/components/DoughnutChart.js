@@ -13,7 +13,7 @@ class DoughnutChart extends Component {
   }
 
 componentDidMount() {
-  const {showDataLabelsOnSegment, data1Colour, data2Colour, data3Colour, data4Colour, data5Colour, data6Colour, data7Colour, data8Colour, data9Colour, data10Colour, data11Colour, data12Colour, data13Colour, titleText, showTitle, showTooltip, dataset1, dataset1Title, dataset1Colour, showLegend} = this.props;
+  const {showDataLabelsOnSegment, data1Colour, data2Colour, data3Colour, data4Colour, data5Colour, data6Colour, data7Colour, data8Colour, data9Colour, data10Colour, data11Colour, data12Colour, data13Colour, data14Colour, data15Colour, data16Colour, titleText, showTitle, showTooltip, dataset1, dataset1Title, dataset1Colour, showLegend} = this.props;
   const ctx = this.doughnutChartRef.current;
 
   var backgroundColoursArr = [
@@ -44,6 +44,15 @@ componentDidMount() {
                         backgroundColoursArr.push(data12Colour)
                         if (data13Colour) {
                           backgroundColoursArr.push(data13Colour)
+                          if (data14Colour) {
+                            backgroundColoursArr.push(data14Colour)
+                            if (data15Colour) {
+                              backgroundColoursArr.push(data15Colour)
+                              if (data16Colour) {
+                                backgroundColoursArr.push(data16Colour)
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -143,6 +152,7 @@ componentDidMount() {
           yPadding: 10,
           callbacks: {
             title: (item) => {
+              console.log(item)
               return `${item[0].label}`
             },
             label: (item) => {
@@ -179,15 +189,16 @@ componentDidUpdate() {
   const {dataset1, dataset2} = this.props;
 
   // On re-render, mutate the data arrays and then update the chart
-  this.myChart.data.labels = dataset1.map(d => d.time);
+  this.myChart.data.labels = dataset1.map(d => d.label);
   this.myChart.data.datasets[0].data = dataset1.map(d => d.value);
   //this.myChart.data.datasets[1].data = dataset2.map(d => d.value);
   this.myChart.update();
 }
 
 render() {
+  const {customClassName} = this.props;
     return (
-      <div className="lineChart-container">
+      <div className={"lineChart-container" + (customClassName ? (" " + customClassName) : "")}>
         <canvas ref={this.doughnutChartRef} aria-label="Line Chart"/>
       </div>
     );

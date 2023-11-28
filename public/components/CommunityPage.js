@@ -50,6 +50,7 @@ class CommunityPage extends React.Component {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
       loggedInUserIsGroupMember: false,
+      companiesOfTopMentors: [],
     }
   }
 
@@ -82,6 +83,70 @@ class CommunityPage extends React.Component {
       const commContainer = document.getElementById("communityFeedContainer")
       commContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
     }
+
+    const mentors = [
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 7, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 6, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '11', currrole: '', currtraining: '', degree: 'BSc Business', state: '', country: ''},
+      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 3, numMentees: 2, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 4, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
+    ];
+
+    let companiesOfTopMentors = []
+
+    const mentorsSorted = mentors.sort((a,b)=> {
+      if(b.numAnswers < a.numAnswers) { return -1; }
+      if(b.numAnswers > a.numAnswers) { return 1; }
+      if (b.numGenerals < a.numGenerals) return -1;
+      if (b.numGenerals > a.numGenerals) return 1;
+      if (b.numMentees < a.numMentees) return -1;
+      if (b.numMentees > a.numMentees) return 1;
+      return 0;
+    }, () => {
+      this.setState({
+        mentorsSorted: mentorsSorted
+      })
+    })
+
+    mentorsSorted.map((user, index) => {
+      let nameToShow, uniName
+
+      if (companiesOfTopMentors.length < 5) {
+        switch (user.eetstatus) {
+          case 'job':
+            // convert companyname here
+            nameToShow = user.currco
+            break
+          case 'train':
+            nameToShow = user.currtrainingprovider
+            break
+          case 'uni':
+            // convert uniname here
+            uniName = user.uniname ? user.uniname : user.uninamefreetext
+            nameToShow = uniName
+            break
+          case 'none':
+            nameToShow = 'Freelance'
+            break
+        }
+
+        let alreadyExists = companiesOfTopMentors.some((e) => {
+          return e.nameToShow == nameToShow && e.eetstatus == user.eetstatus;
+        });
+
+        if (user.eetstatus != 'sch' && !alreadyExists) {
+          companiesOfTopMentors.push(
+            {eetstatus: user.eetstatus, nameToShow: nameToShow}
+          )
+        }
+        this.setState({
+          companiesOfTopMentors: companiesOfTopMentors
+        })
+      }
+    })
   }
 
   componentWillUnmount() {
@@ -198,7 +263,7 @@ class CommunityPage extends React.Component {
 
   renderTab = (community, commURL) => {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
-    const {tabToView, loggedInUserIsGroupMember} = this.state;
+    const {tabToView, loggedInUserIsGroupMember, mentorsSorted, companiesOfTopMentors} = this.state;
 
     const contentArr = [ // Answers
     /*  {
@@ -450,11 +515,11 @@ class CommunityPage extends React.Component {
   //  const contentArr = []
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
+        return <CommunityOverview companiesOfTopMentors={companiesOfTopMentors} renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'questions':
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
-        return <CommunityLeaderboard loggedInUserIsGroupMember={loggedInUserIsGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
+        return <CommunityLeaderboard mentorsSorted={mentorsSorted} loggedInUserIsGroupMember={loggedInUserIsGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
     }
   }
 

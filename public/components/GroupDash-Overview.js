@@ -662,8 +662,8 @@ class GroupDashOverview extends Component {
                 <BarChart
                   dataset1={[{"label": role.label, "value": role.value}]}
                   dataset1Title={role.label}
-                  dataset1Colour={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
-                  dataset1Fill={mainColour == 'yellow' ? "rgb(252,225,0,1)" : '#3f3f3f'}
+                  dataset1Colour={mainColour}
+                  dataset1Fill={mainColour}
                   dataset2={[{"label": 'Rest', "value": (topRoleValue - role.value)}]}
                   dataset2Title="Rest"
                   dataset2Colour="#bdbdbd" // grey
@@ -1652,14 +1652,14 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="fireEmoji">🔥</span> Top Roles <span className="blueText"><strong>Mentees</strong></span> want
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(menteeTopRoles, "yellow", 'menteeTopRoles') }
+            { this.renderStackedBars(menteeTopRoles, "rgb(252,225,0,1)", 'menteeTopRoles') }
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="briefcaseEmoji">💼</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Roles
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(mentorTopRoles, "black", 'mentorTopRoles') }
+            { this.renderStackedBars(mentorTopRoles, "3f3f3f", 'mentorTopRoles') }
           </div>
         </div>
         <div className="dash-row fullHeight">
@@ -1902,14 +1902,14 @@ class GroupDashOverview extends Component {
               <span className="miniBox-emoji" role="img" aria-label="schoolEmoji">🏫</span> Top <span className="blueText"><strong>Mentee</strong></span> School / Unis
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(menteeTopEdu, "yellow", 'menteeTopEdu') }
+            { this.renderStackedBars(menteeTopEdu, "rgb(252,225,0,1)", 'menteeTopEdu') }
           </div>
           <div className="mainBox whiteBox">
             <div className="dash-boxTitle">
               <span className="miniBox-emoji" role="img" aria-label="officeEmoji">🏢</span> Top <span className="purpleText"><strong>E-Mentor</strong></span> Companies
               <hr className="lightLineBreak"/>
             </div>
-            { this.renderStackedBars(mentorTopCos, "black", 'mentorTopCos') }
+            { this.renderStackedBars(mentorTopCos, "3f3f3f", 'mentorTopCos') }
           </div>
           <div className="col-6 flexBox-Chart">
             <div className="dash-boxTitle">

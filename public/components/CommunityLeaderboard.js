@@ -64,20 +64,11 @@ class CommunityLeaderboard extends React.Component {
   }
 
   render() {
-    const {loggedInUserIsGroupMember, community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
+    const {mentorsSorted, loggedInUserIsGroupMember, community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
     const {isLoadingMoreUsers, isFilteringTable, isSortingTable, userTypeToShow, filterBy, isMobile, loggedInUserRanking} = this.state
     const loggedInUID = 'uuid128'
 
     const rankedUsers = [];
-
-    const mentors = [
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 7, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
-      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '11', currrole: '', currtraining: '', degree: 'BSc Business', state: '', country: ''},
-      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 3, numMentees: 2, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
-      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 4, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
-    ];
 
     const mentees = [
       {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 0, isU18: true, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
@@ -97,15 +88,6 @@ class CommunityLeaderboard extends React.Component {
 
     if (community.members.length > 0) {
       if (userTypeToShow == '0') { // mentors
-        const mentorsSorted = mentors.sort((a,b)=> {
-          if(b.numAnswers < a.numAnswers) { return -1; }
-          if(b.numAnswers > a.numAnswers) { return 1; }
-          if (b.numGenerals < a.numGenerals) return -1;
-          if (b.numGenerals > a.numGenerals) return 1;
-          if (b.numMentees < a.numMentees) return -1;
-          if (b.numMentees > a.numMentees) return 1;
-          return 0;
-        })
 
         mentorsSorted.forEach((user, index) => {
           const isMe = user.uid == loggedInUID

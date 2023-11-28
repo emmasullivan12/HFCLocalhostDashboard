@@ -6,18 +6,22 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {cdn} from './CDN.js';
+import BarChart from './BarChart.js';
 import Carousel from './Carousel.js';
+import DoughnutChart from './DoughnutChart.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
 import FeedContainer from "./FeedContainer.js";
 import ShareOptionsBox from './ShareOptionsBox.js';
 import {getRoleDeets, getSkillDeets, getIndustryDeets, getSubjectDeets, timeSince, getEmployerName} from './UserDetail.js';
 
 class CommunityOverview extends React.Component {
-/*  constructor() {
+  constructor() {
     super();
     this.state = {
-      activityArrToShow: [],
+      mentorWorkEnvChartLoaded: true,
+      mentorMaxEduChartLoaded: true,
     }
-  }*/
+  }
 
   /*componentDidMount = () => {
     const {contentArr} = this.props
@@ -147,8 +151,8 @@ class CommunityOverview extends React.Component {
   }
 
   render() {
-    const {renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
-    //const {activityArrToShow} = this.state
+    const {companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
+    const {mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
     let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, questionsArr, numQs, numUnanswered
@@ -161,6 +165,113 @@ class CommunityOverview extends React.Component {
     const popularIndustries = ['19','5','46','45']
     const popularRoles = ['149','514','446','452']
     const subjects = ['139','122','1','55']
+    const mentorWorkEnv = [
+      {
+        "label": 'friendly',
+        "value": .05
+      },
+      {
+        "label": 'laid-back',
+        "value": .1
+      },
+      {
+        "label": 'nurturing',
+        "value": .2
+      },
+      {
+        "label": 'always learning',
+        "value": .05
+      },
+      {
+        "label": 'collaborative',
+        "value": .35
+      },
+      {
+        "label": 'diverse',
+        "value": .2
+      },
+      {
+        "label": 'forward-thinking',
+        "value": .05
+      },
+      {
+        "label": 'modern',
+        "value": .05
+      },
+      {
+        "label": 'flexible',
+        "value": .1
+      },
+      {
+        "label": 'creative',
+        "value": .2
+      },
+      {
+        "label": 'challenging',
+        "value": .05
+      },
+      {
+        "label": 'competitive',
+        "value": .35
+      },
+      {
+        "label": 'energizing',
+        "value": .2
+      },
+      {
+        "label": 'thought-provoking',
+        "value": .05
+      },
+      {
+        "label": 'inspiring',
+        "value": .05
+      },
+    ];
+    const mentorWorkEnvIsEmpty = mentorWorkEnv.reduce((n, {value}) => n + value, 0) == 0
+    const mentorWorkEnvSorted = mentorWorkEnv
+      .sort((a,b)=> {
+        if(b.value < a.value) { return -1; }
+        if(b.value > a.value) { return 1; }
+        return 0;
+      })
+      .slice(0,3)
+    const mentorMaxEdu = [
+      {
+        "label": 'GCSE / Middle School',
+        "value": .05
+      },
+      {
+        "label": 'A-Levels / High School',
+        "value": .1
+      },
+      {
+        "label": 'Diploma / Foundation Year',
+        "value": .2
+      },
+      {
+        "label": 'Associate Degree',
+        "value": .05
+      },
+      {
+        "label": 'Bachelors Degree',
+        "value": .35
+      },
+      {
+        "label": 'Masters Degree',
+        "value": .2
+      },
+      {
+        "label": 'PhD',
+        "value": .05
+      },
+    ]
+    const mentorMaxEduIsEmpty = mentorMaxEdu.reduce((n, {value}) => n + value, 0) == 0
+    const mentorMaxEduSorted = mentorMaxEdu
+      .sort((a,b)=> {
+        if(b.value < a.value) { return -1; }
+        if(b.value > a.value) { return 1; }
+        return 0;
+      })
 
   /*  const companiesArray = []
     const menteeSkills = []
@@ -214,45 +325,110 @@ class CommunityOverview extends React.Component {
           </div>
         )}
         <div>
-          {community.type == 'skills' && (
-            <Carousel>
-              <div className={"dataCard card" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
-                <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
-                  <i className="fas fa-info-circle"/>
-                  <span className="tooltiptext below">
-                    Companies with the most active employee experts in this community
-                  </span>
+          <Carousel>
+            <div className={"dataCard card" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
+              <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  Companies with the most active employee experts in this community
                 </span>
+              </span>
+              <div className="padding10 paddingR0">
+                <div className="paddingR displayFlex">
+                  <div className="displayInlineBlock marginRight3"><span role="img" aria-label="green-heart emoji">💚</span> </div>
+                  <div className="displayInlineBlock"><strong>Active companies</strong></div>
+                </div>
+                {companiesOfTopMentors && companiesOfTopMentors.length > 0 && (
+                  <div className="dispBlock marginTop10">
+                    <div className="tagsList">
+                      {companiesOfTopMentors.map((company) => {
+                        return (
+                          <span
+                            className="multiple value paddingR"
+                            id={company}
+                            key={company}
+                          >
+                            {company.nameToShow}
+                          </span>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+                {companiesOfTopMentors && companiesOfTopMentors.length == 0 && (
+                  <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                    <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                      ...not enough people here yet.
+                      <div className="marginTop20">
+                        <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-0")}>
+                          Invite some!
+                          <div className="tooltiptext compact" id="tooltip-share-comm-link-0">
+                            Copy community URL
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={() => this.handleBlur("tooltip-share-comm-link-1")}>
+              <span className="tooltip mediumGreyText more-info-icon">
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  {community.type == 'skills' ? "Other skills" : "Skills"} mentees in this community are learning
+                </span>
+              </span>
+              {!isLoggedIn ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
-                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="green-heart emoji">💚</span> </div>
-                    <div className="displayInlineBlock"><strong>Active companies</strong></div>
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
                   </div>
-                  {companiesArray.length > 0 && (
+                  <div>
+                    <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                      <div className="dataItemUnlockSection-btnContainer" >
+                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span></div>
+                    <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
+                  </div>
+                  {menteeLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
-                        {companiesArray.map((company) => {
+                        {menteeLearningSkillsArray.length > 0 && menteeLearningSkillsArray.map((skill) => {
                           return (
-                            <span
-                              className="multiple value paddingR"
-                              id={company}
-                              key={company}
-                            >
-                              {company}
-                            </span>
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                              <span
+                                className="multiple clickable value paddingR"
+                                id={skill.value}
+                              >
+                                {skill.label}
+                              </span>
+                            </Link>
                           )
                         })}
                       </div>
                     </div>
                   )}
-                  {companiesArray.length == 0 && (
+                  {menteeLearningSkills.length == 0 && (
                     <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
                       <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
                         ...not enough people here yet.
                         <div className="marginTop20">
-                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-0")}>
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-1")}>
                             Invite some!
-                            <div className="tooltiptext compact" id="tooltip-share-comm-link-0">
+                            <div className="tooltiptext compact" id="tooltip-share-comm-link-1">
                               Copy community URL
                             </div>
                           </a>
@@ -261,74 +437,9 @@ class CommunityOverview extends React.Component {
                     </div>
                   )}
                 </div>
-              </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
-                <span className="tooltip mediumGreyText more-info-icon">
-                  <i className="fas fa-info-circle"/>
-                  <span className="tooltiptext below">
-                    {community.type == 'skills' ? "Other skills" : "Skills"} mentees in this community are learning
-                  </span>
-                </span>
-                {!isLoggedIn ? (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
-                    </div>
-                    <div>
-                      <div className="dataItemUnlockSection marginTop10 marginBottom10">
-                        <div className="dataItemUnlockSection-btnContainer" >
-                          <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
-                            <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                              <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span></div>
-                      <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
-                    </div>
-                    {menteeLearningSkills.length > 0 && (
-                      <div className="dispBlock marginTop10">
-                        <div className="tagsList">
-                          {menteeLearningSkillsArray.length > 0 && menteeLearningSkillsArray.map((skill) => {
-                            return (
-                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
-                                <span
-                                  className="multiple clickable value paddingR"
-                                  id={skill.value}
-                                >
-                                  {skill.label}
-                                </span>
-                              </Link>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    )}
-                    {menteeLearningSkills.length == 0 && (
-                      <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
-                        <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
-                          ...not enough people here yet.
-                          <div className="marginTop20">
-                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-1")}>
-                              Invite some!
-                              <div className="tooltiptext compact" id="tooltip-share-comm-link-1">
-                                Copy community URL
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
+              )}
+            </div>
+            {community.type != 'industry' && (
               <div className={"dataCard card" + (!isLoggedIn ? " red" : "") + (popularIndustries.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
                 <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                   <i className="fas fa-info-circle"/>
@@ -376,67 +487,20 @@ class CommunityOverview extends React.Component {
                   )}
                 </div>
               </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
-                <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
-                  <i className="fas fa-info-circle"/>
-                  <span className="tooltiptext below">
-                    Roles that use this skill most regularly, based on employee expert data
-                  </span>
-                </span>
-                <div className="padding10 paddingR0">
-                  <div className="paddingR displayFlex">
-                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
-                    <div className="displayInlineBlock"><strong>Popular roles</strong></div>
-                  </div>
-                  {popularRoles.length > 0 && (
-                    <div className="dispBlock marginTop10">
-                      <div className="tagsList">
-                        {popularRolesArray && popularRolesArray.map((role) => {
-                          var roleURL = "/home?shared=Yes&tagged=Yes&filter=latest&searchText=["+ role.label + "]"
-                          return (
-                            <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link" onClick={updatePathName}>
-                              <span
-                                className="multiple clickable value paddingR"
-                                id={role.value}
-                                key={role.value}
-                              >
-                                {role.label}
-                              </span>
-                            </Link>
-                          )
-                        })}
-                      </div>
-                    </div>
-                  )}
-                  {popularRoles.length == 0 && (
-                    <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
-                      <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
-                        ...not enough people here yet.
-                        <div className="marginTop20">
-                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-3")}>
-                            Invite some!
-                            <div className="tooltiptext compact" id="tooltip-share-comm-link-3">
-                              Copy community URL
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-4" onBlur={() => this.handleBlur("tooltip-share-comm-link-4")}>
+            )}
+            {community.type == 'industry' && userRole == "mentee" && (
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorWorkEnvIsEmpty ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
                 <span className="tooltip mediumGreyText more-info-icon">
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
-                    Subjects most frequently studied at school by people with this skill
+                    How employees in this industry described their work environment
                   </span>
                 </span>
                 {!isLoggedIn ? (
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                      <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="strength emoji">💪</span> </div>
+                      <div className="displayInlineBlock"><strong>Typical work environment</strong></div>
                     </div>
                     <div>
                       <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -453,34 +517,48 @@ class CommunityOverview extends React.Component {
                 ) : (
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                      <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="strength emoji">💪</span> </div>
+                      <div className="displayInlineBlock"><strong>Typical work culture</strong></div>
                     </div>
-                    {subjects.length > 0 && (
-                      <div className="dispBlock marginTop10">
-                        <div className="tagsList">
-                          {subjectsArray && subjectsArray.map((subject) => {
-                            return (
-                              <span
-                                className="multiple value paddingR"
-                                id={subject.value}
-                                key={subject.value}
-                              >
-                                {subject.label}
-                              </span>
-                            )
-                          })}
-                        </div>
+                    {mentorWorkEnvIsEmpty != true && mentorWorkEnvChartLoaded == false && (
+                      <LoadingSpinner />
+                    )}
+                    {mentorWorkEnvIsEmpty != true && mentorWorkEnvChartLoaded == true && (
+                      <div className="stackedBar-outerContainer">
+                      {mentorWorkEnvSorted.map((attribute, index) => {
+                        var topRoleValue = mentorWorkEnvSorted[0].value
+                        return (
+                          <div className="stackedBar-container small" key={index}>
+                            <BarChart
+                              dataset1={[{"label": attribute.label, "value": attribute.value}]}
+                              dataset1Title={attribute.label}
+                              dataset1Colour="rgb(78,78,214,1)"
+                              dataset1Fill="rgb(78,78,214,1)"
+                              dataset2={[{"label": 'Rest', "value": (topRoleValue - attribute.value)}]}
+                              dataset2Title="Rest"
+                              dataset2Colour="#bdbdbd" // grey
+                              dataset2Fill="#d0d0d0" // grey
+                              showHorizontal
+                              showLegend={false}
+                              showTitle={false}
+                              showTooltip={false}
+                              stacked
+                              showTitleAndPercentLabels
+                              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif'
+                            />
+                          </div>
+                        )
+                      })}
                       </div>
                     )}
-                    {subjects.length == 0 && (
+                    {mentorWorkEnvIsEmpty == true && (
                       <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
                         <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
                           ...not enough people here yet.
                           <div className="marginTop20">
-                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-4")}>
+                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-2")}>
                               Invite some!
-                              <div className="tooltiptext compact" id="tooltip-share-comm-link-4">
+                              <div className="tooltiptext compact" id="tooltip-share-comm-link-2">
                                 Copy community URL
                               </div>
                             </a>
@@ -491,18 +569,136 @@ class CommunityOverview extends React.Component {
                   </div>
                 )}
               </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-5" onBlur={() => this.handleBlur("tooltip-share-comm-link-5")}>
+            )}
+
+            <div className={"dataCard card" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
+              <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  {community.type == 'industry' ? 'Popular roles within this industry, based on employee expert data' : 'Roles that use this skill most regularly, based on employee expert data'}
+                </span>
+              </span>
+              <div className="padding10 paddingR0">
+                <div className="paddingR displayFlex">
+                  <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
+                  <div className="displayInlineBlock"><strong>Popular roles</strong></div>
+                </div>
+                {popularRoles.length > 0 && (
+                  <div className="dispBlock marginTop10">
+                    <div className="tagsList">
+                      {popularRolesArray && popularRolesArray.map((role) => {
+                        var roleURL = "/home?shared=Yes&tagged=Yes&filter=latest&searchText=["+ role.label + "]"
+                        return (
+                          <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link" onClick={updatePathName}>
+                            <span
+                              className="multiple clickable value paddingR"
+                              id={role.value}
+                              key={role.value}
+                            >
+                              {role.label}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+                {popularRoles.length == 0 && (
+                  <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                    <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                      ...not enough people here yet.
+                      <div className="marginTop20">
+                        <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-3")}>
+                          Invite some!
+                          <div className="tooltiptext compact" id="tooltip-share-comm-link-3">
+                            Copy community URL
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-4" onBlur={() => this.handleBlur("tooltip-share-comm-link-4")}>
+              <span className="tooltip mediumGreyText more-info-icon">
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  Subjects most frequently studied at school by people {community.type == 'industry' ? 'in this industry' : 'with this skill'}
+                </span>
+              </span>
+              {!isLoggedIn ? (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
+                    <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                  </div>
+                  <div>
+                    <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                      <div className="dataItemUnlockSection-btnContainer" >
+                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
+                    <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                  </div>
+                  {subjects.length > 0 && (
+                    <div className="dispBlock marginTop10">
+                      <div className="tagsList">
+                        {subjectsArray && subjectsArray.map((subject) => {
+                          return (
+                            <span
+                              className="multiple value paddingR"
+                              id={subject.value}
+                              key={subject.value}
+                            >
+                              {subject.label}
+                            </span>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )}
+                  {subjects.length == 0 && (
+                    <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                      <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                        ...not enough people here yet.
+                        <div className="marginTop20">
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-4")}>
+                            Invite some!
+                            <div className="tooltiptext compact" id="tooltip-share-comm-link-4">
+                              Copy community URL
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+            {community.type == 'industry' && (
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-5")}>
                 <span className="tooltip mediumGreyText more-info-icon">
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
-                    The top skills mentees in this community tell us they have
+                    The average education level reached by mentors in this community
                   </span>
                 </span>
                 {!isLoggedIn ? (
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="graduation emoji">🎓</span> </div>
+                      <div className="displayInlineBlock"><strong>Mentors highest education level</strong></div>
                     </div>
                     <div>
                       <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -519,28 +715,33 @@ class CommunityOverview extends React.Component {
                 ) : (
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="graduation emoji">🎓</span> </div>
+                      <div className="displayInlineBlock"><strong>Mentors highest education level</strong></div>
                     </div>
-                    {menteeSkills.length > 0 && (
-                      <div className="dispBlock marginTop10">
-                        <div className="tagsList">
-                          {menteeSkillsArray && menteeSkillsArray.map((skill) => {
-                            return (
-                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
-                                <span
-                                  className="multiple clickable value paddingR"
-                                  id={skill.value}
-                                >
-                                  {skill.label}
-                                </span>
-                              </Link>
-                            )
-                          })}
-                        </div>
+                    {mentorMaxEduIsEmpty != true && mentorMaxEduChartLoaded == false && (
+                      <LoadingSpinner />
+                    )}
+                    {mentorMaxEduIsEmpty != true && mentorMaxEduChartLoaded == true && (
+                      <div>
+                        <DoughnutChart
+                          dataset1={mentorMaxEduSorted && mentorMaxEduSorted}
+                          dataset1Title={mentorMaxEduSorted[0].label}
+                          data1Colour="rgb(78,78,214,1)"
+                          data2Colour="rgb(78,78,214,.8)"
+                          data3Colour="rgb(78,78,214,.6)"
+                          data4Colour="rgb(78,78,214,.4)"
+                          data5Colour="rgb(21,205,148,1)"
+                          data6Colour="rgb(21,205,148,.7)"
+                          data7Colour="rgb(21,205,148,.4)"
+                          showLegend
+                          showTitle={false}
+                          //titleText='by Gender 🧑‍🤝‍🧑'
+                          showDataLabelsOnSegment
+                          customClassName="isCommPage"
+                        />
                       </div>
                     )}
-                    {menteeSkills.length == 0 && (
+                    {mentorMaxEduIsEmpty == true && (
                       <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
                         <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
                           ...not enough people here yet.
@@ -558,41 +759,176 @@ class CommunityOverview extends React.Component {
                   </div>
                 )}
               </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-6" onBlur={() => this.handleBlur("tooltip-share-comm-link-6")}>
-                <span className="tooltip mediumGreyText more-info-icon">
-                  <i className="fas fa-info-circle"/>
-                  <span className="tooltiptext below">
-                    The top skills employee experts in this community tell us they have
-                  </span>
+            )}
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-5" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-5")}>
+              <span className="tooltip mediumGreyText more-info-icon">
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  The top skills mentees in this community tell us they have
                 </span>
-                {!isLoggedIn ? (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
+              </span>
+              {!isLoggedIn ? (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                  </div>
+                  <div>
+                    <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                      <div className="dataItemUnlockSection-btnContainer" >
+                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <div className="dataItemUnlockSection marginTop10 marginBottom10">
-                        <div className="dataItemUnlockSection-btnContainer" >
-                          <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
-                            <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                              <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
-                            </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                  </div>
+                  {menteeSkills.length > 0 && (
+                    <div className="dispBlock marginTop10">
+                      <div className="tagsList">
+                        {menteeSkillsArray && menteeSkillsArray.map((skill) => {
+                          return (
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                              <span
+                                className="multiple clickable value paddingR"
+                                id={skill.value}
+                              >
+                                {skill.label}
+                              </span>
+                            </Link>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )}
+                  {menteeSkills.length == 0 && (
+                    <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                      <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                        ...not enough people here yet.
+                        <div className="marginTop20">
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, (community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-5"))}>
+                            Invite some!
+                            <div className="tooltiptext compact" id={community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-5"}>
+                              Copy community URL
+                            </div>
                           </a>
                         </div>
                       </div>
                     </div>
+                  )}
+                </div>
+              )}
+            </div>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-6" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-6")}>
+              <span className="tooltip mediumGreyText more-info-icon">
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  The top skills employee experts in this community tell us they have
+                </span>
+              </span>
+              {!isLoggedIn ? (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
                   </div>
-                ) : (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
+                  <div>
+                    <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                      <div className="dataItemUnlockSection-btnContainer" >
+                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </a>
+                      </div>
                     </div>
-                    {mentorSkills.length > 0 && (
-                      <div className="dispBlock marginTop10">
-                        <div className="tagsList">
-                          {mentorSkillsArray && mentorSkillsArray.map((skill) => {
+                  </div>
+                </div>
+              ) : (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
+                  </div>
+                  {mentorSkills.length > 0 && (
+                    <div className="dispBlock marginTop10">
+                      <div className="tagsList">
+                        {mentorSkillsArray && mentorSkillsArray.map((skill) => {
+                          return (
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                              <span
+                                className="multiple clickable value paddingR"
+                                id={skill.value}
+                              >
+                                {skill.label}
+                              </span>
+                            </Link>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )}
+                  {mentorSkills.length == 0 && (
+                    <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                      <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                        ...not enough people here yet.
+                        <div className="marginTop20">
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, (community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-6"))}>
+                            Invite some!
+                            <div className="tooltiptext compact" id={community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-6"}>
+                              Copy community URL
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-7" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-7")}>
+              <span className="tooltip mediumGreyText more-info-icon">
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  The top skills employee experts in this community tell us they are currently learning
+                </span>
+              </span>
+              {!isLoggedIn ? (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
+                  </div>
+                  <div>
+                    <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                      <div className="dataItemUnlockSection-btnContainer" >
+                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                          <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="padding10 paddingR0">
+                  <div className="paddingR displayFlex">
+                    <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
+                    <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
+                  </div>
+                  {mentorLearningSkills.length > 0 && (
+                    <div className="dispBlock marginTop10">
+                      <div className="tagsList">
+                          {mentorLearningSkillsArray && mentorLearningSkillsArray.map((skill) => {
                             return (
                               <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
                                 <span
@@ -604,96 +940,28 @@ class CommunityOverview extends React.Component {
                               </Link>
                             )
                           })}
-                        </div>
                       </div>
-                    )}
-                    {mentorSkills.length == 0 && (
-                      <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
-                        <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
-                          ...not enough people here yet.
-                          <div className="marginTop20">
-                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-6")}>
-                              Invite some!
-                              <div className="tooltiptext compact" id="tooltip-share-comm-link-6">
-                                Copy community URL
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-7" onBlur={() => this.handleBlur("tooltip-share-comm-link-7")}>
-                <span className="tooltip mediumGreyText more-info-icon">
-                  <i className="fas fa-info-circle"/>
-                  <span className="tooltiptext below">
-                    The top skills employee experts in this community tell us they are currently learning
-                  </span>
-                </span>
-                {!isLoggedIn ? (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
                     </div>
-                    <div>
-                      <div className="dataItemUnlockSection marginTop10 marginBottom10">
-                        <div className="dataItemUnlockSection-btnContainer" >
-                          <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
-                            <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                              <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
-                            </button>
+                  )}
+                  {mentorLearningSkills.length == 0 && (
+                    <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                      <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                        ...not enough people here yet.
+                        <div className="marginTop20">
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, (community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-7"))}>
+                            Invite some!
+                            <div className="tooltiptext compact" id={community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-7"}>
+                              Copy community URL
+                            </div>
                           </a>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ) : (
-                  <div className="padding10 paddingR0">
-                    <div className="paddingR displayFlex">
-                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
-                      <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
-                    </div>
-                    {mentorLearningSkills.length > 0 && (
-                      <div className="dispBlock marginTop10">
-                        <div className="tagsList">
-                            {mentorLearningSkillsArray && mentorLearningSkillsArray.map((skill) => {
-                              return (
-                                <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
-                                  <span
-                                    className="multiple clickable value paddingR"
-                                    id={skill.value}
-                                  >
-                                    {skill.label}
-                                  </span>
-                                </Link>
-                              )
-                            })}
-                        </div>
-                      </div>
-                    )}
-                    {mentorLearningSkills.length == 0 && (
-                      <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
-                        <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
-                          ...not enough people here yet.
-                          <div className="marginTop20">
-                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-7")}>
-                              Invite some!
-                              <div className="tooltiptext compact" id="tooltip-share-comm-link-7">
-                                Copy community URL
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </Carousel>
-          )}
+                  )}
+                </div>
+              )}
+            </div>
+          </Carousel>
         </div>
         { renderCommunityActivity(commURL, true) }
         <div>
