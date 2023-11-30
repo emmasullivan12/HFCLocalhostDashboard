@@ -16,10 +16,19 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
+    const {cardHeight} = this.props
     window.addEventListener('resize', this.countCardsShown);
+    const wrapper = document.querySelector("[data-target='carousel-wrapper']");
     const carousel = document.querySelector("[data-target='carousel']");
-    const cardCount = carousel.querySelectorAll("[data-target='card']").length;
+    const cards = carousel.querySelectorAll("[data-target='card']")
+    const cardCount = cards.length;
     const card = carousel.querySelector("[data-target='card']");
+
+    // Set card custom height
+    cards.forEach(el => {
+      el.style.height = cardHeight
+    })
+    wrapper.style.minHeight = cardHeight
 
     // Get card width
     const cardStyle = card.currentStyle || window.getComputedStyle(card)
@@ -135,7 +144,7 @@ class Carousel extends Component {
     const {handleCardLeft, handleCardRight} = this;
 
     return (
-      <div className="wrapper">
+      <div className="wrapper" data-target="carousel-wrapper">
         <ul className="carousel" data-target="carousel">
           {children}
         </ul>

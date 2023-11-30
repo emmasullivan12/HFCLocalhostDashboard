@@ -867,7 +867,11 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                             icon = industryItem.fa
                             indName = industryItem.label
                           }
-                          return <div className="bubble noBackground" key={indID}><i className={icon} /> {indName}</div>
+                          return (
+                            <Link to={{pathname: "/community/industry/" + industryItem.urlText, state: {prevPath: window.location.pathname}}} key={indID} className="bubble noBackground link" onClick={updatePathName}>
+                              <span><i className={icon} /> {indName}</span>
+                            </Link>
+                          )
                         })}
                       </span>{qaItem.industriestopostto.length > 2 ? 'and other groups' : ''}
                     </div>

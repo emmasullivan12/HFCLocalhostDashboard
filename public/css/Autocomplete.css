@@ -20,7 +20,24 @@
 .tagsList{
   display: inline;
 }
-
+.tagsList.showRanking{
+  list-style-type: none;
+  counter-reset: css-counter 0;
+}
+.tagsList .rankingItem{
+  counter-increment: css-counter 1;
+}
+.tagsList .rankingItem:before{
+  content: counter(css-counter) ". ";
+  color: #7f7f7f; /* dark grey */
+  position: absolute;
+  left: 10px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.tagsList .rankingItem .multiple{
+  margin-left: 20px;
+}
 .autocompleterTags-search {
   display: inline-block;
   position: relative;

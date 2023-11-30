@@ -262,6 +262,21 @@ componentDidMount() {
       },
     }
   });
+
+  //Sort blurryness on high pixel screens
+  const dpr = window.devicePixelRatio;
+  const rect = ctx.getBoundingClientRect();
+
+  // Set the "actual" size of the canvas
+  ctx.width = rect.width * dpr;
+  ctx.height = rect.height * dpr;
+
+  // Scale the context to ensure correct drawing operations
+  ctx.getContext('2d').scale(dpr, dpr);
+
+  // Set the "drawn" size of the canvas
+  ctx.style.width = `${rect.width}px`;
+  ctx.style.height = `${rect.height}px`;
 }
 
 componentDidUpdate() {

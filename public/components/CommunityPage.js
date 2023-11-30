@@ -60,12 +60,12 @@ class CommunityPage extends React.Component {
 
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skills',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
-      type: 'industry',
-      typeid: '19',
+      typeid: '425',
+    //  name: 'Film, TV & VFX',
+    //  type: 'industry',
+    //  typeid: '19',
       experts: ['1','2','3','4'],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
       numUnanswered: 24
@@ -196,12 +196,12 @@ class CommunityPage extends React.Component {
   renderCommunityActivity = (commURL, isMainBar) => {
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skills',
-      typeid: '425', */
-      name: 'Film, TV & VFX',
-      type: 'industry',
-      typeid: '19',
+      typeid: '425',
+    //  name: 'Film, TV & VFX',
+    //  type: 'industry',
+    //  typeid: '19',
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
     /*  experts: ['1','2','3','4'],
@@ -719,12 +719,12 @@ class CommunityPage extends React.Component {
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skills',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
-      type: 'industry',
-      typeid: '19',
+      typeid: '425',
+    //  name: 'Film, TV & VFX',
+    //  type: 'industry',
+    //  typeid: '19',
       experts: ['1','2','3','4'],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
     //  experts: [],

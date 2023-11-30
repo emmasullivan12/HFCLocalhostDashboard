@@ -1191,7 +1191,7 @@ table th .description{
   display: inline-block;
 }
 .displayBlock{
-  display: block;
+  display: block!important;
 }
 .flexWrap{
   -webkit-flex-wrap: wrap;
@@ -2387,27 +2387,32 @@ a.button{
 .contentBox.withHover:focus{
   background: #fbfbfb;
 }
-.bubbleContainer div:nth-child(5n+0){
+.bubbleContainer div:nth-child(5n+0),
+.bubbleContainer a:nth-child(5n+0){
   border: 1px solid #ad8105;
   color: #fff;
   background-color: #eeb000;
 }
-.bubbleContainer div:nth-child(5n+1){
+.bubbleContainer div:nth-child(5n+1),
+.bubbleContainer a:nth-child(5n+1){
   border: 1px solid #666698;
   color: #fff;
   background-color: #9999e7;
 }
-.bubbleContainer div:nth-child(5n+2){
+.bubbleContainer div:nth-child(5n+2),
+.bubbleContainer a:nth-child(5n+2){
   border: 1px solid #3f9686;
   color: #fff;
   background-color: #58d2bb;
 }
-.bubbleContainer div:nth-child(5n+3){
+.bubbleContainer div:nth-child(5n+3),
+.bubbleContainer a:nth-child(5n+3){
   border: 1px solid #bd293e;
   color: #fff;
   background-color: #fb6c81;
 }
-.bubbleContainer div:nth-child(5n+4){
+.bubbleContainer div:nth-child(5n+4),
+.bubbleContainer a:nth-child(5n+4){
   border: 1px solid #5498a2;
   color: #fff;
   background-color: #65c8d8;

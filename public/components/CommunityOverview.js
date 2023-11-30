@@ -20,6 +20,7 @@ class CommunityOverview extends React.Component {
     this.state = {
       mentorWorkEnvChartLoaded: true,
       mentorMaxEduChartLoaded: true,
+      menteeMostPopularRolesChartLoaded: true,
     }
   }
 
@@ -152,10 +153,10 @@ class CommunityOverview extends React.Component {
 
   render() {
     const {companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
-    const {mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded} = this.state
+    const {mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
     const isFirstVisit = false
-    let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, questionsArr, numQs, numUnanswered
+    let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, menteesTopRolesDemandArray, questionsArr, numQs, numUnanswered
 
     const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
     const menteeSkills = ['2','15','26','55']
@@ -165,6 +166,29 @@ class CommunityOverview extends React.Component {
     const popularIndustries = ['19','5','46','45']
     const popularRoles = ['149','514','446','452']
     const subjects = ['139','122','1','55']
+    const menteesTopRolesDemand = [ // Only for unmatched mentees
+      {
+        "label": '2D Animator',
+        "value": 100
+      },
+      {
+        "label": 'Character Animator',
+        "value": 76
+      },
+      {
+        "label": 'Compositor',
+        "value": 66
+      },
+      {
+        "label": '3D Animator',
+        "value": 51
+      },
+      {
+        "label": 'Director',
+        "value": 35
+      },
+    ]
+
     const mentorWorkEnv = [
       {
         "label": 'friendly',
@@ -234,7 +258,10 @@ class CommunityOverview extends React.Component {
         if(b.value > a.value) { return 1; }
         return 0;
       })
-      .slice(0,3)
+      .slice(0,4)
+
+    const menteeMostPopularIsEmpty = menteesTopRolesDemand && menteesTopRolesDemand.length == 0
+
     const mentorMaxEdu = [
       {
         "label": 'GCSE / Middle School',
@@ -293,6 +320,7 @@ class CommunityOverview extends React.Component {
 
     // Grab roles
     popularRolesArray = popularRoles.length > 0 ? popularRoles.map(role => getRoleDeets(role)) : []
+    menteesTopRolesDemandArray = menteesTopRolesDemand.length > 0 ? menteesTopRolesDemand.slice(0,4) : []
 
     // Grab subjects
     subjectsArray = subjects.length > 0 ? subjects.map(subject => getSubjectDeets(subject)) : []
@@ -325,7 +353,8 @@ class CommunityOverview extends React.Component {
           </div>
         )}
         <div>
-          <Carousel>
+          <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="stats emoji">📈</span> Community Insights <span role="img" aria-label="stats emoji">📈</span></div>
+          <Carousel cardHeight="250px">
             <div className={"dataCard card" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
               <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                 <i className="fas fa-info-circle"/>
@@ -336,19 +365,20 @@ class CommunityOverview extends React.Component {
               <div className="padding10 paddingR0">
                 <div className="paddingR displayFlex">
                   <div className="displayInlineBlock marginRight3"><span role="img" aria-label="green-heart emoji">💚</span> </div>
-                  <div className="displayInlineBlock"><strong>Active companies</strong></div>
+                  <div className="dataCardTitle displayInlineBlock"><strong>Active companies</strong></div>
                 </div>
                 {companiesOfTopMentors && companiesOfTopMentors.length > 0 && (
                   <div className="dispBlock marginTop10">
                     <div className="tagsList">
                       {companiesOfTopMentors.map((company) => {
                         return (
-                          <span
-                            className="multiple value paddingR"
-                            id={company}
-                            key={company}
-                          >
-                            {company.nameToShow}
+                          <span className="rankingItem" key={company}>
+                            <span
+                              className="multiple value paddingR displayBlock displayBlock"
+                              id={company}
+                            >
+                              {company.nameToShow}
+                            </span>
                           </span>
                         )
                       })}
@@ -383,7 +413,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees are building</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -401,16 +431,16 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span></div>
-                    <div className="displayInlineBlock"><strong>Top skills mentees are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees are building</strong></div>
                   </div>
                   {menteeLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {menteeLearningSkillsArray.length > 0 && menteeLearningSkillsArray.map((skill) => {
                           return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
                               <span
-                                className="multiple clickable value paddingR"
+                                className="multiple clickable value paddingR displayBlock"
                                 id={skill.value}
                               >
                                 {skill.label}
@@ -450,16 +480,16 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="office emoji">🏢</span> </div>
-                    <div className="displayInlineBlock"><strong>Popular industries</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Popular industries</strong></div>
                   </div>
                   {popularIndustries.length > 0 && (
                     <div className="dispBlock marginTop10">
-                      <div className="tagsList">
+                      <div className="tagsList showRanking">
                         {popularIndustriesArray && popularIndustriesArray.map((ind) => {
                           return (
-                            <Link to={{pathname: "/community/industry/" + ind, state: {prevPath: window.location.pathname}}} key={ind.value} className="link" onClick={updatePathName}>
+                            <Link to={{pathname: "/community/industry/" + ind.urlText, state: {prevPath: window.location.pathname}}} key={ind.value} className="link rankingItem" onClick={updatePathName}>
                               <span
-                                className="multiple clickable value paddingR"
+                                className="multiple clickable value paddingR displayBlock"
                                 id={ind.value}
                               >
                                 {ind.label}
@@ -500,7 +530,7 @@ class CommunityOverview extends React.Component {
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="strength emoji">💪</span> </div>
-                      <div className="displayInlineBlock"><strong>Typical work environment</strong></div>
+                      <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Typical work environment</strong></div>
                     </div>
                     <div>
                       <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -518,7 +548,7 @@ class CommunityOverview extends React.Component {
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="strength emoji">💪</span> </div>
-                      <div className="displayInlineBlock"><strong>Typical work culture</strong></div>
+                      <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Typical work culture</strong></div>
                     </div>
                     {mentorWorkEnvIsEmpty != true && mentorWorkEnvChartLoaded == false && (
                       <LoadingSpinner />
@@ -527,13 +557,16 @@ class CommunityOverview extends React.Component {
                       <div className="stackedBar-outerContainer">
                       {mentorWorkEnvSorted.map((attribute, index) => {
                         var topRoleValue = mentorWorkEnvSorted[0].value
+                        const firstLetterCap = attribute.label.charAt(0).toUpperCase()
+                        const remainingLetters = attribute.label.slice(1)
+                        const capitalizedLabel = firstLetterCap + remainingLetters
                         return (
-                          <div className="stackedBar-container small" key={index}>
+                          <div className="stackedBar-container small isCommPage" key={index}>
                             <BarChart
-                              dataset1={[{"label": attribute.label, "value": attribute.value}]}
+                              dataset1={[{"label": capitalizedLabel, "value": attribute.value}]}
                               dataset1Title={attribute.label}
-                              dataset1Colour="rgb(78,78,214,1)"
-                              dataset1Fill="rgb(78,78,214,1)"
+                              dataset1Colour="rgb(78,78,214,1)" /* purple */
+                              dataset1Fill="rgb(78,78,214,1)" /* purple */
                               dataset2={[{"label": 'Rest', "value": (topRoleValue - attribute.value)}]}
                               dataset2Title="Rest"
                               dataset2Colour="#bdbdbd" // grey
@@ -570,18 +603,99 @@ class CommunityOverview extends React.Component {
                 )}
               </div>
             )}
-
+            {community.type == 'industry' && userRole == "mentor" && (
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeMostPopularIsEmpty ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
+                <span className="tooltip mediumGreyText more-info-icon">
+                  <i className="fas fa-info-circle"/>
+                  <span className="tooltiptext below">
+                    The roles mentees tell us they want the most. Can you invite your fellow employees to help meet demand?
+                  </span>
+                </span>
+                {!isLoggedIn ? (
+                  <div className="padding10 paddingR0">
+                    <div className="paddingR displayFlex">
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="pray emoji">🙏</span> </div>
+                      <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Most popular roles mentees want</strong></div>
+                    </div>
+                    <div>
+                      <div className="dataItemUnlockSection marginTop10 marginBottom10">
+                        <div className="dataItemUnlockSection-btnContainer" >
+                          <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                            <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
+                              <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="padding10 paddingR0">
+                    <div className="paddingR displayFlex">
+                      <div className="displayInlineBlock marginRight3"><span role="img" aria-label="pray emoji">🙏</span> </div>
+                      <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Most popular roles mentees want</strong></div>
+                    </div>
+                    {menteeMostPopularIsEmpty != true && menteeMostPopularRolesChartLoaded == false && (
+                      <LoadingSpinner />
+                    )}
+                    {menteeMostPopularIsEmpty != true && menteeMostPopularRolesChartLoaded == true && (
+                      <div className="stackedBar-outerContainer">
+                      {menteesTopRolesDemandArray.map((attribute, index) => {
+                        var topRoleValue = menteesTopRolesDemandArray[0].value
+                        return (
+                          <div className="stackedBar-container small isCommPage" key={index}>
+                            <BarChart
+                              dataset1={[{"label": attribute.label, "value": attribute.value}]}
+                              dataset1Title={attribute.label}
+                              dataset1Colour="rgb(78,78,214,1)" /* purple */
+                              dataset1Fill="rgb(78,78,214,1)" /* purple */
+                              dataset2={[{"label": 'Rest', "value": (topRoleValue - attribute.value)}]}
+                              dataset2Title="Rest"
+                              dataset2Colour="#bdbdbd" // grey
+                              dataset2Fill="#d0d0d0" // grey
+                              showHorizontal
+                              showLegend={false}
+                              showTitle={false}
+                              showTooltip={false}
+                              stacked
+                              showTitleAndPercentLabels
+                              barLabelFont='12px Helvetica Neue, Helvetica, Arial, sans-serif'
+                            />
+                          </div>
+                        )
+                      })}
+                      </div>
+                    )}
+                    {menteeMostPopularIsEmpty == true && (
+                      <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                        <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                          ...not enough people here yet.
+                          <div className="marginTop20">
+                            <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-2")}>
+                              Invite some!
+                              <div className="tooltiptext compact" id="tooltip-share-comm-link-2">
+                                Copy community URL
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
             <div className={"dataCard card" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
               <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
-                  {community.type == 'industry' ? 'Popular roles within this industry, based on employee expert data' : 'Roles that use this skill most regularly, based on employee expert data'}
+                  {community.type == 'industry' ? 'Typical roles within this industry, based on employee expert data' : 'Roles that use this skill most regularly, based on employee expert data'}
                 </span>
               </span>
               <div className="padding10 paddingR0">
                 <div className="paddingR displayFlex">
                   <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
-                  <div className="displayInlineBlock"><strong>Popular roles</strong></div>
+                  <div className="dataCardTitle displayInlineBlock"><strong>{community.type == 'industry' ? 'Typical roles' : 'Popular roles'}</strong></div>
                 </div>
                 {popularRoles.length > 0 && (
                   <div className="dispBlock marginTop10">
@@ -589,9 +703,9 @@ class CommunityOverview extends React.Component {
                       {popularRolesArray && popularRolesArray.map((role) => {
                         var roleURL = "/home?shared=Yes&tagged=Yes&filter=latest&searchText=["+ role.label + "]"
                         return (
-                          <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link" onClick={updatePathName}>
+                          <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link rankingItem" onClick={updatePathName}>
                             <span
-                              className="multiple clickable value paddingR"
+                              className="multiple clickable value paddingR displayBlock"
                               id={role.value}
                               key={role.value}
                             >
@@ -631,7 +745,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                    <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top subjects</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -649,19 +763,20 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
-                    <div className="displayInlineBlock"><strong>Top subjects</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top subjects</strong></div>
                   </div>
                   {subjects.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {subjectsArray && subjectsArray.map((subject) => {
                           return (
-                            <span
-                              className="multiple value paddingR"
-                              id={subject.value}
-                              key={subject.value}
-                            >
-                              {subject.label}
+                            <span className="rankingItem" key={subject.value}>
+                              <span
+                                className="multiple value paddingR displayBlock"
+                                id={subject.value}
+                              >
+                                {subject.label}
+                              </span>
                             </span>
                           )
                         })}
@@ -687,18 +802,18 @@ class CommunityOverview extends React.Component {
               )}
             </div>
             {community.type == 'industry' && (
-              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-5")}>
+              <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id="card-5" onBlur={() => this.handleBlur("tooltip-share-comm-link-5")}>
                 <span className="tooltip mediumGreyText more-info-icon">
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
-                    The average education level reached by mentors in this community
+                    The average education level reached by employee experts in this community
                   </span>
                 </span>
                 {!isLoggedIn ? (
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="graduation emoji">🎓</span> </div>
-                      <div className="displayInlineBlock"><strong>Mentors highest education level</strong></div>
+                      <div className="dataCardTitle displayInlineBlock"><strong>Experts highest education level</strong></div>
                     </div>
                     <div>
                       <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -716,7 +831,7 @@ class CommunityOverview extends React.Component {
                   <div className="padding10 paddingR0">
                     <div className="paddingR displayFlex">
                       <div className="displayInlineBlock marginRight3"><span role="img" aria-label="graduation emoji">🎓</span> </div>
-                      <div className="displayInlineBlock"><strong>Mentors highest education level</strong></div>
+                      <div className="dataCardTitle displayInlineBlock"><strong>Experts highest education level</strong></div>
                     </div>
                     {mentorMaxEduIsEmpty != true && mentorMaxEduChartLoaded == false && (
                       <LoadingSpinner />
@@ -760,7 +875,7 @@ class CommunityOverview extends React.Component {
                 )}
               </div>
             )}
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-5" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-5")}>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-6" : "card-5"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-5")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -771,7 +886,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees have</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -789,16 +904,16 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills mentees have</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees have</strong></div>
                   </div>
                   {menteeSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {menteeSkillsArray && menteeSkillsArray.map((skill) => {
                           return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
                               <span
-                                className="multiple clickable value paddingR"
+                                className="multiple clickable value paddingR displayBlock"
                                 id={skill.value}
                               >
                                 {skill.label}
@@ -827,7 +942,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-6" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-6")}>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-7" : "card-6"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-6")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -838,7 +953,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Top skills experts have</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -856,16 +971,16 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills experts have</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight5"><strong>Top skills experts have</strong></div>
                   </div>
                   {mentorSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {mentorSkillsArray && mentorSkillsArray.map((skill) => {
                           return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
                               <span
-                                className="multiple clickable value paddingR"
+                                className="multiple clickable value paddingR displayBlock"
                                 id={skill.value}
                               >
                                 {skill.label}
@@ -894,7 +1009,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-7" onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-7")}>
+            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-8" : "card-7"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-7")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -905,7 +1020,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight3"><strong>Top skills experts are building</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -923,16 +1038,16 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
-                    <div className="displayInlineBlock"><strong>Top skills experts are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills experts are building</strong></div>
                   </div>
                   {mentorLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                           {mentorLearningSkillsArray && mentorLearningSkillsArray.map((skill) => {
                             return (
-                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link" onClick={updatePathName}>
+                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
                                 <span
-                                  className="multiple clickable value paddingR"
+                                  className="multiple clickable value paddingR displayBlock"
                                   id={skill.value}
                                 >
                                   {skill.label}

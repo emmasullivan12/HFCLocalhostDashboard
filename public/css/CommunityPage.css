@@ -56,13 +56,22 @@
   /*background: #00d5a021;*/
   border: 1px dotted #00d5a0;
 }
+.dataCard:nth-of-type(3n+1) .dataCardTitle{ /* green */
+  color: #11c599;
+}
 .dataCard:nth-of-type(3n+2) { /* red */
 /*  background: #ff6e8830;*/
   border: 1px dotted #ff6e88;
 }
+.dataCard:nth-of-type(3n+2) .dataCardTitle{ /* red */
+  color: #ff718b;
+}
 .dataCard:nth-of-type(3n+0) { /* purple */
   /*background: #6227de1f;*/
   border: 1px dotted #6227de;
+}
+.dataCard:nth-of-type(3n+0) .dataCardTitle{ /* purple */
+ color: #4e4ed6de;
 }
 .dataCard::-webkit-scrollbar-thumb{
   visibility: hidden;
