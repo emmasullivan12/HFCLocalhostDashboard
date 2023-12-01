@@ -1,4 +1,4 @@
-// Last merged this code on 22nd nov 2023
+// Last merged this code on 1st dec 2023
 /* eslint-disable no-unused-labels */
 
 import React from "react";
@@ -571,7 +571,7 @@ class CommunityOverview extends React.Component {
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
-                  Percentage of employees {community.type == 'industry' ? 'in this industry' : (community.type == 'skills' ? 'with this skill' : 'in this role')} by how they describe their work environment 
+                  Percentage of employees {community.type == 'industry' ? 'in this industry' : (community.type == 'skills' ? 'with this skill' : 'in this role')} by how they describe their work environment
                 </span>
               </span>
               {!isLoggedIn ? (
