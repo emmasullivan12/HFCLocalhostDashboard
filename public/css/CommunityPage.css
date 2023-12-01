@@ -52,6 +52,12 @@
   background: #6227de3d!important;
   border: 1px dotted #6227de!important;
 }
+.dataCard.green .dataCardTitle,
+.dataCard.red .dataCardTitle,
+.dataCard.purple .dataCardTitle,
+.dataCard.locked .dataCardTitle{
+  color: #3f3f3f!important;
+}
 .dataCard:nth-of-type(3n+1) { /* green */
   /*background: #00d5a021;*/
   border: 1px dotted #00d5a0;

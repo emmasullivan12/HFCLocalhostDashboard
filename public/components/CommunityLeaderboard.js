@@ -89,7 +89,7 @@ class CommunityLeaderboard extends React.Component {
     if (community.members.length > 0) {
       if (userTypeToShow == '0') { // mentors
 
-        mentorsSorted.forEach((user, index) => {
+        mentorsSorted && mentorsSorted.length > 0 && mentorsSorted.forEach((user, index) => {
           const isMe = user.uid == loggedInUID
           rankedUsers.push(
             <LeaderboardItem
@@ -211,7 +211,7 @@ class CommunityLeaderboard extends React.Component {
           </div>
           <div className={"contentBox padding1pt5rem" + (isMobile == true ? " isMobile" : "")}>
             <div className="fontSize15 marginBottom20">
-              <span role="img" aria-label="green-heart emoji">💚</span> {userTypeToShow != "1" ? "A ranking of members by their contributions to elevating this community. Board updated daily." : "Mentees sorted alphabetically - currently not ranked."}
+              <span role="img" aria-label="green-heart emoji">💚</span> {(userTypeToShow != "1" || !isLoggedIn) ? "A ranking of members by their contributions to elevating this community. Board updated daily." : "Mentees sorted alphabetically - currently not ranked."}
               {loggedInUserIsGroupMember && userTypeToShow == "0" && userRole == "mentor" && (
                 <span><strong> You are currently ranked #{loggedInUserRanking}</strong></span>
               )}
