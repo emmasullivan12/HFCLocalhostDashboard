@@ -121,12 +121,16 @@ componentDidMount() {
 
             // add left hand label
               var title = datasets[0].label
+              var truncatedTitle = title.substr(0,22) // cut off at 22 characters otherwise covers % label
+              const firstLetterCap = truncatedTitle.charAt(0).toUpperCase()
+              const remainingLetters = truncatedTitle.slice(1)
+              const capitalizedLabel = firstLetterCap + remainingLetters
               var meta1 = this.myChart.getDatasetMeta(0);
 
               ctx.getContext('2d').textAlign = 'left';
 
               meta1.data.forEach((bar, index) => {
-                ctx.getContext('2d').fillText(title, bar.base, bar.y - 10);
+                ctx.getContext('2d').fillText(capitalizedLabel, bar.base, bar.y - 10);
               });
 
             // add right hand label

@@ -120,7 +120,7 @@ class EditIndRolesContent extends Component {
 
   render() {
     const { isSubmitting, updateSuccess, errorLoadingRoles, rolesexp, rolesexpfreetext, startingIndArr, startingRolesArr } = this.state;
-    const { modalTitle, industriesexp } = this.props;
+    const { modalTitle, industriesexp, userRole } = this.props;
     const isEnabled = this.canBeSubmitted();
 
     if(updateSuccess == false) {
@@ -132,7 +132,13 @@ class EditIndRolesContent extends Component {
             </div>
             <form className="paddingR20 paddingL20">
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">Which <strong>industries</strong> do you have experience in / can talk about?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">
+                  {userRole == 'mentee' ? (
+                    <span>Choose which <strong>industryies</strong> you are interested in?</span>
+                  ) : (
+                    <span>Which <strong>industries</strong> do you have experience in / can talk about?</span>
+                  )}
+                </label>
                 <SelectBox
                   multiple
                   options={industryOptions}
@@ -149,7 +155,13 @@ class EditIndRolesContent extends Component {
                 />
               </div>
               <div className="form-group">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Which <strong>roles(s)</strong> do you have experience in?</label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">
+                {userRole == 'mentee' ? (
+                  <span>Which <strong>career or profession(s)</strong> do you want to work in?</span>
+                ) : (
+                  <span>Which <strong>roles(s)</strong> do you have experience in?</span>
+                )}
+                </label>
                 <div className="autocompleter">
                   <AutocompleteTagsMulti
                     multiple

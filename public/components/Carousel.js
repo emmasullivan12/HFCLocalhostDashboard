@@ -1,5 +1,7 @@
 // Dex last merged this code on 1st dec 2023
 import React, { Component, useState } from 'react';
+import { scrollIntoView } from "seamless-scroll-polyfill"; // To make scrollintoview work on safari/iOS
+import {isiOS, whichBrowser} from "./GeneralFunctions.js"
 import "../css/Carousel.css";
 
 class Carousel extends Component {
@@ -24,6 +26,11 @@ class Carousel extends Component {
     const cards = carousel.querySelectorAll("[data-target='card']")
     const cardCount = cards.length;
     const card = carousel.querySelector("[data-target='card']");
+
+    // Check for iOS / safari
+    this.setState({
+      isSafariiOS: isiOS() || whichBrowser() == 'safari'
+    })
 
     // Set card custom height
     cards.forEach(el => {
@@ -64,7 +71,7 @@ class Carousel extends Component {
   }
 
   handleCardRight = () => {
-    const {index, atEnd, cardCount, cardWidth, cardMarginRight, cardsShown} = this.state
+    const {index, atEnd, cardCount, cardWidth, cardMarginRight, cardsShown, isSafariiOS} = this.state
     const carousel = document.querySelector("[data-target='carousel']");
     const currentScrollPos = carousel.scrollLeft;
     const currentIndex = index
@@ -81,7 +88,14 @@ class Carousel extends Component {
       if (elHadScroll) {
         el.style.overflowY = "hidden"
       }
-      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
+
+      // polyfill for safari iOS
+      if (isSafariiOS) {
+        scrollIntoView(el, { behavior: "smooth", block: "nearest"});
+      } else {
+        el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
+      }
+
       if (elHadScroll) {
         el.style.overflowY = "auto"
       }
@@ -91,6 +105,7 @@ class Carousel extends Component {
         index: cardToGet
       }, () => {
         if (this.state.index == (cardCount - 1)) {
+          carousel.scrollLeft = carousel.scrollWidth // Hack to account for border width i.e. moves to very end
           this.setState({
             atEnd: true
           })
@@ -102,7 +117,7 @@ class Carousel extends Component {
   };
 
   handleCardLeft = () => {
-    const {index, cardsShown, atStart, cardCount, cardWidth, cardMarginRight} = this.state
+    const {index, cardsShown, atStart, cardCount, cardWidth, cardMarginRight, isSafariiOS} = this.state
     const carousel = document.querySelector("[data-target='carousel']");
     const currentScrollPos = carousel.scrollLeft;
     const currentIndex = index
@@ -118,7 +133,14 @@ class Carousel extends Component {
       if (elHadScroll) {
         el.style.overflowY = "hidden"
       }
-      el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
+
+      // polyfill for safari iOS
+      if (isSafariiOS) {
+        scrollIntoView(el, { behavior: "smooth", block: "nearest"});
+      } else {
+        el.scrollIntoView({ behavior: "smooth", block: 'nearest'})
+      }
+
       if (elHadScroll) {
         el.style.overflowY = "auto"
       }
@@ -128,6 +150,7 @@ class Carousel extends Component {
         index: cardToGet
       }, () => {
         if (this.state.index == 0) {
+          carousel.scrollLeft = 0 // Hack to account for border width i.e. moves to very beginning
           this.setState({
             atStart: true
           })

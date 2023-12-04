@@ -637,7 +637,7 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <CommunityMenu type="industry" groups={DUMMY_INDUSTRY_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "industryMenu")}}/>
                     <div className="menuBreak"/>
-                    <CommunityMenu type="skill" groups={DUMMY_SKILL_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "skillsMenu")}}/>
+                    <CommunityMenu type="skills" groups={DUMMY_SKILL_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "skillsMenu")}}/>
                     <div className="menuBreak"/>
                     <div className="prLogoArea notLogin">
                       <div className="prLogoContainer">
@@ -734,7 +734,7 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentee' /*this.props.users.role*/;
+    const userRole = 'mentor' /*this.props.users.role*/;
 /*    switch (loginServer) {
       case true:
         return (

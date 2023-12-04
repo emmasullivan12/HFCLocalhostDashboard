@@ -15,7 +15,7 @@ import "../css/Modal.css";
 
 const JoinProgrammeModalProps = {
   ariaLabel: 'Join a live Group',
-  triggerText: 'Join a Group',
+  triggerText: '+ Join a Huddle',
   usedFor: 'joinProg',
   changeInitFocus: true
 }
@@ -100,9 +100,6 @@ class CommunityMenu extends Component {
     if (groups.length == 0) {
       groupsArr.push(
         <div>
-          <Modal {...JoinProgrammeModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-            <JoinProgrammeModalContent />
-          </Modal>
           <div className="chatMenuPlaceholder overflow-ellipsis">
             <div className="presenceContainer placeholder">
               <i className="fas fa-circle" />

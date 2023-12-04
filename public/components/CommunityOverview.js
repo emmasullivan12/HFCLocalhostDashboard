@@ -155,7 +155,6 @@ class CommunityOverview extends React.Component {
     const {companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
     const {mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
-    const isFirstVisit = false
     let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, menteesTopRolesDemandArray, questionsArr, numQs, numUnanswered
 
     const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
@@ -168,24 +167,24 @@ class CommunityOverview extends React.Component {
     const subjects = ['139','122','1','55']
     const menteesTopRolesDemand = [ // Only for unmatched mentees
       {
-        "label": '2D Animator',
-        "value": 100
+        "label": '2D Animator Really long role name',
+        "value": 1
       },
       {
         "label": 'Character Animator',
-        "value": 76
+        "value": .7
       },
       {
         "label": 'Compositor',
-        "value": 66
+        "value": .6
       },
       {
         "label": '3D Animator',
-        "value": 51
+        "value": .5
       },
       {
         "label": 'Director',
-        "value": 35
+        "value": .3
       },
     ]
 
@@ -207,7 +206,7 @@ class CommunityOverview extends React.Component {
         "value": .05
       },
       {
-        "label": 'collaborative',
+        "label": 'collaborative long namemeelikjsdfglkj sdfg',
         "value": .35
       },
       {
@@ -335,7 +334,7 @@ class CommunityOverview extends React.Component {
         {isLoggedIn && (
           <div className="dash-welcomeContainer marginBottom20">
             <div className="col-9">
-              <div className="dash-welcomeHeader"><strong>Welcome{isFirstVisit ? ' back' : ''}, {fname}!</strong></div>
+              <div className="dash-welcomeHeader"><strong>Welcome, {fname}!</strong></div>
               {(userRole == 'mentor' || userRole == 'mentor') && this.renderMentorWelcomeMsg(numQs, numUnanswered)}
               {userRole == 'mentee' && this.renderMenteeWelcomeMsg()}
             </div>
@@ -462,7 +461,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
-                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight3"><strong>Top skills mentees are building</strong></div>
                   </div>
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
@@ -480,7 +479,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span></div>
-                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills mentees are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight3"><strong>Top skills mentees are building</strong></div>
                   </div>
                   {menteeLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
@@ -1033,7 +1032,7 @@ class CommunityOverview extends React.Component {
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
-                    <div className="dataCardTitle displayInlineBlock"><strong>Top skills experts are building</strong></div>
+                    <div className="dataCardTitle displayInlineBlock marginRight3"><strong>Top skills experts are building</strong></div>
                   </div>
                   {mentorLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">

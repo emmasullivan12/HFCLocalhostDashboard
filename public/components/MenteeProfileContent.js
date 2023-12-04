@@ -754,11 +754,11 @@ class MenteeProfileContent extends Component {
                           Industries / Roles I&#39;m interested in
                         </h2>
                         <FullPageModal {...AddIndRolesFPModalProps}>
-                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
+                          <EditIndRolesContent userRole='mentee' modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
                         </FullPageModal>
                         <div className="editSectionBtn dispInlineBlock">
                           <FullPageModal {...EditProfileSectionModalProps}>
-                            <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
+                            <EditIndRolesContent userRole='mentee' modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={[]} rolesArray={[]} />
                           </FullPageModal>
                         </div>
                       </div>
@@ -782,7 +782,7 @@ class MenteeProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <FullPageModal {...EditProfileSectionFPModalProps}>
-                              <EditIndRolesContent modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={mentee.industries.length > 0 ? mentee.industries : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} />
+                              <EditIndRolesContent userRole='mentee' modalTitle='Edit the Industries / Role-types you are interested in' industriesexp={mentee.industries.length > 0 ? mentee.industries : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} />
                             </FullPageModal>
                           </div>
                         )}

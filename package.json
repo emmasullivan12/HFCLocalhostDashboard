@@ -51,6 +51,7 @@
     "react-phone-input-international": "^2.15.6",
     "react-router-dom": "^4.3.1",
     "react-wordcloud": "^1.2.7",
+    "seamless-scroll-polyfill": "^2.3.4",
     "style-loader": "^0.23.1",
     "topojson": "^1.6.27"
   }

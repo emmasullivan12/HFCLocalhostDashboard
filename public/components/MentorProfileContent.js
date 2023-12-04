@@ -955,11 +955,11 @@ class MentorProfileContent extends Component {
                           Industries / Roles I can talk about
                         </h2>
                         <FullPageModal {...AddIndRolesFPModalProps}>
-                          <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} />
+                          <EditIndRolesContent userRole='mentor' modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} />
                         </FullPageModal>
                         <div className="editSectionBtn dispInlineBlock">
                           <FullPageModal {...EditProfileSectionFPModalProps}>
-                            <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
+                            <EditIndRolesContent userRole='mentor' modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={[]} rolesArray={[]} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
                           </FullPageModal>
                         </div>
                       </div>
@@ -983,7 +983,7 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <FullPageModal {...EditProfileSectionFPModalProps}>
-                              <EditIndRolesContent modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp.length > 0 ? mentor.industriesexp : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
+                              <EditIndRolesContent userRole='mentor' modalTitle='Edit the Industries / Role-types you can talk about' industriesexp={mentor.industriesexp.length > 0 ? mentor.industriesexp : []} rolesArray={rolesArray.length > 0 ? rolesArray : []} /*rolesexp={mentor.rolesexp} rolesexpfreetext={mentor.rolesexpfreetext}*/ />
                             </FullPageModal>
                           </div>
                         )}

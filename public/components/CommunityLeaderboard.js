@@ -71,19 +71,19 @@ class CommunityLeaderboard extends React.Component {
     const rankedUsers = [];
 
     const mentees = [
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 0, isU18: true, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
-      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: true, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
-      {uid: 'uuid126', fname: 'Adam', lname: 'Bant', topContributionType: 'answer', topContributionID: '123', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 3, isU18: true, eetstatus: 'job', currco: 'Starbucks', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Barista', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid127', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 2, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'NY', country: 'USA'},
-      {uid: 'uuid128', fname: 'Busy', lname: 'Cee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
-      {uid: 'uuid129', fname: 'Busy', lname: 'Dee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 0, isU18: true, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid1234', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 0, isU18: true, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
+      {uid: 'uuid1245', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid1256', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: true, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid1267', fname: 'Adam', lname: 'Bant', topContributionType: 'answer', topContributionID: '123', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 3, isU18: true, eetstatus: 'job', currco: 'Starbucks', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Barista', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid1278', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 2, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'NY', country: 'USA'},
+      {uid: 'uuid1289', fname: 'Busy', lname: 'Cee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid1210', fname: 'Busy', lname: 'Dee', topContributionType: 'general', topContributionID: '234', numAnswers: 0, numGenerals: 0, numMentees: 0, numMentors: 0, isU18: true, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
     ];
 
     const companies = [
-      {uid: 'uuid123', companyname: 'EY', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: false},
-      {uid: 'uuid124', companyname: 'Pladis', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false},
-      {uid: 'uuid125', companyname: 'Framestore', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false},
+      {uid: '123', companyname: 'EY', topContributionType: 'answer', topContributionID: '123', numAnswers: 4, numGenerals: 0, numMentees: 2, isU18: false},
+      {uid: '124', companyname: 'Pladis', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false},
+      {uid: '125', companyname: 'Framestore', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false},
     ];
 
     if (community.members.length > 0) {
@@ -213,7 +213,7 @@ class CommunityLeaderboard extends React.Component {
             <div className="fontSize15 marginBottom20">
               <span role="img" aria-label="green-heart emoji">💚</span> {(userTypeToShow != "1" || !isLoggedIn) ? "A ranking of members by their contributions to elevating this community. Board updated daily." : "Mentees sorted alphabetically - currently not ranked."}
               {loggedInUserIsGroupMember && userTypeToShow == "0" && userRole == "mentor" && (
-                <span><strong> You are currently ranked #{loggedInUserRanking}</strong></span>
+                <div className="marginTop10"><strong className="electricPurpleText"> You are currently ranked #{loggedInUserRanking}</strong></div>
               )}
             </div>
             <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")}>

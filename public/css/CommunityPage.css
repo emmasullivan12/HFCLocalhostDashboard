@@ -38,7 +38,7 @@
   -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent);
 }*/
 .dataCard:last-of-type {
-  margin-left: 0px;
+  margin-right: 0px;
 }
 .dataCard.green { /* green */
   background: #00d5a069!important;
