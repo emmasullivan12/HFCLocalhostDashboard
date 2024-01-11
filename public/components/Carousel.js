@@ -33,9 +33,9 @@ class Carousel extends Component {
     })
 
     // Set card custom height
-    cards.forEach(el => {
+    /*cards.forEach(el => {
       el.style.height = cardHeight
-    })
+    })*/
     wrapper.style.minHeight = cardHeight
 
     // Get card width

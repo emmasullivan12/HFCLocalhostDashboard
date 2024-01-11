@@ -53,7 +53,7 @@ class FeedbackPrivate extends Component {
                 "value": (mentorHighPerf + 1)
               },
               {
-                "label": 'Individualised support',
+                "label": 'Encourages self-reflection',
                 "value": (mentorIndivSupport + 1)
               },
               {
@@ -124,9 +124,9 @@ class FeedbackPrivate extends Component {
                 </span>
               </div>
               <div className="bubble tooltip yellow">
-                Individualised support
+                Encourages self-reflection
                 <span className="tooltiptext ratings textLeft">
-                  <div><strong>Individualised support</strong></div>
+                  <div><strong>Encourages self-reflection</strong></div>
                   <div className="tooltiptextDetail">Encouraging your mentee to express their thoughts & feelings and / or discuss non-career related topics</div>
                 </span>
               </div>

@@ -354,7 +354,7 @@ class CommunityOverview extends React.Component {
         <div>
           <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="stats emoji">📈</span> Community Insights <span role="img" aria-label="stats emoji">📈</span></div>
           <Carousel cardHeight="250px">
-            <div className={"dataCard card" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
               <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -401,7 +401,7 @@ class CommunityOverview extends React.Component {
                 )}
               </div>
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={() => this.handleBlur("tooltip-share-comm-link-1")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={() => this.handleBlur("tooltip-share-comm-link-1")}>
               <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -450,7 +450,7 @@ class CommunityOverview extends React.Component {
                 )}
               </div>
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -518,7 +518,7 @@ class CommunityOverview extends React.Component {
               )}
             </div>
             {community.type != 'industry' && (
-              <div className={"dataCard card" + (!isLoggedIn ? " red" : "") + (popularIndustries.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
+              <div className={"dataCard card height250px" + (!isLoggedIn ? " red" : "") + (popularIndustries.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
                 <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
@@ -566,7 +566,7 @@ class CommunityOverview extends React.Component {
                 </div>
               </div>
             )}
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorWorkEnvIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-3" : "card-4"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-3" : "tooltip-share-comm-link-4")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorWorkEnvIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-3" : "card-4"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-3" : "tooltip-share-comm-link-4")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -650,7 +650,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeMostPopularIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-4" : "card-5"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-4" : "tooltip-share-comm-link-5")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeMostPopularIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-4" : "card-5"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-4" : "tooltip-share-comm-link-5")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -730,7 +730,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-5" : "card-6"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-5" : "tooltip-share-comm-link-6")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-5" : "card-6"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-5" : "tooltip-share-comm-link-6")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -797,7 +797,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-6" : "card-7"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-7")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-6" : "card-7"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-7")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -869,7 +869,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-7" : "card-8"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-8")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-7" : "card-8"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-8")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -936,7 +936,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-8" : "card-9"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-9")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-8" : "card-9"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-9")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
@@ -1003,7 +1003,7 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-9" : "card-10"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-9" : "tooltip-share-comm-link-10")}>
+            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-9" : "card-10"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-9" : "tooltip-share-comm-link-10")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">

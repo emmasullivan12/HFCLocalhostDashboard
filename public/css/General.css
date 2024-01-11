@@ -337,6 +337,9 @@ table th .description{
 .height60px{
   height: 60px;
 }
+.height250px{
+  height: 250px!important;
+}
 .height400px{
   height: 400px;
 }
