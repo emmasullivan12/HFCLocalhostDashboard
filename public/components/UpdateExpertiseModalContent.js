@@ -1,8 +1,10 @@
 // Dex last merged this code on 8th aug 2021
 
 import React, { Component } from "react";
+import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import TextInput from './TextInput.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
+import skillsOptions from './Skills.js';
 
 // Content for Requesting chat with mentor Modal (incl. only allowing to submit once completed form giving reason why passing)
 class UpdateExpertiseContent extends Component {
@@ -11,6 +13,11 @@ class UpdateExpertiseContent extends Component {
     this.state = {
       isSubmitting: false,
       updateSuccess: false,
+    /*  startingExpertiseArr: this.props.expertiseArr ? this.props.expertiseArr : [],
+      expertiseFromList: this.props.expertise != null ? this.props.expertise : [],
+      freeTextExpertise: this.props.expertisefreetext != null ? this.props.expertisefreetext : [],
+      endingExpertiseArr: this.props.expertiseArr ? this.props.expertiseArr : [], */
+      errorLoadingSkills: '',
       expertiseNew: this.props.expertise ? this.props.expertise : '',
       learningNew: this.props.learning ? this.props.learning : ''
     };
@@ -52,7 +59,7 @@ class UpdateExpertiseContent extends Component {
   }
 
   render() {
-    const { isSubmitting, updateSuccess, expertiseNew, learningNew } = this.state;
+    const { isSubmitting, updateSuccess, expertiseNew, learningNew, errorLoadingSkills } = this.state;
     const { modalTitle, expertise, learning } = this.props;
     const isEnabled = this.canBeSubmitted();
 
@@ -65,17 +72,29 @@ class UpdateExpertiseContent extends Component {
         <form className="paddingR20 paddingL20">
           <div className="form-group">
             <label className="descriptor alignLeft reqAsterisk" htmlFor="expertise">Your Key Skills</label>
-            <textarea
-              name="expertiseNew"
-              id="expertiseInput"
-              placeholder={(expertise != '' && expertiseNew != '') ? null : 'Type skills e.g. C++/Python etc, 2D/3D Animation, etc'}
-              className="form-control-std textInputBox"
-              required
-              defaultValue={expertise ? expertise : null}
-              onChange={this.handleChange}
-              onBlur={this.onBlur}
-              maxLength="500"
-            />
+            <div className="autocompleter">
+              <AutocompleteTagsMulti
+                multiple
+                openOnClick
+                showValues
+                showCheckbox
+                handleDone={this.handleDoneClick}
+                suggestions={skillsOptions}
+                name='expertiseNew'
+                id="expertiseInput"
+                placeholder={(expertise != '' && expertiseNew != '') ? null : 'Type skills e.g. C++/Python etc, 2D/3D Animation, etc'}
+                placeholderOnClick="Type Skills..."
+                handleChange={this.handleSkillsChange}
+                idValue='value'
+                valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                required
+              />
+              {errorLoadingSkills === true && (
+                <div className="descriptor prompt error indRoleForm alignLeft">
+                  Error loading Skills. Try reloading the page.
+                </div>
+              )}
+            </div>
           </div>
           <div className="form-group">
             <label className="descriptor alignLeft reqAsterisk" htmlFor="learning">Skills you&#39;re building</label>

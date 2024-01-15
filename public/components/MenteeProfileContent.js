@@ -12,6 +12,7 @@ import EditIndRolesContent from './EditIndRolesContent.js';
 import EditLifestyleContent from './EditLifestyleModalContent.js';
 import EditPlanningUniContent from './EditPlanningUniModalContent.js';
 import EditRatingsContent from './EditRatingsModalContent.js';
+import EditSkillsContent from './EditSkillsContent.js';
 import EditSubjectsContent from './EditSubjectsContent.js';
 import EditWorkingOnContent from './EditWorkingOnContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
@@ -19,7 +20,7 @@ import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
-import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
+//import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
 import UpdateHeadlineContent from './UpdateHeadlineModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
@@ -27,7 +28,7 @@ import UpdateWhyJoinContent from './UpdateWhyJoinModalContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, convertWorkingOn, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getIndustryDeets, getGroupDeets, convertSubjects, convertRole, convertHobbies, convertSkills, convertWorkingOn, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
@@ -418,8 +419,12 @@ class MenteeProfileContent extends Component {
       rolesfreetext: ['Head of M&A'],
       rolesexp: [1],
       rolesexpfreetext: ['Trainer Sales Assistant'],
-      expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
-      learning: 'leadership, negotiations, excel, programming, python, mySQL',
+    //  expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
+    //  learning: 'leadership, negotiations, excel, programming, python, mySQL',
+      expertise: [1,67,81],
+      expertisefreetext: ['Woodwork'],
+      learning: [3,77,65],
+      learningfreetext: ['Free text skill goes here'],
       hobbies: [1,14,30],
       hobbiesfreetext: ['running, swimming, theatre, yoga, skiing, gabadee'],
       workingon: [],
@@ -512,8 +517,17 @@ class MenteeProfileContent extends Component {
     const rolesArray = rolesCommaString.length == 0 ? [] : rolesCommaString.split(', ')
     const hobbiesCommaString = (mentee.hobbies.length > 0 || mentee.hobbiesfreetext.length > 0) ? convertHobbies(mentee.hobbies, mentee.hobbiesfreetext) : []
     const hobbiesArr = hobbiesCommaString.length == 0 ? [] : hobbiesCommaString.split(', ');
-    const expertiseArr = mentee.expertise.split(',');
-    const learningArr = mentee.learning.split(',');
+
+    const expertiseCommaString = (mentee.expertise.length > 0 || mentee.expertisefreetext.length > 0) ? convertSkills(mentee.expertise, mentee.expertisefreetext) : []
+    const expertiseArr = expertiseCommaString.length == 0 ? [] : expertiseCommaString.split(', ');
+    const learningCommaString = (mentee.learning.length > 0 || mentee.learningfreetext.length > 0) ? convertSkills(mentee.learning, mentee.learningfreetext) : []
+    const learningArr = learningCommaString.length == 0 ? [] : learningCommaString.split(', ');
+
+  //  var expertiseArr = mentee.expertise && mentee.expertise.length > 0 ? mentee.expertise.map(skill => getSkillDeets(skill)).map(x => x.label) : [];
+  //  var learningArr = mentee.learning && mentee.learning.length > 0 ? mentee.learning.map(skill => getSkillDeets(skill)).map(x => x.label) : [];
+  //  var expertiseArrToShow = mentee.expertisefreetext && mentee.expertisefreetext.length > 0 ? expertiseArr.concat(mentee.expertisefreetext) : expertiseArr;
+  //  var learningArrToShow = mentee.learningfreetext && mentee.learningfreetext.length > 0 ? learningArr.concat(mentee.learningfreetext) : learningArr;
+
     const subjectsCommaString = (mentee.subjects.length > 0 || mentee.subjectsfreetext.length > 0) ? convertSubjects(mentee.subjects, mentee.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
   /*  const workingOnOptions = [
@@ -933,22 +947,22 @@ class MenteeProfileContent extends Component {
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentee.expertise == '' || mentee.expertise == null) && (
+                    {isMe == "isMe" && expertiseArr.length == 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I currently have
                         </h2>
                         <Modal {...AddExpertiseModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentee.learning ? mentee.learning : ''}/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentee.learning ? mentee.learning : ''}/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                           </Modal>
                         </div>
                       </div>
                     )}
-                    {(mentee.expertise != '' && mentee.expertise != null) && (
+                    {expertiseArr.length > 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I currently have
@@ -961,28 +975,28 @@ class MenteeProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={mentee.expertise ? mentee.expertise : ''} learning={mentee.learning ? mentee.learning : ''}/>
+                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr} learningArr={learningArr.length > 0 && learningArr}/>
                             </Modal>
                           </div>
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentee.learning == '' || mentee.learning == null) && (
+                    {isMe == "isMe" && learningArr.length == 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                         </h2>
                         <Modal {...AddLearningModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentee.expertise ? mentee.expertise : ''} learning=''/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentee.expertise ? mentee.expertise : ''} learning=''/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                           </Modal>
                         </div>
                       </div>
                     )}
-                    {mentee.learning != '' && mentee.learning != null && (
+                    {learningArr.length > 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
@@ -995,7 +1009,7 @@ class MenteeProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdateExpertiseContent modalTitle='Edit your Skills / Expertise' expOrLearning='learning' expertise={mentee.expertise ? mentee.expertise : ''} learning={mentee.learning ? mentee.learning : ''}/>
+                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={learningArr}/>
                             </Modal>
                           </div>
                         )}

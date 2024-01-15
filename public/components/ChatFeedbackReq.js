@@ -176,7 +176,7 @@ class ChatFeedbackReq extends Component {
 
     var questionsMentor = [
       {q: 'How satisfied are you with how your relationship is progressing with ' + menteeName + ' so far?', detail: 'e.g. from 1 ("Not at all") to 10 ("We\'re like two peas in a pod"). Note: Your answer to this question will not be visible to your mentee.', aType: 'rating', req: 1, name: 'overallSatisMentor', ratingOutOf: 10},
-      {q: 'Help your mentee learn how they come across. Describe their mindset / ability against the following key skills:', detail: 'Try to be as honest as possible to help them make the most of the mentoring experience (and beyond!). You\'ll have the chance to send a private note to them too.', aType: 'interim', name: 'interim'},
+      {q: 'Help your mentee learn how they come across. Review their mindset / ability against the following key skills:', detail: 'Try to be as honest as possible to help them make the most of the mentoring experience (and beyond!). You\'ll have the chance to send a private note to them too.', aType: 'interim', name: 'interim'},
       {q: 'Do they communicate clearly, in a professional & friendly way:', detail: 'e.g. speaking to-the-point, good grammar & spelling, injected with a bit of personality', aType: 'yesno', req: 1, name: 'menteeComms', options: [
         {value: '0', label: 'They\'re thriving'},
         {value: '1', label: 'Good'},

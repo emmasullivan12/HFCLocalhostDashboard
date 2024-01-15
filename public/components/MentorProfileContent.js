@@ -9,13 +9,14 @@ import AddEditSchContent from './AddEditSchModalContent.js';
 import AddEditUniContent from './AddEditUniModalContent.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
+import EditSkillsContent from './EditSkillsContent.js';
 import EditSubjectsContent from './EditSubjectsContent.js';
 import FeedbackPublic from './Feedback-publicView.js';
 import FullPageModal from './FullPageModal.js';
 import GroupCircle from "./GroupCircle";
 import ManageFeedbackContent from './ManageFeedbackContent.js';
 import Modal from './Modal.js';
-import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
+//import UpdateExpertiseContent from './UpdateExpertiseModalContent.js';
 import UpdateHeadlineContent from './UpdateHeadlineModalContent.js';
 import UpdateProfileOverviewContent from './UpdateProfOverviewModalContent.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
@@ -24,7 +25,7 @@ import UserActivity from './UserActivity.js';
 import UserBadge from './UserBadge.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, getVerifLevelArr, convertSubjects, convertRole, convertHobbies, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getIndustryDeets, getGroupDeets, getVerifLevelArr, convertSubjects, convertRole, convertHobbies, convertSkills, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
@@ -493,8 +494,12 @@ class MentorProfileContent extends Component {
     //  industriesexp: [],
     //  rolesexp: [],
     //  rolesexpfreetext: [],
-      expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
-      learning: 'leadership, negotiations, excel, programming, python, mySQL',
+    //  expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
+    //  learning: 'leadership, negotiations, excel, programming, python, mySQL',
+      expertise: ['1','67','81'],
+      expertisefreetext: ['Woodwork'],
+      learning: ['3','77','65'],
+      learningfreetext: ['Free text skill goes here'],
     //  expertise: '',
     //  learning: '',
       hobbies: [1,14,30],
@@ -602,8 +607,12 @@ class MentorProfileContent extends Component {
     const rolesArray = rolesCommaString.length == 0 ? [] : rolesCommaString.split(', ')
     const hobbiesCommaString = (mentor.hobbies.length > 0 || mentor.hobbiesfreetext.length > 0) ? convertHobbies(mentor.hobbies, mentor.hobbiesfreetext) : []
     const hobbiesArr = hobbiesCommaString.length == 0 ? [] : hobbiesCommaString.split(', ');
-    const expertiseArr = mentor.expertise.split(',');
-    const learningArr = mentor.learning.split(',');
+  //  const expertiseArr = mentor.expertise.split(',');
+  //  const learningArr = mentor.learning.split(',');
+    const expertiseCommaString = (mentor.expertise.length > 0 || mentor.expertisefreetext.length > 0) ? convertSkills(mentor.expertise, mentor.expertisefreetext) : []
+    const expertiseArr = expertiseCommaString.length == 0 ? [] : expertiseCommaString.split(', ');
+    const learningCommaString = (mentor.learning.length > 0 || mentor.learningfreetext.length > 0) ? convertSkills(mentor.learning, mentor.learningfreetext) : []
+    const learningArr = learningCommaString.length == 0 ? [] : learningCommaString.split(', ');
     const subjectsCommaString = (mentor.subjects.length > 0 || mentor.subjectsfreetext.length > 0) ? convertSubjects(mentor.subjects, mentor.subjectsfreetext) : []
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
@@ -989,22 +998,22 @@ class MentorProfileContent extends Component {
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentor.expertise == '' || mentor.expertise == null) && (
+                    {isMe == "isMe" && expertiseArr.length == 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
                         </h2>
                         <Modal {...AddExpertiseModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise='' learning={mentor.learning ? mentor.learning : ''}/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                           </Modal>
                         </div>
                       </div>
                     )}
-                    {(mentor.expertise != '' && mentor.expertise != null) && (
+                    {expertiseArr.length > 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
@@ -1017,28 +1026,28 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                                                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr} learningArr={learningArr.length > 0 && learningArr}/>
                             </Modal>
                           </div>
                         )}
                       </div>
                     )}
-                    {isMe == "isMe" && (mentor.learning == '' || mentor.learning == null) && (
+                    {isMe == "isMe" && learningArr.length == 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                         </h2>
                         <Modal {...AddLearningModalProps}>
-                          <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <UpdateExpertiseContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning=''/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                           </Modal>
                         </div>
                       </div>
                     )}
-                    {mentor.learning != '' && mentor.learning != null && (
+                    {learningArr.length > 0 && (
                       <div className="editSectionContainer">
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
@@ -1051,7 +1060,7 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <UpdateExpertiseContent modalTitle='Edit your Skills / Expertise' expOrLearning='learning' expertise={mentor.expertise ? mentor.expertise : ''} learning={mentor.learning ? mentor.learning : ''}/>
+                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={learningArr}/>
                             </Modal>
                           </div>
                         )}

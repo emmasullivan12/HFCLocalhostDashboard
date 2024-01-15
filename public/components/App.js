@@ -868,7 +868,7 @@ const DUMMY_INDUSTRY_LIST = [
 
 const DUMMY_SKILL_LIST = [
  {gid: '5'},
- {gid: '28'}
+ {gid: '27'}
 ];
 
 /* App.propTypes = {

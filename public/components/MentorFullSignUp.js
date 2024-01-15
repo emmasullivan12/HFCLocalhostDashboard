@@ -8,6 +8,7 @@ import Modal from './Modal.js';
 import MentorFullSUContent from './MentorFullSUContent.js';
 import hobbiesOptions from './Hobbies.js';
 import subjectsOptions from './Subjects.js';
+import skillsOptions from './Skills.js';
 
 const MentorFullSUModalProps = {
   ariaLabel: 'Complete your Full Mentor Application',
@@ -70,11 +71,15 @@ class MentorFullSignUp extends Component {
       ]},
       ...(expertise == null || learning == null) ? [
         {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-        ...(expertise == null) ? [
-          {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        ...(expertise && expertise.length == 0) ? [
+          {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
+            ...skillsOptions
+          ]},
         ] : [],
-        ...(learning == null) ? [
-          {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+        ...(learning && learning.length == 0) ? [
+          {q: 'What are the skills / areas of interest you are currently looking to build?', detail: 'Help us show you the right advice', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
+            ...skillsOptions
+          ]},
         ] : [],
         ...(hobbies == null && hobbiesfreetext == null) ? [
           {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [
@@ -163,11 +168,15 @@ class MentorFullSignUp extends Component {
       ]},
       ...(expertise == null || learning == null) ? [
         {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-        ...(expertise == null) ? [
-          {q: 'To help us match you, what are your "key skills"?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc. Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+        ...(expertise && expertise.length == 0) ? [
+          {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
+            ...skillsOptions
+          ]},
         ] : [],
-        ...(learning == null) ? [
-          {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us demonstrate to students that careers evolve over time!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+        ...(learning && learning.length == 0) ? [
+          {q: 'What are the skills / areas of interest you are currently looking to build?', detail: 'Help us show you the right advice', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
+            ...skillsOptions
+          ]},
         ] : [],
         ...(hobbies == null && hobbiesfreetext == null) ? [
           {q: 'Outside of ' + (eetStatus === 'uni' ? 'uni' : 'work') + ', what are some of your interests & hobbies?', detail: 'This will help us match you with students who might not currently possess the skills your industry requires, but who might be well suited one day!', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, maxTextLength: 150, placeholder: 'Type hobbies...', placeholderOnClick: 'Choose from our list or add a personal touch!:', name: 'hobbies', idValue: 'value', valueToShow: 'label', options: [

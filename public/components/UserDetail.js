@@ -255,7 +255,7 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   let hobbiesFullText = [];
 //  const stringifyHobbies = JSON.stringify(hobbies);
 
-  if (hobbies & hobbies.length > 0) {
+  if (hobbies && hobbies.length > 0) {
     const hobbiesArr = hobbiesOptions
       .filter(hobby => hobbies.includes(parseInt(hobby.value,10)))
   //    .filter(hobby => stringifyHobbies.includes(hobby.value))
@@ -272,6 +272,29 @@ function convertHobbies(hobbies, hobbiesfreetext) {
   }
 
   return hobbiesFullText.join(", ")
+}
+
+function convertSkills(skills, skillsfreetext) {
+  let skillsFullText = [];
+//  const stringifyHobbies = JSON.stringify(hobbies);
+
+  if (skills && skills.length > 0) {
+    const skillsArr = skillsOptions
+      .filter(skill => skills.includes(parseInt(skill.value,10)))
+  //    .filter(hobby => stringifyHobbies.includes(hobby.value))
+
+    skillsArr.forEach((x) => {
+      skillsFullText.push(x.label)
+    })
+  }
+
+  if (skillsfreetext && skillsfreetext.length > 0) {
+    skillsfreetext.forEach((y) => {
+      skillsFullText.push(y)
+    })
+  }
+
+  return skillsFullText.join(", ")
 }
 
 function convertHashtags(hashtags, hashtagsfreetext) {
@@ -559,4 +582,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getRoleAndInst, getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getRoleAndInst, getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, convertSkills, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

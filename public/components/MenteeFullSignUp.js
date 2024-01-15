@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import hobbiesOptions from './Hobbies.js';
 import subjectsOptions from './Subjects.js';
 import workingOnOptions from './WorkingOn.js';
+import skillsOptions from './Skills.js';
 import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';
 
@@ -52,11 +53,15 @@ class MenteeFullSignUp extends Component {
           ...hobbiesOptions,
         ]},
       ] : [],
-      ... (expertise === '') ? [
-        {q: 'What would you say your "key skills" are?', detail: 'To help you think: What do you enjoy doing? Have you helped someone recently? How? What did someone last compliment you on? Try to separate by commas ","', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your key skills here...', name: 'expertise'},
+      ...(expertise && expertise.length == 0) ? [
+        {q: 'What would you say your "key skills" are?', detailSmall: 'e.g. C++/Python etc, 2D/3D Animation, Financial Modelling, Strategy, Leadership, Entrepreneurship etc.', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'expertise', idValue: 'value', valueToShow: 'label', options: [
+          ...skillsOptions
+        ]},
       ] : [],
-      ...(learning === '') ? [
-        {q: 'What are some skills / areas of interest you are looking to build?', detail: 'Help us get you the right advice!', aType: 'textLong', req: 1, maxLength: 500, placeholder: 'Type your goals & projects here...', name: 'learning'},
+      ...(learning && learning.length == 0) ? [
+        {q: 'What are the skills / areas of interest you are currently looking to build?', detail: 'Help us show you the right advice', aType: 'autocompleteMulti', req: 1, showCheckbox: true, openOnClick: true, showValues: false, placeholder: 'Type Skills...', placeholderOnClick: 'Choose from our list or add your own:', name: 'learning', idValue: 'value', valueToShow: 'label', options: [
+          ...skillsOptions
+        ]},
       ] : [],
       {q: 'Nice! So how can we help?', detail: 'Customize what type of support you\'d prefer', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you looking for?', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'supportType', valueToShow: 'label', options: [
