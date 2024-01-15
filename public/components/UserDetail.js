@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import subjectsOptions from './Subjects.js';
 import groupsList from "./Groups.js";
-import hashtagOptions from './Hashtags.js';
+import hashtagOptions from './HashtagsLatest.js';
 import hobbiesOptions from './Hobbies.js';
 import industryList from './Industries.js';
 import roleOptions from './Roles.js';

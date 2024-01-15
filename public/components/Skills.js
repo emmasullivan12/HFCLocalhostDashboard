@@ -220,7 +220,7 @@ const skillsOptions = [
   {value: '348', label: 'Final Cut Pro', urlText: 'final-cut-pro'},
   {value: '349', label: 'Finance', urlText: 'finance'},
   {value: '350', label: 'Financial Modelling', urlText: 'financial-modelling'},
-  {value: '351', label: 'Financial Reports', urlText: 'financial-reports'},
+  {value: '351', label: 'Financial Statements / Reports', urlText: 'financial-statements-reports'},
   {value: '352', label: 'Firebase', urlText: 'firebase'},
   {value: '353', label: 'Firewalls', urlText: 'firewalls'},
   {value: '354', label: 'Flame', urlText: 'flame'},

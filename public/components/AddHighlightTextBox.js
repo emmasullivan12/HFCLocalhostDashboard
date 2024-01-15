@@ -19,7 +19,7 @@ import SelectBox from './Select.js';
 import TextInput from './TextInput.js';
 import UserName from './UserName.js';
 import industryOptions from './Industries.js';
-import hashtagOptions from './Hashtags.js';
+import hashtagOptions from './HashtagsLatest.js';
 
 /*const FileUploadModalProps = {
   ariaLabel: 'Upload a file',
