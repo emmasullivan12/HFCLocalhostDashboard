@@ -1,4 +1,4 @@
-// Dex last merged this code on 11th jan 2024
+// Dex last merged this code on 15th jan 2024
 import React, { Component } from "react";
 
 const hashtagOptions = [
