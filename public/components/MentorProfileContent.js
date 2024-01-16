@@ -1003,11 +1003,11 @@ class MentorProfileContent extends Component {
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
                         </h2>
                         <Modal {...AddExpertiseModalProps}>
-                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                           </Modal>
                         </div>
                       </div>
@@ -1025,7 +1025,7 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                                                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr} learningArr={learningArr.length > 0 && learningArr}/>
+                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={expertiseArr} learningArr={learningArr.length > 0 && learningArr}/>
                             </Modal>
                           </div>
                         )}
@@ -1037,11 +1037,11 @@ class MentorProfileContent extends Component {
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                         </h2>
                         <Modal {...AddLearningModalProps}>
-                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
+                          <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
                           <Modal {...EditProfileSectionModalProps}>
-                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
+                            <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                           </Modal>
                         </div>
                       </div>
@@ -1059,7 +1059,7 @@ class MentorProfileContent extends Component {
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
                             <Modal {...EditProfileSectionModalProps}>
-                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={learningArr}/>
+                              <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={learningArr}/>
                             </Modal>
                           </div>
                         )}

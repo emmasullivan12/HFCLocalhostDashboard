@@ -15,11 +15,11 @@ class EditSkillsContent extends Component {
       isSubmitting: false,
       updateSuccess: false,
       startingExpertiseArr: this.props.expertiseArr ? this.props.expertiseArr : [],
-      expertiseFromList: this.props.expertise != null ? this.props.expertise : [],
+      expertiseFromList: this.props.currExpertiseFromList != null ? this.props.currExpertiseFromList : [],
       freeTextExpertise: this.props.expertisefreetext != null ? this.props.expertisefreetext : [],
       endingExpertiseArr: this.props.expertiseArr ? this.props.expertiseArr : [],
       startingLearningArr: this.props.learningArr ? this.props.learningArr : [],
-      learningFromList: this.props.learning != null ? this.props.learning : [],
+      learningFromList: this.props.currLearningFromList != null ? this.props.currLearningFromList : [],
       freeTextLearning: this.props.learningfreetext != null ? this.props.learningfreetext : [],
       endingLearningArr: this.props.learningArr ? this.props.learningArr : [],
       errorLoadingSkills: '',
@@ -31,7 +31,12 @@ class EditSkillsContent extends Component {
   }
 
   componentDidMount() {
-    document.getElementById("autocompleteBox-selectExpertise").focus()
+    const {expOrLearning} = this.props
+    if (expOrLearning == 'exp') {
+      document.getElementById("autocompleteBox-selectExpertise").focus()
+    } else {
+      document.getElementById("autocompleteBox-selectLearning").focus()
+    }
   }
 
   handleSubmit = (evt) => {
