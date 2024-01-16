@@ -1170,7 +1170,7 @@ class HomePage extends Component {
       numUserQs = userQIDs && userQIDs.length == 0 ? 0 : userQIDs && userQIDs.length
       menteeSteps = [
         {stepText: 'Visit your feed', modalToShow: '', isComplete: 1, validSteps: ['didEduEmailVerif', 'didReviewVerif']},
-        {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: expertise && expertise.length && learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif'], requireLogin: true},
+        {stepText: 'Add skills you want to learn', modalToShow: 'AddSkills', isComplete: expertise && expertise.length > 0 && learning && learning.length > 0, validSteps: ['didEduEmailVerif', 'didReviewVerif'], requireLogin: true},
         {stepText: 'Ask a question', modalToShow: 'AskAQ', isComplete: numUserQs && numUserQs > 0, validSteps: ['didShortSUtf'], requireLogin: true},
         {stepText: ((isNonCoreCountry == true || (isFromO18OnlyCountry && isU18)) ? 'Join a programme' : 'Join a mentoring programme'), modalToShow: 'JoinAGroup', isComplete: userGroups && userGroups.length > 0, validSteps: ['didShortSUtf'], requireLogin: true},
         {stepText: 'Complete your full mentee application', modalToShow: 'MenteeFullApp', isComplete: (userstep == 'didFullSUtf' || userstep == 'didSafeG'), reqStep: 'JoinAGroup', O18CountriesOnly: true, limitForNonCoreCountries: true, tooltiptextWhenLocked: (isNonCoreCountry == true ? 'Mentoring is not available in your country yet' : ((isFromO18OnlyCountry == true && isU18 == true) ? 'Mentoring for under 18s is not available in your country yet' : 'Join a mentoring programme to unlock this step')), validSteps: ['didShortSUtf']},
