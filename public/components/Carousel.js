@@ -1,4 +1,4 @@
-// Dex last merged this code on 4th dec 2023
+// Dex last merged this code on 16th jan 2024
 import React, { Component, useState } from 'react';
 import { scrollIntoView } from "seamless-scroll-polyfill"; // To make scrollintoview work on safari/iOS
 import {isiOS, whichBrowser} from "./GeneralFunctions.js"
