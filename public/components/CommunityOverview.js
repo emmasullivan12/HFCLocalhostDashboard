@@ -10,9 +10,20 @@ import BarChart from './BarChart.js';
 import Carousel from './Carousel.js';
 import DoughnutChart from './DoughnutChart.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
+import EditSkillsContent from './EditSkillsContent.js';
 import FeedContainer from "./FeedContainer.js";
+import Modal from './Modal.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
-import {getRoleDeets, getSkillDeets, getIndustryDeets, getSubjectDeets, timeSince, getEmployerName} from './UserDetail.js';
+import {getRoleDeets, getSkillDeets, getIndustryDeets, getSubjectDeets, timeSince, getEmployerName, convertSkills} from './UserDetail.js';
+
+const AddExpertiseModalProps = {
+  ariaLabel: 'Add / Edit skills',
+  triggerText: '+ Add Key Skills',
+  usedFor: 'addEditSkills',
+  changeInitFocus: true,
+  hideTrigger: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead
+}
 
 class CommunityOverview extends React.Component {
   constructor() {
@@ -21,6 +32,7 @@ class CommunityOverview extends React.Component {
       mentorWorkEnvChartLoaded: true,
       mentorMaxEduChartLoaded: true,
       menteeMostPopularRolesChartLoaded: true,
+      showAddSkillsModal: false,
     }
   }
 
@@ -148,20 +160,48 @@ class CommunityOverview extends React.Component {
 
   handleBlur = (tooltipID) => {
     var el = document.getElementById(tooltipID)
-    el.innerHTML = "Copy community URL";
+    if (el && el.innerHTML) {
+      el.innerHTML = "Copy community URL";
+    }
+  }
+
+  showModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: true,
+    });
+  }
+
+  closeModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: false,
+    });
   }
 
   render() {
-    const {companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
-    const {mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
+    const {isGroupMember, joinGroup, companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
+    const {showAddSkillsModal, mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
     let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, menteesTopRolesDemandArray, questionsArr, numQs, numUnanswered
 
     const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
-    const menteeSkills = ['2','15','26','55']
-    const menteeLearningSkills = ['62','155','246','555']
-    const mentorSkills = ['25','177','276','575']
-    const mentorLearningSkills = ['200','150','260','550']
+    const user = {
+      expertise: ['339','349','609','143'],
+      expertisefreetext: [],
+      learning: [],
+      learningfreetext: [],
+      //learning: ['569','587','337','60']
+    }
+
+    const expertiseCommaString = ((user.expertise && user.expertise.length > 0) || (user.expertisefreetext && user.expertisefreetext.length > 0)) ? convertSkills(user.expertise, user.expertisefreetext) : []
+    const expertiseArr = (expertiseCommaString && expertiseCommaString.length == 0) ? [] : expertiseCommaString.split(', ');
+    const learningCommaString = ((user.learning && user.learning.length > 0) || (user.learningfreetext && user.learningfreetext.length > 0)) ? convertSkills(user.learning, user.learningfreetext) : []
+    const learningArr = learningCommaString && learningCommaString.length == 0 ? [] : learningCommaString.split(', ');
+
+    var userHasCompletedSkills = expertiseArr && expertiseArr.length > 0 && learningArr && learningArr.length > 0
+    const menteeSkills = ['339','349','609','143']
+    const menteeLearningSkills = ['569','587','337','60']
+    const mentorSkills = ['339','349','609','143']
+    const mentorLearningSkills = ['569','587','337','60']
     const popularIndustries = ['19','5','46','45']
     const popularRoles = ['149','514','446','452']
     const subjects = ['139','122','1','55']
@@ -354,8 +394,8 @@ class CommunityOverview extends React.Component {
         <div>
           <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="stats emoji">📈</span> Community Insights <span role="img" aria-label="stats emoji">📈</span></div>
           <Carousel cardHeight="250px">
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
-              <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
+              <span className={"tooltip more-info-icon"+ ((!isLoggedIn || !isGroupMember) ? " darkGreyText " : " mediumGreyText ")}>
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   Companies with the most active employee experts in this community
@@ -401,63 +441,14 @@ class CommunityOverview extends React.Component {
                 )}
               </div>
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={() => this.handleBlur("tooltip-share-comm-link-1")}>
-              <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
-                <i className="fas fa-info-circle"/>
-                <span className="tooltiptext below">
-                  {community.type == 'industry' ? 'Typical roles within this industry, based on employee expert data' : 'Typical roles that use this skill most regularly, based on employee expert data'}
-                </span>
-              </span>
-              <div className="padding10 paddingR0">
-                <div className="paddingR displayFlex">
-                  <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
-                  <div className="dataCardTitle displayInlineBlock"><strong>Typical roles</strong></div>
-                </div>
-                {popularRoles.length > 0 && (
-                  <div className="dispBlock marginTop10">
-                    <div className="tagsList">
-                      {popularRolesArray && popularRolesArray.map((role) => {
-                        var roleURL = "/home?shared=Yes&tagged=Yes&filter=latest&searchText=["+ role.label + "]"
-                        return (
-                          <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link rankingItem" onClick={updatePathName}>
-                            <span
-                              className="multiple clickable value paddingR displayBlock"
-                              id={role.value}
-                              key={role.value}
-                            >
-                              {role.label}
-                            </span>
-                          </Link>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
-                {popularRoles.length == 0 && (
-                  <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
-                    <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
-                      ...not enough people here yet.
-                      <div className="marginTop20">
-                        <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-1")}>
-                          Invite some!
-                          <div className="tooltiptext compact" id="tooltip-share-comm-link-1">
-                            Copy community URL
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? " locked" : "") + (menteeLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-1" onBlur={this.handleBlur("tooltip-share-comm-link-1")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   {community.type == 'skills' ? "Other skills" : "Skills"} mentees in this community are learning
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="fire emoji">🔥</span> </div>
@@ -466,9 +457,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
                         </a>
                       </div>
@@ -504,9 +495,9 @@ class CommunityOverview extends React.Component {
                       <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
                         ...not enough people here yet.
                         <div className="marginTop20">
-                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-2")}>
+                          <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-1")}>
                             Invite some!
-                            <div className="tooltiptext compact" id="tooltip-share-comm-link-2">
+                            <div className="tooltiptext compact" id="tooltip-share-comm-link-1">
                               Copy community URL
                             </div>
                           </a>
@@ -517,9 +508,58 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " purple" : "") + (popularRoles.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-2" onBlur={() => this.handleBlur("tooltip-share-comm-link-2")}>
+              <span className={"tooltip more-info-icon"+ ((!isLoggedIn || !isGroupMember) ? " darkGreyText " : " mediumGreyText ")}>
+                <i className="fas fa-info-circle"/>
+                <span className="tooltiptext below">
+                  {community.type == 'industry' ? 'Typical roles within this industry, based on employee expert data' : 'Typical roles that use this skill most regularly, based on employee expert data'}
+                </span>
+              </span>
+              <div className="padding10 paddingR0">
+                <div className="paddingR displayFlex">
+                  <div className="displayInlineBlock marginRight3"><span role="img" aria-label="suitcase emoji">💼</span> </div>
+                  <div className="dataCardTitle displayInlineBlock"><strong>Typical roles</strong></div>
+                </div>
+                {popularRoles.length > 0 && (
+                  <div className="dispBlock marginTop10">
+                    <div className="tagsList">
+                      {popularRolesArray && popularRolesArray.map((role) => {
+                        var roleURL = "/home?shared=Yes&tagged=Yes&filter=latest&searchText=["+ role.label + "]"
+                        return (
+                          <Link to={{pathname: roleURL, state: {prevPath: window.location.pathname}}} key={role.value} className="link rankingItem" onClick={updatePathName}>
+                            <span
+                              className="multiple clickable value paddingR displayBlock"
+                              id={role.value}
+                              key={role.value}
+                            >
+                              {role.label}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+                {popularRoles.length == 0 && (
+                  <div className="dispBlock marginTop10 horizontallyCenterLeftTransform absolute bottom20 width180px">
+                    <div className="marginTop20 alignCenter marginAuto width75pc fontSize14">
+                      ...not enough people here yet.
+                      <div className="marginTop20">
+                        <a className="link electricPurpleText tooltip marginTop20" tabIndex="0" onClick={() => this.copyURL(commURL, "tooltip-share-comm-link-2")}>
+                          Invite some!
+                          <div className="tooltiptext compact" id="tooltip-share-comm-link-2">
+                            Copy community URL
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
             {community.type != 'industry' && (
-              <div className={"dataCard card height250px" + (!isLoggedIn ? " red" : "") + (popularIndustries.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
-                <span className={"tooltip more-info-icon"+ (!isLoggedIn ? " darkGreyText " : " mediumGreyText ")}>
+              <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " red" : "") + (popularIndustries.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-3" onBlur={() => this.handleBlur("tooltip-share-comm-link-3")}>
+                <span className={"tooltip more-info-icon"+ ((!isLoggedIn || !isGroupMember) ? " darkGreyText " : " mediumGreyText ")}>
                   <i className="fas fa-info-circle"/>
                   <span className="tooltiptext below">
                     Industries that {community.type == 'skills' ? 'use this skill' : 'tend to offer this role' } most regularly, based on employee expert data
@@ -566,14 +606,14 @@ class CommunityOverview extends React.Component {
                 </div>
               </div>
             )}
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorWorkEnvIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-3" : "card-4"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-3" : "tooltip-share-comm-link-4")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " locked" : "") + (mentorWorkEnvIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-3" : "card-4"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-3" : "tooltip-share-comm-link-4")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   Percentage of employees {community.type == 'industry' ? 'in this industry' : (community.type == 'skills' ? 'with this skill' : 'in this role')} by how they describe their work environment
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="strength emoji">💪</span> </div>
@@ -582,9 +622,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
 
                           </button>
                         </a>
@@ -650,14 +690,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeMostPopularIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-4" : "card-5"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-4" : "tooltip-share-comm-link-5")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " locked" : "") + (menteeMostPopularIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-4" : "card-5"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-4" : "tooltip-share-comm-link-5")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   The roles mentees tell us they want the most. {(isLoggedIn && userRole == 'mentor') ? ' Can you invite your fellow employees to help meet demand?' : ''}
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="pray emoji">🙏</span> </div>
@@ -666,9 +706,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
                         </a>
                       </div>
@@ -730,14 +770,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-5" : "card-6"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-5" : "tooltip-share-comm-link-6")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " locked" : "") + (subjects.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-5" : "card-6"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-5" : "tooltip-share-comm-link-6")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   School subjects most frequently studied at school by people {community.type == 'industry' ? 'in this industry' : (community.type == 'skills' ? 'with this skill' : 'with this role')}
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="book emoji">📖</span> </div>
@@ -746,9 +786,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
                         </a>
                       </div>
@@ -797,14 +837,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-6" : "card-7"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-7")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " locked" : "") + (mentorMaxEduIsEmpty ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-6" : "card-7"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-6" : "tooltip-share-comm-link-7")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   The average education level reached by employee experts in this community
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="graduation emoji">🎓</span> </div>
@@ -813,9 +853,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
                         </a>
                       </div>
@@ -869,14 +909,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-7" : "card-8"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-8")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? " locked" : "") + (menteeSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-7" : "card-8"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-7" : "tooltip-share-comm-link-8")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   The top skills mentees in this community tell us they have
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
@@ -885,9 +925,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
                         </a>
                       </div>
@@ -936,14 +976,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-8" : "card-9"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-9")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember|| !userHasCompletedSkills) ? " locked" : "") + (mentorSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-8" : "card-9"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-8" : "tooltip-share-comm-link-9")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   The top skills employee experts in this community tell us they have
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="tools emoji">🛠️</span> </div>
@@ -952,9 +992,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
                         </a>
                       </div>
@@ -1003,14 +1043,14 @@ class CommunityOverview extends React.Component {
                 </div>
               )}
             </div>
-            <div className={"dataCard card height250px" + (!isLoggedIn ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-9" : "card-10"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-9" : "tooltip-share-comm-link-10")}>
+            <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember|| !userHasCompletedSkills) ? " locked" : "") + (mentorLearningSkills.length == 0 ? " locked overflowVisible" : "")} data-target="card" id={community.type == 'industry' ? "card-9" : "card-10"} onBlur={() => this.handleBlur(community.type == 'industry' ? "tooltip-share-comm-link-9" : "tooltip-share-comm-link-10")}>
               <span className="tooltip mediumGreyText more-info-icon">
                 <i className="fas fa-info-circle"/>
                 <span className="tooltiptext below">
                   The top skills employee experts in this community tell us they are currently learning
                 </span>
               </span>
-              {!isLoggedIn ? (
+              {(!isLoggedIn || !isGroupMember || !userHasCompletedSkills) ? (
                 <div className="padding10 paddingR0">
                   <div className="paddingR displayFlex">
                     <div className="displayInlineBlock marginRight3"><span role="img" aria-label="seed emoji">🌱</span> </div>
@@ -1019,9 +1059,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href="https://app.prospela.com/signup?origin=skillsPageDataBox">
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
-                            <i className="fas fa-lock" id="itemUnlockIcon"/> Sign up to unlock
+                            <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
                         </a>
                       </div>
@@ -1077,6 +1117,11 @@ class CommunityOverview extends React.Component {
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
           <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} updateTabToView={updateTabToView}/>
         </div>
+        {showAddSkillsModal == true && (
+          <Modal {...AddExpertiseModalProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
+            <EditSkillsContent modalTitle='Add your Skills / Expertise' expOrLearning='exp' expertiseArr={expertiseArr} learningArr={learningArr}/>
+          </Modal>
+        )}
       </div>
     );
   }

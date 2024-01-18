@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Modal from './Modal.js';
+import JoinCommunityModalContent from './JoinCommunityModalContent.js';
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
 import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
 import "../css/Modal.css";
@@ -49,6 +50,16 @@ class CommunityListItem extends Component {
     const {isOverflowing} = this.state;
     const {group, type, onClick} = this.props;
     let groupName, navlink, industryItem, groupIcon
+
+    const user = {
+      industryGroups: ['19','5'],
+      skillsGroups: [
+        {skillid: '339', expert: 0, learning: 1},
+        {skillid: '349', expert: 0, learning: 1},
+        {skillid: '609', expert: 1, learning: 0},
+        {skillid: '143', expert: 1, learning: 0},
+      ]
+    }
 
     if (type == 'industry') {
       industryItem = getIndustryDeets(group.gid)
@@ -139,7 +150,7 @@ class CommunityMenu extends Component {
               </span>
               <div className="menuCTAContainer">
                 <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                  <div>Join a Huddle modal coming soon</div>
+                  <JoinCommunityModalContent type={type} startingArr={type == 'industry' ? user.industryGroups : user.skillsGroups}/>
                 </Modal>
               </div>
             </div>

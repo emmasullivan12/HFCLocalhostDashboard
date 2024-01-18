@@ -32,15 +32,15 @@ import "../css/HomePage.css";
 import "../css/HomepageCTAContainer.css";
 
 const JoinProgrammePlusModalProps = {
-  ariaLabel: 'Join a live Group',
-  triggerText: 'Join a Group',
+  ariaLabel: 'Join a live mentoring programme',
+  triggerText: 'Join a Programme',
   usedFor: 'joinProgSmlHome',
   changeInitFocus: true
 }
 
 const JoinProgrammeStepModalProps = {
-  ariaLabel: 'Join a live Group',
-  triggerText: 'Join a Group',
+  ariaLabel: 'Join a live mentoring programme',
+  triggerText: 'Join a Programme',
   usedFor: 'joinProgSmlHome',
   hideTrigger: true,
   changeInitFocus: true
@@ -1443,7 +1443,7 @@ class HomePage extends Component {
                       groups
                     )}
                     {groups.length == 0 && (
-                      <span className="greyText fontSize13">Join a group</span>
+                      <span className="greyText fontSize13">Join a programme</span>
                     )}
                     <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                       <JoinProgrammeModalContent />

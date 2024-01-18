@@ -110,7 +110,8 @@
   line-height: 1.25rem;
   position: absolute;
   bottom: -17px;
-  width: 190px;
+  /*width: 190px;*/
+  text-align: center;
 }
 .dataItemUnlockSection:before{
   color: transparent;
@@ -118,9 +119,11 @@
   display: block;
   position: relative;
   text-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  text-align: left;
 }
 .dataItemUnlockSection-btnContainer{
-  left: 6%;
+/*left: 6%;*/
+  margin-left: -5px;
   position: relative;
   top: 20%;
   -webkit-transform: translate(0%,-180%);
@@ -133,6 +136,9 @@
   box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
   -webkit-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
   -moz-box-shadow: rgb(0 0 0 / 20%) 0 0 8px;
+}
+.dataItemUnlockSection-btnContainer #itemUnlockBtn{
+  padding: 0.5em 0.9em;
 }
 .dataItemUnlockSection-btnContainer #itemUnlockBtn:hover,
 .leaderboardUnlockSection-btnContainer #itemUnlockBtn:hover {

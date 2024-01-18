@@ -64,7 +64,7 @@ class CommunityLeaderboard extends React.Component {
   }
 
   render() {
-    const {mentorsSorted, loggedInUserIsGroupMember, community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
+    const {mentorsSorted, isGroupMember, community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
     const {isLoadingMoreUsers, isFilteringTable, isSortingTable, userTypeToShow, filterBy, isMobile, loggedInUserRanking} = this.state
     const loggedInUID = 'uuid128'
 
@@ -212,8 +212,11 @@ class CommunityLeaderboard extends React.Component {
           <div className={"contentBox padding1pt5rem" + (isMobile == true ? " isMobile" : "")}>
             <div className="fontSize15 marginBottom20">
               <span role="img" aria-label="green-heart emoji">💚</span> {(userTypeToShow != "1" || !isLoggedIn) ? "A ranking of members by their contributions to elevating this community. Board updated daily." : "Mentees sorted alphabetically - currently not ranked."}
-              {loggedInUserIsGroupMember && userTypeToShow == "0" && userRole == "mentor" && (
+              {isGroupMember && userTypeToShow == "0" && userRole == "mentor" && (
                 <div className="marginTop10"><strong className="electricPurpleText"> You are currently ranked #{loggedInUserRanking}</strong></div>
+              )}
+              {!isGroupMember && userTypeToShow != "2" && (
+                <div className="marginTop10"><strong className="electricPurpleText"> Join the group to get a ranking =)</strong></div>
               )}
             </div>
             <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")}>

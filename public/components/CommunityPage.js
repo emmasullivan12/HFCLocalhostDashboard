@@ -49,7 +49,7 @@ class CommunityPage extends React.Component {
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
-      loggedInUserIsGroupMember: false,
+      isGroupMember: false,
       companiesOfTopMentors: [],
       mentorsSorted: []
     }
@@ -61,12 +61,12 @@ class CommunityPage extends React.Component {
 
     const community = {
       cmid: '1234',
-    /*  name: 'Houdini',
+      name: 'Houdini',
       type: 'skills',
-      typeid: '425',*/
-      name: 'Film, TV & VFX',
+      typeid: '425',
+    /*  name: 'Film, TV & VFX',
       type: 'industry',
-      typeid: '19',
+      typeid: '19',*/
       experts: ['1','2','3','4'],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
       numUnanswered: 24,
@@ -74,12 +74,11 @@ class CommunityPage extends React.Component {
     if(community != null){
       updateDocumentTitle(community.name + " community - Prospela.com")
     }
-    const loggedInUID = '2'
-    const loggedInUserIsGroupMember = community.members.some(e => e.uid == loggedInUID);
+    const loggedInUID = '20'
+    const isGroupMember = community.members.some(e => e.uid == loggedInUID);
     this.setState({
-      loggedInUserIsGroupMember: loggedInUserIsGroupMember
+      isGroupMember: isGroupMember
     })
-    console.log(loggedInUserIsGroupMember)
     if (prevFeedScrollPos != 0) {
       const commContainer = document.getElementById("communityFeedContainer")
       commContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
@@ -197,12 +196,12 @@ class CommunityPage extends React.Component {
   renderCommunityActivity = (commURL, isMainBar) => {
     const community = {
       cmid: '1234',
-      /*  name: 'Houdini',
+        name: 'Houdini',
         type: 'skills',
-        typeid: '425',*/
-        name: 'Film, TV & VFX',
+        typeid: '425',
+      /*  name: 'Film, TV & VFX',
         type: 'industry',
-        typeid: '19',
+        typeid: '19',*/
       experts: ['1','2','3','4'],
       members: ['1','2','3','4','1','2','3','4','1','2','3','4'],
     /*  experts: ['1','2','3','4'],
@@ -262,9 +261,15 @@ class CommunityPage extends React.Component {
     )
   }
 
+  joinGroup = () => {
+    this.setState({
+      isGroupMember: true
+    })
+  }
+
   renderTab = (community, commURL) => {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
-    const {tabToView, loggedInUserIsGroupMember, mentorsSorted, companiesOfTopMentors} = this.state;
+    const {tabToView, isGroupMember, mentorsSorted, companiesOfTopMentors} = this.state;
 
     const contentArr = [ // Answers
     /*  {
@@ -516,11 +521,11 @@ class CommunityPage extends React.Component {
   //  const contentArr = []
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview companiesOfTopMentors={companiesOfTopMentors} renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
+        return <CommunityOverview isGroupMember={isGroupMember} joinGroup={this.joinGroup} companiesOfTopMentors={companiesOfTopMentors} renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'questions':
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
-        return <CommunityLeaderboard mentorsSorted={mentorsSorted} loggedInUserIsGroupMember={loggedInUserIsGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
+        return <CommunityLeaderboard mentorsSorted={mentorsSorted} isGroupMember={isGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
     }
   }
 
@@ -716,16 +721,16 @@ class CommunityPage extends React.Component {
   }
 */
   render() {
-    const {tabToView} = this.state
+    const {tabToView, isGroupMember} = this.state
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-      /*  name: 'Houdini',
+        name: 'Houdini',
         type: 'skills',
-        typeid: '425',*/
-        name: 'Film, TV & VFX',
+        typeid: '425',
+      /*  name: 'Film, TV & VFX',
         type: 'industry',
-        typeid: '19',
+        typeid: '19',*/
       experts: ['1','2','3','4'],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
     //  experts: [],
@@ -735,6 +740,7 @@ class CommunityPage extends React.Component {
 
     let urlText, commItem, isNonCoreCountry, isFromO18OnlyCountry, isU18
     var country = 'GBR'
+
     isNonCoreCountry = isLoggedIn && country != '' && (country != 'GBR' && country != 'USA' && country != 'CAN' && country != 'NZL' && country != 'AUS' && country != 'NLD' && country != 'DEU' && country != 'ESP' && country != 'FRA' && country != 'ITA' && country != 'BEL' && country != 'DNK' && country != 'SWE' && country != 'AUT' && country != 'BGR' && country != 'CZE')
     isFromO18OnlyCountry = isLoggedIn && country != '' && (country == 'NZL' || country == 'AUS' || country == 'NLD' || country == 'DEU' || country == 'ESP' || country == 'FRA' || country == 'ITA' || country == 'BEL' || country == 'DNK' || country == 'SWE' || country == 'AUT' || country == 'BGR' || country == 'CZE')
 
@@ -806,30 +812,37 @@ class CommunityPage extends React.Component {
                   </div>
                   <span className="qCTA qaPage commPage">
                     {isLoggedIn && (
-                      <span className="marginRight8">
-                        <ShareOptionsBox
-                          id={community.cmid}
-                          qURL={commURL}
-                          contentType={community.type}
-                          authorinsttype={null}
-                          authorinstfreetext={null}
-                          authorinst={null}
-                          buttonToShow="linkEmojiInviteText"
-                          fromCommunityPage
-                          commName={community.name}
-                          customClassName="topBtn"
-                        />
-                      </span>
-                    )}
-                    {userRole == 'mentee' && (
-                      <Modal {...AskQModalProps}>
-                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee' fromCommunityPage commType={community.type} commName={community.name}/>
-                      </Modal>
-                    )}
-                    {userRole == 'mentor' && (
-                      <Modal {...AddHighlightModalProps}>
-                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' fromCommunityPage commType={community.type} commName={community.name} updatePathName={updatePathName} updateTabToView={this.updateTabToView} commURLending={commURLending}/>
-                      </Modal>
+                      <React.Fragment>
+                        <span className="marginRight8">
+                          <ShareOptionsBox
+                            id={community.cmid}
+                            qURL={commURL}
+                            contentType={community.type}
+                            authorinsttype={null}
+                            authorinstfreetext={null}
+                            authorinst={null}
+                            buttonToShow="linkEmojiInviteText"
+                            fromCommunityPage
+                            commName={community.name}
+                            customClassName="topBtn"
+                          />
+                        </span>
+                        {!isGroupMember && (
+                          <button tabIndex="0" type="button" aria-label="Join group" className="ModalOpenBtn ModalOpenBtn-addHighlightQApage backgroundBlack" onClick={this.joinGroup}>
+                            Join
+                          </button>
+                        )}
+                        {isGroupMember && userRole == 'mentee' && (
+                          <Modal {...AskQModalProps}>
+                            <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee' fromCommunityPage commType={community.type} commName={community.name}/>
+                          </Modal>
+                        )}
+                        {isGroupMember && userRole == 'mentor' && (
+                          <Modal {...AddHighlightModalProps}>
+                            <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' fromCommunityPage commType={community.type} commName={community.name} updatePathName={updatePathName} updateTabToView={this.updateTabToView} commURLending={commURLending}/>
+                          </Modal>
+                        )}
+                      </React.Fragment>
                     )}
                     {!isLoggedIn && (
                       <React.Fragment>
@@ -847,11 +860,12 @@ class CommunityPage extends React.Component {
                             customClassName="topBtn"
                           />
                           <a className="button link Submit-btn signUpPrompt" href={"https://app.prospela.com/signup?origin=" + community.type + "&communityid=" + community.typeid}>
-                            Join
+                            Sign up
                           </a>
                         </div>
                       </React.Fragment>
                     )}
+
                   </span>
                 </div>
               </div>

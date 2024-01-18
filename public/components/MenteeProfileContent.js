@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th jan 2024 
+// Dex last merged this code on 16th jan 2024
 
 import React, { Component } from "react";
 
@@ -103,7 +103,8 @@ const AddExpertiseModalProps = {
   ariaLabel: 'Add / Edit skills',
   triggerText: '+ Add Key Skills',
   usedFor: 'addEditSkills',
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead
 }
 
 const AddPlanningUniModalProps = {
@@ -138,7 +139,8 @@ const AddLearningModalProps = {
   ariaLabel: 'Add / Edit skills',
   triggerText: '+ Add Skills I\'m learning',
   usedFor: 'addEditSkills',
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true, // This means any dropdowns etc are not clipped off in modal but instead show over the modal. Do not use for modals likely to be used on Modal i.e. user facing. Use "showAbove" in Select.js instead
 }
 
 const AddRoleModalProps = {
@@ -956,7 +958,7 @@ class MenteeProfileContent extends Component {
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
+                          <Modal {...EditProfileSectionModalProps} removeOverflowY>
                             <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                           </Modal>
                         </div>
@@ -974,7 +976,7 @@ class MenteeProfileContent extends Component {
                         </div>
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
-                            <Modal {...EditProfileSectionModalProps}>
+                            <Modal {...EditProfileSectionModalProps} removeOverflowY>
                               <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={expertiseArr} learningArr={learningArr.length > 0 && learningArr}/>
                             </Modal>
                           </div>
@@ -990,7 +992,7 @@ class MenteeProfileContent extends Component {
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
-                          <Modal {...EditProfileSectionModalProps}>
+                          <Modal {...EditProfileSectionModalProps} removeOverflowY>
                             <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                           </Modal>
                         </div>
@@ -1008,7 +1010,7 @@ class MenteeProfileContent extends Component {
                         </div>
                         {isMe == "isMe" && (
                           <div className="editSectionBtn dispInlineBlock">
-                            <Modal {...EditProfileSectionModalProps}>
+                            <Modal {...EditProfileSectionModalProps} removeOverflowY>
                               <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={learningArr}/>
                             </Modal>
                           </div>

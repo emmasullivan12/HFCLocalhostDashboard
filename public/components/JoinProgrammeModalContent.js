@@ -71,7 +71,7 @@ class JoinProgrammeModalContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <span className="emoji-icon sparkle-emoji titleLeft" />
-            <span>Join a live Group</span>
+            <span>Join a live mentoring programme</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <form className="leftRightPad">
@@ -112,7 +112,7 @@ class JoinProgrammeModalContent extends Component {
             />
             <div className="request-btn-container">
               <button type="submit" disabled={!isEnabled} className="Submit-btn" onSubmit={this.handleSubmit}>
-                Join Group
+                Join programme
               </button>
             </div>
           </form>

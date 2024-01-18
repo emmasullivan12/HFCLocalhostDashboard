@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th jan 2024 
+// Dex last merged this code on 16th jan 2024
 
 import React, { Component } from "react";
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
@@ -116,7 +116,7 @@ class EditSkillsContent extends Component {
     return (
       ((expertiseFromList.length != 0 || freeTextExpertise.length != 0)
       && (JSON.stringify(startingExpertiseArr) != JSON.stringify(endingExpertiseArr)))
-      || ((learningFromList.length != 0 || freeTextLearning.length != 0)
+      && ((learningFromList.length != 0 || freeTextLearning.length != 0)
       && (JSON.stringify(startingLearningArr) != JSON.stringify(endingLearningArr))) // Checks user has actually changed something
     );
   }

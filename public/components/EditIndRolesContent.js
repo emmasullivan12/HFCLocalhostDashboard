@@ -134,7 +134,7 @@ class EditIndRolesContent extends Component {
               <div className="form-group">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">
                   {userRole == 'mentee' ? (
-                    <span>Choose which <strong>industryies</strong> you are interested in?</span>
+                    <span>Choose which <strong>industries</strong> you are interested in?</span>
                   ) : (
                     <span>Which <strong>industries</strong> do you have experience in / can talk about?</span>
                   )}
