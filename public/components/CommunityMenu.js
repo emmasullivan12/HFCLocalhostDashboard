@@ -18,13 +18,15 @@ const JoinProgrammeModalProps = {
   ariaLabel: 'Join a live Group',
   triggerText: '+ Join a Huddle',
   usedFor: 'joinProg',
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true
 }
 const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live Group',
   triggerText: 'Join a Group',
   usedFor: 'joinProgSml',
-  changeInitFocus: true
+  changeInitFocus: true,
+  removeOverflowY: true
 }
 
 // This shows the content within an individual row in the ChatMenu
@@ -50,16 +52,6 @@ class CommunityListItem extends Component {
     const {isOverflowing} = this.state;
     const {group, type, onClick} = this.props;
     let groupName, navlink, industryItem, groupIcon
-
-    const user = {
-      industryGroups: ['19','5'],
-      skillsGroups: [
-        {skillid: '339', expert: 0, learning: 1},
-        {skillid: '349', expert: 0, learning: 1},
-        {skillid: '609', expert: 1, learning: 0},
-        {skillid: '143', expert: 1, learning: 0},
-      ]
-    }
 
     if (type == 'industry') {
       industryItem = getIndustryDeets(group.gid)
@@ -107,6 +99,11 @@ class CommunityMenu extends Component {
   render() {
     const {userRole, onClick, checkHasAccess, noAccessHandler, type, groups} = this.props;
     const groupsArr = [];
+
+    const user = {
+      industryGroups: ['0'],
+      skillsGroups: ['339','349','609','143']
+    }
 
     if (groups.length == 0) {
       groupsArr.push(

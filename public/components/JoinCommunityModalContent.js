@@ -1,24 +1,28 @@
 // Dex last merged this code on 29th mar 2022
 
 import React, { Component } from "react";
-import Checkbox from './Checkbox.js';
+import Autocomplete from './Autocomplete.js';
+import SelectBox from './Select.js';
+import {LoadingSpinner} from './GeneralFunctions.js';
+import {getIndustryDeets} from './UserDetail.js';
 import industryOptions from './Industries.js';
 import skillsOptions from './Skills.js';
-import "../css/Modal.css";
-import "../css/Emoji.css";
-import "../css/General.css";
-import "../css/HomepageCTAContainer.css";
 
 class JoinProgrammeModalContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      startingArr: this.props.startingArr ? this.props.startingArr : [],
+      defaultInds: (this.props.startingArr && this.props.startingArr.length > 0 && this.props.type == 'industry') ? this.props.startingArr.map(ind => getIndustryDeets(ind).label) : null,
       messageFromServer: '',
-      alreadyMemberSkills: false,
+      alreadyMember: false,
+      isSubmitting: false,
+      indGroupArr: [],
     };
   }
 
   handleIndChange = (userInput) => {
+    const {startingArr} = this.state
     let newArray
 
     newArray = industryOptions
@@ -26,40 +30,38 @@ class JoinProgrammeModalContent extends Component {
       .map(value => value.value)
 
     this.setState({
-      industryGroups: newArray,
-    }, () => {
-      // NEED TO WORK WITH DEX TO UPDATE STARTINGINDARR TOO IN CASE OPEN AGAIN
+      indGroupArr: newArray,
+      alreadyMember: startingArr.length == 0 ? false : JSON.stringify(startingArr) == JSON.stringify(newArray)
     })
   }
 
-  handleSkill = (userInput) => {
+  handleSkillChange = (userInput) => {
     const {startingArr} = this.props
     const {skillToJoin} = this.state
-  /*  skillsGroups: [
-      {skillid: '339', expert: 0, learning: 1},
-      {skillid: '349', expert: 0, learning: 1},
-      {skillid: '609', expert: 1, learning: 0},
-      {skillid: '143', expert: 1, learning: 0},
-    ]*/
+
     this.setState({
       skill: userInput
     })
-    const checkGroups = startingArr.find((skill) => skill.skillid == skillToJoin)
+    const checkGroups = startingArr.find((skill) => skill == skillToJoin)
     const alreadyMember = startingArr.length == 0 ? false : (checkGroups != null)
+
+    console.log(startingArr)
+    console.log(userInput)
 
     if (alreadyMember) {
       this.setStatet({
-        alreadyMemberSkills: true,
+        alreadyMember: true,
       })
     } else {
       this.setStatet({
-        alreadyMemberSkills: false,
+        alreadyMember: false,
       })
     }
   }
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    this.setState({ isSubmitting: true });
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
@@ -69,24 +71,28 @@ class JoinProgrammeModalContent extends Component {
 
 
   canBeSubmitted() {
-    const { industries, skill } = this.state;
+    const { indGroupArr, skill, alreadyMember } = this.state;
     const { type } = this.props
 
     if (type == 'industry') {
       return (
-        industries.length != 0
-        && (industries != this.props.startingArr) // Checks user has actually changed something
+        indGroupArr && indGroupArr.length != 0 && !alreadyMember
       );
     } else {
       return (
-        (skill != null || skill != '') && alreadyMemberSkills != true
+        (skill != null || skill != '') && !alreadyMember
       )
     }
   }
 
   render() {
-    const { progName, messageFromServer } = this.state;
+    const { indGroupArr, skill, messageFromServer, isSubmitting, startingArr, alreadyMember, defaultInds } = this.state;
+    const {type} = this.props
     const isEnabled = this.canBeSubmitted();
+    /*if (type == 'industry' && startingArr && startingArr.length > 0) {
+      defaultInds = startingArr.map(ind => getIndustryDeets(ind))
+    }*/
+
     if(messageFromServer == '') {
       return (
         <React.Fragment>
@@ -98,7 +104,7 @@ class JoinProgrammeModalContent extends Component {
           <form className="paddingR20 paddingL20">
             <div className="form-group">
               <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">
-                <span>Choose which <strong>{{type == 'industry' ? 'Industry' : 'Skills'} huddles</strong> you want to join</span>
+                <span>Choose which <strong>{(type == 'industry') ? 'Industry' : 'Skills'} huddles</strong> you want to join</span>
               </label>
               {type == 'industry' && (
                 <SelectBox
@@ -113,33 +119,27 @@ class JoinProgrammeModalContent extends Component {
                   showIcon
                   iconToShow='iconFA'
                   showCheckbox
-                  defaultChecked={startingArr}
+                  defaultChecked={defaultInds}
                 />
               )}
               {type == 'skills' && (
                 <div className="autocompleter">
                   <Autocomplete
                     suggestions={skillsOptions}
-                    name='schName'
-                    placeholder={(schName != null && schName != '') ? null : 'Type School...'}
-                    handleChange={this.handleUKSchChange}
-                    fileToRender={cdn+"/js/UKSchs"}
-                    renderComponents={this.renderComponents}
-                    componentUpdatesState="ukSchsList"
+                    name='skillGroup'
+                    placeholder='Search Skills huddles...'
+                    handleChange={this.handleSkillChange}
                     idValue='value'
-                    valueToShow='label' // This is the attribute of the array/object to be displayed to user
-                    showDetail
-                    detailToShow='location'
+                    valueToShow='label'
                     focusOnLoad
                     required
-                    noSuggestionsCTAclass="form-control-std uniNotOnList"
-                  >
+                  />
                 </div>
               )}
             </div>
-            {alreadyMemberSkills === true && (
+            {alreadyMember === true && type == 'skills' && (
               <div className="descriptor prompt error indRoleForm alignLeft">
-                You're already a member of that skills huddle.
+                You&#39;re already a member of that skills huddle.
               </div>
             )}
             <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-UpdateSkills">
@@ -154,6 +154,15 @@ class JoinProgrammeModalContent extends Component {
         </React.Fragment>
       );
     } else {
+      const indGroupArrNoDuplicates = indGroupArr
+        .filter(indID => !startingArr.includes(indID))
+
+      const industryLabels = indGroupArrNoDuplicates.map((indID) => {
+        let indName
+        indName = getIndustryDeets(indID).label
+        return indName
+      })
+      const industryText = industryLabels.slice(0, -1).join(', ') + ' and ' + industryLabels.slice(-1);
       return (
         <React.Fragment>
           <div className="modal-title">
@@ -162,16 +171,12 @@ class JoinProgrammeModalContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              You&#39;re now a member of {progName}.
+              You&#39;re now a new member of {type == 'industry' ? industryText : skill}.
             </div>
-            {isClass != true && (
-              <React.Fragment>
-                <p className="landingCTADesc">
-                  You can access all of your communities from the main menu;
-                </p>
-                <div className="showProgsPic"/>
-              </React.Fragment>
-            )}
+            <p className="landingCTADesc">
+              You can access all of your communities / huddles from the main menu
+            </p>
+            <div className="showProgsPic"/>
           </div>
         </React.Fragment>
       )
