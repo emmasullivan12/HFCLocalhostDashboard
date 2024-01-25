@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th jan 2024
+// Dex last merged this code on 25th jan 2024
 
 import React, { Component } from "react";
 
@@ -954,7 +954,7 @@ class MenteeProfileContent extends Component {
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I currently have
                         </h2>
-                        <Modal {...AddExpertiseModalProps}>
+                        <Modal {...AddExpertiseModalProps} removeOverflowY>
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
@@ -988,7 +988,7 @@ class MenteeProfileContent extends Component {
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                         </h2>
-                        <Modal {...AddLearningModalProps}>
+                        <Modal {...AddLearningModalProps} removeOverflowY>
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">

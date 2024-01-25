@@ -1,4 +1,4 @@
-// Dex last merged this code on 16th jan 2024
+// Dex last merged this code on 25th jan 2024
 import React, { Component } from "react";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
@@ -1004,7 +1004,7 @@ class MentorProfileContent extends Component {
                         <h2>
                           <span role="img" aria-label="tools emoji">🛠️</span> Skills I use day-to-day
                         </h2>
-                        <Modal {...AddExpertiseModalProps}>
+                        <Modal {...AddExpertiseModalProps} removeOverflowY>
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='exp' expertiseArr={[]} learningArr={learningArr.length > 0 && learningArr}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
@@ -1038,7 +1038,7 @@ class MentorProfileContent extends Component {
                         <h2>
                           <span role="img" aria-label="book emoji">📚</span> I&#39;m currently learning
                         </h2>
-                        <Modal {...AddLearningModalProps}>
+                        <Modal {...AddLearningModalProps} removeOverflowY>
                           <EditSkillsContent modalTitle='Add new Skills / Expertise' expOrLearning='learning' expertiseArr={expertiseArr.length > 0 && expertiseArr} learningArr={[]}/>
                         </Modal>
                         <div className="editSectionBtn dispInlineBlock">
