@@ -1271,7 +1271,7 @@ class AddHighlightTextBox extends Component {
                       valueToShow='label' // This is the attribute of the array/object to be displayed to user
                     //  showIcon //
                     //  iconToShow='iconFA' //
-                    //  showCheckbox
+                      showCheckbox
                       showBubbleVersion
                       required
                     />

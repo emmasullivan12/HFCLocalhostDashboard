@@ -3,7 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import {metaAdder, DateCalc, TimeCalc} from './GeneralFunctions.js';
+import {checkMobile, metaAdder, DateCalc, TimeCalc, LoadingSpinner} from './GeneralFunctions.js';
 import Avatar from './Avatar.js';
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import {cdn} from './CDN.js';
@@ -15,6 +15,7 @@ import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import MyContent from "./MyContent.js";
+import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
 import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
 
@@ -37,6 +38,14 @@ const AskQModalProps = {
   wider: true
 }
 
+const LeaveGroupProps = {
+  ariaLabel: 'Leave group',
+  triggerText: 'Leave Group',
+  usedFor: 'leaveGroup',
+  changeInitFocus: true,
+  removeOverflowY: true
+}
+
 const MentorProfileUsrNameModalProps = {
   ariaLabel: 'View Mentor Profile',
   usedFor: 'mentor-profile-qaItem',
@@ -50,8 +59,11 @@ class CommunityPage extends React.Component {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
       isGroupMember: false,
+      userWasLearningSkill: false,
       companiesOfTopMentors: [],
-      mentorsSorted: []
+      mentorsSorted: [],
+      isSubmittingLeaveGroup: false,
+      updateLeaveGroupSuccess: false,
     }
   }
 
@@ -67,7 +79,7 @@ class CommunityPage extends React.Component {
     /*  name: 'Film, TV & VFX',
       type: 'industry',
       typeid: '19',*/
-      experts: ['1','2','3','4'],
+      experts: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
       numUnanswered: 24,
     }
@@ -75,9 +87,11 @@ class CommunityPage extends React.Component {
       updateDocumentTitle(community.name + " community - Prospela.com")
     }
     const loggedInUID = '20'
+    const userWasLearningSkill = !community.experts.find(user => user.uid == loggedInUID)
     const isGroupMember = community.members.some(e => e.uid == loggedInUID);
     this.setState({
-      isGroupMember: isGroupMember
+      isGroupMember: isGroupMember,
+      userWasLearningSkill: userWasLearningSkill
     })
     if (prevFeedScrollPos != 0) {
       const commContainer = document.getElementById("communityFeedContainer")
@@ -196,9 +210,9 @@ class CommunityPage extends React.Component {
   renderCommunityActivity = (commURL, isMainBar) => {
     const community = {
       cmid: '1234',
-        name: 'Houdini',
-        type: 'skills',
-        typeid: '425',
+      name: 'Houdini',
+      type: 'skills',
+      typeid: '425',
       /*  name: 'Film, TV & VFX',
         type: 'industry',
         typeid: '19',*/
@@ -264,6 +278,59 @@ class CommunityPage extends React.Component {
   joinGroup = () => {
     this.setState({
       isGroupMember: true
+    })
+  }
+
+  handleStatusChange = (userInput) => {
+    this.setState({
+      wantsToLeave: userInput,
+    })
+  }
+
+  handleSubmitLeaveGroup = () => {
+    const {userRole} = this.props
+    const {userWasLearningSkill, wantsToLeave} = this.state
+    const community = {
+      cmid: '1234',
+      name: 'Houdini',
+      type: 'skills',
+    }
+    this.setState({
+      isSubmittingLeaveGroup: true,
+    })
+    if (wantsToLeave == 1) {
+      // Leave group without tweaking user profile
+      this.setState({
+        isSubmittingLeaveGroup: false,
+        updateLeaveGroupSuccess: true,
+      })
+    } else if (wantsToLeave == 2) {
+      if (community.type == 'industry' && userRole == 'mentee') {
+        console.log("remove industry from industries of interest in users profile")
+        // Dex needs to remove industry from industrys of interest in users profile
+      } else if (community.type == 'skills' && userWasLearningSkill == true) {
+        console.log("remove skill from learningArr in users profile")
+        // Dex needs to remove skill from learningArr in users profile
+      }
+      this.setState({
+        isSubmittingLeaveGroup: false,
+        updateLeaveGroupSuccess: true,
+      })
+    } else { // user wanted to stay
+      this.setState({
+        isSubmittingLeaveGroup: false,
+        updateLeaveGroupSuccess: true,
+      })
+    }
+  }
+
+  resetLeaveGroup = () => {
+    const {wantsToLeave} = this.state
+    this.setState({
+      isGroupMember: wantsToLeave != 1 && wantsToLeave != 2,
+      isSubmittingLeaveGroup: false,
+      updateLeaveGroupSuccess: false,
+      wantsToLeave: null,
     })
   }
 
@@ -721,22 +788,23 @@ class CommunityPage extends React.Component {
   }
 */
   render() {
-    const {tabToView, isGroupMember} = this.state
+    const {tabToView, isGroupMember, userWasLearningSkill, wantsToLeave, isSubmittingLeaveGroup, updateLeaveGroupSuccess} = this.state
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
     const community = {
       cmid: '1234',
-        name: 'Houdini',
+      /*  name: 'Houdini',
         type: 'skills',
-        typeid: '425',
-      /*  name: 'Film, TV & VFX',
-        type: 'industry',
-        typeid: '19',*/
-      experts: ['1','2','3','4'],
+        typeid: '425',*/
+        name: 'Film, TV & VFX',
+        type: 'skills',
+        typeid: '19',
+      experts: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
     //  experts: [],
     ///  members: [],
       numUnanswered: 24
     }
+    var loggedInUID = '1'
 
     let urlText, commItem, isNonCoreCountry, isFromO18OnlyCountry, isU18
     var country = 'GBR'
@@ -761,6 +829,7 @@ class CommunityPage extends React.Component {
     }
     const commURLending = "/community/" + community.type + '/' + urlText
     const commURL = "https://app.prospela.com" + commURLending
+    const isMobile = checkMobile()
 
     // Add meta tags
     metaAdder('property="og:type"', "website")
@@ -778,6 +847,32 @@ class CommunityPage extends React.Component {
       link.rel = 'canonical';
       link.href = commURL
       document.head.appendChild(link);
+    }
+
+    let leaveGroupOptions
+
+    if (community.type == 'industry' && userRole == 'mentee') {
+      leaveGroupOptions = [
+        {value: '0', label: 'No', detail: 'Let me stay', checkbox: true, isTitle: false},
+        {value: '1', label: 'Yes', detail: 'Leave, but keep this industry as an interest on my profile', checkbox: true, isTitle: false},
+        {value: '2', label: 'Yes', detail: 'Leave, and remove this industry as an interest on my profile', checkbox: true, isTitle: false},
+      ]
+    } else if (community.type == 'industry') {
+      leaveGroupOptions = [
+        {value: '0', label: 'No', detail: 'Let me stay', checkbox: true, isTitle: false},
+        {value: '1', label: 'Yes', detail: 'Leave the group', checkbox: true, isTitle: false},
+      ]
+    } else if (community.type == 'skills' && userWasLearningSkill == true) {
+      leaveGroupOptions = [
+        {value: '0', label: 'No', detail: 'Let me stay', checkbox: true, isTitle: false},
+        {value: '1', label: 'Yes', detail: 'Leave, but keep this skill on my profile', checkbox: true, isTitle: false},
+        {value: '2', label: 'Yes', detail: 'Leave, and remove this skill from my profile', checkbox: true, isTitle: false},
+      ]
+    } else {
+      leaveGroupOptions = [
+        {value: '0', label: 'No', detail: 'Let me stay', checkbox: true, isTitle: false},
+        {value: '1', label: 'Yes', detail: 'Leave the group', checkbox: true, isTitle: false},
+      ]
     }
 
     return (
@@ -893,6 +988,56 @@ class CommunityPage extends React.Component {
                       </Link>
                     </div>
                   </div>
+                )}
+                {isLoggedIn && isGroupMember && !isMobile && (
+                  <Modal {...LeaveGroupProps} handleLocalStateOnClose={() => this.resetLeaveGroup()}>
+                    <div className="showSmallModalSize">
+                      {updateLeaveGroupSuccess == false && (
+                        <React.Fragment>
+                          <div className="modal-title">
+                            <div className="emoji-icon cross-emoji successBox" />
+                            Are you sure you want to leave the group?
+                          </div>
+                          <div className="ideas-Title marginBottom20">
+                            You&#39;re about to lose access to Community Insights and your place on the leaderboard
+                          </div>
+                          <div className="autocompleter">
+                            <SelectBox
+                              options={leaveGroupOptions}
+                              name='selectLeaveGroup'
+                              placeholder='Select yes or no:'
+                              placeholderOnClick='Select yes or no:'
+                              handleChange={this.handleStatusChange}
+                              focusOnLoad
+                              valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                              //showIcon
+                              //iconToShow='iconFA'
+                              showDetail
+                              detailToShow='detail'
+                            //  showCheckbox
+                            //  defaultChecked={defaultInds}
+                            />
+                          </div>
+                          <div className="pass-btn-container">
+                            <button type="button" disabled={isSubmittingLeaveGroup == true ? true : false} onClick={this.handleSubmitLeaveGroup} className="Submit-btn">
+                              {isSubmittingLeaveGroup === true && (
+                                <LoadingSpinner />
+                              )}
+                              {isSubmittingLeaveGroup != true && (
+                                <span>{wantsToLeave == 0 ? 'Stay in group' : 'Leave group'}</span>
+                              )}
+                            </button>
+                          </div>
+                        </React.Fragment>
+                      )}
+                      {updateLeaveGroupSuccess == true && (
+                        <div className="modal-title">
+                          <div className={"emoji-icon successBox" + (wantsToLeave == 0 ? ' heart-emoji' : ' sad-emoji')} />
+                          {wantsToLeave == 0 ? 'Glad you\'re still here' : 'You left the group'}
+                        </div>
+                      )}
+                    </div>
+                  </Modal>
                 )}
                 {!isLoggedIn && (
                   <div className="thinPurpleContentBox sideBarContentHiddenOnShrink signUpPromptBanner onFeedSideBar">

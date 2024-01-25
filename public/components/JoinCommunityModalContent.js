@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Autocomplete from './Autocomplete.js';
 import SelectBox from './Select.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
-import {getIndustryDeets} from './UserDetail.js';
+import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
 import industryOptions from './Industries.js';
 import skillsOptions from './Skills.js';
 
@@ -18,6 +18,9 @@ class JoinProgrammeModalContent extends Component {
       alreadyMember: false,
       isSubmitting: false,
       indGroupArr: [],
+      skill: null,
+      skillIsValid: false,
+      expOrLearn: null
     };
   }
 
@@ -35,28 +38,34 @@ class JoinProgrammeModalContent extends Component {
     })
   }
 
-  handleSkillChange = (userInput) => {
+  handleSkillChange = (userInput, isValid) => {
     const {startingArr} = this.props
     const {skillToJoin} = this.state
 
     this.setState({
-      skill: userInput
+      skill: userInput,
+      skillIsValid: isValid,
     })
     const checkGroups = startingArr.find((skill) => skill == skillToJoin)
     const alreadyMember = startingArr.length == 0 ? false : (checkGroups != null)
 
-    console.log(startingArr)
-    console.log(userInput)
-
-    if (alreadyMember) {
-      this.setStatet({
-        alreadyMember: true,
-      })
-    } else {
-      this.setStatet({
-        alreadyMember: false,
-      })
+    if (isValid) {
+      if (alreadyMember) {
+        this.setState({
+          alreadyMember: true,
+        })
+      } else {
+        this.setState({
+          alreadyMember: false,
+        })
+      }
     }
+  }
+
+  handleStatusChange = (userInput) => {
+    this.setState({
+      expOrLearn: userInput,
+    })
   }
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
@@ -71,7 +80,7 @@ class JoinProgrammeModalContent extends Component {
 
 
   canBeSubmitted() {
-    const { indGroupArr, skill, alreadyMember } = this.state;
+    const { indGroupArr, skill, alreadyMember, expOrLearn, skillIsValid } = this.state;
     const { type } = this.props
 
     if (type == 'industry') {
@@ -80,13 +89,13 @@ class JoinProgrammeModalContent extends Component {
       );
     } else {
       return (
-        (skill != null || skill != '') && !alreadyMember
+        (skill != null && skill != '' && skillIsValid == true) && !alreadyMember && expOrLearn != null && expOrLearn != ''
       )
     }
   }
 
   render() {
-    const { indGroupArr, skill, messageFromServer, isSubmitting, startingArr, alreadyMember, defaultInds } = this.state;
+    const { indGroupArr, skill, messageFromServer, isSubmitting, startingArr, alreadyMember, defaultInds, skillIsValid } = this.state;
     const {type} = this.props
     const isEnabled = this.canBeSubmitted();
     /*if (type == 'industry' && startingArr && startingArr.length > 0) {
@@ -98,13 +107,13 @@ class JoinProgrammeModalContent extends Component {
         <React.Fragment>
           <div className="modal-title">
             <span className="emoji-icon sparkle-emoji titleLeft" />
-            <span>Join an Industry huddle</span>
+            <span>Join {(type == 'industry') ? 'an Industry' : 'a Skills'} huddle</span>
             <span className="emoji-icon sparkle-emoji titleRight" />
           </div>
           <form className="paddingR20 paddingL20">
             <div className="form-group">
-              <label className="descriptor alignLeft reqAsterisk" htmlFor="roletitle">
-                <span>Choose which <strong>{(type == 'industry') ? 'Industry' : 'Skills'} huddles</strong> you want to join</span>
+              <label className="descriptor alignLeft reqAsterisk" htmlFor={type == 'industry' ? 'selectInd' : 'skillGroup'}>
+                <span>{(type == 'industry') ? 'Choose which ' : 'Search for '}<strong>{(type == 'industry') ? 'Industry' : 'Skills'} huddles</strong> you want to join</span>
               </label>
               {type == 'industry' && (
                 <SelectBox
@@ -122,19 +131,73 @@ class JoinProgrammeModalContent extends Component {
                   defaultChecked={defaultInds}
                 />
               )}
+                {/*  {indGroupArr.length != 0 && !alreadyMember && (
+                    <React.Fragment>
+                      <label className="descriptor alignLeft reqAsterisk" htmlFor="selectExpOrLearn">
+                        <span>Are you an <strong>expert or learner</strong> of this industry?</span>
+                      </label>
+                      <div className="autocompleter">
+                        <SelectBox
+                          options={[
+                            {value: '1', label: 'Expert', detail: 'You currently work or have +2yrs experience in this industry', checkbox: true, isTitle: false, iconFA: 'fas fa-hashtag'},
+                            {value: '2', label: 'Learner', detail: 'You\'re just starting out in this industry', checkbox: true, isTitle: false, iconFA: 'fas fa-hashtag'},
+                          ]}
+                          name='selectExpOrLearn'
+                          placeholder='Select expert or learner:'
+                          placeholderOnClick='Select Industry(s):'
+                          handleChange={this.handleIndChange}
+                          focusOnLoad
+                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                          showDetail
+                          detailToShow='detail'
+                        />
+                      </div>
+                    </React.Fragment>
+                  )} */}
               {type == 'skills' && (
-                <div className="autocompleter">
-                  <Autocomplete
-                    suggestions={skillsOptions}
-                    name='skillGroup'
-                    placeholder='Search Skills huddles...'
-                    handleChange={this.handleSkillChange}
-                    idValue='value'
-                    valueToShow='label'
-                    focusOnLoad
-                    required
-                  />
-                </div>
+                <React.Fragment>
+                  <div className="autocompleter">
+                    <Autocomplete
+                      suggestions={skillsOptions}
+                      name='skillGroup'
+                      placeholder='Search Skills huddles...'
+                      handleChange={this.handleSkillChange}
+                      idValue='value'
+                      valueToShow='label'
+                      showDetail
+                      //detailToShow='289 users'
+                      focusOnLoad
+                      required
+                    />
+                  </div>
+                  {(skill != null && skill != '') && skillIsValid == true && !alreadyMember && (
+                    <React.Fragment>
+                      <label className="descriptor alignLeft reqAsterisk" htmlFor="selectExpOrLearn">
+                        <span>Are you an <strong>expert or learner</strong> of this skill?</span>
+                      </label>
+                      <div className="autocompleter">
+                        <SelectBox
+                          options={[
+                            {value: '1', label: 'Expert', detail: 'You use this skill at work or have ~2yrs+ experience', checkbox: true, isTitle: false, iconFA: 'fas fa-hashtag'},
+                            {value: '2', label: 'Learner', detail: 'You\'re just starting out with this skill', checkbox: true, isTitle: false, iconFA: 'fas fa-hashtag'},
+                          ]}
+                          name='selectExpOrLearn'
+                          placeholder='Select your learning status:'
+                          placeholderOnClick='Select your learning status:'
+                          handleChange={this.handleStatusChange}
+                          focusOnLoad
+                          valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                          //showIcon
+                          //iconToShow='iconFA'
+                          showDetail
+                          detailToShow='detail'
+                        //  showCheckbox
+                        //  defaultChecked={defaultInds}
+                        />
+                      </div>
+                    </React.Fragment>
+                  )}
+                </React.Fragment>
               )}
             </div>
             {alreadyMember === true && type == 'skills' && (
@@ -154,15 +217,20 @@ class JoinProgrammeModalContent extends Component {
         </React.Fragment>
       );
     } else {
-      const indGroupArrNoDuplicates = indGroupArr
-        .filter(indID => !startingArr.includes(indID))
+      let skillName, indName, industryText
+      if (type == 'industry') {
+        const indGroupArrNoDuplicates = indGroupArr
+          .filter(indID => !startingArr.includes(indID))
 
-      const industryLabels = indGroupArrNoDuplicates.map((indID) => {
-        let indName
-        indName = getIndustryDeets(indID).label
-        return indName
-      })
-      const industryText = industryLabels.slice(0, -1).join(', ') + ' and ' + industryLabels.slice(-1);
+        const industryLabels = indGroupArrNoDuplicates.map((indID) => {
+          indName = getIndustryDeets(indID).label
+          return indName
+        })
+        industryText = industryLabels.length < 2 ? industryLabels : (industryLabels.slice(0, -1).join(', ') + ' and ' + industryLabels.slice(-1))
+      } else {
+        skillName = getSkillDeets(skill).label
+      }
+
       return (
         <React.Fragment>
           <div className="modal-title">
@@ -171,12 +239,17 @@ class JoinProgrammeModalContent extends Component {
           </div>
           <div className="success-container">
             <div className="ideas-Title">
-              You&#39;re now a new member of {type == 'industry' ? industryText : skill}.
+              You&#39;re now a new member of {type == 'industry' ? industryText : skillName}.
             </div>
             <p className="landingCTADesc">
               You can access all of your communities / huddles from the main menu
             </p>
-            <div className="showProgsPic"/>
+            {type == 'industry' && (
+              <div className="showCommunitiesPic"/>
+            )}
+            {type == 'skills' && (
+              <div className="showSkillsCommunitiesPic"/>
+            )}
           </div>
         </React.Fragment>
       )

@@ -170,6 +170,7 @@ class Dashboard extends Component{
       prevCommFeedScrollPos: 0,
       cameFromFeedUnlockBtn: false,
       highlightStepsBox: false,
+      isCurrentSession: false, // Once Homepage.js loads it sets it to true (to prevent communities modal from loading everytime navigate to homepage)
   //    documentTitle: 'Prospela Dashboard',
   //    menuItemActive: '',
   //    menuItemActive: 'dashboard' //Homepage for any user
@@ -322,6 +323,12 @@ class Dashboard extends Component{
     })
   }
 
+  updateIsCurrentSession = () => {
+    this.setState({
+      isCurrentSession: true
+    })
+  }
+
   hasAccess = (requireLogin, allowedPermissions, callback) => {
     const checkPermissions = (userPermissions, allowedPermissions) => {
       if (allowedPermissions.length === 0) {
@@ -435,7 +442,7 @@ class Dashboard extends Component{
 
   render(){
     const userRole = this.props.userRole;
-    const {browser, pathName, prevFeedScrollPos, prevCommFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin, highlightStepsBox} = this.state
+    const {isCurrentSession, browser, pathName, prevFeedScrollPos, prevCommFeedScrollPos, userStepsWasOpenInFeed, cameFromFeedUnlockBtn, showSignUpPromptModal, clickOrigin, highlightStepsBox} = this.state
   //  const fullsustep = 'justjoined';
     const {moveScroller, startDrag} = this;
     const groupsList = [
@@ -674,8 +681,8 @@ class Dashboard extends Component{
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
-                <Route exact path="/home" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
-                <Route exact path="/questions" render={(props) => <HomePage {...props} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/home" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
+                <Route exact path="/questions" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>

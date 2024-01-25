@@ -246,7 +246,13 @@
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/MentorMatches_224.png);
   }
   .showProgsPic{
-    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships.png);
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships.png)!important;
+  }
+  .showCommunitiesPic{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Communities.png)!important;
+  }
+  .showSkillsCommunitiesPic{
+    background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Communities_Skills.png)!important;
   }
   .placeholderPic.openEnvelope{
     background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Invite%20Icon_100.png);
@@ -301,8 +307,9 @@
   font-size: 0.9rem;
 }
 
-.showProgsPic{
-  height: 130px;
+.showProgsPic,
+.showCommunitiesPic,
+.showSkillsCommunitiesPic{
   width: 200px;
   margin: auto;
   margin-top: .5rem;
@@ -313,5 +320,16 @@
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   background-size: cover;
+}
+.showSkillsCommunitiesPic{
+  height: 230px;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Communities_Skills_125.png);
+}
+.showCommunitiesPic{
+  height: 230px;
+  background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Communities_125.png);
+}
+.showProgsPic{
+  height: 130px;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Memberships_125.png);
 }

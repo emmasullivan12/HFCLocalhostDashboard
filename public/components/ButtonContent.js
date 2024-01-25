@@ -205,6 +205,16 @@ function ButtonContent(props) {
       return (
         <X />
       )
+    case 'leaveGroup':
+      return (
+        <div className="paddingL20 paddingR20 noBold">
+          <div className="fontSize13 marginBottom10">
+            <span>
+              <i className="fas fa-sign-out-alt" /> Leave Group
+            </span>
+          </div>
+        </div>
+      )
     default:
       return <div className={"overflow-ellipsis " + otherFormatting}>{text}</div>
   }

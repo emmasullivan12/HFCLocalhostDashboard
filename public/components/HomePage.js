@@ -31,6 +31,14 @@ import skillsOptions from './Skills.js';
 import "../css/HomePage.css";
 import "../css/HomepageCTAContainer.css";
 
+
+const AddIntroUserCommunitiesModalProps = {
+  ariaLabel: 'We\'ve auto-joined you to your industry groups',
+  triggerText: 'Auto-join industry groups',
+  usedFor: 'autojoinIndGroups',
+  hideTrigger: true,
+}
+
 const JoinProgrammePlusModalProps = {
   ariaLabel: 'Join a live mentoring programme',
   triggerText: 'Join a Programme',
@@ -1034,12 +1042,16 @@ class HomePage extends Component {
           <React.Fragment>
             <div className="modal-title">
               <div className="emoji-icon tada-emoji successBox" />
-              Success!
+              Skills updated + It&#39;s official!
             </div>
             <div className="success-container">
               <div className="ideas-Title">
-                You&#39;ve updated your skills.
+                We&#39;ve auto-joined you to your chosen skills communities.
               </div>
+              <p className="landingCTADesc">
+                You can access all of your communities / huddles from the main menu
+              </p>
+              <div className="showSkillsCommunitiesPic"/>
             </div>
           </React.Fragment>
         );
@@ -1076,6 +1088,10 @@ class HomePage extends Component {
               <p className="landingCTADesc">
                 Hold tight! We&#39;re busy finding the best match for you, based on what you&#39;ve told us. It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
               </p>
+              <p className="landingCTADesc">
+                In the meantime, we&#39;ve auto-joined you to your chosen skills communities, which you can access from the main menu
+              </p>
+              <div className="showSkillsCommunitiesPic"/>
             </div>
           </React.Fragment>
         );
@@ -1128,7 +1144,7 @@ class HomePage extends Component {
   }
 
   renderSteps() {
-    const {isLoggedIn} = this.props
+    const {isLoggedIn, isCurrentSession, updateIsCurrentSession} = this.props
     const {userStepsIsOpen, userstep, userRole, showSuccessModal, showAddSkillsModal, showAnswerAQModal, showAskAQModal, showMentorFullAppModal, showMenteeFullAppModal, showJoinAGroupModal, showMentorIDModal, showMentorCVModal, showMentorTrainingModal, showMenteeTrainingModal} = this.state;
   //  const groupName = 'AVFX' // If step is 'autoenroll' then show the groupname
   //  const hasJoinedAutoEnrollGroup = false
@@ -1180,7 +1196,8 @@ class HomePage extends Component {
 
     const steps = (userRole && userRole == 'mentor') ? mentorSteps : menteeSteps
     const stepsLeftToDo = steps.filter(step => step.isComplete == 0).length
-    const allStepsCompleted = stepsLeftToDo == 0
+    //const allStepsCompleted = stepsLeftToDo == 0
+    const allStepsCompleted = true
 
     if (allStepsCompleted && hasMatch == true) {return}
 
@@ -1200,6 +1217,10 @@ class HomePage extends Component {
                 <p className="landingCTADesc">
                   It can take a few weeks to find a relevant match, and we&#39;ll notify you as soon as possible.
                 </p>
+                <p className="landingCTADesc">
+                  In the meantime, we&#39;ve auto-joined you to your chosen skills communities, which you can access from the main menu
+                </p>
+                <div className="showSkillsCommunitiesPic"/>
                 {/*<p className="landingCTADesc">In the meantime...</p>
                 <Modal {...AddHighlightModalProps}>
                   <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
@@ -1212,6 +1233,8 @@ class HomePage extends Component {
     }
 
     const pctStepsCompleted = Math.round((1 - (stepsLeftToDo / steps.length)) * 100)
+    const showIntroUserCommunitiesModal = true
+    //const showIntroUserCommunitiesModal = stepsLeftToDo == (steps.length - 1) // i.e. hasn't completed any steps yet
 
     var questionsSkillsHobbies = [
       {q: 'OK ... on to the good stuff!', detail: (userRole == 'mentee' ? 'You\'ve already told us which industry & roles you\'re interested in, but what about particular skills you want to develop' : 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do'), aType: 'interim', name: 'interim'},
@@ -1334,6 +1357,23 @@ class HomePage extends Component {
               {showMenteeTrainingModal == true && (
                 <Modal {...MenteeTrainingModalProps} handleLocalStateOnClose={() => this.closeModal("MenteeTraining")}>
                   <MenteeTraining />
+                </Modal>
+              )}
+              {isLoggedIn && showIntroUserCommunitiesModal == true && isCurrentSession == false && (
+                <Modal {...AddIntroUserCommunitiesModalProps} handleLocalStateOnClose={() => {this.closeModal("IntroUserCommunities"), updateIsCurrentSession()}}>
+                  <div className="modal-title">
+                    <div className="emoji-icon tada-emoji successBox" />
+                    It&#39;s official!
+                  </div>
+                  <div className="success-container">
+                    <div className="ideas-Title">
+                      We&#39;ve auto-joined you to your chosen industry communities.
+                    </div>
+                    <p className="landingCTADesc">
+                      You can access all of your communities / skills huddles from the main menu
+                    </p>
+                    <div className="showCommunitiesPic"/>
+                  </div>
                 </Modal>
               )}
             </React.Fragment>

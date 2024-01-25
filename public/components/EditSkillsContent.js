@@ -114,10 +114,9 @@ class EditSkillsContent extends Component {
     const { expertiseFromList, freeTextExpertise, startingExpertiseArr, endingExpertiseArr, learningFromList, freeTextLearning, startingLearningArr, endingLearningArr } = this.state;
 
     return (
-      ((expertiseFromList.length != 0 || freeTextExpertise.length != 0)
-      && (JSON.stringify(startingExpertiseArr) != JSON.stringify(endingExpertiseArr)))
-      && ((learningFromList.length != 0 || freeTextLearning.length != 0)
-      && (JSON.stringify(startingLearningArr) != JSON.stringify(endingLearningArr))) // Checks user has actually changed something
+      (expertiseFromList.length != 0 || freeTextExpertise.length != 0 || (startingExpertiseArr.length > 0 && (JSON.stringify(startingExpertiseArr) == JSON.stringify(endingExpertiseArr))))
+      && (learningFromList.length != 0 || freeTextLearning.length != 0 || (startingLearningArr.length > 0 && (JSON.stringify(startingLearningArr) == JSON.stringify(endingLearningArr))))
+      && ((JSON.stringify(startingExpertiseArr) != JSON.stringify(endingExpertiseArr)) || (JSON.stringify(startingLearningArr) != JSON.stringify(endingLearningArr))) // Checks user has actually changed something
     );
   }
 
@@ -198,10 +197,17 @@ class EditSkillsContent extends Component {
         <React.Fragment>
           <div className="showSmallModalSize">
             <div className="modal-title">
-              <div className="ideas-icon-container">
-                <span role="img" aria-label="ok emoji">👌</span>
+              <div className="emoji-icon tada-emoji successBox" />
+              Skills updated + It&#39;s official!
+            </div>
+            <div className="success-container">
+              <div className="ideas-Title">
+                We&#39;ve auto-joined you to your chosen skills communities.
               </div>
-              Skills updated
+              <p className="landingCTADesc">
+                You can access all of your communities / huddles from the main menu
+              </p>
+              <div className="showSkillsCommunitiesPic"/>
             </div>
           </div>
         </React.Fragment>

@@ -59,7 +59,8 @@
 .ModalOpenBtn-deleteQ,
 .ModalOpenBtn-addComment,
 .ModalOpenBtn-textModalTrigger,
-.ModalOpenBtn-flagComment{
+.ModalOpenBtn-flagComment,
+.ModalOpenBtn-leaveGroup{
   background: none;
   border: 0;
   outline: none;
@@ -86,7 +87,7 @@
 .ModalOpenBtn-deleteQ:hover,
 .ModalOpenBtn-addComment:hover,
 .ModalOpenBtn-textModalTrigger:hover,
-.ModalOpenBtn-flagComment:hover{
+.ModalOpenBtn-flagComment:hover,{
   background: none!important;
   color: inherit!important;
 }
@@ -102,7 +103,8 @@
 .ModalOpenBtn-deleteQ:active,
 .ModalOpenBtn-addComment:active,
 .ModalOpenBtn-textModalTrigger:active,
-.ModalOpenBtn-flagComment:active{
+.ModalOpenBtn-flagComment:active,
+.ModalOpenBtn-leaveGroup:active{
   background: none;
 }
 .ModalOpenBtn-deleteContent{
@@ -213,6 +215,14 @@
   color: #3f3f3f;
   opacity: 1;
   background: none;
+}
+.ModalOpenBtn-leaveGroup{
+  color: #bdbdbd;
+}
+.ModalOpenBtn-leaveGroup:hover:hover,
+.ModalOpenBtn-leaveGroup:hover:active{
+  color: #3f3f3f!important;
+  background: none!important;
 }
 .ModalOpenBtn-mentee-prauto-profile{
   background: none;
