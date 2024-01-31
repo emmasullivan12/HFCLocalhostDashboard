@@ -35,6 +35,9 @@
   margin-left: 5px;
   margin-top: 4px;
 }
+.tagsList .rankingItem.tooltip:before{
+  left: unset;
+}
 .tagsList .rankingItem .multiple{
   margin-left: 20px;
 }

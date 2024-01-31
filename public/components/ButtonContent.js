@@ -208,9 +208,9 @@ function ButtonContent(props) {
     case 'leaveGroup':
       return (
         <div className="paddingL20 paddingR20 noBold">
-          <div className="fontSize13 marginBottom10">
+          <div className="fontSize12 marginBottom10">
             <span>
-              <i className="fas fa-sign-out-alt" /> Leave Group
+              <i className="fas fa-sign-out-alt" /> {text}
             </span>
           </div>
         </div>

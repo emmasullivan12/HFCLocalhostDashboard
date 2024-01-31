@@ -55,6 +55,14 @@ const LeaveGroupProps = {
   removeOverflowY: true
 }
 
+const LeaveGroupMobileProps = {
+  ariaLabel: 'Leave',
+  triggerText: 'Leave',
+  usedFor: 'leaveGroup',
+  changeInitFocus: true,
+  removeOverflowY: true
+}
+
 const MentorProfileUsrNameModalProps = {
   ariaLabel: 'View Mentor Profile',
   usedFor: 'mentor-profile-qaItem',
@@ -804,7 +812,7 @@ class CommunityPage extends React.Component {
         name: 'Houdini',
         type: 'skills',
         typeid: '425',
-      /* name: 'Film, TV & VFX',
+    /*   name: 'Film, TV & VFX',
         type: 'industry',
         typeid: '19',*/
       experts: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}],
@@ -897,6 +905,56 @@ class CommunityPage extends React.Component {
                 <div className="chatItemFlexContainer qTitle qaPage">
                   <div>
                     <span className="marginBottom20 breakWord"><strong>{community.name} <span className="mediumGreyText">community</span></strong></span>
+                    {isLoggedIn && isGroupMember && isMobile && (
+                      <Modal {...LeaveGroupMobileProps} handleLocalStateOnClose={() => this.resetLeaveGroup()}>
+                        <div className="showSmallModalSize">
+                          {updateLeaveGroupSuccess == false && (
+                            <React.Fragment>
+                              <div className="modal-title">
+                                <div className="emoji-icon cross-emoji successBox" />
+                                Are you sure you want to leave the group?
+                              </div>
+                              <div className="ideas-Title marginBottom20">
+                                You&#39;re about to lose access to Community Insights and your place on the leaderboard
+                              </div>
+                              <div className="autocompleter">
+                                <SelectBox
+                                  options={leaveGroupOptions}
+                                  name='selectLeaveGroup'
+                                  placeholder='Select yes or no:'
+                                  placeholderOnClick='Select yes or no:'
+                                  handleChange={this.handleStatusChange}
+                                  focusOnLoad
+                                  valueToShow='label' // This is the attribute of the array/object to be displayed to user
+                                  //showIcon
+                                  //iconToShow='iconFA'
+                                  showDetail
+                                  detailToShow='detail'
+                                //  showCheckbox
+                                //  defaultChecked={defaultInds}
+                                />
+                              </div>
+                              <div className="pass-btn-container">
+                                <button type="button" disabled={isSubmittingLeaveGroup == true ? true : false} onClick={this.handleSubmitLeaveGroup} className="Submit-btn">
+                                  {isSubmittingLeaveGroup === true && (
+                                    <LoadingSpinner />
+                                  )}
+                                  {isSubmittingLeaveGroup != true && (
+                                    <span>{wantsToLeave == 0 ? 'Stay in group' : 'Leave group'}</span>
+                                  )}
+                                </button>
+                              </div>
+                            </React.Fragment>
+                          )}
+                          {updateLeaveGroupSuccess == true && (
+                            <div className="modal-title">
+                              <div className={"emoji-icon successBox" + (wantsToLeave == 0 ? ' heart-emoji' : ' sad-emoji')} />
+                              {wantsToLeave == 0 ? 'Glad you\'re still here' : 'You left the group'}
+                            </div>
+                          )}
+                        </div>
+                      </Modal>
+                    )}
                     <div className="qDetail normalLineheight fontSize13 noBold marginBottom20 breakWord">
                       {userRole == 'mentor' ? ('Support aspiring ' + community.name + ' learners from all walks of life, alongside other compassionate experts') : ('Discover ' + community.name + ': learn directly from real employees, alongside like-minded peers')}
                     </div>

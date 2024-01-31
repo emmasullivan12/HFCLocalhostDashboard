@@ -12,9 +12,19 @@ import DoughnutChart from './DoughnutChart.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
 import EditSkillsContent from './EditSkillsContent.js';
 import FeedContainer from "./FeedContainer.js";
+import JoinSkillsCommModalContent from './JoinSkillsCommModalContent.js';
 import Modal from './Modal.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
+import skillsOptions from './Skills.js';
 import {getRoleDeets, getSkillDeets, getIndustryDeets, getSubjectDeets, timeSince, getEmployerName, convertSkills} from './UserDetail.js';
+
+const JoinSkillsCommModalProps = {
+  ariaLabel: 'Join a skills Group',
+  triggerText: 'Join',
+  usedFor: 'addHighlightQApage',
+  changeInitFocus: true,
+  hideTrigger: true,
+}
 
 const AddExpertiseModalProps = {
   ariaLabel: 'Add / Edit skills',
@@ -33,6 +43,7 @@ class CommunityOverview extends React.Component {
       mentorMaxEduChartLoaded: true,
       menteeMostPopularRolesChartLoaded: true,
       showAddSkillsModal: false,
+      showAddExpOrLearningModal: false,
     }
   }
 
@@ -166,6 +177,7 @@ class CommunityOverview extends React.Component {
   }
 
   showModal = (modalType) => {
+    console.log(modalType)
     this.setState({
       ["show"+modalType+"Modal"]: true,
     });
@@ -179,13 +191,13 @@ class CommunityOverview extends React.Component {
 
   render() {
     const {isGroupMember, joinGroup, companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
-    const {showAddSkillsModal, mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
+    const {showAddExpOrLearningModal, showAddSkillsModal, mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
     let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, menteesTopRolesDemandArray, questionsArr, numQs, numUnanswered
 
     const companiesArray = ['Pladis', 'EY', 'General Electric', 'Lond company name what happens']
     const user = {
-      expertise: ['339','349','609','143'],
+      expertise: ['77','349','609','143'],
       expertisefreetext: [],
       learning: [],
       learningfreetext: [],
@@ -198,10 +210,11 @@ class CommunityOverview extends React.Component {
     const learningArr = learningCommaString && learningCommaString.length == 0 ? [] : learningCommaString.split(', ');
 
     var userHasCompletedSkills = expertiseArr && expertiseArr.length > 0 && learningArr && learningArr.length > 0
-    const menteeSkills = ['339','349','609','143']
-    const menteeLearningSkills = ['569','587','337','60']
-    const mentorSkills = ['339','349','609','143']
-    const mentorLearningSkills = ['569','587','337','60']
+    //var userHasCompletedSkills = true
+    const menteeSkills = ['339','349','77','143']
+    const menteeLearningSkills = ['77','587','337','60']
+    const mentorSkills = ['339','349','609','77']
+    const mentorLearningSkills = ['569','77','337','60']
     const popularIndustries = ['19','5','46','45']
     const popularRoles = ['149','514','446','452']
     const subjects = ['139','122','1','55']
@@ -457,7 +470,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup) : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
@@ -476,16 +489,37 @@ class CommunityOverview extends React.Component {
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {menteeLearningSkillsArray.length > 0 && menteeLearningSkillsArray.map((skill) => {
-                          return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
-                              <span
-                                className="multiple clickable value paddingR displayBlock"
-                                id={skill.value}
-                              >
-                                {skill.label}
-                              </span>
-                            </Link>
-                          )
+                          let skillHasComm
+                          skillHasComm = skillsOptions.filter(x => x.value == skill.value)[0].hasComm == 1;
+                          if (skillHasComm == true) {
+                            return (
+                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem tooltip" onClick={updatePathName}>
+                                <span
+                                  className="multiple clickable value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to skills community
+                                </span>
+                              </Link>
+                            )
+                          } else {
+                            return (
+                              <Link to='#' key={skill.value} className="link rankingItem tooltip cursorText">
+                                <span
+                                  className="multiple value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  We don&#39;t have an active skills community for this yet
+                                </span>
+                              </Link>
+                            )
+                          }
                         })}
                       </div>
                     </div>
@@ -575,12 +609,15 @@ class CommunityOverview extends React.Component {
                       <div className="tagsList showRanking">
                         {popularIndustriesArray && popularIndustriesArray.map((ind) => {
                           return (
-                            <Link to={{pathname: "/community/industry/" + ind.urlText, state: {prevPath: window.location.pathname}}} key={ind.value} className="link rankingItem" onClick={updatePathName}>
+                            <Link to={{pathname: "/community/industry/" + ind.urlText, state: {prevPath: window.location.pathname}}} key={ind.value} className="link rankingItem tooltip" onClick={updatePathName}>
                               <span
                                 className="multiple clickable value paddingR displayBlock"
                                 id={ind.value}
                               >
                                 {ind.label}
+                              </span>
+                              <span className="tooltiptext below width125px normalLineheight">
+                                <i className="fas fa-sign-out-alt" /> Go to industry community
                               </span>
                             </Link>
                           )
@@ -622,10 +659,9 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup)}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
-
                           </button>
                         </a>
                       </div>
@@ -706,7 +742,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup)}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
@@ -786,7 +822,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup)}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
@@ -853,7 +889,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : joinGroup}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup)}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : 'Join to unlock'}
                           </button>
@@ -925,7 +961,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup) : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
@@ -944,16 +980,37 @@ class CommunityOverview extends React.Component {
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {menteeSkillsArray && menteeSkillsArray.map((skill) => {
-                          return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
-                              <span
-                                className="multiple clickable value paddingR displayBlock"
-                                id={skill.value}
-                              >
-                                {skill.label}
-                              </span>
-                            </Link>
-                          )
+                          let skillHasComm
+                          skillHasComm = skillsOptions.filter(x => x.value == skill.value)[0].hasComm == 1;
+                          if (skillHasComm == true) {
+                            return (
+                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem tooltip" onClick={updatePathName}>
+                                <span
+                                  className="multiple clickable value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to skills community
+                                </span>
+                              </Link>
+                            )
+                          } else {
+                            return (
+                              <Link to='#' key={skill.value} className="link rankingItem tooltip cursorText">
+                                <span
+                                  className="multiple value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  We don&#39;t have an active skills community for this yet
+                                </span>
+                              </Link>
+                            )
+                          }
                         })}
                       </div>
                     </div>
@@ -992,7 +1049,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup) : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
@@ -1011,16 +1068,37 @@ class CommunityOverview extends React.Component {
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
                         {mentorSkillsArray && mentorSkillsArray.map((skill) => {
-                          return (
-                            <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
-                              <span
-                                className="multiple clickable value paddingR displayBlock"
-                                id={skill.value}
-                              >
-                                {skill.label}
-                              </span>
-                            </Link>
-                          )
+                          let skillHasComm
+                          skillHasComm = skillsOptions.filter(x => x.value == skill.value)[0].hasComm == 1;
+                          if (skillHasComm == true) {
+                            return (
+                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem tooltip" onClick={updatePathName}>
+                                <span
+                                  className="multiple clickable value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to skills community
+                                </span>
+                              </Link>
+                            )
+                          } else {
+                            return (
+                              <Link to='#' key={skill.value} className="link rankingItem tooltip cursorText">
+                                <span
+                                  className="multiple value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  We don&#39;t have an active skills community for this yet
+                                </span>
+                              </Link>
+                            )
+                          }
                         })}
                       </div>
                     </div>
@@ -1059,7 +1137,7 @@ class CommunityOverview extends React.Component {
                   <div>
                     <div className="dataItemUnlockSection marginTop10 marginBottom10">
                       <div className="dataItemUnlockSection-btnContainer" >
-                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? joinGroup : () => this.showModal("AddSkills"))}>
+                        <a href={!isLoggedIn ? "https://app.prospela.com/signup?origin=skillsPageDataBox" : null} onClick={!isLoggedIn ? null : (!isGroupMember ? (community.type == 'skills' ? () => this.showModal("AddExpOrLearning") : joinGroup) : () => this.showModal("AddSkills"))}>
                           <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent" id="itemUnlockBtn">
                             <i className="fas fa-lock" id="itemUnlockIcon"/> {!isLoggedIn ? 'Sign up to unlock' : (!isGroupMember ? 'Join to unlock' : 'Add your skills to unlock')}
                           </button>
@@ -1077,18 +1155,39 @@ class CommunityOverview extends React.Component {
                   {mentorLearningSkills.length > 0 && (
                     <div className="dispBlock marginTop10">
                       <div className="tagsList">
-                          {mentorLearningSkillsArray && mentorLearningSkillsArray.map((skill) => {
+                        {mentorLearningSkillsArray && mentorLearningSkillsArray.map((skill) => {
+                          let skillHasComm
+                          skillHasComm = skillsOptions.filter(x => x.value == skill.value)[0].hasComm == 1;
+                          if (skillHasComm == true) {
                             return (
-                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem" onClick={updatePathName}>
+                              <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem tooltip" onClick={updatePathName}>
                                 <span
                                   className="multiple clickable value paddingR displayBlock"
                                   id={skill.value}
                                 >
                                   {skill.label}
                                 </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to skills community
+                                </span>
                               </Link>
                             )
-                          })}
+                          } else {
+                            return (
+                              <Link to='#' key={skill.value} className="link rankingItem tooltip cursorText">
+                                <span
+                                  className="multiple value paddingR displayBlock"
+                                  id={skill.value}
+                                >
+                                  {skill.label}
+                                </span>
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  We don&#39;t have an active skills community for this yet
+                                </span>
+                              </Link>
+                            )
+                          }
+                        })}
                       </div>
                     </div>
                   )}
@@ -1120,6 +1219,11 @@ class CommunityOverview extends React.Component {
         {showAddSkillsModal == true && (
           <Modal {...AddExpertiseModalProps} handleLocalStateOnClose={() => this.closeModal("AddSkills")}>
             <EditSkillsContent modalTitle='Add your Skills / Expertise' expOrLearning='exp' expertiseArr={expertiseArr} learningArr={learningArr}/>
+          </Modal>
+        )}
+        {showAddExpOrLearningModal == true && (
+          <Modal {...JoinSkillsCommModalProps} handleLocalStateOnClose={() => this.closeModal("AddExpOrLearning")}>
+            <JoinSkillsCommModalContent onSubmit={joinGroup} skillName={community.name}/>
           </Modal>
         )}
       </div>

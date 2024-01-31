@@ -898,6 +898,9 @@ table th .description{
 .width100px{
   width: 100px;
 }
+.width125px{
+  width: 125px!important;
+}
 .width180px{
   width: 180px;
 }

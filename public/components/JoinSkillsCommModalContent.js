@@ -23,11 +23,13 @@ class JoinSkillsCommModalContent extends Component {
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    const {onSubmit} = this.props
     this.setState({ isSubmitting: true });
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
     }
+    onSubmit()
     this.setState({ messageFromServer: 'Huddle joined' });
   }
 
@@ -42,7 +44,7 @@ class JoinSkillsCommModalContent extends Component {
 
   render() {
     const { messageFromServer, isSubmitting} = this.state;
-    const { skillName, onClick } = this.props
+    const { skillName } = this.props
     const isEnabled = this.canBeSubmitted();
 
     if(messageFromServer == '') {
@@ -79,7 +81,7 @@ class JoinSkillsCommModalContent extends Component {
                 />
               </div>
             </div>
-            <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={onClick} className="Submit-btn fullWidth" id="Submit-btn-UpdateSkills">
+            <button type="button" disabled={isSubmitting == true ? true : !isEnabled} onClick={this.handleSubmit} className="Submit-btn fullWidth" id="Submit-btn-UpdateSkills">
               {isSubmitting == true && (
                 <LoadingSpinner />
               )}
