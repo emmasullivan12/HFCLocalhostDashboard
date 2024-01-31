@@ -11,6 +11,7 @@ import CommunityOverview from "./CommunityOverview.js";
 import CommunityQuestions from "./CommunityQuestions.js";
 import CommunityLeaderboard from "./CommunityLeaderboard.js";
 import FullPageModal from './FullPageModal.js';
+import JoinSkillsCommModalContent from './JoinSkillsCommModalContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
@@ -20,6 +21,14 @@ import ShareOptionsBox from './ShareOptionsBox.js';
 import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
 
 import '../css/CommunityPage.css';
+
+const JoinSkillsCommModalProps = {
+  ariaLabel: 'Join a skills Group',
+  triggerText: 'Join',
+  usedFor: 'addHighlightQApage',
+  changeInitFocus: true,
+  customTriggerClassName: " backgroundBlack",
+}
 
 //import {LoadingSpinner, Check} from "./GeneralFunctions";
 const AddHighlightModalProps = {
@@ -789,15 +798,15 @@ class CommunityPage extends React.Component {
 */
   render() {
     const {tabToView, isGroupMember, userWasLearningSkill, wantsToLeave, isSubmittingLeaveGroup, updateLeaveGroupSuccess} = this.state
-    const {userRole, isLoggedIn, updatePathName, highlightStepsBox} = this.props;
+    const {userRole, isLoggedIn, updatePathName, highlightStepsBox, checkHasAccess, requireLogin, noAccessHandler} = this.props;
     const community = {
       cmid: '1234',
-      /*  name: 'Houdini',
+        name: 'Houdini',
         type: 'skills',
-        typeid: '425',*/
-        name: 'Film, TV & VFX',
-        type: 'skills',
-        typeid: '19',
+        typeid: '425',
+      /* name: 'Film, TV & VFX',
+        type: 'industry',
+        typeid: '19',*/
       experts: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}],
       members: [{uid: '1'}, {uid: '2'}, {uid: '3'}, {uid: '4'}, {uid: '5'}, {uid: '6'}, {uid: '7'}, {uid: '8'}],
     //  experts: [],
@@ -922,10 +931,15 @@ class CommunityPage extends React.Component {
                             customClassName="topBtn"
                           />
                         </span>
-                        {!isGroupMember && (
+                        {!isGroupMember && community.type != 'skills' && (
                           <button tabIndex="0" type="button" aria-label="Join group" className="ModalOpenBtn ModalOpenBtn-addHighlightQApage backgroundBlack" onClick={this.joinGroup}>
                             Join
                           </button>
+                        )}
+                        {!isGroupMember && community.type == 'skills' && (
+                          <Modal {...JoinSkillsCommModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                            <JoinSkillsCommModalContent onClick={this.joinGroup} skillName={community.name}/>
+                          </Modal>
                         )}
                         {isGroupMember && userRole == 'mentee' && (
                           <Modal {...AskQModalProps}>

@@ -210,7 +210,7 @@ class JoinProgrammeModalContent extends Component {
                 <LoadingSpinner />
               )}
               {isSubmitting != true && (
-                <span>Update</span>
+                <span>Join community</span>
               )}
             </button>
           </form>

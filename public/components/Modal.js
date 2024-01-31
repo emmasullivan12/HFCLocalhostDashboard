@@ -12,12 +12,13 @@ const ModalTrigger = ({
   ariaLabel,
   buttonRef,
   clickHandler,
+  customTriggerClassName,
   otherFormatting,
   text,
   triggerHasAutoFocus,
   usedFor
 }) => (
-  <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor} onClick={clickHandler} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
+  <button tabIndex="0" type="button" aria-label={ariaLabel} className={"ModalOpenBtn ModalOpenBtn-" + usedFor + (customTriggerClassName ? customTriggerClassName : "")} onClick={clickHandler} ref={buttonRef} autoFocus={triggerHasAutoFocus}>
     <ButtonContent usedFor={usedFor} text={text} otherFormatting={otherFormatting}/>
   </button>
 )
@@ -246,7 +247,7 @@ class Modal extends React.Component {
 
     render() {
     const {isOpen} = this.state;
-    const {ariaLabel, children, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent, otherFormatting} = this.props;
+    const {ariaLabel, children, customTriggerClassName, title, triggerText, triggerHasAutoFocus, usedFor, role, hideTrigger, removeOverflowY, wider, FixedBottomContent, otherFormatting} = this.props;
 
     return (
       <React.Fragment>
@@ -255,6 +256,7 @@ class Modal extends React.Component {
             ariaLabel={ariaLabel}
             buttonRef={n => this.openButtonNode = n}
             clickHandler={this.clickHandler}
+            customTriggerClassName={customTriggerClassName}
             otherFormatting={otherFormatting}
             text={triggerText}
             triggerHasAutoFocus={triggerHasAutoFocus}
