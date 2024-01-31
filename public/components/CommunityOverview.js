@@ -1,4 +1,4 @@
-// Last merged this code on 25th jan 2024
+// Last merged this code on 31st jan 2024
 /* eslint-disable no-unused-labels */
 
 import React from "react";
@@ -177,7 +177,6 @@ class CommunityOverview extends React.Component {
   }
 
   showModal = (modalType) => {
-    console.log(modalType)
     this.setState({
       ["show"+modalType+"Modal"]: true,
     });
