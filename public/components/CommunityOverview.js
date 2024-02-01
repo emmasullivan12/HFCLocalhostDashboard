@@ -9,7 +9,7 @@ import {cdn} from './CDN.js';
 import BarChart from './BarChart.js';
 import Carousel from './Carousel.js';
 import DoughnutChart from './DoughnutChart.js';
-import {LoadingSpinner} from './GeneralFunctions.js';
+import {LoadingSpinner, whichBrowser} from './GeneralFunctions.js';
 import EditSkillsContent from './EditSkillsContent.js';
 import FeedContainer from "./FeedContainer.js";
 import JoinSkillsCommModalContent from './JoinSkillsCommModalContent.js';
@@ -381,6 +381,8 @@ class CommunityOverview extends React.Component {
     numQs = questionsArr != null ? questionsArr.length : 0
     numUnanswered = questionsArr != null ? questionsArr.filter(x => (x.hids == null || x.hids.length == 0)).length : 0
 
+    const isSafari = whichBrowser() == 'safari'
+
     return (
       <div>
         {isLoggedIn && (
@@ -499,9 +501,11 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
-                                  <i className="fas fa-sign-out-alt" /> Go to skills community
-                                </span>
+                                {!isSafari && (
+                                  <span className="tooltiptext below width125px normalLineheight">
+                                    <i className="fas fa-sign-out-alt" /> Go to skills community
+                                  </span>
+                                )}
                               </Link>
                             )
                           } else {
@@ -615,9 +619,11 @@ class CommunityOverview extends React.Component {
                               >
                                 {ind.label}
                               </span>
-                              <span className="tooltiptext below width125px normalLineheight">
-                                <i className="fas fa-sign-out-alt" /> Go to industry community
-                              </span>
+                              {!isSafari && (
+                                <span className="tooltiptext below width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to industry community
+                                </span>
+                              )}
                             </Link>
                           )
                         })}
@@ -990,9 +996,11 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
-                                  <i className="fas fa-sign-out-alt" /> Go to skills community
-                                </span>
+                                {!isSafari && (
+                                  <span className="tooltiptext below width125px normalLineheight">
+                                    <i className="fas fa-sign-out-alt" /> Go to skills community
+                                  </span>
+                                )}
                               </Link>
                             )
                           } else {
@@ -1078,9 +1086,11 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
-                                  <i className="fas fa-sign-out-alt" /> Go to skills community
-                                </span>
+                                {!isSafari && (
+                                  <span className="tooltiptext below width125px normalLineheight">
+                                    <i className="fas fa-sign-out-alt" /> Go to skills community
+                                  </span>
+                                )}
                               </Link>
                             )
                           } else {
@@ -1166,9 +1176,11 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
-                                  <i className="fas fa-sign-out-alt" /> Go to skills community
-                                </span>
+                                {!isSafari && (
+                                  <span className="tooltiptext below width125px normalLineheight">
+                                    <i className="fas fa-sign-out-alt" /> Go to skills community
+                                  </span>
+                                )}
                               </Link>
                             )
                           } else {
