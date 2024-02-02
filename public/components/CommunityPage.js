@@ -1,4 +1,4 @@
-// Last merged this code on 31st jan 2024 
+// Last merged this code on 31st jan 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -72,6 +72,7 @@ const MentorProfileUsrNameModalProps = {
 class CommunityPage extends React.Component {
   constructor(props) {
     super(props);
+    this.scrollRef = React.createRef();
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
@@ -81,6 +82,7 @@ class CommunityPage extends React.Component {
       mentorsSorted: [],
       isSubmittingLeaveGroup: false,
       updateLeaveGroupSuccess: false,
+    //  isScrollingHorizontally: false,
     }
   }
 
@@ -183,6 +185,36 @@ class CommunityPage extends React.Component {
   componentWillUnmount() {
     this.props.updateDocumentTitle("Prospela Dashboard")
   }
+
+  onScroll = () => {
+    const {tabToView} = this.state
+    const { scrollRef } = this;
+
+    if (tabToView == 'leaderboard') {
+      const div = document.getElementById("communityFeedContainer");
+      const tableContainer = document.getElementById("commPageLeaderboard-tableContainer")
+      var scrollTop = this.scrollRef.current.scrollTop;
+      var moreUsersToLoad = true
+      var atBottom = div.scrollTop >= (div.scrollHeight - div.offsetHeight - 10); // 10px from the bottom trigger load of more users
+    /*  var tableScrollLeft = tableContainer.scrollLeft
+      console.log(tableScrollLeft)
+      this.setState(prevState => ({
+        tableScrollLeft: tableScrollLeft,
+        isScrollingHorizontally: tableScrollLeft != prevState.tableScrollLeft
+      }), () => {
+        console.log(tableScrollLeft)
+        console.log(prevState.tableScrollLeft)
+        console.log(this.state.isScrollingHorizontally)
+      })*/
+
+      if (atBottom && moreUsersToLoad == true) {
+        console.log("loadmoreusers")
+      } else {
+        return
+      }
+    }
+
+  };
 
   updateTabToView = (e) => {
     let name
@@ -894,7 +926,7 @@ class CommunityPage extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="tabWindow" id="communityFeedContainer">
+        <div className="tabWindow" id="communityFeedContainer" ref={this.scrollRef} onScroll={this.onScroll} >
           <div className="mainAndSideContainer">
             <div className="title-blankPage marginBottom20">
               <MenuNav />

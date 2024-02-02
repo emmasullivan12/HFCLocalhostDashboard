@@ -219,7 +219,7 @@ class CommunityLeaderboard extends React.Component {
                 <div className="marginTop10"><strong className="electricPurpleText"> Join the group to get a ranking =)</strong></div>
               )}
             </div>
-            <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")}>
+            <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")} id="commPageLeaderboard-tableContainer" >
               {(userTypeToShow == "0" || userTypeToShow == "2") && (
                 <React.Fragment>
                   <table id={userTypeToShow == "0" ? "mentorLeaderboard-table" : "companyLeaderboard-table"}>
