@@ -1,4 +1,4 @@
-// Dex last merged this code on 31st jan 2024 
+// Dex last merged this code on 31st jan 2024
 
 import React, { Component } from "react";
 import SelectBox from './Select.js';
@@ -29,7 +29,9 @@ class JoinSkillsCommModalContent extends Component {
       evt.preventDefault ();
       return;
     }
-    onSubmit()
+    if (onSubmit) {
+      onSubmit()
+    }
     this.setState({ messageFromServer: 'Huddle joined' });
   }
 

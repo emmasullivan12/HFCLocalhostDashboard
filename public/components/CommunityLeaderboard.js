@@ -38,6 +38,7 @@ class CommunityLeaderboard extends React.Component {
     this.setState({
       filterBy: e.currentTarget.value
     })
+    this.props.checkLeaderboardTimelineType(e.currentTarget.value)
   }
 
   filterUserType = (userInput) => {
@@ -50,6 +51,7 @@ class CommunityLeaderboard extends React.Component {
     this.setState({
       userTypeToShow: userInput,
     })
+    this.props.checkLeaderboardUserType(userInput)
   }
 
   handleSortTable = (n, sortType, tableId) => {

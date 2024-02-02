@@ -87,7 +87,7 @@
 .ModalOpenBtn-deleteQ:hover,
 .ModalOpenBtn-addComment:hover,
 .ModalOpenBtn-textModalTrigger:hover,
-.ModalOpenBtn-flagComment:hover,{
+.ModalOpenBtn-flagComment:hover{
   background: none!important;
   color: inherit!important;
 }

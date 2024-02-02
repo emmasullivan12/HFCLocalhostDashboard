@@ -186,16 +186,28 @@ class CommunityPage extends React.Component {
     this.props.updateDocumentTitle("Prospela Dashboard")
   }
 
+  checkLeaderboardUserType = (userType) => {
+    this.setState({
+      leaderboardUserType: userType
+    })
+  }
+
+  checkLeaderboardTimelineType = (timeline) => {
+    this.setState({
+      leaderboardTimelineType: timeline
+    })
+  }
+
   onScroll = () => {
-    const {tabToView} = this.state
+    const {tabToView, leaderboardUserType, leaderboardTimelineType} = this.state
     const { scrollRef } = this;
+    const div = document.getElementById("communityFeedContainer");
+    var atBottom = div.scrollTop >= (div.scrollHeight - div.offsetHeight - 150); // 150px from the bottom trigger load of more users
+    var scrollTop = this.scrollRef.current.scrollTop;
 
     if (tabToView == 'leaderboard') {
-      const div = document.getElementById("communityFeedContainer");
-    //  const tableContainer = document.getElementById("commPageLeaderboard-tableContainer")
-      var scrollTop = this.scrollRef.current.scrollTop;
-      var moreUsersToLoad = true
-      var atBottom = div.scrollTop >= (div.scrollHeight - div.offsetHeight - 10); // 10px from the bottom trigger load of more users
+      var moreUsersToLoad = true // fullContentArr.length > leaderboardItemsInView
+      //  const tableContainer = document.getElementById("commPageLeaderboard-tableContainer")
     /*  var tableScrollLeft = tableContainer.scrollLeft
       console.log(tableScrollLeft)
       this.setState(prevState => ({
@@ -352,6 +364,7 @@ class CommunityPage extends React.Component {
       this.setState({
         isSubmittingLeaveGroup: false,
         updateLeaveGroupSuccess: true,
+        isGroupMember: false,
       })
     } else if (wantsToLeave == 2) {
       if (community.type == 'industry' && userRole == 'mentee') {
@@ -364,19 +377,21 @@ class CommunityPage extends React.Component {
       this.setState({
         isSubmittingLeaveGroup: false,
         updateLeaveGroupSuccess: true,
+        isGroupMember: false,
       })
     } else { // user wanted to stay
       this.setState({
         isSubmittingLeaveGroup: false,
         updateLeaveGroupSuccess: true,
+        isGroupMember: true,
       })
     }
   }
 
   resetLeaveGroup = () => {
+    console.log("resetting")
     const {wantsToLeave} = this.state
     this.setState({
-      isGroupMember: wantsToLeave != 1 && wantsToLeave != 2,
       isSubmittingLeaveGroup: false,
       updateLeaveGroupSuccess: false,
       wantsToLeave: null,
@@ -641,7 +656,7 @@ class CommunityPage extends React.Component {
       case 'questions':
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
-        return <CommunityLeaderboard mentorsSorted={mentorsSorted} isGroupMember={isGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
+        return <CommunityLeaderboard checkLeaderboardUserType={this.checkLeaderboardUserType} checkLeaderboardTimelineType={this.checkLeaderboardTimelineType} mentorsSorted={mentorsSorted} isGroupMember={isGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
     }
   }
 
