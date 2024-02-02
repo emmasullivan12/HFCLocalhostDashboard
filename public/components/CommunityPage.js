@@ -192,7 +192,7 @@ class CommunityPage extends React.Component {
 
     if (tabToView == 'leaderboard') {
       const div = document.getElementById("communityFeedContainer");
-      const tableContainer = document.getElementById("commPageLeaderboard-tableContainer")
+    //  const tableContainer = document.getElementById("commPageLeaderboard-tableContainer")
       var scrollTop = this.scrollRef.current.scrollTop;
       var moreUsersToLoad = true
       var atBottom = div.scrollTop >= (div.scrollHeight - div.offsetHeight - 10); // 10px from the bottom trigger load of more users
