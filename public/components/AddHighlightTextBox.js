@@ -784,10 +784,10 @@ class AddHighlightTextBox extends Component {
 
   canBeSubmitted() {
     const {selectedFiles, errorFileSize, errorFileNumber, generalTypeSelected, industriesToPostTo, text, qText, endingHashtagsArr, showMaxReachedError} = this.state;
-    const {isMenteeQ, isAddAnswer} = this.props
+    const {isAskQ, isAddAnswer} = this.props
 
     return (
-      ((selectedFiles.length > 0 ? (errorFileSize == false && errorFileNumber == false) : true) && (isAddAnswer == true ? true : (industriesToPostTo.length > 0)) && (isMenteeQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
+      ((selectedFiles.length > 0 ? (errorFileSize == false && errorFileNumber == false) : true) && (isAddAnswer == true ? true : (industriesToPostTo.length > 0)) && (isAskQ == true ? (qText.length >= 10 && qText.length <= 200 && text.length <= 2000) : (text.length != 0 && text.length <= 2000)) &&
       (isAddAnswer == true || endingHashtagsArr.length > 0) && showMaxReachedError != true)
     );
   }
@@ -840,7 +840,7 @@ class AddHighlightTextBox extends Component {
       currTraining,
       currTrainingProvider*/
     } = this.state;
-    const {isMenteeQ, isAddAnswer, isAddGeneral, qToAnswer, fromCommunityPage, commType, commName} = this.props
+    const {isAskQ, isAddAnswer, isAddGeneral, qToAnswer, fromCommunityPage, commType, commName} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
     const stateProv = 'CA'
     const country = 'USA'
@@ -889,7 +889,7 @@ class AddHighlightTextBox extends Component {
     if (!showCredentials && !postSuccess) {
       return (
         <form className="fileUploadForm" id="fileUploadForm" onDragEnter={this.handleDragEnter} onDragOver={this.handleDragOver} onDragLeave={this.handleDragLeave} onDrop={this.handleFileDrop}>
-          {isMenteeQ == true && (
+          {isAskQ == true && (
             <div className="modal-title">
               Ask a public question
             </div>
@@ -1064,7 +1064,7 @@ class AddHighlightTextBox extends Component {
               </div>
             )} */}
           </div>
-          {isMenteeQ == true && (
+          {isAskQ == true && (
             <div className="footer-container marginTop20 marginBottom10">
               <label className="descriptor alignLeft reqAsterisk">Question</label>
               <TextInput
@@ -1092,28 +1092,28 @@ class AddHighlightTextBox extends Component {
           )}
           <div id="new-message" className="addHighlight-footer">
             <div className="footer-container">
-              {isMenteeQ == true && (
+              {isAskQ == true && (
                 <div className="descriptor">Detail <i className="greyText">(optional)</i></div>
               )}
               {isAddAnswer == true && (
                 <div className="descriptor reqAsterisk">Your answer</div>
               )}
-              <div className={"input-box-container" + ((isMenteeQ == true || isAddAnswer == true) ? "" : " addHighlight")}>
+              <div className={"input-box-container" + ((isAskQ == true || isAddAnswer == true) ? "" : " addHighlight")}>
                 <div className="input-flexContainer">
                   <div className="textInput-container" id="chatMessageForm">
                     <textarea
                       ref={n => this.addMessageNode = n}
-                      className={"input-box addHighlight" + ((isMenteeQ == true || isAddAnswer == true) ? " showLargeBox" : "")}
+                      className={"input-box addHighlight" + ((isAskQ == true || isAddAnswer == true) ? " showLargeBox" : "")}
                       id="txtInput-box"
                       form="chatMessageForm"
                       value={text}
                       onChange={this.handleMessageChange}
-                      placeholder={isMenteeQ == true ? 'Describe a little more detail if needed' : "What would you like to share?"}
+                      placeholder={isAskQ == true ? 'Describe a little more detail if needed' : "What would you like to share?"}
                       autoComplete="on"
                       autoCorrect="on"
                       spellCheck="true"
                       maxLength="2000"
-                      autoFocus={isMenteeQ != true}
+                      autoFocus={isAskQ != true}
                     />
                   </div>
                 </div>
@@ -1227,7 +1227,7 @@ class AddHighlightTextBox extends Component {
             )}
             {isAddAnswer != true && (
               <div className="paddingR20 paddingL20">
-                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to {isMenteeQ == true ? 'mentors in' : 'mentees interested in'}:</strong></label>
+                <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="box-emoji">📦</span> <strong>Posting to {isAskQ == true ? 'people in' : 'learners interested in'}:</strong></label>
                 <div className="inlineForm">
                   <div className="form-group inlineLeft textLeft postToGroupContainer">
                     <SelectBox
@@ -1253,7 +1253,7 @@ class AddHighlightTextBox extends Component {
                 </div>
               </div>
             )}
-            {isMenteeQ != true && isAddAnswer != true && (
+            {isAskQ != true && isAddAnswer != true && (
               <div className="paddingR20 paddingL20">
                 <label className="descriptor alignLeft reqAsterisk" htmlFor="selectBox-startdate"><span role="img" aria-label="loudspeaker-emoji">📢</span> <strong>Type of post</strong></label>
                 <div className="inlineForm">
@@ -1297,7 +1297,7 @@ class AddHighlightTextBox extends Component {
               <div className={(isAddAnswer == true ? "" : " reqAsterisk")}><span role="img" aria-label="sparkle-emoji">✨</span><strong> {isAddAnswer == true ? 'Add hashtags:' : 'Suggested hashtags:'}</strong></div>
               <div className="form-group">
                 <label className="alignLeft darkGreyText noBold" htmlFor="roleco">
-                  {isMenteeQ == true ? 'Help your question reach more employees' : 'Help reach more mentees'}
+                  {isAskQ == true ? 'Help your question reach more people' : 'Help reach more learners'}
                   {showMaxReachedError && (
                     <span className="redText"> (You can only add up to 5)</span>
                   )}
@@ -1623,7 +1623,7 @@ class AddHighlightTextBox extends Component {
         <React.Fragment>
           <div className="modal-title">
             <div className="emoji-icon tada-emoji successBox" />
-            {isMenteeQ == true ? 'You posted a question!' : (isAddAnswer == true ? 'You posted an answer!' : 'You posted a highlight!')}
+            {isAskQ == true ? 'You posted a question!' : (isAddAnswer == true ? 'You posted an answer!' : 'You posted a highlight!')}
           </div>
         {/*  <div className="success-container">
             <div className="ideas-Title">
@@ -1639,7 +1639,7 @@ class AddHighlightTextBox extends Component {
           <div className="credentialPickerContainer textLeft paddingR20 paddingL20" ref={el => (this.credentialsPicker = el)}>
             <div className="marginBottom20 marginTop40">
               <div className="marginBottom20 marginTop20 fontSize18"><strong>Choose post credential</strong></div>
-              <div className="marginTopMinus15 darkGreyText">{isMenteeQ == true ? 'Help real employees know where you\'re coming from to get the best advice' : 'Help mentees understand your experience with this topic'}</div>
+              <div className="marginTopMinus15 darkGreyText">{isAskQ == true ? 'Help employee experts & fellow learners know where you\'re coming from to get the best advice' : 'Help learners understand your experience with this topic'}</div>
             {/*}  {updatingCredentialIsLoading == false && credentialUpdatedSuccess == true && (
                 <AlertBox successOrFailure='success' fadesOut positionAtTop>
                   <div>	&#10003; Your credential has been saved</div>
@@ -1664,7 +1664,7 @@ class AddHighlightTextBox extends Component {
                         <span className="defaultCredential neutralText tooltip">
                           default
                           <span className="tooltiptext updateCredential">
-                            This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                            This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                           </span>
                         </span>
                       </div>
@@ -1695,7 +1695,7 @@ class AddHighlightTextBox extends Component {
                       <span className="defaultCredential neutralText tooltip">
                         default
                         <span className="tooltiptext updateCredential">
-                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                          This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                         </span>
                       </span>
                     )}
@@ -1719,7 +1719,7 @@ class AddHighlightTextBox extends Component {
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
-                                This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                                This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                               </span>
                             </span>
                           )}
@@ -1745,7 +1745,7 @@ class AddHighlightTextBox extends Component {
                             <span className="defaultCredential neutralText tooltip">
                               default
                               <span className="tooltiptext updateCredential">
-                                This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                                This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                               </span>
                             </span>
                           )}
@@ -1765,7 +1765,7 @@ class AddHighlightTextBox extends Component {
                       <span className="defaultCredential neutralText tooltip">
                         default
                         <span className="tooltiptext updateCredential">
-                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                          This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                         </span>
                       </span>
                     )}
@@ -1782,7 +1782,7 @@ class AddHighlightTextBox extends Component {
                       <span className="defaultCredential neutralText tooltip">
                         default
                         <span className="tooltiptext updateCredential">
-                          This will be the credential that appears by default on your {isMenteeQ == true ? 'questions' : 'answers'} / posts
+                          This will be the credential that appears by default on your {isAskQ == true ? 'questions' : 'answers'} / posts
                         </span>
                       </span>
                     )}

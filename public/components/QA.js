@@ -810,7 +810,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     </div>
                     <div>
                       <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
+                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole={!isLoggedIn ? 'mentee' : userRole} isAskQ/>
                       </Modal>
                     </div>
                   </div>
@@ -832,14 +832,9 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                   <div className={isMobile == true ? "" : "chatItemFlexContainer qaPage"}>
                     <span className="qTitle qaPage marginBottom20 breakWord"><strong>{qaItem.title}</strong></span>
                     <span className="qCTA qaPage">
-                      {userRole == 'mentee' && (
-                        <Modal {...AddHighlightModalProps}>
-                          <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                        </Modal>
-                      )}
-                      {userRole == 'mentor' && (
+                      {isLoggedIn && (
                         <Modal {...AddAnswerModalProps}>
-                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole={userRole} isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
                         </Modal>
                       )}
                       {!isLoggedIn && (
@@ -1223,22 +1218,18 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                     </div>
                   )}
                   <div className="marginBottom50 marginTop20">
-                    {userRole == 'mentee' && (
-                      <div>
-                        <div className="qTitle marginBottom5"><strong>Not the answer you were looking for?</strong> Ask your own question</div>
-                        <Modal {...AddHighlightModalProps}>
-                          <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                        </Modal>
-                      </div>
-                    )}
-                    {(!isLoggedIn || userRole == 'mentor') && (
-                      <div>
-                        <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'} Join as an E-Mentor and contribute.</div>
-                        <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
-                        </Modal>
-                      </div>
-                    )}
+                    <div>
+                      <div className="qTitle marginBottom5"><strong>{qaItem.hids.length == 0 ? 'Can you answer?' : 'Got something to add?'}</strong> The Prospela community would love to hear {qaItem.hids.length == 0 ? 'what you have to say!' : 'it!'}{!isLoggedIn ? ' Join and contribute.' : ''}</div>
+                      <Modal {...AddAnswerModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                        <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole={!isLoggedIn ? 'mentee' : userRole} isAddAnswer qToAnswer={qaItem ? qaItem.title : null}/>
+                      </Modal>
+                    </div>
+                    <div>
+                      <div className="qTitle marginBottom5"><strong>Not the answer you were looking for?</strong> Ask your own question</div>
+                      <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                        <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole={!isLoggedIn ? 'mentee' : userRole} isAskQ/>
+                      </Modal>
+                    </div>
                     {relatedQsArr.length > 0 && (
                       <div className="qTitle marginBottom5">
                         <div><strong>Related questions</strong></div>
@@ -1306,15 +1297,13 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                           </div>
                         )}
                         </span>
-                        {(!isLoggedIn || userRole == 'mentee') && (
-                          <span>
-                            or <span className="link linkPurpleText linkUnderline">
-                              <Modal {...AddQModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
-                              </Modal>
-                            </span>
+                        <span>
+                          or <span className="link linkPurpleText linkUnderline">
+                            <Modal {...AddQModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                              <AddHighlightModalContent modalID="modal-addHighlight" userRole={!isLoggedIn ? 'mentee' : userRole} isAskQ/>
+                            </Modal>
                           </span>
-                        )}
+                        </span>
                       </div>
                     </div>
                   </div>

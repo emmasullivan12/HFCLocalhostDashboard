@@ -1,4 +1,4 @@
-// Last merged this code on 2nd feb 2024 
+// Last merged this code on 2nd feb 2024
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -213,8 +213,8 @@ class CommunityLeaderboard extends React.Component {
           </div>
           <div className={"contentBox padding1pt5rem" + (isMobile == true ? " isMobile" : "")}>
             <div className="fontSize15 marginBottom20">
-              <span role="img" aria-label="green-heart emoji">💚</span> {(userTypeToShow != "1" || !isLoggedIn) ? "A ranking of members by their contributions to elevating this community. Board updated daily." : "Mentees sorted alphabetically - currently not ranked."}
-              {isGroupMember && userTypeToShow == "0" && userRole == "mentor" && (
+              <span role="img" aria-label="green-heart emoji">💚</span> A ranking of members by their contributions to elevating this community. Board updated daily.
+              {isGroupMember && (
                 <div className="marginTop10"><strong className="electricPurpleText"> You are currently ranked #{loggedInUserRanking}</strong></div>
               )}
               {!isGroupMember && userTypeToShow != "2" && (
@@ -222,49 +222,24 @@ class CommunityLeaderboard extends React.Component {
               )}
             </div>
             <div className={"table-container marginLeftMinus5" + (isMobile == true ? " isMobile" : "")} id="commPageLeaderboard-tableContainer" >
-              {(userTypeToShow == "0" || userTypeToShow == "2") && (
+              {(userTypeToShow == "0" || userTypeToShow == "2" || (userTypeToShow == "1" && isLoggedIn)) && (
                 <React.Fragment>
-                  <table id={userTypeToShow == "0" ? "mentorLeaderboard-table" : "companyLeaderboard-table"}>
+                  <table id={userTypeToShow == "0" ? "mentorLeaderboard-table" : (userTypeToShow == '1' ? "menteeLeaderboard-table" : "companyLeaderboard-table")}>
                     <thead>
                       <tr className={(isMobile == true ? "isMobile" : "")}>
-                        <th className="leaderboardItem-ranking hasSort alignCenter" onClick={() => this.handleSortTable(0, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}><span className="greyText hidden showOnHover"><i className="fas fa-sort"/></span></th>
+                        <th className="leaderboardItem-ranking hasSort alignCenter" onClick={() => this.handleSortTable(0, 'number', ((userTypeToShow == "0" ? 'mentor' : (userTypeToShow == '1' ? 'mentee' : 'company')) + 'Leaderboard-table'))}><span className="greyText hidden showOnHover"><i className="fas fa-sort"/></span></th>
                         <th className="leaderboardItem-name textLeft" />
                       {/*  <th className="leaderboardItem-topContribution textLeft">Top contribution</th>*/}
-                        <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(2, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
-                        <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
-                        <th className="leaderboardItem-numMentees hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>No. Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
+                        <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(2, 'number', ((userTypeToShow == "0" ? 'mentor' : (userTypeToShow == '1' ? 'mentee' : 'company')) + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th>
+                        <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', ((userTypeToShow == "0" ? 'mentor' : (userTypeToShow == '1' ? 'mentee' : 'company')) + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th>
+                        {userTypeToShow == '1' && (
+                          <th className="leaderboardItem-numQs hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', ((userTypeToShow == "0" ? 'mentor' : (userTypeToShow == '1' ? 'mentee' : 'company')) + 'Leaderboard-table'))}>Questions <span className="greyText"><i className="fas fa-sort"/></span></th>
+                        )}
+                        {userTypeToShow != '1' && (
+                          <th className="leaderboardItem-numMentees hasSort alignCenter" onClick={() => this.handleSortTable(4, 'number', ((userTypeToShow == "0" ? 'mentor' : (userTypeToShow == '1' ? 'mentee' : 'company')) + 'Leaderboard-table'))}>No. Mentees <span className="greyText"><i className="fas fa-sort"/></span></th>
+                        )}
                       </tr>
                     </thead>
-                    {(isFilteringTable == true || isSortingTable == true) && (
-                      <div className="spinner-container">
-                        <LoadingSpinner />
-                      </div>
-                    )}
-                    <tbody>
-                      {rankedUsers}
-                    </tbody>
-                  </table>
-                  {isLoadingMoreUsers == true && (
-                    <div className="marginTop20 marginBottom20">
-                      <LoadingSpinner />
-                    </div>
-                  )}
-                </React.Fragment>
-              )}
-              {userTypeToShow == "1" && isLoggedIn && (
-                <React.Fragment>
-                  <table id="menteeLeaderboard-table">
-                  <thead>
-                    <tr className={(isMobile == true ? "isMobile" : "")}>
-                      <th className="leaderboardItem-ranking isMentee alignCenter" />
-                      <th className="leaderboardItem-name textLeft" />
-                    {/*  <th className="leaderboardItem-topContribution textLeft">Top contribution</th>*/}
-                    {/*  <th className="leaderboardItem-numAnswers hasSort alignCenter" onClick={() => this.handleSortTable(2, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>Answers <span className="greyText"><i className="fas fa-sort"/></span></th> */}
-                    {/*  <th className="leaderboardItem-numGenerals hasSort alignCenter" onClick={() => this.handleSortTable(3, 'number', ((userTypeToShow == "0" ? 'mentor' : 'company') + 'Leaderboard-table'))}>General posts <span className="greyText"><i className="fas fa-sort"/></span></th> */}
-                      <th className="leaderboardItem-numQs alignCenter">Questions</th>
-                      <th className="leaderboardItem-numMentees alignCenter">No. Mentors</th>
-                    </tr>
-                  </thead>
                     {(isFilteringTable == true || isSortingTable == true) && (
                       <div className="spinner-container">
                         <LoadingSpinner />

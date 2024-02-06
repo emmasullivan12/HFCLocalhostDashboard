@@ -136,8 +136,8 @@ class LoadingDash extends Component{
 }
 
 const AddHighlightSmlModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: '+ Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: '+ Post',
   usedFor: 'addHighlightMenuSml',
   changeInitFocus: true,
   wider: true,
@@ -614,14 +614,9 @@ class Dashboard extends Component{
                 <span id="close-modal" className="u-hide-visually">Close</span>
                 <svg className="menu-close-icon" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>
               </button>
-              {userRole == 'mentor' && (
+              {isLoggedIn && (
                 <Modal {...AddHighlightSmlModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentor' updatePathName={this.updatePathName}/>
-                </Modal>
-              )}
-              {(userRole == 'mentee' && isClass == true) && (
-                <Modal {...AddHighlightSmlMenteeModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole='mentee' updatePathName={this.updatePathName}/>
+                  <AddHighlightModalContent modalID="modal-addHighlightMenuSml" userRole={userRole} updatePathName={this.updatePathName}/>
                 </Modal>
               )}
               {!isLoggedIn && (

@@ -1,4 +1,4 @@
-// Dex last merged this code on 20th nov 2023 
+// Dex last merged this code on 20th nov 2023
 
 import React, { Component } from "react";
 
@@ -16,8 +16,8 @@ const AddHighlightModalProps = {
 }
 
 const AddHighlightMentorModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: 'Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: 'Post',
   usedFor: 'addHighlightDashboard',
   changeInitFocus: true,
   wider: true
@@ -65,19 +65,14 @@ class AskAQPrompt extends Component {
               <span>{isCommPage == true ? 'Looks like theres nobody here yet. Share a general highlight or invite others and we\'ll try to get this community going' : 'Share a general highlight or answer mentees Q&A'}</span>
             )}
           </p>
-          {isLoggedIn && userRole == 'mentee' && (
-            <Modal {...AddHighlightModalProps}>
-              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name}/>
-            </Modal>
-          )}
-          {isLoggedIn && userRole == 'mentor' && (
+          {isLoggedIn && (
             <Modal {...AddHighlightMentorModalProps}>
               <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} updatePathName={updatePathName} fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name} commURLending={commURLending} updateTabToView={updateTabToView}/>
             </Modal>
           )}
           {!isLoggedIn && (
             <Modal {...AddHighlightModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isMenteeQ fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name}/>
+              <AddHighlightTextBox modalID="modal-askQuestionDashboard" isAskQ fromCommunityPage={isCommPage == true} commType={community && community.type} commName={community && community.name}/>
             </Modal>
           )}
           {isCommPage == true && (

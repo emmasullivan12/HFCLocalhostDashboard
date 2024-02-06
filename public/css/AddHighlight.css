@@ -50,10 +50,10 @@ input[type="radio"]:checked + .credential-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5px 110px;
+  /*  padding: 5px 110px;*/
   }
   .postTypeButton{
-    width: 170px;
+    width: 150px;
     height: 150px;
     margin-bottom: 0;
   }

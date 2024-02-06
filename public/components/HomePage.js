@@ -72,7 +72,7 @@ const AddHighlightModalProps = {
 
 const AddHighlightSmlModalProps = {
   ariaLabel: 'Add a Post',
-  triggerText: '+ Posts',
+  triggerText: '+ Post',
   usedFor: 'addHighlightSml',
   changeInitFocus: true,
   wider: true
@@ -1221,10 +1221,6 @@ class HomePage extends Component {
                   In the meantime, we&#39;ve auto-joined you to your chosen skills communities, which you can access from the main menu
                 </p>
                 <div className="showSkillsCommunitiesPic"/>
-                {/*<p className="landingCTADesc">In the meantime...</p>
-                <Modal {...AddHighlightModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole}/>
-                </Modal>*/}
               </div>
             </div>
           </div>
@@ -1542,17 +1538,17 @@ class HomePage extends Component {
               )}
             </div>
           </div>
-          {userRole == 'mentor' && (
+          {isLoggedIn && (
             <React.Fragment>
               <Modal {...AddHighlightModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor' updatePathName={this.props.updatePathName}/>
+                <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole} updatePathName={this.props.updatePathName}/>
               </Modal>
               <Modal {...AddHighlightSmlModalProps}>
-                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentor' updatePathName={this.props.updatePathName}/>
+                <AddHighlightModalContent modalID="modal-addHighlightSml" userRole={userRole} updatePathName={this.props.updatePathName}/>
               </Modal>
             </React.Fragment>
           )}
-          {(userRole == 'mentee') && (
+        {/*  {(userRole == 'mentee') && (
             <React.Fragment>
               <Modal {...AddQModalProps}>
                 <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentee'/>
@@ -1561,7 +1557,7 @@ class HomePage extends Component {
                 <AddHighlightModalContent modalID="modal-addHighlightSml" userRole='mentee'/>
               </Modal>
             </React.Fragment>
-          )}
+          )}*/}
           {(isLoggedIn == false) && (
             <React.Fragment>
               <Modal {...AddQModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>

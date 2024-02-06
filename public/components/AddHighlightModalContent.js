@@ -30,39 +30,45 @@ class AddHighlightModalContent extends Component {
 
   render() {
     const { highlightType, text, showEmojis, errorLoadingHashtags } = this.state;
-    const {modalID, userRole, isAddAnswer, isAddGeneral, updatePathName, qToAnswer, fromCommunityPage, commType, commName, updateTabToView, commURLending} = this.props
+    const {modalID, userRole, isAskQ, isAddAnswer, isAddGeneral, updatePathName, qToAnswer, fromCommunityPage, commType, commName, updateTabToView, commURLending} = this.props
     const user = {uid: '12345', fname: 'Emma', lname: 'Sullivan'}
 
-    if(userRole == 'mentor' && highlightType == '' && isAddAnswer != true && isAddGeneral != true) {
+    if(highlightType == '' && isAskQ != true && isAddAnswer != true && isAddGeneral != true) {
       return (
         <div className="selectPostTypeContainer">
           <div className="modal-title">
             Select post type
           </div>
           <div className="modal-subtitleSml fontSize12">
-            Share a highlight with mentees
+            Share with {userRole == 'mentor' ? 'learners / mentees' : 'your fellow learners & experts'}
           </div>
           <div className="postTypeContainer">
             {/* <Link to={`/questions/${qid}`}> */}
+            <button type="button" className="postTypeButton" autoFocus={userRole != 'mentor'} onClick={this.handleClick} value='question'>
+              <div className="placeholderPic askAQ" />
+              <div className="postType-title"><strong>Ask</strong></div>
+              <div className="postType-desc">Ask employree experts and fellow learners</div>
+            </button>
             {!fromCommunityPage
               ? (
                 <Link to={{pathname: "/questions", state: { fromAddHighlightBtn: true }}} onClick={updatePathName}>
-                  <button type="button" className="postTypeButton" autoFocus onClick={this.handleClick} value='answer'>
-                  {/*  <div className="postTypeIcon fontSize30">
-                      <i className="fas fa-question" />
-                    </div> */}
-                    <div className="placeholderPic askAQ" />
-                    <div className="postType-title"><strong>Q&A</strong></div>
-                    <div className="postType-desc">Browse mentee questions to answer</div>
+                  <button type="button" className="postTypeButton" autoFocus={userRole == 'mentor'} onClick={this.handleClick} value='answer'>
+                    <div className="postTypeIcon fontSize25 marginLeft10">
+                      <i className="far fa-edit" />
+                    </div>
+                    <div className="postType-title"><strong>Answer</strong></div>
+                    <div className="postType-desc">Browse questions to answer</div>
                   </button>
                 </Link>
               )
               : (
                 <Link to={{pathname: commURLending + "/questions", state: {prevPath: window.location.pathname}}}>
-                  <button type="button" name="questions" autoFocus onClick={(e) => {this.handleClick(e), updateTabToView(e)}} className="postTypeButton" value='answer'>
-                    <div className="placeholderPic askAQ" />
-                    <div className="postType-title"><strong>Q&A</strong></div>
-                    <div className="postType-desc">Browse mentee questions to answer</div>
+                  <button type="button" name="questions" autoFocus={userRole == 'mentor'} onClick={(e) => {this.handleClick(e), updateTabToView(e)}} className="postTypeButton" value='answer'>
+                    <div className="postTypeIcon fontSize25 marginLeft10">
+                      <i className="far fa-edit" />
+                    </div>
+                    <div className="postType-title"><strong>Answer</strong></div>
+                    <div className="postType-desc">Browse questions to answer</div>
                   </button>
                 </Link>
               )
@@ -72,12 +78,12 @@ class AddHighlightModalContent extends Component {
                 <i className="fas fa-hashtag" />
               </div>
               <div className="postType-title"><strong>General</strong></div>
-              <div className="postType-desc">Share work-life insights, resources or other stuff!</div>
+              <div className="postType-desc">Share resources, URLs or other stuff!</div>
             </button>
           </div>
         </div>
       );
-    } else if (userRole == 'mentor' && highlightType == 'answer') {
+    } else if (highlightType == 'answer') {
       return null
   /*  } else if (userRole == 'mentor' && highlightType == 'answer') {
       const qid = '1234'
@@ -101,7 +107,7 @@ class AddHighlightModalContent extends Component {
       return (
         <AddHighlightTextBox
           modalID={modalID}
-          isMenteeQ={userRole == 'mentor' ? false : true}
+          isAskQ={(isAskQ || highlightType == 'question') ? true : false}
           isAddAnswer={isAddAnswer}
           isAddGeneral={isAddGeneral}
           qToAnswer={qToAnswer}

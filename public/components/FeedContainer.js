@@ -17,8 +17,8 @@ const AddHighlightModalProps = {
 }
 
 const AddGeneralHighlightModalProps = {
-  ariaLabel: 'Add a Highlight',
-  triggerText: 'Add Highlight',
+  ariaLabel: 'Add a Post',
+  triggerText: 'Add Post',
   usedFor: 'addHighlightDashboard',
   changeInitFocus: true,
   wider: true
@@ -55,15 +55,10 @@ class FeedContainer extends Component {
         {isUserSearch == true && (
           <div className="marginBottom50 marginTop20">
             <div>
-              <div className="qTitle marginBottom5"><strong>Not quite what you were looking for?</strong> {userRole == 'mentee' ? 'Ask your own question about this topic' : 'Add a general post about this topic'}</div>
-              {userRole == 'mentee' && (
-                <Modal {...AddHighlightModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee'/>
-                </Modal>
-              )}
-              {userRole == 'mentor' && (
+              <div className="qTitle marginBottom5"><strong>Not quite what you were looking for?</strong> {(userRole == 'mentee' || !isLoggedIn) ? 'Ask your own question about this topic' : 'Add a general post about this topic'}</div>
+              {isLoggedIn && (
                 <Modal {...AddGeneralHighlightModalProps}>
-                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole='mentor' isAddGeneral/>
+                  <AddHighlightModalContent modalID="modal-addHighlightDashboard" userRole={userRole} isAddGeneral={userRole == 'mentee' ? false : true}/>
                 </Modal>
               )}
               {!isLoggedIn && (

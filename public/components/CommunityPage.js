@@ -1046,14 +1046,9 @@ class CommunityPage extends React.Component {
                             <JoinSkillsCommModalContent onClick={this.joinGroup} skillName={community.name}/>
                           </Modal>
                         )}
-                        {isGroupMember && userRole == 'mentee' && (
-                          <Modal {...AskQModalProps}>
-                            <AddHighlightModalContent modalID="modal-addHighlightQApage" userRole='mentee' fromCommunityPage commType={community.type} commName={community.name}/>
-                          </Modal>
-                        )}
-                        {isGroupMember && userRole == 'mentor' && (
+                        {isGroupMember && (
                           <Modal {...AddHighlightModalProps}>
-                            <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole='mentor' fromCommunityPage commType={community.type} commName={community.name} updatePathName={updatePathName} updateTabToView={this.updateTabToView} commURLending={commURLending}/>
+                            <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole={userRole} fromCommunityPage commType={community.type} commName={community.name} updatePathName={updatePathName} updateTabToView={this.updateTabToView} commURLending={commURLending}/>
                           </Modal>
                         )}
                       </React.Fragment>
