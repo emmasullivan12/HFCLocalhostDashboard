@@ -1,6 +1,6 @@
 // Dex last merged this code on 31st jan 2024
 
-import React, { Component } from "react";
+//import React, { Component } from "react";
 
 const skillsOptions = [
   {value: '0', label: '.NET', urlText: 'net', hardOrSoft: 'h', hasComm: 1},

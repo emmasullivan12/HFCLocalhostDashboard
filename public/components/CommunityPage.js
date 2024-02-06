@@ -315,7 +315,7 @@ class CommunityPage extends React.Component {
           )
         })}
         {activityArr.length == 0 && (
-          <div className="darkGreyText fontSize14">
+          <div className="darkGreyText fontSize14 marginBottom40">
             <div>...nothing here yet!</div>
             <div className="marginTop20">
               <ShareOptionsBox
