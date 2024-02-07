@@ -195,14 +195,14 @@ th.leaderboardItem-numMentees.isMobile{
   min-width: 40px;
   width: 40px;
 }*/
-th.leaderboardItem-numAnswers,
-th.leaderboardItem-numQs {
+th.leaderboardItem-numAnswers{
   min-width: 80px;
   width: 80px;
 }
 th.leaderboardItem-numGenerals,
 th.leaderboardItem-numMentees,
-th.leaderboardItem-numMentors{
+th.leaderboardItem-numMentors,
+th.leaderboardItem-numQs{
   min-width: 100px;
   width: 100px;
 }
