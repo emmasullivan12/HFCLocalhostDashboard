@@ -10,8 +10,7 @@ import {
 
 import Modal from './Modal.js';
 import JoinCommunityModalContent from './JoinCommunityModalContent.js';
-import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
-import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
+import {getIndustryDeets, getSkillDeets, getCompanyDeets} from './UserDetail.js';
 import "../css/Modal.css";
 
 const JoinProgrammeModalProps = {
@@ -28,6 +27,14 @@ const JoinProgrammePlusModalProps = {
   changeInitFocus: true,
   removeOverflowY: true
 }
+const SearchCompanyModalProps = {
+  ariaLabel: 'Search for a Company',
+  triggerText: 'Search for a Company',
+  usedFor: 'joinProgSml',
+  changeInitFocus: true,
+  removeOverflowY: true
+}
+
 
 // This shows the content within an individual row in the ChatMenu
 class CommunityListItem extends Component {
@@ -51,13 +58,17 @@ class CommunityListItem extends Component {
   render() {
     const {isOverflowing} = this.state;
     const {group, type, onClick} = this.props;
-    let groupName, navlink, industryItem, groupIcon
+    let groupName, navlink, industryItem, groupIcon, companyItem
 
     if (type == 'industry') {
       industryItem = getIndustryDeets(group.gid)
       groupIcon = industryItem.fa
       groupName = industryItem.label
       navlink = `/community/industry/${industryItem.urlText}`
+    } else if (type == 'company') {
+      companyItem = getCompanyDeets(group.coid)
+      groupName = companyItem.label
+      navlink = `/companies/${companyItem.urlText}`
     } else {
       let skillItem
       skillItem = getSkillDeets(group.gid)
@@ -73,7 +84,7 @@ class CommunityListItem extends Component {
               {type == 'industry' && (
                 <i className={groupIcon} alt="Industry Icon" />
               )}
-              {type == 'skills' && (
+              {(type == 'company' || type == 'skills') && (
                 <div className="presenceContainer">
                   <i className="fas fa-circle" />
                 </div>
@@ -112,7 +123,7 @@ class CommunityMenu extends Component {
             <div className="presenceContainer placeholder">
               <i className="fas fa-circle" />
             </div>
-            Your {type} huddles will appear here...
+            {type == 'company' ? 'Your companies will appear here...' : ('Your' + type + 'huddles will appear here...')}
           </div>
         </div>
       );
@@ -129,7 +140,7 @@ class CommunityMenu extends Component {
           <CommunityListItem
             group={group}
             type={type}
-            key={group.gid}
+            key={type == 'company' ? group.coid : group.gid}
             onClick={onClick}
           />
         );
@@ -141,14 +152,21 @@ class CommunityMenu extends Component {
         <div className="chatMenu">
           <div className="chatMenu-header overflow-ellipsis">
             <div>
-              {type == 'industry' ? 'Industry Huddles' : 'Skills Huddles'}
+              {type == 'company' ? 'My Companies' : (type == 'industry' ? 'Industry Huddles' : 'Skills Huddles')}
               <span className="menuItemIconContainer huddle">
                 <i className="fas fa-user-friends" />
               </span>
               <div className="menuCTAContainer">
-                <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                  <JoinCommunityModalContent type={type} startingArr={type == 'industry' ? user.industryGroups : user.skillsGroups}/>
-                </Modal>
+                {type == 'company' && (
+                  <Modal {...SearchCompanyModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                    <div>Search for a company modal content goes here</div>
+                  </Modal>
+                )}
+                {type != 'company' && (
+                  <Modal {...JoinProgrammePlusModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
+                    <JoinCommunityModalContent type={type} startingArr={type == 'industry' ? user.industryGroups : user.skillsGroups}/>
+                  </Modal>
+                )}
               </div>
             </div>
           </div>

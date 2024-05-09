@@ -7,21 +7,17 @@ import "../css/HomePage.css";
 class MenuNav extends Component {
   constructor () {
     super();
-  //  this.openMenuRef = React.createRef();
     this.openMenu = this.openMenu.bind(this);
-  //  this.closeMenu = this.closeMenu.bind(this);
   }
 
   openMenu() {
-  //  document.getElementById("clientMenu").style.width = "220px";
     document.getElementById("clientMenu").style.left = "0";
     document.getElementById("clientMenu").style.zIndex = "2000";
-  //  this.closeMenuRef.focus();
   }
 
   render() {
     const isNotif = 1
-
+    
     return (
       <React.Fragment>
         <button type="button" id="nav-mainMenu" className="viewMenu button-unstyled" aria-label="View Menu" onClick={this.openMenu}>

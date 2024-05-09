@@ -20,6 +20,7 @@ import {cdn} from './CDN.js';
 import ChatMenu from "./ChatMenu";
 import CommunityMenu from "./CommunityMenu";
 import CommunityPage from "./CommunityPage";
+import CoProfile from "./CoProfile";
 import GroupsMenu from "./GroupsMenu";
 import FullPageModal from './FullPageModal.js';
 import LatestAdvice from "./LatestAdvice";
@@ -637,6 +638,8 @@ class Dashboard extends Component{
                     <div className="menuBreak"/>
                     <GroupsMenu groups={DUMMY_GROUP_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "groupsMenu")}}/>
                     <div className="menuBreak"/>
+                    <CommunityMenu type="company" groups={DUMMY_COMPANY_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "companyMenu")}}/>
+                    <div className="menuBreak"/>
                     <CommunityMenu type="industry" groups={DUMMY_INDUSTRY_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "industryMenu")}}/>
                     <div className="menuBreak"/>
                     <CommunityMenu type="skills" groups={DUMMY_SKILL_LIST} onClick={this.handleMenuItemClick} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "skillsMenu")}}/>
@@ -679,6 +682,7 @@ class Dashboard extends Component{
                 <Route exact path="/home" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
+                <Route path="/companies/:companyname" render={(props) => <CoProfile {...props} initialTabToView="overview" updateDocumentTitle={this.updateDocumentTitle} isLoggedIn={isLoggedIn} updatePathName={this.updatePathName} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
@@ -859,6 +863,11 @@ const DUMMY_GROUP_LIST = [
   {gid: '20002', groupname: 'ACCESS:VFX', status: 'active', groupavatarurl: '/avfx-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
   {gid: '20003', groupname: 'BAME in Games', status: 'active', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
   {gid: '20004', groupname: 'Animated Women UK', status: 'active', groupavatarurl: '/aw-avatar.png', channels: [{name: 'mentor-general', chlid: '12345', type: 'general'},{name: 'resources', chlid: '12346', type: 'resources'},{name: 'other', chlid: '12347', type: 'other'}]},
+];
+
+const DUMMY_COMPANY_LIST = [
+ {coid: '1'},
+ {coid: '2'}
 ];
 
 const DUMMY_INDUSTRY_LIST = [

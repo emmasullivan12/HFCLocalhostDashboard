@@ -18,6 +18,7 @@ class CommunityLeaderboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLoadingTable: true,
       isFilteringTable: false,
       isSortingTable: false,
       filterBy: 'last30days',
@@ -57,17 +58,18 @@ class CommunityLeaderboard extends React.Component {
   handleSortTable = (n, sortType, tableId) => {
     this.setState({
       isSortingTable: true
-    })
-    sortTable(n, sortType, tableId, () => {
-      this.setState({
-        isSortingTable: false
+    }, () => {
+      sortTable(n, sortType, tableId, () => {
+        this.setState({
+          isSortingTable: false
+        })
       })
     })
   }
 
   render() {
     const {mentorsSorted, isGroupMember, community, isCommPage, updatePathName, isLoggedIn, userRole, commURL, checkHasAccess, noAccessHandler, updateTabToView} = this.props
-    const {isLoadingMoreUsers, isFilteringTable, isSortingTable, userTypeToShow, filterBy, isMobile, loggedInUserRanking} = this.state
+    const {isLoadingMoreUsers, isLoadingTable, isFilteringTable, isSortingTable, userTypeToShow, filterBy, isMobile, loggedInUserRanking} = this.state
     const loggedInUID = 'uuid128'
 
     const rankedUsers = [];
@@ -108,6 +110,9 @@ class CommunityLeaderboard extends React.Component {
             />
           );
         }, () => {
+          this.setState({
+            isLoadingTable: false,
+          })
           console.log("turn isFilteringTable back to false here in test server")
         });
       } else if (userTypeToShow == '1') { // mentees sorted alphabetically for now
@@ -136,6 +141,9 @@ class CommunityLeaderboard extends React.Component {
             />
           );
         }, () => {
+          this.setState({
+            isLoadingTable: false,
+          })
           console.log("turn isFilteringTable back to false here in test server")
         });
       } else { // is a company filter
@@ -164,6 +172,9 @@ class CommunityLeaderboard extends React.Component {
             />
           );
         }, () => {
+          this.setState({
+            isLoadingTable: false,
+          })
           console.log("turn isFilteringTable back to false here in test server")
         });
       }
@@ -240,7 +251,7 @@ class CommunityLeaderboard extends React.Component {
                         )}
                       </tr>
                     </thead>
-                    {(isFilteringTable == true || isSortingTable == true) && (
+                    {(isLoadingTable == true || isFilteringTable == true || isSortingTable == true) && (
                       <div className="spinner-container">
                         <LoadingSpinner />
                       </div>

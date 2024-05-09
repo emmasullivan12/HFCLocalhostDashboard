@@ -12,7 +12,7 @@ const qaArray = [
   {qid: '789', userprofilepic: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png', isAnon: true, url: 'advice-first-showreel', qauthorfname: 'Tom', title: 'Best advice for first showreel?', textdetail: ''},
 ]
 
-const qaArrayPureTextVersion = qaArray && qaArray.map(qa => ('\n\n' + qa.qauthorfname + ' asked:\n\n' + qa.title + (qa.textdetail != '' ? ('\n\n' + qa.textdetail) : '') + '\n\n Answer >> ' + ("https://app.prospela.com/questions/" + qa.qid + "/" + qa.url)))
+const qaArrayPureTextVersion = qaArray && qaArray.map(qa => ('\n\n' + qa.qauthorfname + ' asked:\n\n' + qa.title + (qa.textdetail != '' ? ('\n\n' + qa.textdetail) : '') + '\n\n Answer >> ' + ("https://app.prospela.com/questions/" + qa.qid + qa.url)))
 {/*const qaArrayHTMLVersion = qaArray && qaArray.map(qa => {
   const userProfPic = qa.isanon == true ? 'https://files.prospela.com/images/AnonymousUser.png' : qa.userprofilepic;
   const isPicSet = userProfPic != null && userProfPic != ''

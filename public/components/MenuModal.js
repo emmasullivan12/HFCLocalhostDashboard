@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "../css/MenuModal.css";
-import "../css/General.css";
 
 // ModalTrigger is the button that will open the Modal
 const MenuTrigger = ({

@@ -5,6 +5,7 @@ import subjectsOptions from './Subjects.js';
 import groupsList from "./Groups.js";
 import hashtagOptions from './HashtagsLatest.js';
 import hobbiesOptions from './Hobbies.js';
+import companyList from './Companies.js';
 import industryList from './Industries.js';
 import roleOptions from './Roles.js';
 import skillsOptions from './Skills.js';
@@ -223,6 +224,13 @@ function getSkillDeets(skillID) {
     .filter(skill => skill.value == skillID)
 
   return skillArr[0]
+}
+function getCompanyDeets(companyID) {
+
+  const companyArr = companyList
+    .filter(co => co.value == companyID)
+
+  return companyArr[0]
 }
 
 function getRoleDeets(roleID) {
@@ -582,4 +590,4 @@ function profileTimeZone(userTimeZone) {
   return now.toLocaleTimeString('en-US', options);
 }
 
-export {getRoleAndInst, getSubjectDeets, getRoleDeets, getSkillDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, convertSkills, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};
+export {getRoleAndInst, getSubjectDeets, getRoleDeets, getSkillDeets, getCompanyDeets, getEmployerName, getCredText, lookupUKSchUnis, availabilityMsg, userFlagEmoji, getVerifLevelArr, convertRole, convertWorkingOn, convertSkills, getGroupName, getGroupDeets, getIndustryDeets, convertHashtags, convertHobbies, convertSubjects, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, setUniGraduYr};

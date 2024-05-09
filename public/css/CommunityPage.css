@@ -157,6 +157,7 @@ button[name="leaderboard"].tabActive:hover {
   border-collapse: collapse;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 #companyLeaderboard-table thead tr,
 #mentorLeaderboard-table thead tr,
