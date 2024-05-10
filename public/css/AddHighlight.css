@@ -23,6 +23,9 @@
   -moz-box-shadow: 0 0 0 1.2px #e7e7e7;
   cursor: pointer;
 }
+.postTypeButton.coProfile{
+  height: 160px;
+}
 /*.postTypeButton:last-of-type{
   margin-bottom: 0;
 }*/
@@ -56,6 +59,12 @@ input[type="radio"]:checked + .credential-text {
     width: 150px;
     height: 150px;
     margin-bottom: 0;
+  }
+  .postTypeButton.coProfile{
+    height: 200px;
+  }
+  .postType-desc.coProfile{
+    height: 80px!important;
   }
 }
 @media screen and (max-width: 499px) {
@@ -201,6 +210,9 @@ input[type="radio"]:checked + .credential-text {
 }
 .postType-desc{
   font-size: 13px;
+}
+.postType-desc.coProfile{
+  height: 40px;
 }
 
 .ModalOpenBtn-postHighlight{
