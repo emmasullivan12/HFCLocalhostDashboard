@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Modal from './Modal.js';
+import {getUnreadIndicator} from './GeneralFunctions.js';
 import JoinCommunityModalContent from './JoinCommunityModalContent.js';
 import {getIndustryDeets, getSkillDeets, getCompanyDeets} from './UserDetail.js';
 import "../css/Modal.css";
@@ -58,7 +59,7 @@ class CommunityListItem extends Component {
   render() {
     const {isOverflowing} = this.state;
     const {group, type, onClick} = this.props;
-    let groupName, navlink, industryItem, groupIcon, companyItem
+    let groupName, navlink, industryItem, groupIcon, companyItem, companyApprovalStatus
 
     if (type == 'industry') {
       industryItem = getIndustryDeets(group.gid)
@@ -66,6 +67,10 @@ class CommunityListItem extends Component {
       groupName = industryItem.label
       navlink = `/community/industry/${industryItem.urlText}`
     } else if (type == 'company') {
+      const company = {
+        approvalstatus: 3,
+      }
+      companyApprovalStatus = company.approvalstatus
       companyItem = getCompanyDeets(group.coid)
       groupName = companyItem.label
       navlink = `/companies/${companyItem.urlText}`
@@ -96,6 +101,9 @@ class CommunityListItem extends Component {
                 <span className="tooltiptext chats">
                   {groupName}
                 </span>
+              )}
+              {(type == 'company' && (companyApprovalStatus == '3' || companyApprovalStatus == '6')) && (
+                getUnreadIndicator(1, false, isOverflowing)
               )}
             </div>
           </div>

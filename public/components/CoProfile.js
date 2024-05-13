@@ -5,12 +5,33 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {cdn} from './CDN.js';
 
 import {checkMobile, metaAdder, LoadingSpinner} from './GeneralFunctions.js';
-import BuyCoProfileModalContent from './BuyCoProfileModalContent.js'
+import CoProfileOverview from './CoProfileOverview.js'
+import BuyCoProfileModalContent from './BuyCoProfileModalContent.js';
+import FullPageModal from './FullPageModal.js';
+import Form from './Form.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
 import {getCompanyDeets} from './UserDetail.js';
+
+import "../css/CoProfile.css";
+
+const SuccessModalProps = {
+  ariaLabel: 'Successfully submitted',
+  triggerText: 'Successfully submitted',
+  usedFor: 'success',
+  hideTrigger: true,
+  changeInitFocus: true
+}
+
+const ClaimFreeCoProfileModalProps = {
+  ariaLabel: 'Claim Company Profile',
+  triggerText: 'Claim Company Profile',
+  usedFor: 'noAccess',
+  hideTrigger: true,
+  backBtn: 'arrow'
+}
 
 const UnsubscribeProps = {
   ariaLabel: 'Unsubscribe',
@@ -42,11 +63,12 @@ class CoProfile extends React.Component {
       isPageManager: false,
       subscriptionStatus: '',
       isMobile: '',
+      showSuccessModal: false,
     }
   }
 
   componentDidMount() {
-    const {updateDocumentTitle} = this.props
+    const {updateDocumentTitle, isLoggedIn} = this.props
     const isMobile = checkMobile()
     const company = {
       coid: '1',
@@ -58,7 +80,7 @@ class CoProfile extends React.Component {
       updateDocumentTitle("Explore " + company.name + " careers & advice - Prospela.com")
     }
     const loggedInUID = '8'
-    const isPageManager = company.pagemanagers.some(e => e.uid == loggedInUID);
+    const isPageManager = isLoggedIn && company.pagemanagers.some(e => e.uid == loggedInUID);
     const subscriptionStatus =
     this.setState({
       isMobile: isMobile,
@@ -110,13 +132,13 @@ class CoProfile extends React.Component {
     })
   }
 
-  renderTab = (company, companyURL) => {
+  renderTab = (company, companyURL, loggedInFname) => {
     const {userRole, isLoggedIn} = this.props;
     const {tabToView, isPageManager} = this.state;
 
     switch (tabToView) {
       case 'overview':
-      return <div>CompanyOverview tab goes here</div>
+      return <CoProfileOverview company={company} approvalStatus={company.approvalstatus} fname={loggedInFname} isPageManager={isPageManager} />
         //return <CompanyOverview isPageManager={isPageManager} />
       case 'jobs':
       return <div>CompanyJobsBoard tab goes here</div>
@@ -124,8 +146,32 @@ class CoProfile extends React.Component {
     }
   }
 
+  showModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: true,
+    });
+  }
+
+  closeModal = (modalType) => {
+    this.setState({
+      ["show"+modalType+"Modal"]: false,
+    });
+  }
+
+  formToShow = (formType) => {
+    if (formType == 'Free') {
+      this.showModal("Claim"+formType+"ProfileForm")
+    }
+  }
+
+  handleSuccessModalFromFPModal = (modalTypeToClose, modalToShow) => {
+    this.showModal(modalToShow)
+    this.closeModal(modalTypeToClose)
+  }
+
   renderClaimCoProfileContent = (approvalStatus) => {
     const {isMobile, isPageManager} = this.state
+    const {checkHasAccess, noAccessHandler} = this.props
     let buttonText, showStd, showPrem, showSuperPrem, stdCourseLink, premCourseLink, superPremCourseLink, stdDesc, premDesc, superPremDesc, stdPrice, premPrice, superPremPrice, modalTitle, modalSubTitle, showWider, showBottomTxt
 
     stdDesc = 'Get started by adding basic company info'
@@ -136,7 +182,7 @@ class CoProfile extends React.Component {
     superPremPrice = 'Contact Sales'
     stdCourseLink = ''
     premCourseLink = 'www.stripe.com'
-    superPremCourseLink = 'www.stripe.com'
+    superPremCourseLink = ''
 
     switch(approvalStatus) {
       case 0: // not claimed
@@ -179,12 +225,12 @@ class CoProfile extends React.Component {
       return (
         <React.Fragment>
           {approvalStatus == '0' && (
-            <span>
+            <span className="profileClaimStatus">
               Unclaimed
-              <div className={"tooltiptext coProfile below top20 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
+              <div className={"tooltiptext coProfile below top25 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
                 <div className="textCursor">This company profile is unclaimed. Companies who claim their profile can list jobs, access enhanced employer branding and more!</div>
                 <div className="marginTop10 lightPurpleText">
-                  <Modal {...ChooseProfileTypeModalProps} triggerText="Claim your free profile" wider={showWider}>
+                  <Modal {...ChooseProfileTypeModalProps} triggerText="Claim your free profile" wider={showWider} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
                     <BuyCoProfileModalContent
                       modalTitle={modalTitle}
                       modalSubTitle={modalSubTitle}
@@ -201,6 +247,7 @@ class CoProfile extends React.Component {
                       premPrice={premPrice}
                       superPremPrice={superPremPrice}
                       showBottomTxt={showBottomTxt}
+                      formToShow={this.formToShow}
                     />
                   </Modal>
                 </div>
@@ -213,30 +260,33 @@ class CoProfile extends React.Component {
                 <g>
                   <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z" />
                 </g>
-              </svg> {isPageManager ? 'Upgrade' : 'Claimed'}
-              <div className={"tooltiptext coProfile below top20 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
-                <div>{isPageManager ? 'Upgrade to enjoy job listings, enhanced employer branding and more' : 'Someone from this company manages this profile.'}</div>
-                <div className="marginTop10 lightPurpleText">
-                  <Modal {...ChooseProfileTypeModalProps} triggerText="Upgrade" wider={showWider}>
-                    <BuyCoProfileModalContent
-                      modalTitle={modalTitle}
-                      modalSubTitle={modalSubTitle}
-                      showStd={showStd}
-                      showPrem={showPrem}
-                      showSuperPrem={showSuperPrem}
-                      stdCourseLink={stdCourseLink}
-                      premCourseLink={premCourseLink}
-                      superPremCourseLink={superPremCourseLink}
-                      stdDesc={stdDesc}
-                      premDesc={premDesc}
-                      superPremDesc={superPremDesc}
-                      stdPrice={stdPrice}
-                      premPrice={premPrice}
-                      superPremPrice={superPremPrice}
-                      showBottomTxt={showBottomTxt}
-                    />
-                  </Modal>
-                </div>
+              </svg> <span className="profileClaimStatus">{isPageManager ? 'Upgrade' : 'Claimed'}</span>
+              <div className={"tooltiptext coProfile below top25 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
+                <div>{isPageManager ? 'Someone from this company manages this profile. Upgrade to enjoy job listings, enhanced employer branding and more' : 'Someone from this company manages this profile.'}</div>
+                {isPageManager && (
+                  <div className="marginTop10 lightPurpleText">
+                    <Modal {...ChooseProfileTypeModalProps} triggerText="Upgrade" wider={showWider}>
+                      <BuyCoProfileModalContent
+                        modalTitle={modalTitle}
+                        modalSubTitle={modalSubTitle}
+                        showStd={showStd}
+                        showPrem={showPrem}
+                        showSuperPrem={showSuperPrem}
+                        stdCourseLink={stdCourseLink}
+                        premCourseLink={premCourseLink}
+                        superPremCourseLink={superPremCourseLink}
+                        stdDesc={stdDesc}
+                        premDesc={premDesc}
+                        superPremDesc={superPremDesc}
+                        stdPrice={stdPrice}
+                        premPrice={premPrice}
+                        superPremPrice={superPremPrice}
+                        showBottomTxt={showBottomTxt}
+                        formToShow={this.formToShow}
+                      />
+                    </Modal>
+                  </div>
+                )}
               </div>
             </React.Fragment>
           )}
@@ -246,30 +296,33 @@ class CoProfile extends React.Component {
                 <g>
                   <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z" />
                 </g>
-              </svg> {isPageManager ? 'Upgrade' : 'Claimed'}
-              <div className={"tooltiptext coProfile below top20 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
+              </svg> <span className="profileClaimStatus">{isPageManager ? 'Upgrade' : 'Claimed'}</span>
+              <div className={"tooltiptext coProfile below top25 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
                 <div>{isPageManager ? 'Looking for more personalised features to meet your hiring and employer branding needs?' : 'Someone from this company manages this profile.'}</div>
-                <div className="marginTop10 lightPurpleText">
-                  <Modal {...ChooseProfileTypeModalProps} triggerText="Contact Sales" wider={showWider}>
-                    <BuyCoProfileModalContent
-                      modalTitle={modalTitle}
-                      modalSubTitle={modalSubTitle}
-                      showStd={showStd}
-                      showPrem={showPrem}
-                      showSuperPrem={showSuperPrem}
-                      stdCourseLink={stdCourseLink}
-                      premCourseLink={premCourseLink}
-                      superPremCourseLink={superPremCourseLink}
-                      stdDesc={stdDesc}
-                      premDesc={premDesc}
-                      superPremDesc={superPremDesc}
-                      stdPrice={stdPrice}
-                      premPrice={premPrice}
-                      superPremPrice={superPremPrice}
-                      showBottomTxt={showBottomTxt}
-                    />
-                  </Modal>
-                </div>
+                {isPageManager && (
+                  <div className="marginTop10 lightPurpleText">
+                    <Modal {...ChooseProfileTypeModalProps} triggerText="Contact Sales" wider={showWider}>
+                      <BuyCoProfileModalContent
+                        modalTitle={modalTitle}
+                        modalSubTitle={modalSubTitle}
+                        showStd={showStd}
+                        showPrem={showPrem}
+                        showSuperPrem={showSuperPrem}
+                        stdCourseLink={stdCourseLink}
+                        premCourseLink={premCourseLink}
+                        superPremCourseLink={superPremCourseLink}
+                        stdDesc={stdDesc}
+                        premDesc={premDesc}
+                        superPremDesc={superPremDesc}
+                        stdPrice={stdPrice}
+                        premPrice={premPrice}
+                        superPremPrice={superPremPrice}
+                        showBottomTxt={showBottomTxt}
+                        formToShow={this.formToShow}
+                      />
+                    </Modal>
+                  </div>
+                )}
               </div>
             </React.Fragment>
           )}
@@ -279,15 +332,16 @@ class CoProfile extends React.Component {
   }
 
   render() {
-    const {tabToView, isPageManager, subscriptionStatus, wantsToLeave, isUnsubscribing, updateUnsubscribeSuccess, isMobile} = this.state
+    const {tabToView, isPageManager, subscriptionStatus, wantsToLeave, isUnsubscribing, updateUnsubscribeSuccess, isMobile, showClaimFreeProfileFormModal, showSuccessModal} = this.state
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '1',
-      approvalstatus: 4,
+      approvalstatus: 3,
       name: 'Pladis',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
       experts: [{uid: '1'}, {uid: '2'},{uid: '3'}, {uid: '4'}],
     }
+    const loggedInFname = 'Dexter' // loggedin users fname
     var loggedInUID = '8'
     let urlText, companyItem
 
@@ -297,6 +351,15 @@ class CoProfile extends React.Component {
     const companyURLending = "/companies/" + urlText
     const companyURL = "https://app.prospela.com" + companyURLending
 
+    var freeCoProfileQuestions = [
+      {q: 'FREE company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
+      {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
+        {value: '0', label: 'Longer-term mentorship (1 month+)'},
+        {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
+        {value: '2', label: 'Both'},
+        {value: '3', label: 'I\'m not sure yet / just browsing...'}
+      ]},
+    ]
 
     // Add meta tags
     metaAdder('property="og:type"', "website")
@@ -335,7 +398,7 @@ class CoProfile extends React.Component {
                   <div>
                     <span className="marginBottom20 breakWord">
                       <span><strong>{company.name} <span className="mediumGreyText">overview</span></strong></span>
-                      <span className="pointerCursor noBold marginLeft5 mediumGreyText fontSize12 borderBtmDottedGrey tooltip">
+                      <span className="pointerCursor noBold marginLeft5 mediumGreyText fontSize12 padding5 tooltip">
                         {this.renderClaimCoProfileContent(company.approvalstatus)}
                       </span>
                     </span>
@@ -532,11 +595,37 @@ class CoProfile extends React.Component {
                 )}
               </div>
               <div className="mainBar" role="main" aria-label="rendered tab">
-                { this.renderTab(company, companyURL) }
+                { this.renderTab(company, companyURL, loggedInFname) }
               </div>
             </div>
           </div>
         </div>
+        {showClaimFreeProfileFormModal == true && (
+          <FullPageModal {...ClaimFreeCoProfileModalProps} handleLocalStateOnClose={() => this.closeModal("ClaimFreeProfileForm")}>
+            <Form
+              questions={freeCoProfileQuestions}
+              usedFor="freeCoProfileClaim"
+              formTitle="Claim your Free Company Profile"
+              onSubmit={() => this.handleSuccessModalFromFPModal("ClaimFreeProfileForm", "Success")}
+            />
+          </FullPageModal>
+        )}
+        {showSuccessModal == true && (
+          <Modal {...SuccessModalProps} handleLocalStateOnClose={() => this.closeModal("Success")}>
+            <div className="modal-title">
+              <div className="emoji-icon stopwatch-emoji successBox" />
+              Application submitted!
+            </div>
+            <div className="success-container">
+              <p className="landingCTADesc">
+                Hold tight! We&#39;re busy reviewing your Company Profile updates and will notify you as soon as possible once it has been approved.
+              </p>
+              <p className="landingCTADesc">
+                In the meantime, why not answer some Q&A or share a general post for mentees to see?
+              </p>
+            </div>
+          </Modal>
+        )}
       </React.Fragment>
     );
   }

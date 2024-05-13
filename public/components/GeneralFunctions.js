@@ -293,10 +293,10 @@ function getUnreadIndicator(unreadCount, isGroupChannel, hasTooltip) {
       text = '9+'
       break;
     case (unreadCount > 0 && unreadCount <= 9 && unreadCount != null):
-      text = {unreadCount}
+      text = unreadCount
       break;
     default:
-      text = {unreadCount}
+      text = unreadCount
       break;
   }
 

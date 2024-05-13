@@ -946,6 +946,9 @@ table th .description{
 .top20{
   top: 20px!important;
 }
+.top25{
+  top: 25px!important;
+}
 .top35{
   top: 35px;
 }
@@ -1101,6 +1104,9 @@ table th .description{
 }
 .padding1pt5rem{
   padding: 1.5rem!important;
+}
+.padding5{
+  padding: 5px;
 }
 .padding10{
   padding: 10px!important;
