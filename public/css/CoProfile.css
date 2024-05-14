@@ -2,3 +2,8 @@
   text-decoration: underline grey dotted 1px;
   text-underline-offset: 4px;
 }
+.addLeftDivider{
+  margin-left: 10px !important;
+  border-left: 1px lightgrey solid;
+  padding-left: 10px;
+}

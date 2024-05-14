@@ -441,7 +441,7 @@ table th .description{
   line-height: 1.2;
 }
 .lineHeight40pc{
-  line-height: 1.4;
+  line-height: 1.4!important;
 }
 .lineHeight2{
   line-height: 2!important;
@@ -500,6 +500,9 @@ table th .description{
 .neutralText-small{
   color: #c7c7c7!important;
   font-size: 12px!important;
+}
+.inheritColor{
+  color: inherit!important;
 }
 .greyText{
   color: #bdbdbd;
@@ -1164,6 +1167,9 @@ table th .description{
 }
 .paddingL2{
   padding-left: 2px!important;
+}
+.paddingL10{
+  padding-left: 10px!important;
 }
 .paddingL20{
   padding-left: 20px!important;
@@ -2650,6 +2656,10 @@ a.button{
   margin-top: -2px;
   text-align: center;
   color: #fff;
+}
+.groupsAvatarContainer.coProfile{
+  height: 40px;
+  width: 40px;
 }
 .groupsAvatarContainer.industry{
   color: #58d2bb;

@@ -10,7 +10,7 @@ import Modal from './Modal.js';
 const UpgradeCoProfileModalProps = {
   ariaLabel: 'Update your Company Profile',
   triggerText: 'Update your Company Profile',
-  usedFor: 'noAccess',
+  usedFor: 'upgradeCoProfileClaim',
   backBtn: 'arrow'
 }
 
@@ -25,7 +25,7 @@ const SuccessModalProps = {
 const FullCoProfileModalProps = {
   ariaLabel: 'Update your Premium Company Profile',
   triggerText: 'Update your Premium Company Profile',
-  usedFor: 'noAccess',
+  usedFor: 'fullCoProfileClaim',
   backBtn: 'arrow'
 }
 
@@ -61,6 +61,27 @@ class CoProfileOverview extends React.Component {
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
+      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
+        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
+      ]},
+      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '9', label: 'Aboriginal Australian'},
+        {value: '0', label: 'Asian'},
+        {value: '1', label: 'Arab'},
+        {value: '2', label: 'Black / African / Caribbean'},
+        {value: '3', label: 'Hispanic / Latinx'},
+        {value: '4', label: 'Indian / Pakistani'},
+        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '10', label: 'Maori'},
+        {value: '11', label: 'Pacific Islander'},
+        {value: '6', label: 'White'},
+        {value: '7', label: 'Other'},
+        {value: '8', label: 'Prefer not to say'},
+      ]},
     ]
 
     var upgradeCoProfileQuestions = [
@@ -70,6 +91,27 @@ class CoProfileOverview extends React.Component {
         {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
+      ]},
+      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
+        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
+      ]},
+      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '9', label: 'Aboriginal Australian'},
+        {value: '0', label: 'Asian'},
+        {value: '1', label: 'Arab'},
+        {value: '2', label: 'Black / African / Caribbean'},
+        {value: '3', label: 'Hispanic / Latinx'},
+        {value: '4', label: 'Indian / Pakistani'},
+        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '10', label: 'Maori'},
+        {value: '11', label: 'Pacific Islander'},
+        {value: '6', label: 'White'},
+        {value: '7', label: 'Other'},
+        {value: '8', label: 'Prefer not to say'},
       ]},
     ]
 
@@ -82,13 +124,13 @@ class CoProfileOverview extends React.Component {
     } else if (approvalStatus == '3' || approvalStatus == '6') {
       return (
         <div>
-          You&#39;ve paid to {approvalStatus == '3' ? 'upgrade your Company Profile' : 'claim this Premium Company Profile'}, so have unlocked extra features. Update your profile now!
+          You&#39;ve paid to {approvalStatus == '3' ? 'upgrade your Company Profile' : 'claim this Premium Company Profile'}, so have unlocked extra features.
           {approvalStatus == '3' && (
             <FullPageModal {...UpgradeCoProfileModalProps}>
               <Form
                 questions={upgradeCoProfileQuestions}
                 usedFor="upgradeCoProfileClaim"
-                formTitle="Upgrade your Company Profile"
+                formTitle="Update your Premium Company Profile"
                 onSubmit={() => this.showUpgradeSuccessModal()}
               />
             </FullPageModal>
@@ -98,7 +140,7 @@ class CoProfileOverview extends React.Component {
               <Form
                 questions={fullCoProfileQuestions}
                 usedFor="fullCoProfileClaim"
-                formTitle="Claim your Premium Company Profile"
+                formTitle="Update your Premium Company Profile"
                 onSubmit={() => this.showPremiumProfileSuccessModal()}
               />
             </FullPageModal>
@@ -124,7 +166,7 @@ class CoProfileOverview extends React.Component {
           <div className="dash-welcomeContainer marginBottom20">
             <div className="col-9">
               <div className="dash-welcomeHeader">
-                {approvalStatus == '3' || approvalStatus == '6' && (
+                {(approvalStatus == '3' || approvalStatus == '6') && (
                   <span><i className="fas fa-exclamation-circle"/> <strong>Welcome, {fname}!</strong></span>
                 )}
                 {approvalStatus != '3' && approvalStatus != '6' && (

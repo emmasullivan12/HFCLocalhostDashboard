@@ -126,7 +126,7 @@ class BuyCoProfileModalContent extends Component {
               )}
             </div>
             {showBottomTxt && (
-              <div className="marginTop10 fontSize13 mediumGreyText">You can upgrade later, and cancel at anytime</div>
+              <div className="marginTop10 fontSize13 mediumGreyText">Your Subscription helps us reach more students in need! <span role="img" aria-label="pray emoji">🙏</span> You can upgrade later, and cancel at anytime</div>
             )}
           </React.Fragment>
         )}

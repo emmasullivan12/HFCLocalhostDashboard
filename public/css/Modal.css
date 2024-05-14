@@ -184,6 +184,19 @@
   margin-top: 2px;
   font-size: 11px;
 }
+.ModalOpenBtn-upgradeCoProfileClaim,
+.ModalOpenBtn-upgradeCoProfileClaim:active,
+.ModalOpenBtn-fullCoProfileClaim,
+.ModalOpenBtn-fullCoProfileClaim:active{
+  background: #ff6c81;
+}
+.ModalOpenBtn-upgradeCoProfileClaim:hover,
+.ModalOpenBtn-upgradeCoProfileClaim:focus,
+.ModalOpenBtn-fullCoProfileClaim:hover,
+.ModalOpenBtn-fullCoProfileClaim:focus{
+  background: #e14158;
+}
+
 .ModalOpenBtn-unlockFeedContent{
   background: #fff;
   color: #3f3f3f;
