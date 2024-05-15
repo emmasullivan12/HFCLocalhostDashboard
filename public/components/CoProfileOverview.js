@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {cdn} from './CDN.js';
+import FeedContainer from "./FeedContainer.js";
 import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';
 import Modal from './Modal.js';
@@ -51,69 +52,7 @@ class CoProfileOverview extends React.Component {
   }
 
   renderWelcomeMsg = (approvalStatus) => {
-    const {handleSubmitPaidForm, company} = this.props
-
-    var fullCoProfileQuestions = [
-      {q: 'FULL PREMIUM company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
-      {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
-        {value: '0', label: 'Longer-term mentorship (1 month+)'},
-        {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
-        {value: '2', label: 'Both'},
-        {value: '3', label: 'I\'m not sure yet / just browsing...'}
-      ]},
-      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
-        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
-        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
-        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
-      ]},
-      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
-        {value: '9', label: 'Aboriginal Australian'},
-        {value: '0', label: 'Asian'},
-        {value: '1', label: 'Arab'},
-        {value: '2', label: 'Black / African / Caribbean'},
-        {value: '3', label: 'Hispanic / Latinx'},
-        {value: '4', label: 'Indian / Pakistani'},
-        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
-        {value: '10', label: 'Maori'},
-        {value: '11', label: 'Pacific Islander'},
-        {value: '6', label: 'White'},
-        {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'},
-      ]},
-    ]
-
-    var upgradeCoProfileQuestions = [
-      {q: 'UPGRADE company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
-      {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
-        {value: '0', label: 'Longer-term mentorship (1 month+)'},
-        {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
-        {value: '2', label: 'Both'},
-        {value: '3', label: 'I\'m not sure yet / just browsing...'}
-      ]},
-      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
-        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
-        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
-        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
-      ]},
-      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
-        {value: '9', label: 'Aboriginal Australian'},
-        {value: '0', label: 'Asian'},
-        {value: '1', label: 'Arab'},
-        {value: '2', label: 'Black / African / Caribbean'},
-        {value: '3', label: 'Hispanic / Latinx'},
-        {value: '4', label: 'Indian / Pakistani'},
-        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
-        {value: '10', label: 'Maori'},
-        {value: '11', label: 'Pacific Islander'},
-        {value: '6', label: 'White'},
-        {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'},
-      ]},
-    ]
+    const {handleSubmitPaidForm, company, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
 
     if (approvalStatus == '1' || approvalStatus == '4' || approvalStatus == '7') {
       return (
@@ -157,7 +96,7 @@ class CoProfileOverview extends React.Component {
   }
 
   render() {
-    const {isPageManager, fname, approvalStatus} = this.props;
+    const {isPageManager, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName} = this.props;
     const {showUpgradeSuccessModal, showPremiumProfileSuccessModal} = this.state
 
     return (
@@ -188,6 +127,10 @@ class CoProfileOverview extends React.Component {
             </div>
           </div>
         )}
+        <div>
+          <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
+          <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} />
+        </div>
         {showUpgradeSuccessModal == true && (
           <Modal {...SuccessModalProps} handleLocalStateOnClose={() => this.closeModal("Success")}>
             <div className="modal-title">

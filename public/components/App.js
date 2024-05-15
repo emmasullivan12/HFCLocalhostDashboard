@@ -342,7 +342,7 @@ class Dashboard extends Component{
     };
 
     const userPermissions = ["maxViewsNotReached"] //To be linked to Redux
-    const isLoggedIn = true //To be linked to Redux
+    const isLoggedIn = false //To be linked to Redux
     const permitted = (requireLogin == true ? isLoggedIn == true : true) && (allowedPermissions ? checkPermissions(userPermissions, allowedPermissions) : true)
 
     if (permitted == true) {
@@ -455,9 +455,9 @@ class Dashboard extends Component{
     const isClass = numClasses > 0
     const isQ = false
     const goToSettings = false // entryURL && entryURL.includes('/settings') ? 'Yes' : 'No';
-    const isLoggedIn = true
+    const isLoggedIn = false
     const oneMoreTilMaxViewsReached = false
-    const maxViewsReached = false
+    const maxViewsReached = true
     const maxDataViewsReached = true // already viewed one "ah-ha" data on a skills/industry page so now prompt sign up
     const reachedMaxFeedLength = false
     const isIphone = isiOS()
@@ -682,7 +682,7 @@ class Dashboard extends Component{
                 <Route exact path="/home" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route exact path="/questions" render={(props) => <HomePage {...props} updateIsCurrentSession={this.updateIsCurrentSession} isCurrentSession={isCurrentSession} browser={browser} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} maxViewsReached={maxViewsReached} reachedMaxFeedLength={reachedMaxFeedLength} handleUnlockBtnClick={this.handleUnlockBtnClick} tabToView="questions" updatePathName={this.updatePathName} unHighlightStepsBox={this.unHighlightStepsBox} showHighlightStepsBox={highlightStepsBox} updateFeedScrollPos={this.updateFeedScrollPos} prevFeedScrollPos={prevFeedScrollPos} userStepsWasOpenInFeed={userStepsWasOpenInFeed}/>}/>
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
-                <Route path="/companies/:companyname" render={(props) => <CoProfile {...props} initialTabToView="overview" updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "coProfile")}} isLoggedIn={isLoggedIn} userRole={userRole} updatePathName={this.updatePathName} />}/>
+                <Route path="/companies/:companyname" render={(props) => <CoProfile {...props} updateFeedScrollPos={this.updateCommFeedScrollPos} prevFeedScrollPos={prevCommFeedScrollPos} initialTabToView="overview" updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "coProfile")}} isLoggedIn={isLoggedIn} userRole={userRole} updatePathName={this.updatePathName} />}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
                 <Route path="/messages/Prospela" component={ProspelaBot}/>
                 <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>

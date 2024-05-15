@@ -10,13 +10,22 @@ import CoProfileOverview from './CoProfileOverview.js'
 import BuyCoProfileModalContent from './BuyCoProfileModalContent.js';
 import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';
+import industryOptions from './Industries.js';
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
+import UploadProfPicContent from './UploadProfPicContent.js';
 import {getIndustryDeets, getCompanyDeets, userFlagEmoji} from './UserDetail.js';
 
 import "../css/CoProfile.css";
+
+const UploadProfPicProps = {
+  ariaLabel: 'Add or Edit Company Logo',
+  triggerText: 'Add/Edit Company Logo',
+  usedFor: 'addPicBtn userMenuPlus',
+  triggerHasAutoFocus: true
+}
 
 const AddHighlightModalProps = {
   ariaLabel: 'Add a Post',
@@ -45,7 +54,7 @@ const SuccessModalProps = {
 const ClaimFreeCoProfileModalProps = {
   ariaLabel: 'Claim Company Profile',
   triggerText: 'Claim Company Profile',
-  usedFor: 'noAccess',
+  usedFor: 'freeCoProfileClaim',
   hideTrigger: true,
   backBtn: 'arrow'
 }
@@ -73,10 +82,13 @@ const ChooseProfileTypeModalProps = {
 }
 
 class CoProfile extends React.Component {
+
   constructor(props) {
     super(props);
+    this.scrollRef = React.createRef();
     this.state = {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
+      prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
       isPageManager: false,
       approvalStatus: '',
       isMobile: '',
@@ -88,6 +100,7 @@ class CoProfile extends React.Component {
 
   componentDidMount() {
     const {updateDocumentTitle, isLoggedIn} = this.props
+    const {prevFeedScrollPos} = this.state
     const isMobile = checkMobile()
     const company = {
       coid: '0',
@@ -109,6 +122,10 @@ class CoProfile extends React.Component {
       approvalStatus: company.approvalstatus,
       companyItem: companyItem,
     })
+    if (prevFeedScrollPos != 0) {
+      const commContainer = document.getElementById("companyFeedContainer")
+      commContainer.scrollTo({ top: prevFeedScrollPos, behavior: 'auto' });
+    }
   }
 
   componentWillUnmount() {
@@ -150,6 +167,24 @@ class CoProfile extends React.Component {
     }
   }
 
+  handleCommunityFeedClick = (e) => {
+    e.stopPropagation()
+
+    const feedItems = document.getElementById('feedItems')
+
+    // Only if item is on the feed, otherwise is probably in a modal
+    if (feedItems.contains(e.target)){
+      const {updateFeedScrollPos} = this.props
+      const prevScrollPos = e.target.closest('#companyFeedContainer').scrollTop
+      updateFeedScrollPos(prevScrollPos)
+
+    // Is probably within a modal i.e. not directly clicking on feed
+    } else {
+      return
+    }
+
+  }
+
   resetUnsubscribe = () => {
     const {wantsToLeave} = this.state
     this.setState({
@@ -159,13 +194,260 @@ class CoProfile extends React.Component {
     })
   }
 
-  renderTab = (company, companyURL, loggedInFname) => {
-    const {userRole, isLoggedIn} = this.props;
+  renderTab = (company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions) => {
+    const {userRole, isLoggedIn, checkHasAccess, noAccessHandler, maxViewsReached, updatePathName} = this.props;
     const {tabToView, isPageManager} = this.state;
+
+    const contentArr = [ // Answers
+    /*  {
+        qid: '123456',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1'], // no answers yet
+        industriestopostto: ['99999','19','11','3','2'],
+        hashtags: ['23'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: ['123','234','345','456'],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: ['123'],
+        prseen: [],
+        uid: '123',
+        isanon: 0,
+        isPr: 0,
+        authorinsttype: 'sch',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        hidden: 1,
+        profilepic: '',
+        url: "/what-wear-to-interview"
+      },
+      {
+        qid: '123457',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19','10','99999'],
+        hashtags: ['23','11','30','55','61'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: true,
+        votes: [],
+        mentorseen: ['123','234'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 0,
+        isPr: 0,
+        authorinsttype: 'uni',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        profilepic: '',
+        url: "/what-wear-to-interview-2"
+      },
+      {
+        qid: '123458',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        title: 'What is the best thing to wear to an interview?',
+        textdetail: 'I know we have to be professional, but would like to stand out if possible.',
+        hids: ['1234','1235'], // 2 answers
+        industriestopostto: ['2','19'],
+        hashtags: ['23','11','30'],
+        hashtagsfreetext: ['my free text hashtag'],
+        type: 'question',
+        hasacceptedanswer: false,
+        votes: [],
+        mentorseen: ['123','234','345','456'],
+        menteeseen: [],
+        prseen: [],
+        uid: '124',
+        isanon: 1,
+        isPr: 0,
+        authorinsttype: 'job',
+        fname: 'John',
+        lname: 'Smith',
+        profilepic: '',
+        url: "/what-wear-to-interview-3"
+      },*/
+      {
+        hid: '1234',
+        uid: '123',
+        fname: 'Emma',
+        lname: 'Sullivan',
+        isPr: 0,
+        title: 'What is the best thing to wear to an interview?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Really Long Institution Name',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: 'BSc (Hons) Business Administration',
+        authortraining: '',
+        authorinsttype: 'uni',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-05T19:30:50.667Z',
+        text: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
+        isanon: 0,
+        votes: [],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#firstanswer',
+        type: 'answer',
+        relatedqid: '123',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '124', name: 'My PDF', type: 'application/pdf'},
+          {fileid: '125', name: 'MyExcelspreadsheet.xls', type: 'application/vnd.ms-excel'},
+          {fileid: '126', name: 'MyWorddocfilename.word', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'},
+          {fileid: '127', name: 'MyPOWERPOINTBABY!', type: 'application/vnd-mspowerpoint'},
+          {fileid: '128', name: 'My other doc format', type: 'other'}
+        ],
+      },
+      {
+        hid: '1235',
+        uid: '124',
+        fname: 'Dave',
+        lname: 'Petrie',
+        isPr: 0,
+        title: 'What is it like working at Pladis?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: '',
+        authorrole: '',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: '',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-06T13:30:50.667Z',
+        text: 'second answer sfgh sldfkj ghlskjdf hglkjsd fhgkjls dhflkjg hsdlfkj ghlksdjfh glkjsd fhgkljsdh fgkjlh sdlfkj ghlskdjf ghlkjsdfh gkljsdfh glkjsdfh gkljsdh fgkjlhds flkgjh sdlkfj ghslkdjf ghlksjdf glksjdfh glsjkdf gkljsdf hglkjsd fhglkjsdfh glksjdfh glskjdfh glkjsdfh glkjsdfh gkljsdfh glkjsdfh gkjlsd fhgkljsdh fklgjhs dflkjgh slkdfj ghskldjf ghslkdfjgh lskdjf ghlskdjfgh slkdjf ghlksdfjgh',
+        isanon: 1,
+        votes: ['12','23'],
+        isacceptedanswer: true,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#secondanswer',
+        type: 'answer',
+        relatedqid: '124'
+      },
+      {
+        hid: '1236',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        title: 'When should I apply to grad schemes (what time of year)?',
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'third answer',
+        isanon: 0,
+        votes: ['123','20'],
+        isacceptedanswer: false,
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        url: '/what-wear-to-interview/#thirdanswer',
+        type: 'answer',
+        relatedqid: '125',
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 2', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+      },
+      {
+        hid: '1237',
+        uid: '126',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content! SDFGKLJH SDLFJKH GSLKJDF GJK Hlkjh xdljfh gslkjdh fgkjls hdfglkj hsdfkljh gslkdfjglksjdh gjh skgsh kdhgksdfkldlfjhskfhgljdfhg jdfh gsjdhfkjshdgjhdfgkjshfglhsdflkghdfjh dkfjh g',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        wasDefaultRole: true,
+        selectedFiles: [
+          {fileid: '123', name: 'My image', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 1', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+          {fileid: '123', name: 'My image 2', type: 'image/png', imgurl: '/1600724559100-acddf6dd-8c00-4cf4-bd8f-d26513ffd827.png'},
+        ],
+        postComments: [
+          {cid: '1', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '3', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '4', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '5', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: [], relatedqid: '', relatedhid: ''},
+          {cid: '6', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '7', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '123', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '8', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '126', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        ],
+      },
+      {
+        hid: '1238',
+        uid: '125',
+        fname: 'Dexter',
+        lname: 'Boyce',
+        isPr: 0,
+        industriestopostto: ['99999','19'],
+        authorinst: '',
+        authorinstfreetext: 'Pladis',
+        authorrole: 'Marketing Manager',
+      //  authorroleishidden: 0,
+        authordegree: '',
+        authortraining: '',
+        authorinsttype: 'job',
+        authorstate: 'Bedf',
+        authorcountry: 'GBR',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        lastupdated: '2020-09-07T13:30:50.667Z',
+        text: 'This is a general post about the news today. Wanted to talk about how the war in Ukraine is affecting VFX industry - there is so much inspiration for future content!',
+        isanon: 0,
+        votes: ['123','20'],
+        hashtags: ['23','20','1','2','0',],
+        hashtagsfreetext: ['my free text hashtag','blah','blu','ble','blum'],
+        type: 'general',
+        selectedFiles: [],
+        postComments: [
+          {cid: '1', u18: 1, text: 'what happens when i chat a lot and it goes over into *another* line is it messy af? Id love to know!', userroleofauthor: 'mentor', fname: 'Emma', lname: 'Sullivan', uid: '125', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['123','12345','23435'], relatedqid: '', relatedhid: ''},
+          {cid: '2', u18: 0, text: 'heres my thoughts on that blah blue bler blum', userroleofauthor: 'mentee', fname: 'Emma', lname: 'Sullivan', uid: '234', datecreated: '2020-09-04T13:30:50.667Z', upvotes: ['12345','23435'], relatedqid: '', relatedhid: ''},
+        ],
+      }
+    ]
 
     switch (tabToView) {
       case 'overview':
-      return <CoProfileOverview company={company} approvalStatus={company.approvalstatus} fname={loggedInFname} isPageManager={isPageManager} />
+      return <CoProfileOverview company={company} companyName={companyName} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={company.approvalstatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
         //return <CompanyOverview isPageManager={isPageManager} />
       case 'jobs':
       return <div>CompanyJobsBoard tab goes here</div>
@@ -363,9 +645,9 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: 3,
-      logo: '',
-    //  logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
+      approvalstatus: 0,
+    //  logo: '',
+      logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
       country: 'GBR',
       industries: ['6', '8'],
@@ -399,8 +681,8 @@ class CoProfile extends React.Component {
       {value: '3', label: 'Large (over 150 employees)'},
     ]
     const companyTypeOptions = [
-      {value: '0', label: 'For-Profit'},
-      {value: '1', label: 'Non-Profit'},
+      {value: '0', label: 'Charity / Non-profit'},
+      {value: '1', label: 'For-profit'},
       {value: '2', label: 'Social Enterprise'},
       {value: '3', label: 'Education Institution'},
     ]
@@ -408,24 +690,89 @@ class CoProfile extends React.Component {
       .filter(x => x.value == company.size)[0].label
     const companyType = companyTypeOptions
       .filter(x => x.value == company.type)[0].label
-    const indArrToShow = company.industries
+    const indArrToShow = company.industries.slice(0,2)
 
     let coLogo, coInitial
 
     if (hasLogoURL) {
-      coLogo = cdn + '/' + groupImgFolder + logoURL + '-20'
+      coLogo = cdn + '/' + groupImgFolder + logoURL
     } else {
       coInitial = companyItem && companyName.charAt(0).toUpperCase();
     }
 
+    var countries = [
+      {value: 'AFG', label: 'Afghanistan'},{value: 'ALA', label: 'Aland Islands'},{value: 'ALB', label: 'Albania'},{value: 'DZA', label: 'Algeria'},{value: 'ASM', label: 'American Samoa'},{value: 'AND', label: 'Andorra'},{value: 'AGO', label: 'Angola'},{value: 'AIA', label: 'Anguilla'},{value: 'ATA', label: 'Antarctica'},{value: 'ATG', label: 'Antigua & Barbuda'},{value: 'ARG', label: 'Argentina'},{value: 'ARM', label: 'Armenia'},{value: 'ABW', label: 'Aruba'},{value: 'AUS', label: 'Australia'},{value: 'AUT', label: 'Austria'},{value: 'AZE', label: 'Azerbaijan'},{value: 'BHS', label: 'Bahamas'},{value: 'BHR', label: 'Bahrain'},{value: 'BGD', label: 'Bangladesh'},{value: 'BRB', label: 'Barbados'},{value: 'BLR', label: 'Belarus'},{value: 'BEL', label: 'Belgium'},{value: 'BLZ', label: 'Belize'},{value: 'BEN', label: 'Benin'},{value: 'BMU', label: 'Bermuda'},{value: 'BTN', label: 'Bhutan'},{value: 'BOL', label: 'Bolivia'},{value: 'BES', label: 'Bonaire, Sint Eustatius and Saba'},{value: 'BIH', label: 'Bosnia & Herzegovina'},{value: 'BWA', label: 'Botswana'},{value: 'BVT', label: 'Bouvet Island'},{value: 'BRA', label: 'Brazil'},{value: 'IOT', label: 'British Indian Ocean Territory'},{value: 'VGB', label: 'British Virgin Islands'},{value: 'BRN', label: 'Brunei'},{value: 'BGR', label: 'Bulgaria'},{value: 'BFA', label: 'Burkina Faso'},{value: 'BDI', label: 'Burundi'},{value: 'KHM', label: 'Cambodia'},{value: 'CMR', label: 'Cameroon'},{value: 'CAN', label: 'Canada'},{value: 'CPV', label: 'Cape Verde'},{value: 'CYM', label: 'Cayman Islands'},{value: 'CAF', label: 'Central African Republic'},{value: 'TCD', label: 'Chad'},{value: 'CHL', label: 'Chile'},{value: 'CHN', label: 'China'},{value: 'CXR', label: 'Christmas Island'},{value: 'CCK', label: 'Cocos (Keeling) Islands'},{value: 'COL', label: 'Colombia'},{value: 'COM', label: 'Comoros'},{value: 'COG', label: 'Congo'},{value: 'COK', label: 'Cook Islands'},{value: 'CRI', label: 'Costa Rica'},{value: 'CIV', label: 'Cote d\'Ivoire'},{value: 'HRV', label: 'Croatia'},{value: 'CUB', label: 'Cuba'},{value: 'CUW', label: 'Curacao'},{value: 'CYP', label: 'Cyprus'},{value: 'CZE', label: 'Czech Republic'},{value: 'COD', label: 'Democratic Republic of Congo'},{value: 'DNK', label: 'Denmark'},{value: 'DJI', label: 'Djibouti'},{value: 'DMA', label: 'Dominica'},{value: 'DOM', label: 'Dominican Republic'},{value: 'ECU', label: 'Ecuador'},{value: 'EGY', label: 'Egypt'},{value: 'SLV', label: 'El Salvador'},{value: 'GNQ', label: 'Equatorial Guinea'},{value: 'ERI', label: 'Eritrea'},{value: 'EST', label: 'Estonia'},{value: 'SWZ', label: 'Eswatini'},{value: 'ETH', label: 'Ethiopia'},{value: 'FLK', label: 'Falkland Islands'},{value: 'FRO', label: 'Faroe Islands'},{value: 'FJI', label: 'Fiji'},{value: 'FIN', label: 'Finland'},{value: 'FRA', label: 'France'},{value: 'GUF', label: 'French Guiana'},{value: 'PYF', label: 'French Polynesia'},{value: 'ATF', label: 'French Southern Territories'},{value: 'GAB', label: 'Gabon'},{value: 'GMB', label: 'Gambia'},{value: 'GEO', label: 'Georgia'},{value: 'DEU', label: 'Germany'},{value: 'GHA', label: 'Ghana'},{value: 'GIB', label: 'Gibraltar'},{value: 'GRC', label: 'Greece'},{value: 'GRL', label: 'Greenland'},{value: 'GRD', label: 'Grenada'},{value: 'GLP', label: 'Guadeloupe'},{value: 'GUM', label: 'Guam'},{value: 'GTM', label: 'Guatemala'},{value: 'GGY', label: 'Guernsey'},{value: 'GIN', label: 'Guinea'},{value: 'GNB', label: 'Guinea-Bissau'},{value: 'GUY', label: 'Guyana'},{value: 'HTI', label: 'Haiti'},{value: 'HMD', label: 'Heard Island & McDonald Islands'},{value: 'HND', label: 'Honduras'},{value: 'HKG', label: 'Hong Kong'},{value: 'HUN', label: 'Hungary'},{value: 'ISL', label: 'Iceland'},{value: 'IND', label: 'India'},{value: 'IDN', label: 'Indonesia'},{value: 'IRN', label: 'Iran'},{value: 'IRQ', label: 'Iraq'},{value: 'IRL', label: 'Ireland'},{value: 'IMN', label: 'Isle of Man'},{value: 'ISR', label: 'Israel'},{value: 'ITA', label: 'Italy'},{value: 'JAM', label: 'Jamaica'},{value: 'JPN', label: 'Japan'},{value: 'JEY', label: 'Jersey'},{value: 'JOR', label: 'Jordan'},{value: 'KAZ', label: 'Kazakhstan'},{value: 'KEN', label: 'Kenya'},{value: 'KIR', label: 'Kiribati'},{value: 'RKS', label: 'Kosovo'},{value: 'KWT', label: 'Kuwait'},{value: 'KGZ', label: 'Kyrgyzstan'},{value: 'LAO', label: 'Laos'},{value: 'LVA', label: 'Latvia'},{value: 'LBN', label: 'Lebanon'},{value: 'LSO', label: 'Lesotho'},{value: 'LBR', label: 'Liberia'},{value: 'LBY', label: 'Libya'},{value: 'LIE', label: 'Liechtenstein'},{value: 'LTU', label: 'Lithuania'},{value: 'LUX', label: 'Luxembourg'},{value: 'MAC', label: 'Macau'},{value: 'MKD', label: 'Macedonia'},{value: 'MDG', label: 'Madagascar'},{value: 'MWI', label: 'Malawi'},{value: 'MYS', label: 'Malaysia'},{value: 'MDV', label: 'Maldives'},{value: 'MLI', label: 'Mali'},{value: 'MLT', label: 'Malta'},{value: 'MHL', label: 'Marshall Islands'},{value: 'MTQ', label: 'Martinique'},{value: 'MRT', label: 'Mauritania'},{value: 'MUS', label: 'Mauritius'},{value: 'MYT', label: 'Mayotte'},{value: 'MEX', label: 'Mexico'},{value: 'FSM', label: 'Micronesia'},{value: 'MDA', label: 'Moldova'},{value: 'MCO', label: 'Monaco'},{value: 'MNG', label: 'Mongolia'},{value: 'MNE', label: 'Montenegro'},{value: 'MSR', label: 'Montserrat'},{value: 'MAR', label: 'Morocco'},{value: 'MOZ', label: 'Mozambique'},{value: 'MMR', label: 'Myanmar'},{value: 'NAM', label: 'Namibia'},{value: 'NRU', label: 'Nauro'},{value: 'NPL', label: 'Nepal'},{value: 'NLD', label: 'Netherlands'},{value: 'ANT', label: 'Netherlands Antilles'},{value: 'NCL', label: 'New Caledonia'},{value: 'NZL', label: 'New Zealand'},{value: 'NIC', label: 'Nicaragua'},{value: 'NER', label: 'Niger'},{value: 'NGA', label: 'Nigeria'},{value: 'NIU', label: 'Niue'},{value: 'NFK', label: 'Norfolk Island'},{value: 'PRK', label: 'North Korea'},{value: 'MNP', label: 'Northern Mariana Islands'},{value: 'NOR', label: 'Norway'},{value: 'OMN', label: 'Oman'},{value: 'PAK', label: 'Pakistan'},{value: 'PLW', label: 'Palau'},{value: 'PSE', label: 'Palestine'},{value: 'PAN', label: 'Panama'},{value: 'PNG', label: 'Papua New Guinea'},{value: 'PRY', label: 'Paraguay'},{value: 'PER', label: 'Peru'},{value: 'PHL', label: 'Philippines'},{value: 'PCN', label: 'Pitcairn'},{value: 'POL', label: 'Poland'},{value: 'PRT', label: 'Portugal'},{value: 'PRI', label: 'Puerto Rico'},{value: 'QAT', label: 'Qatar'},{value: 'REU', label: 'Reunion'},{value: 'ROU', label: 'Romania'},{value: 'RUS', label: 'Russia'},{value: 'RWA', label: 'Rwanda'},{value: 'WSM', label: 'Samoa'},{value: 'SMR', label: 'San Marino'},{value: 'STP', label: 'Sao Tome and Principe'},{value: 'SAU', label: 'Saudi Arabia'},{value: 'SEN', label: 'Senegal'},{value: 'SRB', label: 'Serbia'},{value: 'SYC', label: 'Seychelles'},{value: 'SLE', label: 'Sierra Leone'},{value: 'SGP', label: 'Singapore'},{value: 'SXM', label: 'Sint Maarten'},{value: 'SVK', label: 'Slovakia'},{value: 'SVN', label: 'Slovenia'},{value: 'SLB', label: 'Solomon Islands'},{value: 'SOM', label: 'Somalia'},{value: 'ZAF', label: 'South Africa'},{value: 'SGS', label: 'South Georgia & the South Sandwich Islands'},{value: 'KOR', label: 'South Korea'},{value: 'SSD', label: 'South Sudan'},{value: 'ESP', label: 'Spain'},{value: 'LKA', label: 'Sri Lanka'},{value: 'BLM', label: 'St Barthélemy'},{value: 'SHN', label: 'St Helena, Ascension &d Tristan da Cunha'},{value: 'KNA', label: 'St Kitts & Nevis'},{value: 'LCA', label: 'St Lucia'},{value: 'MAF', label: 'St Martin'},{value: 'SPM', label: 'St Pierre & Miquelon'},{value: 'VCT', label: 'St Vincent & the Grenadines'},{value: 'SDN', label: 'Sudan'},{value: 'SUR', label: 'Suriname'},{value: 'SJM', label: 'Svalbard & Jan Mayen'},{value: 'SWE', label: 'Sweden'},{value: 'CHE', label: 'Switzerland'},{value: 'SYR', label: 'Syria'},{value: 'TWN', label: 'Taiwan'},{value: 'TJK', label: 'Tajikistan'},{value: 'TZA', label: 'Tanzania'},{value: 'THA', label: 'Thailand'},{value: 'TLS', label: 'Timor L\'este'},{value: 'TGO', label: 'Togo'},{value: 'TKL', label: 'Tokelau'},{value: 'TON', label: 'Tonga'},{value: 'TTO', label: 'Trinidad & Tobago'},{value: 'TUN', label: 'Tunisia'},{value: 'TUR', label: 'Turkey'},{value: 'TKM', label: 'Turkmenistan'},{value: 'TCA', label: 'Turks & Caicos'},{value: 'TUV', label: 'Tuvalu'},{value: 'UGA', label: 'Uganda'},{value: 'UKR', label: 'Ukraine'},{value: 'ARE', label: 'United Arab Emirates'},{value: 'GBR', label: 'United Kingdom (UK)'},{value: 'USA', label: 'United States of America'},{value: 'URY', label: 'Uruguay'},{value: 'VIR', label: 'US Virgin Islands'},{value: 'UZB', label: 'Uzbekistan'},{value: 'VUT', label: 'Vanuatu'},{value: 'VAT', label: 'Vatican City'},{value: 'VEN', label: 'Venezuela'},{value: 'VNM', label: 'Vietnam'},{value: 'WLF', label: 'Wallis & Futuna'},{value: 'YEM', label: 'Yemen'},{value: 'ZMB', label: 'Zambia'},{value: 'ZWE', label: 'Zimbabwe'}
+    ]
+
     var freeCoProfileQuestions = [
-      {q: 'FREE company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
+      {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
+      {q: 'What type of organisation are you?', aType: 'select', req: 1, placeholder: 'Select type...', showIcon: true, iconToShow: 'iconFA', name: 'type', valueToShow: 'label', options: [
+        {value: '0', label: 'Charity / Non-profit', iconFA: 'fas fa-ribbon'},
+        {value: '1', label: 'For-profit', iconFA: 'fas fa-chart-line'},
+        {value: '2', label: 'Social Enterprise', iconFA: 'fas fa-seedling'},
+        {value: '3', label: 'Education Institution', iconFA: 'fas fa-graduation-cap'}
+      ]},
+      {q: 'What size company are you?', aType: 'select', req: 1, placeholder: 'Select size...', name: 'size', valueToShow: 'label', options: [
+        ...companySizeOptions
+      ]},
+      {q: 'What industries do you operate in?', detail: 'Select up to two relevant industries.', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Industries...', placeholderOnClick: 'Choose from our list:', name: 'industries', valueToShow: 'label', options: [
+        ...industryOptions
+      ]},
+      {q: 'Where is your Company HQ?', aType: 'select', req: 1, placeholder: 'Select Country...', name: 'country', valueToShow: 'label', options: [
+        ...countries
+      ]},
+      {q: 'What\'s your Company website?', aType: 'text', req: 1, maxLength: 75, placeholder: 'https://www.yourcompany.com...', name: 'website'},
+      {q: 'Lastly, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
+    ]
+    var upgradeCoProfileQuestions = [
+      {q: 'UPGRADE company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
       {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
         {value: '0', label: 'Longer-term mentorship (1 month+)'},
         {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
         {value: '2', label: 'Both'},
         {value: '3', label: 'I\'m not sure yet / just browsing...'}
       ]},
+      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
+      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
+        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
+        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
+        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
+        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
+      ]},
+      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
+        {value: '9', label: 'Aboriginal Australian'},
+        {value: '0', label: 'Asian'},
+        {value: '1', label: 'Arab'},
+        {value: '2', label: 'Black / African / Caribbean'},
+        {value: '3', label: 'Hispanic / Latinx'},
+        {value: '4', label: 'Indian / Pakistani'},
+        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
+        {value: '10', label: 'Maori'},
+        {value: '11', label: 'Pacific Islander'},
+        {value: '6', label: 'White'},
+        {value: '7', label: 'Other'},
+        {value: '8', label: 'Prefer not to say'},
+      ]},
+    ]
+    var fullCoProfileQuestions = [
+      {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
+      {q: 'What type of organisation are you?', aType: 'select', req: 1, placeholder: 'Select type...', showIcon: true, iconToShow: 'iconFA', name: 'type', valueToShow: 'label', options: [
+        {value: '0', label: 'Charity / Non-profit', iconFA: 'fas fa-ribbon'},
+        {value: '1', label: 'For-profit', iconFA: 'fas fa-chart-line'},
+        {value: '2', label: 'Social Enterprise', iconFA: 'fas fa-seedling'},
+        {value: '3', label: 'Education Institution', iconFA: 'fas fa-graduation-cap'}
+      ]},
+      {q: 'What size company are you?', aType: 'select', req: 1, placeholder: 'Select size...', name: 'size', valueToShow: 'label', options: [
+        ...companySizeOptions
+      ]},
+      {q: 'What industries do you operate in?', detail: 'Select up to two relevant industries.', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Industries...', placeholderOnClick: 'Choose from our list:', name: 'industries', valueToShow: 'label', options: [
+        ...industryOptions
+      ]},
+      {q: 'Where is your Company HQ?', aType: 'select', req: 1, placeholder: 'Select Country...', name: 'country', valueToShow: 'label', options: [
+        ...countries
+      ]},
+      {q: 'What\'s your Company website?', aType: 'text', req: 1, maxLength: 75, placeholder: 'https://www.yourcompany.com...', name: 'website'},
+      {q: 'Next, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
     ]
 
     // Add meta tags
@@ -453,7 +800,7 @@ class CoProfile extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="tabWindow" id="communityFeedContainer">
+        <div className="tabWindow" id="companyFeedContainer" ref={this.scrollRef} onScroll={this.onScroll} >
           <div className="mainAndSideContainer">
             <div className="title-blankPage marginBottom20">
               <MenuNav />
@@ -463,16 +810,35 @@ class CoProfile extends React.Component {
               <div className="paddingBtm marginBottom20">
                 <div className="chatItemFlexContainer qTitle qaPage">
                   <div>
-                    <div className={"groupsAvatarContainer coProfile " + (hasLogoURL ? "" : "noImg")}>
+                  {/*}  <div className={"groupsAvatarContainer coProfile " + (hasLogoURL ? "" : "noImg paddingTop5")}>
                       {hasLogoURL === true ?
                         <img className="logoImg" alt="Initiative Logo" src={coLogo}/>
                       : coInitial
                       }
+                    </div>*/}
+                    <div className="userMenu-thumb-container">
+                      {hasLogoURL === true ? (
+                        <div className="userMenu-thumb allowAddPic" style={hasLogoURL === true ? {backgroundImage:"url(" + coLogo + ")"} : null}>
+                          <Modal {...UploadProfPicProps}>
+                            <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} profPicSrc={logoURL} isMe='isMe' picSizeToShow={270} />
+                          </Modal>
+                        </div>
+                        )
+                      : (
+                        <div className="userMenu-thumb allowAddPic noPic isMe">
+                          <Modal {...UploadProfPicProps}>
+                            <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} userInitial={coInitial} isMe='isMe'/>
+                          </Modal>
+                          <div className="userInitial userMenu-thumb">
+                            {coInitial}
+                          </div>
+                        </div>
+                      )}
                     </div>
                     <span className="chatItemFlexContainer marginBottom10 breakWord">
                       <span>
                         <strong>{companyName} <span className="mediumGreyText">overview</span></strong>
-                        <span className="pointerCursor noBold marginLeft5 mediumGreyText fontSize12 padding5 tooltip">
+                        <span className="pointerCursor noBold marginLeft5 mediumGreyText fontSize12 padding5 tooltip dispInlineBlock">
                           {this.renderClaimCoProfileContent(company.approvalstatus)}
                         </span>
                       </span>
@@ -702,7 +1068,7 @@ class CoProfile extends React.Component {
                 )}
               </div>
               <div className="mainBar" role="main" aria-label="rendered tab">
-                { this.renderTab(company, companyURL, loggedInFname) }
+                { this.renderTab(company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions) }
               </div>
             </div>
           </div>
@@ -712,7 +1078,7 @@ class CoProfile extends React.Component {
             <Form
               questions={freeCoProfileQuestions}
               usedFor="freeCoProfileClaim"
-              formTitle="Claim your Free Company Profile"
+              formTitle={"Claim your FREE " + companyName + " Profile"}
               onSubmit={() => this.handleSuccessModalFromFPModal("ClaimFreeProfileForm", "Success")}
             />
           </FullPageModal>

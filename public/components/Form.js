@@ -1144,6 +1144,8 @@ class Form extends Component {
               handleDone={this.handleDoneClick}
               focusOnLoad={i === 0 ? true : false}
               valueToShow={question['valueToShow']} // This is the attribute of the array/object to be displayed to user
+              showIcon={question['showIcon']}
+              iconToShow={question['iconToShow']}
               isForForm
               required={required}
             />
