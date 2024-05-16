@@ -88,7 +88,7 @@
 .dataCard.locked{
   background-color: #aeaeae38!important;
   border: 1px dotted #dbdada!important;
-  overflow: hidden;
+  overflow: hidden!important;
 }
 .more-info-icon{
   position: absolute;

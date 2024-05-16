@@ -122,7 +122,7 @@ class EditSkillsContent extends Component {
 
   render() {
     const { isSubmitting, updateSuccess, errorLoadingSkills, startingExpertiseArr, startingLearningArr } = this.state;
-    const { modalTitle } = this.props;
+    const { modalTitle, isCompanyPage } = this.props;
     const isEnabled = this.canBeSubmitted();
 
     if(updateSuccess == false) {
@@ -198,17 +198,19 @@ class EditSkillsContent extends Component {
           <div className="showSmallModalSize">
             <div className="modal-title">
               <div className="emoji-icon tada-emoji successBox" />
-              Skills updated + It&#39;s official!
+              Skills updated{isCompanyPage == true ? '' : ' + It\'s official!'}
             </div>
-            <div className="success-container">
-              <div className="ideas-Title">
-                We&#39;ve auto-joined you to your chosen skills communities.
+            {isCompanyPage != true && (
+              <div className="success-container">
+                <div className="ideas-Title">
+                  We&#39;ve auto-joined you to your chosen skills communities.
+                </div>
+                <p className="landingCTADesc">
+                  You can access all of your communities / huddles from the main menu
+                </p>
+                <div className="showSkillsCommunitiesPic"/>
               </div>
-              <p className="landingCTADesc">
-                You can access all of your communities / huddles from the main menu
-              </p>
-              <div className="showSkillsCommunitiesPic"/>
-            </div>
+            )}
           </div>
         </React.Fragment>
       )

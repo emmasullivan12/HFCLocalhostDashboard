@@ -528,6 +528,9 @@ table th .description{
 .electricPurpleText{
   color: #4e4ed6!important;
 }
+.highlighterGreenText{
+  color: #58d2bb!important;
+}
 .highlightedText,
 .highlightedTextOnFocus:focus{
   color: #fafafa;
@@ -900,6 +903,9 @@ table th .description{
 }
 .width25px{
   width: 25px;
+}
+.width30px{
+  width: 30px;
 }
 .width100px{
   width: 100px;

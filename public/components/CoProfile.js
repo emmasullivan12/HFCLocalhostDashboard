@@ -19,6 +19,7 @@ import UploadProfPicContent from './UploadProfPicContent.js';
 import {getIndustryDeets, getCompanyDeets, userFlagEmoji} from './UserDetail.js';
 
 import "../css/CoProfile.css";
+import '../css/CommunityPage.css';
 
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Company Logo',
@@ -447,7 +448,7 @@ class CoProfile extends React.Component {
 
     switch (tabToView) {
       case 'overview':
-      return <CoProfileOverview company={company} companyName={companyName} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={company.approvalstatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
+      return <CoProfileOverview company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={company.approvalstatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
         //return <CompanyOverview isPageManager={isPageManager} />
       case 'jobs':
       return <div>CompanyJobsBoard tab goes here</div>
@@ -657,6 +658,7 @@ class CoProfile extends React.Component {
       //website: 'https://www.ey.com',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
       experts: [{uid: '1'}, {uid: '2'},{uid: '3'}, {uid: '4'}],
+      lifeAtDesc: '',
     }
     const activeJobs = [
       {jid: '0'},
