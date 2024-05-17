@@ -108,6 +108,7 @@ function ButtonContent(props) {
     case 'editSch':
     case 'addSchDesc':
     case 'addUniDesc':
+    case 'addTextDescCoProfile':
       return (
         <div className="marginTop10 marginAuto smallFont">
           {text}

@@ -406,7 +406,7 @@ class CommunityOverview extends React.Component {
           </div>
         )}
         <div>
-          <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="stats emoji">📈</span> Community Insights <span role="img" aria-label="stats emoji">📈</span></div>
+          <div className="bold darkGreyText fontSize16 marginBottom10"><span><span role="img" aria-label="stats emoji">📈</span> Community Insights <span role="img" aria-label="stats emoji">📈</span></span></div>
           <Carousel cardHeight="250px">
             <div className={"dataCard card height250px" + ((!isLoggedIn || !isGroupMember) ? " green" : "") + (companiesArray.length == 0 ? " locked overflowVisible" : "")} data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
               <span className={"tooltip more-info-icon"+ ((!isLoggedIn || !isGroupMember) ? " darkGreyText " : " mediumGreyText ")}>

@@ -328,6 +328,9 @@ table th .description{
 .title-blankPage.modal{
   margin-top: 0;
 }
+.heightUnset{
+  height: unset!important;
+}
 .height18px{
   height: 18px;
 }
@@ -336,6 +339,9 @@ table th .description{
 }
 .height60px{
   height: 60px;
+}
+.height160px{
+  height: 160px!important;
 }
 .height250px{
   height: 250px!important;

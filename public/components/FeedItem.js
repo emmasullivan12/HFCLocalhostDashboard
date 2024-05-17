@@ -437,8 +437,6 @@ class FeedItem extends Component {
           type="g"
         />
       )
-      console.log("contentType: "+contentType)
-      console.log("maxViewsReached: "+maxViewsReached)
 
       const FeedItemDetail = (props) => (
         <div className={props.isInModal ? "textLeft" : "contentBox feedItem withHover padding20 positionRel" + (contentType == 'general' ? " paddingBtm0" : "")} data-itemid={post.hid} data-itemtype={contentType}>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {cdn} from './CDN.js';
 import AddEditTextContent from './AddEditTextContent.js';
 import BarChart from './BarChart.js';
+import BuyCoProfileModalContent from './BuyCoProfileModalContent.js';
 import Carousel from './Carousel.js';
 import EditSkillsContent from './EditSkillsContent.js';
 import FeedContainer from "./FeedContainer.js";
@@ -12,14 +13,27 @@ import FullPageModal from './FullPageModal.js';
 import {LoadingSpinner, whichBrowser} from './GeneralFunctions.js';
 import Form from './Form.js';
 import Modal from './Modal.js';
+import TextParser from './TextParser.js';
 import skillsOptions from './Skills.js';
 import {getSkillDeets, convertSkills} from './UserDetail.js';
 
-const EditLifeAtCompanyDescModalProps = {
-  ariaLabel: 'Add / Edit Life at Company section',
-  triggerText: '+ Add description',
+const ChooseProfileTypeModalProps = {
+  ariaLabel: 'Choose Company Profile Type',
+  triggerText: '+ Add / Edit description',
   usedFor: 'addTextDescCoProfile',
-  changeInitFocus: true
+  changeInitFocus: true,
+}
+
+const EditLifeAtCompanyDescFPModalProps = {
+  ariaLabel: 'Add / Edit Life at Company section',
+  triggerText: '+ Add / Edit description',
+  backBtn: 'arrow'
+}
+const EditLifeAtCompanyDescModalProps = {
+  ariaLabel: 'Edit Life at Company section',
+  triggerText: '+ Edit description',
+  usedFor: 'addTextDescCoProfile',
+  changeInitFocus: true,
 }
 
 const EditProfileSectionModalProps = {
@@ -134,7 +148,7 @@ class CoProfileOverview extends React.Component {
     } else if (approvalStatus == '3' || approvalStatus == '6') {
       return (
         <div>
-          You&#39;ve paid to {approvalStatus == '3' ? 'upgrade your Company Profile' : 'claim this Premium Company Profile'}, so have unlocked extra features.
+          <div className="marginBottom10">You&#39;ve paid to {approvalStatus == '3' ? 'upgrade your Company Profile' : 'claim this Premium Company Profile'}, so have unlocked extra features.</div>
           {approvalStatus == '3' && (
             <FullPageModal {...UpgradeCoProfileModalProps}>
               <Form
@@ -167,7 +181,7 @@ class CoProfileOverview extends React.Component {
   }
 
   render() {
-    const {company, companyName, companyURL, isPageManager, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName} = this.props;
+    const {company, companyName, companyURL, isPageManager, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
     const {showUpgradeSuccessModal, showPremiumProfileSuccessModal, mentorWorkEnvChartLoaded, showAddSkillsModal} = this.state
     const isSafari = whichBrowser() == 'safari'
     const user = {
@@ -273,7 +287,7 @@ class CoProfileOverview extends React.Component {
     return (
       <div>
         {isLoggedIn && (
-          <div className="dash-welcomeContainer marginBottom20">
+          <div className={"dash-welcomeContainer marginBottom20" + (isPageManager && (approvalStatus == '3' || approvalStatus == '6') ? " height160px" : "")}>
             <div className="col-9">
               <div className="dash-welcomeHeader">
                 {(isPageManager && (approvalStatus == '3' || approvalStatus == '6')) && (
@@ -299,7 +313,7 @@ class CoProfileOverview extends React.Component {
           </div>
         )}
         <div>
-          <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="stats emoji">📈</span> Company Insights <span role="img" aria-label="stats emoji">📈</span></div>
+          <div className="bold darkGreyText fontSize16 marginBottom10"><span><span role="img" aria-label="stats emoji">📈</span> Company Insights <span role="img" aria-label="stats emoji">📈</span></span></div>
           <Carousel cardHeight="250px">
             <div className="dataCard card height250px" data-target="card" id="card-0" onBlur={() => this.handleBlur("tooltip-share-comm-link-0")}>
               <span className="tooltip more-info-icon mediumGreyText">
@@ -599,19 +613,80 @@ class CoProfileOverview extends React.Component {
           </Carousel>
         </div>
         {(isPageManager || (!isPageManager && company.lifeAtDesc != '')) && (
-          <div className="dash-welcomeContainer green marginBottom40">
-            <div>
+          <div className="dash-welcomeContainer heightUnset green marginBottom40">
+            <div className="positionRel">
               <div className="dash-welcomeHeader green"><strong>Life at {companyName}</strong></div>
               {company.lifeAtDesc != '' && (
-                <div className="darkGreyText">{company.lifeAtDesc}</div>
+                <div className="darkGreyText"><TextParser text={company.lifeAtDesc} /></div>
               )}
-              {isPageManager && company.lifeAtDesc == '' && (
+              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
+                <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
+              )}
+              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '2' && ( // Only has free (approved)
+                <div className="darkGreyText">
+                  <Modal {...ChooseProfileTypeModalProps} wider={false}>
+                    <BuyCoProfileModalContent
+                      modalTitle='Upgrade to access this feature'
+                      modalSubTitle='Choose between Premium or Enterprise access'
+                      showStd={false}
+                      showPrem
+                      showSuperPrem
+                      stdCourseLink=''
+                      premCourseLink='www.stripe.com'
+                      superPremCourseLink=''
+                      stdDesc='Get started by adding basic company info'
+                      premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+                      superPremDesc='Want to discuss your needs? Contact us!'
+                      stdPrice='£0/mth'
+                      premPrice='£100/mth'
+                      superPremPrice='Contact Sales'
+                      showBottomTxt
+                      formToShow={null}
+                    />
+                  </Modal>
+                </div>
+              )}
+              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
+                <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
+                  <Form
+                    questions={upgradeCoProfileQuestions}
+                    usedFor="addTextDescCoProfile"
+                    formTitle="Update your Company Profile"
+                    onSubmit={() => this.showUpgradeSuccessModal()}
+                  />
+                </FullPageModal>
+              )}
+              {isPageManager && (approvalStatus == '4' || approvalStatus == '7') && ( // Has paid for premium and provided info but not yet approved
+                <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Premium profile has been approved, you&#39;ll see your content here.</div>
+              )}
+              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
+                <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
+                  <Form
+                    questions={fullCoProfileQuestions}
+                    usedFor="addTextDescCoProfile"
+                    formTitle="Update your Company Profile"
+                    onSubmit={() => this.showPremiumProfileSuccessModal()}
+                  />
+                </FullPageModal>
+              )}
+              {isPageManager && company.lifeAtDesc != '' && (approvalStatus == '5' || approvalStatus == '8') && (
+                <Modal {...EditLifeAtCompanyDescModalProps}>
+                  <div className="postTypeContainer marginAuto">
+                    <div>To make any changes, please email <strong className="electricPurpleText">talktous@prospela.com</strong></div>
+                  </div>
+                </Modal>
+              )}
+            {/*  {isPageManager && company.lifeAtDesc == '' && ( // Not using this text box editor
                 <Modal {...EditLifeAtCompanyDescModalProps}>
                   <AddEditTextContent
                     modalTitle={'Edit Life at ' + companyName + 'description'}
                     text={company.lifeAtDesc}
+                    textInputTitle='Description'
+                    textInputId='lifeAtDesc'
+                    textMaxCharacters='2000'
                     addOrEdit='edit'
                     placeholderText='Type a description of life at your company...'
+                    required
                   />
                 </Modal>
               )}
@@ -619,15 +694,18 @@ class CoProfileOverview extends React.Component {
                 <div className="editSectionBtn dispInlineBlock">
                   <Modal {...EditProfileSectionModalProps}>
                     <AddEditTextContent
-                      modalTitle={'Edit Life at ' + companyName + 'description'}
+                      modalTitle={'Edit Life at ' + companyName + ' description'}
                       text={company.lifeAtDesc}
+                      textInputTitle='Description'
+                      textInputId='lifeAtDesc'
+                      textMaxCharacters='2000'
                       addOrEdit='edit'
                       placeholderText='Type a description of life at your company...'
+                      required
                     />
                   </Modal>
                 </div>
-              )}
-
+              )}*/}
             </div>
           </div>
         )}

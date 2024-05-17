@@ -50,13 +50,16 @@
   background-color: rgba(128,235,215,.46);
   background-color: #80ebd775;
 }
+.dash-welcomeContainer.whiteBackground{
+  background-color: #fff;
+}
 .dash-welcomeHeader{
   font-size: 16px;
   color: #ff6c81;
   padding: 10px 0 10px 0;
 }
 .dash-welcomeHeader.green{
-  color: #4ac1ab;
+  color: #3ca692;
 }
 .dash-welcomeImg-container{
   height: 100px;

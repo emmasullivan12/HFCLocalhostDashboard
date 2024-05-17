@@ -15,11 +15,25 @@ import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
+import TextParser from './TextParser.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import {getIndustryDeets, getCompanyDeets, userFlagEmoji} from './UserDetail.js';
 
 import "../css/CoProfile.css";
 import '../css/CommunityPage.css';
+
+const EditLifeAtCompanyDescFPModalProps = {
+  ariaLabel: 'Add / Edit Life at Company section',
+  triggerText: '+ Add / Edit description',
+  backBtn: 'arrow'
+}
+
+const EditLifeAtCompanyDescModalProps = {
+  ariaLabel: 'Edit Life at Company section',
+  triggerText: '+ Edit description',
+  usedFor: 'addTextDescCoProfile',
+  changeInitFocus: true,
+}
 
 const UploadProfPicProps = {
   ariaLabel: 'Add or Edit Company Logo',
@@ -646,7 +660,7 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: 0,
+      approvalstatus: 8,
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -658,7 +672,8 @@ class CoProfile extends React.Component {
       //website: 'https://www.ey.com',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
       experts: [{uid: '1'}, {uid: '2'},{uid: '3'}, {uid: '4'}],
-      lifeAtDesc: '',
+      lifeAtDesc: 'hellohello skjdhf kjh ',
+      tipsForCandidates: 'hellohello skjdhf kjh ',
     }
     const activeJobs = [
       {jid: '0'},
@@ -727,34 +742,9 @@ class CoProfile extends React.Component {
       {q: 'Lastly, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
     ]
     var upgradeCoProfileQuestions = [
-      {q: 'UPGRADE company profile questions', detail: 'We need to know a few more quick details, including your current situation and how you\'d like to mentor. We know life gets in the way - that\'s why we want to help you do your thing in a way that makes most sense for you.', aType: 'interim', name: 'interim'},
-      {q: 'What type of support are you happy to offer?', detail: 'You\'ll be able to change this later if you change your mind', aType: 'select', req: 1, placeholder: 'Select support type...', name: 'availType', valueToShow: 'label', options: [
-        {value: '0', label: 'Longer-term mentorship (1 month+)'},
-        {value: '1', label: 'Short-term (<1 month) / Happy to answer quick questions'},
-        {value: '2', label: 'Both'},
-        {value: '3', label: 'I\'m not sure yet / just browsing...'}
-      ]},
-      {q: 'OK ... on to the good stuff!', detail: 'You\'ve already told us your industry & role, but we\'re excited to hear more about what you do', aType: 'interim', name: 'interim'},
-      {q: 'What\'s your gender?', detail: 'Some mentees feel more comfortable talking to someone like them.', aType: 'select', req: 1, placeholder: 'Select option...', name: 'gender', valueToShow: 'label', options: [
-        {value: '0', label: 'Male', iconFA: 'fas fa-male'},
-        {value: '1', label: 'Female', iconFA: 'fas fa-female'},
-        {value: '2', label: 'Other preferred description', iconFA: 'fas fa-genderless'},
-        {value: '3', label: 'Prefer not to say', iconFA: 'fas fa-comment-slash'}
-      ]},
-      {q: 'How do you identify your ethnicity?', aType: 'select', req: 1, placeholder: 'Select option...', name: 'ethnicity', valueToShow: 'label', options: [
-        {value: '9', label: 'Aboriginal Australian'},
-        {value: '0', label: 'Asian'},
-        {value: '1', label: 'Arab'},
-        {value: '2', label: 'Black / African / Caribbean'},
-        {value: '3', label: 'Hispanic / Latinx'},
-        {value: '4', label: 'Indian / Pakistani'},
-        {value: '5', label: 'Mixed / Multiple Ethnic Groups'},
-        {value: '10', label: 'Maori'},
-        {value: '11', label: 'Pacific Islander'},
-        {value: '6', label: 'White'},
-        {value: '7', label: 'Other'},
-        {value: '8', label: 'Prefer not to say'},
-      ]},
+      {q: 'Congratulations on upgrading to a Premium. Let\'s add some life to your profile!', detail: 'You can now list jobs / opportunities, showcase life at your company and add tips for candidates looking to get their foot in the door.', aType: 'interim', name: 'interim'},
+      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'lifeAtDesc'},
+      {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsForCandidates'},
     ]
     var fullCoProfileQuestions = [
       {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
@@ -775,6 +765,8 @@ class CoProfile extends React.Component {
       ]},
       {q: 'What\'s your Company website?', aType: 'text', req: 1, maxLength: 75, placeholder: 'https://www.yourcompany.com...', name: 'website'},
       {q: 'Next, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
+      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'lifeAtDesc'},
+      {q: 'Lastly, please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsForCandidates'},
     ]
 
     // Add meta tags
@@ -821,16 +813,20 @@ class CoProfile extends React.Component {
                     <div className="userMenu-thumb-container">
                       {hasLogoURL === true ? (
                         <div className="userMenu-thumb allowAddPic" style={hasLogoURL === true ? {backgroundImage:"url(" + coLogo + ")"} : null}>
-                          <Modal {...UploadProfPicProps}>
-                            <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} profPicSrc={logoURL} isMe='isMe' picSizeToShow={270} />
-                          </Modal>
+                          {isPageManager && (
+                            <Modal {...UploadProfPicProps}>
+                              <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} profPicSrc={logoURL} isMe='isMe' picSizeToShow={270} />
+                            </Modal>
+                          )}
                         </div>
                         )
                       : (
                         <div className="userMenu-thumb allowAddPic noPic isMe">
-                          <Modal {...UploadProfPicProps}>
-                            <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} userInitial={coInitial} isMe='isMe'/>
-                          </Modal>
+                          {isPageManager && (
+                            <Modal {...UploadProfPicProps}>
+                              <UploadProfPicContent isCompany isPicSet={hasLogoURL === true} userInitial={coInitial} isMe='isMe'/>
+                            </Modal>
+                          )}
                           <div className="userInitial userMenu-thumb">
                             {coInitial}
                           </div>
@@ -996,6 +992,73 @@ class CoProfile extends React.Component {
             </div>
             <div className="marginTop20">
               <div className="sideBar sideBarContentHiddenOnShrink" role="complementary" aria-label="sidebar">
+                {(isPageManager || (!isPageManager && company.tipsForCandidates != '')) && (
+                  <div className="dash-welcomeContainer whiteBackground heightUnset marginBottom40">
+                    <div className="positionRel">
+                      <div className="dash-welcomeHeader electricPurpleText"><strong>Tips for Candidates</strong></div>
+                      {company.tipsForCandidates != '' && (
+                        <div className="darkGreyText"><TextParser text={company.tipsForCandidates} /></div>
+                      )}
+                      {isPageManager && company.tipsForCandidates == '' && approvalStatus == '1' && ( // Only has free but not yet approved
+                        <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
+                      )}
+                      {isPageManager && company.tipsForCandidates == '' && approvalStatus == '2' && ( // Only has free (approved)
+                        <div className="darkGreyText">
+                          <Modal {...ChooseProfileTypeModalProps} wider={false}>
+                            <BuyCoProfileModalContent
+                              modalTitle='Upgrade to access this feature'
+                              modalSubTitle='Choose between Premium or Enterprise access'
+                              showStd={false}
+                              showPrem
+                              showSuperPrem
+                              stdCourseLink=''
+                              premCourseLink='www.stripe.com'
+                              superPremCourseLink=''
+                              stdDesc='Get started by adding basic company info'
+                              premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+                              superPremDesc='Want to discuss your needs? Contact us!'
+                              stdPrice='£0/mth'
+                              premPrice='£100/mth'
+                              superPremPrice='Contact Sales'
+                              showBottomTxt
+                              formToShow={null}
+                            />
+                          </Modal>
+                        </div>
+                      )}
+                      {isPageManager && company.tipsForCandidates == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
+                        <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
+                          <Form
+                            questions={upgradeCoProfileQuestions}
+                            usedFor="addTextDescCoProfile"
+                            formTitle="Update your Company Profile"
+                            onSubmit={() => this.showModal("Success")}
+                          />
+                        </FullPageModal>
+                      )}
+                      {isPageManager && (approvalStatus == '4' || approvalStatus == '7') && ( // Has paid for premium and provided info but not yet approved
+                        <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Premium profile has been approved, you&#39;ll see your content here.</div>
+                      )}
+                      {isPageManager && company.tipsForCandidates == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
+                        <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
+                          <Form
+                            questions={fullCoProfileQuestions}
+                            usedFor="addTextDescCoProfile"
+                            formTitle="Update your Company Profile"
+                            onSubmit={() => this.showModal("Success")}
+                          />
+                        </FullPageModal>
+                      )}
+                      {isPageManager && company.tipsForCandidates != '' && (approvalStatus == '5' || approvalStatus == '8') && (
+                        <Modal {...EditLifeAtCompanyDescModalProps}>
+                          <div className="postTypeContainer marginAuto">
+                            <div>To make any changes, please email <strong className="electricPurpleText">talktous@prospela.com</strong></div>
+                          </div>
+                        </Modal>
+                      )}
+                    </div>
+                  </div>
+                )}
                 {isLoggedIn && approvalStatus != '' && approvalStatus >= '3' && isPageManager && !isMobile && (
                   <Modal {...UnsubscribeProps} handleLocalStateOnClose={() => this.resetUnsubscribe()}>
                     <div className="showSmallModalSize">
