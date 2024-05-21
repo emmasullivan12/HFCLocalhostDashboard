@@ -181,7 +181,7 @@ class CoProfileOverview extends React.Component {
   }
 
   render() {
-    const {company, companyName, companyURL, isPageManager, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
+    const {company, companyName, companyURL, isPageManager, renderCoProfileSideBar, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
     const {showUpgradeSuccessModal, showPremiumProfileSuccessModal, mentorWorkEnvChartLoaded, showAddSkillsModal} = this.state
     const isSafari = whichBrowser() == 'safari'
     const user = {
@@ -612,17 +612,17 @@ class CoProfileOverview extends React.Component {
             </div>
           </Carousel>
         </div>
-        {(isPageManager || (!isPageManager && company.lifeAtDesc != '')) && (
+        {(isPageManager || (!isPageManager && company.lifeatdesc != '')) && (
           <div className="dash-welcomeContainer heightUnset green marginBottom40">
             <div className="positionRel">
               <div className="dash-welcomeHeader green"><strong>Life at {companyName}</strong></div>
-              {company.lifeAtDesc != '' && (
-                <div className="darkGreyText"><TextParser text={company.lifeAtDesc} /></div>
+              {company.lifeatdesc != '' && (
+                <div className="darkGreyText"><TextParser text={company.lifeatdesc} /></div>
               )}
-              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
+              {isPageManager && company.lifeatdesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
                 <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
               )}
-              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '2' && ( // Only has free (approved)
+              {isPageManager && company.lifeatdesc == '' && approvalStatus == '2' && ( // Only has free (approved)
                 <div className="darkGreyText">
                   <Modal {...ChooseProfileTypeModalProps} wider={false}>
                     <BuyCoProfileModalContent
@@ -646,7 +646,7 @@ class CoProfileOverview extends React.Component {
                   </Modal>
                 </div>
               )}
-              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
+              {isPageManager && company.lifeatdesc == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
                 <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
                   <Form
                     questions={upgradeCoProfileQuestions}
@@ -659,7 +659,7 @@ class CoProfileOverview extends React.Component {
               {isPageManager && (approvalStatus == '4' || approvalStatus == '7') && ( // Has paid for premium and provided info but not yet approved
                 <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Premium profile has been approved, you&#39;ll see your content here.</div>
               )}
-              {isPageManager && company.lifeAtDesc == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
+              {isPageManager && company.lifeatdesc == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
                 <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
                   <Form
                     questions={fullCoProfileQuestions}
@@ -669,20 +669,20 @@ class CoProfileOverview extends React.Component {
                   />
                 </FullPageModal>
               )}
-              {isPageManager && company.lifeAtDesc != '' && (approvalStatus == '5' || approvalStatus == '8') && (
+              {isPageManager && company.lifeatdesc != '' && (approvalStatus == '5' || approvalStatus == '8') && (
                 <Modal {...EditLifeAtCompanyDescModalProps}>
                   <div className="postTypeContainer marginAuto">
                     <div>To make any changes, please email <strong className="electricPurpleText">talktous@prospela.com</strong></div>
                   </div>
                 </Modal>
               )}
-            {/*  {isPageManager && company.lifeAtDesc == '' && ( // Not using this text box editor
+            {/*  {isPageManager && company.lifeatdesc == '' && ( // Not using this text box editor
                 <Modal {...EditLifeAtCompanyDescModalProps}>
                   <AddEditTextContent
                     modalTitle={'Edit Life at ' + companyName + 'description'}
-                    text={company.lifeAtDesc}
+                    text={company.lifeatdesc}
                     textInputTitle='Description'
-                    textInputId='lifeAtDesc'
+                    textInputId='lifeatdesc'
                     textMaxCharacters='2000'
                     addOrEdit='edit'
                     placeholderText='Type a description of life at your company...'
@@ -695,9 +695,9 @@ class CoProfileOverview extends React.Component {
                   <Modal {...EditProfileSectionModalProps}>
                     <AddEditTextContent
                       modalTitle={'Edit Life at ' + companyName + ' description'}
-                      text={company.lifeAtDesc}
+                      text={company.lifeatdesc}
                       textInputTitle='Description'
-                      textInputId='lifeAtDesc'
+                      textInputId='lifeatdesc'
                       textMaxCharacters='2000'
                       addOrEdit='edit'
                       placeholderText='Type a description of life at your company...'
@@ -709,6 +709,7 @@ class CoProfileOverview extends React.Component {
             </div>
           </div>
         )}
+        { renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, true) }
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
           <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} />
