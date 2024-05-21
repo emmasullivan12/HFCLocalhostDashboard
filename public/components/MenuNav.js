@@ -1,4 +1,4 @@
-// Dex last merged this code on 2nd nov 2022
+// Dex last merged this code on 21st may 2024
 
 import React, { Component } from "react";
 
@@ -17,7 +17,7 @@ class MenuNav extends Component {
 
   render() {
     const isNotif = 1
-    
+
     return (
       <React.Fragment>
         <button type="button" id="nav-mainMenu" className="viewMenu button-unstyled" aria-label="View Menu" onClick={this.openMenu}>

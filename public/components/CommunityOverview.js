@@ -1,4 +1,4 @@
-// Last merged this code on 1st feb 2024
+// Last merged this code on 21st may 2024
 /* eslint-disable no-unused-labels */
 
 import React from "react";
@@ -1222,7 +1222,7 @@ class CommunityOverview extends React.Component {
             </div>
           </Carousel>
         </div>
-        { renderCommunityActivity(commURL, false) }
+        { renderCommunityActivity(commURL, true) }
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
           <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} updateTabToView={updateTabToView}/>
