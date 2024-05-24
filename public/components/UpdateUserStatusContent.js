@@ -155,7 +155,8 @@ class UpdateUserStatusContent extends Component {
       uninamefreetext: '', // If their school wasn't on the list
       subjects: 'Business, Art, English Literature & Language',
       currrole: 'Head of Marketing',
-      currco: 'Pladis',
+      currco: '6',
+      currcofreetext: '',
       currind: '#food&beverage',
       notes: 'Really good at Houdini. Wants to only help working class kids',
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',

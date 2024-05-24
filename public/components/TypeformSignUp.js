@@ -14,7 +14,7 @@ import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
 //import TypeformEmbedded from './TypeformEmbedded.js';
 import VerifyEmail from './VerifyEmail.js';
-import {lookupUKSchUnis} from './UserDetail.js';
+import {lookupUKSchUnis, getCompanyDeets} from './UserDetail.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
 
 import chatList from './1LastActiveChats.js';
@@ -152,7 +152,7 @@ class TypeformSignUp extends Component {
     this.state = {
       isLoading: true,
       isGeneralError: '',
-      step: 'didDiversity', // set to did1stSU when first loaded
+      step: 'didCountry', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
       eetStatus: 'uni',
@@ -162,6 +162,7 @@ class TypeformSignUp extends Component {
       uniNameFreeText: '',
       emailToVerify: 'emma@pladis.com',
       currCo: '',
+      currCoFreeText: '',
       currTrainingProvider: '',
       userRole: 'mentee'
     }
@@ -188,7 +189,8 @@ class TypeformSignUp extends Component {
   }
 
   getUserEduName() {
-    const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, userRole, currCo, currTrainingProvider} = this.state;
+    const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, userRole, currCo, currCoFreeText, currTrainingProvider} = this.state;
+    const currCoName = getCompanyDeets(currCo, currCoFreeText, 'name')
 
 //    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail' || step === 'updatingEmailError' ) {
     if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail') {
@@ -264,7 +266,7 @@ class TypeformSignUp extends Component {
       } else if (eetStatus === 'job') {
         this.setState({
           isLoading: false,
-          userEduName: currCo
+          userEduName: currCoName
         })
       } else if (eetStatus === 'train') {
         this.setState({
@@ -392,6 +394,7 @@ class TypeformSignUp extends Component {
       uniName: '',
       uniNameFreeText: '',
       currCo: '',
+      currCoFreeText: '',
       currTrainingProvider: ''
     })
   }
@@ -436,9 +439,10 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateCurrCo(userInput, callback) {
+  updateCurrCo(currCo, currCoFreeText, callback) {
     this.setState({
-      currCo: userInput
+      currCo: currCo,
+      currCoFreeText: currCoFreeText
     }, () => {
       if (callback) {
         callback();
@@ -478,12 +482,15 @@ class TypeformSignUp extends Component {
   }
 
   render() {
-    const {isGeneralError, isLoading, step, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currTrainingProvider, emailToVerify, userRole} = this.state;
+    const {isGeneralError, isLoading, step, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currCoFreeText, currTrainingProvider, emailToVerify, userRole} = this.state;
     const totalMenteeSteps = 5;
     const totalMentorSteps = 3;
     const fname = 'Emma';
     const id = '12345';
     const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
+    const currCoName = getCompanyDeets(currCo, currCoFreeText, 'name')
+
+
   //  const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
     if (isGeneralError === true) {
@@ -593,7 +600,7 @@ class TypeformSignUp extends Component {
                 </div>
               )}
               {!isLoading && (
-                <SignUpScreenTemplate {...MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, step, userRole)}>
+                <SignUpScreenTemplate {...MenteeSU5Props(eetStatus, userEduName, currCoName, currTrainingProvider, step, userRole)}>
                   <ConfirmStudent
                     step={step}
                     userRole={userRole}
@@ -608,7 +615,7 @@ class TypeformSignUp extends Component {
                     userEduName={userEduName}
                     updateStep={this.updateStep}
                     updateEduEmail={this.updateEduEmail}
-                    currCo={currCo}
+                    currCoName={currCoName}
                     currTrainingProvider={currTrainingProvider}
                   />
                 </SignUpScreenTemplate>

@@ -16,7 +16,7 @@ import UserName from './UserName.js';
 import TextParser from './TextParser.js';
 import {LoadingSpinner, X, Check, TimeCalc} from './GeneralFunctions.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
-import {userFlagEmoji, convertHobbies, convertRole} from './UserDetail.js';
+import {getCompanyDeets, userFlagEmoji, convertHobbies, convertRole} from './UserDetail.js';
 
 const RequestChatModalProps = {
   ariaLabel: 'Popup to request chat with matched E-Mentor',
@@ -172,7 +172,8 @@ class PrModAuto extends Component {
         uninamefreetext: '', // If their school wasn't on the list
         subjects: 'Business, Art, English Literature & Language',
         currrole: 'Head of Marketing',
-        currco: 'Pladis',
+        currco: '5',
+        currcofreetext: '',
         currind: '#food&beverage',
         expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
         learning: 'leadership, negotiations, excel, programming, python, mySQL',
@@ -371,7 +372,7 @@ class PrModAuto extends Component {
                           <div><span className="roleText">{userProfileToShow.degree}</span><div>@ {uniName}</div></div>
                         )}
                         {eetstatus == 'job' && (
-                          <div><span className="roleText">{userProfileToShow.currrole}</span><div>@ {userProfileToShow.currco}</div></div>
+                          <div><span className="roleText">{userProfileToShow.currrole}</span><div>@ {getCompanyDeets(userProfileToShow.currco, userProfileToShow.currcofreetext, 'name')}</div></div>
                         )}
                         {eetstatus == 'train' && (
                           <div><span className="roleText">{userProfileToShow.currtraining}</span><div>@ {userProfileToShow.currtrainingprovider}</div></div>

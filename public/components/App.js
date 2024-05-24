@@ -783,7 +783,7 @@ function Login() {
 }
 */
 function MenteeSteps({userRole}) {
-  const step = 'didSafeG';
+  const step = 'didCountry';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
@@ -816,7 +816,7 @@ function MenteeSteps({userRole}) {
 }
 
 function MentorSteps({userRole}) {
-  const step = 'fullSUidTrain';
+  const step = 'didShortSUtf';
 //    const step = this.props.users.step;
       switch (step) {
         case 'IFSTATEMENT':

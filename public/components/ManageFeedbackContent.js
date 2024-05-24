@@ -24,7 +24,8 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '5',
+          currcofreetext: '',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -57,7 +58,8 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '',
+          currcofreetext: 'Freetext Company name',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -92,7 +94,7 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '5',
           currtraining: '',
           currtrainingprovider: '',
           referenceForMentee: 'You have shown punctuality in our conversations and great passion for this industry. Your showreel has come on leaps and bounds too with all your hard work - congrats',
@@ -119,7 +121,8 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '4',
+          currcofreetext: '',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -154,7 +157,8 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '',
+          currcofreetext: 'Free text company name',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -189,7 +193,8 @@ class ManageFeedbackContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '5',
+          currcofreetext: '',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',

@@ -24,7 +24,7 @@ import UserActivity from './UserActivity.js';
 import UserBadge from './UserBadge.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {getIndustryDeets, getGroupDeets, getVerifLevelArr, convertSubjects, convertRole, convertHobbies, convertSkills, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
+import {getCompanyDeets, getIndustryDeets, getGroupDeets, getVerifLevelArr, convertSubjects, convertRole, convertHobbies, convertSkills, lookupUKSchUnis, userFlagEmoji, eduSubjects, eduName, timeSince, isNightDay, profileTimeZone} from './UserDetail.js';
 import {DateCalc, whichBrowser, monthDiff, LoadingSpinner, ChevronDown, ChevronUp} from "./GeneralFunctions";
 
 import "../css/General.css";
@@ -195,7 +195,8 @@ class MentorProfileContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '7',
+          currcofreetext: '',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -230,7 +231,8 @@ class MentorProfileContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '7',
+          currcofreetext: '',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -265,7 +267,8 @@ class MentorProfileContent extends Component {
           uninamefreetext: '', // If their school wasn't on the list
           degree: '',
           currrole: 'Head of Marketing',
-          currco: 'Pladis',
+          currco: '',
+          currcofreetext: 'freetext company name',
           currtraining: '',
           currtrainingprovider: '',
           noteToMentor: 'Thank you so much for being my mentor. You were amazing and I really appreciated when you told me X and taught my Y',
@@ -488,7 +491,8 @@ class MentorProfileContent extends Component {
     //  subjects: [],
     //  subjectsfreetext: [],
       currrole: 'Head of Marketing',
-      currco: 'Pladis',
+      currco: '7',
+      currcofreetext: '',
       industriesexp: [2, 19],
       rolesexp: [1, 2, 69, 5, 22, 41],
       rolesexpfreetext: ['Head of M&A'],
@@ -533,8 +537,8 @@ class MentorProfileContent extends Component {
     }
 //    const roleHistory = []
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
-      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
+      {title: 'Marketing Manager', co: '8', cofreetext: '', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
+      {title: 'Marketing Analyst', co: '', cofreetext: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
     ]
 //    const uniHistory = []
     const uniHistory = [
@@ -618,7 +622,9 @@ class MentorProfileContent extends Component {
     const subjectsArr = subjectsCommaString.length == 0 ? [] : subjectsCommaString.split(', ');
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)
-    const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)
+    const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)[0]
+    const currcofreetext = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.cofreetext)[0]
+    const currCoName = roleHistory && roleHistory.length != 0 && getCompanyDeets(currCo, currcofreetext, 'name')
     const sortedUnis = uniHistory && uniHistory.length != 0 && uniHistory.sort((a, b) => parseFloat(b.unigraduyr) - parseFloat(a.unigraduyr));
     const latestUni = sortedUnis[0]
     const sortedSchs = schHistory && schHistory.length != 0 && schHistory.sort((a, b) => parseFloat(b.schgraduyr) - parseFloat(a.schgraduyr));
@@ -744,7 +750,7 @@ class MentorProfileContent extends Component {
                   {mentor.eetstatus == 'job' && (
                     <React.Fragment>
                       <div className="profilePosition">{currRole}</div>
-                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {currCo}</div>
+                      <div className="profileInstitution purpleText" href=""><span className="neutralText">&#64;</span> {currCoName}</div>
                     </React.Fragment>
                   )}
                   {mentor.eetstatus == 'train' && (
@@ -777,7 +783,7 @@ class MentorProfileContent extends Component {
                           degree={latestUni ? latestUni.degree : ''}
                           uniInstName={uniInstName}
                           currRole={currRole}
-                          currCo={currCo}
+                          currCoName={currCoName}
                           currTraining={mentor.currtraining}
                           currTrainingProvider={mentor.currtrainingprovider}
                         />
@@ -895,6 +901,8 @@ class MentorProfileContent extends Component {
                         let roleLengthTxt
                         let roleLengthRemainderMths
 
+                        const roleCompanyName = getCompanyDeets(role.co, role.cofreetext, 'name')
+
                         // If hasn't set dates yet
                         if (role.startDate == '') {
                           roleLengthTxt = ''
@@ -919,13 +927,13 @@ class MentorProfileContent extends Component {
                               <div className="msg-thumb-container">
                                 <div className="msg-thumb img-square noPic isCompany">
                                   <div className="userInitial msg-thumb noModal">
-                                    {role.co.charAt(0).toUpperCase()}
+                                    {roleCompanyName && roleCompanyName.charAt(0).toUpperCase()}
                                   </div>
                                 </div>
                               </div>
                               <div>
                                 <div><strong>{role.title}</strong></div>
-                                <div>{role.co}</div>
+                                <div>{roleCompanyName && roleCompanyName}</div>
                                 <div className="marginBottom5 smallFont darkGreyText">
                                   {role.startDate != '' && (
                                     <span><DateCalc time={role.startDate} showPureDate dontShowDay /> - </span>
@@ -940,13 +948,13 @@ class MentorProfileContent extends Component {
                             )}
                             {isMe == "isMe" && role.roledesc == '' && (
                               <Modal {...EditRoleDescModalProps}>
-                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} idToFocusOnOpen='roleDescInput'/>
+                                <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCoName={roleCompanyName && roleCompanyName} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} idToFocusOnOpen='roleDescInput'/>
                               </Modal>
                             )}
                             {isMe == "isMe" && (
                               <div className="editSectionBtn dispInlineBlock">
                                 <Modal {...EditProfileSectionModalProps}>
-                                  <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCo={role.co} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} />
+                                  <AddEditRoleContent roleIndex={index} addOrEdit='edit' modalTitle='Edit Role / Experience' roleTitle={role.title} roleCoName={roleCompanyName && roleCompanyName} startDate={role.startDate} endDate={role.endDate} roleDesc={role.roledesc} isMain={role.ismain} />
                                 </Modal>
                               </div>
                             )}
@@ -955,7 +963,7 @@ class MentorProfileContent extends Component {
                       })}
                       {isMe == "isMe" && (
                         <Modal {...AddRoleModalProps}>
-                          <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc='' isMain={false}/>
+                          <AddEditRoleContent addOrEdit='add' modalTitle='Add new Role / Experience' roleTitle='' roleCoName='' startDate='' endDate='' roleDesc='' isMain={false}/>
                         </Modal>
                       )}
                     </div>

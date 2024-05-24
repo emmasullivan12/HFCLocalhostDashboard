@@ -26,9 +26,12 @@ class AutocompleteTagsMulti extends React.Component {
     const { focusOnLoad, handleTabPress, renderComponents, fileToRender, componentUpdatesState, name, defaultChecked } = this.props
 
     if (focusOnLoad) {
-      document.getElementById("autocompleterTags-"+name).focus();
+      this.focusOnInput();
+      //document.getElementById("autocompleterTags-"+name).focus();
     }
+
     if (defaultChecked) {
+      console.log(defaultChecked)
       this.setState({
         values: defaultChecked,
         numSelected: defaultChecked.length
@@ -250,7 +253,7 @@ class AutocompleteTagsMulti extends React.Component {
       showSuggestions: (openOnClick || userInput != "") ? true : false,
       userInput: e.currentTarget.value
     }, () => {
-      if (this.state.showSuggestions === true && showCheckbox === true) {
+      if (this.state.showSuggestions === true) {
         this.heightCalc()
       }
     });
@@ -320,7 +323,7 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { suggestions, handleChange, name, valueToShow, required, isForForm, maxNumValues } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required, isForForm, maxNumValues, noMultiple, handleDone } = this.props;
     const value = e.currentTarget.dataset.text;
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
 
@@ -682,8 +685,10 @@ class AutocompleteTagsMulti extends React.Component {
         shortArray = values
           .slice(0,2)
       }
-
+console.log(shortArray)
+console.log(values)
       const arrayToMap = showSuggestions != true ? shortArray : values
+      console.log(arrayToMap)
 
       return (
         <div className="tagsList">
@@ -906,7 +911,7 @@ class AutocompleteTagsMulti extends React.Component {
             tabIndex="0"
             type="text"
             name={name}
-            className={showClickPlaceholder === true ? "placeholderOnClick autocompleterTags-search" : "autocompleterTags-search"}
+            className={showClickPlaceholder === true ? ("placeholderOnClick autocompleterTags-search autocompleterTags-" + name) : ("autocompleterTags-search autocompleterTags-" + name)}
             id={"autocompleteBox-"+name}
             placeholder={showClickPlaceholder === true ? placeholderOnClick : placeholder}
             onChange={this.onChange}

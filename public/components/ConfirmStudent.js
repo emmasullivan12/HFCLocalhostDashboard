@@ -718,7 +718,7 @@ class ConfirmStudent extends React.Component {
 
   render() {
     const { onChange, onKeyDown, toggleCheckbox, handleKeyUp } = this;
-    const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCo, currTrainingProvider, updateEduEmail, updateStep, userRole } = this.props;
+    const { tflink, step, country, currentStep, eetStatus, totalSteps, userEduName, currCoName, currTrainingProvider, updateEduEmail, updateStep, userRole } = this.props;
     const { isGeneralError, containsDotAndAt, eduEmailIsValid, userInput, isPersonalEmail, hasTextBeforeAt, hasTextAfterAt, endsWithSymbol, isHtmlValid, isSubmitting } = this.state;
     const emailType = userRole === 'mentee' ? ((eetStatus === 'sch' || eetStatus === 'uni') ? userEduName : 'student') : ((eetStatus === 'uni' || eetStatus === 'job' || eetStatus === 'train') ? userEduName : 'work')
     const isEnabled = this.canBeSubmitted();
@@ -791,7 +791,7 @@ class ConfirmStudent extends React.Component {
                       handleNoEduEmail={this.handleNoEduEmail}
                       updateEduEmail={updateEduEmail}
                       updateStep={updateStep}
-                      currCo={currCo}
+                      currCoName={currCoName}
                       currTrainingProvider={currTrainingProvider}
                     />
                   )}

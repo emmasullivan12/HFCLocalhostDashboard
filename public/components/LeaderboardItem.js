@@ -11,7 +11,7 @@ import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import {LoadingSpinner, DateCalc, X, Check} from "./GeneralFunctions";
-import {getRoleAndInst} from './UserDetail.js';
+import {getRoleAndInst, getCompanyDeets} from './UserDetail.js';
 
 const MentorProfileUsrNameModalProps = {
   ariaLabel: 'View Mentor Profile',
@@ -35,7 +35,7 @@ class LeaderboardItem extends Component {
 
     if (userTypeToShow == '0' || userTypeToShow == '1') {
       authorinsttype = user.eetstatus
-      authorinstfreetext = (user.eetstatus == 'job' ? user.currco : (user.eetstatus == 'train' ? user.currtrainingprovider : (user.eetstatus == 'uni' ? user.uninamefreetext : '')))
+      authorinstfreetext = (user.eetstatus == 'job' ? getCompanyDeets(user.currco, user.currcofreetext, 'name') : (user.eetstatus == 'train' ? user.currtrainingprovider : (user.eetstatus == 'uni' ? user.uninamefreetext : '')))
       authorinst = (user.eetstatus == 'uni' ? user.uniname : '')
       authorrole = (user.eetstatus == 'job' ? user.currrole : '')
       authortraining = (user.eetstatus == 'train' ? user.currtraining : '')

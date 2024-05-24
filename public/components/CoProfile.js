@@ -502,7 +502,7 @@ class CoProfile extends React.Component {
 
   renderCoProfileSideBar = (company, upgradeCoProfileQuestions, fullCoProfileQuestions, isMainBar) => {
     const {approvalStatus, isPageManager} = this.state
-console.log(isMainBar)
+
     return (
       <div className={isMainBar == true ? "isSideDivOnMain marginBottom40" : ""}>
         <div className="dash-welcomeContainer whiteBackground heightUnset marginBottom40">
@@ -1073,7 +1073,7 @@ console.log(isMainBar)
             </div>
             <div className="marginTop20">
               <div className="sideBar sideBarContentHiddenOnShrink" role="complementary" aria-label="sidebar">
-                {(isPageManager || (!isPageManager && company.tipsforcandidates != '')) && this.renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, false) }
+                {((isPageManager || (!isPageManager && company.tipsforcandidates != '')) && tabToView == 'overview') && this.renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, false) }
                 {isLoggedIn && approvalStatus != '' && approvalStatus >= '3' && isPageManager && !isMobile && (
                   <Modal {...UnsubscribeProps} handleLocalStateOnClose={() => this.resetUnsubscribe()}>
                     <div className="showSmallModalSize">

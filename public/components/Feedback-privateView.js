@@ -6,6 +6,7 @@ import Avatar from './Avatar.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
 import Checkbox from './Checkbox.js';
 import PolarChart from './PolarChart.js';
+import {getCompanyDeets} from './UserDetail.js';
 
 import "../css/Feedback.css";
 
@@ -341,6 +342,7 @@ class FeedbackPrivate extends Component {
             const matchuid = userRole == 'mentee' ? item.mentoruid : item.menteeuid
             const eetStatus = item.eetstatus
             const menteeWantsMoreOfArr = item.menteeWantsMoreOf.filter(x => x != 0) // i.e. mentee did not respond saying "None of these" options for things they wanted their mentor to share
+            const companyName = (item.currco != null || item.currcofreetext != null) ? getCompanyDeets(item.currco, item.currcofreetext, 'name') : ''
             return (
               <div key={item.matchid} className="row feedbackItem">
                 <div className="col-4 col-s-12 paddingR">
@@ -354,7 +356,7 @@ class FeedbackPrivate extends Component {
                       <div><span>{item.degree}</span><div>@ {item.uniname}</div></div>
                     )}
                     {eetStatus == 'job' && (
-                      <div><span>{item.currrole}</span><div>@ {item.currco}</div></div>
+                      <div><span>{item.currrole}</span><div>@ {companyName}</div></div>
                     )}
                     {eetStatus == 'train' && (
                       <div><span>{item.currtraining}</span><div>@ {item.currtrainingprovider}</div></div>

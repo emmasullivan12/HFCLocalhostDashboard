@@ -20,6 +20,7 @@ import TextInput from './TextInput.js';
 import UserName from './UserName.js';
 import industryOptions from './Industries.js';
 import hashtagOptions from './HashtagsLatest.js';
+import {getCompanyDeets} from './UserDetail.js';
 
 /*const FileUploadModalProps = {
   ariaLabel: 'Upload a file',
@@ -356,9 +357,9 @@ class AddHighlightTextBox extends Component {
     }
   }
 
-  getStartingCredText = (roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country) => {
+  getStartingCredText = (roleHistory, latestRole, latestRoleCoName, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country) => {
     if (roleHistory && roleHistory.length != 0) {
-      return latestRole[0].title + ' at ' + latestRole[0].co
+      return latestRole[0].title + ' at ' + latestRoleCoName
     } else if (currTraining != '') {
       return 'Trained at ' + currTrainingProvider
     } else if (uniHistory && uniHistory.length != 0) {
@@ -598,8 +599,8 @@ class AddHighlightTextBox extends Component {
 
     } else if (authorType == '') {
       const roleHistory = [
-        {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
-        {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
+        {title: 'Marketing Manager', co: '', cofreetext: 'free text company', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
+        {title: 'Marketing Analyst', co: '45', cofreetext: '', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
       ]
       const currTraining = ''
       const uniHistory = [
@@ -845,12 +846,13 @@ class AddHighlightTextBox extends Component {
     const stateProv = 'CA'
     const country = 'USA'
     const roleHistory = [
-      {title: 'Marketing Manager', co: 'GE', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
-      {title: 'Marketing Analyst', co: 'Energy Contract Company', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
+      {title: 'Marketing Manager', co: '4', cofreetext: '', startDate: '', endDate: '', roledesc: 'I look after everything marketing, whether it is product, price, packaging or promotion - the 4 Ps, just what I learned at Uni.', ismain: true},
+      {title: 'Marketing Analyst', co: '', cofreetext: 'freeeeetextcompany', startDate: '2019-01-03T13:30:50.667Z', endDate: '2021-01-01T13:30:50.667Z', roledesc: '', ismain: false}
     ]
     const latestRole = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain == true)
+    const latestRoleCoName = getCompanyDeets(latestRole[0].co, latestRole[0].cofreetext, 'name')
     const currRole = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.title)
-    const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)
+    //const currCo = roleHistory && roleHistory.length != 0 && latestRole.map(role => role.co)
     const roleHistoryNotMain = roleHistory && roleHistory.length != 0 && roleHistory.filter(role => role.ismain != true)
     const uniHistory = [
       {degree: 'Marketing', uniname: '44', uninamefreetext: '', unistartyr: '', unigraduyr: '2017', uniyrgrp: 'pg', unidesc: ''},
@@ -866,7 +868,7 @@ class AddHighlightTextBox extends Component {
     const currTraining = ''
     const currTrainingProvider = ''
     var currYr = new Date().getFullYear()
-    const startingCredentialPreviewText = this.getStartingCredText(roleHistory, latestRole, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country)
+    const startingCredentialPreviewText = this.getStartingCredText(roleHistory, latestRole, latestRoleCoName, currTraining, currTrainingProvider, uniHistory, sortedUnis, schHistory, sortedSchs, stateProv, country)
     const industryGroups = [
       {value: '', label: 'General', iconFA: 'fas fa-hashtag', isTitle: true},
       {value: '99999', label: 'General Advice', checkbox: true, isTitle: false, fa: 'fas fa-hashtag'},
@@ -1657,8 +1659,8 @@ class AddHighlightTextBox extends Component {
                     {latestRole && (
                       <div className="credential-item">
                         <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+latestRole[0].title}>
-                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-instfreetext={latestRole[0].co} data-wasdefaultrole defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
-                          <span className="credential-text">{latestRole[0].title} at {latestRole[0].co}</span>
+                          <input type="radio" id={"job-"+latestRole[0].title} data-authortype="job" data-state={stateProv} data-country={country} data-ismainrole data-role={latestRole[0].title} data-instfreetext={latestRoleCoName} data-wasdefaultrole defaultChecked={(authorType == '' || (authorType == 'job' && authorIsMainRole == "true")) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                          <span className="credential-text">{latestRole[0].title} at {latestRoleCoName}</span>
                           <span className="radioCheckmark"/>
                         </label>
                         <span className="defaultCredential neutralText tooltip">
@@ -1671,12 +1673,12 @@ class AddHighlightTextBox extends Component {
                     )}
                     {roleHistoryNotMain && roleHistoryNotMain.length != 0 && roleHistoryNotMain.map((role) => {
                       let roleName = role.title;
-                      let roleCo = role.co;
+                      let roleCoName = getCompanyDeets(role.co, role.cofreetext, 'name');
                       return (
                         <div className="credential-item" key={roleName}>
-                          <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCo}>
-                            <input type="radio" id={"job-"+roleName+roleCo} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-instfreetext={roleCo} data-wasdefaultrole={false} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInstFreeText == roleCo) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
-                            <span className="credential-text">Worked at {roleCo} as {roleName}</span>
+                          <label className="radioContainer setPrimary overflow-ellipsis" htmlFor={"job-"+roleName+roleCoName}>
+                            <input type="radio" id={"job-"+roleName+roleCoName} data-authortype="job" data-role={roleName} data-state={stateProv} data-country={country} data-ismainrole={false} data-instfreetext={roleCoName} data-wasdefaultrole={false} defaultChecked={(authorType == 'job' && authorIsMainRole == "false" && authorRole == roleName && authorInstFreeText == roleCoName) ? true : false} name="radio-credentials" onChange={this.handleRadioClick}/>
+                            <span className="credential-text">Worked at {roleCoName} as {roleName}</span>
                             <span className="radioCheckmark"/>
                           </label>
                         </div>

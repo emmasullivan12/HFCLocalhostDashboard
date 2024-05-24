@@ -4,6 +4,7 @@ import React, { Component } from "react";
 
 import Avatar from './Avatar.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
+import {getCompanyDeets} from './UserDetail.js';
 
 import "../css/Feedback.css";
 
@@ -32,6 +33,7 @@ class FeedbackPublic extends Component {
           const matchName = userRoleToView == 'mentee' ? item.mentorname : item.menteename
           const matchuid = userRoleToView == 'mentee' ? item.mentoruid : item.menteeuid
           const eetStatus = item.eetstatus
+          const companyName = (item.currco != null || item.currcofreetext != null) ? getCompanyDeets(item.currco, item.currcofreetext, 'name') : ''
           return (
             <div key={item.matchid} className={(isProfile != true ? "feedbackItem row" : "paddingTop")}>
               <div className={(isProfile != true ? "col-4 col-s-12 paddingR" : "displayFlex marginBottom5")}>
@@ -46,7 +48,7 @@ class FeedbackPublic extends Component {
                       <div><span>{item.degree} </span>{isProfile != true ? <div>@ {item.uniname}</div> : <span>@ {item.uniname}</span>}</div>
                     )}
                     {eetStatus == 'job' && (
-                      <div><span>{item.currrole} </span>{isProfile != true ? <div>@ {item.currco}</div> : <span>@ {item.currco}</span>}</div>
+                      <div><span>{item.currrole} </span>{isProfile != true ? <div>@ </div> : <span>@ {companyName}</span>}</div>
                     )}
                     {eetStatus == 'train' && (
                       <div><span>{item.currtraining} </span>{isProfile != true ? <div>@ {item.currtrainingprovider}</div> : <span>@ {item.currtrainingprovider}</span>}</div>

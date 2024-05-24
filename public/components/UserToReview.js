@@ -7,7 +7,7 @@ import AcceptSignUpContent from "./AcceptSignUpContent.js";
 import Modal from "./Modal.js";
 import RejectSignUpContent from "./RejectSignUpContent.js";
 import {Check} from './GeneralFunctions.js';
-import {userFlagEmoji, convertRole} from './UserDetail.js';
+import {userFlagEmoji, convertRole, getCompanyDeets} from './UserDetail.js';
 
 const AcceptSignUpModalProps = {
   ariaLabel: 'Popup to accept signup',
@@ -106,7 +106,7 @@ class UserToReview extends React.Component {
               <span>
                 {signup.eetstatus == 'sch' ? eduName : ''}
                 {signup.eetstatus == 'uni' ? eduName : ''}
-                {signup.eetstatus == 'job' ? (' ' + signup.currrole + ' @ ' + signup.currco) : ''}
+                {signup.eetstatus == 'job' ? (' ' + signup.currrole + ' @ ' + getCompanyDeets(signup.currco, signup.currcofreetext, 'name')) : ''}
                 {signup.eetstatus == 'train' ? (' ' + signup.currtraining + ' @ ' + signup.currtrainingprovider) : ''}
               </span>
             </div>

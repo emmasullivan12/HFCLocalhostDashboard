@@ -10,7 +10,7 @@ import SelectBox from './Select.js';
 import SendMatchToMentee from './SendMatchToMentee.js';
 import UserHistory from './UserHistory.js';
 import {Check, X} from './GeneralFunctions.js';
-import {userFlagEmoji} from './UserDetail.js';
+import {userFlagEmoji, getCompanyDeets} from './UserDetail.js';
 
 /*const AcceptSignUpModalProps = {
   ariaLabel: 'Popup to accept signup',
@@ -363,7 +363,7 @@ class MatchUserCard extends React.Component {
               <span>
                 {user.eetstatus == 'sch' ? eduInstName : ''}
                 {user.eetstatus == 'uni' ? eduInstName : ''}
-                {user.eetstatus == 'job' ? (' ' + user.currrole + ' @ ' + user.currco) : ''}
+                {user.eetstatus == 'job' ? (' ' + user.currrole + ' @ ' + getCompanyDeets(user.currco, user.currcofreetext, 'name')) : ''}
                 {user.eetstatus == 'train' ? (' ' + user.currtraining + ' @ ' + user.currtrainingprovider) : ''}
               </span>
             </div>

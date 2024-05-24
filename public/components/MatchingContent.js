@@ -56,7 +56,8 @@ const potentialMatches = [
     uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
-    currco: 'Pladis',
+    currco: '6',
+    currcofreetext: '',
     currind: '#food&beverage',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
     learning: 'leadership, negotiations, excel, programming, python, mySQL',
@@ -112,7 +113,8 @@ const potentialMatches = [
     uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
-    currco: 'Pladis',
+    currco: '',
+    currcofreetext: 'Free text company',
     currind: '#food&beverage',
     notes: 'Wants to only help avfx mentees',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
@@ -168,7 +170,8 @@ const potentialMatches = [
     uninamefreetext: '', // If their school wasn't on the list
     subjects: 'Business, Art, English Literature & Language',
     currrole: 'Head of Marketing',
-    currco: 'Pladis',
+    currco: '6',
+    currcofreetext: '',
     currind: '#food&beverage',
     expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',
     learning: 'leadership, negotiations, excel, programming, python, mySQL',
@@ -291,7 +294,8 @@ class MatchingContent extends Component {
       uninamefreetext: '', // If their school wasn't on the list
       subjects: 'Business, Art, English Literature & Language',
       currrole: 'Head of Marketing',
-      currco: 'Pladis',
+      currco: '6',
+      currcofreetext: '',
       currind: '#food&beverage',
       notes: 'Really good at Houdini. Wants to only help working class kids',
       expertise: 'rendering, compositing, 2D, 3D animation, excel, leadership',

@@ -7,7 +7,7 @@ import UploadProfPicContent from './UploadProfPicContent.js';
 import UserActivity from './UserActivity.js';
 import UserReads from './UserReads.js';
 import UserQuotes from './UserQuotes.js';
-import {availabilityMsg, userFlagEmoji, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
+import {availabilityMsg, userFlagEmoji, eduName, eduSubjects, planningUni, timeSince, isNightDay, profileTimeZone, setSchGraduYr, getCompanyDeets} from './UserDetail.js';
 
 import "../css/General.css";
 import "../css/Article.css";
@@ -52,7 +52,8 @@ class MenteeProfileContent extends Component {
       uniGraduYr: '2020',
       gradeType: '',
       currRole: 'Head of Marketing',
-      currCo: 'Pladis',
+      currCo: '7',
+      currcofreetext: '',
       currTraining: 'Apprenticeship learning plumbing',
       currTrainingProvider: 'NextGenSkills Academy',
       subjects: 'Business, Art, English Literature & Language',
@@ -179,7 +180,7 @@ class MenteeProfileContent extends Component {
               <h1 className="profileName">{mentee.fname}</h1>
               {isU18 != true && (
                 <div className="profileInstitution">
-                  <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus==='sch' || mentee.eetStatus==='uni' ? eduInstName : (mentee.currCo)}</strong>
+                  <span className="neutralText">&#64;</span> <strong>{mentee.eetStatus==='sch' || mentee.eetStatus==='uni' ? eduInstName : getCompanyDeets(mentee.currCo, mentee.currcofreetext, 'name')}</strong>
                 </div>
               )}
               <div>
@@ -303,7 +304,7 @@ class MenteeProfileContent extends Component {
                         Current Employment
                       </h2>
                       <p>
-                        {mentee.currRole} @ {mentee.currCo}
+                        {mentee.currRole} @ {getCompanyDeets(mentee.currCo, mentee.currcofreetext, 'name')}
                       </p>
                     </React.Fragment>
                   )}

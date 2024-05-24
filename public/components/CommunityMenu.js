@@ -8,10 +8,13 @@ import {
   NavLink
 } from "react-router-dom";
 
+import Autocomplete from './Autocomplete.js';
+import companyList from './Companies.js';
 import Modal from './Modal.js';
 import {getUnreadIndicator} from './GeneralFunctions.js';
 import JoinCommunityModalContent from './JoinCommunityModalContent.js';
 import {getIndustryDeets, getSkillDeets, getCompanyDeets} from './UserDetail.js';
+import SearchCompanyProfileModalContent from './SearchCompanyProfileModalContent.js';
 import "../css/Modal.css";
 
 const JoinProgrammeModalProps = {
@@ -115,6 +118,19 @@ class CommunityListItem extends Component {
 
 // This shows the logged in user's direct messages with Prospela, active mentors, and old mentors
 class CommunityMenu extends Component {
+  handleUserSearch = () => {
+    // Dex to use
+  }
+
+  launchCompanyPage = (e, suggestion) => {
+    this.setState({
+      companyProfileToLoad: e.target.dataset.id
+    }, () => {
+      console.log("launch company page for: "+this.state.companyProfileToLoad)
+      this.props.closeModal()
+    });
+  }
+
   render() {
     const {userRole, onClick, checkHasAccess, noAccessHandler, type, groups} = this.props;
     const groupsArr = [];
@@ -167,7 +183,7 @@ class CommunityMenu extends Component {
               <div className="menuCTAContainer">
                 {type == 'company' && (
                   <Modal {...SearchCompanyModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler}>
-                    <div>Search for a company modal content goes here</div>
+                    <SearchCompanyProfileModalContent />
                   </Modal>
                 )}
                 {type != 'company' && (

@@ -284,7 +284,7 @@ class NoEduEmailContent extends Component {
   render() {
     const { onKeyDown } = this;
     const { progCode, emailInput, currentSitu, profProfileURL, isPersonalEmail, emailIsValid, messageFromServer, isHtmlValid, isSubmitting } = this.state;
-    const { country, eetStatus, currCo, currTrainingProvider } = this.props;
+    const { country, eetStatus, currCoName, currTrainingProvider } = this.props;
     const isEnabled = this.canBeSubmitted();
     if(messageFromServer === '') {
       return (
@@ -352,7 +352,7 @@ class NoEduEmailContent extends Component {
             {eetStatus != 'none' &&(
               <React.Fragment>
                 <label htmlFor="profEmail" className="descriptor alignLeft">
-                  Your <strong>{eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address</strong> (if you have one)
+                  Your <strong>{eetStatus === 'job' ? currCoName : eetStatus === 'train' ? currTrainingProvider : 'professional'} Email Address</strong> (if you have one)
                 </label>
                 <input
                   type="email"
@@ -364,7 +364,7 @@ class NoEduEmailContent extends Component {
                   onKeyDown={this.handleKeyDown}
                   onMouseDown={this.handleMouseDown}
                   className="form-control-std verifyForm"
-                  placeholder={"Your " + (eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
+                  placeholder={"Your " + (eetStatus === 'job' ? currCoName : eetStatus === 'train' ? currTrainingProvider : 'professional') + " email address"}
                   autoComplete="off"
                   autoCorrect="off"
                   spellCheck="off"
@@ -373,7 +373,7 @@ class NoEduEmailContent extends Component {
                 />
                 {isHtmlValid === false && emailIsValid === false && isPersonalEmail === false && (
                   <div className="descriptor prompt error verifyForm alignLeft">
-                    This must be a valid {eetStatus === 'job' ? currCo : eetStatus === 'train' ? currTrainingProvider : 'professional'} email
+                    This must be a valid {eetStatus === 'job' ? currCoName : eetStatus === 'train' ? currTrainingProvider : 'professional'} email
                   </div>
                 )}
                 {isPersonalEmail === true && (

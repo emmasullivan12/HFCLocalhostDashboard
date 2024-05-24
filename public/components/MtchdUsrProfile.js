@@ -1,7 +1,7 @@
 // Dex last merged this code on 10th Aug 2019
 
 import React, { Component } from "react";
-import MentorUsrProfile from './MentorUsrProfile.js';
+import MentorUsrProfile from './MentorUsrProfileOLD.js';
 import MenteeUsrProfile from './MenteeUsrProfile.js';
 
 class MtchdUsrProfile extends Component {

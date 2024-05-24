@@ -1,7 +1,9 @@
 // Dex last merged this code on 13th sept 2021
 
 import React, { Component } from "react";
+import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Checkbox from './Checkbox.js';
+import companyList from './Companies.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
 import TextInput from './TextInput.js';
@@ -28,7 +30,10 @@ class AddEditRoleContent extends Component {
       enddate: this.props.endDate == '' ? null : this.props.endDate,
       roledesc: this.props.roleDesc == '' ? '' : this.props.roleDesc,*/
       roletitle: this.props.roleTitle,
-      roleco: this.props.roleCo,
+      roleconametoshow: this.props.roleCoName,
+      currCoLocal: '',
+      currCoFreeTextLocal: '',
+      endingCompanyArr: (this.props.roleCoName != null && this.props.roleCoName != '') ? [this.props.roleCoName] : [],
       startdate: this.props.startDate,
   //    enddate: this.props.endDate,
       roledesc: this.props.roleDesc,
@@ -124,6 +129,65 @@ class AddEditRoleContent extends Component {
     });
   }
 
+  handleJobChange = (userInput, callback) => {
+    const {endingCompanyArr} = this.state
+
+    // If is at maxNumValues of 5 but user still trying to change, show error message
+    if (endingCompanyArr.length == 1 && userInput.length == 1) {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    }
+
+    const companyFromList = companyList
+      .filter(co => userInput.includes(co.label))
+
+    const labels = companyFromList.map(value => value.label)
+
+    const freeTextCompany = userInput
+      .filter(co => labels.indexOf(co) === -1)
+
+    const values = companyFromList.map(value => value.value)
+
+    this.setState({
+      currCoLocal: values,
+      currCoFreeTextLocal: freeTextCompany,
+      endingCompanyArr: userInput
+    }, () => {
+      if(callback) {
+        callback()
+      }
+    })
+  }
+
+  finMultiOptions = () => {
+    const {endingCompanyArr} = this.state
+
+    // If is less than or equal to maxNumValues of 5 remove error message
+    if (endingCompanyArr.length <= 1) {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    }
+  }
+
+  handleDoneClickCompany = () => {
+    const {currCoLocal, currCoFreeTextLocal} = this.state
+    if ((currCoLocal.length != 0 || currCoFreeTextLocal.length != 0)) {
+      document.getElementById("isMainCheckbox").focus()
+    } else {
+      document.getElementById("autocompleteBox-currCo").focus()
+    }
+  }
+
   toggleIsCurrentCheckbox = (userInput) => {
     const currentState = this.state.iscurrent;
 
@@ -189,23 +253,23 @@ class AddEditRoleContent extends Component {
   }
 
   canBeSubmitted() {
-    const {roletitle, roleco, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr, invalidEndDate, ismain} = this.state;
-    const { roleTitle, roleCo, startDate, endDate, roleDesc, isMain } = this.props;
+    const {roletitle, roleconametoshow, currCoLocal, currCoFreeTextLocal, startdate, enddate, roledesc, iscurrent, startDateMth, startDateYr, endDateMth, endDateYr, invalidEndDate, ismain} = this.state;
+    const { roleTitle, roleCoName, startDate, endDate, roleDesc, isMain } = this.props;
 
     const _startDateFormatted = new Date(startDate)
     const _endDateFormatted = new Date(endDate)
 
     return (
-      roletitle != '' && roleco != '' && startDateMth !== '' && startDateYr != '' && ((endDateMth !== '' && endDateYr != '') || iscurrent == true) && invalidEndDate == false
-      && (roletitle != roleTitle || roleco != roleCo || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear()
+      roletitle != '' && (currCoLocal != '' || currCoFreeTextLocal != '') && startDateMth !== '' && startDateYr != '' && ((endDateMth !== '' && endDateYr != '') || iscurrent == true) && invalidEndDate == false
+      && (roletitle != roleTitle || currCoLocal != roleCoName || currCoFreeTextLocal != roleCoName || startDateMth != _startDateFormatted.getMonth() || startDateYr != _startDateFormatted.getFullYear()
       || (isNaN(_endDateFormatted.getMonth()) ? endDateMth !== '' : endDateMth != _endDateFormatted.getMonth()) || (isNaN(_endDateFormatted.getFullYear()) ? endDateYr != '' : endDateYr != _endDateFormatted.getFullYear())
       || roledesc != roleDesc || ismain != isMain) // Checks user has actually changed something
     );
   }
 
   render() {
-    const { isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleco, startdate, enddate, endDateMth, endDateYr, roledesc, iscurrent, ismain, triggerResetValues, invalidEndDate } = this.state;
-    const { roleTitle, roleCo, startDate, endDate, roleDesc, modalTitle, addOrEdit, isMain } = this.props;
+    const { showMaxReachedError, isSubmitting, isSubmittingDeleteRole, updateSuccess, roletitle, roleconametoshow, endingCompanyArr, startdate, enddate, endDateMth, endDateYr, roledesc, iscurrent, ismain, triggerResetValues, invalidEndDate } = this.state;
+    const { roleTitle, roleCoName, startDate, endDate, roleDesc, modalTitle, addOrEdit, isMain } = this.props;
     const months = [
       {value: '0', label: 'Jan'},
       {value: '1', label: 'Feb'},
@@ -264,18 +328,30 @@ class AddEditRoleContent extends Component {
             />
           </div>
           <div className="form-group">
-            <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Employer</label>
-            <TextInput
-              name="roleco"
-              id="roleCoInput"
-              className="form-control-std"
-              placeholder={(roleCo != null && roleco != '') ? null : 'e.g. Framestore, EY...'}
-              required
-              defaultValue={roleCo != null ? roleCo : null}
-              handleChange={this.handleChange}
-              onBlur={this.onBlur}
-              maxLength="50"
-            />
+            <label className="descriptor alignLeft reqAsterisk" htmlFor="roleco">Employer
+              {showMaxReachedError && (
+                <span className="redText"> (You can only select one)</span>
+              )}
+            </label>
+            <div className="autocompleter">
+              <AutocompleteTagsMulti
+                noMultiple
+                openOnClick
+                showValues
+                defaultChecked={(roleCoName != null && roleCoName != "") ? [roleCoName] : null} // maybe needs to be {endingCompanyArr}
+                handleChange={this.handleJobChange}
+                handleDone={this.handleDoneClickCompany}
+                suggestions={companyList}
+                name="roleco"
+                placeholder={((roleCoName != null && roleCoName != "") && roleconametoshow != '') ? null : 'e.g. Framestore, EY...'}
+                placeholderOnClick="Type Company Name..."
+                finMultiOptions={this.finMultiOptions}
+                maxNumValues={1}
+                idValue='value'
+                valueToShow='label'
+                required
+              />
+            </div>
           </div>
           <div onClick={this.handleIsMainErrorMsg}>
             <Checkbox

@@ -66,7 +66,8 @@ class UserMenuContent extends Component {
       schNameFreeText: '',
       uniName: '',
       uniNameFreeText: '',
-      currCo: 'Pladis',
+      currCo: '8',
+      currcofreetext: '',
       eetStatus: 1,
     };
     const isPicSet = user.profPicSrc != ''; // check if author who sent message has avatar pic set

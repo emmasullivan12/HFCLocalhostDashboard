@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import {usercdn, userIDSelfiesFolder} from './CDN.js';
 import Checkbox from './Checkbox.js';
 import {sortTable} from "./GeneralFunctions";
+import {getCompanyDeets} from './UserDetail.js';
 
 // This shows the content within an individual row in the ChatMenu
 class UserToCheck extends Component {
@@ -141,7 +142,7 @@ class UserToCheck extends Component {
             <td>
               {user.eetstatus == 'sch' ? ('Student @ ' + eduName) : ''}
               {user.eetstatus == 'uni' ? ('Student @ ' + eduName) : ''}
-              {user.eetstatus == 'job' ? (user.currrole + ' @ ' + user.currco) : ''}
+              {user.eetstatus == 'job' ? (user.currrole + ' @ ' + getCompanyDeets(user.currco, user.currcofreetext, 'name')) : ''}
               {user.eetstatus == 'train' ? (user.currtraining + ' @ ' + user.currtrainingprovider) : ''}
               {user.eetstatus == 'none' ? 'NEET' : ''}
             </td>

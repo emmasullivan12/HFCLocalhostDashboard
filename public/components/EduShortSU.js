@@ -5,6 +5,8 @@ import ReactDOM from "react-dom";
 import "../css/Login.css";
 import "../css/General.css";
 
+import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
+import companyList from './Companies.js';
 import EduNotOnListCTA from './EduNotOnListCTA';
 import EditEduFreeText from './EditEduFreeText';
 import SelectBox from './Select.js';
@@ -41,6 +43,8 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
+      currCoFreeTextLocal: '',
+      endingCompanyArr: [],
     //  coIsValid: '',
       currRoleLocal: '',
       currTrainingProviderLocal: '',
@@ -171,11 +175,63 @@ class EduShortSU extends React.Component {
     }
   }*/
 
-  handleJobChange = (e) => {
+  handleJobChange = (userInput, callback) => {
+    const {endingCompanyArr} = this.state
+
+    // If is at maxNumValues of 5 but user still trying to change, show error message
+    if (endingCompanyArr.length == 1 && userInput.length == 1) {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    }
+
+    const companyFromList = companyList
+      .filter(co => userInput.includes(co.label))
+
+    const labels = companyFromList.map(value => value.label)
+
+    const freeTextCompany = userInput
+      .filter(co => labels.indexOf(co) === -1)
+
+    const values = companyFromList.map(value => value.value)
+
     this.setState({
-      currCoLocal: e.target.value,
-  //    coIsValid: e.target.value === '' ? false : true
+      currCoLocal: values,
+      currCoFreeTextLocal: freeTextCompany,
+      endingCompanyArr: userInput
+    }, () => {
+      if(callback) {
+        callback()
+      }
     })
+  }
+
+  finMultiOptions = () => {
+    const {endingCompanyArr} = this.state
+
+    // If is less than or equal to maxNumValues of 5 remove error message
+    if (endingCompanyArr.length <= 1) {
+      this.setState({
+        showMaxReachedError: false,
+      })
+    } else {
+      this.setState({
+        showMaxReachedError: true,
+      })
+    }
+  }
+
+  handleDoneClickCompany = () => {
+    const {currCoLocal, currCoFreeTextLocal} = this.state
+    if ((currCoLocal.length != 0 || currCoFreeTextLocal.length != 0)) {
+      document.getElementById("currRoleInput").focus()
+    } else {
+      document.getElementById("autocompleteBox-currCo").focus()
+    }
   }
 
   handleRoleChange = (e) => {
@@ -230,6 +286,8 @@ class EduShortSU extends React.Component {
       uniGraduYr: '',
       uniGraduYrIsValid: '',
       currCoLocal: '',
+      currCoFreeTextLocal: '',
+      endingCompanyArr: [],
     //  coIsValid: '',
       currRoleLocal: '',
       currTrainingProviderLocal: '',
@@ -412,7 +470,7 @@ class EduShortSU extends React.Component {
     this.setState({ selectBoxFocused: selectBoxFocused });
   }
 
-  // Passed on to be used within Select.js onBlur & onClickOption events
+ // Passed on to be used within Select.js onBlur & onClickOption events
   otherValidityChecks() {
     const { selectBoxFocused, courseLength, uniGraduYr } = this.state;
     const {userRole} = this.props;
@@ -433,7 +491,7 @@ class EduShortSU extends React.Component {
 
   handleSubmit(e) {
     const {step, updateStep, eetStatus, updateEetStatus, updateUKSch, updateSchFreeText, updateUKUni, updateUniFreeText, updateCurrCo, updateCurrTrainingProv} = this.props;
-    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currTrainingProviderLocal, } = this.state;
+    const {eetStatusLocal, schNameLocal, schNameFreeTextLocal, uniNameLocal, uniNameFreeTextLocal, currCoLocal, currCoFreeTextLocal, currTrainingProviderLocal, } = this.state;
 
     if (step === "updatingEdu") {
       updateEetStatus(eetStatusLocal)
@@ -483,7 +541,7 @@ class EduShortSU extends React.Component {
           submitted: true,
           isSubmitting: true,
         })
-        updateCurrCo(currCoLocal, () => {
+        updateCurrCo(currCoLocal, currCoFreeTextLocal, () => {
           updateStep('updatingEdu');
         })
 
@@ -550,7 +608,7 @@ class EduShortSU extends React.Component {
           submitted: true,
           isSubmitting: true,
         })
-        updateCurrCo(currCoLocal, () => {
+        updateCurrCo(currCoLocal, currCoFreeTextLocal, () => {
           updateStep('didEdu');
         })
 
@@ -575,7 +633,7 @@ class EduShortSU extends React.Component {
   }
 
   canBeSubmitted() {
-    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal } = this.state;
+    const {eetStatusLocal, schNameUpdated, schNameFreeTextUpdated, schNameIsValid, uniNameUpdated, uniNameFreeTextUpdated, uniNameIsValid, schYrGrp, uniYrGrp, courseLength, schGraduYr, uniGraduYr, uniGraduYrIsValid, currCoLocal, currCoFreeTextLocal, endingCompanyArr, currRoleLocal, currTrainingProviderLocal, currTrainingCourseLocal } = this.state;
     const {userRole} = this.props;
   //  const {eetStatus} = this.props;
 
@@ -598,7 +656,7 @@ class EduShortSU extends React.Component {
           }
 
         } else if (eetStatusLocal === 'job') {
-          if (form.checkValidity() && currCoLocal != '' && currRoleLocal != '') {
+          if (form.checkValidity() && ((currCoLocal != '' || currCoFreeTextLocal != '') && endingCompanyArr.length == 1) && currRoleLocal != '') {
             return true;
           } else {
             return false;
@@ -639,7 +697,7 @@ class EduShortSU extends React.Component {
 
   render() {
 
-  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, currTrainingProviderLocal, currRoleLocal, currTrainingCourseLocal} = this.state;
+  const { errorLoadingEdu, eetStatusLocal, schNameUpdated, ukSchsList, schNameIsValid, schNameFreeTextLocal, uniNameFreeTextLocal, uniNameUpdated, ukUnisList, uniNameIsValid, degreeLocal, schYrGrp, uniYrGrp, schGraduYr, tabPressed, uniGraduYr, uniGraduYrIsValid, courseLength, isSubmitting, currCoLocal, currCoFreeTextLocal, endingCompanyArr, showMaxReachedError, currTrainingProviderLocal, currRoleLocal, currTrainingCourseLocal} = this.state;
   const {userRole} = this.props;
   const { country, eetStatus, tflink, step, currentStep, totalSteps } = this.props;
 
@@ -1021,25 +1079,35 @@ class EduShortSU extends React.Component {
               )}
               {eetStatusLocal === 'job' && (
                 <div className="form-group">
-                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">Who is your current <strong>employer?</strong></label>
-                  <TextInput
-                    name="currCo"
-                    id="currCoInput"
-                    placeholder="Company"
-                    className="form-control-std"
-                    required
-                    handleChange={this.handleJobChange}
-                //    handleKeyUp={this.handleKeyUp}
-                    handleTabPress={this.handleTabPress}
-                    handleMouseDown={this.handleMouseDown}
-                    onKeyDown={this.handleMouseDown}
-                    onBlur={this.onBlur}
-                    focusOnLoad={tabPressed ? false : true}
-                    maxLength="50"
-                  />
+                  <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">
+                    Who is your current <strong>employer?</strong>
+                    {showMaxReachedError && (
+                      <span className="redText"> (You can only select one)</span>
+                    )}
+                  </label>
+                  <div className="autocompleter">
+                    <AutocompleteTagsMulti
+                      noMultiple
+                      openOnClick
+                      showValues
+                      defaultChecked={endingCompanyArr}
+                      handleChange={this.handleJobChange}
+                      handleDone={this.handleDoneClickCompany}
+                      suggestions={companyList}
+                      name="currCo"
+                      placeholder='Type Company Name...'
+                      placeholderOnClick="Type Company Name..."
+                      finMultiOptions={this.finMultiOptions}
+                      focusOnLoad={tabPressed ? false : true}
+                      maxNumValues={1}
+                      idValue='value'
+                      valueToShow='label'
+                      required
+                    />
+                  </div>
                 </div>
               )}
-              {eetStatusLocal === 'job' && currCoLocal != '' && (
+              {eetStatusLocal === 'job' && (currCoLocal != '' || currCoFreeTextLocal != '') && (
                 <div className="form-group">
                   <label className="descriptor alignLeft reqAsterisk" htmlFor="currCo">And what is your current <strong>role?</strong></label>
                   <TextInput

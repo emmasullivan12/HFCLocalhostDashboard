@@ -5,7 +5,7 @@ import React, { Component } from "react";
 //import MentorProfileContent from './MentorProfileContent.js';
 //import FullPageModal from './FullPageModal.js';
 import {usercdn, userAvatarsFolder} from './CDN.js';
-import {userFlagEmoji} from './UserDetail.js';
+import {getCompanyDeets, userFlagEmoji} from './UserDetail.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
@@ -52,7 +52,8 @@ class UserName extends Component {
         uniname: '',
         uninamefreetext: 'Bath University',
         degree: '',
-        currco: 'Pladis',
+        currco: '8',
+        currcofreetext: '',
         currrole: 'Finance Manager',
         currtrainingprovider: 'Apprenticeship',
         currtraining: 'Company B',
@@ -121,7 +122,7 @@ class UserName extends Component {
                 <div className="userDetail-inst">
                   {eetstatus == 'sch' ? 'Student' : ''}
                   {eetstatus == 'uni' ? (user[0].degree + ' @ ' + uniName) : ''}
-                  {eetstatus == 'job' ? (user[0].currrole + ' @ ' + user[0].currco) : ''}
+                  {eetstatus == 'job' ? (user[0].currrole + ' @ ' + getCompanyDeets(user[0].currco, user[0].currcofreetext, 'name')) : ''}
                   {eetstatus == 'train' ? (user[0].currtraining + ' @ ' + user[0].currtrainingprovider) : ''}
                   {eetstatus == 'none' ? 'Looking for opportunities' : ''}
                 </div>

@@ -225,12 +225,17 @@ function getSkillDeets(skillID) {
 
   return skillArr[0]
 }
-function getCompanyDeets(companyID) {
+function getCompanyDeets(companyID, coFreeText, detailToShow) {
+  if (companyID != null && companyID != '') {
+    const companyArr = companyList
+      .filter(co => co.value == companyID)
 
-  const companyArr = companyList
-    .filter(co => co.value == companyID)
-
-  return companyArr[0]
+    if (detailToShow == 'name') {
+       return companyArr[0].label
+    } else return companyArr[0]
+  } else {
+    return coFreeText
+  }
 }
 
 function getRoleDeets(roleID) {

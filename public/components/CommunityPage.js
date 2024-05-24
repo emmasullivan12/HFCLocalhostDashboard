@@ -18,7 +18,7 @@ import Modal from './Modal.js';
 import MyContent from "./MyContent.js";
 import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
-import {getIndustryDeets, getSkillDeets} from './UserDetail.js';
+import {getIndustryDeets, getSkillDeets, getCompanyDeets} from './UserDetail.js';
 
 import '../css/CommunityPage.css';
 
@@ -118,14 +118,14 @@ class CommunityPage extends React.Component {
     }
 
     const mentors = [
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 7, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 6, isU18: false, eetstatus: 'job', currco: 'Framestore', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
-      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '11', currrole: '', currtraining: '', degree: 'BSc Business', state: '', country: ''},
-      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 3, numMentees: 2, isU18: false, eetstatus: 'sch', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
-      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
-      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
-      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 4, isU18: false, eetstatus: 'uni', currco: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 7, isU18: false, eetstatus: 'job', currco: '15', currcofreetext: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid123', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 0, numMentees: 6, isU18: false, eetstatus: 'job', currco: '', currcofreetext: 'Company name free text', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: 'Compositor', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid124', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 2, numMentees: 1, isU18: false, eetstatus: 'train', currco: '', currcofreetext: '', currtrainingprovider: 'Escape Studios', uninamefreetext: '', uniname: '', currrole: '', currtraining: '3D Compositing', degree: '', state: '', country: ''},
+      {uid: 'uuid125', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 5, isU18: false, eetstatus: 'uni', currco: '', currcofreetext: '', currtrainingprovider: '', uninamefreetext: '', uniname: '11', currrole: '', currtraining: '', degree: 'BSc Business', state: '', country: ''},
+      {uid: 'uuid126', fname: 'Adam', lname: 'Ant', topContributionType: 'answer', topContributionID: '123', numAnswers: 14, numGenerals: 3, numMentees: 2, isU18: false, eetstatus: 'sch', currco: '', currcofreetext: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: '', country: ''},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currcofreetext: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid127', fname: 'Busy', lname: 'Bee', topContributionType: 'general', topContributionID: '234', numAnswers: 14, numGenerals: 3, numMentees: 1, isU18: false, eetstatus: 'none', currco: '', currcofreetext: '', currtrainingprovider: '', uninamefreetext: '', uniname: '', currrole: '', currtraining: '', degree: '', state: 'CA', country: 'USA'},
+      {uid: 'uuid128', fname: 'Charlie', lname: 'Chaplin', topContributionType: '', topContributionID: '', numAnswers: 0, numGenerals: 0, numMentees: 4, isU18: false, eetstatus: 'uni', currco: '', currcofreetext: '', currtrainingprovider: '', uninamefreetext: 'FreeTextUniName', uniname: '', currrole: '', currtraining: '', degree: 'MA Animation & VFX', state: '', country: ''},
     ];
 
     let companiesOfTopMentors = []
@@ -151,7 +151,7 @@ class CommunityPage extends React.Component {
         switch (user.eetstatus) {
           case 'job':
             // convert companyname here
-            nameToShow = user.currco
+            nameToShow = getCompanyDeets(user.currco, user.currcofreetext, 'name')
             break
           case 'train':
             nameToShow = user.currtrainingprovider
