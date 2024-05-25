@@ -8,6 +8,7 @@ import AddHighlightModalContent from "./AddHighlightModalContent";
 import Avatar from './Avatar.js';
 import {cdn} from './CDN.js';
 import {metaAdder, checkMobile, whichBrowser, Check, ChevronUp, DateCalc, TimeCalc, LoadingSpinner, X} from './GeneralFunctions.js';
+import companyList from './Companies.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import DisplayMsgFile from './DisplayMsgFile.js';
 import FullPageModal from './FullPageModal.js';
@@ -193,7 +194,7 @@ class QA extends Component {
         isPr: 1,
         authorUserRole: 'mentor',
         authorinst: '',
-        authorinstfreetext: 'Pladis',
+        authorinstfreetext: 'pladis Global',
         authorrole: 'Marketing Manager',
       //  authorroleishidden: 0,
         authordegree: '',
@@ -453,12 +454,12 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
       isanon: 1,
       u18: 1,
       authorinst: '',
-      authorinstfreetext: 'Villiers High School',
-      authorrole: '',
+      authorinstfreetext: 'pladis Global',
+      authorrole: 'Marketing Manager',
     //  authorroleishidden: 0,
       authordegree: '',
       authortraining: '',
-      authorinsttype: 'sch',
+      authorinsttype: 'job',
       authorstate: 'Bedf',
       authorcountry: 'GBR',
       votes: [],
@@ -581,7 +582,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
         isPr: 1,
         authorUserRole: 'mentor',
         authorinst: '',
-        authorinstfreetext: 'Pladis',
+        authorinstfreetext: 'pladis Global',
         authorrole: 'Marketing Manager',
       //  authorroleishidden: 0,
         authordegree: '',
@@ -686,8 +687,17 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
       link.href = qURL
       document.head.appendChild(link);
     }
+    let credentialText
+    const authorHasJob = qaItem.authorinsttype == 'job'
+    if (authorHasJob) {
+      const employerFromListObject = companyList.filter(co => co.label == qaItem.authorinstfreetext)
+      const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+      credentialText = getCredText((qaItem.wasDefaultRole ? qaItem.wasDefaultRole : null), qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry, true, (employerFromListObject.length > 0 ? employerFromListObject : null))
+    } else {
+      credentialText = getCredText((qaItem.wasDefaultRole ? qaItem.wasDefaultRole : null), qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry, false, null)
+    }
 
-    const credentialText = getCredText((qaItem.wasDefaultRole ? qaItem.wasDefaultRole : null), qaItem.authorinsttype, qaItem.authorrole, qaItem.authorroleishidden, qaItem.authorinst, qaItem.authorinstfreetext, qaItem.authortraining, qaItem.authordegree, qaItem.authorstate, qaItem.authorcountry)
+
     let activeDatesArr = []
 
     if (qaItem) {
@@ -1033,7 +1043,14 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
 
                       aIsMe = (hid.uid === myID) ? 'isMe' : 'isntMe';
                       aAuthorinsttype = hid.authorinsttype
-                      aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry)
+                      const authorHasJob = hid.authorinsttype == 'job'
+                      if (authorHasJob) {
+                        const employerFromListObject = companyList.filter(co => co.label == hid.authorinstfreetext)
+                        const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+                        aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry, true, (employerFromListObject.length > 0 ? employerFromListObject : null))
+                      } else {
+                        aCredentialText = getCredText((hid.wasDefaultRole ? hid.wasDefaultRole : null), hid.authorinsttype, hid.authorrole, hid.authorroleishidden, hid.authorinst, hid.authorinstfreetext, hid.authortraining, hid.authordegree, hid.authorstate, hid.authorcountry, false, null)
+                      }
 
                       return (
                         <div key={hid.hid} id={hashURL} className="gridContainer borderBtm borderGrey paddingBtm marginBottom20">

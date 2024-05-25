@@ -1,6 +1,7 @@
 // Dex last merged this code on 25th may 2024
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import subjectsOptions from './Subjects.js';
 import groupsList from "./Groups.js";
 import hashtagOptions from './HashtagsLatest.js';
@@ -49,9 +50,28 @@ function lookupUKSchUnis(i, valueToGet, eetStatus, callback) {
   }
 }
 
-function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry) {
+function getCredText(wasDefaultRole, authorinsttype, authorrole, authorroleishidden, authorinst, authorinstfreetext, authortraining, authordegree, authorstate, authorcountry, hasEmployerOnOurList, employerFromListObject) {
 //  const {ukSchsList, ukUnisList} = this.props;
-  if (authorinsttype == 'job') {
+  if (authorinsttype == 'job' && hasEmployerOnOurList == true && employerFromListObject != null) {
+    const employerURL = employerFromListObject[0].urlText
+    const companyURLending = "/companies/" + employerURL
+    const companyURL = "https://app.prospela.com" + companyURLending
+
+    if (authorroleishidden != true) {
+      return (
+        <span>{(wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at '}
+          <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} className="electricPurpleText link bold tooltip">
+            {authorinstfreetext}
+            <span className="tooltiptext">Go to Employer Profile</span>
+          </Link>
+        </span>
+      )
+    } else {
+      return (
+        <span>{(wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at ' + authorinstfreetext}</span>
+      )
+    }
+  } else if (authorinsttype == 'job') {
     return authorroleishidden != true ? ((wasDefaultRole == true ? "" : "Worked as ") + authorrole + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Worked at ") + authorinstfreetext)
   } else if (authorinsttype == 'train') {
     return (authortraining != '' ? ((wasDefaultRole == true ? "" : "Trained as ") + authortraining + ' at ' + authorinstfreetext) : ((wasDefaultRole == true ? "" : "Trained at ") + authorinstfreetext))
@@ -88,8 +108,20 @@ function getEmployerName(authorinsttype, authorinstfreetext, authorinst, showDes
   }
 }
 
-function getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18){
-  if (authorinsttype == 'job') {
+function getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, hasEmployerOnOurList, employerFromListObject){
+  if (authorinsttype == 'job' && hasEmployerOnOurList == true && employerFromListObject != null && isU18 != true) {
+    const employerURL = employerFromListObject[0].urlText
+    const companyURLending = "/companies/" + employerURL
+    const companyURL = "https://app.prospela.com" + companyURLending
+
+    return (
+      <span>{authorrole + ' at '}
+        <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} className="link">
+          {authorinstfreetext}
+        </Link>
+      </span>
+    )
+  } else if (authorinsttype == 'job') {
     if (isU18 == true) {
       return authorrole
     } else {

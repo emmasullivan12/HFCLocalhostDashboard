@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Avatar from './Avatar.js';
+import companyList from './Companies.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
@@ -31,11 +32,12 @@ class LeaderboardItem extends Component {
   render() {
     const {user, index, isFirstItem, isLastItem, userTypeToShow, checkHasAccess, noAccessHandler, isMobile, isLoggedInUser} = this.props;
     const nameToShow = (userTypeToShow == '0' || (userTypeToShow == '1' && user.isU18 != true)) ? (user.fname + " " + user.lname) : (userTypeToShow == '1' ? user.fname : user.companyname)
-    let authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18
+    let authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, roleAndInstToShow
 
     if (userTypeToShow == '0' || userTypeToShow == '1') {
+      let companyName = getCompanyDeets(user.currco, user.currcofreetext, 'name')
       authorinsttype = user.eetstatus
-      authorinstfreetext = (user.eetstatus == 'job' ? getCompanyDeets(user.currco, user.currcofreetext, 'name') : (user.eetstatus == 'train' ? user.currtrainingprovider : (user.eetstatus == 'uni' ? user.uninamefreetext : '')))
+      authorinstfreetext = (user.eetstatus == 'job' ? companyName : (user.eetstatus == 'train' ? user.currtrainingprovider : (user.eetstatus == 'uni' ? user.uninamefreetext : '')))
       authorinst = (user.eetstatus == 'uni' ? user.uniname : '')
       authorrole = (user.eetstatus == 'job' ? user.currrole : '')
       authortraining = (user.eetstatus == 'train' ? user.currtraining : '')
@@ -43,6 +45,14 @@ class LeaderboardItem extends Component {
       authorstate = (user.eetstatus == 'none' ? user.state : '')
       authorcountry = (user.eetstatus == 'none' ? user.country : '')
       isU18 = user.isU18
+      const userHasJob = user.eetstatus == 'job'
+      if (userHasJob) {
+        const employerFromListObject = companyList.filter(co => co.label == companyName)
+        const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+        roleAndInstToShow = getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, true, (employerFromListObject.length > 0 ? employerFromListObject : null))
+      } else {
+        roleAndInstToShow = getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, false, null)
+      }
     }
 
     return(
@@ -90,8 +100,9 @@ class LeaderboardItem extends Component {
                   )}
                 </div>
                 {(userTypeToShow == '0' || userTypeToShow == '1') && (
+
                   <div className="fontSize14 mediumGreyText">
-                    {getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18)}
+                    {roleAndInstToShow && roleAndInstToShow}
                   </div>
                 )}
               </div>

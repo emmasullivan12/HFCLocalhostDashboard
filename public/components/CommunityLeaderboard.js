@@ -18,7 +18,7 @@ class CommunityLeaderboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoadingTable: true,
+      isLoadingTable: false,
       isFilteringTable: false,
       isSortingTable: false,
       filterBy: 'last30days',

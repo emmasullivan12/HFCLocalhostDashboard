@@ -7,6 +7,7 @@ import AddComment from './AddComment.js';
 import Avatar from './Avatar.js';
 import {usercdn, userImgsFolder} from './CDN.js';
 import {Check, DateCalc, TimeCalc, checkMobile} from './GeneralFunctions.js';
+import companyList from './Companies.js';
 import DeleteContentModalContent from './DeleteContentModalContent.js';
 import FullPageModal from './FullPageModal.js';
 import MenteeProfileContent from './MenteeProfileContent.js';
@@ -419,7 +420,17 @@ class FeedItem extends Component {
     } else if (contentType == 'answer' || contentType == 'general') {
       const {isTextClamped} = this.state
       const {isLoggedIn, checkHasAccess, noAccessHandler} = this.props
-      const aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry)
+
+      const authorHasJob = post.authorinsttype == 'job'
+      let aCredentialText
+      if (authorHasJob) {
+        const employerFromListObject = companyList.filter(co => co.label == post.authorinstfreetext)
+        const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+        aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry, true, (employerFromListObject.length > 0 ? employerFromListObject : null))
+      } else {
+        aCredentialText = getCredText((post.wasDefaultRole ? post.wasDefaultRole : null), post.authorinsttype, post.authorrole, post.authorroleishidden, post.authorinst, post.authorinstfreetext, post.authortraining, post.authordegree, post.authorstate, post.authorcountry, false, null)
+      }
+
       const error = false
 
       if (contentType == 'general') {
