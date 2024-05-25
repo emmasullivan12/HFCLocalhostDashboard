@@ -1,4 +1,4 @@
-// Dex last merged this code on 8th nov 2023
+// Dex last merged this code on 24th may 2024
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -31,7 +31,6 @@ class AutocompleteTagsMulti extends React.Component {
     }
 
     if (defaultChecked) {
-      console.log(defaultChecked)
       this.setState({
         values: defaultChecked,
         numSelected: defaultChecked.length
@@ -685,10 +684,8 @@ class AutocompleteTagsMulti extends React.Component {
         shortArray = values
           .slice(0,2)
       }
-console.log(shortArray)
-console.log(values)
+
       const arrayToMap = showSuggestions != true ? shortArray : values
-      console.log(arrayToMap)
 
       return (
         <div className="tagsList">
