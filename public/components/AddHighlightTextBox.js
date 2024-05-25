@@ -11,6 +11,7 @@ import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import Avatar from './Avatar.js';
 import CameraUploadContent from './CameraUploadContent.js';
 import Checkbox from './Checkbox.js';
+import companyList from './Companies.js';
 import {usercdn, userImgsFolder} from './CDN.js';
 import {Check, checkMobile, whichBrowser} from './GeneralFunctions.js';
 import FileUploadContent from './FileUploadContent.js';
@@ -254,9 +255,12 @@ class AddHighlightTextBox extends Component {
     //var credentialChecked = e.target.id
     if (authorType == 'job') {
       authorInstFreeText = e.target.dataset.instfreetext
+      const instIsOnCompanyList = companyList
+        .filter(co => co.label == authorInstFreeText)
+      const companyName = instIsOnCompanyList == true ? getCompanyDeets(authorInstFreeText, '', 'name') : getCompanyDeets('', authorInstFreeText, 'name')
       authorRole = e.target.dataset.role
       authorIsMainRole = e.target.dataset.ismainrole
-      var credentialTextToUse = authorIsMainRole == "true" ? (authorRole + ' at ' + authorInstFreeText) : ('Worked at ' + authorInstFreeText + ' as ' + authorRole)
+      var credentialTextToUse = authorIsMainRole == "true" ? (authorRole + ' at ' + companyName) : ('Worked at ' + companyName + ' as ' + authorRole)
       this.setState({
         authorType: authorType,
         authorInstFreeText: authorInstFreeText,

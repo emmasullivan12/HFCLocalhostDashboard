@@ -1036,11 +1036,11 @@ class MenteeProfileContent extends Component {
                           {isMe == "isMe" && (
                             <React.Fragment>
                               <Modal {...AddRoleModalProps}>
-                                <AddEditRoleContent addOrEdit='add' modalTitle='Add Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc='' isMain={false}/>
+                                <AddEditRoleContent addOrEdit='add' modalTitle='Add Role / Experience' roleTitle='' roleCoName='' startDate='' endDate='' roleDesc='' isMain={false}/>
                               </Modal>
                               <div className="editSectionBtn dispInlineBlock">
                                 <Modal {...EditProfileSectionModalProps}>
-                                  <AddEditRoleContent addOrEdit='add' modalTitle='Add Role / Experience' roleTitle='' roleCo='' startDate='' endDate='' roleDesc='' isMain={false} />
+                                  <AddEditRoleContent addOrEdit='add' modalTitle='Add Role / Experience' roleTitle='' roleCoName='' startDate='' endDate='' roleDesc='' isMain={false} />
                                 </Modal>
                               </div>
                             </React.Fragment>
