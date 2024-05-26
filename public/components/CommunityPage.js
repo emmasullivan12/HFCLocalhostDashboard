@@ -7,6 +7,7 @@ import {checkMobile, metaAdder, DateCalc, TimeCalc, LoadingSpinner} from './Gene
 import Avatar from './Avatar.js';
 import AddHighlightModalContent from "./AddHighlightModalContent";
 import {cdn} from './CDN.js';
+import companyList from './Companies.js';
 import CommunityOverview from "./CommunityOverview.js";
 import CommunityQuestions from "./CommunityQuestions.js";
 import CommunityLeaderboard from "./CommunityLeaderboard.js";
@@ -285,7 +286,7 @@ class CommunityPage extends React.Component {
     }
     //const activityArr = []
     const activityArr = [
-      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'Pladis', menteefname: 'Bob', mentoruid: '123'},
+      {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'John', mentorlname: 'Blue', mentorinsttype: 'job', mentorText: 'pladis Global', menteefname: 'Bob', mentoruid: '123'},
       {type: "chatFeedbackRec", timestamp: '2020-02-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Dexter', mentorlname: 'Boyce', mentorinsttype: 'train', mentorText: 'TrainingCo', menteefname: 'Barbara', mentoruid: '123'},
       {type: "newMatch", timestamp: '2020-09-04T13:30:50.667Z', qTitle: null, qid: null, relatedqid: null, qURL: null, mentorfname: 'Lily', mentorlname: 'Red', mentorinsttype: 'sch', mentorText: '11', menteefname: 'Bill', mentoruid: '123'},
       {type: "question", timestamp: '2020-01-04T13:30:50.667Z', qTitle: "What to wear to an interview for the first time if you are nervous", qid: '123', relatedqid: null, qURL: "/what-wear-to-interview", mentorfname: null, mentorlname: null, mentorinsttype: null, mentorText: null, menteefname:'David', mentoruid: null},
@@ -665,6 +666,23 @@ class CommunityPage extends React.Component {
   {type: "answer", timestamp: '2020-09-04T13:30:50.667Z', qTitle: "Where is the best part of London to work?", qURL: "https://app.prospela.com/questions/1234/what-to-wear", mentorfname: 'Samantha', mentorlname: 'Jones', mentorText: 'SATC', menteefname: null, mentoruid: '123'} */
   renderActivityType = (activity, isLast) => {
     const {checkHasAccess, noAccessHandler, updatePathName} = this.props
+    let mentorTextToShow
+
+    if (activity.mentorinsttype == 'job') {
+      const employerFromListObject = companyList.filter(co => co.label == activity.mentorText)
+      const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+      if (employerIsOnOurListOfCos == true) {
+        const employerURL = employerFromListObject[0].urlText
+        const companyURLending = "/companies/" + employerURL
+        const companyURL = "https://app.prospela.com" + companyURLending
+        mentorTextToShow = <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} className="link">{activity.mentorText}</Link>
+      } else {
+        mentorTextToShow = activity.mentorText
+      }
+    } else {
+      mentorTextToShow = activity.mentorText
+    }
+
     switch(activity.type) {
       case 'newMatch':
         return (
@@ -684,13 +702,13 @@ class CommunityPage extends React.Component {
               <span className="darkGreyText fontSize14">
                 {activity.mentorinsttype != 'sch' ? (
                   <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
-                    <MentorProfileContent />
+                    <MentorProfileContent updatePathName={updatePathName}/>
                   </FullPageModal>
                 ) : (
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
                 )}
               </span>
-              <span className="fontSize14"> from {activity.mentorText} is matched with a new mentee</span>
+              <span className="fontSize14"> from {mentorTextToShow} is matched with a new mentee</span>
               <span className="mediumGreyText textLeft fontSize12"> <DateCalc time={activity.timestamp} showPureDate /> at <TimeCalc time={activity.timestamp} /></span>
             </div>
           </div>
@@ -713,7 +731,7 @@ class CommunityPage extends React.Component {
               <span className="darkGreyText fontSize14">
                 {activity.mentorinsttype != 'sch' ? (
                   <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
-                    <MentorProfileContent />
+                    <MentorProfileContent updatePathName={updatePathName}/>
                   </FullPageModal>
                 ) : (
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>
@@ -770,7 +788,7 @@ class CommunityPage extends React.Component {
               <span className="darkGreyText fontSize14">
                 {activity.mentorinsttype != 'sch' ? (
                   <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={activity.mentorfname + " " + activity.mentorlname}>
-                    <MentorProfileContent />
+                    <MentorProfileContent updatePathName={updatePathName}/>
                   </FullPageModal>
                 ) : (
                   <span className="bold">{activity.mentorfname} {activity.mentorlname}</span>

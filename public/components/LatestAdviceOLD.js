@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-import HomepageCTAContainer from './HomepageCTAContainer.js';
+import HomepageCTAContainer from './HomepageCTAContainerOLD.js';
 import PageHeader from './PageHeader.js';
 import "../css/HomePage.css";
 
@@ -45,13 +45,14 @@ const PageHeaderProps = {
 
 // Will prompt user to complete full sign up (if not completed), otherwise  shows MentorMatch status (i.e. waiting or matches made)
 class LatestAdvice extends Component {
-  render() {
 
+  render() {
+    const {updatePathName} = this.props
     return (
       <div className="contentContainer">
         <PageHeader {...PageHeaderProps} />
         <div className="page-panel">
-          <HomepageCTAContainer groups={DUMMY_GROUP_LIST}/>
+          <HomepageCTAContainer groups={DUMMY_GROUP_LIST} updatePathName={updatePathName}/>
         </div>
       </div>
     )

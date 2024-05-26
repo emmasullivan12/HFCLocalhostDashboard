@@ -505,12 +505,12 @@ class FeedItem extends Component {
                     {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
                       {post.authorUserRole == 'mentee' ? (
                           <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
-                            <MenteeProfileContent />
+                            <MenteeProfileContent updatePathName={updatePathName} />
                           </FullPageModal>
                           )
                         : (
                           <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={post.isanon ? ("Anonymous" + (hasMinVerif == true ? "" : ", ")) : (post.fname + (post.authorinsttype == 'sch' ? "" : (" " + post.lname)) + (hasMinVerif == true ? "" : ", "))}>
-                            <MentorProfileContent />
+                            <MentorProfileContent updatePathName={updatePathName}/>
                           </FullPageModal>
                         )
                       }
@@ -705,6 +705,7 @@ class FeedItem extends Component {
                         type="g"
                         checkHasAccess={checkHasAccess}
                         noAccessHandler={noAccessHandler}
+                        updatePathName={updatePathName}
                       />
                     {/*  <AddComment
                         showGeneralNotAllowedText

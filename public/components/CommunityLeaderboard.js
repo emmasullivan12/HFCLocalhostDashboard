@@ -107,6 +107,7 @@ class CommunityLeaderboard extends React.Component {
               isFirstItem={(index + 1) == 1}
               isLastItem={(index + 1) == mentorsSorted.length}
               isLoggedInUser={isMe}
+              updatePathName={updatePathName}
             />
           );
         }, () => {
@@ -138,6 +139,7 @@ class CommunityLeaderboard extends React.Component {
               isFirstItem={(index + 1) == 1}
               isLastItem={(index + 1) == menteesSorted.length}
               isLoggedInUser={isMe}
+              updatePathName={updatePathName}
             />
           );
         }, () => {
@@ -169,6 +171,7 @@ class CommunityLeaderboard extends React.Component {
               isMobile={isMobile}
               isFirstItem={(index + 1) == 1}
               isLastItem={(index + 1) == companiesSorted.length}
+              updatePathName={updatePathName}
             />
           );
         }, () => {

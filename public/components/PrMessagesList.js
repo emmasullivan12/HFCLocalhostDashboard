@@ -666,7 +666,7 @@ class PrMessagesList extends Component {
       },
     ];
 
-    const {handleLastPic, founders, pms, scrollToNewMessage} = this.props
+    const {handleLastPic, founders, pms, scrollToNewMessage, updatePathName} = this.props
 
     var prevMsg = {};
 
@@ -700,6 +700,7 @@ class PrMessagesList extends Component {
                   isProspelaTeam={isProspelaTeam}
                   isFounder={isFounder}
                   isPM={isPM}
+                  updatePathName={updatePathName}
                 //  grabSchOrUni={grabSchOrUni}
                 //  ukUnisListLoaded={ukUnisListLoaded}
                 />

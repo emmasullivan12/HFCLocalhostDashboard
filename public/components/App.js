@@ -23,7 +23,7 @@ import CommunityPage from "./CommunityPage";
 import CoProfile from "./CoProfile";
 import GroupsMenu from "./GroupsMenu";
 import FullPageModal from './FullPageModal.js';
-import LatestAdvice from "./LatestAdvice";
+import LatestAdvice from "./LatestAdviceOLD";
 import LgdInUsrProfile from "./LgdInUsrProfile";
 import {LoadingSpinner, showNotifFavicon, hideNotifFavicon, whichBrowser, isiOS} from './GeneralFunctions.js';
 import MainMenu from "./MainMenu";
@@ -632,7 +632,7 @@ class Dashboard extends Component{
                 <div className="c-scrollbar__hider" ref={this.scrollBarRef} onScroll={moveScroller} onMouseEnter={this.showScroll} onMouseLeave={this.hideScroll}>
                   <div className="menuContainer">
                 {/*    <MainMenu userRole={userRole} onClick={this.closeMenu} onMouseDown={this.onMouseDown}/> */}
-                    <MainMenu userRole={userRole} onMouseDown={this.onMouseDown} isLoggedIn={isLoggedIn} onClick={this.handleMenuItemClick} pathName={pathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
+                    <MainMenu userRole={userRole} onMouseDown={this.onMouseDown} isLoggedIn={isLoggedIn} onClick={this.handleMenuItemClick} pathName={pathName} updatePathName={this.updatePathName} checkHasAccess={this.hasAccess} noAccessHandler={() => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "mainMenu")}}/>
                     <div className="menuBreak"/>
                     <ChatMenu chats={DUMMY_CHAT_LIST} chatGroup='Direct Messages' onClick={this.handleMenuItemClick}/>
                     <div className="menuBreak"/>
@@ -684,8 +684,8 @@ class Dashboard extends Component{
                 <Route path="/questions/:qid" render={(props) => <QA {...props} updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} isLoggedIn={isLoggedIn} oneMoreTilMaxViewsReached={oneMoreTilMaxViewsReached} maxViewsReached={maxViewsReached} cameFromFeedUnlockBtn={cameFromFeedUnlockBtn} updatePathName={this.updatePathName} relatedQsArr={relatedQsArr} trendingQsArr={trendingQsArr} />}/>
                 <Route path="/companies/:companyname" render={(props) => <CoProfile {...props} updateFeedScrollPos={this.updateCommFeedScrollPos} prevFeedScrollPos={prevCommFeedScrollPos} initialTabToView="overview" updateDocumentTitle={this.updateDocumentTitle} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(null, "coProfile")}} isLoggedIn={isLoggedIn} userRole={userRole} updatePathName={this.updatePathName} maxViewsReached={maxViewsReached}/>}/>
                 <Route exact path="/my-activity" render={(props) => <UserActivityDashboard {...props} userRole={userRole} updatePathName={this.updatePathName}/>}/>
-                <Route path="/messages/Prospela" component={ProspelaBot}/>
-                <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} />}/>
+                <Route path="/messages/Prospela" component={ProspelaBot} updatePathName={this.updatePathName}/>
+                <Route path="/messages/:chatid" render={(props) => <ProspelaBot {...props} isGroup={false} updatePathName={this.updatePathName} />}/>
                 <Route path="/community/industry/:indname/leaderboard" render={(props) => <CommunityPage {...props} type="industry" updateFeedScrollPos={this.updateCommFeedScrollPos} prevFeedScrollPos={prevCommFeedScrollPos} userRole={userRole} initialTabToView="leaderboard" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
                 <Route path="/community/industry/:indname/questions" render={(props) => <CommunityPage {...props} type="industry" updateFeedScrollPos={this.updateCommFeedScrollPos} prevFeedScrollPos={prevCommFeedScrollPos} userRole={userRole} initialTabToView="questions" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>
                 <Route path="/community/industry/:indname" render={(props) => <CommunityPage {...props} type="industry" updateFeedScrollPos={this.updateCommFeedScrollPos} prevFeedScrollPos={prevCommFeedScrollPos} userRole={userRole} initialTabToView="overview" isLoggedIn={isLoggedIn} checkHasAccess={this.hasAccess} noAccessHandler={(e, origin) => {this.showModal("SignUpPrompt"), this.updateClickOrigin(e, origin)}} maxViewsReached={maxViewsReached} handleUnlockBtnClick={this.handleUnlockBtnClick} updatePathName={this.updatePathName} highlightStepsBox={this.highlightStepsBox} updateDocumentTitle={this.updateDocumentTitle} />}/>

@@ -53,7 +53,7 @@ class MentorCardContent extends Component {
 
   render() {
     const {handleClick} = this;
-    const {mentor} = this.props
+    const {mentor, updatePathName} = this.props
     const {isOverflow} = this.state;
 
     return(
@@ -83,7 +83,7 @@ class MentorCardContent extends Component {
             {mentor.role} &#64; {mentor.company}
           </div>
           <FullPageModal {...MentorProfileModalProps}>
-            <MentorProfileContent />
+            <MentorProfileContent updatePathName={updatePathName}/>
           </FullPageModal>
           <div className="how-mtchd-container">
             {(mentor.role_vs_role_desired==='t' || mentor.industry_pref==='t') && (
@@ -151,13 +151,14 @@ class MentorCardContent extends Component {
 class MentorCard extends Component {
   render() {
     const cards = [];
-    const {mentors} = this.props
+    const {mentors, updatePathName} = this.props
 
     mentors.forEach((mentor) => {
       cards.push(
         <MentorCardContent
           mentor={mentor}
           key={mentor.id}
+          updatePathName={updatePathName}
         />
       );
     });
@@ -174,6 +175,7 @@ class MentorCard extends Component {
 
 class MentorCardMatches extends Component {
   render() {
+    const {updatePathName} = this.props
     // const className = this.props.PassedOnMentor ? 'UserCardContainer-passed' : 'UserCardContainer';
     return (
       // <div className={className}>
@@ -191,7 +193,7 @@ class MentorCardMatches extends Component {
         </div>
         <div className="cards-container">
           <Carousel>
-            <MentorCard mentors={DUMMY_MENTOR_DATA} />
+            <MentorCard mentors={DUMMY_MENTOR_DATA} updatePathName={updatePathName}/>
           </Carousel>
         </div>
       </div>

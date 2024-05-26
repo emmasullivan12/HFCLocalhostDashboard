@@ -43,6 +43,7 @@ const AddHighlightSmlModalProps = {
 
 class MentorHomepageCTAContainer extends Component {
   render() {
+    const {updatePathName} = this.props
     const step = 'didEduEmailVerif'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const groups = [];
@@ -101,7 +102,7 @@ class MentorHomepageCTAContainer extends Component {
           <MentorTraining /> // If completed this but didnt want to do U18 then update to 'fullSUTrain', otherwise 'fullSUidTrain'
         )}
         {(step === 'fullSUTrain' || step === 'fullSUidTrain') && (
-          <MentorMatches userRole='mentor' /> // to do
+          <MentorMatches userRole='mentor' updatePathName={updatePathName}/> // to do
         )}
         <Modal {...AddHighlightModalProps}>
           <AddHighlightModalContent modalID="modal-addHighlight" userRole='mentor'/>

@@ -47,6 +47,7 @@ const AddHighlightSmlModalProps = {
 
 class HomepageCTAContainer extends Component {
   render() {
+    const {updatePathName} = this.props
     const step = 'joinedProg'; // THIS IS THE SAME AS STEP IN APP.JS 'didShortSU', 'autoEnroll','joinedProg', 'didFullSUtf', 'didTrain'
     const hasInvite = false;
     const is18plus = 1;
@@ -113,7 +114,7 @@ class HomepageCTAContainer extends Component {
           <MentorMatches userRole='mentee'/>
         )}*/}
         {step === 'didSafeG' && hasInvite === false && (
-          <MentorMatches userRole='mentee'/>
+          <MentorMatches userRole='mentee' updatePathName={updatePathName}/>
         )}
         {(is18plus != 1 && step === 'didSafeG') || (is18plus === 1 && step === 'didFullSUtf') && hasInvite === true && (
           <AutoEnrollPrompt />

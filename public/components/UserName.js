@@ -30,7 +30,7 @@ const MentorProfileUsrNameModalProps = {
 
 class UserName extends Component {
   render() {
-    const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle, isAnon} = this.props;
+    const {fname, lname, userUID, isProspelaAuto, isProspelaTeam, isFounder, isPM, showOnline, smallIdle, isAnon, updatePathName} = this.props;
   /*  console.log(grabSchOrUni)
     console.log(ukUnisListLoaded)*/
     const userRole = 'mentor'

@@ -79,7 +79,7 @@ class PrModAuto extends Component {
   }
 
   render() {
-    const {message, isProspelaAuto, isProspelaTeam} = this.props;
+    const {message, isProspelaAuto, isProspelaTeam, updatePathName} = this.props;
 
     const matchid = message.prModAuto.matchid;
   //  const matchDetail = this.grabMatchDetail(matchid);
@@ -343,7 +343,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName} />
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -408,7 +408,7 @@ class PrModAuto extends Component {
                             <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
                           </div>
                           <FullPageModal {...MentorProfileModalProps}>
-                            <MentorProfileContent />
+                            <MentorProfileContent updatePathName={updatePathName}/>
                           </FullPageModal>
                         </React.Fragment>
                       )}
@@ -476,7 +476,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -501,7 +501,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -567,7 +567,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -629,7 +629,7 @@ class PrModAuto extends Component {
                         <div>{ convertHobbies(userProfileToShow.hobbies, userProfileToShow.hobbiesfreetext) }</div>
                       </div>
                       <FullPageModal {...MenteeProfileModalProps}>
-                        <MenteeProfileContent />
+                        <MenteeProfileContent updatePathName={updatePathName}/>
                       </FullPageModal>
                     </div>
                   </div>
@@ -704,7 +704,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -729,7 +729,7 @@ class PrModAuto extends Component {
               <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
               <div className="message-content-box">
                 <div className="sent-msg-info">
-                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                  <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                   {isProspelaTeam && (
                     <UserBadge badgeType='isPrTeam' />
                   )}
@@ -754,7 +754,7 @@ class PrModAuto extends Component {
             <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                 {isProspelaTeam && (
                   <UserBadge badgeType='isPrTeam' />
                 )}
@@ -782,7 +782,7 @@ class PrModAuto extends Component {
             <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
+                <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
                 {isProspelaTeam && (
                   <UserBadge badgeType='isPrTeam' />
                 )}

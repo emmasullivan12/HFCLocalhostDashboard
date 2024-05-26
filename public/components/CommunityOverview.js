@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {cdn} from './CDN.js';
 import BarChart from './BarChart.js';
 import Carousel from './Carousel.js';
+import companyList from './Companies.js';
 import DoughnutChart from './DoughnutChart.js';
 import {LoadingSpinner, whichBrowser} from './GeneralFunctions.js';
 import EditSkillsContent from './EditSkillsContent.js';
@@ -424,16 +425,40 @@ class CommunityOverview extends React.Component {
                   <div className="dispBlock marginTop10">
                     <div className="tagsList">
                       {companiesOfTopMentors.map((company) => {
-                        return (
-                          <span className="rankingItem" key={company}>
-                            <span
-                              className="multiple value paddingR displayBlock displayBlock"
-                              id={company}
-                            >
-                              {company.nameToShow}
+                        const employerFromListObject = companyList.filter(co => co.label == company.nameToShow)
+                        const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+                        let companyNameToShow
+
+                        if (employerIsOnOurListOfCos == true) {
+                          const employerURL = employerFromListObject[0].urlText
+                          const companyURLending = "/companies/" + employerURL
+                          return (
+                            <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={company.nameToShow} className="link rankingItem tooltip" onClick={updatePathName}>
+                              <span
+                                className="multiple clickable value paddingR displayBlock"
+                                id={company.nameToShow}
+                              >
+                                {company.nameToShow}
+                              </span>
+                              {!isSafari && (
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
+                                  <i className="fas fa-sign-out-alt" /> Go to Company Profile
+                                </span>
+                              )}
+                            </Link>
+                          )
+                        } else {
+                          return (
+                            <span className="rankingItem" key={company.nameToShow}>
+                              <span
+                                className="multiple value paddingR displayBlock displayBlock"
+                                id={company.nameToShow}
+                              >
+                                {company.nameToShow}
+                              </span>
                             </span>
-                          </span>
-                        )
+                          )
+                        }
                       })}
                     </div>
                   </div>
@@ -502,7 +527,7 @@ class CommunityOverview extends React.Component {
                                   {skill.label}
                                 </span>
                                 {!isSafari && (
-                                  <span className="tooltiptext below width125px normalLineheight">
+                                  <span className="tooltiptext below noMarginL width125px normalLineheight">
                                     <i className="fas fa-sign-out-alt" /> Go to skills community
                                   </span>
                                 )}
@@ -517,7 +542,7 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
                                   We don&#39;t have an active skills community for this yet
                                 </span>
                               </Link>
@@ -620,7 +645,7 @@ class CommunityOverview extends React.Component {
                                 {ind.label}
                               </span>
                               {!isSafari && (
-                                <span className="tooltiptext below width125px normalLineheight">
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
                                   <i className="fas fa-sign-out-alt" /> Go to industry community
                                 </span>
                               )}
@@ -997,7 +1022,7 @@ class CommunityOverview extends React.Component {
                                   {skill.label}
                                 </span>
                                 {!isSafari && (
-                                  <span className="tooltiptext below width125px normalLineheight">
+                                  <span className="tooltiptext below noMarginL width125px normalLineheight">
                                     <i className="fas fa-sign-out-alt" /> Go to skills community
                                   </span>
                                 )}
@@ -1012,7 +1037,7 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
                                   We don&#39;t have an active skills community for this yet
                                 </span>
                               </Link>
@@ -1087,7 +1112,7 @@ class CommunityOverview extends React.Component {
                                   {skill.label}
                                 </span>
                                 {!isSafari && (
-                                  <span className="tooltiptext below width125px normalLineheight">
+                                  <span className="tooltiptext below noMarginL width125px normalLineheight">
                                     <i className="fas fa-sign-out-alt" /> Go to skills community
                                   </span>
                                 )}
@@ -1102,7 +1127,7 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
                                   We don&#39;t have an active skills community for this yet
                                 </span>
                               </Link>
@@ -1177,7 +1202,7 @@ class CommunityOverview extends React.Component {
                                   {skill.label}
                                 </span>
                                 {!isSafari && (
-                                  <span className="tooltiptext below width125px normalLineheight">
+                                  <span className="tooltiptext below noMarginL width125px normalLineheight">
                                     <i className="fas fa-sign-out-alt" /> Go to skills community
                                   </span>
                                 )}
@@ -1192,7 +1217,7 @@ class CommunityOverview extends React.Component {
                                 >
                                   {skill.label}
                                 </span>
-                                <span className="tooltiptext below width125px normalLineheight">
+                                <span className="tooltiptext below noMarginL width125px normalLineheight">
                                   We don&#39;t have an active skills community for this yet
                                 </span>
                               </Link>

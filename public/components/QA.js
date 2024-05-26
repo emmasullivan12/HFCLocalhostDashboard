@@ -968,12 +968,12 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                                   {/*  <strong>{qaItem.isanon ? "" : (qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname)))}</strong> */}
                                     {qaItem.authorUserRole == 'mentee' ? (
                                         <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
-                                          <MenteeProfileContent />
+                                          <MenteeProfileContent updatePathName={updatePathName}/>
                                         </FullPageModal>
                                         )
                                       : (
                                         <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={qaItem.fname + (qaItem.authorinsttype == 'sch' ? "" : (" " + qaItem.lname))}>
-                                          <MentorProfileContent />
+                                          <MentorProfileContent updatePathName={updatePathName}/>
                                         </FullPageModal>
                                       )
                                     }
@@ -1001,6 +1001,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                         type="q"
                         checkHasAccess={checkHasAccess}
                         noAccessHandler={noAccessHandler}
+                        updatePathName={updatePathName}
                       />
                     </div>
                   </div>
@@ -1155,12 +1156,12 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                                         {/*  <strong>{hid.isanon ? "" : (hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname)))}</strong> */}
                                           {hid.authorUserRole == 'mentee' ? (
                                               <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
-                                                <MenteeProfileContent />
+                                                <MenteeProfileContent updatePathName={updatePathName}/>
                                               </FullPageModal>
                                               )
                                             : (
                                               <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={hid.fname + (aAuthorinsttype == 'sch' ? "" : (" " + hid.lname))}>
-                                                <MentorProfileContent />
+                                                <MentorProfileContent updatePathName={updatePathName}/>
                                               </FullPageModal>
                                             )
                                           }
@@ -1202,6 +1203,7 @@ console.log("signUpPromptBannerIsSticky: "+signUpPromptBannerIsSticky)
                               maxViewsReached={maxViewsReached}
                               checkHasAccess={checkHasAccess}
                               noAccessHandler={noAccessHandler}
+                              updatePathName={updatePathName}
                             />
                           </div>
                         </div>

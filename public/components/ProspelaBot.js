@@ -8,7 +8,7 @@ import "../css/ProspelaBot.css";
 
 class ProspelaBot extends Component {
   render() {
-    const {isGroup} = this.props
+    const {isGroup, updatePathName} = this.props
     const group = {
       groupname: "Access:VFX",
       about: "this is about text here about avfx and what our mission is! I will explain a bit more about what we do and why, but similar length to a twitter bio",
@@ -84,10 +84,12 @@ class ProspelaBot extends Component {
           channelType={group.channels[0].type} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
           channelAbout={group.channels[0].about} // Find from Redux ... will also use to decide what to show in flex container for different channels if we decide they are different
           channelAllowed={group.channels[0].allowed}
+          updatePathName={updatePathName}
           flexContent={isGroup ? (
             <GroupFlexContent
               group={group}
               groupUsers={groupUsers}
+              updatePathName={updatePathName}
             />
           )
           //: <MtchdUsrProfile />

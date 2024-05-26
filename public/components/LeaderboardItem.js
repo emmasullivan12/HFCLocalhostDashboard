@@ -3,7 +3,8 @@
 import React, { Component } from "react";
 import {
   Route,
-  NavLink
+  NavLink,
+  Link
 } from "react-router-dom";
 
 import Avatar from './Avatar.js';
@@ -30,9 +31,9 @@ const MenteeProfileUsrNameModalProps = {
 class LeaderboardItem extends Component {
 
   render() {
-    const {user, index, isFirstItem, isLastItem, userTypeToShow, checkHasAccess, noAccessHandler, isMobile, isLoggedInUser} = this.props;
+    const {user, index, isFirstItem, isLastItem, userTypeToShow, checkHasAccess, noAccessHandler, isMobile, isLoggedInUser, updatePathName} = this.props;
     const nameToShow = (userTypeToShow == '0' || (userTypeToShow == '1' && user.isU18 != true)) ? (user.fname + " " + user.lname) : (userTypeToShow == '1' ? user.fname : user.companyname)
-    let authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, roleAndInstToShow
+    let authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, roleAndInstToShow, companyNameToShow
 
     if (userTypeToShow == '0' || userTypeToShow == '1') {
       let companyName = getCompanyDeets(user.currco, user.currcofreetext, 'name')
@@ -52,6 +53,18 @@ class LeaderboardItem extends Component {
         roleAndInstToShow = getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, true, (employerFromListObject.length > 0 ? employerFromListObject : null))
       } else {
         roleAndInstToShow = getRoleAndInst(authorinsttype, authorinstfreetext, authorinst, authorrole, authortraining, authordegree, authorstate, authorcountry, isU18, false, null)
+      }
+    } else if (userTypeToShow == '2') {
+      const employerFromListObject = companyList.filter(co => co.label == nameToShow)
+      const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+
+      if (employerIsOnOurListOfCos == true) {
+        const employerURL = employerFromListObject[0].urlText
+        const companyURLending = "/companies/" + employerURL
+        const companyURL = "https://app.prospela.com" + companyURLending
+        companyNameToShow = <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} className="link">{nameToShow}</Link>
+      } else {
+        companyNameToShow = nameToShow
       }
     }
 
@@ -87,20 +100,22 @@ class LeaderboardItem extends Component {
                 <div className="darkGreyText fontSize14">
                   {userTypeToShow == '0' && (
                     <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={nameToShow}>
-                      <MentorProfileContent />
+                      <MentorProfileContent updatePathName={updatePathName}/>
                     </FullPageModal>
                   )}
                   {(userTypeToShow == '1' && isU18 != true) && (
                     <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={nameToShow}>
-                      <MenteeProfileContent />
+                      <MenteeProfileContent updatePathName={updatePathName}/>
                     </FullPageModal>
                   )}
-                  {(userTypeToShow == '2' || (userTypeToShow == '1' && isU18 == true)) && (
+                  {(userTypeToShow == '1' && isU18 == true) && (
                     <span className="bold">{nameToShow}</span>
+                  )}
+                  {(userTypeToShow == '2') && (
+                    <span className="bold">{companyNameToShow}</span>
                   )}
                 </div>
                 {(userTypeToShow == '0' || userTypeToShow == '1') && (
-
                   <div className="fontSize14 mediumGreyText">
                     {roleAndInstToShow && roleAndInstToShow}
                   </div>

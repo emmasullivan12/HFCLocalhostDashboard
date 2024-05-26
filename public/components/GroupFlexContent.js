@@ -9,16 +9,18 @@ import "../css/GroupFlexContent.css";
 
 class GroupFlexContent extends Component {
   render() {
-    const {group, groupUsers} = this.props
+    const {group, groupUsers, updatePathName} = this.props
     return (
       <React.Fragment>
         <GroupAbout
           group={group}
           groupUsers={groupUsers}
+          updatePathName={updatePathName}
         />
         <GroupUsers
           group={group}
           groupUsers={groupUsers}
+          updatePathName={updatePathName}
         />
       </React.Fragment>
     );

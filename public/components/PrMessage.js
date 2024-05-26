@@ -73,7 +73,7 @@ function WelcomeMessage(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} updatePathName={props.updatePathName}/>
               <UserBadge badgeType='isPrBot' />
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
@@ -105,7 +105,7 @@ function FinishedSUMessage(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} updatePathName={props.updatePathName}/>
               <UserBadge badgeType='isPrBot' />
               <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
             </div>
@@ -154,7 +154,7 @@ function StdMessage(props) {
             <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
             <div className="message-content-box">
               <div className="sent-msg-info">
-                <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+                <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM} updatePathName={props.updatePathName}/>
                 {props.isProspelaTeam && (
                   <UserBadge badgeType='isPrTeam' />
                 )}
@@ -197,7 +197,7 @@ function DisplayFile(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM} updatePathName={props.updatePathName}/>
               {props.isProspelaTeam && (
                 <UserBadge badgeType='isPrTeam' />
               )}
@@ -244,7 +244,7 @@ function MessageNotSent(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM} updatePathName={props.updatePathName}/>
               {props.isProspelaTeam && (
                 <UserBadge badgeType='isPrTeam' />
               )}
@@ -277,7 +277,7 @@ function UploadNotSent(props) {
           <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
           <div className="message-content-box">
             <div className="sent-msg-info">
-              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM}/>
+              <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} isProspelaTeam={props.isProspelaTeam} isFounder={props.isFounder} isPM={props.isPM} updatePathName={props.updatePathName}/>
               {props.isProspelaTeam && (
                 <UserBadge badgeType='isPrTeam' />
               )}
@@ -392,7 +392,7 @@ function PrAuto(props) {
                 <Avatar userID={props.message.uid} userName={props.message.author} isProspelaAuto={props.isProspelaAuto} picSize={80}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto}/>
+                    <UserName fname={props.message.author} userUID={props.message.uid} isProspelaAuto={props.isProspelaAuto} updatePathName={props.updatePathName}/>
                     <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={props.message.ts} /></span>
                   </div>
@@ -466,7 +466,7 @@ function PrAuto(props) {
 class PrMessage extends Component {
 
   render() {
-  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto, isFounder, isPM, isProspelaTeam} = this.props;
+  const {message,showDateHeader,isAdjacent, isLastPic, handleLastPic, isProspelaAuto, isFounder, isPM, isProspelaTeam, updatePathName} = this.props;
 
   /*border-color: red;*/
     return (
@@ -504,6 +504,7 @@ class PrMessage extends Component {
           isProspelaTeam={isProspelaTeam}
           isFounder={isFounder}
           isPM={isPM}
+          updatePathName={updatePathName}
         //  grabSchOrUni={grabSchOrUni}
         //  ukUnisListLoaded={ukUnisListLoaded}
         />
@@ -515,36 +516,36 @@ class PrMessage extends Component {
 class PrMessageContents extends Component {
 
   render() {
-    const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic, isFounder, isPM, isProspelaTeam} = this.props
+    const {isProspelaAuto, message, isAdjacent, isLastPic, handleLastPic, isFounder, isPM, isProspelaTeam, updatePathName} = this.props
     const userRole = 'mentee'
     switch (message.subtype) {
       case "welcome":
-        return <WelcomeMessage message={message} userRole={userRole} isProspelaAuto/>
+        return <WelcomeMessage message={message} userRole={userRole} isProspelaAuto updatePathName={updatePathName}/>
       case "finTraining":
-        return <FinishedSUMessage message={message} userRole={userRole} isProspelaAuto/>
+        return <FinishedSUMessage message={message} userRole={userRole} isProspelaAutoupdatePathName={updatePathName}/>
       case "chatFeedbackReq":
-        return <ChatFeedbackReq message={message} userRole={userRole} isProspelaAuto/>
+        return <ChatFeedbackReq message={message} userRole={userRole} isProspelaAuto updatePathName={updatePathName}/>
       case "std":
-        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} updatePathName={updatePathName}/>
       case "file":
-        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
+        return <DisplayFile message={message} isLastPic={isLastPic} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} updatePathName={updatePathName}/>
       case "prAuto":
-        return <PrAuto message={message} isProspelaAuto/>
+        return <PrAuto message={message} isProspelaAuto updatePathName={updatePathName}/>
 
       // These include auto messages to mentee with match profile, to mentor with mentee request message, and to mentee if mentor rejected/accepted
       case "prModAuto":
-        return <PrModAuto message={message} isProspelaTeam={isProspelaTeam} />
+        return <PrModAuto message={message} isProspelaTeam={isProspelaTeam} updatePathName={updatePathName}/>
       case 'notSent':
-        return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
+        return <MessageNotSent message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} updatePathName={updatePathName}/>
       case 'uploadNotSent':
-        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
+        return <UploadNotSent message={message} handleLastPic={handleLastPic} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} updatePathName={updatePathName}/>
 
   /*    case "menteeRej":
       case "mentorRej":
         return <UserRej message={message} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} />
 */
       default:
-        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM}/>
+        return <StdMessage message={message} isAdjacent={isAdjacent} isProspelaAuto={isProspelaAuto} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} updatePathName={updatePathName}/>
     }
   }
 }

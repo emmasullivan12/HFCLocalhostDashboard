@@ -518,7 +518,7 @@ class ChatWindow extends Component {
 
   render() {
   const {isLoadingMsgs, isFlexContainerOpen, isDevice, newMsgBannerSeen, newMsgsBelow, newMsgsAbove} = this.state;
-  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, channelAllowed, founders, pms} = this.props;
+  const {flexContent, isGroup, groupName, channelName, channelType, channelAbout, channelAllowed, founders, pms, updatePathName} = this.props;
   const {onScroll} = this;
   const isOffline = false;
   let feedbackDone;
@@ -611,7 +611,7 @@ class ChatWindow extends Component {
                   <div className="title">Your Relationship Manager</div>
                   <div className="group-detail-item bright">
                     <Avatar userID={relMgrToShow[0].uid} userName={relMgrToShow[0].fname} isGroupFlex smallIdle picSize={40}/>
-                    <UserName userUID={relMgrToShow[0].uid} fname={relMgrToShow[0].fname} lname={relMgrToShow[0].lname} smallIdle/>
+                    <UserName userUID={relMgrToShow[0].uid} fname={relMgrToShow[0].fname} lname={relMgrToShow[0].lname} smallIdle updatePathName={updatePathName}/>
                     <UserBadge badgeType='isPrTeam' />
                   </div>
                 </div>
@@ -694,6 +694,7 @@ class ChatWindow extends Component {
                 showNewMsgsNotif={this.showNewMsgsNotif}
                 scrollToNewMessage={this.scrollToNewMessage}
                 newMsgBannerSeen={newMsgBannerSeen}
+                updatePathName={updatePathName}
               //  grabSchOrUni={this.grabSchOrUni}
               //  ukUnisListLoaded={ukUnisListLoaded}
               />

@@ -29,7 +29,7 @@ class MentorMatches extends Component {
 
   render() {
     const {matchstatus} = this.state;
-    const {userRole} = this.props
+    const {userRole, updatePathName} = this.props
     const prevMatchesAvail = true; // Need to check if matches given before are still available / mentee didn't pass on them and will show them
 
     switch (matchstatus) {
@@ -55,7 +55,7 @@ class MentorMatches extends Component {
       case 2:
         return (
           <React.Fragment>
-            <MentorCardMatches />
+            <MentorCardMatches updatePathName={updatePathName}/>
           </React.Fragment>
         );
       case 3:
@@ -81,7 +81,7 @@ class MentorMatches extends Component {
         if (prevMatchesAvail) {
           return (
             <React.Fragment>
-              <MentorCardMatches />
+              <MentorCardMatches updatePathName={updatePathName}/>
             </React.Fragment>
           );
         } else {

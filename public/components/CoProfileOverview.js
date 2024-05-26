@@ -131,14 +131,19 @@ class CoProfileOverview extends React.Component {
   }
 
   renderWelcomeMsg = (isPageManager, approvalStatus) => {
-    const {handleSubmitPaidForm, companyName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
+    const {handleSubmitPaidForm, companyName, upgradeCoProfileQuestions, fullCoProfileQuestions, fromThisCo, renderFromThisCoPromptModal} = this.props
 
-    if (!isPageManager) {
+    if (!isPageManager && !fromThisCo) {
       return (
         <div>
           Discover {companyName}: learn directly from real employees, and explore work-life reality
         </div>
       )
+    } else if (fromThisCo && approvalStatus == '0') {
+      <div>
+        <div className="marginBottom10">You can claim this company profile to unlock extra features, including job listings, enhanced employer branding and more!.</div>
+        { renderFromThisCoPromptModal }
+      </div>
     } else if (approvalStatus == '1' || approvalStatus == '4' || approvalStatus == '7') {
       return (
         <div>
@@ -181,7 +186,7 @@ class CoProfileOverview extends React.Component {
   }
 
   render() {
-    const {company, companyName, companyURL, isPageManager, renderCoProfileSideBar, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
+    const {renderFromThisCoPromptModal, fromThisCo, formToShow, company, companyName, companyURL, isPageManager, renderCoProfileSideBar, fname, approvalStatus, contentArr, isLoggedIn, userRole, checkHasAccess, noAccessHandler, maxViewsReached, handleCommunityFeedClick, updatePathName, upgradeCoProfileQuestions, fullCoProfileQuestions} = this.props
     const {showUpgradeSuccessModal, showPremiumProfileSuccessModal, mentorWorkEnvChartLoaded, showAddSkillsModal} = this.state
     const isSafari = whichBrowser() == 'safari'
     const user = {
@@ -612,12 +617,17 @@ class CoProfileOverview extends React.Component {
             </div>
           </Carousel>
         </div>
-        {(isPageManager || (!isPageManager && company.lifeatdesc != '')) && (
+        {(isPageManager || fromThisCo || (!isPageManager && company.lifeatdesc != '')) && (
           <div className="dash-welcomeContainer heightUnset green marginBottom40">
             <div className="positionRel">
               <div className="dash-welcomeHeader green"><strong>Life at {companyName}</strong></div>
               {company.lifeatdesc != '' && (
                 <div className="darkGreyText"><TextParser text={company.lifeatdesc} /></div>
+              )}
+              {fromThisCo && company.lifeatdesc == '' && approvalStatus == '0' && (
+                <div className="darkGreyText">
+                  {renderFromThisCoPromptModal}
+                </div>
               )}
               {isPageManager && company.lifeatdesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
                 <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>

@@ -9,7 +9,7 @@ import {LoadingSpinner} from './GeneralFunctions.js';
 
 class UserListItem extends Component {
   render() {
-    const {user, founders, pms} = this.props;
+    const {user, founders, pms, updatePathName} = this.props;
     const isProspelaTeam = user.pr && user.pr == 1
     const isFounder = founders.includes(user.uid)
     const isPM = pms.includes(user.uid)
@@ -18,7 +18,7 @@ class UserListItem extends Component {
     return(
       <div className="userItem-FlexContainer">
         <Avatar userID={user.uid} userName={user.fname} isGroupFlex showOnline picSize={40}/>
-        <UserName fname={user.fname} lname={user.lname} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} userUID={user.uid} />
+        <UserName fname={user.fname} lname={user.lname} isProspelaTeam={isProspelaTeam} isFounder={isFounder} isPM={isPM} userUID={user.uid} updatePathName={updatePathName}/>
         {isProspelaTeam && (
           <UserBadge badgeType='isPrTeam' />
         )}

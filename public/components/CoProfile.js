@@ -96,6 +96,7 @@ const ChooseProfileTypeModalProps = {
   changeInitFocus: true,
 }
 
+
 const ChooseProfileTypeSideBarModalProps = {
   ariaLabel: 'Choose Company Profile Type',
   triggerText: '+ Add / Edit description',
@@ -112,6 +113,7 @@ class CoProfile extends React.Component {
       tabToView: this.props.initialTabToView ? this.props.initialTabToView : 'overview',
       prevFeedScrollPos: this.props.prevFeedScrollPos ? this.props.prevFeedScrollPos : 0,
       isPageManager: false,
+      fromThisCo: false,
       approvalStatus: '',
       isMobile: '',
       showSuccessModal: false,
@@ -126,7 +128,7 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: 2,
+      approvalstatus: 0,
       name: 'Pladis',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
@@ -138,11 +140,14 @@ class CoProfile extends React.Component {
     }
     const loggedInUID = '8'
     const isPageManager = isLoggedIn && company.pagemanagers.some(e => e.uid == loggedInUID);
+    const fromThisCo = true // isLoggedIn && users.workexp && users.workexp.map(x => x.co).includes(company.coid) //
+
     this.setState({
       isMobile: isMobile,
       isPageManager: isPageManager,
       approvalStatus: company.approvalstatus,
       companyItem: companyItem,
+      fromThisCo: fromThisCo,
     })
     if (prevFeedScrollPos != 0) {
       const commContainer = document.getElementById("companyFeedContainer")
@@ -218,7 +223,7 @@ class CoProfile extends React.Component {
 
   renderTab = (company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions) => {
     const {userRole, isLoggedIn, checkHasAccess, noAccessHandler, maxViewsReached, updatePathName} = this.props;
-    const {tabToView, isPageManager, approvalStatus} = this.state;
+    const {tabToView, isPageManager, approvalStatus, fromThisCo} = this.state;
 
     const contentArr = [ // Answers
     /*  {
@@ -469,7 +474,7 @@ class CoProfile extends React.Component {
 
     switch (tabToView) {
       case 'overview':
-      return <CoProfileOverview renderCoProfileSideBar={this.renderCoProfileSideBar} company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={approvalStatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
+      return <CoProfileOverview renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} fromThisCo={fromThisCo} formToShow={this.formToShow} renderCoProfileSideBar={this.renderCoProfileSideBar} company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={approvalStatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
         //return <CompanyOverview isPageManager={isPageManager} />
       case 'jobs':
       return <div>CompanyJobsBoard tab goes here</div>
@@ -500,8 +505,33 @@ class CoProfile extends React.Component {
     this.closeModal(modalTypeToClose)
   }
 
+  renderFromThisCoPromptModal = () => {
+    return (
+      <Modal {...ChooseProfileTypeSideBarModalProps} wider={false}>
+        <BuyCoProfileModalContent
+          modalTitle='Upgrade to access this feature'
+          modalSubTitle='Choose between Free, Premium or Enterprise access'
+          showStd
+          showPrem
+          showSuperPrem
+          stdCourseLink=''
+          premCourseLink='www.stripe.com'
+          superPremCourseLink=''
+          stdDesc='Get started by adding basic company info'
+          premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+          superPremDesc='Want to discuss your needs? Contact us!'
+          stdPrice='£0/mth'
+          premPrice='£100/mth'
+          superPremPrice='Contact Sales'
+          showBottomTxt
+          formToShow={this.formToShow}
+        />
+      </Modal>
+    )
+  }
+
   renderCoProfileSideBar = (company, upgradeCoProfileQuestions, fullCoProfileQuestions, isMainBar) => {
-    const {approvalStatus, isPageManager} = this.state
+    const {approvalStatus, isPageManager, fromThisCo} = this.state
 
     return (
       <div className={isMainBar == true ? "isSideDivOnMain marginBottom40" : ""}>
@@ -510,6 +540,11 @@ class CoProfile extends React.Component {
             <div className="dash-welcomeHeader electricPurpleText"><strong>Tips for Candidates</strong></div>
             {company.tipsforcandidates != '' && (
               <div className="darkGreyText"><TextParser text={company.tipsforcandidates} /></div>
+            )}
+            {fromThisCo && company.tipsforcandidates == '' && approvalStatus == '0' && (
+              <div className="darkGreyText">
+                {this.renderFromThisCoPromptModal}
+              </div>
             )}
             {isPageManager && company.tipsforcandidates == '' && approvalStatus == '1' && ( // Only has free but not yet approved
               <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
@@ -575,7 +610,7 @@ class CoProfile extends React.Component {
   }
 
   renderClaimCoProfileContent = (approvalStatus) => {
-    const {isMobile, isPageManager} = this.state
+    const {isMobile, isPageManager, fromThisCo} = this.state
     const {checkHasAccess, noAccessHandler} = this.props
     let buttonText, showStd, showPrem, showSuperPrem, stdCourseLink, premCourseLink, superPremCourseLink, stdDesc, premDesc, superPremDesc, stdPrice, premPrice, superPremPrice, modalTitle, modalSubTitle, showWider, showBottomTxt
 
@@ -631,7 +666,7 @@ class CoProfile extends React.Component {
         <React.Fragment>
           {approvalStatus == '0' && (
             <span className="profileClaimStatus">
-              Unclaimed
+              <span className={fromThisCo == true ? "redText" : ""}>Unclaimed</span>
               <div className={"tooltiptext coProfile below top25 padding10 normalLineheight" + (isMobile ? " last signUpPage" : "")}>
                 <div className="textCursor">This company profile is unclaimed. Companies who claim their profile can list jobs, access enhanced employer branding and more!</div>
                 <div className="marginTop10 lightPurpleText">
@@ -741,7 +776,7 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: 2,
+      approvalstatus: 0,
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -753,7 +788,7 @@ class CoProfile extends React.Component {
       //website: 'https://www.ey.com',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
       experts: [{uid: '1'}, {uid: '2'},{uid: '3'}, {uid: '4'}],
-      lifeatdesc: 'hellohello skjdhf kjh ',
+      lifeatdesc: '',
       tipsforcandidates: '',
     }
     const activeJobs = [
@@ -976,24 +1011,26 @@ class CoProfile extends React.Component {
                     <div className="qDetail normalLineheight fontSize13 noBold marginBottom10 breakWord">
                       {company.description != '' ? company.description : ('Discover ' + companyName + ': learn directly from real employees, and explore work-life reality')}
                     </div>
-                    <div className={"button-unstyled qDetail fontSize12 breakWord noBold" + (isMobile ? " lineHeight40pc" : "")}>
-                      <span>
-                        <i className="fas fa-map-marker-alt" /> {company.country}
-                      </span>
-                      <span className="addLeftDivider">
-                        <i className="fas fa-building" /> {companyType}
-                      </span>
-                      {(company.website != '' && approvalStatus >= '3') && (
-                        <span className="addLeftDivider">
-                          <Link to={company.website+"?utm_source=prospela.com"} className="link inheritColor">
-                            <i className="fas fa-laptop" /> <span className="profileClaimStatus">Website</span>
-                          </Link>
+                    {approvalStatus >= '2' && ( // i.e. has provided at least fere profile info and been approved
+                      <div className={"button-unstyled qDetail fontSize12 breakWord noBold" + (isMobile ? " lineHeight40pc" : "")}>
+                        <span>
+                          <i className="fas fa-map-marker-alt" /> {company.country}
                         </span>
-                      )}
-                      <span className={isMobile == true ? 'dispBlock' : "addLeftDivider"}>
-                        <i className="fas fa-user-friends" /> {companySize}
-                      </span>
-                    </div>
+                        <span className="addLeftDivider">
+                          <i className="fas fa-building" /> {companyType}
+                        </span>
+                        {(company.website != '' && approvalStatus >= '3') && (
+                          <span className="addLeftDivider">
+                            <Link to={company.website+"?utm_source=prospela.com"} className="link inheritColor">
+                              <i className="fas fa-laptop" /> <span className="profileClaimStatus">Website</span>
+                            </Link>
+                          </span>
+                        )}
+                        <span className={isMobile == true ? 'dispBlock' : "addLeftDivider"}>
+                          <i className="fas fa-user-friends" /> {companySize}
+                        </span>
+                      </div>
+                    )}
                     <div className="marginBottom10">
                       <span className="bubbleContainer">
                         {indArrToShow.map((indID) => {

@@ -12,7 +12,7 @@ import VerifiedBadge from "./VerifiedBadge";
 class GroupAbout extends Component {
 
   render() {
-    const {group, groupUsers} = this.props;
+    const {group, groupUsers, updatePathName} = this.props;
     const groupAvatarURL = group.groupavatarurl
     const isGroupAvatarURL = groupAvatarURL != null
     const userRole = 'mentee'
@@ -30,7 +30,7 @@ class GroupAbout extends Component {
         founders.push(
           <div className="group-detail-item bright" key={founder.uid}>
             <Avatar userID={founder.uid} userName={founder.fname} isGroupFlex smallIdle picSize={40}/>
-            <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname} smallIdle/>
+            <UserName userUID={founder.uid} fname={founder.fname} lname={founder.lname} smallIdle updatePathName={updatePathName}/>
             <UserBadge badgeType='founder' />
           </div>
         );
@@ -46,7 +46,7 @@ class GroupAbout extends Component {
           pms.push(
             <div className="userItem-FlexContainer" key={pm.uid}>
               <Avatar userID={pm.uid} userName={pm.fname} showOnline isGroupFlex picSize={40}/>
-              <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} />
+              <UserName userUID={pm.uid} fname={pm.fname} lname={pm.lname} updatePathName={updatePathName}/>
               <UserBadge badgeType='pm' />
             </div>
           );
@@ -117,7 +117,7 @@ class GroupAbout extends Component {
           )}
           <div className="userItem-FlexContainer">
             <Avatar isProspelaAuto isGroupFlex showOnline/>
-            <UserName isProspelaAuto showOnline/>
+            <UserName isProspelaAuto showOnline updatePathName={updatePathName}/>
             <UserBadge badgeType='isPrBot' />
           </div>
         </div>

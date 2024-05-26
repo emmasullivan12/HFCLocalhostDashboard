@@ -58,7 +58,7 @@ class ChatFeedbackReq extends Component {
   }
 
   render() {
-    const {userRole, message, isProspelaAuto} = this.props
+    const {userRole, message, isProspelaAuto, updatePathName} = this.props
     const {showFeedbackSuccessModal} = this.state;
 
     const menteeName = 'Emma'
@@ -253,7 +253,7 @@ class ChatFeedbackReq extends Component {
                 <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} updatePathName={updatePathName}/>
                     <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
                   </div>
@@ -319,7 +319,7 @@ class ChatFeedbackReq extends Component {
                 <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} updatePathName={updatePathName}/>
                     <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
                   </div>
@@ -344,7 +344,7 @@ class ChatFeedbackReq extends Component {
                 <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} updatePathName={updatePathName}/>
                     <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
                   </div>
@@ -400,7 +400,7 @@ class ChatFeedbackReq extends Component {
                 <Avatar userID={message.uid} userName={message.author} isProspelaAuto={isProspelaAuto} picSize={40}/>
                 <div className="message-content-box">
                   <div className="sent-msg-info">
-                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto}/>
+                    <UserName fname={message.author} userUID={message.uid} isProspelaAuto={isProspelaAuto} updatePathName={updatePathName}/>
                     <UserBadge badgeType='isPrBot' />
                     <span className="msg-sent-time"><TimeCalc time={message.ts} /></span>
                   </div>

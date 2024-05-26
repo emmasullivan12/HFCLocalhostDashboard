@@ -1,12 +1,14 @@
 // Dex last merged this code on 25th may 2024
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import {cdn, usercdn, userAvatarsFolder} from './CDN.js';
 import AddEditRoleContent from './AddEditRoleModalContent.js';
 import AddEditTrainingContent from './AddEditTrainingModalContent.js';
 import AddEditSchContent from './AddEditSchModalContent.js';
 import AddEditUniContent from './AddEditUniModalContent.js';
+import companyList from './Companies.js';
 import EditHobbiesContent from './EditHobbiesContent.js';
 import EditIndRolesContent from './EditIndRolesContent.js';
 import EditLifestyleContent from './EditLifestyleModalContent.js';
@@ -394,6 +396,7 @@ class MenteeProfileContent extends Component {
 
   render() {
     const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback, browser} = this.state;
+    const {updatePathName} = this.props
     const mentee = {
       uid: '23456',
       fname: 'Emma',
@@ -1054,8 +1057,29 @@ class MenteeProfileContent extends Component {
                             let roleLengthYrs
                             let roleLengthTxt
                             let roleLengthRemainderMths
+                            let companyDetailToShow
 
                             const roleCompanyName = getCompanyDeets(role.co, role.cofreetext, 'name')
+
+                            const employerFromListObject = companyList.filter(co => co.label == roleCompanyName)
+                            const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+
+                            if (employerIsOnOurListOfCos == true) {
+                              const employerURL = employerFromListObject[0].urlText
+                              const companyURLending = "/companies/" + employerURL
+                              companyDetailToShow = (
+                                <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={roleCompanyName} className="link tooltip" onClick={updatePathName && updatePathName}>
+                                  {roleCompanyName}
+                                  {!isSafari && (
+                                    <span className="tooltiptext below width125px normalLineheight">
+                                      <i className="fas fa-sign-out-alt" /> Go to Company Profile
+                                    </span>
+                                  )}
+                                </Link>
+                              )
+                            } else {
+                              companyDetailToShow = roleCompanyName
+                            }
 
                             // If hasn't set dates yet
                             if (role.startDate == '') {
@@ -1086,7 +1110,7 @@ class MenteeProfileContent extends Component {
                                   </div>
                                   <div>
                                     <div><strong>{role.title}</strong></div>
-                                    <div>{roleCompanyName&& roleCompanyName}</div>
+                                    <div>{companyDetailToShow}</div>
                                     <div className="marginBottom5 smallFont darkGreyText">
                                       {role.startDate != '' && (
                                         <span><DateCalc time={role.startDate} showPureDate dontShowDay /> - </span>

@@ -169,7 +169,7 @@ class QAThreads extends Component {
   }
 
   displayComment = (comment) => {
-    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached, checkHasAccess, noAccessHandler} = this.props
+    const {originalPostAuthorID, originalPostIsAnon, type, isInModal, maxViewsReached, checkHasAccess, noAccessHandler, updatePathName} = this.props
   //  const {showFlagCommentModal, commentIDToFlag} = this.state
     let isOriginalPostAuthor, aIsMe
     const myID = '123'
@@ -235,12 +235,12 @@ class QAThreads extends Component {
               <span className={isOriginalPostAuthor == true ? "multiple value paddingR grey fontSize12 paddingTop0 paddingBtm0 marginRight0 marginBottomMinus5" : ""}>
                 {comment.userroleofauthor == 'mentee' ? (
                     <FullPageModal {...MenteeProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={comment.fname + " " + comment.lname}>
-                      <MenteeProfileContent />
+                      <MenteeProfileContent updatePathName={updatePathName}/>
                     </FullPageModal>
                     )
                   : (
                     <FullPageModal {...MentorProfileUsrNameModalProps} checkHasAccess={checkHasAccess} requireLogin noAccessHandler={noAccessHandler} triggerText={comment.fname + " " + comment.lname}>
-                      <MentorProfileContent />
+                      <MentorProfileContent updatePathName={updatePathName}/>
                     </FullPageModal>
                   )
                 }
