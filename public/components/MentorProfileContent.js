@@ -454,7 +454,8 @@ class MentorProfileContent extends Component {
 
   render() {
     const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback, browser} = this.state;
-    const {updatePathName} = this.props
+    const {updatePathName, onClose} = this.props
+
     const mentor = {
       uid: '23456',
       fname: 'Emma',
@@ -853,12 +854,12 @@ class MentorProfileContent extends Component {
 
                     {publicFeedbackToShow.length > 0 && (
                       <React.Fragment>
-                        <FeedbackPublic fname={mentor.fname} isProfile feedbackArr={[publicFeedbackToShow[0]]} userRoleToView='mentor'/>
+                        <FeedbackPublic fname={mentor.fname} isSafari={isSafari} isProfile feedbackArr={[publicFeedbackToShow[0]]} userRoleToView='mentor' updatePathName={updatePathName} onClose={onClose}/>
                         {(publicFeedbackToShow.length > 1 || isMe == 'isMe') && (
                           <div className="feedbackBtn">
                             <div className="messageCTABtns">
                               <Modal {...ViewMoreFeedbackProps} triggerText={isMe == 'isMe' ? 'Manage my Feedback' : 'View all Feedback'}>
-                                <ManageFeedbackContent isForPublicProfile={isMe == 'isMe' ? false : true} userToView={mentor.fname} userRoleToView='mentor' publicFeedbackToShow={isMe == 'isMe' ? null : publicFeedbackToShow}/>
+                                <ManageFeedbackContent isForPublicProfile={isMe == 'isMe' ? false : true} userToView={mentor.fname} userRoleToView='mentor' publicFeedbackToShow={isMe == 'isMe' ? null : publicFeedbackToShow} updatePathName={updatePathName} onClose={onClose} isSafari={isSafari}/>
                               </Modal>
                             </div>
                           </div>
@@ -914,7 +915,7 @@ class MentorProfileContent extends Component {
                           const employerURL = employerFromListObject[0].urlText
                           const companyURLending = "/companies/" + employerURL
                           companyDetailToShow = (
-                            <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={roleCompanyName} className="link tooltip" onClick={updatePathName && updatePathName}>
+                            <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={roleCompanyName} className="link tooltip" onClick={() => {updatePathName && updatePathName(), onClose && onClose()}}>
                               {roleCompanyName}
                               {!isSafari && (
                                 <span className="tooltiptext below width125px normalLineheight">

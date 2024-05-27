@@ -2426,6 +2426,24 @@ a.button{
 .contentBox.feedItem{
   margin-bottom: 5px;
 }
+.contentBox.jobItem{
+  margin-bottom: 5px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  border: 4px solid #f2f2f2;
+}
+.contentBox.jobItem:hover{
+  box-shadow: 0 0 0 1.2px #838383!important;
+  -webkit-box-shadow: 0 0 0 1.2px #838383!important;
+  -moz-box-shadow: 0 0 0 1.2px #838383!important;
+  border: 4px solid #e3e4ff;
+}
 .contentBox.withHover:hover{
   box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);
   -webkit-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 18%);

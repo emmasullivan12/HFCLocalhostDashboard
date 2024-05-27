@@ -11,6 +11,7 @@ import BuyCoProfileModalContent from './BuyCoProfileModalContent.js';
 import FullPageModal from './FullPageModal.js';
 import Form from './Form.js';
 import industryOptions from './Industries.js';
+import JobsContainer from "./JobsContainer.js";
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
 import SelectBox from './Select.js';
@@ -96,6 +97,10 @@ const ChooseProfileTypeModalProps = {
   changeInitFocus: true,
 }
 
+const ChooseProfileTypeSideBarModalPropsFromThisCo = {
+  ariaLabel: 'Choose Company Profile Type',
+  changeInitFocus: true,
+}
 
 const ChooseProfileTypeSideBarModalProps = {
   ariaLabel: 'Choose Company Profile Type',
@@ -128,8 +133,8 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: 0,
-      name: 'Pladis',
+      approvalstatus: '2',
+      name: 'pladis Global',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
     const companyItem = getCompanyDeets(company.coid)
@@ -138,7 +143,7 @@ class CoProfile extends React.Component {
     if(company != null){
       updateDocumentTitle("Explore " + companyName + " careers & advice - Prospela.com")
     }
-    const loggedInUID = '8'
+    const loggedInUID = '5'
     const isPageManager = isLoggedIn && company.pagemanagers.some(e => e.uid == loggedInUID);
     const fromThisCo = true // isLoggedIn && users.workexp && users.workexp.map(x => x.co).includes(company.coid) //
 
@@ -374,7 +379,7 @@ class CoProfile extends React.Component {
         title: 'When should I apply to grad schemes (what time of year)?',
         industriestopostto: ['99999','19'],
         authorinst: '',
-        authorinstfreetext: 'Pladis',
+        authorinstfreetext: 'pladis Global',
         authorrole: 'Marketing Manager',
       //  authorroleishidden: 0,
         authordegree: '',
@@ -407,7 +412,7 @@ class CoProfile extends React.Component {
         isPr: 0,
         industriestopostto: ['99999','19'],
         authorinst: '',
-        authorinstfreetext: 'Pladis',
+        authorinstfreetext: 'pladis Global',
         authorrole: 'Marketing Manager',
       //  authorroleishidden: 0,
         authordegree: '',
@@ -471,13 +476,90 @@ class CoProfile extends React.Component {
         ],
       }
     ]
+    const jobsArr = []
+  /*  const jobsArr = [
+      {
+        oid: '0',
+        roletitle: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        salarycurrency: 'GBP',
+        salary: '',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '1',
+        roletype: '2',
+        industries: [],
+        roles: [],
+        skills: [],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '13'
+      },{
+        oid: '1',
+        roletitle: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        salarycurrency: 'GBP',
+        salary: '',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '1',
+        roletype: '2',
+        industries: [],
+        roles: [],
+        skills: [],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '13'
+      },{
+        oid: '2',
+        roletitle: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        salarycurrency: 'GBP',
+        salary: '',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '1',
+        roletype: '2',
+        industries: [],
+        roles: [],
+        skills: [],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '13'
+      },{
+        oid: '3',
+        roletitle: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        salarycurrency: 'GBP',
+        salary: '',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '1',
+        roletype: '2',
+        industries: [],
+        roles: [],
+        skills: [],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '13'
+      }
+    ]*/
 
     switch (tabToView) {
       case 'overview':
       return <CoProfileOverview renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} fromThisCo={fromThisCo} formToShow={this.formToShow} renderCoProfileSideBar={this.renderCoProfileSideBar} company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={approvalStatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
         //return <CompanyOverview isPageManager={isPageManager} />
       case 'jobs':
-      return <div>CompanyJobsBoard tab goes here</div>
+      return (
+        <div>
+          <div className="bold darkGreyText marginBottomMinus10 fontSize16"><span role="img" aria-label="briefcase emoji">💼</span> Latest opportunities <span role="img" aria-label="briefcase emoji">💼</span> </div>
+          <JobsContainer jobsArr={jobsArr} handleFeedClick={this.handleCommunityFeedClick} />
+        </div>
+      )
         //return <CompanyJobsBoard isPageManager={isPageManager} />
     }
   }
@@ -505,9 +587,9 @@ class CoProfile extends React.Component {
     this.closeModal(modalTypeToClose)
   }
 
-  renderFromThisCoPromptModal = () => {
+  renderFromThisCoPromptModal = (usedFor, triggerText) => {
     return (
-      <Modal {...ChooseProfileTypeSideBarModalProps} wider={false}>
+      <Modal {...ChooseProfileTypeSideBarModalPropsFromThisCo} wider usedFor={usedFor} triggerText={triggerText}>
         <BuyCoProfileModalContent
           modalTitle='Upgrade to access this feature'
           modalSubTitle='Choose between Free, Premium or Enterprise access'
@@ -530,8 +612,8 @@ class CoProfile extends React.Component {
     )
   }
 
-  renderCoProfileSideBar = (company, upgradeCoProfileQuestions, fullCoProfileQuestions, isMainBar) => {
-    const {approvalStatus, isPageManager, fromThisCo} = this.state
+  renderCoProfileSideBar = (company, upgradeCoProfileQuestions, fullCoProfileQuestions, isMainBar, fromThisCo, approvalStatus) => {
+    const {isPageManager} = this.state
 
     return (
       <div className={isMainBar == true ? "isSideDivOnMain marginBottom40" : ""}>
@@ -541,9 +623,9 @@ class CoProfile extends React.Component {
             {company.tipsforcandidates != '' && (
               <div className="darkGreyText"><TextParser text={company.tipsforcandidates} /></div>
             )}
-            {fromThisCo && company.tipsforcandidates == '' && approvalStatus == '0' && (
+            {fromThisCo && fromThisCo && company.tipsforcandidates == '' && approvalStatus == '0' && (
               <div className="darkGreyText">
-                {this.renderFromThisCoPromptModal}
+                {this.renderFromThisCoPromptModal('addTextDescCoProfile', '+ Add / Edit description')}
               </div>
             )}
             {isPageManager && company.tipsforcandidates == '' && approvalStatus == '1' && ( // Only has free but not yet approved
@@ -772,11 +854,11 @@ class CoProfile extends React.Component {
   }
 
   render() {
-    const {companyItem, tabToView, isPageManager, approvalStatus, wantsToLeave, isUnsubscribing, updateUnsubscribeSuccess, isMobile, showClaimFreeProfileFormModal, showSuccessModal} = this.state
+    const {fromThisCo, companyItem, tabToView, isPageManager, approvalStatus, wantsToLeave, isUnsubscribing, updateUnsubscribeSuccess, isMobile, showClaimFreeProfileFormModal, showSuccessModal} = this.state
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: 0,
+      approvalstatus: '2',
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -796,7 +878,7 @@ class CoProfile extends React.Component {
       {jid: '1'}
     ]
     const loggedInFname = 'Dexter' // loggedin users fname
-    var loggedInUID = '8'
+    var loggedInUID = '5'
     let urlText
 
     urlText = companyItem != null ? companyItem.urlText : ''
@@ -806,7 +888,7 @@ class CoProfile extends React.Component {
     const companyName = companyItem && companyItem.label
     const logoURL = company.logo
     const hasLogoURL = logoURL != '' && logoURL != null
-    const flagEmoji = userFlagEmoji(company.country);
+    //const flagEmoji = userFlagEmoji(company.country);
     const companySizeOptions = [
       {value: '0', label: 'Micro (0-10 employees)'},
       {value: '1', label: 'Small (11-50 employeers)'},
@@ -1110,7 +1192,7 @@ class CoProfile extends React.Component {
             </div>
             <div className="marginTop20">
               <div className="sideBar sideBarContentHiddenOnShrink" role="complementary" aria-label="sidebar">
-                {((isPageManager || (!isPageManager && company.tipsforcandidates != '')) && tabToView == 'overview') && this.renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, false) }
+                {((isPageManager || fromThisCo || (!isPageManager && company.tipsforcandidates != '')) && tabToView == 'overview') && this.renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, false, fromThisCo, approvalStatus) }
                 {isLoggedIn && approvalStatus != '' && approvalStatus >= '3' && isPageManager && !isMobile && (
                   <Modal {...UnsubscribeProps} handleLocalStateOnClose={() => this.resetUnsubscribe()}>
                     <div className="showSmallModalSize">

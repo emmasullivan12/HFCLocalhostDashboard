@@ -187,13 +187,17 @@
 .ModalOpenBtn-upgradeCoProfileClaim,
 .ModalOpenBtn-upgradeCoProfileClaim:active,
 .ModalOpenBtn-fullCoProfileClaim,
-.ModalOpenBtn-fullCoProfileClaim:active{
+.ModalOpenBtn-fullCoProfileClaim:active,
+.ModalOpenBtn-welcomeBox-claimCoProfile,
+.ModalOpenBtn-welcomeBox-claimCoProfile:active{
   background: #ff6c81;
 }
 .ModalOpenBtn-upgradeCoProfileClaim:hover,
 .ModalOpenBtn-upgradeCoProfileClaim:focus,
 .ModalOpenBtn-fullCoProfileClaim:hover,
-.ModalOpenBtn-fullCoProfileClaim:focus{
+.ModalOpenBtn-fullCoProfileClaim:focus,
+.ModalOpenBtn-welcomeBox-claimCoProfile:hover,
+.ModalOpenBtn-welcomeBox-claimCoProfile:focus{
   background: #e14158;
 }
 

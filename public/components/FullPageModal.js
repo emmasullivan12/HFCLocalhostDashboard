@@ -60,7 +60,7 @@ const FullPageModalContent = ({
           <div className="modalTitle">{title ? title : ''}</div>
         </div>
         <div className={"fpModal-content"  + (isDevice ? ' isDevice' : '')}>
-          {content}
+          {React.Children.map(content, child => React.cloneElement(child, {onClose, onKeyDown}))}
         </div>
       </div>
     </aside>,

@@ -396,7 +396,7 @@ class MenteeProfileContent extends Component {
 
   render() {
     const {feedbackReceivedArr, isLoadingUnis, isGeneralError, nowAvailable, showFeedback, browser} = this.state;
-    const {updatePathName} = this.props
+    const {updatePathName, onClose} = this.props
     const mentee = {
       uid: '23456',
       fname: 'Emma',
@@ -1068,7 +1068,7 @@ class MenteeProfileContent extends Component {
                               const employerURL = employerFromListObject[0].urlText
                               const companyURLending = "/companies/" + employerURL
                               companyDetailToShow = (
-                                <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={roleCompanyName} className="link tooltip" onClick={updatePathName && updatePathName}>
+                                <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={roleCompanyName} className="link tooltip" onClick={() => {updatePathName && updatePathName(), onClose && onClose()}}>
                                   {roleCompanyName}
                                   {!isSafari && (
                                     <span className="tooltiptext below width125px normalLineheight">

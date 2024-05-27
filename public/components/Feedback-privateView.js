@@ -297,7 +297,7 @@ class FeedbackPrivate extends Component {
   }
 
   renderFeedback = () => {
-    const {feedbackArr, userRole, type, feedbackType} = this.props;
+    const {feedbackArr, userRole, type, feedbackType, updatePathName, onClose, isSafari} = this.props;
   //  const menteesustep = 'ASK DEX'
   //  const mentorsustep = 'ASK DEX'
 
@@ -343,6 +343,7 @@ class FeedbackPrivate extends Component {
             const eetStatus = item.eetstatus
             const menteeWantsMoreOfArr = item.menteeWantsMoreOf.filter(x => x != 0) // i.e. mentee did not respond saying "None of these" options for things they wanted their mentor to share
             const companyName = (item.currco != null || item.currcofreetext != null) ? getCompanyDeets(item.currco, item.currcofreetext, 'name') : ''
+
             return (
               <div key={item.matchid} className="row feedbackItem">
                 <div className="col-4 col-s-12 paddingR">

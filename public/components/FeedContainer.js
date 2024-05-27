@@ -26,7 +26,6 @@ const AddGeneralHighlightModalProps = {
 
 class FeedContainer extends Component {
 
-
   render() {
     const {community, commURL, isCommPage, userRole, contentArr, isUserSearch, updatePathName, handleFeedClick, maxViewsReached, handleUnlockBtnClick, checkHasAccess, noAccessHandler, isLoggedIn, updateTabToView} = this.props
     const isLoadingMorePosts = false

@@ -227,18 +227,18 @@ class ManageFeedbackContent extends Component {
 
   renderTab = () => {
     const {tabToView, feedbackReceivedArr, feedbackGivenArr} = this.state;
-    const {isForPublicProfile, userToView, userRoleToView, publicFeedbackToShow} = this.props;
+    const {isForPublicProfile, userToView, userRoleToView, publicFeedbackToShow, updatePathName, onClose, isSafari} = this.props;
     const userRole = 'mentor'
-
+    
     switch (tabToView) {
       case 'received':
         if (!isForPublicProfile) {
-          return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received'/>
+          return <FeedbackPrivate feedbackArr={feedbackReceivedArr} userRole={userRole} feedbackType='received' updatePathName={updatePathName} onClose={onClose} isSafari={isSafari}/>
         } else {
-          return <FeedbackPublic fname={userToView} feedbackArr={publicFeedbackToShow} userRoleToView={userRoleToView}/>
+          return <FeedbackPublic fname={userToView} feedbackArr={publicFeedbackToShow} userRoleToView={userRoleToView} updatePathName={updatePathName} onClose={onClose} isSafari={isSafari}/>
         }
       case 'given':
-        return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole} feedbackType='given'/>
+        return <FeedbackPrivate feedbackArr={feedbackGivenArr} userRole={userRole} feedbackType='given' updatePathName={updatePathName} onClose={onClose} isSafari={isSafari}/>
     }
   }
 

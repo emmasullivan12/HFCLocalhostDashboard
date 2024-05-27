@@ -139,11 +139,13 @@ class CoProfileOverview extends React.Component {
           Discover {companyName}: learn directly from real employees, and explore work-life reality
         </div>
       )
-    } else if (fromThisCo && approvalStatus == '0') {
-      <div>
-        <div className="marginBottom10">You can claim this company profile to unlock extra features, including job listings, enhanced employer branding and more!.</div>
-        { renderFromThisCoPromptModal }
-      </div>
+    } else if (fromThisCo && fromThisCo && approvalStatus == '0') {
+      return (
+        <div>
+          <div className="marginBottom10">You can claim this company profile to unlock extra features, including job listings, enhanced employer branding and more!.</div>
+          { renderFromThisCoPromptModal("welcomeBox-claimCoProfile", "Claim Company Profile") }
+        </div>
+      )
     } else if (approvalStatus == '1' || approvalStatus == '4' || approvalStatus == '7') {
       return (
         <div>
@@ -196,6 +198,7 @@ class CoProfileOverview extends React.Component {
       learningfreetext: [],
       //learning: ['569','587','337','60']
     }
+
     const expertiseCommaString = ((user.expertise && user.expertise.length > 0) || (user.expertisefreetext && user.expertisefreetext.length > 0)) ? convertSkills(user.expertise, user.expertisefreetext) : []
     const expertiseArr = (expertiseCommaString && expertiseCommaString.length == 0) ? [] : expertiseCommaString.split(', ');
     const learningCommaString = ((user.learning && user.learning.length > 0) || (user.learningfreetext && user.learningfreetext.length > 0)) ? convertSkills(user.learning, user.learningfreetext) : []
@@ -292,7 +295,7 @@ class CoProfileOverview extends React.Component {
     return (
       <div>
         {isLoggedIn && (
-          <div className={"dash-welcomeContainer marginBottom20" + (isPageManager && (approvalStatus == '3' || approvalStatus == '6') ? " height160px" : "")}>
+          <div className={"dash-welcomeContainer marginBottom20" + (fromThisCo || (isPageManager && (approvalStatus == '3' || approvalStatus == '6')) ? " height160px" : "")}>
             <div className="col-9">
               <div className="dash-welcomeHeader">
                 {(isPageManager && (approvalStatus == '3' || approvalStatus == '6')) && (
@@ -626,7 +629,7 @@ class CoProfileOverview extends React.Component {
               )}
               {fromThisCo && company.lifeatdesc == '' && approvalStatus == '0' && (
                 <div className="darkGreyText">
-                  {renderFromThisCoPromptModal}
+                  {renderFromThisCoPromptModal('addTextDescCoProfile', '+ Add / Edit description')}
                 </div>
               )}
               {isPageManager && company.lifeatdesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
@@ -719,7 +722,7 @@ class CoProfileOverview extends React.Component {
             </div>
           </div>
         )}
-        { renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, true) }
+        { renderCoProfileSideBar(company, upgradeCoProfileQuestions, fullCoProfileQuestions, true, fromThisCo, approvalStatus) }
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
           <FeedContainer contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} />

@@ -1,8 +1,10 @@
 // Dex last merged this code on 24th may 2024
 
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Avatar from './Avatar.js';
+import companyList from './Companies.js';
 import {DateCalc, LoadingSpinner} from './GeneralFunctions.js';
 import {getCompanyDeets} from './UserDetail.js';
 
@@ -17,7 +19,7 @@ class FeedbackPublic extends Component {
   }
 
   renderFeedback = () => {
-    const {feedbackArr, userRoleToView, fname, isProfile} = this.props;
+    const {feedbackArr, userRoleToView, fname, isProfile, updatePathName, onClose, isSafari} = this.props;
 
     // Show newest matches first
     feedbackArr.sort(function(a,b){
@@ -34,6 +36,33 @@ class FeedbackPublic extends Component {
           const matchuid = userRoleToView == 'mentee' ? item.mentoruid : item.menteeuid
           const eetStatus = item.eetstatus
           const companyName = (item.currco != null || item.currcofreetext != null) ? getCompanyDeets(item.currco, item.currcofreetext, 'name') : ''
+
+          let companyNameToShow
+          if (isProfile) {
+            const employerFromListObject = companyList.filter(co => co.label == companyName)
+            const employerIsOnOurListOfCos = employerFromListObject && employerFromListObject.length > 0
+
+            if (employerIsOnOurListOfCos == true && isProfile) {
+              const employerURL = employerFromListObject[0].urlText
+              const companyURLending = "/companies/" + employerURL
+              companyNameToShow = (
+                <Link to={{pathname: companyURLending, state: {prevPath: window.location.pathname}}} key={companyName} className="link tooltip" onClick={() => {updatePathName && updatePathName(), onClose && onClose()}}>
+                  {companyName}
+                  {!isSafari && (
+                    <span className="tooltiptext below width125px normalLineheight">
+                      <i className="fas fa-sign-out-alt" /> Go to Company Profile
+                    </span>
+                  )}
+                </Link>
+              )
+            } else {
+              companyNameToShow = companyName
+            }
+          } else {
+            companyNameToShow = companyName
+          }
+
+
           return (
             <div key={item.matchid} className={(isProfile != true ? "feedbackItem row" : "paddingTop")}>
               <div className={(isProfile != true ? "col-4 col-s-12 paddingR" : "displayFlex marginBottom5")}>
@@ -48,7 +77,7 @@ class FeedbackPublic extends Component {
                       <div><span>{item.degree} </span>{isProfile != true ? <div>@ {item.uniname}</div> : <span>@ {item.uniname}</span>}</div>
                     )}
                     {eetStatus == 'job' && (
-                      <div><span>{item.currrole} </span>{isProfile != true ? <div>@ </div> : <span>@ {companyName}</span>}</div>
+                      <div><span>{item.currrole} </span>{isProfile != true ? <div>@ {companyNameToShow}</div> : <span>@ {companyNameToShow}</span>}</div>
                     )}
                     {eetStatus == 'train' && (
                       <div><span>{item.currtraining} </span>{isProfile != true ? <div>@ {item.currtrainingprovider}</div> : <span>@ {item.currtrainingprovider}</span>}</div>
