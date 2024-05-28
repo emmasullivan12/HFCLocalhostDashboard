@@ -14,8 +14,10 @@ import industryOptions from './Industries.js';
 import JobsContainer from "./JobsContainer.js";
 import MenuNav from './MenuNav.js';
 import Modal from './Modal.js';
+import roleOptions from './Roles.js';
 import SelectBox from './Select.js';
 import ShareOptionsBox from './ShareOptionsBox.js';
+import skillsOptions from './Skills.js';
 import TextParser from './TextParser.js';
 import UploadProfPicContent from './UploadProfPicContent.js';
 import {getIndustryDeets, getCompanyDeets, userFlagEmoji} from './UserDetail.js';
@@ -133,7 +135,7 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: '1',
+      approvalstatus: '6',
       name: 'pladis Global',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
@@ -856,7 +858,7 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: '1',
+      approvalstatus: '6',
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -917,12 +919,46 @@ class CoProfile extends React.Component {
       {value: 'AFG', label: 'Afghanistan'},{value: 'ALA', label: 'Aland Islands'},{value: 'ALB', label: 'Albania'},{value: 'DZA', label: 'Algeria'},{value: 'ASM', label: 'American Samoa'},{value: 'AND', label: 'Andorra'},{value: 'AGO', label: 'Angola'},{value: 'AIA', label: 'Anguilla'},{value: 'ATA', label: 'Antarctica'},{value: 'ATG', label: 'Antigua & Barbuda'},{value: 'ARG', label: 'Argentina'},{value: 'ARM', label: 'Armenia'},{value: 'ABW', label: 'Aruba'},{value: 'AUS', label: 'Australia'},{value: 'AUT', label: 'Austria'},{value: 'AZE', label: 'Azerbaijan'},{value: 'BHS', label: 'Bahamas'},{value: 'BHR', label: 'Bahrain'},{value: 'BGD', label: 'Bangladesh'},{value: 'BRB', label: 'Barbados'},{value: 'BLR', label: 'Belarus'},{value: 'BEL', label: 'Belgium'},{value: 'BLZ', label: 'Belize'},{value: 'BEN', label: 'Benin'},{value: 'BMU', label: 'Bermuda'},{value: 'BTN', label: 'Bhutan'},{value: 'BOL', label: 'Bolivia'},{value: 'BES', label: 'Bonaire, Sint Eustatius and Saba'},{value: 'BIH', label: 'Bosnia & Herzegovina'},{value: 'BWA', label: 'Botswana'},{value: 'BVT', label: 'Bouvet Island'},{value: 'BRA', label: 'Brazil'},{value: 'IOT', label: 'British Indian Ocean Territory'},{value: 'VGB', label: 'British Virgin Islands'},{value: 'BRN', label: 'Brunei'},{value: 'BGR', label: 'Bulgaria'},{value: 'BFA', label: 'Burkina Faso'},{value: 'BDI', label: 'Burundi'},{value: 'KHM', label: 'Cambodia'},{value: 'CMR', label: 'Cameroon'},{value: 'CAN', label: 'Canada'},{value: 'CPV', label: 'Cape Verde'},{value: 'CYM', label: 'Cayman Islands'},{value: 'CAF', label: 'Central African Republic'},{value: 'TCD', label: 'Chad'},{value: 'CHL', label: 'Chile'},{value: 'CHN', label: 'China'},{value: 'CXR', label: 'Christmas Island'},{value: 'CCK', label: 'Cocos (Keeling) Islands'},{value: 'COL', label: 'Colombia'},{value: 'COM', label: 'Comoros'},{value: 'COG', label: 'Congo'},{value: 'COK', label: 'Cook Islands'},{value: 'CRI', label: 'Costa Rica'},{value: 'CIV', label: 'Cote d\'Ivoire'},{value: 'HRV', label: 'Croatia'},{value: 'CUB', label: 'Cuba'},{value: 'CUW', label: 'Curacao'},{value: 'CYP', label: 'Cyprus'},{value: 'CZE', label: 'Czech Republic'},{value: 'COD', label: 'Democratic Republic of Congo'},{value: 'DNK', label: 'Denmark'},{value: 'DJI', label: 'Djibouti'},{value: 'DMA', label: 'Dominica'},{value: 'DOM', label: 'Dominican Republic'},{value: 'ECU', label: 'Ecuador'},{value: 'EGY', label: 'Egypt'},{value: 'SLV', label: 'El Salvador'},{value: 'GNQ', label: 'Equatorial Guinea'},{value: 'ERI', label: 'Eritrea'},{value: 'EST', label: 'Estonia'},{value: 'SWZ', label: 'Eswatini'},{value: 'ETH', label: 'Ethiopia'},{value: 'FLK', label: 'Falkland Islands'},{value: 'FRO', label: 'Faroe Islands'},{value: 'FJI', label: 'Fiji'},{value: 'FIN', label: 'Finland'},{value: 'FRA', label: 'France'},{value: 'GUF', label: 'French Guiana'},{value: 'PYF', label: 'French Polynesia'},{value: 'ATF', label: 'French Southern Territories'},{value: 'GAB', label: 'Gabon'},{value: 'GMB', label: 'Gambia'},{value: 'GEO', label: 'Georgia'},{value: 'DEU', label: 'Germany'},{value: 'GHA', label: 'Ghana'},{value: 'GIB', label: 'Gibraltar'},{value: 'GRC', label: 'Greece'},{value: 'GRL', label: 'Greenland'},{value: 'GRD', label: 'Grenada'},{value: 'GLP', label: 'Guadeloupe'},{value: 'GUM', label: 'Guam'},{value: 'GTM', label: 'Guatemala'},{value: 'GGY', label: 'Guernsey'},{value: 'GIN', label: 'Guinea'},{value: 'GNB', label: 'Guinea-Bissau'},{value: 'GUY', label: 'Guyana'},{value: 'HTI', label: 'Haiti'},{value: 'HMD', label: 'Heard Island & McDonald Islands'},{value: 'HND', label: 'Honduras'},{value: 'HKG', label: 'Hong Kong'},{value: 'HUN', label: 'Hungary'},{value: 'ISL', label: 'Iceland'},{value: 'IND', label: 'India'},{value: 'IDN', label: 'Indonesia'},{value: 'IRN', label: 'Iran'},{value: 'IRQ', label: 'Iraq'},{value: 'IRL', label: 'Ireland'},{value: 'IMN', label: 'Isle of Man'},{value: 'ISR', label: 'Israel'},{value: 'ITA', label: 'Italy'},{value: 'JAM', label: 'Jamaica'},{value: 'JPN', label: 'Japan'},{value: 'JEY', label: 'Jersey'},{value: 'JOR', label: 'Jordan'},{value: 'KAZ', label: 'Kazakhstan'},{value: 'KEN', label: 'Kenya'},{value: 'KIR', label: 'Kiribati'},{value: 'RKS', label: 'Kosovo'},{value: 'KWT', label: 'Kuwait'},{value: 'KGZ', label: 'Kyrgyzstan'},{value: 'LAO', label: 'Laos'},{value: 'LVA', label: 'Latvia'},{value: 'LBN', label: 'Lebanon'},{value: 'LSO', label: 'Lesotho'},{value: 'LBR', label: 'Liberia'},{value: 'LBY', label: 'Libya'},{value: 'LIE', label: 'Liechtenstein'},{value: 'LTU', label: 'Lithuania'},{value: 'LUX', label: 'Luxembourg'},{value: 'MAC', label: 'Macau'},{value: 'MKD', label: 'Macedonia'},{value: 'MDG', label: 'Madagascar'},{value: 'MWI', label: 'Malawi'},{value: 'MYS', label: 'Malaysia'},{value: 'MDV', label: 'Maldives'},{value: 'MLI', label: 'Mali'},{value: 'MLT', label: 'Malta'},{value: 'MHL', label: 'Marshall Islands'},{value: 'MTQ', label: 'Martinique'},{value: 'MRT', label: 'Mauritania'},{value: 'MUS', label: 'Mauritius'},{value: 'MYT', label: 'Mayotte'},{value: 'MEX', label: 'Mexico'},{value: 'FSM', label: 'Micronesia'},{value: 'MDA', label: 'Moldova'},{value: 'MCO', label: 'Monaco'},{value: 'MNG', label: 'Mongolia'},{value: 'MNE', label: 'Montenegro'},{value: 'MSR', label: 'Montserrat'},{value: 'MAR', label: 'Morocco'},{value: 'MOZ', label: 'Mozambique'},{value: 'MMR', label: 'Myanmar'},{value: 'NAM', label: 'Namibia'},{value: 'NRU', label: 'Nauro'},{value: 'NPL', label: 'Nepal'},{value: 'NLD', label: 'Netherlands'},{value: 'ANT', label: 'Netherlands Antilles'},{value: 'NCL', label: 'New Caledonia'},{value: 'NZL', label: 'New Zealand'},{value: 'NIC', label: 'Nicaragua'},{value: 'NER', label: 'Niger'},{value: 'NGA', label: 'Nigeria'},{value: 'NIU', label: 'Niue'},{value: 'NFK', label: 'Norfolk Island'},{value: 'PRK', label: 'North Korea'},{value: 'MNP', label: 'Northern Mariana Islands'},{value: 'NOR', label: 'Norway'},{value: 'OMN', label: 'Oman'},{value: 'PAK', label: 'Pakistan'},{value: 'PLW', label: 'Palau'},{value: 'PSE', label: 'Palestine'},{value: 'PAN', label: 'Panama'},{value: 'PNG', label: 'Papua New Guinea'},{value: 'PRY', label: 'Paraguay'},{value: 'PER', label: 'Peru'},{value: 'PHL', label: 'Philippines'},{value: 'PCN', label: 'Pitcairn'},{value: 'POL', label: 'Poland'},{value: 'PRT', label: 'Portugal'},{value: 'PRI', label: 'Puerto Rico'},{value: 'QAT', label: 'Qatar'},{value: 'REU', label: 'Reunion'},{value: 'ROU', label: 'Romania'},{value: 'RUS', label: 'Russia'},{value: 'RWA', label: 'Rwanda'},{value: 'WSM', label: 'Samoa'},{value: 'SMR', label: 'San Marino'},{value: 'STP', label: 'Sao Tome and Principe'},{value: 'SAU', label: 'Saudi Arabia'},{value: 'SEN', label: 'Senegal'},{value: 'SRB', label: 'Serbia'},{value: 'SYC', label: 'Seychelles'},{value: 'SLE', label: 'Sierra Leone'},{value: 'SGP', label: 'Singapore'},{value: 'SXM', label: 'Sint Maarten'},{value: 'SVK', label: 'Slovakia'},{value: 'SVN', label: 'Slovenia'},{value: 'SLB', label: 'Solomon Islands'},{value: 'SOM', label: 'Somalia'},{value: 'ZAF', label: 'South Africa'},{value: 'SGS', label: 'South Georgia & the South Sandwich Islands'},{value: 'KOR', label: 'South Korea'},{value: 'SSD', label: 'South Sudan'},{value: 'ESP', label: 'Spain'},{value: 'LKA', label: 'Sri Lanka'},{value: 'BLM', label: 'St Barthélemy'},{value: 'SHN', label: 'St Helena, Ascension &d Tristan da Cunha'},{value: 'KNA', label: 'St Kitts & Nevis'},{value: 'LCA', label: 'St Lucia'},{value: 'MAF', label: 'St Martin'},{value: 'SPM', label: 'St Pierre & Miquelon'},{value: 'VCT', label: 'St Vincent & the Grenadines'},{value: 'SDN', label: 'Sudan'},{value: 'SUR', label: 'Suriname'},{value: 'SJM', label: 'Svalbard & Jan Mayen'},{value: 'SWE', label: 'Sweden'},{value: 'CHE', label: 'Switzerland'},{value: 'SYR', label: 'Syria'},{value: 'TWN', label: 'Taiwan'},{value: 'TJK', label: 'Tajikistan'},{value: 'TZA', label: 'Tanzania'},{value: 'THA', label: 'Thailand'},{value: 'TLS', label: 'Timor L\'este'},{value: 'TGO', label: 'Togo'},{value: 'TKL', label: 'Tokelau'},{value: 'TON', label: 'Tonga'},{value: 'TTO', label: 'Trinidad & Tobago'},{value: 'TUN', label: 'Tunisia'},{value: 'TUR', label: 'Turkey'},{value: 'TKM', label: 'Turkmenistan'},{value: 'TCA', label: 'Turks & Caicos'},{value: 'TUV', label: 'Tuvalu'},{value: 'UGA', label: 'Uganda'},{value: 'UKR', label: 'Ukraine'},{value: 'ARE', label: 'United Arab Emirates'},{value: 'GBR', label: 'United Kingdom (UK)'},{value: 'USA', label: 'United States of America'},{value: 'URY', label: 'Uruguay'},{value: 'VIR', label: 'US Virgin Islands'},{value: 'UZB', label: 'Uzbekistan'},{value: 'VUT', label: 'Vanuatu'},{value: 'VAT', label: 'Vatican City'},{value: 'VEN', label: 'Venezuela'},{value: 'VNM', label: 'Vietnam'},{value: 'WLF', label: 'Wallis & Futuna'},{value: 'YEM', label: 'Yemen'},{value: 'ZMB', label: 'Zambia'},{value: 'ZWE', label: 'Zimbabwe'}
     ]
     var listJobQuestions = [
-      {q: 'Lets list a job!!!!!!!!!!!!!!', detail: 'You can now list jobs / opportunities, showcase life at your company and add tips for candidates looking to get their foot in the door.', aType: 'interim', name: 'interim'},
-      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
-      {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
+      {q: 'Please enter the Job title', detail: 'This can be your own free text. You\'ll have a chance to tag your listing to specific role communities later on.', aType: 'text', req: 1, maxLength: 200, placeholder: 'Type Job title here...', name: 'title'},
+      {q: 'Select the Job location type', aType: 'select', req: 1, placeholder: 'Select type...', name: 'locationtype', valueToShow: 'label', options: [
+        {value: '0', label: 'On-site / In-person'},
+        {value: '1', label: 'Hybrid'},
+        {value: '2', label: 'Fully Remote'},
+      ]},
+      {q: 'Where is the role / employee to be based? (Country)', aType: 'select', req: 1, placeholder: 'Select Country...', name: 'country', valueToShow: 'label', options: [
+        ...countries
+      ]},
+      {q: 'Where is the role / employee to be based? (City)', aType: 'text', req: 1, placeholder: 'Type City...', name: 'city', valueToShow: 'label'},
+      {q: 'Select the Job type', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, placeholder: 'Select type...', placeholderOnClick: 'Choose from our list:', name: 'roletype', valueToShow: 'label', options: [
+        {value: '0', label: 'Full-time'},
+        {value: '1', label: 'Part-time'},
+        {value: '2', label: 'Permanent'},
+        {value: '3', label: 'Contract'},
+        {value: '4', label: 'Temporary'},
+        {value: '5', label: 'Volunteer'},
+        {value: '6', label: 'Internship'},
+        {value: '7', label: 'Other'},
+      ]},
+      {q: 'Please provide a job description', detail: 'e.g. responsiblities, salary, candidate requirements, details about the application process, etc. Formattinrg options: *bold* _italics_ ~highlight~ and ↑ Shift + ⤶ Enter for new line.', aType: 'textLong', req: 1, maxLength: 5000, placeholder: 'Type job description...', name: 'description'},
+      {q: 'Where will candidates submit applications?', detail: 'This could be your website or Applicant Tracking System URL. Note: We will automatically add the source tag \'source=prospela\' to the end of your URL to help you track the referral source', aType: 'text', req: 1, placeholder: 'https://yourcompany.com/careers/jobid12345...', name: 'url'},
+      {q: 'Now, let\'s help boost this roles discoverability!', detail: 'The next few questions help you tag this job so it will appear in specific skill, industry, and role communities on Prospela', aType: 'interim', name: 'interim'},
+      {q: 'Which of Prospela\'s Industry communities would you like this role to appear in?', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Industries...', placeholderOnClick: 'Choose from our list:', name: 'industries', valueToShow: 'label', options: [
+        ...industryOptions
+      ]},
+      {q: 'Which of Prospela\'s Role communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Roles...', placeholderOnClick: 'Choose from our list:', name: 'roles', valueToShow: 'label', options: [
+        ...roleOptions
+      ]},
+      {q: 'Which of Prospela\'s Skills communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Skills...', placeholderOnClick: 'Choose from our list:', name: 'skills', valueToShow: 'label', options: [
+        ...skillsOptions
+      ]},
+      {q: 'Lastly, how long would you like this job listed for?', detail: 'Your listing will remain active until you choose, or until you end your company subscription (whichever is sooner).', aType: 'select', req: 1, placeholder: 'Select option...', name: 'listinglength', valueToShow: 'label', options: [
+        {value: '0', label: '30 days'},
+        {value: '1', label: '60 days'},
+        {value: '2', label: '90 days'},
+      ]},
     ]
     var freeCoProfileQuestions = [
-      {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
+      {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a st great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
       {q: 'What type of organisation are you?', aType: 'select', req: 1, placeholder: 'Select type...', showIcon: true, iconToShow: 'iconFA', name: 'type', valueToShow: 'label', options: [
         {value: '0', label: 'Charity / Non-profit', iconFA: 'fas fa-ribbon'},
         {value: '1', label: 'For-profit', iconFA: 'fas fa-chart-line'},
@@ -944,7 +980,7 @@ class CoProfile extends React.Component {
     var upgradeCoProfileQuestions = [
       {q: 'Congratulations on upgrading to a Premium. Let\'s add some life to your profile!', detail: 'You can now list jobs / opportunities, showcase life at your company and add tips for candidates looking to get their foot in the door.', aType: 'interim', name: 'interim'},
       {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
-      {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
+      {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to succeed on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
     ]
     var fullCoProfileQuestions = [
       {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
@@ -966,7 +1002,7 @@ class CoProfile extends React.Component {
       {q: 'What\'s your Company website?', aType: 'text', req: 1, maxLength: 75, placeholder: 'https://www.yourcompany.com...', name: 'website'},
       {q: 'Next, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
       {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
-      {q: 'Lastly, please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
+      {q: 'Lastly, please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to succeed on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
     ]
 
     // Add meta tags

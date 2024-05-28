@@ -12,6 +12,7 @@ import RatingItems from './RatingItems.js';
 import Autocomplete from './Autocomplete.js';
 import AutocompleteTagsMulti from './AutocompleteTagsMulti.js';
 import SelectBox from './Select.js';
+import TextParser from './TextParser.js';
 import {availabilityMsg, userFlagEmoji, eduName, eduSubjects, planningUni, isNightDay, profileTimeZone, setSchGraduYr} from './UserDetail.js';
 
 import "../css/General.css";
@@ -1323,7 +1324,7 @@ class Form extends Component {
                   {q}
                 </h2>
                 <div className={detailClassName}>
-                  {detail}
+                  <TextParser text={detail} />
                 </div>
                 { this.renderAType(question, required, usedFor, i, name) }
               </section>
