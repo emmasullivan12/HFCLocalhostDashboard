@@ -146,13 +146,13 @@ class CoProfileOverview extends React.Component {
           { renderFromThisCoPromptModal("welcomeBox-claimCoProfile", "Claim Company Profile") }
         </div>
       )
-    } else if (approvalStatus == '1' || approvalStatus == '4' || approvalStatus == '7') {
+    } else if (isPageManager && (approvalStatus == '1' || approvalStatus == '4' || approvalStatus == '7')) {
       return (
         <div>
           We&#39;ve received your request to {approvalStatus == '4' ? 'upgrade your Company Profile' : 'claim this Company Profile'}. After it has been reviewed, you&#39;ll receive email confirmation of it&#39;s publication or a request for more information.
         </div>
       )
-    } else if (approvalStatus == '3' || approvalStatus == '6') {
+    } else if (isPageManager && (approvalStatus == '3' || approvalStatus == '6')) {
       return (
         <div>
           <div className="marginBottom10">You&#39;ve paid to {approvalStatus == '3' ? 'upgrade your Company Profile' : 'claim this Premium Company Profile'}, so have unlocked extra features.</div>
@@ -620,22 +620,22 @@ class CoProfileOverview extends React.Component {
             </div>
           </Carousel>
         </div>
-        {(isPageManager || fromThisCo || (!isPageManager && company.lifeatdesc != '')) && (
+        {(isPageManager || fromThisCo || (!isPageManager && company.culture != '')) && (
           <div className="dash-welcomeContainer heightUnset green marginBottom40">
             <div className="positionRel">
               <div className="dash-welcomeHeader green"><strong>Life at {companyName}</strong></div>
-              {company.lifeatdesc != '' && (
-                <div className="darkGreyText"><TextParser text={company.lifeatdesc} /></div>
+              {company.culture != '' && (
+                <div className="darkGreyText"><TextParser text={company.culture} /></div>
               )}
-              {fromThisCo && company.lifeatdesc == '' && approvalStatus == '0' && (
+              {fromThisCo && company.culture == '' && approvalStatus == '0' && (
                 <div className="darkGreyText">
                   {renderFromThisCoPromptModal('addTextDescCoProfile', '+ Add / Edit description')}
                 </div>
               )}
-              {isPageManager && company.lifeatdesc == '' && approvalStatus == '1' && ( // Only has free but not yet approved
+              {isPageManager && company.culture == '' && approvalStatus == '1' && ( // Only has free but not yet approved
                 <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
               )}
-              {isPageManager && company.lifeatdesc == '' && approvalStatus == '2' && ( // Only has free (approved)
+              {isPageManager && company.culture == '' && approvalStatus == '2' && ( // Only has free (approved)
                 <div className="darkGreyText">
                   <Modal {...ChooseProfileTypeModalProps} wider={false}>
                     <BuyCoProfileModalContent
@@ -659,7 +659,7 @@ class CoProfileOverview extends React.Component {
                   </Modal>
                 </div>
               )}
-              {isPageManager && company.lifeatdesc == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
+              {isPageManager && company.culture == '' && approvalStatus == '3' && ( // Paid for upgrade but not completed
                 <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
                   <Form
                     questions={upgradeCoProfileQuestions}
@@ -672,7 +672,7 @@ class CoProfileOverview extends React.Component {
               {isPageManager && (approvalStatus == '4' || approvalStatus == '7') && ( // Has paid for premium and provided info but not yet approved
                 <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Premium profile has been approved, you&#39;ll see your content here.</div>
               )}
-              {isPageManager && company.lifeatdesc == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
+              {isPageManager && company.culture == '' && approvalStatus == '6' && ( // Paid for full premium profile but not completed
                 <FullPageModal {...EditLifeAtCompanyDescFPModalProps} usedFor="addTextDescCoProfile">
                   <Form
                     questions={fullCoProfileQuestions}
@@ -682,43 +682,13 @@ class CoProfileOverview extends React.Component {
                   />
                 </FullPageModal>
               )}
-              {isPageManager && company.lifeatdesc != '' && (approvalStatus == '5' || approvalStatus == '8') && (
+              {isPageManager && company.culture != '' && (approvalStatus == '5' || approvalStatus == '8') && (
                 <Modal {...EditLifeAtCompanyDescModalProps}>
                   <div className="postTypeContainer marginAuto">
                     <div>To make any changes, please email <strong className="electricPurpleText">talktous@prospela.com</strong></div>
                   </div>
                 </Modal>
               )}
-            {/*  {isPageManager && company.lifeatdesc == '' && ( // Not using this text box editor
-                <Modal {...EditLifeAtCompanyDescModalProps}>
-                  <AddEditTextContent
-                    modalTitle={'Edit Life at ' + companyName + 'description'}
-                    text={company.lifeatdesc}
-                    textInputTitle='Description'
-                    textInputId='lifeatdesc'
-                    textMaxCharacters='2000'
-                    addOrEdit='edit'
-                    placeholderText='Type a description of life at your company...'
-                    required
-                  />
-                </Modal>
-              )}
-              {isPageManager && (
-                <div className="editSectionBtn dispInlineBlock">
-                  <Modal {...EditProfileSectionModalProps}>
-                    <AddEditTextContent
-                      modalTitle={'Edit Life at ' + companyName + ' description'}
-                      text={company.lifeatdesc}
-                      textInputTitle='Description'
-                      textInputId='lifeatdesc'
-                      textMaxCharacters='2000'
-                      addOrEdit='edit'
-                      placeholderText='Type a description of life at your company...'
-                      required
-                    />
-                  </Modal>
-                </div>
-              )}*/}
             </div>
           </div>
         )}

@@ -161,6 +161,14 @@
   margin-top: unset;
   margin-bottom: unset;
 }
+.placeholderPic.noJobs{
+  background-repeat: no-repeat;
+  background-image: url(https://files.prospela.com/images/NoJobs_100.png);
+  background-size: contain;
+  background-position: center;
+  height: 70px;
+  min-height: unset;
+}
 .placeholderPic.cross{
   background-repeat: no-repeat;
   background-image: url(https://files-and-media.ams3.digitaloceanspaces.com/images/Cross%20Icon_50.png);

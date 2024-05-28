@@ -133,7 +133,7 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: '2',
+      approvalstatus: '1',
       name: 'pladis Global',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
@@ -143,7 +143,7 @@ class CoProfile extends React.Component {
     if(company != null){
       updateDocumentTitle("Explore " + companyName + " careers & advice - Prospela.com")
     }
-    const loggedInUID = '5'
+    const loggedInUID = '8'
     const isPageManager = isLoggedIn && company.pagemanagers.some(e => e.uid == loggedInUID);
     const fromThisCo = true // isLoggedIn && users.workexp && users.workexp.map(x => x.co).includes(company.coid) //
 
@@ -226,7 +226,7 @@ class CoProfile extends React.Component {
     })
   }
 
-  renderTab = (company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions) => {
+  renderTab = (company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions, listJobQuestions) => {
     const {userRole, isLoggedIn, checkHasAccess, noAccessHandler, maxViewsReached, updatePathName} = this.props;
     const {tabToView, isPageManager, approvalStatus, fromThisCo} = this.state;
 
@@ -551,16 +551,14 @@ class CoProfile extends React.Component {
 
     switch (tabToView) {
       case 'overview':
-      return <CoProfileOverview renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} fromThisCo={fromThisCo} formToShow={this.formToShow} renderCoProfileSideBar={this.renderCoProfileSideBar} company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={approvalStatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
-        //return <CompanyOverview isPageManager={isPageManager} />
+        return <CoProfileOverview renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} fromThisCo={fromThisCo} formToShow={this.formToShow} renderCoProfileSideBar={this.renderCoProfileSideBar} company={company} companyName={companyName} companyURL={companyURL} isLoggedIn={isLoggedIn} updateTabToView={this.updateTabToView} updatePathName={updatePathName} approvalStatus={approvalStatus} fname={loggedInFname} isPageManager={isPageManager} contentArr={contentArr} userRole={userRole} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleCommunityFeedClick={this.handleCommunityFeedClick} upgradeCoProfileQuestions={upgradeCoProfileQuestions} fullCoProfileQuestions={fullCoProfileQuestions}/>
       case 'jobs':
       return (
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16"><span role="img" aria-label="briefcase emoji">💼</span> Latest opportunities <span role="img" aria-label="briefcase emoji">💼</span> </div>
-          <JobsContainer jobsArr={jobsArr} handleFeedClick={this.handleCommunityFeedClick} />
+          <JobsContainer companyName={companyName} fromThisCo={fromThisCo} isPageManager={isPageManager} approvalStatus={approvalStatus} jobsArr={jobsArr} renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} handleFeedClick={this.handleCommunityFeedClick} listJobQuestions={listJobQuestions}/>
         </div>
       )
-        //return <CompanyJobsBoard isPageManager={isPageManager} />
     }
   }
 
@@ -858,7 +856,7 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: '2',
+      approvalstatus: '1',
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -870,7 +868,7 @@ class CoProfile extends React.Component {
       //website: 'https://www.ey.com',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
       experts: [{uid: '1'}, {uid: '2'},{uid: '3'}, {uid: '4'}],
-      lifeatdesc: '',
+      culture: '',
       tipsforcandidates: '',
     }
     const activeJobs = [
@@ -918,7 +916,11 @@ class CoProfile extends React.Component {
     var countries = [
       {value: 'AFG', label: 'Afghanistan'},{value: 'ALA', label: 'Aland Islands'},{value: 'ALB', label: 'Albania'},{value: 'DZA', label: 'Algeria'},{value: 'ASM', label: 'American Samoa'},{value: 'AND', label: 'Andorra'},{value: 'AGO', label: 'Angola'},{value: 'AIA', label: 'Anguilla'},{value: 'ATA', label: 'Antarctica'},{value: 'ATG', label: 'Antigua & Barbuda'},{value: 'ARG', label: 'Argentina'},{value: 'ARM', label: 'Armenia'},{value: 'ABW', label: 'Aruba'},{value: 'AUS', label: 'Australia'},{value: 'AUT', label: 'Austria'},{value: 'AZE', label: 'Azerbaijan'},{value: 'BHS', label: 'Bahamas'},{value: 'BHR', label: 'Bahrain'},{value: 'BGD', label: 'Bangladesh'},{value: 'BRB', label: 'Barbados'},{value: 'BLR', label: 'Belarus'},{value: 'BEL', label: 'Belgium'},{value: 'BLZ', label: 'Belize'},{value: 'BEN', label: 'Benin'},{value: 'BMU', label: 'Bermuda'},{value: 'BTN', label: 'Bhutan'},{value: 'BOL', label: 'Bolivia'},{value: 'BES', label: 'Bonaire, Sint Eustatius and Saba'},{value: 'BIH', label: 'Bosnia & Herzegovina'},{value: 'BWA', label: 'Botswana'},{value: 'BVT', label: 'Bouvet Island'},{value: 'BRA', label: 'Brazil'},{value: 'IOT', label: 'British Indian Ocean Territory'},{value: 'VGB', label: 'British Virgin Islands'},{value: 'BRN', label: 'Brunei'},{value: 'BGR', label: 'Bulgaria'},{value: 'BFA', label: 'Burkina Faso'},{value: 'BDI', label: 'Burundi'},{value: 'KHM', label: 'Cambodia'},{value: 'CMR', label: 'Cameroon'},{value: 'CAN', label: 'Canada'},{value: 'CPV', label: 'Cape Verde'},{value: 'CYM', label: 'Cayman Islands'},{value: 'CAF', label: 'Central African Republic'},{value: 'TCD', label: 'Chad'},{value: 'CHL', label: 'Chile'},{value: 'CHN', label: 'China'},{value: 'CXR', label: 'Christmas Island'},{value: 'CCK', label: 'Cocos (Keeling) Islands'},{value: 'COL', label: 'Colombia'},{value: 'COM', label: 'Comoros'},{value: 'COG', label: 'Congo'},{value: 'COK', label: 'Cook Islands'},{value: 'CRI', label: 'Costa Rica'},{value: 'CIV', label: 'Cote d\'Ivoire'},{value: 'HRV', label: 'Croatia'},{value: 'CUB', label: 'Cuba'},{value: 'CUW', label: 'Curacao'},{value: 'CYP', label: 'Cyprus'},{value: 'CZE', label: 'Czech Republic'},{value: 'COD', label: 'Democratic Republic of Congo'},{value: 'DNK', label: 'Denmark'},{value: 'DJI', label: 'Djibouti'},{value: 'DMA', label: 'Dominica'},{value: 'DOM', label: 'Dominican Republic'},{value: 'ECU', label: 'Ecuador'},{value: 'EGY', label: 'Egypt'},{value: 'SLV', label: 'El Salvador'},{value: 'GNQ', label: 'Equatorial Guinea'},{value: 'ERI', label: 'Eritrea'},{value: 'EST', label: 'Estonia'},{value: 'SWZ', label: 'Eswatini'},{value: 'ETH', label: 'Ethiopia'},{value: 'FLK', label: 'Falkland Islands'},{value: 'FRO', label: 'Faroe Islands'},{value: 'FJI', label: 'Fiji'},{value: 'FIN', label: 'Finland'},{value: 'FRA', label: 'France'},{value: 'GUF', label: 'French Guiana'},{value: 'PYF', label: 'French Polynesia'},{value: 'ATF', label: 'French Southern Territories'},{value: 'GAB', label: 'Gabon'},{value: 'GMB', label: 'Gambia'},{value: 'GEO', label: 'Georgia'},{value: 'DEU', label: 'Germany'},{value: 'GHA', label: 'Ghana'},{value: 'GIB', label: 'Gibraltar'},{value: 'GRC', label: 'Greece'},{value: 'GRL', label: 'Greenland'},{value: 'GRD', label: 'Grenada'},{value: 'GLP', label: 'Guadeloupe'},{value: 'GUM', label: 'Guam'},{value: 'GTM', label: 'Guatemala'},{value: 'GGY', label: 'Guernsey'},{value: 'GIN', label: 'Guinea'},{value: 'GNB', label: 'Guinea-Bissau'},{value: 'GUY', label: 'Guyana'},{value: 'HTI', label: 'Haiti'},{value: 'HMD', label: 'Heard Island & McDonald Islands'},{value: 'HND', label: 'Honduras'},{value: 'HKG', label: 'Hong Kong'},{value: 'HUN', label: 'Hungary'},{value: 'ISL', label: 'Iceland'},{value: 'IND', label: 'India'},{value: 'IDN', label: 'Indonesia'},{value: 'IRN', label: 'Iran'},{value: 'IRQ', label: 'Iraq'},{value: 'IRL', label: 'Ireland'},{value: 'IMN', label: 'Isle of Man'},{value: 'ISR', label: 'Israel'},{value: 'ITA', label: 'Italy'},{value: 'JAM', label: 'Jamaica'},{value: 'JPN', label: 'Japan'},{value: 'JEY', label: 'Jersey'},{value: 'JOR', label: 'Jordan'},{value: 'KAZ', label: 'Kazakhstan'},{value: 'KEN', label: 'Kenya'},{value: 'KIR', label: 'Kiribati'},{value: 'RKS', label: 'Kosovo'},{value: 'KWT', label: 'Kuwait'},{value: 'KGZ', label: 'Kyrgyzstan'},{value: 'LAO', label: 'Laos'},{value: 'LVA', label: 'Latvia'},{value: 'LBN', label: 'Lebanon'},{value: 'LSO', label: 'Lesotho'},{value: 'LBR', label: 'Liberia'},{value: 'LBY', label: 'Libya'},{value: 'LIE', label: 'Liechtenstein'},{value: 'LTU', label: 'Lithuania'},{value: 'LUX', label: 'Luxembourg'},{value: 'MAC', label: 'Macau'},{value: 'MKD', label: 'Macedonia'},{value: 'MDG', label: 'Madagascar'},{value: 'MWI', label: 'Malawi'},{value: 'MYS', label: 'Malaysia'},{value: 'MDV', label: 'Maldives'},{value: 'MLI', label: 'Mali'},{value: 'MLT', label: 'Malta'},{value: 'MHL', label: 'Marshall Islands'},{value: 'MTQ', label: 'Martinique'},{value: 'MRT', label: 'Mauritania'},{value: 'MUS', label: 'Mauritius'},{value: 'MYT', label: 'Mayotte'},{value: 'MEX', label: 'Mexico'},{value: 'FSM', label: 'Micronesia'},{value: 'MDA', label: 'Moldova'},{value: 'MCO', label: 'Monaco'},{value: 'MNG', label: 'Mongolia'},{value: 'MNE', label: 'Montenegro'},{value: 'MSR', label: 'Montserrat'},{value: 'MAR', label: 'Morocco'},{value: 'MOZ', label: 'Mozambique'},{value: 'MMR', label: 'Myanmar'},{value: 'NAM', label: 'Namibia'},{value: 'NRU', label: 'Nauro'},{value: 'NPL', label: 'Nepal'},{value: 'NLD', label: 'Netherlands'},{value: 'ANT', label: 'Netherlands Antilles'},{value: 'NCL', label: 'New Caledonia'},{value: 'NZL', label: 'New Zealand'},{value: 'NIC', label: 'Nicaragua'},{value: 'NER', label: 'Niger'},{value: 'NGA', label: 'Nigeria'},{value: 'NIU', label: 'Niue'},{value: 'NFK', label: 'Norfolk Island'},{value: 'PRK', label: 'North Korea'},{value: 'MNP', label: 'Northern Mariana Islands'},{value: 'NOR', label: 'Norway'},{value: 'OMN', label: 'Oman'},{value: 'PAK', label: 'Pakistan'},{value: 'PLW', label: 'Palau'},{value: 'PSE', label: 'Palestine'},{value: 'PAN', label: 'Panama'},{value: 'PNG', label: 'Papua New Guinea'},{value: 'PRY', label: 'Paraguay'},{value: 'PER', label: 'Peru'},{value: 'PHL', label: 'Philippines'},{value: 'PCN', label: 'Pitcairn'},{value: 'POL', label: 'Poland'},{value: 'PRT', label: 'Portugal'},{value: 'PRI', label: 'Puerto Rico'},{value: 'QAT', label: 'Qatar'},{value: 'REU', label: 'Reunion'},{value: 'ROU', label: 'Romania'},{value: 'RUS', label: 'Russia'},{value: 'RWA', label: 'Rwanda'},{value: 'WSM', label: 'Samoa'},{value: 'SMR', label: 'San Marino'},{value: 'STP', label: 'Sao Tome and Principe'},{value: 'SAU', label: 'Saudi Arabia'},{value: 'SEN', label: 'Senegal'},{value: 'SRB', label: 'Serbia'},{value: 'SYC', label: 'Seychelles'},{value: 'SLE', label: 'Sierra Leone'},{value: 'SGP', label: 'Singapore'},{value: 'SXM', label: 'Sint Maarten'},{value: 'SVK', label: 'Slovakia'},{value: 'SVN', label: 'Slovenia'},{value: 'SLB', label: 'Solomon Islands'},{value: 'SOM', label: 'Somalia'},{value: 'ZAF', label: 'South Africa'},{value: 'SGS', label: 'South Georgia & the South Sandwich Islands'},{value: 'KOR', label: 'South Korea'},{value: 'SSD', label: 'South Sudan'},{value: 'ESP', label: 'Spain'},{value: 'LKA', label: 'Sri Lanka'},{value: 'BLM', label: 'St Barthélemy'},{value: 'SHN', label: 'St Helena, Ascension &d Tristan da Cunha'},{value: 'KNA', label: 'St Kitts & Nevis'},{value: 'LCA', label: 'St Lucia'},{value: 'MAF', label: 'St Martin'},{value: 'SPM', label: 'St Pierre & Miquelon'},{value: 'VCT', label: 'St Vincent & the Grenadines'},{value: 'SDN', label: 'Sudan'},{value: 'SUR', label: 'Suriname'},{value: 'SJM', label: 'Svalbard & Jan Mayen'},{value: 'SWE', label: 'Sweden'},{value: 'CHE', label: 'Switzerland'},{value: 'SYR', label: 'Syria'},{value: 'TWN', label: 'Taiwan'},{value: 'TJK', label: 'Tajikistan'},{value: 'TZA', label: 'Tanzania'},{value: 'THA', label: 'Thailand'},{value: 'TLS', label: 'Timor L\'este'},{value: 'TGO', label: 'Togo'},{value: 'TKL', label: 'Tokelau'},{value: 'TON', label: 'Tonga'},{value: 'TTO', label: 'Trinidad & Tobago'},{value: 'TUN', label: 'Tunisia'},{value: 'TUR', label: 'Turkey'},{value: 'TKM', label: 'Turkmenistan'},{value: 'TCA', label: 'Turks & Caicos'},{value: 'TUV', label: 'Tuvalu'},{value: 'UGA', label: 'Uganda'},{value: 'UKR', label: 'Ukraine'},{value: 'ARE', label: 'United Arab Emirates'},{value: 'GBR', label: 'United Kingdom (UK)'},{value: 'USA', label: 'United States of America'},{value: 'URY', label: 'Uruguay'},{value: 'VIR', label: 'US Virgin Islands'},{value: 'UZB', label: 'Uzbekistan'},{value: 'VUT', label: 'Vanuatu'},{value: 'VAT', label: 'Vatican City'},{value: 'VEN', label: 'Venezuela'},{value: 'VNM', label: 'Vietnam'},{value: 'WLF', label: 'Wallis & Futuna'},{value: 'YEM', label: 'Yemen'},{value: 'ZMB', label: 'Zambia'},{value: 'ZWE', label: 'Zimbabwe'}
     ]
-
+    var listJobQuestions = [
+      {q: 'Lets list a job!!!!!!!!!!!!!!', detail: 'You can now list jobs / opportunities, showcase life at your company and add tips for candidates looking to get their foot in the door.', aType: 'interim', name: 'interim'},
+      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
+      {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
+    ]
     var freeCoProfileQuestions = [
       {q: 'Highly-engaged entry-level candidates are finding out about ' + companyName + ' on Prospela', detail: 'Participate in the conversation and showcase why you\'re a great place to work. We\'ll aim to get your profile and content live within 48 hours', aType: 'interim', name: 'interim'},
       {q: 'What type of organisation are you?', aType: 'select', req: 1, placeholder: 'Select type...', showIcon: true, iconToShow: 'iconFA', name: 'type', valueToShow: 'label', options: [
@@ -941,7 +943,7 @@ class CoProfile extends React.Component {
     ]
     var upgradeCoProfileQuestions = [
       {q: 'Congratulations on upgrading to a Premium. Let\'s add some life to your profile!', detail: 'You can now list jobs / opportunities, showcase life at your company and add tips for candidates looking to get their foot in the door.', aType: 'interim', name: 'interim'},
-      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'lifeatdesc'},
+      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
       {q: 'Please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
     ]
     var fullCoProfileQuestions = [
@@ -963,7 +965,7 @@ class CoProfile extends React.Component {
       ]},
       {q: 'What\'s your Company website?', aType: 'text', req: 1, maxLength: 75, placeholder: 'https://www.yourcompany.com...', name: 'website'},
       {q: 'Next, please provide a short bio of your company', detail: 'Explain what your organisation does in simple, jargon-free terms', aType: 'textLong', req: 1, maxLength: 150, placeholder: 'Type your description here...', name: 'description'},
-      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'lifeatdesc'},
+      {q: 'Please provide a short insight to what life is like at ' + companyName, detail: 'This could be details about your culture, benefits, and / or day-in-the-life insights', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your description here...', name: 'culture'},
       {q: 'Lastly, please list some quick tips for candidates looking to break in to a career at ' + companyName, detail: 'This could be simple bullets on the application process, skills you look for, and / or how to success on the job', aType: 'textLong', req: 1, maxLength: 2000, placeholder: 'Type your tips here...', name: 'tipsforcandidates'},
     ]
 
@@ -1267,7 +1269,7 @@ class CoProfile extends React.Component {
                 )}
               </div>
               <div className="mainBar" role="main" aria-label="rendered tab">
-                { this.renderTab(company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions) }
+                { this.renderTab(company, companyName, companyURL, loggedInFname, upgradeCoProfileQuestions, fullCoProfileQuestions, listJobQuestions) }
               </div>
             </div>
           </div>
