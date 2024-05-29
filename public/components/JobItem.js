@@ -8,7 +8,7 @@ import companyList from './Companies.js';
 import {DateCalc, TimeCalc} from './GeneralFunctions.js';
 import Modal from './Modal.js';
 import TextParser from './TextParser.js';
-import {getIndustryDeets, convertHashtags} from './UserDetail.js';
+import {getCompanyDeets, getIndustryDeets, convertHashtags, timeSince} from './UserDetail.js';
 
 import '../css/MyActivity.css';
 
@@ -54,8 +54,14 @@ class JobItem extends Component {
   }
 
   checkIfTextClamped = () => {
+    const {isInModal} = this.props
     const el = this.textItemRef.current
-    const isTextClamped = el.scrollHeight > el.clientHeight
+    let isTextClamped
+    if (isInModal) {
+      isTextClamped = false
+    } else {
+      isTextClamped = el.scrollHeight > el.clientHeight
+    }
 
     this.setState({
       isTextClamped: isTextClamped
@@ -72,18 +78,30 @@ class JobItem extends Component {
   render() {
     const {job, isLoggedIn, checkHasAccess, noAccessHandler} = this.props
     const {showJobPostModal, isTextClamped} = this.state
-console.log(job)
+
+    let companyName
+
+    const companyItem = getCompanyDeets(job.coidrelatesto)
+    companyName = companyItem && companyItem.label
+
+/*
+    country: 'GBR',
+    city: 'London',
+    locationtype: '1',
+    roletype: '2',
+    industries: [],
+    roles: [],
+    skills: [],
+    url: 'google.com',*/
 
     const FeedItemDetail = (props) => (
       <div className={props.isInModal ? "textLeft" : "contentBox jobItem withHover padding20 positionRel paddingBtm0"} data-itemid={job.oid}>
         <div>
           <div className="flexGrow1 maxWidth100">
-            <div className="gridContainer marginTop10">
-              <div className="gridLeftColumn dispInlineBlock verticalAlignMiddle">
-                <div>logo</div>
-              </div>
-              <div className="gridRightColumn textLeft whiteSpace fontSize12">
-                <div>company ID this role relates to: {job.coidrelatesto}</div>
+            <div className="marginTop10">
+              <div>{job.title}</div>
+              <div className="fontSize12">
+                <div>{companyName}</div>
               </div>
             </div>
             <div className="feedItemTextContainer">
@@ -99,14 +117,81 @@ console.log(job)
               )}
             </div>
             <div>
-              <div className="textRight greyText fontSize13"><DateCalc time={job.datecreated} showPureDate /> at <TimeCalc time={job.datecreated} /></div>
+
+        {/*}    {mentorSkills.length > 0 && (
+              <div className="dispBlock marginTop10">
+                <div className="tagsList">
+                  {mentorSkillsArray && mentorSkillsArray.map((skill) => {
+                    let skillHasComm
+                    skillHasComm = skillsOptions.filter(x => x.value == skill.value)[0].hasComm == 1;
+                    if (skillHasComm == true) {
+                      return (
+                        <Link to={{pathname: "/community/skills/" + skill.urlText, state: {prevPath: window.location.pathname}}} key={skill.value} className="link rankingItem tooltip" onClick={updatePathName}>
+                          <span
+                            className="multiple clickable value paddingR displayBlock"
+                            id={skill.value}
+                          >
+                            {skill.label}
+                          </span>
+                          {!isSafari && (
+                            <span className="tooltiptext below width125px normalLineheight">
+                              <i className="fas fa-sign-out-alt" /> Go to skills community
+                            </span>
+                          )}
+                        </Link>
+                      )
+                    } else {
+                      return (
+                        <Link to='#' key={skill.value} className="link rankingItem tooltip cursorText">
+                          <span
+                            className="multiple value paddingR displayBlock"
+                            id={skill.value}
+                          >
+                            {skill.label}
+                          </span>
+                          <span className="tooltiptext below width125px normalLineheight">
+                            We don&#39;t have an active skills community for this yet
+                          </span>
+                        </Link>
+                      )
+                    }
+                  })}
+                </div>
+              </div>
+            )}
+
+
+
+
+
+
+
+              {skillsArray.length > 0 && (
+                <div className="tagsList">
+                  {skillsArray.map((skill) => {
+                    return (
+                      <Link to={{pathname: "/tagged/" + hashtag, state: {prevPath: window.location.pathname}}} key={skill} className="link" onClick={updatePathName}>
+                        <span
+                          className="multiple clickable value paddingR"
+                          id={skill}
+                        >
+                          {skill}
+                        </span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              )}*/}
+              <div className="textRight greyText fontSize13">{timeSince(job.datecreated)}</div>
             </div>
             <div className="marginTop10 paddingTop borderTop borderGrey">
               {!props.isInModal && (
                 <div className="greyText fontSize14">View full job details</div>
               )}
               {props.isInModal && (
-                <div>Extra job info goes here</div>
+                <div>
+                  <div>Deadline: {job.enddate}</div>
+                </div>
               )}
             </div>
           </div>

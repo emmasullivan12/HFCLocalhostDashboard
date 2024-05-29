@@ -1,4 +1,4 @@
-// Last merged this code on 29th may 2024 
+// Last merged this code on 29th may 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -477,78 +477,70 @@ class CoProfile extends React.Component {
         ],
       }
     ]
-  //  const jobsArr = []
-    const jobsArr = [
+    const jobsArr = []
+  /*  const jobsArr = [
       {
         oid: '0',
-        roletitle: 'Head of Finance',
+        title: 'Head of Finance',
         description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
         datecreated: '2020-09-04T13:30:50.667Z',
-        salarycurrency: 'GBP',
-        salary: '',
         country: 'GBR',
         city: 'London',
         locationtype: '1',
         roletype: '2',
         industries: [],
-        roles: [],
-        skills: [],
+        roles: ['3','5',],
+        skills: ['3','5','18','25'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
         coidrelatesto: '13'
       },{
         oid: '1',
-        roletitle: 'Head of Finance',
+        title: 'Head of Finance',
         description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
         datecreated: '2020-09-04T13:30:50.667Z',
-        salarycurrency: 'GBP',
-        salary: '',
         country: 'GBR',
         city: 'London',
         locationtype: '1',
         roletype: '2',
         industries: [],
-        roles: [],
-        skills: [],
+        roles: ['3','5',],
+        skills: ['3','5','18','25'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
         coidrelatesto: '13'
       },{
         oid: '2',
-        roletitle: 'Head of Finance',
+        title: 'Head of Finance',
         description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* \n **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile \n _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
         datecreated: '2020-09-04T13:30:50.667Z',
-        salarycurrency: 'GBP',
-        salary: '',
         country: 'GBR',
         city: 'London',
         locationtype: '1',
         roletype: '2',
         industries: [],
-        roles: [],
-        skills: [],
+        roles: ['3','5',],
+        skills: ['3','5','18','25'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
         coidrelatesto: '13'
       },{
         oid: '3',
-        roletitle: 'Head of Finance',
+        title: 'Head of Finance',
         description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
         datecreated: '2020-09-04T13:30:50.667Z',
-        salarycurrency: 'GBP',
-        salary: '',
         country: 'GBR',
         city: 'London',
         locationtype: '1',
         roletype: '2',
         industries: [],
-        roles: [],
-        skills: [],
+        roles: ['3','5',],
+        skills: ['3','5','18','25'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
         coidrelatesto: '13'
       }
-    ]
+    ]*/
 
     switch (tabToView) {
       case 'overview':
