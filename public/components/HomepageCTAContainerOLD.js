@@ -8,7 +8,7 @@ import AskAQPrompt from "./AskAQPrompt";
 import GroupCircle from "./GroupCircle";
 import JoinProgPrompt from "./JoinProgPrompt";
 import JoinProgrammeModalContent from './JoinProgrammeModalContent.js';
-import MentorMatches from './MentorMatches';
+import MentorMatches from './MentorMatchesOLD';
 import MenteeFullSignUp from './MenteeFullSignUp.js';
 import MenteeTraining from './MenteeTraining.js';
 import Modal from './Modal';

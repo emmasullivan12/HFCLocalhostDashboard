@@ -104,6 +104,7 @@ class AddHighlightModalContent extends Component {
         <div className="darkGreyText">Help mentees from every background get access to quality careers advice, by contributing to our new open-access Q&A reference library</div>
       </div>*/
     } else if (highlightType != 'answer') {
+      console.log(modalID)
       return (
         <AddHighlightTextBox
           modalID={modalID}

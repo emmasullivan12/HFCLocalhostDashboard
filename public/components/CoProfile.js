@@ -95,7 +95,7 @@ const UnsubscribeMobileProps = {
 
 const ChooseProfileTypeModalProps = {
   ariaLabel: 'Choose Company Profile Type',
-  usedFor: 'signUpPrompt',
+  usedFor: 'addTextDescCoProfile',
   changeInitFocus: true,
 }
 
@@ -135,7 +135,7 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: '6',
+      approvalstatus: '8',
       name: 'pladis Global',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
@@ -191,7 +191,6 @@ class CoProfile extends React.Component {
       this.setState({
         isUnsubscribing: false,
         updateUnsubscribeSuccess: true,
-        approvalStatus: 2 // Set back to '1' i.e free version of profile
       })
     } else { // user wanted to stay
       this.setState({
@@ -478,8 +477,8 @@ class CoProfile extends React.Component {
         ],
       }
     ]
-    const jobsArr = []
-  /*  const jobsArr = [
+  //  const jobsArr = []
+    const jobsArr = [
       {
         oid: '0',
         roletitle: 'Head of Finance',
@@ -500,7 +499,7 @@ class CoProfile extends React.Component {
       },{
         oid: '1',
         roletitle: 'Head of Finance',
-        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
         datecreated: '2020-09-04T13:30:50.667Z',
         salarycurrency: 'GBP',
         salary: '',
@@ -517,7 +516,7 @@ class CoProfile extends React.Component {
       },{
         oid: '2',
         roletitle: 'Head of Finance',
-        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* \n **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile \n _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
         datecreated: '2020-09-04T13:30:50.667Z',
         salarycurrency: 'GBP',
         salary: '',
@@ -549,7 +548,7 @@ class CoProfile extends React.Component {
         url: 'google.com',
         coidrelatesto: '13'
       }
-    ]*/
+    ]
 
     switch (tabToView) {
       case 'overview':
@@ -858,14 +857,14 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: '6',
+      approvalstatus: '8',
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
       country: 'GBR',
       industries: ['6', '8'],
-      type: '0',
-      size: '3',
+      type: 0,
+      size: 0,
       website: '',
       //website: 'https://www.ey.com',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
@@ -887,7 +886,7 @@ class CoProfile extends React.Component {
     const companyURL = "https://app.prospela.com" + companyURLending
     const companyName = companyItem && companyItem.label
     const logoURL = company.logo
-    const hasLogoURL = logoURL != '' && logoURL != null
+    const hasLogoURL = logoURL != '' && logoURL != null && (approvalStatus >= '2' && approvalStatus != '6' && approvalStatus != "7")
     //const flagEmoji = userFlagEmoji(company.country);
     const companySizeOptions = [
       {value: '0', label: 'Micro (0-10 employees)'},
@@ -901,9 +900,9 @@ class CoProfile extends React.Component {
       {value: '2', label: 'Social Enterprise'},
       {value: '3', label: 'Education Institution'},
     ]
-    const companySize = companySizeOptions
+    const companySize = company && companySizeOptions
       .filter(x => x.value == company.size)[0].label
-    const companyType = companyTypeOptions
+    const companyType = company && companyTypeOptions
       .filter(x => x.value == company.type)[0].label
     const indArrToShow = company.industries.slice(0,2)
 
@@ -1025,7 +1024,7 @@ class CoProfile extends React.Component {
 
     let unsubscribeOptions = [
       {value: '0', label: 'No', detail: 'Keep Premium', checkbox: true, isTitle: false},
-      {value: '1', label: 'Yes', detail: 'Unsubscribe & lose acces to Premium Employer features', checkbox: true, isTitle: false},
+      {value: '1', label: 'Yes', detail: 'Unsubscribe & lose access to Premium Employer features', checkbox: true, isTitle: false},
     ]
 
     return (
@@ -1131,6 +1130,62 @@ class CoProfile extends React.Component {
                     <div className="qDetail normalLineheight fontSize13 noBold marginBottom10 breakWord">
                       {company.description != '' ? company.description : ('Discover ' + companyName + ': learn directly from real employees, and explore work-life reality')}
                     </div>
+                    {approvalStatus == '0' && fromThisCo && (
+                      <div className={"darkGreyText fontSize12" + (isMobile ? " lineHeight40pc" : "")}>
+                        <div className="dispInlineBlock">
+                          <i className="fas fa-laptop" /> <div className="marginLeft5 profileClaimStatus dispInlineBlock">
+                            <Modal {...ChooseProfileTypeModalProps} triggerText="+ Add Website" wider>
+                              <BuyCoProfileModalContent
+                                modalTitle='Select your Company profile type'
+                                modalSubTitle='Choose between Free, Premium or Enterprise access'
+                                showStd
+                                showPrem
+                                showSuperPrem
+                                stdDesc='Get started by adding basic company info'
+                                premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+                                superPremDesc='Want to discuss your needs? Contact us!'
+                                stdPrice='£0/mth'
+                                premPrice='£100/mth'
+                                superPremPrice='Contact Sales'
+                                stdCourseLink=''
+                                premCourseLink='www.stripe.com'
+                                superPremCourseLink=''
+                                showBottomTxt
+                                formToShow={this.formToShow}
+                              />
+                            </Modal>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {(approvalStatus == '1' || approvalStatus == '2') && isPageManager && (
+                      <div className={"darkGreyText fontSize12" + (isMobile ? " lineHeight40pc" : "")}>
+                        <div className="dispInlineBlock">
+                          <i className="fas fa-laptop" /> <div className="marginLeft5 profileClaimStatus dispInlineBlock">
+                            <Modal {...ChooseProfileTypeModalProps} triggerText="+ Add Website" wider={false}>
+                              <BuyCoProfileModalContent
+                                modalTitle='Upgrade to access this feature'
+                                modalSubTitle='Choose between Premium or Enterprise access'
+                                showStd={false}
+                                showPrem
+                                showSuperPrem
+                                stdCourseLink=''
+                                premCourseLink='www.stripe.com'
+                                superPremCourseLink=''
+                                stdDesc='Get started by adding basic company info'
+                                premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+                                superPremDesc='Want to discuss your needs? Contact us!'
+                                stdPrice='£0/mth'
+                                premPrice='£100/mth'
+                                superPremPrice='Contact Sales'
+                                showBottomTxt
+                                formToShow={this.formToShow}
+                              />
+                            </Modal>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                     {approvalStatus >= '2' && ( // i.e. has provided at least fere profile info and been approved
                       <div className={"button-unstyled qDetail fontSize12 breakWord noBold" + (isMobile ? " lineHeight40pc" : "")}>
                         <span>
@@ -1184,7 +1239,7 @@ class CoProfile extends React.Component {
                           />
                         </span>
                         <Modal {...AddHighlightModalProps}>
-                          <AddHighlightModalContent modalID="modal-addHighlight" userRole={userRole} updatePathName={this.props.updatePathName}/>
+                          <AddHighlightModalContent modalID="modal-addAnswerQApage" userRole={userRole} updatePathName={this.props.updatePathName}/>
                         </Modal>
                         <Modal {...AddHighlightSmlModalProps}>
                           <AddHighlightModalContent modalID="modal-addHighlightSml" userRole={userRole} updatePathName={this.props.updatePathName}/>
