@@ -27,7 +27,8 @@ const ChooseProfileTypeModalProps = {
 const EditLifeAtCompanyDescFPModalProps = {
   ariaLabel: 'Add / Edit Life at Company section',
   triggerText: '+ Add / Edit description',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true,
 }
 const EditLifeAtCompanyDescModalProps = {
   ariaLabel: 'Edit Life at Company section',
@@ -47,7 +48,8 @@ const UpgradeCoProfileModalProps = {
   ariaLabel: 'Update your Company Profile',
   triggerText: 'Update your Company Profile',
   usedFor: 'upgradeCoProfileClaim',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true,
 }
 
 const SuccessModalProps = {
@@ -62,7 +64,8 @@ const FullCoProfileModalProps = {
   ariaLabel: 'Update your Premium Company Profile',
   triggerText: 'Update your Premium Company Profile',
   usedFor: 'fullCoProfileClaim',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true,
 }
 
 const AddExpertiseModalProps = {

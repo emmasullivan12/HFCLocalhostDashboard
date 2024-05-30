@@ -17,7 +17,8 @@ const ListJobModalProps = {
   ariaLabel: 'List a Job',
   triggerText: 'List a Job',
   usedFor: 'listAJob',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true
 }
 
 const SuccessModalProps = {
@@ -49,9 +50,21 @@ class NoJobListingsPrompt extends Component {
   }
 
   renderNoJobsPrompt = () => {
-    const {isPageManager, approvalStatus, renderFromThisCoPromptModal, fromThisCo, companyName, listJobQuestions} = this.props
+    const {isPageManager, approvalStatus, renderFromThisCoPromptModal, fromThisCo, companyName, listJobQuestions, isOnCommPage} = this.props
 
-    if (!isPageManager && !fromThisCo) {
+    if (isOnCommPage == true) {
+      return (
+        <React.Fragment>
+          <div className="placeholderPic noJobs" />
+          <h2 className="landingCTATitle">
+            <div>This community doesn&#39;t have any listed any jobs yet</div>
+          </h2>
+          <p className="landingCTADesc">
+            <span>Check back soon as opportunities arrive all the time. In the meantime, why not build up your rep by engaging in our Q&A or 1:1 mentoring?</span>
+          </p>
+        </React.Fragment>
+      )
+    } else if (!isPageManager && !fromThisCo) {
       return (
         <React.Fragment>
           <div className="placeholderPic noJobs" />

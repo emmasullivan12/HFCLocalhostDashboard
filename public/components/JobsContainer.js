@@ -9,13 +9,13 @@ import {LoadingSpinner} from './GeneralFunctions.js';
 class JobsContainer extends Component {
 
   render() {
-    const {isOnCoProfile, jobsArr, handleFeedClick, renderFromThisCoPromptModal, fromThisCo, isPageManager, approvalStatus, companyName, listJobQuestions, updatePathName} = this.props
+    const {isOnCoProfile, jobsArr, handleFeedClick, renderFromThisCoPromptModal, fromThisCo, isPageManager, approvalStatus, companyName, listJobQuestions, updatePathName, isOnCommPage} = this.props
     const isLoadingMorePosts = false
 
     return (
       <div className="marginTop20" id="feedItems" onClick={handleFeedClick}>
         {jobsArr.length == 0 && isLoadingMorePosts != true && (
-          <NoJobListingsPrompt renderFromThisCoPromptModal={renderFromThisCoPromptModal} fromThisCo={fromThisCo} isPageManager={isPageManager} approvalStatus={approvalStatus} companyName={companyName} listJobQuestions={listJobQuestions}/>
+          <NoJobListingsPrompt isOnCommPage={isOnCommPage} renderFromThisCoPromptModal={renderFromThisCoPromptModal} fromThisCo={fromThisCo} isPageManager={isPageManager} approvalStatus={approvalStatus} companyName={companyName} listJobQuestions={listJobQuestions}/>
         )}
         {jobsArr.length > 0 && jobsArr.map((job, index) => {
           return (

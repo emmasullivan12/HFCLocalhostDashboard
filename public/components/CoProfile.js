@@ -1,4 +1,4 @@
-// Last merged this code on 30th may 2024 
+// Last merged this code on 30th may 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -29,13 +29,15 @@ const ListJobModalProps = {
   ariaLabel: 'List a Job',
   triggerText: 'List a Job',
   usedFor: 'listAJob',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true,
 }
 
 const EditLifeAtCompanyDescFPModalProps = {
   ariaLabel: 'Add / Edit Life at Company section',
   triggerText: '+ Add / Edit description',
-  backBtn: 'arrow'
+  backBtn: 'arrow',
+  changeInitFocus: true,
 }
 
 const EditLifeAtCompanyDescModalProps = {
@@ -80,6 +82,7 @@ const ClaimFreeCoProfileModalProps = {
   ariaLabel: 'Claim Company Profile',
   triggerText: 'Claim Company Profile',
   usedFor: 'freeCoProfileClaim',
+  changeInitFocus: true,
   hideTrigger: true,
   backBtn: 'arrow'
 }

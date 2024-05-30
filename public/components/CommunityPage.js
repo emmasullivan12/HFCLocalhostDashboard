@@ -1,4 +1,4 @@
-// Last merged this code on 25th may 2024 
+// Last merged this code on 25th may 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -12,6 +12,7 @@ import CommunityOverview from "./CommunityOverview.js";
 import CommunityQuestions from "./CommunityQuestions.js";
 import CommunityLeaderboard from "./CommunityLeaderboard.js";
 import FullPageModal from './FullPageModal.js';
+import JobsContainer from "./JobsContainer.js";
 import JoinSkillsCommModalContent from './JoinSkillsCommModalContent.js';
 import MentorProfileContent from './MentorProfileContent.js';
 import MenuNav from './MenuNav.js';
@@ -649,6 +650,69 @@ class CommunityPage extends React.Component {
         ],
       }
     ]
+    const jobsArr = [
+      {
+        oid: '0',
+        title: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '1',
+        roletype: ['0'],
+        industries: [],
+        roles: ['3','5',],
+        skills: ['68','69','70','71'],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '13'
+      },{
+        oid: '1',
+        title: 'Head of Finance',
+        description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '0',
+        roletype: ['1'],
+        industries: [],
+        roles: ['3','5',],
+        skills: ['55'],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '1'
+      },{
+        oid: '2',
+        title: 'Head of Finance',
+        description: '~This <b>is</b>~ ~This <b>is</b>~ _This <b>is</b>_ ** *bold* \n **bold* ***bold* ****bold* ~~ ~~~ ~~~~ ~yo~ ~~yo~ ~~~yo~ ~~~~yo~ my_profile my__profile my___profile my____profile \n _italics_ and ~*script* _emmas_ *message*~ \n- \n-></script> \n \nhttps://www.pr~ospel~a.com/myprofil_enumbe_r89__linesarebeforethis or https://www.prospela.com/myprofil_enumbe_r89__linsebefore https://prospela.com/my*profile* https://prospela.com/my~profile~yeah https://prospela.com/my~~profile~yeah',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '2',
+        roletype: ['0', '2'],
+        industries: [],
+        roles: ['3','5',],
+        skills: ['52','70','71'],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '3'
+      },{
+        oid: '3',
+        title: 'Head of Finance',
+        description: 'Here is an extensive list of your CFO duties, but remember, you are only a Head of Finance.',
+        datecreated: '2020-09-04T13:30:50.667Z',
+        country: 'GBR',
+        city: 'London',
+        locationtype: '2',
+        roletype: ['2','5'],
+        industries: [],
+        roles: ['3','5',],
+        skills: ['0','1','3','4'],
+        enddate : '2020-09-04T13:30:50.667Z',
+        url: 'google.com',
+        coidrelatesto: '130'
+      }
+    ]
 
   //  const contentArr = []
     switch (tabToView) {
@@ -658,6 +722,16 @@ class CommunityPage extends React.Component {
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
         return <CommunityLeaderboard checkLeaderboardUserType={this.checkLeaderboardUserType} checkLeaderboardTimelineType={this.checkLeaderboardTimelineType} mentorsSorted={mentorsSorted} isGroupMember={isGroupMember} isCommPage updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} updateTabToView={this.updateTabToView}/>
+      case 'jobs':
+        return (
+          <div>
+            <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="briefcase emoji">💼</span> Latest opportunities <span role="img" aria-label="briefcase emoji">💼</span> </div>
+            <Modal ariaLabel='Choose Company Profile Type' changeInitFocus usedFor='listJob' triggerText='+ List a Job' wider={false} title='Head to your Company Profile to access Job Listings'>
+              <div className="darkGreyText">NOTE: This is a Premium Feature. Once you&#39;ve claimed your Company Profile and it	&#39;s been approved, you&#39;ll be able to list jobs and opportunities.</div>
+            </Modal>
+            <JobsContainer isOnCoProfile={false} isOnCommPage updatePathName={updatePathName} jobsArr={jobsArr} handleFeedClick={this.handleCommunityFeedClick}/>
+          </div>
+        )
     }
   }
 
@@ -1106,6 +1180,9 @@ class CommunityPage extends React.Component {
               </Link>
               <Link to={{pathname: commURLending + "/leaderboard", state: {prevPath: window.location.pathname}}}>
                 <button type="button" name="leaderboard" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'leaderboard' ? ' tabActive' : '')}><i className="fas fa-crown" /> Leaderboard</button>
+              </Link>
+              <Link to={{pathname: commURLending + "/jobs", state: {prevPath: window.location.pathname}}}>
+                <button type="button" name="jobs" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'jobs' ? ' tabActive' : '')}>Jobs</button>
               </Link>
             </div>
             <div className="marginTop20">
