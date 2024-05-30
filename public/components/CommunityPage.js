@@ -1,4 +1,4 @@
-// Last merged this code on 25th may 2024
+// Last merged this code on 30th may 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -391,7 +391,6 @@ class CommunityPage extends React.Component {
   }
 
   resetLeaveGroup = () => {
-    console.log("resetting")
     const {wantsToLeave} = this.state
     this.setState({
       isSubmittingLeaveGroup: false,
