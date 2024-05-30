@@ -936,10 +936,10 @@ class CoProfile extends React.Component {
       {q: 'Which of Prospela\'s Industry communities would you like this role to appear in?', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Industries...', placeholderOnClick: 'Choose from our list:', name: 'industries', valueToShow: 'label', options: [
         ...industryOptions
       ]},
-      {q: 'Which of Prospela\'s Role communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Roles...', placeholderOnClick: 'Choose from our list:', name: 'roles', valueToShow: 'label', options: [
+      {q: 'Which of Prospela\'s Role communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, noAddFreeTextAllowed: true, showCheckbox: true, showValues: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Roles...', placeholderOnClick: 'Choose from our list:', name: 'roles', valueToShow: 'label', options: [
         ...roleOptions
       ]},
-      {q: 'Which of Prospela\'s Skills communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Skills...', placeholderOnClick: 'Choose from our list:', name: 'skills', valueToShow: 'label', options: [
+      {q: 'Which of Prospela\'s Skills communities would you like this role to appear in?', aType: 'autocompleteMulti', req: 1, noAddFreeTextAllowed: true, showCheckbox: true, showValues: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Skills...', placeholderOnClick: 'Choose from our list:', name: 'skills', valueToShow: 'label', options: [
         ...skillsOptions
       ]},
       {q: 'Lastly, how long would you like this job listed for?', detail: 'Your listing will remain active until you choose, or until you end your company subscription (whichever is sooner).', aType: 'select', req: 1, placeholder: 'Select option...', name: 'listinglength', valueToShow: 'label', options: [

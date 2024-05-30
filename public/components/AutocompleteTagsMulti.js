@@ -50,9 +50,11 @@ class AutocompleteTagsMulti extends React.Component {
 
   onBlur = (e) => {
     e.persist()
-    const { suggestions, onBlur, handleDone, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass, isForForm } = this.props;
-    const {userInput} = this.state
-    if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
+    const { suggestions, onBlur, handleDone, valueToShow, required, handleChange, name, finMultiOptions, noSuggestionsCTAclass, isForForm, noAddFreeTextAllowed } = this.props;
+    const {userInput, filteredSuggestions} = this.state
+    if (filteredSuggestions.length === 0  && noAddFreeTextAllowed == true) {
+      return
+    } else  if (noSuggestionsCTAclass && e.relatedTarget != null && e.relatedTarget.className === noSuggestionsCTAclass) {
       return;
     } else {
       const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -214,7 +216,7 @@ class AutocompleteTagsMulti extends React.Component {
   onChange = (e) => {
     const { suggestions, handleChange, valueToShow, required, showCheckbox, openOnClick } = this.props;
     const userInput = e.currentTarget.value;
-
+    console.log(e.currentTarget.value)
     this.widthCalc()
     // set width of input box to size of userInput
     const hasMultipleAttributes = this.checkMultipleAttributes();
@@ -264,6 +266,7 @@ class AutocompleteTagsMulti extends React.Component {
   onClickValue = (e) => {
     e.stopPropagation()
     const {showSuggestions} = this.state
+    console.log("onclickvalue")
     if (showSuggestions === true) {
       return
     } else {
@@ -322,10 +325,10 @@ class AutocompleteTagsMulti extends React.Component {
     e.preventDefault()
     e.stopPropagation()
     e.persist()
-    const { suggestions, handleChange, name, valueToShow, required, isForForm, maxNumValues, noMultiple, handleDone } = this.props;
+    const { suggestions, handleChange, name, valueToShow, required, isForForm, maxNumValues, handleDone } = this.props;
     const value = e.currentTarget.dataset.text;
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
-
+console.log("onclickoptions")
     if (this.checkLetters(value) === false) {
       return
     }
@@ -385,7 +388,7 @@ class AutocompleteTagsMulti extends React.Component {
 
   onKeyDown = e => {
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected } = this.state;
-    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions, isForForm, maxNumValues} = this.props;
+    const { suggestions, required, showCheckbox, handleChange, handleTabPress, idValue, name, valueToShow, finMultiOptions, isForForm, maxNumValues, noAddFreeTextAllowed} = this.props;
     const hasMultipleAttributes = this.checkMultipleAttributes();
     const formId = isForForm === true ? e.currentTarget.closest("section > div").dataset.idforstate : null
     var key = e.key || e.keyCode
@@ -393,76 +396,80 @@ class AutocompleteTagsMulti extends React.Component {
     // User pressed the enter key
     if (key === 'Enter' || key === 13) {
       e.preventDefault();
-      this.setState(prevState => {
-        const { activeSuggestion, showSuggestions } = prevState
+      if (filteredSuggestions.length === 0  && noAddFreeTextAllowed == true) {
+        return
+      } else {
+        this.setState(prevState => {
+          const { activeSuggestion, showSuggestions } = prevState
 
-        if (activeSuggestion !== -1) {
+          if (activeSuggestion !== -1) {
 
-          const [ ...values ] = prevState.values
-        //  const value = options[focusedValue].value
+            const [ ...values ] = prevState.values
+          //  const value = options[focusedValue].value
 
-          let value
+            let value
 
-          if (filteredSuggestions.length === 0) {
-            value = userInput;
-          } else {
-            value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
-          }
+            if (filteredSuggestions.length === 0) {
+              value = userInput;
+            } else {
+              value = hasMultipleAttributes ? filteredSuggestions[activeSuggestion][valueToShow] : filteredSuggestions[activeSuggestion];
+            }
 
-          if (this.checkLetters(value) === false) {
-            return
-          }
+            if (this.checkLetters(value) === false) {
+              return
+            }
 
-          const index = values.indexOf(value)
+            const index = values.indexOf(value)
 
-          if (index === -1) {
-            if (maxNumValues == null || values.length < maxNumValues) {
-              values.push(value)
+            if (index === -1) {
+              if (maxNumValues == null || values.length < maxNumValues) {
+                values.push(value)
+              }
+            } else {
+              values.splice(index, 1)
+            }
+
+          //  handleChange(values)
+
+            if(!required || required && value != null) {
+              document.getElementById("autocompleterTags-"+name).classList.remove('error')
+            } else {
+              document.getElementById("autocompleterTags-"+name).classList.add('error')
+            }
+
+            return {
+              values: values,
+              numSelected: values.length,
+              userInput: '',
+              filteredSuggestions: suggestions,
+              showSuggestions: true,
             }
           } else {
-            values.splice(index, 1)
+            return {
+              showSuggestions: !showSuggestions
+            }
           }
-
-        //  handleChange(values)
-
-          if(!required || required && value != null) {
-            document.getElementById("autocompleterTags-"+name).classList.remove('error')
+        }, () => {
+          if (this.state.values.length === 0) {
+            this.widthCalc()
+            return
           } else {
-            document.getElementById("autocompleterTags-"+name).classList.add('error')
+            this.widthCalc(true)
           }
-
-          return {
-            values: values,
-            numSelected: values.length,
-            userInput: '',
-            filteredSuggestions: suggestions,
-            showSuggestions: true,
+      //    if (filteredSuggestions.length != suggestions.length) {
+        //  if (filteredSuggestions.length != 0 && this.state.showSuggestions === true) {
+          if (this.state.showSuggestions === true) {
+            this.heightCalc()
+    //      } else if (finMultiOptions) {
+      //      finMultiOptions()
           }
-        } else {
-          return {
-            showSuggestions: !showSuggestions
-          }
-        }
-      }, () => {
-        if (this.state.values.length === 0) {
-          this.widthCalc()
-          return
-        } else {
-          this.widthCalc(true)
-        }
-    //    if (filteredSuggestions.length != suggestions.length) {
-      //  if (filteredSuggestions.length != 0 && this.state.showSuggestions === true) {
-        if (this.state.showSuggestions === true) {
-          this.heightCalc()
-  //      } else if (finMultiOptions) {
-    //      finMultiOptions()
-        }
-      })
+        })
+      }
     }
 
     // User pressed the tab key
     else if (key === 'Tab' || key === 9) {
-      if (this.state.showSuggestions === false) {
+      if (this.state.showSuggestions === false || (filteredSuggestions.length === 0  && noAddFreeTextAllowed == true)) {
         return;
       } else {
 
@@ -743,7 +750,7 @@ class AutocompleteTagsMulti extends React.Component {
 
   renderSuggestions() {
     const { onChange, onClickOption, onMouseDown, onKeyDown } = this;
-    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, showCheckbox, valueToShow, children } = this.props;
+    const { name, detailToShow, placeholder, handleChange, idValue, required, showDetail, suggestions, showCheckbox, valueToShow, children, noAddFreeTextAllowed } = this.props;
     const { activeSuggestion, filteredSuggestions, showSuggestions, userInput, numSelected, values} = this.state;
     const isSafari = whichBrowser() == 'safari'
 
@@ -845,7 +852,7 @@ class AutocompleteTagsMulti extends React.Component {
           </div>
         </React.Fragment>
       )
-    } else if (filteredSuggestions.length === 0) {
+    } else if (noAddFreeTextAllowed != true && filteredSuggestions.length === 0) {
       const value = userInput;
       const containLetters = this.checkLetters(value)
     //  const selected = values.includes(value)
@@ -885,7 +892,23 @@ class AutocompleteTagsMulti extends React.Component {
           </div>
         </div>
       )
+    } else {
+      let className = "addOwn autocompleter-active lastItem overflow-ellipsis" + (showDetail===true ? ' showDetail' : ' noDetail');
+
+      return (
+        <div
+          className={"autocompleter-items " + (showDetail===true ? ' showDetail' : ' noDetail')}
+          id={"autocompleter-items-"+name}
+        >
+          <div
+            className={className}
+          >
+            {'No suggestions.'}
+          </div>
+        </div>
+      )
     }
+
   }
 
   render() {

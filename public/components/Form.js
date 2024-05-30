@@ -1226,6 +1226,7 @@ class Form extends Component {
             <div className="autocompleter">
               <AutocompleteTagsMulti
                 multiple
+                noAddFreeTextAllowed={question['noAddFreeTextAllowed']}
                 openOnClick={question['openOnClick']}
                 showValues={question['showValues']}
                 showCheckbox={question['showCheckbox']}
