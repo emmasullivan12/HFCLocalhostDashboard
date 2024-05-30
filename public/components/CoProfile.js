@@ -25,6 +25,13 @@ import {getIndustryDeets, getCompanyDeets, userFlagEmoji} from './UserDetail.js'
 import "../css/CoProfile.css";
 import '../css/CommunityPage.css';
 
+const ListJobModalProps = {
+  ariaLabel: 'List a Job',
+  triggerText: 'List a Job',
+  usedFor: 'listAJob',
+  backBtn: 'arrow'
+}
+
 const EditLifeAtCompanyDescFPModalProps = {
   ariaLabel: 'Add / Edit Life at Company section',
   triggerText: '+ Add / Edit description',
@@ -95,7 +102,6 @@ const UnsubscribeMobileProps = {
 
 const ChooseProfileTypeModalProps = {
   ariaLabel: 'Choose Company Profile Type',
-  usedFor: 'addTextDescCoProfile',
   changeInitFocus: true,
 }
 
@@ -135,7 +141,7 @@ class CoProfile extends React.Component {
     const isMobile = checkMobile()
     const company = {
       coid: '0',
-      approvalstatus: '8',
+      approvalstatus: '3',
       name: 'pladis Global',
       pagemanagers: [{uid: '7'}, {uid: '8'}],
     }
@@ -477,8 +483,8 @@ class CoProfile extends React.Component {
         ],
       }
     ]
-    const jobsArr = []
-  /*  const jobsArr = [
+  //  const jobsArr = []
+    const jobsArr = [
       {
         oid: '0',
         title: 'Head of Finance',
@@ -487,10 +493,10 @@ class CoProfile extends React.Component {
         country: 'GBR',
         city: 'London',
         locationtype: '1',
-        roletype: '2',
+        roletype: ['0'],
         industries: [],
         roles: ['3','5',],
-        skills: ['3','5','18','25'],
+        skills: ['68','69','70','71'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
         coidrelatesto: '13'
@@ -501,14 +507,14 @@ class CoProfile extends React.Component {
         datecreated: '2020-09-04T13:30:50.667Z',
         country: 'GBR',
         city: 'London',
-        locationtype: '1',
-        roletype: '2',
+        locationtype: '0',
+        roletype: ['1'],
         industries: [],
         roles: ['3','5',],
-        skills: ['3','5','18','25'],
+        skills: ['55'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
-        coidrelatesto: '13'
+        coidrelatesto: '1'
       },{
         oid: '2',
         title: 'Head of Finance',
@@ -516,14 +522,14 @@ class CoProfile extends React.Component {
         datecreated: '2020-09-04T13:30:50.667Z',
         country: 'GBR',
         city: 'London',
-        locationtype: '1',
-        roletype: '2',
+        locationtype: '2',
+        roletype: ['0', '2'],
         industries: [],
         roles: ['3','5',],
-        skills: ['3','5','18','25'],
+        skills: ['52','70','71'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
-        coidrelatesto: '13'
+        coidrelatesto: '3'
       },{
         oid: '3',
         title: 'Head of Finance',
@@ -531,16 +537,16 @@ class CoProfile extends React.Component {
         datecreated: '2020-09-04T13:30:50.667Z',
         country: 'GBR',
         city: 'London',
-        locationtype: '1',
-        roletype: '2',
+        locationtype: '2',
+        roletype: ['2','5'],
         industries: [],
         roles: ['3','5',],
-        skills: ['3','5','18','25'],
+        skills: ['0','1','3','4'],
         enddate : '2020-09-04T13:30:50.667Z',
         url: 'google.com',
-        coidrelatesto: '13'
+        coidrelatesto: '130'
       }
-    ]*/
+    ]
 
     switch (tabToView) {
       case 'overview':
@@ -548,8 +554,48 @@ class CoProfile extends React.Component {
       case 'jobs':
       return (
         <div>
-          <div className="bold darkGreyText marginBottomMinus10 fontSize16"><span role="img" aria-label="briefcase emoji">💼</span> Latest opportunities <span role="img" aria-label="briefcase emoji">💼</span> </div>
-          <JobsContainer companyName={companyName} fromThisCo={fromThisCo} isPageManager={isPageManager} approvalStatus={approvalStatus} jobsArr={jobsArr} renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} handleFeedClick={this.handleCommunityFeedClick} listJobQuestions={listJobQuestions}/>
+          <div className="bold darkGreyText fontSize16 marginBottom10"><span role="img" aria-label="briefcase emoji">💼</span> Latest opportunities <span role="img" aria-label="briefcase emoji">💼</span> </div>
+          {(fromThisCo && approvalStatus == '0') && (
+            <div>{this.renderFromThisCoPromptModal('listJob', '+ List a Job')}</div>
+          )}
+          {isPageManager && approvalStatus == '1' && (
+            <Modal {...ChooseProfileTypeSideBarModalPropsFromThisCo} usedFor='listJob' triggerText='+ List a Job' wider={false} title='Upgrade to access this feature'>
+              <div className="darkGreyText">NOTE: This is a Premium Feature. Once your Free profile has been approved, you&#39;ll be able to upgrade and add this content.</div>
+            </Modal>
+          )}
+          {isPageManager && approvalStatus == '2' && (
+            <Modal {...ChooseProfileTypeSideBarModalPropsFromThisCo} usedFor='listJob' triggerText='+ List a Job' wider={false}>
+              <BuyCoProfileModalContent
+                modalTitle='Upgrade to access this feature'
+                modalSubTitle='Choose between Premium or Enterprise access'
+                showStd={false}
+                showPrem
+                showSuperPrem
+                stdCourseLink=''
+                premCourseLink='www.stripe.com'
+                superPremCourseLink=''
+                stdDesc='Get started by adding basic company info'
+                premDesc='Everything in Free + Job / event listings, enhanced employer branding and more!'
+                superPremDesc='Want to discuss your needs? Contact us!'
+                stdPrice='£0/mth'
+                premPrice='£100/mth'
+                superPremPrice='Contact Sales'
+                showBottomTxt
+                formToShow={null}
+              />
+            </Modal>
+          )}
+          {isPageManager && approvalStatus > '2' && (
+            <FullPageModal {...ListJobModalProps} >
+              <Form
+                questions={listJobQuestions}
+                usedFor="listAJob"
+                formTitle="List a Job"
+                onSubmit={() => this.showModal('Success')}
+              />
+            </FullPageModal>
+          )}
+          <JobsContainer isOnCoProfile updatePathName={updatePathName} companyName={companyName} fromThisCo={fromThisCo} isPageManager={isPageManager} approvalStatus={approvalStatus} jobsArr={jobsArr} renderFromThisCoPromptModal={this.renderFromThisCoPromptModal} handleFeedClick={this.handleCommunityFeedClick} listJobQuestions={listJobQuestions}/>
         </div>
       )
     }
@@ -849,7 +895,7 @@ class CoProfile extends React.Component {
     const {userRole, isLoggedIn} = this.props;
     const company = {
       coid: '0',
-      approvalstatus: '8',
+      approvalstatus: '3',
     //  logo: '',
       logo: '/2020/10/20/d619ca2a-8ae3-4bb6-ae52-b28817d4e082_571d5702-6350-43cc-94cb-d862d8553b2a.png',
       description: 'Ernst & Young provides audit, consulting, tax, business risk, technology and security risk services, and human capital services worldwide.',
@@ -930,7 +976,7 @@ class CoProfile extends React.Component {
         {value: '6', label: 'Internship'},
         {value: '7', label: 'Other'},
       ]},
-      {q: 'Please provide a job description', detail: 'e.g. responsiblities, salary, candidate requirements, details about the application process, etc. Formattinrg options: *bold* _italics_ ~highlight~ and ↑ Shift + ⤶ Enter for new line.', aType: 'textLong', req: 1, maxLength: 5000, placeholder: 'Type job description...', name: 'description'},
+      {q: 'Please provide a job description', detail: 'e.g. responsibilities, salary, candidate requirements, details about the application process, etc. Formatting options: *bold* _italics_ ~highlight~ and ↑ Shift + ⤶ Enter for new line.', aType: 'textLong', req: 1, maxLength: 5000, placeholder: 'Type job description...', name: 'description'},
       {q: 'Where will candidates submit applications?', detail: 'This could be your website or Applicant Tracking System URL. Note: We will automatically add the source tag \'source=prospela\' to the end of your URL to help you track the referral source', aType: 'text', req: 1, placeholder: 'https://yourcompany.com/careers/jobid12345...', name: 'url'},
       {q: 'Now, let\'s help boost this roles discoverability!', detail: 'The next few questions help you tag this job so it will appear in specific skill, industry, and role communities on Prospela', aType: 'interim', name: 'interim'},
       {q: 'Which of Prospela\'s Industry communities would you like this role to appear in?', aType: 'selectMulti', req: 1, showCheckbox: true, showIcon: true, iconToShow: 'iconFA', placeholder: 'Select Industries...', placeholderOnClick: 'Choose from our list:', name: 'industries', valueToShow: 'label', options: [
@@ -1126,7 +1172,7 @@ class CoProfile extends React.Component {
                       <div className={"darkGreyText fontSize12" + (isMobile ? " lineHeight40pc" : "")}>
                         <div className="dispInlineBlock">
                           <i className="fas fa-laptop" /> <div className="marginLeft5 profileClaimStatus dispInlineBlock">
-                            <Modal {...ChooseProfileTypeModalProps} triggerText="+ Add Website" wider>
+                            <Modal {...ChooseProfileTypeModalProps} usedFor='addTextDescCoProfile' triggerText="+ Add Website" wider>
                               <BuyCoProfileModalContent
                                 modalTitle='Select your Company profile type'
                                 modalSubTitle='Choose between Free, Premium or Enterprise access'
@@ -1154,7 +1200,7 @@ class CoProfile extends React.Component {
                       <div className={"darkGreyText fontSize12" + (isMobile ? " lineHeight40pc" : "")}>
                         <div className="dispInlineBlock">
                           <i className="fas fa-laptop" /> <div className="marginLeft5 profileClaimStatus dispInlineBlock">
-                            <Modal {...ChooseProfileTypeModalProps} triggerText="+ Add Website" wider={false}>
+                            <Modal {...ChooseProfileTypeModalProps} usedFor='addTextDescCoProfile' triggerText="+ Add Website" wider={false}>
                               <BuyCoProfileModalContent
                                 modalTitle='Upgrade to access this feature'
                                 modalSubTitle='Choose between Premium or Enterprise access'
@@ -1269,9 +1315,6 @@ class CoProfile extends React.Component {
               <Link to={{pathname: companyURLending + "/jobs-and-opportunities", state: {prevPath: window.location.pathname}}}>
                 <button type="button" name="jobs" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'jobs' ? ' tabActive' : '')}>
                   Jobs & Ops
-                  {activeJobs.length > 0 && (
-                    <div className="multiple green marginLeft5 paddingL10 fontSize10">Now hiring!</div>
-                  )}
                 </button>
               </Link>
             </div>

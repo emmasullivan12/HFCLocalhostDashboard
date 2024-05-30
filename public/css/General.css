@@ -414,13 +414,13 @@ table th .description{
   font-size: 22px;
 }
 .fontSize20{
-  font-size: 20px;
+  font-size: 20px!important;
 }
 .fontSize18{
   font-size: 18px;
 }
 .fontSize16{
-  font-size: 16px;
+  font-size: 16px!important;
 }
 .fontSize15{
   font-size: 15px;
@@ -564,7 +564,7 @@ table th .description{
   color: #351c75!important;
 }
 .white{
-  color: #fff;
+  color: #fff!important;
   text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;
 }
 .black{
@@ -880,6 +880,9 @@ table th .description{
 .overflowVisible{
   overflow: visible!important;
 }
+.minWidth150px{
+  min-width: 150px;
+}
 .maxWidth100{
   max-width: 100%;
 }
@@ -918,6 +921,9 @@ table th .description{
 }
 .width125px{
   width: 125px!important;
+}
+.width150px{
+  width: 150px;
 }
 .width180px{
   width: 180px;

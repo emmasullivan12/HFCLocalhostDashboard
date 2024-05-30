@@ -9,7 +9,7 @@ import {LoadingSpinner} from './GeneralFunctions.js';
 class JobsContainer extends Component {
 
   render() {
-    const {jobsArr, handleFeedClick, renderFromThisCoPromptModal, fromThisCo, isPageManager, approvalStatus, companyName, listJobQuestions} = this.props
+    const {isOnCoProfile, jobsArr, handleFeedClick, renderFromThisCoPromptModal, fromThisCo, isPageManager, approvalStatus, companyName, listJobQuestions, updatePathName} = this.props
     const isLoadingMorePosts = false
 
     return (
@@ -22,6 +22,8 @@ class JobsContainer extends Component {
             <JobItem
               key={job.oid}
               job={job}
+              updatePathName={updatePathName}
+              isOnCoProfile={isOnCoProfile}
             />
           )
         })}

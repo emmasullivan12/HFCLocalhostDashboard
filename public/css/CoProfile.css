@@ -8,3 +8,14 @@
   border-left: 1px lightgrey solid;
   padding-left: 10px;
 }
+.addAJobBox-Feed{
+  border: 2px dotted #4e4ed6;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}

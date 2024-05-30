@@ -1325,7 +1325,7 @@ class Form extends Component {
                   {q}
                 </h2>
                 <div className={detailClassName}>
-                  <TextParser text={detail} />
+                  {detail}
                 </div>
                 { this.renderAType(question, required, usedFor, i, name) }
               </section>
