@@ -28,12 +28,16 @@ class SearchCompanyProfileModalContent extends Component {
 
   // This will handle Mentor accepting mentee i.e. updating database/Redux will happen here
   handleSubmit = (evt) => {
+    const {company} = this.state
     this.setState({ isSubmitting: true });
     if (!this.canBeSubmitted()) {
       evt.preventDefault ();
       return;
     } else {
-      // Dex to redirect to company profile
+      const employerListObject = companyList.filter(co => co.value == company)
+      const employerURL = employerListObject[0].urlText
+      const companyURLending = "/companies/" + employerURL
+      window.location.href = 'https://app.prospela.com' + companyURLending
     }
   }
 
