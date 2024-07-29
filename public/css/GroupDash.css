@@ -58,8 +58,14 @@
   color: #ff6c81;
   padding: 10px 0 10px 0;
 }
+.dash-welcomeHeader.whiteText{
+  color: #fff;
+}
 .dash-welcomeHeader.green{
   color: #3ca692;
+}
+.dash-welcomeHeader.brown{
+  color: #4f2d01;
 }
 .dash-welcomeImg-container{
   height: 100px;
@@ -83,6 +89,12 @@
     height: 51px;
     width: 96px;
     right: -20px;
+  }
+  .dash-welcomeContainer.isWomenOrBame{
+    height: 200px;
+  }
+  .dash-welcomeImg-container.commPage.isWomenOrBame{
+    top: -197px;
   }
 }
 @media only screen and (min-width: 330px) and (max-width: 392px) {

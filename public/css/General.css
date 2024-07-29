@@ -557,6 +557,18 @@ table th .description{
   border: 1px solid #e0a7a7!important;
   color: #da0b0b!important;
 }
+.electricPink{
+  color: #ff61ca;
+}
+.electricPinkBackground{
+  background-color: #ff61ca!important;
+}
+.brownText{
+  color: #9b5800;
+}
+.brownBackground{
+  background-color: #bf8943!important;
+}
 .blueText{
   color: #00B0F0;
 }

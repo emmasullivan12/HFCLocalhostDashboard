@@ -190,7 +190,7 @@ class CommunityOverview extends React.Component {
   }
 
   render() {
-    const {isGroupMember, joinGroup, companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
+    const {isWomenOrBame, isGroupMember, joinGroup, companiesOfTopMentors, renderCommunityActivity, userRole, isLoggedIn, community, commURL, updatePathName, contentArr, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, handleCommunityFeedClick, updateTabToView} = this.props
     const {showAddExpOrLearningModal, showAddSkillsModal, mentorWorkEnvChartLoaded, mentorMaxEduChartLoaded, menteeMostPopularRolesChartLoaded} = this.state
     const fname = 'Dexter' // loggedin users fname
     let menteeSkillsArray, menteeLearningSkillsArray, mentorSkillsArray, mentorLearningSkillsArray, popularIndustriesArray, popularRolesArray, subjectsArray, menteesTopRolesDemandArray, questionsArr, numQs, numUnanswered
@@ -384,9 +384,10 @@ class CommunityOverview extends React.Component {
 
     const isSafari = whichBrowser() == 'safari'
 
+
     return (
       <div>
-        {isLoggedIn && (
+        {isLoggedIn && !isWomenOrBame && (
           <div className="dash-welcomeContainer marginBottom20">
             <div className="col-9">
               <div className="dash-welcomeHeader"><strong>Welcome, {fname}!</strong></div>

@@ -399,7 +399,7 @@ class CommunityPage extends React.Component {
     })
   }
 
-  renderTab = (community, commURL) => {
+  renderTab = (community, commURL, isWomenOrBame) => {
     const {userRole, isLoggedIn, updatePathName, checkHasAccess, noAccessHandler, maxViewsReached, handleUnlockBtnClick, updateFeedScrollPos} = this.props;
     const {tabToView, isGroupMember, mentorsSorted, companiesOfTopMentors} = this.state;
 
@@ -716,7 +716,7 @@ class CommunityPage extends React.Component {
   //  const contentArr = []
     switch (tabToView) {
       case 'overview':
-        return <CommunityOverview isGroupMember={isGroupMember} joinGroup={this.joinGroup} companiesOfTopMentors={companiesOfTopMentors} renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
+        return <CommunityOverview isWomenOrBame={isWomenOrBame} isGroupMember={isGroupMember} joinGroup={this.joinGroup} companiesOfTopMentors={companiesOfTopMentors} renderCommunityActivity={this.renderCommunityActivity} updatePathName={updatePathName} isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'questions':
         return <CommunityQuestions isLoggedIn={isLoggedIn} userRole={userRole} community={community} commURL={commURL} contentArr={contentArr} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} handleCommunityFeedClick={this.handleCommunityFeedClick} updateTabToView={this.updateTabToView}/>
       case 'leaderboard':
@@ -1030,6 +1030,10 @@ class CommunityPage extends React.Component {
       ]
     }
 
+    const isWomen = false
+    const isBame = true
+    const isWomenOrBame = isWomen == true || isBame == true
+
     return (
       <React.Fragment>
         <div className="tabWindow" id="communityFeedContainer" ref={this.scrollRef} onScroll={this.onScroll} >
@@ -1042,7 +1046,7 @@ class CommunityPage extends React.Component {
               <div className="paddingBtm marginBottom20">
                 <div className="chatItemFlexContainer qTitle qaPage">
                   <div>
-                    <span className="marginBottom20 breakWord"><strong>{community.name} <span className="mediumGreyText">community</span></strong></span>
+                    <span className={"marginBottom20 breakWord" + (isWomen ? " electricPink" : (isBame ? " brownText" : ""))}><strong>{isWomen ? "Women in " : (isBame ? "BAME in " : "")}{community.name} <span className="mediumGreyText">community</span></strong></span>
                     {isLoggedIn && isGroupMember && isMobile && (
                       <Modal {...LeaveGroupMobileProps} handleLocalStateOnClose={() => this.resetLeaveGroup()}>
                         <div className="showSmallModalSize">
@@ -1170,6 +1174,27 @@ class CommunityPage extends React.Component {
                 </div>
               </div>
             </div>
+            {isWomenOrBame && (
+              <div className={"dash-welcomeContainer marginBottom40" + (isWomen ? " electricPinkBackground isWomenOrBame" : (isBame ? " brownBackground isWomenOrBame" : ""))}>
+                <div className="col-9">
+                  <div className={"dash-welcomeHeader" + (isWomen ? " whiteText" : (isBame ? " brown" : ""))}><strong>Discover insights from {community.name}&#39;s top {isWomen ? "female voices" : isBame ? "BAME voices" : "experts"}</strong></div>
+                  <div>
+                    A showcase of the perspectives, actionable advice and hidden gems from exceptional {isWomen ? "female " : isBame ? "BAME " : ""}professionals shaping the future of {community.name}.
+                  </div>
+                </div>
+                <div className="col-3">
+                  <div className={"dash-welcomeImg-container commPage" + ((isWomen || isBame) ? " isWomenOrBame" : "")}>
+                    <img
+                      className="groupDashImg"
+                      alt="Team meeting"
+                      srcSet={cdn+"/images/Dashboard-Community%20Managers_Sml.png 235w, "+cdn+"/images/Dashboard-Community%20Managers.png 1039w"}
+                      sizes="(min-width: 859px) 1039px, 235px"
+                      src={cdn+"/images/Dashboard-Community%20Managers_Sml.png"}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
             <div className="groupdash-menuBar borderBtm borderGrey commPage">
               <Link to={{pathname: commURLending, state: {prevPath: window.location.pathname}}}>
                 <button type="button" name="overview" onClick={(e) => {this.updateTabToView(e)}} className={'button-unstyled groupdash-menuBtn' + (tabToView == 'overview' ? ' tabActive' : '')}>Overview</button>
@@ -1271,7 +1296,7 @@ class CommunityPage extends React.Component {
                 )}
               </div>
               <div className="mainBar" role="main" aria-label="rendered tab">
-                { this.renderTab(community, commURL) }
+                { this.renderTab(community, commURL, isWomenOrBame) }
               </div>
             </div>
           </div>
