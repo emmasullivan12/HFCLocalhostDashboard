@@ -1251,6 +1251,20 @@ class CommunityOverview extends React.Component {
         { renderCommunityActivity(commURL, true) }
         <div>
           <div className="bold darkGreyText marginBottomMinus10 fontSize16">Latest posts</div>
+          {!isWomenOrBame && (
+            <div className="marginTop20">
+              <a href={commURL + "/women"} target="_blank" rel="noopener noreferrer">
+                <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent electricPinkBackground noBold marginRight10">
+                  <i className="fas fa-external-link-alt"/> Female perspectives
+                </button>
+              </a>
+              <a href={commURL + "/bame"} target="_blank" rel="noopener noreferrer">
+                <button type="button" className="ModalOpenBtn ModalOpenBtn-unlockFeedContent brownBackground noBold">
+                  <i className="fas fa-external-link-alt"/> BAME perspectives
+                </button>
+              </a>
+            </div>
+          )}
           <FeedContainer community={community} commURL={commURL} isCommPage contentArr={contentArr} userRole={userRole} isLoggedIn={isLoggedIn} checkHasAccess={checkHasAccess} noAccessHandler={noAccessHandler} maxViewsReached={maxViewsReached} handleUnlockBtnClick={handleUnlockBtnClick} updatePathName={updatePathName} handleFeedClick={handleCommunityFeedClick} updateTabToView={updateTabToView}/>
         </div>
         {showAddSkillsModal == true && (

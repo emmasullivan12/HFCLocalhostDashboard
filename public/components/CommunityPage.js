@@ -84,6 +84,10 @@ class CommunityPage extends React.Component {
       mentorsSorted: [],
       isSubmittingLeaveGroup: false,
       updateLeaveGroupSuccess: false,
+      currURL: '',
+      isWomen: false,
+      isBame: false,
+      isWomenOrBame: false,
     //  isScrollingHorizontally: false,
     }
   }
@@ -91,6 +95,14 @@ class CommunityPage extends React.Component {
   componentDidMount() {
     const {updateDocumentTitle} = this.props
     const {prevFeedScrollPos} = this.state
+
+    let grabURL = document.location.href
+    this.setState({
+      currURL: grabURL
+    })
+    console.log(grabURL)
+
+    this.checkIsWomenOrBame(grabURL)
 
     const community = {
       cmid: '1234',
@@ -184,8 +196,30 @@ class CommunityPage extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    const {currURL} = this.state
+    const grabCurrURL = document.location.href
+    console.log(grabCurrURL)
+    if (grabCurrURL != currURL) {
+      this.checkIsWomenOrBame(grabCurrURL)
+    }
+  }
+
   componentWillUnmount() {
     this.props.updateDocumentTitle("Prospela Dashboard")
+  }
+
+  checkIsWomenOrBame = (urlToCheck) => {
+    let lastURLElement = urlToCheck.substring(urlToCheck.lastIndexOf('/') + 1)
+    console.log(lastURLElement)
+    let isWomen = lastURLElement == "women"
+    let isBame = lastURLElement == "bame"
+    let isWomenOrBame = isWomen == true || isBame == true
+    this.setState({
+      isWomen: isWomen,
+      isBame: isBame,
+      isWomenOrBame: isWomenOrBame,
+    })
   }
 
   checkLeaderboardUserType = (userType) => {
@@ -943,7 +977,7 @@ class CommunityPage extends React.Component {
   }
 */
   render() {
-    const {tabToView, isGroupMember, userWasLearningSkill, wantsToLeave, isSubmittingLeaveGroup, updateLeaveGroupSuccess} = this.state
+    const {tabToView, isGroupMember, userWasLearningSkill, wantsToLeave, isSubmittingLeaveGroup, updateLeaveGroupSuccess, isWomen, isBame, isWomenOrBame} = this.state
     const {userRole, isLoggedIn, updatePathName, highlightStepsBox, checkHasAccess, requireLogin, noAccessHandler} = this.props;
     const community = {
       cmid: '1234',
@@ -1029,10 +1063,6 @@ class CommunityPage extends React.Component {
         {value: '1', label: 'Yes', detail: 'Leave the group', checkbox: true, isTitle: false},
       ]
     }
-
-    const isWomen = false
-    const isBame = true
-    const isWomenOrBame = isWomen == true || isBame == true
 
     return (
       <React.Fragment>

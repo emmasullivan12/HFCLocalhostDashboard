@@ -567,7 +567,7 @@ table th .description{
   color: #9b5800;
 }
 .brownBackground{
-  background-color: #bf8943!important;
+  background-color: #d5b183!important;
 }
 .blueText{
   color: #00B0F0;
@@ -578,6 +578,9 @@ table th .description{
 .white{
   color: #fff!important;
   text-shadow: 0 0 3px transparent, 0 0 3px black, 0 0 3px transparent, 0 0 3px black;
+}
+.whiteText{
+  color: #fff!important;
 }
 .black{
   color: black!important;
