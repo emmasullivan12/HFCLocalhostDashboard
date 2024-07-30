@@ -1,4 +1,4 @@
-// Last merged this code on 30th may 2024
+// Last merged this code on 30TH JULY 2024
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -100,7 +100,6 @@ class CommunityPage extends React.Component {
     this.setState({
       currURL: grabURL
     })
-    console.log(grabURL)
 
     this.checkIsWomenOrBame(grabURL)
 
@@ -199,7 +198,6 @@ class CommunityPage extends React.Component {
   componentDidUpdate() {
     const {currURL} = this.state
     const grabCurrURL = document.location.href
-    console.log(grabCurrURL)
     if (grabCurrURL != currURL) {
       this.checkIsWomenOrBame(grabCurrURL)
     }
@@ -211,7 +209,6 @@ class CommunityPage extends React.Component {
 
   checkIsWomenOrBame = (urlToCheck) => {
     let lastURLElement = urlToCheck.substring(urlToCheck.lastIndexOf('/') + 1)
-    console.log(lastURLElement)
     let isWomen = lastURLElement == "women"
     let isBame = lastURLElement == "bame"
     let isWomenOrBame = isWomen == true || isBame == true
