@@ -1,13 +1,0 @@
-[
-    {
-        "type": "message",
-        "subtype": "bot_message",
-        "text": "Hi Claire!\n I’m so sorry for not having replied. I got a new phone over Christmas and when I moved everything over it didn’t sign me into slack!\n\nI’ve finally managed to log back in and only just read your message about the companies. Thank you so much, it’s really good advice.\n\nI was originally really interested in doing more realistic stuff, but now that I’m back in Uni, the modules we’re doing are a bit more focused on acting and action in animation and I’m realising I’d probably enjoy working with more of a cartoon kind of style (I had to animate a chimp this week and I’m quite happy with the result).\n I admit I do have to do a bit more research on the companies I would like to apply for. I’v gathered some lists of London based companies but have yet to further explore their work. I’m right in the middle of a group project which has been quite time consuming. But I’ll soon have some time to work on an individual project and that will be a good opportunity to do some research and explore more of what I want to do.",
-        "ts": "1581888703.000100",
-        "username": "João Pereira (Prospela Students (beta))",
-        "icons": {
-            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2020-02-16\/944665969281_48.png"
-        },
-        "bot_id": "B6CS60LDU"
-    }
-]
