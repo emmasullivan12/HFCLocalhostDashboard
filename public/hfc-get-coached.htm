@@ -1,0 +1,927 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="The Human Finance Club">
+  <meta name="description" content="Sign up to The Human Finance Club: The peer community and career lab helping finance professionals sharpen the human edge AI can’t replicate: build commercial & strategic skills, an AI-smart instinct, and a network of fellow comrades.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png">
+  <link rel="icon" href="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png" sizes="32x32">
+  <link rel="icon" href="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png">
+  <meta name="msapplication-TileImage" content="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png">
+  <link rel="preload stylesheet" href="./css/HFC-general.css" as="style">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='preload stylesheet' as="style">
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='preload stylesheet' as="style">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='preload stylesheet' as="style">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='preload stylesheet' as="style">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='preload stylesheet' as="style">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='preload stylesheet' as="style">
+  <link rel="preload stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" as="style">
+  <meta property="og:title" content="The Human Finance Club - Home">
+  <meta property="og:description" content="Sign up to The Human Finance Club: The peer community and career lab helping finance professionals sharpen the human edge AI can’t replicate: build commercial & strategic skills, an AI-smart instinct, and a network of fellow comrades.">
+  <meta property="og:image" content="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png">
+  <meta property="og:url" content="https://www.thehumanfinanceclub.com/home">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Human Finance Club - Home">
+  <meta name="twitter:description" content="Sign up to The Human Finance Club: The peer community and career lab helping finance professionals sharpen the human edge AI can’t replicate: build commercial & strategic skills, an AI-smart instinct, and a network of fellow comrades.">
+  <meta name="twitter:image" content="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png">
+  <meta name="twitter:site" content="@humanfinclub">
+  <link rel="canonical" href="https://www.thehumanfinanceclub.com/home">
+  <title>The Human Finance Club - Home</title>
+</head>
+
+<body>
+  <div id="root">
+    <div class="sticky top-0 z-50 pt-8 px-4">
+      <header class="w-full max-w-7xl mx-auto py-3 px-6 md:px-8 flex items-center justify-between">
+        <div class="crop-headerLogo">
+          <img class="h-100px xs:h-16" alt="The Human Finance Club logo"src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Logo%20Pink_Beige%20Transparent%20background.png" />
+        </div>
+        <button id="md-Menu" class="md:hidden p-3 rounded-2xl text-muted-foreground hover:text-foreground">
+          <svg id="hamburgerMenu" class="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-component-name="Menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+          <svg id="xMenu" class="hidden lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-component-name="Menu">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+        <nav class="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
+          <div class="rounded-full px-1 py-1 backdrop-blur-md bg-background/80 border border-border shadow-lg">
+            <div class="flex items-center justify-center gap-1">
+              <button type="button" data-route="/hfc-home" data-state="on" role="radio" aria-checked="true" data-component-name="ToggleGroupItem" tabindex="0" class="menu-btn inline-flex items-center justify-center text-sm font-medium ring-offset-background hover:bg-muted hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground h-10 px-4 py-2 rounded-full transition-colors relative text-accent-foreground bg-accent">
+                Home
+              </button>
+              <button type="button" data-route="/hfc-about" data-state="off" role="radio" aria-checked="false" data-component-name="ToggleGroupItem" tabindex="-1" class="menu-btn inline-flex items-center justify-center text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-4 py-2 rounded-full transition-colors relative text-muted-foreground hover:text-foreground hover:bg-muted">
+                About
+              </button>
+              <button type="button" data-route="/hfc-spice-up-your-cv" data-state="off" role="radio" aria-checked="false" data-component-name="ToggleGroupItem" tabindex="-1" class="menu-btn inline-flex items-center justify-center text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-4 py-2 rounded-full transition-colors relative text-muted-foreground hover:text-foreground hover:bg-muted">
+                Spice up your CV
+              </button>
+              <button type="button" data-route="/hfc-get-coached" data-state="off" role="radio" aria-checked="false" data-component-name="ToggleGroupItem" tabindex="-1" class="menu-btn inline-flex items-center justify-center text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground bg-transparent h-10 px-4 py-2 rounded-full transition-colors relative text-muted-foreground hover:text-foreground hover:bg-muted">
+                Get Coached
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div id="md-menuNav" class="hidden md:hidden absolute top-20 left-4 right-4 bg-background/95 backdrop-blur-md py-4 px-6 border border-border rounded-2xl shadow-lg z-50">
+          <div class="flex flex-col gap-4">
+            <a class="px-3 py-2 text-sm rounded-md transition-colors bg-accent text-accent-foreground">Home</a>
+            <a class="px-3 py-2 text-sm rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted">About</a>
+            <a class="px-3 py-2 text-sm rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted">Spice up your CV</a>
+            <a class="px-3 py-2 text-sm rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted">Get Coached</a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <div class="rounded-2xl">
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted">
+              Log in
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main id="content">
+      <section class="bg-card w-full py-12 md:py-20 px-6 md:px-12 flex flex-col items-center justify-center overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full">
+          <div class="w-full h-full opacity-10 bg-primary blur-[120px]"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl text-center space-y-6">
+          <div class="text-center space-y-3 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tighter">🚀 1:1 Coaching: Accelerate your finance career</h2>
+            <p class="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
+              <span class="highlightPink">Personalised advice from our co-founders: <i>in-the-field CFOs and finance leaders</i> who've sat in your seat (and the one you want next).</span>
+            </p>
+            <p class="text-md text-muted-foreground max-w-2xl mx-auto text-balance">
+               We'll help craft your next move: whether that's leveling up where you are or landing something more strategic and commercial.
+            </p>
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:border hover:border-cosmic-accent py-2 bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
+              👉 Book your 30-min session - <span class="priceCall">$65</span>
+            </button>
+            <div class="text-sm text-muted-foreground">
+              <i>Personalised • Actionable advice • Confidential</i>
+            </div>
+            <div class="pt-8 font-medium text-center text-lg mb-6">
+              Or scroll for our Coaching Packages
+              <div class="pt-6 down-arrow text-6xl mx-auto text-center text-hotPink text-4xl mb-8">
+                <span>&#8595;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-accent w-full py-12 px-14 relative overflow-hidden">
+        <div class="max-w-2xl mx-auto space-y-16 relative z-10">
+          <div class="text-center space-y-4 max-w-xl mx-auto">
+            <h2 class="text-xl text-primary-foreground tracking-tighter"><i>"<strong>You won’t find a more relevant impactful source of advice anywhere </strong>for getting out of (technical) finance, accounting and audit. It’s completely changed my mindset."</i></h2>
+            <p class="text-md text-primary-foreground tracking-tighter">- Ex-Audit, Big 4</p>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="text-center space-y-3 max-w-3xl mx-auto">
+            <div class="text-3xl md:text-4xl font-medium tracking-tighter">🤝</div>
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tighter">How we help</h2>
+            <p class="text-cosmic-muted text-center text-lg">We help finance professionals <span class="highlightPink font-medium">sharpen their commercial and strategic edge</span>, punch above their pay grade, and land roles others said they weren’t “ready” for. Whereas recruiters are incentivised to only put forward overqualified candidates for roles, we're excited to help you level up!</p>
+            <div class="pt-6">
+              <img class="mx-auto h-100px xs:h-16" alt="Path to career clarity"src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/Helping%20navigate%20career%20moves%20Undraw.png" />
+            </div>
+          </div>
+          <div class="max-w-4xl mx-auto space-y-12">
+            <div class="mx-auto max-w-2xl">
+              <div class="px-14 sm:px-8 xs:px-4">
+                <p class="text-center font-medium text-xl mb-3">We'd can support you to:</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Prep for interviews, case studies, or promotion conversations
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Sharpen your CV, elevator pitch, or personal brand
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Land strategic, commercial roles (even if your current job is super technical)
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Clarify your next move - whether it’s a pivot, promotion, or brand-new path
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Build executive presence, or confidence in business partnering and stakeholder comms
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Figure out career roadblocks - and how to shift
+                  </li>
+                  <li class="flex items-center">
+                    <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                      <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    Navigate AI-era change in your specific role without falling into panic or skill-chasing
+                  </li>
+                </ul>
+                <p class="text-center text-xl text-foreground max-w-2xl mx-auto text-balance mb-6"><span class="highlightBlack">Every session is tailored. We ask for your background in advance to personalise the agenda (usually within 24h)</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-card w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="text-center space-y-3 max-w-3xl mx-auto">
+          <p class="font-medium text-center text-xl text-hotPink mb-6">Whether you want to do that exactly where you are, or land something more strategic & commercial, we work with people who're:</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center">
+              <div class="mw-30px mh-30px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                <svg class="lucide lucide-check w-5 h-5 text-hotPink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+              </div>
+              <span class="text-left"><strong>Early-career </strong> → unsure how to build strategic experience in a world of automation</span>
+            </li>
+            <li class="flex items-center">
+              <div class="mw-30px mh-30px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                <svg class="lucide lucide-check w-5 h-5 text-hotPink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+              </div>
+              <span class="text-left"><strong>Mid-level professionals</strong> → stuck between execution and leadership, and ready to level up</span>
+            </li>
+            <li class="flex items-center">
+              <div class="mw-30px mh-30px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                <svg class="lucide lucide-check w-5 h-5 text-hotPink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+              </div>
+              <span class="text-left"><strong>Senior finance leaders</strong> → navigating change, AI shifts and unsure how to stand out</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="text-center space-y-3 max-w-3xl mx-auto">
+            <p class="text-4xl">👋</p>
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tighter">Who you'll talk to</h2>
+            <div class="flex items-center justify-center mb-8">
+              <div>
+                <img class="border-primary border-thick rounded-full h-100px xs:h-16 mr-3" alt="Emma professional headshot"src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/Professional%20Photo%20-%20640x640.jpg" />
+              </div>
+              <div>
+                <img class="border-primary border-thick rounded-full h-100px xs:h-16" alt="Dexter professional headshot"src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/Dexter%20Professional%20Photo.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto max-w-2xl">
+            <div class="px-14 sm:px-8 xs:px-4">
+              <p class="text-center text-xl text-foreground max-w-2xl mx-auto text-balance mb-6"><span class="highlightPink">You’ll speak directly with one of our Co-Founders, experienced CFOs and finance operators, who've:</span></p>
+              <ul class="mx-auto max-w-lg space-y-3 mb-8">
+                <li class="flex items-center">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  Built and scaled finance teams at top investor-backed startups and corporates
+                </li>
+                <li class="flex items-center">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  Sat on both sides of the interview table
+                </li>
+                <li class="flex items-center">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  Coached hundreds into more strategic, commercial and leadership roles
+                </li>
+                <li class="flex items-center">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  Navigated fundraising, messy restructures, tricky board-room conversations, and the evolution of AI in finance
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-card w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-3xl mx-auto space-y-12">
+          <div class="text-center px-14 sm:px-8 xs:px-4">
+            <p class="font-medium text-xl mb-8">Between us, we've worked across:</p>
+            <ul class="text-left space-y-3 mb-8">
+              <li class="flex items-center">
+                <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                🚀 Strategic finance & leadership roles in Startups
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>CFO / Director of Ops in multiple startups backed by top investors (AI, B2B SaaS, EdTech, eCommerce, HealthTech)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Co-Founder of a certified B Corp EdTech (grant funded by Meta, TeachFirst, UK government + others)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Head of Strategy & Ops (B2B SaaS, EdTech)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Fractional CFO to early-stage scaleups (Consumer Social, eCommerce / SaaS Marketplace, Services / Agency)</i>
+              </li>
+              <li class="flex items-center">
+                <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                🏦 Traditional finance & corporate roles
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Big 4 Audit & Accounting</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>M&A / Corp Dev (global conglomerate)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Investment Banking (ECM, DCM, LevFin) in top tier Investment Banks</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Sales & Trading in a top tier investment bank</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Corporate Venture Capital</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Group Finance Director (Asset Management / ESG Fund)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Finance Controller of large Real Estate services corporate</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Commercial Finance (large FMCG / Manufacturing)</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Sales & networking to HNWIs (large Media corporate)</i>
+              </li>
+              <li class="flex items-center">
+                <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                🌍 Non-profit & mission-driven leadership
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Trustee / Board Member of a top UK school foundation</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Trustee / Board Member of an African-based charity</i>
+              </li>
+              <li class="flex items-center text-muted-foreground">
+                <div class="ml-8 mw-20px mh-20px rounded-full text-hotPink flex items-center justify-center mr-3">
+                  <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+                <i>Treasurer / Trustee of a charity-for-charities</i>
+              </li>
+            </ul>
+            <div class="text-center text-lg mb-8">
+              <span class="highlightPink">We’re not here to boast, but to help you realise that – with a bit of hard work and hustle – you, too, can refocus your career strategy at any stage, even amidst the industry's AI shift. Let's help you nail those roles you’ve had your eye on.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-accent w-full py-12 px-14 relative overflow-hidden">
+        <div class="max-w-2xl mx-auto space-y-16 relative z-10">
+          <div class="text-center space-y-4 max-w-3xl mx-auto">
+            <h2 class="text-xl text-primary-foreground tracking-tighter"><i>"<strong>Not just surface-level advice</strong>. They actually understood the role, the org, and how to position me. Booked the next call immediately."</i></h2>
+            <p class="text-md text-primary-foreground tracking-tighter">- Financial Controller, Startup</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-card w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="text-center space-y-3 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tighter">💼 What we offer</h2>
+            <p class="text-cosmic-muted text-lg">Choose a 30-minute call or one of our Coaching Packages</p>
+          </div>
+          <div class="mx-auto max-w-2xl">
+            <div class="text-center px-14 sm:px-8 xs:px-4">
+              <p class="text-center font-medium text-xl mb-3">📞 <span class="highlightPink">Book your 30-min call:</span></p>
+              <ul class="mx-auto max-w-lg space-y-3 mb-8">
+                <li class="flex items-center text-left">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  One of our Co-Founders is all yours for 30-minutes
+                </li>
+                <li class="flex items-center text-left">
+                  <div class="mw-20px mh-20px rounded-full bg-lightPink text-hotPink flex items-center justify-center mr-3">
+                    <svg class="lucide lucide-arrow-right h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  🎯 You choose the focus - we'll bring the frameworks, insider insight, and tough-love honesty.
+                </li>
+              </ul>
+              <button class="mb-3 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:border hover:border-cosmic-accent py-2 bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
+                👉 Book your 30-min session - <span class="priceCall">$65</span>
+              </button>
+              <div class="text-sm text-muted-foreground">
+                <i>Personalised • Actionable advice • Confidential.</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="px-14 sm:px-8 xs:px-4">
+            <p class="text-center font-medium text-xl mb-8">or <span class="highlightPink">Choose one of our Coaching Packages</span></p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div class="p-6 rounded-xl border flex flex-col h-full border-border cosmic-gradient bg-card relative">
+                <div class="mb-auto">
+                  <h3 class="text-2xl font-medium tracking-tighter mb-1 text-foreground">Lite</h3>
+                  <div class="mb-4">
+                    <div class="priceLitePackage text-3xl font-bold tracking-tighter text-foreground mb-3">$209</div>
+                    <p class="text-muted-foreground mb-6">Perfect for XXX</p>
+                    <div class="space-y-3 mb-8">
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Personalised CV / Resume review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Includes the detailed (line-by-line) review of ONE CV / Resume of 2-pages maximum length (they should not be longer than this anyway!). Two rounds of review are included to ensure you are happy with your end product.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Coaching & Diagnostic call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">To learn more about your background and experience to date, enabling us to better determine the correct emphasis / extend of recommended reshaping your CV / Resume requires. Also includes answering any of your personalised questions e.g. career options, job applications, and interview prep</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Valid for 2 months
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">All documents to be sent to us in time for turnaround within 2 months of date of purchase. This also applies to phone calls which must be scheduled within 2 months of date of purchase.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 w-full border-border text-foreground hover:bg-muted">Get Started</button>
+                </div>
+              </div>
+              <div class="p-6 rounded-xl border flex flex-col h-full border-primary/50 cosmic-glow bg-card relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm rounded-full font-medium">
+                  Most popular
+                </div>
+                <div class="mb-auto">
+                  <h3 class="text-2xl font-medium tracking-tighter mb-1 text-foreground">Essentials</h3>
+                  <div class="mb-4">
+                    <div class="priceEssentialsPackage text-3xl font-bold tracking-tighter text-foreground mb-3">$289</div>
+                    <p class="text-muted-foreground mb-6">Ideal for XXX</p>
+                    <div class="space-y-3 mb-8">
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Personalised CV / Resume review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Includes the detailed (line-by-line) review of ONE CV / Resume of 2-pages maximum length (they should not be longer than this anyway!). Two rounds of review are included to ensure you are happy with your end product.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Coaching & Diagnostic call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">To learn more about your background and experience to date, enabling us to better determine the correct emphasis / extend of recommended reshaping your CV / Resume requires. Also includes answering any of your personalised questions e.g. career options, job applications, and interview prep</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Valid for 2 months
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">All documents to be sent to us in time for turnaround within 2 months of date of purchase. This also applies to phone calls which must be scheduled within 2 months of date of purchase.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Cover Letter Review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Includes the detailed (line-by-line) edit of ONE Cover Letter of 1-page maximum length (they should not be longer than this anyway!). Two rounds of editing are included to ensure you are happy with the end product.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Evaluation Call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">To discuss proposed reshaping of your CV / Resume and the edits to your Cover Letter required, as well as the most appropriate career next steps for you and to answer any additional questions.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:text-primary hover:border hover:border-cosmic-accent h-10 px-4 py-2 w-full bg-primary text-primary-foreground hover:bg-primary/90">Get Started</button>
+                </div>
+              </div>
+              <div class="p-6 rounded-xl border flex flex-col h-full border-border cosmic-gradient bg-card relative">
+                <div class="mb-auto">
+                  <h3 class="text-2xl font-medium tracking-tighter mb-1 text-foreground">Pro</h3>
+                  <div class="mb-4">
+                    <div class="priceProPackage text-3xl font-bold tracking-tighter text-foreground mb-3">$429</div>
+                    <p class="text-muted-foreground mb-6">For XXX with complex XXXX</p>
+                    <div class="space-y-3 mb-8">
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Personalised CV / Resume review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Includes the detailed (line-by-line) review of ONE CV / Resume of 2-pages maximum length (they should not be longer than this anyway!). Two rounds of review are included to ensure you are happy with your end product.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Coaching & Diagnostic call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">To learn more about your background and experience to date, enabling us to better determine the correct emphasis / extend of recommended reshaping your CV / Resume requires. Also includes answering any of your personalised questions e.g. career options, job applications, and interview prep</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Valid for 2 months
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">All documents to be sent to us in time for turnaround within 2 months of date of purchase. This also applies to phone calls which must be scheduled within 2 months of date of purchase.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Cover Letter Review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Includes the detailed (line-by-line) edit of ONE Cover Letter of 1-page maximum length (they should not be longer than this anyway!). Two rounds of editing are included to ensure you are happy with the end product.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Evaluation Call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">To discuss proposed reshaping of your CV / Resume and the edits to your Cover Letter required, as well as the most appropriate career next steps for you and to answer any additional questions.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          LinkedIn Profile Review
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">It is essential to have a presence on LinkedIn in the finance world (most recruiters / employers actively reach out and recruit through the platform). We can create / edit your Profile line-by-line.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          Email Review & Editing
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">More often than not, your email is the first impression you give to recruiters and / or employers. We can help reviw and edit TWO email drafts of your choice. Examples incl. networking / introductory emails, application / interview emails, follow-up / chaser emails, etc.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <span class="text-sm text-foreground">Priority response to emails</span>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          30min Interview Coaching call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Get advice directly from one of our Co-Founders about your current situation, how to shine in an interview for a more strategic / commercial role, and how to negotiate an impressive benefits package. We can also address any of your recruiter / interview thoughts and questions in detail.</span></span>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path data-lov-id="src/components/Pricing.tsx:103:26" data-lov-name="path" data-component-path="src/components/Pricing.tsx" data-component-line="103" data-component-file="Pricing.tsx" data-component-name="path" data-component-content="%7B%7D" d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="text-sm text-foreground">
+                          45min Mock Interview Call
+                          <span class="tooltip text-cosmic-muted">🛈<span class="tooltiptext">Some of our clients say this is the most useful aspect of our Coaching Packages! We'll prepare an interview process and questions relevant to a role of your choice and give you the brutal honest feedback you really need.</span></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 w-full border-border text-foreground hover:bg-muted">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-muted-foreground">Have questions? <a class="text-primary hover:underline">Contact our team</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-accent w-full py-12 px-14 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+          <div class="text-center space-y-4 max-w-4xl mx-auto">
+            <h2 class="text-xl text-primary-foreground tracking-tighter"><i>"I was really impressed with the extensive CV comments and most of my CV was completely redrafted. I bought the Lite package and thought it was fantastic value! <strong>I felt I was given a lot of time to talk through different career options suited to me, some of which I’d never considered before</strong>. Highly recommend."</i></h2>
+            <p class="text-md text-primary-foreground tracking-tighter">- Audit, Big 4 – Sydney, Australia</p>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-3xl mx-auto space-y-12">
+          <div class="px-14 sm:px-8 xs:px-4">
+            <p class="font-medium text-2xl mb-8"><span class="highlightPink">FAQs</span></p>
+            <p class="mb-8 font-medium text-lg">Is this a good fit if I’m not job-hunting?</p>
+            <p class="ml-8 mb-8 text-lg">Yes - many clients come to sharpen their presence in their current roles, nail a promotion, gain exposure to wider projects or clarify their next step.</p>
+            <p class="mb-8 font-medium text-lg">Can I send my CV / job description / topics to discuss ahead of time?</p>
+            <p class="ml-8 mb-8 text-lg">Absolutely - we encourage it. You'll get a details of where to send once you book. We provide completely personalised guidance for every client.</p>
+            <p class="mb-8 font-medium text-lg">What if I want more support after the call?</p>
+            <p class="ml-8 mb-8 text-lg">You’ll have the option to continue with a coaching package, book more blocks of 30-minutes or just take the insights and run. No pressure. You can also speak to peers and experts in the HFC community.</p>
+            <p class="mb-8 font-medium text-lg">Will you write my CV / Resume for me from scratch?</p>
+            <p class="ml-8 mb-8 text-lg">No - and that's a good thing. We don't believe in shortcuts or templates. Instead, we'll given you pointed, high-impact feedback and detailed <i>human</i> edits to help you do it better yourself. You'll come away with a CV that reflects your unique edge - not a generic clone.</p>
+            <p class="mb-8 font-medium text-lg">How long after purchasing one of the coaching packages will the services end?</p>
+            <p class="ml-8 mb-8 text-lg">The package will be valid for 2 months after purchase. Once you’ve kicked off usage of the package, you have 14 days to complete the coaching package before it expires.</p>
+            <p class="mb-8 font-medium text-lg">How many emails and questions can I ask once I have purchased a coaching package?</p>
+            <p class="ml-8 mb-4 text-lg">Within each package there are a limited number of document and email edits, depending on which package you purchase (details listed within each package). The reason we do this is that each version edit takes a considerable amount of <i>human</i> time as we endeavor to truly understand your background, experiences and what a given job application requires before even commencing our work. For this reason we encourage our customers to work with us from the outset to get the documents to the high level of quality they need to be in as few versions as possible.</p>
+            <p class="ml-8 mb-4 text-lg">We will of course respond to a reasonable number of questions in order to provide you with a quality service that reflects the purchased package requirements. Note that the Essential and Pro packages will benefit from priority response.</p>
+            <p class="ml-8 mb-8 text-lg">We will not answer queries that are not part of the package you have purchased, but we can upgrade you to the package that does cover the context you need if you wish us to do so (or a 30-min call, if that's more appropriate to your needs).</p>
+            <p class="mb-8 font-medium text-lg">How long will you take to respond to my questions & messages?</p>
+            <p class="ml-8 mb-8 text-lg">We generally respond within 1 business day and on many occasions sooner than this.</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-card w-full py-12 md:py-20 px-6 md:px-12 flex flex-col items-center justify-center overflow-hidden">
+        <div class="relative z-10 max-w-4xl space-y-6">
+          <h1 class="text-5xl font-medium tracking-tighter text-balance text-foreground">Ready to <span class="text-hotPink">get unstuck</span> and step into something more strategic & commercial?</h1>
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:border hover:border-cosmic-accent py-2 bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
+            👉 Book your 30-min session - <span class="priceCall">$65</span>
+          </button>
+          <div class="text-sm text-muted-foreground">
+            <i>Personalised • Actionable advice • Confidential.</i>
+          </div>
+          <div>
+            <div class="mb-3">
+              <span class="text-2xl">🚀</span>
+              <span class="text-md tracking-tighter mb-3">Become more strategic & commercial</h3>
+            </div>
+            <div class="mb-3">
+              <span class="text-2xl">💬</span>
+              <span class="text-md tracking-tighter mb-3">Communicate more clearly</span>
+            </div>
+            <div class="mb-3">
+              <span class="text-2xl">💪</span>
+              <span class="text-md tracking-tighter mb-3">Show up with confidence</span>
+            </div>
+          </div>
+          <div class="pt-8 font-medium text-center text-lg mb-6">
+            Or scroll back up to explore our Coaching Packages
+            <div class="pt-6 down-arrow text-6xl mx-auto text-center text-hotPink text-4xl mb-8">
+              <span>&#8593;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full py-16 px-6 md:px-12 border-t border-border bg-card">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div class="md:col-span-2 space-y-6">
+            <div class="crop-footerLogo">
+              <img class="h-100px xs:h-16" alt="The Human Finance Club logo"src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Logo%20Pink_Beige%20Transparent%20background.png" />
+            </div>
+            <p class="text-muted-foreground max-w-xs">The peer community and career lab helping finance professionals sharpen the human edge AI can’t replicate</p>
+            <div class="flex items-center gap-4">
+              <a class="h-10 w-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+              <a class="h-10 w-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h4 class="font-medium text-lg text-muted-foreground">
+              Company
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">About</a>
+              </li>
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
+              </li>
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="font-medium text-lg text-muted-foreground">
+              Resources
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">Spice up your CV</a>
+              </li>
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">Get Coached</a>
+              </li>
+              <li>
+                <a class="text-muted-foreground hover:text-foreground transition-colors">Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm">
+          <div>© 2025 The Human Finance Club. All rights reserved.</div>
+          <div class="flex gap-6 mt-4 md:mt-0">
+            <a class="hover:text-foreground transition-colors">Privacy</a>
+            <a class="hover:text-foreground transition-colors">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="./HFCHomePage.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Human Finance Club",
+  "url": "https://www.thehumanfinanceclub.com",
+  "logo": "https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/HFC%20Badge%20Above%20AI%20Layer%20w%20Torch_Transparent%20Background%20v2.png"
+}
+</script>
+</body>
+
+</html>
