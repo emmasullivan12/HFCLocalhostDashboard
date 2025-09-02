@@ -43,11 +43,6 @@ import TypeformSignUp from "./TypeformSignUp";
 import UserMenuContent from "./UserMenuContent";
 import VerifyEmail from "./VerifyEmail";
 
-/*
-const SUContent = ('mentor or mentee?')
-const MenteeSUContent = ('mentee SU')
-const MentorSUContent = ('mentor SU')*/
-
 const SettingsModalProps = {
   ariaLabel: 'Popup to manage your preferences and settings',
   triggerText: 'Preferences & Settings',
@@ -188,8 +183,9 @@ class Dashboard extends Component{
     this.createScroller();
     window.addEventListener('resize', this.createScroller);
     this.setState({
-      browser: whichBrowser()
+      browser: whichBrowser(),
     })
+
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -664,18 +660,9 @@ class Dashboard extends Component{
             </div>
             <div className="clientWindowContainer col-s-12" role="button" id="clientWindowContainer" tabIndex={0} onKeyDown={this.handleKeyDown} onClick={this.closeMenu}>
               <Switch>
-            {/*    {{
-                  ['mentee']: <Redirect exact from="/" to="/home" />,
-                  ['mentor']: <Redirect exact from="/" to="/home" />,
-                }[userRole]} */}
-              {/*  <Redirect exact from="/" to="/home" />
-                {isQ == true && (
-                  <Redirect exact from="/home" to="/questions/123456" />
-                )} */}
                 <Route exact path="/">
                   {isQ == true ? <Redirect to="/questions/123456" /> : <Redirect to="/home" />}
                 </Route>
-              {/*  <Route path="/latest-advice" component={LatestAdvice}/>, */}
                 <Route path="/mentee-profile" component={LgdInUsrProfile}/>,
                 <Route path="/to-do-list" component={Todo}/>,
                 <Route path="/teams" component={Teams}/>
@@ -716,17 +703,31 @@ class Dashboard extends Component{
 class App extends Component{
   constructor () {
     super();
+    this.state = {
+      userCurrency: 'USD',
+    }
 //    this.checkBackspace = this.checkBackspace.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener("focus", this.onFocus)
     window.addEventListener("blur", this.onBlur)
+    this.setState({
+      userCurrency: this.getUserCurrency()
+    })
   }
 
   componentWillUnmount() {
     window.removeEventListener("focus", this.onFocus)
     window.removeEventListener("blur", this.onBlur)
+  }
+
+  // check if they are in the UK then show them £, otherwise show them in $ on front end
+  //The values returned from Intl.DateTimeFormat().resolvedOptions().timeZone are IANA tz database identifiers.
+  getUserCurrency = () => {
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const GBNames = ['Europe/Belfast', 'Europe/London', 'GB', 'GB-Eire', 'Europe/Guernsey', 'Europe/Jersey', 'Europe/Isle_of_Man'];
+    return GBNames.includes(timeZone) ? 'GBP' : 'USD';
   }
 
   // Checking if user clicks on tab
@@ -740,24 +741,14 @@ class App extends Component{
   }
 
   render() {
-    const userRole = 'mentor' /*this.props.users.role*/;
-/*    switch (loginServer) {
-      case true:
-        return (
-          <div className="App">
-            {{
-              ['L']: <Login/>,
-              ['SU']: <SignUp/>,
-            }[loginSU]}
-          </div>
-        );
-      case false: */
+    const userRole = 'user';
+    const {userCurrency} = this.state
+
       return (
         <div className="App">
           {{
-            ['mentee']: <MenteeSteps userRole={userRole}/>,
-            ['mentor']: <MentorSteps userRole={userRole}/>,
-            ['prospela']: <ProspelaDashboard userRole={userRole}/>,
+            ['user']: <UserSteps userRole={userRole} userCurrency={userCurrency}/>,
+            ['hfc']: <ProspelaDashboard userRole={userRole}/>,
             ['']: <Dashboard />,
           }[userRole]}
         </div>
@@ -765,25 +756,8 @@ class App extends Component{
   }
 }
 
-/*
-function SignUp() {
-  return (
-    <LoginSUTemplate>
-      <SUContent />
-    </LoginSUTemplate>
-  );
-}
-
-function Login() {
-  return (
-    <LoginSUTemplate>
-      <LoginContent />
-    </LoginSUTemplate>
-  );
-}
-*/
-function MenteeSteps({userRole}) {
-  const step = 'didCountry';
+function UserSteps({userRole, userCurrency}) {
+  const step = 'did1stSU';
   const emailSentForReview = ''; // Need to update this based on if needs Prospela to review email format
   const eduSentForReview = ''; // Need to update this based on if needs Prospela to review school/uni typed in manually
 
@@ -792,62 +766,23 @@ function MenteeSteps({userRole}) {
           return <LoadingSU userRole={userRole}/>
         case 'did1stSU':
         case 'didCountry':
-        case 'updatingEdu':
         case 'didEdu':
-        case 'didIndRole':
-        case 'didDiversity':
-        case 'didEduEmail':
-        case 'didEmailVerifNeedsRev':
+        case 'didExpertise':
+        case 'updatingEmail':
           return (
             <BrowserRouter>
               <Switch>
-                <Route component={TypeformSignUp} step={step} />
+                <Redirect exact from="/" to="/signup" />
+                <Route path="/signup" component={TypeformSignUp} step={step} userCurrency={userCurrency}/>
               </Switch>
             </BrowserRouter>
           );
         case 'didEmailVerif':
-        case 'didReviewVerif':
         case 'autoEnroll':
         case 'joinedProg':
         case 'didFullSUtf':
-        case 'didSafeG': // only required for under 18s
-          return <Dashboard userRole={userRole}/>
+          return <Dashboard userRole={userRole} step={step}/>
       }
-}
-
-function MentorSteps({userRole}) {
-  const step = 'didShortSUtf';
-//    const step = this.props.users.step;
-      switch (step) {
-        case 'IFSTATEMENT':
-          return (
-            <BrowserRouter>
-              <Switch>
-                <Redirect exact from="/" to="/verify-email" />
-                <Route path="/verify-email" component={VerifyEmail} step={step} />
-              </Switch>
-            </BrowserRouter>
-          );
-          case 'didEmailVerif':
-          case 'didCountry':
-            return (
-              <BrowserRouter>
-                <Switch>
-                  <Redirect exact from="/" to="/mentor-signup" />
-                  <Route path="/mentor-signup" component={TypeformSignUp} step={step} />
-                </Switch>
-              </BrowserRouter>
-            );
-          case 5:
-            return <LoadingDash userRole={userRole}/>
-          case 'didShortSUtf':
-          case 'didFullSUtf':
-          case 'didTrain':
-          case 'didU18tf':
-          case 'fullSUTrain':
-          case 'fullSUidTrain':
-            return <Dashboard userRole={userRole} step={step}/>
-        }
 }
 
 // Dummy chat list data (this will eventually come from Postgres)

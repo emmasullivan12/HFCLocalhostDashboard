@@ -5,14 +5,14 @@ import ReactDOM from "react-dom";
 //import * as typeformEmbed from '@typeform/embed';
 //import PropTypes from "prop-types";
 import "../css/SignUp.css";
-import ConfirmStudent from './ConfirmStudent.js';
+
 import CountryShortSU from './CountryShortSU.js';
 import EduShortSU from './EduShortSU.js';
-import IndustryRoleSU from './IndustryRoleSU.js';
-import DiversitySU from './DiversitySU.js';
+import ExpertiseSU from './ExpertiseSU.js';
 import ProgressCircles from './ProgressCircles.js';
 import SignUpScreenTemplate from './SignUpScreenTemplate.js';
-//import TypeformEmbedded from './TypeformEmbedded.js';
+import TripwirePage from './TripwirePage.js';
+import UpdateEmail from './UpdateEmail.js';
 import VerifyEmail from './VerifyEmail.js';
 import {lookupUKSchUnis, getCompanyDeets} from './UserDetail.js';
 import {LoadingSpinner} from './GeneralFunctions.js';
@@ -21,138 +21,47 @@ import chatList from './1LastActiveChats.js';
 import LastActive from './1LastActive.js';
 
 //This includes props and title to be passed to SignUpScreenTemplate if Student is signing up
-const MenteeShortSUProps = {
-  subheader: 'Personalise your Prospela experience',
+const UserShortSUProps = {
+  subheader: 'Personalise your Human Finance Club experience',
   title: 'Let\'s get you set up',
   fullWidth: false
 }
 
-function MenteeSU3Props(userRole) {
-  let confirmStudentProps = {};
+const UserSU3Props = {
+  subheader: 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!',
+  title: 'Help us help you',
+  fullWidth: false
+}
 
-  const title = userRole === 'mentor' ? 'How can you help?' : 'Help us help you'
-  const subheader = userRole === 'mentor' ? 'You might have experience across a range of roles & industries' : 'By understanding where you\'re starting from and where you\'re trying to get to, we\'re better able to support you!'
+const UserSU5Props = {
+  subheader: 'Tell us your email address so we can send you a verification code',
+  title: 'Update your email',
+  fullWidth: false,
+}
 
-  confirmStudentProps = {
-    subheader: subheader,
-    title: title,
+function UserSU6Props(emailToVerify) {
+  let verifyEmailProps = {
+    subheader: 'We\'ve sent a verification code to ' + emailToVerify + '. Note: code only valid for the next 24 hours.',
+    title: 'Verify your email',
     fullWidth: false,
   }
-  return confirmStudentProps;
-
+  return verifyEmailProps
 }
 
-const MenteeSU4Props = {
-  subheader: 'Prospela\'s Co-Founder\'s proudly come from "working class" & second-gen immigrant backgrounds =)',
-  title: 'Some of us have extra hurdles',
-  fullWidth: false
+const UserSU7Props = {
+  subheader: 'Welcome aboard - now you’re officially part of The Human Finance Club. As a thank you, here’s an exclusive 24-hour launch offer.',
+  title: 'Thanks for verifying your email 🎉',
+  fullWidth: true,
+  containerClassName: "paddingL30 paddingR30 paddingTop50",
+  isTripwire: true,
 }
-
-function MenteeSU5Props(eetStatus, userEduName, currCo, currTrainingProvider, step, userRole) {
-  let confirmStudentProps = {};
-
-/*  const subheaderUni = step === 'updatingEmailError' ? ('It looks like the email you entered isn\'t a valid ' + userEduName + ' email address. Please try again') : ('Tell us your personal ' + userEduName + ' email address so we can send you a verification code');
-  const titleUni = step === 'updatingEmailError' ? 'Is your Uni email correct?' : (step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account')
-  const titleWork = step === 'updatingEmailError' ? 'Is your Work email correct?' : (step === 'updatingEmail' ? 'Update your work email' : 'Verify your account')*/
-  const subheaderUni = 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code';
-  const titleUni = step === 'updatingEmail' ? 'Update your uni email' : 'Verify your account';
-  const titleWork = step === 'updatingEmail' ? 'Update your work email' : 'Verify your account';
-  const emailType2 = userRole === 'mentor' ? (eetStatus != 'none' ? userEduName : 'work') : 'student'
-
-  switch (eetStatus) {
-    case 'sch':
-      confirmStudentProps = {
-        subheader: 'Tell us your personal ' + userEduName + ' email address so we can send you a verification code',
-        title: 'Verify your account',
-        fullWidth: false,
-      }
-      return confirmStudentProps;
-    case 'uni':
-      confirmStudentProps = {
-        subheader: subheaderUni,
-        title: titleUni,
-        fullWidth: false,
-      }
-      return confirmStudentProps;
-    case 'job':
-    case 'train':
-    case 'none':
-      confirmStudentProps = {
-        subheader: 'Tell us your ' + emailType2 + ' email address so we can send you a verification code',
-        title: titleWork,
-        fullWidth: false,
-      }
-      return confirmStudentProps;
-  }
-}
-
-function MenteeSU6Props(emailToVerify, userRole) {
-  let confirmStudentProps = {};
-  const emailType2 = userRole === 'mentee' ? 'Student' : 'Work'
-
-  confirmStudentProps = {
-    subheader: 'We\'ve sent a verification code to ' + emailToVerify + '. Please enter it below. Note: code only valid for the next 24 hours.',
-    title: 'Verify your ' + emailType2 + ' email',
-    fullWidth: false,
-  }
-
-  return confirmStudentProps;
-}
-
-const MenteeSU7Props = {
-  subheader: 'We just need to verify your student status. You\'ll hear from us soon!',
-  title: 'Hold tight',
-  fullWidth: false
-}
-
-// This includes all content to appear below SignUpScreenTemplate title for the Student Sign Up flow
-/*const MenteeTypeformSignUpContent = ({tflink, step, currentStep, totalMenteeSteps}) => (
-  <div>
-    <ProgressCircles
-      totalSteps={totalMenteeSteps}
-      currentStep={currentStep}
-    />
-    <div className='embedded-typeform'>
-      <TypeformEmbedded
-        tflink={tflink}
-      />
-    </div>
-  </div>
-)*/
-
-const MentorCountryShortSUProps = {
-  subheader: 'Tell us where you\'re based',
-  title: 'Let\'s get you set up',
-  fullWidth: false
-}
-
-/*const MentorTypeformSignUpProps = {
-  subheader: 'This will take about 10 mins & greatly help us match you to students based on your skills, interests, interests and personality … which makes for more successful mentoring!',
-  title: 'Set up your profile',
-  fullWidth: true
-}
-
-const MentorTypeformSignUpContent = ({tflink, step, currentStep, totalMentorSteps}) => (
-  <div>
-    <ProgressCircles
-      totalSteps={totalMentorSteps}
-      currentStep={currentStep}
-    />
-    <div className='embedded-typeform'>
-      <TypeformEmbedded
-        tflink={tflink}
-      />
-    </div>
-  </div>
-)*/
 
 class TypeformSignUp extends Component {
   constructor () {
     super();
     this.state = {
-      isLoading: true,
       isGeneralError: '',
-      step: 'didCountry', // set to did1stSU when first loaded
+      step: 'didEmailVerif', // set to did1stSU when first loaded
       userEduName: '',
       country: 'GBR',
       eetStatus: 'uni',
@@ -164,9 +73,7 @@ class TypeformSignUp extends Component {
       currCo: '',
       currCoFreeText: '',
       currTrainingProvider: '',
-      userRole: 'mentee'
     }
-    this.getUserEduName = this.getUserEduName.bind(this);
     this.updateCountry = this.updateCountry.bind(this);
     this.updateEetStatus = this.updateEetStatus.bind(this);
     this.updateStep = this.updateStep.bind(this);
@@ -176,113 +83,18 @@ class TypeformSignUp extends Component {
     this.updateUniFreeText = this.updateUniFreeText.bind(this);
     this.updateCurrCo = this.updateCurrCo.bind(this);
     this.updateCurrTrainingProv = this.updateCurrTrainingProv.bind(this);
-    this.updateEduEmail = this.updateEduEmail.bind(this);
+    this.updateEmail = this.updateEmail.bind(this);
   }
 
   componentDidMount() {
     this.mounted = true
-    this.getUserEduName();
   }
 
   componentWillUnmount() {
     this.mounted = false;
   }
 
-  getUserEduName() {
-    const {step, country, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, userRole, currCo, currCoFreeText, currTrainingProvider} = this.state;
-    const currCoName = getCompanyDeets(currCo, currCoFreeText, 'name')
-
-//    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail' || step === 'updatingEmailError' ) {
-    if (step === 'didDiversity' || step === 'updatingEdu' || step === 'didGroup' || step === 'updatingEmail') {
-      if (eetStatus === 'sch') {
-        if (country === 'GBR') {
-
-          if (schName != '') {
-            return Promise.all([lookupUKSchUnis(schName, 'label', eetStatus)])
-              .then(sch => {
-                if(this.mounted) {
-                  this.setState({
-                    isLoading: false,
-                    userEduName: sch[0].label,
-                    isGeneralError: false
-                  })
-                }
-              })
-              .catch(err => {
-                if(this.mounted) {
-                  this.setState({
-                    isGeneralError: true,
-                  })
-                }
-              })
-          } else {
-            this.setState({
-              isLoading: false,
-              userEduName: schNameFreeText
-            })
-          }
-
-        } else {
-          this.setState({
-            isLoading: false,
-            userEduName: schNameFreeText
-          })
-        }
-
-      } else if (eetStatus === 'uni') {
-        if (country === 'GBR') {
-
-          if (uniName != '') {
-            return Promise.all([lookupUKSchUnis(uniName, 'label', eetStatus)])
-              .then(uni => {
-                if(this.mounted) {
-                  this.setState({
-                    isLoading: false,
-                    userEduName: uni[0].label,
-                    isGeneralError: false
-                  })
-                }
-              })
-              .catch(err => {
-                if(this.mounted) {
-                  this.setState({
-                    isGeneralError: true,
-                  })
-                }
-              })
-          } else {
-            this.setState({
-              isLoading: false,
-              userEduName: uniNameFreeText
-            })
-          }
-
-        } else {
-          this.setState({
-            isLoading: false,
-            userEduName: uniNameFreeText
-          })
-        }
-      } else if (eetStatus === 'job') {
-        this.setState({
-          isLoading: false,
-          userEduName: currCoName
-        })
-      } else if (eetStatus === 'train') {
-        this.setState({
-          isLoading: false,
-          userEduName: currTrainingProvider
-        })
-      } else {
-        this.setState({
-          isLoading: false,
-          userEduName: 'student'
-        })
-      }
-    }
-  }
-
-  updateStep(stepJustDone, updatingEdu) {
+  updateStep(stepJustDone) {
     if (stepJustDone === 'didCountry') {
       this.setState({
         step: 'didCountry'
@@ -295,85 +107,29 @@ class TypeformSignUp extends Component {
       })
       return;
 
-    } else if (stepJustDone === 'updatingEdu') {
-      return Promise.all([this.getUserEduName()])
-        .then(res => {
-          if(this.mounted) {
-            this.setState({
-              step: 'didDiversity', // User updated education & has already done Shortsu so jump forward to didDiversity and confirm email
-              isGeneralError: false,
-            }, () => {
-              this.getUserEduName()
-            })
-          }
-        })
-        .catch(err => {
-          if(this.mounted) {
-            this.setState({
-              isGeneralError: true,
-            })
-          }
-        })
-
-    } else if (stepJustDone === 'didIndRole') {
+    } else if (stepJustDone === 'didExpertise') {
       this.setState({
-        step: 'didIndRole'
-      })
-      return;
-    } else if (stepJustDone === 'didIndRoleMentor') {
-      this.setState({
-        step: 'didIndRoleMentor'
-      })
-      return;
-
-    } else if (stepJustDone === 'didDiversity') {
-      this.setState({
-        step: 'didDiversity'
-      }, () => {
-        this.getUserEduName()
+        step: 'didExpertise'
       })
       return;
     } else if (stepJustDone === 'updatingEmail') {
       this.setState({
-        step: 'updatingEmail'
-      }, () => {
-        this.getUserEduName()
+        step: 'updatingEmail' // re-load VerifyEmail page
       })
       return;
-/*    } else if (stepJustDone === 'updatingEmailError') {
+    } else if (stepJustDone === 'updatedEmail') {
       this.setState({
-        step: 'updatingEmailError'
-      }, () => {
-        this.getUserEduName()
-      })
-      return;*/
-    } else if (stepJustDone === 'didEduEmail' && updatingEdu === true) {
-      this.setState({
-        step: 'updatingEdu', // User wants to go back to update education
+        step: 'updatedEmail' // re-load VerifyEmail page
       })
       return;
-
-    } else if (stepJustDone === 'didEduEmail' && updatingEdu != true) {
-      this.setState({
-        step: 'didEduEmail'
-      })
-      return;
-
-    } else if (stepJustDone === 'didEduEmailNeedsRev') {
-      this.setState({
-        step: 'didEduEmailNeedsRev'
-      })
-      return;
-
     } else if (stepJustDone === 'didEmailVerif') {
       this.setState({
         step: 'didEmailVerif'
       })
       return;
-
-    } else if (stepJustDone === 'didEmailVerifNeedsRev') {
+    } else if (stepJustDone === 'didTripwire') {
       this.setState({
-        step: 'didEmailVerifNeedsRev'
+        step: 'didTripwire'
       })
       return;
     }
@@ -460,38 +216,20 @@ class TypeformSignUp extends Component {
     })
   }
 
-  updateEduEmail(userInput, callback) {
-    if (userInput === 'personal') {
-      const personalEmail = 'personal@gmail.com' //DEX TO PULL IN PERSONAL EMAIL FROM HTML SIGNUP PAGE
-      this.setState({
-        emailToVerify: personalEmail
-      }, () => {
-        if (callback) {
-          callback();
-        }
-      })
-    } else {
-      this.setState({
-        emailToVerify: userInput
-      }, () => {
-        if (callback) {
-          callback();
-        }
-      })
-    }
+  updateEmail(userInput, callback) {
+    this.setState({
+      emailToVerify: userInput
+    }, () => {
+      if (callback) {
+        callback();
+      }
+    })
   }
 
   render() {
-    const {isGeneralError, isLoading, step, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currCoFreeText, currTrainingProvider, emailToVerify, userRole} = this.state;
-    const totalMenteeSteps = 5;
-    const totalMentorSteps = 3;
-    const fname = 'Emma';
-    const id = '12345';
-    const mentortflink = 'https://prospela.typeform.com/to/vRxfCm?fname='+fname+'&uid='+id; // actual typeform to be used
+    const {isGeneralError, step, userCurrency, country, userEduName, eetStatus, schName, schNameFreeText, uniName, uniNameFreeText, currCo, currCoFreeText, currTrainingProvider, emailToVerify, userRole} = this.state;
+    const totalSignUpSteps = 4;
     const currCoName = getCompanyDeets(currCo, currCoFreeText, 'name')
-
-
-  //  const menteetflink = 'https://prospela.typeform.com/to/UZtWfo?fname='+fname+'&uid='+id; // actual typeform to be used
 
     if (isGeneralError === true) {
       <div>
@@ -501,27 +239,24 @@ class TypeformSignUp extends Component {
       switch (step) {
         case 'did1stSU':
           return (
-            <SignUpScreenTemplate {...MenteeShortSUProps}>
+            <SignUpScreenTemplate {...UserShortSUProps}>
               <CountryShortSU
                 step={step}
-                userRole={userRole}
                 currentStep="1"
-                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
+                totalSteps={totalSignUpSteps}
                 updateCountry={this.updateCountry}
                 updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
           );
         case 'didCountry':
-        case 'updatingEdu':
           return (
-            <SignUpScreenTemplate {...MenteeShortSUProps}>
+            <SignUpScreenTemplate {...UserShortSUProps}>
               <EduShortSU
                 step={step}
                 country={country}
-                userRole={userRole}
                 currentStep="2"
-                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
+                totalSteps={totalSignUpSteps}
                 eetStatus={step === 'updatingEdu' ? eetStatus : ''}
                 updateEetStatus={this.updateEetStatus}
                 updateUKSch={this.updateUKSch}
@@ -534,100 +269,24 @@ class TypeformSignUp extends Component {
               />
             </SignUpScreenTemplate>
           );
-        case 'didEdu':
+        case 'didEdu': // This will be the general sign up questions
           return (
-            <SignUpScreenTemplate {...MenteeSU3Props(userRole)}>
-              <IndustryRoleSU
+            <SignUpScreenTemplate {...UserSU3Props}>
+              <ExpertiseSU
                 step={step}
                 country={country}
                 userRole={userRole}
                 currentStep="3"
                 eetStatus={eetStatus}
-                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
+                totalSteps={totalSignUpSteps}
                 updateStep={this.updateStep}
               />
             </SignUpScreenTemplate>
           );
-        case 'didIndRole':
+        case 'didExpertise':
+        case 'updatedEmail':
           return (
-            <SignUpScreenTemplate {...MenteeSU4Props}>
-              <DiversitySU
-                step={step}
-                currentStep="4"
-                country={country}
-                eetStatus={eetStatus}
-                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
-                updateStep={this.updateStep}
-              />
-            </SignUpScreenTemplate>
-          );
-      /*  case 'didIndRoleMentor':
-          return (
-            <SignUpScreenTemplate>
-              <GroupSU
-                step={step}
-                currentStep="4"
-                totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
-                updateStep={this.updateStep}
-              />
-            </SignUpScreenTemplate>
-          );*/
-        case 'didDiversity':
-        case 'updatingEmail':
-    //    case 'updatingEmailError':
-          return (
-            <React.Fragment>
-              {this.state.isLoading === true && (
-                <div className="clientUI">
-                  <div className="clientContainer">
-                    <div className="loadingSUContainer">
-                      <div id="loadingSU-welcome">
-                        <div className="loadingSUMsg">
-                          <p className="loadingWelcomeMsg">
-                            Loading sign-up form...
-                          </p>
-                          <div className="infiniteSpinner infiniteSpinner-medium">
-                            <div className="LoaderLayout-sc-1eu50fy-0 eczmJS">
-                              <div className="LoaderWrapper-sc-1eu50fy-1 iKvkDg">
-                                <LoadingSpinner />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-              {!isLoading && (
-                <SignUpScreenTemplate {...MenteeSU5Props(eetStatus, userEduName, currCoName, currTrainingProvider, step, userRole)}>
-                  <ConfirmStudent
-                    step={step}
-                    userRole={userRole}
-                    currentStep='5'
-                    totalSteps={userRole === 'mentee' ? totalMenteeSteps : totalMentorSteps}
-                    schName={schName}
-                    schNameFreeText={schNameFreeText}
-                    uniName={uniName}
-                    uniNameFreeText={uniNameFreeText}
-                    eetStatus={eetStatus}
-                    country={country}
-                    userEduName={userEduName}
-                    updateStep={this.updateStep}
-                    updateEduEmail={this.updateEduEmail}
-                    currCoName={currCoName}
-                    currTrainingProvider={currTrainingProvider}
-                  />
-                </SignUpScreenTemplate>
-              )}
-            </React.Fragment>
-          );
-        case 'didEduEmail':
-        case 'didEduEmailNeedsRev':
-        case 'didGroup':
-        case 'didIndRoleMentor':
-          return (
-            <SignUpScreenTemplate {...MenteeSU6Props(emailToVerify, userRole)}>
+            <SignUpScreenTemplate {...UserSU6Props(emailToVerify)}>
               <VerifyEmail
                 step={step}
                 updateStep={this.updateStep}
@@ -635,14 +294,32 @@ class TypeformSignUp extends Component {
               />
             </SignUpScreenTemplate>
           );
-        case 'didEmailVerifNeedsRev':
+        case 'updatingEmail':
           return (
-            <SignUpScreenTemplate {...MenteeSU7Props} />
+            <React.Fragment>
+              <SignUpScreenTemplate {...UserSU5Props}>
+                <UpdateEmail
+                  updateStep={this.updateStep}
+                  updateEmail={this.updateEmail}
+                />
+              </SignUpScreenTemplate>
+            </React.Fragment>
           );
         case 'didEmailVerif':
           return (
+            <React.Fragment>
+              <SignUpScreenTemplate {...UserSU7Props}>
+                <TripwirePage
+                  updateStep={this.updateStep}
+                  userCurrency={userCurrency}
+                />
+              </SignUpScreenTemplate>
+            </React.Fragment>
+          );
+        case 'didTripwire':
+          return (
             <div>
-              Doesnt need review. Show the dashboard!!
+              Show the dashboard!
             </div>
           );
       }

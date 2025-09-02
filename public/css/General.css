@@ -1,6 +1,35 @@
 /* Dex last merged this code on 30th july2024  */
 
 /* General CSS styles to add to any individual element anywhere in the app */
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 20%;
+  --light-foreground: 0 0% 95%;
+  --card: 0 0% 96%;
+  --card-foreground: 0 0% 20%;
+  --popover: 0 0% 96%;
+  --popover-foreground: 0 0% 20%;
+  --primary: 0 0% 25%;
+  --primary-foreground: 0 0% 98%;
+  --hot-pink: 315.1, 81.5%, 51.4%;
+  --light-pink: 315.1deg 100% 92.93%;
+  --med-pink: 315.1deg 100% 79.78%;
+  --secondary: 0 0% 92%;
+  --secondary-foreground: 0 0% 25%;
+  --muted: 0 0% 88%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 0% 25%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 0 0% 85%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 25%;
+  --radius: .5rem;
+}
+* {
+  border-color: hsl(var(--border));
+}
 
 /* SCREEN SIZING ADJUSTMENTS */
 /* For Extra small devices (phones, 600px and down): */
@@ -265,7 +294,7 @@ html{
   scroll-behavior: smooth;
 }
 h1{
-  color: #351c75;
+  color: hsl(var(--foreground));
   font-size: 2.2em;
   font-weight: 800;
   font-family: Lato, Arial, Helvetica, sans-serif;
@@ -275,7 +304,7 @@ h1{
 }
 
 h2{
-  color: #351c75;
+  color: hsl(var(--hot-pink));
   font-size: 1.5rem;
   font-weight: 600;
   font-family: Lato, Arial, Helvetica, sans-serif;
@@ -327,6 +356,9 @@ table th .description{
 }
 .title-blankPage.modal{
   margin-top: 0;
+}
+.height100pc{
+  height: 100% !important;
 }
 .heightUnset{
   height: unset!important;
@@ -451,6 +483,15 @@ table th .description{
 }
 .lineHeight2{
   line-height: 2!important;
+}
+::selection,
+.highlightPink {
+  background-color: hsl(315.1, 81.5%, 51.4%);
+  color: hsl(var(--primary-foreground));
+}
+.highlightBlack {
+  background-color: #000;
+  color: hsl(var(--primary-foreground));
 }
 .bold{
   font-weight: 600;
@@ -1165,6 +1206,9 @@ table th .description{
 .paddingTop15{
   padding-top: 15px!important;
 }
+.paddingTop50{
+  padding-top: 50px!important;
+}
 .paddingTop2{
   padding-top: 2px;
 }
@@ -1194,6 +1238,9 @@ table th .description{
 }
 .paddingR30{
   padding-right: 30px!important;
+}
+.paddingR50{
+  padding-right: 50px!important;
 }
 .paddingL{
   padding-left: 10px!important;
@@ -1593,7 +1640,7 @@ a.Submit-btn,
   color: #fff;
   font: inherit;
   font-weight: 600;
-  background: #58d2bb;
+  background-color: hsl(var(--primary));
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;
@@ -1700,7 +1747,7 @@ a.Submit-btn{
   padding: 0;
   min-width: 0;
   padding-left: .2rem;
-  color: rgba(78,78,214,.79);
+  color: #e86ae9;
 }
 .Submit-btn.enableNotif{
   padding-left: 1.5rem;
@@ -1739,7 +1786,7 @@ a.Submit-btn:hover,
 a.Submit-btn:focus,
 .Submit-btn:hover,
 .Submit-btn:focus {
-  background: #06bf9c;
+  background: #000;
   color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
@@ -1763,7 +1810,7 @@ a.Submit-btn:focus{
 }
 .Submit-btn.BlankBtn.Inline:hover,
 .Submit-btn.BlankBtn.Inline:focus{
-  color: #4e4ed6;
+  color: #ca53cb;
   background-color: none;
 }
 .Submit-btn.HollowBtn:hover,
@@ -1793,7 +1840,7 @@ a.Submit-btn:disabled:active,
   background: none!important;
 }
 .Submit-btn:active{
-  background: #58d2bb;
+  background: #000;
 }
 .multilineOverflowBtn{
   border: 0;
@@ -2007,7 +2054,7 @@ a.Submit-btn:disabled:active,
 .checkbox-container:hover input ~ .checkmark:not(.disabled),
 .checkbox-container-login input:focus ~ .checkmark,
 .checkbox-container input:focus ~ .checkmark {
-  background-color: rgba(78,78,214,.29);
+  background-color: #e86ae947;
 }
 .checkbox-container-login.error:hover input ~ .checkmark,
 .checkbox-container.error:hover input ~ .checkmark,
@@ -2035,7 +2082,7 @@ a.Submit-btn:disabled:active,
 }
 .checkbox-container-login input:checked ~ .checkmark,
 .checkbox-container input:checked ~ .checkmark {
-  background-color: rgba(78,78,214,.79);
+  background-color: #e86ae9;
 }
 .checkbox-container input:checked ~ .checkmark.greenTick{
   background-color: #01d1be;
@@ -2262,19 +2309,19 @@ input:checked + .slider:before {
 
 /* LINKS */
 a {
-  color: #8f8fe5;
+  color: #e86ae9;
 }
 a:link {
-  color: #8f8fe5;
+  color: #e86ae9;
 }
 a:visited {
-  color: #8f8fe5;
+  color: #e86ae9;
 }
 a:hover {
-  color: #7e7ec9;
+  color: #ca53cb;
 }
 a:active {
-  color: #8f8fe5;
+  color: #e86ae9;
 }
 a.disabled{
   pointer-events: none;

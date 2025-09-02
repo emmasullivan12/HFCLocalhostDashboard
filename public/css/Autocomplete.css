@@ -186,12 +186,12 @@
 .autocompleter-active.selectedCheckbox{
 /*  border: 1px solid #8f8fe5;
   margin: -1px -1px 0;*/
-  background: #f1f1ff;
+  background: #fff1fa;
 }
 .autocompleter-item.selectedCheckbox > .checkbox,
 .autocompleter-active.selectedCheckbox > .checkbox{
-  border-color: #4e4ed6;
-  background: #8f8fe5;
+  border-color: #d64eba;
+  background: #e58fe0;
 }
 .autocompleter-item.lastItem {
   border-bottom: none;
@@ -207,7 +207,7 @@
   text-align: left;
 }
 .autocompleter-item-detail{
-  color: #a0a0a0;
+  color: #d0cfcf;
   text-align: left;
   background-color: inherit;
   font-size: 0.8em;
@@ -218,7 +218,7 @@
 }
 
 .autocompleter-active {
-  background-color: #351c75!important;
+  background-color: hsl(var(--hot-pink))!important;
   color: #ffffff;
   cursor: pointer;
   position: relative;

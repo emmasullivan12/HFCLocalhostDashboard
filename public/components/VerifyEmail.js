@@ -34,26 +34,19 @@ class VerifyEmail extends React.Component {
     e.preventDefault();
     const { verificationCode } = this.state;
     const {updateStep, country, step} = this.props;
-    const needsRev = step === "didEduEmailNeedsRev"
     const submission = {
       token: verificationCode
     };
     this.setState({
       isSubmitting: true
     })
-    if (needsRev === true) {
-      updateStep('didEmailVerifNeedsRev')
-    } else {
-      updateStep('didEmailVerif')
-    }
+    updateStep('didEmailVerif')
 
   }
 
   handleUpdateEmail() {
-    const {updateStep, userRole} = this.props;
-    const newStep = userRole === 'mentee' ? 'didDiversity' : 'updatingEmail'
-
-    updateStep(newStep) // Send them back to update their email
+    const {updateStep} = this.props;
+    updateStep('updatingEmail') // Send them back to update their email
   }
 
   handleResendSubmit(e) {

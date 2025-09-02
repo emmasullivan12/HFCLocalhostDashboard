@@ -12,7 +12,7 @@
   width: 15px;
   height: 1.3125rem;
   text-align: left;
-  color: #351c75;
+  color: hsl(var(--hot-pink));
   font-size: 13px;
   opacity: 0.95;
   left: 0;

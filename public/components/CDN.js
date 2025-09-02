@@ -2,7 +2,7 @@
 
 // IMAGES TO ALWAYS BE SAVED IN /IMAGES (WHICH IS RELATIVE TO CSS FILES IN SIBLING FOLDER AS IM USING A RELATIVE FILE PATH IN MY CSS I.E. '.../IMAGES/IMAGE.PNG')
 
-const cdn = 'https://files.prospela.com'
+const cdn = 'https://hfc-assets.lon1.digitaloceanspaces.com'
 const usercdn = 'https://media-uploads.prospela.com'
 
 const jsFolder = 'js'

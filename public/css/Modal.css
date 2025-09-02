@@ -684,7 +684,7 @@
 }
 
 .ModalOpenBtn-noSuggestionsCTABtn{
-  color: #8f8fe5;
+  color: #ea61ce;
 }
 
 .ModalOpenBtn-eduFreeTextBtn,
@@ -733,7 +733,7 @@
 }
 
 .ModalOpenBtn-noSuggestionsCTABtn:hover{
-  color: #4e4ed6;
+  color: #ea61ce;
 }
 
 .ModalOpenBtn-PassBtn:focus,
