@@ -203,6 +203,12 @@ ol, ul, menu {
   margin-bottom: 0px;
   padding: 0;
 }
+.list-disc{
+  list-style: disc;
+}
+.list-inside{
+  list-style-position: inside;
+}
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   margin: 0;
     margin-top: 0px;
