@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= subject %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body style="margin:0;padding:0;background-color:#e8e4d8;font-family:Arial,Helvetica,sans-serif;">
+    <!-- Preview Text (hidden in email body, but shown in inbox snippet) -->
+    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+      <%= previewText %>
+    </div>
+    <center>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td align="center" valign="top">
+            <table width="670" border="0" cellspacing="0" cellpadding="0" style="width:670px;table-layout:fixed;">
+              <tr>
+                <td align="center" valign="top" style="padding:10px 5px;">
+                  <!-- Header -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:10px 10px 0 0;background-color:#faf3e7;">
+                    <tr>
+                      <td align="center" valign="top" style="padding-top:40px;">
+                        <a href="https://thehumanfinanceclub.com?utm_source=welcomeemail&utm_medium=newsletter&utm_campaign=welcome-email" target="_blank">
+                          <img src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/Email%20Header.png" alt="The Startup Finance Lab" width="600" style="width:100%;height:auto;border:0;display:block;" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- Content -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="background-color:#faf3e7;">
+                    <tr>
+                      <td style="padding:30px;text-align:left;line-height:24px;font-size:16px;">
+                        <p>Welcome to the club, <%= firstName || '' %>.</p>
+                        <p>
+                          We hope you're excited to be part of a community of finance humans <i>rising above the AI layer</i>. You can expect:
+                        </p>
+                        <ul style="margin:0;padding-left:20px;">
+                          <li style="margin: 10px 0px 0px 0px !important;">🧠 <b>Unfiltered insights</b> from peers and real operators</li>
+                          <li style="margin: 10px 0px 0px 0px !important;">🎯 <b>Weekly strategic challenges</b></li>
+                          <li style="margin: 10px 0px 0px 0px !important;">🧭 Opportunity to <b>curate commercial skills</b>, tools, and stacks that actually matter</li>
+                          <li style="margin: 10px 0px 0px 0px !important;">And more...</li>
+                        </ul>
+                        <p>
+                          This isn’t about panic. It’s about building the human edge - AI-smart instincts, durable skills, and a network that lasts.
+                        </p>
+                        <table role="none" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:24px 0;">
+                          <tr>
+                            <td style="font-size:0; line-height:0;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <h2 style="color:#2a2a2a;font-weight:800;">Next steps:</h2>
+                        <ul style="margin:0;padding-left:20px;">
+                          <li style="margin: 10px 0px 0px 0px !important;">For the <b>next 24 hours only</b>, grab our <i>AI-era Finance CV / Resume Guide</i> for just $27 (normally $54). It’s a 50+ page playbook to help you break out of the weeds and land more strategic, commercial finance roles. 👉 [<a href="<%= tripwireLink %>" target="_blank" style="word-break:break-word; color:#ff47ff !important; text-decoration:underline; text-decoration-color:#ff47ff; font-style:italic;">Get instant access →</a>] </li>
+                          <li style="margin: 10px 0px 0px 0px !important;">Meanwhile, <a href="<%= platformLink %>" target="_blank" style="word-break:break-word; color:#ff47ff !important; text-decoration:underline; text-decoration-color:#ff47ff; font-style:italic;">check your profile</a> - we’ve auto-joined you to relevant sub-communities, and you can customise your feed further by adding your skills.</li>
+                        </ul>
+                        <table role="none" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:24px 0;">
+                          <tr>
+                            <td style="font-size:0; line-height:0;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <h2 style="color:#2a2a2a;font-weight:800;">Questions, thoughts, feedback? </h2>
+                        <p>
+                          We'd love to hear from you. Simply hit reply to this email and one of the team will get back to you asap.
+                        </p>
+                        <table role="none" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:24px 0;">
+                          <tr>
+                            <td style="font-size:0; line-height:0;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <p>Catch you in the platform,</p>
+                        <p style="color:#030712;font-weight:400;">— Dexter</p>
+                        <p style="color:#030712;font-weight:400;">
+                          Co-Founder, <i>The Human Finance Club</i>
+                        </p>
+                        <img src="https://hfc-assets.lon1.cdn.digitaloceanspaces.com/Website/Dexter%20picture.png" width="120" alt="Dexter" style="border-left:20px solid #faf3e7;display:block;" />
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- Footer -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="background-color:#030712;border-radius:0 0 10px 10px;">
+                    <tr>
+                      <td align="center" style="padding:15px;color:#fff;font-family:Alegreya,Merriweather,Georgia,serif;">
+                        <p>© <%= year %> The Human Finance Club</p>
+                        <p>London, UK</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
